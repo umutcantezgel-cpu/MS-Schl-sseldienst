@@ -4,6 +4,7 @@ import Link from "next/link";
 import { stadtgebiete } from "@/lib/stadtgebiete";
 import { Card } from "@/components/ui/card";
 import { generateSharedMetadata } from "@/lib/metadata";
+import ServiceMapWrapper from "@/components/maps/ServiceMapWrapper";
 
 export const metadata = generateSharedMetadata({
   title: "Servicegebiet — Einsatzgebiete rund um Wetzlar",
@@ -24,6 +25,21 @@ export default function ServicegebietPage() {
             Wir sind Ihr lokaler Schlüsseldienst für Wetzlar und die direkte
             Umgebung. Schnell vor Ort, wenn Sie uns brauchen.
           </p>
+        </div>
+      </section>
+
+      {/* Interactive Map Section */}
+      <section aria-label="Interaktive Einsatzgebiet-Karte" className="px-[var(--section-px)] py-[var(--section-py)] bg-white">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center mb-[var(--space-8)]">
+            <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-primary)]">
+              Unsere <span className="text-[var(--color-brand)]">Einsatzgebiete</span> auf einen Blick
+            </h2>
+            <p className="mt-3 text-[var(--color-text-body)]">
+              Der rote Kreis zeigt unser 50-km-Einsatzgebiet. Klicken Sie auf einen Marker für Details.
+            </p>
+          </div>
+          <ServiceMapWrapper />
         </div>
       </section>
 
