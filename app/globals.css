@@ -1,0 +1,432 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* ═══════════════════════════════════════════════════════
+       TEIL 1 — MATHEMATISCHES BASISRASTER (4px-Basis)
+       13-stufige Abstands-Skala: Jeder Wert = n × 4px
+       ═══════════════════════════════════════════════════════ */
+    --space-1: 4px;
+    /* Mikro: Icon-Gaps, feinste Granularität */
+    --space-2: 8px;
+    /* Mikro: Inline-Padding, Badge-Gaps */
+    --space-3: 12px;
+    /* Mikro: Input-Padding, Icon-Text-Gap */
+    --space-4: 16px;
+    /* Mikro→Komposition: Card-Padding-Inner, Mobile-Gap */
+    --space-5: 20px;
+    /* Komposition: Tablet-Gap */
+    --space-6: 24px;
+    /* Komposition: Desktop-Gap, Card-Padding-Horizontal */
+    --space-7: 32px;
+    /* Komposition: Card-Padding, Section-Inner-Gap */
+    --space-8: 40px;
+    /* Komposition→Sektion: Component-Spacing */
+    --space-9: 48px;
+    /* Sektion: Mobile Section-Padding */
+    --space-10: 64px;
+    /* Sektion: Tablet Section-Padding, Desktop Inner */
+    --space-11: 80px;
+    /* Sektion: Desktop Section-Padding */
+    --space-12: 96px;
+    /* Sektion: Large Desktop Section-Padding */
+    --space-13: 128px;
+    /* Sektion: Ultra-Wide Rhythm */
+
+    /* ═══════════════════════════════════════════════════════
+       TEIL 2 — 5-STUFIGES ERHEBUNGSSYSTEM
+       Brand-farbige Schatten (rgba(185,28,28)) statt Schwarz
+       ═══════════════════════════════════════════════════════ */
+    --shadow-0: none;
+    --shadow-1: 0 1px 3px rgba(185, 28, 28, 0.04), 0 1px 2px rgba(185, 28, 28, 0.02);
+    --shadow-2: 0 4px 12px rgba(185, 28, 28, 0.06), 0 2px 4px rgba(185, 28, 28, 0.03);
+    --shadow-3: 0 8px 24px rgba(185, 28, 28, 0.08), 0 4px 8px rgba(185, 28, 28, 0.04);
+    --shadow-4: 0 16px 48px rgba(185, 28, 28, 0.12), 0 8px 16px rgba(185, 28, 28, 0.06);
+    --shadow-lift: 0 8px 24px rgba(185, 28, 28, 0.08);
+    --shadow-cta: 0 4px 14px rgba(185, 28, 28, 0.25);
+    --shadow-bottom-bar: 0 -4px 16px rgba(185, 28, 28, 0.15);
+
+    /* ═══════════════════════════════════════════════════════
+       TEIL 2b — BORDER-RADIUS SKALA
+       Konsistente Formensprache: 4 Stufen + pill
+       ═══════════════════════════════════════════════════════ */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* ═══════════════════════════════════════════════════════
+       TEIL 3 — FARBHIERARCHIE (80/15/5)
+       Primitive → Semantische → Komponenten-Token
+       ═══════════════════════════════════════════════════════ */
+
+    /* ─── Primitive Token (rohe Farbwerte) ─── */
+    --color-red-50: #FEF2F2;
+    --color-red-100: #FEE2E2;
+    --color-red-200: #FECACA;
+    --color-red-300: #FCA5A5;
+    --color-red-400: #F87171;
+    --color-red-500: #EF4444;
+    --color-red-600: #DC2626;
+    --color-red-700: #B91C1C;
+    --color-red-800: #991B1B;
+    --color-red-900: #7F1D1D;
+
+    --color-stone-50: #FAFAF9;
+    --color-stone-100: #F5F5F4;
+    --color-stone-200: #E7E5E4;
+    --color-stone-300: #D6D3D1;
+    --color-stone-400: #A8A29E;
+    --color-stone-500: #78716C;
+    --color-stone-600: #57534E;
+    --color-stone-700: #44403C;
+    --color-stone-800: #292524;
+    --color-stone-900: #1C1917;
+
+    /* ─── Semantische Token (Markenbedeutung) ─── */
+
+    /* Oberflächen — 80% neutrale Stille */
+    --color-surface-primary: #FFFFFF;
+    --color-surface-elevated: #FAFAFA;
+    --color-surface-subtle: #F9FAFB;
+    --color-surface-divider: #F3F4F6;
+
+    /* Text — visuelle DNA (15%) */
+    --color-text-primary: #1C1917;
+    --color-text-body: #374151;
+    --color-text-muted: #6B7280;
+    --color-text-inverted: #FAFAFA;
+
+    /* Struktur */
+    --color-border: #E5E7EB;
+    --color-border-subtle: #F3F4F6;
+    --color-border-hover: #FCA5A5;
+
+    /* Brand — Akzent nur für Handlung (5%) */
+    --color-brand: #B91C1C;
+    --color-brand-hover: #991B1B;
+    --color-brand-light: #FEF2F2;
+    --color-brand-muted: #FCA5A5;
+
+    /* Funktionale Farben */
+    --color-success: #6B8E6B;
+    --color-success-bg: #F0F5F0;
+
+    /* ─── Komponenten-Token (konkrete Verwendung) ─── */
+    --color-cta-bg: var(--color-brand);
+    --color-cta-text: var(--color-text-inverted);
+    --color-cta-hover: var(--color-brand-hover);
+    --color-card-bg: var(--color-surface-elevated);
+    --color-card-border: var(--color-border);
+    --color-card-border-hover: var(--color-brand-muted);
+    --color-nav-bg: rgba(255, 255, 255, 0.85);
+    --color-nav-border: var(--color-border-subtle);
+
+    /* Legacy aliases for compatibility */
+    --background: #ffffff;
+    --foreground: #1C1917;
+
+    /* ═══════════════════════════════════════════════════════
+       TYPOGRAFIE-SKALA — Major Third (1.250)
+       9 Stufen: hero → tiny — musikalisch harmonisch
+       clamp(mobile, fluid, desktop)
+       ═══════════════════════════════════════════════════════ */
+
+    /* Hero-Display: ×3.0–3.5 der Basis — Seitendominanz */
+    --text-hero: clamp(1.75rem, 5vw + 0.5rem, 3.5rem);
+    /* H1-Seitentitel: ×2.0–2.625 — einmal pro Seite */
+    --text-h1: clamp(1.625rem, 3.5vw + 0.5rem, 2.625rem);
+    /* H2-Sektionsüberschriften: ×1.5–2.0 — Rhythmusgeber */
+    --text-h2: clamp(1.375rem, 2vw + 0.5rem, 2rem);
+    /* H3-Unterüberschriften: ×1.25–1.5 — Feingliederung */
+    --text-h3: clamp(1.1875rem, 1vw + 0.5rem, 1.5rem);
+    /* H4-Komponententitel: ×1.1–1.25 — Cards, Labels */
+    --text-h4: clamp(1.0625rem, 0.5vw + 0.75rem, 1.25rem);
+    /* Body-Fließtext: exakt 16px — unveränderliche Konstante */
+    --text-body: 1rem;
+    /* Lead-Text: ×1.125 — Einleitungsparagrafen */
+    --text-lead: clamp(1.0625rem, 0.3vw + 0.9rem, 1.125rem);
+    /* Small-Text: ×0.875 — Labels, Captions */
+    --text-small: clamp(0.8125rem, 0.2vw + 0.75rem, 0.875rem);
+    /* Tiny-Text: ×0.75 — rechtliche Hinweise, Badges */
+    --text-tiny: 0.75rem;
+
+    /* ═══════════════════════════════════════════════════════
+       ZEILENHÖHEN — Atemrhythmus
+       Große Schrift → enger | Kleine Schrift → weiter
+       ═══════════════════════════════════════════════════════ */
+    --leading-hero: 1.1;
+    /* eng, monolithisch, Autorität */
+    --leading-h: 1.2;
+    /* kommandierend, Headlines */
+    --leading-subh: 1.3;
+    /* natürliche Kaskade, H3/H4 */
+    --leading-body: 1.6;
+    /* goldener Mittelwert, Fließtext */
+    --leading-lead: 1.75;
+    /* einladend, luftig, Einleitung */
+    --leading-small: 1.5;
+    /* kompakt, aber lesbar */
+
+    /* ═══════════════════════════════════════════════════════
+       BUCHSTABENABSTAND (Tracking) — Feinwerkzeug
+       Groß → enger | Versalien → weiter | Klein → leicht offen
+       ═══════════════════════════════════════════════════════ */
+    --tracking-hero: -0.03em;
+    /* Hero: kraftvolle Kompression */
+    --tracking-tight: -0.025em;
+    /* Headlines >24px */
+    --tracking-heading: -0.02em;
+    /* H2/H3 */
+    --tracking-normal: 0em;
+    /* Body: keine Manipulation */
+    --tracking-cta: 0.02em;
+    /* CTA-Buttons: Präsenz */
+    --tracking-loose: 0.015em;
+    /* Tiny <14px: Verklumpung verhindern */
+    --tracking-caps: 0.08em;
+    /* Versalien/Labels: Luft */
+
+    /* Prose-Breite: 45–75ch idealer Lesebereich */
+    --prose-width: 65ch;
+    --prose-narrow: 55ch;
+
+    /* ═══════════════════════════════════════════════════════
+       TEIL 5 — FLUID SECTION SPACING
+       ═══════════════════════════════════════════════════════ */
+    --section-py: clamp(48px, 6vw, 96px);
+    --section-px: clamp(16px, 3vw, 32px);
+
+    /* ═══════════════════════════════════════════════════════
+       TEIL 7 — SPRING PHYSICS TRANSITION
+       ═══════════════════════════════════════════════════════ */
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 400ms;
+
+    /* ═══════════════════════════════════════════════════════
+       TEIL 8 — Z-INDEX HIERARCHY
+       Semantische Ebenen statt willkürlicher Zahlen
+       ═══════════════════════════════════════════════════════ */
+    --z-base: 1;
+    --z-elevated: 10;
+    --z-sticky: 50;
+    --z-overlay: 60;
+    --z-modal: 70;
+    --z-skiplink: 100;
+    --z-cursor: 9999;
+  }
+
+  /* Global selection highlight */
+  ::selection {
+    background: rgba(185, 28, 28, 0.15);
+    color: var(--color-text-primary);
+  }
+
+  /* Branded focus ring — WCAG 2.1 AA compliant */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+@layer utilities {
+
+  /* ═══════════════════════════════════════════════════════
+     ELEVATION UTILITIES
+     ═══════════════════════════════════════════════════════ */
+  .elevation-0 {
+    box-shadow: var(--shadow-0);
+  }
+
+  .elevation-1 {
+    box-shadow: var(--shadow-1);
+  }
+
+  .elevation-2 {
+    box-shadow: var(--shadow-2);
+  }
+
+  .elevation-3 {
+    box-shadow: var(--shadow-3);
+  }
+
+  .elevation-4 {
+    box-shadow: var(--shadow-4);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     GLASSMORPHISM UTILITY
+     ═══════════════════════════════════════════════════════ */
+  .glass {
+    background: var(--color-nav-bg);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     SPRING PHYSICS HOVER
+     Universal card hover pattern: shadow↑ + scale + lift
+     ═══════════════════════════════════════════════════════ */
+  .hover-lift {
+    transition: transform var(--duration-normal) var(--ease-spring),
+      box-shadow var(--duration-normal) var(--ease-smooth),
+      border-color var(--duration-normal) var(--ease-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-2);
+  }
+
+  .hover-lift-subtle {
+    transition: transform var(--duration-normal) var(--ease-spring),
+      box-shadow var(--duration-normal) var(--ease-smooth),
+      border-color var(--duration-normal) var(--ease-smooth);
+  }
+
+  .hover-lift-subtle:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+  }
+
+  /* CTA hover: prominent lift + shadow-4 */
+  .hover-cta {
+    transition: transform var(--duration-normal) var(--ease-spring),
+      box-shadow var(--duration-normal) var(--ease-smooth),
+      background-color var(--duration-normal) var(--ease-smooth);
+  }
+
+  .hover-cta:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-4);
+  }
+
+  .hover-cta:active {
+    transform: scale(0.98);
+    box-shadow: var(--shadow-1);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     EXISTING UTILITY ANIMATIONS
+     ═══════════════════════════════════════════════════════ */
+  .animate-pulse-glow {
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-phone-ring {
+    animation: phone-ring 2s ease-in-out infinite;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-shadow-phone {
+    text-shadow: 0 1px 2px rgba(185, 28, 28, 0.1);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     LINK UNDERLINE WAVE — scaleX von links aufgebaut
+     ═══════════════════════════════════════════════════════ */
+  .link-underline {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--duration-normal) var(--ease-spring);
+  }
+
+  .link-underline:hover::after {
+    transform: scaleX(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    .animate-pulse-glow,
+    .animate-phone-ring {
+      animation: none !important;
+    }
+
+    .hover-lift:hover,
+    .hover-lift-subtle:hover,
+    .hover-cta:hover {
+      transform: none !important;
+    }
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(185, 28, 28, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(185, 28, 28, 0);
+  }
+}
+
+@keyframes phone-ring {
+
+  0%,
+  15%,
+  30%,
+  45%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  5%,
+  25% {
+    transform: rotate(10deg);
+  }
+
+  10%,
+  20% {
+    transform: rotate(-10deg);
+  }
+}
