@@ -1,34 +1,55 @@
-import { Clock, Truck, ShieldCheck, Star } from "lucide-react";
-import StaggerReveal, { StaggerItem } from "../motion/StaggerReveal";
-import { entryAnimations } from "@/lib/animations";
+import { Clock, ShieldCheck, Key, Check, MapPin } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const trustItems = [
+    { icon: ShieldCheck, text: "100% Festpreis Garantie" },
+    { icon: Clock, text: "20-30 Min. Anfahrtszeit" },
+    { icon: Key, text: "Zerstörungsfreie Öffnung" },
+    { icon: Check, text: "Keine versteckten Kosten" },
+    { icon: MapPin, text: "Meisterbetrieb aus Wetzlar" },
+];
 
 export default function TrustStrip() {
     return (
-        <div className="bg-white elevation-1 relative z-20">
-            <div className="mx-auto max-w-7xl px-[var(--section-px)] py-4 sm:py-6 lg:py-8">
-                <StaggerReveal
-                    className="flex flex-col md:flex-row flex-wrap items-center justify-between gap-y-[var(--space-6)] md:gap-x-[var(--space-7)]"
-                    animation={entryAnimations.slideUpFade}
-                    staggerDelay={0.1}
-                >
-                    {[
-                        { icon: Clock, text: "24/7 Notdienst" },
-                        { icon: Truck, text: "15-30 Min. Anfahrt" },
-                        { icon: ShieldCheck, text: "Festpreise ab 50€" },
-                        { icon: Star, text: "4.9★ bei 127 Bewertungen", fill: true },
-                    ].map((item) => (
-                        <StaggerItem key={item.text} className="flex items-center gap-[var(--space-2)]" animation={entryAnimations.slideUpFade}>
-                            <item.icon className={`h-[24px] w-[24px] text-[var(--color-brand)] stroke-[1.5] ${item.fill ? "fill-current" : ""}`} aria-hidden="true" />
-                            <span
-                                className="font-[600] text-[var(--color-text-primary)]"
-                                style={{ fontSize: 'var(--text-small)', letterSpacing: 'var(--tracking-cta)' }}
-                            >
+        <div className="bg-[var(--color-surface-default)] border-b border-[var(--color-border)] relative z-20 py-[var(--space-3)] overflow-hidden">
+            <div className="mx-auto max-w-7xl max-xl:px-0 px-[var(--space-8)]">
+
+                {/* Desktop View: Alles nebeneinander */}
+                <div className="hidden lg:flex items-center justify-between gap-[var(--space-6)]">
+                    {trustItems.map((item, idx) => (
+                        <div key={idx} className="flex items-center gap-[var(--space-2)]">
+                            <item.icon className="h-5 w-5 text-[var(--color-brand)] shrink-0" aria-hidden="true" />
+                            <span className="font-semibold text-[var(--font-size-14)] text-[var(--color-text-primary)] whitespace-nowrap">
                                 {item.text}
                             </span>
-                        </StaggerItem>
+                        </div>
                     ))}
-                </StaggerReveal>
+                </div>
+
+                {/* Mobile View: Animated Marquee */}
+                <div className="flex lg:hidden overflow-hidden pl-[var(--space-4)] mask-image-fade">
+                    <div className="flex w-max animate-marquee items-center gap-[var(--space-8)] pr-[var(--space-8)]">
+                        {/* Duplicate for infinite loop */}
+                        {[...trustItems, ...trustItems].map((item, idx) => (
+                            <div key={idx} className="flex items-center gap-[var(--space-2)] shrink-0">
+                                <item.icon className="h-[18px] w-[18px] text-[var(--color-brand)] shrink-0" aria-hidden="true" />
+                                <span className="font-semibold text-[var(--font-size-14)] text-[var(--color-text-primary)]">
+                                    {item.text}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
             </div>
+            {/* Inline CSS für die Maske, da globals.css nicht modifiziert werden muss dafür */}
+            <style dangerouslySetInnerHTML={{
+                __html: `
+                .mask-image-fade {
+                    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+                    mask-image: linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent);
+                }
+            `}} />
         </div>
     );
 }

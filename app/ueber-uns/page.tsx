@@ -1,5 +1,6 @@
-import { ShieldCheck, MapPin, Heart, Clock, Star } from "lucide-react";
+import { ShieldCheck, MapPin, Heart, Clock, Star, Wrench, ThumbsUp, Medal, Users } from "lucide-react";
 import EmergencyCTA from "@/components/EmergencyCTA";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 export default function UeberUnsPage() {
   return (
@@ -48,15 +49,47 @@ export default function UeberUnsPage() {
             </blockquote>
           </div>
 
-          {/* Act 3: The Solution / The Values */}
-          <div className="mt-16 grid gap-8 sm:grid-cols-2">
+          {/* Statistics Bar (Prompt 5.3) */}
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-[var(--space-6)] text-center divide-x divide-[var(--color-border-subtle)] bg-[var(--color-surface-subtle)] p-[var(--space-8)] rounded-3xl ring-1 ring-[var(--color-border)]">
+            <div className="flex flex-col gap-2 relative">
+              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
+                <AnimatedCounter end={15} suffix="+" duration={1500} />
+              </div>
+              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Jahre Erfahrung</div>
+              <Medal className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
+            </div>
+            <div className="flex flex-col gap-2 relative">
+              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
+                <AnimatedCounter end={50} suffix="+" duration={2000} />
+              </div>
+              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Notöffnungen/Monat</div>
+              <Users className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
+            </div>
+            <div className="flex flex-col gap-2 relative border-t md:border-t-0 border-[var(--color-border-subtle)] pt-6 md:pt-0">
+              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
+                <AnimatedCounter end={99} suffix="%" duration={2000} />
+              </div>
+              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Zerstörungsfrei</div>
+              <ThumbsUp className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
+            </div>
+            <div className="flex flex-col gap-2 relative border-t md:border-t-0 border-[var(--color-border-subtle)] pt-6 md:pt-0">
+              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
+                <AnimatedCounter end={25} suffix=" Min" duration={1200} />
+              </div>
+              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Mittel. Anfahrtszeit</div>
+              <Clock className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
+            </div>
+          </div>
+
+          {/* Act 3: The Solution / The Values (Prompt 5.1) */}
+          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="bg-[var(--color-surface-subtle)] p-8 rounded-3xl ring-1 ring-[var(--color-border)] hover:ring-[var(--color-brand)] transition-all">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-brand)] text-white mb-6 shadow-lg shadow-[var(--color-brand)]/20">
                 <Heart className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Unsere Philosophie</h3>
+              <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Maximale Sorgfalt</h3>
               <p className="text-[var(--color-text-body)]">
-                Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. Zu 99% öffnen wir zerstörungsfrei. Darum vertrauen uns private Haushalte genauso wie lokale Unternehmen und Behörden in der Region.
+                Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. Zu 99% öffnen wir zerstörungsfrei. Darum vertrauen uns seit Jahren zahllose private Haushalte.
               </p>
             </div>
 
@@ -66,19 +99,55 @@ export default function UeberUnsPage() {
               </div>
               <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Zeit ist Empathie</h3>
               <p className="text-[var(--color-text-body)]">
-                Wir wissen: Wer vor verschlossener Tür steht (vielleicht noch im Regen oder bei Kälte), braucht keine Warteschleifen. Als echtes lokales Team garantieren wir in Wetzlar und direkter Umgebung eine Anfahrt von unter 25 Minuten.
+                Wer vor verschlossener Tür steht, oft bei Regen oder Kälte, braucht keine Warteschleifen. Wir garantieren in und um Wetzlar eine Anfahrt von unter 25 Minuten.
+              </p>
+            </div>
+
+            <div className="bg-[var(--color-surface-subtle)] p-8 rounded-3xl ring-1 ring-[var(--color-border)] hover:ring-[var(--color-brand)] transition-all">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-brand)] text-white mb-6 shadow-lg shadow-[var(--color-brand)]/20">
+                <Wrench className="h-6 w-6" />
+              </div>
+              <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Meisterliche Expertise</h3>
+              <p className="text-[var(--color-text-body)]">
+                Echtes Handwerk: Wir sind mit Spezialwerkzeug ausgestattet, mit dem selbst moderne Hochsicherheitsschlösser professionell und nachhaltig bearbeitet werden können.
               </p>
             </div>
           </div>
 
           {/* Act 4 & 5: The Proof & Invitation */}
+          <div className="mx-auto mt-16 max-w-3xl">
+
+            {/* Uwe-Sarfeld Ausbildungs-Badge (Prompt 2.5) */}
+            <div className="bg-[var(--color-stone-900)] text-white p-[var(--space-8)] rounded-[var(--radius-16)] border border-white/10 shadow-[var(--shadow-lg)] relative overflow-hidden flex flex-col md:flex-row items-center text-center md:text-left gap-[var(--space-6)]">
+              {/* Subtle Background Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-brand)]/10 rounded-full blur-[60px] pointer-events-none"></div>
+
+              <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[var(--color-stone-800)] border border-[var(--color-stone-700)] shrink-0 text-[var(--font-size-24)] font-bold text-[var(--color-stone-300)] shadow-inner">
+                US
+              </div>
+
+              <div className="flex flex-col z-10">
+                <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                  <ShieldCheck className="w-5 h-5 text-[var(--color-brand)]" />
+                  <span className="text-[var(--font-size-13)] font-bold tracking-widest uppercase text-[var(--color-brand)]">Meisterhaftes Handwerk</span>
+                </div>
+                <h2 className="text-[var(--font-size-24)] font-bold tracking-tight mb-2">
+                  Zertifiziert durch Uwe Sarfeld
+                </h2>
+                <p className="text-[var(--color-stone-300)] text-[var(--font-size-16)] leading-relaxed font-medium">
+                  Unser Chef-Techniker wurde von Uwe Sarfeld, einem der bekanntesten Schlüsseldienst-Experten Deutschlands (TV-Experte bei Kabel 1 & WDR), ausgebildet.
+                  Wir bringen nicht nur das richtige Werkzeug mit, sondern absolutes Meister-Know-how.
+                </p>
+                <a href="https://youtu.be/BeispielLinkDoku" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center md:justify-start gap-2 mt-4 text-[var(--font-size-14)] font-bold text-white hover:text-[var(--color-brand-muted)] transition-colors group w-fit">
+                  <span>Doku auf YouTube ansehen</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
           <div className="prose prose-lg prose-slate mx-auto mt-16 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-primary)] mb-6">
-              Vom Fernseh-Experten ausgebildet
-            </h2>
-            <p className="text-[var(--color-text-body)]">
-              Unser Chef-Techniker wurde von Uwe Sarfeld, einem der bekanntesten und fähigsten Schlüsseldienst-Experten Deutschlands (regelmäßig im TV zu sehen), ausgebildet. Wir bringen also nicht nur das richtige Werkzeug mit, sondern das absolute Meister-Know-how.
-            </p>
 
             <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-[var(--color-border-subtle)] pt-12">
               <div className="flex items-center gap-1 text-[var(--color-brand)] mb-2">

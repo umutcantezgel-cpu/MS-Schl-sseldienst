@@ -3,24 +3,24 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[var(--radius-md)] text-base font-bold transition-all duration-[var(--duration-normal)] var(--ease-spring) focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-[var(--color-brand)] focus-visible:ring-offset-2 active:scale-[0.98]",
+    "inline-flex items-center justify-center gap-[var(--space-2)] whitespace-nowrap rounded-[var(--radius-button)] text-[var(--typo-body-size)] font-bold transition-all duration-[var(--duration-250)] ease-out focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-[var(--color-brand)] focus-visible:ring-offset-2 active:scale-[0.98] min-h-[48px]",
     {
         variants: {
             variant: {
                 default:
-                    "bg-[var(--color-brand)] text-white shadow-[var(--shadow-cta)] hover:bg-[var(--color-brand-hover)] hover:-translate-y-0.5 hover:shadow-lg",
+                    "bg-[var(--color-cta-background)] text-[var(--color-text-inverted)] shadow-[var(--shadow-brand-glow)] hover:bg-[var(--color-cta-hover)] hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)]",
                 secondary:
-                    "border-2 border-[var(--color-brand)] bg-white text-[var(--color-brand)] elevation-1 hover:bg-[var(--color-brand)] hover:text-white hover:-translate-y-0.5 hover:elevation-2",
+                    "border-2 border-[var(--color-brand)] bg-[var(--color-surface-default)] text-[var(--color-brand)] shadow-[var(--shadow-card-default)] hover:bg-[var(--color-brand)] hover:text-[var(--color-text-inverted)] hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)]",
                 outline:
-                    "border border-[var(--color-border)] bg-transparent text-[var(--color-text-primary)] hover:bg-[var(--color-surface-subtle)] hover:text-[var(--color-text-primary)]",
-                ghost: "hover:bg-[var(--color-surface-subtle)] hover:text-[var(--color-text-primary)]",
-                link: "text-[var(--color-brand)] underline-offset-4 hover:underline",
+                    "border-2 border-[var(--color-border)] bg-transparent text-[var(--color-text-primary)] hover:border-[var(--color-brand)] hover:text-[var(--color-brand)] hover:bg-[var(--color-surface-muted)]",
+                ghost: "bg-transparent border-2 border-[rgba(255,255,255,0.2)] text-[var(--color-text-inverted)] hover:bg-[rgba(255,255,255,0.1)] hover:border-white",
+                link: "text-[var(--color-brand)] underline-offset-4 hover:underline !min-h-0",
             },
             size: {
-                default: "h-12 min-h-[48px] px-6 py-3",
-                sm: "h-12 min-h-[48px] rounded-[var(--radius-sm)] px-4 text-sm",
-                lg: "h-14 min-h-[48px] rounded-[var(--radius-lg)] px-8 text-lg",
-                icon: "h-12 min-h-[48px] w-12 min-w-[48px]",
+                default: "h-12 px-[var(--space-6)] py-[var(--space-3)]",
+                sm: "h-10 px-[var(--space-4)] text-[var(--typo-micro-size)] rounded-[var(--radius-4)]",
+                lg: "h-14 px-[var(--space-8)] text-[var(--typo-price-size)]",
+                icon: "h-12 w-12",
             },
         },
         defaultVariants: {

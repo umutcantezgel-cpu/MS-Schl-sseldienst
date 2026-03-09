@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { revealVariants } from "@/lib/motion";
+import { revealSectionVariants } from "@/lib/motion";
 import { ReactNode } from "react";
 
 export default function RevealSection({
@@ -16,11 +16,11 @@ export default function RevealSection({
     return (
         <motion.div
             variants={{
-                ...revealVariants,
+                ...revealSectionVariants,
                 visible: {
-                    ...revealVariants.visible,
+                    ...revealSectionVariants.visible,
                     transition: {
-                        ...revealVariants.visible.transition,
+                        ...revealSectionVariants.visible.transition,
                         delay
                     }
                 }

@@ -35,11 +35,11 @@ export default function Breadcrumb({ currentSlug, currentTitle }: BreadcrumbProp
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
-            <nav aria-label="Breadcrumb" className="px-4 py-3 sm:px-[var(--section-px)] bg-[var(--color-surface-subtle)] border-b border-[var(--color-border-subtle)]">
-                <ol className="mx-auto max-w-7xl flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+            <nav aria-label="Breadcrumb" className="px-[var(--space-4)] py-[var(--space-3)] sm:px-[var(--space-8)] bg-[var(--color-surface-muted)] border-b border-[var(--color-border)]">
+                <ol className="mx-auto max-w-7xl flex items-center gap-[var(--space-2)] text-[var(--typo-micro-size)] text-[var(--color-text-muted)]">
                     {crumbs.map((crumb, i) => (
-                        <li key={`${crumb.href}-${i}`} className="flex items-center gap-2">
-                            {i > 0 && <span className="text-[var(--color-stone-400)]">/</span>}
+                        <li key={`${crumb.href}-${i}`} className="flex items-center gap-[var(--space-2)]">
+                            {i > 0 && <span className="text-[var(--color-text-muted)]">/</span>}
                             {i < crumbs.length - 1 ? (
                                 <Link
                                     href={crumb.href}

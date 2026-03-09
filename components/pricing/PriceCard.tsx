@@ -3,7 +3,7 @@ import { GUARANTEES } from "./pricing.constants";
 
 interface PriceCardProps {
     title: string;
-    price: number;
+    price: number | string;
     description: string;
     features: string[];
     isPopular?: boolean;
@@ -55,31 +55,35 @@ export default function PriceCard({
             </div>
 
             <div className="mb-[var(--space-7)] flex items-baseline gap-[var(--space-1)]">
-                <span
-                    className="text-[var(--color-text-muted)] font-[400]"
-                    style={{ fontSize: 'var(--text-small)' }}
-                >
-                    ab
-                </span>
+                {typeof price === "number" && (
+                    <span
+                        className="text-[var(--color-text-muted)] font-[400]"
+                        style={{ fontSize: 'var(--text-small)' }}
+                    >
+                        ab
+                    </span>
+                )}
                 <span
                     className="font-[800] text-[var(--color-brand)]"
                     style={{
-                        fontSize: 'var(--text-h1)',
+                        fontSize: typeof price === "number" ? 'var(--text-h1)' : 'var(--text-h3)',
                         lineHeight: 'var(--leading-hero)',
                         letterSpacing: 'var(--tracking-tight)',
                     }}
                 >
                     {price}
                 </span>
-                <span
-                    className="font-[700] text-[var(--color-text-primary)]"
-                    style={{
-                        fontSize: 'var(--text-h4)',
-                        lineHeight: 'var(--leading-h)',
-                    }}
-                >
-                    €
-                </span>
+                {typeof price === "number" && (
+                    <span
+                        className="font-[700] text-[var(--color-text-primary)]"
+                        style={{
+                            fontSize: 'var(--text-h4)',
+                            lineHeight: 'var(--leading-h)',
+                        }}
+                    >
+                        €
+                    </span>
+                )}
             </div>
 
             <ul role="list" className="mb-[var(--space-7)] space-y-[var(--space-4)] flex-1">

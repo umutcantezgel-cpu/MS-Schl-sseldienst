@@ -1,4 +1,4 @@
-import { Key, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Key, MapPin, Phone, Mail, Clock, Star, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -98,6 +98,31 @@ export default function Footer() {
               <li><Link href="/datenschutz" className="hover:text-white transition-colors link-underline font-[400]">Datenschutz</Link></li>
             </ul>
           </nav>
+        </div>
+
+        {/* Footer Trust-Aggregation (Prompt 2.6) */}
+        <div className="mt-[var(--space-12)] border-t border-[var(--color-stone-800)] pt-[var(--space-8)] pb-[var(--space-4)]">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-[var(--space-6)] text-[var(--color-stone-300)] font-medium text-[var(--font-size-14)]">
+            <div className="flex items-center gap-[var(--space-3)]">
+              <div className="flex text-yellow-500">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+              </div>
+              <span>4.9 / 5 auf Google</span>
+            </div>
+            <div className="flex items-center gap-[var(--space-3)]">
+              <ShieldCheck className="w-5 h-5 text-[var(--color-brand-muted)]" />
+              <span>Ausgebildet von Uwe Sarfeld (TV-Experte)</span>
+            </div>
+            <div className="flex items-center gap-[var(--space-3)]">
+              {/* Zahlungsarten Placeholder */}
+              <div className="flex gap-2">
+                <span className="px-2 py-1 bg-white/10 rounded border border-white/20 text-[10px] uppercase font-bold tracking-wider">EC / Kredit</span>
+                <span className="px-2 py-1 bg-white/10 rounded border border-white/20 text-[10px] uppercase font-bold tracking-wider">Bar</span>
+                <span className="px-2 py-1 bg-white/10 rounded border border-white/20 text-[10px] uppercase font-bold tracking-wider">PayPal</span>
+              </div>
+              <span>Sichere Zahlung vor Ort</span>
+            </div>
+          </div>
         </div>
 
         {/* Bottom bar */}

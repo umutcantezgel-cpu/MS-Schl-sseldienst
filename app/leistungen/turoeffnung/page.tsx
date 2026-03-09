@@ -1,16 +1,20 @@
 import { DoorOpen, Check, Clock, ShieldCheck, Phone, HelpCircle } from "lucide-react";
-import EmergencyCTA from "@/components/EmergencyCTA";
+import { Badge } from "@/components/ui/badge";
+import FinalCTA from "@/components/ui/FinalCTA";
 import Link from "next/link";
 import RelatedServices from "@/components/RelatedServices";
 import Breadcrumb from "@/components/Breadcrumb";
 import ProcessSteps from "@/components/trust/ProcessSteps";
-import CertBadges from "@/components/trust/CertBadges";
+import TrustStrip from "@/components/trust/TrustStrip";
+import ReviewsSection from "@/components/reviews/ReviewsSection";
+import PriceCard from "@/components/pricing/PriceCard";
+import FAQAccordion from "@/components/ui/FAQAccordion";
 import { generateHowToSchema } from "@/lib/schema";
 import { getFAQSchema } from "@/lib/faqSchema";
 
 export default function TuroeffnungPage() {
   return (
-    <div className="bg-white text-[var(--color-text-primary)] font-sans ">
+    <div className="bg-white text-[var(--color-text-primary)] font-sans">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -30,20 +34,36 @@ export default function TuroeffnungPage() {
           ])),
         }}
       />
+
       <Breadcrumb currentSlug="/leistungen/turoeffnung" currentTitle="Türöffnung" />
-      {/* Hero Section */}
-      <section className="relative bg-[var(--color-surface-subtle)] px-[var(--section-px)] py-[var(--section-py)]">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-[var(--color-text-primary)] sm:text-5xl lg:text-6xl">
-            Schnell wieder <span className="text-[var(--color-brand)]">im Warmen.</span> Türöffnung in Wetzlar.
+
+      {/* 1. Situativer Hero */}
+      <section className="relative bg-[var(--color-stone-900)] px-[var(--section-px)] py-[var(--space-16)] lg:py-[var(--space-24)] overflow-hidden">
+        {/* Background Atmosphere */}
+        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-stone-900)] to-transparent opacity-80 z-0"></div>
+
+        <div className="relative z-10 mx-auto max-w-4xl text-center">
+          <Badge variant="hero" className="mb-[var(--space-6)] border-white/20 text-white pl-1.5 py-1.5 mx-auto">
+            <span className="relative flex h-2 w-2 mr-2 ml-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+            </span>
+            Notdienst Wetzlar jetzt im Einsatz
+          </Badge>
+          <h1 className="text-[var(--font-size-48)] font-extrabold tracking-tight text-white mb-[var(--space-6)] shadow-sm leading-tight text-balance">
+            Schnell wieder <span className="text-[var(--color-brand)]">im Warmen.</span> <br />Türöffnung in Wetzlar.
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-[var(--color-text-body)] sm:text-xl">
-            Wir bringen Sie sicher und beschädigungsfrei zurück in Ihr Zuhause. Ehrliche Festpreise ab 50 €, versteckte Kosten gibt es bei uns nicht.
+          <p className="mx-auto max-w-2xl text-[var(--font-size-20)] text-white/80 leading-relaxed">
+            Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 50 € – garantiert ohne versteckte Kosten.
           </p>
         </div>
       </section>
 
-      {/* Content Section */}
+      {/* 2. Trust-Bar (Ehemals 3) */}
+      <TrustStrip />
+
+      {/* 3. Problem-Analyse */}
       <section className="px-[var(--section-px)] py-[var(--section-py)]">
         <div className="mx-auto max-w-4xl">
           <div className="prose prose-lg prose-slate mx-auto">
@@ -93,69 +113,74 @@ export default function TuroeffnungPage() {
               </div>
             </div>
 
-            <h2 className="mt-16 text-3xl font-bold tracking-tight text-[var(--color-text-primary)]">
-              Unser Versprechen
-            </h2>
-            <ul className="mt-6 space-y-4">
-              <li className="flex items-start gap-3">
-                <Check className="mt-1 h-5 w-5 shrink-0 text-[var(--color-brand)]" />
-                <span className="text-[var(--color-text-body)]">
-                  <strong>Transparente Festpreise:</strong> Sie wissen vorher,
-                  was es kostet. Keine versteckten Gebühren.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Clock className="mt-1 h-5 w-5 shrink-0 text-[var(--color-brand)]" />
-                <span className="text-[var(--color-text-body)]">
-                  <strong>Schnelle Hilfe:</strong> In Wetzlar und direkter
-                  Umgebung sind wir meist in 15-30 Minuten bei Ihnen.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-[var(--color-brand)]" />
-                <span className="text-[var(--color-text-body)]">
-                  <strong>Fachgerechte Arbeit:</strong> Wir arbeiten mit
-                  modernstem Spezialwerkzeug und größter Sorgfalt.
-                </span>
-              </li>
-            </ul>
-
             <div className="mt-12 rounded-2xl bg-[var(--color-surface-subtle)] p-8 ring-1 ring-[var(--color-border)]">
               <h3 className="text-xl font-bold text-[var(--color-text-primary)]">
                 Was tun, wenn die Tür zu ist?
               </h3>
               <ol className="mt-4 list-decimal pl-5 space-y-2 text-[var(--color-text-body)]">
-                <li>
-                  Bewahren Sie Ruhe. Versuchen Sie nicht, die Tür gewaltsam zu
-                  öffnen.
-                </li>
-                <li>
-                  Prüfen Sie, ob ein Fenster offen steht oder ein Zweitschlüssel
-                  bei Nachbarn hinterlegt ist.
-                </li>
-                <li>
-                  Rufen Sie uns an:{" "}
-                  <a
-                    href="tel:06441123456"
-                    className="font-semibold text-[var(--color-brand)] hover:underline"
-                  >
-                    06441 / 123 456
-                  </a>
-                </li>
-                <li>
-                  Wir nennen Ihnen einen verbindlichen Festpreis und machen uns
-                  sofort auf den Weg.
-                </li>
+                <li>Bewahren Sie Ruhe. Versuchen Sie nicht, die Tür gewaltsam zu öffnen.</li>
+                <li>Prüfen Sie, ob ein Fenster offen steht oder ein Zweitschlüssel bei Nachbarn hinterlegt ist.</li>
+                <li>Rufen Sie uns an: <a href="tel:06441123456" className="font-semibold text-[var(--color-brand)] hover:underline">06441 / 123 456</a></li>
+                <li>Wir nennen Ihnen einen verbindlichen Festpreis und machen uns sofort auf den Weg.</li>
               </ol>
+            </div>
+          </div>
+
+          {/* 4. Lösung & Preis-Teaser */}
+          <div className="mt-16 pt-16 border-t border-[var(--color-border-subtle)]">
+            <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-primary)] text-center mb-8">
+              Unsere fairen Festpreise
+            </h2>
+            <div className="grid gap-8 sm:grid-cols-2 max-w-4xl mx-auto">
+              <PriceCard
+                title="Tür zugefallen"
+                price={50}
+                description="Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen."
+                features={[
+                  "Werktags 08-18 Uhr",
+                  "Zerstörungsfreie Öffnung (99%)",
+                  "Festpreis vor Ort",
+                ]}
+                isPopular={true}
+              />
+              <PriceCard
+                title="Tür abgeschlossen"
+                price={80}
+                description="Schlüssel verloren oder doppelt abgeschlossen."
+                features={[
+                  "Werktags 08-18 Uhr",
+                  "Profi-Werkzeug Einsatz",
+                  "Ersatzzylinder zubuchbar (ab 25€)",
+                ]}
+              />
             </div>
           </div>
         </div>
       </section>
 
+      {/* Ablauf & Trust (Process) */}
       <ProcessSteps />
-      <CertBadges />
+
+      {/* 5. Proof (Bewertungen) */}
+      <ReviewsSection />
+
+      {/* 6. FAQ (Spezifisch für Türöffnung) */}
+      <section className="bg-[var(--color-surface-primary)] px-[var(--section-px)] py-[var(--section-py)]">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-primary)] text-center mb-8">
+            Häufige Fragen zur Türöffnung
+          </h2>
+          <div className="space-y-4">
+            <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüsseldienst Wetzlar öffnet zugefallene Türen ab 50 Euro und abgesperrte Türen ab 80 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." />
+            <FAQAccordion question="Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?" answer="Wir sind in der Regel in 15–30 Minuten bei Ihnen vor Ort in Wetzlar und Umgebung." />
+            <FAQAccordion question="Wird die Tür bei der Öffnung beschädigt?" answer="In 99% der Fälle öffnet Schlüsseldienst Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." />
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Final CTA */}
       <RelatedServices currentServiceId="turoeffnung" />
-      <EmergencyCTA />
+      <FinalCTA />
     </div>
   );
 }
