@@ -1,17 +1,19 @@
 import { CONTENT_GRAPH } from "./contentGraph";
 import { PRICING } from "@/components/pricing/pricing.constants";
+import { allLocations } from "@/lib/data/allLocations";
 
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.schluesseldienst-wetzlar.de";
 
 export function generateLocalBusinessSchema() {
-    // Build areaServed from content graph
-    const areaNodes = CONTENT_GRAPH.filter(n => n.type === 'area');
-    const cityPlaces = areaNodes.length > 0
-        ? areaNodes.map(n => ({
-            "@type": "City" as const,
-            "name": n.title.replace('Schlüsseldienst ', '')
-        }))
-        : [{ "@type": "City" as const, "name": "Wetzlar" }];
+    // Build areaServed from all location entries
+    const cityPlaces = allLocations.map(loc => ({
+        "@type": "City" as const,
+        "name": loc.name
+    }));
+    // Ensure Wetzlar itself is included
+    if (!cityPlaces.some(c => c.name === "Wetzlar")) {
+        cityPlaces.unshift({ "@type": "City" as const, "name": "Wetzlar" });
+    }
 
     return {
         "@context": "https://schema.org",
