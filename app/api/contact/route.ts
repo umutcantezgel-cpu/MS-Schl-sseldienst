@@ -56,8 +56,10 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: "Name und Telefonnummer sind Pflichtfelder." }, { status: 400 });
         }
 
-        // Normally would send email or store in database here
-        console.log("Contact Request Received:", { name, phone, service, location });
+        // Log in development only
+        if (process.env.NODE_ENV === 'development') {
+            console.log("Contact Request Received:", { name, phone, service, location });
+        }
 
         return NextResponse.json({ success: true, message: "Wir haben Ihre Anfrage erhalten. Ein Monteur ist auf dem Weg!" }, { status: 200 });
 

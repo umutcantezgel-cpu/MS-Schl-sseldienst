@@ -1,170 +1,229 @@
-import { ShieldCheck, MapPin, Heart, Clock, Star, Wrench, ThumbsUp, Medal, Users } from "lucide-react";
-import EmergencyCTA from "@/components/EmergencyCTA";
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import { ShieldCheck, MapPin, Heart, Clock, Star, Wrench, ThumbsUp, Medal, Users } from"lucide-react";
+import EmergencyCTA from"@/components/EmergencyCTA";
+import AnimatedCounter from"@/components/ui/AnimatedCounter";
+import TrustStrip from"@/components/trust/TrustStrip";
+import Breadcrumbs from"@/components/Breadcrumbs";
+import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
+import { entryAnimations } from"@/lib/animations";
+import { generateSharedMetadata } from"@/lib/metadata";
+
+export const metadata = generateSharedMetadata({
+ title:"Über Uns — 15 Jahre Erfahrung",
+ description:"Lernen Sie den MS Schlüsseldienst Wetzlar kennen: Ihr regionaler Betrieb mit über 15 Jahren Erfahrung, transparenten Preisen und 24/7 Notdienst.",
+ path:"/ueber-uns",
+});
 
 export default function UeberUnsPage() {
-  return (
-    <div className="bg-white text-[var(--color-text-primary)] font-sans">
-      {/* Hero Section */}
-      <section className="relative bg-[var(--color-stone-900)] px-[var(--section-px)] py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>
-        <div className="relative mx-auto max-w-4xl text-center z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-sm font-medium mb-6">
-            <MapPin className="h-4 w-4 text-[var(--color-brand)]" />
-            Aus Wetzlar. Für Wetzlar.
+ const breadcrumbs = [
+  { name:"Über Uns", href:"/ueber-uns" }
+ ];
+
+ return (
+  <div className="bg-[var(--surface-secondary)] text-[var(--text-primary)] font-sans min-h-screen">
+   
+   {/* Hero Section — Premium Dark */}
+   <section className="relative pt-[180px] pb-[var(--space-64)] lg:pt-[220px] lg:pb-[var(--space-96)] bg-[var(--color-charcoal-900)] overflow-hidden">
+    {/* CSS Noise Texture */}
+    <div
+      className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
+      style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
+        backgroundSize:"200px 200px",
+      }}
+    />
+    {/* Glow */}
+    <div
+      className="absolute inset-0 z-0 pointer-events-none"
+      style={{
+        background:"radial-gradient(ellipse 50% 50% at 50% 0%, rgba(185,28,28,0.12) 0%, transparent 70%)",
+      }}
+    />
+
+    <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
+      <Breadcrumbs items={breadcrumbs} light={true} />
+      
+      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-white/[0.08] border border-white/[0.06] text-white/90 text-[14px] font-medium tracking-wide">
+            <MapPin className="w-4 h-4 text-[var(--color-red-500)]" />
+            <span>Aus Wetzlar. Für Wetzlar.</span>
           </div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6 shadow-sm">
+        </StaggerItem>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <h1 className="typo-hero-display text-white mb-[var(--space-6)]">
             Nicht einfach ein Schlüsseldienst. <br />
-            <span className="text-[var(--color-brand)]">Ihre Rettung in der Not.</span>
+            <span className="text-[var(--color-red-500)]">Ihre Rettung in der Not.</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-slate-300 sm:text-xl">
+        </StaggerItem>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <p className="mx-auto mt-6 max-w-2xl text-[18px] sm:text-[20px] text-white/80 leading-relaxed">
             Mehr als 15 Jahre Erfahrung, über 50 gerettete Situationen jeden Monat. Wir sind der Handwerksbetrieb von nebenan, dem Sie blind vertrauen können.
           </p>
-        </div>
-      </section>
-
-      {/* Story Section */}
-      <section className="px-[var(--section-px)] py-[var(--section-py)]">
-        <div className="mx-auto max-w-3xl">
-
-          {/* Act 1 & 2: The Hook & The Problem */}
-          <div className="prose prose-lg prose-slate mx-auto">
-            <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-primary)] mb-6 flex items-center gap-3">
-              <ShieldCheck className="h-8 w-8 text-[var(--color-brand)]" />
-              Warum wir den Ruf unserer Branche reparieren
-            </h2>
-            <p className="lead text-xl text-[var(--color-text-body)] font-medium">
-              Jeder kennt die Schauergeschichten aus dem Fernsehen: Wenn die Tür ins Schloss fällt, beginnt oft nicht nur der Stress, sondern auch die Angst vor der Rechnung.
-            </p>
-            <p className="text-[var(--color-text-body)]">
-              Sogenannte "Schwarze Schafe" und Abzock-Zentralen aus dem Internet nutzen die pure Notlage der Menschen gnadenlos aus. Versteckte Anfahrtskosten, zerstörte Schlösser und Rechnungen jenseits der 300-Euro-Marke sind leider keine Seltenheit.
-            </p>
-            <p className="text-[var(--color-text-body)] font-bold">
-              Genau deshalb haben wir Schlüsseldienst Wetzlar gegründet. Wir wollten beweisen: Echtes Handwerk geht immer ehrlich.
-            </p>
-
-            {/* Quote Insert */}
-            <blockquote className="my-10 border-l-4 border-[var(--color-brand)] bg-[var(--color-surface-subtle)] p-6 rounded-r-2xl italic text-[var(--color-text-primary)]">
-              "Wir möchten, dass Sie aufatmen können, sobald Sie unser Auto in Ihrer Straße sehen. Keine bösen Überraschungen, sondern nur schnelle, kompetente Hilfe von Nachbarn."
-            </blockquote>
-          </div>
-
-          {/* Statistics Bar (Prompt 5.3) */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-[var(--space-6)] text-center divide-x divide-[var(--color-border-subtle)] bg-[var(--color-surface-subtle)] p-[var(--space-8)] rounded-3xl ring-1 ring-[var(--color-border)]">
-            <div className="flex flex-col gap-2 relative">
-              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
-                <AnimatedCounter end={15} suffix="+" duration={1500} />
-              </div>
-              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Jahre Erfahrung</div>
-              <Medal className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
-            </div>
-            <div className="flex flex-col gap-2 relative">
-              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
-                <AnimatedCounter end={50} suffix="+" duration={2000} />
-              </div>
-              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Notöffnungen/Monat</div>
-              <Users className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
-            </div>
-            <div className="flex flex-col gap-2 relative border-t md:border-t-0 border-[var(--color-border-subtle)] pt-6 md:pt-0">
-              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
-                <AnimatedCounter end={99} suffix="%" duration={2000} />
-              </div>
-              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Zerstörungsfrei</div>
-              <ThumbsUp className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
-            </div>
-            <div className="flex flex-col gap-2 relative border-t md:border-t-0 border-[var(--color-border-subtle)] pt-6 md:pt-0">
-              <div className="text-4xl font-extrabold text-[var(--color-brand)]">
-                <AnimatedCounter end={25} suffix=" Min" duration={1200} />
-              </div>
-              <div className="text-sm font-bold text-[var(--color-text-body)] uppercase tracking-wider">Mittel. Anfahrtszeit</div>
-              <Clock className="absolute -top-4 -right-2 text-[var(--color-brand)]/10 w-16 h-16" />
-            </div>
-          </div>
-
-          {/* Act 3: The Solution / The Values (Prompt 5.1) */}
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-[var(--color-surface-subtle)] p-8 rounded-3xl ring-1 ring-[var(--color-border)] hover:ring-[var(--color-brand)] transition-all">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-brand)] text-white mb-6 shadow-lg shadow-[var(--color-brand)]/20">
-                <Heart className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Maximale Sorgfalt</h3>
-              <p className="text-[var(--color-text-body)]">
-                Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. Zu 99% öffnen wir zerstörungsfrei. Darum vertrauen uns seit Jahren zahllose private Haushalte.
-              </p>
-            </div>
-
-            <div className="bg-[var(--color-surface-subtle)] p-8 rounded-3xl ring-1 ring-[var(--color-border)] hover:ring-[var(--color-brand)] transition-all">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-brand)] text-white mb-6 shadow-lg shadow-[var(--color-brand)]/20">
-                <Clock className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Zeit ist Empathie</h3>
-              <p className="text-[var(--color-text-body)]">
-                Wer vor verschlossener Tür steht, oft bei Regen oder Kälte, braucht keine Warteschleifen. Wir garantieren in und um Wetzlar eine Anfahrt von unter 25 Minuten.
-              </p>
-            </div>
-
-            <div className="bg-[var(--color-surface-subtle)] p-8 rounded-3xl ring-1 ring-[var(--color-border)] hover:ring-[var(--color-brand)] transition-all">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-brand)] text-white mb-6 shadow-lg shadow-[var(--color-brand)]/20">
-                <Wrench className="h-6 w-6" />
-              </div>
-              <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">Meisterliche Expertise</h3>
-              <p className="text-[var(--color-text-body)]">
-                Echtes Handwerk: Wir sind mit Spezialwerkzeug ausgestattet, mit dem selbst moderne Hochsicherheitsschlösser professionell und nachhaltig bearbeitet werden können.
-              </p>
-            </div>
-          </div>
-
-          {/* Act 4 & 5: The Proof & Invitation */}
-          <div className="mx-auto mt-16 max-w-3xl">
-
-            {/* Uwe-Sarfeld Ausbildungs-Badge (Prompt 2.5) */}
-            <div className="bg-[var(--color-stone-900)] text-white p-[var(--space-8)] rounded-[var(--radius-16)] border border-white/10 shadow-[var(--shadow-lg)] relative overflow-hidden flex flex-col md:flex-row items-center text-center md:text-left gap-[var(--space-6)]">
-              {/* Subtle Background Glow */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-brand)]/10 rounded-full blur-[60px] pointer-events-none"></div>
-
-              <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[var(--color-stone-800)] border border-[var(--color-stone-700)] shrink-0 text-[var(--font-size-24)] font-bold text-[var(--color-stone-300)] shadow-inner">
-                US
-              </div>
-
-              <div className="flex flex-col z-10">
-                <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-                  <ShieldCheck className="w-5 h-5 text-[var(--color-brand)]" />
-                  <span className="text-[var(--font-size-13)] font-bold tracking-widest uppercase text-[var(--color-brand)]">Meisterhaftes Handwerk</span>
-                </div>
-                <h2 className="text-[var(--font-size-24)] font-bold tracking-tight mb-2">
-                  Zertifiziert durch Uwe Sarfeld
-                </h2>
-                <p className="text-[var(--color-stone-300)] text-[var(--font-size-16)] leading-relaxed font-medium">
-                  Unser Chef-Techniker wurde von Uwe Sarfeld, einem der bekanntesten Schlüsseldienst-Experten Deutschlands (TV-Experte bei Kabel 1 & WDR), ausgebildet.
-                  Wir bringen nicht nur das richtige Werkzeug mit, sondern absolutes Meister-Know-how.
-                </p>
-                <a href="https://youtu.be/BeispielLinkDoku" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center md:justify-start gap-2 mt-4 text-[var(--font-size-14)] font-bold text-white hover:text-[var(--color-brand-muted)] transition-colors group w-fit">
-                  <span>Doku auf YouTube ansehen</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="prose prose-lg prose-slate mx-auto mt-16 text-center">
-
-            <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-[var(--color-border-subtle)] pt-12">
-              <div className="flex items-center gap-1 text-[var(--color-brand)] mb-2">
-                {[...Array(5)].map((_, i) => <Star key={i} className="h-6 w-6 fill-current" />)}
-              </div>
-              <p className="text-[var(--color-text-primary)] font-bold text-xl">
-                Lassen Sie sich überzeugen, wenn Sie uns am meisten brauchen.
-              </p>
-              <p className="text-[var(--color-text-muted)] text-base">
-                Speichern Sie unsere Nummer am besten gleich in Ihrem Handy ein.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <EmergencyCTA />
+        </StaggerItem>
+      </StaggerReveal>
     </div>
-  );
+
+    {/* Bottom Fade */}
+    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-secondary)] pointer-events-none z-[1]" />
+   </section>
+
+   {/* Story Section */}
+   <section className="px-[var(--section-px)] py-[var(--section-py)] bg-[var(--surface-primary)]">
+    <StaggerReveal className="mx-auto max-w-3xl" animation={entryAnimations.slideUpFade}>
+     {/* Act 1 & 2: The Hook & The Problem */}
+     <div className="prose prose-lg prose-slate mx-auto">
+      <h2 className="typo-h2 text-[var(--text-primary)] flex flex-col sm:flex-row items-start sm:items-center gap-4">
+       <div className="w-14 h-14 rounded-2xl bg-[var(--color-red-500)]/10 flex flex-shrink-0 items-center justify-center">
+        <ShieldCheck className="h-7 w-7 text-[var(--color-red-500)]" />
+       </div>
+       Warum wir den Ruf unserer Branche reparieren
+      </h2>
+      <p className="lead text-[20px] text-[var(--text-secondary)] font-medium leading-relaxed">
+       Jeder kennt die Schauergeschichten aus dem Fernsehen: Wenn die Tür ins Schloss fällt, beginnt oft nicht nur der Stress, sondern auch die Angst vor der Rechnung.
+      </p>
+      <p className="text-[var(--text-secondary)] leading-relaxed mt-4">
+       Sogenannte &quot;Schwarze Schafe&quot; und Abzock-Zentralen aus dem Internet nutzen die pure Notlage der Menschen gnadenlos aus. Versteckte Anfahrtskosten, zerstörte Schlösser und Rechnungen jenseits der 300-Euro-Marke sind leider keine Seltenheit.
+      </p>
+      <p className="text-[var(--text-secondary)] font-bold leading-relaxed mt-4">
+       Genau deshalb haben wir Schlüsseldienst Wetzlar gegründet. Wir wollten beweisen: Echtes Handwerk geht immer ehrlich.
+      </p>
+
+      {/* Quote Insert */}
+      <blockquote className="my-10 border-l-4 border-[var(--color-red-500)] bg-[var(--surface-secondary)] p-6 md:p-8 rounded-r-2xl italic text-[var(--text-primary)] shadow-[var(--elevation-1)]">
+       &quot;Wir möchten, dass Sie aufatmen können, sobald Sie unser Auto in Ihrer Straße sehen. Keine bösen Überraschungen, sondern nur schnelle, kompetente Hilfe von Nachbarn.&quot;
+      </blockquote>
+     </div>
+
+     {/* Statistics Bar (Prompt 5.3) */}
+     <StaggerItem animation={entryAnimations.slideUpFade}>
+       <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-[var(--space-6)] text-center bg-white border border-[var(--border-subtle)] p-[var(--space-8)] rounded-[var(--radius-24)] shadow-[var(--elevation-2)]">
+        <div className="flex flex-col gap-2 relative">
+         <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
+          <AnimatedCounter end={15} suffix="+" duration={1500} />
+         </div>
+         <div className="text-[12px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Jahre Erfahrung</div>
+         <Medal className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
+        </div>
+        <div className="flex flex-col gap-2 relative">
+         <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
+          <AnimatedCounter end={50} suffix="+" duration={2000} />
+         </div>
+         <div className="text-[12px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Notöffnungen/Monat</div>
+         <Users className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
+        </div>
+        <div className="flex flex-col gap-2 relative pt-6 md:pt-0">
+         <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
+          <AnimatedCounter end={99} suffix="%" duration={2000} />
+         </div>
+         <div className="text-[12px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Zerstörungsfrei</div>
+         <ThumbsUp className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
+        </div>
+        <div className="flex flex-col gap-2 relative pt-6 md:pt-0">
+         <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
+          <AnimatedCounter end={25} suffix=" Min" duration={1200} />
+         </div>
+         <div className="text-[12px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Mittel. Anfahrtszeit</div>
+         <Clock className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
+        </div>
+       </div>
+     </StaggerItem>
+
+     {/* Act 3: The Solution / The Values (Prompt 5.1) */}
+     <StaggerItem animation={entryAnimations.slideUpFade}>
+       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="bg-[var(--surface-secondary)] p-8 rounded-[var(--radius-24)] shadow-sm hover:shadow-[var(--elevation-3)] hover:ring-1 hover:ring-[var(--color-red-500)] transition-all">
+         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-red-500)] text-white mb-6 shadow-[var(--shadow-cta)]">
+          <Heart className="h-6 w-6" />
+         </div>
+         <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Maximale Sorgfalt</h3>
+         <p className="text-[var(--text-secondary)] text-[15px] leading-relaxed">
+          Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. Zu 99% öffnen wir zerstörungsfrei. Darum vertrauen uns seit Jahren zahllose private Haushalte.
+         </p>
+        </div>
+
+        <div className="bg-[var(--surface-secondary)] p-8 rounded-[var(--radius-24)] shadow-sm hover:shadow-[var(--elevation-3)] hover:ring-1 hover:ring-[var(--color-red-500)] transition-all">
+         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-red-500)] text-white mb-6 shadow-[var(--shadow-cta)]">
+          <Clock className="h-6 w-6" />
+         </div>
+         <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Zeit ist Empathie</h3>
+         <p className="text-[var(--text-secondary)] text-[15px] leading-relaxed">
+          Wer vor verschlossener Tür steht, oft bei Regen oder Kälte, braucht keine Warteschleifen. Wir garantieren in und um Wetzlar eine Anfahrt von unter 25 Minuten.
+         </p>
+        </div>
+
+        <div className="bg-[var(--surface-secondary)] p-8 rounded-[var(--radius-24)] shadow-sm hover:shadow-[var(--elevation-3)] hover:ring-1 hover:ring-[var(--color-red-500)] transition-all sm:col-span-2 lg:col-span-1 border border-[var(--border-subtle)]">
+         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-red-500)] text-white mb-6 shadow-[var(--shadow-cta)]">
+          <Wrench className="h-6 w-6" />
+         </div>
+         <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Meisterliche Expertise</h3>
+         <p className="text-[var(--text-secondary)] text-[15px] leading-relaxed">
+          Echtes Handwerk: Wir sind mit Spezialwerkzeug ausgestattet, mit dem selbst moderne Hochsicherheitsschlösser professionell und nachhaltig bearbeitet werden können.
+         </p>
+        </div>
+       </div>
+     </StaggerItem>
+
+     {/* Act 4 & 5: The Proof & Invitation */}
+     <StaggerItem animation={entryAnimations.scaleFade}>
+       <div className="mx-auto mt-16 max-w-3xl">
+        {/* Uwe-Sarfeld Ausbildungs-Badge (Prompt 2.5) */}
+        {/* Uwe-Sarfeld Ausbildungs-Badge (Premium) */}
+        <div className="bg-white p-[var(--space-8)] md:p-[var(--space-10)] rounded-[var(--radius-16)] border-l-4 border-l-[var(--color-red-500)] border border-[var(--color-charcoal-100)] shadow-[var(--elevation-2)] relative overflow-hidden">
+         {/* Decorative Quote Mark */}
+         <span className="absolute top-4 right-6 text-[120px] font-serif text-[var(--color-red-500)]/[0.06] leading-none pointer-events-none select-none" aria-hidden="true">“</span>
+         
+         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-6">
+          <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[var(--color-charcoal-900)] shrink-0 text-white text-[20px] md:text-[24px] font-bold shadow-lg">
+           US
+          </div>
+          <div className="flex flex-col text-center md:text-left">
+           <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+            <ShieldCheck className="w-5 h-5 text-[var(--color-red-500)]" />
+            <span className="text-[12px] font-bold tracking-widest uppercase text-[var(--color-red-500)]">Zertifizierte Ausbildung</span>
+           </div>
+           <h3 className="text-[22px] font-bold text-[var(--text-primary)] mb-3">
+            Ausgebildet von Uwe Sarfeld
+           </h3>
+           <p className="text-[var(--text-secondary)] text-[16px] leading-relaxed">
+            Unser Chef-Techniker wurde von Uwe Sarfeld, einem der bekanntesten Schlüsseldienst-Experten Deutschlands (TV-Experte bei Kabel 1 & WDR), ausgebildet.
+            Wir bringen nicht nur das richtige Werkzeug mit, sondern absolutes Meister-Know-how.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       {/* MS Persönlichkeits-Element */}
+       <div className="prose prose-lg prose-slate mx-auto mt-16">
+        <div className="flex flex-col items-center text-center gap-6">
+         {/* Initialen-Kreis */}
+         <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[var(--color-red-500)] to-[var(--color-red-700)] flex items-center justify-center text-white text-[32px] font-black shadow-[0_8px_32px_rgba(185,28,28,0.3)]">
+          MS
+         </div>
+         <div className="flex flex-col items-center gap-1">
+          <h3 className="text-[22px] font-bold text-[var(--text-primary)]">MS Schlüsseldienst Wetzlar</h3>
+          <span className="text-[14px] font-semibold text-[var(--text-tertiary)] uppercase tracking-wider">Inhaber & Geschäftsführer</span>
+         </div>
+         <div className="flex items-center gap-1 text-[var(--color-red-500)]">
+          {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
+         </div>
+         <p className="text-[var(--text-secondary)] text-[17px] leading-relaxed max-w-lg">
+          Lassen Sie sich überzeugen, wenn Sie uns am meisten brauchen. Speichern Sie unsere Nummer am besten gleich in Ihrem Handy ein.
+         </p>
+         <a
+          href="tel:+4964418056544"
+          className="inline-flex items-center justify-center gap-3 h-[56px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-[17px] font-bold rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-1 transition-all duration-300"
+         >
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          06441 8056544 anrufen
+         </a>
+        </div>
+       </div>
+     </StaggerItem>
+    </StaggerReveal>
+   </section>
+
+   <EmergencyCTA />
+  </div>
+ );
 }

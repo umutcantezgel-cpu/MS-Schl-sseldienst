@@ -6,6 +6,7 @@ interface GenerateMetadataProps {
     description: string;
     path: string;
     noindex?: boolean;
+    exactTitle?: boolean;
 }
 
 export const generateSharedMetadata = ({
@@ -13,11 +14,14 @@ export const generateSharedMetadata = ({
     description,
     path,
     noindex = false,
+    exactTitle = false,
 }: GenerateMetadataProps): Metadata => {
-    const url = `${siteUrl}${path}`;
+    // Enforce trailing slash for canonical URLs
+    const urlPath = path === '/' ? '/' : (path.endsWith('/') ? path : `${path}/`);
+    const url = `${siteUrl}${urlPath}`;
 
     return {
-        title: `${title} | Schlüsseldienst Wetzlar`,
+        title: exactTitle ? title : `${title} | MS Schlüsseldienst Wetzlar`,
         description,
         metadataBase: new URL(siteUrl),
         alternates: {

@@ -1,129 +1,172 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import EmergencyCTA from "@/components/EmergencyCTA";
-
-import { buttonVariants } from "@/components/ui/button";
-import ContactForm from "@/components/contact/ContactForm";
-import { cn } from "@/lib/utils";
-import { generateSharedMetadata } from "@/lib/metadata";
+import { Phone, Mail, MapPin, Clock, MessageSquare } from"lucide-react";
+import EmergencyCTA from"@/components/EmergencyCTA";
+import ContactForm from"@/components/contact/ContactForm";
+import Breadcrumbs from"@/components/Breadcrumbs";
+import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
+import { entryAnimations } from"@/lib/animations";
+import { generateSharedMetadata } from"@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
-  title: "Kontakt — 24/7 Notruf & Kontaktformular",
-  description: "Kontaktieren Sie Schlüsseldienst Wetzlar: 24/7 Notruf unter 06441 123 456 oder per Kontaktformular. Schnelle Hilfe bei Notfällen, faire Beratung für Sicherheitstechnik.",
-  path: "/kontakt",
+ title:"Kontakt — 24/7 Notdienst Zentrale",
+ description:"Erreichen Sie den MS Schlüsseldienst Wetzlar rund um die Uhr. Kontaktformular, Telefonnummern und direkte Hilfe bei Notfällen.",
+ path:"/kontakt",
 });
 
 export default function KontaktPage() {
-  return (
-    <>
-      {/* Hero Section */}
-      <section aria-label="Kontaktübersicht" className="relative bg-[var(--color-surface-subtle)] px-[var(--section-px)] py-[var(--section-py)]">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-[var(--color-text-primary)] sm:text-5xl lg:text-6xl">
-            <span className="text-[var(--color-brand)]">Kontakt</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-[var(--color-text-body)] sm:text-xl">
-            Wir sind für Sie da. Rufen Sie uns im Notfall direkt an oder
-            schreiben Sie uns eine Nachricht für allgemeine Anfragen.
-          </p>
-        </div>
-      </section>
+ const breadcrumbs = [
+  { name:"Kontakt", href:"/kontakt" }
+ ];
 
-      {/* Content Section */}
-      <section aria-label="Kontaktmöglichkeiten" className="px-[var(--section-px)] py-[var(--section-py)]">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2">
-            {/* Contact Info */}
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-[var(--color-text-primary)]">
-                So erreichen Sie uns
-              </h2>
-              <p className="mt-4 text-lg text-[var(--color-text-body)]">
-                Im Notfall (zugefallene Tür) empfehlen wir immer den
-                telefonischen Kontakt. Wir sind 24/7 für Sie erreichbar.
-              </p>
+ return (
+  <div className="bg-[var(--surface-secondary)] text-[var(--text-primary)] font-sans min-h-screen">
+   
+   {/* Hero Section — Premium Dark */}
+   <section className="relative pt-[180px] pb-[var(--space-64)] lg:pt-[220px] lg:pb-[var(--space-96)] bg-[var(--color-charcoal-900)] overflow-hidden dark-focus">
+    {/* CSS Noise Texture */}
+    <div
+      className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
+      style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
+        backgroundSize:"200px 200px",
+      }}
+    />
+    {/* Glow */}
+    <div
+      className="absolute inset-0 z-0 pointer-events-none"
+      style={{
+        background:"radial-gradient(ellipse 50% 50% at 50% 0%, rgba(185,28,28,0.12) 0%, transparent 70%)",
+      }}
+    />
 
-              <address className="not-italic mt-12 space-y-8">
-                <div className="flex gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-brand-light)] text-[var(--color-brand)]">
-                    <Phone className="h-5 w-5" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[var(--color-text-primary)]">
-                      Notruf (24/7)
-                    </h3>
-                    <p className="mt-2 text-[var(--color-text-body)]">
-                      <a
-                        href="tel:06441123456"
-                        className="font-semibold text-[var(--color-brand)] hover:underline"
-                      >
-                        06441 / 123 456
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-surface-divider)] text-[var(--color-text-body)]">
-                    <Mail className="h-5 w-5" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[var(--color-text-primary)]">E-Mail</h3>
-                    <p className="mt-2 text-[var(--color-text-body)]">
-                      <a
-                        href="mailto:info@schluesseldienst-wetzlar.de"
-                        className="hover:underline"
-                      >
-                        info@schluesseldienst-wetzlar.de
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-surface-divider)] text-[var(--color-text-body)]">
-                    <MapPin className="h-5 w-5" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[var(--color-text-primary)]">
-                      Standort
-                    </h3>
-                    <p className="mt-2 text-[var(--color-text-body)]">
-                      Schlüsseldienst Wetzlar
-                      <br />
-                      Musterstraße 123
-                      <br />
-                      35578 Wetzlar
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-surface-divider)] text-[var(--color-text-body)]">
-                    <Clock className="h-5 w-5" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-[var(--color-text-primary)]">
-                      Servicezeiten
-                    </h3>
-                    <p className="mt-2 text-[var(--color-text-body)]">
-                      Notdienst: 24 Stunden, 7 Tage die Woche
-                      <br />
-                      Bürozeiten: Mo-Fr, 08:00 - 18:00 Uhr
-                    </p>
-                  </div>
-                </div>
-              </address>
-            </div>
-
-            {/* Contact Form */}
-            <ContactForm />
+    <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
+      <Breadcrumbs items={breadcrumbs} light={true} />
+      
+      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-white/[0.08] border border-white/[0.06] text-white/90 text-[14px] font-medium tracking-wide">
+            <MessageSquare className="w-4 h-4 text-[var(--color-red-500)]" />
+            <span>Rund um die Uhr erreichbar</span>
           </div>
-        </div>
-      </section>
+        </StaggerItem>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <h1 className="typo-hero-display text-white mb-[var(--space-6)]">
+            Wir sind <span className="text-[var(--color-red-500)]">für Sie da.</span>
+          </h1>
+        </StaggerItem>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <p className="mx-auto mt-6 max-w-2xl text-[18px] sm:text-[20px] text-white/80 leading-relaxed">
+            Rufen Sie uns im Notfall direkt an oder schreiben Sie uns eine Nachricht für allgemeine Anfragen und Termine.
+          </p>
+        </StaggerItem>
+      </StaggerReveal>
+    </div>
 
-      <aside aria-label="Notfall-Kontakt">
-        <EmergencyCTA />
-      </aside>
-    </>
-  );
+    {/* Bottom Fade */}
+    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-secondary)] pointer-events-none z-[1]" />
+   </section>
+
+   {/* Content Section */}
+   <section aria-label="Kontaktmöglichkeiten" className="px-[var(--section-px)] -mt-16 lg:-mt-24 pb-[var(--section-py)] relative z-20">
+    <div className="mx-auto max-w-7xl">
+     <StaggerReveal className="grid gap-8 lg:grid-cols-[7fr_5fr] items-start" animation={entryAnimations.slideUpFade}>
+      
+      {/* LEFT: Dominant Call Path */}
+      <StaggerItem animation={entryAnimations.slideUpFade}>
+       <div className="bg-white p-8 sm:p-10 rounded-[var(--radius-24)] shadow-[var(--elevation-2)] border border-[var(--border-subtle)] h-full flex flex-col">
+        <h2 className="typo-h2 text-[var(--text-primary)]">
+         Der schnellste Weg zu uns
+        </h2>
+        <p className="mt-4 text-[16px] text-[var(--text-secondary)] leading-relaxed">
+         Bei Notfällen — Tür zugefallen, Schlüssel abgebrochen, ausgesperrt — rufen Sie uns direkt an. Wir nennen Ihnen den Festpreis sofort am Telefon.
+        </p>
+
+        {/* Availability indicator */}
+        <div className="mt-8 flex items-center gap-3 px-4 py-3 bg-green-50 border border-green-200 rounded-xl w-fit">
+         <span className="relative flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
+         </span>
+         <span className="text-[14px] font-semibold text-green-800">Jetzt erreichbar — 24/7 Notdienst</span>
+        </div>
+
+        {/* Giant Phone CTA */}
+        <a
+         href="tel:+4964418056544"
+         className="group mt-6 flex items-center gap-5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)]"
+        >
+         <div className="w-16 h-16 rounded-xl bg-white/20 flex items-center justify-center shrink-0 group-hover:bg-white/30 transition-colors">
+          <Phone className="w-8 h-8" />
+         </div>
+         <div className="flex flex-col">
+          <span className="font-extrabold text-[32px] sm:text-[36px] tabular-nums tracking-tight">06441 8056544</span>
+          <span className="text-white/80 text-[15px] font-medium">Kostenlose Beratung — Festpreis vor Anfahrt</span>
+         </div>
+        </a>
+
+        {/* Contact Details */}
+        <div className="mt-8 grid sm:grid-cols-2 gap-4">
+         <div className="flex gap-4 p-4 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-subtle)]">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
+           <Mail className="h-5 w-5" aria-hidden="true" />
+          </div>
+          <div>
+           <h3 className="text-[14px] font-bold text-[var(--text-primary)]">E-Mail</h3>
+           <a href="mailto:info@sd-wetzlar.de" className="text-[14px] text-[var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
+            info@sd-wetzlar.de
+           </a>
+          </div>
+         </div>
+         <div className="flex gap-4 p-4 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-subtle)]">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
+           <MapPin className="h-5 w-5" aria-hidden="true" />
+          </div>
+          <div>
+           <h3 className="text-[14px] font-bold text-[var(--text-primary)]">Standort</h3>
+           <p className="text-[14px] text-[var(--text-secondary)]">35576 Wetzlar</p>
+          </div>
+         </div>
+         <div className="flex gap-4 p-4 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-subtle)] sm:col-span-2">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
+           <Clock className="h-5 w-5" aria-hidden="true" />
+          </div>
+          <div>
+           <h3 className="text-[14px] font-bold text-[var(--text-primary)]">Servicezeiten</h3>
+           <p className="text-[14px] text-[var(--text-secondary)]">
+            <span className="font-semibold text-[var(--text-primary)]">Notdienst:</span> 24/7, 365 Tage im Jahr &nbsp;|&nbsp;
+            <span className="font-semibold text-[var(--text-primary)]">Büro:</span> Mo-Fr, 08:00 - 18:00 Uhr
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </StaggerItem>
+
+      {/* RIGHT: Contact Form */}
+      <StaggerItem animation={entryAnimations.slideUpFade}>
+       <div className="bg-white p-8 sm:p-10 rounded-[var(--radius-24)] shadow-[var(--elevation-2)] border border-[var(--border-subtle)] h-full">
+         <h2 className="typo-h2 text-[var(--text-primary)]">
+          Oder schreiben Sie uns
+         </h2>
+         <p className="text-[14px] text-[var(--text-secondary)] mb-8">Für allgemeine Anfragen, Terminwünsche und Rückrufe.</p>
+         <ContactForm />
+         {/* Trust line */}
+         <div className="mt-6 flex items-center justify-center gap-2 text-[13px] text-[var(--text-tertiary)]">
+          <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+           <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+           <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+          </svg>
+          <span>Ihre Anfrage wird vertraulich behandelt — Antwort innerhalb von 30 Minuten</span>
+         </div>
+       </div>
+      </StaggerItem>
+
+     </StaggerReveal>
+    </div>
+   </section>
+
+   <aside aria-label="Notfall-Kontakt">
+    <EmergencyCTA />
+   </aside>
+  </div>
+ );
 }

@@ -1,26 +1,15 @@
+import { springStandard, springEnergetic, springGentle } from "./motion.config";
+
+/**
+ * MOTION DNA — Single Source of Truth
+ * Alle Animationen referenzieren die Profile aus motion.config.ts.
+ * Keine Duplikate. Keine abweichenden Werte.
+ */
 export const MOTION_DNA = {
     springs: {
-        // Standard-Feder: Für allgemeine Übergänge. Mittlere Steifheit, hohe Dämpfung. Ruhig und kontrolliert.
-        standard: {
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-            restDelta: 0.001
-        },
-        // Aufmerksamkeits-Feder: Für CTAs und wichtige Elemente. Höhere Steifheit, weniger Dämpfung. Energisch.
-        attention: {
-            type: "spring",
-            stiffness: 400,
-            damping: 20,
-            restDelta: 0.001
-        },
-        // Inhalts-Feder: Für große Sektionen. Niedrige Steifheit, sehr hohe Dämpfung. Vertrauensvoll, kein Nachschwingen.
-        content: {
-            type: "spring",
-            stiffness: 200,
-            damping: 40,
-            restDelta: 0.001
-        }
+        standard: springStandard,
+        attention: springEnergetic,
+        content: springGentle,
     },
     durations: {
         fast: 0.2,    // 200ms
@@ -47,7 +36,7 @@ export const staggerGridContainer = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.08, // 80ms per card
+            staggerChildren: 0.1, // 100ms per card (up from 80ms)
             delayChildren: 0.1,
         },
     },
@@ -71,7 +60,7 @@ export const featureCardStagger = {
         opacity: 1,
         x: 0,
         transition: {
-            delay: 0.4 + (customIndex * 0.12), // 400ms, 520ms, 640ms
+            delay: 0.4 + (customIndex * 0.12),
             duration: 0.5,
             ...MOTION_DNA.springs.standard
         }

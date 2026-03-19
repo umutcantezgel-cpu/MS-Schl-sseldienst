@@ -1,7 +1,7 @@
 import { CONTENT_GRAPH } from "./contentGraph";
 import { PRICING } from "@/components/pricing/pricing.constants";
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://schluesseldienst-wetzlar-24.de";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.schluesseldienst-wetzlar.de";
 
 export function generateLocalBusinessSchema() {
     // Build areaServed from content graph
@@ -16,8 +16,8 @@ export function generateLocalBusinessSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "Locksmith",
-        "name": "Schlüsseldienst Wetzlar",
-        "description": "Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 50 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 127 Google-Bewertungen mit 4.9 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
+        "name": "MS Schlüsseldienst Wetzlar",
+        "description": "MS Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 127 Google-Bewertungen mit 4.9 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
         "image": `${siteUrl}/hero-bg.jpg`,
         "logo": {
             "@type": "ImageObject",
@@ -27,20 +27,20 @@ export function generateLocalBusinessSchema() {
         },
         "@id": `${siteUrl}/#localbusiness`,
         "url": siteUrl,
-        "telephone": "+49-176-12345678",
-        "email": "info@schluesseldienst-wetzlar.de",
+        "telephone": ["+4964418056544", "+491782471037"],
+        "email": "info@sd-wetzlar.de",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Wetzlarer Str. 1",
             "addressLocality": "Wetzlar",
             "addressRegion": "Hessen",
-            "postalCode": "35578",
+            "postalCode": "35576",
             "addressCountry": "DE"
         },
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": 50.5606,
-            "longitude": 8.5048
+            "longitude": 8.5049
         },
         "areaServed": [
             {
@@ -48,7 +48,7 @@ export function generateLocalBusinessSchema() {
                 "geoMidpoint": {
                     "@type": "GeoCoordinates",
                     "latitude": 50.5606,
-                    "longitude": 8.5048
+                    "longitude": 8.5049
                 },
                 "geoRadius": "50000"
             },
@@ -66,17 +66,15 @@ export function generateLocalBusinessSchema() {
                 "description": "24/7 Notdienst — auch an Feiertagen und nachts"
             }
         ],
-        "priceRange": "€€",
+        "priceRange": "ab 99€",
         "paymentAccepted": ["Cash", "Credit Card", "EC-Karte"],
         "currenciesAccepted": "EUR",
         "slogan": "Tür zu? Wir helfen sofort.",
         "foundingDate": "2010",
         "knowsLanguage": ["de", "en", "tr"],
         "sameAs": [
-            // Add directory URLs as they are created:
-            // "https://www.google.com/maps/place/...",
-            // "https://www.yelp.de/biz/...",
-            // "https://www.gelbeseiten.de/...",
+            "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar",
+            "https://www.gelbeseiten.de/branchenbuch/wetzlar/schluesseldienst-wetzlar"
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -202,7 +200,7 @@ export function generateHowToSchema(title: string, description: string) {
                 "@type": "HowToStep",
                 "position": 1,
                 "name": "Anruf",
-                "text": "Rufen Sie den Schlüsseldienst Wetzlar an unter +49-176-12345678. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
+                "text": "Rufen Sie den MS Schlüsseldienst Wetzlar an unter 06441-8056544 oder 0178-2471037. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
             },
             {
                 "@type": "HowToStep",

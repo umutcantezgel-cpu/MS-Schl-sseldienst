@@ -1,9 +1,23 @@
 "use client";
 
+import { motion, useReducedMotion } from"framer-motion";
+import { entryAnimations } from"@/lib/animations";
+
 export default function Template({ children }: { children: React.ReactNode }) {
-    return (
-        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
-            {children}
-        </div>
-    );
+  const prefersReducedMotion = useReducedMotion();
+
+  if (prefersReducedMotion) {
+    return <>{children}</>;
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+      suppressHydrationWarning
+    >
+      {children}
+    </motion.div>
+  );
 }

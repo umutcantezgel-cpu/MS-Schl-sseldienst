@@ -143,7 +143,7 @@ export const attentionAnimations: Record<string, Variants> = {
     },
     // 8. Rahmen-Blinken
     borderFlash: {
-        animate: { borderColor: ["transparent", "var(--color-brand)", "transparent"], transition: { repeat: Infinity, duration: 1.5 } }
+        animate: { borderColor: ["transparent", "var(--color-red-500)", "transparent"], transition: { repeat: Infinity, duration: 1.5 } }
     },
     // 9. Schatten-Pulse
     shadowPulse: {
@@ -215,7 +215,7 @@ export const feedbackAnimations: Record<string, Variants> = {
         animate: { scale: 0.95, transition: { duration: 0.1 } } // Squash effect
     },
     validationGlow: {
-        animate: { boxShadow: "0 0 0 2px var(--color-brand)" }
+        animate: { boxShadow: "0 0 0 2px var(--color-red-500)" }
     },
     sendFly: {
         animate: { x: 100, y: -100, opacity: 0, scale: 0.5, transition: { duration: 0.5, ease: "easeOut" } }

@@ -11,7 +11,7 @@ import { Transition } from "framer-motion";
 // Charakter: Ruhig, kontrolliert, souverän ohne Hektik.
 export const springStandard: Transition = {
     type: "spring",
-    stiffness: 180,
+    stiffness: 170,
     damping: 22,
     mass: 1.0,
 };
@@ -21,9 +21,9 @@ export const springStandard: Transition = {
 // Charakter: Schnappend, lebendig, leichtes Überschwingen, bestimmt.
 export const springEnergetic: Transition = {
     type: "spring",
-    stiffness: 350,
+    stiffness: 300,
     damping: 15,
-    mass: 0.6,
+    mass: 0.7,
 };
 
 // 3. SANFTES PROFIL
@@ -32,6 +32,6 @@ export const springEnergetic: Transition = {
 export const springGentle: Transition = {
     type: "spring",
     stiffness: 90,
-    damping: 28,
+    damping: 27,
     mass: 1.1,
 };

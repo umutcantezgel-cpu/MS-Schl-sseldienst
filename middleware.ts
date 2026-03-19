@@ -40,8 +40,6 @@ export function middleware(request: NextRequest) {
     if (isAICrawler(userAgent)) {
         response.headers.set('X-Robots-Tag', 'all');
         response.headers.set('X-AI-Crawler', 'welcome');
-        // Log AI crawler access
-        console.log(`[AI-CRAWLER] ${userAgent.substring(0, 80)} → ${request.nextUrl.pathname}`);
     }
 
     return response;

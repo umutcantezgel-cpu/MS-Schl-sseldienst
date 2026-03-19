@@ -1,138 +1,137 @@
-import { Key, MapPin, Phone, Mail, Clock, Star, ShieldCheck } from "lucide-react";
-import Link from "next/link";
+import Link from"next/link";
+import { Key, Phone, Mail, MapPin, Clock, Star, ShieldCheck } from"lucide-react";
+
+interface MenuItem {
+ title: string;
+ links: {
+  text: string;
+  url: string;
+ }[];
+}
+
+const menuItems: MenuItem[] = [
+ {
+  title:"Leistungen",
+  links: [
+   { text:"Türöffnung", url:"/leistungen/turoeffnung" },
+   { text:"Schloss austauschen", url:"/leistungen/schloss-austauschen" },
+   { text:"Einbruchschutz", url:"/leistungen/einbruchschutz" },
+   { text:"Schließanlagen", url:"/leistungen/schliessanlagen" },
+   { text:"Tresoröffnung", url:"/leistungen/tresoroeffnung" },
+   { text:"Preise", url:"/preise" },
+  ],
+ },
+ {
+  title:"Einsatzgebiete",
+  links: [
+   { text:"Schlüsseldienst Gießen", url:"/schluesseldienst-giessen" },
+   { text:"Schlüsseldienst Wetzlar", url:"/schluesseldienst-wetzlar-niedergirmes" },
+   { text:"Schlüsseldienst Aßlar", url:"/schluesseldienst-asslar" },
+   { text:"Schlüsseldienst Herborn", url:"/schluesseldienst-herborn" },
+   { text:"Schlüsseldienst Dillenburg", url:"/schluesseldienst-dillenburg" },
+   { text:"Alle 20 Gebiete →", url:"/servicegebiet" },
+  ],
+ },
+ {
+  title:"Kontakt",
+  links: [
+   { text:"06441 8056544", url:"tel:+4964418056544" },
+   { text:"info@sd-wetzlar.de", url:"mailto:info@sd-wetzlar.de" },
+   { text:"Kontaktformular", url:"/kontakt" },
+   { text:"FAQ", url:"/faq" },
+  ],
+ },
+ {
+  title:"Rechtliches",
+  links: [
+   { text:"Impressum", url:"/impressum" },
+   { text:"Datenschutz", url:"/datenschutz" },
+   { text:"Über uns", url:"/ueber-uns" },
+  ],
+ },
+];
 
 export default function Footer() {
-  return (
-    <footer role="contentinfo" className="bg-[var(--color-stone-900)] text-white">
-      <div className="mx-auto max-w-7xl px-[var(--section-px)] py-[var(--section-py)]">
-        <div className="grid gap-[var(--space-9)] sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center gap-[var(--space-2)] font-[700]" style={{ fontSize: 'var(--text-lead)' }}>
-              <Key className="h-5 w-5 text-[var(--color-brand-muted)]" aria-hidden="true" />
-              Schlüsseldienst Wetzlar
-            </Link>
-            <p
-              className="mt-[var(--space-4)] text-[var(--color-stone-400)] font-[400]"
-              style={{
-                fontSize: 'var(--text-small)',
-                lineHeight: 'var(--leading-body)',
-              }}
-            >
-              Ihr zuverlässiger Partner für alle Schloss- und Sicherheitsfragen
-              in Wetzlar und Umgebung. 24/7 erreichbar.
-            </p>
-          </div>
-
-          {/* Contact */}
-          <nav aria-label="Kontakt">
-            <h3
-              className="font-[700] uppercase text-[var(--color-stone-400)]"
-              style={{ fontSize: 'var(--text-tiny)', letterSpacing: 'var(--tracking-caps)' }}
-            >
-              Kontakt
-            </h3>
-            <address
-              className="not-italic mt-[var(--space-4)] space-y-[var(--space-3)] text-[var(--color-stone-300)]"
-              style={{ fontSize: 'var(--text-small)', lineHeight: 'var(--leading-small)' }}
-            >
-              <div className="flex items-center gap-[var(--space-2)]">
-                <Phone className="h-5 w-5 text-[var(--color-brand-muted)]" aria-hidden="true" />
-                <a href="tel:06441123456" className="hover:text-white transition-colors font-[400]">06441 123 456</a>
-              </div>
-              <div className="flex items-center gap-[var(--space-2)]">
-                <Mail className="h-5 w-5 text-[var(--color-brand-muted)]" aria-hidden="true" />
-                <a href="mailto:info@sd-wetzlar.de" className="hover:text-white transition-colors font-[400]">info@sd-wetzlar.de</a>
-              </div>
-              <div className="flex items-center gap-[var(--space-2)]">
-                <MapPin className="h-5 w-5 text-[var(--color-brand-muted)]" aria-hidden="true" />
-                <span className="font-[400]">Wetzlarer Str. 1, 35578 Wetzlar</span>
-              </div>
-              <div className="flex items-center gap-[var(--space-2)]">
-                <Clock className="h-5 w-5 text-[var(--color-brand-muted)]" aria-hidden="true" />
-                <span className="font-[400]">24/7 Notdienst</span>
-              </div>
-            </address>
-          </nav>
-
-          {/* Service areas */}
-          <nav aria-label="Einsatzgebiete">
-            <h3
-              className="font-[700] uppercase text-[var(--color-stone-400)]"
-              style={{ fontSize: 'var(--text-tiny)', letterSpacing: 'var(--tracking-caps)' }}
-            >
-              Einsatzgebiete
-            </h3>
-            <ul
-              className="mt-[var(--space-4)] space-y-[var(--space-2)] text-[var(--color-stone-300)]"
-              style={{ fontSize: 'var(--text-small)' }}
-            >
-              {["Wetzlar", "Gießen", "Marburg", "Aßlar", "Solms"].map((city) => (
-                <li key={city}>
-                  <Link href={`/${city.toLowerCase().replace("ß", "ss")}`} className="hover:text-white transition-colors link-underline font-[400]">
-                    Schlüsseldienst {city}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href="/servicegebiet" className="text-[var(--color-brand-muted)] hover:text-white transition-colors font-[600]">
-                  Alle Gebiete →
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          {/* Legal */}
-          <nav aria-label="Rechtliches">
-            <h3
-              className="font-[700] uppercase text-[var(--color-stone-400)]"
-              style={{ fontSize: 'var(--text-tiny)', letterSpacing: 'var(--tracking-caps)' }}
-            >
-              Rechtliches
-            </h3>
-            <ul
-              className="mt-[var(--space-4)] space-y-[var(--space-2)] text-[var(--color-stone-300)]"
-              style={{ fontSize: 'var(--text-small)' }}
-            >
-              <li><Link href="/impressum" className="hover:text-white transition-colors link-underline font-[400]">Impressum</Link></li>
-              <li><Link href="/datenschutz" className="hover:text-white transition-colors link-underline font-[400]">Datenschutz</Link></li>
-            </ul>
-          </nav>
-        </div>
-
-        {/* Footer Trust-Aggregation (Prompt 2.6) */}
-        <div className="mt-[var(--space-12)] border-t border-[var(--color-stone-800)] pt-[var(--space-8)] pb-[var(--space-4)]">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-[var(--space-6)] text-[var(--color-stone-300)] font-medium text-[var(--font-size-14)]">
-            <div className="flex items-center gap-[var(--space-3)]">
-              <div className="flex text-yellow-500">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
-              </div>
-              <span>4.9 / 5 auf Google</span>
-            </div>
-            <div className="flex items-center gap-[var(--space-3)]">
-              <ShieldCheck className="w-5 h-5 text-[var(--color-brand-muted)]" />
-              <span>Ausgebildet von Uwe Sarfeld (TV-Experte)</span>
-            </div>
-            <div className="flex items-center gap-[var(--space-3)]">
-              {/* Zahlungsarten Placeholder */}
-              <div className="flex gap-2">
-                <span className="px-2 py-1 bg-white/10 rounded border border-white/20 text-[10px] uppercase font-bold tracking-wider">EC / Kredit</span>
-                <span className="px-2 py-1 bg-white/10 rounded border border-white/20 text-[10px] uppercase font-bold tracking-wider">Bar</span>
-                <span className="px-2 py-1 bg-white/10 rounded border border-white/20 text-[10px] uppercase font-bold tracking-wider">PayPal</span>
-              </div>
-              <span>Sichere Zahlung vor Ort</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div
-          className="mt-[var(--space-9)] border-t border-[var(--color-stone-700)] pt-[var(--space-7)] text-center text-[var(--color-stone-400)] font-[400]"
-          style={{ fontSize: 'var(--text-tiny)', letterSpacing: 'var(--tracking-loose)' }}
-        >
-          © {new Date().getFullYear()} Schlüsseldienst Wetzlar. Alle Rechte vorbehalten.
-        </div>
+ return (
+  <footer role="contentinfo" aria-label="Fußzeile" className="bg-[var(--color-charcoal-950)] text-white pb-32 lg:pb-0 relative dark-focus">
+   <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[var(--color-blush-500)]/20 to-transparent" />
+   <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[var(--color-charcoal-900)] to-transparent pointer-events-none opacity-30" />
+   <div className="mx-auto max-w-7xl px-[var(--section-px)] py-[var(--section-py)] relative z-10">
+    {/* Main Grid */}
+    <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
+     {/* Brand Column */}
+     <div className="col-span-2 mb-8 lg:mb-0">
+      <Link href="/" className="flex items-center gap-2">
+       <Key className="h-6 w-6 text-[var(--value-primary)]" aria-hidden="true" />
+       <span className="text-xl font-bold">Schlüsseldienst Wetzlar</span>
+      </Link>
+      <p className="mt-4 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs">
+       Ihr zuverlässiger Partner für alle Schloss- und Sicherheitsfragen
+       in Wetzlar und Umgebung. 24/7 erreichbar.
+      </p>
+      <div className="mt-6 flex items-center gap-2 text-sm text-[var(--color-charcoal-400)]">
+       <Clock className="h-4 w-4 text-[var(--value-icon-color)]" aria-hidden="true" />
+       <span>24/7 Notdienst — auch an Feiertagen</span>
       </div>
-    </footer>
-  );
+     </div>
+
+     {/* Menu Columns */}
+     {menuItems.map((section, idx) => (
+      <div key={idx}>
+       <h3 id={`footer-nav-${idx}`} className="mb-4 font-bold uppercase text-xs tracking-widest text-[var(--color-charcoal-400)]">
+        {section.title}
+       </h3>
+       <nav aria-labelledby={`footer-nav-${idx}`} className="space-y-3">
+        <ul className="space-y-3">
+         {section.links.map((link, linkIdx) => (
+         <li key={linkIdx}>
+          <Link
+           href={link.url}
+           className="text-sm text-[var(--color-charcoal-300)] hover:text-[var(--color-red-500)] transition-colors"
+          >
+           {link.text}
+          </Link>
+         </li>
+        ))}
+        </ul>
+       </nav>
+      </div>
+     ))}
+    </div>
+
+    {/* Trust Bar */}
+    <div className="mt-16 pt-8">
+     <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-[var(--color-charcoal-400)] text-sm">
+      <div className="flex items-center gap-3">
+       <div className="flex text-yellow-500">
+        {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+       </div>
+       <span>4.9 / 5 auf Google</span>
+      </div>
+      <div className="flex items-center gap-3">
+       <ShieldCheck className="w-5 h-5 text-[var(--value-icon-color)]" />
+       <span>Ausgebildet von Uwe Sarfeld (TV-Experte)</span>
+      </div>
+      <div className="flex items-center gap-3">
+       <div className="flex gap-2">
+        <span className="px-3 py-1.5 bg-white/10 rounded-lg text-[10px] uppercase font-bold tracking-wider">EC / Kredit</span>
+        <span className="px-3 py-1.5 bg-white/10 rounded-lg text-[10px] uppercase font-bold tracking-wider">Bar</span>
+        <span className="px-3 py-1.5 bg-white/10 rounded-lg text-[10px] uppercase font-bold tracking-wider">PayPal</span>
+       </div>
+       <span>Sichere Zahlung vor Ort</span>
+      </div>
+     </div>
+    </div>
+
+    {/* Bottom Bar */}
+    <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] md:flex-row md:items-center">
+     <p>© {new Date().getFullYear()} Schlüsseldienst Wetzlar. Alle Rechte vorbehalten.</p>
+     <ul className="flex gap-4">
+      <li><Link href="/impressum" className="hover:text-[var(--color-red-500)] transition-colors underline">Impressum</Link></li>
+      <li><Link href="/datenschutz" className="hover:text-[var(--color-red-500)] transition-colors underline">Datenschutz</Link></li>
+     </ul>
+    </div>
+   </div>
+  </footer>
+ );
 }
