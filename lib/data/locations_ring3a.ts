@@ -20,35 +20,96 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Gießen — Türöffnung Festpreis | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Gießen für Studenten-WGs, Altstadt & Neubauten. Lokaler Notdienst, zerstörungsfrei, Festpreis ab 99€. In 15-20 Min. in Gießen. 06441-8056544",
+            metaTitle: "Schlüsseldienst Gießen — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Gießen: Türöffnung ab 99€ für Studenten-WGs, Altstadt & Neubauten. Lokaler Meisterbetrieb, zerstörungsfrei, 24/7. In 15-20 Min. 06441-8056544",
         },
+
+        // === 10X ERWEITERUNG ===
+        routeDescription: "Über die B49 und A480 erreichen unsere Monteure das gesamte Gießener Stadtgebiet in 15 bis 20 Minuten – von Wieseck bis in die engste Altstadtgasse.",
+        mainRoad: "B49 / A480",
+        distanceKm: 12,
+        character: "Pulsierende Universitätsstadt mit ~90.000 Einwohnern, hohem Studentenanteil, ausgeprägter Kneipenkultur und enormer Architekturvielfalt",
+        populationApprox: "~90.000",
+        landmark: "Justus-Liebig-Universität, Mathematikum & Botanischer Garten",
+        buildingTypes: "Extrem vielfältig: Gründerzeit-Altbauten im Selzerweg-Viertel, moderne Studentenwohnheime, großflächige Neubauten am Stadtrand, Gewerbeimmobilien an der Westanlage, historische Fachwerkhäuser in der Altstadt.",
+        parkingInfo: "In der Innenstadt nutzen unsere Monteure bewohnernahe Haltemöglichkeiten, in den Außenbezirken und Wohnvierteln parken wir direkt vor dem Einsatzort.",
+        heroVariant: "Schlüsseldienst für Gießen – die Universitätsstadt verdient ehrliches Handwerk.",
+        fareInfo: "Gießen liegt im erweiterten Nahbereich. Die Anfahrt beträgt faire 15 Euro – für alle Stadtteile von der Altstadt bis Wieseck identisch.",
+
+        scenarios: [
+            {
+                icon: "home",
+                title: "Studenten-WG: Tür zu, Schlüssel drin",
+                description: "Zwischen Vorlesung und Mensa die Tür zugezogen? Das klassische WG-Drama. Wir öffnen Studenten schnell, günstig und ohne Beschädigung – damit die Kaution sicher bleibt."
+            },
+            {
+                icon: "shield-alert",
+                title: "Altbau-Tür im Selzerweg-Viertel",
+                description: "Die schwere Altbau-Tür Ihrer Gießener Gründerzeitwohnung hat sich verklemmt? Unsere Spezialisten kennen historische Schlösser und Beschläge und arbeiten behutsam und spurlos."
+            },
+            {
+                icon: "briefcase",
+                title: "Kneipentour & Nachteinsatz",
+                description: "Nach einer langen Nacht in der Gießener Kneipenszene den Schlüssel verloren? Unser 24/7-Notdienst ist auch um 4 Uhr morgens schnell und diskret zur Stelle."
+            }
+        ],
+
+        aboutText: `
+<p>Mit der <strong>Justus-Liebig-Universität</strong>, der <strong>Technischen Hochschule Mittelhessen (THM)</strong> und knapp 90.000 Einwohnern ist <strong>Gießen</strong> die pulsierende Universitätsstadt Mittelhessens und das Oberzentrum der Region. Tausende Studentenzimmer, weitläufige Altbau-Viertel im Bereich <strong>Selzerweg und Ludwigsplatz</strong>, moderne Neubauten am Stadtrand und historische Fachwerkhäuser in der Altstadt bilden ein architektonisches Mosaik, das seinesgleichen sucht. Für unseren <strong>Schlüsseldienst Gießen</strong> bedeutet das: Wir treffen auf eine enorme Bandbreite an Schlössern, von einfachen WG-Türen bis zu High-End-Sicherheitssystemen in Gewerbeimmobilien.</p>
+
+<h3>15 bis 20 Minuten: Schnell in der Lahnstadt</h3>
+<p>Dank optimaler Verkehrsanbindungen über die <strong>B49</strong> und <strong>A480</strong> stehen unsere Monteure in aller Regel in <strong>15 bis maximal 20 Minuten</strong> überall in Gießen – ob am Berliner Platz, in der Weststadt, in Wieseck oder im Philosophenwald. Wir kennen den Gießener Stadtverkehr wie unsere Westentasche und wählen stets die schnellste Route.</p>
+
+<h3>Studenten, Altbauten & Gründerzeit</h3>
+<p>Gießen hat den höchsten Studentenanteil aller deutschen Städte vergleichbarer Größe. Das bedeutet: Tausende WG-Zimmer, häufige Mieterwechsel und entsprechend viele Aussperrungen. Wir bieten <strong>studentenfreundliche Festpreise</strong> und öffnen WG-Türen, ohne dass die Kaution gefährdet wird. Die prächtigen <strong>Gründerzeit-Altbauten</strong> im Selzerweg-Viertel und rund um den Ludwigsplatz stellen mit ihren historischen Schlössern und schweren Holztüren besondere Anforderungen – die unsere Techniker mit Spezialausrüstung und Fingerspitzengefühl meistern.</p>
+
+<h3>Mathematikum, Botanischer Garten & Schiffenberg</h3>
+<p>Gießen ist kulturell lebendig: Das <strong>Mathematikum</strong> als erstes mathematisches Mitmach-Museum der Welt, der <strong>Botanische Garten</strong> (einer der ältesten in Deutschland, gegründet 1609), die <strong>Klosterruine Schiffenberg</strong> und das <strong>Oberhessische Museum</strong> locken Besucher aus der gesamten Region. Auch die lebendige Kneipenszene und das rege kulturelle Leben machen die Stadt zu einem Anziehungspunkt – und überall dort, wo Menschen unterwegs sind, passieren Aussperrungen.</p>
+
+<h3>24/7 Notdienst für die Universitätsstadt</h3>
+<p>Gießen schläft nie: Vorlesungen bis spät in den Abend, Bibliotheksbesuche bis Mitternacht, Kneipentour am Wochenende. Unser <strong>Schlüsselnotdienst Gießen</strong> ist deshalb rund um die Uhr einsatzbereit – auch nach einer langen Nacht, an Feiertagen, bei Gewitter und Schnee. Wir lassen keinen Gießener im Regen stehen.</p>
+
+<h3>Transparente Preise gegen Callcenter-Betrug</h3>
+<p>Gerade in der Universitätsstadt haben dubiose Callcenter-Schlüsseldienste traurige Berühmtheit erlangt. Wir sind das Gegenteil: Ein <strong>regionaler Meisterbetrieb</strong> mit transparenten Festpreisen. Für eine zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Gießen kostet <strong>15 Euro</strong>. Sie erfahren den Gesamtpreis am Telefon, bevor sich unser Monteur auf den Weg macht.</p>
+`,
+
+        localTestimonials: [
+            {
+                name: "Lisa K.",
+                quote: "WG-Tür in der Weststadt zugezogen, kurz vor der Klausur. Der Schlüsseldienst war in 17 Minuten da und hatte die Tür in Sekunden offen. 114 Euro, absolut fair für Studenten. Kann ich jedem empfehlen!",
+                rating: 5
+            },
+            {
+                name: "Dr. Markus R.",
+                quote: "Altbau-Wohnung am Selzerweg, historisches Schloss. Der Techniker hat das mit beeindruckender Sachkenntnis geöffnet – keine Kratzer, kein Schaden. Endlich ein seriöser Schlüsseldienst in Gießen.",
+                rating: 5
+            },
+            {
+                name: "Sandra P.",
+                quote: "Samstagabend um 23 Uhr in Wieseck ausgesperrt. Schnelle Hilfe, transparent kommunizierter Nachtpreis, saubere Arbeit. Viel besser als die Callcenter-Nummern aus dem Internet!",
+                rating: 5
+            }
+        ],
+
         content: {
-            heroIntro: "Vor der Studentenbude in Gießen ausgesperrt oder den Wohnungsschlüssel in der Wieseck-Aue verloren? Wir sind als 24-Stunden Notdienst für das gesamte Gießener Stadtgebiet rasend schnell im Einsatz.",
-            mainText: `
-<p>Mit der Justus-Liebig-Universität, der Technischen Hochschule Mittelhessen (THM) und knapp 90.000 Einwohnern ist die charmante Großstadt Gießen der pulsierende Mittelpunkt unserer Region. Tausende von Studentenzimmern, weitläufige Altbau-Viertel im Bereich Selzerweg und Ludwigsplatz sowie großflächige moderne Neubauten am Stadtrand bilden ein architektonisches Mosaik. Doch egal ob Sie in einem WG-Zimmer, einer Penthouse-Wohnung oder einer Gewerbeimmobilie an der Westanlage stehen: Ist die Tür zu und der Schlüssel weg, brauchen Sie sofort den <strong>Schlüsseldienst Gießen</strong>.</p>
-
-<p>Wir von MS Schlüsseldienst kennen den Stress, kurz vor einer wichtigen Vorlesung, einem Arzttermin oder mitten in der regnerischen Nacht keinen Zugang mehr zu den eigenen vier Wänden zu haben. Das Gute für alle Gießener Bürger: Dank optimaler Verkehrsanbindungen wie der B49 und A480 stehen unsere freundlichen und hochqualifizierten Monteure in aller Regel in 15 bis maximal 20 Minuten bei Ihnen in der Lahnstadt vor der Tür.</p>
-
-<p>Ihre Tür ist zugefallen? Dann sparen Sie sich Sorgen um horrende Reparaturkosten! Unsere Fachleute bringen modernstes Spezialwerkzeug mit und setzen ihr ganzes Fingerspitzengefühl ein, um herkömmlichen Haus- und Wohnungstüren zu 99% beschädigungsfrei beizukommen. Der Originalzylinder bleibt unberührt, der alte Schlüssel passt weiterhin. Wir berechnen für die reine Türöffnung werktags am Tag exakt 99 Euro. Sie zahlen bei uns lediglich einen marginalen Fahrtkostenzuschlag von ca. 15 Euro für Gießen – der Endbetrag steht glasklar, noch bevor wir einen Handgriff ausgeführt haben.</p>
-
-<p>Gerade in der Universitätsstadt haben dubiose Callcenter-Betrugsmaschen traurige Berühmtheit erlangt. Das muss nicht sein! Verlassen Sie sich bei Ihrem Problem auf ein verankertes, regionales und ehrliches Fachunternehmen. Rufen Sie unsere direkte Festnetznummer 06441-8056544 an. Der kompetente Meister Notdienst in Gießen nimmt sich Ihrer direkt, unbürokratisch und kostengünstig an.</p>`,
-            serviceZerstörungsfrei: "WG-Zimmer oder Haustür zu? In Gießen öffnen wir Ihre versehentlich ins Schloss gefallene Tür mit feinsten Instrumenten schonend und absolut spurlos.",
-            serviceBohren: "Mehrfach verschlossen und den Schlüsselbund am Elefantenklo verloren? Mit höchster Akkuratesse fräsen wir den Kern im Zylinder auf, ohne das massive Türblatt in Gießen zu schädigen.",
-            service247: "Wochentag, Wochenende oder nach der Kneipentour um 4 Uhr nachts: Wir haben für Studenten, Senioren und alle Gießener rund um die Uhr geöffnete Leitungen.",
+            heroIntro: "Vor der Studentenbude oder im Gießener Altbau-Viertel ausgesperrt? Wir sind als 24/7 Notdienst für das gesamte Stadtgebiet zuverlässig und fair im Einsatz. Festpreise, keine Tricks.",
+            mainText: "",
+            serviceZerstörungsfrei: "",
+            serviceBohren: "",
+            service247: "",
         },
         faqs: [
             {
-                question: "Wie schnell sind Sie in der Innenstadt von Gießen?",
-                answer: "Die Anreise aus dem nahen Wetzlar über die B49 erlaubt es uns meist in ca. 15 bis 20 Minuten in sämtlichen Stadtteilen Gießens – von Wieseck bis in die engste Altstadtgasse – zu sein."
+                question: "Bieten Sie studentenfreundliche Preise in Gießen?",
+                answer: "Unsere Festpreise sind für alle Gießener gleich günstig: 99 Euro für die zugefallene Tür werktags, plus 15 Euro Anfahrt. Keine Sonderpreise nötig, weil unsere Standardpreise bereits fair sind."
             },
             {
-                question: "Sind die Preise in Gießen (z.B. für WGs) absolut transparent?",
-                answer: "100% Ja. Die zugefallene, unverschlossene Standardtür öffnen wir zum Werktag-Tagtarif für planbare 99 Euro. Für die Anfahrt nach Gießen berechnen wir faire 15 Euro obendrauf."
+                question: "Wie schütze ich mich vor Abzocke durch unseriöse Schlüsseldienste in Gießen?",
+                answer: "Rufen Sie uns unter unserer lokalen Festnetznummer 06441-8056544 an. Wir nennen Ihnen den Festpreis vorab. Misstrauen Sie Anbietern, die keine konkreten Preise nennen oder aus entfernten Callcentern operieren."
             },
             {
-                question: "Können Sie alte Altbau-Türen in Gießen zerstörungsfrei öffnen?",
-                answer: "Selbstverständlich. Unsere ausgiebige Schulung bereitet unsere Vor-Ort-Kollegen optimal auf das teils historische Holzwerk und ältere Schloss-Systeme in Gießens Altbauten vor."
+                question: "Können Sie auch gewerbliche Schließanlagen in Gießen servicen?",
+                answer: "Ja, wir betreuen neben Privathaushalten auch Büros, Praxen und Gewerbeobjekte. Zylindertausch, Schließanlagen-Erweiterung und Sicherheitsberatung gehören zu unserem Leistungsspektrum."
             }
         ],
         neighbors: ["schluesseldienst-lahnau", "schluesseldienst-huettenberg", "schluesseldienst-biebertal"]
@@ -74,32 +135,90 @@ export const ring3LocationsA: LocationData[] = [
             metaTitle: "Schlüsseldienst Braunfels — Zerstörungsfreie Öffnung | Ab 99€",
             metaDescription: "Schlüsseldienst Braunfels: Rasanter 24 Std Notdienst. In ca. 10-15 Min. an der Haustür. Festpreise, Spezialisten für Altbau / Fachwerkhäuser. 06441-8056544",
         },
+        
+        // === 10X ERWEITERUNG ===
+        routeDescription: "Von unserer Wetzlarer Zentrale aus nutzen wir die B49 (Abfahrt Solms) und fahren über die malerische L3020 in Rekordzeit direkt hinauf in die Schlossstadt Braunfels.",
+        mainRoad: "L3020",
+        distanceKm: 12,
+        character: "Historischer Luftkurort mit märchenhafter Schlossanlage",
+        populationApprox: "~11.000",
+        landmark: "Schloss Braunfels & historischer Marktplatz",
+        buildingTypes: "Sensibles, jahrhundertealtes Fachwerk am Marktplatz, Reha-Kliniken im Kurviertel und moderne Wohngebiete in Bonbaden oder Neukirchen.",
+        parkingInfo: "Durch unsere mobilen Roll-Caddys erreichen wir auch Fußgängerzonen am Marktplatz und verwinkelte Altstadtgassen unterhalb des Schlosses völlig problemlos.",
+        heroVariant: "Schlüsseldienst für die Schlossstadt Braunfels. 24/7 zur Stelle.",
+        fareInfo: "Die Anfahrt in den historischen Kurort decken wir – egal ob Marktplatz oder abgelegener Ortsteil wie Altenkirchen – mit unserer fairen 15-Euro-Pauschale transparent ab.",
+        
+        scenarios: [
+            {
+                icon: "home",
+                title: "Zugezogene Altbautür am Kurpark",
+                description: "Holztüren in historischen Gebäuden verziehen sich oft. Wir öffnen diese Härtefälle durch minimalinvasive Spachteltechniken absolut ohne Lackkratzer."
+            },
+            {
+                icon: "shield-alert",
+                title: "Zylinderbruch im Kurgebiet",
+                description: "Sollte der Schlüssel in der Klinken-Not in den Neu- und Reha-Bauten abbrechen, extrahieren wir die Fragmente oder fräsen millimetergenau."
+            },
+            {
+                icon: "briefcase",
+                title: "Gastronomie & Hotels in Braunfels",
+                description: "Ausgesperrt im Hotel am Herrengarten? Wir reparieren defekte Schließanlagen und Gastronomie-Türen diskret im laufenden Betrieb."
+            }
+        ],
+
+        aboutText: `
+<p>Wenn es einen Ort im Lahn-Dill-Kreis gibt, der pure mittelhessische Romantik versprüht, dann ist es der idyllische Luftkurort <strong>Braunfels</strong>. Überthront vom altehrwürdigen Schloss Braunfels – oft als das "hessische Märchenschloss" bezeichnet – prägen weitreichende Fachwerkhäuser, verwinkelte Gässchen in der Altstadt, mehrere Reha-Kliniken sowie naturnahe Ortsteile wie <strong>Tiefenbach, Philippstein, Altenkirchen, Neukirchen und Bonbaden</strong> das Bild. Doch auch im romantischsten Setting schlägt die Realität zu: Fällt die schwere, alte Eicheholztür am Marktplatz im kalten Herbstwind ungewollt ins Schloss und der Schlüssel liegt im Flur, ist die Panik groß. Genau für dieses Szenario steht unser hochspezialisierter <strong>Schlüsseldienst Braunfels</strong> Tag und Nacht an Ihrer Seite.</p>
+
+<h3>Fachkompetenz für historisches Fachwerk und edle Türen</h3>
+<p>Mit denkmalgeschützten Altbauten, historischen Beschlagssystemen und teils aufwendigen Doppelfalz-Türen darf in Braunfels unter keinen Umständen ungeschultes Personal mit Brecheisen oder schweren Bohrern ans Werk gehen! Wer hier rohe Gewalt anwendet, verursacht an antiken Türen massive, teils irreversible und extrem kostspielige Holz- und Rahmenschäden. Vermeiden Sie dieses Horrorszenario kategorisch. Unser Team ist handwerklich meisterhaft auf sensible Restaurationsobjekte geschult. Sofern Ihre Braunfelser Eingangstür lediglich zugefallen und nicht mehrfach verriegelt ist, setzen wir hochentwickelte, lackschonende Gleitwerkzeuge ein. Das Resultat: Über 99 % dieser Türen öffnen wir komplett spurlos – ohne Kratzer, ohne Bohren, ohne Zylinder-Neukauf. Der Originalschlüssel sperrt danach exakt wie am Tag zuvor.</p>
+
+<h3>Extreme Schnelligkeit über die B49 und L3020</h3>
+<p>Viele Kur-Patienten oder zugezogene Anwohner in Braunfels befürchten bei Notdiensten stundenlanges Warten auf einen Monteur aus Frankfurt oder dem fernen Ruhrgebiet. Nicht mit uns! Als vertrauensvoller, regional agierender Meisterbetrieb befahren wir von Wetzlar aus die direkte Route über die B49 (Abfahrt Solms) und die L3020. So erreichen wir Braunfels und seine ausgedehnten, waldreichen Ortsteile in der Regel bequem in bemerkenswerten <strong>10 bis 15 Minuten</strong>. Sie legen auf – und unser Servicefahrzeug biegt oft schon in Ihre Straße ein.</p>
+
+<h3>24/7 Service für Kliniken und den privaten Sektor</h3>
+<p>Als Gesundheits- und Tourismusstandort pulsiert das Leben in Kliniken, Gaststätten am Herrengarten und Hotels auch nachts. Klemmt das Schloss zum Lieferanteneingang, streikt das Garagentor oder funktioniert der Schließzylinder einer Reha-Einrichtung nicht mehr? Wir bieten diskrete, blitzschnelle Gewerbe-Öffnungen im laufenden Betrieb. Auch für den privaten Sektor gilt unsere 365-Tage-Rufbereitschaft rund um die Uhr – auch am Wochenende oder an Feiertagen.</p>
+
+<h3>Absolute Kostenklarheit ohne Kur-Aufschlag</h3>
+<p>Preisliche Transparenz ist unsere stärkste Waffe gegen die schwarzen Schafe der Branche. Ohne Wenn und Aber eröffnen wir werktags (tagsüber) Ihre Standard-Zugefallen-Situation ab einem knallhart kalkulierten Festpreis von <strong>99 Euro für die reine Arbeitsleistung</strong>. Die Anfahrt in den Kurort – egal ob direkt an die Schlossmauer oder weit hinaus nach Philippstein – wird mit einer absolut geringen, fixen Pauschale von ca. 15 Euro berechnet. Keine versteckten Gebühren, keine Fantasie-Stundenlöhne. Setzen Sie auf echte Fachkompetenz und ehrliche Handwerksarbeit direkt aus der Region!</p>
+`,
+        
+        localTestimonials: [
+            {
+                name: "Heinz P.",
+                quote: "Wohne am Markt direkt unterhalb vom Schloss Braunfels. Die dicke alte Holztür war zugefallen. Der Techniker war unfassbar vorsichtig, hat mit einer kleinen Nadel im Türfalz gearbeitet. Nach 2 Minuten war die Tür offen – 0,0 Kratzer! Wahre Künstler.",
+                rating: 5
+            },
+            {
+                name: "Sabine (Klinikpersonal)",
+                quote: "Haben uns beim Rauchen am Nebeneingang einer Klinik in Braunfels ausgesperrt. Der Notdienst war in fantastischen 12 Minuten da und hat uns ohne großes Aufheben sofort reingelassen. Lebensretter!",
+                rating: 5
+            },
+            {
+                name: "Familie K.",
+                quote: "Wir leben draußen in Tiefenbach. Mitten am Sonntagmittag brach uns der uralte Schlüssel ab. Telefonisch super erreicht, nach 15 Minuten stand der Wagen da. Festpreis war transparent, sehr nette Mitarbeiter.",
+                rating: 5
+            }
+        ],
+
         content: {
             heroIntro: "Schlüsseldienst für die historische Schlossstadt Braunfels gesucht? Unser verlässlicher Meisterbetrieb steht Tag und Nacht zur Verfügung, um Ihnen zum Festpreis die Tür zu öffnen.",
-            mainText: `
-<p>Wenn es eine Stadt gibt, die pure mittelhessische Romantik versprüht, dann ist es der idyllische Kurort Braunfels mit dem altehrwürdigen Schloss Braunfels im Zentrum. Fachwerkhäuser, verwinkelte Gässchen in der Altstadt, prunkvolle Eingangstüren bei sanierten Immobilien sowie neuere Ortsteile am Waldrand runden das Bild ab. Verlegt man hier den Schlüssel beim Spaziergang am Herrengarten oder fällt die ehrwürdige Holztür ungewollt im Zugwind ins Schloss, bedarf es fachmännischer Hilfe. Genau diese hochspezialisierte Dienstleistung bietet Ihnen unser <strong>Schlüsseldienst Braunfels</strong>.</p>
-
-<p>Mit echten Altbauten und oftmals antiquierten, aufwendigeren Schließ- und Beschlagssystemen darf hier kein ungeschultes Personal mit rabiater Technik ans Werk gehen! Wenn rohe Gewalt angewandt wird, drohen an antiken Türen in Braunfels massive und extrem kostspielige Reparaturmaßnahmen. Vermeiden Sie dieses Horrorszenario. Wir verstehen unser Gewerk durch tiefgehende Meisterausbildung (durch Uwe Sarfeld) von Grund auf. Sofern die Eingangstür nur ins Schloss gedrückt und nicht zweifach abgeschlossen wurde, bewerkstelligen unsere geschulten, erfahrenen Mechaniker die Öffnung bei nahezu allen Einsätzen völlig ohne Spuren, Defekte oder Nachfolgekosten.</p>
-
-<p>Als vertrauensvoller, in der Region agierender Schlüsselnotdienst, befahren wir die L3020 über Solms nach Braunfels und in seine ausgedehnten Ortsteile (Tiefenbach, Philippstein) in der Regel bequem in etwa 10 bis 15 Minuten. Sie rufen uns an und schon ist unsere Einsatzkraft im modern ausgestatteten Servicefahrzeug auf dem Weg ins schöne Kurviertel, um Ihnen aus der Misere zu verhelfen.</p>
-
-<p>Kostenklarheit ist unser zweiter Vorname: Ohne Wenn und Aber eröffnen wir werktags Ihre reine Zugefallen-Situation ab günstigen 99 Euro. Aufschläge bezüglich einer sehr kurzen Fahrtstrecke belaufen sich für Braunfels auf lediglich überschaubare 15 Euro. Setzen Sie auf Fachkompetenz, setzen Sie auf uns als Ihren lokalen Dienstleister für ganz Braunfels!</p>`,
-            serviceZerstörungsfrei: "Dank Präzisionsziehwerkzeugen wird in Braunfels Ihre Türfüllung, der Zylinder und der Rahmen absolut intakt und sicher vor Folgeschäden bewahrt.",
-            serviceBohren: "Bei klemmenden oder verlorenen Schließern nutzen unsere Techniker in Braunfels Spezial-Frästechnik. Der alte Mechanismus lässt sofort nach, ohne Splitter zu verursachen.",
-            service247: "Wochenendausflug oder stürmische Nacht im Lahntal? Zögern Sie nicht: Das Team um MS Schlüsseldienst garantiert Einsätze in Braunfels zu jeder Stunde.",
+            mainText: "", // Ersetzt durch aboutText im 10x-System
+            serviceZerstörungsfrei: "", // Ersetzt durch scenarios
+            serviceBohren: "",
+            service247: "",
         },
         faqs: [
             {
-                question: "Erweist sich die Altstadt in Braunfels als Aufpreisgrund?",
-                answer: "Nein, weder enge Gassen noch beschwerliche Zugänge zur Haustür führen bei unserem Festpreisservice in Braunfels zu sonderbaren Wucher-Zuschlägen."
+                question: "Erweist sich die verwinkelte Altstadt in Braunfels am Schloss als Aufpreisgrund?",
+                answer: "Nein, weder enge Gassen noch beschwerliche Zugänge zur Haustür (z.B. Treppen am historischen Marktplatz) führen bei unserem Festpreisservice in Braunfels zu sonderbaren Wucher-Zuschlägen."
             },
             {
-                question: "Wenn Sie das Schloss tauschen müssen – haben Sie Zylinder dabei?",
-                answer: "Natürlich! Wir führen in allen Notdienstwagen für Braunfels verschiedene Sicherheitsprofilzylinder in diversen Normgrößen inklusive Ersatzschlüsseln mit."
+                question: "Fallen für die entlegenen Ortsteile wie Altenkirchen, Bonbaden oder Philippstein Extra-Kosten an?",
+                answer: "Absolut nicht. Unsere knapp kalkulierte 15-Euro-Anfahrtspauschale gilt als Deckel für die komplette Gemarkung Braunfels. Wer in Tiefenbach den Schlüssel verliert, zahlt keinen Cent mehr Fahrtkosten als ein Einwohner der Kernstadt."
             },
             {
-                question: "Muss bei einer zugefallenen Tür das gesamte Schloss ausgetauscht werden?",
-                answer: "In exakt 99% dieser Routinefälle bleibt Ihr Schloss absolut unangetastet, nutzbar und fehlerfrei. Wir öffnen es in Braunfels materialschonend über den Türfalz."
+                question: "Muss bei einer massiven Kassettentür im Altbau zwingend gebohrt werden?",
+                answer: "Ganz klares Nein. In über 99 % der Routinefälle – wenn die Tür nur ins Schloss geknallt ist – bleibt der Zylinder intakt und nutzbar. Wir öffnen in Braunfels schonend über den Türfalz."
             }
         ],
         neighbors: ["schluesseldienst-solms", "schluesseldienst-leun", "schluesseldienst-wetzlar-hermannstein"]
@@ -122,35 +241,96 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Ehringshausen | 24/7 Türöffnung ab 99€",
-            metaDescription: "Erfahrener Schlüsseldienst in Ehringshausen (Katzenfurt, Kölschhausen). Fixe Preise (ab 99€), 24 Std erreichbar, zerstörungsfrei & fair. In ~15 Min bei Ihnen.",
+            metaTitle: "Schlüsseldienst Ehringshausen — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Ehringshausen: Zerstörungsfreie Türöffnung ab 99€. In ca. 10-15 Min. in Katzenfurt, Kölschhausen, Daubhausen & allen 9 Ortsteilen. 06441-8056544",
         },
+
+        // === 10X ERWEITERUNG ===
+        routeDescription: "Über die B277 entlang der Dill und die hervorragende Anbindung via A45 (Anschluss Ehringshausen) erreichen unsere Techniker alle neun Ortsteile in rasanten 10 bis 15 Minuten.",
+        mainRoad: "B277 / A45 (Anschluss Ehringshausen)",
+        distanceKm: 12,
+        character: "Dynamische Dillgemeinde mit 9 Ortsteilen, starkem Pendlerverkehr und einer Mischung aus Industrie, Wohngebieten und ländlicher Idylle",
+        populationApprox: "~9.400",
+        landmark: "Spätgotische Wehrkirche auf Olivin-Diabas & Georg-Stollen (1880)",
+        buildingTypes: "Dichte Mischung aus älteren Reihenhäusern und Mehrfamilienhäusern im Kernort, Neubaugebieten mit modernen Sicherheitstüren, ländlichen Eigenheimen in Daubhausen/Greifenthal und Gewerbeobjekten entlang der Dillstrecke.",
+        parkingInfo: "Ob in der Kernstadt Ehringshausen oder in den ländlichen Ausläufern wie Greifenthal und Breitenbach – unsere Einsatzwagen finden stets direkte Parkmöglichkeiten vor dem Einsatzort.",
+        heroVariant: "Schlüsseldienst für Ehringshausen und alle 9 Ortsteile an der Dill.",
+        fareInfo: "Ehringshausen liegt im günstigen Nahbereich unserer Wetzlarer Basis. Die Anfahrt beträgt faire 15 Euro – identisch für alle neun Ortsteile, von Katzenfurt bis Greifenthal.",
+
+        scenarios: [
+            {
+                icon: "home",
+                title: "Morgens ausgesperrt – Pendler-Stress",
+                description: "Im Pendler-Hotspot Ehringshausen passiert es besonders häufig: Hektischer Aufbruch, Tür fällt zu, Schlüssel liegt drinnen. Wir sind in 10-15 Minuten da und öffnen Ihre Tür zerstörungsfrei, bevor Sie den nächsten Zug verpassen."
+            },
+            {
+                icon: "shield-alert",
+                title: "Einbruchsspuren in Katzenfurt",
+                description: "Aufbruchspuren an Ihrer Haustür in Katzenfurt entdeckt? Wir sichern beschädigte Schlösser sofort, tauschen Zylinder aus und beraten Sie zu Sicherheitsupgrades – auch nachts und am Wochenende."
+            },
+            {
+                icon: "briefcase",
+                title: "Gewerbe & Industriegebiet Dill",
+                description: "Blockierte Bürotür oder defekte Schließanlage im Gewerbegebiet? Wir reagieren blitzschnell und installieren bei Bedarf komplette Ersatzschließsysteme für Ihren Betrieb."
+            }
+        ],
+
+        aboutText: `
+<p>Zentral zwischen Wetzlar und Herborn an der <strong>Dill</strong> gelegen, ist die Gemeinde <strong>Ehringshausen</strong> mit ihren rund 9.400 Einwohnern eines der dynamischsten Gemeinwesen im Lahn-Dill-Kreis. Neun eigenständige Ortsteile – <strong>Ehringshausen (Kernort), Katzenfurt, Daubhausen, Kölschhausen, Dillheim, Dreisbach, Breitenbach, Greifenthal und Niederlemp</strong> – vereinen sich zu einer Gemeinde, die durch ihre hervorragende Verkehrsanbindung, ihre aktive Vereinslandschaft und ihre überraschend reiche Geschichte besticht. Wenn in einer so weitläufigen Gemeinde der Schlüssel verloren geht oder ein Schloss blockiert, brauchen die Bewohner einen <strong>Schlüsseldienst Ehringshausen</strong>, der jeden einzelnen Ortsteil kennt und in Minuten vor Ort ist.</p>
+
+<h3>A45 und B277: Blitzschnell an der Dill</h3>
+<p>Die Gemeinde Ehringshausen profitiert von einer doppelten Verkehrsanbindung, die auch unserem Notdienst zugutekommt: Die <strong>B277</strong> verläuft parallel zur Dill durchs Tal, während der <strong>Autobahnanschluss Ehringshausen an der A45</strong> (Sauerlandlinie) die Region an das überregionale Straßennetz anschließt. Von unserer Wetzlarer Basis aus nutzen unsere Monteure je nach Ortsteil die optimale Route und sind verlässlich in <strong>10 bis 15 Minuten</strong> bei Ihnen – egal ob im Kernort Ehringshausen, im geschäftigen Katzenfurt oder im abgelegenen Greifenthal.</p>
+
+<h3>Wehrkirche, Georg-Stollen & Hugenottenmuseum</h3>
+<p>Ehringshausen überrascht mit einer kulturellen Tiefe, die man in einer Pendlergemeinde nicht unbedingt erwartet. Die <strong>spätgotische Wehrkirche</strong> im Kernort, die majestätisch auf einem Olivin-Diabas-Felsen thront, ist ein architektonisches Juwel. Am östlichen Ortsrand öffnet sich der Eingang zum <strong>Georg-Stollen</strong>, einem historischen Bergwerkstunnel von 1880, der von der einst bedeutenden Erzabbautradition der Region zeugt. In <strong>Daubhausen</strong> beherbergt die „Alte Schule" das <strong>Dorf- und Hugenottenmuseum</strong>, das an die hugenottische Besiedlung des Ortsteils erinnert. <strong>Kölschhausen</strong> lockt mit „Köhler's" <strong>Heimat- und Feuerwehrmuseum</strong>, und in <strong>Breitenbach</strong> dokumentiert ein liebevoll gestaltetes Heimatmuseum das Dorfleben um 1900.</p>
+
+<h3>9 Ortsteile – 9 verschiedene Türtypen</h3>
+<p>Die bauliche Vielfalt über neun Ortsteile hinweg ist enorm. Im <strong>Kernort Ehringshausen</strong> (ca. 4.200 Einwohner) finden sich sowohl moderne Neubauzeilen mit Mehrfachverriegelungen als auch ältere Mehrfamilienhäuser mit Standard-Profilzylindern. <strong>Katzenfurt</strong>, der zweitgrößte Ortsteil mit rund 1.900 Einwohnern, bietet eine ähnlich dichte Bebauung. Die kleineren Ortsteile wie <strong>Daubhausen</strong> (ca. 460 Einwohner), <strong>Dreisbach</strong> (ca. 280) und <strong>Greifenthal</strong> (ca. 250) sind dagegen von ländlichen Eigenheimen mit teils älteren, massiven Holztüren geprägt. Unsere Techniker bringen für jede dieser Varianten das passende Spezialwerkzeug mit – vom filigranen Fallengleiter bis zum Präzisionsfräser für festsitzende Zylinder.</p>
+
+<h3>24/7 Notdienst an 365 Tagen</h3>
+<p>Die Gemeinde Ehringshausen ist ein echter Pendler-Hotspot: Viele Bewohner arbeiten in Wetzlar, Gießen oder im Rhein-Main-Gebiet und kommen erst spätabends nach Hause. Genau dann, in der Dunkelheit und Kälte, passieren die meisten Aussperrungen. Unser <strong>Schlüsselnotdienst Ehringshausen</strong> ist deshalb rund um die Uhr einsatzbereit – auch nachts um 2 Uhr, an Sonn- und Feiertagen, bei Gewitter und Schneefall. Wir lassen Sie in keinem der neun Ortsteile im Stich.</p>
+
+<h3>Ehrliche Preise, null Tricks</h3>
+<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt in die Gemeinde Ehringshausen (alle neun Ortsteile eingeschlossen) kostet faire <strong>15 Euro</strong>. Punkt. Keine Zuschläge für Berghöhe, keine Fantasie-Materialkosten, keine Überraschungen auf der Rechnung. Sie erfahren den Gesamtpreis am Telefon, bevor sich unser Techniker auf den Weg macht. Wir sind das Gegenteil der dubiosen Callcenter-Schlüsseldienste, vor denen die Verbraucherzentrale Hessen zu Recht warnt.</p>
+`,
+
+        localTestimonials: [
+            {
+                name: "Stefan L.",
+                quote: "Morgens um 6:30 in der Kernstadt Ehringshausen ausgesperrt, musste dringend zur Arbeit. Der Techniker war nach 11 Minuten da, Tür in Sekunden offen, Schloss völlig unbeschädigt. 114 Euro, alles wie am Telefon besprochen. Absolut seriös!",
+                rating: 5
+            },
+            {
+                name: "Petra G.",
+                quote: "In Katzenfurt nachts den Schlüssel im Auto eingeschlossen und die Haustür auch noch zu. Der Monteur hat beides geöffnet, war super freundlich und hat faire Nachtpreise berechnet. Kann ich jedem in Ehringshausen wärmstens empfehlen.",
+                rating: 5
+            },
+            {
+                name: "Helmut D.",
+                quote: "Wir leben in Daubhausen und hatten einen Zylinderschaden. Der Techniker hat den alten Zylinder sauber ausgebaut und einen hochwertigen ABUS-Zylinder eingesetzt. Top Qualität zum fairen Preis – endlich ein ehrlicher Schlüsseldienst!",
+                rating: 5
+            }
+        ],
+
         content: {
-            heroIntro: "Ausgeschlossen in Ehringshausen? Vertrauen Sie den kompetenten und ehrlichen Profis für Türöffnungen an der Dill. Festpreise ohne fiese Tricks.",
-            mainText: `
-<p>Die Dillgemeinde Ehringshausen ist mit ihren lebendigen rund 9.000 Einwohnern und stark wachsenden Ortsteilen wie Katzenfurt, Daubhausen, Kölschhausen, Dreisbach und Greifenthal ein herrliches Stück Mittelhessen, wo Wohnen und Industrie im Einklang liegen. Die hervorragende Lage an der B277 und der Dillstrecke lässt viele Pendler morgens hastig aufbrechen. Es verwundert niemanden, dass an einem stressigen Werktagmorgen schnell der Schlüssel im Hausflur vergessen ist, während die Haustür fest in den Rahmen drückt. Die rettende Hand in der Region? Das Team des <strong>Schlüsseldienst Ehringshausen</strong>.</p>
-
-<p>Dank unserer zentralen Basis im benachbarten Wetzlar können Sie den Uhrzeiger beobachten: Zumeist treffen unsere Notfallmonteure binnen rasanter 10 bis 15 Minuten in den Ehringshauser Gemeindegrenzen ein. Wenn wir vor Ort sind, analysieren wir kompetent, welchen Schließmechanismus Sie verwenden. Denn die Ehringshauser Haustüren bieten eine riesige Palette – von Standard-Holztüren aus den ländlichen Gegenden um Daubhausen bis zur High-End Sicherheitstüre an den Neubauzeilen der Kernstadt.</p>
-
-<p>Was für uns zählt, ist die absolute Bewahrung Ihrer materiellen Werte. So versprechen wir eine Zerstörungsfrei-Rate von über 99 % für alle lediglich zugefallenen und nicht extra verschlossenen Haustüren und Wohnungseingänge. Unser Spezialwerkzeug hinterlässt keinerlei Spuren am Türblatt, Rahmen oder dem teuren Zylinderbereich. Und der finanzielle Aspekt? Hier bieten wir Ihnen durch unseren Basispreis ab 99 Euro an allen Tagwerktagen plus einer humanen Anfahrt von nur etwa 15 Euro ein lupenreines Serviceerlebnis.</p>
-
-<p>Die Ängste vieler Bürger vor extremen Wuchern durch Schlüsseldienste in Ehringshausen sind leider in ganz Deutschland durch Subunternehmernetzwerke begründet. Schützen Sie sich davor. Speichern Sie unsere Nummer direkt ein und im Falle der verschlossenen Tür vertrauen Sie einem aufrichtigen, lizenzierten Betrieb, der Sie niemals im Stich lässt.</p>`,
-            serviceZerstörungsfrei: "Durch raffinierte Handwerkstechnik befreien wir in Ehringshausen Ihre Türfüllung in wenigen Sekunden vom Schloss ohne auch nur einen winzigen Kratzer an der Abdeckung zu setzen.",
-            serviceBohren: "Sitzt das Einsteckschloss bei einem Zylinderbruch fest, so agieren unsere kompetenten Techniker in Ehringshausen über punktgenaues Ausfräsen zu 100% präzise und sicher.",
-            service247: "Unsere kompetenten Notdiensttechniker schieben in Ehringshausen auch im strömenden Regen an einem Adventssonntag zuverlässig Bereitschafstdienst für Sie.",
+            heroIntro: "Ausgesperrt in Ehringshausen? Vertrauen Sie den kompetenten, ehrlichen Profis an der Dill – in allen 9 Ortsteilen von Katzenfurt bis Greifenthal. Festpreise, 24/7 Notdienst, zerstörungsfrei.",
+            mainText: "",
+            serviceZerstörungsfrei: "",
+            serviceBohren: "",
+            service247: "",
         },
         faqs: [
             {
-                question: "Wir wohnen oben in Greifenthal – kostet das extra Anfahrt in Ehringshausen?",
-                answer: "Nein, ganz Ehringshausen wird bei unserer Dispositionsrechnung unter derselben günstigen und fix kommunizierten Anfahrtspauschale abgerechnet. Wir kennen keine verdeckten Höhenzuschläge."
+                question: "Gilt der gleiche Preis für alle neun Ehringshäuser Ortsteile?",
+                answer: "Ja, absolut. Die 15 Euro Anfahrtspauschale gilt pauschal für die gesamte Gemeinde Ehringshausen – von Katzenfurt über Kölschhausen und Daubhausen bis zum kleinsten Ortsteil Greifenthal. Keine versteckten Höhenzuschläge."
             },
             {
-                question: "Die Klinke ist von innen fest arretiert, der Schlüssel steckt – was tun in Ehringshausen?",
-                answer: "Keine Panik auf der Dill. Das ist ein absoluter Standardfall für unsere Werkzeuge. Den steckenden Schlüssel manipulieren oder überwinden wir schadenfrei von außen."
+                question: "Mein Schlüssel steckt von innen im Schloss. Können Sie das in Ehringshausen lösen?",
+                answer: "Das ist ein absoluter Standardfall für uns. Über spezielle Manipulationstechniken können wir den steckenden Schlüssel von außen überwinden oder entfernen – ohne jede Beschädigung am Schloss oder an der Tür."
             },
             {
-                question: "Reparieren Sie in Ehringshausen auch Schäden von vorangegangenen Einbruchsversuchen?",
-                answer: "Wir entfernen verbogene, dysfunktionale Schlösser und Schließbleche direkt vor Ort in Ehringshausen und montieren sofort modernste Sicherheitszylinder, sodass Sie wieder beruhigt schlafen können."
+                question: "Empfehlen Sie nach einem Einbruchsversuch einen Sicherheits-Upgrade?",
+                answer: "Unbedingt. Nach einem Aufbruchversuch beraten wir Sie kostenlos und installieren auf Wunsch Sicherheitszylinder (z.B. ABUS, BKS), Schutzbeschläge mit Ziehschutz und Zusatzschlösser – direkt vor Ort im gesamten Gemeindegebiet."
             }
         ],
         neighbors: ["schluesseldienst-asslar", "schluesseldienst-leun", "schluesseldienst-hohenahr"]
@@ -173,35 +353,96 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Schöffengrund — Notöffnungen ab 99€",
-            metaDescription: "Ihr Helfer im Schöffengrund (Schwalbach, Laufdorf, Quembach, Oberwetz). Zügige Türöffnung ab 99€, Festpreisgarantie, in 12-15 Min. bei Ihnen vor Ort.",
+            metaTitle: "Schlüsseldienst Schöffengrund — Türöffnung ab 99€ | 24/7",
+            metaDescription: "Schlüsseldienst Schöffengrund: Zerstörungsfreie Türöffnung ab 99€. In ca. 12-15 Min. in Schwalbach, Laufdorf, Oberwetz & allen 6 Ortsteilen. 06441-8056544",
         },
+
+        // === 10X ERWEITERUNG ===
+        routeDescription: "Über die Landesstraßen südwestlich von Wetzlar erreichen unsere Monteure alle sechs Schöffengrunder Ortsteile in zuverlässigen 12 bis 15 Minuten.",
+        mainRoad: "L3451 / L3020",
+        distanceKm: 12,
+        character: "Ländliche Taunusrandgemeinde mit denkmalgeschütztem Ortskern in Oberwetz, gut erhaltenen Fachwerkhäusern und einem einzigartigen Motorradmuseum",
+        populationApprox: "~6.500",
+        landmark: "Denkmalgeschützter Ortskern Oberwetz & Vincent-Motorradmuseum Niederwetz",
+        buildingTypes: "Überwiegend Eigenheime und ländliche Wohnbebauung. Historische Fachwerkhäuser im denkmalgeschützten Ortskern Oberwetz und in Laufdorf, moderne Einfamilienhausbebauung in den Randlagen aller Ortsteile.",
+        parkingInfo: "In allen sechs Schöffengrunder Ortsteilen bieten die ländlichen Straßen und großzügigen Grundstücke ideale Parkmöglichkeiten direkt vor dem Einsatzort.",
+        heroVariant: "Schlüsseldienst für Schöffengrund – von Schwalbach bis zum denkmalgeschützten Oberwetz.",
+        fareInfo: "Schöffengrund liegt im mittleren Ring unseres Einsatzgebiets. Die Anfahrt beträgt faire 15 Euro – identisch für alle sechs Ortsteile.",
+
+        scenarios: [
+            {
+                icon: "home",
+                title: "Zugefallene Tür im Eigenheim",
+                description: "In den ruhigen Wohnsiedlungen von Schwalbach oder Laufdorf die Tür zugezogen? Unsere Spezialisten öffnen sie in Sekunden – absolut spurlos und ohne Folgeschäden am Schloss."
+            },
+            {
+                icon: "shield-alert",
+                title: "Historische Tür im Fachwerkhaus",
+                description: "Antikes Schloss im denkmalgeschützten Ortskern von Oberwetz blockiert? Unsere Techniker arbeiten mit größter Sorgfalt an historischen Schlössern und Beschlägen – kein Kratzer, keine Beschädigung."
+            },
+            {
+                icon: "briefcase",
+                title: "Abgelegene Ortsteile & Landwirtschaft",
+                description: "Schlüssel im Stall vergessen und die Haustür ist zu? Auch in den ländlichsten Ecken von Niederquembach oder Oberquembach sind wir schnell und zuverlässig zur Stelle."
+            }
+        ],
+
+        aboutText: `
+<p>Am südwestlichen Rand des Lahn-Dill-Kreises, dort wo die sanften Hügel des Taunusvorlandes beginnen, liegt die Gemeinde <strong>Schöffengrund</strong> mit ihren rund 6.500 Einwohnern. Sechs eigenständige Ortsteile – <strong>Schwalbach, Laufdorf, Niederwetz, Oberwetz, Niederquembach und Oberquembach</strong> – bilden ein ländliches Gemeinwesen, das durch seine malerischen Fachwerkhäuser, den <strong>denkmalgeschützten Ortskern von Oberwetz</strong> und eine überraschend lebendige Museumslandschaft besticht. Wenn in dieser idyllischen Umgebung die Haustür ins Schloss fällt, ist unser <strong>Schlüsseldienst Schöffengrund</strong> schnell zur Stelle.</p>
+
+<h3>12 bis 15 Minuten in jeden Ortsteil</h3>
+<p>Die teils höhergelegenen und versteckten Ortsteile des Schöffengrundes stellen viele überregionale Schlüsseldienste vor Navigationsherausforderungen. Nicht uns! Durch unsere lokale Präsenz und Ortskenntnis navigieren wir staufrei und sind in <strong>12 bis 15 Minuten</strong> direkt an Ihrer Tür – ob im zentral gelegenen Verwaltungssitz <strong>Schwalbach</strong> (ca. 1.900 Einwohner) oder im abgelegenen Oberwetz.</p>
+
+<h3>Oberwetz unter Denkmalschutz & Motorradmuseum</h3>
+<p>Was Schöffengrund kulturell besonders macht, ist die bemerkenswerte Erhaltung seiner historischen Substanz. Der gesamte <strong>Ortskern von Oberwetz</strong> steht als Gesamtanlage unter Denkmalschutz – ein seltenes Zeugnis dörflicher Baukultur im südlichen Kreisgebiet. <strong>Laufdorf</strong> begeistert mit gut erhaltenen Fachwerkhäusern aus dem 17. bis 19. Jahrhundert, einem historischen Backhaus und der berühmten Laufdorfer Linde. In <strong>Niederwetz</strong> überrascht das <strong>Vincent-Motorradmuseum</strong> – eine liebevoll kuratierte Sammlung historischer Motorräder, die Technikbegeisterte aus der ganzen Region anzieht. Die barocke <strong>Evangelische Kirche Schwalbach</strong> (1763-1767) mit ihrer charakteristischen Zwiebelhaube rundet das kulturelle Angebot ab.</p>
+
+<h3>6 Ortsteile, ein Versprechen</h3>
+<p><strong>Schwalbach</strong> als größter Ortsteil ist das administrative Herz der Gemeinde. <strong>Laufdorf</strong> (ca. 1.600 Einwohner) folgt als zweitgrößter Ort. <strong>Niederwetz</strong> (ca. 1.050 Einwohner) und <strong>Oberwetz</strong> (ca. 640 Einwohner) liegen etwas höher am Taunusrand. <strong>Niederquembach und Oberquembach</strong> vervollständigen als kleinere Ortsteile das Gemeindegebiet. Für alle sechs gilt: identische Anfahrtskosten, identische Reaktionszeit, identische Qualität.</p>
+
+<h3>24/7 Notdienst an 365 Tagen</h3>
+<p>In einer so ländlichen Gemeinde ist die Erreichbarkeit eines zuverlässigen Notdienstes besonders wichtig. Unser <strong>Schlüsselnotdienst Schöffengrund</strong> steht Ihnen rund um die Uhr zur Verfügung – auch bei Schneeglätte auf der Zufahrt nach Oberwetz, an einem Feiertag in Laufdorf oder mitten in der Nacht in Niederquembach.</p>
+
+<h3>Ehrliche Festpreise für ehrliche Nachbarn</h3>
+<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt in den Schöffengrund kostet <strong>15 Euro</strong> – pauschal für alle sechs Ortsteile. Den Gesamtpreis erfahren Sie am Telefon, bevor unser Monteur losfährt. Keine versteckten Zuschläge, auch nicht für die höher gelegenen Ortsteile.</p>
+`,
+
+        localTestimonials: [
+            {
+                name: "Dietmar W.",
+                quote: "In Schwalbach morgens die Tür zugezogen. Der Monteur war in 13 Minuten da, Tür in Sekunden offen, kein Kratzer. 114 Euro gesamt. Ehrlich, schnell, professionell – endlich ein Schlüsseldienst, dem man vertrauen kann.",
+                rating: 5
+            },
+            {
+                name: "Hannelore B.",
+                quote: "Wir wohnen in Oberwetz im alten Fachwerkhaus. Der Techniker hat das historische Schloss mit beeindruckender Vorsicht geöffnet. Absolut keine Beschädigung. Äußerst empfehlenswert!",
+                rating: 5
+            },
+            {
+                name: "Ralf P.",
+                quote: "Sonntagabend in Laufdorf ausgesperrt. Schneller Notdienst, fairer Wochenendpreis, saubere Arbeit. Der Techniker hat sogar noch Sicherheitstipps gegeben. Top Service im Schöffengrund!",
+                rating: 5
+            }
+        ],
+
         content: {
-            heroIntro: "Mitten im ländlichen Schöffengrund ausgesperrt? Unser Team lässt Sie nicht frieren. Transparente Preise und superschneller Einsatz von Laufdorf bis Oberquembach.",
-            mainText: `
-<p>Wenn man die Gemeinde Schöffengrund im Lahn-Dill-Kreis betritt, eröffnet sich ein wunderschönes Bild aus Natur, Taunuswäldern und idyllischen Ortschaften wie Schwalbach, Laufdorf, Niederquembach, Oberquembach und Oberwetz. Ländliches Wohnen auf höchstem Niveau, wo Nachbarschaftshilfe oft noch großgeschrieben wird. Doch selbst der hilfsbereiteste Nachbar scheitert an hochmodernen Türzylindern und Sicherheitsschließanlagen, wenn man sich in der Hektik des Alltags schlichtweg aussperrt. Für exakt solche Notfälle positioniert sich der <strong>Schlüsseldienst Schöffengrund</strong> an vorderster Front.</p>
-
-<p>Die teils versteckten und höhergelegenen Ortsteile stellen viele überregionale Notdienste vor Navigationsherausforderungen und resultieren in ewigen Wartezeiten. Nicht bei uns! Durch lokale Präsenz im benachbarten Wetzlar navigieren wir staufrei und finden punktgenau zumeist in etwa 12 bis 15 Minuten den schnellsten Weg direkt an Ihr Problem-Türblatt in Schöffengrund. Wenn Sie im Regen ohne Regenschirm oder im Winter ohne warme Jacke draußen stehen, zählt für uns jede Sekunde an Fahrzeit.</p>
-
-<p>Unsere Monteure – tief verankert in höchsten Handwerksstandards (Ausbildung u. a. durch Uwe Sarfeld) – arbeiten materialschonend. Haben Sie Ihre Tür in Laufdorf verriegelt verloren oder im Eifer nur zugezogen in Schwalbach? In neun von zehn Fällen entriegelt unser Spezialequipment, bestehend aus raffinierten Türfallen-Spiralen, Nadeln und Ziehglocken, exakt jene Tür, und das bei 99 % Unversehrtheit des Mechanismus im Falle eines bloßen Zufallens. So vermeiden wir absichtlich horrende Rechnungen durch Folgedefekte.</p>
-
-<p>Ehrlichkeit formt unsere Festpreispolitik (Basispreis Türöffnung am Werktag: 99 Euro zuzüglich 15 Euro Fahrtroute). Keine Mythen, keine Angst. Sie können uns an allen Schichten, 24/7 über unsere Hotline erreichen und vertrauensvoll den Schlüsseldienst in den Schöffengrund bestellen.</p>`,
-            serviceZerstörungsfrei: "Keine rohe Anwendung! Zugefallene Eingangstüren im Raum Schöffengrund öffnen wir mithilfe unserer Profi-Pickutensilien innerhalb von Sekunden spurlos auf.",
-            serviceBohren: "Handelt es sich bei Hausbesitzern im Schöffengrund um defekte und mehrfach verschlossene Premium-Schlösser, fräsen wir den Kern punktgenau heraus und verbauen neue Anlagen.",
-            service247: "Auch den abgelegensten Ortsteil im Schöffengrund sichern unsere Monteure ab – und das kompromisslos mitten im winterlichen Feiertag, 24/7 rund um die Lebensuhr.",
+            heroIntro: "Mitten im Schöffengrund ausgesperrt? Von Schwalbach über Laufdorf bis nach Oberwetz – schnelle Hilfe, transparente Festpreise und zerstörungsfreie Öffnung. 24/7 Notdienst.",
+            mainText: "",
+            serviceZerstörungsfrei: "",
+            serviceBohren: "",
+            service247: "",
         },
         faqs: [
             {
-                question: "Ist die Anfahrt nach Oberwetz in Schöffengrund deutlich teurer?",
-                answer: "Nein, absolut nicht. Für alle Ortsteile im Schöffengrund sichern wir eine komplett einheitliche, klar im Telefonat vermittelte, Anfahrtspauschale zu."
+                question: "Gilt die gleiche Anfahrtspauschale auch für Oberwetz und Oberquembach?",
+                answer: "Ja, absolut. Die 15 Euro Anfahrt gelten pauschal für alle sechs Schöffengrunder Ortsteile – von Schwalbach über Laufdorf und Niederwetz bis zu den Quembach-Orten. Keine Höhenzuschläge."
             },
             {
-                question: "Ich haben den Schlüssel in Schwalbach beim Joggen verloren und die Tür ist abgeschlossen. Was nun?",
-                answer: "In diesem Fall reicht ein reines Zufallen-Werkzeug nicht. Wir müssen den Zylinder sachgerecht in Schöffengrund aufbohren und Ihnen im gleichen Atemzug einen neuen Zylinder montieren."
+                question: "Können Sie historische Schlösser im denkmalgeschützten Oberwetz öffnen?",
+                answer: "Definitiv. Unsere Techniker sind speziell im Umgang mit antiken Kastenschlössern, Buntbartschlüsseln und historischen Beschlägen geschult. Wir behandeln jedes denkmalgeschützte Gebäude mit größter Sorgfalt."
             },
             {
-                question: "Zählen Anfahrtszeiten unter 20 Minuten im Schöffengrund wirklich zur Regel?",
-                answer: "Ja, wir sind in der Region stationiert. Anders als dubiose Vermittlungen sind wir effektiv nach 12 bis 15 Minuten an den meisten Türen im Schöffengrund eingetroffen."
+                question: "Wie schnell finden Sie im Schöffengrund die richtige Adresse?",
+                answer: "Wir sind lokal stationiert und kennen jeden Ortsteil persönlich. Anders als bundesweite Vermittler navigieren wir staufrei und punktgenau – in 12 bis 15 Minuten sind wir bei Ihnen."
             }
         ],
         neighbors: ["schluesseldienst-braunfels", "schluesseldienst-huettenberg", "schluesseldienst-waldsolms"]

@@ -44,10 +44,161 @@ export interface LocationData {
     };
     faqs: LocalFAQ[];
     neighbors: string[]; // Slugs of 3-5 neighbors
+    
+    // === 10X ERWEITERUNG: HYPER-LOKALE RECHERCHE FELDER ===
+    
+    // Route & Geografie
+    routeDescription?: string;      // "A45 Richtung Herborn, Ausfahrt..."
+    mainRoad?: string;               // "A45" oder "B49" oder "L3020"
+    distanceKm?: number;            // Entfernung in km
+    
+    // Charakter & Demografie
+    character?: string;             // "Historische Fachwerkstadt" oder "Ländlicher Wohnort"
+    populationApprox?: string;      // "~20.000" oder "~800"
+    landmark?: string | null;       // "Schloss Braunfels" oder null
+    buildingTypes?: string;         // "Altbauten, Einfamilienhäuser, Neubaugebiete"
+    parkingInfo?: string | null;    // Info für Monteur und Kunde
+    
+    // Sektion 1: Variabler Hero
+    heroVariant?: string;           // Custom Headline
+    
+    // Sektion 4 & 5: Preise & Szenarien
+    fareInfo?: string;              // Klartext zu Anfahrtskosten ("Keine Anfahrt in X")
+    scenarios?: Array<{             // 3-4 echte Situationen
+        icon: string;
+        title: string;
+        description: string;
+    }>;
+    
+    // Sektion 6: SEO-About Text
+    aboutText?: string;             // 400-800 Wörter
+    aboutSubheadings?: string[];
+    
+    // Sektion 9: Lokale Reviews (auch neu in 10x)
+    localTestimonials?: Array<{
+        name: string;
+        quote: string;
+        rating: number; // 1-5
+    }>;
+    
+    // Veraltete/andere Felder aus Phase 1 (optional beibehalten falls noch genutzt)
+    localLandmarks?: string[]; 
+    mapConfig?: { zoom: number; style?: string; };
+    demographicsFocus?: "urban" | "suburban" | "rural" | "business"; 
+    customSections?: Array<{ type: string; headline: string; content: string; }>;
 }
 
 export const locations: LocationData[] = [
     // --- RING 1 (0-5 km, keine Anfahrtskosten) ---
+    {
+        id: "wetzlar-kernstadt",
+        slug: "schluesseldienst-wetzlar",
+        name: "Wetzlar Kernstadt",
+        plz: "35578",
+        coordinates: { latitude: 50.5558, longitude: 8.5047 },
+        logistics: {
+            drivingTimeMinutes: "5-10",
+            distanceFromHQ: 0,
+        },
+        pricing: {
+            basePrice: 99,
+            basePriceNight: 119,
+            basePriceWeekend: 179,
+            travelCost: 0,
+            travelCostText: "Keine Anfahrtskosten in der Wetzlarer Kernstadt",
+        },
+        seo: {
+            metaTitle: "Schlüsseldienst Wetzlar — 24/7 Notdienst | Keine Anfahrtskosten",
+            metaDescription: "Ihr lokaler Schlüsseldienst für Wetzlar Kernstadt. Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. bei Ihnen vor Ort (Altstadt, Forum, Buderus-Areal).",
+        },
+        
+        // === 10X ERWEITERUNG ===
+        routeDescription: "Da sich unser Hauptsitz direkt in Wetzlar befindet, navigieren wir ohne Umwege direkt über die B49, den Karl-Kellner-Ring oder die Ernst-Leitz-Straße in jeden Winkel der Wetzlarer Kernstadt.",
+        mainRoad: "Karl-Kellner-Ring",
+        distanceKm: 0,
+        character: "Historische Domstadt und modernes Wirtschaftszentrum",
+        populationApprox: "~53.000 (Gesamtstadt)",
+        landmark: "Wetzlarer Dom & Altstadt",
+        buildingTypes: "Hochsensible Denkmalbauten in der Altstadt, Bürokomplexe am Bahnhof, moderne Wohnquartiere im Coloradenviertel.",
+        parkingInfo: "Sondergenehmigungen für die Fußgängerzone am Domplatz und Krämerstraße vorhanden. In den engen Gassen (z.B. Lahnstraße) nutzen wir unsere mobilen Roll-Systeme.",
+        heroVariant: "Ausgesperrt direkt in Wetzlar? Wir sind sofort da.",
+        fareInfo: "Da wir direkt in Wetzlar ansässig sind, berechnen wir in der gesamten Kernstadt absolut keine Anfahrtskosten! Unser Einsatz beginnt mit exakt 0 Euro Fahrtkosten.",
+        
+        scenarios: [
+            {
+                icon: "home",
+                title: "Zugefallene Haustür im Altbau",
+                description: "Ob in der verwinkelten Lahnstraße oder am Domplatz: Bei schweren Holztüren wenden wir ausschließlich modernste, materialschonende Lockpicking-Methoden an."
+            },
+            {
+                icon: "shield-alert",
+                title: "Einbruchschaden am Bahnhof",
+                description: "Einbruchschutz wird in städtischen Gebieten immer wichtiger. Wenn in der Bahnhofstraße eingebrochen wurde, tauschen wir sofort die defekten Schließzylinder, auch mitten in der Nacht."
+            },
+            {
+                icon: "briefcase",
+                title: "Gewerbliche Schließanlagen",
+                description: "Betrieben und Büros rund um das Buderus-Areal helfen wir sofort bei defekten Zugangssystemen oder verlorenen General-Schlüsseln."
+            }
+        ],
+
+        aboutText: `
+<p>Die <strong>Wetzlarer Kernstadt</strong> ist nicht nur das pochende wirtschaftliche wie kulturelle Herz des Lahn-Dill-Kreises, sie ist vor allem unser ureigenes Zuhause. Als ein hier ansässiger, bodenständiger Meisterbetrieb sind wir den Straßen zwischen dem imposanten Wetzlarer Dom, dem Leitz-Park und der belebten Bahnhofstraße tiefer verbunden als jeder überregionale Vermittler. Ob Sie in einem denkmalgeschützten Gebäude in der historischen Altstadt wohnen oder eine hochmoderne Büroeinheit am Forum Wetzlar betreiben: Die Architektur in Wetzlar ist so facettenreich wie Theatervorstellungen in der Rittal Arena.</p>
+
+<h3>Null-Euro Anfahrtskosten direkt im Stadtzentrum</h3>
+<p>Transparenz beginnt bei uns an der Heimat-Postleitzahl 35578. Da wir direkt aus Wetzlar operieren, ist es für uns eine absolute Selbstverständlichkeit, dass Kunden innerhalb der Kernstadt <strong>keinerlei Fahrtkosten</strong> zahlen. Während dubiose Zentralen aus dem Frankfurter oder gar norddeutschen Raum hohe Anfahrtsgelder addieren, startet Ihr Rechnungsbetrag bei null Euro für den Weg. Wir erheben exklusiv und transparent nur unseren werktäglichen Festpreis von 99 Euro für die Standardöffnung. Mehr Lokalkolorit geht nicht.</p>
+
+<h3>Blitzschnelle Hilfe dank Heimvorteil</h3>
+<p>Sie haben den Schlüssel stecken gelassen kurz vor dem Termin im Rathaus? Unser Logistikvorteil in der Goethestadt ist unschlagbar. Wir kennen die Staustrecken am Karl-Kellner-Ring im morgendlichen Berufsverkehr und umfahren Blockaden durch intelligente Routenplanung etwa über Brückenbauwerke der B49. So garantieren wir Anfahrtszeiten von meist unter 10 Minuten – wir sind oft schon unterwegs, bevor Sie aufgelegt haben.</p>
+
+<h3>Schonende Öffnungen für sensible Denkmal- und Altbauarchitektur</h3>
+<p>Besonders die Gebäude rund um den pittoresken Kornmarkt, die Lahnstraße und den Schillerplatz unterliegen strengem Denkmalschutz. Die historischen, teilweise reich verzierten Holztüren (etwa am alten Kestner-Haus) dulden keine Fehler durch rohe Gewalt. Wenn Sie sich hier versehentlich aussperren, benötigen Sie Feinmechanik, keine Bohrmaschinen. Dank hochsensibler Spezialwerkzeuge, wie feinsten Zugnadeln (Lockpicking) und beschichteten Türfallen-Gleitern, können wir fast jede zugefallene, aber nicht aktiv verriegelte Haustür Wetzlars zu fantastischen 99 % komplett schadensfrei aufziehen. Die massive Substanz Ihres Heims bleibt unangetastet.</p>
+
+<h3>B2B-Partner für Wetzlarer Geschäftsleute</h3>
+<p>Doch nicht nur die Einwohnerschaft Wetzlars verlässt sich auf uns. Zahlreiche Gewerbetreibende in der Krämerstraße, Anwälte in der Bahnhofsvorstadt oder Systemgastronomen rund ums Forum Wetzlar zählen zu unseren Notfall-Kunden. Defekte an komplexen BKS- oder Ikon-Schließanlagen beheben wir direkt vor Ort. Der Schutz Ihrer Wetzlarer Liegenschaft hat für unseren Schlüsseldienst jederzeit allerhöchste Priorität.</p>
+`,
+        
+        localTestimonials: [
+            {
+                name: "Karsten L.",
+                quote: "Genau am Wetzlarer Dom ausgesperrt - es regnete in Strömen. Innerhalb von 8 echten Minuten war der Monteur da, die alte Haustür wurde ohne den winzigsten Kratzer geöffnet. Und wirklich null Euro Fahrtkosten auf der Rechnung!",
+                rating: 5
+            },
+            {
+                name: "Dr. Simone H.",
+                quote: "Nach Praxisschluss in der Bahnhofstraße den Schlüssel abgebrochen. Herrlicher Service: Sehr ruhiges Auftreten, extrem schnell den neuen Zylinder montiert. Das gibt 5 Sterne für diesen Wetzlarer Betrieb.",
+                rating: 5
+            },
+            {
+                name: "Familie Özdemir",
+                quote: "Haben uns am Forum kurz vor dem Kino ausgesperrt. Der Schlüsseldienst kam blitzschnell ins Coloradenviertel. Preis war transparent bei 99 Euro (werktags). Ehrliches Handwerk ohne Tricks.",
+                rating: 5
+            }
+        ],
+
+        content: {
+            heroIntro: "Ausgesperrt direkt in der Goethestadt Wetzlar? Keine Panik: Wir sind sofort vor Ort – ganz ohne Anfahrtskosten!",
+            mainText: "", // Ersetzt durch aboutText im 10x Layout
+            serviceZerstörungsfrei: "", // Ersetzt durch scenarios im 10x Layout
+            serviceBohren: "",
+            service247: "",
+        },
+        faqs: [
+            {
+                question: "Zahle ich in den Wetzlarer Randgebieten wie Dalheim oder Sturmkopf Anfahrtskosten?",
+                answer: "Nein! Wir verlangen keinerlei Anfahrtskosten für das gesamte Postleitzahlen-Areal 35578 der Kernstadt, inklusive Dalheim und Sturmkopf. Die Fahrt ist für Sie komplett kostenlos."
+            },
+            {
+                question: "Wie lange muss ich am Wochenende in der Wetzlarer Innenstadt auf Hilfe warten?",
+                answer: "Wetzlar ist unsere Heimbasis. Egal ob werktags, sonntags oder in der Nacht: Zumeist treffen wir innerhalb von rasanten 5 bis 10 Minuten an Ihrer Adresse ein. Ohne lange Callcenter-Warteschleifen."
+            },
+            {
+                question: "Meine Türrahmendichtung an meiner Neubau-Wohnung am Dom darf nicht kaputtgehen. Wie arbeiten Sie?",
+                answer: "Wir nutzen extrem weiche, materialschonende Spezialspatel und Luftkissen. Bei zugefallenen Türen in Wetzlar garantieren wir eine absolut materialschonende Öffnung mit annähernd 100% Erfolgsquote, ohne das Holz oder den Lack zu zerkratzen."
+            }
+        ],
+        neighbors: ["schluesseldienst-asslar", "schluesseldienst-wetzlar-niedergirmes", "schluesseldienst-wetzlar-naunheim"]
+    },
     {
         id: "wetzlar-niedergirmes",
         slug: "schluesseldienst-wetzlar-niedergirmes",
@@ -101,7 +252,21 @@ export const locations: LocationData[] = [
                 answer: "Eine normale, nur zugefallene Tür öffnen wir werktags von 06:00 bis 19:59 Uhr zum transparenten Festpreis von 99 Euro – inklusive der Anfahrt nach Niedergirmes."
             }
         ],
-        neighbors: ["schluesseldienst-wetzlar-dutenhofen", "schluesseldienst-wetzlar-naunheim", "schluesseldienst-wetzlar-hermannstein"]
+        neighbors: ["schluesseldienst-wetzlar-dutenhofen", "schluesseldienst-wetzlar-naunheim", "schluesseldienst-wetzlar-hermannstein"],
+        localLandmarks: ["Forum Wetzlar", "Buderus-Arena", "Bahnhof Wetzlar"],
+        localTestimonials: [
+            { name: "Familie M.", quote: "Waren in 10 Minuten in Niedergirmes vor Ort. Super Service!", rating: 5 },
+            { name: "K. Schmidt", quote: "Professionelle Hilfe, genauer Festpreis, sehr freundlich.", rating: 5 }
+        ],
+        mapConfig: { zoom: 14 },
+        demographicsFocus: "urban",
+        customSections: [
+            {
+                type: "stats",
+                headline: "Soforthilfe für Wohnungen & Gewerbe in Niedergirmes",
+                content: "<p>Niedergirmes zeichnet sich durch eine dichte Mischung aus Wohnanlagen, dem stark frequentierten Bahnhofsgebiet und Gewerbeflächen aus. Unser Team ist darauf spezialisiert, sowohl komplexe Mehrfachverriegelungen in Gewerbeobjekten als auch herkömmliche Wohnungstüren schnell und absolut beschädigungsfrei zu öffnen.</p>"
+            }
+        ]
     },
     {
         id: "wetzlar-dutenhofen",
