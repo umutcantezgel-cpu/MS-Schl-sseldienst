@@ -6,22 +6,28 @@ import { entryAnimations } from"@/lib/animations";
 import { generateSharedMetadata } from"@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
- title:"Bewertungen — 4.9 Sterne Kundenzufriedenheit",
+ title:"Bewertungen — 5.0 Sterne Kundenzufriedenheit",
  description:"Lesen Sie echte Kundenbewertungen und Erfahrungen mit dem MS Schlüsseldienst Wetzlar. 100% transparent und zuverlässig.",
  path:"/bewertungen",
 });
 
 const reviews = [
- { name:"Stefan", city:"Wetzlar", rating: 5, date:"2024-12-01", text:"Super Service! Schnelle Hilfe und sehr freundliches Personal. Ich war wirklich beeindruckt von der Professionalität und der zügigen Umsetzung meines Anliegens.", timeAgo:"Vor 2 Tagen" },
- { name:"Maria", city:"Gießen", rating: 5, date:"2024-11-25", text:"Ich bin begeistert. Die Reparatur ging sehr schnell und der Preis war absolut fair. Man merkt, dass hier Experten am Werk sind. Klare Weiterempfehlung!", timeAgo:"Vor 1 Woche" },
- { name:"Laura", city:"Wetzlar", rating: 5, date:"2024-11-01", text:"Sehr kompetent und hilfsbereit. Ich wurde umfassend beraten und alle meine Fragen wurden geduldig beantwortet. Das Team ist klasse!", timeAgo:"Vor 1 Monat" },
- { name:"Michael", city:"Herborn", rating: 5, date:"2024-11-01", text:"Top Leistung! Das Team ist extrem zuverlässig. Sie waren pünktlich vor Ort und haben die Arbeit sauber und zügig erledigt.", timeAgo:"Vor 1 Monat" },
- { name:"Julia", city:"Wetzlar", rating: 5, date:"2024-10-01", text:"Hervorragender Kundenservice. Sehr zu empfehlen. Man fühlt sich vom ersten Kontakt an gut aufgehoben und verstanden.", timeAgo:"Vor 2 Monaten" },
- { name:"Thomas", city:"Dillenburg", rating: 4, date:"2024-11-15", text:"Gute Arbeit insgesamt. Das Ergebnis ist top, nur ein Stern Abzug wegen einer leichten Verzögerung bei der Terminfindung. Ansonsten alles prima.", timeAgo:"Vor 2 Wochen" },
+ { name:"Jens Brandenburger", city:"Wetzlar", rating: 5, date:"2026-03-17", text:"Schlüsseldienst ist Top, vor allem blitzschnell, sehr freundlich und hilfsbereit! Keine Wartezeit.", timeAgo:"Vor 1 Woche" },
+ { name:"Emelie Herbel", city:"Wetzlar", rating: 5, date:"2026-03-10", text:"Einfach nur super freundlich! Wir standen in Wetzlar und haben dringend einen guten Schlüsseldienst gebraucht \u2013 und sind so froh, diesen hier gefunden zu haben!", timeAgo:"Vor 2 Wochen" },
+ { name:"Sahar Koob", city:"Wetzlar", rating: 5, date:"2026-03-03", text:"Super schneller und zuverlässiger Service! Ich war ausgesperrt und der Schlüsseldienst war innerhalb kürzester Zeit vor Ort. Die Tür wurde professionell und ohne Beschädigungen geöffnet.", timeAgo:"Vor 3 Wochen" },
+ { name:"Thomas S.", city:"Wetzlar", rating: 5, date:"2026-01-24", text:"Der Schlüsseldienst war eben vor Ort, super freundlich und hat die Tür komplett ohne Beschädigungen geöffnet. Absolut zuverlässig und professionell. Ich bin sehr zufrieden und kann den Service uneingeschränkt weiterempfehlen.", timeAgo:"Vor 2 Monaten" },
+ { name:"Alexandra", city:"Wetzlar", rating: 5, date:"2026-02-24", text:"Sehr zuvorkommend und professionell. Wirklich ganz toller und außergewöhnlicher Service!!! Ich bin unendlich dankbar für die Geduld und das Engagement, was mir heute entgegengebracht wurde!", timeAgo:"Vor 1 Monat" },
+ { name:"Tim Staudt", city:"Wetzlar", rating: 5, date:"2025-10-24", text:"Wir sind mit dem Schlüsseldienst überaus zufrieden. Ihr Mitarbeiter, Herr Saad, hat sich als kompetent, verbindlich und zuverlässig erwiesen und hat uns mit allen Problemen zielsicher beiseite gestanden.", timeAgo:"Vor 5 Monaten" },
+ { name:"Christine Civic", city:"Wetzlar", rating: 5, date:"2025-05-24", text:"Schnell, freundlich und professionell! Der Schlüsseldienst war zügig vor Ort und hat meine Tür ohne Schaden geöffnet. Absolut zufrieden \u2013 sehr empfehlenswert!", timeAgo:"Vor 10 Monaten" },
+ { name:"Francesca Bischof", city:"Wetzlar", rating: 5, date:"2025-05-24", text:"Perfekter Service! Extrem freundlich und zuvorkommend. Bei jedem Arbeitsschritt und preislichen Veränderungen absolut transparent und fair.", timeAgo:"Vor 10 Monaten" },
+ { name:"Tasha", city:"Wetzlar", rating: 5, date:"2025-07-24", text:"Herr M. ist sofort ans Telefon gegangen, war schnell vor Ort und hat die Tür zügig und professionell geöffnet. Sehr freundlich und zuverlässig \u2013 absolut empfehlenswert!", timeAgo:"Vor 8 Monaten" },
+ { name:"Deniz Kaplan", city:"Wetzlar", rating: 5, date:"2025-03-24", text:"Ich kann Mina Schlüsseldienst in Wetzlar nur wärmstens empfehlen! Der Service war außergewöhnlich schnell \u2013 innerhalb kürzester Zeit vor Ort und unser Problem war sofort gelöst.", timeAgo:"Vor 1 Jahr" },
+ { name:"Carlos Sanchez", city:"Wetzlar", rating: 5, date:"2025-03-24", text:"Tür zugefallen und in der Kälte ausgeschlossen. Er war innerhalb von 20 Minuten da und hat uns geholfen. Alles lief fair ab.", timeAgo:"Vor 1 Jahr" },
+ { name:"Vencislav Redling", city:"Wetzlar", rating: 5, date:"2025-03-24", text:"Einen ehrlicheren Schlüsseldienst kann man sich nicht wünschen. Um 2 Uhr nachts hatte sich der Nachbar ausgesperrt und nach einem sehr netten Telefonat war der Schlüsseldienst schnell vor Ort.", timeAgo:"Vor 1 Jahr" },
 ];
 
 function generateReviewSchema() {
- return {"@context":"https://schema.org","@type":"LocalBusiness","name":"Schlüsseldienst Wetzlar","aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5","worstRating":"1"
+ return {"@context":"https://schema.org","@type":"LocalBusiness","name":"Schlüsseldienst Wetzlar","aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"44","bestRating":"5","worstRating":"1"
   },"review": reviews.map(r => ({"@type":"Review","author": {"@type":"Person","name": r.name },"datePublished": r.date,"reviewBody": r.text,"reviewRating": {"@type":"Rating","ratingValue": r.rating,"bestRating": 5,"worstRating": 1
    }
   }))
@@ -79,7 +85,7 @@ export default function BewertungenPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
             <Award className="w-4 h-4 text-[var(--color-yellow-400)]" />
-            <span>Über 120 verifizierte Erfahrungen</span>
+            <span>44 verifizierte Google Rezensionen</span>
           </div>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -90,9 +96,9 @@ export default function BewertungenPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="mt-8 flex flex-col items-center justify-center gap-3">
             <div className="flex items-center gap-4 bg-white/10 p-4 rounded-2xl border border-white/10 backdrop-blur-sm">
-              <span className="text-4xl font-extrabold text-white">4.9</span>
+              <span className="text-4xl font-extrabold text-white">5.0</span>
               <div className="flex flex-col items-start">
-                <div className="flex gap-1 text-[var(--color-yellow-400)]" aria-label="4.9 von 5 Sternen" role="img">
+                <div className="flex gap-1 text-[var(--color-yellow-400)]" aria-label="5.0 von 5 Sternen" role="img">
                   {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" aria-hidden="true" />
                   ))}

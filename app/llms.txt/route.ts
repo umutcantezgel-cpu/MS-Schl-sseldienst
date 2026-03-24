@@ -44,7 +44,7 @@ export async function GET() {
 Wetzlar (all districts: Altstadt, Dutenhofen, Garbenheim, Hermannstein, Münchholzhausen, Nauborn, Niedergirmes, Steindorf), Gießen, Marburg, Solms, Aßlar, Leun, Braunfels, Hüttenberg, Lahnau, Wettenberg, Biebertal, Heuchelheim, Linden, Pohlheim, Lich, Grünberg, Staufenberg, Buseck, Reiskirchen, Lollar, Fronhausen, Weimar/Lahn, Gladenbach, Dillenburg, Herborn, Haiger, Ehringshausen, Schöffengrund, and the complete Lahn-Dill-Kreis and northern Landkreis Gießen regions.
 
 ## Trust & Credentials
-- Google Rating: 4.9 stars from 127+ verified reviews
+- Google Rating: 5.0 stars from 44 verified reviews
 - 15+ years of professional locksmith experience
 - German master craftsman standards (Handwerksmeister)
 - Transparent fixed pricing — price stated before work begins

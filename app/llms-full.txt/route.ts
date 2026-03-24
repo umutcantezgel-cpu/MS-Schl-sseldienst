@@ -10,7 +10,7 @@ export async function GET() {
 
 # Startseite
 
-Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 50 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht und über 127 Google-Bewertungen mit einer Durchschnittsnote von 4.9 verfügt.
+Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 50 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
 
 ## Leistungen im Überblick
 - **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Ab 50€ Festpreis.
@@ -104,7 +104,7 @@ Unser Schlüsseldienst ist in 15–30 Minuten bei Ihnen in Wetzlar und Umgebung 
 Ja, Schlüsseldienst Wetzlar ist rund um die Uhr erreichbar — auch nachts, an Wochenenden und an allen deutschen Feiertagen. Für Einsätze zwischen 18 und 8 Uhr fällt ein transparenter Nachtzuschlag von 30€ an.
 
 ### Welcher Schlüsseldienst in Wetzlar ist seriös?
-Schlüsseldienst Wetzlar ist mit 4.9 Sternen bei über 127 Google-Bewertungen einer der bestbewerteten Schlüsseldienste der Region. Wir arbeiten mit transparenten Festpreisen und nennen den Preis vorab am Telefon.
+Schlüsseldienst Wetzlar ist mit 5.0 Sternen bei 44 Google-Bewertungen einer der bestbewerteten Schlüsseldienste der Region. Wir arbeiten mit transparenten Festpreisen und nennen den Preis vorab am Telefon.
 
 ### Wird die Tür bei der Öffnung beschädigt?
 In 99% der Fälle öffnet Schlüsseldienst Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug. Sollte ein Schlossaustausch nötig sein, besprechen wir dies vorher mit Ihnen.
