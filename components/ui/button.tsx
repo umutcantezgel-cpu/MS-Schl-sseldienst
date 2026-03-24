@@ -1,47 +1,96 @@
-import * as React from"react"
-import { cva, type VariantProps } from"class-variance-authority"
-import { cn } from"@/lib/utils"
+import * as React from "react"
+import { Slot } from "@radix-ui/react-slot"
+import { cva, type VariantProps } from "class-variance-authority"
+import { Loader2 } from "lucide-react"
 
-const buttonVariants = cva("inline-flex items-center justify-center gap-[var(--space-2)] whitespace-nowrap rounded-[var(--radius-button)] text-[var(--typo-body-size)] font-bold transition-all duration-[var(--duration-250)] ease-out focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 active:scale-[0.98] min-h-[48px] min-w-[48px]",
+import { cn } from "@/lib/utils"
+
+const buttonVariants = cva(
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[var(--radius-md,6px)] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-[var(--duration-fast,150ms)] ease-out",
   {
     variants: {
       variant: {
-        default:"bg-[var(--color-red-500)] text-[var(--text-on-dark)] shadow-[var(--shadow-cta)] hover:bg-[var(--color-red-600)] hover:-translate-y-1 hover:shadow-[var(--shadow-cta-hover)]",
-        secondary:"border-2 border-[var(--color-red-500)] bg-[var(--surface-primary)] text-[var(--color-red-500)] shadow-[var(--elevation-1)] hover:bg-[var(--color-red-500)] hover:text-[var(--text-on-dark)] hover:-translate-y-1 hover:shadow-[var(--shadow-cta-hover)]",
-        outline:"border-2 border-[var(--border-subtle)] bg-transparent text-[var(--text-primary)] hover:border-[var(--color-red-500)] hover:text-[var(--color-red-500)] hover:bg-[var(--surface-secondary)]",
-        ghost:"bg-transparent border-2 border-[rgba(255,255,255,0.2)] text-[var(--text-on-dark)] hover:bg-[rgba(255,255,255,0.1)] hover:border-white",
-        link:"text-[var(--color-red-500)] underline-offset-4 hover:underline !min-h-0",
+        primary:
+          "bg-[var(--color-red-500)] text-white shadow-none hover:-translate-y-px hover:shadow-[var(--elevation-2)] hover:bg-[var(--color-red-600)] active:translate-y-px active:shadow-none",
+        secondary:
+          "border border-[var(--border-subtle)] bg-transparent text-[color:var(--text-primary)] shadow-none hover:-translate-y-px hover:shadow-[var(--elevation-1)] hover:bg-[var(--color-charcoal-50)] hover:border-[var(--color-charcoal-200)] active:translate-y-px active:shadow-none",
+        ghost:
+          "bg-transparent text-[color:var(--text-primary)] hover:bg-[var(--color-charcoal-50)] hover:text-[color:var(--color-red-600)] border border-transparent active:translate-y-px",
+        destructive:
+          "bg-[var(--color-status-error,var(--color-red-600))] text-white shadow-none hover:-translate-y-px hover:shadow-[var(--elevation-1)] hover:opacity-90 active:translate-y-px active:shadow-none",
       },
       size: {
-        default:"h-12 px-[var(--space-6)] py-[var(--space-3)]",
-        sm:"h-10 px-[var(--space-4)] text-[var(--typo-micro-size)] rounded-[var(--radius-4)]",
-        lg:"h-14 px-[var(--space-8)] text-[var(--typo-price-size)]",
-        icon:"h-12 w-12",
+        sm: "h-11 px-4 text-sm", // 44px height for AAA compliance
+        md: "h-12 px-5 text-base", // 48px height
+        lg: "h-14 px-6 text-base", // 56px height
+        xl: "h-16 px-8 text-lg", // 64px height
+        icon: "h-11 w-11", // strictly 44x44px
       },
     },
     defaultVariants: {
-      variant:"default",
-      size:"default",
+      variant: "primary",
+      size: "md",
     },
   }
 )
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-  VariantProps<typeof buttonVariants> {
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean
+  loading?: boolean
+  icon?: React.ReactNode
+  iconPosition?: "left" | "right"
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, ...props }, ref) => {
+  (
+    {
+      className,
+      variant,
+      size,
+      asChild = false,
+      type = "button",
+      loading = false,
+      icon,
+      iconPosition = "left",
+      children,
+      disabled,
+      ...props
+    },
+    ref
+  ) => {
+    const Comp = asChild ? Slot : "button"
+    const isDisabled = disabled || loading
+
     return (
-      <button
+      <Comp
+        type={asChild ? undefined : type}
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
+        disabled={isDisabled}
         {...props}
-      />
+      >
+        {/* If rendering asChild, we assume the child handles its own internal layout,
+            otherwise we inject loading spinners and icons around children. */}
+        {asChild ? (
+          children
+        ) : (
+          <>
+            {loading && <Loader2 className="mr-2 h-5 w-5 animate-spin" aria-hidden="true" />}
+            {!loading && icon && iconPosition === "left" && (
+              <span className="mr-2 inline-flex" aria-hidden="true">{icon}</span>
+            )}
+            {children}
+            {!loading && icon && iconPosition === "right" && (
+              <span className="ml-2 inline-flex" aria-hidden="true">{icon}</span>
+            )}
+          </>
+        )}
+      </Comp>
     )
   }
 )
-Button.displayName ="Button"
+Button.displayName = "Button"
 
 export { Button, buttonVariants }

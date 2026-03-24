@@ -1,5 +1,3 @@
-"use client";
-
 import { LocationData } from "@/lib/data/locations";
 import ReviewCard from "@/components/reviews/ReviewCard";
 import { Review, reviewsData } from "@/components/reviews/reviews.data";
@@ -38,10 +36,10 @@ export default function LocationReviews({ city }: LocationReviewsProps) {
         <RevealSection className="py-16 md:py-24 bg-[var(--color-slate-50)] border-b border-[var(--border-subtle)]">
             <div className="container mx-auto px-[var(--section-px)]">
                 <div className="max-w-4xl mx-auto text-center mb-16">
-                    <h2 className="typo-section-heading text-[var(--text-primary)] mb-4">
-                        Stimmen aus <span className="text-[var(--value-primary)]">{city.name}</span> & Umgebung
+                    <h2 className="typo-section-heading text-[color:var(--text-primary)] mb-4">
+                        Stimmen aus <span className="text-[color:var(--value-primary)]">{city.name}</span> & Umgebung
                     </h2>
-                    <p className="typo-body-large text-[var(--text-secondary)]">
+                    <p className="typo-body-large text-[color:var(--text-secondary)]">
                         Über 100 positive Bewertungen auf Google. Das sagen Ihre Nachbarn über uns:
                     </p>
                 </div>

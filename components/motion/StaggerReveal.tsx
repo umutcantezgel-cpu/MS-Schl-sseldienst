@@ -1,19 +1,19 @@
 "use client";
 
 import { ReactNode, createElement } from"react";
-import { motion, Variants, useReducedMotion } from"framer-motion";
+import { m, Variants, useReducedMotion } from"framer-motion";
 
 type MotionElement ="div" |"section" |"ul" |"ol" |"li" |"span" |"p" |"article";
 
 const motionMap = {
-  div: motion.div,
-  section: motion.section,
-  ul: motion.ul,
-  ol: motion.ol,
-  li: motion.li,
-  span: motion.span,
-  p: motion.p,
-  article: motion.article,
+  div: m.div,
+  section: m.section,
+  ul: m.ul,
+  ol: m.ol,
+  li: m.li,
+  span: m.span,
+  p: m.p,
+  article: m.article,
 };
 
 interface StaggerRevealProps {
@@ -60,7 +60,7 @@ export default function StaggerReveal({
     return createElement(as, { className }, children);
   }
 
-  const MotionComponent = motionMap[as] || motion.div;
+  const MotionComponent = motionMap[as] || m.div;
 
   return (
     <MotionComponent
@@ -86,7 +86,7 @@ export function StaggerItem({ children, className ="", animation, as ="div" }: {
     return createElement(as, { className }, children);
   }
 
-  const MotionComponent = motionMap[as] || motion.div;
+  const MotionComponent = motionMap[as] || m.div;
 
   return (
     <MotionComponent variants={animation} className={className}>

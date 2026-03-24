@@ -1,50 +1,107 @@
 # MS Schlüsseldienst Wetzlar
 
-Professional website for a local locksmith service in Wetzlar and surroundings. Built with Next.js 15, optimized for local SEO, performance, and high conversion rates.
+Professionelle Website für einen lokalen Schlüsseldienst in Wetzlar und Umgebung. Ergebnis einer 20-Phasen Enterprise-Grade Upgrade-Pipeline — gebaut mit Next.js 15, optimiert für lokale SEO, Performance, Barrierefreiheit und hohe Conversion-Raten.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
-- **Styling:** CSS Modules / Vanilla CSS (Custom Properties)
-- **Animations:** Framer Motion
-- **Icons:** Material Symbols & Lucide React
-- **Maps:** Google Maps JS API Integration
-- **Deployment:** Vercel / Netlify ready
+| Technologie | Version | Zweck |
+|---|---|---|
+| **Next.js** | 15.4.9 | App Router, RSC, SSG |
+| **React** | 19+ | UI-Framework |
+| **TypeScript** | Strict Mode | Typsicherheit |
+| **Tailwind CSS** | 4.1.11 | Styling + Design Tokens |
+| **Framer Motion** | 11.18.2 | Animationen |
+| **Formspree** | — | Kontaktformular-Backend |
+| **Vercel** | — | Deployment & Hosting |
 
-## Key Features
+> **Nicht im Stack:** Kein Headless CMS, keine externen AI APIs, kein Sentry/externes Error-Tracking, kein Newsletter-System, kein i18n, kein Dark Mode.
 
-- **Local SEO & Geo-Targeting:** Dynamic routes for 20+ service locations (stadtgebiete) with unique metadata.
-- **Service Integration:** Detailed landing pages for Emergency Door Openings, Car Openings, Security Systems, etc.
-- **Interactive Map:** Real-time service area visualization on the `/servicegebiet` page.
-- **Conversion Focused:** Sticky header CTA, mobile bottom bar, and optimized pricing calculators.
-- **Performance:** Optimized LCP images, lazy-loaded interactive components, and lean CSS.
+## Projektstruktur
 
-## Getting Started
+```
+app/                    → Routen (Layout, Pages, API Routes, Server Actions)
+components/
+├── analytics/          → WebVitalsReporter, ScrollDepthTracker
+├── forms/              → ContactForm (Zod, Honeypot, Rate-Limiting)
+├── growth/             → PersonalizedHero, PriceEstimator, DynamicCounter
+├── layout/             → StickyHeader, Footer, Navigation, Breadcrumbs
+├── monitoring/         → ErrorHandlers (global error capture)
+├── sections/           → FinalCTA, TrustStrip, ServiceCards, About
+├── ui/                 → Button, Card, Badge, CookieConsent, JsonLd
+└── mobile/             → MobileBottomBar, BottomSheet
+hooks/                  → useVisitorSegment, useConsent, useNetworkStatus
+lib/                    → Analytics, Sanitize, Monitoring, Formatters
+lib/monitoring/         → ErrorLogger, Anomaly Detection
+docs/                   → Architecture, Security, Deployment, Monitoring
+```
 
-First, install the dependencies:
+## Erste Schritte
+
+### Voraussetzungen
+- Node.js 18+
+- npm 10+
+
+### Installation
 
 ```bash
+git clone <repository-url> && cd schluesseldienst-webseite
 npm install
-```
-
-Set up your environment variables by creating a `.env.local` file:
-
-```env
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_key_here
-```
-
-Run the development server:
-
-```bash
+cp .env.example .env.local
+# .env.local ausfüllen (NEXT_PUBLIC_GOOGLE_MAPS_API_KEY)
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+→ [http://localhost:3000](http://localhost:3000)
 
-## Build for Production
+## Verfügbare Scripts
 
-```bash
-npm run build
-```
+| Script | Beschreibung |
+|---|---|
+| `npm run dev` | Development Server (Turbopack) |
+| `npm run build` | Production Build |
+| `npm run start` | Production Server lokal |
+| `npm run lint` | ESLint Check |
+| `npm run typecheck` | TypeScript Strict Check |
+| `npm run validate` | Lint + Typecheck + Build |
+| `npm run test:smoke` | Smoke Tests (7 Endpoints) |
+| `npm run build:analyze` | Bundle-Analyse mit @next/bundle-analyzer |
 
-The build output is static-ready and optimized for zero-config deployment on Vercel or Netlify.
+## Deployment
+
+- **Automatisch**: Vercel deployt bei Push auf `main`
+- **Preview**: Vercel erstellt Preview-Deployments bei PRs
+- **Rollback**: Vercel Dashboard → Deployments → vorherige Version promoten
+- **CI**: GitHub Actions Pipeline (lint → typecheck → build → smoke-test)
+
+Siehe [docs/deployment-guide.md](docs/deployment-guide.md) für Details.
+
+## 20-Phasen-Pipeline
+
+Diese Website durchlief eine vollständige 20-Phasen Enterprise Upgrade Pipeline:
+
+| Phase | Fokus |
+|---|---|
+| 1-3 | Semantik, SEO, Typography |
+| 4-5 | Animation, Conversion-Architektur |
+| 6-7 | Performance, Progressive Enhancement |
+| 8-9 | Barrierefreiheit, Resilienz |
+| 10-11 | Content-Architektur, Advanced SEO |
+| 12-13 | Design System, Analytics |
+| 14-15 | Testing-Dokumentation, Formspree-Integration |
+| 16-17 | Security & DSGVO, DevOps & CI/CD |
+| 18-19 | Growth & Personalisierung, Monitoring |
+| 20 | Code-Qualität, Dokumentation, Finale Konsolidierung |
+
+Siehe [CHANGELOG.md](CHANGELOG.md) für Details pro Phase.
+
+## Dokumentation
+
+| Dokument | Inhalt |
+|---|---|
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Komponentenhierarchie, Datenfluss, Rendering |
+| [SECURITY-CHECKLIST.md](docs/SECURITY-CHECKLIST.md) | CSP, DSGVO, Input-Validation |
+| [MONITORING-GUIDE.md](docs/MONITORING-GUIDE.md) | Error-Logging, Web Vitals, Health Checks |
+| [INCIDENT-RESPONSE.md](docs/INCIDENT-RESPONSE.md) | P1-P4 Severity, Rollback, Post-Mortem |
+| [deployment-guide.md](docs/deployment-guide.md) | Vercel, Environment, CI/CD |
+| [MAINTENANCE.md](docs/MAINTENANCE.md) | Wartungsplan (wöchentlich bis jährlich) |
+| [HANDOFF.md](docs/HANDOFF.md) | Onboarding für neue Entwickler |

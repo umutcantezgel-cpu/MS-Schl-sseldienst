@@ -38,11 +38,11 @@ export default function CertBadges() {
           }}
         >
           <div className="w-16 h-16 rounded-full bg-[var(--border-subtle)] border-2 border-[var(--border-subtle)] flex items-center justify-center">
-            <span className="text-lg font-bold text-[var(--text-secondary)]">
+            <span className="text-lg font-bold text-[color:var(--text-secondary)]">
               {cert.initials}
             </span>
           </div>
-          <span className="text-xs font-medium text-[var(--text-tertiary)] text-center max-w-[100px]">
+          <span className="text-xs font-medium text-[color:var(--text-tertiary)] text-center max-w-[100px]">
             {cert.name}
           </span>
         </div>

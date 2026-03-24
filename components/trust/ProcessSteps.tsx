@@ -37,14 +37,14 @@ const steps = [
 
 export default function ProcessSteps() {
   return (
-    <section aria-labelledby="process-heading" className="bg-transparent px-[var(--space-6)] py-[var(--space-16)] lg:py-[var(--space-20)] overflow-hidden relative">
+    <section aria-labelledby="process-heading" className="bg-transparent px-[var(--section-px)] py-[var(--section-py)] overflow-hidden relative">
       <div className="mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-12">
-          <h2 id="process-heading" className="typo-h2 text-[var(--text-primary)]">
+          <h2 id="process-heading" className="typo-h2 text-[color:var(--text-primary)]">
             So einfach funktioniert unser <span className="text-[var(--color-red-500)]">Service</span>
           </h2>
           <div className="mx-auto h-[4px] w-[64px] rounded-full bg-[var(--color-red-500)]" />
-          <p className="mt-[var(--space-6)] text-[var(--text-secondary)] text-[17px] max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-[var(--space-6)] text-[color:var(--text-secondary)] text-[17px] max-w-2xl mx-auto leading-relaxed">
             Keine Überraschungen, keine endlosen Wartezeiten. Ein transparenter 4-Schritte-Ablauf für Ihre maximale Sicherheit.
           </p>
         </div>
@@ -64,11 +64,11 @@ export default function ProcessSteps() {
                     Schritt {step.num}
                   </span>
 
-                  <div className="flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-2xl bg-white border border-[var(--color-charcoal-100)] text-[var(--color-red-500)] shadow-[0_2px_12px_rgba(0,0,0,0.06)] mb-6 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_8px_24px_rgba(185,28,28,0.12)] group-hover:border-[var(--color-red-500)]/30">
+                  <div className="flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-2xl bg-white border border-[var(--color-charcoal-100)] text-[var(--color-red-500)] shadow-[var(--elevation-1)] mb-6 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[var(--shadow-brand-2)] group-hover:border-[var(--color-red-500)]/30">
                     <step.icon className="h-8 w-8" aria-hidden="true" />
                   </div>
                   <h3
-                    className="font-bold text-[var(--text-primary)] mb-3"
+                    className="font-bold text-[color:var(--text-primary)] mb-3"
                     style={{
                       fontSize: 'var(--text-h4)',
                       lineHeight: 'var(--leading-subh)',
@@ -78,7 +78,7 @@ export default function ProcessSteps() {
                     {step.title}
                   </h3>
                   <p
-                    className="text-[var(--text-secondary)] font-normal"
+                    className="text-[color:var(--text-secondary)] font-normal"
                     style={{
                       fontSize: 'var(--text-body)',
                       lineHeight: 'var(--leading-body)',

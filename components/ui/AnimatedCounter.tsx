@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from"react";
-import { useInView } from"framer-motion";
+import { useInView, useReducedMotion } from"framer-motion";
 
 interface AnimatedCounterProps {
   end: number;
@@ -21,9 +21,17 @@ export default function AnimatedCounter({
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin:"-50px" });
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     if (!isInView) return;
+
+    // Reduced Motion: Endwert sofort anzeigen
+    if (prefersReducedMotion) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setCount(end);
+      return;
+    }
 
     let startTime: number | null = null;
     let animationFrame: number;
@@ -46,13 +54,14 @@ export default function AnimatedCounter({
     animationFrame = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(animationFrame);
-  }, [end, duration, isInView]);
+  }, [end, duration, isInView, prefersReducedMotion]);
 
   const formattedCount = count.toFixed(decimals);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} style={{ fontVariantNumeric: "tabular-nums" }}>
       {prefix}{formattedCount}{suffix}
     </span>
   );
 }
+

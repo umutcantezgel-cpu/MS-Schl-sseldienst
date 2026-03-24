@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from"framer-motion";
-import { revealSectionVariants } from"@/lib/motion";
-import { ReactNode } from"react";
+import { m, useReducedMotion } from"framer-motion";
+import { revealSectionVariants } from"@/lib/motion.config";
+import { ReactNode, createElement } from"react";
 
 export default function RevealSection({
   children,
@@ -13,14 +13,23 @@ export default function RevealSection({
   className?: string,
   delay?: number
 }) {
+  const prefersReducedMotion = useReducedMotion();
+
+  if (prefersReducedMotion) {
+    return createElement("div", { className }, children);
+  }
+
+  const visible = revealSectionVariants.visible as Record<string, unknown>;
+  const visibleTransition = (visible?.transition ?? {}) as Record<string, unknown>;
+
   return (
-    <motion.div
+    <m.div
       variants={{
         ...revealSectionVariants,
         visible: {
-          ...revealSectionVariants.visible,
+          ...visible,
           transition: {
-            ...revealSectionVariants.visible.transition,
+            ...visibleTransition,
             delay
           }
         }
@@ -31,6 +40,7 @@ export default function RevealSection({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
+

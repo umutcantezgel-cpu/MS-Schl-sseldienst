@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useRef, useState } from"react";
-import { motion, useMotionValue, useSpring } from"framer-motion";
+import { m, useMotionValue, useSpring } from"framer-motion";
 import { springEnergetic } from"@/lib/motion.config";
 
 /**
@@ -78,7 +78,7 @@ export default function MagneticWrapper({
   }
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -89,6 +89,6 @@ export default function MagneticWrapper({
     >
       {children}
       {/* Optional: Spotlight effect could be added here as a pseudo element driven by x/y */}
-    </motion.div>
+    </m.div>
   );
 }

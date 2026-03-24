@@ -1,7 +1,7 @@
 "use client";
 
 import { TimeSlot, TIME_MODIFIERS } from"./pricing.constants";
-import { motion } from"framer-motion";
+import { m } from"framer-motion";
 
 interface TimeSlotSelectorProps {
   selected: TimeSlot;
@@ -30,11 +30,11 @@ export default function TimeSlotSelector({ selected, onSelect }: TimeSlotSelecto
             aria-selected={isSelected}
             tabIndex={isSelected ? 0 : -1}
             onClick={() => onSelect(slot.id)}
-            className={`relative flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-colors z-10 ${isSelected ?"text-white" :"text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+            className={`relative flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-colors z-10 ${isSelected ?"text-white" :"text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
               }`}
           >
             {isSelected && (
-              <motion.div
+              <m.div
                 layoutId="active-timeslot"
                 className="absolute inset-0 bg-[var(--color-red-500)] rounded-xl -z-10"
                 transition={{ type:"spring", stiffness: 300, damping: 25 }}

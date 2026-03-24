@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from"framer-motion";
+import { m, useReducedMotion } from"framer-motion";
 import { springEnergetic } from"@/lib/motion.config";
 import { ReactNode } from"react";
 
@@ -31,7 +31,7 @@ export default function HeartbeatCTA({ children, className = "" }: HeartbeatCTAP
   }
 
   return (
-    <motion.div
+    <m.div
       className={`heartbeat-pulse ${className}`}
       whileHover={{
         scale: 1.03,
@@ -44,6 +44,6 @@ export default function HeartbeatCTA({ children, className = "" }: HeartbeatCTAP
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

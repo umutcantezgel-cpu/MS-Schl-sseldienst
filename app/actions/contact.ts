@@ -1,0 +1,152 @@
+"use server";
+
+import { z } from "zod";
+
+// ─── Zod Schema (shared with client) ───
+const contactSchema = z.object({
+  name: z
+    .string()
+    .min(2, "Bitte geben Sie Ihren Namen ein.")
+    .max(100, "Name ist zu lang."),
+  email: z
+    .string()
+    .email("Bitte prüfen Sie Ihre E-Mail-Adresse.")
+    .max(255, "E-Mail ist zu lang."),
+  phone: z
+    .string()
+    .max(30, "Telefonnummer ist zu lang.")
+    .optional()
+    .or(z.literal("")),
+  message: z
+    .string()
+    .min(5, "Bitte beschreiben Sie kurz Ihr Anliegen.")
+    .max(5000, "Nachricht ist zu lang."),
+  // Honeypot — bots fill this, humans don't see it
+  website: z.string().max(0, "Bot detected").optional().or(z.literal("")),
+});
+
+export type ContactFormState = {
+  success: boolean;
+  message: string;
+  errors?: Record<string, string[]>;
+  submittedName?: string;
+};
+
+// ─── Rate-limit (in-memory, resets on server restart) ───
+const rateLimit = new Map<string, number[]>();
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour
+const RATE_LIMIT_MAX = 5;
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = rateLimit.get(ip) || [];
+  const recent = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW);
+
+  if (recent.length >= RATE_LIMIT_MAX) {
+    return false; // Rate limited
+  }
+
+  recent.push(now);
+  rateLimit.set(ip, recent);
+  return true;
+}
+
+// ─── Server Action ───
+export async function submitContactForm(
+  _prevState: ContactFormState,
+  formData: FormData
+): Promise<ContactFormState> {
+  // 1. Extract data
+  const rawData = {
+    name: formData.get("name") as string,
+    email: formData.get("email") as string,
+    phone: (formData.get("phone") as string) || "",
+    message: formData.get("message") as string,
+    website: (formData.get("website") as string) || "",
+  };
+
+  // 2. Honeypot check (bots fill the hidden "website" field)
+  if (rawData.website && rawData.website.length > 0) {
+    // Pretend success to not tip off bots
+    return {
+      success: true,
+      message: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
+      submittedName: rawData.name,
+    };
+  }
+
+  // 3. Validate with Zod
+  const parsed = contactSchema.safeParse(rawData);
+  if (!parsed.success) {
+    const fieldErrors: Record<string, string[]> = {};
+    for (const [key, value] of Object.entries(
+      parsed.error.flatten().fieldErrors
+    )) {
+      fieldErrors[key] = value ?? [];
+    }
+    return {
+      success: false,
+      message: "Bitte überprüfen Sie Ihre Eingaben.",
+      errors: fieldErrors,
+    };
+  }
+
+  // 4. Rate limiting (use a fallback IP)
+  // In production, get the real IP from headers
+  const ip = "unknown"; // headers().get("x-forwarded-for") || "unknown"
+  if (!checkRateLimit(ip)) {
+    return {
+      success: false,
+      message:
+        "Zu viele Anfragen. Bitte versuchen Sie es in einer Stunde erneut, oder rufen Sie uns direkt an: 06441 8056544.",
+    };
+  }
+
+  // 5. Send email (placeholder — configure SMTP/Resend)
+  try {
+    // ─── Option A: Nodemailer ───
+    // const nodemailer = await import("nodemailer");
+    // const transporter = nodemailer.createTransport({
+    //   host: process.env.SMTP_HOST,
+    //   port: Number(process.env.SMTP_PORT) || 587,
+    //   secure: false,
+    //   auth: {
+    //     user: process.env.SMTP_USER,
+    //     pass: process.env.SMTP_PASS,
+    //   },
+    // });
+    // await transporter.sendMail({
+    //   from: `"MS Schlüsseldienst Website" <${process.env.SMTP_USER}>`,
+    //   to: process.env.CONTACT_EMAIL || "info@ms-schluesseldienst-wetzlar.de",
+    //   replyTo: parsed.data.email,
+    //   subject: `Neue Kontaktanfrage von ${parsed.data.name}`,
+    //   text: [
+    //     `Name: ${parsed.data.name}`,
+    //     `E-Mail: ${parsed.data.email}`,
+    //     parsed.data.phone ? `Telefon: ${parsed.data.phone}` : null,
+    //     `\nNachricht:\n${parsed.data.message}`,
+    //   ].filter(Boolean).join("\n"),
+    // });
+
+    // For now: log to console (works without SMTP config)
+    console.log("─── Neue Kontaktanfrage ───");
+    console.log("Name:", parsed.data.name);
+    console.log("E-Mail:", parsed.data.email);
+    if (parsed.data.phone) console.log("Telefon:", parsed.data.phone);
+    console.log("Nachricht:", parsed.data.message);
+    console.log("───────────────────────────");
+
+    return {
+      success: true,
+      message: `Vielen Dank, ${parsed.data.name}! Wir melden uns innerhalb von 24 Stunden bei Ihnen.`,
+      submittedName: parsed.data.name,
+    };
+  } catch (error) {
+    console.error("Contact form error:", error);
+    return {
+      success: false,
+      message:
+        "Leider konnte Ihre Nachricht nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an: 06441 8056544.",
+    };
+  }
+}

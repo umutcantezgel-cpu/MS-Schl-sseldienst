@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from"react";
-import { motion, useScroll, useTransform, useSpring, useReducedMotion } from"framer-motion";
+import { m, useScroll, useTransform, useSpring, useReducedMotion } from"framer-motion";
 import { springStandard } from"@/lib/motion.config";
 
 interface ScrollProgressTrackerProps {
@@ -41,7 +41,7 @@ export default function ScrollProgressTracker({
   }
 
   return (
-    <motion.div
+    <m.div
       className={className}
       style={{
         opacity: fadeOnScroll ? smoothOpacity : 1,
@@ -49,6 +49,6 @@ export default function ScrollProgressTracker({
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

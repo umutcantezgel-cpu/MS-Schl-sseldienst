@@ -15,14 +15,14 @@ export default function GoogleReviewsBadge({ rating, count }: { rating: number, 
       </div>
       <div>
         <div className="flex items-center gap-[var(--space-1)]">
-          <span className="font-bold text-[var(--text-primary)]">{rating}</span>
+          <span className="font-bold text-[color:var(--text-primary)]">{rating}</span>
           <div className="flex text-[var(--color-google-gold)]">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="h-5 w-5 fill-current" aria-hidden="true" />
             ))}
           </div>
         </div>
-        <div className="text-xs font-medium text-[var(--text-tertiary)] mt-[var(--space-1)]">
+        <div className="text-xs font-medium text-[color:var(--text-tertiary)] mt-[var(--space-1)]">
           Basierend auf {count} Bewertungen
         </div>
       </div>

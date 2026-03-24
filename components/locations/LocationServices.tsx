@@ -1,5 +1,3 @@
-"use client";
-
 import { LocationData } from "@/lib/data/locations";
 import { KeyRound, ShieldCheck, Clock, ShieldAlert } from "lucide-react";
 import RevealSection from "@/components/motion/RevealSection";
@@ -53,28 +51,28 @@ export default function LocationServices({ city }: LocationServicesProps) {
     ];
 
     return (
-        <RevealSection className="py-16 md:py-24 bg-[var(--color-slate-50)] border-b border-[var(--border-subtle)]">
+        <RevealSection className="py-[var(--section-py)] bg-[var(--color-slate-50)] border-b border-[var(--border-subtle)]">
             <div className="container mx-auto px-[var(--section-px)]">
-                <div className="max-w-4xl mx-auto text-center mb-16">
-                    <h2 className="typo-section-heading text-[var(--text-primary)] mb-4">
-                        Unsere Leistungen in <span className="text-[var(--value-primary)]">{city.name}</span>
+                <div className="max-w-3xl mx-auto text-center mb-20">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl text-[color:var(--text-primary)] font-extrabold tracking-tight text-balance leading-[1.1] mb-6">
+                        Unsere Leistungen in <span className="text-[color:var(--value-primary)]">{city.name}</span>
                     </h2>
-                    <p className="typo-body-large text-[var(--text-secondary)]">
-                        Wir sind Ihr direkter Ansprechpartner vor Ort. Ohne Vermittler, mit voller lokaler Kompetenz.
+                    <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
+                        Wir sind Ihr direkter Ansprechpartner vor Ort. Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.
                     </p>
                 </div>
 
-                <StaggerReveal className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto" animation={entryAnimations.slideUpFade}>
+                <StaggerReveal className="grid md:grid-cols-2 gap-10 lg:gap-16 max-w-6xl mx-auto" animation={entryAnimations.slideUpFade}>
                     {services.map((service, idx) => (
-                        <StaggerItem key={idx} animation={entryAnimations.slideUpFade} className="flex gap-6">
+                        <StaggerItem key={idx} animation={entryAnimations.slideUpFade} className="flex flex-col sm:flex-row gap-6 lg:gap-8 items-start">
                             <div className="shrink-0 w-16 h-16 rounded-full bg-[var(--color-ember-50)] text-[var(--value-icon-color)] flex items-center justify-center border border-[var(--color-ember-100)] shadow-sm">
                                 <service.icon className="w-8 h-8 stroke-[1.5]" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-[var(--text-primary)] mb-2">
+                                <h3 className="text-2xl font-bold text-[color:var(--text-primary)] mb-3 tracking-tight">
                                     {service.title}
                                 </h3>
-                                <p className="text-[var(--text-secondary)] leading-relaxed">
+                                <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed max-w-prose">
                                     {service.description}
                                 </p>
                             </div>

@@ -19,7 +19,7 @@ export default function TrustStrip() {
             <div className="w-8 h-8 rounded-full bg-[var(--value-icon-bg)] flex items-center justify-center">
               <item.icon className="h-[16px] w-[16px] lg:h-[18px] lg:w-[18px] text-[var(--value-icon-color)] shrink-0" aria-hidden="true" />
             </div>
-            <span className="font-semibold text-[14px] lg:text-[15px] text-[var(--text-primary)] whitespace-nowrap">
+            <span className="font-semibold text-[14px] lg:text-[15px] text-[color:var(--text-primary)] whitespace-nowrap">
               {item.text}
             </span>
             {idx < trustItems.length - 1 && (
@@ -37,7 +37,7 @@ export default function TrustStrip() {
               <div className="w-7 h-7 rounded-md bg-[var(--value-icon-bg)] flex items-center justify-center">
                 <item.icon className="h-[16px] w-[16px] text-[var(--value-icon-color)] shrink-0" aria-hidden="true" />
               </div>
-              <span className="font-semibold text-[14px] text-[var(--text-primary)]">
+              <span className="font-semibold text-[14px] text-[color:var(--text-primary)]">
                 {item.text}
               </span>
             </div>

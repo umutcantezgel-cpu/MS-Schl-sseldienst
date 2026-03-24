@@ -1,12 +1,12 @@
 "use client";
 
-import { motion } from"framer-motion";
-import { useEffect, useState, useMemo } from"react";
+import { useEffect, useState, useMemo } from "react";
 
 function FloatingPaths({ position }: { position: number }) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
   }, []);
 
@@ -37,32 +37,32 @@ function FloatingPaths({ position }: { position: number }) {
       >
         <title>Atmosphärische Wellen Wetzlar</title>
         {paths.map((path) => (
-          <motion.path
+          <path
             key={path.id}
             d={path.d}
-            style={{ stroke: "var(--color-blush-600)" }}
-            strokeWidth={path.width * 1.2}
-            strokeOpacity={0.03 + path.id * 0.012}
-            initial={{ pathLength: 0.3, opacity: 0.25 }}
-            animate={
+            style={
               isMounted
                 ? {
-                   pathLength: 1,
-                   opacity: [0.12, 0.4, 0.12],
-                   pathOffset: [0, 1, 0],
-                 }
-                : undefined
+                    stroke: "var(--color-blush-600)",
+                    strokeWidth: path.width * 1.2,
+                    strokeOpacity: 0.03 + path.id * 0.012,
+                    strokeDasharray: "100%",
+                    strokeDashoffset: "100%",
+                    animation: `drawPath ${path.duration}s linear infinite`,
+                  }
+                : {
+                    stroke: "var(--color-blush-600)",
+                    strokeWidth: path.width * 1.2,
+                    strokeOpacity: 0.25,
+                    strokeDasharray: "100%",
+                    strokeDashoffset: "70%",
+                  }
             }
-            transition={{
-              duration: path.duration,
-              repeat: Number.POSITIVE_INFINITY,
-              ease:"linear",
-            }}
           />
         ))}
       </svg>
     </div>
-  )
+  );
 }
 
 export default function GlobalBackground() {

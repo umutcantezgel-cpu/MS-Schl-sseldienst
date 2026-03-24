@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { LocationData } from "@/lib/data/locations";
 import { allLocations } from "@/lib/data/allLocations";
@@ -25,17 +23,17 @@ export default function NeighborGrid({ city }: { city: LocationData }) {
     return (
         <RevealSection className="py-16 md:py-24 bg-white border-b border-[var(--border-subtle)] relative overflow-hidden">
             {/* Background elements */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-[var(--color-slate-100)] rounded-full blur-[100px] -z-10 translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[var(--color-charcoal-100)] rounded-full blur-[100px] -z-10 translate-x-1/2 -translate-y-1/2 opacity-50"></div>
             
             <div className="container mx-auto px-[var(--section-px)]">
                 <div className="max-w-4xl mx-auto text-center mb-16">
-                    <h2 className="typo-section-heading text-[var(--text-primary)] mb-4">
+                    <h2 className="typo-section-heading text-[color:var(--text-primary)] mb-4">
                         Schlüsseldienst auch in Ihrer Nähe
                     </h2>
-                    <p className="typo-body-large text-[var(--text-secondary)] mb-6">
+                    <p className="typo-body-large text-[color:var(--text-secondary)] mb-6">
                         Von {city.name} aus sind wir auch schnell in {namesString}. Unser Einsatzgebiet deckt den gesamten Lahn-Dill-Kreis ab.
                     </p>
-                    <Link href="/servicegebiet" className="inline-flex items-center gap-2 text-[var(--value-primary)] font-bold hover:underline">
+                    <Link href="/servicegebiet" className="inline-flex items-center gap-2 text-[color:var(--value-primary)] font-bold hover:underline">
                         Gesamtes Einsatzgebiet ansehen <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
@@ -49,18 +47,18 @@ export default function NeighborGrid({ city }: { city: LocationData }) {
                             >
                                 <div>
                                     <div className="flex justify-between items-start mb-4">
-                                        <div className="w-10 h-10 rounded-full bg-[var(--color-slate-50)] text-[var(--text-tertiary)] flex items-center justify-center group-hover:bg-[var(--color-red-50)] group-hover:text-[var(--color-red-500)] transition-colors">
+                                        <div className="w-10 h-10 rounded-full bg-[var(--color-charcoal-50)] text-[color:var(--text-tertiary)] flex items-center justify-center group-hover:bg-[var(--color-red-50)] group-hover:text-[var(--color-red-500)] transition-colors">
                                             <MapPin className="w-5 h-5" />
                                         </div>
-                                        <ArrowRight className="w-5 h-5 text-[var(--text-tertiary)] group-hover:text-[var(--value-primary)] group-hover:translate-x-1 transition-all" />
+                                        <ArrowRight className="w-5 h-5 text-[color:var(--text-tertiary)] group-hover:text-[color:var(--value-primary)] group-hover:translate-x-1 transition-all" />
                                     </div>
-                                    <h3 className="font-bold text-lg text-[var(--text-primary)] mb-1">
+                                    <h3 className="font-bold text-lg text-[color:var(--text-primary)] mb-1">
                                         {neighbor.name}
                                     </h3>
                                 </div>
                                 
-                                <div className="mt-4 pt-4 border-t border-[var(--color-slate-100)]">
-                                    <span className="inline-block px-3 py-1 bg-[var(--color-red-50)] text-[var(--color-red-600)] text-xs font-bold rounded-full border border-[var(--color-red-100)]">
+                                <div className="mt-4 pt-4 border-t border-[var(--color-charcoal-100)]">
+                                    <span className="inline-block px-3 py-1 bg-[var(--color-red-50)] text-[color:var(--color-red-600)] text-xs font-bold rounded-full border border-[var(--color-red-100)]">
                                         Ca. {neighbor.logistics.drivingTimeMinutes} Min.
                                     </span>
                                 </div>

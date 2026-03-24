@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect, useCallback, Children } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion, useMotionValue, animate } from "framer-motion";
+import { m, useMotionValue, animate } from "framer-motion";
 import { triggerHaptic } from "@/lib/haptics";
 
 export default function ReviewCarousel({ children }: { children: React.ReactNode }) {
@@ -25,6 +25,7 @@ export default function ReviewCarousel({ children }: { children: React.ReactNode
   }, [childCount]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     calculateSlides();
     window.addEventListener("resize", calculateSlides);
     return () => window.removeEventListener("resize", calculateSlides);
@@ -45,6 +46,7 @@ export default function ReviewCarousel({ children }: { children: React.ReactNode
 
   // Recalculate offset on resize or activeIndex change
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     scrollToIndex(activeIndex);
   }, [totalSlides, activeIndex, scrollToIndex]);
 
@@ -127,13 +129,13 @@ export default function ReviewCarousel({ children }: { children: React.ReactNode
     >
       <div 
         ref={containerRef} 
-        className="overflow-hidden pb-8 cursor-grab active:cursor-grabbing touch-pan-y focus:outline-none focus:ring-2 focus:ring-[var(--focus-color,var(--color-rose-500))] focus:ring-offset-2 rounded-xl"
+        className="overflow-hidden pb-8 cursor-grab active:cursor-grabbing touch-pan-y focus:outline-none focus:ring-2 focus:ring-[var(--focus-color,var(--color-red-500))] focus:ring-offset-2 rounded-xl"
         tabIndex={0}
         onKeyDown={handleKeyDown}
         aria-label="Kundenbewertungen Karussell. Nutzen Sie die Pfeiltasten links und rechts zur Navigation."
         role="region"
       >
-        <motion.div
+        <m.div
           ref={innerRef}
           className="flex gap-6 w-max items-stretch"
           drag="x"
@@ -143,14 +145,14 @@ export default function ReviewCarousel({ children }: { children: React.ReactNode
           onDragEnd={handleDragEnd}
         >
           {children}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Arrow Navigation (Desktop) */}
       <button
         onClick={() => scroll("left")}
         aria-label="Vorherige Bewertungen"
-        className="absolute left-[-20px] top-[40%] -translate-y-1/2 bg-[var(--surface-primary)] text-[var(--text-secondary)] ring-1 ring-[var(--border-subtle)] rounded-full p-2.5 hover:text-[var(--color-red-500)] hover:shadow-[var(--elevation-3)] transition-all md:flex hidden z-[var(--z-elevated)] opacity-0 group-hover:opacity-100 focus:opacity-100 shadow-[var(--elevation-2)]"
+        className="absolute left-[-20px] top-[40%] -translate-y-1/2 bg-[var(--surface-primary)] text-[color:var(--text-secondary)] ring-1 ring-[var(--border-subtle)] rounded-full p-2.5 hover:text-[var(--color-red-500)] hover:shadow-[var(--elevation-3)] transition-all md:flex hidden z-[var(--z-elevated)] opacity-0 group-hover:opacity-100 focus:opacity-100 shadow-[var(--elevation-2)]"
       >
         <ChevronLeft className="h-5 w-5" />
       </button>
@@ -158,7 +160,7 @@ export default function ReviewCarousel({ children }: { children: React.ReactNode
       <button
         onClick={() => scroll("right")}
         aria-label="Weitere Bewertungen"
-        className="absolute right-[-20px] top-[40%] -translate-y-1/2 bg-[var(--surface-primary)] text-[var(--text-secondary)] ring-1 ring-[var(--border-subtle)] rounded-full p-2.5 hover:text-[var(--color-red-500)] hover:shadow-[var(--elevation-3)] transition-all md:flex hidden z-[var(--z-elevated)] opacity-0 group-hover:opacity-100 focus:opacity-100 shadow-[var(--elevation-2)]"
+        className="absolute right-[-20px] top-[40%] -translate-y-1/2 bg-[var(--surface-primary)] text-[color:var(--text-secondary)] ring-1 ring-[var(--border-subtle)] rounded-full p-2.5 hover:text-[var(--color-red-500)] hover:shadow-[var(--elevation-3)] transition-all md:flex hidden z-[var(--z-elevated)] opacity-0 group-hover:opacity-100 focus:opacity-100 shadow-[var(--elevation-2)]"
       >
         <ChevronRight className="h-5 w-5" />
       </button>

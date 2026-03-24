@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useState } from"react";
-import { motion, useReducedMotion } from"framer-motion";
+import { m, useReducedMotion } from"framer-motion";
 import { springStandard } from"@/lib/motion.config";
 
 interface WaveListProps {
@@ -57,7 +57,7 @@ export default function WaveList({ children, className ="", itemClassName ="" }:
         }
 
         return (
-          <motion.li
+          <m.li
             key={index}
             className={itemClassName}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -65,7 +65,7 @@ export default function WaveList({ children, className ="", itemClassName ="" }:
             transition={{ ...springStandard, delay }}
           >
             {child}
-          </motion.li>
+          </m.li>
         );
       })}
     </ul>

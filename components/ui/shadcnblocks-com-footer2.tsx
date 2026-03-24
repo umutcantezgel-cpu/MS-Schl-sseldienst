@@ -84,6 +84,7 @@ const Footer2 = ({
       <div className="col-span-2 mb-8 lg:mb-0">
        <div className="flex items-center gap-2 lg:justify-start">
         <a href={logo.url}>
+         {/* eslint-disable-next-line @next/next/no-img-element */}
          <img
           src={logo.src}
           alt={logo.alt}

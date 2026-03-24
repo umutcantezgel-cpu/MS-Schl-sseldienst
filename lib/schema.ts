@@ -225,3 +225,31 @@ export function generateHowToSchema(title: string, description: string) {
         ]
     };
 }
+
+export function generateOrganizationSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MS Schlüsseldienst Wetzlar",
+        "url": siteUrl,
+        "logo": `${siteUrl}/og-image.png`,
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+4964418056544",
+            "contactType": "customer service",
+            "areaServed": "DE",
+            "availableLanguage": ["de", "en", "tr"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Wetzlarer Str. 1",
+            "addressLocality": "Wetzlar",
+            "addressRegion": "Hessen",
+            "postalCode": "35576",
+            "addressCountry": "DE"
+        },
+        "sameAs": [
+            "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar"
+        ]
+    };
+}

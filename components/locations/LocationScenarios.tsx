@@ -1,5 +1,3 @@
-"use client";
-
 import { LocationData } from "@/lib/data/locations";
 import * as Icons from "lucide-react";
 import RevealSection from "@/components/motion/RevealSection";
@@ -14,38 +12,38 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
     if (!city.scenarios || city.scenarios.length === 0) return null;
 
     return (
-        <RevealSection className="py-16 md:py-24 bg-white border-b border-[var(--border-subtle)]">
+        <RevealSection className="py-24 md:py-32 bg-[var(--background-secondary)] border-b border-[var(--border-subtle)]">
             <div className="container mx-auto px-[var(--section-px)]">
-                <div className="max-w-4xl mx-auto text-center mb-16">
-                    <h2 className="typo-section-heading text-[var(--text-primary)] mb-4">
-                        Typische Einsatz-Szenarien in <span className="text-[var(--value-primary)]">{city.name}</span>
+                <div className="max-w-3xl mx-auto text-center mb-20">
+                    <h2 className="typo-section-heading text-[color:var(--text-primary)] mb-6 text-balance tracking-tight font-extrabold leading-[1.1]">
+                        Typische Einsatz-Szenarien in <span className="text-[color:var(--value-primary)]">{city.name}</span>
                     </h2>
-                    <p className="typo-body-large text-[var(--text-secondary)]">
+                    <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
                         Als lokaler Schlüsseldienst kennen wir die häufigsten Notsituationen in Ihrer Nachbarschaft genau.
                     </p>
                 </div>
 
-                <StaggerReveal className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto" animation={entryAnimations.slideUpFade}>
+                <StaggerReveal className="grid md:grid-cols-3 gap-12 lg:gap-16 max-w-7xl mx-auto" animation={entryAnimations.slideUpFade}>
                     {city.scenarios.map((scenario, idx) => {
                         const IconComponent = (Icons as any)[scenario.icon] || Icons.Key;
 
                         return (
                             <StaggerItem key={idx} animation={entryAnimations.slideUpFade} className="flex flex-col">
-                                <div className="mb-6 inline-flex">
+                                <div className="mb-8 inline-flex">
                                     <div className="w-16 h-16 rounded-full bg-[var(--color-ember-50)] flex items-center justify-center border border-[var(--color-ember-200)] shadow-sm">
                                         <IconComponent className="w-8 h-8 text-[var(--value-icon-color)] stroke-[1.5]" />
                                     </div>
                                 </div>
-                                <h4 className="text-xl font-bold text-[var(--text-primary)] mb-3">
+                                <h4 className="text-2xl font-bold text-[color:var(--text-primary)] mb-4 tracking-tight leading-snug">
                                     {scenario.title}
                                 </h4>
-                                <p className="text-[var(--text-secondary)] leading-relaxed mb-6 flex-grow">
+                                <p className="text-[color:var(--text-secondary)] text-lg leading-relaxed mb-8 flex-grow">
                                     {scenario.description}
                                 </p>
-                                <div className="mt-auto pt-4 border-t border-[var(--border-subtle)]">
-                                    <p className="font-medium text-[var(--text-primary)] mb-2">Lösung: Rufen Sie uns an.</p>
-                                    <a href="tel:+4964418056544" className="inline-flex items-center gap-2 text-[var(--color-red-600)] font-bold hover:underline group">
-                                        <Icons.Phone className="w-4 h-4 transition-transform group-hover:rotate-12" />
+                                <div className="mt-auto pt-6 border-t border-[var(--border-subtle)]">
+                                    <p className="font-medium text-[color:var(--text-primary)] mb-3 tracking-wide text-sm uppercase">Lösung: Rufen Sie uns an</p>
+                                    <a href="tel:+4964418056544" className="inline-flex items-center gap-2 text-[color:var(--color-red-600)] font-bold hover:underline group text-lg">
+                                        <Icons.Phone className="w-5 h-5 transition-transform group-hover:rotate-12" />
                                         In ca. {city.logistics.drivingTimeMinutes} Min. in {city.name}
                                     </a>
                                 </div>

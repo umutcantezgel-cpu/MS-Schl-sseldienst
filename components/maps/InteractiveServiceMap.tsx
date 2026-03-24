@@ -96,7 +96,7 @@ export default function InteractiveServiceMap() {
                 <div style="margin-top: 4px; font-size: 13px; color: #B91C1C; font-weight: 600;">
                   ca. ${gebiet.logistics.drivingTimeMinutes} Min. Anfahrt
                 </div>
-                <a href="/${gebiet.slug}" style="display: inline-block; margin-top: 8px; font-size: 13px; color: #B91C1C; font-weight: 600; text-decoration: none;">
+                <a href="/${gebiet.slug}" style="display: inline-block; margin-top: 8px; font-size: 13px; color: #B91C1C; font-weight: 600; text-decoration: underline;">
                   Mehr erfahren →
                 </a>
               </div>
@@ -112,7 +112,7 @@ export default function InteractiveServiceMap() {
           title:"Schlüsseldienst Wetzlar – Hauptstandort",
           icon: {
             url:"data:image/svg+xml," + encodeURIComponent(`
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
                 <circle cx="20" cy="20" r="18" fill="#B91C1C" stroke="white" stroke-width="3"/>
                 <text x="20" y="26" text-anchor="middle" fill="white" font-size="14" font-weight="bold" font-family="system-ui">MS</text>
               </svg>
@@ -136,7 +136,7 @@ export default function InteractiveServiceMap() {
   if (error) {
     return (
       <div className="flex items-center justify-center rounded-[var(--space-4)] bg-[var(--surface-secondary)] p-12 text-center">
-        <p className="text-[var(--text-tertiary)]">{error}</p>
+        <p className="text-[color:var(--text-tertiary)]">{error}</p>
       </div>
     );
   }
@@ -148,7 +148,7 @@ export default function InteractiveServiceMap() {
         <div className="absolute inset-0 z-10 flex items-center justify-center bg-[var(--surface-secondary)]">
           <div className="flex flex-col items-center gap-3">
             <div className="h-8 w-8 animate-spin rounded-full border-4 border-[var(--border-subtle)] border-t-[var(--color-red-500)]" />
-            <span className="text-sm font-medium text-[var(--text-tertiary)]">Karte wird geladen…</span>
+            <span className="text-sm font-medium text-[color:var(--text-tertiary)]">Karte wird geladen…</span>
           </div>
         </div>
       )}

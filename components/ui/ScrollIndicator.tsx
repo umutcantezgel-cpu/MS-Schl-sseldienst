@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useSpring } from"framer-motion";
+import { m, useScroll, useSpring } from"framer-motion";
 
 export default function ScrollIndicator() {
   const { scrollYProgress } = useScroll();
@@ -10,7 +10,7 @@ export default function ScrollIndicator() {
   });
   
   return (
-    <motion.div
+    <m.div
       className="fixed top-0 left-0 right-0 h-1 bg-[var(--color-red-500)] origin-left z-[100]"
       style={{ scaleX }}
     />

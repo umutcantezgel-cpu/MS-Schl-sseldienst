@@ -29,10 +29,10 @@ export default function Breadcrumbs({ items, light = false }: { items: Breadcrum
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <nav aria-label="Breadcrumb-Navigation" className={`flex items-center text-sm overflow-x-auto whitespace-nowrap px-4 py-3 sm:px-6 border-b ${light ?"text-white/60 bg-transparent border-white/10" :"text-[var(--text-tertiary)] bg-[var(--surface-secondary)] border-[var(--border-subtle)]"}`}>
+      <nav aria-label="Breadcrumb-Navigation" className={`flex items-center text-sm overflow-x-auto whitespace-nowrap px-4 py-3 sm:px-6 border-b ${light ?"text-white/60 bg-transparent border-white/10" :"text-[color:var(--text-tertiary)] bg-[var(--surface-secondary)] border-[var(--border-subtle)]"}`}>
         <ol className="max-w-7xl mx-auto w-full flex items-center">
           <li className="flex items-center">
-            <Link href="/" className={`transition-colors flex items-center ${light ?"hover:text-white" :"hover:text-[var(--text-primary)]"}`}>
+            <Link href="/" className={`transition-colors flex items-center ${light ?"hover:text-white" :"hover:text-[color:var(--text-primary)]"}`}>
               <Home className="h-4 w-4" aria-hidden="true" />
               <span className="sr-only">Startseite</span>
             </Link>
@@ -42,7 +42,7 @@ export default function Breadcrumbs({ items, light = false }: { items: Breadcrum
               <ChevronRight className={`h-4 w-4 mx-2 flex-shrink-0 ${light ?"text-white/40" :"text-[var(--color-charcoal-400)]"}`} aria-hidden="true" />
               <Link
                 href={item.href}
-                className={`transition-colors ${index === items.length - 1 ? (light ? 'text-white font-medium pointer-events-none' : 'text-[var(--text-primary)] font-medium pointer-events-none') : (light ? 'hover:text-white' : 'hover:text-[var(--text-primary)]')
+                className={`transition-colors ${index === items.length - 1 ? (light ? 'text-white font-medium pointer-events-none' : 'text-[color:var(--text-primary)] font-medium pointer-events-none') : (light ? 'hover:text-white' : 'hover:text-[color:var(--text-primary)]')
                   }`}
                 aria-current={index === items.length - 1 ? 'page' : undefined}
               >

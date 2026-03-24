@@ -37,25 +37,25 @@ export default function HeroCTA() {
         >
           Jetzt anrufen
         </a>
-        <div className="mt-3 flex items-center justify-center gap-4 text-xs font-medium text-[var(--text-tertiary)]">
+        <div className="mt-3 flex items-center justify-center gap-4 text-xs font-medium text-[color:var(--text-tertiary)]">
           <span className="flex items-center gap-1">
-            <svg className="h-4 w-4 text-[var(--color-success)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+            <svg aria-hidden="true" className="h-4 w-4 text-[var(--color-success)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
             Keine Anfahrtskaufkosten
           </span>
           <span className="flex items-center gap-1">
-            <svg className="h-4 w-4 text-[var(--color-success)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+            <svg aria-hidden="true" className="h-4 w-4 text-[var(--color-success)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
             100% Festpreis
           </span>
         </div>
       </MagneticWrapper>
 
       {/* Ethical Scarcity / Availability Indicator */}
-      <div className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[var(--color-success-light)] px-4 py-1.5 border border-green-100">
+      <div className="mt-2 flex items-center justify-center gap-2 rounded-full bg-status-success/10 px-4 py-1.5 border border-status-success/20">
         <span className="relative flex h-2.5 w-2.5">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-status-success"></span>
         </span>
-        <span className="text-xs font-bold text-green-800">
+        <span className="text-xs font-bold text-status-success">
           Aktuell 1 Monteur in Wetzlar & Umgebung verfügbar
         </span>
       </div>

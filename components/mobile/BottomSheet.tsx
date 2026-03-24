@@ -25,6 +25,7 @@ export default function BottomSheet({ isOpen, onClose, children, title }: Bottom
     } else {
       document.body.style.overflow = '';
     }
+    return undefined;
   }, [isOpen, onClose]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -69,10 +70,10 @@ export default function BottomSheet({ isOpen, onClose, children, title }: Bottom
       >
         <div className="sticky top-0 z-[var(--z-elevated)] bg-white/95 backdrop-blur-md px-4 py-4 border-b border-[var(--border-subtle)] flex items-center justify-between">
           <div className="w-12 h-1.5 bg-[var(--color-charcoal-200)] rounded-full absolute top-2 left-1/2 -translate-x-1/2 md:hidden" />
-          <h3 className="font-bold text-lg text-[var(--text-primary)] mt-2 md:mt-0">{title}</h3>
+          <h3 className="font-bold text-lg text-[color:var(--text-primary)] mt-2 md:mt-0">{title}</h3>
           <button
             onClick={onClose}
-            className="p-2 mt-2 md:mt-0 bg-[var(--border-subtle)] rounded-full text-[var(--text-tertiary)] hover:text-[var(--text-primary)] transition-colors"
+            className="p-2 mt-2 md:mt-0 bg-[var(--border-subtle)] rounded-full text-[color:var(--text-tertiary)] hover:text-[color:var(--text-primary)] transition-colors"
             aria-label="Schließen"
           >
             <X className="w-5 h-5" />

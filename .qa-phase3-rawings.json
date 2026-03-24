@@ -1,0 +1,86 @@
+{
+  "performance": [],
+  "security": [
+    {
+      "file": "app/(marketing)/[stadtgebiet]/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/bewertungen/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/faq/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/leistungen/autooeffnung/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/leistungen/schliessanlagen/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/leistungen/schluessel-nachmachen/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/leistungen/sicherheitstechnik/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/leistungen/turoeffnung/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/(marketing)/preise/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/layout.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "app/preview/page.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/Breadcrumb.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/Breadcrumbs.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/locations/LocalContentBlocks.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/locations/LocalHero.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/locations/LocationAbout.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/trust/ClientLogos.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/trust/TrustStrip.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    },
+    {
+      "file": "components/ui/JsonLd.tsx",
+      "msg": "dangerouslySetInnerHTML found without obvious sanitizer."
+    }
+  ],
+  "state": []
+}

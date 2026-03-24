@@ -1,5 +1,3 @@
-"use client";
-
 import { LocationData } from "@/lib/data/locations";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
@@ -18,11 +16,11 @@ export default function LocalMap({ city }: { city: LocationData }) {
             <StaggerReveal className="mx-auto max-w-6xl relative z-10" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
                 <StaggerItem animation={entryAnimations.slideUpFade}>
                     <div className="text-center mb-10">
-                        <h2 className="typo-h2 text-[var(--text-primary)] flex items-center justify-center gap-3">
+                        <h2 className="typo-h2 text-[color:var(--text-primary)] flex items-center justify-center gap-3">
                             <MapPin className="text-[var(--color-red-500)] w-8 h-8" />
-                            Einsatzgebiet <span className="text-[var(--value-primary)]">{city.name}</span>
+                            Einsatzgebiet <span className="text-[color:var(--value-primary)]">{city.name}</span>
                         </h2>
-                        <p className="mt-4 text-[18px] text-[var(--text-secondary)] font-medium">
+                        <p className="mt-4 text-[18px] text-[color:var(--text-secondary)] font-medium">
                             Unser Monteur ist lokal verwurzelt und erreicht Sie in der Regel in unter {city.logistics.drivingTimeMinutes} Minuten.
                         </p>
                     </div>

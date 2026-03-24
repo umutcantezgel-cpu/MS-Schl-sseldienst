@@ -7,55 +7,256 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-body), system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-heading: var(--font-display), var(--font-body), system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", Consolas, Monaco, monospace;
+  
+  /* --- Typography Scale (Major Third - Fluid) --- */
+  --text-display: clamp(2rem, 5vw + 0.75rem, 4rem);
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.025em;
+
+  --text-h1: clamp(1.5rem, 3vw + 0.75rem, 3rem);
+  --text-h1--line-height: 1.15;
+  --text-h1--letter-spacing: -0.025em;
+
+  --text-h2: clamp(1.25rem, 2.5vw + 0.625rem, 2.25rem);
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.015em;
+
+  --text-h3: clamp(1.125rem, 2vw + 0.5rem, 1.75rem);
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.015em;
+
+  --text-h4: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+  --text-h4--line-height: 1.3;
+  --text-h4--letter-spacing: -0.01em;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-body--letter-spacing: 0em;
+
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.7;
+  --text-lead--letter-spacing: 0em;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-small--letter-spacing: 0.01em;
+
+  --text-tiny: 0.75rem;
+  --text-tiny--line-height: 1.4;
+  --text-tiny--letter-spacing: 0.01em;
+  
+  /* Breakpoints (Phase 3 Spatial Architecture) */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
+
+  /* Phase 3: Fluid Section Paddings (Macro-Spacing) */
+  --spacing-section-sm: clamp(3rem, 2rem + 4vw, 5rem);
+  --spacing-section-base: clamp(4rem, 3rem + 5vw, 6rem);
+  --spacing-section-lg: clamp(5rem, 4rem + 6vw, 8rem);
+
+  /* Export spacing tokens to Tailwind */
+  --spacing-0: var(--space-0);
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-7: var(--space-7);
+  --spacing-8: var(--space-8);
+  --spacing-9: var(--space-9);
+  --spacing-10: var(--space-10);
+  --spacing-11: var(--space-11);
+  --spacing-12: var(--space-12);
+  --spacing-13: var(--space-13);
+  --spacing-section: var(--space-section);
+  --spacing-container: var(--space-container);
+  --spacing-gap: var(--space-gap);
+
+  /* Export elevation/shadow tokens */
+  --shadow-none: var(--shadow-0);
+  --shadow-elevated-1: var(--shadow-1);
+  --shadow-elevated-2: var(--shadow-2);
+  --shadow-elevated-3: var(--shadow-3);
+  --shadow-elevated-4: var(--shadow-4);
+  
+  /* Export semantic colors to Tailwind (Phase 2 Task 5.4) */
+  --color-brand-primary: var(--action-primary);
+  --color-brand-accent: var(--value-primary);
+  
+  --color-surface-default: var(--surface-primary);
+  --color-surface-muted: var(--surface-secondary);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-dark: var(--surface-dark);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-on-primary: var(--text-on-accent);
+  --color-text-on-accent: var(--text-on-accent);
+  
+  --color-border-default: var(--border-medium);
+  --color-border-strong: var(--border-accent);
+
+  /* Phase 1: Warm-tinted border colors */
+  --color-border-warmlight: var(--color-border-warmlight);
+  --color-border-warm: var(--color-border-warm);
+  --color-border-warmdark: var(--color-border-warmdark);
+
+  --color-status-success: var(--color-success);
+  --color-status-error: var(--color-red-500);
+  --color-status-warning: var(--color-warning);
+  --color-status-info: var(--color-info);
+  --color-google-gold: var(--color-google-gold);
+
+  /* Phase 1: Brand-tinted elevation shadows */
+  --shadow-brand-1: var(--elevation-brand-1);
+  --shadow-brand-2: var(--elevation-brand-2);
+  --shadow-brand-3: var(--elevation-brand-3);
+  --shadow-brand-4: var(--elevation-brand-4);
+
+  /* Phase 1: Semantic radius aliases */
+  --radius-none: var(--radius-none);
+  --radius-xs: var(--radius-xs);
+  --radius-xl: var(--radius-xl);
+
+  /* Phase 2: Fluid Type Scale extensions */
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-4xl: var(--text-4xl);
+  --text-5xl: var(--text-5xl);
+
+  --tracking-tighter: var(--ls-display);
+  --tracking-tight: var(--ls-heading);
+  --tracking-normal: var(--ls-body);
+  --tracking-wide: var(--ls-small);
+  --tracking-widest: var(--ls-uppercase);
+
+  --leading-none: 1;
+  --leading-tight: var(--lh-5xl);
+  --leading-snug: var(--lh-3xl);
+  --leading-normal: var(--lh-base);
+  --leading-relaxed: var(--lh-sm);
+  --leading-loose: var(--lh-xs);
 }
 
 @layer base {
+  /* Form Elements Base & Accessibility */
+  input, textarea, select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    hyphens: auto;
+  }
+  
+  body {
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    font-variant-numeric: lining-nums;
+    word-break: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6, .typo-hero-display, .typo-h2, .typo-h3, .typo-h4-card {
+    text-rendering: optimizeLegibility;
+    text-wrap: balance;
+  }
+
+  p, .text-body, .text-lead {
+    text-wrap: pretty;
+  }
+
   :root {
     /* ======================================================================
        EBENE 1 — PRIMITIVE TOKENS (Rohe Werte & Skalen)
        ====================================================================== */
 
+    /* --- Phase 2: Fluid Type Scale (clamp) --- */
+    --text-xs: clamp(0.694rem, 0.65rem + 0.22vw, 0.8rem);     /* ~11px to 12.8px */
+    --text-sm: clamp(0.833rem, 0.78rem + 0.27vw, 1rem);       /* ~13.3px to 16px */
+    --text-base: clamp(1rem, 0.93rem + 0.33vw, 1.2rem);       /* 16px to 19.2px */
+    --text-lg: clamp(1.2rem, 1.12rem + 0.4vw, 1.44rem);       /* ~19.2px to 23.04px */
+    --text-xl: clamp(1.44rem, 1.34rem + 0.5vw, 1.728rem);     /* ~23px to 27.65px */
+    --text-2xl: clamp(1.728rem, 1.6rem + 0.63vw, 2.074rem);   /* ~27.6px to 33.2px */
+    --text-3xl: clamp(2.074rem, 1.92rem + 0.77vw, 2.488rem);  /* ~33.2px to 39.8px */
+    --text-4xl: clamp(2.488rem, 2.3rem + 0.94vw, 2.986rem);   /* ~39.8px to 47.8px */
+    --text-5xl: clamp(2.986rem, 2.76rem + 1.13vw, 3.583rem);  /* ~47.8px to 57.3px */
+
+    /* --- Phase 2: Line-Height Harmony --- */
+    --lh-xs: 1.7;
+    --lh-sm: 1.65;
+    --lh-base: 1.6;
+    --lh-lg: 1.5;
+    --lh-xl: 1.4;
+    --lh-2xl: 1.3;
+    --lh-3xl: 1.2;
+    --lh-4xl: 1.15;
+    --lh-5xl: 1.05;
+
+    /* --- Phase 2: Letter Spacing Precision --- */
+    --ls-display: -0.025em;
+    --ls-heading: -0.015em;
+    --ls-body: 0em;
+    --ls-small: 0.015em;
+    --ls-uppercase: 0.075em;
+
+
+    /* --- Phase 2: Vertical Rhythm Baseline System --- */
+    --spacing-baseline: 8px;
+    --spacing-p-baseline: calc(var(--spacing-baseline) * 3); /* 24px */
+    --spacing-h-top: calc(var(--spacing-baseline) * 4);      /* 32px */
+    --spacing-h-bottom: calc(var(--spacing-baseline) * 1);   /* 8px */
+
     /* --- 1.1 Mathematisches Abstands-Raster (4px-Basis, lückenlos) --- */
-    --space-1: 1px;
-    --space-2: 2px;
-    --space-3: 3px;
-    --space-4: 4px;
-    --space-5: 5px;
-    --space-6: 6px;
-    --space-7: 7px;
-    --space-8: 8px;
-    --space-9: 9px;
-    --space-10: 10px;
-    --space-12: 12px;
-    --space-16: 16px;
-    --space-20: 20px;
-    --space-24: 24px;
-    --space-32: 32px;
-    --space-40: 40px;
-    --space-48: 48px;
-    --space-64: clamp(48px, 5vw, 64px);
-    --space-80: clamp(56px, 6vw, 80px);
-    --space-96: clamp(64px, 8vw, 96px);
-    --space-128: clamp(80px, 10vw, 128px);
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 40px;
+    --space-9: 48px;
+    --space-10: 64px;
+    --space-11: 80px;
+    --space-12: 96px;
+    --space-13: 128px;
+    
+    /* Fluid Spacing */
+    --space-section: clamp(48px, 8vw, 96px);
+    --space-container: clamp(16px, 4vw, 48px);
+    --space-gap: clamp(16px, 2vw, 24px);
 
-    /* --- 1.2 Typografie-Skala (rem-basiert auf 16px Root) --- */
-    --font-size-12: 0.75rem;
-    --font-size-13: 0.8125rem;
-    --font-size-14: 0.875rem;
-    --font-size-15: 0.9375rem;
-    --font-size-16: 1rem;
-    --font-size-18: 1.125rem;
-    --font-size-20: 1.25rem;
-    --font-size-24: 1.5rem;
-    --font-size-28: 1.75rem;
-    --font-size-32: 2rem;
-    --font-size-36: 2.25rem;
-    --font-size-40: 2.5rem;
-    --font-size-48: 3rem;
-    --font-size-56: 3.5rem;
-    --font-size-64: 4rem;
+    /* --- 1.2 Typografie-Skala (in @theme ausgelagert) --- */
 
-    /* --- 1.3 Schatten-Definitionen (Ersetzt durch 5-stufiges Erhebungssystem unten) --- */
+    /* --- 1.3 Schatten-Definitionen (Elevation System, Phase 2 Task 4) --- */
+    --shadow-color-rgb: 24, 24, 27; /* Markenfarbe Charcoal 900 statt reinem Schwarz */
+    --shadow-0: none;
+    --shadow-1: 0 1px 3px rgba(var(--shadow-color-rgb), 0.08), 0 1px 2px rgba(var(--shadow-color-rgb), 0.06);
+    --shadow-2: 0 4px 8px rgba(var(--shadow-color-rgb), 0.10), 0 2px 4px rgba(var(--shadow-color-rgb), 0.06);
+    --shadow-3: 0 8px 24px rgba(var(--shadow-color-rgb), 0.12), 0 4px 8px rgba(var(--shadow-color-rgb), 0.08);
+    --shadow-4: 0 16px 48px rgba(var(--shadow-color-rgb), 0.16), 0 8px 16px rgba(var(--shadow-color-rgb), 0.10);
 
     /* --- 1.4 Border-Radius-Werte --- */
     --radius-4: 4px;
@@ -65,21 +266,63 @@
     --radius-24: 24px;
     --radius-full: 9999px;
 
-    /* --- 1.5 Übergangs-Dauern --- */
-    --duration-150: 150ms;
+    /* --- 1.4a Semantische Radius-Aliase (Phase 1 Design Foundation) --- */
+    --radius-none: 0;
+    --radius-xs: var(--radius-4);   /* 4px — Buttons, Form-Inputs (technisch, präzise) */
+    --radius-sm: var(--radius-8);   /* 8px — Kleine Cards, Komponenten (balanciert) */
+    /* --radius-md already defined in Tier 4 as var(--radius-8) */
+    /* --radius-lg already defined in Tier 4 as var(--radius-16) */
+    --radius-xl: var(--radius-24);  /* 24px — Premium-Highlight, Badges */
+    /* --radius-full already defined above */
+
+    /* --- 1.4b Border-Breiten-Token (Phase 1) --- */
+    --border-width-thin: 1px;       /* Standard: Cards, Inputs */
+    --border-width-normal: 2px;     /* Focus-Rings, Button Secondary */
+    --border-width-thick: 4px;      /* Besondere Hervorhebung (rare) */
+
+    /* --- 1.4c Warm-getönte Border-Farben (Phase 1) --- */
+    /* Hue 20° = sanftes Orange, harmoniert mit Ember-Palette */
+    --color-border-warmlight: hsl(20, 15%, 92%); /* Subtile warme Border auf weißen Flächen */
+    --color-border-warm: hsl(20, 10%, 78%);      /* Standard warm-getönte Border */
+    --color-border-warmdark: hsl(20, 10%, 55%);   /* Starke warm-getönte Border */
+
+    /* --- 1.5a 12-Spalten-Grid-System --- */
+    --grid-columns: 12;
+    --grid-gutter: var(--space-gap);
+    --grid-margin: var(--space-container);
+
+    /* --- 1.5 Animations-Duration-Token (Phase 5) --- */
+    /* REGEL: Keine Animation darf > 1000ms dauern. */
+    --duration-instant: 100ms;
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 400ms;
+    --duration-slower: 600ms;
+    --duration-slowest: 1000ms;
+
+    /* Legacy-Aliases (Rückwärtskompatibilität) */
+    --duration-150: var(--duration-fast);
     --duration-200: 200ms;
-    --duration-250: 250ms;
+    --duration-250: var(--duration-normal);
     --duration-300: 300ms;
-    --duration-400: 400ms;
-    --duration-450: 450ms;
-    --duration-600: 600ms;
+    --duration-400: var(--duration-slow);
+    --duration-600: var(--duration-slower);
     --duration-800: 800ms;
     --duration-1800: 1800ms;
 
-    /* --- 1.7 Easing-Kurven --- */
-    --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    /* --- 1.6 Physics-based Easing-Kurven (Phase 5) --- */
+    /* Keine lineare Animation darf existieren — jede Bewegung folgt physik. Kurve */
+    --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);         /* IN den Viewport: Ball auf Kissen */
+    --ease-in: cubic-bezier(0.4, 0.0, 1, 1);             /* AUS dem Viewport: Fallender Stein */
+    --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);       /* Position wechseln: Sanfter Start + Ende */
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);    /* Hover-Lifts: Leichtes Überschwingen */
+    --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Seidenweich, elegant */
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Spielerisch: Stärkeres Überschwingen */
+
+    /* --- 1.7 Stagger-Token (Phase 5) --- */
+    --stagger-fast: 50ms;
+    --stagger-normal: 100ms;
+    --stagger-slow: 150ms;
 
     /* --- 1.6 Primitive Farbpalette (Neu: Charcoal/Red Basis) --- */
     /* Weiße und Neutrale Töne */
@@ -94,6 +337,7 @@
     --color-red-50: #FEF2F2;
     --color-red-100: #FEE2E2;
     --color-red-200: #FECACA;
+    --color-red-300: #FCA5A5;
     --color-red-400: #F87171;
     --color-red-500: #DC2626;  /* Kern-Rot */
     --color-red-600: #B91C1C;
@@ -106,28 +350,35 @@
     --color-ember-50: #FFF8F5;   /* Cremig-warmer Hauch */
     --color-ember-100: #FFEDE6;  /* Hover-Tönung */
     --color-ember-200: #FFD6C7;  /* Hervorgehobene Karten-Ränder */
+    --color-ember-300: #FFB8A0;  /* Subtile Akzente */
     --color-ember-400: #D4634B;  /* Icons auf hellen Hintergründen */
     --color-ember-500: #B8432A;  /* Kern-Warm — erdig, vertrauensbildend */
     --color-ember-600: #9C3520;  /* Preiszahlen, Link-Hover */
     --color-ember-700: #7D2918;  /* Bordeaux-Akzente in Text */
+    --color-ember-800: #5E1F12;  /* Tiefe Akzente */
     --color-ember-900: #3D1209;  /* Tiefster Ton für Kontraste */
 
     /* Rosé-Elegant-Palette (Premium & Atmosphäre) */
     --color-blush-50: #FFF5F7;   /* Hauchfeiner rosiger Schimmer */
     --color-blush-100: #FFE8EE;  /* Atmosphärische Akzente */
     --color-blush-200: #FFC8D6;  /* Dekorative Elemente */
+    --color-blush-300: #FFA8BC;  /* Helle Dekorationen */
     --color-blush-400: #D4728A;  /* Dekorative Anführungszeichen */
     --color-blush-500: #B85070;  /* Kern-Rosé — edel, subtil */
     --color-blush-600: #9C3D5C;  /* Glasmorphismus-Kantenschimmer */
     --color-blush-700: #7D2E48;  /* Tiefe atmosphärische Akzente */
+    --color-blush-800: #5E2236;  /* Sehr tiefe Akzente */
     --color-blush-900: #3D1524;  /* Tiefster Ton */
 
     /* Dunkle Struktur-Palette (Charcoal - Die neue Anker-Farbe) */
     --color-charcoal-50: #F7F7F8;
     --color-charcoal-100: #E8E8EA;
     --color-charcoal-200: #D1D1D6;
+    --color-charcoal-300: #A1A1AA;
     --color-charcoal-400: #71717A;
+    --color-charcoal-500: #63636C;
     --color-charcoal-600: #52525B;
+    --color-charcoal-700: #3F3F46;
     --color-charcoal-800: #27272A;
     --color-charcoal-900: #18181B; /* Hero & Footer Background */
     --color-charcoal-950: #09090B;
@@ -159,8 +410,8 @@
     --text-primary: var(--color-charcoal-900);
     --text-secondary: var(--color-dark-gray);
     --text-tertiary: var(--color-mid-gray);
-    --text-on-dark: var(--color-white);
-    --text-on-dark-secondary: rgba(255,255,255,0.75);
+    --text-on-dark: var(--color-charcoal-50);
+    --text-on-dark-secondary: rgba(247,247,248,0.75);
     --text-accent: var(--color-red-600);
     --text-on-accent: var(--color-white);
 
@@ -211,6 +462,13 @@
     --elevation-2: 0 4px 12px rgba(24, 24, 27, 0.08), 0 2px 4px rgba(24, 24, 27, 0.04);
     --elevation-3: 0 8px 24px rgba(24, 24, 27, 0.12), 0 4px 8px rgba(24, 24, 27, 0.06);
     --elevation-4: 0 12px 40px rgba(24, 24, 27, 0.16), 0 6px 12px rgba(24, 24, 27, 0.06);
+
+    /* --- 2.5a Brand-getönte Elevation (Ember-Hue-Tint, Phase 1) --- */
+    /* Alternative zu Charcoal-Schatten: Ember-Warm (hue 14°) für Cards mit Wärme-Effekt */
+    --elevation-brand-1: 0 1px 3px hsla(14, 73%, 42%, 0.06), 0 1px 2px hsla(14, 73%, 42%, 0.04);
+    --elevation-brand-2: 0 4px 12px hsla(14, 73%, 42%, 0.08), 0 2px 4px hsla(14, 73%, 42%, 0.04);
+    --elevation-brand-3: 0 8px 24px hsla(14, 73%, 42%, 0.12), 0 4px 8px hsla(14, 73%, 42%, 0.06);
+    --elevation-brand-4: 0 12px 40px hsla(14, 73%, 42%, 0.16), 0 6px 12px hsla(14, 73%, 42%, 0.06);
 
     /* CTA-Schatten (Rot-getönt für magnetische Wirkung) */
     --shadow-cta: 0 4px 14px rgba(220, 38, 38, 0.25);
@@ -447,6 +705,55 @@
     );
 
     /* ======================================================================
+       EBENE 3.5 — PRIMITIVE DEFINITIONEN FÜR TIER-4-REFERENZEN
+       Aufgelöst aus bestehenden Typography-Klassen und Spacing-Skala.
+       ====================================================================== */
+
+    /* --- Font-Size Primitives (für clamp() Referenzen in Tier 4) --- */
+    --font-size-12: 0.75rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+
+    /* --- Typography Composite Tokens (abgeleitet aus .typo-* Klassen) --- */
+    --typo-section-heading-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+    --typo-section-heading-leading: 1.2;
+    --typo-section-heading-tracking: -0.01em;
+
+    --typo-body-size: 1rem;
+    --typo-body-weight: 400;
+    --typo-body-leading: 1.6;
+    --typo-body-max-width: 65ch;
+
+    --typo-headline-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    --typo-headline-weight: 800;
+    --typo-headline-tracking: -0.02em;
+    --typo-headline-leading: 1.1;
+
+    --typo-phone-size: clamp(1.5rem, 3vw + 0.5rem, 2.4rem);
+    --typo-phone-weight: 700;
+    --typo-phone-tracking: 0.01em;
+    --typo-phone-leading: 1.2;
+
+    --typo-price-size: clamp(3rem, 6vw, 5rem);
+    --typo-price-weight: 800;
+
+    --typo-micro-size: 0.75rem;
+    --typo-micro-weight: 400;
+
+    /* --- Px-Named Spacing Aliases (für Layout-Token clamp() Referenzen) --- */
+    --space-12: var(--space-3);     /* 12px */
+    --space-16: var(--space-4);     /* 16px */
+    --space-20: var(--space-5);     /* 20px */
+    --space-32: var(--space-7);     /* 32px */
+    --space-48: var(--space-9);     /* 48px */
+    --space-64: var(--space-10);    /* 64px */
+    --space-96: var(--space-12);    /* 96px */
+    --space-128: var(--space-13);   /* 128px */
+
+    /* ======================================================================
        EBENE 4 — GHOST-TOKEN DEFINITIONEN (Referenziert, bisher undefiniert)
        ====================================================================== */
 
@@ -509,6 +816,8 @@
     --cta-block-headline-size: var(--typo-phone-size);
   }
 
+  /* Dark Mode entfernt — Light-Only Design */
+
   /* Global selection highlight */
   ::selection {
     background: rgba(220, 38, 38, 0.3);
@@ -555,20 +864,38 @@
 
 @layer utilities {
 
+  /* Phase 2: Readability Measures */
+  .prose-body { max-width: 65ch; }
+  .prose-heading { max-width: 35ch; }
+
   /* Elevation utility classes (Token-basiert) */
   .elevation-1 { box-shadow: var(--elevation-1); }
   .elevation-2 { box-shadow: var(--elevation-2); }
   .elevation-3 { box-shadow: var(--elevation-3); }
   .elevation-4 { box-shadow: var(--elevation-4); }
 
-  /* Hover-Lift: Karte hebt sich bei Hover an */
+  /* Hover-Lift: Karte hebt sich bei Hover an (Phase 4) */
   .hover-lift {
-    transition: transform var(--duration-300) var(--ease-spring),
-                box-shadow var(--duration-300) var(--ease-spring);
+    transition: transform var(--duration-normal) var(--ease-spring),
+                box-shadow var(--duration-normal) var(--ease-spring);
   }
   .hover-lift:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.01);
     box-shadow: var(--elevation-3);
+  }
+  .hover-lift:active {
+    transform: translateY(-2px) scale(0.99);
+    box-shadow: var(--elevation-1);
+    transition-duration: var(--duration-instant);
+  }
+  /* Card-Bild-Zoom bei Hover */
+  .hover-lift img,
+  .hover-lift [data-card-image] {
+    transition: transform var(--duration-normal) var(--ease-out);
+  }
+  .hover-lift:hover img,
+  .hover-lift:hover [data-card-image] {
+    transform: scale(1.05);
   }
 
   /* Asymmetrische Abstandsregel: 4× Raum VOR Überschrift, 1× NACH */
@@ -821,6 +1148,111 @@
 }
 
 /* =============================================
+   PHASE 4 — ANIMATIONS-SCHICHT
+   ============================================= */
+
+/* --- Button Spring-Easing (CSS Fallback für --ease-spring) --- */
+button,
+[role="button"],
+a[class*="button"],
+.btn {
+  transition-timing-function: var(--ease-spring);
+}
+
+/* --- Input-Fokus-Animation --- */
+input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  transition: border-color var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out);
+}
+
+input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-red-500, #dc2626);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+/* --- Validation-Shake (1x, 400ms) --- */
+@keyframes validationShake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-6px); }
+  30% { transform: translateX(6px); }
+  45% { transform: translateX(-4px); }
+  60% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  90% { transform: translateX(2px); }
+}
+.shake-error {
+  animation: validationShake 0.4s var(--ease-out);
+}
+
+/* --- Akkordeon Smooth-Height (grid-row-Trick) --- */
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--duration-slow) var(--ease-out);
+  overflow: hidden;
+}
+.accordion-content[data-state="open"],
+.accordion-content.is-open {
+  grid-template-rows: 1fr;
+}
+.accordion-content > * {
+  overflow: hidden;
+}
+
+/* Chevron-Rotation */
+.accordion-chevron {
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+[data-state="open"] > .accordion-chevron,
+.is-open > .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+/* --- CTA Shimmer-Aufmerksamkeit (alle 5s, dezent) --- */
+@keyframes ctaShimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.cta-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.cta-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+  animation: ctaShimmer 1.5s var(--ease-in-out) infinite;
+  animation-delay: 5s;
+  pointer-events: none;
+}
+
+/* --- Page-Entry Fade --- */
+@keyframes pageEntry {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main[id="main-content"] {
+  animation: pageEntry var(--duration-normal) var(--ease-out) both;
+}
+
+/* =============================================
    REDUCED MOTION — Vollständig
    ============================================= */
 @media (prefers-reduced-motion: reduce) {
@@ -885,6 +1317,76 @@
   transform: scaleX(0.8);
 }
 
+  /* =============================================
+     PHASE 1 — SURFACE MATERIAL CLASSES
+     ============================================= */
+
+  /* Solid: Opake Farbe + Subtle Border (Standard für Cards, Container) */
+  .surface-solid {
+    background-color: var(--surface-elevated);
+    border: var(--border-width-thin) solid var(--border-subtle);
+  }
+
+  /* Glass: Frosted-Glass-Effekt (für Navigation, Overlays, Premium Floating) */
+  .surface-glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: var(--border-width-thin) solid var(--color-border-warmlight);
+    border-radius: var(--radius-md);
+  }
+
+  /* Gradient-Primary: CTA-Akzente, Hero-Bereiche */
+  .surface-gradient-primary {
+    background: linear-gradient(
+      135deg,
+      var(--color-red-500) 0%,
+      var(--color-red-700) 100%
+    );
+  }
+
+  /* Gradient-Subtle: Sektions-Hintergründe, sanfte Tiefe */
+  .surface-gradient-subtle {
+    background: linear-gradient(
+      135deg,
+      var(--color-off-white) 0%,
+      var(--color-charcoal-50) 100%
+    );
+  }
+
+  /* Warm-Gradient: Vertrauens-Sektion (Ember-getönt) */
+  .surface-gradient-warm {
+    background: linear-gradient(
+      135deg,
+      var(--color-ember-50) 0%,
+      var(--color-off-white) 100%
+    );
+  }
+
+  /* Divider: Gradient-Trennlinie (horizontal) */
+  .divider-gradient {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--border-medium),
+      transparent
+    );
+  }
+
+  /* Divider: Ausblendend (subtiler als gradient) */
+  .divider-fade {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-border-warmlight),
+      transparent
+    );
+  }
+
+} /* ← Close @layer utilities */
+
 /* =============================================
    VIEWPORT-ADAPTIVE INTERAKTION (POINTER)
    ============================================= */
@@ -911,34 +1413,297 @@
   }
 }
 
-/* Mouse click outline suppression - show focus ring ONLY on keyboard tab */
+/* =============================================
+   PHASE 8 — DOPPELTER FOKUSRING (ÜBERALL SICHTBAR)
+   ============================================= */
+
+/* Keyboard focus → Double ring: white + brand */
+:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 2px var(--color-white),
+    0 0 0 4px var(--color-red-500);
+}
+
+
+
+/* On dark surfaces (hero, footer): ensure visibility */
+[class*="bg-charcoal"], [class*="surface-dark"] {
+  & :focus-visible {
+    outline-color: var(--color-charcoal-900);
+    box-shadow:
+      0 0 0 2px var(--color-charcoal-900),
+      0 0 0 4px var(--color-red-400);
+  }
+}
+
+/* Mouse click: suppress outline (show ONLY on keyboard Tab) */
 :focus:not(:focus-visible) {
   outline: none;
   box-shadow: none;
 }
 
 /* =============================================
+   PHASE 8 — PLACEHOLDER-KONTRAST (4.5:1)
+   ============================================= */
+::placeholder {
+  color: var(--color-charcoal-400);
+  opacity: 1; /* Firefox fix */
+}
+
+
+
+/* =============================================
    ERHÖHTER KONTRAST (AAA 7:1)
    ============================================= */
 @media (prefers-contrast: more) {
   :root {
-    --text-secondary: var(--color-charcoal-800);
-    --text-tertiary: var(--color-charcoal-700);
-    --border-subtle: var(--color-charcoal-300);
+    --text-secondary: var(--color-charcoal-900);
+    --text-tertiary: var(--color-charcoal-800);
+    --border-subtle: var(--color-charcoal-400);
+    --border-medium: var(--color-charcoal-600);
     --atmosphere-focus: var(--color-red-600);
+  }
+
+  /* Thicker focus indicators */
+  :focus-visible {
+    outline-width: 3px;
+    outline-offset: 3px;
+  }
+
+  /* Replace subtle shadows with solid borders */
+  .elevation-1, .elevation-2, .elevation-3, .elevation-4 {
+    box-shadow: none !important;
+    border: 2px solid var(--border-medium) !important;
+  }
+
+  /* Glasmorphism → solid */
+  .glass-panel,
+  .glass-panel-hover {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: var(--surface-elevated) !important;
+    border: 2px solid var(--border-medium) !important;
+  }
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    --text-primary: var(--color-charcoal-800);
+    --surface-primary: #FEFEFE;
   }
 }
 
 /* =============================================
    REDUZIERTE TRANSPARENZ (GLASMORPHISMUS AUS)
    ============================================= */
-@media (prefers-reduced-transparency) {
-  .glass-panel, 
-  .glass-panel-hover, 
+@media (prefers-reduced-transparency: reduce) {
+  .glass-panel,
+  .glass-panel-hover,
   [class*="backdrop-blur"] {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     background-color: var(--surface-primary) !important;
   }
 }
+
+/* =============================================
+   WINDOWS HOCHKONTRAST-MODUS (FORCED COLORS)
+   ============================================= */
+@media (forced-colors: active) {
+  /* Accept system colors, ensure borders are visible */
+  button,
+  [role="button"],
+  a[class*="button"],
+  .btn {
+    border: 1px solid transparent;
+  }
+
+  /* SVG Icons inherit the forced text color */
+  svg {
+    color: currentColor;
+    fill: currentColor;
+  }
+
+  /* Use outline for focus (respects forced-colors) */
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  /* Elevation becomes border */
+  .elevation-1, .elevation-2, .elevation-3, .elevation-4 {
+    box-shadow: none;
+    border: 1px solid currentColor;
+  }
+}
+
+/* =============================================
+   PRINT STYLESHEET
+   ============================================= */
+@media print {
+  /* Hide non-essential elements */
+  nav,
+  footer,
+  header,
+  [data-mobile-bar],
+  .back-to-top,
+  .exit-intent,
+  .global-background,
+  .scroll-indicator,
+  .sticky-header,
+  .mobile-bottom-bar,
+  .cookie-banner,
+  [role="complementary"],
+  button:not([type="submit"]) {
+    display: none !important;
+  }
+
+  /* Reset colors for print */
+  body {
+    color: #000 !important;
+    background: #fff !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Show link URLs */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+    word-break: break-all;
+  }
+
+  /* Don't show URL for internal/anchor links */
+  a[href^="#"]::after,
+  a[href^="javascript"]::after,
+  a[href^="tel"]::after {
+    content: none;
+  }
+
+  /* Phone number special: show clearly */
+  a[href^="tel"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  /* Prevent page breaks inside important elements */
+  h1, h2, h3, h4 {
+    break-after: avoid;
+  }
+
+  img, table, figure, blockquote,
+  [class*="card"],
+  [class*="Card"] {
+    break-inside: avoid;
+  }
+
+  /* Remove background images and colors */
+  * {
+    print-color-adjust: economy;
+    -webkit-print-color-adjust: economy;
+  }
+
+  /* Remove shadows and borders for cleaner print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure images are visible */
+  img {
+    max-width: 100% !important;
+    filter: none !important;
+  }
+
+  /* Full-width layout */
+  .container,
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* =============================================
+   TOUCH TARGET ENFORCEMENT
+   ============================================= */
+@media (pointer: coarse) {
+  /* Ensure all interactive elements meet 48px minimum */
+  button:not(.icon-only),
+  [role="button"],
+  a:not(.inline-link),
+  input[type="checkbox"],
+  input[type="radio"],
+  select {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* Increase padding on form elements for fat fingers */
+  input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+/* =============================================
+   HERO ENTRANCE ANIMATION (CSS-ONLY)
+   ============================================= */
+@keyframes heroFadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-entrance {
+  animation: heroFadeSlideIn 0.6s ease-out both;
+}
+
+/* =============================================
+   INLINE LINK HOVER (PHASE 5)
+   ============================================= */
+.inline-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-brand-primary);
+  /* Make sure link outline is styled cleanly for focus */
+}
+.inline-link:focus-visible {
+  outline: none;
+  border-radius: var(--radius-xs);
+  box-shadow: 0 0 0 2px var(--surface-primary), 0 0 0 4px var(--color-brand-primary);
+}
+.inline-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width var(--duration-normal) var(--ease-out);
+}
+.inline-link:hover::after {
+  width: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

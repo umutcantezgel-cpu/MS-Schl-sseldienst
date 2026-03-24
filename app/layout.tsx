@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from"next";
-import { Plus_Jakarta_Sans, DM_Sans } from"next/font/google";
+import { Plus_Jakarta_Sans, DM_Sans, JetBrains_Mono } from"next/font/google";
+import MotionProvider from "@/components/providers/MotionProvider";
+import { DeviceProvider } from "@/components/providers/DeviceProvider";
+import { WebVitalsReporter } from "@/components/analytics/WebVitalsReporter";
 import dynamic from"next/dynamic";
 import"./globals.css";
 import StickyHeader from"@/components/StickyHeader";
@@ -7,24 +10,39 @@ import Footer from"@/components/Footer";
 import MobileBottomBar from"@/components/MobileBottomBar";
 import { generateLocalBusinessSchema, generateWebSiteSchema } from"@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
+import { SkipNav } from "@/components/ui/SkipNav";
+
+import { AnnouncerProvider } from "@/components/providers/Announcer";
 
 /* Framer-Motion-Komponenten aus dem kritischen Pfad entfernt — eigene JS-Chunks */
 const GlobalBackground = dynamic(() => import("@/components/GlobalBackground"));
 const ScrollIndicator = dynamic(() => import("@/components/ui/ScrollIndicator"));
 const BackToTop = dynamic(() => import("@/components/ui/BackToTop"));
+const ExitIntentBanner = dynamic(() => import("@/components/ui/ExitIntentBanner"));
+const ScrollDepthTracker = dynamic(() => import("@/components/analytics/ScrollDepthTracker"));
+const CookieConsent = dynamic(() => import("@/components/ui/CookieConsent"));
+const ReturnVisitorBanner = dynamic(() => import("@/components/growth/ReturnVisitorBanner"));
+const RouteChangeIndicator = dynamic(() => import("@/components/ui/RouteChangeIndicator"));
+const OfflineBanner = dynamic(() => import("@/components/ui/OfflineBanner"));
+const RouteAnnouncer = dynamic(() => import("@/components/ui/RouteAnnouncer").then(m => ({ default: m.RouteAnnouncer })));
+const ErrorHandlers = dynamic(() => import("@/components/monitoring/ErrorHandlers"));
 
 const plusJakarta = Plus_Jakarta_Sans({
- subsets: ["latin"],
+ subsets: ["latin", "latin-ext"],
  display:"swap",
  variable:"--font-display",
- weight: ["400","700","800"],
 });
 
 const dmSans = DM_Sans({
- subsets: ["latin"],
+ subsets: ["latin", "latin-ext"],
  display:"swap",
  variable:"--font-body",
- weight: ["400","500","700"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+ subsets: ["latin", "latin-ext"],
+ display:"swap",
+ variable:"--font-mono",
 });
 
 export const metadata: Metadata = generateSharedMetadata({
@@ -47,7 +65,7 @@ export default function RootLayout({
  children: React.ReactNode;
 }) {
  return (
-  <html lang="de">
+     <html lang="de" className="light">
    <head>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
@@ -55,28 +73,45 @@ export default function RootLayout({
     <link rel="alternate" hrefLang="x-default" href="https://schluesseldienst-wetzlar-24.de" />
    </head>
    <body
-    className={`${plusJakarta.variable} ${dmSans.variable} min-h-screen bg-background text-foreground font-sans flex flex-col`}
+    className={`${plusJakarta.variable} ${dmSans.variable} ${jetbrainsMono.variable} min-h-screen bg-background text-foreground font-sans flex flex-col antialiased`}
    >
-    {/* === Globale Fixierte Hintergrund-Animation === */}
-    <GlobalBackground />
+     <DeviceProvider>
+      <AnnouncerProvider>
+       <MotionProvider>
+      <div className="flex flex-col min-h-screen relative dark-focus">
+       {/* Aller-erstes DOM-Element für Screenreader/Keyboard-User: Skip-Link */}
+       <SkipNav />
+        <RouteAnnouncer />
+         <RouteChangeIndicator />
+         <OfflineBanner />
 
-    <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:rounded-lg focus:bg-[var(--color-red-500)] focus:px-4 focus:py-2 focus:text-white focus:font-bold focus:shadow-lg focus:outline-none">
-     Zum Hauptinhalt springen
-    </a>
-    <ScrollIndicator />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{ __html: JSON.stringify(generateLocalBusinessSchema()) }}
-    />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }}
-    />
-    <StickyHeader />
-    <main id="main-content" className="flex-grow" aria-label="Hauptinhalt">{children}</main>
-    <Footer />
-    <MobileBottomBar />
-    <BackToTop />
+       {/* === Globale Fixierte Hintergrund-Animation === */}
+       <GlobalBackground />
+
+       <ScrollIndicator />
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateLocalBusinessSchema()) }}
+       />
+       <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }}
+       />
+       <StickyHeader />
+       <main id="main-content" className="flex-grow" aria-label="Hauptinhalt">{children}</main>
+       <Footer />
+       <MobileBottomBar />
+       <BackToTop />
+        <ExitIntentBanner />
+        <ReturnVisitorBanner />
+       <ScrollDepthTracker />
+       <WebVitalsReporter />
+       <CookieConsent />
+       <ErrorHandlers />
+      </div>
+      </MotionProvider>
+      </AnnouncerProvider>
+     </DeviceProvider>
    </body>
   </html>
  );

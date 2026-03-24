@@ -1,22 +1,51 @@
 import * as React from"react"
 import { cn } from"@/lib/utils"
 
-export interface TextareaProps
-  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> { }
+export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  error?: string;
+  hint?: string;
+}
 
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, error, hint, id, "aria-describedby": ariaDescribed, ...props }, ref) => {
+    
+    const internalId = React.useId()
+    const textareaId = id || internalId
+    const errorId = error ? `${textareaId}-error` : undefined
+    const hintId = hint ? `${textareaId}-hint` : undefined
+    const describedBy = [errorId, hintId, ariaDescribed].filter(Boolean).join(" ") || undefined
+
     return (
-      <textarea
-        className={cn("flex min-h-[120px] w-full rounded-[var(--radius-md)] border-0 bg-[var(--surface-primary)] px-4 py-3 text-base text-[var(--text-primary)] elevation-1 ring-1 ring-inset ring-[var(--border-subtle)] transition-colors placeholder:text-[var(--text-tertiary)] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[var(--color-red-500)] disabled:cursor-not-allowed disabled:opacity-50",
-          className
+      <div className="flex flex-col w-full gap-2 relative">
+        <textarea
+          id={textareaId}
+          className={cn(
+            "flex min-h-[120px] w-full resize-y rounded-[var(--radius-md,6px)] border border-border-default bg-surface-primary px-4 py-3 text-base text-text-primary ring-offset-surface-primary transition-all duration-150 ease-out placeholder:text-text-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:border-brand-primary hover:border-border-strong disabled:cursor-not-allowed disabled:bg-surface-muted disabled:opacity-50",
+            error && "border-status-error focus-visible:ring-status-error focus-visible:border-status-error hover:border-status-error",
+            className
+          )}
+          ref={ref}
+          aria-invalid={!!error}
+          aria-describedby={describedBy}
+          {...props}
+        />
+        {(error || hint) && (
+          <div className="text-sm px-1">
+            {error ? (
+              <p id={errorId} className="text-status-error font-medium" role="alert" aria-live="polite">
+                {error}
+              </p>
+            ) : hint ? (
+              <p id={hintId} className="text-text-tertiary">
+                {hint}
+              </p>
+            ) : null}
+          </div>
         )}
-        ref={ref}
-        {...props}
-      />
+      </div>
     )
   }
 )
-Textarea.displayName ="Textarea"
+Textarea.displayName = "Textarea"
 
 export { Textarea }

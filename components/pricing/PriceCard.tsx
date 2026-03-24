@@ -18,29 +18,29 @@ export default function PriceCard({
 }: PriceCardProps) {
   return (
     <div
-      className={`relative flex flex-col rounded-[var(--space-4)] bg-[var(--surface-primary)] p-[var(--space-7)] sm:p-[var(--space-8)] ring-1 hover-lift ${isPopular
-        ?"ring-[var(--price-card-accent)] border-t-[3px] border-t-[var(--price-card-accent)] elevation-3 shadow-[0_8px_30px_rgba(184,67,42,0.15)]"
-        :"ring-[var(--border-subtle)] elevation-1"
+      className={`relative flex flex-col rounded-[var(--space-4)] bg-[var(--surface-primary)] p-[var(--space-7)] sm:p-[var(--space-8)] ring-1 transition-all duration-300 ${isPopular
+        ?"ring-[var(--color-red-500)] border-t-[3px] border-t-[var(--color-red-500)] shadow-[var(--elevation-3)] -translate-y-1"
+        :"ring-[var(--border-subtle)] shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)] hover:-translate-y-1"
         }`}
     >
       {isPopular && (
-        <div className="absolute -top-[var(--space-4)] left-1/2 -translate-x-1/2 rounded-full bg-[var(--action-primary)] px-[var(--space-4)] py-[var(--space-1)] text-white elevation-2 typo-label-caps typo-tiny">
+        <div className="absolute -top-[var(--space-4)] left-1/2 -translate-x-1/2 rounded-full bg-[var(--color-red-500)] px-[var(--space-4)] py-[var(--space-1)] text-white shadow-[var(--elevation-2)] font-bold text-xs uppercase tracking-wider">
           Am häufigsten gewählt
         </div>
       )}
 
       <div className="mb-[var(--space-6)]">
-        <h3 className="typo-h4-card text-[var(--text-primary)]">
+        <h3 className="typo-h4-card text-[color:var(--text-primary)]">
           {title}
         </h3>
-        <p className="mt-[var(--space-2)] text-[var(--text-secondary)] typo-body !max-w-none !mb-0">
+        <p className="mt-[var(--space-2)] text-[color:var(--text-secondary)] typo-body !max-w-none !mb-0">
           {description}
         </p>
       </div>
 
       <div className="mb-[var(--space-7)] flex items-baseline gap-[var(--space-1)]">
         {typeof price ==="number" && (
-          <span className="typo-small text-[var(--text-tertiary)]">
+          <span className="typo-small text-[color:var(--text-tertiary)]">
             ab
           </span>
         )}
@@ -58,7 +58,7 @@ export default function PriceCard({
         {features.map((feature, index) => (
           <li key={index} className="flex gap-[var(--space-3)]">
             <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" aria-hidden="true" />
-            <span className="text-[var(--text-secondary)] typo-body !max-w-none !mb-0">
+            <span className="text-[color:var(--text-secondary)] typo-body !max-w-none !mb-0">
               {feature}
             </span>
           </li>
