@@ -41,3 +41,17 @@ next-env.d.ts
 # Misc
 Thumbs.db
 *.log
+
+# QA Pipeline artifacts (dev-only, not for production)
+qa_*.js
+qa_*.py
+generate_qa_doc*.py
+replace-motion.js
+scaffold.sh
+migrate.sh
+eslint-report.txt
+lighthouse-report.html
+.qa-*.json
+.qa-*.md
+QA-*.md
+Pipeline/

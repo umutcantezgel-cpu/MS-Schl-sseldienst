@@ -1,5 +1,6 @@
 import { LocationData } from "@/lib/data/locations";
 import RevealSection from "@/components/motion/RevealSection";
+import { sanitizeHTML } from "@/lib/sanitize";
 
 interface LocationAboutProps {
     city: LocationData;
@@ -20,7 +21,7 @@ export default function LocationAbout({ city }: LocationAboutProps) {
                                    prose-strong:text-[color:var(--text-primary)] prose-strong:font-bold
                                    prose-a:text-[color:var(--value-primary)] prose-a:no-underline hover:prose-a:underline 
                                    prose-h3:mt-16 mx-auto"
-                        dangerouslySetInnerHTML={{ __html: city.aboutText }}
+                        dangerouslySetInnerHTML={{ __html: sanitizeHTML(city.aboutText) }}
                     />
                 </main>
             </div>

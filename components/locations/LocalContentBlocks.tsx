@@ -1,6 +1,7 @@
 import { LocationData } from "@/lib/data/locations";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
+import { sanitizeHTML } from "@/lib/sanitize";
 
 export default function LocalContentBlocks({ city }: { city: LocationData }) {
     if (!city.content.mainText) return null;
@@ -19,7 +20,7 @@ export default function LocalContentBlocks({ city }: { city: LocationData }) {
                                    prose-strong:text-[color:var(--text-primary)] prose-strong:font-bold
                                    prose-a:text-[color:var(--value-primary)] prose-a:no-underline hover:prose-a:underline 
                                    prose-h2:mt-16 mx-auto" 
-                        dangerouslySetInnerHTML={{ __html: city.content.mainText }} 
+                        dangerouslySetInnerHTML={{ __html: sanitizeHTML(city.content.mainText) }} 
                     />
                 </StaggerItem>
 
@@ -34,7 +35,7 @@ export default function LocalContentBlocks({ city }: { city: LocationData }) {
                                         className="prose prose-lg prose-slate 
                                                    prose-p:text-[color:var(--text-secondary)] prose-p:leading-relaxed prose-p:mb-6
                                                    prose-strong:text-[color:var(--text-primary)] prose-strong:font-bold"
-                                        dangerouslySetInnerHTML={{ __html: section.content }}
+                                        dangerouslySetInnerHTML={{ __html: sanitizeHTML(section.content) }}
                                     />
                                 </div>
                             </StaggerItem>

@@ -61,3 +61,26 @@ export function sanitizeEmail(email: string): string {
   const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
   return emailRegex.test(trimmed) ? trimmed : "";
 }
+
+/**
+ * Sanitize HTML content for safe rendering via dangerouslySetInnerHTML.
+ * Strips dangerous tags (script, iframe, object, embed, form) and
+ * removes all on* event handler attributes while preserving safe
+ * formatting HTML (p, h2, h3, strong, em, a, ul, ol, li, br, span, div).
+ */
+export function sanitizeHTML(input: string): string {
+  if (typeof input !== "string") return "";
+  // Remove dangerous tags entirely (including their content)
+  let clean = input
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")
+    .replace(/<iframe\b[^<]*(?:(?!<\/iframe>)<[^<]*)*<\/iframe>/gi, "")
+    .replace(/<object\b[^<]*(?:(?!<\/object>)<[^<]*)*<\/object>/gi, "")
+    .replace(/<embed\b[^>]*\/?>/gi, "")
+    .replace(/<form\b[^<]*(?:(?!<\/form>)<[^<]*)*<\/form>/gi, "")
+    .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, "");
+  // Remove all on* event handlers (onclick, onerror, onload, etc.)
+  clean = clean.replace(/\s+on\w+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, "");
+  // Remove javascript: protocol in href/src attributes
+  clean = clean.replace(/(href|src)\s*=\s*(?:"javascript:[^"]*"|'javascript:[^']*')/gi, "$1=\"\"");
+  return clean;
+}
