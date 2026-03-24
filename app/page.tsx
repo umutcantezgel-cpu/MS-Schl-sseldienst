@@ -43,16 +43,18 @@ export default function HomePage() {
    {/* Hero Section */}
    <HeroSection />
 
-   <div className="relative z-20 w-full px-[var(--space-4)] -mt-[88px] lg:-mt-[120px] flex flex-col items-center gap-[var(--space-6)] pointer-events-none mb-12">
+   {/* Trust Signals & Reviews (Docked directly beneath Hero) */}
+   <div className="relative z-20 w-full px-[var(--space-4)] -mt-[44px] lg:-mt-[36px] flex flex-col lg:flex-row items-center justify-center gap-[var(--space-4)] lg:gap-[var(--space-6)] pointer-events-none mb-12 lg:mb-20">
     {/* Pointer-events-auto on children so they remain clickable, container is none to avoid blocking clicks in between */}
-    <aside aria-labelledby="google-reviews-heading" className="pointer-events-auto">
+    
+    <div className="w-full lg:w-max pointer-events-auto px-4 lg:px-0">
+     <TrustStrip />
+    </div>
+
+    <aside aria-labelledby="google-reviews-heading" className="pointer-events-auto shrink-0 mt-2 lg:mt-0">
      <h2 id="google-reviews-heading" className="sr-only">Kundenbewertungen auf Google</h2>
      <GoogleReviewsBadge rating={aggregateRating.ratingValue} count={aggregateRating.reviewCount} />
     </aside>
-
-    <div className="w-full pointer-events-auto px-4 mt-6">
-     <TrustStrip />
-    </div>
    </div>
 
    {/* Phase 18 — Personalized Trust Signal (non-default segments only) */}

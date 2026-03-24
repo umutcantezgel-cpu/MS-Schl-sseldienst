@@ -19,7 +19,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
         <section
             id="hero-section"
             aria-label={`Notfall-Hilfe ${city.name}`}
-            className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
+            className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[80vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] lg:pt-[200px] sm:pb-[100px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
         >
             {/* CSS Noise Texture */}
             <div
@@ -52,7 +52,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-[var(--space-6)] text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.05]">
+                        <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-2 sm:mb-[var(--space-6)] text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.05] text-[32px] sm:text-[48px] md:text-[64px]">
                             {city.heroVariant ? (
                                 <span dangerouslySetInnerHTML={{ __html: city.heroVariant.replace(city.name, `<span class="text-[color:var(--value-primary)]">${city.name}</span>`) }} />
                             ) : (
@@ -65,7 +65,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <p className="mx-auto max-w-prose text-lg sm:text-xl text-[color:var(--text-secondary)] text-center text-balance leading-relaxed mb-8">
+                        <p className="mx-auto max-w-prose text-[15px] sm:text-xl text-[color:var(--text-secondary)] text-center text-balance leading-snug sm:leading-relaxed mb-4 sm:mb-8">
                             {city.content.heroIntro}
                         </p>
                         
@@ -78,16 +78,16 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <div className="mt-12 mb-6">
+                        <div className="mt-4 sm:mt-12 mb-4 sm:mb-6">
                             <TrustBadges />
                         </div>
-                        <div className="flex flex-col items-center gap-3">
+                        <div className="flex flex-col items-center gap-2 sm:gap-3">
                             <a
                                 href="tel:+4964418056544"
-                                className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-full bg-[var(--color-red-500)] px-10 py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2"
+                                className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-6 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto"
                             >
-                                <Phone className="h-6 w-6 transition-transform group-hover:rotate-12" />
-                                <span className="text-xl tracking-tight">Jetzt Anrufen — 06441-8056544</span>
+                                <Phone className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:rotate-12" />
+                                <span className="text-[16px] sm:text-xl tracking-tight">Jetzt Anrufen — 06441-8056544</span>
                             </a>
                             <span className="typo-tiny text-[color:var(--text-tertiary)] text-center font-medium tracking-wide uppercase mt-2">
                                 Kostenlos & unverbindlich — Antwort in 30 Min

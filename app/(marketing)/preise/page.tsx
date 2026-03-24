@@ -50,7 +50,7 @@ export default function PreisePage() {
    />
 
    {/* Hero Section — Premium Dark */}
-   <section className="relative pt-[160px] pb-[var(--space-24)] lg:pt-[200px] lg:pb-[var(--space-32)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
+   <section className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[60vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] sm:pb-[var(--space-24)] lg:pt-[200px] lg:pb-[var(--space-32)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
