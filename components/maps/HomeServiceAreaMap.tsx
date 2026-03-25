@@ -49,10 +49,21 @@ export default function HomeServiceAreaMap() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const initMap = useCallback(async () => {
-    if (!containerRef.current || mapInstanceRef.current) return;
+    if (!containerRef.current) return;
 
     const L = (await import("leaflet")).default;
 
+    /* Guard: if the container was already initialized by a previous mount (React Strict Mode),
+       clean it up before re-creating */
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.remove();
+      mapInstanceRef.current = null;
+    }
+    // Also check Leaflet's internal marker on the DOM element
+    const el = containerRef.current as HTMLDivElement & { _leaflet_id?: number };
+    if (el._leaflet_id) {
+      delete el._leaflet_id;
+    }
 
     const map = L.map(containerRef.current, {
       center: WETZLAR_CENTER,

@@ -1,0 +1,47 @@
+
+> ai-studio-applet@0.1.0 dev
+> next dev --turbopack
+
+ ⚠ Port 3000 is in use by process 13635, using available port 3001 instead.
+   ▲ Next.js 15.5.14 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.178.89:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 72ms
+ ✓ Ready in 880ms
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+
+ ○ Compiling / ...
+ ✓ Compiled / in 1967ms
+ GET / 200 in 3976ms
+ GET / 200 in 563ms
+ ○ Compiling /[stadtgebiet] ...
+ ✓ Compiled /[stadtgebiet] in 2.2s
+ GET /favicon.ico 200 in 2918ms
+ GET /favicon.ico 200 in 2973ms
+ ✓ Compiled /api/monitoring/errors in 271ms
+{"type":"error_report","level":"warning","category":"unknown","message":"Performance budget exceeded: FCP = [REDACTED].00 (limit: [REDACTED])","page":"/","timestamp":"2026-03-25T13:33:55.733Z"}
+{"type":"error_report","level":"warning","category":"unknown","message":"Performance budget exceeded: TTFB = [REDACTED].50 (limit: [REDACTED])","page":"/","timestamp":"2026-03-25T13:33:55.734Z"}
+ POST /api/monitoring/errors 200 in 559ms
+ ✓ Compiled in 275ms
+ GET / 200 in 1191ms
+ GET /favicon.ico 200 in 218ms
+{"type":"error_report","level":"warning","category":"unknown","message":"Performance budget exceeded: TTFB = [REDACTED].20 (limit: [REDACTED])","page":"/","timestamp":"2026-03-25T13:35:33.172Z"}
+ POST /api/monitoring/errors 200 in 255ms
+{"type":"error_report","level":"warning","category":"server","message":"Performance budget exceeded: LCP = [REDACTED].00 (limit: [REDACTED])","page":"/","timestamp":"2026-03-25T13:35:50.506Z"}
+ POST /api/monitoring/errors 200 in 248ms
+ ○ Compiling /kontakt ...
+ ✓ Compiled /kontakt in 632ms
+ GET /kontakt 200 in 766ms
+ GET /favicon.ico 200 in 360ms
+ GET /kontakt 200 in 335ms
+ GET /favicon.ico 200 in 195ms
+ GET / 200 in 100ms
+ GET /favicon.ico 200 in 149ms
+ ✓ Compiled in 350ms
+ GET / 200 in 770ms
+ GET /favicon.ico 200 in 157ms
