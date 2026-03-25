@@ -36,6 +36,7 @@ import dynamic from "next/dynamic";
 const DynamicCounter = dynamic(() => import("@/components/growth/DynamicCounter"));
 const PersonalizedHero = dynamic(() => import("@/components/growth/PersonalizedHero"));
 const PersonalizedCTA = dynamic(() => import("@/components/growth/PersonalizedCTA"));
+import HomeServiceAreaWrapper from "@/components/maps/HomeServiceAreaWrapper";
 
 export default function HomePage() {
  return (
@@ -348,6 +349,45 @@ export default function HomePage() {
 
    {/* Über-Uns & Animierte Statistiken (Phase 6) */}
    <AboutStatsSection />
+
+   {/* Interactive Service Area Map */}
+   <section aria-labelledby="einsatzgebiet-heading" className="bg-transparent px-[var(--section-px)] py-24 md:py-32 overflow-hidden">
+    <RevealSection className="mx-auto max-w-7xl">
+      <SectionHeader
+        headingId="einsatzgebiet-heading"
+        title={<>Unser <span className="text-[var(--color-red-500)]">Einsatzgebiet</span></>}
+        description="Von Wetzlar bis in die gesamte Region — wir sind in wenigen Minuten bei Ihnen."
+      />
+
+      {/* Map */}
+      <HomeServiceAreaWrapper />
+
+      {/* Stat badges */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-8 max-w-4xl mx-auto">
+       {[
+        { value: "78+", label: "Stadtgebiete" },
+        { value: "50 km", label: "Einsatzradius" },
+        { value: "0 EUR", label: "Anfahrt in Wetzlar" },
+        { value: "15-30 Min", label: "Ø Ankunftszeit" },
+       ].map((stat) => (
+        <div key={stat.label} className="flex flex-col items-center justify-center gap-1 bg-white/70 backdrop-blur-xl border border-[var(--color-charcoal-100)] rounded-xl px-4 py-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+         <span className="text-[22px] font-black text-[color:var(--text-primary)] tabular-nums">{stat.value}</span>
+         <span className="text-[12px] font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">{stat.label}</span>
+        </div>
+       ))}
+      </div>
+
+      <div className="mt-8 text-center">
+       <Link
+        href="/servicegebiet"
+        className={cn(buttonVariants({ variant:"secondary", size:"lg" }),"rounded-full px-8 bg-[var(--color-charcoal-900)] hover:bg-[var(--color-charcoal-800)] text-white")}
+        style={{ fontSize: 'var(--text-small)', letterSpacing: 'var(--tracking-cta)' }}
+       >
+        Alle Einsatzgebiete anzeigen <ArrowRight className="h-5 w-5" aria-hidden="true" />
+       </Link>
+      </div>
+     </RevealSection>
+    </section>
 
    {/* Process Visualization */}
    <ProcessSteps />

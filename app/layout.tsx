@@ -5,6 +5,7 @@ import { DeviceProvider } from "@/components/providers/DeviceProvider";
 import { WebVitalsReporter } from "@/components/analytics/WebVitalsReporter";
 import dynamic from"next/dynamic";
 import"./globals.css";
+import"leaflet/dist/leaflet.css";
 import StickyHeader from"@/components/StickyHeader";
 import Footer from"@/components/Footer";
 import MobileBottomBar from"@/components/MobileBottomBar";

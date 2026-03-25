@@ -5,6 +5,7 @@ import Breadcrumbs from"@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateSharedMetadata } from"@/lib/metadata";
+import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
 
 export const metadata = generateSharedMetadata({
  title:"Kontakt — 24/7 Notdienst Zentrale",
@@ -164,9 +165,40 @@ export default function KontaktPage() {
     </div>
    </section>
 
-   <aside aria-label="Notfall-Kontakt">
-    <EmergencyCTA />
-   </aside>
-  </div>
+    {/* Premium Interactive Map Section */}
+    <section aria-labelledby="standort-heading" className="px-[var(--section-px)] pb-24 md:pb-32 relative z-20">
+     <div className="mx-auto max-w-7xl">
+      <div className="text-center mb-10">
+       <h2 id="standort-heading" className="typo-h2 text-[color:var(--text-primary)] text-balance">
+        Finden Sie uns in <span className="text-[var(--color-red-500)]">Ihrer Nähe</span>
+       </h2>
+       <p className="mt-4 text-[16px] text-[color:var(--text-secondary)] max-w-2xl mx-auto text-balance">
+        Über 78 Einsatzgebiete in der Region Wetzlar. Suchen Sie Ihren Standort und sehen Sie Festpreise, Anfahrtszeiten und direkte Kontaktmöglichkeiten.
+       </p>
+      </div>
+
+      <ContactMapWrapper />
+
+      {/* Stats below map */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 max-w-3xl mx-auto">
+       {[
+        { value: "78+", label: "Einsatzgebiete" },
+        { value: "50 km", label: "Einsatzradius" },
+        { value: "15-30 Min", label: "Ankunftszeit" },
+        { value: "24/7", label: "Erreichbarkeit" },
+       ].map((stat) => (
+        <div key={stat.label} className="flex flex-col items-center justify-center gap-0.5 bg-white border border-[var(--border-subtle)] rounded-xl px-3 py-3 shadow-sm">
+         <span className="text-[18px] font-black text-[color:var(--text-primary)] tabular-nums">{stat.value}</span>
+         <span className="text-[11px] font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">{stat.label}</span>
+        </div>
+       ))}
+      </div>
+     </div>
+    </section>
+
+    <aside aria-label="Notfall-Kontakt">
+     <EmergencyCTA />
+    </aside>
+   </div>
  );
 }
