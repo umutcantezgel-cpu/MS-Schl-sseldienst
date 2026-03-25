@@ -220,137 +220,117 @@ export default function HeroSection() {
 
           </div>
 
-          {/* ── Rechtes Panel (5 Spalten) — Premium Trust & Performance Bento Grid ── */}
-          <div className="lg:col-span-5 relative w-full mt-10 lg:mt-0 z-[10] px-3 sm:px-0">
+          {/* ── Rechtes Panel (5 Spalten) — Auto Form (Geometrische Fahrzeug-Silhouette) ── */}
+          <div className="lg:col-span-5 relative w-full mt-10 lg:mt-0 z-[10] px-2 sm:px-0 flex flex-col items-center justify-center">
             
-            {/* Glowing Circuit Lines (visible sm+) */}
-            <div className="hidden sm:block absolute -inset-6 z-0 pointer-events-none" aria-hidden="true">
-              <svg width="100%" height="100%" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="bentoGlow" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="transparent" />
-                    <stop offset="40%" stopColor="#B91C1C" stopOpacity="0.8" />
-                    <stop offset="60%" stopColor="#ef4444" stopOpacity="1" />
-                    <stop offset="80%" stopColor="#B91C1C" stopOpacity="0.8" />
-                    <stop offset="100%" stopColor="transparent" />
-                  </linearGradient>
-                  <filter id="bentoBlur">
-                    <feGaussianBlur stdDeviation="4" result="blur" />
-                    <feMerge>
-                      <feMergeNode in="blur" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                {/* Abstract Path wrapping the grid */}
-                <path 
-                  d="M 20 10 L 20 150 Q 20 170 40 170 L 400 170 Q 420 170 420 190 L 420 380" 
-                  stroke="#B91C1C" strokeOpacity="0.08" strokeWidth="2" fill="none" strokeLinecap="round" 
-                />
-                <path 
-                  d="M 20 10 L 20 150 Q 20 170 40 170 L 400 170 Q 420 170 420 190 L 420 380" 
-                  stroke="url(#bentoGlow)" strokeWidth="2.5" fill="none" strokeLinecap="round"
-                  filter="url(#bentoBlur)"
-                  strokeDasharray="80 300"
-                  className="animate-bento-circuit"
-                />
-              </svg>
-            </div>
+            {/* Speed Lines Background (Motion Illusion) */}
+            <div className="absolute inset-x-0 bottom-12 h-px bg-gradient-to-r from-transparent via-[var(--color-red-500)]/30 to-transparent w-full z-0 pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-8 h-px bg-gradient-to-r from-transparent via-[var(--color-charcoal-400)]/20 to-transparent w-[120%] -ml-[10%] z-0 pointer-events-none animate-speed-line-fast" />
 
-            {/* Bento Grid Container */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-4 relative z-10 w-full max-w-[500px] lg:max-w-none mx-auto lg:ml-auto">
+            {/* THE CAR BODY CONTAINER */}
+            <div className="w-full max-w-[500px] flex flex-col items-center relative z-10 hero-entrance group" style={{ animationDelay: '250ms' }}>
               
-              {/* Box A: 24/7 Notdienst (Full Width) */}
-              <div 
-                className="col-span-2 relative overflow-hidden group bg-white/70 backdrop-blur-xl border border-white/80 hover:border-[var(--color-red-500)]/30 rounded-2xl p-5 sm:p-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgb(185,28,28,0.12)] transition-all duration-500 hero-entrance"
-                style={{ animationDelay: '250ms' }}
-              >
-                {/* Red Atmospheric Glow */}
-                <div className="absolute top-0 right-0 w-40 h-40 bg-[var(--color-red-500)]/5 rounded-full blur-[40px] group-hover:bg-[var(--color-red-500)]/15 transition-colors duration-700" />
+              {/* === ROOF / CABIN (24/7 Notdienst) === */}
+              {/* Geometrisch: Abgerundete aerodynamische Kuppel */}
+              <div className="w-[85%] sm:w-[75%] bg-white/70 backdrop-blur-2xl ring-1 ring-white/80 rounded-t-[40px] sm:rounded-t-[60px] px-6 py-5 sm:py-6 shadow-[0_-15px_30px_rgba(185,28,28,0.08)] relative overflow-hidden transition-all duration-500 z-20 group-hover:-translate-y-1">
+                {/* Internal Dome Glow */}
+                <div className="absolute top-0 right-10 w-40 h-40 bg-[var(--color-red-500)]/10 rounded-full blur-[40px]" />
                 
-                <div className="flex items-start justify-between gap-4 relative z-10">
-                  <div className="flex flex-col gap-2">
-                    {/* Live Indicator */}
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <div className="relative flex h-2.5 w-2.5">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-500)] opacity-75" />
-                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[var(--color-red-500)]" />
-                      </div>
-                      <span className="text-[var(--color-red-600)] font-bold text-[10px] sm:text-[11px] uppercase tracking-[0.1em]">
-                        Live Status
-                      </span>
+                <div className="flex flex-col items-center text-center gap-2 relative z-10">
+                  <div className="flex items-center gap-2 mb-1 bg-white/70 px-3 py-1 rounded-full shadow-sm ring-1 ring-black/5">
+                    <div className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-500)] opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]" />
                     </div>
-                    
-                    <h3 className="text-[20px] sm:text-[24px] font-extrabold text-[color:var(--text-primary)] leading-[1.15] transform group-hover:translate-x-1 transition-transform duration-300">
-                      24/7 Notdienst in Wetzlar
-                    </h3>
-                    <p className="text-[13px] sm:text-[14px] text-[color:var(--text-secondary)] leading-relaxed max-w-[280px] mt-1">
-                      Unsere lokalen Experten sind auch an <strong className="text-[color:var(--text-primary)] font-semibold">Wochenenden & Feiertagen</strong> einsatzbereit.
-                    </p>
+                    <span className="text-[var(--color-red-600)] font-bold text-[10px] sm:text-[11px] uppercase tracking-[0.1em]">
+                      Live Status
+                    </span>
                   </div>
-                  
-                  {/* Premium Icon Container */}
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-white to-[var(--color-off-white)] border border-[var(--border-subtle)] flex items-center justify-center shadow-inner shrink-0 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
-                    <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-[var(--color-red-500)] drop-shadow-sm" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Box B: Ohne Schäden */}
-              <div 
-                className="col-span-1 flex flex-col justify-between gap-4 bg-white/70 backdrop-blur-xl border border-white/80 hover:border-[var(--color-red-500)]/30 rounded-2xl p-4 sm:p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgb(185,28,28,0.12)] transition-all duration-500 hover:-translate-y-1 hero-entrance group"
-                style={{ animationDelay: '300ms' }}
-              >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[var(--color-red-500)]/10 flex items-center justify-center group-hover:bg-[var(--color-red-500)]/20 transition-colors duration-300 relative overflow-hidden">
-                  {/* Metal Sweep Reflection */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out" />
-                  <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-red-600)] relative z-10" />
-                </div>
-                <div>
-                  <h3 className="text-[15px] sm:text-[17px] font-extrabold text-[color:var(--text-primary)] mb-1">
-                    Ohne Schäden
+                  <h3 className="text-[18px] sm:text-[22px] font-extrabold text-[color:var(--text-primary)] leading-[1.15]">
+                    24/7 Notdienst in Wetzlar
                   </h3>
-                  <p className="text-[12px] sm:text-[13px] text-[color:var(--text-secondary)] leading-snug">
-                    Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
+                  <p className="text-[12px] sm:text-[13px] text-[color:var(--text-secondary)] leading-relaxed max-w-[280px]">
+                    Unsere lokalen Experten sind auch an <strong className="text-[color:var(--text-primary)] font-semibold">Wochenenden & Feiertagen</strong> einsatzbereit.
                   </p>
                 </div>
               </div>
 
-              {/* Box C: Spezialwerkzeug (Inverted Dark Theme) */}
-              <div 
-                className="col-span-1 flex flex-col justify-between gap-4 bg-[var(--color-charcoal-900)] border border-[var(--color-charcoal-800)] hover:border-[var(--color-charcoal-600)] rounded-2xl p-4 sm:p-5 shadow-[0_12px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.3)] transition-all duration-500 hover:-translate-y-1 hero-entrance group relative overflow-hidden"
-                style={{ animationDelay: '350ms' }}
-              >
-                 {/* Tech Background Grid Pattern */}
-                <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500" 
-                     style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '16px 16px' }} />
+              {/* === CHASSIS / BODY (Front & Rear splits) === */}
+              {/* Breite Basis des Autos mit aerodynamischer Curve */}
+              <div className="w-full flex flex-col sm:flex-row bg-[var(--color-off-white)]/60 backdrop-blur-xl ring-1 ring-white/60 rounded-b-[30px] rounded-tl-[20px] rounded-tr-[20px] sm:rounded-tl-[50px] sm:rounded-tr-[30px] p-2 relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
                 
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors duration-300 relative z-10 shadow-inner">
-                  <Key className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                {/* HOOD / FRONT (Ohne Schäden) - Left Side */}
+                <div className="flex-1 bg-white/95 ring-1 ring-black/5 rounded-[20px] sm:rounded-tl-[40px] sm:rounded-bl-[20px] p-5 relative overflow-hidden group/front mb-2 sm:mb-0 sm:mr-1 transition-all duration-500 hover:ring-[var(--color-red-500)]/30 hover:shadow-lg">
+                  {/* Headlight Flow Glow */}
+                  <div className="absolute top-1/2 -left-12 w-24 h-24 bg-[var(--color-red-500)]/15 blur-[20px] group-hover/front:bg-[var(--color-red-500)]/30 group-hover/front:translate-x-12 transition-all duration-700 ease-out" />
+                  
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-[12px] bg-[var(--color-red-500)]/10 flex items-center justify-center mb-3 relative z-10 transition-transform duration-500 group-hover/front:scale-110">
+                    <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-red-600)]" />
+                  </div>
+                  <h3 className="text-[15px] sm:text-[17px] font-extrabold text-[color:var(--text-primary)] mb-1 relative z-10">
+                    Ohne Schäden
+                  </h3>
+                  <p className="text-[12px] sm:text-[13px] text-[color:var(--text-secondary)] leading-snug relative z-10">
+                    Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
+                  </p>
                 </div>
-                <div className="relative z-10">
-                  <h3 className="text-[15px] sm:text-[17px] font-extrabold text-white mb-1">
+
+                {/* TRUNK / REAR (Spezialwerkzeug) - Right Side */}
+                {/* Dark Theme for contrast/mechanical feel */}
+                <div className="flex-1 bg-[var(--color-charcoal-900)] ring-1 ring-[var(--color-charcoal-800)] rounded-[20px] sm:rounded-tr-[20px] sm:rounded-br-[20px] p-5 relative overflow-hidden group/rear sm:ml-1 transition-all duration-500 hover:shadow-lg">
+                  {/* Taillight Glow */}
+                  <div className="absolute top-1/2 -right-8 w-20 h-20 bg-[var(--color-red-600)]/30 blur-[20px] group-hover/rear:bg-[var(--color-red-500)]/50 group-hover/rear:-translate-x-4 transition-all duration-500" />
+                  {/* Tech Grip Pattern */}
+                  <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '8px 8px' }} />
+
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-[12px] bg-white/10 flex items-center justify-center mb-3 relative z-10 transition-transform duration-500 group-hover/rear:scale-110">
+                    <Key className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                  </div>
+                  <h3 className="text-[15px] sm:text-[17px] font-extrabold text-white mb-1 relative z-10">
                     Spezialwerkzeug
                   </h3>
-                  <p className="text-[12px] sm:text-[13px] text-zinc-400 leading-snug">
+                  <p className="text-[12px] sm:text-[13px] text-zinc-400 leading-snug relative z-10">
                     Präzisionsgeräte ermöglichen Öffnungen selbst bei schweren Verriegelungen.
                   </p>
                 </div>
               </div>
 
+              {/* === WHEELS / HOVER RINGS === */}
+              {/* Positioned on the bottom-left and bottom-right of the chassis */}
+              <div className="w-[88%] flex justify-between px-6 sm:px-10 -mt-6 sm:-mt-8 relative z-20 pointer-events-none">
+                {/* Front Wheel */}
+                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[5px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
+                  <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
+                </div>
+                {/* Rear Wheel */}
+                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[5px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
+                  <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
+                </div>
+              </div>
+
             </div>
 
-            {/* Custom Animations */}
+            {/* Car/Wheel Animations */}
             <style jsx global>{`
-              @keyframes bentoCircuitFlow {
-                0% { stroke-dashoffset: 380; }
-                100% { stroke-dashoffset: 0; }
+              @keyframes spinWheel {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
               }
-              .animate-bento-circuit {
-                animation: bentoCircuitFlow 3s linear infinite;
+              .spin-wheel {
+                animation: spinWheel 4s linear infinite;
+              }
+              @keyframes speedLine {
+                0% { transform: translateX(-100%); opacity: 0; }
+                50% { opacity: 1; }
+                100% { transform: translateX(100%); opacity: 0; }
+              }
+              .animate-speed-line-fast {
+                animation: speedLine 2s ease-in-out infinite;
               }
               @media (prefers-reduced-motion: reduce) {
-                .animate-bento-circuit { animation: none; }
+                .spin-wheel, .animate-speed-line-fast { animation: none; }
               }
             `}</style>
           </div>
