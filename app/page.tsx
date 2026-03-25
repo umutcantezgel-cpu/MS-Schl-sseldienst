@@ -147,22 +147,38 @@ export default function HomePage() {
        <Typography variant="h4" className="mb-1">Abends oder nachts?</Typography>
        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Spätzuschlag je nach Uhrzeit</Typography>
 
-       <div className="flex flex-col gap-4 mb-8 bg-white/40 p-5 rounded-xl border border-[var(--color-charcoal-100)]">
-        <div className="flex items-center justify-between">
-         <span className="text-[14px] font-medium text-[color:var(--text-secondary)]">20:00 – 21:59 Uhr:</span>
-         <div className="flex items-baseline gap-1">
-          <span className="text-[12px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
-          <span className="text-[36px] font-black leading-none tracking-tight text-[color:var(--text-primary)] tabular-nums">119</span>
-          <span className="text-[18px] font-bold text-[var(--value-price)]">€</span>
+       <div className="flex flex-col gap-4 mb-8 bg-[var(--color-charcoal-900)] p-5 rounded-xl border border-[var(--color-charcoal-800)] relative overflow-hidden shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)]">
+        <div className="flex flex-col relative z-10 w-full">
+         <div className="mb-1">
+          <span className="text-[11px] font-black text-[var(--color-red-500)] uppercase tracking-widest flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-red-500)] animate-pulse shadow-[0_0_8px_rgba(185,28,28,0.8)]" /> Abendtarif
+          </span>
+         </div>
+         <div className="flex items-end justify-between">
+          <span className="text-[14px] font-medium text-slate-300 pb-1.5">20:00 – 21:59 Uhr</span>
+          <div className="flex items-baseline gap-1.5 shrink-0">
+           <span className="text-[12px] font-bold text-slate-500 uppercase tracking-wide">ab</span>
+           <span className="text-[40px] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-300 tabular-nums">119</span>
+           <span className="text-[18px] font-bold text-[var(--color-red-500)]">€</span>
+          </div>
          </div>
         </div>
-        <div className="h-px w-full bg-[var(--color-charcoal-100)]" />
-        <div className="flex items-center justify-between">
-         <span className="text-[14px] font-medium text-[color:var(--text-secondary)]">22:00 – 05:59 Uhr:</span>
-         <div className="flex items-baseline gap-1">
-          <span className="text-[12px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
-          <span className="text-[44px] font-black leading-none tracking-tight text-[color:var(--text-primary)] tabular-nums">149</span>
-          <span className="text-[20px] font-bold text-[var(--value-price)]">€</span>
+
+        <div className="h-px w-full bg-gradient-to-r from-[var(--color-charcoal-700)] via-[var(--color-charcoal-600)] to-transparent relative z-10" />
+        
+        <div className="flex flex-col relative z-10 w-full mb-1">
+         <div className="mb-1">
+          <span className="text-[11px] font-black text-indigo-400 uppercase tracking-widest flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shadow-[0_0_8px_rgba(129,140,248,0.8)]" /> Nachttarif
+          </span>
+         </div>
+         <div className="flex items-end justify-between">
+          <span className="text-[14px] font-medium text-slate-300 pb-1.5">22:00 – 05:59 Uhr</span>
+          <div className="flex items-baseline gap-1.5 shrink-0">
+           <span className="text-[12px] font-bold text-slate-500 uppercase tracking-wide">ab</span>
+           <span className="text-[44px] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-300 tabular-nums drop-shadow-[0_2px_8px_rgba(255,255,255,0.1)]">149</span>
+           <span className="text-[20px] font-bold text-[var(--color-red-500)]">€</span>
+          </div>
          </div>
         </div>
        </div>

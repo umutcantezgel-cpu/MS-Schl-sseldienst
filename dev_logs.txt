@@ -45,3 +45,25 @@
  ✓ Compiled in 350ms
  GET / 200 in 770ms
  GET /favicon.ico 200 in 157ms
+ ✓ Compiled / in 38ms
+ GET / 200 in 389ms
+ GET / 200 in 391ms
+ GET / 200 in 776ms
+ GET /favicon.ico 200 in 192ms
+ GET /favicon.ico 200 in 256ms
+{"type":"error_report","level":"warning","category":"server","message":"Performance budget exceeded: LCP = [REDACTED].00 (limit: [REDACTED])","page":"/","timestamp":"2026-03-25T14:06:19.886Z"}
+ POST /api/monitoring/errors 200 in 264ms
+ ✓ Compiled in 412ms
+ ✓ Compiled / in 181ms
+ GET / 200 in 1330ms
+ GET / 200 in 1334ms
+ GET / 200 in 501ms
+ GET /favicon.ico 200 in 271ms
+ GET /favicon.ico 200 in 172ms
+ ✓ Compiled in 307ms
+ ✓ Compiled / in 87ms
+ GET / 200 in 982ms
+ GET / 200 in 986ms
+ GET / 200 in 372ms
+ GET /favicon.ico 200 in 310ms
+ GET /favicon.ico 200 in 177ms
