@@ -301,7 +301,7 @@ export default function ContactForm() {
             className={cn("peer pt-5 pb-2 placeholder:text-transparent px-4 pr-10 rounded-[var(--radius-lg)]", fieldClasses("name"))}
             placeholder="Name"
           />
-          <label htmlFor="name" className="absolute left-4 top-4 text-[color:var(--text-tertiary)] text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[var(--color-blush-500)] pointer-events-none">
+          <label htmlFor="name" className="absolute left-4 top-1.5 text-[color:var(--text-tertiary)] text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[var(--color-blush-500)] pointer-events-none">
             Name
           </label>
           <AnimatePresence>
@@ -350,7 +350,7 @@ export default function ContactForm() {
             className={cn("peer pt-5 pb-2 placeholder:text-transparent px-4 pr-10 rounded-[var(--radius-lg)]", fieldClasses("email"))}
             placeholder="E-Mail"
           />
-          <label htmlFor="email" className="absolute left-4 top-4 text-[color:var(--text-tertiary)] text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[color:var(--color-red-500)] pointer-events-none">
+          <label htmlFor="email" className="absolute left-4 top-1.5 text-[color:var(--text-tertiary)] text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[color:var(--color-red-500)] pointer-events-none">
             E-Mail
           </label>
           <AnimatePresence>
@@ -400,7 +400,7 @@ export default function ContactForm() {
             className={cn("peer pt-5 pb-2 placeholder:text-transparent px-4 pr-10 rounded-[var(--radius-lg)]", fieldClasses("phone"))}
             placeholder="Telefon (optional)"
           />
-          <label htmlFor="phone" className="absolute left-4 top-4 text-[color:var(--text-tertiary)] text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[color:var(--color-red-500)] pointer-events-none">
+          <label htmlFor="phone" className="absolute left-4 top-1.5 text-[color:var(--text-tertiary)] text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[color:var(--color-red-500)] pointer-events-none">
             Telefon (optional)
           </label>
           <AnimatePresence>
@@ -435,7 +435,7 @@ export default function ContactForm() {
             className={cn("peer pt-6 pb-2 placeholder:text-transparent px-4 pr-10 rounded-[var(--radius-lg)] resize-none", fieldClasses("message"))}
             placeholder="Nachricht"
           />
-          <label htmlFor="message" className="absolute left-4 top-4 text-[color:var(--text-tertiary)] text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[color:var(--color-red-500)] pointer-events-none">
+          <label htmlFor="message" className="absolute left-4 top-1.5 text-[color:var(--text-tertiary)] text-xs transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3.5 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-[color:var(--color-red-500)] pointer-events-none">
             Nachricht
           </label>
           <AnimatePresence>
