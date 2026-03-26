@@ -114,6 +114,7 @@ const criticalRoutes = [
   'app/(marketing)/bewertungen/page.tsx',               // Bewertungen
   'app/(legal)/impressum/page.tsx',                     // Impressum
   'app/(legal)/datenschutz/page.tsx',                   // Datenschutz
+  'app/(marketing)/schluessel-schmiede/page.tsx',        // Schlüssel Schmiede
 ];
 
 for (const route of criticalRoutes) {

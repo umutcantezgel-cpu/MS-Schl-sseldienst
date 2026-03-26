@@ -111,5 +111,12 @@ export const CONTENT_GRAPH: ContentNode[] = [
         type: 'legal',
         keywords: ['impressum', 'legal', 'anbieterkennzeichnung'],
         relatedSlugs: ['/datenschutz']
+    },
+    {
+        slug: '/schluessel-schmiede',
+        title: 'Schlüssel Schmiede Wetzlar',
+        type: 'info',
+        keywords: ['schlüssel schmiede', 'ladengeschäft', 'werkstatt', 'schlüssel nachmachen', 'gravur', 'kfz schlüssel'],
+        relatedSlugs: ['/leistungen/schluessel-nachmachen', '/kontakt', '/ueber-uns', '/leistungen/autooeffnung']
     }
 ];

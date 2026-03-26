@@ -37,6 +37,7 @@ const menuItems: MenuItem[] = [
   links: [
    { text:"06441 8056544", url:"tel:+4964418056544" },
    { text:"info@sd-wetzlar.de", url:"mailto:info@sd-wetzlar.de" },
+   { text:"Schlüssel Schmiede", url:"/schluessel-schmiede" },
    { text:"Kontaktformular", url:"/kontakt" },
    { text:"FAQ", url:"/faq" },
   ],

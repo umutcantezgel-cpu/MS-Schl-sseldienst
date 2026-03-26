@@ -167,3 +167,4 @@
  ⚠ See instructions if you need to configure Turbopack:
   https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
 
+ ✓ Compiled middleware in 12ms

@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Key, Menu, X, ChevronDown, Car, ShieldCheck, Lock, KeyRound, ChevronRight } from "lucide-react";
+import { Phone, Key, Menu, X, ChevronDown, Car, ShieldCheck, Lock, KeyRound, ChevronRight, Hammer, MapPin } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { usePathname } from "next/navigation";
@@ -195,6 +195,28 @@ export default function StickyHeader() {
               )}
             </div>
 
+            {/* Schlüssel Schmiede — USP Highlight */}
+            <Link
+              href="/schluessel-schmiede"
+              className={cn(
+                "relative transition-all duration-200 px-4 py-1.5 rounded-full flex items-center gap-2 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2",
+                pathname === "/schluessel-schmiede"
+                  ? "text-[var(--color-red-500)] font-bold"
+                  : "text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:bg-amber-50"
+              )}
+              {...(pathname === "/schluessel-schmiede" ? { "aria-current": "page" as const } : {})}
+            >
+              {pathname === "/schluessel-schmiede" && (
+                <m.div
+                  layoutId="desktop-nav-indicator"
+                  className="absolute inset-0 rounded-full bg-amber-50 z-0"
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                />
+              )}
+              <Hammer className="h-4 w-4 text-amber-600 relative z-10" aria-hidden="true" />
+              <span className="relative z-10">Schlüssel Schmiede</span>
+            </Link>
+
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -293,6 +315,24 @@ export default function StickyHeader() {
 
           <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8 pb-[140px]">
 
+            {/* Schlüssel Schmiede — USP Card */}
+            <Link
+              href="/schluessel-schmiede"
+              className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200/60 active:scale-[0.98] transition-all group"
+              style={{ animation: 'slideUpFade 400ms cubic-bezier(0.16, 1, 0.3, 1) 50ms both' }}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-600 group-active:bg-amber-500 group-active:text-white transition-colors">
+                <Hammer className="h-7 w-7" />
+              </div>
+              <div className="flex-1">
+                <span className="text-[18px] font-bold text-[color:var(--text-primary)] block">Schlüssel Schmiede</span>
+                <span className="text-[13px] text-amber-700/70 leading-tight flex items-center gap-1">
+                  <MapPin className="h-3 w-3" /> Langgasse 70, Wetzlar
+                </span>
+              </div>
+              <ChevronRight className="h-5 w-5 text-amber-400" />
+            </Link>
             
             {/* Leistungen Section */}
             <div className="flex flex-col gap-4">
