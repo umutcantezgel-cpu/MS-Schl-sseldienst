@@ -11,7 +11,7 @@
 
 export type ConsentCategory = "essential" | "analytics" | "marketing";
 
-export interface CookieEntry {
+interface CookieEntry {
   /** Cookie-Name (oder Pattern wie `_ga_*`) */
   name: string;
   /** Consent-Kategorie */
@@ -24,7 +24,7 @@ export interface CookieEntry {
   provider: string;
 }
 
-export interface DataProcessingEntry {
+interface DataProcessingEntry {
   /** Bezeichnung der Verarbeitung */
   name: string;
   /** Welche Daten werden erhoben */

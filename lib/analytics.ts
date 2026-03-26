@@ -8,7 +8,7 @@
  */
 
 // ─── Conversion-Events ───
-export type ConversionEvent =
+type ConversionEvent =
   // CTA Clicks
   | "hero_cta_click"
   | "sticky_cta_click"
@@ -48,7 +48,7 @@ export type ConversionEvent =
   | "related_service_click";
 
 // ─── Type-safe properties ───
-export interface EventProperties {
+interface EventProperties {
   page?: string;
   label?: string;
   value?: number;
@@ -105,11 +105,11 @@ export function trackEvent(
 }
 
 // ─── Convenience helpers ───
-export function trackPhoneClick(location: string): void {
+function trackPhoneClick(location: string): void {
   trackEvent("phone_click", { label: location });
 }
 
-export function trackCTAClick(
+function trackCTAClick(
   ctaType: "hero" | "sticky" | "final" | "inline",
   label?: string
 ): void {

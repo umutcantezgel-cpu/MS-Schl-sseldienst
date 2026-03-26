@@ -35,4 +35,4 @@ export const CTA_COPY = {
   noRiskMicro: "Kein Risiko · Festpreis vor Anfahrt · 24/7 erreichbar",
 } as const;
 
-export type CTACopyKey = keyof typeof CTA_COPY;
+type CTACopyKey = keyof typeof CTA_COPY;

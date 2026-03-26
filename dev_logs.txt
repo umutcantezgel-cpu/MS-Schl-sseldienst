@@ -168,3 +168,47 @@
   https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
 
  ✓ Compiled middleware in 12ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.4s
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.5cndk9j4wx'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.5cndk9j4wx'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 565ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.zb3smihq3ef'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.zb3smihq3ef'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.5cndk9j4wx'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.5cndk9j4wx'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.qstzeg3zh7'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.qstzeg3zh7'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.2rg16raktub'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.2rg16raktub'
+}
+ ○ Compiling /[stadtgebiet] ...
+ ✓ Compiled /[stadtgebiet] in 1408ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.su9t9x88eye'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/static/development/_buildManifest.js.tmp.su9t9x88eye'
+}
+ ✓ Compiled in 325ms
+ ✓ Compiled in 157ms

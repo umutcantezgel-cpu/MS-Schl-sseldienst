@@ -1,22 +1,22 @@
 // Local data and types for city pages
 
-export interface Coordinates {
+interface Coordinates {
     latitude: number;
     longitude: number;
 }
 
-export interface Logistics {
+interface Logistics {
     distanceFromHQ: number; // in km
     drivingTimeMinutes: string; // e.g., "15-20"
     routeDescription: string;
 }
 
-export interface LocalFAQ {
+interface LocalFAQ {
     question: string;
     answer: string;
 }
 
-export interface CityData {
+interface CityData {
     id: string;
     name: string;
     slug: string;
@@ -484,11 +484,11 @@ export const cities: CityData[] = [
 ];
 
 // Helper to find city by slug
-export function getCityBySlug(slug: string): CityData | undefined {
+function getCityBySlug(slug: string): CityData | undefined {
     return cities.find((c) => c.slug === slug);
 }
 
 // Generate all possible static paths for Next.js app router
-export function getAllCitySlugs(): { stadtgebiet: string }[] {
+function getAllCitySlugs(): { stadtgebiet: string }[] {
     return cities.map((city) => ({ stadtgebiet: city.slug }));
 }

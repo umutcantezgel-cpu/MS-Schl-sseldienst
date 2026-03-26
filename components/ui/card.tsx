@@ -6,7 +6,7 @@ import Image from "next/image"
 // -------------------------------------------------------------------------
 // CARD ROOT
 // -------------------------------------------------------------------------
-export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: 'default' | 'horizontal' | 'testimonial' | 'stat' | 'pricing' | 'team' | 'icon'
   href?: string
 }

@@ -2,7 +2,7 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 import { Typography } from "./Typography"
 
-export interface SectionHeaderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "title" | "id"> {
+interface SectionHeaderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "title" | "id"> {
   /** Forwarded to the container div */
   kicker?: React.ReactNode
   title: React.ReactNode

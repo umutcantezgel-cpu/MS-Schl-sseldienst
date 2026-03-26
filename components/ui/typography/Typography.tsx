@@ -56,7 +56,7 @@ const variantMaxWidthMap: Partial<Record<NonNullable<VariantProps<typeof typogra
   lead: "75ch",
 }
 
-export interface TypographyProps
+interface TypographyProps
   extends Omit<React.HTMLAttributes<HTMLElement>, "color">,
     VariantProps<typeof typographyVariants> {
   as?: React.ElementType

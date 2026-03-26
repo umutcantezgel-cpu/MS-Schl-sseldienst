@@ -9,7 +9,7 @@
 
 import type { VisitorSegment } from "@/hooks/useVisitorSegment";
 
-export interface PersonalizedContent {
+interface PersonalizedContent {
   heroHeadline: string;
   heroSubline: string;
   ctaText: string;
@@ -61,7 +61,7 @@ export function getPersonalizedContent(
 /**
  * Get a specific field from personalized content.
  */
-export function getPersonalizedField(
+function getPersonalizedField(
   segment: VisitorSegment,
   field: keyof PersonalizedContent
 ): string {

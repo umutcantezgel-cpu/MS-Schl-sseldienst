@@ -1,4 +1,4 @@
-export interface ContentNode {
+interface ContentNode {
     slug: string;
     title: string;
     type: 'service' | 'area' | 'blog' | 'info' | 'legal';

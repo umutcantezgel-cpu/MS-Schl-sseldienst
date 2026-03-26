@@ -226,7 +226,7 @@ export function generateHowToSchema(title: string, description: string) {
     };
 }
 
-export function generateOrganizationSchema() {
+function generateOrganizationSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "Organization",

@@ -177,7 +177,7 @@ export const FAQ_DATA: FAQItem[] = [
 /**
  * Get FAQs by category, or all if no category specified
  */
-export function getFAQsByCategory(category?: FAQItem["category"]): FAQItem[] {
+function getFAQsByCategory(category?: FAQItem["category"]): FAQItem[] {
     if (!category) return FAQ_DATA;
     return FAQ_DATA.filter(faq => faq.category === category);
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
 import { siteUrl } from '@/lib/schema';
 
-export interface BreadcrumbItem {
+interface BreadcrumbItem {
   name: string;
   href: string;
 }

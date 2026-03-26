@@ -10,9 +10,9 @@ import {
 } from "react";
 
 // ─── Types ───
-export type ConnectionType = "slow-2g" | "2g" | "3g" | "4g" | "unknown";
+type ConnectionType = "slow-2g" | "2g" | "3g" | "4g" | "unknown";
 
-export interface DeviceContext {
+interface DeviceContext {
   // Viewport classification
   isMobile: boolean;
   isTablet: boolean;
@@ -92,7 +92,7 @@ function isSaveData(): boolean {
 }
 
 // ─── Core hook ───
-export function useDeviceContext(): DeviceContext {
+function useDeviceContext(): DeviceContext {
   const [ctx, setCtx] = useState<DeviceContext>(SSR_DEFAULTS);
 
   useEffect(() => {
@@ -178,6 +178,6 @@ export function DeviceProvider({ children }: { children: ReactNode }) {
 }
 
 /** Consumer hook — use this in components */
-export function useDevice(): DeviceContext {
+function useDevice(): DeviceContext {
   return useContext(DeviceCtx);
 }

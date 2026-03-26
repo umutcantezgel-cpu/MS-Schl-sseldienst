@@ -62,6 +62,6 @@ export function AnnouncerProvider({ children }: { children: ReactNode }) {
 }
 
 /** Announce a message to screen readers */
-export function useAnnounce() {
+function useAnnounce() {
   return useContext(AnnouncerCtx).announce;
 }
