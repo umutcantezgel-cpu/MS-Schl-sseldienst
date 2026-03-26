@@ -1,34 +1,33 @@
 "use client";
 
-import { Phone, Key, Menu, X, ChevronDown, Car, ShieldCheck, Lock, KeyRound, ChevronRight, Hammer, MapPin } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, Car, ShieldCheck, Lock, KeyRound, ChevronRight, Hammer, MapPin } from "lucide-react";
 import Link from "next/link";
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { usePathname } from "next/navigation";
-import { m } from "framer-motion";
-import { buttonVariants, Button } from "@/components/ui/button";
+import { m, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-
 const leistungenLinks = [
-  { name:"Türöffnung", href:"/leistungen/turoeffnung", icon: Key, desc:"Zerstörungsfreie Öffnung in 20-30 Min." },
-  { name:"Autoöffnung", href:"/leistungen/autooeffnung", icon: Car, desc:"Schonende Öffnung ohne Lackschäden" },
-  { name:"Schließanlagen", href:"/leistungen/schliessanlagen", icon: ShieldCheck, desc:"Planung & Einbau für Gebäude" },
-  { name:"Sicherheitstechnik", href:"/leistungen/sicherheitstechnik", icon: Lock, desc:"Effektiver Einbruchschutz" },
-  { name:"Schlüssel nachmachen", href:"/leistungen/schluessel-nachmachen", icon: KeyRound, desc:"Sofort-Service für Ersatzschlüssel" },
+  { name: "Türöffnung", href: "/leistungen/turoeffnung", icon: Lock, desc: "Zerstörungsfreie Öffnung in 20-30 Min." },
+  { name: "Autoöffnung", href: "/leistungen/autooeffnung", icon: Car, desc: "Schonende Öffnung ohne Lackschäden" },
+  { name: "Schließanlagen", href: "/leistungen/schliessanlagen", icon: ShieldCheck, desc: "Planung & Einbau für Gebäude" },
+  { name: "Sicherheitstechnik", href: "/leistungen/sicherheitstechnik", icon: Lock, desc: "Effektiver Einbruchschutz" },
+  { name: "Schlüssel nachmachen", href: "/leistungen/schluessel-nachmachen", icon: KeyRound, desc: "Sofort-Service für Ersatzschlüssel" },
 ];
 
 const navLinks = [
-  { name:"Preise", href:"/preise" },
-  { name:"Servicegebiet", href:"/servicegebiet" },
-  { name:"Über uns", href:"/ueber-uns" },
-  { name:"FAQ", href:"/faq" },
-  { name:"Kontakt", href:"/kontakt" },
+  { name: "Preise", href: "/preise" },
+  { name: "Servicegebiet", href: "/servicegebiet" },
+  { name: "Über uns", href: "/ueber-uns" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Kontakt", href: "/kontakt" },
 ];
 
 export default function StickyHeader() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLeistungenOpen, setIsLeistungenOpen] = useState(false);
+  const [hoveredNav, setHoveredNav] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -46,28 +45,27 @@ export default function StickyHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Sperre Scrollen & füge Key-Listeners hinzu, wenn Mobile Menu offen ist
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";
       const handleEscape = (e: KeyboardEvent) => {
-        if (e.key === 'Escape') setIsMobileMenuOpen(false);
-      }
-      document.addEventListener('keydown', handleEscape);
-      return () => { 
-        document.body.style.overflow = ""; 
-        document.removeEventListener('keydown', handleEscape);
+        if (e.key === "Escape") setIsMobileMenuOpen(false);
+      };
+      document.addEventListener("keydown", handleEscape);
+      return () => {
+        document.body.style.overflow = "";
+        document.removeEventListener("keydown", handleEscape);
       };
     } else {
       document.body.style.overflow = "";
+      return () => {};
     }
-    return () => { document.body.style.overflow = ""; };
   }, [isMobileMenuOpen]);
 
   const handleOverlayKeyDown = useCallback((e: React.KeyboardEvent) => {
-    if (e.key === 'Tab') {
+    if (e.key === "Tab") {
       const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-      const overlay = document.getElementById('mobile-menu-overlay');
+      const overlay = document.getElementById("mobile-menu-overlay");
       if (overlay) {
         const elements = overlay.querySelectorAll(focusableElements);
         const firstElement = elements[0] as HTMLElement;
@@ -88,79 +86,83 @@ export default function StickyHeader() {
     }
   }, []);
 
-  // 3-State Logic
+  // Header 3-State Logic
   const isHomePage = pathname === "/";
-  const isScrolled = scrollPosition > 100 || !isHomePage;
+  // OPAQUE SOLID ENFORCEMENT: Trigger solid white background early to prevent any text collisions
+  const isScrolled = scrollPosition > 20 || !isHomePage;
   const isMobileCompressed = scrollPosition > 500;
 
-  // Header Zustand 1 (Transparent) vs Zustand 2 (Glasmorphismus)
+  // Strict Solid-White Architecture — NO GLASSMORPHISM
   const headerClasses = useMemo(() => cn(
-    "fixed top-0 left-0 right-0 z-50 w-full flex items-center transition-all duration-400 ease-out will-change-[backdrop-filter,height]",
+    "fixed top-0 left-0 right-0 z-50 w-full flex items-center transition-all duration-300 ease-out will-change-[background-color,height,box-shadow]",
     !isScrolled
-      ? "bg-transparent h-[80px] text-[color:var(--text-primary)] border-b border-transparent"
-      : "bg-surface-primary/95 backdrop-blur-md h-[64px] shadow-elevated-2 text-text-primary border-b border-border-default",
-    isMobileCompressed && "h-[56px] pt-[env(safe-area-inset-top)]"
+      ? "bg-transparent h-[88px] border-b border-transparent text-gray-900"
+      : "bg-white h-[72px] shadow-[0_2px_12px_rgba(0,0,0,0.06)] border-b border-gray-100 text-gray-900",
+    isMobileCompressed && "h-[64px] pt-[env(safe-area-inset-top)]"
   ), [isScrolled, isMobileCompressed]);
-
-  const logoColor = useMemo(() => "text-[var(--color-red-500)]", []);
-  
-  const navLinkClasses = useMemo(() => cn(
-    "transition-all duration-200 px-3 py-1.5 rounded-full flex items-center gap-1 nav-link-indicator focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2",
-    !isScrolled 
-      ? "text-[color:var(--text-secondary)] hover:bg-[var(--surface-secondary)] hover:text-[var(--color-red-500)]" 
-      : "text-[color:var(--text-secondary)] hover:bg-[var(--surface-secondary)] hover:text-[var(--color-red-500)]"
-  ), [isScrolled]);
 
   return (
     <>
       <header className={headerClasses}>
-        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-4 md:px-8">
+        <div className="mx-auto flex h-full w-full max-w-[1400px] items-center justify-between px-6 lg:px-8">
 
-          {/* Logo */}
+          {/* LOGO INJECTION ZONE */}
           <Link
             href="/"
-            className="flex items-center gap-2 font-bold tracking-tight z-[var(--z-overlay)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 rounded-xl"
-            aria-label="Schlüsseldienst Wetzlar – Startseite"
+            className="flex-shrink-0 flex items-center cursor-pointer transition-transform duration-300 hover:scale-[1.02] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 rounded-xl"
+            aria-label="Startseite – Logo Platzhalter"
           >
-            <div className={cn("flex items-center justify-center transition-all", isMobileCompressed ?"h-6 w-6" :"h-8 w-8", logoColor)}>
-              <Key className="w-full h-full" aria-hidden="true" />
-            </div>
-            <div className={cn(
-              "flex flex-col justify-center overflow-hidden transition-all duration-500 ease-in-out", 
-              isMobileCompressed ? "max-w-[110px] opacity-100" : "max-w-[140px] opacity-100"
-            )}>
-              <span className={cn(
-                "tracking-tight transition-all duration-500 whitespace-nowrap", 
-                isMobileCompressed ? "text-[16px] font-bold" : "text-[18px]",
-                !isScrolled ? "text-[color:var(--text-primary)]" : "text-[color:var(--text-primary)]"
-              )}>
-                <span className={cn("transition-all duration-500", isMobileCompressed ? "hidden" : "hidden sm:inline")}>Schlüsseldienst Wetzlar</span>
-                <span className={cn("transition-all duration-500", isMobileCompressed ? "inline" : "sm:hidden")}>SD Wetzlar</span>
-              </span>
+            <div className="w-[160px] sm:w-[200px] h-[48px] bg-slate-100/80 rounded-lg border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-500 text-[11px] sm:text-[13px] font-mono font-bold tracking-widest uppercase shadow-inner">
+              Logo Zone
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav aria-label="Hauptnavigation" className="hidden lg:flex items-center gap-6 xl:gap-8 font-[500] text-[15px] tracking-tight">
+          {/* Desktop Hover-Pill Navigation */}
+          <nav 
+            aria-label="Hauptnavigation" 
+            className="hidden lg:flex items-center relative rounded-full px-2 py-1.5"
+            onMouseLeave={() => setHoveredNav(null)}
+          >
+            {/* Leistungen Dropdown */}
             <div
               className="relative group h-full flex items-center"
-              onMouseEnter={() => setIsLeistungenOpen(true)}
+              onMouseEnter={() => {
+                setIsLeistungenOpen(true);
+                setHoveredNav("Leistungen");
+              }}
               onMouseLeave={() => setIsLeistungenOpen(false)}
             >
               <button
-                className={cn(navLinkClasses)}
+                className="relative z-10 px-4 py-2 rounded-full flex items-center gap-1.5 text-[15px] font-bold tracking-tight text-gray-800 transition-colors focus-visible:outline-none"
                 aria-expanded={isLeistungenOpen}
                 aria-controls="desktop-leistungen-menu"
               >
-                Leistungen <ChevronDown className={cn("h-4 w-4 transition-transform duration-300", isLeistungenOpen &&"-rotate-180")} aria-hidden="true" />
+                {(hoveredNav === "Leistungen" || isLeistungenOpen) && (
+                  <m.div
+                    layoutId="desktop-hover-pill"
+                    className="absolute inset-0 rounded-full bg-gray-100 z-0"
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 500, damping: 35 }}
+                  />
+                )}
+                <span className="relative z-10 flex items-center gap-1.5">
+                  Leistungen 
+                  <ChevronDown className={cn("h-4 w-4 transition-transform duration-300", isLeistungenOpen && "-rotate-180")} aria-hidden="true" />
+                </span>
               </button>
 
-              {/* Dropdown Menu */}
-              {isLeistungenOpen && (
-                <>
-                  {/* Invisible hover bridge — fills gap between button and dropdown */}
-                  <div className="absolute left-0 right-0 top-full h-3" />
-                  <div id="desktop-leistungen-menu" role="menu" className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+4px)] w-[320px] rounded-2xl bg-white/95 backdrop-blur-2xl border-t-2 border-t-[var(--color-red-500)] border-l border-r border-b border-[var(--border-subtle)] shadow-[var(--elevation-3)] p-2" style={{ animation: 'dropdownFadeIn 250ms cubic-bezier(0.16, 1, 0.3, 1) both' }}>
+              {/* Dropdown Menu (Solid Background) */}
+              <AnimatePresence>
+                {isLeistungenOpen && (
+                  <m.div 
+                    id="desktop-leistungen-menu" 
+                    role="menu" 
+                    initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 10, scale: 0.98 }}
+                    transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                    className="absolute left-0 top-[calc(100%+8px)] w-[380px] rounded-2xl bg-white border border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.08)] p-3 z-50"
+                  >
                     <ul className="flex flex-col gap-1">
                       {leistungenLinks.map((link) => {
                         const Icon = link.icon;
@@ -169,236 +171,238 @@ export default function StickyHeader() {
                             <Link
                               role="menuitem"
                               href={link.href}
-                              className="flex items-start gap-4 p-3 rounded-xl transition-all duration-200 hover:bg-[var(--surface-secondary)] group/link hover:shadow-[var(--elevation-1)]"
+                              className="flex items-start gap-4 p-3 rounded-xl transition-all duration-200 hover:bg-gray-50 group hover:shadow-sm"
                               onClick={() => setIsLeistungenOpen(false)}
                             >
-                              <div className="flex bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] rounded-xl p-2.5 group-hover/link:bg-[var(--color-red-500)] group-hover/link:text-white transition-all duration-300 group-hover/link:scale-105 group-hover/link:shadow-[var(--shadow-brand-2)]">
+                              <div className="flex bg-red-50 text-[var(--color-red-500)] rounded-xl p-2.5 group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-all duration-300 group-hover:scale-105 group-hover:shadow-md">
                                 <Icon className="w-5 h-5 shrink-0" aria-hidden="true" />
                               </div>
                               <div className="flex flex-col gap-0.5 mt-0.5">
-                                <span className="text-[15px] font-bold text-[color:var(--text-primary)]">{link.name}</span>
-                                <span className="text-[13px] font-normal text-[color:var(--text-secondary)] line-clamp-1">{link.desc}</span>
+                                <span className="text-[15px] font-bold text-gray-900 group-hover:text-[var(--color-red-500)] transition-colors">{link.name}</span>
+                                <span className="text-[13px] font-normal text-gray-500 line-clamp-1">{link.desc}</span>
                               </div>
                             </Link>
                           </li>
                         );
                       })}
                     </ul>
-                    <div className="mt-2 pt-2 border-t border-[var(--border-subtle)] px-2 pb-1">
-                      <a href="tel:+4964418056544" className="flex items-center justify-center w-full py-3 rounded-xl bg-[var(--color-red-500)]/5 text-[14px] font-bold text-[color:var(--color-red-600)] hover:bg-[var(--color-red-500)] hover:text-white transition-colors duration-300 gap-2">
-                        <Phone className="w-3 h-3" />
-                        Sofort-Hilfe: 06441 8056544
+                    <div className="mt-3 pt-3 border-t border-gray-100 px-2 pb-1">
+                      <a href="tel:+4964418056544" className="flex items-center justify-center w-full py-3.5 rounded-xl bg-red-50 text-[14px] font-bold text-[var(--color-red-600)] hover:bg-[var(--color-red-500)] hover:text-white transition-all duration-300 gap-2 shadow-sm hover:shadow-md">
+                        <Phone className="w-4 h-4" />
+                        Sofort-Hilfe Notdienst anrufen
                       </a>
                     </div>
-                  </div>
-                </>
-              )}
+                  </m.div>
+                )}
+              </AnimatePresence>
             </div>
 
-            {/* Schlüssel Schmiede — USP Highlight */}
+            {/* Premium USP: Schlüssel Schmiede */}
+            <div className="mx-2 h-6 w-px bg-gray-200" />
+            
             <Link
               href="/schluessel-schmiede"
-              className={cn(
-                "relative transition-all duration-200 px-4 py-1.5 rounded-full flex items-center gap-2 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2",
-                pathname === "/schluessel-schmiede"
-                  ? "text-[var(--color-red-500)] font-bold"
-                  : "text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:bg-amber-50"
-              )}
-              {...(pathname === "/schluessel-schmiede" ? { "aria-current": "page" as const } : {})}
+              onMouseEnter={() => setHoveredNav("schmiede")}
+              className="relative z-10 px-4 py-2 rounded-full flex items-center gap-2 text-[15px] font-bold tracking-tight transition-colors focus-visible:outline-none"
             >
-              {pathname === "/schluessel-schmiede" && (
+              {(hoveredNav === "schmiede" || pathname === "/schluessel-schmiede") && (
                 <m.div
-                  layoutId="desktop-nav-indicator"
-                  className="absolute inset-0 rounded-full bg-amber-50 z-0"
-                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  layoutId="desktop-hover-pill"
+                  className="absolute inset-0 rounded-full bg-amber-50 border border-amber-100/50 z-0"
+                  initial={false}
+                  transition={{ type: "spring", stiffness: 500, damping: 35 }}
                 />
               )}
-              <Hammer className="h-4 w-4 text-amber-600 relative z-10" aria-hidden="true" />
-              <span className="relative z-10">Schlüssel Schmiede</span>
+              <Hammer className={cn("h-4 w-4 relative z-10 transition-colors", pathname === "/schluessel-schmiede" ? "text-amber-600" : "text-amber-500")} aria-hidden="true" />
+              <span className={cn("relative z-10 transition-colors", pathname === "/schluessel-schmiede" ? "text-amber-700" : "text-amber-600")}>
+                Schlüssel Schmiede
+              </span>
             </Link>
 
+            <div className="mx-2 h-6 w-px bg-gray-200" />
+
+            {/* Standard Links */}
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
+              const isHovered = hoveredNav === link.name;
               return (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={cn(
-                    "relative transition-colors duration-fast px-4 py-1.5 rounded-full flex items-center justify-center font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2",
-                    isActive ? "text-[var(--color-red-500)] font-bold" : "text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
-                  )}
+                  onMouseEnter={() => setHoveredNav(link.name)}
+                  className="relative z-10 px-4 py-2 rounded-full flex items-center justify-center text-[15px] font-bold tracking-tight transition-colors focus-visible:outline-none"
                   {...(isActive ? { "aria-current": "page" as const } : {})}
                 >
-                  {isActive && (
+                  {(isHovered || isActive) && (
                     <m.div
-                      layoutId="desktop-nav-indicator"
-                      className="absolute inset-0 rounded-full bg-[var(--surface-secondary)] z-0"
-                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      layoutId="desktop-hover-pill"
+                      className="absolute inset-0 rounded-full bg-gray-100 z-0"
+                      initial={false}
+                      transition={{ type: "spring", stiffness: 500, damping: 35 }}
                     />
                   )}
-                  <span className="relative z-10">{link.name}</span>
+                  <span className={cn("relative z-10 transition-colors", isActive ? "text-[var(--color-red-500)]" : "text-gray-800")}>
+                    {link.name}
+                  </span>
                 </Link>
               );
             })}
           </nav>
 
-          {/* CTA & Mobile Toggle */}
-          <div className="flex items-center gap-3 lg:gap-4 z-[var(--z-overlay)]">
-            <div className="relative hidden sm:flex">
-              {/* Micro-Badge "24/7 Notdienst" */}
-              <div 
-                className={cn(
-                  "absolute -top-3 left-1/2 -translate-x-1/2 px-2 py-0.5 whitespace-nowrap bg-[var(--color-success)] text-white text-[10px] sm:text-[11px] font-bold rounded-full shadow-sm transition-all duration-300 z-10 hidden lg:block", 
-                  isMobileCompressed ? "opacity-0 -translate-y-2 pointer-events-none" : "opacity-100 translate-y-0"
-                )}
-              >
-                <div className="flex items-center gap-1.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                  24/7 Notdienst
-                </div>
-              </div>
-              <a
-                href="tel:+4964418056544"
-                className={cn(
-                  buttonVariants({ variant: "primary" }), 
-                  "animate-heartbeat-cta min-h-[48px] px-6 text-[15px] font-bold shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[1px] transition-all duration-300"
-                )}
-              >
-                <Phone className="h-5 w-5" aria-hidden="true" />
-                06441 8056544
-              </a>
-            </div>
+          {/* Primary CTA & Mobile Toggle */}
+          <div className="flex items-center gap-4 z-50">
             <a
               href="tel:+4964418056544"
-              className={cn("items-center justify-center min-h-[48px] min-w-[48px] sm:min-w-auto sm:px-4 rounded-full bg-[var(--color-red-500)] text-white shadow-[var(--shadow-cta)]",
-                isMobileCompressed ?"flex lg:hidden" :"hidden sm:flex lg:hidden" // Zeige Call-Btn auf Tablet, oder auf Mobile wenn gescrolled
-              )}
+              className="hidden lg:flex items-center justify-center gap-2 min-h-[48px] px-6 bg-[var(--color-red-500)] text-white text-[15px] font-bold rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:-translate-y-[1px] transition-all duration-300 animate-heartbeat-cta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--color-red-500)]"
+            >
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              06441 8056544
+            </a>
+            
+            <a
+              href="tel:+4964418056544"
+              className="flex lg:hidden items-center justify-center min-h-[44px] px-4 rounded-full bg-[var(--color-red-500)] text-white shadow-md active:scale-95 transition-transform"
               aria-label="Jetzt anrufen"
             >
-              <Phone className="h-5 w-5 sm:mr-2" />
-              <span className="hidden sm:inline font-bold">06441 8056544</span>
+              <Phone className="h-4 w-4 sm:mr-2" />
+              <span className="hidden sm:inline font-bold text-[14px]">Anrufen</span>
             </a>
 
-
-            {/* Hamburger */}
             <button
-              className={cn("lg:hidden flex items-center justify-center min-w-[48px] min-h-[48px] transition-colors rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2", !isScrolled ?"text-[color:var(--text-primary)] hover:bg-[var(--surface-secondary)]" :"text-[color:var(--text-primary)] hover:bg-[var(--surface-secondary)]")}
+              className="lg:hidden flex items-center justify-center min-w-[44px] min-h-[44px] bg-gray-50 hover:bg-gray-100 rounded-full transition-colors focus-visible:outline-none active:scale-95"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-expanded={isMobileMenuOpen}
-              aria-label={isMobileMenuOpen ?"Menü schließen" :"Menü öffnen"}
+              aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
             >
-              <Menu className="h-6 w-6" aria-hidden="true" />
+              {isMobileMenuOpen ? <X className="h-5 w-5 text-gray-900" aria-hidden="true" /> : <Menu className="h-5 w-5 text-gray-900" aria-hidden="true" />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Full-Screen Mobile Overlay */}
-      {isMobileMenuOpen && (
-        <div id="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Hauptmenü" className="fixed inset-0 z-[100] bg-[var(--surface-primary)] flex flex-col pt-safe overflow-hidden" style={{ animation: 'slideInRight 400ms cubic-bezier(0.16, 1, 0.3, 1) both' }} onKeyDown={handleOverlayKeyDown}>
-          {/* Header Overlay */}
-          <div className="flex justify-between items-center px-4 md:px-8 h-[72px] shrink-0 border-b border-[var(--border-subtle)]">
-            <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-              <div className="flex items-center justify-center h-8 w-8 text-[var(--color-red-500)]">
-                <Key className="w-full h-full" aria-hidden="true" />
+      {/* Mobile Drawer Perfection */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <m.div 
+            id="mobile-menu-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Hauptmenü"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-[100] bg-white flex flex-col pt-safe overflow-hidden" 
+            onKeyDown={handleOverlayKeyDown}
+          >
+            {/* Drawer Header */}
+            <div className="flex justify-between items-center px-6 h-[88px] shrink-0 border-b border-gray-100 bg-white shadow-sm">
+              <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="w-[140px] h-[40px] bg-slate-100/80 rounded border border-dashed border-slate-300 flex items-center justify-center text-slate-500 text-[10px] font-mono tracking-widest uppercase">
+                  Logo Zone
+                </div>
+              </Link>
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full bg-gray-50 active:bg-gray-100 text-gray-900 transition-transform active:scale-95"
+                aria-label="Menü schließen"
+              >
+                <X className="h-5 w-5" aria-hidden="true" />
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8 pb-[140px] bg-slate-50/30">
+
+              {/* USP Card */}
+              <m.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+                <Link
+                  href="/schluessel-schmiede"
+                  className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200/50 active:scale-[0.98] transition-all group shadow-sm"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-600 transition-colors">
+                    <Hammer className="h-7 w-7" />
+                  </div>
+                  <div className="flex-1">
+                    <span className="text-[18px] font-extrabold text-amber-950 block">Schlüssel Schmiede</span>
+                    <span className="text-[13px] text-amber-800/80 font-medium flex items-center gap-1 mt-0.5">
+                      <MapPin className="h-3 w-3" /> Langgasse 70, Wetzlar
+                    </span>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-amber-500" />
+                </Link>
+              </m.div>
+              
+              {/* Leistungen */}
+              <div className="flex flex-col gap-3">
+                <m.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="font-black text-[var(--color-red-500)] uppercase tracking-widest text-[12px] pl-2">
+                  Leistungen
+                </m.div>
+                <nav className="flex flex-col gap-2">
+                  {leistungenLinks.map((link, idx) => (
+                    <m.div key={link.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 + idx * 0.05 }}>
+                      <Link
+                        href={link.href}
+                        className="flex items-center gap-4 py-3.5 px-4 rounded-xl bg-white border border-gray-100 shadow-sm active:bg-gray-50 active:scale-[0.98] transition-all"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        <div className="flex bg-gray-50 text-gray-500 rounded-lg p-2.5">
+                          <link.icon className="h-5 w-5" aria-hidden="true" />
+                        </div>
+                        <div className="flex flex-col text-left">
+                          <span className="text-[16px] font-bold text-gray-900">{link.name}</span>
+                          <span className="text-[12px] text-gray-500 leading-tight">{link.desc}</span>
+                        </div>
+                      </Link>
+                    </m.div>
+                  ))}
+                </nav>
               </div>
-              <span className="text-[18px] font-bold text-[color:var(--text-primary)] tracking-tight">SD Wetzlar</span>
-            </Link>
-            <button
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="flex items-center justify-center min-w-[48px] min-h-[48px] rounded-xl bg-[var(--surface-secondary)] text-[color:var(--text-primary)] transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2"
-              aria-label="Menü schließen"
-            >
-              <X className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
 
-          <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-8 pb-[140px]">
-
-            {/* Schlüssel Schmiede — USP Card */}
-            <Link
-              href="/schluessel-schmiede"
-              className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200/60 active:scale-[0.98] transition-all group"
-              style={{ animation: 'slideUpFade 400ms cubic-bezier(0.16, 1, 0.3, 1) 50ms both' }}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-600 group-active:bg-amber-500 group-active:text-white transition-colors">
-                <Hammer className="h-7 w-7" />
+              {/* Navigation */}
+              <div className="flex flex-col gap-3">
+                <m.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="font-black text-gray-400 uppercase tracking-widest text-[12px] pl-2">
+                  Menü
+                </m.div>
+                <nav className="flex flex-col gap-1">
+                  {navLinks.map((link, idx) => (
+                    <m.div key={link.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 + idx * 0.05 }}>
+                      <Link
+                        href={link.href}
+                        className="flex items-center justify-between py-4 px-4 rounded-xl text-[16px] font-bold text-gray-800 active:bg-gray-100 active:scale-[0.98] transition-all"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {link.name}
+                        <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                      </Link>
+                    </m.div>
+                  ))}
+                </nav>
               </div>
-              <div className="flex-1">
-                <span className="text-[18px] font-bold text-[color:var(--text-primary)] block">Schlüssel Schmiede</span>
-                <span className="text-[13px] text-amber-700/70 leading-tight flex items-center gap-1">
-                  <MapPin className="h-3 w-3" /> Langgasse 70, Wetzlar
-                </span>
-              </div>
-              <ChevronRight className="h-5 w-5 text-amber-400" />
-            </Link>
-            
-            {/* Leistungen Section */}
-            <div className="flex flex-col gap-4">
-              <div className="font-[700] text-[var(--color-red-500)] uppercase tracking-[0.1em] text-[13px]" id="mobile-nav-leistungen">Leistungen</div>
-              <nav aria-labelledby="mobile-nav-leistungen" className="flex flex-col gap-2">
-                {leistungenLinks.map((link, idx) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    className="flex items-center gap-4 py-4 px-6 min-h-[56px] rounded-xl transition-colors active:bg-[var(--surface-secondary)] group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2"
-                    style={{ animation: `slideUpFade 400ms cubic-bezier(0.16, 1, 0.3, 1) ${100 + idx * 50}ms both` }}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    <div className="flex bg-[var(--surface-secondary)] text-[color:var(--text-secondary)] rounded-xl p-3 group-active:bg-[var(--color-red-500)] group-active:text-white transition-colors">
-                      <link.icon className="h-6 w-6" />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-[18px] font-medium text-[color:var(--text-primary)]">{link.name}</span>
-                      <span className="text-[13px] text-[color:var(--text-secondary)] leading-tight">{link.desc}</span>
-                    </div>
-                    <ChevronRight className="h-5 w-5 text-[color:var(--text-tertiary)] ml-auto" />
-                  </Link>
-                ))}
-              </nav>
             </div>
 
-            {/* Haupt-Pages Section */}
-            <div className="flex flex-col gap-4">
-              <div className="font-[700] text-[color:var(--text-tertiary)] uppercase tracking-[0.1em] text-[13px]" id="mobile-nav-info">Informationen</div>
-              <nav aria-labelledby="mobile-nav-info" className="flex flex-col gap-2">
-                {navLinks.map((link, idx) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    className="flex items-center justify-between py-4 px-6 min-h-[56px] rounded-xl text-[18px] font-medium text-[color:var(--text-primary)] bg-[var(--surface-secondary)] active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2"
-                    style={{ animation: `slideUpFade 400ms cubic-bezier(0.16, 1, 0.3, 1) ${300 + idx * 50}ms both` }}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.name}
-                    <ChevronRight className="h-5 w-5 text-[color:var(--text-tertiary)]" />
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </div>
-
-          {/* Fixed Bottom CTA Footer */}
-          <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-[var(--border-subtle)] p-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[var(--elevation-inverse-2,0_-8px_32px_rgba(0,0,0,0.08))]" style={{ animation: 'slideUpFade 500ms 400ms both' }}>
-            <div className="flex justify-center gap-4 text-[12px] font-bold text-[color:var(--color-charcoal-700)] mb-3">
-              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5 text-[var(--color-success)]" /> Festpreise ab 99€</span>
-              <span className="flex items-center gap-1"><Car className="w-3.5 h-3.5 text-[var(--color-success)]" /> In 20-30 Min. da</span>
-            </div>
-            <a
-              href="tel:+4964418056544"
-              className="flex items-center justify-center gap-3 w-full h-[60px] bg-[var(--color-red-500)] active:bg-[var(--color-red-600)] text-white text-[20px] font-bold rounded-2xl shadow-[var(--shadow-cta)] animate-heartbeat-cta"
+            {/* Sticky Mobile Footer CTA */}
+            <m.div 
+              initial={{ opacity: 0, y: 50 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ delay: 0.5, type: "spring", stiffness: 300, damping: 30 }}
+              className="absolute bottom-0 left-0 right-0 bg-white border-t border-gray-100 p-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-[110]"
             >
-              <Phone className="h-6 w-6" />
-              <span>06441 8056544</span>
-            </a>
-            <div className="flex items-center justify-center gap-6 text-[13px] text-[color:var(--text-tertiary)] mt-4 font-medium">
-              <Link href="/datenschutz" onClick={() => setIsMobileMenuOpen(false)}>Datenschutz</Link>
-              <Link href="/impressum" onClick={() => setIsMobileMenuOpen(false)}>Impressum</Link>
-            </div>
-          </div>
-        </div>
-      )}
+              <div className="flex justify-center gap-5 text-[12px] font-bold text-gray-600 mb-3">
+                <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-[var(--color-success)]" /> Festpreise</span>
+                <span className="flex items-center gap-1.5"><Car className="w-4 h-4 text-[var(--color-success)]" /> 20-30 Min. da</span>
+              </div>
+              <a
+                href="tel:+4964418056544"
+                className="flex items-center justify-center gap-3 w-full h-[60px] bg-[var(--color-red-500)] active:bg-[var(--color-red-600)] text-white text-[18px] font-black rounded-2xl shadow-[0_4px_14px_rgba(220,38,38,0.3)] animate-heartbeat-cta active:scale-95 transition-all"
+              >
+                <Phone className="h-5 w-5" aria-hidden="true" />
+                06441 8056544
+              </a>
+            </m.div>
+          </m.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
