@@ -14,6 +14,7 @@ import Link from"next/link";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getFAQSchema } from"@/lib/faqSchema";
 import { generateSharedMetadata } from"@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
@@ -51,6 +52,16 @@ export default function SicherheitstechnikPage() {
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
         backgroundSize:"200px 200px",
       }}
+    />
+    <script
+     type="application/ld+json"
+     dangerouslySetInnerHTML={{
+      __html: JSON.stringify(getFAQSchema([
+       { question: "Ist eine Beratung bei mir zu Hause wirklich kostenlos?", answer: "Ja, im Großraum Wetzlar bieten wir eine völlig kostenfreie und unverbindliche Sicherheitsanalyse bei Ihnen vor Ort an." },
+       { question: "Kann Sicherheitstechnik auch in Mietwohnungen installiert werden?", answer: "Definitiv! Wir bieten spezielle Klebe- oder Klemm-Lösungen sowie Funk-Alarmanlagen an, die sich später beim Auszug spurlos entfernen und mitnehmen lassen." },
+       { question: "Wie lange dauert der Einbau einer Alarmanlage?", answer: "Dank moderner Funktechnologie lassen sich die meisten Alarmsysteme für kleinere bis mittlere Objekte innerhalb eines Tages komplett kabellos und ohne Schmutz installieren." },
+      ]))
+     }}
     />
     {/* Background Atmosphere */}
     <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>

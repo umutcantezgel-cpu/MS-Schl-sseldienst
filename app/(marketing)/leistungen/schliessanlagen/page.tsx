@@ -14,6 +14,7 @@ import Link from"next/link";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getFAQSchema } from"@/lib/faqSchema";
 import { generateSharedMetadata } from"@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
@@ -51,6 +52,16 @@ export default function SchliessanlagenPage() {
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
         backgroundSize:"200px 200px",
       }}
+    />
+    <script
+     type="application/ld+json"
+     dangerouslySetInnerHTML={{
+      __html: JSON.stringify(getFAQSchema([
+       { question: "Ist eine Anlage auch für Einfamilienhäuser sinnvoll?", answer: "Ja, wir bieten Gleichschließungen an. Das bedeutet: Mit nur einem Schlüssel können Sie Haustür, Garage, Kellertür und Briefkasten öffnen." },
+       { question: "Was passiert bei einem Schlüsselverlust?", answer: "Bei elektronischen Anlagen wird der betreffende Transponder einfach im System gesperrt. Eine mechanische Anlage erfordert unter Umständen den Austausch des Zylinders, wobei wir durch Sicherungskarten vor unbefugten Kopien schützen." },
+       { question: "Können bestehende Anlagen erweitert werden?", answer: "Oftmals ja. Wir prüfen Ihre bestehende Anlage mit Sicherungskarte und bestellen bei Bedarf passende Erweiterungszylinder direkt vom Hersteller nach." },
+      ]))
+     }}
     />
     {/* Background Atmosphere */}
     <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>

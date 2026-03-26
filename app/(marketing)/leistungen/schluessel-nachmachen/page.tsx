@@ -13,6 +13,7 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getFAQSchema } from"@/lib/faqSchema";
 import { generateSharedMetadata } from"@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
@@ -50,6 +51,16 @@ export default function SchluesselNachmachenPage() {
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
         backgroundSize:"200px 200px",
       }}
+    />
+    <script
+     type="application/ld+json"
+     dangerouslySetInnerHTML={{
+      __html: JSON.stringify(getFAQSchema([
+       { question: "Wie lange dauert das Nachmachen eines Schlüssels?", answer: "Die meisten Standard-Schlüssel werden direkt vor Ort in wenigen Minuten gefräst. Sie können darauf warten und sie sofort mitnehmen." },
+       { question: "Was benötige ich für Sicherheitsschlüssel?", answer: "Für Schlüssel, die zu einer geschützten Schließanlage gehören, benötigen wir zwingend die entsprechende Sicherungskarte im Original. Ohne diese dürfen wir das Duplikat gesetzlich nicht anfertigen." },
+       { question: "Können Sie abgebrochene Schlüssel nachmachen?", answer: "Oft ja, wenn beide Teile vorhanden sind. Wir können ein Profil auslesen und oft erfolgreich eine Kopie erstellen, auch wenn der Originalschlüssel in zwei Teilen ist." },
+      ]))
+     }}
     />
     {/* Background Atmosphere */}
     <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>
