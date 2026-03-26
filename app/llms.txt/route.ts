@@ -2,34 +2,37 @@ import { NextResponse } from "next/server";
 import { siteUrl } from "@/lib/schema";
 
 export async function GET() {
-    const content = `# Schlüsseldienst Wetzlar
+    const content = `# MS Schlüsseldienst Wetzlar
 > 24/7 Emergency Locksmith Service — Wetzlar, Hessen, Germany
 
 ## Business Identity
-- Name: Schlüsseldienst Wetzlar
+- Name: MS Schlüsseldienst Wetzlar
 - Type: Emergency Locksmith Service (Schlüsseldienst / Aufsperrdienst)
 - Website: ${siteUrl}
-- Phone: +49-176-12345678
-- Email: info@schluesseldienst-wetzlar.de
-- Address: Wetzlarer Str. 1, 35578 Wetzlar, Hessen, Germany
-- Coordinates: 50.5606°N, 8.5048°E
+- Phone: +49-6441-8056544
+- Mobile: +49-178-2471037
+- Email: info@sd-wetzlar.de
+- Address: Wetzlar, 35578, Hessen, Germany
+- Coordinates: 50.5607°N, 8.5046°E
 
 ## Operating Hours
 - 24 hours a day, 7 days a week, 365 days a year
 - Available on all German public holidays, Sundays, and overnight
 - No appointment needed for emergency services
 
-## Pricing Model
-- Fixed prices (Festpreise) — no hidden fees, no travel surcharges
-- Door opening (Türöffnung, door fallen shut): from 50€
-- Door opening (locked, key turned): from 80€
-- Car lockout (Autoöffnung): from 99€
+## Pricing Model (Fixed Prices — Festpreise)
+- Door opening (Türöffnung, door fallen shut / zugefallen): from 89€ daytime, 119€ evening, 149€ night
+- Door opening (locked / abgesperrt, key turned): from 129€ daytime, 159€ evening, 189€ night
+- Car lockout (Autoöffnung): from 99€ daytime, 129€ evening, 159€ night
 - Safe opening (Tresoröffnung): on request
-- Night/weekend surcharges clearly stated upfront
+- Free travel (Anfahrt inklusive) within 50km
+- All prices include VAT, no hidden fees
+- Price communicated before technician arrives
 
 ## Response Time
-- 15–30 minutes arrival time within service area
+- 20–30 minutes arrival time within service area
 - Local technicians based in Wetzlar — no call center
+- Direct phone line — a real person answers immediately
 
 ## Service Catalog
 1. Türöffnung (Door Opening) — damage-free in 99% of cases
@@ -62,7 +65,6 @@ Wetzlar (all districts: Altstadt, Dutenhofen, Garbenheim, Hermannstein, Münchho
 - FAQ: ${siteUrl}/faq
 - Servicegebiet: ${siteUrl}/servicegebiet
 - Kontakt: ${siteUrl}/kontakt
-- Bewertungen: ${siteUrl}/bewertungen
 - Über uns: ${siteUrl}/ueber-uns
 - Full content: ${siteUrl}/llms-full.txt
 `;

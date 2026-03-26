@@ -2,18 +2,18 @@ import { NextResponse } from "next/server";
 import { siteUrl } from "@/lib/schema";
 
 export async function GET() {
-    const content = `# Schlüsseldienst Wetzlar — Vollständige Website-Inhalte
+    const content = `# MS Schlüsseldienst Wetzlar — Vollständige Website-Inhalte
 
-> Dieses Dokument enthält den vollständigen Inhalt aller Seiten der Website von Schlüsseldienst Wetzlar, dem 24/7-Schlüsselnotdienst für Wetzlar, Gießen, Marburg und den Lahn-Dill-Kreis.
+> Dieses Dokument enthält den vollständigen Inhalt aller Seiten der Website von MS Schlüsseldienst Wetzlar, dem 24/7-Schlüsselnotdienst für Wetzlar, Gießen, Marburg und den Lahn-Dill-Kreis.
 
 ---
 
 # Startseite
 
-Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 50 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
+MS Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 89 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 20–30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
 
 ## Leistungen im Überblick
-- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Ab 50€ Festpreis.
+- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Ab 89€ Festpreis (tagsüber).
 - **Autoöffnung**: Schonende Öffnung von Fahrzeugen aller Marken ohne Lackschäden. Ab 99€.
 - **Schließanlagen**: Beratung, Planung und Einbau von Schließanlagen für Wohn- und Gewerbeimmobilien.
 - **Sicherheitstechnik**: Einbruchschutz-Beratung, Zusatzschlösser, Panzerriegel, elektronische Schließsysteme.
@@ -33,16 +33,16 @@ Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 50 
 Schlüsseldienst Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis — zerstörungsfrei in 99% der Fälle, innerhalb von 15–30 Minuten, 24 Stunden am Tag.
 
 ### So funktioniert eine Türöffnung
-1. **Anruf**: Sie rufen uns an unter +49-176-12345678
+1. **Anruf**: Sie rufen uns an unter +49-6441-8056544
 2. **Anfahrt**: Unser Techniker ist in 15–30 Minuten bei Ihnen
 3. **Öffnung**: Zerstörungsfreie Öffnung mit Spezialwerkzeug
 4. **Abrechnung**: Transparenter Festpreis — Sie zahlen nur den vereinbarten Betrag
 
 ### Preise Türöffnung
-- Tür zugefallen (Schlüssel steckt von innen): ab 50€
-- Tür abgesperrt (Schlüssel verloren): ab 80€
-- Nachtzuschlag (18–8 Uhr): +30€
-- Wochenende/Feiertag: +30€
+- Tür zugefallen (Schlüssel steckt von innen): ab 89€ (tagsüber), 119€ (abends), 149€ (nachts)
+- Tür abgesperrt (Schlüssel verloren): ab 129€ (tagsüber), 159€ (abends), 189€ (nachts)
+- Abendzuschlag (18–22 Uhr): im Preis enthalten
+- Nachtzuschlag (22–08 Uhr) / Wochenende: im Preis enthalten
 
 ---
 
@@ -50,7 +50,7 @@ Schlüsseldienst Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzlar u
 
 ## Auto ausgesperrt in Wetzlar? Professionelle Fahrzeugöffnung ohne Lackschäden.
 
-Schlüsseldienst Wetzlar öffnet Fahrzeuge aller Marken schonend und ohne Beschädigung zum Festpreis ab 99 Euro — 24/7 erreichbar, in 15–30 Minuten vor Ort.
+MS Schlüsseldienst Wetzlar öffnet Fahrzeuge aller Marken schonend und ohne Beschädigung zum Festpreis ab 99 Euro (tagsüber) — 24/7 erreichbar, in 20–30 Minuten vor Ort.
 
 ---
 
@@ -82,26 +82,26 @@ Schlüsseldienst Wetzlar fertigt Ersatzschlüssel für Haustüren, Wohnungstüre
 
 Schlüsseldienst Wetzlar arbeitet ausschließlich mit transparenten Festpreisen. Der Preis wird Ihnen vorab am Telefon genannt — ohne versteckte Kosten, ohne Anfahrtsgebühren innerhalb des Servicegebiets.
 
-| Leistung | Preis ab |
-|---|---|
-| Türöffnung (zugefallen) | 50€ |
-| Türöffnung (abgesperrt) | 80€ |
-| Autoöffnung | 99€ |
-| Tresoröffnung | auf Anfrage |
-| Schließzylinder-Austausch | ab 25€ (Material) |
+| Leistung | Tagsüber (ab) | Abends (ab) | Nachts/WE (ab) |
+|---|---|---|---|
+| Türöffnung (zugefallen) | 89€ | 119€ | 149€ |
+| Türöffnung (abgesperrt) | 129€ | 159€ | 189€ |
+| Autoöffnung | 99€ | 129€ | 159€ |
+| Tresoröffnung | auf Anfrage | auf Anfrage | auf Anfrage |
+| Schließzylinder-Austausch | ab 25€ (Material) | — | — |
 
 ---
 
 # Häufig gestellte Fragen (FAQ)
 
 ### Was kostet ein Schlüsseldienst in Wetzlar?
-Schlüsseldienst Wetzlar öffnet zugefallene Türen ab 50 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren im Servicegebiet. Abgesperrte Türen kosten ab 80 Euro.
+MS Schlüsseldienst Wetzlar öffnet zugefallene Türen ab 89 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren im Servicegebiet. Abgesperrte Türen kosten ab 129 Euro.
 
 ### Wie schnell kommt der Schlüsseldienst in Wetzlar?
-Unser Schlüsseldienst ist in 15–30 Minuten bei Ihnen in Wetzlar und Umgebung — 24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr.
+Unser Schlüsseldienst ist in 20–30 Minuten bei Ihnen in Wetzlar und Umgebung — 24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr.
 
 ### Gibt es einen Schlüsseldienst in Wetzlar der nachts geöffnet hat?
-Ja, Schlüsseldienst Wetzlar ist rund um die Uhr erreichbar — auch nachts, an Wochenenden und an allen deutschen Feiertagen. Für Einsätze zwischen 18 und 8 Uhr fällt ein transparenter Nachtzuschlag von 30€ an.
+Ja, MS Schlüsseldienst Wetzlar ist rund um die Uhr erreichbar — auch nachts, an Wochenenden und an allen deutschen Feiertagen. Nacht- und Wochenendzuschläge sind transparent in den Festpreisen enthalten.
 
 ### Welcher Schlüsseldienst in Wetzlar ist seriös?
 Schlüsseldienst Wetzlar ist mit 5.0 Sternen bei 44 Google-Bewertungen einer der bestbewerteten Schlüsseldienste der Region. Wir arbeiten mit transparenten Festpreisen und nennen den Preis vorab am Telefon.
@@ -160,9 +160,11 @@ Schlüsseldienst Wetzlar bedient ein Einsatzgebiet im Umkreis von 50 Kilometern 
 
 # Kontakt
 
-- Telefon (24/7 Notdienst): +49-176-12345678
-- E-Mail: info@schluesseldienst-wetzlar.de
-- Adresse: Wetzlarer Str. 1, 35578 Wetzlar, Hessen
+- Telefon (24/7 Notdienst): +49-6441-8056544
+- Mobil: +49-178-2471037
+- E-Mail: info@sd-wetzlar.de
+- Adresse: 35578 Wetzlar, Hessen
+- Servicezeiten: 24/7/365
 - Servicezeiten: 24/7/365
 
 ---
@@ -173,7 +175,7 @@ Schlüsseldienst Wetzlar ist ein lokaler Handwerksbetrieb mit über 15 Jahren Er
 
 ---
 
-*Letzte Aktualisierung: 2026-03-06*
+*Letzte Aktualisierung: 2026-03-26*
 *Quelle: ${siteUrl}*
 `;
 

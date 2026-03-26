@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ServiceType, TimeSlot, PRICING } from "./pricing.constants";
-import { ShieldCheck, DoorOpen, Lock, Car, Shield, CheckCircle2, Clock, CalendarDays, Phone } from "lucide-react";
+import { ServiceType, TimeSlot, PRICING, GUARANTEES } from "./pricing.constants";
+import { ShieldCheck, DoorOpen, Lock, Car, Shield, CheckCircle2, Clock, CalendarDays, Phone, BadgeCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AnimatedNumber from "@/components/ui/AnimatedNumber";
 import HeartbeatCTA from "@/components/animations/HeartbeatCTA";
@@ -64,6 +64,36 @@ export default function PricingCalculator() {
         
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[var(--color-red-500)]/5 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+
+        {/* Step Progress Indicator */}
+        <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-full bg-[var(--color-red-500)] text-white flex items-center justify-center text-[13px] font-bold shadow-sm">
+              {serviceType ? <CheckCircle2 className="w-4 h-4" /> : "1"}
+            </div>
+            <span className="text-[13px] font-semibold text-[color:var(--text-primary)] hidden sm:inline">Situation</span>
+          </div>
+          <div className="flex-1 h-[2px] bg-[var(--color-red-500)]" />
+          <div className="flex items-center gap-2">
+            <div className={cn("w-8 h-8 rounded-full flex items-center justify-center text-[13px] font-bold shadow-sm transition-colors duration-300",
+              timeSlot ? "bg-[var(--color-red-500)] text-white" : "bg-[var(--color-charcoal-100)] text-[color:var(--text-tertiary)]"
+            )}>
+              {timeSlot ? <CheckCircle2 className="w-4 h-4" /> : "2"}
+            </div>
+            <span className="text-[13px] font-semibold text-[color:var(--text-primary)] hidden sm:inline">Zeitpunkt</span>
+          </div>
+          <div className={cn("flex-1 h-[2px] transition-colors duration-300",
+            timeSlot ? "bg-[var(--color-red-500)]" : "bg-[var(--color-charcoal-200)]"
+          )} />
+          <div className="flex items-center gap-2">
+            <div className={cn("w-8 h-8 rounded-full flex items-center justify-center text-[13px] font-bold shadow-sm transition-colors duration-300",
+              serviceType && timeSlot ? "bg-[var(--color-red-500)] text-white" : "bg-[var(--color-charcoal-100)] text-[color:var(--text-tertiary)]"
+            )}>
+              €
+            </div>
+            <span className="text-[13px] font-semibold text-[color:var(--text-primary)] hidden sm:inline">Festpreis</span>
+          </div>
+        </div>
 
         <fieldset className="mb-8">
           <legend className="block w-full">
@@ -259,6 +289,16 @@ export default function PricingCalculator() {
             <p className="text-center text-[13px] text-white/50 font-medium">
               Ein Mitarbeiter ist direkt am Apparat.<br />Kein Callcenter, keine Warteschleife.
             </p>
+
+            {/* Trust Guarantee Badges */}
+            <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-white/10">
+              {GUARANTEES.map((guarantee, idx) => (
+                <div key={idx} className="flex items-center gap-2 text-[13px] text-white/70">
+                  <BadgeCheck className="w-4 h-4 text-[var(--color-success)] shrink-0" />
+                  <span>{guarantee}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
