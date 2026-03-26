@@ -151,3 +151,5 @@
  ✓ Compiled in 1214ms
  ✓ Compiled in 119ms
  ✓ Compiled in 224ms
+ ✓ Compiled in 796ms
+ ✓ Compiled in 150ms

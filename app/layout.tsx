@@ -26,6 +26,7 @@ const RouteChangeIndicator = dynamic(() => import("@/components/ui/RouteChangeIn
 const OfflineBanner = dynamic(() => import("@/components/ui/OfflineBanner"));
 const RouteAnnouncer = dynamic(() => import("@/components/ui/RouteAnnouncer").then(m => ({ default: m.RouteAnnouncer })));
 const ErrorHandlers = dynamic(() => import("@/components/monitoring/ErrorHandlers"));
+const SpeculativePrefetch = dynamic(() => import("@/components/performance/SpeculativePrefetch"));
 
 const plusJakarta = Plus_Jakarta_Sans({
  subsets: ["latin", "latin-ext"],
@@ -108,6 +109,7 @@ export default function RootLayout({
        <WebVitalsReporter />
        <CookieConsent />
        <ErrorHandlers />
+       <SpeculativePrefetch />
       </div>
       </MotionProvider>
       </AnnouncerProvider>
