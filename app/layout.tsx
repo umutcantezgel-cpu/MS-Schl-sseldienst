@@ -5,7 +5,6 @@ import { DeviceProvider } from "@/components/providers/DeviceProvider";
 import { WebVitalsReporter } from "@/components/analytics/WebVitalsReporter";
 import dynamic from"next/dynamic";
 import"./globals.css";
-import"leaflet/dist/leaflet.css";
 import StickyHeader from"@/components/StickyHeader";
 import Footer from"@/components/Footer";
 import MobileBottomBar from"@/components/MobileBottomBar";
@@ -68,7 +67,7 @@ export default function RootLayout({
  return (
      <html lang="de" className="light">
    <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="alternate" hrefLang="de-DE" href="https://schluesseldienst-wetzlar-24.de" />
     <link rel="alternate" hrefLang="x-default" href="https://schluesseldienst-wetzlar-24.de" />

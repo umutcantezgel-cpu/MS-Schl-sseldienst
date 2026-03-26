@@ -1,4 +1,4 @@
-import { Star, User } from"lucide-react";
+import { Star, User, CheckCircle2 } from"lucide-react";
 import { Review } from"@/components/reviews/reviews.data";
 import GoogleIcon from"@/components/ui/GoogleIcon";
 import Image from "next/image";
@@ -30,15 +30,18 @@ export default function ReviewCard({ review }: { review: Review }) {
       itemProp="review"
       itemScope
       itemType="https://schema.org/Review"
-      className="group flex flex-col bg-surface-elevated p-8 rounded-[var(--radius-16)] shadow-[var(--elevation-1)] border border-[var(--color-charcoal-100)] hover:border-[var(--value-primary)] hover:shadow-[var(--elevation-3)] hover:-translate-y-1 transition-all duration-[var(--duration-300)] shrink-0 min-w-[85vw] sm:min-w-[380px] max-w-[420px] snap-center h-full relative overflow-hidden"
+      className="group flex flex-col bg-surface-elevated p-8 rounded-[var(--radius-16)] shadow-[var(--elevation-1)] border border-[var(--color-charcoal-100)] hover:border-[var(--value-primary)]/40 hover:shadow-[0_20px_60px_-15px_rgba(185,28,28,0.15)] hover:-translate-y-1.5 hover:scale-[1.01] transition-all duration-[var(--duration-300)] ease-out shrink-0 min-w-[85vw] sm:min-w-[380px] max-w-[420px] snap-center h-full relative overflow-hidden"
     >
       {/* Primary Accent Line Top */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[var(--value-primary)] to-[var(--color-red-600)]" />
+      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[var(--value-primary)] via-[var(--color-red-500)] to-[var(--color-red-600)] group-hover:h-[4px] transition-all duration-300" />
+
+      {/* Subtle hover glow */}
+      <div className="absolute -top-20 -right-20 w-40 h-40 bg-[var(--color-red-500)]/0 group-hover:bg-[var(--color-red-500)]/5 rounded-full blur-[40px] transition-all duration-500 pointer-events-none" />
 
       {/* Header: Avatar + Name + Stars */}
       <div className="flex justify-between items-start mb-6 relative z-10">
         <div className="flex items-center gap-4">
-          <div className={`relative flex items-center justify-center w-14 h-14 rounded-full font-bold text-[20px] shrink-0 bg-surface-secondary overflow-hidden ${!review.avatarUrl ? avatarColor : ''}`}>
+          <div className={`relative flex items-center justify-center w-14 h-14 rounded-full font-bold text-[20px] shrink-0 bg-surface-secondary overflow-hidden ring-2 ring-white shadow-sm ${!review.avatarUrl ? avatarColor : ''}`}>
             {review.avatarUrl ? (
               <Image 
                 src={review.avatarUrl} 
@@ -52,13 +55,14 @@ export default function ReviewCard({ review }: { review: Review }) {
             )}
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-[17px] text-[color:var(--text-primary)]" itemProp="author" itemScope itemType="https://schema.org/Person">
+            <span className="font-bold text-[17px] text-[color:var(--text-primary)] flex items-center gap-1.5" itemProp="author" itemScope itemType="https://schema.org/Person">
               <span itemProp="name">{review.authorName}</span>
+              <CheckCircle2 className="w-4 h-4 text-status-success shrink-0" aria-label="Verifizierter Kunde" />
             </span>
             <div className="flex items-center gap-1.5 text-[13px] text-[color:var(--text-tertiary)] mt-0.5">
               {review.location && <span className="font-medium text-[color:var(--text-secondary)]">{review.location}</span>}
               {review.location && <span className="opacity-50">•</span>}
-              <span>Kunde</span>
+              <span>{review.date}</span>
             </div>
           </div>
         </div>
@@ -91,11 +95,12 @@ export default function ReviewCard({ review }: { review: Review }) {
           {review.source} Rezension
         </span>
         {review.source ==="Google" ? (
-          <GoogleIcon size={18} className="opacity-60" />
+          <GoogleIcon size={18} className="opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
         ) : (
-          <span className="text-[12px] font-bold text-status-success opacity-60">PE</span>
+          <span className="text-[12px] font-bold text-status-success opacity-60 group-hover:opacity-100 transition-opacity duration-300">PE</span>
         )}
       </div>
     </article>
   );
 }
+

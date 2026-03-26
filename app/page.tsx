@@ -36,7 +36,7 @@ import dynamic from "next/dynamic";
 const DynamicCounter = dynamic(() => import("@/components/growth/DynamicCounter"));
 const PersonalizedHero = dynamic(() => import("@/components/growth/PersonalizedHero"));
 const PersonalizedCTA = dynamic(() => import("@/components/growth/PersonalizedCTA"));
-import HomeServiceAreaWrapper from "@/components/maps/HomeServiceAreaWrapper";
+const HomeServiceAreaWrapper = dynamic(() => import("@/components/maps/HomeServiceAreaWrapper"));
 
 export default function HomePage() {
  return (
