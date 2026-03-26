@@ -16,8 +16,9 @@ export const generateSharedMetadata = ({
     noindex = false,
     exactTitle = false,
 }: GenerateMetadataProps): Metadata => {
-    // Enforce trailing slash for canonical URLs
-    const urlPath = path === '/' ? '/' : (path.endsWith('/') ? path : `${path}/`);
+    // Canonical URLs WITHOUT trailing slash — matches Netlify production behavior
+    // (Confirmed: /preise → 200, /preise/ → 308 redirect to /preise)
+    const urlPath = path === '/' ? '' : (path.endsWith('/') ? path.slice(0, -1) : path);
     const url = `${siteUrl}${urlPath}`;
 
     return {
