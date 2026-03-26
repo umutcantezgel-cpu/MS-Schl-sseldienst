@@ -29,7 +29,9 @@ export function WebVitalsReporter() {
       rating: metric.rating,
     });
 
-    // Performance budget check
+    // Performance budget check (SKIP in dev — Turbopack inflates all metrics)
+    if (process.env.NODE_ENV === 'development') return;
+
     const budget = BUDGETS[metric.name];
     if (budget !== undefined && metric.value > budget) {
       console.warn(
