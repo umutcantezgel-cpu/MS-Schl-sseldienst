@@ -212,3 +212,113 @@
 }
  ✓ Compiled in 325ms
  ✓ Compiled in 157ms
+ ✓ Compiled / in 43ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+ ✓ Compiled /[stadtgebiet] in 8ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/(marketing)/[stadtgebiet]/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/(marketing)/[stadtgebiet]/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/(marketing)/[stadtgebiet]/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/(marketing)/[stadtgebiet]/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/pages/_app/build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/(marketing)/[stadtgebiet]/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/umurey/Downloads/Schlüsseldienst Webseite/.next/server/app/(marketing)/[stadtgebiet]/page/app-build-manifest.json'
+}
