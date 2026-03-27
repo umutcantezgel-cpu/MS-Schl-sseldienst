@@ -24,8 +24,8 @@ export async function POST(request: NextRequest) {
   // Validate origin
   const origin = request.headers.get("origin");
   const allowedOrigins = [
-    "https://schluesseldienst-wetzlar-24.de",
-    "https://www.schluesseldienst-wetzlar-24.de",
+    "https://schluesseldienst-wetzlar.de",
+    "https://www.schluesseldienst-wetzlar.de",
     "http://localhost:3000",
   ];
 

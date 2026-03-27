@@ -71,7 +71,7 @@
 ### Externe Validierung
 - [ ] securityheaders.com → Ziel: A+
 - [ ] Mozilla Observatory → Ziel: A+
-- [ ] `curl -I https://schluesseldienst-wetzlar-24.de` → alle Headers prüfen
+- [ ] `curl -I https://www.schluesseldienst-wetzlar.de` → alle Headers prüfen
 
 ## DSGVO-Compliance-Checkliste
 

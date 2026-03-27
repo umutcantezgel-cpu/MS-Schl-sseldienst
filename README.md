@@ -559,7 +559,7 @@ Vercel deploys automatically on push to `main`. Preview deployments are created 
 | Variable | Description |
 |:---|:---|
 | `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Google Maps JavaScript API key |
-| `NEXT_PUBLIC_BASE_URL` | Production URL (e.g., `https://schluesseldienst-wetzlar-24.de`) |
+| `NEXT_PUBLIC_BASE_URL` | Production URL (e.g., `https://www.schluesseldienst-wetzlar.de`) |
 
 See [deployment-guide.md](docs/deployment-guide.md) for rollback procedures and CI/CD pipeline details.
 

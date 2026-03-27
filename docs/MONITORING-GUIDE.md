@@ -36,7 +36,7 @@ Budget-Überschreitungen werden automatisch als `[PerfBudget]` Warnings geloggt.
 ## Health Check
 
 ```bash
-curl https://schluesseldienst-wetzlar-24.de/api/health | jq .
+curl https://www.schluesseldienst-wetzlar.de/api/health | jq .
 ```
 
 Antwort:

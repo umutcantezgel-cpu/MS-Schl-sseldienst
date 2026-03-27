@@ -70,8 +70,8 @@ export default function RootLayout({
    <head>
 
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-    <link rel="alternate" hrefLang="de-DE" href="https://schluesseldienst-wetzlar-24.de" />
-    <link rel="alternate" hrefLang="x-default" href="https://schluesseldienst-wetzlar-24.de" />
+    <link rel="alternate" hrefLang="de-DE" href="https://www.schluesseldienst-wetzlar.de" />
+    <link rel="alternate" hrefLang="x-default" href="https://www.schluesseldienst-wetzlar.de" />
    </head>
    <body
     className={`${plusJakarta.variable} ${dmSans.variable} ${jetbrainsMono.variable} min-h-screen bg-background text-foreground font-sans flex flex-col antialiased`}
