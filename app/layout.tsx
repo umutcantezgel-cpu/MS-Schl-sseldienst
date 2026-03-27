@@ -23,6 +23,7 @@ const ScrollDepthTracker = dynamic(() => import("@/components/analytics/ScrollDe
 const CookieConsent = dynamic(() => import("@/components/ui/CookieConsent"));
 const ReturnVisitorBanner = dynamic(() => import("@/components/growth/ReturnVisitorBanner"));
 const RouteChangeIndicator = dynamic(() => import("@/components/ui/RouteChangeIndicator"));
+const ScrollToTop = dynamic(() => import("@/components/ui/ScrollToTop"));
 const OfflineBanner = dynamic(() => import("@/components/ui/OfflineBanner"));
 const RouteAnnouncer = dynamic(() => import("@/components/ui/RouteAnnouncer").then(m => ({ default: m.RouteAnnouncer })));
 const ErrorHandlers = dynamic(() => import("@/components/monitoring/ErrorHandlers"));
@@ -84,6 +85,7 @@ export default function RootLayout({
        <SkipNav />
         <RouteAnnouncer />
          <RouteChangeIndicator />
+         <ScrollToTop />
          <OfflineBanner />
 
        {/* === Globale Fixierte Hintergrund-Animation === */}

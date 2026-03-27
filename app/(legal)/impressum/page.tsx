@@ -1,175 +1,128 @@
-import Breadcrumbs from"@/components/Breadcrumbs";
-import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
-import { entryAnimations } from"@/lib/animations";
-import { generateSharedMetadata } from"@/lib/metadata";
+import { Metadata } from "next"
+import Link from "next/link"
+import { LegalLayout } from "@/components/legal/LegalLayout"
+import { TLDRBox } from "@/components/legal/TLDRBox"
+import { PrintButton } from "@/components/legal/PrintButton"
+import { LegalSection } from "@/components/legal/LegalSection"
 
-export const metadata = generateSharedMetadata({
- title:"Impressum — MS Schlüsseldienst Wetzlar",
- description:"Rechtliche Informationen und Impressum des MS Schlüsseldienst Wetzlar. Transparenz und Vertrauen für unsere Kunden.",
- path:"/impressum",
-});
+export const metadata: Metadata = {
+    title: "Impressum | MS Schlüsseldienst Wetzlar",
+    description: "Rechtliche Informationen und Impressum des MS Schlüsseldienst Wetzlar. Transparenz, Firmensitz und direkter Kontakt.",
+}
+
+const TOC_ITEMS = [
+    { id: "1-angaben", title: "1. Angaben gemäß § 5 DDG" },
+    { id: "2-kontakt", title: "2. Direkter Kontakt" },
+    { id: "3-standort", title: "3. Hauptsitz & Standort" },
+    { id: "4-steuern", title: "4. Steuerliche Angaben" },
+    { id: "5-berufsangaben", title: "5. Berufs- & Aufsichtsangaben" },
+    { id: "6-redaktionell", title: "6. Redaktionell Verantwortlicher" },
+    { id: "7-streitschlichtung", title: "7. EU-Streitschlichtung" },
+    { id: "8-haftung", title: "8. Haftungsausschluss" },
+]
 
 export default function ImpressumPage() {
- const breadcrumbs = [
-  { name:"Impressum", href:"/impressum" }
- ];
-
- return (
-  <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
-   
-   {/* Hero Section — Premium Dark */}
-   <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
-    {/* CSS Noise Texture */}
-    <div
-      className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
-      style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
-        backgroundSize:"200px 200px",
-      }}
-    />
-    {/* Glow */}
-    <div
-      className="absolute inset-0 z-0 pointer-events-none"
-      style={{
-        background:"radial-gradient(ellipse 50% 50% at 50% 0%, rgba(185,28,28,0.12) 0%, transparent 70%)",
-      }}
-    />
-
-    <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
-      <Breadcrumbs items={breadcrumbs} light={false} />
-      
-      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
-        <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-6)]">
-            Impressum
-          </h1>
-        </StaggerItem>
-      </StaggerReveal>
-    </div>
-
-    {/* Bottom Fade */}
-    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-primary)] pointer-events-none z-[1]" />
-   </section>
-
-   {/* Content Section */}
-   <section className="px-[var(--section-px)] py-24 md:py-32">
-    <StaggerReveal className="mx-auto max-w-3xl" animation={entryAnimations.slideUpFade}>
-      <StaggerItem animation={entryAnimations.slideUpFade}>
-     <div className="prose prose-lg prose-slate mx-auto">
-      <h2 className="typo-h2 text-[color:var(--text-primary)] text-balance">
-       Angaben gemäß § 5 TMG
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Schlüsseldienst Wetzlar
-       <br />
-       Gloelstraße 11
-       <br />
-       35576 Wetzlar
-       <br />
-       Deutschland
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Vertreten durch
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">Mina Saad</p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Kontakt
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Telefon: 0178 2471037
-       <br />
-       E-Mail: notfall-schluessel@proton.me
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Steuernummer
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       03986300160
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Umsatzsteuer-ID
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Wird nicht erteilt (Kleinunternehmen gemäß § 19 UStG)
-      </p>
-
-      <p className="mt-8 text-[color:var(--text-secondary)]">
-       Das Impressum ist ein wichtiger Bestandteil jeder Webseite, da es Transparenz schafft und rechtliche Anforderungen erfüllt. Es sorgt dafür, dass Besucher der Seite jederzeit wissen, mit wem sie es zu tun haben und wie sie bei Bedarf Kontakt aufnehmen können. Dies ist nicht nur eine gesetzliche Verpflichtung, sondern auch ein Ausdruck von Vertrauen und Seriosität.
-      </p>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       In unserem Impressum finden Sie alle relevanten Informationen zu unserem Unternehmen, darunter den Namen des Unternehmens, die Adresse, Kontaktmöglichkeiten sowie die verantwortlichen Personen. Darüber hinaus sind alle rechtlichen Informationen wie Handelsregisternummern, Umsatzsteuer-ID und andere gesetzlich erforderliche Angaben enthalten.
-      </p>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Wir nehmen den Datenschutz und die Sicherheit unserer Kunden sehr ernst. Aus diesem Grund haben wir auch die entsprechenden Datenschutzbestimmungen sowie rechtliche Hinweise zur Nutzung unserer Webseite aufgenommen. Unser Ziel ist es, Ihnen nicht nur hochwertige Dienstleistungen anzubieten, sondern auch einen sicheren, transparenten und vertrauenswürdigen Umgang mit Ihren Daten zu gewährleisten.
-      </p>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Falls Sie Fragen zu unserem Impressum oder den dort angegebenen Informationen haben, zögern Sie nicht, uns zu kontaktieren. Wir stehen Ihnen jederzeit für Rückfragen zur Verfügung. Ihre Zufriedenheit und Ihr Vertrauen sind uns sehr wichtig, und wir setzen alles daran, Ihre Erwartungen zu erfüllen.
-      </p>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Das Impressum dient nicht nur der rechtlichen Absicherung, sondern stellt sicher, dass Sie immer alle Informationen haben, die für eine transparente und vertrauensvolle Kommunikation notwendig sind.
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Zusätzliche rechtliche Informationen
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Das Impressum auf unserer Webseite dient nicht nur der Erfüllung der gesetzlichen Anforderungen, sondern auch der Wahrung von Transparenz und Vertrauen gegenüber unseren Besuchern und Kunden. Es gibt Ihnen alle relevanten Informationen zu unserem Unternehmen, sodass Sie wissen, mit wem Sie es zu tun haben und wie Sie uns bei Bedarf erreichen können.
-      </p>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Wir möchten sicherstellen, dass der Besuch unserer Webseite für Sie so angenehm und sicher wie möglich ist. Daher ist es uns besonders wichtig, dass Sie alle rechtlichen Informationen über unsere Dienstleistungen und den Umgang mit Ihren Daten leicht finden können. Unsere Webseite erfüllt alle Anforderungen des Telemediengesetzes (TMG) sowie anderer relevanter gesetzlicher Bestimmungen, um Ihnen die nötige Rechtssicherheit zu bieten.
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Verantwortlichkeit und Haftung
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Für die Inhalte unserer Webseite sind wir als Betreiber verantwortlich. Wir bemühen uns, die auf unserer Seite bereitgestellten Informationen korrekt und aktuell zu halten. Dennoch können wir keine Haftung für die Richtigkeit, Vollständigkeit oder Aktualität der Informationen übernehmen. Ebenso übernehmen wir keine Verantwortung für Inhalte externer Webseiten, auf die wir verlinken, da wir keinerlei Einfluss auf deren Gestaltung und Inhalte haben.
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-       Haftungsausschluss
-      </h2>
-      <p className="mt-4 text-[color:var(--text-secondary)]">
-       Unsere Webseite enthält auch Links zu anderen Seiten im Internet. Für all diese Links gilt: Wir möchten ausdrücklich betonen, dass wir keinerlei Einfluss auf die Gestaltung und die Inhalte der verlinkten Seiten haben. Daher distanzieren wir uns hiermit von allen Inhalten aller verlinkten Seiten, die nach der Linksetzung verändert wurden. Diese Erklärung gilt für alle auf unserer Webseite angebrachten Links.
-      </p>
-
-      <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-        Streitschlichtung
-       </h2>
-       <p className="mt-4 text-[color:var(--text-secondary)]">
-        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
-        <a
-          href="https://ec.europa.eu/consumers/odr"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[color:var(--color-red-600)] hover:underline"
+    return (
+        <LegalLayout
+            heroTitle="Impressum"
+            heroSubtitle="Transparenz schafft Vertrauen. Wer wir sind und wie Sie uns erreichen."
+            lastUpdated="27. März 2026"
+            tocItems={TOC_ITEMS}
         >
-          https://ec.europa.eu/consumers/odr
-        </a>
-       </p>
-       <p className="mt-4 text-[color:var(--text-secondary)]">
-        Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet,
-        an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-       </p>
+            <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
+                <p className="text-sm text-gray-500 font-medium">Betreiberkennzeichnung</p>
+                <PrintButton />
+            </div>
 
-       <h2 className="mt-8 typo-h2 text-[color:var(--text-primary)] text-balance">
-        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
-       </h2>
-       <p className="mt-4 text-[color:var(--text-secondary)]">
-        Mina Saad
-        <br />
-        Gloelstraße 11
-        <br />
-        35576 Wetzlar
-       </p>
-     </div>
-      </StaggerItem>
-    </StaggerReveal>
-   </section>
-  </div>
- );
+            <LegalSection>
+                <TLDRBox title="Verantwortlichkeit (TL;DR)" icon="info">
+                    <p>Diese Webseite wird betreut von <strong>Mina Saad</strong> (Schlüsseldienst Wetzlar). Unser Hauptfokus ist die regionale, faire Absicherung und Türöffnung im gesamten Lahn-Dill-Kreis. Für direkte Anfragen wählen Sie einfach unsere Notrufnummer.</p>
+                </TLDRBox>
+            </LegalSection>
+
+            <LegalSection id="1-angaben">
+                <h2 className="mt-0">1. Angaben gemäß § 5 DDG</h2>
+                <p className="text-sm text-gray-500 mb-4">(Digitale-Dienste-Gesetz, ehemals § 5 TMG)</p>
+                <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
+                    <strong>Schlüsseldienst Wetzlar</strong><br />
+                    Inhaberin: Mina Saad<br />
+                    Gloelstraße 11<br />
+                    35576 Wetzlar<br />
+                    Deutschland
+                </div>
+            </LegalSection>
+
+            <LegalSection id="2-kontakt">
+                <h2 className="mt-0">2. Direkter Kontakt</h2>
+                <p>Wir legen Wert auf Erreichbarkeit. Im Notfall oder bei allgemeinen Anfragen nutzen Sie am besten die folgenden Kontaktwege:</p>
+                <ul>
+                    <li><strong>Telefon (24/7):</strong> <a href="tel:+491782471037" className="font-semibold">0178 2471037</a></li>
+                    <li><strong>E-Mail:</strong> <a href="mailto:notfall-schluessel@proton.me">notfall-schluessel@proton.me</a></li>
+                </ul>
+            </LegalSection>
+
+            <LegalSection id="3-standort">
+                <h2 className="mt-0">3. Hauptsitz & Standort</h2>
+                <p>Unser technischer und administrativer Hauptsitz befindet sich zentral in Wetzlar.</p>
+                <div className="w-full h-[300px] bg-gray-100 rounded-xl overflow-hidden shadow-inner my-6 print:hidden">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        style={{ border: 0 }}
+                        loading="lazy" 
+                        allowFullScreen 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        src="https://maps.google.com/maps?q=Gloelstra%C3%9Fe+11,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        title="Standort MS Schlüsseldienst Wetzlar"
+                    />
+                </div>
+            </LegalSection>
+
+            <LegalSection id="4-steuern">
+                <h2 className="mt-0">4. Steuerliche Angaben</h2>
+                <p>Die steuerliche Identifikation ist für die korrekte Rechnungsstellung und gewerbliche Transparenz notwendig.</p>
+                <ul>
+                    <li><strong>Steuernummer:</strong> 03986300160</li>
+                    <li><strong>Umsatzsteuer-ID:</strong> Wird nicht erteilt, da Befreiung als Kleinunternehmen gemäß § 19 UStG vorliegt.</li>
+                </ul>
+            </LegalSection>
+
+            <LegalSection id="5-berufsangaben">
+                <h2 className="mt-0">5. Berufs- & Aufsichtsangaben</h2>
+                <p>Angaben zur beruflichen Tätigkeit gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
+                <ul>
+                    <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
+                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wetzlar, Ederstraße 2, 35578 Wetzlar</li>
+                    <li><strong>Geltende berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
+                </ul>
+            </LegalSection>
+
+            <LegalSection id="6-redaktionell">
+                <h2 className="mt-0">6. Redaktionell Verantwortlicher</h2>
+                <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
+                <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
+                    <strong>Mina Saad</strong><br />
+                    Gloelstraße 11<br />
+                    35576 Wetzlar
+                </div>
+            </LegalSection>
+
+            <LegalSection id="7-streitschlichtung">
+                <h2 className="mt-0">7. EU-Streitschlichtung & Verbraucherstreitbeilegung</h2>
+                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link erreichen:</p>
+                <p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr</a></p>
+                <p>Unsere E-Mail-Adresse lautet: <code>notfall-schluessel@proton.me</code></p>
+                <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            </LegalSection>
+
+            <LegalSection id="8-haftung">
+                <h2 className="mt-0">8. Haftungsausschluss</h2>
+                <h3>Inhalte</h3>
+                <p>Für die Inhalte unserer Webseite sind wir als Betreiber verantwortlich. Wir bemühen uns, die auf unserer Seite bereitgestellten Informationen stets korrekt und tagesaktuell zu halten. Dennoch können wir keine Gewähr für die absolute Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen übernehmen.</p>
+
+                <h3>Verlinkungen</h3>
+                <p>Unsere Webseite kann Hyperlinks zu fremden Webseiten von Drittanbietern enthalten, auf deren Inhalte wir keinerlei Einfluss haben. Deshalb distanzieren wir uns ausdrücklich von allen Inhalten der verlinkten Seiten und machen uns diese nicht zu eigen. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße auf den fremden Plattformen erkennbar. Eine fortwährende Kontrolle externer Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung für uns nicht zumutbar.</p>
+            </LegalSection>
+        </LegalLayout>
+    )
 }

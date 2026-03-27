@@ -167,7 +167,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
     hyphens: auto;
   }
   
@@ -860,6 +859,22 @@
     font-weight: 700;
     letter-spacing: -0.02em;
   }
+}
+
+/* ── Scroll Containment (unlayered to beat Tailwind preflight) ──
+   Forces body to be the scroll container instead of html.
+   Prevents stale documentElement.scrollHeight after
+   Next.js client-side navigation (ghost scroll past footer). */
+html {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+body {
+  height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {

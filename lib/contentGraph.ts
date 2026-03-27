@@ -113,6 +113,13 @@ export const CONTENT_GRAPH: ContentNode[] = [
         relatedSlugs: ['/datenschutz']
     },
     {
+        slug: '/agb',
+        title: 'Allgemeine Geschäftsbedingungen',
+        type: 'legal',
+        keywords: ['agb', 'geschäftsbedingungen', 'widerruf', 'vertrag'],
+        relatedSlugs: ['/datenschutz', '/impressum']
+    },
+    {
         slug: '/schluessel-schmiede',
         title: 'Schlüssel Schmiede Wetzlar',
         type: 'info',

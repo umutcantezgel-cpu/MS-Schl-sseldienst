@@ -45,8 +45,11 @@ const menuItems: MenuItem[] = [
  {
   title:"Rechtliches",
   links: [
+   { text:"AGB", url:"/agb" },
    { text:"Impressum", url:"/impressum" },
    { text:"Datenschutz", url:"/datenschutz" },
+   { text:"Cookie-Richtlinie", url:"/cookie-richtlinie" },
+   { text:"Widerrufsbelehrung", url:"/widerruf" },
    { text:"Barrierefreiheit", url:"/barrierefreiheit" },
     { text:"Cookie-Einstellungen", url:"#cookie-settings" },
     { text:"Über uns", url:"/ueber-uns" },
@@ -165,8 +168,10 @@ export default function Footer() {
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] md:flex-row md:items-center">
      <p>© {new Date().getFullYear()} Schlüsseldienst Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
      <ul className="flex gap-4">
+      <li><Link href="/agb" className="hover:text-[var(--color-red-500)] transition-colors underline">AGB</Link></li>
       <li><Link href="/impressum" className="hover:text-[var(--color-red-500)] transition-colors underline">Impressum</Link></li>
       <li><Link href="/datenschutz" className="hover:text-[var(--color-red-500)] transition-colors underline">Datenschutz</Link></li>
+      <li><Link href="/widerruf" className="hover:text-[var(--color-red-500)] transition-colors underline">Widerruf</Link></li>
       <li><Link href="/barrierefreiheit" className="hover:text-[var(--color-red-500)] transition-colors underline">Barrierefreiheit</Link></li>
      </ul>
     </div>

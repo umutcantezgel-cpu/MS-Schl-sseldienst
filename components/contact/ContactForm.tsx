@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useActionState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { CheckCircle2, Loader2, Phone, AlertCircle } from "lucide-react";
 import { m, AnimatePresence } from "framer-motion";
@@ -62,6 +63,7 @@ export default function ContactForm() {
   });
   const [formStarted, setFormStarted] = useState(false);
   const [shakeField, setShakeField] = useState<string | null>(null);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const filledFieldsCount = Object.values(formData).filter((val) => val.trim() !== "").length;
   const showProgress = filledFieldsCount >= 2;
@@ -463,11 +465,26 @@ export default function ContactForm() {
           </AnimatePresence>
         </m.div>
 
+        <div className="flex items-start gap-3 mt-4 mb-6">
+          <input
+            type="checkbox"
+            id="privacy"
+            name="privacy"
+            required
+            checked={privacyAccepted}
+            onChange={(e) => setPrivacyAccepted(e.target.checked)}
+            className="mt-0.5 shrink-0 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] focus:ring-2 outline-none"
+          />
+          <label htmlFor="privacy" className="text-xs text-[color:var(--text-secondary)] leading-tight">
+            Ich stimme zu, dass meine Angaben aus dem Formular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Weitere Details entnehmen Sie der <Link href="/datenschutz" className="text-[var(--color-red-500)] underline hover:text-[var(--color-red-600)]">Datenschutzerklärung</Link>.
+          </label>
+        </div>
+
         <div>
           <button
             type="submit"
-            disabled={isPending}
-            className={cn("bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-[16px] h-[52px] rounded-[var(--radius-8)] flex items-center justify-center transition-all shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)]", "w-full transition-all duration-200", filledFieldsCount === 4 && !isPending && "animate-pulse-glow", isPending && "opacity-70 pointer-events-none hover:-translate-y-[0px] shadow-none", !isPending && "hover:-translate-y-[2px]")}
+            disabled={isPending || !privacyAccepted}
+            className={cn("bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-[16px] h-[52px] rounded-[var(--radius-8)] flex items-center justify-center transition-all shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)]", "w-full transition-all duration-200", filledFieldsCount === 4 && privacyAccepted && !isPending && "animate-pulse-glow", isPending && "opacity-70 pointer-events-none hover:-translate-y-[0px] shadow-none", (!isPending && privacyAccepted) && "hover:-translate-y-[2px]", !privacyAccepted && "opacity-50 cursor-not-allowed hover:-translate-y-[0px]")}
           >
             {isPending ? (
               <span className="flex items-center gap-2">

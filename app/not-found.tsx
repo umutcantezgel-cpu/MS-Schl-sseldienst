@@ -1,4 +1,5 @@
 import Link from"next/link";
+import { headers } from"next/headers";
 import { ArrowRight, Key, Phone } from"lucide-react";
 import { buttonVariants } from"@/components/ui/button";
 import { cn } from"@/lib/utils";
@@ -11,7 +12,16 @@ export const metadata = generateSharedMetadata({
  noindex: true,
 });
 
-export default function NotFound() {
+export default async function NotFound() {
+ // ─── SEO-FORENSIK: 404 Tracking für Post-Launch Monitoring ───
+ // console.warn statt console.error → kein roter Fehler im Dev-Overlay,
+ // erscheint aber trotzdem in Vercel Production Logs (Filter: level:warn).
+ const headersList = await headers();
+ const referer = headersList.get("referer") || "direct";
+ const url = headersList.get("x-url") || headersList.get("x-invoke-path") || "unknown";
+ console.warn(
+  `[404-FORENSIK] Seite: ${url} | Referer: ${referer}`
+ );
  return (
   <div className="flex min-h-[70vh] flex-col items-center justify-center bg-[var(--surface-primary)] px-4 text-center text-[color:var(--text-primary)]">
    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--border-subtle)] text-[color:var(--text-tertiary)]" aria-hidden="true">
