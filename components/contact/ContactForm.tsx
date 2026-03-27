@@ -55,7 +55,13 @@ export default function ContactForm() {
     phone: "",
     message: "",
   });
-  const [fieldStates, setFieldStates] = useState<Record<string, FieldState>>({
+  const [fieldStates, setFieldStates] = useState<{
+    name: FieldState;
+    email: FieldState;
+    phone: FieldState;
+    message: FieldState;
+    [key: string]: FieldState;
+  }>({
     name: { touched: false, valid: false, error: "" },
     email: { touched: false, valid: false, error: "" },
     phone: { touched: false, valid: false, error: "" },
@@ -81,10 +87,14 @@ export default function ContactForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
     // Clear error on type
     if (fieldStates[name]?.error) {
-      setFieldStates(prev => ({
-        ...prev,
-        [name]: { ...prev[name], error: "", valid: value.trim().length > 0 }
-      }));
+      setFieldStates(prev => {
+        const existing = prev[name];
+        if (!existing) return prev;
+        return {
+          ...prev,
+          [name]: { touched: existing.touched, error: "", valid: value.trim().length > 0 }
+        };
+      });
     }
   };
 

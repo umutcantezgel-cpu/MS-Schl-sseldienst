@@ -23,12 +23,14 @@ export default function ExitIntentBanner() {
 
   useEffect(() => {
     // Deterministic rotation based on day-of-week (avoids hydration mismatch)
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setVariantIndex(new Date().getDay() % COPY_VARIANTS.length);
   }, []);
 
   if (!triggered) return null;
 
   const variant = COPY_VARIANTS[variantIndex];
+  if (!variant) return null;
 
   // Track show event with variant
   if (typeof window !== "undefined") {

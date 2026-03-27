@@ -33,8 +33,9 @@ export default function MobileBottomBar() {
     // Intersection Observer to show bar when hero-section is out of view
     if (heroSection) {
       const observer = new IntersectionObserver(
-        ([entry]) => {
-          setIsVisible(!entry.isIntersecting);
+        (entries) => {
+          const entry = entries[0];
+          if (entry) setIsVisible(!entry.isIntersecting);
         },
         { root: null, rootMargin: "-100px 0px 0px 0px", threshold: 0 }
       );

@@ -69,7 +69,9 @@ export default function RootLayout({
  return (
      <html lang="de" className="light">
    <head>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="alternate" hrefLang="de-DE" href="https://www.schluesseldienst-wetzlar.de" />
     <link rel="alternate" hrefLang="x-default" href="https://www.schluesseldienst-wetzlar.de" />

@@ -63,7 +63,7 @@ function deleteCookiesByCategory(category: ConsentCategory): void {
   if (typeof document === "undefined") return;
   const cookies = document.cookie.split("; ");
   for (const cookie of cookies) {
-    const name = cookie.split("=")[0];
+    const name = cookie.split("=")[0] ?? "";
     // GA4 cookies
     if (category === "analytics" && (name === "_ga" || name.startsWith("_ga_"))) {
       document.cookie = `${name}=; path=/; max-age=0; domain=${window.location.hostname}`;

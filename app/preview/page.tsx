@@ -17,7 +17,7 @@ export default function LocalPreviewDashboard() {
     setIsMounted(true);
     // Select the first one by default if none selected
     if (allLocations.length > 0 && !selectedSlug) {
-      setSelectedSlug(allLocations[0].slug);
+      setSelectedSlug(allLocations[0]?.slug ?? null);
     }
   }, [selectedSlug]);
 

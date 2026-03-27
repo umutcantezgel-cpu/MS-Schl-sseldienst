@@ -10,31 +10,17 @@ const nextConfig: NextConfig = {
   // Timeout for static page generation (Phase 17)
   staticPageGenerationTimeout: 60,
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   typescript: {
     ignoreBuildErrors: false,
   },
-  // Allow access to remote image placeholder.
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 960, 1280, 1920, 2560],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "picsum.photos",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "i.pravatar.cc",
-        port: "",
-        pathname: "/**",
-      },
-    ],
+    remotePatterns: [],
   },
   // ─── SEO: Trailing slash behavior (DEFCON-1 LOCKED) ───
   // Production confirmed: /preise → 200, /preise/ → 308 redirect

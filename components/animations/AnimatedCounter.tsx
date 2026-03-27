@@ -27,8 +27,9 @@ export default function AnimatedCounter({
     if (prefersReducedMotion) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasStarted) {
+      (entries) => {
+        const entry = entries[0];
+        if (entry?.isIntersecting && !hasStarted) {
           setHasStarted(true);
           observer.disconnect();
         }

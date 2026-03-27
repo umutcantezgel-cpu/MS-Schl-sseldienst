@@ -80,6 +80,7 @@ export default function ContactPremiumMap() {
   }, []);
 
   /* ── Build info window content ── */
+  // eslint-disable-next-line react-hooks/immutability
   function buildInfoContent(
     loc: (typeof allLocations)[number],
     ringInfo: ReturnType<typeof getRingColor>
@@ -266,7 +267,7 @@ export default function ContactPremiumMap() {
           );
           map.fitBounds(bounds, 40);
         });
-        map.controls[google.maps.ControlPosition.RIGHT_TOP].push(fitBtn);
+        map.controls[google.maps.ControlPosition.RIGHT_TOP]?.push(fitBtn);
 
         setIsLoaded(true);
       } catch (err: unknown) {

@@ -73,8 +73,9 @@ export default function DynamicCounter({
     if (!el) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+      (entries) => {
+        const entry = entries[0];
+        if (entry?.isIntersecting) {
           animate();
           observer.disconnect();
         }

@@ -10,7 +10,7 @@ import { springStandard, springEnergetic, springGentle } from "./motion.config";
 // ==========================================
 // 1. EINTRITTS-ANIMATIONEN (10 Varianten)
 // ==========================================
-export const entryAnimations: Record<string, Variants> = {
+export const entryAnimations = {
     // 1. Sanftes Hochgleiten mit Einblenden
     slideUpFade: {
         hidden: { opacity: 0, y: 30 },
@@ -61,12 +61,12 @@ export const entryAnimations: Record<string, Variants> = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: springStandard }
     }
-};
+} satisfies Record<string, Variants>;
 
 // ==========================================
 // 2. AUSTRITTS-ANIMATIONEN (10 Varianten)
 // ==========================================
-export const exitAnimations: Record<string, Variants> = {
+export const exitAnimations = {
     slideDownFade: {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 30, transition: springStandard }
@@ -107,12 +107,12 @@ export const exitAnimations: Record<string, Variants> = {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 20, transition: springStandard }
     }
-};
+} satisfies Record<string, Variants>;
 
 // ==========================================
 // 3. AUFMERKSAMKEITS-ANIMATIONEN (10 Varianten)
 // ==========================================
-export const attentionAnimations: Record<string, Variants> = {
+export const attentionAnimations = {
     // 1. Sanftes Pulsieren
     pulse: {
         animate: { scale: [1, 1.05, 1], transition: { repeat: Infinity, duration: 2, ease: "easeInOut" } }
@@ -153,12 +153,12 @@ export const attentionAnimations: Record<string, Variants> = {
     shine: {
         animate: { filter: ["brightness(1)", "brightness(1.2)", "brightness(1)"], transition: { repeat: Infinity, duration: 2 } }
     }
-};
+} satisfies Record<string, Variants>;
 
 // ==========================================
 // 4. LADE-ANIMATIONEN (10 Varianten)
 // ==========================================
-export const loadingAnimations: Record<string, Variants> = {
+export const loadingAnimations = {
     skeleton: {
         animate: { opacity: [0.5, 0.8, 0.5], transition: { repeat: Infinity, duration: 1.5, ease: "linear" } }
     },
@@ -189,12 +189,12 @@ export const loadingAnimations: Record<string, Variants> = {
     brandRotate: {
         animate: { rotateY: 360, transition: { repeat: Infinity, duration: 2, ease: "easeInOut" } }
     }
-};
+} satisfies Record<string, Variants>;
 
 // ==========================================
 // 5. FEEDBACK-ANIMATIONEN (10 Varianten)
 // ==========================================
-export const feedbackAnimations: Record<string, Variants> = {
+export const feedbackAnimations = {
     successCheck: {
         hidden: { pathLength: 0, opacity: 0 },
         visible: { pathLength: 1, opacity: 1, transition: { duration: 0.5, ease: "easeOut" } }
@@ -226,7 +226,7 @@ export const feedbackAnimations: Record<string, Variants> = {
     successGreen: {
         animate: { backgroundColor: "rgba(34, 197, 94, 0.1)", transition: { duration: 0.3 } }
     }
-};
+} satisfies Record<string, Variants>;
 
 // Kombiniere alle Animationen für leichten Export
 export const allAnimations = {
@@ -236,3 +236,18 @@ export const allAnimations = {
     ...loadingAnimations,
     ...feedbackAnimations
 };
+
+/**
+ * Type-safe variant accessor for noUncheckedIndexedAccess compatibility.
+ * Returns the variant or throws if the key doesn't exist at runtime.
+ */
+export function getVariant(
+    record: Record<string, Variants>,
+    key: string
+): Variants {
+    const variant = record[key];
+    if (!variant) {
+        throw new Error(`Animation variant "${key}" not found`);
+    }
+    return variant;
+}

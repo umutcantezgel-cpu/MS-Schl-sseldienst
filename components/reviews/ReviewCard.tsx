@@ -18,7 +18,7 @@ const AVATAR_COLORS = [
 function getAvatarColor(name: string): string {
   // Deterministic color from first character code
   const charCode = name.charCodeAt(0);
-  return AVATAR_COLORS[charCode % AVATAR_COLORS.length];
+  return AVATAR_COLORS[charCode % AVATAR_COLORS.length] ?? AVATAR_COLORS[0] ?? "";
 }
 
 export default function ReviewCard({ review }: { review: Review }) {

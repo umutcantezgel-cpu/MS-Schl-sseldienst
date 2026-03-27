@@ -20,7 +20,7 @@ export function PrivacyPreferenceCenter() {
     useEffect(() => {
         try {
             const match = document.cookie.match(new RegExp('(^| )' + CONSENT_COOKIE_NAME + '=([^;]+)'))
-            if (match) {
+            if (match?.[2]) {
                 const savedConsent: ConsentState = JSON.parse(decodeURIComponent(match[2]))
                 if (savedConsent.version === CONSENT_VERSION) {
                     setPreferences({
