@@ -5,6 +5,7 @@ import {
   stripHTML,
   sanitizeSearchParam,
   sanitizeEmail,
+  sanitizeHTML,
 } from "@/lib/sanitize";
 
 describe("escapeHTML", () => {
@@ -95,5 +96,33 @@ describe("sanitizeEmail", () => {
 
   it("trims whitespace", () => {
     expect(sanitizeEmail("  user@test.de  ")).toBe("user@test.de");
+  });
+});
+
+describe("sanitizeHTML", () => {
+  it("strips dangerous tags like script and iframe", () => {
+    const input = '<div><script>alert(1)</script><iframe src="xyz"></iframe><p>Safe</p></div>';
+    const clean = sanitizeHTML(input);
+    expect(clean).not.toContain("<script>");
+    expect(clean).not.toContain("<iframe>");
+    expect(clean).toContain("<p>Safe</p>");
+  });
+
+  it("removes inline event handlers", () => {
+    const input = '<button onclick="stealCookies()" onHover="doBadThings()">Click</button>';
+    const clean = sanitizeHTML(input);
+    expect(clean).not.toContain("onclick=");
+    expect(clean).not.toContain("onHover=");
+    expect(clean).toContain("<button");
+  });
+
+  it("removes javascript: protocols from links", () => {
+    const input = '<a href="javascript:alert(1)">Link</a>';
+    const clean = sanitizeHTML(input);
+    expect(clean).toContain('href=""');
+  });
+
+  it("returns empty string for non-string inputs", () => {
+    expect(sanitizeHTML(null as unknown as string)).toBe("");
   });
 });

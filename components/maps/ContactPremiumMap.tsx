@@ -34,6 +34,53 @@ interface LocationWithDistance {
   ringInfo: ReturnType<typeof getRingColor>;
 }
 
+/* ── Build info window content ── */
+function buildInfoContent(
+  loc: (typeof allLocations)[number],
+  ringInfo: ReturnType<typeof getRingColor>
+): string {
+  return `
+    <div style="font-family: system-ui, -apple-system, sans-serif; padding: 4px 0; min-width: 220px; max-width: 280px;">
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px;">
+        <div style="width: 10px; height: 10px; border-radius: 50%; background: ${ringInfo.text};"></div>
+        <strong style="font-size: 15px; color: #1a1a1a;">${loc.name}</strong>
+      </div>
+      
+      <div style="display: flex; gap: 12px; margin-bottom: 8px;">
+        <div style="font-size: 12px; color: #666;">
+          <span style="font-weight: 600;">PLZ:</span> ${loc.plz}
+        </div>
+        <div style="font-size: 12px; color: #666;">
+          <span style="font-weight: 600;">Anfahrt:</span> ca. ${loc.logistics.drivingTimeMinutes} Min.
+        </div>
+      </div>
+      
+      <div style="display: flex; align-items: center; gap: 6px; padding: 6px 10px; background: ${ringInfo.bg}; border-radius: 8px; margin-bottom: 10px;">
+        <span style="font-size: 13px; font-weight: 700; color: ${ringInfo.text};">
+          Ab ${loc.pricing.basePrice} EUR · ${ringInfo.label}
+        </span>
+      </div>
+      
+      <div style="display: flex; gap: 6px;">
+        <a href="tel:+4964418056544" 
+           style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; padding: 8px 12px; background: #B91C1C; color: white; border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s;">
+          Anrufen
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${loc.coordinates.latitude},${loc.coordinates.longitude}" 
+           target="_blank" rel="noopener noreferrer"
+           style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; padding: 8px 12px; background: #f3f4f6; color: #1a1a1a; border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid #e5e7eb;">
+          Route
+        </a>
+      </div>
+      
+      <a href="/${loc.slug}" 
+         style="display: block; margin-top: 8px; text-align: center; font-size: 12px; color: #B91C1C; font-weight: 600; text-decoration: none;">
+        Alle Details zu ${loc.name} →
+      </a>
+    </div>
+  `;
+}
+
 export default function ContactPremiumMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<google.maps.Map | null>(null);
@@ -78,54 +125,6 @@ export default function ContactPremiumMap() {
     /* Close sidebar on mobile */
     if (window.innerWidth < 1024) setIsSidebarOpen(false);
   }, []);
-
-  /* ── Build info window content ── */
-  // eslint-disable-next-line react-hooks/immutability
-  function buildInfoContent(
-    loc: (typeof allLocations)[number],
-    ringInfo: ReturnType<typeof getRingColor>
-  ): string {
-    return `
-      <div style="font-family: system-ui, -apple-system, sans-serif; padding: 4px 0; min-width: 220px; max-width: 280px;">
-        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px;">
-          <div style="width: 10px; height: 10px; border-radius: 50%; background: ${ringInfo.text};"></div>
-          <strong style="font-size: 15px; color: #1a1a1a;">${loc.name}</strong>
-        </div>
-        
-        <div style="display: flex; gap: 12px; margin-bottom: 8px;">
-          <div style="font-size: 12px; color: #666;">
-            <span style="font-weight: 600;">PLZ:</span> ${loc.plz}
-          </div>
-          <div style="font-size: 12px; color: #666;">
-            <span style="font-weight: 600;">Anfahrt:</span> ca. ${loc.logistics.drivingTimeMinutes} Min.
-          </div>
-        </div>
-        
-        <div style="display: flex; align-items: center; gap: 6px; padding: 6px 10px; background: ${ringInfo.bg}; border-radius: 8px; margin-bottom: 10px;">
-          <span style="font-size: 13px; font-weight: 700; color: ${ringInfo.text};">
-            Ab ${loc.pricing.basePrice} EUR · ${ringInfo.label}
-          </span>
-        </div>
-        
-        <div style="display: flex; gap: 6px;">
-          <a href="tel:+4964418056544" 
-             style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; padding: 8px 12px; background: #B91C1C; color: white; border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s;">
-            Anrufen
-          </a>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=${loc.coordinates.latitude},${loc.coordinates.longitude}" 
-             target="_blank" rel="noopener noreferrer"
-             style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px; padding: 8px 12px; background: #f3f4f6; color: #1a1a1a; border-radius: 10px; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid #e5e7eb;">
-            Route
-          </a>
-        </div>
-        
-        <a href="/${loc.slug}" 
-           style="display: block; margin-top: 8px; text-align: center; font-size: 12px; color: #B91C1C; font-weight: 600; text-decoration: none;">
-          Alle Details zu ${loc.name} →
-        </a>
-      </div>
-    `;
-  }
 
   /* ── Initialize map ── */
   useEffect(() => {

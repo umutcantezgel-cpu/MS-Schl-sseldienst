@@ -14,7 +14,7 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateHowToSchema } from"@/lib/schema";
-import { getFAQSchema } from"@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 import { generateServiceSchema } from"@/lib/serviceSchema";
 import { generateSharedMetadata } from"@/lib/metadata";
 

@@ -1,7 +1,7 @@
 import { HelpCircle } from"lucide-react";
 import EmergencyCTA from"@/components/EmergencyCTA";
 import { FAQ_DATA } from"@/lib/faqData";
-import { getFAQSchema } from"@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import Breadcrumbs from"@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";

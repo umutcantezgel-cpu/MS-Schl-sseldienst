@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Link from 'next/link';
 import { LegalLayout } from "@/components/legal/LegalLayout"
 import { TLDRBox } from "@/components/legal/TLDRBox"
 import { PrintButton } from "@/components/legal/PrintButton"
@@ -45,7 +46,7 @@ export default function AGBPage() {
 
             <LegalSection id="1-geltungsbereich">
                 <h2 className="mt-0">1. Geltungsbereich & Vertragspartner</h2>
-                <p>1.1. Diese Allgemeinen Geschäftsbedingungen (im Folgenden "AGB") gelten für alle gegenwärtigen und zukünftigen Rechtsgeschäfte, Dienstleistungen, Werkleistungen und Lieferungen zwischen:</p>
+                <p>1.1. Diese Allgemeinen Geschäftsbedingungen (im Folgenden &quot;AGB&quot;) gelten für alle gegenwärtigen und zukünftigen Rechtsgeschäfte, Dienstleistungen, Werkleistungen und Lieferungen zwischen:</p>
                 <div className="bg-gray-50 p-4 rounded-lg my-4 text-sm border border-gray-200">
                     <strong>Vertragspartner:</strong><br />
                     MS Schlüsseldienst<br />
@@ -53,9 +54,9 @@ export default function AGBPage() {
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     E-Mail: notfall-schluessel@proton.me<br />
-                    (im Folgenden "Auftragnehmer" oder "MS Schlüsseldienst" genannt)
+                    (im Folgenden &quot;Auftragnehmer&quot; oder &quot;MS Schlüsseldienst&quot; genannt)
                 </div>
-                <p>und dem Auftraggeber (im Folgenden "Kunde" genannt).</p>
+                <p>und dem Auftraggeber (im Folgenden &quot;Kunde&quot; genannt).</p>
                 <p>1.2. Abweichende, entgegenstehende oder ergänzende AGB des Kunden werden, selbst in Kenntnis, nicht Vertragsbestandteil, es sei denn, ihrer Geltung wird ausdrücklich schriftlich zugestimmt.</p>
                 <p>1.3. Verbraucher im Sinne dieser Geschäftsbedingungen sind natürliche Personen, die Rechtsgeschäfte zu Zwecken abschließen, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können (§ 13 BGB). Unternehmer sind natürliche oder juristische Personen, die in Ausübung ihrer gewerblichen oder selbständigen beruflichen Tätigkeit handeln (§ 14 BGB).</p>
             </LegalSection>
@@ -73,7 +74,7 @@ export default function AGBPage() {
                 <TLDRBox title="Unsere Preisphilosophie">
                     <p>Wir distanzieren uns strikt von unseriösen Lockangeboten. Wenn Sie uns anrufen, nennen wir Ihnen einen <strong>verbindlichen Endpreis</strong> für eine einfache Öffnung. Sie zahlen exakt das, was vereinbart wurde.</p>
                 </TLDRBox>
-                <p>3.1. Es gelten die zum Zeitpunkt des Vertragsschlusses auf der Webseite unter <a href="/preise">Preise</a> ausgewiesenen Festpreise und Anfahrtskosten bzw. die am Telefon individuell verhandelten Tarife.</p>
+                <p>3.1. Es gelten die zum Zeitpunkt des Vertragsschlusses auf der Webseite unter <Link href="/preise">Preise</Link> ausgewiesenen Festpreise und Anfahrtskosten bzw. die am Telefon individuell verhandelten Tarife.</p>
                 <p>3.2. <strong>Basispreis:</strong> Die Standard-Notöffnung einer nur ins Schloss gefallenen (nicht verriegelten) Tür beträgt werktags zwischen 08:00 und 18:00 Uhr pauschal ab 99,00 € inkl. gesetzlicher MwSt.</p>
                 <p>3.3. <strong>Anfahrtskosten:</strong> Zusätzlich zum Leistungspreis fallen je nach Entfernung gestaffelte Anfahrtskosten an. Diese liegen zwischen 15,00 € (Kernbereich und Stadtteile) und max. 40,00 € (Ferndistanzen über 20km). Die exakte Pauschale wird stets vorher kommuniziert.</p>
                 <p>3.4. <strong>Sonderzuschläge:</strong> Außerhalb der regulären Geschäftszeiten, an Wochenenden und gesetzlichen Feiertagen erheben wir transparente Zuschläge, um die Rufbereitschaft der Techniker zu gewährleisten (Abend-/Nachtzuschlag ab 30,- €, Wochenend-/Feiertagszuschlag ab 50,- €).</p>
@@ -105,7 +106,7 @@ export default function AGBPage() {
                     <p>Wenn Sie einen Handwerker dringend bestellen, um eine Reparatur durchzuführen (z.B. eine verschlossene Tür zu öffnen), gibt es <strong>kein 14-tägiges Rücktrittsrecht</strong> auf diese spezifische Vor-Ort-Leistung.</p>
                 </TLDRBox>
                 <p>6.1. Verbrauchern steht grundsätzlich ein Widerrufsrecht zu. Dieses Gesetz sieht jedoch Ausnahmen für spezielle Not- und Reparaturdienste vor.</p>
-                <p>6.2. <strong>Ausschluss nach <HoverGlossary explanation="Gesetzesgrundlage zum Erlöschen des Widerrufsrechts bei dringenden Reparaturmaßnahmen an der Haustür.">§ 312g Abs. 2 Nr. 11 BGB</HoverGlossary>:</strong> Das Widerrufsrecht besteht nicht bei Verträgen zur Erbringung dringender Reparatur- oder Instandhaltungsarbeiten, bei denen der Verbraucher den Unternehmer ausdrücklich aufgefordert hat, ihn aufzusuchen, um diese Arbeiten auszuführen. Da es sich bei der Beauftragung eines Schlüsseldienst-Notdienstes um exakt eine solche "dringende Reparatur/Instandsetzung" handelt, erlischt das elektronische/fernmündliche Widerrufsrecht für die Türöffnungs-Dienstleistung mit Aufnahme der handwerklichen Tätigkeit bzw. Anfahrt.</p>
+                <p>6.2. <strong>Ausschluss nach <HoverGlossary explanation="Gesetzesgrundlage zum Erlöschen des Widerrufsrechts bei dringenden Reparaturmaßnahmen an der Haustür.">§ 312g Abs. 2 Nr. 11 BGB</HoverGlossary>:</strong> Das Widerrufsrecht besteht nicht bei Verträgen zur Erbringung dringender Reparatur- oder Instandhaltungsarbeiten, bei denen der Verbraucher den Unternehmer ausdrücklich aufgefordert hat, ihn aufzusuchen, um diese Arbeiten auszuführen. Da es sich bei der Beauftragung eines Schlüsseldienst-Notdienstes um exakt eine solche &quot;dringende Reparatur/Instandsetzung&quot; handelt, erlischt das elektronische/fernmündliche Widerrufsrecht für die Türöffnungs-Dienstleistung mit Aufnahme der handwerklichen Tätigkeit bzw. Anfahrt.</p>
                 <p>6.3. Wurde im Zuge des Einsatzes Neuware verkauft (z.B. Zylinder originalverpackt verkauft, aber noch nicht starr im Haus verbaut), so gilt für diese nicht montierten Bauteile das gesetzliche Widerrufsrecht von 14 Tagen.</p>
             </LegalSection>
 
@@ -120,7 +121,7 @@ export default function AGBPage() {
             <LegalSection id="8-datenschutz">
                 <h2 className="mt-0">8. Datenschutz</h2>
                 <p>8.1. Der Schutz Ihrer persönlichen Daten ist uns ein elementares Anliegen. Wir verarbeiten Kundendaten (Name, Einsatzort, Zahlungsdaten, Kontaktdaten) ausschließlich zur reibungslosen Vertragsabwicklung und Rechnungsstellung.</p>
-                <p>8.2. Sämtliche Details zur Datenspeicherung, Löschfristen und Ihren Rechten finden Sie in unserer vollständigen <a href="/datenschutz">Datenschutzerklärung</a>.</p>
+                <p>8.2. Sämtliche Details zur Datenspeicherung, Löschfristen und Ihren Rechten finden Sie in unserer vollständigen <Link href="/datenschutz">Datenschutzerklärung</Link>.</p>
             </LegalSection>
 
             <LegalSection id="9-schlussbestimmungen">

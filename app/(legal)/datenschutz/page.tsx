@@ -103,7 +103,7 @@ export default function DatenschutzPage() {
 
             <LegalSection id="4-cookies">
                 <h2 className="mt-0">4. Cookies und Tracking-Technologien</h2>
-                <p>Unsere Website nutzt Cookies, um Kernfunktionen zu navigieren und bereitzustellen. Technisch notwendige Cookies bedürfen keiner aktiven Einwilligung. Marketing- und Analyse-Cookies fragen wir beim Betreten der Seite gezielt ab ("Consent-Banner").</p>
+                <p>Unsere Website nutzt Cookies, um Kernfunktionen zu navigieren und bereitzustellen. Technisch notwendige Cookies bedürfen keiner aktiven Einwilligung. Marketing- und Analyse-Cookies fragen wir beim Betreten der Seite gezielt ab (&quot;Consent-Banner&quot;).</p>
                 <p>Sie können Ihre Cookie-Präferenzen jederzeit widerrufen, indem Sie die Browserdaten löschen oder den Tracking-Link im System-Footer nutzen.</p>
                 
                 <PrivacyPreferenceCenter />
@@ -115,7 +115,7 @@ export default function DatenschutzPage() {
                 <ul>
                     <li><strong>Art. 15 DSGVO:</strong> Auskunftsrecht über gespeicherte Daten.</li>
                     <li><strong>Art. 16 DSGVO:</strong> Recht auf Berichtigung unvollständiger Daten.</li>
-                    <li><strong>Art. 17 DSGVO:</strong> Recht auf Löschung ("Recht auf Vergessenwerden").</li>
+                    <li><strong>Art. 17 DSGVO:</strong> Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;).</li>
                     <li><strong>Art. 18 DSGVO:</strong> Recht auf Einschränkung der Datenverarbeitung.</li>
                     <li><strong>Art. 20 DSGVO:</strong> Datenübertragbarkeit an andere Anbieter.</li>
                     <li><strong>Art. 21 DSGVO:</strong> Widerspruchsrecht gegen die Verarbeitung.</li>

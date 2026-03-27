@@ -23,6 +23,7 @@ export function PrivacyPreferenceCenter() {
             if (match?.[2]) {
                 const savedConsent: ConsentState = JSON.parse(decodeURIComponent(match[2]))
                 if (savedConsent.version === CONSENT_VERSION) {
+                    // eslint-disable-next-line react-hooks/set-state-in-effect
                     setPreferences({
                         essential: true,
                         analytics: savedConsent.analytics,

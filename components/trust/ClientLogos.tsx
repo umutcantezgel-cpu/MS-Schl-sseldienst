@@ -53,16 +53,7 @@ export default function ClientLogos() {
             })}
           </div>
         </div>
-
       </div>
-
-      <style dangerouslySetInnerHTML={{
-        __html: `
-        .mask-image-fade {
-          -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-          mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-        }
-      `}} />
     </section>
   );
 }

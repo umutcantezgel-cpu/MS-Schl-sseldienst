@@ -1,6 +1,7 @@
 "use server";
 
 import { z } from "zod";
+import { logger } from "@/lib/logger";
 
 // ─── Zod Schema (shared with client) ───
 const contactSchema = z.object({
@@ -128,13 +129,19 @@ export async function submitContactForm(
     //   ].filter(Boolean).join("\n"),
     // });
 
-    // For now: log to console (works without SMTP config)
-    console.log("─── Neue Kontaktanfrage ───");
-    console.log("Name:", parsed.data.name);
-    console.log("E-Mail:", parsed.data.email);
-    if (parsed.data.phone) console.log("Telefon:", parsed.data.phone);
-    console.log("Nachricht:", parsed.data.message);
-    console.log("───────────────────────────");
+    logger.info(
+      {
+        action: "contact_submit",
+        success: true,
+        data: {
+          name: parsed.data.name,
+          email: parsed.data.email,
+          hasPhone: !!parsed.data.phone,
+          messageLength: parsed.data.message.length,
+        },
+      },
+      "Neue Kontaktanfrage erfolgreich verarbeitet"
+    );
 
     return {
       success: true,
@@ -142,7 +149,14 @@ export async function submitContactForm(
       submittedName: parsed.data.name,
     };
   } catch (error) {
-    console.error("Contact form error:", error);
+    logger.error(
+      {
+        action: "contact_submit",
+        success: false,
+        error: error instanceof Error ? error.message : String(error),
+      },
+      "Contact form error"
+    );
     return {
       success: false,
       message:

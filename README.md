@@ -277,6 +277,8 @@ Edit `.env.local` with your values:
 | `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Google Maps JavaScript API key for the service area map | Yes |
 | `NEXT_PUBLIC_APP_VERSION` | Application version string | No |
 | `NEXT_PUBLIC_BASE_URL` | Base URL for canonical URLs and smoke tests (`http://localhost:3000` for dev) | No |
+| `FORMSPREE_PREMIUM_ENDPOINT` | The Formspree Endpoint URL for contact form submissions | Yes |
+| `FORMSPREE_EMERGENCY_ENDPOINT` | The Formspree Endpoint URL for emergency requests | Yes |
 
 ```bash
 # 4. Start the development server

@@ -10,7 +10,7 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateSharedMetadata } from"@/lib/metadata";
-import { getFAQSchema } from"@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 import { siteUrl } from"@/lib/schema";
 import { Key, MapPin, Clock, Phone, Hammer, Car, Fingerprint, Award, Camera, Battery, ChevronRight, Star, ShieldCheck, Wrench } from"lucide-react";
 import Link from"next/link";
@@ -205,7 +205,7 @@ export default function SchluesselSchmiedePage() {
          Die Schlüssel Schmiede ist nicht einfach ein Geschäft. Sie ist aus dem Wunsch entstanden, Menschen direkt vor Ort zu helfen — mit <strong className="text-[color:var(--text-primary)]">Zeit, Verständnis und sauberer Arbeit</strong>.
         </p>
         <p>
-         Hier geht es nicht darum, schnell etwas „abzufertigen". Jeder Auftrag, jeder Schlüssel und jedes Anliegen wird ernst genommen. Kommen Sie herein, stellen Sie Fragen, schildern Sie Probleme — und lassen Sie sich in Ruhe beraten.
+         Hier geht es nicht darum, schnell etwas &bdquo;abzufertigen&ldquo;. Jeder Auftrag, jeder Schlüssel und jedes Anliegen wird ernst genommen. Kommen Sie herein, stellen Sie Fragen, schildern Sie Probleme — und lassen Sie sich in Ruhe beraten.
         </p>
         <p>
          Die Schlüssel Schmiede ist der <strong className="text-[color:var(--text-primary)]">stationäre Ladenbetrieb des MS Schlüsseldienst Wetzlar</strong>. Wir bündeln unsere Erfahrung aus dem mobilen Schlüsseldienst mit präziser Werkstattarbeit vor Ort.

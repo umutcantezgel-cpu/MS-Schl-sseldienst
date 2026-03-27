@@ -20,7 +20,7 @@ import PricingFAQ, { faqs } from"@/components/pricing/PricingFAQ";
 import Breadcrumbs from"@/components/Breadcrumbs";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { generateServiceSchema } from"@/lib/serviceSchema";
-import { getFAQSchema } from"@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 
 const mainServicesSchema = [
  generateServiceSchema({ title:"Türöffnung", description:"Zerstörungsfreie Türöffnung ab 50€", url:"/leistungen/turoeffnung", price: 50 }),

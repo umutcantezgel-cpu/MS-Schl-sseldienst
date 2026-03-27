@@ -13,7 +13,7 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import { generateServiceSchema } from"@/lib/serviceSchema";
-import { getFAQSchema } from"@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 
 export const metadata = generateSharedMetadata({

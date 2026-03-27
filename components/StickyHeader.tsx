@@ -229,11 +229,11 @@ export default function StickyHeader() {
                 <Link
                   key={link.name}
                   href={link.href}
+                  prefetch={link.name === "Kontakt" || link.name === "Preise" ? true : undefined}
                   onMouseEnter={() => setHoveredNav(link.name)}
                   className="relative z-10 px-4 py-2 rounded-full flex items-center justify-center text-[15px] font-bold tracking-tight transition-colors focus-visible:outline-none"
                   {...(isActive ? { "aria-current": "page" as const } : {})}
-                >
-                  {(isHovered || isActive) && (
+                >                  {(isHovered || isActive) && (
                     <m.div
                       layoutId="desktop-hover-pill"
                       className="absolute inset-0 rounded-full bg-gray-100 z-0"

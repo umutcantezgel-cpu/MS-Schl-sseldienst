@@ -22,7 +22,7 @@ import ReviewsSection from"@/components/reviews/ReviewsSection";
 import GoogleReviewsBadge from"@/components/reviews/GoogleReviewsBadge";
 import { aggregateRating } from"@/components/reviews/reviews.data";
 import { getHomepageFAQs } from"@/lib/faqData";
-import { getFAQSchema } from"@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 import FAQAccordion from"@/components/ui/FAQAccordion";
 import ContactForm from"@/components/contact/ContactForm";
 import FinalCTA from"@/components/ui/FinalCTA";
@@ -36,7 +36,7 @@ import dynamic from "next/dynamic";
 const DynamicCounter = dynamic(() => import("@/components/growth/DynamicCounter"));
 const PersonalizedHero = dynamic(() => import("@/components/growth/PersonalizedHero"));
 const PersonalizedCTA = dynamic(() => import("@/components/growth/PersonalizedCTA"));
-const HomeServiceAreaWrapper = dynamic(() => import("@/components/maps/HomeServiceAreaWrapper"));
+const ServiceMapWrapper = dynamic(() => import("@/components/maps/ServiceMapWrapper"));
 
 export default function HomePage() {
  return (
@@ -376,7 +376,7 @@ export default function HomePage() {
       />
 
       {/* Map */}
-      <HomeServiceAreaWrapper />
+      <ServiceMapWrapper />
 
       {/* Stat badges */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-8 max-w-4xl mx-auto">

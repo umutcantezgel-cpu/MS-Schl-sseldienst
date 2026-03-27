@@ -3,7 +3,7 @@ import { getAllLocationSlugs, getLocationBySlug } from "@/lib/data/allLocations"
 import { siteUrl } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { aggregateRating } from "@/components/reviews/reviews.data";
-import { getFAQSchema } from "@/lib/faqSchema";
+import { getFAQSchema } from "@/lib/schema";
 import Script from "next/script";
 
 // Modulare High-Performance Local-Components (12-Sektionen 10x Expansion)
