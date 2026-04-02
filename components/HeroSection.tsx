@@ -157,11 +157,11 @@ export default function HeroSection() {
               Schlüsseldienst Wetzlar
               {' '}
               <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-2 sm:ml-3 -translate-y-1">
-                <span className="text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24/7 Notdienst</span>
+                <span className="text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24h Notdienst</span>
               </span>
               {' '}
               <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-[20px] sm:text-[24px]">
-                für Türöffnung
+                Türöffnung ab 99€ — schnell & ohne Schäden
               </span>
             </h1>
             </div>

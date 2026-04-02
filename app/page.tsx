@@ -174,7 +174,7 @@ export default function HomePage() {
 
        <div className="w-full flex flex-col gap-1.5 mt-2">
         <a href="tel:+4964418056279" className="w-full h-[52px] rounded-xl flex items-center justify-center typo-cta-button bg-[var(--color-charcoal-900)] hover:bg-[var(--color-charcoal-800)] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
-          Jetzt für Festpreis anrufen
+          Tagsüber zum Festpreis anrufen
          </a>
          <span className="typo-tiny text-[var(--color-charcoal-400)] text-center">Festpreis wird vor Anfahrt genannt</span>
         </div>
@@ -268,7 +268,7 @@ export default function HomePage() {
 
        <div className="w-full flex flex-col gap-1.5 mt-2">
          <a href="tel:+4964418056279" className="w-full h-[52px] rounded-xl flex items-center justify-center typo-cta-button bg-[var(--color-charcoal-900)] hover:bg-[var(--color-charcoal-800)] text-white transition-all duration-300">
-          Jetzt für Festpreis anrufen
+          Wochenend-Festpreis erfragen
          </a>
          <span className="typo-tiny text-[var(--color-charcoal-400)] text-center">Kostenlos & unverbindlich</span>
        </div>
@@ -310,9 +310,8 @@ export default function HomePage() {
        { icon: Lock, title:"Schließanlagen", desc:"Planung und Montage von Schließanlagen für private und gewerbliche Objekte.", href:"/leistungen/schliessanlagen", linkText:"Mehr zu Schließanlagen" },
        { icon: Key, title:"Schlüssel nachmachen", desc:"Präzise Zweitschlüssel und Ersatzschlüssel als Sofort-Service in unserer Filiale.", href:"/leistungen/schluessel-nachmachen", linkText:"Zum Schlüssel-Service" },
       ].map((service, idx) => (
-       <Link
+       <div
         key={idx}
-        href={service.href}
         className={`group relative flex flex-col items-start p-6 rounded-2xl bg-white/70 backdrop-blur-3xl border border-[var(--color-charcoal-100)] hover:border-[var(--value-hover-border)] hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 h-full overflow-hidden outline-none shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] ${service.featured ? 'lg:col-span-2 lg:row-span-1' : ''}`}
        >
         {/* Subtle top glow on featured */}
@@ -328,10 +327,10 @@ export default function HomePage() {
         <Typography variant="body" color="secondary" className="mb-auto">
          {service.desc}
         </Typography>
-        <div className="mt-6 flex items-center gap-2 font-semibold typo-small text-[var(--value-link-hover)] transition-colors">
+        <Link href={service.href} className="mt-6 flex items-center gap-2 font-semibold typo-small text-[var(--value-link-hover)] hover:text-[var(--color-red-600)] transition-colors">
          {service.linkText} <ArrowRight className="h-4 w-4 arrow-overshoot" aria-hidden="true" />
-        </div>
-       </Link>
+        </Link>
+       </div>
       ))}
      </div>
 

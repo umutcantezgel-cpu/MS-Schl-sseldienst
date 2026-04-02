@@ -68,7 +68,7 @@ export default function Footer() {
        <Link href="/" className="inline-block">
         <span className="sr-only">Zurück zur Startseite — MS Schlüsseldienst Wetzlar</span>
         <Image
-         src="/images/footer-logo.svg"
+         src="/images/footer-logo.webp"
          alt="MS Schlüsseldienst Wetzlar Logo"
          width={280}
          height={84}
