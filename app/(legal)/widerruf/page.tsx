@@ -9,6 +9,7 @@ export const metadata = generateSharedMetadata({
     title: "Widerrufsbelehrung",
     description: "Widerrufsbelehrung des MS Schlüsseldienst Wetzlar. ✔️ Informationen zum Widerrufsrecht ✔️ Muster-Widerrufsformular.",
     path: "/widerruf",
+    noindex: true,
   })
 
 const TOC_ITEMS = [

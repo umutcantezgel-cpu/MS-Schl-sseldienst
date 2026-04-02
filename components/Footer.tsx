@@ -181,6 +181,8 @@ export default function Footer() {
          Vertrauenswürdige Partner & Institutionen
        </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
+         {/* [SEO: Sister-Site Cross-Link — bidirektional dofollow für Domain-Authority-Transfer] */}
+         <a href="https://www.schluesseldienst-wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">MS Schlüsseldienst Wetzlar — Unsere Partnerseite</a>
          {/* [SEO: Outbound Trust-Signal added] */}
          <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</a>
          <a href="https://www.abus.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">ABUS Sicherheitstechnik</a>
@@ -189,6 +191,7 @@ export default function Footer() {
          <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</a>
          <a href="https://www.verbraucherzentrale-hessen.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</a>
          <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</a>
+         <a href="https://www.webspider24.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Webspider24 Webkatalog</a>
        </div>
      </div>
 

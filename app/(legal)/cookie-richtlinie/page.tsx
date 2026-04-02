@@ -10,6 +10,7 @@ export const metadata = generateSharedMetadata({
     title: "Cookie-Richtlinie",
     description: "Cookie-Richtlinie des MS Schlüsseldienst Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
     path: "/cookie-richtlinie",
+    noindex: true,
   })
 
 const TOC_ITEMS = [

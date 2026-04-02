@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
     title: city.seo.metaTitle,
     description: city.seo.metaDescription,
     path: `/${city.slug}`,
+    exactTitle: true,
   });
 
   const ogUrl = `/api/og?title=${encodeURIComponent(`Schlüsseldienst ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;

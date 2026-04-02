@@ -9,6 +9,7 @@ export const metadata = generateSharedMetadata({
     title: "Impressum",
     description: "Impressum und rechtliche Angaben des MS Schlüsseldienst Wetzlar. ✔️ Kontaktdaten ✔️ Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
+    noindex: true,
   })
 
 const TOC_ITEMS = [

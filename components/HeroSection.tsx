@@ -157,8 +157,8 @@ export default function HeroSection() {
               className="text-[14px] sm:text-[16px] md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] hero-entrance leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
               style={{ animationDelay: "150ms" }}
             >
-              Ihr Schlüsseldienst in Wetzlar – 24h Notdienst für
-              Türöffnungen. Verlässlich, schnell und immer für Sie da!
+              Ihr Schlüsseldienst Wetzlar bietet einen 24/7 Notdienst für jede
+              Türöffnung. Verlässlich, schnell und immer für Sie da!
             </p>
 
             {/* 4. Phone Number Block + CTA Buttons */}

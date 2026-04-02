@@ -48,7 +48,7 @@ export const metadata: Metadata = {
  // template: appended to every child page title (e.g. "Preise | MS Schlüsseldienst Wetzlar").
  title: {
    default: "Schlüsseldienst Wetzlar | 24h Türöffnung ab 99€",   // ≤50 chars → <580px
-   template: "%s | MS Schlüsseldienst Wetzlar",
+   template: "%s",
  },
  // ⚠️  NO description here — set only on individual pages to avoid Seobility #2 (duplicate).
  metadataBase: new URL(siteUrl),
