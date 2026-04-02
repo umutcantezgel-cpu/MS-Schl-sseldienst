@@ -148,7 +148,7 @@ export default function HomePage() {
 
       {/* Card 1: Tagsüber */}
       <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-       <Typography variant="h3" className="mb-1">Tagsüber ausgesperrt?</Typography>
+       <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
        <Typography variant="small" color="secondary" weight="semibold" className="mb-8 block">Montag – Freitag (06:00 – 19:59 Uhr)</Typography>
 
        <div className="flex items-baseline gap-1 mb-8">
@@ -186,7 +186,7 @@ export default function HomePage() {
         Am häufigsten benötigt
        </div>
 
-       <Typography variant="h3" className="mb-1">Abends oder nachts?</Typography>
+       <Typography variant="h3" as="div" className="mb-1">Abends oder nachts?</Typography>
        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Spätzuschlag je nach Uhrzeit</Typography>
 
        <div className="flex flex-col gap-4 mb-8 bg-[var(--color-charcoal-900)] p-5 rounded-xl border border-[var(--color-charcoal-800)] relative overflow-hidden shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)]">
@@ -246,7 +246,7 @@ export default function HomePage() {
 
       {/* Card 3: Wochenende */}
       <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-       <Typography variant="h3" className="mb-1">Wochenende / Feiertag?</Typography>
+       <Typography variant="h3" as="div" className="mb-1">Wochenende / Feiertag?</Typography>
        <Typography variant="small" color="secondary" weight="semibold" className="mb-8 block">Samstag, Sonntag & Feiertage</Typography>
 
        <div className="flex items-baseline gap-1 mb-8">
@@ -322,7 +322,7 @@ export default function HomePage() {
         <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[var(--service-card-icon-bg)] text-[var(--service-card-icon-color)] group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 mb-4">
          <service.icon className="w-6 h-6" aria-hidden="true" />
         </div>
-        <Typography variant="h3" className="mb-2">
+        <Typography variant="h3" as="div" className="mb-2">
          {service.title}
         </Typography>
         <Typography variant="body" color="secondary" className="mb-auto">
@@ -349,7 +349,7 @@ export default function HomePage() {
         <div className="flex items-center justify-center md:justify-start gap-1.5 mb-3 text-yellow-500">
          {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />)}
         </div>
-        <Typography variant="h3" className="mb-3">Chef-Monteur vor Ort</Typography>
+        <Typography variant="h3" as="div" className="mb-3">Chef-Monteur vor Ort</Typography>
         <Typography variant="body" color="secondary" className="italic mb-4">
          &quot;Ihre Tür ist mein Handwerk. Ich verspreche Ihnen eine ehrliche Beratung, keine verdeckten Kosten und eine schnelle Lösung Ihres Problems.&quot;
         </Typography>
@@ -381,7 +381,7 @@ export default function HomePage() {
         <div className="w-12 h-12 rounded-full bg-[var(--color-red-500)] text-white flex items-center justify-center font-black text-[16px] mb-6 shadow-[0_4px_12px_rgba(185,28,28,0.25)] group-hover:scale-110 transition-transform duration-300">
          {item.num}
         </div>
-        <Typography variant="h3" className="mb-3">
+        <Typography variant="h3" as="div" className="mb-3">
          {item.title}
         </Typography>
         <Typography variant="body" color="secondary">
@@ -509,7 +509,7 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 blur-[80px] rounded-full pointer-events-none" />
         
         <div className="relative z-10">
-          <Typography variant="h3" className="mb-4 text-[color:var(--text-primary)]">
+          <Typography variant="h3" as="div" className="mb-4 text-[color:var(--text-primary)]">
             Tür zu? <span className="text-[var(--color-red-500)]">Keine Panik.</span>
           </Typography>
           <Typography variant="body" color="secondary" className="mb-8 max-w-sm block">
