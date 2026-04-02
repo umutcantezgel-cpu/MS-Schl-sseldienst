@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Bundle analyzer
+.next-bundle-analyzer/
+
+# Misc
+Thumbs.db
+*.log
+
+# QA Pipeline artifacts (dev-only, not for production)
+qa_*.js
+qa_*.py
+generate_qa_doc*.py
+replace-motion.js
+scaffold.sh
+migrate.sh
+eslint-report.txt
+lighthouse-report.html
+.qa-*.json
+.qa-*.md
+QA-*.md
+Pipeline/

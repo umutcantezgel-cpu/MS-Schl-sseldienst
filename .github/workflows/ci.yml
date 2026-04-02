@@ -1,0 +1,84 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Cancel in-progress runs for the same branch/PR
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ─── Job 1: Lint + TypeCheck (fast gate) ───
+  lint-and-typecheck:
+    name: Lint & TypeCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: TypeCheck
+        run: npm run typecheck
+
+  # ─── Job 2: Build (depends on lint) ───
+  build:
+    name: Build
+    needs: lint-and-typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Restore Next.js cache
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: nextjs-cache-${{ hashFiles('package-lock.json') }}-${{ hashFiles('**/*.ts', '**/*.tsx', '**/*.css') }}
+          restore-keys: |
+            nextjs-cache-${{ hashFiles('package-lock.json') }}-
+            nextjs-cache-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
+          NEXT_PUBLIC_BASE_URL: ${{ vars.NEXT_PUBLIC_BASE_URL || 'https://schluesseldienst-wetzlar-24.de' }}
+          NEXT_PUBLIC_APP_VERSION: ${{ github.sha }}
+
+  # ─── Job 3: Smoke Tests (optional, post-deploy) ───
+  smoke-test:
+    name: Smoke Tests
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Run smoke tests
+        run: node scripts/smoke-test.mjs
+        env:
+          BASE_URL: ${{ vars.NEXT_PUBLIC_BASE_URL || 'https://schluesseldienst-wetzlar-24.de' }}

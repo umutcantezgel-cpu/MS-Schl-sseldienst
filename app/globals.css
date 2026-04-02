@@ -1,0 +1,1782 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body), system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-display), var(--font-body), system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", Consolas, Monaco, monospace;
+  
+  /* --- Typography Scale (Major Third - Fluid) --- */
+  --text-display: clamp(2rem, 5vw + 0.75rem, 4rem);
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.025em;
+
+  --text-h1: clamp(1.5rem, 3vw + 0.75rem, 3rem);
+  --text-h1--line-height: 1.15;
+  --text-h1--letter-spacing: -0.025em;
+
+  --text-h2: clamp(1.25rem, 2.5vw + 0.625rem, 2.25rem);
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.015em;
+
+  --text-h3: clamp(1.125rem, 2vw + 0.5rem, 1.75rem);
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.015em;
+
+  --text-h4: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+  --text-h4--line-height: 1.3;
+  --text-h4--letter-spacing: -0.01em;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-body--letter-spacing: 0em;
+
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.7;
+  --text-lead--letter-spacing: 0em;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-small--letter-spacing: 0.01em;
+
+  --text-tiny: 0.75rem;
+  --text-tiny--line-height: 1.4;
+  --text-tiny--letter-spacing: 0.01em;
+  
+  /* Breakpoints (Phase 3 Spatial Architecture) */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
+
+  /* Phase 3: Fluid Section Paddings (Macro-Spacing) */
+  --spacing-section-sm: clamp(3rem, 2rem + 4vw, 5rem);
+  --spacing-section-base: clamp(4rem, 3rem + 5vw, 6rem);
+  --spacing-section-lg: clamp(5rem, 4rem + 6vw, 8rem);
+
+  /* Export spacing tokens to Tailwind */
+  --spacing-0: var(--space-0);
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-7: var(--space-7);
+  --spacing-8: var(--space-8);
+  --spacing-9: var(--space-9);
+  --spacing-10: var(--space-10);
+  --spacing-11: var(--space-11);
+  --spacing-12: var(--space-12);
+  --spacing-13: var(--space-13);
+  --spacing-section: var(--space-section);
+  --spacing-container: var(--space-container);
+  --spacing-gap: var(--space-gap);
+
+  /* Export elevation/shadow tokens */
+  --shadow-none: var(--shadow-0);
+  --shadow-elevated-1: var(--shadow-1);
+  --shadow-elevated-2: var(--shadow-2);
+  --shadow-elevated-3: var(--shadow-3);
+  --shadow-elevated-4: var(--shadow-4);
+  
+  /* Export semantic colors to Tailwind (Phase 2 Task 5.4) */
+  --color-brand-primary: var(--action-primary);
+  --color-brand-accent: var(--value-primary);
+  
+  --color-surface-default: var(--surface-primary);
+  --color-surface-muted: var(--surface-secondary);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-surface-dark: var(--surface-dark);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-on-primary: var(--text-on-accent);
+  --color-text-on-accent: var(--text-on-accent);
+  
+  --color-border-default: var(--border-medium);
+  --color-border-strong: var(--border-accent);
+
+  /* Phase 1: Warm-tinted border colors */
+  --color-border-warmlight: var(--color-border-warmlight);
+  --color-border-warm: var(--color-border-warm);
+  --color-border-warmdark: var(--color-border-warmdark);
+
+  --color-status-success: var(--color-success);
+  --color-status-error: var(--color-red-500);
+  --color-status-warning: var(--color-warning);
+  --color-status-info: var(--color-info);
+  --color-google-gold: var(--color-google-gold);
+
+  /* Phase 1: Brand-tinted elevation shadows */
+  --shadow-brand-1: var(--elevation-brand-1);
+  --shadow-brand-2: var(--elevation-brand-2);
+  --shadow-brand-3: var(--elevation-brand-3);
+  --shadow-brand-4: var(--elevation-brand-4);
+
+  /* Phase 1: Semantic radius aliases */
+  --radius-none: var(--radius-none);
+  --radius-xs: var(--radius-xs);
+  --radius-xl: var(--radius-xl);
+
+  /* Phase 2: Fluid Type Scale extensions */
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-4xl: var(--text-4xl);
+  --text-5xl: var(--text-5xl);
+
+  --tracking-tighter: var(--ls-display);
+  --tracking-tight: var(--ls-heading);
+  --tracking-normal: var(--ls-body);
+  --tracking-wide: var(--ls-small);
+  --tracking-widest: var(--ls-uppercase);
+
+  --leading-none: 1;
+  --leading-tight: var(--lh-5xl);
+  --leading-snug: var(--lh-3xl);
+  --leading-normal: var(--lh-base);
+  --leading-relaxed: var(--lh-sm);
+  --leading-loose: var(--lh-xs);
+}
+
+@layer base {
+  /* Form Elements Base & Accessibility */
+  input, textarea, select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    hyphens: auto;
+  }
+  
+  body {
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    font-variant-numeric: lining-nums;
+    word-break: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6, .typo-hero-display, .typo-h2, .typo-h3, .typo-h4-card {
+    text-rendering: optimizeLegibility;
+    text-wrap: balance;
+  }
+
+  p, .text-body, .text-lead {
+    text-wrap: pretty;
+  }
+
+  :root {
+    /* ======================================================================
+       EBENE 1 — PRIMITIVE TOKENS (Rohe Werte & Skalen)
+       ====================================================================== */
+
+    /* --- Phase 2: Fluid Type Scale (clamp) --- */
+    --text-xs: clamp(0.694rem, 0.65rem + 0.22vw, 0.8rem);     /* ~11px to 12.8px */
+    --text-sm: clamp(0.833rem, 0.78rem + 0.27vw, 1rem);       /* ~13.3px to 16px */
+    --text-base: clamp(1rem, 0.93rem + 0.33vw, 1.2rem);       /* 16px to 19.2px */
+    --text-lg: clamp(1.2rem, 1.12rem + 0.4vw, 1.44rem);       /* ~19.2px to 23.04px */
+    --text-xl: clamp(1.44rem, 1.34rem + 0.5vw, 1.728rem);     /* ~23px to 27.65px */
+    --text-2xl: clamp(1.728rem, 1.6rem + 0.63vw, 2.074rem);   /* ~27.6px to 33.2px */
+    --text-3xl: clamp(2.074rem, 1.92rem + 0.77vw, 2.488rem);  /* ~33.2px to 39.8px */
+    --text-4xl: clamp(2.488rem, 2.3rem + 0.94vw, 2.986rem);   /* ~39.8px to 47.8px */
+    --text-5xl: clamp(2.986rem, 2.76rem + 1.13vw, 3.583rem);  /* ~47.8px to 57.3px */
+
+    /* --- Phase 2: Line-Height Harmony --- */
+    --lh-xs: 1.7;
+    --lh-sm: 1.65;
+    --lh-base: 1.6;
+    --lh-lg: 1.5;
+    --lh-xl: 1.4;
+    --lh-2xl: 1.3;
+    --lh-3xl: 1.2;
+    --lh-4xl: 1.15;
+    --lh-5xl: 1.05;
+
+    /* --- Phase 2: Letter Spacing Precision --- */
+    --ls-display: -0.025em;
+    --ls-heading: -0.015em;
+    --ls-body: 0em;
+    --ls-small: 0.015em;
+    --ls-uppercase: 0.075em;
+
+
+    /* --- Phase 2: Vertical Rhythm Baseline System --- */
+    --spacing-baseline: 8px;
+    --spacing-p-baseline: calc(var(--spacing-baseline) * 3); /* 24px */
+    --spacing-h-top: calc(var(--spacing-baseline) * 4);      /* 32px */
+    --spacing-h-bottom: calc(var(--spacing-baseline) * 1);   /* 8px */
+
+    /* --- 1.1 Mathematisches Abstands-Raster (4px-Basis, lückenlos) --- */
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 40px;
+    --space-9: 48px;
+    --space-10: 64px;
+    --space-11: 80px;
+    --space-12: 96px;
+    --space-13: 128px;
+    
+    /* Fluid Spacing */
+    --space-section: clamp(48px, 8vw, 96px);
+    --space-container: clamp(16px, 4vw, 48px);
+    --space-gap: clamp(16px, 2vw, 24px);
+
+    /* --- 1.2 Typografie-Skala (in @theme ausgelagert) --- */
+
+    /* --- 1.3 Schatten-Definitionen (Elevation System, Phase 2 Task 4) --- */
+    --shadow-color-rgb: 24, 24, 27; /* Markenfarbe Charcoal 900 statt reinem Schwarz */
+    --shadow-0: none;
+    --shadow-1: 0 1px 3px rgba(var(--shadow-color-rgb), 0.08), 0 1px 2px rgba(var(--shadow-color-rgb), 0.06);
+    --shadow-2: 0 4px 8px rgba(var(--shadow-color-rgb), 0.10), 0 2px 4px rgba(var(--shadow-color-rgb), 0.06);
+    --shadow-3: 0 8px 24px rgba(var(--shadow-color-rgb), 0.12), 0 4px 8px rgba(var(--shadow-color-rgb), 0.08);
+    --shadow-4: 0 16px 48px rgba(var(--shadow-color-rgb), 0.16), 0 8px 16px rgba(var(--shadow-color-rgb), 0.10);
+
+    /* --- 1.4 Border-Radius-Werte --- */
+    --radius-4: 4px;
+    --radius-8: 8px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-24: 24px;
+    --radius-full: 9999px;
+
+    /* --- 1.4a Semantische Radius-Aliase (Phase 1 Design Foundation) --- */
+    --radius-none: 0;
+    --radius-xs: var(--radius-4);   /* 4px — Buttons, Form-Inputs (technisch, präzise) */
+    --radius-sm: var(--radius-8);   /* 8px — Kleine Cards, Komponenten (balanciert) */
+    /* --radius-md already defined in Tier 4 as var(--radius-8) */
+    /* --radius-lg already defined in Tier 4 as var(--radius-16) */
+    --radius-xl: var(--radius-24);  /* 24px — Premium-Highlight, Badges */
+    /* --radius-full already defined above */
+
+    /* --- 1.4b Border-Breiten-Token (Phase 1) --- */
+    --border-width-thin: 1px;       /* Standard: Cards, Inputs */
+    --border-width-normal: 2px;     /* Focus-Rings, Button Secondary */
+    --border-width-thick: 4px;      /* Besondere Hervorhebung (rare) */
+
+    /* --- 1.4c Warm-getönte Border-Farben (Phase 1) --- */
+    /* Hue 20° = sanftes Orange, harmoniert mit Ember-Palette */
+    --color-border-warmlight: hsl(20, 15%, 92%); /* Subtile warme Border auf weißen Flächen */
+    --color-border-warm: hsl(20, 10%, 78%);      /* Standard warm-getönte Border */
+    --color-border-warmdark: hsl(20, 10%, 55%);   /* Starke warm-getönte Border */
+
+    /* --- 1.5a 12-Spalten-Grid-System --- */
+    --grid-columns: 12;
+    --grid-gutter: var(--space-gap);
+    --grid-margin: var(--space-container);
+
+    /* --- 1.5 Animations-Duration-Token (Phase 5) --- */
+    /* REGEL: Keine Animation darf > 1000ms dauern. */
+    --duration-instant: 100ms;
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 400ms;
+    --duration-slower: 600ms;
+    --duration-slowest: 1000ms;
+
+    /* Legacy-Aliases (Rückwärtskompatibilität) */
+    --duration-150: var(--duration-fast);
+    --duration-200: 200ms;
+    --duration-250: var(--duration-normal);
+    --duration-300: 300ms;
+    --duration-400: var(--duration-slow);
+    --duration-600: var(--duration-slower);
+    --duration-800: 800ms;
+    --duration-1800: 1800ms;
+
+    /* --- 1.6 Physics-based Easing-Kurven (Phase 5) --- */
+    /* Keine lineare Animation darf existieren — jede Bewegung folgt physik. Kurve */
+    --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);         /* IN den Viewport: Ball auf Kissen */
+    --ease-in: cubic-bezier(0.4, 0.0, 1, 1);             /* AUS dem Viewport: Fallender Stein */
+    --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);       /* Position wechseln: Sanfter Start + Ende */
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);    /* Hover-Lifts: Leichtes Überschwingen */
+    --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Seidenweich, elegant */
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Spielerisch: Stärkeres Überschwingen */
+
+    /* --- 1.7 Stagger-Token (Phase 5) --- */
+    --stagger-fast: 50ms;
+    --stagger-normal: 100ms;
+    --stagger-slow: 150ms;
+
+    /* --- 1.6 Primitive Farbpalette (Neu: Charcoal/Red Basis) --- */
+    /* Weiße und Neutrale Töne */
+    --color-white: #FFFFFF;
+    --color-off-white: #FAFAFA;
+    --color-warm-white: #F5F3F0;
+    --color-light-gray: #EDEDED;
+    --color-mid-gray: #737373; /* Erhöhter Kontrast für WCAG AA */
+    --color-dark-gray: #4A4A4A;
+
+    /* Premium-Rot-Palette (Signal-Rot — Handlung & Dringlichkeit) */
+    --color-red-50: #FEF2F2;
+    --color-red-100: #FEE2E2;
+    --color-red-200: #FECACA;
+    --color-red-300: #FCA5A5;
+    --color-red-400: #F87171;
+    --color-red-500: #DC2626;  /* Kern-Rot */
+    --color-red-600: #B91C1C;
+    --color-red-700: #991B1B;
+    --color-rose-500: #fb7185; /* Fokusring Hell */
+    --color-red-800: #7F1D1D;
+    --color-red-900: #450A0A;
+
+    /* Glut-Warm-Palette (Vertrauen & Wertigkeit) */
+    --color-ember-50: #FFF8F5;   /* Cremig-warmer Hauch */
+    --color-ember-100: #FFEDE6;  /* Hover-Tönung */
+    --color-ember-200: #FFD6C7;  /* Hervorgehobene Karten-Ränder */
+    --color-ember-300: #FFB8A0;  /* Subtile Akzente */
+    --color-ember-400: #D4634B;  /* Icons auf hellen Hintergründen */
+    --color-ember-500: #B8432A;  /* Kern-Warm — erdig, vertrauensbildend */
+    --color-ember-600: #9C3520;  /* Preiszahlen, Link-Hover */
+    --color-ember-700: #7D2918;  /* Bordeaux-Akzente in Text */
+    --color-ember-800: #5E1F12;  /* Tiefe Akzente */
+    --color-ember-900: #3D1209;  /* Tiefster Ton für Kontraste */
+
+    /* Rosé-Elegant-Palette (Premium & Atmosphäre) */
+    --color-blush-50: #FFF5F7;   /* Hauchfeiner rosiger Schimmer */
+    --color-blush-100: #FFE8EE;  /* Atmosphärische Akzente */
+    --color-blush-200: #FFC8D6;  /* Dekorative Elemente */
+    --color-blush-300: #FFA8BC;  /* Helle Dekorationen */
+    --color-blush-400: #D4728A;  /* Dekorative Anführungszeichen */
+    --color-blush-500: #B85070;  /* Kern-Rosé — edel, subtil */
+    --color-blush-600: #9C3D5C;  /* Glasmorphismus-Kantenschimmer */
+    --color-blush-700: #7D2E48;  /* Tiefe atmosphärische Akzente */
+    --color-blush-800: #5E2236;  /* Sehr tiefe Akzente */
+    --color-blush-900: #3D1524;  /* Tiefster Ton */
+
+    /* Dunkle Struktur-Palette (Charcoal - Die neue Anker-Farbe) */
+    --color-charcoal-50: #F7F7F8;
+    --color-charcoal-100: #E8E8EA;
+    --color-charcoal-200: #D1D1D6;
+    --color-charcoal-300: #A1A1AA;
+    --color-charcoal-400: #71717A;
+    --color-charcoal-500: #63636C;
+    --color-charcoal-600: #52525B;
+    --color-charcoal-700: #3F3F46;
+    --color-charcoal-800: #27272A;
+    --color-charcoal-900: #18181B; /* Hero & Footer Background */
+    --color-charcoal-950: #09090B;
+
+    /* Funktionale Farben */
+    --color-success: #16A34A;
+    --color-warning: #EAB308;
+    --color-info: #2563EB;
+    --color-google-gold: #FBBC04;
+
+    /* Metallic-Akzente */
+    --color-metallic-silver: #C0C0C8;
+    --color-metallic-warm: #B8A088;
+
+
+    /* ======================================================================
+       EBENE 2 — SEMANTISCHE TOKENS & ELEVATION (80/15/5 REGEL)
+       ====================================================================== */
+
+    /* --- 2.1 Oberflächen --- */
+    --surface-primary: var(--color-white);
+    --surface-secondary: var(--color-off-white);
+    --surface-elevated: var(--color-white);
+    --surface-dark: var(--color-charcoal-900);
+    --surface-dark-elevated: var(--color-charcoal-800);
+    --surface-accent: var(--color-red-50);
+
+    /* --- 2.2 Text --- */
+    --text-primary: var(--color-charcoal-900);
+    --text-secondary: var(--color-dark-gray);
+    --text-tertiary: var(--color-mid-gray);
+    --text-on-dark: var(--color-charcoal-50);
+    --text-on-dark-secondary: rgba(247,247,248,0.75);
+    --text-accent: var(--color-red-600);
+    --text-on-accent: var(--color-white);
+
+    /* --- 2.3 Interaktive Elemente & Semantische Drei-Paletten-Logik --- */
+    
+    /* Handlung (Signal-Rot) */
+    --action-primary: var(--color-red-500);
+    --action-primary-hover: var(--color-red-600);
+    --action-primary-active: var(--color-red-700);
+    --action-shadow-tint: rgba(220, 38, 38, 0.25);
+    
+    /* Wert & Vertrauen (Glut-Warm) */
+    --value-primary: var(--color-ember-500);
+    --value-icon-bg: var(--color-ember-50);
+    --value-icon-color: var(--color-ember-400);
+    --value-price: var(--color-ember-600);
+    --value-accent-border: var(--color-ember-200);
+    --value-hover-border: var(--color-ember-200);
+    --value-link-hover: var(--color-ember-600);
+    
+    /* Atmosphäre & Premium (Rosé-Elegant) */
+    --atmosphere-glow: var(--color-blush-500);
+    --atmosphere-glass-edge: var(--color-blush-200);
+    --atmosphere-quote: var(--color-blush-400);
+    --atmosphere-accent: var(--color-blush-100);
+    --atmosphere-focus: var(--color-blush-500);
+    --atmosphere-footer-glow: var(--color-blush-500);
+
+    /* Legacy-Interaktiv (Rückwärtskompatibilität) */
+    --interactive-primary: var(--action-primary);
+    --interactive-primary-hover: var(--action-primary-hover);
+    --interactive-primary-active: var(--action-primary-active);
+    --interactive-secondary: var(--color-charcoal-800);
+    --interactive-secondary-hover: var(--color-charcoal-900);
+    --interactive-ghost: transparent;
+    --interactive-ghost-hover: var(--color-red-50);
+    --interactive-ghost-hover-dark: rgba(255,255,255,0.1);
+
+    /* --- 2.4 Ränder und Schatten (Farben) --- */
+    --border-subtle: var(--color-light-gray);
+    --border-medium: var(--color-charcoal-200);
+    --border-accent: var(--color-red-200);
+    --border-on-dark: rgba(255,255,255,0.12);
+
+    /* --- 2.5 Das 5-stufige Erhebungssystem (Getöntes Schatten-System) --- */
+    --elevation-0: none;
+    --elevation-1: 0 1px 3px rgba(24, 24, 27, 0.06), 0 1px 2px rgba(24, 24, 27, 0.04);
+    --elevation-2: 0 4px 12px rgba(24, 24, 27, 0.08), 0 2px 4px rgba(24, 24, 27, 0.04);
+    --elevation-3: 0 8px 24px rgba(24, 24, 27, 0.12), 0 4px 8px rgba(24, 24, 27, 0.06);
+    --elevation-4: 0 12px 40px rgba(24, 24, 27, 0.16), 0 6px 12px rgba(24, 24, 27, 0.06);
+
+    /* --- 2.5a Brand-getönte Elevation (Ember-Hue-Tint, Phase 1) --- */
+    /* Alternative zu Charcoal-Schatten: Ember-Warm (hue 14°) für Cards mit Wärme-Effekt */
+    --elevation-brand-1: 0 1px 3px hsla(14, 73%, 42%, 0.06), 0 1px 2px hsla(14, 73%, 42%, 0.04);
+    --elevation-brand-2: 0 4px 12px hsla(14, 73%, 42%, 0.08), 0 2px 4px hsla(14, 73%, 42%, 0.04);
+    --elevation-brand-3: 0 8px 24px hsla(14, 73%, 42%, 0.12), 0 4px 8px hsla(14, 73%, 42%, 0.06);
+    --elevation-brand-4: 0 12px 40px hsla(14, 73%, 42%, 0.16), 0 6px 12px hsla(14, 73%, 42%, 0.06);
+
+    /* CTA-Schatten (Rot-getönt für magnetische Wirkung) */
+    --shadow-cta: 0 4px 14px rgba(220, 38, 38, 0.25);
+    --shadow-cta-hover: 0 6px 20px rgba(220, 38, 38, 0.35);
+    --shadow-cta-active: 0 2px 8px rgba(220, 38, 38, 0.3);
+
+    /* Schatten auf dunklen Oberflächen */
+    --shadow-on-dark-1: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-on-dark-2: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+    /* Z-Index Skala (Semantisch) */
+    --z-dropdown: 40;
+    --z-sticky: 50;
+    --z-mobile-bar: 60;
+    --z-overlay: 70;
+    --z-modal: 80;
+
+    /* Basis Variablen für Hintergrund und Text */
+    --background: var(--surface-primary);
+    --foreground: var(--text-primary);
+
+    /* --- STRESS-RESISTENTE TYPOGRAFIE-SKALA (9 Stufen) --- */
+    /* Die folgenden Klassen nutzen font-display (Plus Jakarta Sans) und font-body (DM Sans) */
+
+    /* Stufe 1 — HERO-DISPLAY */
+    .typo-hero-display {
+      font-family: var(--font-display);
+      font-weight: 800; /* Extra-Bold */
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    }
+
+    /* Stufe 2 — TELEFONNUMMER-DISPLAY */
+    .typo-phone-display {
+      font-family: var(--font-display);
+      font-weight: 700; /* Bold */
+      line-height: 1.2;
+      letter-spacing: 0.01em; /* Ziffern brauchen Luft */
+      font-size: clamp(1.5rem, 3vw + 0.5rem, 2.4rem); /* Mindestens 60% der Hero-Größe */
+    }
+
+    /* Stufe 3 — SEKTIONS-HEADLINES (H2) */
+    .typo-h2 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+      margin-top: 2em; /* Asymmetrischer Rhythmus 4:1 */
+      margin-bottom: 0.5em; /* Auf Basis des 4px-Rasters skaliert */
+    }
+
+    /* Stufe 4 — UNTER-HEADLINES (H3) */
+    .typo-h3 {
+      font-family: var(--font-display);
+      font-weight: 600; /* Semi-Bold */
+      line-height: 1.3;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    /* Stufe 5 — KARTEN-TITEL (H4) */
+    .typo-h4-card {
+      font-family: var(--font-display);
+      font-weight: 600;
+      line-height: 1.3;
+      font-size: 1.25rem;
+    }
+
+    /* Stufe 6 — LEAD-TEXT */
+    .typo-lead {
+      font-family: var(--font-body);
+      font-weight: 400; /* Regular */
+      line-height: 1.7;
+      font-size: clamp(1.125rem, 2vw, 1.25rem);
+      margin-bottom: 1.5em;
+    }
+
+    /* Stufe 7 — BODY-TEXT */
+    .typo-body {
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 16px; /* KONSTANT 16px */
+      max-width: 65ch; /* Maximale Zeilenlänge */
+      margin-bottom: 1.5em; /* 1.5em Paragraph Spacing */
+    }
+
+    /* Stufe 8 — SMALL-TEXT */
+    .typo-small {
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: 0.875rem;
+    }
+
+    /* Stufe 9 — TINY-TEXT */
+    .typo-tiny {
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.4;
+      font-size: 0.75rem; /* 12px */
+    }
+
+    /* --- SONDERKLASSEN --- */
+    
+    /* Preis-Display */
+    .typo-price-display {
+      font-family: var(--font-display);
+      font-weight: 800;
+      color: var(--color-ember-600); /* Glut-Warm-600 */
+      letter-spacing: -0.01em;
+      font-size: clamp(3rem, 6vw, 5rem);
+      line-height: 1;
+    }
+    .typo-price-currency {
+      font-size: 50%; /* € Zeichen in 50% der Größe */
+    }
+
+    /* CTA-BUTTON-TEXT */
+    .typo-cta-button {
+      font-family: var(--font-display);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    /* VERSALIEN/LABELS */
+    .typo-label-caps {
+      font-family: var(--font-display);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* --- KINETISCHE EFFEKTE --- */
+    .nav-link-wave {
+      position: relative;
+      display: inline-block;
+    }
+    .nav-link-wave::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-red-500);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    .nav-link-wave:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+
+
+
+
+    /* ======================================================================
+       EBENE 3 — KOMPONENTEN TOKENS
+       ====================================================================== */
+
+    /* Hero */
+    --hero-bg: var(--surface-dark);
+    --hero-text: var(--text-on-dark);
+    --hero-accent: var(--color-red-500);
+    --hero-card-bg: rgba(255,255,255,0.06);
+    --hero-card-border: rgba(255,255,255,0.1);
+    --hero-card-bg-hover: rgba(255,255,255,0.12);
+    --hero-glow-color: var(--atmosphere-glow);
+    --glass-edge-shimmer: var(--atmosphere-glass-edge);
+
+    /* Header */
+    --header-bg-initial: transparent;
+    --header-bg-scrolled: rgba(255,255,255,0.95);
+    --header-text-initial: var(--color-white);
+    --header-text-scrolled: var(--color-charcoal-900);
+    --header-shadow-scrolled: 0 1px 3px rgba(0,0,0,0.08);
+
+    /* CTA Button (generell) */
+    --cta-button-bg: var(--action-primary);
+    --cta-button-text: var(--text-on-accent);
+    --cta-button-shadow: var(--shadow-cta);
+    --cta-button-shadow-hover: var(--shadow-cta-hover);
+
+    /* Price Card */
+    --price-card-bg: var(--surface-elevated);
+    --price-card-shadow: var(--elevation-2);
+    --price-card-highlight-shadow: 0 8px 30px rgba(220, 38, 38, 0.15), 0 4px 12px rgba(24, 24, 27, 0.08);
+    --price-number: var(--value-price);
+    --price-card-accent: var(--value-primary);
+
+    /* Service Card */
+    --service-card-bg: var(--surface-elevated);
+    --service-card-shadow: var(--elevation-1);
+    --service-card-shadow-hover: var(--elevation-3);
+    --service-card-icon-bg: var(--value-icon-bg);
+    --service-card-icon-color: var(--value-icon-color);
+
+    /* Review Card */
+    --review-card-bg: var(--surface-elevated);
+    --review-card-accent-top: var(--value-primary);
+    --review-card-quote-color: rgba(184, 80, 112, 0.1);
+
+    /* Footer */
+    --footer-bg: var(--color-charcoal-950);
+    --footer-text: var(--text-on-dark-secondary);
+    --footer-heading: var(--color-white);
+    --footer-accent: var(--color-red-400);
+    --footer-border: rgba(255,255,255,0.08);
+    --footer-glow: var(--atmosphere-footer-glow);
+
+    /* Mobile Sticky Bar */
+    --mobile-sticky-bg: var(--action-primary);
+    --mobile-sticky-text: var(--color-white);
+
+    /* Glasmorphismus */
+    --glass-bg-dark: rgba(255,255,255,0.06);
+    --glass-border-dark: rgba(255,255,255,0.1);
+    --glass-blur: blur(12px);
+    --glass-bg-dark-hover: rgba(255,255,255,0.12);
+    --glass-bg-light: rgba(255,255,255,0.85);
+    --glass-border-light: rgba(0,0,0,0.06);
+    --glass-blur-light: blur(16px);
+    --glass-metal-edge: linear-gradient(
+      to right,
+      transparent,
+      rgba(255,200,214, 0.15) 30%,
+      rgba(255,200,214, 0.2) 50%,
+      rgba(255,200,214, 0.15) 70%,
+      transparent
+    );
+
+    /* ======================================================================
+       EBENE 3.5 — PRIMITIVE DEFINITIONEN FÜR TIER-4-REFERENZEN
+       Aufgelöst aus bestehenden Typography-Klassen und Spacing-Skala.
+       ====================================================================== */
+
+    /* --- Font-Size Primitives (für clamp() Referenzen in Tier 4) --- */
+    --font-size-12: 0.75rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+
+    /* --- Typography Composite Tokens (abgeleitet aus .typo-* Klassen) --- */
+    --typo-section-heading-size: clamp(2rem, 4vw + 0.5rem, 3rem);
+    --typo-section-heading-leading: 1.2;
+    --typo-section-heading-tracking: -0.01em;
+
+    --typo-body-size: 1rem;
+    --typo-body-weight: 400;
+    --typo-body-leading: 1.6;
+    --typo-body-max-width: 65ch;
+
+    --typo-headline-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    --typo-headline-weight: 800;
+    --typo-headline-tracking: -0.02em;
+    --typo-headline-leading: 1.1;
+
+    --typo-phone-size: clamp(1.5rem, 3vw + 0.5rem, 2.4rem);
+    --typo-phone-weight: 700;
+    --typo-phone-tracking: 0.01em;
+    --typo-phone-leading: 1.2;
+
+    --typo-price-size: clamp(3rem, 6vw, 5rem);
+    --typo-price-weight: 800;
+
+    --typo-micro-size: 0.75rem;
+    --typo-micro-weight: 400;
+
+    /* --- Px-Named Spacing Aliases (für Layout-Token clamp() Referenzen) --- */
+    --space-12: var(--space-3);     /* 12px */
+    --space-16: var(--space-4);     /* 16px */
+    --space-20: var(--space-5);     /* 20px */
+    --space-32: var(--space-7);     /* 32px */
+    --space-48: var(--space-9);     /* 48px */
+    --space-64: var(--space-10);    /* 64px */
+    --space-96: var(--space-12);    /* 96px */
+    --space-128: var(--space-13);   /* 128px */
+
+    /* ======================================================================
+       EBENE 4 — GHOST-TOKEN DEFINITIONEN (Referenziert, bisher undefiniert)
+       ====================================================================== */
+
+    /* --- 4.1 Typografie-Aliase (mapping zu bestehenden Composite-Tokens) --- */
+    --text-h2: var(--typo-section-heading-size);
+    --text-h4: clamp(var(--font-size-18), 2vw + 0.5rem, var(--font-size-24));
+    --text-lead: clamp(var(--font-size-16), 1.5vw + 0.5rem, var(--font-size-20));
+    --text-body: var(--typo-body-size);
+    --text-small: var(--font-size-14);
+    --text-tiny: var(--font-size-12);
+
+    /* --- 4.2 Zeilenhöhe-Aliase --- */
+    --leading-h: var(--typo-section-heading-leading);
+    --leading-lead: 1.6;
+    --leading-body: var(--typo-body-leading);
+    --leading-subh: 1.3;
+    --leading-small: 1.5;
+
+    /* --- 4.3 Letter-Spacing-Aliase --- */
+    --tracking-heading: var(--typo-section-heading-tracking);
+    --tracking-cta: 0.02em;
+    --tracking-caps: 0.08em; /* Leicht enger für eleganteren Look */
+    --tracking-loose: 0.05em;
+    --tracking-tight: -0.02em;
+
+    /* --- 4.4 Layout-Tokens --- */
+    --section-px: clamp(var(--space-16), 5vw, var(--space-32));
+    --section-py: clamp(var(--space-64), 10vw, var(--space-128));
+    --section-py-compact: clamp(var(--space-48), 8vw, var(--space-96));
+    --prose-width: 65ch;
+
+    /* --- 4.5 Fehlende Radius-Tokens --- */
+    --radius-lg: var(--radius-16);
+    --radius-md: var(--radius-8);
+
+    /* --- 4.6 Fehlende Farb-Tokens --- */
+    --color-cta-bg: var(--color-red-500);
+    --color-success-light: #F0FDF4;
+
+    /* --- Legacy mapping for compatibility --- */
+    --color-brand-primary: var(--color-charcoal-900);
+    --color-cta-action: var(--color-red-600);
+    --color-border: var(--border-subtle);
+    --color-surface-default: var(--surface-primary);
+    --shadow-sm: var(--elevation-1);
+    --shadow-md: var(--elevation-2);
+    --shadow-lg: var(--elevation-3);
+    --shadow-xl: var(--elevation-4);
+    --shadow-brand-glow: var(--shadow-cta);
+
+    --shadow-card-default: var(--shadow-sm);
+    --shadow-card-hover: var(--shadow-xl);
+    --radius-card: var(--radius-16);
+    --radius-button: var(--radius-8);
+    --radius-badge: var(--radius-24);
+    --spacing-section: clamp(var(--space-12), 8vw, var(--space-20));
+    --spacing-card-internal: var(--space-6);
+    --color-hero-base: var(--hero-bg);
+    --color-hero-text: var(--hero-text);
+    --cta-block-headline-size: var(--typo-phone-size);
+  }
+
+  /* Dark Mode entfernt — Light-Only Design */
+
+  /* Global selection highlight */
+  ::selection {
+    background: rgba(220, 38, 38, 0.3);
+    /* Brand/Crimson Selection */
+    color: var(--color-white);
+  }
+
+  /* Branded focus ring — WCAG 2.1 AA compliant */
+  :focus-visible {
+    outline: 2px solid var(--focus-color, var(--color-rose-500));
+    outline-offset: 2px;
+    border-radius: inherit;
+    transition: outline-color 150ms ease-in-out;
+  }
+  
+  .dark-focus {
+    --focus-color: var(--color-red-400);
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Global heading typography — display font for all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), var(--font-body), system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ── Scroll Containment (unlayered to beat Tailwind preflight) ──
+   Forces body to be the scroll container instead of html.
+   Prevents stale documentElement.scrollHeight after
+   Next.js client-side navigation (ghost scroll past footer). */
+html {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+body {
+  height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+
+  /* Phase 2: Readability Measures */
+  .prose-body { max-width: 65ch; }
+  .prose-heading { max-width: 35ch; }
+
+  /* Elevation utility classes (Token-basiert) */
+  .elevation-1 { box-shadow: var(--elevation-1); }
+  .elevation-2 { box-shadow: var(--elevation-2); }
+  .elevation-3 { box-shadow: var(--elevation-3); }
+  .elevation-4 { box-shadow: var(--elevation-4); }
+
+  /* Hover-Lift: Karte hebt sich bei Hover an (Phase 4) */
+  .hover-lift {
+    transition: transform var(--duration-normal) var(--ease-spring),
+                box-shadow var(--duration-normal) var(--ease-spring);
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: var(--elevation-3);
+  }
+  .hover-lift:active {
+    transform: translateY(-2px) scale(0.99);
+    box-shadow: var(--elevation-1);
+    transition-duration: var(--duration-instant);
+  }
+  /* Card-Bild-Zoom bei Hover */
+  .hover-lift img,
+  .hover-lift [data-card-image] {
+    transition: transform var(--duration-normal) var(--ease-out);
+  }
+  .hover-lift:hover img,
+  .hover-lift:hover [data-card-image] {
+    transform: scale(1.05);
+  }
+
+  /* Asymmetrische Abstandsregel: 4× Raum VOR Überschrift, 1× NACH */
+  .section-heading-spacing {
+    margin-top: var(--space-64);
+    margin-bottom: var(--space-16);
+  }
+
+
+  .glass-panel {
+    background: var(--glass-bg-dark);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-panel-hover:hover {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .text-hierarchy-1 {
+    font-size: var(--typo-headline-size);
+    font-weight: var(--typo-headline-weight);
+    letter-spacing: var(--typo-headline-tracking);
+    line-height: var(--typo-headline-leading);
+  }
+
+  .text-hierarchy-2 {
+    font-size: var(--typo-phone-size);
+    font-weight: var(--typo-phone-weight);
+    letter-spacing: var(--typo-phone-tracking);
+    line-height: var(--typo-phone-leading);
+  }
+
+  .text-hierarchy-3 {
+    font-size: var(--typo-price-size);
+    font-weight: var(--typo-price-weight);
+  }
+
+  .text-hierarchy-4 {
+    font-size: var(--typo-body-size);
+    font-weight: var(--typo-body-weight);
+    line-height: var(--typo-body-leading);
+    max-width: var(--typo-body-max-width);
+  }
+
+  .text-hierarchy-5 {
+    font-size: var(--typo-micro-size);
+    font-weight: var(--typo-micro-weight);
+  }
+
+  .animate-heartbeat-cta {
+    animation: heartbeat 3s infinite var(--ease-spring);
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  /* Animated link underline (left → right on hover) */
+  .link-underline {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width var(--duration-300) var(--ease-spring);
+  }
+
+  .link-underline:hover::after {
+    width: 100%;
+  }
+
+@keyframes ring {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0); }
+}
+
+.animate-ring {
+  animation: ring 0.5s ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1.02);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1.025);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - var(--space-4)/2));
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =============================================
+   ANIMATIONS-ORGANISMUS — Interaktions-Klassen
+   ============================================= */
+
+/* CTA Herzschlag-Doppelpuls (3s Zyklus, subtil unterbewusst) */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.02); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.04); }
+  60% { transform: scale(1); }
+}
+
+.heartbeat-pulse {
+  animation: heartbeat 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+.heartbeat-pulse:hover {
+  animation-play-state: paused;
+}
+
+/* Reduced-Motion: Statischer roter Glow statt Puls */
+.heartbeat-static-glow {
+  box-shadow: 0 0 20px rgba(185, 28, 28, 0.25), 0 4px 16px rgba(185, 28, 28, 0.15);
+}
+
+/* Link-Unterstreichung (L→R animiert) */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-red-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* Pfeil-Overshoot (Mehr erfahren →) */
+.arrow-overshoot {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .arrow-overshoot,
+*:hover > .arrow-overshoot {
+  transform: translateX(6px);
+}
+
+/* Ghost-Button halbtransparente Füllung */
+.ghost-button-fill {
+  position: relative;
+  overflow: hidden;
+}
+
+.ghost-button-fill::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: inherit;
+}
+
+.ghost-button-fill:hover::before {
+  opacity: 0.06;
+}
+
+/* FAQ Hover-Akzent */
+.faq-hover-accent {
+  transition: background-color 0.2s ease;
+}
+
+.faq-hover-accent:hover {
+  background-color: var(--surface-tertiary, rgba(0,0,0,0.02));
+}
+
+/* =============================================
+   PHASE 4 — ANIMATIONS-SCHICHT
+   ============================================= */
+
+/* --- Button Spring-Easing (CSS Fallback für --ease-spring) --- */
+button,
+[role="button"],
+a[class*="button"],
+.btn {
+  transition-timing-function: var(--ease-spring);
+}
+
+/* --- Input-Fokus-Animation --- */
+input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  transition: border-color var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out);
+}
+
+input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-red-500, #dc2626);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+/* --- Validation-Shake (1x, 400ms) --- */
+@keyframes validationShake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-6px); }
+  30% { transform: translateX(6px); }
+  45% { transform: translateX(-4px); }
+  60% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  90% { transform: translateX(2px); }
+}
+.shake-error {
+  animation: validationShake 0.4s var(--ease-out);
+}
+
+/* --- Akkordeon Smooth-Height (grid-row-Trick) --- */
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--duration-slow) var(--ease-out);
+  overflow: hidden;
+}
+.accordion-content[data-state="open"],
+.accordion-content.is-open {
+  grid-template-rows: 1fr;
+}
+.accordion-content > * {
+  overflow: hidden;
+}
+
+/* Chevron-Rotation */
+.accordion-chevron {
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+[data-state="open"] > .accordion-chevron,
+.is-open > .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+/* --- CTA Shimmer-Aufmerksamkeit (alle 5s, dezent) --- */
+@keyframes ctaShimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.cta-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.cta-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+  animation: ctaShimmer 1.5s var(--ease-in-out) infinite;
+  animation-delay: 5s;
+  pointer-events: none;
+}
+
+/* --- Page-Entry Fade --- */
+@keyframes pageEntry {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main[id="main-content"] {
+  animation: pageEntry var(--duration-normal) var(--ease-out) both;
+}
+
+/* =============================================
+   REDUCED MOTION — Vollständig
+   ============================================= */
+@media (prefers-reduced-motion: reduce) {
+  .heartbeat-pulse {
+    animation: none !important;
+    box-shadow: 0 0 20px rgba(185, 28, 28, 0.25), 0 4px 16px rgba(185, 28, 28, 0.15);
+  }
+
+  .link-underline::after {
+    transition: none !important;
+    transform: scaleX(1);
+    opacity: 0.3;
+  }
+
+  .arrow-overshoot {
+    transition: none !important;
+  }
+
+  .animate-heartbeat-cta {
+    animation: none !important;
+  }
+
+  .animate-marquee {
+    animation: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-8px) scale(0.97); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+}
+
+.nav-link-indicator {
+  position: relative;
+}
+.nav-link-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: var(--color-red-500);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-link-indicator.active::after {
+  transform: scaleX(1);
+}
+.nav-link-indicator:not(.active):hover::after {
+  transform: scaleX(0.8);
+}
+
+  /* =============================================
+     PHASE 1 — SURFACE MATERIAL CLASSES
+     ============================================= */
+
+  /* Solid: Opake Farbe + Subtle Border (Standard für Cards, Container) */
+  .surface-solid {
+    background-color: var(--surface-elevated);
+    border: var(--border-width-thin) solid var(--border-subtle);
+  }
+
+  /* Glass: Frosted-Glass-Effekt (für Navigation, Overlays, Premium Floating) */
+  .surface-glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: var(--border-width-thin) solid var(--color-border-warmlight);
+    border-radius: var(--radius-md);
+  }
+
+  /* Gradient-Primary: CTA-Akzente, Hero-Bereiche */
+  .surface-gradient-primary {
+    background: linear-gradient(
+      135deg,
+      var(--color-red-500) 0%,
+      var(--color-red-700) 100%
+    );
+  }
+
+  /* Gradient-Subtle: Sektions-Hintergründe, sanfte Tiefe */
+  .surface-gradient-subtle {
+    background: linear-gradient(
+      135deg,
+      var(--color-off-white) 0%,
+      var(--color-charcoal-50) 100%
+    );
+  }
+
+  /* Warm-Gradient: Vertrauens-Sektion (Ember-getönt) */
+  .surface-gradient-warm {
+    background: linear-gradient(
+      135deg,
+      var(--color-ember-50) 0%,
+      var(--color-off-white) 100%
+    );
+  }
+
+  /* Divider: Gradient-Trennlinie (horizontal) */
+  .divider-gradient {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--border-medium),
+      transparent
+    );
+  }
+
+  /* Divider: Ausblendend (subtiler als gradient) */
+  .divider-fade {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-border-warmlight),
+      transparent
+    );
+  }
+
+} /* ← Close @layer utilities */
+
+/* =============================================
+   VIEWPORT-ADAPTIVE INTERAKTION (POINTER)
+   ============================================= */
+
+/* Maus-Nutzer: Hover aktiv */
+@media (pointer: fine) {
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Touch-Nutzer: Hover deaktivieren, Fokus-Ring bei Tap unterdrücken */
+@media (pointer: coarse) {
+  .hover-lift:hover {
+    transform: none;
+  }
+  
+  /* Touch-Targets konsequent erweitern */
+  button, 
+  [role="button"], 
+  a[href].min-h-\[48px\] {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* =============================================
+   PHASE 8 — DOPPELTER FOKUSRING (ÜBERALL SICHTBAR)
+   ============================================= */
+
+/* Keyboard focus → Double ring: white + brand */
+:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+  box-shadow:
+    0 0 0 2px var(--color-white),
+    0 0 0 4px var(--color-red-500);
+}
+
+
+
+/* On dark surfaces (hero, footer): ensure visibility */
+[class*="bg-charcoal"], [class*="surface-dark"] {
+  & :focus-visible {
+    outline-color: var(--color-charcoal-900);
+    box-shadow:
+      0 0 0 2px var(--color-charcoal-900),
+      0 0 0 4px var(--color-red-400);
+  }
+}
+
+/* Mouse click: suppress outline (show ONLY on keyboard Tab) */
+:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* =============================================
+   PHASE 8 — PLACEHOLDER-KONTRAST (4.5:1)
+   ============================================= */
+::placeholder {
+  color: var(--color-charcoal-400);
+  opacity: 1; /* Firefox fix */
+}
+
+/* =============================================
+   PHASE 7 — TOUCH VS. POINTER OPTIMIZATION
+   ============================================= */
+
+/* Pointer (mouse) devices: enable hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--elevation-3);
+  }
+}
+
+/* Touch (coarse pointer) devices: larger targets, no hover */
+@media (hover: none) and (pointer: coarse) {
+  /* Ensure minimum 48×48px touch targets */
+  button,
+  [role="button"],
+  a,
+  input,
+  select,
+  textarea,
+  [tabindex]:not([tabindex="-1"]) {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* Disable hover transforms on touch to prevent sticky hover states */
+  .hover-lift:hover {
+    transform: none;
+  }
+}
+
+/* Hybrid devices (Surface, iPad + keyboard): both hover and large targets */
+@media (any-hover: hover) and (any-pointer: coarse) {
+  button,
+  [role="button"],
+  a {
+    min-height: 44px;
+  }
+}
+
+/* =============================================
+   ERHÖHTER KONTRAST (AAA 7:1)
+   ============================================= */
+@media (prefers-contrast: more) {
+  :root {
+    --text-secondary: var(--color-charcoal-900);
+    --text-tertiary: var(--color-charcoal-800);
+    --border-subtle: var(--color-charcoal-400);
+    --border-medium: var(--color-charcoal-600);
+    --atmosphere-focus: var(--color-red-600);
+  }
+
+  /* Thicker focus indicators */
+  :focus-visible {
+    outline-width: 3px;
+    outline-offset: 3px;
+  }
+
+  /* Replace subtle shadows with solid borders */
+  .elevation-1, .elevation-2, .elevation-3, .elevation-4 {
+    box-shadow: none !important;
+    border: 2px solid var(--border-medium) !important;
+  }
+
+  /* Glasmorphism → solid */
+  .glass-panel,
+  .glass-panel-hover {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: var(--surface-elevated) !important;
+    border: 2px solid var(--border-medium) !important;
+  }
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    --text-primary: var(--color-charcoal-800);
+    --surface-primary: #FEFEFE;
+  }
+}
+
+/* =============================================
+   REDUZIERTE TRANSPARENZ (GLASMORPHISMUS AUS)
+   ============================================= */
+@media (prefers-reduced-transparency: reduce) {
+  .glass-panel,
+  .glass-panel-hover,
+  [class*="backdrop-blur"] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: var(--surface-primary) !important;
+  }
+}
+
+/* =============================================
+   WINDOWS HOCHKONTRAST-MODUS (FORCED COLORS)
+   ============================================= */
+@media (forced-colors: active) {
+  /* Accept system colors, ensure borders are visible */
+  button,
+  [role="button"],
+  a[class*="button"],
+  .btn {
+    border: 1px solid transparent;
+  }
+
+  /* SVG Icons inherit the forced text color */
+  svg {
+    color: currentColor;
+    fill: currentColor;
+  }
+
+  /* Use outline for focus (respects forced-colors) */
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  /* Elevation becomes border */
+  .elevation-1, .elevation-2, .elevation-3, .elevation-4 {
+    box-shadow: none;
+    border: 1px solid currentColor;
+  }
+}
+
+/* =============================================
+   PRINT STYLESHEET
+   ============================================= */
+@media print {
+  /* Hide non-essential elements */
+  nav,
+  footer,
+  header,
+  [data-mobile-bar],
+  .back-to-top,
+  .exit-intent,
+  .global-background,
+  .scroll-indicator,
+  .sticky-header,
+  .mobile-bottom-bar,
+  .cookie-banner,
+  [role="complementary"],
+  button:not([type="submit"]) {
+    display: none !important;
+  }
+
+  /* Reset colors for print */
+  body {
+    color: #000 !important;
+    background: #fff !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Show link URLs */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+    word-break: break-all;
+  }
+
+  /* Don't show URL for internal/anchor links */
+  a[href^="#"]::after,
+  a[href^="javascript"]::after,
+  a[href^="tel"]::after {
+    content: none;
+  }
+
+  /* Phone number special: show clearly */
+  a[href^="tel"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  /* Prevent page breaks inside important elements */
+  h1, h2, h3, h4 {
+    break-after: avoid;
+  }
+
+  img, table, figure, blockquote,
+  [class*="card"],
+  [class*="Card"] {
+    break-inside: avoid;
+  }
+
+  /* Remove background images and colors */
+  * {
+    print-color-adjust: economy;
+    -webkit-print-color-adjust: economy;
+  }
+
+  /* Remove shadows and borders for cleaner print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure images are visible */
+  img {
+    max-width: 100% !important;
+    filter: none !important;
+  }
+
+  /* Full-width layout */
+  .container,
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* =============================================
+   TOUCH TARGET ENFORCEMENT
+   ============================================= */
+@media (pointer: coarse) {
+  /* Ensure all interactive elements meet 48px minimum */
+  button:not(.icon-only),
+  [role="button"],
+  a:not(.inline-link),
+  input[type="checkbox"],
+  input[type="radio"],
+  select {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* Increase padding on form elements for fat fingers */
+  input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+/* =============================================
+   HERO ENTRANCE ANIMATION (CSS-ONLY)
+   ============================================= */
+@keyframes heroFadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-entrance {
+  animation: heroFadeSlideIn var(--duration-dramatic) var(--ease-out) both;
+}
+
+/* =============================================
+   INLINE LINK HOVER (PHASE 5)
+   ============================================= */
+.inline-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-brand-primary);
+  /* Make sure link outline is styled cleanly for focus */
+}
+.inline-link:focus-visible {
+  outline: none;
+  border-radius: var(--radius-xs);
+  box-shadow: 0 0 0 2px var(--surface-primary), 0 0 0 4px var(--color-brand-primary);
+}
+.inline-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width var(--duration-normal) var(--ease-out);
+}
+.inline-link:hover::after {
+  width: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@utility mask-image-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* ── Mobile-First: Touch Target Enforcement (WCAG 2.5.8) ── */
+@media (pointer: coarse) {
+  a, button, [role="button"], input, select, textarea, summary {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  /* Exempt inline text links and tiny icon-only elements that have adequate spacing */
+  .inline-link, [aria-hidden="true"] {
+    min-height: unset;
+    min-width: unset;
+  }
+}
