@@ -122,6 +122,10 @@ export default function RootLayout({
     {/* next/font self-hosts — no preconnect to Google Fonts CDN needed */}
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    {/* [PERF] Preload LCP element (logo) so it starts fetching during HTML parse,
+         independent of JS hydration. Without this, the logo waits for Next.js
+         App Router JS to execute before it can even start loading. */}
+    <link rel="preload" as="image" type="image/webp" href="/images/logo.webp" fetchPriority="high" />
     {/* ⚠️  Icons are now handled by the Metadata API `icons` object above.
          NO hardcoded <meta>, <link rel="icon">, or <link rel="alternate"> here.
          Duplicating them in JSX would conflict with the Metadata API output. */}
