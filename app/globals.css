@@ -1724,7 +1724,8 @@ main[id="main-content"] {
   }
 }
 .hero-entrance {
-  animation: heroFadeSlideIn var(--duration-dramatic) var(--ease-out) both;
+  opacity: 1; /* [SEO]: Explicit default — crawlers see this before animation */
+  animation: heroFadeSlideIn var(--duration-dramatic) var(--ease-out) forwards;
 }
 
 /* =============================================
