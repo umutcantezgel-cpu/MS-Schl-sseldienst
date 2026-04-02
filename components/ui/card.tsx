@@ -79,9 +79,9 @@ CardHeader.displayName = "Card.Header"
 // -------------------------------------------------------------------------
 // CARD TITLE
 // -------------------------------------------------------------------------
-const CardTitle = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLHeadingElement>>(
+const CardTitle = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
-    <h3
+    <div
       ref={ref}
       className={cn("typo-h4-card", className)}
       {...props}

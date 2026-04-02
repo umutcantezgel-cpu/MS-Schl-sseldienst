@@ -17,7 +17,7 @@ export default function FAQAccordion({ question, answer, isDarkerBg = false }: F
 
   return (
     <div className={`rounded-[var(--radius-12)] ${isDarkerBg ? 'bg-[var(--surface-secondary)]' : 'bg-surface-elevated'} overflow-hidden transition-all duration-300 ease-out mb-6 shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)]`}>
-      <h3>
+      <div>
         <button
           id={buttonId}
           onClick={() => setIsOpen(!isOpen)}
@@ -33,7 +33,7 @@ export default function FAQAccordion({ question, answer, isDarkerBg = false }: F
             <Plus className="h-6 w-6" />
           </span>
         </button>
-      </h3>
+      </div>
       <div
         id={panelId}
         role="region"
