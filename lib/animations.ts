@@ -13,12 +13,12 @@ import { springStandard, springEnergetic, springGentle } from "./motion.config";
 export const entryAnimations = {
     // 1. Sanftes Hochgleiten mit Einblenden
     slideUpFade: {
-        hidden: { opacity: 0, y: 30 },
+        hidden: { opacity: 1, y: 30 },
         visible: { opacity: 1, y: 0, transition: springStandard }
     },
     // 2. Kristallisation (Blur zu Scharf + Fade)
     crystallize: {
-        hidden: { opacity: 0, filter: "blur(10px)" },
+        hidden: { opacity: 1, filter: "blur(10px)" },
         visible: { opacity: 1, filter: "blur(0px)", transition: springGentle }
     },
     // 3. Clip-Path Reveal (von unten nach oben)
@@ -28,37 +28,37 @@ export const entryAnimations = {
     },
     // 4. Skalierung (95% -> 100%)
     scaleFade: {
-        hidden: { opacity: 0, scale: 0.95 },
+        hidden: { opacity: 1, scale: 0.95 },
         visible: { opacity: 1, scale: 1, transition: springStandard }
     },
     // 5. Seitliches Einrollen (links)
     rollInLeft: {
-        hidden: { opacity: 0, x: -50, rotate: -10 },
+        hidden: { opacity: 1, x: -50, rotate: -10 },
         visible: { opacity: 1, x: 0, rotate: 0, transition: springEnergetic }
     },
     // 6. Seitliches Einrollen (rechts)
     rollInRight: {
-        hidden: { opacity: 0, x: 50, rotate: 10 },
+        hidden: { opacity: 1, x: 50, rotate: 10 },
         visible: { opacity: 1, x: 0, rotate: 0, transition: springEnergetic }
     },
     // 7. Aufklapp-Effekt (von oben)
     flipDown: {
-        hidden: { opacity: 0, rotateX: -90, originY: 0 },
+        hidden: { opacity: 1, rotateX: -90, originY: 0 },
         visible: { opacity: 1, rotateX: 0, transition: springStandard }
     },
     // 8. Karten-Umdrehen (Y-Achse)
     flipY: {
-        hidden: { opacity: 0, rotateY: 90 },
+        hidden: { opacity: 1, rotateY: 90 },
         visible: { opacity: 1, rotateY: 0, transition: springStandard }
     },
     // 9. Partikel-Zusammenziehung (verstreut zu geformt - Simulation via 3D scale/translate)
     particleGather: {
-        hidden: { opacity: 0, scale: 1.5, y: -20, rotateZ: 5 },
+        hidden: { opacity: 1, scale: 1.5, y: -20, rotateZ: 5 },
         visible: { opacity: 1, scale: 1, y: 0, rotateZ: 0, transition: springGentle }
     },
     // 10. Buchstaben-Enthüllen (Stagger via custom property)
     letterReveal: {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 1, y: 20 },
         visible: { opacity: 1, y: 0, transition: springStandard }
     }
 } satisfies Record<string, Variants>;
