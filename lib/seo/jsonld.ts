@@ -9,7 +9,7 @@ export function createOrganizationSchema() {
         "@type": "Organization",
         name: companyName,
         url: siteUrl,
-        logo: `${siteUrl}/images/logo.svg`,
+        logo: `${siteUrl}/images/logo.webp`,
         sameAs: [
             "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar"
         ],
