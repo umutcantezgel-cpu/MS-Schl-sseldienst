@@ -8,10 +8,9 @@ import { ArrowRight, Lock, Key, Shield, AlertTriangle, Clock } from "lucide-reac
 import { getAllBlogPosts } from "@/lib/data/mdx";
 
 export const metadata = generateSharedMetadata({
-  title: "Sicherheitstechnik Blog | MS Schlüsseldienst Wetzlar",
+  title: "Sicherheitstechnik Blog",
   description: "Aktuelle Ratgeber & Tipps zu: ✔️ Einbruchschutz ✔️ Smart Locks ✔️ Sicherheitstechnik. Geballtes Fachwissen vom regionalen Experten aus Wetzlar.",
   path: "/blog",
-  exactTitle: true,
 });
 
 export default function BlogPage() {

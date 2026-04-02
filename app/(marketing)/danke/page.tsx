@@ -5,7 +5,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
-  title: "Vielen Dank — MS Schlüsseldienst Wetzlar",
+  title: "Vielen Dank",
   description:
     "Vielen Dank für Ihre Nachricht an MS Schlüsseldienst Wetzlar. Wir melden uns schnellstmöglich.",
   path: "/danke",

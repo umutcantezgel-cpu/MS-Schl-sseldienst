@@ -7,10 +7,9 @@ import { teamImages } from "@/lib/data/imageAssets";
 import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
-  title: "Karriere & Jobs | MS Schlüsseldienst Wetzlar",
+  title: "Karriere & Jobs",
   description: "Wir suchen Servicemonteure (m/w/d) in Wetzlar! ✔️ Gutes Gehalt ✔️ Firmenwagen ✔️ Notdienst-Zuschläge. Jetzt lokal bewerben.",
   path: "/ueber-uns/karriere",
-  exactTitle: true,
 });
 
 export default function KarrierePage() {

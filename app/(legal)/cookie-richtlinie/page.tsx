@@ -7,11 +7,10 @@ import { COOKIE_INVENTORY, CONSENT_CATEGORY_INFO, type ConsentCategory } from "@
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Cookie-Richtlinie | MS Schlüsseldienst Wetzlar",
+    title: "Cookie-Richtlinie",
     description: "Cookie-Richtlinie des MS Schlüsseldienst Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
     path: "/cookie-richtlinie",
-    exactTitle: true,
-})
+  })
 
 const TOC_ITEMS = [
     { id: "1-was-sind-cookies", title: "1. Was sind Cookies?" },

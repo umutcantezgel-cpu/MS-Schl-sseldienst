@@ -6,10 +6,9 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
-  title: "Historie | MS Schlüsseldienst Wetzlar",
+  title: "Historie",
   description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom MS Schlüsseldienst in Wetzlar. ✔️ Über 15 Jahre Erfahrung.",
   path: "/ueber-uns/geschichte",
-  exactTitle: true,
 });
 
 export default function GeschichtePage() {

@@ -8,10 +8,9 @@ import { ArrowRight, BookOpen, ShieldCheck } from "lucide-react";
 import { getAllRatgeberPosts } from "@/lib/data/mdx";
 
 export const metadata = generateSharedMetadata({
-  title: "Sicherheits-Ratgeber | MS Schlüsseldienst Wetzlar",
+  title: "Sicherheits-Ratgeber",
   description: "Detaillierte Schritt-für-Schritt Anleitungen und Fachwissen zu mechanischer & elektronischer Sicherheitstechnik für Ihr Zuhause.",
   path: "/ratgeber",
-  exactTitle: true,
 });
 
 export default function RatgeberPage() {

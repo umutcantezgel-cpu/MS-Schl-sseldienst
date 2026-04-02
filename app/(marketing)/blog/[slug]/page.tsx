@@ -60,8 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post.metadata.title} | Blog`,
     description: post.metadata.excerpt || "",
     path: `/blog/${post.slug}`,
-    exactTitle: true,
-  });
+    });
 }
 
 export default async function BlogDetailPage({ params }: Props) {

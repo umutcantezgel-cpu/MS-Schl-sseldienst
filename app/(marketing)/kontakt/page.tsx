@@ -10,10 +10,9 @@ import { werkstattImages } from "@/lib/data/imageAssets";
 import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
 
 export const metadata = generateSharedMetadata({
- title: "Kontakt Zentrale | MS Schlüsseldienst Wetzlar",
+ title: "Kontakt Zentrale",
  description: "Ausgesperrt? 📞 Rufen Sie uns jetzt an: 06441-8056279. ✔️ 24/7 erreichbar ✔️ In 30 Min in ganz Wetzlar vor Ort. Wir helfen sofort!",
  path: "/kontakt",
- exactTitle: true,
 });
 
 export default function KontaktPage() {

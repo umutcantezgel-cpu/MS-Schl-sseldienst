@@ -8,11 +8,10 @@ import { RevisionTimeline } from "@/components/legal/RevisionTimeline"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Allgemeine Geschäftsbedingungen (AGB) | MS Schlüsseldienst",
+    title: "Allgemeine Geschäftsbedingungen (AGB)",
     description: "AGB des MS Schlüsseldienst Wetzlar. ✔️ Transparente Bedingungen für Türöffnungen ✔️ Klare Regeln für Festpreise und Stornos.",
     path: "/agb",
-    exactTitle: true,
-})
+  })
 
 export const dynamic = 'force-static';
 

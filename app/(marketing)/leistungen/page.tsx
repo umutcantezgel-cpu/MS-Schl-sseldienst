@@ -6,10 +6,9 @@ import { Phone, CheckCircle2, ShieldCheck, DoorOpen, Car, KeyRound, Copy, Siren,
 import RelatedPosts from "@/components/blog/RelatedPosts";
 
 export const metadata = generateSharedMetadata({
-  title: "Unsere Leistungen | MS Schlüsseldienst Wetzlar",
+  title: "Unsere Leistungen",
   description: "Alle Services im Überblick: ✔️ Türöffnung ab 99€ ✔️ Tresoröffnung ✔️ Einbruchschutz. Zertifiziert, schnell & lokal in Wetzlar verankert. Jetzt anrufen!",
   path: "/leistungen",
-  exactTitle: true,
 });
 
 const iconMap: Record<string, any> = {

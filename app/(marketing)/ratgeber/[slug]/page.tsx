@@ -60,8 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post.metadata.title} | Ratgeber`,
     description: post.metadata.excerpt || "",
     path: `/ratgeber/${post.slug}`,
-    exactTitle: true,
-  });
+    });
 }
 
 export default async function RatgeberDetailPage({ params }: Props) {

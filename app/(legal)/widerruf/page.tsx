@@ -6,11 +6,10 @@ import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Widerrufsbelehrung | MS Schlüsseldienst Wetzlar",
+    title: "Widerrufsbelehrung",
     description: "Widerrufsbelehrung des MS Schlüsseldienst Wetzlar. ✔️ Informationen zum Widerrufsrecht ✔️ Muster-Widerrufsformular.",
     path: "/widerruf",
-    exactTitle: true,
-})
+  })
 
 const TOC_ITEMS = [
     { id: "1-widerrufsrecht", title: "1. Widerrufsrecht" },

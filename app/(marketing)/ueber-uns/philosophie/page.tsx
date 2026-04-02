@@ -6,7 +6,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { auszeichnungImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
-  title: "Unsere Philosophie — MS Schlüsseldienst Wetzlar",
+  title: "Unsere Philosophie",
   description:
     "Transparenz, Fairness und Handwerksqualität — die drei Säulen unserer Philosophie als Schlüsseldienst in Wetzlar.",
   path: "/ueber-uns/philosophie",

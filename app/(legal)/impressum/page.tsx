@@ -6,11 +6,10 @@ import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Impressum | MS Schlüsseldienst Wetzlar",
+    title: "Impressum",
     description: "Impressum und rechtliche Angaben des MS Schlüsseldienst Wetzlar. ✔️ Kontaktdaten ✔️ Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
-    exactTitle: true,
-})
+  })
 
 const TOC_ITEMS = [
     { id: "1-angaben", title: "1. Angaben gemäß § 5 DDG" },

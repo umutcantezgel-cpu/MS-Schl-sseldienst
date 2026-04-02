@@ -7,11 +7,10 @@ import { COOKIE_INVENTORY, DATA_PROCESSING_INVENTORY } from "@/lib/cookie-invent
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Datenschutz | MS Schlüsseldienst Wetzlar",
+    title: "Datenschutz",
     description: "Datenschutzerklärung des MS Schlüsseldienst Wetzlar. ✔️ DSGVO-konform ✔️ Transparenz über Datenverarbeitung und Cookies.",
     path: "/datenschutz",
-    exactTitle: true,
-})
+  })
 
 const TOC_ITEMS = [
     { id: "1-verantwortlicher", title: "1. Verantwortlicher" },
