@@ -5,6 +5,7 @@ import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { getLocationImageSet, localizeAltText } from "@/lib/imageRotation";
+import { pickVariant } from "@/lib/textRotation";
 
 interface LocationServicesProps {
     city: LocationData;
@@ -29,6 +30,12 @@ export default function LocationServices({ city }: LocationServicesProps) {
     const service4 = isRural
         ? `Wir beraten Sie direkt an Ihrem Haus in ${city.name} zum optimalen Einbruchschutz für abgelegene Gebäude.`
         : `Wir optimieren den Einbruchschutz Ihrer Wohnung oder Ihres Gewerbes in ${city.name} auf den neuesten Stand der Technik.`;
+
+    const introText = pickVariant([
+        "Wir sind Ihr direkter Ansprechpartner vor Ort. Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.",
+        "Setzen Sie auf lokales Handwerk direkt aus der Nähe. Wir verzichten auf Vermittlungszentralen und helfen sofort mit Expertise.",
+        "Lokaler Service bedeutet für uns: Kurze Wege, ehrliche Beratung und professionelle Hilfe, die direkt bei Ihnen in der Nachbarschaft sitzt."
+    ], city.slug, 5);
 
     const services = [
         {
@@ -61,7 +68,7 @@ export default function LocationServices({ city }: LocationServicesProps) {
                         Unsere Leistungen in <span className="text-[color:var(--value-primary)]">{city.name}</span>
                     </h2>
                     <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-                        Wir sind Ihr direkter Ansprechpartner vor Ort. Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.
+                        {introText}
                     </p>
                 </div>
 

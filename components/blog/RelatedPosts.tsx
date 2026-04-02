@@ -54,7 +54,7 @@ export default function RelatedPosts({ title = "Könnte Sie auch interessieren",
                  {post.metadata.excerpt}
                </p>
                <div className="flex items-center gap-2 text-sm font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] mt-auto transition-colors">
-                 Weiterlesen <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                Artikel lesen <span className="sr-only">: {post.metadata?.title}</span> <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                </div>
             </Link>
           ))}

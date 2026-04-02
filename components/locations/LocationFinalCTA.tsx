@@ -1,7 +1,14 @@
 import { LocationData } from "@/lib/data/locations";
 import { Check, Phone } from "lucide-react";
+import { pickVariant } from "@/lib/textRotation";
 
 export default function LocationFinalCTA({ city }: { city: LocationData }) {
+    const subtitle = pickVariant([
+        `Wir sind in ca. ${city.logistics.drivingTimeMinutes} Minuten da.`,
+        `Unser Notdienst erreicht Sie meist unter ${city.logistics.drivingTimeMinutes} Minuten.`,
+        `Schnelle Hilfe vor Ort in ca. ${city.logistics.drivingTimeMinutes} Minuten.`
+    ], city.slug, 6);
+
     return (
         <section aria-labelledby="cta-heading" className="bg-[var(--action-primary)] relative py-[var(--section-py)] overflow-hidden">
             {/* Radial Rosé-Pattern Background */}
@@ -12,7 +19,7 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
             <div className="container mx-auto px-[var(--section-px)] relative z-10 text-center text-white">
                 <h2 id="cta-heading" className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-balance leading-[1.05] mb-12">
                     Vor verschlossener Tür in {city.name}? <br className="hidden md:block" />
-                    Wir sind in ca. {city.logistics.drivingTimeMinutes} Minuten da.
+                    {subtitle}
                 </h2>
 
                 {/* Drei Bestätigungszeilen mit Check-Icons */}

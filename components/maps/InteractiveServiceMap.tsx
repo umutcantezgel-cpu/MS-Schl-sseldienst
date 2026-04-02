@@ -97,7 +97,7 @@ export default function InteractiveServiceMap() {
                   ca. ${gebiet.logistics.drivingTimeMinutes} Min. Anfahrt
                 </div>
                 <a href="/${gebiet.slug}" style="display: inline-block; margin-top: 8px; font-size: 13px; color: #B91C1C; font-weight: 600; text-decoration: underline;">
-                  Mehr erfahren →
+                  Zum Schlüsseldienst {item.name} →
                 </a>
               </div>
             `);

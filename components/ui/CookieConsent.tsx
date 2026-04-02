@@ -138,7 +138,7 @@ export default function CookieConsent() {
                     className="underline hover:text-[color:var(--text-primary)] transition-colors"
                     aria-label="Mehr erfahren über unsere Datenschutzrichtlinien"
                   >
-                    Mehr erfahren
+                    Datenschutzerklärung lesen
                   </Link>
                 </p>
 

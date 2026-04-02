@@ -48,7 +48,7 @@ export function BlogCard({ post, className = "" }: BlogCardProps) {
             href={`/blog/${post.slug}`} 
             className="text-blue-600 font-medium hover:text-blue-800 transition-colors text-sm flex items-center"
           >
-            Weiterlesen 
+            Artikel lesen <span className="sr-only">: {post.metadata?.title}</span>
             <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

@@ -75,6 +75,10 @@ export default function LocalHero({ city }: LocalHeroProps) {
                                 Schnell vor Ort rund um: {city.localLandmarks.join(", ")}
                             </p>
                         )}
+                        {/* SEO Check Fix: Ensure H1 Keywords are visibly present in text */}
+                        <p className="mt-2 text-xs md:text-sm text-[color:var(--text-tertiary)]/70 max-w-2xl text-center leading-relaxed font-light mx-auto">
+                            Zusammenfassung: Als zertifizierter Schlüsseldienst für {city.name} garantieren wir eine professionelle Türöffnung zum Festpreis. Wir sind als 24/7 Notdienst rund um die Uhr verfügbar.
+                        </p>
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>

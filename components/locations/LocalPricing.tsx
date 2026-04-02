@@ -3,8 +3,40 @@ import PriceCard from "@/components/pricing/PriceCard";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { Phone } from "lucide-react";
+import { pickVariant } from "@/lib/textRotation";
 
 export default function LocalPricing({ city }: { city: LocationData }) {
+    // Duplicate Content Prevention (Spinning)
+    const introText = pickVariant([
+        "Wir garantieren absolute Preistransparenz. Die Berechnung erfolgt immer nach Aufwand und Tageszeit, absolut ohne versteckte Gebühren.",
+        "Bei uns gibt es keine bösen Überraschungen. Wir kalkulieren fair, transparent und nennen Ihnen stets die echten Kosten.",
+        "Damit Sie genau wissen, was auf Sie zukommt: Unsere Preise richten sich transparent nach Aufwand und Uhrzeit, garantiert ohne Abzocke."
+    ], city.slug, 0);
+
+    const warnText = pickVariant([
+        `Ein seriöser lokaler Schlüsseldienst nennt Ihnen IMMER den verbindlichen Festpreis am Telefon, BEVOR der Monteur zu Ihnen nach ${city.name} aufbricht. Wir garantieren absolute Transparenz ohne Callcenter-Fantasiepreise.`,
+        `Fallen Sie nicht auf Lockangebote herein! Wir geben Ihnen stets vorab am Telefon eine verlässliche Preisgarantie für unseren Einsatz in ${city.name}. Keine versteckten Kosten, direkt vor Ort.`,
+        `Vorsicht vor überregionalen Callcentern. Als verlässlicher Partner für ${city.name} garantieren wir Ihnen einen echten Festpreis am Telefon, auf den Sie sich zu 100% verlassen können.`
+    ], city.slug, 1);
+
+    const descDay = pickVariant([
+        "Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen.",
+        "Die Tür ist zugefallen, aber nicht aktiv verriegelt, oder der Schlüssel steckt innen.",
+        "Einfache Öffnung einer unverschlossenen Tür, oft in Sekunden erledigt."
+    ], city.slug, 2);
+
+    const descNight = pickVariant([
+        "Einsätze in den späten Abend- oder tiefen Nachtstunden.",
+        "Hilfe außerhalb der regulären Geschäftszeiten, wenn es dunkel wird.",
+        "Ihr Notdienst für die Nachtstunden mit gewohnter Zuverlässigkeit."
+    ], city.slug, 3);
+
+    const descWeekend = pickVariant([
+        "Notdienst an allen Samstagen, Sonntagen und Feiertagen.",
+        "Pünktlicher Einsatz an Sonn- und Feiertagen sowie am kompletten Wochenende.",
+        "Auch an arbeitsfreien Tagen oder Feiertagen sind wir für Sie da."
+    ], city.slug, 4);
+
     return (
         <section id="preise" aria-labelledby="preise-heading" className="bg-transparent relative px-[var(--section-px)] py-[var(--section-py)] border-y border-[var(--border-subtle)]">
             <div className="absolute inset-0 bg-white/60 backdrop-blur-lg z-[-1]"></div>
@@ -15,7 +47,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             Transparente <span className="text-[color:var(--value-primary)]">Festpreise</span> für {city.name}
                         </h2>
                         <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance mx-auto">
-                            Wir garantieren absolute Preistransparenz. Die Berechnung erfolgt immer nach Aufwand und Tageszeit, absolut ohne versteckte Gebühren.
+                            {introText}
                         </p>
                         <div className="mt-8 inline-block font-bold text-[18px] text-[color:var(--value-primary)] bg-[var(--value-primary)]/10 py-3 px-8 rounded-full border border-[var(--value-primary)]/20 shadow-sm tracking-wide">
                             {city.pricing.travelCostText}
@@ -27,7 +59,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                         <PriceCard
                             title="Tür zugefallen"
                             price={city.pricing.basePrice}
-                            description="Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen."
+                            description={descDay}
                             features={["Werktags 06-20 Uhr", "Zerstörungsfreie Öffnung (>99%)", "Festpreis am Telefon genannt",
                                 ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
                             ]}
@@ -36,7 +68,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                         <PriceCard
                             title="Abends & Nachts"
                             price={city.pricing.basePriceNight || 119}
-                            description="Einsätze in den späten Abend- oder tiefen Nachtstunden."
+                            description={descNight}
                             features={["20:00 bis 05:59 Uhr", "Gleiche Pünktlichkeit", "Gleiche Zerstörungsfreiheit",
                                 ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
                             ]}
@@ -44,7 +76,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                         <PriceCard
                             title="Wochenende/Feiertag"
                             price={city.pricing.basePriceWeekend || 179}
-                            description="Notdienst an allen Samstagen, Sonntagen und Feiertagen."
+                            description={descWeekend}
                             features={["Rund um die Uhr am Wochenende", "Priorisierter Service in Notlagen", "Defekte Schlösser öffnen",
                                 ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
                             ]}
@@ -62,14 +94,14 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                 <div className="flex-1">
                     <div className="text-2xl font-extrabold text-[color:var(--text-primary)] mb-4 tracking-tight">Vorsicht vor unseriösen Vermittlern in {city.name}!</div>
                     <p className="text-[color:var(--text-secondary)] text-lg leading-relaxed max-w-prose">
-                        Ein seriöser lokaler Schlüsseldienst nennt Ihnen <strong className="font-bold text-[color:var(--text-primary)]">IMMER</strong> den verbindlichen Festpreis am Telefon, <strong className="font-bold text-[color:var(--text-primary)]">BEVOR</strong> der Monteur zu Ihnen nach {city.name} aufbricht. Wir garantieren absolute Transparenz ohne Callcenter-Fantasiepreise.
+                        <span dangerouslySetInnerHTML={{ __html: warnText.replace('IMMER', '<strong class="font-bold text-[color:var(--text-primary)]">IMMER</strong>').replace('BEVOR', '<strong class="font-bold text-[color:var(--text-primary)]">BEVOR</strong>') }} />
                     </p>
                 </div>
             </div>
 
             <div className="mt-20 flex flex-col items-center gap-4">
                 <a href="tel:+4964418056279" className="text-[color:var(--color-red-600)] bg-[var(--color-red-50)] px-10 py-5 rounded-full font-bold shadow-sm border border-[var(--color-red-100)] hover:bg-[var(--color-red-600)] hover:text-white transition-all flex items-center justify-center gap-3 text-lg tracking-wide group">
-                    <Phone className="w-5 h-5 transition-transform group-hover:rotate-12" /> 06441-8056279 – Preisauskunft
+                    <Phone className="w-5 h-5 transition-transform group-hover:rotate-12" /> 06441-8056279 – Preisauskunft für {city.name}
                 </a>
                 <span className="text-sm text-[color:var(--text-tertiary)] text-center font-medium tracking-widest uppercase">Festpreis wird vor Abfahrt garantiert</span>
             </div>
