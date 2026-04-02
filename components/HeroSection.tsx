@@ -27,10 +27,14 @@ import TrustSignals from "@/components/trust/TrustSignals";
 /* --- Animated Flowing Background Paths --- */
 function FloatingPaths({ position }: { position: number }) {
   const [isMounted, setIsMounted] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
+    if (window.innerWidth < 768) {
+      setIsDesktop(false);
+    }
   }, []);
 
   const paths = useMemo(
@@ -50,6 +54,11 @@ function FloatingPaths({ position }: { position: number }) {
       })),
     [position]
   );
+
+  // Performance-Fix: Unmount the entire SVG on mobile AND on the server.
+  // Returning null before isMounted guarantees 0 bytes of SVG are sent to the client initially,
+  // completely bypassing hydration costs. It will fade in gently on Desktop after hydration.
+  if (!isMounted || !isDesktop) return null;
 
   return (
     <div className="absolute inset-0 pointer-events-none hidden md:block">
@@ -101,9 +110,14 @@ export default function HeroSection() {
       aria-labelledby="hero-heading"
       className="relative w-full flex items-center overflow-hidden pt-[90px] sm:pt-[100px] lg:pt-[110px] xl:pt-[140px] pb-12 sm:pb-8 lg:pb-[20px] bg-gradient-to-b from-[var(--color-off-white)] to-white"
     >
-      {/* ── Parallax Background Layer ── */}
+      {/* ── Static Background Layer (Mobile Performance) ── */}
+      <div className="absolute inset-0 z-0 pointer-events-none md:hidden block">
+         <div className="absolute inset-0" />
+      </div>
+
+      {/* ── Parallax Background Layer (Desktop only) ── */}
       <m.div 
-        className="absolute inset-0 z-0 pointer-events-none"
+        className="absolute inset-0 z-0 pointer-events-none hidden md:block"
         style={{ y: backgroundY, opacity: opacityFade }}
       >
         <div className="absolute inset-0" />

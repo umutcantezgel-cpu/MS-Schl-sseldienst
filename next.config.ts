@@ -218,6 +218,14 @@ const nextConfig: NextConfig = {
         ],
       },
 
+      // ── Public folder images caching (1 year) ──
+      {
+        source: "/(.*)\\.(png|jpe?g|svg|avif|webp|ico)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+
       // ── Page caching (non-API, revalidation-aware) ──
       {
         source: "/((?!api).*)",

@@ -122,6 +122,7 @@ export default function CookieConsent() {
                   <Link
                     href="/datenschutz"
                     className="underline hover:text-[color:var(--text-primary)] transition-colors"
+                    aria-label="Mehr erfahren über unsere Datenschutzrichtlinien"
                   >
                     Mehr erfahren
                   </Link>

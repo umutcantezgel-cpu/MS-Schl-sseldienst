@@ -20,7 +20,7 @@ export function StarRating({
   const emptyStars = maxRating - fullStars - (hasHalfStar ? 1 : 0);
 
   return (
-    <div className={cn("flex items-center gap-0.5", className)} aria-label={`${validRating} von ${maxRating} Sternen`}>
+    <div role="img" className={cn("flex items-center gap-0.5", className)} aria-label={`${validRating} von ${maxRating} Sternen`}>
       {/* Full Stars */}
       {[...Array(fullStars)].map((_, i) => (
         <svg 
