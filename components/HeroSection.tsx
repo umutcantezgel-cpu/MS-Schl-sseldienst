@@ -135,12 +135,12 @@ export default function HeroSection() {
 
             {/* 2. Headline — Visual heading (H2 since server-rendered H1 exists in page.tsx) */}
             <div className="hero-entrance" style={{ animationDelay: "100ms" }}>
-            <h2
+            <h1
               id="hero-heading"
               itemProp="headline"
               className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[32px] sm:text-[40px] md:text-[52px] lg:text-[44px] xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
             >
-              Ihr Schlüsseldienst in Wetzlar
+              Schlüsseldienst Wetzlar
               
               <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-2 sm:ml-3 -translate-y-1">
                 <span className="text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24/7 Notdienst</span>
@@ -149,7 +149,7 @@ export default function HeroSection() {
               <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-[20px] sm:text-[24px]">
                 für Türöffnung
               </span>
-            </h2>
+            </h1>
             </div>
 
             {/* 3. Subheadline */}

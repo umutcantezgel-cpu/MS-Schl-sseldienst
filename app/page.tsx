@@ -81,20 +81,6 @@ export default function HomePage() {
    <JsonLd data={createLocalBusinessSchema()} />
    <JsonLd data={createWebsiteSchema()} />
    
-   {/* [SEO: Visible H1 — Crawler + User sichtbar]
-       Seobility filtert sr-only (clip, 1px) als versteckten Content.
-       Dieses H1 ist ein echtes, sichtbares Element im Seitenfluss.
-       Es bildet den semantischen Kopf der Seite und ist sowohl
-       für Crawler als auch für Nutzer sofort sichtbar. */}
-   <section className="bg-[var(--color-charcoal-900)] pt-28 pb-0 text-center px-4">
-    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto">
-      Schlüsseldienst Wetzlar — 24h Notdienst für Türöffnung
-    </h1>
-    <p className="text-white/70 text-base sm:text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
-      MS Schlüsseldienst öffnet Ihre Tür schnell, sicher und ohne Beschädigung — ab 99€ Festpreis, 24 Stunden am Tag, 7 Tage die Woche. In 20 bis 30 Minuten sind wir bei Ihnen vor Ort in Wetzlar und Umgebung.
-    </p>
-   </section>
-
    {/* Hero Section (Client Component — visual content + CTA) */}
    <HeroSection />
 
