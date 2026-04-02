@@ -67,7 +67,7 @@ export default function ProcessSteps() {
                   <div className="flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-2xl bg-white border border-[var(--color-charcoal-100)] text-[var(--color-red-500)] shadow-[var(--elevation-1)] mb-6 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[var(--shadow-brand-2)] group-hover:border-[var(--color-red-500)]/30">
                     <step.icon className="h-8 w-8" aria-hidden="true" />
                   </div>
-                  <h3
+                  <div
                     className="font-bold text-[color:var(--text-primary)] mb-3"
                     style={{
                       fontSize: 'var(--text-h4)',
@@ -76,7 +76,7 @@ export default function ProcessSteps() {
                     }}
                   >
                     {step.title}
-                  </h3>
+                  </div>
                   <p
                     className="text-[color:var(--text-secondary)] font-normal"
                     style={{

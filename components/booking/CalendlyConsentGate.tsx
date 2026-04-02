@@ -66,9 +66,9 @@ export default function CalendlyConsentGate({ children }: CalendlyConsentGatePro
           <Lock className="w-7 h-7" />
         </div>
         
-        <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3">
+        <div className="text-xl font-bold text-[color:var(--text-primary)] mb-3">
           Terminbuchung blockiert
-        </h3>
+        </div>
         
         <p className="text-[15px] text-[color:var(--text-secondary)] leading-relaxed mb-8">
           Um unseren digitalen Terminkalender anzuzeigen, benötigen wir Ihre Zustimmung. Wir nutzen <strong>Calendly</strong>, einen externen Dienstleister. Beim Laden werden Marketing-Cookies gesetzt und Verbindungen zu Fremdservern aufgebaut.

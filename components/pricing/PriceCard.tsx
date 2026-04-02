@@ -36,9 +36,9 @@ export default function PriceCard({
       )}
 
       <div className="mb-[var(--space-5)]">
-        <h3 className="typo-h4-card text-[color:var(--text-primary)]">
+        <div className="typo-h4-card text-[color:var(--text-primary)]">
           {title}
-        </h3>
+        </div>
         <p className="mt-[var(--space-2)] text-[color:var(--text-secondary)] typo-body !max-w-none !mb-0">
           {description}
         </p>

@@ -249,9 +249,9 @@ export default function HeroSection() {
                       Live Status
                     </span>
                   </div>
-                  <h3 className="text-[15px] sm:text-[22px] font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
+                  <div className="text-[15px] sm:text-[22px] font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
                     24/7 Notdienst in Wetzlar
-                  </h3>
+                  </div>
                   <p className="text-[10.5px] sm:text-[13px] text-[color:var(--text-secondary)] leading-tight sm:leading-relaxed max-w-[280px]">
                     Unsere lokalen Experten sind auch an <strong className="text-[color:var(--text-primary)] font-semibold">Wochenenden & Feiertagen</strong> einsatzbereit.
                   </p>
@@ -270,9 +270,9 @@ export default function HeroSection() {
                   <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-[10px] sm:rounded-[12px] bg-[var(--color-red-500)]/10 flex items-center justify-center mb-1.5 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/front:scale-110">
                     <ShieldCheck className="w-4 h-4 sm:w-6 sm:h-6 text-[var(--color-red-600)]" />
                   </div>
-                  <h3 className="text-[12px] sm:text-[17px] leading-tight font-extrabold text-[color:var(--text-primary)] mb-0.5 sm:mb-1 relative z-10">
+                  <div className="text-[12px] sm:text-[17px] leading-tight font-extrabold text-[color:var(--text-primary)] mb-0.5 sm:mb-1 relative z-10">
                     Ohne Schäden
-                  </h3>
+                  </div>
                   <p className="text-[9.5px] sm:text-[13px] text-[color:var(--text-secondary)] leading-tight sm:leading-snug relative z-10 line-clamp-2 sm:line-clamp-none">
                     Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
                   </p>
@@ -289,9 +289,9 @@ export default function HeroSection() {
                   <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-[10px] sm:rounded-[12px] bg-white/10 flex items-center justify-center mb-1.5 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/rear:scale-110">
                     <Key className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <h3 className="text-[12px] sm:text-[17px] leading-tight font-extrabold text-white mb-0.5 sm:mb-1 relative z-10">
+                  <div className="text-[12px] sm:text-[17px] leading-tight font-extrabold text-white mb-0.5 sm:mb-1 relative z-10">
                     Spezialwerkzeug
-                  </h3>
+                  </div>
                   <p className="text-[9.5px] sm:text-[13px] text-zinc-400 leading-tight sm:leading-snug relative z-10 line-clamp-2 sm:line-clamp-none">
                     Präzisionsgeräte ermöglichen Öffnungen selbst bei schweren Verriegelungen.
                   </p>

@@ -101,9 +101,9 @@ export default function PricingCalculator() {
               <ShieldCheck className="w-4 h-4" aria-hidden="true" />
               Interaktiver Live-Rechner
             </div>
-            <h3 className="typo-h3 text-[color:var(--text-primary)] mb-2">
+            <div className="typo-h3 text-[color:var(--text-primary)] mb-2">
               1. Was ist passiert?
-            </h3>
+            </div>
             <p className="text-[color:var(--text-secondary)] text-[15px] mb-4">
               Wählen Sie Ihre exakte Situation aus, um den verbindlichen Preis zu ermitteln.
             </p>
@@ -169,9 +169,9 @@ export default function PricingCalculator() {
         <fieldset className="mb-6">
           <legend className="block w-full">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="typo-h3 text-[color:var(--text-primary)]">
+              <div className="typo-h3 text-[color:var(--text-primary)]">
                 2. Wann brauchen Sie uns?
-              </h3>
+              </div>
               {isAutoDetected && (
                 <span className="text-[12px] font-bold bg-status-success/15 text-status-success px-2 py-1 rounded-md animate-in fade-in zoom-in duration-500">
                   Auto-Erkannt
@@ -243,9 +243,9 @@ export default function PricingCalculator() {
             
             {!isNullPrice && (
               <div className="mt-8 bg-black/20 rounded-2xl p-6 border border-white/5 backdrop-blur-sm">
-                <h4 className="text-[14px] font-bold text-white/50 uppercase tracking-wider mb-4 border-b border-white/10 pb-3">
+                <div className="text-[14px] font-bold text-white/50 uppercase tracking-wider mb-4 border-b border-white/10 pb-3">
                   Transparenz-Beleg
-                </h4>
+                </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center text-[15px]">
                     <span className="text-white/80">{SERVICES.find(s => s.id === serviceType)?.label}</span>

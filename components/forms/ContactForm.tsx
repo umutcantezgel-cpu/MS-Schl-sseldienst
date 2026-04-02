@@ -139,7 +139,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Nachricht erfolgreich gesendet!</h3>
+        <div className="text-xl font-bold text-gray-900 mb-2">Nachricht erfolgreich gesendet!</div>
         <p className="text-gray-600 font-medium">
           Unser Notdienst-Team hat Ihre Anfrage erhalten. Wir prüfen diese sofort und melden uns schnellstmöglich telefonisch bei Ihnen.
         </p>

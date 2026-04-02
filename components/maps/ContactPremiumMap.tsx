@@ -303,9 +303,9 @@ export default function ContactPremiumMap() {
           {/* Sidebar header */}
           <div className="p-4 border-b border-[var(--color-charcoal-100)] shrink-0">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-[15px] font-bold text-[color:var(--text-primary)]">
+              <div className="text-[15px] font-bold text-[color:var(--text-primary)]">
                 Einsatzgebiete
-              </h3>
+              </div>
               <button
                 onClick={() => setIsSidebarOpen(false)}
                 className="lg:hidden p-1.5 rounded-lg hover:bg-[var(--surface-secondary)] transition-colors"

@@ -61,10 +61,10 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
         <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
         <div className="relative z-10 flex items-center justify-between">
           <div>
-            <h3 className="text-xl font-extrabold text-[color:var(--text-primary)] flex items-center gap-2 tracking-tight">
+            <div className="text-xl font-extrabold text-[color:var(--text-primary)] flex items-center gap-2 tracking-tight">
               <Activity className="w-5 h-5 text-[var(--color-red-500)]" />
               Einbruchrisiko-Analyse
-            </h3>
+            </div>
             <p className="text-sm font-medium text-[color:var(--text-secondary)] mt-1">Lahn-Dill-Kreis & Wetzlar</p>
           </div>
           <Badge className="bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] border-transparent font-bold">Lokal</Badge>
@@ -77,7 +77,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
         {/* Step 1: PLZ */}
         {step === 1 && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-300">
-            <h4 className="text-lg font-bold text-[color:var(--text-primary)] mb-4">Wo befindet sich die Immobilie?</h4>
+            <div className="text-lg font-bold text-[color:var(--text-primary)] mb-4">Wo befindet sich die Immobilie?</div>
             <div className="relative">
               <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[color:var(--text-tertiary)]" />
               <input 
@@ -101,7 +101,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
         {/* Step 2: Wohnsituation */}
         {step === 2 && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-300">
-            <h4 className="text-lg font-bold text-[color:var(--text-primary)] mb-4">Welche Wohnart liegt vor?</h4>
+            <div className="text-lg font-bold text-[color:var(--text-primary)] mb-4">Welche Wohnart liegt vor?</div>
             <div className="grid gap-3">
               <button 
                 onClick={() => { setFormData({...formData, livingType: 'efh'}); handleNext(); }}
@@ -148,7 +148,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
         {/* Step 3: Sicherheit */}
         {step === 3 && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-300">
-            <h4 className="text-lg font-bold text-[color:var(--text-primary)] mb-4">Aktuelle Sicherheitsmaßnahmen?</h4>
+            <div className="text-lg font-bold text-[color:var(--text-primary)] mb-4">Aktuelle Sicherheitsmaßnahmen?</div>
             <div className="grid gap-3">
               <button 
                 onClick={() => { setFormData({...formData, securityLevel: 'none'}); calculateRisk(); }}
@@ -196,7 +196,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
         {calculating && (
           <div className="animate-in fade-in py-12 flex flex-col items-center justify-center text-center">
             <div className="w-16 h-16 border-4 border-[var(--surface-secondary)] border-t-[var(--color-red-500)] rounded-full animate-spin mb-6"></div>
-            <h4 className="text-xl font-bold text-[color:var(--text-primary)]">Analysiere Risikoprofil...</h4>
+            <div className="text-xl font-bold text-[color:var(--text-primary)]">Analysiere Risikoprofil...</div>
             <p className="text-[color:var(--text-secondary)] font-medium mt-2">Berechne lokale Daten für {formData.plz}</p>
           </div>
         )}

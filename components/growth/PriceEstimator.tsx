@@ -92,7 +92,7 @@ export default function PriceEstimator() {
     <div className="bg-white rounded-2xl border border-[var(--color-charcoal-100)] shadow-sm overflow-hidden">
       {/* Header */}
       <div className="bg-[var(--color-charcoal-900)] text-white px-6 py-4">
-        <h3 className="text-lg font-bold">Preis-Schätzer</h3>
+        <div className="text-lg font-bold">Preis-Schätzer</div>
         <p className="text-sm text-white/70 mt-0.5">
           Unverbindliche Preiseinschätzung in 2 Schritten
         </p>

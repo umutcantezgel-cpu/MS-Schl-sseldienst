@@ -20,9 +20,9 @@ export function ServiceCard({ service, className = "" }: ServiceCardProps) {
         </Icon>
       </div>
 
-      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">
+      <div className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">
         {service.title}
-      </h3>
+      </div>
       
       <p className="text-gray-600 mb-6 flex-grow">
         {service.shortDescription}
@@ -36,8 +36,8 @@ export function ServiceCard({ service, className = "" }: ServiceCardProps) {
 
       <div className="mt-auto">
         <Button asChild variant="secondary" className="w-full group-hover:bg-blue-50">
-          <Link href={`/leistungen/${service.slug}`}>
-            Mehr erfahren
+          <Link href={`/leistungen/${service.slug}`} title={`Details zur Leistung: ${service.title}`}>
+            Zu {service.title}
           </Link>
         </Button>
       </div>

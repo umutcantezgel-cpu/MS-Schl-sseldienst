@@ -116,9 +116,9 @@ export default function Footer() {
      {/* Menu Columns */}
      {menuItems.map((section, idx) => (
       <div key={idx}>
-       <h3 id={`footer-nav-${idx}`} className="mb-4 font-bold uppercase text-xs tracking-widest text-[var(--color-charcoal-400)]">
+       <div id={`footer-nav-${idx}`} className="mb-4 font-bold uppercase text-xs tracking-widest text-[var(--color-charcoal-400)]">
         {section.title}
-       </h3>
+       </div>
        {section.title === "Kundenservice" ? (
         <address aria-labelledby={`footer-nav-${idx}`} className="space-y-3 not-italic block">
          <ul className="space-y-3">
@@ -160,7 +160,7 @@ export default function Footer() {
     {/* Conversion Push CTA (Safety Net) */}
      <div className="mt-12 pt-8 pb-4 flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/10">
       <div className="flex flex-col gap-2">
-        <h3 className="text-xl font-bold text-white">Nichts Passendes gefunden?</h3>
+        <div className="text-xl font-bold text-white">Nichts Passendes gefunden?</div>
         <p className="text-[var(--color-charcoal-400)] text-sm max-w-md">
           Kontaktieren Sie uns für eine kostenlose, unverbindliche Beratung. Unser Notdienst ist 24/7 in Wetzlar und Umgebung erreichbar.
         </p>
@@ -177,9 +177,9 @@ export default function Footer() {
      {/* [SEO: Outbound Trust-Signals added — dofollow links to authoritative institutions] */}
      {/* rel="noopener noreferrer" WITHOUT nofollow = intentional dofollow for trust signaling */}
      <div className="mt-12 pt-8 border-t border-white/10">
-       <h3 className="mb-4 font-bold uppercase text-xs tracking-widest text-[var(--color-charcoal-400)]">
+       <div className="mb-4 font-bold uppercase text-xs tracking-widest text-[var(--color-charcoal-400)]">
          Vertrauenswürdige Partner & Institutionen
-       </h3>
+       </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
          {/* [SEO: Outbound Trust-Signal added] */}
          <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</a>

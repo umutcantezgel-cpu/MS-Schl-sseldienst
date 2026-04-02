@@ -90,7 +90,7 @@ export default function LeistungenPage() {
                   </div>
 
                   <div className="relative z-10 font-bold text-[color:var(--text-primary)] flex items-center gap-2 mt-auto pt-4 border-t border-[var(--border-subtle)] group-hover:text-[var(--color-red-500)] transition-colors">
-                    Mehr erfahren <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    Details zu {service.title} <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </Link>
               );

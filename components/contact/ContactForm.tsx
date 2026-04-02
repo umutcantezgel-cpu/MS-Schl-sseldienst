@@ -205,11 +205,11 @@ export default function ContactForm() {
             />
           </m.svg>
         </div>
-        <h3 className="text-2xl font-bold text-[color:var(--text-primary)] mb-3">
+        <div className="text-2xl font-bold text-[color:var(--text-primary)] mb-3">
           {state.submittedName
             ? `Vielen Dank, ${state.submittedName}!`
             : "Vielen Dank!"}
-        </h3>
+        </div>
         <p className="text-[color:var(--text-secondary)] mb-2">
           Wir melden uns innerhalb von 24 Stunden bei Ihnen.
         </p>
@@ -232,9 +232,9 @@ export default function ContactForm() {
 
   return (
     <div className="rounded-2xl bg-[var(--surface-secondary)] p-8 shadow-[var(--elevation-3)] relative overflow-hidden">
-      <h3 className="text-2xl font-bold text-[color:var(--text-primary)]">
+      <div className="text-2xl font-bold text-[color:var(--text-primary)]">
         Nachricht senden
-      </h3>
+      </div>
       <p className="mt-2 text-[color:var(--text-secondary)]">
         Für allgemeine Anfragen (z.B. Sicherheitstechnik, Schließanlagen) nutzen Sie gerne unser Kontaktformular. Wir melden uns schnellstmöglich bei Ihnen.
       </p>

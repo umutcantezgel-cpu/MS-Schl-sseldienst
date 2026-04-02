@@ -60,7 +60,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                     </svg>
                 </div>
                 <div className="flex-1">
-                    <h3 className="text-2xl font-extrabold text-[color:var(--text-primary)] mb-4 tracking-tight">Vorsicht vor unseriösen Vermittlern in {city.name}!</h3>
+                    <div className="text-2xl font-extrabold text-[color:var(--text-primary)] mb-4 tracking-tight">Vorsicht vor unseriösen Vermittlern in {city.name}!</div>
                     <p className="text-[color:var(--text-secondary)] text-lg leading-relaxed max-w-prose">
                         Ein seriöser lokaler Schlüsseldienst nennt Ihnen <strong className="font-bold text-[color:var(--text-primary)]">IMMER</strong> den verbindlichen Festpreis am Telefon, <strong className="font-bold text-[color:var(--text-primary)]">BEVOR</strong> der Monteur zu Ihnen nach {city.name} aufbricht. Wir garantieren absolute Transparenz ohne Callcenter-Fantasiepreise.
                     </p>

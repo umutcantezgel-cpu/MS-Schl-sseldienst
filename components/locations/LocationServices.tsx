@@ -72,9 +72,9 @@ export default function LocationServices({ city }: LocationServicesProps) {
                                 <service.icon className="w-8 h-8 stroke-[1.5]" />
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-[color:var(--text-primary)] mb-3 tracking-tight">
+                                <div className="text-2xl font-bold text-[color:var(--text-primary)] mb-3 tracking-tight">
                                     {service.title}
-                                </h3>
+                                </div>
                                 <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed max-w-prose">
                                     {service.description}
                                 </p>

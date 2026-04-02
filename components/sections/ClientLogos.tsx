@@ -18,9 +18,9 @@ export function ClientLogos({ className }: ClientLogosProps) {
   return (
     <section className={cn("py-16 bg-white border-y border-slate-100 overflow-hidden", className)}>
       <div className="container mx-auto px-4 max-w-6xl text-center">
-        <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-10">
+        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-10">
           Unseren Sicherheitsexperten vertrauen
-        </h3>
+        </div>
         
         <div className="relative">
           {/* Fade edges */}

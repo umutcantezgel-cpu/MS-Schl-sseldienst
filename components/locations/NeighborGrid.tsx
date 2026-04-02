@@ -52,9 +52,9 @@ export default function NeighborGrid({ city }: { city: LocationData }) {
                                         </div>
                                         <ArrowRight className="w-5 h-5 text-[color:var(--text-tertiary)] group-hover:text-[color:var(--value-primary)] group-hover:translate-x-1 transition-all" />
                                     </div>
-                                    <h3 className="font-bold text-lg text-[color:var(--text-primary)] mb-1">
+                                    <div className="font-bold text-lg text-[color:var(--text-primary)] mb-1">
                                         {neighbor.name}
-                                    </h3>
+                                    </div>
                                 </div>
                                 
                                 <div className="mt-4 pt-4 border-t border-[var(--color-charcoal-100)]">
