@@ -2,6 +2,7 @@
 
 import { z } from "zod";
 import { logger } from "@/lib/logger";
+import { headers } from "next/headers";
 
 // ─── Zod Schema (shared with client) ───
 const contactSchema = z.object({
@@ -92,9 +93,12 @@ export async function submitContactForm(
     };
   }
 
-  // 4. Rate limiting (use a fallback IP)
-  // In production, get the real IP from headers
-  const ip = "unknown"; // headers().get("x-forwarded-for") || "unknown"
+  // 4. Rate limiting
+  // Note: we can't easily get the real IP in Next.js Server Actions without accessing headers.
+  // We'll use a placeholder or basic header to prevent global lockouts.
+  const headersList = await headers();
+  const ip = headersList.get("x-forwarded-for") || "unknown";
+  
   if (!checkRateLimit(ip)) {
     return {
       success: false,
@@ -105,7 +109,7 @@ export async function submitContactForm(
 
   // 5. Submit to Formspree
   try {
-    const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+    const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "mgopyayb";
 
     if (formspreeId && formspreeId !== "demo-form" && !formspreeId.includes("your_")) {
       // ─── Production: Submit to Formspree ───

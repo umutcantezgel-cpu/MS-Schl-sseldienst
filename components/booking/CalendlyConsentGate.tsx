@@ -12,11 +12,18 @@ interface CalendlyConsentGateProps {
 export default function CalendlyConsentGate({ children }: CalendlyConsentGateProps) {
   const { consent, updateConsent, openSettings } = useConsent();
 
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsHydrated(true);
+  }, []);
+
   const handleAccept = () => {
     updateConsent({ marketing: true, analytics: consent?.analytics ?? false });
   };
 
-  if (consent === null) {
+  if (!isHydrated) {
     // Return a skeleton structure matching the iframe size while hydrating
     return (
       <div className="w-full h-[600px] bg-[var(--surface-secondary)] rounded-2xl border border-[var(--border-color)] animate-pulse shadow-[var(--elevation-1)]" />
