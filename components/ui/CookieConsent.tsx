@@ -32,6 +32,31 @@ export default function CookieConsent() {
   const [analyticsChecked, setAnalyticsChecked] = useState(false);
   const [marketingChecked, setMarketingChecked] = useState(false);
 
+  // [PERF-FIX] Delay banner mount so it doesn't steal LCP from the hero section.
+  // Without this, the cookie banner paragraph is measured as the Largest Contentful Paint
+  // element (5.7s), because it overlays the viewport on first load.
+  // By deferring mount by 1.5s, the hero headline (~1.4s FCP) becomes the LCP instead.
+  const [isDelayComplete, setIsDelayComplete] = useState(false);
+  useEffect(() => {
+    // Use requestIdleCallback if available, otherwise setTimeout
+    const scheduleDelay = typeof window !== 'undefined' && 'requestIdleCallback' in window
+      ? (cb: () => void) => (window as unknown as { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number }).requestIdleCallback(cb, { timeout: 2000 })
+      : (cb: () => void) => setTimeout(cb, 1500);
+
+    const id = scheduleDelay(() => {
+      setIsDelayComplete(true);
+    });
+    return () => {
+      if (typeof id === 'number') {
+        if ('cancelIdleCallback' in window) {
+          (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(id);
+        } else {
+          clearTimeout(id);
+        }
+      }
+    };
+  }, []);
+
   // Global event listener to listen for `#cookie-settings` in the URL or custom events
   useEffect(() => {
     const handleOpenSettingsEvent = () => {
@@ -64,8 +89,9 @@ export default function CookieConsent() {
     };
   }, [consent, setShowBanner]);
 
-  // Don't render if consent is already given and banner is not requested
-  if (!showBanner) return null;
+  // Don't render if consent is already given, banner is not requested, OR delay hasn't completed
+  // The delay prevents this banner from being measured as the LCP element
+  if (!showBanner || !isDelayComplete) return null;
 
   const handleSaveSettings = () => {
     updateConsent({
