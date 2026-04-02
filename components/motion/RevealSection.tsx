@@ -1,12 +1,22 @@
 "use client";
 
 import { m, useReducedMotion } from"framer-motion";
-import { revealSectionVariants } from"@/lib/motion.config";
 import { ReactNode, createElement } from"react";
 
+/**
+ * RevealSection — Scroll-triggered entrance animation.
+ * 
+ * [SEO CRITICAL]: `initial` uses opacity: 1 (NOT 0).
+ * Seobility crawls without JavaScript — if initial opacity is 0,
+ * ALL content inside RevealSection becomes invisible to the crawler.
+ * This was the root cause of only 182 words being detected (vs 580+ actual).
+ * 
+ * The animation now uses only y-transform for visual movement effect.
+ * Content is always visible in server-rendered HTML.
+ */
 export default function RevealSection({
   children,
-  className ="",
+  className = "",
   delay = 0
 }: {
   children: ReactNode,
@@ -19,24 +29,26 @@ export default function RevealSection({
     return createElement("div", { className }, children);
   }
 
-  const visible = revealSectionVariants.visible as Record<string, unknown>;
-  const visibleTransition = (visible?.transition ?? {}) as Record<string, unknown>;
-
   return (
     <m.div
       variants={{
-        ...revealSectionVariants,
+        hidden: { opacity: 1, y: 24 },
         visible: {
-          ...visible,
+          opacity: 1,
+          y: 0,
           transition: {
-            ...visibleTransition,
+            duration: 0.4,
+            type: "spring",
+            stiffness: 170,
+            damping: 22,
+            mass: 1.0,
             delay
           }
         }
       }}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin:"-15%" }}
+      viewport={{ once: true, margin: "-15%" }}
       className={className}
     >
       {children}

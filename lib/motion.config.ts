@@ -119,7 +119,7 @@ export const staggers = {
 
 /** Standard Scroll-Reveal für Sektionen */
 export const revealSectionVariants: Variants = {
-    hidden: { opacity: 0, y: 24 },
+    hidden: { opacity: 1, y: 24 },
     visible: {
         opacity: 1,
         y: 0,
@@ -132,7 +132,7 @@ export const revealSectionVariants: Variants = {
 
 /** Stagger-Container für Card-Grids */
 export const staggerGridContainer: Variants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
         opacity: 1,
         transition: {
@@ -144,7 +144,7 @@ export const staggerGridContainer: Variants = {
 
 /** Stagger-Item für Card-Grid-Kinder */
 export const staggerGridItem: Variants = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 1, x: -20 },
     visible: {
         opacity: 1,
         x: 0,
@@ -157,7 +157,7 @@ export const staggerGridItem: Variants = {
 
 /** Feature-Card Stagger mit Custom-Index-Delay */
 export const featureCardStagger: Variants = {
-    hidden: { opacity: 0, x: 20 },
+    hidden: { opacity: 1, x: 20 },
     visible: (customIndex: number) => ({
         opacity: 1,
         x: 0,

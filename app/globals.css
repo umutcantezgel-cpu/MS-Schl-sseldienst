@@ -1709,9 +1709,13 @@ main[id="main-content"] {
 /* =============================================
    HERO ENTRANCE ANIMATION (CSS-ONLY)
    ============================================= */
+/* [SEO FIX]: heroFadeSlideIn no longer uses opacity:0 in "from" state.
+   Seobility (non-JS crawler) never triggers CSS animations.
+   With "both" fill-mode, content was stuck at opacity:0 = invisible to crawler.
+   Now: only y-transform for visual slide-in, opacity always 1. */
 @keyframes heroFadeSlideIn {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(24px);
   }
   to {
