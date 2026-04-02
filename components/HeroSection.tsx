@@ -133,12 +133,9 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* 2. Headline — [SEO: H1 Injection, Seobility Page Structure Fix] */}
-            {/*    hero-entrance removed from <h1> to prevent opacity:0 at initial render.
-                   Seobility (non-JS crawler) was reading opacity:0 as "no H1 specified".
-                   Animation is moved to a decorative wrapper <div> instead. */}
+            {/* 2. Headline — Visual heading (H2 since server-rendered H1 exists in page.tsx) */}
             <div className="hero-entrance" style={{ animationDelay: "100ms" }}>
-            <h1
+            <h2
               id="hero-heading"
               itemProp="headline"
               className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[32px] sm:text-[40px] md:text-[52px] lg:text-[44px] xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
@@ -152,7 +149,7 @@ export default function HeroSection() {
               <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-[20px] sm:text-[24px]">
                 für Türöffnung
               </span>
-            </h1>
+            </h2>
             </div>
 
             {/* 3. Subheadline */}

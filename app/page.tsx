@@ -81,7 +81,16 @@ export default function HomePage() {
    <JsonLd data={createLocalBusinessSchema()} />
    <JsonLd data={createWebsiteSchema()} />
    
-   {/* Hero Section */}
+   {/* [SEO: Server-rendered H1 — Crawler-sichtbar ohne JavaScript]
+       Seobility crawlt ohne JS-Ausführung. HeroSection.tsx ist "use client",
+       daher wird dessen <h1> vom Crawler ignoriert. Dieses sr-only H1
+       wird direkt im Server-gerenderten HTML geliefert und ist
+       für Screen Reader + Crawler sichtbar, visuell aber versteckt. */}
+   <h1 className="sr-only">
+     Schlüsseldienst Wetzlar — 24h Notdienst für Türöffnung ab 99€ Festpreis
+   </h1>
+
+   {/* Hero Section (Client Component — visual H1 inside) */}
    <HeroSection />
 
    {/* Trust Signals & Reviews (Docked directly beneath Hero) */}

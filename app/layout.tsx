@@ -98,8 +98,8 @@ export const metadata: Metadata = {
  other: {
    "geo.region": "DE-HE",
    "geo.placename": "Wetzlar",
-   "geo.position": "50.5567;8.5022",
-   "ICBM": "50.5567, 8.5022",
+   "geo.position": "50.5606;8.5048",
+   "ICBM": "50.5606, 8.5048",
  },
 };
 

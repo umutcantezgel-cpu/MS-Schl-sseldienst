@@ -7,7 +7,9 @@ import { allLocations } from "@/lib/data/allLocations";
 // Machine/Punycode: https://www.xn--wetzlar-schlsseldienst-3lc.de
 // metadataBase in layout.tsx and all Schema.org URLs derive from this value.
 // [SEO: IDN Punycode applied — verified via Python encodings.idna]
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--wetzlar-schlsseldienst-3lc.de";
+// [GUARD: www-Enforcement] If env var is set without www, auto-prepend it.
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--wetzlar-schlsseldienst-3lc.de";
+export const siteUrl = rawSiteUrl.includes("://www.") ? rawSiteUrl : rawSiteUrl.replace("://", "://www.");
 
 export function generateLocalBusinessSchema() {
     // Build areaServed from all location entries

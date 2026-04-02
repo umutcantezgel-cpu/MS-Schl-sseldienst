@@ -27,7 +27,8 @@ export const generateSharedMetadata = ({
     noindex = false,
     exactTitle = false,
 }: GenerateMetadataProps): Metadata => {
-    // Canonical URLs WITHOUT trailing slash — matches Netlify production behavior
+    // Canonical URLs WITHOUT trailing slash — matches Vercel production behavior
+    // siteUrl from schema.ts already includes "www." prefix via Punycode.
     const urlPath = path === '/' ? '' : (path.endsWith('/') ? path.slice(0, -1) : path);
     const url = `${siteUrl}${urlPath}`;
 
@@ -90,8 +91,8 @@ export const generateSharedMetadata = ({
         other: {
             "geo.region": "DE-HE",
             "geo.placename": "Wetzlar",
-            "geo.position": "50.5567;8.5022",
-            "ICBM": "50.5567, 8.5022",
+            "geo.position": "50.5606;8.5048",
+            "ICBM": "50.5606, 8.5048",
         },
     };
 };
