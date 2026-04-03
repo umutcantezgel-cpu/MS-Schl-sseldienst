@@ -89,7 +89,7 @@ export function generateLocalBusinessSchema() {
             "https://www.instagram.com/schluessel_schmiede_wetzlar/",
             "https://www.linkedin.com/in/mina-saad-a218413a9/",
             "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar",
-            "https://www.gelbeseiten.de/branchenbuch/wetzlar/schluesseldienst-wetzlar"
+            "https://www.gelbeseiten.de/gsbiz/ef5183d9-c45e-4b5f-9c89-251ff14ccfef"
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -163,7 +163,7 @@ export function generateLocalBusinessSchema() {
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5.0",
-            "reviewCount": "44",
+            "reviewCount": "45",
             "bestRating": "5",
             "worstRating": "1"
         },

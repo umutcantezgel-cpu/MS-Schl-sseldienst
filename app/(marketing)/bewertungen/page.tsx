@@ -15,23 +15,84 @@ export const metadata = generateSharedMetadata({
 });
 
 const reviews = [
- { name:"Jens Brandenburger", city:"Wetzlar", rating: 5, date:"2026-03-17", text:"Schlüsseldienst ist Top, vor allem blitzschnell, sehr freundlich und hilfsbereit! Keine Wartezeit.", timeAgo:"Vor 1 Woche" },
- { name:"Emelie Herbel", city:"Wetzlar", rating: 5, date:"2026-03-10", text:"Einfach nur super freundlich! Wir standen in Wetzlar und haben dringend einen guten Schlüsseldienst gebraucht \u2013 und sind so froh, diesen hier gefunden zu haben!", timeAgo:"Vor 2 Wochen" },
- { name:"Sahar Koob", city:"Wetzlar", rating: 5, date:"2026-03-03", text:"Super schneller und zuverlässiger Service! Ich war ausgesperrt und der Schlüsseldienst war innerhalb kürzester Zeit vor Ort. Die Tür wurde professionell und ohne Beschädigungen geöffnet.", timeAgo:"Vor 3 Wochen" },
- { name:"Thomas S.", city:"Wetzlar", rating: 5, date:"2026-01-24", text:"Der Schlüsseldienst war eben vor Ort, super freundlich und hat die Tür komplett ohne Beschädigungen geöffnet. Absolut zuverlässig und professionell. Ich bin sehr zufrieden und kann den Service uneingeschränkt weiterempfehlen.", timeAgo:"Vor 2 Monaten" },
- { name:"Alexandra", city:"Wetzlar", rating: 5, date:"2026-02-24", text:"Sehr zuvorkommend und professionell. Wirklich ganz toller und außergewöhnlicher Service!!! Ich bin unendlich dankbar für die Geduld und das Engagement, was mir heute entgegengebracht wurde!", timeAgo:"Vor 1 Monat" },
- { name:"Tim Staudt", city:"Wetzlar", rating: 5, date:"2025-10-24", text:"Wir sind mit dem Schlüsseldienst überaus zufrieden. Ihr Mitarbeiter, Herr Saad, hat sich als kompetent, verbindlich und zuverlässig erwiesen und hat uns mit allen Problemen zielsicher beiseite gestanden.", timeAgo:"Vor 5 Monaten" },
- { name:"Christine Civic", city:"Wetzlar", rating: 5, date:"2025-05-24", text:"Schnell, freundlich und professionell! Der Schlüsseldienst war zügig vor Ort und hat meine Tür ohne Schaden geöffnet. Absolut zufrieden \u2013 sehr empfehlenswert!", timeAgo:"Vor 10 Monaten" },
- { name:"Francesca Bischof", city:"Wetzlar", rating: 5, date:"2025-05-24", text:"Perfekter Service! Extrem freundlich und zuvorkommend. Bei jedem Arbeitsschritt und preislichen Veränderungen absolut transparent und fair.", timeAgo:"Vor 10 Monaten" },
- { name:"Tasha", city:"Wetzlar", rating: 5, date:"2025-07-24", text:"Herr M. ist sofort ans Telefon gegangen, war schnell vor Ort und hat die Tür zügig und professionell geöffnet. Sehr freundlich und zuverlässig \u2013 absolut empfehlenswert!", timeAgo:"Vor 8 Monaten" },
- { name:"Deniz Kaplan", city:"Wetzlar", rating: 5, date:"2025-03-24", text:"Ich kann Mina Schlüsseldienst in Wetzlar nur wärmstens empfehlen! Der Service war außergewöhnlich schnell \u2013 innerhalb kürzester Zeit vor Ort und unser Problem war sofort gelöst.", timeAgo:"Vor 1 Jahr" },
- { name:"Carlos Sanchez", city:"Wetzlar", rating: 5, date:"2025-03-24", text:"Tür zugefallen und in der Kälte ausgeschlossen. Er war innerhalb von 20 Minuten da und hat uns geholfen. Alles lief fair ab.", timeAgo:"Vor 1 Jahr" },
- { name:"Vencislav Redling", city:"Wetzlar", rating: 5, date:"2025-03-24", text:"Einen ehrlicheren Schlüsseldienst kann man sich nicht wünschen. Um 2 Uhr nachts hatte sich der Nachbar ausgesperrt und nach einem sehr netten Telefonat war der Schlüsseldienst schnell vor Ort.", timeAgo:"Vor 1 Jahr" },
+  { name: "Thomas Soliman", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Ich kann diesen Betrieb wirklich aus voller Überzeugung weiterempfehlen! Vom ersten Moment an fühlt man sich hier bestens aufgehoben. Der Service ist extrem professionell.", timeAgo: "Vor 1 Monat" },
+  { name: "daniel sk", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Ich möchte gerne von meiner positiven Erfahrung berichten. Der Besuch war nicht nur schnell mal eben einen Schlüssel nachmachen lassen, sondern sehr angenehm.", timeAgo: "Vor 1 Monat" },
+  { name: "Sidan Uguztemur", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Zuverlässige und schnelle Schlüsselschmiede. Ich habe hier schon mehrfach Schlüssel nachmachen lassen und war jedes Mal vollumfänglich zufrieden.", timeAgo: "Vor 2 Monaten" },
+  { name: "Felix Humpert", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Gestern ist es passiert, mir ist die Tür zugefallen und wir standen in der Kälte. Der Schlüsseldienst war super schnell da.", timeAgo: "Vor 2 Monaten" },
+  { name: "Rezensent von golocal", city: "Wetzlar", rating: 5, date: "2026-02-01", text: "Von dem Moment an, als ich den Laden betrat, wurde ich freundlich und kompetent empfangen. Das Team dort ist nicht nur professionell, sondern auch unglaublich hilfsbereit.", timeAgo: "Vor 2 Monaten" },
+  { name: "Denis Ceylan", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Super Service – schnell, zuverlässig und sogar an einem Samstag! Herr Mina war total freundlich und kompetent. Klare Empfehlung, jederzeit wieder 👍", timeAgo: "Vor 1 Monat" },
+  { name: "Fabian599", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Falls jemand in Zukunft für Wetzlar und die Umgebung einen Schlüsseldienst benötigt, ich kann seit heute die „Schlüssel-Schmiede Wetzlar“ aus der Langgasse 100% empfehlen.", timeAgo: "Vor 1 Monat" },
+  { name: "Ronnii Ka", city: "Wetzlar", rating: 5, date: "2025-11-02", text: "Habe einen Autoschlüssel nachmachen lassen von einem alten Opel Astra, da ich den Ersatzschlüssel verloren hatte. Lief alles perfekt.", timeAgo: "Vor 5 Monaten" },
+  { name: "Philipp He", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Super hilfsbereit! Guter Service! Wir haben ein paar Versuche gebraucht, um einen Schlüssel für ein altes Schloss nachmachen zu lassen, am Ende hat aber alles funktioniert.", timeAgo: "Vor 2 Monaten" },
+  { name: "Kate", city: "Wetzlar", rating: 5, date: "2025-11-02", text: "Mein Schlüssel war abgebrochen und der nette Herr hat’s trotzdem geschafft den zu kopieren. Preis war genau wie am Telefon besprochen, fair und günstig. Super netter Typ.", timeAgo: "Vor 5 Monaten" },
+  { name: "S.", city: "Wetzlar", rating: 5, date: "2026-01-02", text: "Er war sehr schnell da und ich war in kurzen Zeit wieder in meiner Wohnung. Absolut zu empfehlen!", timeAgo: "Vor 3 Monaten" },
+  { name: "karina vanzetta", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Sehr empfehlenswert! Trotz anfänglicher Schwierigkeiten hat sich der Schlüsseldienstmeister viel Zeit genommen und mit viel Mühe den passenden Rohling gefunden.", timeAgo: "Vor 6 Monaten" },
+  { name: "Steve Hoffmann", city: "Wetzlar", rating: 5, date: "2025-11-02", text: "Absolut zu empfehlen, sehr nette Herrschaften. Absolut professionell in dem was sie tun. Schlüssel hat hundert Prozent gepasst, ohne zu hacken oder sonstiges.", timeAgo: "Vor 5 Monaten" },
+  { name: "Melanie Breidenich", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Wunderbar! Sehr freundliche Ansprache und schnelle unkomplizierte Ausführung. Repariert sogar defekte Autoschlüsselgehäuse mit integrierter Fernbedienung tadellos.", timeAgo: "Vor 6 Monaten" },
+  { name: "Christoph Reinhardt", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Sehr guter Service und NICHT teuer. Mir ist mein Schlüssel in der Haustür außen abgebrochen. Super schnelle Hilfe.", timeAgo: "Vor 6 Monaten" },
+  { name: "Sandy Schneider", city: "Wetzlar", rating: 5, date: "2025-07-02", text: "In 15 Minuten war ein Mitarbeiter vor Ort und hat die Tür geöffnet. Top Service!", timeAgo: "Vor 9 Monaten" },
+  { name: "Celina Hartmann", city: "Wetzlar", rating: 5, date: "2025-06-02", text: "War heute bei der Schlüsselschmiede um einen Schlüssel nachmachen zu lassen. Ging schnell der Schlüssel hat direkt gepasst.", timeAgo: "Vor 10 Monaten" },
+  { name: "Justin Hartmann", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Super freundlicher und kompetenter Laden in Wetzlar! Die Schlüssel Schmiede bietet nicht nur perfekte Nachschlüssel in Top-Qualität.", timeAgo: "Vor 8 Monaten" },
+  { name: "Leticia", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Sehr schnell vor Ort, professionell und schnelle Öffnung der Tür. Kartenzahlung auch möglich 💯", timeAgo: "Vor 2 Monaten" },
+  { name: "Monika Saad", city: "Wetzlar", rating: 5, date: "2025-06-02", text: "Endlich ist mal wieder ein Schlüsseldienst in Wetzlar zentral gelegen. Es war mir eine Freude heute bei der Neueröffnung dabei sein zu dürfen.", timeAgo: "Vor 10 Monaten" },
+  { name: "Frau Knuddelknit", city: "Wetzlar", rating: 5, date: "2025-12-02", text: "Meine Tür war zugefallen, an einem Samstag. der nette Herr war schnell da und hat ohne Beschädigung die Tür öffnen können.", timeAgo: "Vor 4 Monaten" },
+  { name: "H. B.", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Heute Batteriewechsel bei 3 Armbanduhren erfolgreich durchgeführt. sehr nette hilfsbereite Dame im Geschäft", timeAgo: "Vor 2 Monaten" },
+  { name: "Dom", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Pünktlich, Schnell und Gute Preise. Danke für den Zylindertausch.", timeAgo: "Vor 1 Monat" },
+  { name: "Mohammed Shehab", city: "Wetzlar", rating: 5, date: "2025-07-02", text: "Schlüssel kopieren lassen in unter 1 Minute. Der Chef ist sehr kompetent und freundlich.", timeAgo: "Vor 9 Monaten" },
+  { name: "Carsten Ulm", city: "Wetzlar", rating: 5, date: "2026-01-02", text: "Professioneller und freundlicher Service, schnell das Problem behoben. Alles in allem super Leistung.", timeAgo: "Vor 3 Monaten" },
+  { name: "Tinus", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Schneller und freundlicher Service. Wenn ihr euch mal aussperrt, absolut weiter zu empfehlen. Alles ging super schnell.", timeAgo: "Vor 8 Monaten" },
+  { name: "ophelia fritz", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Heute über den ADAC Schlüsselnotdienst vorbei gekommen. Super freundlich und so schnell. Danke!", timeAgo: "Vor 6 Monaten" },
+  { name: "Ramona Pingel", city: "Wetzlar", rating: 5, date: "2025-06-02", text: "Ein echt toller Laden. Super toller schneller Service und sehr nette Besitzer.", timeAgo: "Vor 10 Monaten" },
+  { name: "Johannes Kohlstädt", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Sehr Zuverlässig, Schnell und sehr Nett.", timeAgo: "Vor 2 Monaten" },
+  { name: "Daniel Farella", city: "Wetzlar", rating: 5, date: "2025-06-02", text: "Ein super seriöser Laden. Sehr nettes Ambiente.", timeAgo: "Vor 10 Monaten" },
+  { name: "Regina Mierzwa", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Schneller, kompetenter und sehr freundlicher Service! Nur zu empfehlen!", timeAgo: "Vor 6 Monaten" },
+  { name: "Sadika Alici", city: "Wetzlar", rating: 5, date: "2025-09-02", text: "Sehr freundlich! kompetent!", timeAgo: "Vor 7 Monaten" },
+  { name: "nicole fieres", city: "Wetzlar", rating: 5, date: "2025-06-02", text: "Super Laden und sehr freundlicher Besitzer. Sehr zu empfehlen.", timeAgo: "Vor 10 Monaten" },
+  { name: "Felix Lehmann", city: "Wetzlar", rating: 5, date: "2026-01-02", text: "Sehr freundlicher und professioneller Service", timeAgo: "Vor 3 Monaten" },
+  { name: "Pascal Kampert", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Schnell, freundlich und absolut faire Preise.", timeAgo: "Vor 6 Monaten" },
+  { name: "Tahera Ibrahimi", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Sehr nette Mitarbeiter Respektvoll und helfen jeden Kunde.", timeAgo: "Vor 8 Monaten" },
+  { name: "Rezensent von Gelbe Seiten", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Von dem Moment an, als ich den Laden betrat, wurde ich freundlich und kompetent empfangen. Top Team.", timeAgo: "Vor 6 Monaten" },
+  { name: "Elvir Civic", city: "Wetzlar", rating: 5, date: "2025-10-02", text: "Net und Freundlich, hat alles super funktioniert.", timeAgo: "Vor 6 Monaten" },
+  { name: "Y", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "So ein korrekter freundlicher Mann er hilft den Kunden wo er kann top", timeAgo: "Vor 8 Monaten" },
+  { name: "Oktay Yildiz", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Immer wieder gerne!", timeAgo: "Vor 8 Monaten" },
+  { name: "Raphael Tursky (dekekz)", city: "Wetzlar", rating: 5, date: "2025-07-02", text: "Top Service, Schnell und verlässlich!", timeAgo: "Vor 9 Monaten" },
+  { name: "Tarek Habid", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Bester Schlüsseldienst, mit dem besten Schlüssel Kopien.", timeAgo: "Vor 8 Monaten" },
+  { name: "XxChrisxX 92", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Sehr schnell und sehr kompetent .", timeAgo: "Vor 8 Monaten" },
+  { name: "Marvin Mendoza", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Super Dienstleistung und Service", timeAgo: "Vor 8 Monaten" },
+  { name: "Sascha Poschmann", city: "Wetzlar", rating: 5, date: "2026-03-24", text: "Ich kann die Schlüssel-Schmiede in Wetzlar und insbesondere Herrn Saad uneingeschränkt weiterempfehlen!", timeAgo: "Vor 1 Woche" },
+  { name: "Horst Der Profi", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Tipi Topi", timeAgo: "Vor 2 Monaten" }
 ];
 
 function generateReviewSchema() {
- return {"@context":"https://schema.org","@type":"LocalBusiness","name":"Schlüsseldienst Wetzlar","aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"44","bestRating":"5","worstRating":"1"
-  },"review": reviews.map(r => ({"@type":"Review","author": {"@type":"Person","name": r.name },"datePublished": r.date,"reviewBody": r.text,"reviewRating": {"@type":"Rating","ratingValue": r.rating,"bestRating": 5,"worstRating": 1
+ return {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Schlüsseldienst Wetzlar",
+  "aggregateRating": {
+   "@type": "AggregateRating",
+   "ratingValue": "5.0",
+   "reviewCount": "45",
+   "bestRating": "5",
+   "worstRating": "1"
+  },
+  "review": reviews.map(r => ({
+   "@type": "Review",
+   "itemReviewed": {
+    "@type": "Locksmith",
+    "name": "Schlüsseldienst Wetzlar",
+    "url": "https://www.wetzlar-schlüsseldienst.de/"
+   },
+   "author": {
+    "@type": "Person",
+    "name": r.name 
+   },
+   "datePublished": r.date,
+   "reviewBody": r.text,
+   "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": r.rating,
+    "bestRating": 5,
+    "worstRating": 1
    }
   }))
  };
@@ -88,7 +149,7 @@ export default function BewertungenPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
             <Award className="w-4 h-4 text-[var(--color-yellow-400)]" />
-            <span>44 verifizierte Google Rezensionen</span>
+            <span>45 verifizierte Rezensionen</span>
           </div>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -106,7 +167,7 @@ export default function BewertungenPage() {
                   <Star key={i} className="h-5 w-5 fill-current" aria-hidden="true" />
                   ))}
                 </div>
-                <span className="text-sm font-medium text-[color:var(--text-tertiary)] mt-1">Google Rezensionen</span>
+                <span className="text-sm font-medium text-[color:var(--text-tertiary)] mt-1">Kundenrezensionen</span>
               </div>
             </div>
           </div>
