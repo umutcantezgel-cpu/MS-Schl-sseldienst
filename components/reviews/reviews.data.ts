@@ -369,5 +369,5 @@ export const reviewsData: Review[] = [
 
 export const aggregateRating = {
     ratingValue: 5.0,
-    reviewCount: 44,
+    reviewCount: 45,
 };

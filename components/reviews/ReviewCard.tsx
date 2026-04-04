@@ -38,6 +38,12 @@ export default function ReviewCard({ review }: { review: Review }) {
       {/* Subtle hover glow */}
       <div className="absolute -top-20 -right-20 w-40 h-40 bg-[var(--color-red-500)]/0 group-hover:bg-[var(--color-red-500)]/5 rounded-full blur-[40px] transition-all duration-500 pointer-events-none" />
 
+      {/* Required by Google Structured Data */}
+      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Locksmith" className="hidden">
+        <meta itemProp="name" content="Schlüsseldienst Wetzlar" />
+        <meta itemProp="url" content="https://www.wetzlar-schlüsseldienst.de/" />
+      </div>
+
       {/* Header: Avatar + Name + Stars */}
       <div className="flex justify-between items-start mb-6 relative z-10">
         <div className="flex items-center gap-4">

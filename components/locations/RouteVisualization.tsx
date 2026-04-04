@@ -1,6 +1,22 @@
 import { LocationData } from "@/lib/data/locations";
 import { Navigation2, MapPin, MapPinned } from "lucide-react";
 import RevealSection from "@/components/motion/RevealSection";
+import { pickVariant } from "@/lib/textRotation";
+
+const subtitleVariants = [
+    (name: string) => `Transparente Anfahrt direkt aus Wetzlar nach ${name}. Ohne Umwege, ohne Callcenter.`,
+    (name: string) => `Direkte Route von unserem Standort in Wetzlar zu Ihnen nach ${name} — schnell und zuverlässig.`,
+    (name: string) => `Unsere Techniker starten aus Wetzlar und fahren auf direktem Weg nach ${name}. Kein Callcenter dazwischen.`,
+    (name: string) => `Von Wetzlar nach ${name}: Kurzer Anfahrtsweg, kalkulierbare Zeiten und volle Transparenz.`,
+    (name: string) => `Wir kommen persönlich aus Wetzlar — die Strecke nach ${name} kennen unsere Monteure im Schlaf.`,
+];
+
+const startLabelVariants = [
+    "Zentrale & Materiallager",
+    "Unser Hauptsitz in Wetzlar",
+    "Startpunkt: Wetzlarer Zentrale",
+    "Basis mit Vollausstattung",
+];
 
 interface RouteVisualizationProps {
     city: LocationData;
@@ -8,6 +24,9 @@ interface RouteVisualizationProps {
 
 export default function RouteVisualization({ city }: RouteVisualizationProps) {
     if (!city.mainRoad && !city.distanceKm) return null;
+
+    const subtitle = pickVariant(subtitleVariants, city.slug)(city.name);
+    const startLabel = pickVariant(startLabelVariants, city.slug, 1);
 
     return (
         <RevealSection className="py-16 md:py-24 bg-[var(--color-charcoal-50)] border-y border-[var(--border-subtle)] relative overflow-hidden">
@@ -17,7 +36,7 @@ export default function RouteVisualization({ city }: RouteVisualizationProps) {
                         So schnell sind wir in {city.name}
                     </h2>
                     <p className="typo-body-large text-[color:var(--text-secondary)]">
-                        Transparente Anfahrt direkt aus Wetzlar. Ohne Umwege, ohne Callcenter.
+                        {subtitle}
                     </p>
                 </div>
 
@@ -41,7 +60,7 @@ export default function RouteVisualization({ city }: RouteVisualizationProps) {
                             </div>
                             <div className="text-lg font-bold text-[color:var(--text-primary)] text-center">Start: Wetzlar</div>
                             <p className="text-sm text-[color:var(--text-tertiary)] text-center mt-1">
-                                Zentrale & Materiallager
+                                {startLabel}
                             </p>
                         </div>
 

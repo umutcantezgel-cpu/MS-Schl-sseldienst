@@ -3,6 +3,22 @@ import * as Icons from "lucide-react";
 import RevealSection from "@/components/motion/RevealSection";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
+import { pickVariant } from "@/lib/textRotation";
+
+const subtitleVariants = [
+    (name: string) => `Als lokaler Schlüsseldienst in ${name} kennen wir die häufigsten Notsituationen in Ihrer Nachbarschaft genau.`,
+    (name: string) => `Diese typischen Situationen erleben unsere Kunden in ${name} am häufigsten — und wir lösen jede davon professionell.`,
+    (name: string) => `Ob nachts, am Wochenende oder an Feiertagen: In ${name} sind wir für genau diese Szenarien ausgerüstet.`,
+    (name: string) => `Unser Schlüsseldienst-Team kennt ${name} und weiß, welche Probleme hier besonders oft auftreten.`,
+    (name: string) => `Von zugefallenen Türen bis zum Schlüsselverlust: In ${name} helfen wir Ihnen bei jedem Szenario schnell weiter.`,
+];
+
+const ctaLabelVariants = [
+    "Lösung: Rufen Sie uns an",
+    "Ihre Soforthilfe per Anruf",
+    "Schnelle Hilfe per Telefon",
+    "Direkt zum Techniker",
+];
 
 interface LocationScenariosProps {
     city: LocationData;
@@ -10,6 +26,9 @@ interface LocationScenariosProps {
 
 export default function LocationScenarios({ city }: LocationScenariosProps) {
     if (!city.scenarios || city.scenarios.length === 0) return null;
+
+    const subtitle = pickVariant(subtitleVariants, city.slug)(city.name);
+    const ctaLabel = pickVariant(ctaLabelVariants, city.slug, 2);
 
     return (
         <RevealSection className="py-24 md:py-32 bg-[var(--background-secondary)] border-b border-[var(--border-subtle)]">
@@ -19,7 +38,7 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
                         Typische Einsatz-Szenarien in <span className="text-[color:var(--value-primary)]">{city.name}</span>
                     </h2>
                     <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-                        Als lokaler Schlüsseldienst kennen wir die häufigsten Notsituationen in Ihrer Nachbarschaft genau.
+                        {subtitle}
                     </p>
                 </div>
 
@@ -41,7 +60,7 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
                                     {scenario.description}
                                 </p>
                                 <div className="mt-auto pt-6 border-t border-[var(--border-subtle)]">
-                                    <p className="font-medium text-[color:var(--text-primary)] mb-3 tracking-wide text-sm uppercase">Lösung: Rufen Sie uns an</p>
+                                    <p className="font-medium text-[color:var(--text-primary)] mb-3 tracking-wide text-sm uppercase">{ctaLabel}</p>
                                     <a href="tel:+4964418056279" className="inline-flex items-center gap-2 text-[color:var(--color-red-600)] font-bold hover:underline group text-lg">
                                         <Icons.Phone className="w-5 h-5 transition-transform group-hover:rotate-12" />
                                         In ca. {city.logistics.drivingTimeMinutes} Min. in {city.name}

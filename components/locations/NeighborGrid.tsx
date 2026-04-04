@@ -5,6 +5,15 @@ import { ArrowRight, MapPin } from "lucide-react";
 import RevealSection from "@/components/motion/RevealSection";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
+import { pickVariant } from "@/lib/textRotation";
+
+const subtitleVariants = [
+    (cityName: string, neighbors: string) => `Von ${cityName} aus sind wir auch schnell in ${neighbors}. Unser Einsatzgebiet deckt den gesamten Lahn-Dill-Kreis ab.`,
+    (cityName: string, neighbors: string) => `Neben ${cityName} betreuen wir auch ${neighbors} — immer mit kurzen Anfahrtszeiten und Festpreisgarantie.`,
+    (cityName: string, neighbors: string) => `Unser Schlüsseldienst ist nicht nur in ${cityName} aktiv, sondern auch in ${neighbors} schnell vor Ort.`,
+    (cityName: string, neighbors: string) => `Rund um ${cityName} versorgen wir auch ${neighbors} zuverlässig mit unserem mobilen Schlüsseldienst.`,
+    (cityName: string, neighbors: string) => `Ob in ${cityName} oder in ${neighbors}: Unsere Monteure kennen die Region und sind blitzschnell bei Ihnen.`,
+];
 
 export default function NeighborGrid({ city }: { city: LocationData }) {
     if (!city.neighbors || city.neighbors.length === 0) return null;
@@ -31,7 +40,7 @@ export default function NeighborGrid({ city }: { city: LocationData }) {
                         Schlüsseldienst auch in Ihrer Nähe
                     </h2>
                     <p className="typo-body-large text-[color:var(--text-secondary)] mb-6">
-                        Von {city.name} aus sind wir auch schnell in {namesString}. Unser Einsatzgebiet deckt den gesamten Lahn-Dill-Kreis ab.
+                        {pickVariant(subtitleVariants, city.slug)(city.name, namesString ?? '')}
                     </p>
                     <Link href="/servicegebiet" className="inline-flex items-center gap-2 text-[color:var(--value-primary)] font-bold hover:underline">
                         Gesamtes Einsatzgebiet ansehen <ArrowRight className="w-4 h-4" />

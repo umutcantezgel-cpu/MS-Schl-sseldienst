@@ -4,6 +4,15 @@ import TrustBadges from "@/components/trust/TrustBadges";
 import { Phone } from "lucide-react";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
+import { pickVariant } from "@/lib/textRotation";
+
+const keywordVariants = [
+    (name: string) => `Zusammenfassung: Als zertifizierter Schlüsseldienst für ${name} garantieren wir eine professionelle Türöffnung zum Festpreis. Wir sind als 24/7 Notdienst rund um die Uhr verfügbar.`,
+    (name: string) => `Ihr Schlüsseldienst in ${name}: Professionelle Türöffnung ohne Beschädigungen, faire Festpreise und ein 24/7 Notdienst, der wirklich rund um die Uhr erreichbar ist.`,
+    (name: string) => `MS Schlüsseldienst ${name} — Ihre lokale Anlaufstelle für Türöffnungen, Schlosswechsel und Einbruchschutz. Zum garantierten Festpreis, 24 Stunden am Tag.`,
+    (name: string) => `Schlüsseldienst ${name}: Wir öffnen Ihre Tür schnell, sauber und zum vereinbarten Festpreis. Unser 24/7 Notdienst steht Ihnen jederzeit zur Verfügung.`,
+    (name: string) => `Notfall-Schlüsseldienst für ${name} und Umgebung. Festpreis-Garantie bei jeder Türöffnung. Tag und Nacht für Sie im Einsatz als zuverlässiger 24/7 Notdienst.`,
+];
 
 interface LocalHeroProps {
     city: LocationData;
@@ -77,7 +86,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                         )}
                         {/* SEO Check Fix: Ensure H1 Keywords are visibly present in text */}
                         <p className="mt-2 text-xs md:text-sm text-[color:var(--text-tertiary)]/70 max-w-2xl text-center leading-relaxed font-light mx-auto">
-                            Zusammenfassung: Als zertifizierter Schlüsseldienst für {city.name} garantieren wir eine professionelle Türöffnung zum Festpreis. Wir sind als 24/7 Notdienst rund um die Uhr verfügbar.
+                            {pickVariant(keywordVariants, city.slug)(city.name)}
                         </p>
                     </StaggerItem>
                     
