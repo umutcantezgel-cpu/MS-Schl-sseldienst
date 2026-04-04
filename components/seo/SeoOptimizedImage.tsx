@@ -23,7 +23,7 @@ type SeoImageProps = Omit<ImageProps, "alt"> & {
  * ```tsx
  * <SeoOptimizedImage
  *   src="/images/tueroeffnung.webp"
- *   alt="Zerstörungsfreie Türöffnung durch MS Schlüsseldienst Wetzlar"
+ *   alt="Zerstörungsfreie Türöffnung durch Schlüssel Schmiede Wetzlar"
  *   width={800}
  *   height={600}
  * />

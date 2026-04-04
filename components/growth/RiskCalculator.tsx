@@ -269,7 +269,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
         <p className="text-xs font-semibold text-gray-400">
           Datenbereitstellung & Analyse durch<br/>
           <a href="https://wetzlar-schlüsseldienst.de" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--color-red-500)] transition-colors mt-1 inline-block text-[13px] font-bold">
-            MS Schlüsseldienst Wetzlar
+            Schlüssel Schmiede Wetzlar
           </a>
         </p>
       </div>

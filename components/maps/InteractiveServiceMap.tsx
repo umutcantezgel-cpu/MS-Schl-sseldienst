@@ -109,7 +109,7 @@ export default function InteractiveServiceMap() {
         new Marker({
           position: WETZLAR_CENTER,
           map,
-          title:"Schlüsseldienst Wetzlar – Hauptstandort",
+          title:"Schlüssel Schmiede Wetzlar – Hauptstandort",
           icon: {
             url:"data:image/svg+xml," + encodeURIComponent(`
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">

@@ -40,7 +40,7 @@ export default function ReviewCard({ review }: { review: Review }) {
 
       {/* Required by Google Structured Data */}
       <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Locksmith" className="hidden">
-        <meta itemProp="name" content="Schlüsseldienst Wetzlar" />
+        <meta itemProp="name" content="Schlüssel Schmiede Wetzlar" />
         <meta itemProp="url" content="https://www.wetzlar-schlüsseldienst.de/" />
       </div>
 

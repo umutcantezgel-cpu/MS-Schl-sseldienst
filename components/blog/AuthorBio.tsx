@@ -27,7 +27,7 @@ export default function AuthorBio({ authorName }: AuthorBioProps) {
           Geschrieben von {formatName(authorName)}
         </h3>
         <p className="text-[color:var(--text-secondary)] text-sm leading-relaxed mb-3">
-          Dieser Beitrag wurde verfasst aus der täglichen Einsatz-Praxis von MS Schlüsseldienst Wetzlar. Alle Angaben entsprechen dem Stand modernster Sicherheitstechnik und jahrelanger Erfahrung im 24/7 Notdienst.
+          Dieser Beitrag wurde verfasst aus der täglichen Einsatz-Praxis von Schlüssel Schmiede Wetzlar. Alle Angaben entsprechen dem Stand modernster Sicherheitstechnik und jahrelanger Erfahrung im 24/7 Notdienst.
         </p>
       </div>
     </div>

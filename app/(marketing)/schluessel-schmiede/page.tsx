@@ -31,7 +31,7 @@ function getLocalBusinessSchema() {
   "@type": "Store",
   "@id": `${siteUrl}/schluessel-schmiede#store`,
   name: "Schlüssel Schmiede Wetzlar",
-  description: "Stationäres Ladengeschäft des MS Schlüsseldienst Wetzlar. Schlüsselanfertigung, KFZ-Schlüssel, Gravuren und persönliche Beratung.",
+  description: "Stationäres Ladengeschäft des Schlüssel Schmiede Wetzlar. Schlüsselanfertigung, KFZ-Schlüssel, Gravuren und persönliche Beratung.",
   url: `${siteUrl}/schluessel-schmiede`,
   telephone: "+4964418056279",
   address: {
@@ -240,7 +240,7 @@ export default function SchluesselSchmiedePage() {
          Hier geht es nicht darum, schnell etwas &bdquo;abzufertigen&ldquo;. Jeder Auftrag, jeder Schlüssel und jedes Anliegen wird ernst genommen. Kommen Sie herein, stellen Sie Fragen, schildern Sie Probleme — und lassen Sie sich in Ruhe beraten.
         </p>
         <p>
-         Die Schlüssel Schmiede ist der <strong className="text-[color:var(--text-primary)]">stationäre Ladenbetrieb des MS Schlüsseldienst Wetzlar</strong>. Wir bündeln unsere Erfahrung aus dem mobilen Schlüsseldienst mit präziser Werkstattarbeit vor Ort.
+         Die Schlüssel Schmiede ist der <strong className="text-[color:var(--text-primary)]">stationäre Ladenbetrieb des Schlüssel Schmiede Wetzlar</strong>. Wir bündeln unsere Erfahrung aus dem mobilen Schlüsseldienst mit präziser Werkstattarbeit vor Ort.
         </p>
        </div>
       </StaggerItem>

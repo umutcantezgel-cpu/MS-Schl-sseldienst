@@ -2,7 +2,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
   title: "Dev Dashboard",
-  description: "Internes Monitoring Dashboard für MS Schlüsseldienst Wetzlar.",
+  description: "Internes Monitoring Dashboard für Schlüssel Schmiede Wetzlar.",
   path: "/dev/dashboard",
   noindex: true,
 });

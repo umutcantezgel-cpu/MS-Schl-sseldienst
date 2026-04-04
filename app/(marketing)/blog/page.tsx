@@ -55,7 +55,7 @@ export default function BlogPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Blog",
-            "name": "Sicherheitstechnik Blog — MS Schlüsseldienst Wetzlar",
+            "name": "Sicherheitstechnik Blog — Schlüssel Schmiede Wetzlar",
             "description": "Ratgeber, Tipps und aktuelles Wissen rund Einbruchschutz, smarte Türschlösser und Sicherheitstechnik in Wetzlar.",
             "url": `${siteUrl}/blog`,
             "blogPost": featuredPosts.map(post => ({

@@ -192,7 +192,7 @@ export const ring4Locations: LocationData[] = [
             },
             {
                 name: "Gewerbekunde Dillenburg",
-                quote: "Als unser Master-Schlüssel im Betrieb abbrach, war die schnelle Reaktionszeit Gold wert. Kein langes Gerede, sofortige Problemlösung. Wir haben MS Schlüsseldienst nun fest in unseren Notfallnummern.",
+                quote: "Als unser Master-Schlüssel im Betrieb abbrach, war die schnelle Reaktionszeit Gold wert. Kein langes Gerede, sofortige Problemlösung. Wir haben Schlüssel Schmiede nun fest in unseren Notfallnummern.",
                 rating: 5
             }
         ],

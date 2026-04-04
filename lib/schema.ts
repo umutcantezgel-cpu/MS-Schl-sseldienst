@@ -27,8 +27,8 @@ export function generateLocalBusinessSchema() {
         // [SEO: Locksmith Entity Schema for Google Knowledge Graph]
         // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
         "@type": ["LocalBusiness", "Locksmith"],
-        "name": "MS Schlüsseldienst Wetzlar",
-        "description": "MS Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 44 Google-Bewertungen mit 5.0 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
+        "name": "Schlüssel Schmiede Wetzlar",
+        "description": "Schlüssel Schmiede Wetzlar ist Ihr 24/7-Schlüsseldienst mit Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 44 Google-Bewertungen mit 5.0 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
         "image": `${siteUrl}/hero-bg.jpg`,
         "logo": {
             "@type": "ImageObject",
@@ -88,12 +88,12 @@ export function generateLocalBusinessSchema() {
             "https://www.facebook.com/profile.php?id=61582567388378",
             "https://www.instagram.com/schluessel_schmiede_wetzlar/",
             "https://www.linkedin.com/in/mina-saad-a218413a9/",
-            "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar",
+            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar",
             "https://www.gelbeseiten.de/gsbiz/ef5183d9-c45e-4b5f-9c89-251ff14ccfef"
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Schlüsseldienst Leistungen",
+            "name": "Schlüssel Schmiede Leistungen",
             "itemListElement": [
                 {
                     "@type": "Offer",
@@ -184,7 +184,7 @@ export function generateWebSiteSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Schlüsseldienst Wetzlar",
+        "name": "Schlüssel Schmiede Wetzlar",
         "url": siteUrl,
         "description": "24/7 Schlüsselnotdienst in Wetzlar, Gießen, Marburg und Lahn-Dill-Kreis. Festpreise, 15–30 Min. Anfahrt.",
         "inLanguage": "de-DE",
@@ -215,7 +215,7 @@ export function generateHowToSchema(title: string, description: string) {
                 "@type": "HowToStep",
                 "position": 1,
                 "name": "Anruf",
-                "text": "Rufen Sie den MS Schlüsseldienst Wetzlar an unter 06441-8056279 oder 0178-2471037. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
+                "text": "Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441-8056279 oder 0178-2471037. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
             },
             {
                 "@type": "HowToStep",
@@ -243,7 +243,7 @@ function generateOrganizationSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "MS Schlüsseldienst Wetzlar",
+        "name": "Schlüssel Schmiede Wetzlar",
         "url": siteUrl,
         "logo": `${siteUrl}/og-image.png`,
         "contactPoint": {
@@ -262,7 +262,7 @@ function generateOrganizationSchema() {
             "addressCountry": "DE"
         },
         "sameAs": [
-            "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar"
+            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
         ]
     };
 }

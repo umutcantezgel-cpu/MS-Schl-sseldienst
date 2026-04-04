@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
     clientName: "Markus D.",
     clientRole: "Hausverwalter",
     company: "Immobilien Wetzlar",
-    quote: "Zuverlässiger Partner für unsere Hausverwaltung. Wenn Mieter sich aussperren oder wir neue Schließanlagen für ganze Blöcke brauchen, MS Schlüsseldienst ist immer unsere erste Anlaufstelle.",
+    quote: "Zuverlässiger Partner für unsere Hausverwaltung. Wenn Mieter sich aussperren oder wir neue Schließanlagen für ganze Blöcke brauchen, Schlüssel Schmiede ist immer unsere erste Anlaufstelle.",
     rating: 5,
     serviceSlug: createSlug("schliessanlagen"),
     featured: true,
@@ -93,7 +93,7 @@ export const testimonials: Testimonial[] = [
   {
     id: createId("testim-10"),
     clientName: "Sonja F.",
-    quote: "Unsere alte Schließanlage war eine Katastrophe. MS Schlüsseldienst hat uns super zu KESO-Zylindern beraten und alles an einem Nachmittag ausgetauscht. Alle Schlüssel drehen super leicht.",
+    quote: "Unsere alte Schließanlage war eine Katastrophe. Schlüssel Schmiede hat uns super zu KESO-Zylindern beraten und alles an einem Nachmittag ausgetauscht. Alle Schlüssel drehen super leicht.",
     rating: 5,
     serviceSlug: createSlug("schliessanlagen"),
     featured: false,

@@ -8,8 +8,8 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { auszeichnungImages, teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Erfahrungen & Bewertungen | Schlüsseldienst Wetzlar",
- description: "⭐ 5.0 Sterne aus über 40 Google Rezensionen. Lesen Sie echte Erfahrungen mit dem MS Schlüsseldienst Wetzlar. 100% Top-Service!",
+ title: "Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar",
+ description: "⭐ 5.0 Sterne aus über 40 Google Rezensionen. Lesen Sie echte Erfahrungen mit der Schlüssel Schmiede Wetzlar. 100% Top-Service!",
  path: "/bewertungen",
  exactTitle: true,
 });
@@ -67,7 +67,7 @@ function generateReviewSchema() {
  return {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Schlüsseldienst Wetzlar",
+  "name": "Schlüssel Schmiede Wetzlar",
   "aggregateRating": {
    "@type": "AggregateRating",
    "ratingValue": "5.0",
@@ -79,7 +79,7 @@ function generateReviewSchema() {
    "@type": "Review",
    "itemReviewed": {
     "@type": "Locksmith",
-    "name": "Schlüsseldienst Wetzlar",
+    "name": "Schlüssel Schmiede Wetzlar",
     "url": "https://www.wetzlar-schlüsseldienst.de/"
    },
    "author": {

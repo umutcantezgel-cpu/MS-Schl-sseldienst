@@ -103,7 +103,7 @@ export default function UeberUnsPage() {
        Sogenannte &quot;Schwarze Schafe&quot; und Abzock-Zentralen aus dem Internet nutzen die pure Notlage der Menschen gnadenlos aus. Versteckte Anfahrtskosten, zerstörte Schlösser und Rechnungen jenseits der 300-Euro-Marke sind leider keine Seltenheit.
       </p>
       <p className="text-[color:var(--text-secondary)] font-bold leading-relaxed mt-4">
-       Genau deshalb haben wir Schlüsseldienst Wetzlar gegründet. Wir wollten beweisen: Echtes Handwerk geht immer ehrlich.
+       Genau deshalb haben wir die Schlüssel Schmiede Wetzlar gegründet. Wir wollten beweisen: Echtes Handwerk geht immer ehrlich.
       </p>
 
       {/* Quote Insert */}
@@ -219,7 +219,7 @@ export default function UeberUnsPage() {
           MS
          </div>
          <div className="flex flex-col items-center gap-1">
-          <h3 className="text-[22px] font-bold text-[color:var(--text-primary)]">MS Schlüsseldienst Wetzlar</h3>
+          <h3 className="text-[22px] font-bold text-[color:var(--text-primary)]"> Schlüssel Schmiede Wetzlar</h3>
           <span className="text-[14px] font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">Inhaber & Geschäftsführer</span>
          </div>
          <div className="flex items-center gap-1 text-[var(--color-red-500)]">

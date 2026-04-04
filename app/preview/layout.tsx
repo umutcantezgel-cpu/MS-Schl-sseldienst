@@ -2,7 +2,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
   title: "Preview",
-  description: "Interne Vorschauseite für MS Schlüsseldienst Wetzlar.",
+  description: "Interne Vorschauseite für Schlüssel Schmiede Wetzlar.",
   path: "/preview",
   noindex: true,
 });

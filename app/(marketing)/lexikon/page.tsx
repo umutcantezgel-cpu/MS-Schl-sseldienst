@@ -39,7 +39,7 @@ export default function LexikonIndexPage() {
               </StaggerItem>
               <StaggerItem animation={entryAnimations.slideUpFade}>
                 <p className="text-xl text-[color:var(--text-secondary)]">
-                  Fachbegriffe rund um Türschlösser, Einbruchschutz und Sicherheitstechnik verständlich erklärt von MS Schlüsseldienst Wetzlar.
+                  Fachbegriffe rund um Türschlösser, Einbruchschutz und Sicherheitstechnik verständlich erklärt von Schlüssel Schmiede Wetzlar.
                 </p>
               </StaggerItem>
             </StaggerReveal>

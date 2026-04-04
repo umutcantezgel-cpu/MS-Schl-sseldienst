@@ -9,7 +9,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Allgemeine Geschäftsbedingungen (AGB)",
-    description: "AGB des MS Schlüsseldienst Wetzlar. ✔️ Transparente Bedingungen für Türöffnungen ✔️ Klare Regeln für Festpreise und Stornos.",
+    description: "AGB des Schlüssel Schmiede Wetzlar. ✔️ Transparente Bedingungen für Türöffnungen ✔️ Klare Regeln für Festpreise und Stornos.",
     path: "/agb",
   })
 
@@ -52,12 +52,12 @@ export default function AGBPage() {
                 <p>1.1. Diese Allgemeinen Geschäftsbedingungen (im Folgenden &quot;AGB&quot;) gelten für alle gegenwärtigen und zukünftigen Rechtsgeschäfte, Dienstleistungen, Werkleistungen und Lieferungen zwischen:</p>
                 <div className="bg-gray-50 p-4 rounded-lg my-4 text-sm border border-gray-200">
                     <strong>Vertragspartner:</strong><br />
-                    MS Schlüsseldienst<br />
+                    Schlüssel Schmiede<br />
                     Mina Saad<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     E-Mail: notfall-schluessel@proton.me<br />
-                    (im Folgenden &quot;Auftragnehmer&quot; oder &quot;MS Schlüsseldienst&quot; genannt)
+                    (im Folgenden &quot;Auftragnehmer&quot; oder &quot;Schlüssel Schmiede&quot; genannt)
                 </div>
                 <p>und dem Auftraggeber (im Folgenden &quot;Kunde&quot; genannt).</p>
                 <p>1.2. Abweichende, entgegenstehende oder ergänzende AGB des Kunden werden, selbst in Kenntnis, nicht Vertragsbestandteil, es sei denn, ihrer Geltung wird ausdrücklich schriftlich zugestimmt.</p>
@@ -66,7 +66,7 @@ export default function AGBPage() {
 
             <LegalSection id="2-vertragsschluss">
                 <h2 className="mt-0">2. Vertragsschluss & Notöffnungen</h2>
-                <p>2.1. Die Angebote des MS Schlüsseldienst auf der Webseite oder in Werbematerialien sind stets freibleibend und unverbindlich.</p>
+                <p>2.1. Die Angebote des Schlüssel Schmiede auf der Webseite oder in Werbematerialien sind stets freibleibend und unverbindlich.</p>
                 <p>2.2. Ein rechtsverbindlicher Vertrag kommt zustande, sobald der Kunde – mündlich (z.B. am Telefon) oder schriftlich – einen Einsatz anfordert und der Auftragnehmer diesen Einsatz bestätigt und disponiert.</p>
                 <p>2.3. Der konkrete Auftragsinhalt und der Preis werden spätestens bei Eintreffen des Technikers am Einsatzort vor Beginn der handwerklichen Tätigkeit besprochen und vom Kunden (digital oder in Papierform) durch Unterschrift auf dem Auftragsformular bestätigt.</p>
                 <p>2.4. Der Auftragnehmer behält sich das Recht vor, die Durchführung einer Notöffnung zu verweigern, wenn berechtigte Zweifel an der Zugangsberechtigung des Kunden zum Objekt bestehen. Der Kunde ist verpflichtet, sich durch ein gültiges amtliches Ausweisdokument auszuweisen.</p>
@@ -93,7 +93,7 @@ export default function AGBPage() {
             <LegalSection id="5-zahlung">
                 <h2 className="mt-0">5. Zahlungsbedingungen</h2>
                 <p>5.1. Nach erbrachter Dienstleistung an der Einsatzstelle ist die Rechnungssumme grundsätzlich <strong>sofort und ohne Abzug</strong> zur Zahlung fällig.</p>
-                <p>5.2. MS Schlüsseldienst akzeptiert folgende Zahlungsmittel direkt vor Ort:</p>
+                <p>5.2. Schlüssel Schmiede akzeptiert folgende Zahlungsmittel direkt vor Ort:</p>
                 <ul>
                     <li>Bargeld</li>
                     <li>Girocard (EC-Karte)</li>
@@ -115,8 +115,8 @@ export default function AGBPage() {
 
             <LegalSection id="7-haftung">
                 <h2 className="mt-0">7. Haftung & Gewährleistung</h2>
-                <p>7.1. MS Schlüsseldienst haftet nach den gesetzlichen Bestimmungen, sofern der Kunde Schadensersatzansprüche geltend macht, die auf Vorsatz oder grober Fahrlässigkeit, einschließlich von Vorsatz oder grober Fahrlässigkeit der Vertreter oder <HoverGlossary explanation="Personen oder Hilfskräfte (z.B. fest angestellte Subunternehmer oder Monteure), die wir zur Ausführung des Auftrags einsetzen.">Erfüllungsgehilfen</HoverGlossary>, beruhen.</p>
-                <p>7.2. Bei einfachen und standardisierten Türöffnungen (nicht-verriegelte Türen) zielt MS Schlüsseldienst auf 100% beschädigungsfreie Verfahren ab. Besteht bereits ein mechanical Defekt an Tür oder Schloss, oder handelt es sich um eine festverriegelte Tür mit extrem hoher Sicherheitsklasse, kann eine Beschädigung des Zylinders/Schutzbeschlags zur vollendeten Öffnung bauartbedingt notwendig sein. Dies wird dem Kunden zwingend <strong>vor Ausführung</strong> auf Risikoabsprache mitgeteilt.</p>
+                <p>7.1. Schlüssel Schmiede haftet nach den gesetzlichen Bestimmungen, sofern der Kunde Schadensersatzansprüche geltend macht, die auf Vorsatz oder grober Fahrlässigkeit, einschließlich von Vorsatz oder grober Fahrlässigkeit der Vertreter oder <HoverGlossary explanation="Personen oder Hilfskräfte (z.B. fest angestellte Subunternehmer oder Monteure), die wir zur Ausführung des Auftrags einsetzen.">Erfüllungsgehilfen</HoverGlossary>, beruhen.</p>
+                <p>7.2. Bei einfachen und standardisierten Türöffnungen (nicht-verriegelte Türen) zielt Schlüssel Schmiede auf 100% beschädigungsfreie Verfahren ab. Besteht bereits ein mechanical Defekt an Tür oder Schloss, oder handelt es sich um eine festverriegelte Tür mit extrem hoher Sicherheitsklasse, kann eine Beschädigung des Zylinders/Schutzbeschlags zur vollendeten Öffnung bauartbedingt notwendig sein. Dies wird dem Kunden zwingend <strong>vor Ausführung</strong> auf Risikoabsprache mitgeteilt.</p>
                 <p>7.3. Für Folgeschäden durch zwingend notwendiges Auffräsen oder Aufbohren von Verriegelungen an verschlossen übergebenen Türen, deren Öffnung anders physikalisch nicht durchführbar ist, wird keine Haftung übernommen, sofern der Kunde dem Eingriff zuvor zugestimmt hat.</p>
                 <p>7.4. Es gilt das gesetzliche Mängelhaftungsrecht für installierte Produkte (z.B. Einbau-Schließzylinder).</p>
             </LegalSection>
@@ -130,8 +130,8 @@ export default function AGBPage() {
             <LegalSection id="9-schlussbestimmungen">
                 <h2 className="mt-0">9. Schlussbestimmungen</h2>
                 <p>9.1. Es gilt das Recht der Bundesrepublik Deutschland.</p>
-                <p>9.2. Ist der Kunde Kaufmann, eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen, ist der Gerichtsstand für alle Streitigkeiten aus Vertragsverhältnissen zwischen dem Kunden und MS Schlüsseldienst der Sitz des Unternehmens in Wetzlar.</p>
-                <p>9.3. MS Schlüsseldienst ist nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter der Domain <code>ec.europa.eu/consumers/odr/</code> finden.</p>
+                <p>9.2. Ist der Kunde Kaufmann, eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen, ist der Gerichtsstand für alle Streitigkeiten aus Vertragsverhältnissen zwischen dem Kunden und Schlüssel Schmiede der Sitz des Unternehmens in Wetzlar.</p>
+                <p>9.3. Schlüssel Schmiede ist nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter der Domain <code>ec.europa.eu/consumers/odr/</code> finden.</p>
                 <p>9.4. Sollten einzelne Bestimmungen dieses Vertrages unwirksam oder undurchführbar sein oder nach Vertragsschluss unwirksam oder undurchführbar werden, bleibt davon die Wirksamkeit des Vertrages im Übrigen unberührt.</p>
             </LegalSection>
 

@@ -87,7 +87,7 @@ export default async function BlogDetailPage({ params }: Props) {
         datePublished: post.metadata.publishedAt,
         dateModified: post.metadata.publishedAt,
         url: `${siteUrl}/blog/${post.slug}`,
-        author: post.metadata.author || "Redaktion MS Schlüsseldienst",
+        author: post.metadata.author || "Redaktion Schlüssel Schmiede",
       })} />
       
       <article className="bg-[var(--surface-primary)] pt-[140px] lg:pt-[180px] pb-24 min-h-screen">

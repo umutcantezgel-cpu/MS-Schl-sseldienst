@@ -7,7 +7,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Impressum",
-    description: "Impressum und rechtliche Angaben des MS Schlüsseldienst Wetzlar. ✔️ Kontaktdaten ✔️ Anbieterkennzeichnung gemäß DDG.",
+    description: "Impressum und rechtliche Angaben des Schlüssel Schmiede Wetzlar. ✔️ Kontaktdaten ✔️ Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
   })
 
@@ -74,7 +74,7 @@ export default function ImpressumPage() {
                         allowFullScreen 
                         referrerPolicy="no-referrer-when-downgrade"
                         src="https://maps.google.com/maps?q=Gloelstra%C3%9Fe+11,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        title="Standort MS Schlüsseldienst Wetzlar"
+                        title="Standort Schlüssel Schmiede Wetzlar"
                     />
                 </div>
             </LegalSection>

@@ -1112,7 +1112,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Niemand möchte wegen eines vergessenen Schlüssels gleich einen massiven Holz- oder Lackschaden an seiner teuren Hauseingangstür erleiden. Unser geschultes Personal setzt deshalb voll auf Zerstörungsfreiheit. Wenn die Tür in Merkenbach lediglich „zugezogen", also nicht aktiv verriegelt ist, verwenden wir spezielle Türfallen-Bypass-Werkzeuge aus unserem Koffer (wie biegsame Nadeln und Gleiter). In weit <strong>über 99 Prozent der Einsätze gleitet die Tür damit lautlos und komplett unbeschädigt auf</strong>.</p>
 
 <h3>Ehrlichkeit vor Ort</h3>
-<p>Die Branche der Schlüsselnotdienste ist leider durchzogen von falschen Versprechungen. MS Schlüsseldienst Wetzlar steht für das komplette Gegenteil: Werktags öffnen wir einfache Haustüren für einen glasklaren <strong>Festpreis von 99 Euro</strong>. Die Fahrtkosten nach Merkenbach und an die benachbarte B277 pauschalisieren wir ehrlich und offen auf exakt <strong>20 Euro</strong>. Weder berechnen wir Ihnen den Feierabendzuschlag in der Minute vor Ort noch versteckte Bereitstellungspreise.</p>
+<p>Die Branche der Schlüsselnotdienste ist leider durchzogen von falschen Versprechungen. Schlüssel Schmiede Wetzlar steht für das komplette Gegenteil: Werktags öffnen wir einfache Haustüren für einen glasklaren <strong>Festpreis von 99 Euro</strong>. Die Fahrtkosten nach Merkenbach und an die benachbarte B277 pauschalisieren wir ehrlich und offen auf exakt <strong>20 Euro</strong>. Weder berechnen wir Ihnen den Feierabendzuschlag in der Minute vor Ort noch versteckte Bereitstellungspreise.</p>
 `,
 
         localTestimonials: [
@@ -1200,7 +1200,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Im grünen Gürtel der mittelhessischen Natur gelegen, bereichern die charmanten Ortsteile <strong>Guntersdorf und Uckersdorf</strong> das Stadtgebiet von Herborn. Gemeinsam zählen die Dörfer knapp 1.300 Einwohner und bestechen durch urige Fachwerkkirchen sowie weite Feld- und Waldränder. Größter Anziehungspunkt in Uckersdorf ist der überregional, bei Familien enorm beliebte <strong>Vogel- und NaturschutzTierpark Herborn</strong>. Hier – fernab der lauten Bundesstraßen – bedeutet eine im Windzug zugefallene Tür oft eine unangenehme Wartezeit, besonders am Wochenende. Mit MS Schlüsseldienst Wetzlar sind wir für die Menschen aus Guntersdorf und Uckersdorf als verlässlicher <strong>Schlüsseldienst aus der direkten Region</strong> sofort abrufbar.</p>
+<p>Im grünen Gürtel der mittelhessischen Natur gelegen, bereichern die charmanten Ortsteile <strong>Guntersdorf und Uckersdorf</strong> das Stadtgebiet von Herborn. Gemeinsam zählen die Dörfer knapp 1.300 Einwohner und bestechen durch urige Fachwerkkirchen sowie weite Feld- und Waldränder. Größter Anziehungspunkt in Uckersdorf ist der überregional, bei Familien enorm beliebte <strong>Vogel- und NaturschutzTierpark Herborn</strong>. Hier – fernab der lauten Bundesstraßen – bedeutet eine im Windzug zugefallene Tür oft eine unangenehme Wartezeit, besonders am Wochenende. Mit Schlüssel Schmiede Wetzlar sind wir für die Menschen aus Guntersdorf und Uckersdorf als verlässlicher <strong>Schlüsseldienst aus der direkten Region</strong> sofort abrufbar.</p>
 
 <h3>Flotte Reaktionszeit auf ländliche Hilferufe</h3>
 <p>Dorfidylle darf nicht „Ende der Welt" bedeuten, wenn absolute Nothilfe im Schlosserbereich gefragt ist. Über die Zubringer aus Herborn oder Dillenburg manövrieren wir unsere Einsatzwagen zuverlässig zu Ihnen nach Guntersdorf oder Uckersdorf. Sie können mit einer absolut fairen Ankunftszeit von <strong>25 bis 30 Minuten</strong> rechnen – zu jeder Tageszeit, ob Sie nun nahe dem Vogelpark oder versteckt an einem Bauernhof in Guntersdorf feststecken.</p>
@@ -1403,7 +1403,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Eine verschlossene Haustür, an der nicht zwingend doppelt abgeriegelt wurde, ist für gut ausgerüstete Fachexperten kein Grund für laute Bohrmaschinen. Unsere kompetenten Monteure setzen in Neukirchen in erster Linie auf Spezialwerkzeuge, die den Schließzylinder umgehen und die Türfalle von außen elegant zurückschieben. So bleibt Ihr Eingangsportal absolut intakt, und Sie können den alten Schlüssel problemlos weiterverwenden. <strong>Über 99 Prozent jener simplen Zugefallen-Öffnungen verlaufen spurenlos.</strong></p>
 
 <h3>Der Land-Tarif ohne böse Überraschungen</h3>
-<p>Ein kleiner, abgelegener Ortsteil bei Braunfels zu sein, darf nicht in exorbitanten Fahrtkosten resultieren. MS Schlüsseldienst Wetzlar garantiert Ihnen für die gesamte Südschleife des Lahn-Dill-Kreises echte Festpreise. Wir verlangen für Neukirchen eine deckelnde Anfahrtspauschale von lediglich <strong>20 Euro</strong>. Die Türöffnung an sich wird werktäglich zu einem glasklaren Festbetrag von exakt <strong>99 Euro</strong> abgewickelt. Seriosität, die man spüren und beweisen kann.</p>
+<p>Ein kleiner, abgelegener Ortsteil bei Braunfels zu sein, darf nicht in exorbitanten Fahrtkosten resultieren. Schlüssel Schmiede Wetzlar garantiert Ihnen für die gesamte Südschleife des Lahn-Dill-Kreises echte Festpreise. Wir verlangen für Neukirchen eine deckelnde Anfahrtspauschale von lediglich <strong>20 Euro</strong>. Die Türöffnung an sich wird werktäglich zu einem glasklaren Festbetrag von exakt <strong>99 Euro</strong> abgewickelt. Seriosität, die man spüren und beweisen kann.</p>
 `,
 
         localTestimonials: [
@@ -1516,7 +1516,7 @@ export const ring4bLocations: LocationData[] = [
             },
             {
                 name: "Felix B.",
-                quote: "Autoschlüssel eingeschlossen am Wanderparkplatz oberhalb von Tiefenbach. MS Schlüsseldienst kam angerauscht, öffnete meinen Passat in 2 Minuten auf eine Art, die ich nie für möglich gehalten hätte, komplett ohne Lackschaden. Danke!",
+                quote: "Autoschlüssel eingeschlossen am Wanderparkplatz oberhalb von Tiefenbach. Schlüssel Schmiede kam angerauscht, öffnete meinen Passat in 2 Minuten auf eine Art, die ich nie für möglich gehalten hätte, komplett ohne Lackschaden. Danke!",
                 rating: 5
             }
         ],

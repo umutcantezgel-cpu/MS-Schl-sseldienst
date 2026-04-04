@@ -69,7 +69,7 @@ export async function GET(req: NextRequest) {
                                 letterSpacing: '-0.02em',
                             }}
                         >
-                            MS Schlüsseldienst
+                            Schlüssel Schmiede
                         </span>
                     </div>
 

@@ -437,7 +437,7 @@ export const ring2bLocations: LocationData[] = [
         },
         faqs: [
             { question: "Liegt Wißmar noch im Einsatzgebiet?", answer: "Ja, Wißmar gehört fest zu unserem regulären Einsatzgebiet. Die Anfahrt dauert ca. 12 Minuten und ist kostenfrei." },
-            { question: "Wer steht hinter dem Schlüsseldienst Wißmar?", answer: "Wir sind MS Schlüsseldienst Wetzlar — ein regionaler Handwerksbetrieb mit Sitz in Wetzlar, kein anonymes Callcenter." },
+            { question: "Wer steht hinter dem Schlüsseldienst Wißmar?", answer: "Wir sind Schlüssel Schmiede Wetzlar — ein regionaler Handwerksbetrieb mit Sitz in Wetzlar, kein anonymes Callcenter." },
             { question: "Was kostet die Türöffnung in Wißmar?", answer: "Zugefallene Standardtüren öffnen wir werktags tagsüber zum Festpreis von 99 Euro — ohne Zusatzkosten für die Anfahrt." }
         ],
         neighbors: ["schluesseldienst-lahnau", "schluesseldienst-wettenberg", "schluesseldienst-wetzlar-dutenhofen"]

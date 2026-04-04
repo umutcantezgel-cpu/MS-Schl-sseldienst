@@ -7,7 +7,7 @@ export const teamMembers: TeamMember[] = [
     name: "Mustafa S.",
     role: "Geschäftsführer & Einsatzleiter",
     department: "Geschäftsleitung",
-    bio: "Mustafa leitet den MS Schlüsseldienst Wetzlar mit über 15 Jahren Erfahrung in der Sicherheitstechnik. Er ist spezialisiert auf komplexe Schließanlagen und Tresoröffnungen. Seine Philosophie: Ehrliche Preise und fachgerechte, zerstörungsfreie Arbeit für jeden Kunden.",
+    bio: "Mustafa leitet den Schlüssel Schmiede Wetzlar mit über 15 Jahren Erfahrung in der Sicherheitstechnik. Er ist spezialisiert auf komplexe Schließanlagen und Tresoröffnungen. Seine Philosophie: Ehrliche Preise und fachgerechte, zerstörungsfreie Arbeit für jeden Kunden.",
     shortBio: "Gründer und Experte für zertifizierte Schließanlagen.",
     image: "/team/mustafa.jpg", // Placeholder
     skills: ["Schließanlagen", "Tresoröffnung", "Sicherheitsberatung"],

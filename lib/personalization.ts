@@ -19,28 +19,28 @@ interface PersonalizedContent {
 
 const CONTENT_MAP: Record<VisitorSegment, PersonalizedContent> = {
   "new-visitor": {
-    heroHeadline: "Schlüsseldienst Wetzlar — Türöffnung ab 99€ Festpreis",
+    heroHeadline: "Schlüssel Schmiede Wetzlar — Türöffnung ab 99€ Festpreis",
     heroSubline: "24/7 Notdienst · In 15-30 Min vor Ort · Keine versteckten Kosten",
     ctaText: "Jetzt kostenlos anrufen",
     ctaSecondary: "Preisliste ansehen",
     trustSignal: "Über 500 zufriedene Kunden in Wetzlar & Umgebung",
   },
   returning: {
-    heroHeadline: "Willkommen zurück! Festpreise ohne Überraschungen",
+    heroHeadline: "Willkommen zurück bei der Schlüssel Schmiede!",
     heroSubline: "Schön, dass Sie uns wieder besuchen · Alle Preise transparent & fair",
     ctaText: "Direkt anrufen",
     ctaSecondary: "Leistungen entdecken",
     trustSignal: "99% Kundenzufriedenheit — auch beim zweiten Einsatz",
   },
   "service-interested": {
-    heroHeadline: "Professionell & zum Festpreis — Garantiert",
+    heroHeadline: "Schlüssel Schmiede — Professionell & zum Festpreis",
     heroSubline: "Ausgebildet von Uwe Sarfeld · Beschädigungsfreie Türöffnung · TÜV-geprüft",
     ctaText: "Kostenlose Beratung anfordern",
     ctaSecondary: "Alle Leistungen ansehen",
     trustSignal: "Jede Leistung zum garantierten Festpreis — vor Anfahrt genannt",
   },
   "high-intent": {
-    heroHeadline: "Ausgesperrt? Wir sind in 30 Minuten bei Ihnen!",
+    heroHeadline: "Ausgesperrt? Die Schlüssel Schmiede ist in 30 Min da!",
     heroSubline: "Festpreis ab 99€ · Keine Anfahrtskosten · Sofort verfügbar",
     ctaText: "Jetzt anrufen — 06441 8056279",
     ctaSecondary: "Festpreis berechnen",

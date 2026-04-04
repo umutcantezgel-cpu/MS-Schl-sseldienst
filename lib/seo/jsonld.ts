@@ -1,5 +1,5 @@
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wetzlar-schlüsseldienst.de";
-const companyName = "MS Schlüsseldienst Wetzlar";
+const companyName = "Schlüssel Schmiede Wetzlar";
 const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "info@wetzlar-schlüsseldienst.de";
 const telephone = "+4964418056279"; // Landline is prioritized for local SEO trustworthiness
 
@@ -9,9 +9,9 @@ export function createOrganizationSchema() {
         "@type": "Organization",
         name: companyName,
         url: siteUrl,
-        logo: `${siteUrl}/images/logo.webp`,
+        logo: `${siteUrl}/images/logo-neu.svg`,
         sameAs: [
-            "https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar"
+            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
         ],
         contactPoint: {
             "@type": "ContactPoint",

@@ -9,7 +9,7 @@ import { pickVariant } from "@/lib/textRotation";
 const keywordVariants = [
     (name: string) => `Zusammenfassung: Als zertifizierter Schlüsseldienst für ${name} garantieren wir eine professionelle Türöffnung zum Festpreis. Wir sind als 24/7 Notdienst rund um die Uhr verfügbar.`,
     (name: string) => `Ihr Schlüsseldienst in ${name}: Professionelle Türöffnung ohne Beschädigungen, faire Festpreise und ein 24/7 Notdienst, der wirklich rund um die Uhr erreichbar ist.`,
-    (name: string) => `MS Schlüsseldienst ${name} — Ihre lokale Anlaufstelle für Türöffnungen, Schlosswechsel und Einbruchschutz. Zum garantierten Festpreis, 24 Stunden am Tag.`,
+    (name: string) => `Schlüssel Schmiede ${name} — Ihre lokale Anlaufstelle für Türöffnungen, Schlosswechsel und Einbruchschutz. Zum garantierten Festpreis, 24 Stunden am Tag.`,
     (name: string) => `Schlüsseldienst ${name}: Wir öffnen Ihre Tür schnell, sauber und zum vereinbarten Festpreis. Unser 24/7 Notdienst steht Ihnen jederzeit zur Verfügung.`,
     (name: string) => `Notfall-Schlüsseldienst für ${name} und Umgebung. Festpreis-Garantie bei jeder Türöffnung. Tag und Nacht für Sie im Einsatz als zuverlässiger 24/7 Notdienst.`,
 ];

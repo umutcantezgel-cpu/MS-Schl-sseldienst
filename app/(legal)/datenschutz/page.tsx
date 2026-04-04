@@ -8,7 +8,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Datenschutz",
-    description: "Datenschutzerklärung des MS Schlüsseldienst Wetzlar. ✔️ DSGVO-konform ✔️ Transparenz über Datenverarbeitung und Cookies.",
+    description: "Datenschutzerklärung des Schlüssel Schmiede Wetzlar. ✔️ DSGVO-konform ✔️ Transparenz über Datenverarbeitung und Cookies.",
     path: "/datenschutz",
   })
 
@@ -52,7 +52,7 @@ export default function DatenschutzPage() {
                 <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
-                    MS Schlüsseldienst Wetzlar<br />
+                    Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />

@@ -15,7 +15,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Profilzylinder",
     category: "Schlösser",
     definition: "Der Profilzylinder, oft auch Euro-Profilzylinder genannt, ist das heute in Europa am weitesten verbreitete Sicherheitsschloss für Türen. Er hat die Form eines überdimensionalen Schlüssellochs.",
-    longDescription: "Der Profilzylinder wurde 1928 von Sylvester Wöhrle erfunden. Die standardisierte Formgebung ermöglicht es, den Schließzylinder unabhängig vom Einsteckschloss zu tauschen. Innerhalb des Zylinders befinden sich federgelagerte Stiftpaare, die durch die Einkerbungen des Schlüssels in die korrekte Trennlinie gebracht werden, wodurch sich der Zylinder drehen lässt. Für den professionellen Einbruchschutz sind Profilzylinder mit Kernziehschutz, Bohrschutz und Schlagschlüsselschutz essenziell. MS Schlüsseldienst Wetzlar rät dringend von Baumarkt-Zylindern ohne VdS-Zertifizierung ab.",
+    longDescription: "Der Profilzylinder wurde 1928 von Sylvester Wöhrle erfunden. Die standardisierte Formgebung ermöglicht es, den Schließzylinder unabhängig vom Einsteckschloss zu tauschen. Innerhalb des Zylinders befinden sich federgelagerte Stiftpaare, die durch die Einkerbungen des Schlüssels in die korrekte Trennlinie gebracht werden, wodurch sich der Zylinder drehen lässt. Für den professionellen Einbruchschutz sind Profilzylinder mit Kernziehschutz, Bohrschutz und Schlagschlüsselschutz essenziell. Schlüssel Schmiede Wetzlar rät dringend von Baumarkt-Zylindern ohne VdS-Zertifizierung ab.",
     seoKeywords: ["Profilzylinder Wetzlar", "Schließzylinder austauschen", "Türschloss wechseln", "Euro-Profilzylinder Sicherheit"],
     faqs: [
       {
@@ -24,7 +24,7 @@ export const lexikonData: LexikonEntry[] = [
       },
       {
         question: "Kann jeder Profilzylinder ausgetauscht werden?",
-        answer: "Ja, dank der Standardform lassen sich Profilzylinder problemlos tauschen. MS Schlüsseldienst Wetzlar bietet einen 24/7 Zylindertausch für alle gängigen Maße an."
+        answer: "Ja, dank der Standardform lassen sich Profilzylinder problemlos tauschen. Schlüssel Schmiede Wetzlar bietet einen 24/7 Zylindertausch für alle gängigen Maße an."
       }
     ],
     relatedSlugs: ["kernziehschutz", "bohrschutz"]
@@ -42,7 +42,7 @@ export const lexikonData: LexikonEntry[] = [
         answer: "Ja, Schutzbeschläge mit integrierter Zylinderabdeckung (Kernziehschutz) lassen sich an fast allen Haus- und Wohnungstüren nachrüsten."
       },
       {
-        question: "Bietet mein MS Schlüsseldienst Kernziehschutz an?",
+        question: "Bietet mein Schlüssel Schmiede Kernziehschutz an?",
         answer: "Absolut. Unsere Sicherheitstechniker in Wetzlar rüsten Ihre Tür fachgerecht mit VdS-geprüften Schutzbeschlägen auf, um Einbruchversuche im Keim zu ersticken."
       }
     ],
@@ -53,12 +53,12 @@ export const lexikonData: LexikonEntry[] = [
     title: "Ziehfix (Glocke)",
     category: "Werkzeuge",
     definition: "Der Ziehfix (auch „Knackrohr“ oder „Glocke“) ist ein professionelles Aufsperrwerkzeug, mit dem Schließzylinder herausgezogen oder gebrochen werden.",
-    longDescription: "Ursprünglich für Feuerwehren und Schlüsseldienste entwickelt, um bei Notfällen schnell Türen öffnen zu können, wird das Werkzeug heute leider auch oft in der organisierten Kriminalität eingesetzt. Beim Einsatz durch den Fachmann (z.B. MS Schlüsseldienst Wetzlar) wird dieses Werkzeug nur verwendet, wenn zerstörungsfreie Methoden (wie Lockpicking) nicht greifen, da bei dieser Methode der Zylinder zerstört wird. Ein effektiver Schutz gegen diese Methode ist ein Sicherheitsbeschlag mit Kernziehschutz.",
+    longDescription: "Ursprünglich für Feuerwehren und Schlüsseldienste entwickelt, um bei Notfällen schnell Türen öffnen zu können, wird das Werkzeug heute leider auch oft in der organisierten Kriminalität eingesetzt. Beim Einsatz durch den Fachmann (z.B. Schlüssel Schmiede Wetzlar) wird dieses Werkzeug nur verwendet, wenn zerstörungsfreie Methoden (wie Lockpicking) nicht greifen, da bei dieser Methode der Zylinder zerstört wird. Ein effektiver Schutz gegen diese Methode ist ein Sicherheitsbeschlag mit Kernziehschutz.",
     seoKeywords: ["Ziehfix Schlüsseldienst", "Türaufbruch Werkzeug", "Zylinder ziehen", "Zylinder aufbohren Wetzlar"],
     faqs: [
       {
         question: "Macht der Einsatz eines Ziehfix die Tür kaputt?",
-        answer: "Der Schließzylinder wird zerstört und muss ersetzt werden. Bei fachgerechter Anwendung durch MS Schlüsseldienst bleibt das Einsteckschloss und das Türblatt jedoch vollständig intakt."
+        answer: "Der Schließzylinder wird zerstört und muss ersetzt werden. Bei fachgerechter Anwendung durch Schlüssel Schmiede bleibt das Einsteckschloss und das Türblatt jedoch vollständig intakt."
       }
     ],
     relatedSlugs: ["kernziehschutz", "profilzylinder"]
@@ -77,7 +77,7 @@ export const lexikonData: LexikonEntry[] = [
       },
       {
         question: "Warum brauche ich eine Sicherungskarte?",
-        answer: "Die Sicherungskarte garantiert, dass Nachschlüssel nur gegen Vorlage der Karte (z.B. bei MS Schlüsseldienst Wetzlar) gefertigt werden dürfen. Das schützt Mieter und Eigentümer vor illegalen Kopien."
+        answer: "Die Sicherungskarte garantiert, dass Nachschlüssel nur gegen Vorlage der Karte (z.B. bei Schlüssel Schmiede Wetzlar) gefertigt werden dürfen. Das schützt Mieter und Eigentümer vor illegalen Kopien."
       }
     ]
   },
@@ -105,7 +105,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Mehrfachverriegelung",
     category: "Einbruchschutz",
     definition: "Eine Mehrfachverriegelung sperrt die Tür nicht nur an der Höhe des Schließzylinders, sondern gleichzeitig an mehreren Punkten (oben und unten) in der Zarge.",
-    longDescription: "Während ein Standard-Einsteckschloss nur einen Riegel in die Zarge ausfährt, steuert die Mechanik einer Mehrfachverriegelung oft drei oder fünf Riegel an (z.B. Schwenkhaken oder Bolzen). Moderne Haustüren werden fast ausschließlich damit ausgestattet. MS Schlüsseldienst empfiehlt automatische Mehrfachverriegelungen, die beim einfachen Zuziehen der Tür automatisch greifen und somit einen elementaren Sicherheitsgewinn bewirken.",
+    longDescription: "Während ein Standard-Einsteckschloss nur einen Riegel in die Zarge ausfährt, steuert die Mechanik einer Mehrfachverriegelung oft drei oder fünf Riegel an (z.B. Schwenkhaken oder Bolzen). Moderne Haustüren werden fast ausschließlich damit ausgestattet. Schlüssel Schmiede empfiehlt automatische Mehrfachverriegelungen, die beim einfachen Zuziehen der Tür automatisch greifen und somit einen elementaren Sicherheitsgewinn bewirken.",
     seoKeywords: ["Mehrfachverriegelung Reparatur Wetzlar", "Haustür 3-fach Verriegelung", "Automatische Türentriegelung"],
     faqs: [
       {
@@ -120,7 +120,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Schlagschlüssel (Bump Key)",
     category: "Werkzeuge",
     definition: "Ein Schlagschlüssel ist ein manipulierter Schlüssel, der durch einen leichten Schlag auf den Schlüsselkopf die Stifte im Zylinder kurzzeitig in die Öffnungsposition springen lässt.",
-    longDescription: "Die sogenannte Schlagschlüsseltechnik (Bumping) ist eine zerstörungsfreie Öffnungsmethode, die von Profis, leider aber auch von Einbrechern genutzt wird. Normale Stiftzylinder aus dem Baumarkt lassen sich so in oft weniger als 3 Sekunden geräuschlos öffnen. Um sich davor zu schützen, berät MS Schlüsseldienst Wetzlar zu speziellen Schließzylindern mit Schlagschlüsselschutz, bei denen die Stiftmechanik so konstruiert ist, dass sie physisch nicht 'gebumpt' werden kann.",
+    longDescription: "Die sogenannte Schlagschlüsseltechnik (Bumping) ist eine zerstörungsfreie Öffnungsmethode, die von Profis, leider aber auch von Einbrechern genutzt wird. Normale Stiftzylinder aus dem Baumarkt lassen sich so in oft weniger als 3 Sekunden geräuschlos öffnen. Um sich davor zu schützen, berät Schlüssel Schmiede Wetzlar zu speziellen Schließzylindern mit Schlagschlüsselschutz, bei denen die Stiftmechanik so konstruiert ist, dass sie physisch nicht 'gebumpt' werden kann.",
     seoKeywords: ["Schlagschlüssel Schutz Wetzlar", "Bumping Türschloss", "Zylinder manipulationssicher"],
     faqs: [
       {
@@ -135,7 +135,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Einsteckschloss",
     category: "Schlösser",
     definition: "Das Einsteckschloss ist die mechanische Kassette (Schlosskasten), die unsichtbar im Türblatt eingelassen ist und die Riegel- und Fallenmechanik enthält.",
-    longDescription: "Viele verwechseln das Türschloss mit dem Schließzylinder. Der Zylinder ist nur der Antrieb – das eigentliche Schloss ist das Einsteckschloss im Türblatt. Es überträgt die Drehbewegung des Schlüssels auf den Riegel (zum Abschließen) und die Klinkenbetätigung auf die Falle (zum Zuziehen). Ein defektes Einsteckschloss äußert sich oft durch eine 'durchdrehende' Türklinke. Wir von MS Schlüsseldienst haben stets alle gängigen Dornmaße (Entfernung zwischen Türkante und Schlüssellochmitte) in unseren Einsatzfahrzeugen im Lahn-Dill-Kreis vorrätig.",
+    longDescription: "Viele verwechseln das Türschloss mit dem Schließzylinder. Der Zylinder ist nur der Antrieb – das eigentliche Schloss ist das Einsteckschloss im Türblatt. Es überträgt die Drehbewegung des Schlüssels auf den Riegel (zum Abschließen) und die Klinkenbetätigung auf die Falle (zum Zuziehen). Ein defektes Einsteckschloss äußert sich oft durch eine 'durchdrehende' Türklinke. Wir von Schlüssel Schmiede haben stets alle gängigen Dornmaße (Entfernung zwischen Türkante und Schlüssellochmitte) in unseren Einsatzfahrzeugen im Lahn-Dill-Kreis vorrätig.",
     seoKeywords: ["Einsteckschloss wechseln Wetzlar", "Türschloss kaputt", "Dornmaß messen", "Falle klemmt"],
     faqs: [
       {
@@ -164,7 +164,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Buntbartschloss",
     category: "Schlösser",
     definition: "Das Buntbartschloss ist das klassische Zimmertürschloss, dessen Sperrprinzip auf einem einfachen, gebogenen Schlüsselbart beruht.",
-    longDescription: "Aufgrund ihrer sehr geringen Sicherheit werden Buntbartschlösser heutzutage fast ausschließlich für Innentüren eingesetzt. Es gibt in Deutschland etwa 70 standardisierte Schweifungen (Schlüsselformen). Bei MS Schlüsseldienst fertigen wir entsprechende Innentüren-Nachschlüssel oder öffnen zugefallene Zimmertüren (z. B. wenn das Kind sich eingesperrt hat) innerhalb von Sekunden, komplett beschädigungsfrei.",
+    longDescription: "Aufgrund ihrer sehr geringen Sicherheit werden Buntbartschlösser heutzutage fast ausschließlich für Innentüren eingesetzt. Es gibt in Deutschland etwa 70 standardisierte Schweifungen (Schlüsselformen). Bei Schlüssel Schmiede fertigen wir entsprechende Innentüren-Nachschlüssel oder öffnen zugefallene Zimmertüren (z. B. wenn das Kind sich eingesperrt hat) innerhalb von Sekunden, komplett beschädigungsfrei.",
     seoKeywords: ["Zimmertürschloss Wetzlar", "Buntbartschlüssel nachmachen", "Zimmertür öffnen"],
     faqs: [
       {
@@ -178,7 +178,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Gleichschließende Anlage",
     category: "Schlösser",
     definition: "Eine gleichschließende Anlage ermöglicht es, mehrere unterschiedliche Schlösser (z. B. Haustür, Briefkasten, Garagentor) mit nur einem einzigen Schlüssel zu bedienen.",
-    longDescription: "Anders als bei komplexen Z- oder HS-Anlagen (Zentralschloss/Hauptschlüssel), bei denen unterschiedliche Berechtigungen vergeben werden, sind bei gleichschließenden Schlössern alle Zylinder baugleich gekerbt. Das bedeutet ultimativen Komfort für Eigenheimbesitzer: Der dicke Schlüsselbund wird durch einen einzigen Hightech-Schlüssel ersetzt. MS Schlüsseldienst plant, vermisst und installiert solche Systeme für Eigenheime in Wetzlar, Braunfels und Aßlar inklusive Sicherungskarte zum Schutz vor unberechtigten Schlüsselkopien.",
+    longDescription: "Anders als bei komplexen Z- oder HS-Anlagen (Zentralschloss/Hauptschlüssel), bei denen unterschiedliche Berechtigungen vergeben werden, sind bei gleichschließenden Schlössern alle Zylinder baugleich gekerbt. Das bedeutet ultimativen Komfort für Eigenheimbesitzer: Der dicke Schlüsselbund wird durch einen einzigen Hightech-Schlüssel ersetzt. Schlüssel Schmiede plant, vermisst und installiert solche Systeme für Eigenheime in Wetzlar, Braunfels und Aßlar inklusive Sicherungskarte zum Schutz vor unberechtigten Schlüsselkopien.",
     seoKeywords: ["Gleichschließende Zylinder Wetzlar", "Schließanlage Einfamilienhaus", "Ein Schlüssel für Alles"],
     faqs: [
       {

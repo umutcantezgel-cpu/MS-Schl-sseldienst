@@ -30,7 +30,7 @@ const mainServicesSchema = [
 ];
 
 export const metadata = generateSharedMetadata({
- title: "Preise & Kosten | Schlüsseldienst Wetzlar",
+ title: "Preise & Kosten | Schlüssel Schmiede Wetzlar",
  description: "Türöffnung ab 99€! ✔️ 100% Festpreis-Garantie in Wetzlar ✔️ Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
  path: "/preise",
 });

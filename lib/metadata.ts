@@ -36,7 +36,7 @@ export const generateSharedMetadata = ({
         // ── [FIX: Seobility #1 — Title too long] ──────────────────────────
         // exactTitle=true → use as-is (for layout default or short page titles)
         // exactTitle=false → append brand suffix via template
-        // exactTitle=true → { absolute: title } bypasses layout.tsx template "%s | MS Schlüsseldienst Wetzlar"
+        // exactTitle=true → { absolute: title } bypasses layout.tsx template "%s | Schlüssel Schmiede Wetzlar"
         // exactTitle=false → plain string, layout template auto-appends suffix
         title: exactTitle ? { absolute: title } : title,
 
@@ -72,7 +72,7 @@ export const generateSharedMetadata = ({
             title,
             description,
             url,
-            siteName: "MS Schlüsseldienst Wetzlar",
+            siteName: "Schlüssel Schmiede Wetzlar",
             locale: "de_DE",
             type: "website",
             images: [

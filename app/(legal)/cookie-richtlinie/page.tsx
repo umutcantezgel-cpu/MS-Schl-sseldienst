@@ -8,7 +8,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Cookie-Richtlinie",
-    description: "Cookie-Richtlinie des MS Schlüsseldienst Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
+    description: "Cookie-Richtlinie des Schlüssel Schmiede Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
     path: "/cookie-richtlinie",
   })
 
@@ -199,7 +199,7 @@ export default function CookieRichtliniePage() {
                 <p>Bei Fragen zu unserer Cookie-Richtlinie oder zum Datenschutz wenden Sie sich bitte an:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
-                    MS Schlüsseldienst Wetzlar<br />
+                    Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />

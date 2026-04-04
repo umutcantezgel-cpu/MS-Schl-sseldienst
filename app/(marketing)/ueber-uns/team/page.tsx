@@ -9,7 +9,7 @@ import { getAllTeamMembers } from "@/lib/data/team";
 
 export const metadata = generateSharedMetadata({
   title: "Unser Team Wetzlar | Festangestellte Monteure",
-  description: "Lernen Sie das Team von MS Schlüsseldienst kennen! ✔️ Geprüftes Personal ✔️ Keine Subunternehmer. Regionale Experten für Ihre Sicherheit.",
+  description: "Lernen Sie das Team von Schlüssel Schmiede kennen! ✔️ Geprüftes Personal ✔️ Keine Subunternehmer. Regionale Experten für Ihre Sicherheit.",
   path: "/ueber-uns/team",
   exactTitle: true,
 });
@@ -24,7 +24,7 @@ export default function TeamPage() {
           <div className="max-w-3xl text-center mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Unser lokales Einsatz-Team</h1>
             <p className="text-lg md:text-xl text-blue-100">
-              Bei MS Schlüsseldienst Wetzlar arbeiten keine Subunternehmer, sondern ausgebildete, 
+              Bei Schlüssel Schmiede Wetzlar arbeiten keine Subunternehmer, sondern ausgebildete, 
               festangestellte Spezialisten. Lernen Sie unsere Mitarbeiter kennen.
             </p>
           </div>

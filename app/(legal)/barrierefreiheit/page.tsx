@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
   title: "Barrierefreiheit",
-  description: "Informationen zur Barrierefreiheit des MS Schlüsseldienst Wetzlar. Wir setzen uns für eine uneingeschränkte Nutzung unserer Website ein.",
+  description: "Informationen zur Barrierefreiheit des Schlüssel Schmiede Wetzlar. Wir setzen uns für eine uneingeschränkte Nutzung unserer Website ein.",
   path: "/barrierefreiheit",
 });
 

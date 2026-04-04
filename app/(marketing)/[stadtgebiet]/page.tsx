@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
     exactTitle: true,
   });
 
-  const ogUrl = `/api/og?title=${encodeURIComponent(`Schlüsseldienst ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;
+  const ogUrl = `/api/og?title=${encodeURIComponent(`Schlüssel Schmiede ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;
 
   return {
     ...baseMeta,
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
           url: ogUrl,
           width: 1200,
           height: 630,
-          alt: `Schlüsseldienst ${city.name} — In ${city.logistics.drivingTimeMinutes} Min vor Ort`,
+          alt: `Schlüssel Schmiede ${city.name} — In ${city.logistics.drivingTimeMinutes} Min vor Ort`,
         },
       ],
     },
@@ -68,13 +68,13 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
   }
 
   // Dynamische Bild-URL für OG und Schema
-  const ogUrl = `${siteUrl}/api/og?title=${encodeURIComponent(`Schlüsseldienst ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;
+  const ogUrl = `${siteUrl}/api/og?title=${encodeURIComponent(`Schlüssel Schmiede ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;
 
   // Schema.org — Stadtspezifisches LocalBusiness (vollständig, Rich-Results-ready)
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Locksmith",
-    "name": `MS Schlüsseldienst ${city.name}`,
+    "name": `Schlüssel Schmiede ${city.name}`,
     "url": `${siteUrl}/${city.slug}`,
     "telephone": ["+4964418056279", "+491782471037"],
     "email": "info@wetzlar-schlüsseldienst.de",
@@ -113,7 +113,7 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
     "parentOrganization": {
       "@type": "Locksmith",
       "@id": `${siteUrl}/#localbusiness`,
-      "name": "MS Schlüsseldienst Wetzlar",
+      "name": "Schlüssel Schmiede Wetzlar",
       "url": siteUrl
     }
   };

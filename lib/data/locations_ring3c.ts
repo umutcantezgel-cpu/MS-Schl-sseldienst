@@ -97,7 +97,7 @@ export const ring3cLocations: LocationData[] = [
         faqs: [
             { question: "Kommen Sie auch in kleinere Orte wie Kölschhausen?", answer: "Selbstverständlich. Kölschhausen gehört zu unserem regulären Einsatzgebiet." },
             { question: "Wie teuer ist der Notdienst in Kölschhausen?", answer: "Zugefallene Standardtüren öffnen wir werktags tagsüber zum Festpreis ab 99 Euro." },
-            { question: "Sind Sie ein lokaler Betrieb?", answer: "Ja, MS Schlüsseldienst Wetzlar ist ein regionaler Handwerksbetrieb — kein Callcenter, keine Vermittlung." }
+            { question: "Sind Sie ein lokaler Betrieb?", answer: "Ja, Schlüssel Schmiede Wetzlar ist ein regionaler Handwerksbetrieb — kein Callcenter, keine Vermittlung." }
         ],
         neighbors: ["schluesseldienst-ehringshausen", "schluesseldienst-katzenfurt", "schluesseldienst-herborn"]
     },
@@ -222,7 +222,7 @@ export const ring3cLocations: LocationData[] = [
         faqs: [
             { question: "Wie schnell ist der Schlüsseldienst in Biskirchen?", answer: "Wir erreichen Biskirchen über die B49 in durchschnittlich 13 Minuten." },
             { question: "Was kostet eine Notöffnung in Biskirchen?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 99 Euro." },
-            { question: "Sind Sie ein lokaler Schlüsseldienst?", answer: "Ja, wir sind MS Schlüsseldienst Wetzlar — ein regionaler Fachbetrieb, kein anonymes Callcenter." }
+            { question: "Sind Sie ein lokaler Schlüsseldienst?", answer: "Ja, wir sind Schlüssel Schmiede Wetzlar — ein regionaler Fachbetrieb, kein anonymes Callcenter." }
         ],
         neighbors: ["schluesseldienst-leun", "schluesseldienst-lahnbahnhof", "schluesseldienst-braunfels"]
     },

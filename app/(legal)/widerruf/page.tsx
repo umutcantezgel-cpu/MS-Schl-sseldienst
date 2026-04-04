@@ -7,7 +7,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Widerrufsbelehrung",
-    description: "Widerrufsbelehrung des MS Schlüsseldienst Wetzlar. ✔️ Informationen zum Widerrufsrecht ✔️ Muster-Widerrufsformular.",
+    description: "Widerrufsbelehrung des Schlüssel Schmiede Wetzlar. ✔️ Informationen zum Widerrufsrecht ✔️ Muster-Widerrufsformular.",
     path: "/widerruf",
   })
 
@@ -59,7 +59,7 @@ export default function WiderrufPage() {
                 <p>Um Ihr Widerrufsrecht auszuüben, richten Sie Ihre Widerrufserklärung bitte an:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
-                    MS Schlüsseldienst Wetzlar<br />
+                    Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />
@@ -108,7 +108,7 @@ export default function WiderrufPage() {
                     <div className="bg-white border border-gray-300 rounded-xl p-6 space-y-3 text-sm">
                         <p>An:<br />
                         <strong>Mina Saad</strong><br />
-                        MS Schlüsseldienst Wetzlar<br />
+                        Schlüssel Schmiede Wetzlar<br />
                         Gloelstraße 11<br />
                         35576 Wetzlar<br />
                         E-Mail: notfall-schluessel@proton.me</p>
@@ -145,7 +145,7 @@ export default function WiderrufPage() {
                 <p>Bei Fragen zum Widerrufsrecht wenden Sie sich bitte an:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
-                    MS Schlüsseldienst Wetzlar<br />
+                    Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />

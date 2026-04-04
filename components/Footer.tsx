@@ -21,11 +21,11 @@ const menuItems: MenuItem[] = [
  {
   title:"Einsatzgebiete",
   links: [
-   { text:"Schlüsseldienst Gießen", url:"/schluesseldienst-giessen" },
-   { text:"Schlüsseldienst Wetzlar", url:"/schluesseldienst-wetzlar-niedergirmes" },
-   { text:"Schlüsseldienst Aßlar", url:"/schluesseldienst-asslar" },
-   { text:"Schlüsseldienst Herborn", url:"/schluesseldienst-herborn" },
-   { text:"Schlüsseldienst Dillenburg", url:"/schluesseldienst-dillenburg" },
+   { text:"Schlüssel Schmiede Gießen", url:"/schluesseldienst-giessen" },
+   { text:"Schlüssel Schmiede Wetzlar", url:"/schluesseldienst-wetzlar-niedergirmes" },
+   { text:"Schlüssel Schmiede Aßlar", url:"/schluesseldienst-asslar" },
+   { text:"Schlüssel Schmiede Herborn", url:"/schluesseldienst-herborn" },
+   { text:"Schlüssel Schmiede Dillenburg", url:"/schluesseldienst-dillenburg" },
    { text:"Alle 20 Gebiete →", url:"/servicegebiet" },
   ],
  },
@@ -44,7 +44,7 @@ const menuItems: MenuItem[] = [
    // [SEO: Resolved "Text duplicate" — Footer labels differ from Header navigation]
    title: "Über uns",
    links: [
-    { text: "Unser Schlüsseldienst-Team", url: "/ueber-uns" },
+    { text: "Unser Schlüssel Schmiede Team", url: "/ueber-uns" },
     { text: "Aktuelle Ratgeber-Artikel", url: "/blog" },
     { text: "Kundenstimmen & Erfahrungen", url: "/bewertungen" },
     { text: "Beratungstermin vereinbaren", url: "/termin-buchen" },
@@ -66,10 +66,10 @@ export default function Footer() {
       <div className="col-span-2 mb-8 lg:mb-0">
        {/* [SEO: Resolved "No Text" via sr-only on footer logo link] */}
        <Link href="/" className="inline-block">
-        <span className="sr-only">Zurück zur Startseite — MS Schlüsseldienst Wetzlar</span>
+        <span className="sr-only">Zurück zur Startseite — Schlüssel Schmiede Wetzlar</span>
         <Image
          src="/images/footer-logo.webp"
-         alt="MS Schlüsseldienst Wetzlar Logo"
+         alt="Schlüssel Schmiede Wetzlar Logo"
          width={280}
          height={84}
          className="w-auto object-contain"
@@ -78,7 +78,7 @@ export default function Footer() {
         />
        </Link>
        <p className="mt-4 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs">
-        Ihr zuverlässiger Partner für alle Schloss- und Sicherheitsfragen
+        Ihre Schlüssel Schmiede — Ihr zuverlässiger Partner für alle Schloss- und Sicherheitsfragen
         in Wetzlar und Umgebung. 24/7 erreichbar.
        </p>
        <div className="mt-5 space-y-2.5">
@@ -182,7 +182,7 @@ export default function Footer() {
        </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
          {/* [SEO: Sister-Site Cross-Link — bidirektional dofollow für Domain-Authority-Transfer] */}
-         <a href="https://www.schluesseldienst-wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">MS Schlüsseldienst Wetzlar — Unsere Partnerseite</a>
+         <a href="https://www.schluesseldienst-wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">Schlüsseldienst Wetzlar — Unsere Partnerseite</a>
          {/* [SEO: Outbound Trust-Signal added] */}
          <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</a>
          <a href="https://www.abus.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">ABUS Sicherheitstechnik</a>
@@ -221,7 +221,7 @@ export default function Footer() {
 
     {/* Bottom Bar — Semantic Address Region */}
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] md:flex-row md:items-center">
-     <p>© {new Date().getFullYear()} Schlüsseldienst Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
+     <p>© {new Date().getFullYear()} Schlüssel Schmiede Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
       <nav aria-label="Rechtliche Informationen">
        <ul className="flex flex-wrap gap-4">
         {config.legal.map((link) => (
@@ -233,7 +233,7 @@ export default function Footer() {
         ))}
         <li><Link href="/cookie-richtlinie" className="hover:text-[var(--color-red-500)] transition-colors underline">Cookie-Richtlinie</Link></li>
         <li><Link href="/barrierefreiheit" className="hover:text-[var(--color-red-500)] transition-colors underline">Barrierefreiheit</Link></li>
-        <li><Link href="/sitemap" className="hover:text-[var(--color-red-500)] transition-colors underline">Sitemap</Link></li>
+        <li><Link href="/sitemap-uebersicht" className="hover:text-[var(--color-red-500)] transition-colors underline">Sitemap</Link></li>
         <li><a href="#cookie-settings" className="hover:text-[var(--color-red-500)] transition-colors underline cursor-pointer">Cookie-Einstellungen</a></li>
        </ul>
       </nav>

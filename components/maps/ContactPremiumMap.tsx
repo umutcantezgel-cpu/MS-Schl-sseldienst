@@ -237,7 +237,7 @@ export default function ContactPremiumMap() {
         new Marker({
           position: WETZLAR_CENTER,
           map,
-          title: "MS Schlüsseldienst Wetzlar — Hauptstandort",
+          title: "Schlüssel Schmiede Wetzlar — Hauptstandort",
           zIndex: 100,
           icon: {
             url:
@@ -444,7 +444,7 @@ export default function ContactPremiumMap() {
           <div
             ref={mapRef}
             className="w-full h-full"
-            aria-label="Interaktive Karte aller Einsatzgebiete von MS Schlüsseldienst Wetzlar"
+            aria-label="Interaktive Karte aller Einsatzgebiete von Schlüssel Schmiede Wetzlar"
             role="application"
           />
         </div>

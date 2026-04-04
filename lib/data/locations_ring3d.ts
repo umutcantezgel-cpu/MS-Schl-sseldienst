@@ -147,7 +147,7 @@ export const ring3dLocations: LocationData[] = [
         faqs: [
             { question: "Wie schnell ist der Schlüsseldienst in Kraftsolms?", answer: "Wir erreichen Kraftsolms in ca. 15 Minuten über die Verbindungsstraßen." },
             { question: "Was kostet die Notöffnung?", answer: "Ab 99 Euro Festpreis für zugefallene Standardtüren, werktags tagsüber." },
-            { question: "Sind Sie ein regionaler Betrieb?", answer: "Ja, MS Schlüsseldienst Wetzlar ist ein lokaler Handwerksbetrieb — direkt und ohne Umwege." }
+            { question: "Sind Sie ein regionaler Betrieb?", answer: "Ja, Schlüssel Schmiede Wetzlar ist ein lokaler Handwerksbetrieb — direkt und ohne Umwege." }
         ],
         neighbors: ["schluesseldienst-waldsolms", "schluesseldienst-kroeffelbach", "schluesseldienst-schoeffengrund"]
     },
@@ -297,7 +297,7 @@ export const ring3dLocations: LocationData[] = [
         faqs: [
             { question: "Wie schnell kommen Sie nach Leihgestern?", answer: "Wir erreichen Leihgestern in ca. 16 Minuten." },
             { question: "Was kostet die Notöffnung?", answer: "Festpreis ab 99 Euro für zugefallene Türen, werktags tagsüber." },
-            { question: "Sind Sie ein regionaler Betrieb?", answer: "Ja, MS Schlüsseldienst Wetzlar — ein lokaler Handwerksbetrieb aus der Region." }
+            { question: "Sind Sie ein regionaler Betrieb?", answer: "Ja, Schlüssel Schmiede Wetzlar — ein lokaler Handwerksbetrieb aus der Region." }
         ],
         neighbors: ["schluesseldienst-linden", "schluesseldienst-huettenberg", "schluesseldienst-giessen"]
     },
@@ -372,7 +372,7 @@ export const ring3dLocations: LocationData[] = [
         faqs: [
             { question: "Wie weit ist Bissenberg?", answer: "Ca. 18 km westlich von Wetzlar. Wir brauchen rund 20 Minuten." },
             { question: "Was kostet der Notdienst?", answer: "Festpreis ab 99 Euro, Anfahrtskosten werden vorab am Telefon genannt." },
-            { question: "Sind Sie ein regionaler Betrieb?", answer: "Ja, MS Schlüsseldienst Wetzlar — lokal und ohne Vermittlung." }
+            { question: "Sind Sie ein regionaler Betrieb?", answer: "Ja, Schlüssel Schmiede Wetzlar — lokal und ohne Vermittlung." }
         ],
         neighbors: ["schluesseldienst-greifenstein", "schluesseldienst-breitenbach", "schluesseldienst-leun"]
     },

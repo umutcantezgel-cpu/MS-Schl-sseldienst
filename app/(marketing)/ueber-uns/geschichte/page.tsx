@@ -7,7 +7,7 @@ import { teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
   title: "Historie",
-  description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom MS Schlüsseldienst in Wetzlar. ✔️ Über 15 Jahre Erfahrung.",
+  description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom Schlüssel Schmiede in Wetzlar. ✔️ Über 15 Jahre Erfahrung.",
   path: "/ueber-uns/geschichte",
 });
 
@@ -21,7 +21,7 @@ export default function GeschichtePage() {
     {
       year: "Gründung",
       title: "Der Anfang",
-      text: "MS Schlüsseldienst Wetzlar wurde als lokaler Handwerksbetrieb gegründet — mit dem klaren Ziel, faire und transparente Schlüsseldienstleistungen in der Region Wetzlar anzubieten.",
+      text: "Schlüssel Schmiede Wetzlar wurde als lokaler Handwerksbetrieb gegründet — mit dem klaren Ziel, faire und transparente Schlüsseldienstleistungen in der Region Wetzlar anzubieten.",
     },
     {
       year: "Aufbau",

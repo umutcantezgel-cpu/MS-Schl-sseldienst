@@ -65,8 +65,8 @@ const ContactForm = nextDynamic(() => import("@/components/contact/ContactForm")
 // [FIX: Seobility #3] Canonical resolves to production domain via metadataBase in layout.
 // [FIX: Seobility #4] Self-referencing hreflang de-DE + x-default via generateSharedMetadata.
 export const metadata = generateSharedMetadata({
-  title: "Schlüsseldienst Wetzlar | 24h Türöffnung ab 99€",
-  description: "MS Schlüsseldienst Wetzlar öffnet Ihre Tür ohne Schäden, ab 99€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
+  title: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 99€",
+  description: "Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst für zerstörungsfreie Türöffnung ab 99€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
   path: "/",
   exactTitle: true,
 });
@@ -366,7 +366,7 @@ export default function HomePage() {
     <RevealSection className="mx-auto max-w-7xl">
       <SectionHeader
         headingId="why-us-heading"
-        title={<>Warum <span className="text-[var(--color-red-500)]">MS Schlüsseldienst</span>?</>}
+        title={<>Warum <span className="text-[var(--color-red-500)]">Schlüssel Schmiede</span>?</>}
       />
 
      <div className="grid gap-6 lg:gap-8 md:grid-cols-3 max-w-6xl mx-auto">

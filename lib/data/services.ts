@@ -26,7 +26,7 @@ export const services: Service[] = [
     metadata: {
       title: "Türöffnung Wetzlar | Zerstörungsfrei & Lokaler Festpreis",
       description: "Professionelle Türöffnung in Wetzlar vom etablierten Fachbetrieb. Zerstörungsfrei in 99% der Fälle. Ehrliche Festpreise ab 50 Euro ohne böse Überraschungen.",
-      keywords: "Türöffnung Wetzlar, Schlüsseldienst Türöffnung, Türschloss öffnen, Festpreis Türöffnung, Fachbetrieb"
+      keywords: "Türöffnung Wetzlar, Schlüssel Schmiede Türöffnung, Türschloss öffnen, Festpreis Türöffnung, Fachbetrieb"
     }
   },
   {
@@ -100,9 +100,9 @@ export const services: Service[] = [
   {
     id: createId("srv-08"),
     slug: createSlug("notdienst"),
-    title: "24/7 Schlüsselnotdienst",
+    title: "24/7 Schlüsselnotdienst der Schlüssel Schmiede",
     shortDescription: "Kein Call-Center. Wir sind Ihr echter, verlässlicher lokaler Handwerker im nächtlichen Notfall.",
-    fullDescription: "Ein unvorhergesehener Notfall kennt keine Geschäftszeiten. Aus diesem Grund ist unser Notdienst-Telefon an 365 Tagen im Jahr, rund um die Uhr persönlich besetzt – ohne nervige Warteschleifen in anonymen Call-Centern. Wenn Sie anrufen, sprechen Sie direkt mit einem Fachmann aus Wetzlar. Wir lassen Sie niemals im Kalten stehen und garantieren transparente Festpreise mit fairen, branchenüblichen Nacht- und Wochenendtarifen.",
+    fullDescription: "Ein unvorhergesehener Notfall kennt keine Geschäftszeiten. Aus diesem Grund ist das Notdienst-Telefon der Schlüssel Schmiede an 365 Tagen im Jahr, rund um die Uhr persönlich besetzt – ohne nervige Warteschleifen in anonymen Call-Centern. Wenn Sie anrufen, sprechen Sie direkt mit einem Fachmann aus Wetzlar. Wir lassen Sie niemals im Kalten stehen und garantieren transparente Festpreise mit fairen, branchenüblichen Nacht- und Wochenendtarifen.",
     icon: "Clock",
     features: ["365 Tage im Jahr real besetzt", "Niemals ein Callcenter, immer ein lokaler Meister", "Regionale In-House Stationierung", "Unumstößliche, faire Festpreisnennung am Telefon"],
     order: 8

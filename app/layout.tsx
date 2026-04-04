@@ -45,9 +45,9 @@ const jetbrainsMono = JetBrains_Mono({
 // [FIX: Seobility #4] alternates.languages provides self-referencing hreflang.
 export const metadata: Metadata = {
  // Title: default is used when a child page does NOT export its own `metadata.title`.
- // template: appended to every child page title (e.g. "Preise | MS Schlüsseldienst Wetzlar").
+ // template: appended to every child page title (e.g. "Preise | Schlüssel Schmiede Wetzlar").
  title: {
-   default: "Schlüsseldienst Wetzlar | 24h Türöffnung ab 99€",   // ≤50 chars → <580px
+   default: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 99€",   // ≤60 chars
    template: "%s",
  },
  // ⚠️  NO description here — set only on individual pages to avoid Seobility #2 (duplicate).
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
    },
  },
  openGraph: {
-   siteName: "MS Schlüsseldienst Wetzlar",
+   siteName: "Schlüssel Schmiede Wetzlar",
    locale: "de_DE",
    type: "website",
    images: [
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
        url: `${siteUrl}/og-image.png`,
        width: 1200,
        height: 630,
-       alt: "Schlüsseldienst Wetzlar – 24/7 Notdienst mit Festpreisen",
+       alt: "Schlüssel Schmiede Wetzlar – 24/7 Schlüsseldienst mit Festpreisen",
      },
    ],
  },
@@ -125,7 +125,7 @@ export default function RootLayout({
     {/* [PERF] Preload LCP element (logo) so it starts fetching during HTML parse,
          independent of JS hydration. Without this, the logo waits for Next.js
          App Router JS to execute before it can even start loading. */}
-    <link rel="preload" as="image" type="image/webp" href="/images/logo.webp" fetchPriority="high" />
+    <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-neu.svg" fetchPriority="high" />
     {/* ⚠️  Icons are now handled by the Metadata API `icons` object above.
          NO hardcoded <meta>, <link rel="icon">, or <link rel="alternate"> here.
          Duplicating them in JSX would conflict with the Metadata API output. */}

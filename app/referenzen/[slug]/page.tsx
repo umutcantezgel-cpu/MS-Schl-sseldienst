@@ -54,7 +54,7 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
         description: study.challenge || study.title,
         datePublished: new Date().toISOString(),
         url: `${siteUrl}/referenzen/${study.slug}`,
-        author: "MS Schlüsseldienst Wetzlar"
+        author: "Schlüssel Schmiede Wetzlar"
       })} />
       <main className="min-h-screen bg-slate-50">
         {/* 1. HERO */}
