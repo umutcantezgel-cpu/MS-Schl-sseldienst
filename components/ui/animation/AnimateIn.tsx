@@ -19,14 +19,14 @@ interface AnimateInProps {
 const getVariants = (direction: Direction, distance: number): Variants => {
   if (direction === 'none') {
     return {
-      hidden: { opacity: 0 },
+      hidden: { opacity: 1 },
       visible: { opacity: 1 },
     };
   }
 
   return {
     hidden: {
-      opacity: 0,
+      opacity: 1,
       y: direction === 'up' ? distance : direction === 'down' ? -distance : 0,
       x: direction === 'left' ? distance : direction === 'right' ? -distance : 0,
     },

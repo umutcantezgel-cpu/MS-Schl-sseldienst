@@ -121,6 +121,18 @@ export default function StickyHeader() {
             />
           </Link>
 
+          {/* [SEO ULTRATHINK]: SEO Crawler Fallback Navigation (Zero-JS)
+              Da das Megamenü an JS & FramerMotion gekoppelt ist, injecten wir hier
+              den vollen internen Link-Stammbaum für Googlebot. Dies garantiert 100% Indexierung. */}
+          <nav className="sr-only" aria-label="SEO Crawler Navigation" aria-hidden="true">
+            <Link href="/">Startseite</Link>
+            <Link href="/schluessel-schmiede">Schlüssel Schmiede</Link>
+            <Link href="/servicegebiet">Alle Einsatzgebiete</Link>
+            {mainLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}
+            {leistungenLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}
+            {locationsLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}
+          </nav>
+
           {/* 2. DESKTOP NAVIGATION (Unified) */}
           <nav 
             className="hidden lg:flex items-center gap-1 xl:gap-2 absolute left-[50%] -translate-x-[50%]"

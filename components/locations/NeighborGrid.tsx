@@ -52,6 +52,7 @@ export default function NeighborGrid({ city }: { city: LocationData }) {
                         <StaggerItem key={neighbor.id} animation={entryAnimations.slideUpFade}>
                             <Link 
                                 href={`/${neighbor.slug}`}
+                                title={`Schlüsseldienst in ${neighbor.name}`}
                                 className="group flex flex-col justify-between h-full bg-white border border-[var(--border-subtle)] p-6 rounded-2xl shadow-sm hover:shadow-[var(--elevation-2)] hover:-translate-y-1 hover:border-[var(--color-red-100)] transition-all duration-300"
                             >
                                 <div>
