@@ -397,7 +397,7 @@ export default function HomePage() {
     <RevealSection className="mx-auto max-w-6xl">
      <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 md:gap-y-16">
       <DynamicCounter value={500} suffix="+" label="Erfolgreiche Einsätze" icon={<Check className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
-      <DynamicCounter value={96} suffix="%" label="Kundenzufriedenheit" icon={<Star className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
+      <DynamicCounter value={99} suffix="%" label="Kundenzufriedenheit" icon={<Star className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
       <DynamicCounter value={30} suffix=" Min" label="Ø Anfahrtszeit" icon={<Clock className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
       <DynamicCounter value={10} suffix="+" label="Jahre Erfahrung" icon={<ShieldCheck className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
      </div>

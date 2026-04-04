@@ -27,7 +27,7 @@ export function StatsSection({ className }: StatsSectionProps) {
     },
     {
       id: "satisfaction",
-      value: `${companyInfo.customerSatisfaction || 98}%`,
+      value: `${companyInfo.customerSatisfaction || 99}%`,
       label: "Kundenzufriedenheit",
       icon: <CheckCircle2 className="w-8 h-8 text-[var(--color-red-500)]" />
     },

@@ -30,7 +30,7 @@ const CONTENT_MAP: Record<VisitorSegment, PersonalizedContent> = {
     heroSubline: "Schön, dass Sie uns wieder besuchen · Alle Preise transparent & fair",
     ctaText: "Direkt anrufen",
     ctaSecondary: "Leistungen entdecken",
-    trustSignal: "96% Kundenzufriedenheit — auch beim zweiten Einsatz",
+    trustSignal: "99% Kundenzufriedenheit — auch beim zweiten Einsatz",
   },
   "service-interested": {
     heroHeadline: "Professionell & zum Festpreis — Garantiert",

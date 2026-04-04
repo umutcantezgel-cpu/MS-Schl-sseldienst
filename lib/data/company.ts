@@ -9,7 +9,7 @@ export const companyInfo: CompanyInfo = {
   foundedYear: 2012,
   employeeCount: 8,
   totalProjects: 15400,
-  customerSatisfaction: 98,
+  customerSatisfaction: 99,
   certifications: ["IHK-Geprüft", "Handwerkskammer eingetragen", "VdS-Anerkannt"],
   socialMedia: {
     linkedin: "https://linkedin.com/company/ms-schluesseldienst-wetzlar",
