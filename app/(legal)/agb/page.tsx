@@ -11,7 +11,6 @@ export const metadata = generateSharedMetadata({
     title: "Allgemeine Geschäftsbedingungen (AGB)",
     description: "AGB des MS Schlüsseldienst Wetzlar. ✔️ Transparente Bedingungen für Türöffnungen ✔️ Klare Regeln für Festpreise und Stornos.",
     path: "/agb",
-    noindex: true,
   })
 
 export const dynamic = 'force-static';

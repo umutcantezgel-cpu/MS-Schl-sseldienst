@@ -10,7 +10,6 @@ export const metadata = generateSharedMetadata({
     title: "Datenschutz",
     description: "Datenschutzerklärung des MS Schlüsseldienst Wetzlar. ✔️ DSGVO-konform ✔️ Transparenz über Datenverarbeitung und Cookies.",
     path: "/datenschutz",
-    noindex: true,
   })
 
 const TOC_ITEMS = [
