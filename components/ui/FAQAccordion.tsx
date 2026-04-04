@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useId } from"react";
-import { Plus, Minus, HelpCircle } from"lucide-react";
+import { useState, useId } from "react";
+import { Plus, Minus, HelpCircle } from "lucide-react";
+import { pickVariant } from "@/lib/textRotation";
 
 interface FAQAccordionProps {
   question: string;
@@ -9,11 +10,32 @@ interface FAQAccordionProps {
   isDarkerBg?: boolean;
 }
 
+const callVariants = [
+  "06441-8056279 anrufen",
+  "Unter 06441-8056279 kontaktieren",
+  "Direkt anrufen: 06441 8056279",
+  "Kostenlose Fachberatung: 06441-8056279",
+  "Jetzt unter 06441 8056279 anfragen",
+  "Techniker kontaktieren: 06441-8056279",
+  "Schnelle Hilfe: 06441 8056279",
+  "Rückfragen unter 06441-8056279",
+  "Persönliche Hilfe: 06441-8056279",
+  "Zum Festpreis anrufen: 06441 8056279",
+  "06441 8056279 — Jetzt beraten lassen",
+  "Notrufnummer: 06441-8056279",
+  "Experten-Hotline: 06441 8056279",
+  "Telefonische Auskunft: 06441-8056279",
+  "Sofort-Hilfe anrufen: 06441-8056279"
+];
+
 export default function FAQAccordion({ question, answer, isDarkerBg = false }: FAQAccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
   const uniqueId = useId();
   const buttonId = `faq-btn-${uniqueId}`;
   const panelId = `faq-panel-${uniqueId}`;
+
+  // Deterministic link text to solve duplicate anchor text issues via SEO audit
+  const linkText = pickVariant(callVariants, question);
 
   return (
     <div className={`rounded-[var(--radius-12)] ${isDarkerBg ? 'bg-[var(--surface-secondary)]' : 'bg-surface-elevated'} overflow-hidden transition-all duration-300 ease-out mb-6 shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)]`}>
@@ -49,7 +71,7 @@ export default function FAQAccordion({ question, answer, isDarkerBg = false }: F
             <div className="mt-2 text-[15px] font-medium text-[color:var(--text-tertiary)] pt-4 flex flex-col sm:flex-row sm:items-center gap-2">
               <span>Direkte Rückfrage?</span>
               <a href="tel:+4964418056279" className="inline-flex items-center text-[var(--color-red-500)] hover:underline font-bold">
-                06441-8056279 anrufen
+                {linkText}
               </a>
             </div>
           </div>
