@@ -1,6 +1,7 @@
 "use client";
 
 import { Phone, ShieldCheck, Clock, Key, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 import { useEffect, useState, useMemo } from "react";
 
@@ -108,11 +109,21 @@ export default function HeroSection() {
     <section
       id="hero-section"
       aria-labelledby="hero-heading"
-      className="relative w-full flex items-center overflow-hidden pt-[90px] sm:pt-[100px] lg:pt-[110px] xl:pt-[140px] pb-12 sm:pb-8 lg:pb-[20px] bg-gradient-to-b from-[var(--color-off-white)] to-white"
+      className="relative w-full flex items-center overflow-hidden pt-[90px] sm:pt-[100px] lg:pt-[110px] xl:pt-[140px] pb-12 sm:pb-8 lg:pb-[20px] bg-white"
     >
       {/* ── Static Background Layer (Mobile Performance) ── */}
       <div className="absolute inset-0 z-0 pointer-events-none md:hidden block">
-         <div className="absolute inset-0" />
+        <Image
+          src="/images/relaunch/schluesseldienst-wetzlar-schluessel-uebergabe-kunde.webp"
+          alt="Schlüssel Schmiede Wetzlar Schlüsselübergabe an zufriedenen Kunden"
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover object-[center_30%]"
+        />
+        {/* Starker Overlay, damit Text auf dem Handy lesbar bleibt */}
+        <div className="absolute inset-0 bg-white/85 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-white/90" />
       </div>
 
       {/* ── Parallax Background Layer (Desktop only) ── */}
@@ -120,7 +131,17 @@ export default function HeroSection() {
         className="absolute inset-0 z-0 pointer-events-none hidden md:block"
         style={{ y: backgroundY, opacity: opacityFade }}
       >
-        <div className="absolute inset-0" />
+        <Image
+          src="/images/relaunch/schluesseldienst-wetzlar-notoeffnung-nacht-regen.webp"
+          alt="Schlüssel Schmiede Wetzlar Notöffnung bei Nacht und Regen"
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover object-[center_40%]"
+        />
+        {/* Soft Left-to-Right Gradient so left text is fully readable, right side shows image */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/70" />
         <FloatingPaths position={1} />
       </m.div>
 

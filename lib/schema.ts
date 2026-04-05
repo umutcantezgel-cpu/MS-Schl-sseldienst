@@ -29,10 +29,16 @@ export function generateLocalBusinessSchema() {
         "@type": ["LocalBusiness", "Locksmith"],
         "name": "Schlüssel Schmiede Wetzlar",
         "description": "Schlüssel Schmiede Wetzlar ist Ihr 24/7-Schlüsseldienst mit Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 44 Google-Bewertungen mit 5.0 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
-        "image": `${siteUrl}/hero-bg.jpg`,
+        "image": [
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-einsatzfahrzeug-nacht.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-monteur-stadtpanorama.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-werkstatt-schluesselrohlinge.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-sicherheits-produkte-vitrine.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-tresoroeffnung-schloss.webp`
+        ],
         "logo": {
             "@type": "ImageObject",
-            "url": `${siteUrl}/og-image.png`,
+            "url": `${siteUrl}/images/logo-neu.svg`,
             "width": 1200,
             "height": 630
         },
@@ -245,7 +251,7 @@ function generateOrganizationSchema() {
         "@type": "Organization",
         "name": "Schlüssel Schmiede Wetzlar",
         "url": siteUrl,
-        "logo": `${siteUrl}/og-image.png`,
+        "logo": `${siteUrl}/images/logo-neu.svg`,
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+4964418056279",

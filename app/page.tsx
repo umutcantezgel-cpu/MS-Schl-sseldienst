@@ -339,8 +339,15 @@ export default function HomePage() {
       <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center md:items-start">
        <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(184,67,42,0.3)]">
         <SeoContentImage
-         image={teamImages[1]!}
-         className="w-full h-full"
+         image={{
+           src: "/images/relaunch/schluesseldienst-wetzlar-monteur-stadtpanorama.webp",
+           alt: "Chef-Monteur der Schlüssel Schmiede Wetzlar",
+           title: "Chef-Monteur vor Ort",
+           width: 800,
+           height: 800,
+           category: "team",
+         }}
+         className="w-full h-full object-cover"
          sizes="96px"
         />
        </div>
@@ -449,10 +456,18 @@ export default function HomePage() {
 
    {/* Werkstatt Trust-Image */}
    <section className="px-[var(--section-px)] py-8">
-    <div className="mx-auto max-w-4xl rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
+    <div className="mx-auto max-w-4xl rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)] relative group">
+     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
      <SeoContentImage
-      image={werkstattImages[0]!}
-      className="w-full h-[300px] md:h-[400px]"
+      image={{
+           src: "/images/relaunch/schluesseldienst-wetzlar-werkstatt-schluesselrohlinge.webp",
+           alt: "Blick in die moderne Werkstatt mit Rohlingen der Schlüssel Schmiede Wetzlar",
+           title: "Präzisionsarbeit in der Werkstatt",
+           width: 1200,
+           height: 800,
+           category: "werkstatt",
+      }}
+      className="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
       sizes="(max-width: 768px) 100vw, 800px"
      />
     </div>

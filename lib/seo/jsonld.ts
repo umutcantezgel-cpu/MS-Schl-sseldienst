@@ -28,6 +28,13 @@ export function createLocalBusinessSchema() {
         "@type": "LocalBusiness",
         name: companyName,
         url: siteUrl,
+        image: [
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-einsatzfahrzeug-nacht.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-monteur-stadtpanorama.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-werkstatt-schluesselrohlinge.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-sicherheits-produkte-vitrine.webp`,
+            `${siteUrl}/images/relaunch/schluesseldienst-wetzlar-tresoroeffnung-schloss.webp`
+        ],
         telephone: telephone,
         email: contactEmail,
         address: {
