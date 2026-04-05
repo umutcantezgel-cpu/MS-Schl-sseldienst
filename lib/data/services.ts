@@ -8,8 +8,6 @@ export const services: Service[] = [
     shortDescription: "Wir öffnen zugefallene Türen in 99% der Fälle absolut beschädigungsfrei – mit 100% Festpreis-Garantie.",
     fullDescription: "Eine zugefallene Tür ist ärgerlich, aber mit dem richtigen Partner kein Grund zur Panik. Als lokaler Fachbetrieb aus Wetzlar verzichten wir auf fragwürdige Callcenter-Strukturen. Unsere IHK-zertifizierten Monteure sind binnen 15 bis 30 Minuten bei Ihnen. Mit Spezialwerkzeug öffnen wir die meisten Türen innerhalb weniger Minuten, ohne den Schließzylinder, den Beschlag oder das Türblatt zu beschädigen. Auch bei verschlossenen (abgesperrten) Türen wenden wir modernste, materialschonende Techniken an.",
     icon: "DoorOpen",
-    image: "/images/relaunch/schluesseldienst-wetzlar-zerstoerungsfreie-tueroeffnung.webp",
-    imageAlt: "Fachgerechte und komplett zerstörungsfreie Türöffnung durch erfahrenen Handwerker in Wetzlar",
     features: ["Zerstörungsfreie Öffnung in 99% der Fälle", "100% Festpreis-Garantie ohne versteckte Anfahrtskosten", "24/7 Notdienst direkt aus dem Lahn-Dill-Kreis", "Ausschließlich geschultes Fachpersonal"],
     benefits: ["Keine unnötigen Zusatzkosten für neue Schlösser", "Erspart den Ärger über überhöhte Rechnungen", "Sofortige Hilfe im Notfall durch lokale Präsenz"],
     process: [
@@ -38,8 +36,6 @@ export const services: Service[] = [
     shortDescription: "Fahrzeug verschlossen? Wir öffnen alle Marken beschädigungsfrei und garantieerhaltend ab 99 Euro.",
     fullDescription: "Ein Moment der Unachtsamkeit und der Schlüssel liegt im verriegelten Auto. Verzweifeln Sie nicht und riskieren Sie keine zerstörerischen Selbstversuche. Unsere spezialisierten KFZ-Monteure nutzen sanfte Lockpicking-Techniken und zertifizierte Air-Wedges. Damit öffnen wir Autotüren aller Marken – von alten Liebhaberfahrzeugen bis zu hochmodernen Limousinen mit Keyless-Go – absolut kratzfrei und schonend für Ihre Fahrzeuggarantie.",
     icon: "Car",
-    image: "/images/relaunch/schluesseldienst-wetzlar-autooeffnung-nacht.webp",
-    imageAlt: "Garantieschonende KFZ-Autoöffnung ohne Lackschäden auch nachts",
     features: ["100% ohne Lack- oder Blechschäden", "Für alle Automarken und Fabrikate", "Keine teure Neucodierung im Autohaus nötig", "Direkt vor Ort Service in wenigen Minuten"],
     benefits: ["Stressfreie Rückkehr an Ihr Lenkrad", "Weitaus günstiger als das Einschlagen der Scheibe", "Keine Wartezeiten auf langsame Abschleppdienste"],
     order: 2,
@@ -55,8 +51,6 @@ export const services: Service[] = [
     shortDescription: "Installation langlebiger Schließanlagen für Eigenheime oder das Gewerbe nach VdS-Standard.",
     fullDescription: "Wir konzeptionieren exakt auf Sie zugeschnittene Schließanlagen. Ob eine komfortable Gleichschließung im Einfamilienhaus oder eine komplexe Generalhauptschlüssel-Anlage (GHS) für Ihr Firmengebäude – wir vertrauen ausschließlich auf polizeilich empfohlene Premium-Hersteller. Zudem bieten wir die nahtlose Migration auf hochmoderne, elektronische Smart-Lock Zutrittskontrollen, die höchsten Sicherheitsansprüchen (VdS-zertifiziert) genügen.",
     icon: "Key",
-    image: "/images/relaunch/schluesseldienst-wetzlar-sicherheitsschloss-einbau.webp",
-    imageAlt: "Professionelle Installation einer VdS anerkannten Schließanlage",
     features: ["Polizeilich empfohlene Hersteller (ABUS, BKS, EVVA)", "VdS-zertifizierte Zylinder als Standard", "Mechanische und elektronische Smart-Lock Hybridlösungen", "Gesetzlicher Schutz per Sicherungskarte"],
     benefits: ["Sicherheit auf allerhöchstem Niveau", "Komfortabel: Ein Schlüssel für das gesamte Haus", "Zukunftssicher, patentgeschützt und modular erweiterbar"],
     order: 3,
@@ -69,8 +63,6 @@ export const services: Service[] = [
     shortDescription: "Präzise Zweitschlüssel und offizielle Kopien von Sicherheitsschlüsseln direkt aus der Schmiede.",
     fullDescription: "Sie benötigen dringend einen Ersatzschlüssel? In unserer Wetzlarer Schlüssel Schmiede fertigen wir Kopien von Zylinder-, Buntbart- und KFZ-Sicherheitsschlüsseln in industrieller Präzision direkt nach Vorlage. Für geschützte Profilzylinder-Anlagen fordern wir – unter Vorlage Ihrer authorisierten Sicherungskarte – eine legale und zu 100% passgenaue Nachfertigung beim Original-Hersteller an.",
     icon: "Copy",
-    image: "/images/relaunch/schluesseldienst-wetzlar-schluessel-fraesen-cnc.webp",
-    imageAlt: "Schlüsselkopie auf höchstem Niveau an modernster CNC Fräse",
     features: ["Standard-, Rohr- und Sicherheitsschlüssel", "Nachfertigung ausschließlich mit legaler Sicherungskarte", "Höchste CNC-Passgenauigkeit", "Kurze Wartezeiten direkt im Ladengeschäft"],
     order: 4
   },
@@ -81,8 +73,6 @@ export const services: Service[] = [
     shortDescription: "DIN 18104 geprüfte Sicherheit für Ihr Objekt: Panzerriegel, Stangenschlösser & Fenstersicherungen.",
     fullDescription: "Machen Sie Einbrechern das Leben unmöglich. Wir inspizieren Ihr Haus oder Ihre Wohnung vor Ort und decken versteckte Schwachstellen auf. Anschließend montieren wir polizeilich empfohlene, VdS-geprüfte Zusatzschlösser, massive Fenster-Kipp-Sicherungen oder robuste Panzerriegel (Querriegel), die ein Aufhebeln der Tür effektiv und nachweislich verhindern.",
     icon: "Shield",
-    image: "/images/relaunch/schluesseldienst-wetzlar-panzerriegel-einbau-altbau.webp",
-    imageAlt: "Fachmännische Montage eines stabilen Querriegels und Sicherheitstechnik",
     features: ["Kostenfreie, ehrliche Sicherheitsberatung vor Ort", "Absicherungen streng nach DIN 18104 Standard", "Massive Querriegel und Panzer-Zusatzschlösser", "Polizeilich anerkannte Präventivmaßnahmen"],
     order: 5,
     pricing: { amount: 0, interval: "one-time", features: ["Sicherheits-Schwachstellenanalyse vor Ort ist 100% kostenfrei!"] }
@@ -94,8 +84,6 @@ export const services: Service[] = [
     shortDescription: "Sofortige Einbruchschadenbeseitigung und nachhaltige Präventivmaßnahmen rund um die Uhr.",
     fullDescription: "Nach einem Einbruch sitzt der Schock verständlicherweise tief. Unser psychologisch geschulter Notdienst kümmert sich um die sofortige, beruhigende Absicherung der beschädigten Tür – mitten in der Nacht. Wir tauschen aufgebrochene Spezialzylinder und reparieren Sicherheitsschließbleche umgehend. Zugleich beraten wir Sie diskret, wie Sie künftig den Einbruchschutz massiv In Richtung DIN-Norm erhöhen können.",
     icon: "Siren",
-    image: "/images/relaunch/schluesseldienst-wetzlar-einbruchschaden-schloss.webp",
-    imageAlt: "Dokumentation eines schweren Einbruchschadens durch defektes Schloss",
     features: ["Notsicherung sofort nach dem Einbruchsversuch", "Diskretion und schnelle Wiederherstellung der Sicherheit", "Zukunftsorientierte Präventiv-Beratung", "Schnellste Reaktionszeit im Raum Wetzlar"],
     order: 6
   },
@@ -106,8 +94,6 @@ export const services: Service[] = [
     shortDescription: "Diskrete und fachmännische Notöffnung von Safes, Geldkassetten und alten Schränken.",
     fullDescription: "Schlüssel zum Familientresor verloren oder den Zahlencode der Elektronik vergessen? Als vertrauenswürdiger Fachbetrieb analysieren unsere Meister die komplexe Konstruktion Ihres Tresors. Wir wenden mikrochirurgische Aufbohrtechniken oder hochspezialisierte Manipulationstools an, um Ihre sensiblen Wertsachen absolut intakt und unbeschädigt zu bergen. Bei uns gilt strenge Verschwiegenheitspflicht.",
     icon: "Safe",
-    image: "/images/relaunch/schluesseldienst-wetzlar-tresoroeffnung-profi.webp",
-    imageAlt: "Seriöse und diskrete Tresoröffnung bei Safes aller Art ohne großen Schaden",
     features: ["100% Diskretion und Verschwiegenheit garantiert", "Hochmoderne Spezialwerkzeuge und Endoskope", "Erfahrung mit elektronischen und mechanischen Safes", "Optionale Wiederherstellung von manipulierten Zylindern"],
     order: 7
   },
@@ -118,8 +104,6 @@ export const services: Service[] = [
     shortDescription: "Kein Call-Center. Wir sind Ihr echter, verlässlicher lokaler Handwerker im nächtlichen Notfall.",
     fullDescription: "Ein unvorhergesehener Notfall kennt keine Geschäftszeiten. Aus diesem Grund ist das Notdienst-Telefon der Schlüssel Schmiede an 365 Tagen im Jahr, rund um die Uhr persönlich besetzt – ohne nervige Warteschleifen in anonymen Call-Centern. Wenn Sie anrufen, sprechen Sie direkt mit einem Fachmann aus Wetzlar. Wir lassen Sie niemals im Kalten stehen und garantieren transparente Festpreise mit fairen, branchenüblichen Nacht- und Wochenendtarifen.",
     icon: "Clock",
-    image: "/images/relaunch/schluesseldienst-wetzlar-notdienst-schnelle-hilfe-nacht.webp",
-    imageAlt: "Rasch eintreffender lokaler Handwerks-Monteur im 24h Bereitschaftsdienst",
     features: ["365 Tage im Jahr real besetzt", "Niemals ein Callcenter, immer ein lokaler Meister", "Regionale In-House Stationierung", "Unumstößliche, faire Festpreisnennung am Telefon"],
     order: 8
   }

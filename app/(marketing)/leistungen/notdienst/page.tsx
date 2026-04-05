@@ -17,7 +17,7 @@ import { getFAQSchema } from "@/lib/schema";
 import { generateServiceSchema } from "@/lib/serviceSchema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
-import { teamImages, tueroeffnungImages } from "@/lib/data/imageAssets";
+import { generatedServiceImages, generatedLocalImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
   title: "Schlüsselnotdienst Wetzlar | 24/7 Notfallhilfe",
@@ -178,14 +178,14 @@ export default function NotdienstPage() {
     <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-6">
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={teamImages[0]!}
+       image={generatedServiceImages[6]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />
      </div>
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={tueroeffnungImages[2]!}
+       image={generatedLocalImages[0]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />

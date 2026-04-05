@@ -17,7 +17,7 @@ import { getFAQSchema } from "@/lib/schema";
 import { generateServiceSchema } from "@/lib/serviceSchema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
-import { tueroeffnungImages, schlossImages } from "@/lib/data/imageAssets";
+import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Tresoröffnung Wetzlar | Diskret & Zertifiziert",
@@ -176,14 +176,14 @@ export default function TresoroeffnungPage() {
     <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-6">
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={tueroeffnungImages[4]!}
+       image={generatedServiceImages[2]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />
      </div>
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={schlossImages[6]!}
+       image={generatedTrustImages[2]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />

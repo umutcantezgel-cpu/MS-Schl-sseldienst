@@ -17,7 +17,7 @@ import { getFAQSchema } from "@/lib/schema";
 import { generateServiceSchema } from "@/lib/serviceSchema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
-import { schlossImages, sicherheitImages } from "@/lib/data/imageAssets";
+import { generatedServiceImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Einbruchschutz Wetzlar | Absicherung & Soforthilfe",
@@ -178,14 +178,14 @@ export default function EinbruchschutzPage() {
     <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-6">
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={schlossImages[3]!}
+       image={generatedServiceImages[5]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />
      </div>
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={sicherheitImages[0]!}
+       image={generatedServiceImages[4]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />

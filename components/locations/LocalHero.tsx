@@ -2,7 +2,6 @@ import { LocationData } from "@/lib/data/locations";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import TrustBadges from "@/components/trust/TrustBadges";
 import { Phone } from "lucide-react";
-import Image from "next/image";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { pickVariant } from "@/lib/textRotation";
@@ -29,35 +28,8 @@ export default function LocalHero({ city }: LocalHeroProps) {
         <section
             id="hero-section"
             aria-label={`Notfall-Hilfe ${city.name}`}
-            className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[80vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] lg:pt-[200px] sm:pb-[100px] lg:pb-[140px] bg-white overflow-hidden"
+            className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[80vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] lg:pt-[200px] sm:pb-[100px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
         >
-            {/* ── Background Layer Mobile ── */}
-            <div className="absolute inset-0 z-0 md:hidden pointer-events-none">
-                <Image
-                    src="/images/relaunch/schluesseldienst-wetzlar-einsatzfahrzeug-nacht.webp"
-                    alt={`Schlüssel Schmiede Einsatzfahrzeug in ${city.name} bei Nacht`}
-                    fill
-                    sizes="100vw"
-                    priority
-                    className="object-cover object-[center_30%]"
-                />
-                <div className="absolute inset-0 bg-white/85 backdrop-blur-[2px]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-white/95" />
-            </div>
-
-            {/* ── Background Layer Desktop ── */}
-            <div className="absolute inset-0 z-0 hidden md:block pointer-events-none">
-                <Image
-                    src="/images/relaunch/schluesseldienst-wetzlar-monteur-stadtpanorama.webp"
-                    alt={`Schlüssel Schmiede Monteur vor dem Panorama in ${city.name}`}
-                    fill
-                    sizes="100vw"
-                    priority
-                    className="object-cover object-[center_40%]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-white/40" />
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/60" />
-            </div>
             {/* CSS Noise Texture */}
             <div
                 className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"

@@ -18,7 +18,7 @@ import { generateServiceSchema } from"@/lib/serviceSchema";
 import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
-import { sicherheitImages } from "@/lib/data/imageAssets";
+import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Sicherheitstechnik Wetzlar | VdS-Zertifiziert",
@@ -71,7 +71,7 @@ export default function SicherheitstechnikPage() {
      }}
     />
     {/* Background Atmosphere */}
-    <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>
+    <div className="absolute inset-0 opacity-10 bg-[url('/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp')] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-charcoal-900)] to-transparent opacity-80 z-0"></div>
 
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
@@ -250,14 +250,14 @@ export default function SicherheitstechnikPage() {
     <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-6">
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={sicherheitImages[0]!}
+       image={generatedServiceImages[4]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />
      </div>
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
       <SeoContentImage
-       image={sicherheitImages[1]!}
+       image={generatedTrustImages[3]!}
        className="w-full h-[300px]"
        sizes="(max-width: 768px) 100vw, 50vw"
       />

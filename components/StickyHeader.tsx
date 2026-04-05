@@ -111,11 +111,12 @@ export default function StickyHeader() {
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
-              src="/images/logo-neu.svg"
+              src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
-              width={280}
-              height={80}
-              className="w-[200px] sm:w-[240px] lg:w-auto h-auto lg:h-[64px] xl:h-[78px] object-contain transition-all duration-300"
+              width={500}
+              height={500}
+              className="w-[52px] h-[52px] sm:w-[60px] sm:h-[60px] lg:w-[68px] lg:h-[68px] xl:w-[78px] xl:h-[78px] object-contain transition-all duration-300"
+              style={{ background: 'transparent' }}
               unoptimized
               priority
             />
@@ -373,11 +374,12 @@ export default function StickyHeader() {
             <div className="flex justify-between items-center px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
-                  src="/images/logo-neu.svg"
+                  src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar"
-                  width={180}
-                  height={48}
-                  className="h-[40px] w-auto object-contain"
+                  width={500}
+                  height={500}
+                  className="w-[44px] h-[44px] object-contain"
+                  style={{ background: 'transparent' }}
                   unoptimized
                 />
               </Link>

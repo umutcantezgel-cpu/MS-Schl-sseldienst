@@ -68,8 +68,6 @@ export interface Service {
   shortDescription: string;
   fullDescription?: string;
   icon?: string;
-  image?: ImagePath;
-  imageAlt?: string;
   features?: string[];
   benefits?: string[];
   process?: ServiceProcessStep[];

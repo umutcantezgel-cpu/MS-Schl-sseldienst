@@ -489,6 +489,190 @@ export const auszeichnungImages: ImageAsset[] = [
 ];
 
 // ═══════════════════════════════════════════════════════════
+//  AI-GENERIERTE BILDER — Visual DNA Library (20 Bilder)
+// ═══════════════════════════════════════════════════════════
+
+/** Hero-Bilder (Startseite Desktop & Mobile) */
+export const generatedHeroImages: ImageAsset[] = [
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-notoeffnung-haustuer-nacht-regen.webp",
+    alt: "Notöffnung bei Nacht im Regen – Schlüsseldienst Wetzlar Profi-Werkzeug",
+    title: "Schlüssel Schmiede Wetzlar – Notöffnung bei Nacht im Regen",
+    width: 1024,
+    height: 1024,
+    category: "tueroeffnung",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-neue-schluessel-tueroeffnung.webp",
+    alt: "Neue Sicherheitsschlüssel nach erfolgreicher Türöffnung Wetzlar",
+    title: "Neue Schlüssel nach Türöffnung – Schlüssel Schmiede",
+    width: 1024,
+    height: 1024,
+    category: "schluessel",
+  },
+];
+
+/** Dienstleistungs-Bilder (je Service-Seite) */
+export const generatedServiceImages: ImageAsset[] = [
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-zerstoerungsfreie-tueroeffnung-werkzeug.webp",
+    alt: "Spezialwerkzeug für zerstörungsfreie Türöffnung Schlüsseldienst Wetzlar",
+    title: "Zerstörungsfreie Türöffnung – Spezialwerkzeug",
+    width: 1024,
+    height: 1024,
+    category: "tueroeffnung",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-autooeffnung-nacht-werkzeug.webp",
+    alt: "Professionelle Autoöffnung bei Nacht Schlüsseldienst Wetzlar",
+    title: "Autoöffnung bei Nacht – professionelle KFZ-Öffnung",
+    width: 1024,
+    height: 1024,
+    category: "tueroeffnung",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-tresoroeffnung-schliessmechanismus.webp",
+    alt: "Tresoröffnung mit Diagnosegerät Schlüsseldienst Wetzlar",
+    title: "Tresoröffnung – professionelle Safe-Öffnung",
+    width: 1024,
+    height: 1024,
+    category: "sicherheit",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-sicherheitszylinder-einbau.webp",
+    alt: "Neuer Sicherheitszylinder beim Einbau Schlüsseldienst Wetzlar",
+    title: "Sicherheitszylinder-Einbau – Schließanlagen",
+    width: 1024,
+    height: 1024,
+    category: "schloss",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp",
+    alt: "Panzerriegel an Altbau-Holztür – Einbruchschutz Wetzlar",
+    title: "Panzerriegel – Einbruchschutz für Altbau",
+    width: 1024,
+    height: 1024,
+    category: "sicherheit",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-einbruchschaden-aufgebohrtes-schloss.webp",
+    alt: "Einbruchschaden aufgebohrter Zylinder Schlüsseldienst Wetzlar",
+    title: "Einbruchschaden – Soforthilfe und Reparatur",
+    width: 1024,
+    height: 1024,
+    category: "schloss",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-notdienst-werkzeug-haustuer-nacht.webp",
+    alt: "Notdienst-Werkzeugkoffer vor Haustür bei Nacht Schlüsseldienst Wetzlar",
+    title: "24/7 Notdienst – Werkzeug vor Haustür bei Nacht",
+    width: 1024,
+    height: 1024,
+    category: "tueroeffnung",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-tuerschliesser-gewerbetuer-montage.webp",
+    alt: "Türschließer-Montage an Gewerbetür Schlüsseldienst Wetzlar",
+    title: "Türschließer – Montage an Gewerbetür",
+    width: 1024,
+    height: 1024,
+    category: "montage",
+  },
+];
+
+/** Vertrauensbildende Bilder (Trust, Werkstatt, Produkte) */
+export const generatedTrustImages: ImageAsset[] = [
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-einsatzfahrzeug-profi-werkzeug.webp",
+    alt: "Einsatzfahrzeug mit Profi-Werkzeug Schlüsseldienst Wetzlar",
+    title: "Einsatzfahrzeug – professionelle Ausstattung",
+    width: 1024,
+    height: 1024,
+    category: "werkstatt",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-werkstatt-schluesselwand.webp",
+    alt: "Werkstatt mit Schlüsselwand und Fräsmaschine Schlüsseldienst Wetzlar",
+    title: "Werkstatt – Schlüsselwand mit Fräsmaschine",
+    width: 1024,
+    height: 1024,
+    category: "werkstatt",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-neues-sicherheitsschloss-schluessel.webp",
+    alt: "Neues Sicherheitsschloss mit Schlüsseln Schlüsseldienst Wetzlar",
+    title: "Neues Sicherheitsschloss – frisch eingebaut",
+    width: 1024,
+    height: 1024,
+    category: "schloss",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-sicherheitsprodukte-schliessanlagen-vitrine.webp",
+    alt: "Vitrine mit Sicherheitsprodukten und Schließanlagen Schlüsseldienst Wetzlar",
+    title: "Vitrine – Sicherheitsprodukte und Schließanlagen",
+    width: 1024,
+    height: 1024,
+    category: "werkstatt",
+  },
+];
+
+/** Makro-/Technik-Bilder + Handwerk */
+export const generatedMacroImages: ImageAsset[] = [
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-sicherheitszylinder-querschnitt-makro.webp",
+    alt: "Sicherheitszylinder Querschnitt Makro – Stiftzuhaltung Schlüsseldienst Wetzlar",
+    title: "Sicherheitszylinder – technischer Querschnitt",
+    width: 1024,
+    height: 1024,
+    category: "schloss",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-schluessel-fraesen-cnc-maschine.webp",
+    alt: "Schlüssel fräsen auf CNC-Maschine Schlüsseldienst Wetzlar",
+    title: "CNC-Schlüsselfräsung – Präzisionstechnik",
+    width: 1024,
+    height: 1024,
+    category: "werkstatt",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-autoschluessel-programmierung-transponder.webp",
+    alt: "Autoschlüssel-Programmierung Transponder-Chip Schlüsseldienst Wetzlar",
+    title: "Autoschlüssel – Transponder-Programmierung",
+    width: 1024,
+    height: 1024,
+    category: "schluessel",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-alte-neue-schluessel-handwerkskunst.webp",
+    alt: "Alte Buntbart-Schlüssel neben modernem Sicherheitsschlüssel Handwerkskunst",
+    title: "Handwerkskunst – traditionelle und moderne Schlüssel",
+    width: 1024,
+    height: 1024,
+    category: "schluessel",
+  },
+];
+
+/** Lokale Präsenz / Einsatzgebiet-Bilder */
+export const generatedLocalImages: ImageAsset[] = [
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-einsatzfahrzeug-nachtfahrt.webp",
+    alt: "Einsatzfahrzeug bei Nachtfahrt in deutscher Altstadt Schlüsseldienst Wetzlar",
+    title: "Nachtfahrt – schnelle Anfahrt zum Notdienst-Einsatz",
+    width: 1024,
+    height: 1024,
+    category: "werkstatt",
+  },
+  {
+    src: "/images/generated/schluesseldienst-wetzlar-einsatzfahrzeug-stadtpanorama.webp",
+    alt: "Einsatzfahrzeug vor Stadtpanorama Schlüsseldienst Wetzlar Einsatzgebiet",
+    title: "Einsatzgebiet – Stadtpanorama mit Fahrzeug",
+    width: 1024,
+    height: 1024,
+    category: "werkstatt",
+  },
+];
+
+// ═══════════════════════════════════════════════════════════
 //  ALLE BILDER (flacher Export für Batch-Operationen)
 // ═══════════════════════════════════════════════════════════
 
@@ -502,6 +686,11 @@ export const allImages: ImageAsset[] = [
   ...sicherheitImages,
   ...montageImages,
   ...auszeichnungImages,
+  ...generatedHeroImages,
+  ...generatedServiceImages,
+  ...generatedTrustImages,
+  ...generatedMacroImages,
+  ...generatedLocalImages,
 ];
 
 /**
