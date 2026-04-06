@@ -146,103 +146,103 @@ export default function HomePage() {
      {/* 3 Premium Cards */}
      <div className="grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
 
-      {/* Card 1: Tagsüber */}
-      <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-       <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
-       <Typography variant="small" color="secondary" weight="semibold" className="mb-8 block">Montag – Freitag (06:00 – 19:59 Uhr)</Typography>
+       {/* Card 1: Abends/Nachts (links, normal) */}
+       <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+        <Typography variant="h3" as="div" className="mb-1">Abends oder nachts?</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Spätzuschlag je nach Uhrzeit</Typography>
 
-       <div className="flex items-baseline gap-1 mb-8">
-        <span className="text-[13px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wider">ab</span>
-        <span className="text-[80px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">99</span>
-        <span className="text-[28px] font-bold text-[var(--value-price)]">€</span>
+        <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
+         <div className="flex flex-col relative z-10 w-full">
+          <div className="mb-1">
+           <span className="text-[11px] font-black text-[var(--color-red-500)] uppercase tracking-widest flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-red-500)] animate-pulse shadow-[0_0_8px_rgba(185,28,28,0.4)]" /> Abendtarif
+           </span>
+          </div>
+          <div className="flex items-end justify-between">
+           <span className="text-[14px] font-medium text-[color:var(--text-secondary)] pb-1.5">20:00 – 21:59 Uhr</span>
+           <div className="flex items-baseline gap-1.5 shrink-0">
+            <span className="text-[12px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
+            <span className="text-[40px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">119</span>
+            <span className="text-[18px] font-bold text-[var(--color-red-500)]">€</span>
+           </div>
+          </div>
+         </div>
+
+         <div className="h-px w-full bg-gradient-to-r from-red-200/50 via-red-200/20 to-transparent relative z-10" />
+         
+         <div className="flex flex-col relative z-10 w-full mb-1">
+          <div className="mb-1">
+           <span className="text-[11px] font-black text-indigo-600 uppercase tracking-widest flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse shadow-[0_0_8px_rgba(99,102,241,0.4)]" /> Nachttarif
+           </span>
+          </div>
+          <div className="flex items-end justify-between">
+           <span className="text-[14px] font-medium text-[color:var(--text-secondary)] pb-1.5">22:00 – 05:59 Uhr</span>
+           <div className="flex items-baseline gap-1.5 shrink-0">
+            <span className="text-[12px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
+            <span className="text-[44px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">149</span>
+            <span className="text-[20px] font-bold text-[var(--color-red-500)]">€</span>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        <ul className="mb-8 space-y-3 flex-1">
+         <li className="flex gap-3 items-start">
+          <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
+          <span className="text-[15px] text-[color:var(--text-secondary)]">Priorisierter Notdienst-Einsatz</span>
+         </li>
+         <li className="flex gap-3 items-start">
+          <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
+          <span className="text-[15px] text-[color:var(--text-secondary)]">Garantierte Ankunft in 20-30 Min.</span>
+         </li>
+        </ul>
+
+        <div className="w-full flex flex-col gap-1.5 mt-2">
+         <a href="tel:+4964418056279" className="w-full h-[52px] rounded-xl flex items-center justify-center typo-cta-button bg-[var(--color-charcoal-900)] hover:bg-[var(--color-charcoal-800)] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+          Notdienst anfordern
+         </a>
+         <span className="typo-tiny text-[var(--color-charcoal-400)] text-center">Festpreis wird am Telefon bestätigt</span>
+        </div>
        </div>
 
-       <ul className="mb-8 space-y-3 flex-1">
-        <li className="flex gap-3 items-start">
-         <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-         <span className="text-[15px] text-[color:var(--text-secondary)]">Professionelle Türöffnung</span>
-        </li>
-        <li className="flex gap-3 items-start">
-         <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-         <span className="text-[15px] text-[color:var(--text-secondary)]">Ohne Beschädigung (bei zugefallener Tür)</span>
-        </li>
-        <li className="flex gap-3 items-start">
-         <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-         <span className="text-[15px] text-[color:var(--text-secondary)]">Festpreis inkl. Standardleistungen</span>
-        </li>
-       </ul>
+       {/* Card 2: Tagsüber 99€ (Mitte, Highlight) */}
+       <div className="relative flex flex-col rounded-2xl bg-white/90 backdrop-blur-3xl p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 border-2 border-[var(--price-card-accent)] shadow-[0_0_30px_rgba(184,67,42,0.15),0_4px_20px_rgba(0,0,0,0.06)]">
+        <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-[var(--action-primary)] text-white text-[11px] font-bold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+         Am häufigsten benötigt
+        </div>
 
-       <div className="w-full flex flex-col gap-1.5 mt-2">
-        <a href="tel:+4964418056279" className="w-full h-[52px] rounded-xl flex items-center justify-center typo-cta-button bg-[var(--color-charcoal-900)] hover:bg-[var(--color-charcoal-800)] text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+        <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-8 block">Montag – Freitag (06:00 – 19:59 Uhr)</Typography>
+
+        <div className="flex items-baseline gap-1 mb-8">
+         <span className="text-[13px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wider">ab</span>
+         <span className="text-[80px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">99</span>
+         <span className="text-[28px] font-bold text-[var(--value-price)]">€</span>
+        </div>
+
+        <ul className="mb-8 space-y-3 flex-1">
+         <li className="flex gap-3 items-start">
+          <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
+          <span className="text-[15px] text-[color:var(--text-secondary)]">Professionelle Türöffnung</span>
+         </li>
+         <li className="flex gap-3 items-start">
+          <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
+          <span className="text-[15px] text-[color:var(--text-secondary)]">Ohne Beschädigung (bei zugefallener Tür)</span>
+         </li>
+         <li className="flex gap-3 items-start">
+          <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
+          <span className="text-[15px] text-[color:var(--text-secondary)]">Festpreis inkl. Standardleistungen</span>
+         </li>
+        </ul>
+
+        <div className="w-full flex flex-col gap-1.5 mt-2">
+         <a href="tel:+4964418056279" className="w-full h-[56px] rounded-xl flex items-center justify-center typo-cta-button bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white transition-all duration-300 shadow-[0_4px_20px_rgba(185,28,28,0.3)] hover:shadow-[0_8px_30px_rgba(185,28,28,0.4)] hover:-translate-y-[2px]">
           Tagsüber zum Festpreis anrufen
          </a>
          <span className="typo-tiny text-[var(--color-charcoal-400)] text-center">Festpreis wird vor Anfahrt genannt</span>
         </div>
        </div>
-
-      {/* Card 2: Abends/Nachts (Highlight) */}
-      <div className="relative flex flex-col rounded-2xl bg-white/90 backdrop-blur-3xl p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 border-2 border-[var(--price-card-accent)] shadow-[0_0_30px_rgba(184,67,42,0.15),0_4px_20px_rgba(0,0,0,0.06)]">
-       <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-[var(--action-primary)] text-white text-[11px] font-bold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
-        Am häufigsten benötigt
-       </div>
-
-       <Typography variant="h3" as="div" className="mb-1">Abends oder nachts?</Typography>
-       <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Spätzuschlag je nach Uhrzeit</Typography>
-
-       <div className="flex flex-col gap-4 mb-8 bg-[var(--color-charcoal-900)] p-5 rounded-xl border border-[var(--color-charcoal-800)] relative overflow-hidden shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)]">
-        <div className="flex flex-col relative z-10 w-full">
-         <div className="mb-1">
-          <span className="text-[11px] font-black text-[var(--color-red-500)] uppercase tracking-widest flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-red-500)] animate-pulse shadow-[0_0_8px_rgba(185,28,28,0.8)]" /> Abendtarif
-          </span>
-         </div>
-         <div className="flex items-end justify-between">
-          <span className="text-[14px] font-medium text-slate-300 pb-1.5">20:00 – 21:59 Uhr</span>
-          <div className="flex items-baseline gap-1.5 shrink-0">
-           <span className="text-[12px] font-bold text-slate-500 uppercase tracking-wide">ab</span>
-           <span className="text-[40px] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-300 tabular-nums">119</span>
-           <span className="text-[18px] font-bold text-[var(--color-red-500)]">€</span>
-          </div>
-         </div>
-        </div>
-
-        <div className="h-px w-full bg-gradient-to-r from-[var(--color-charcoal-700)] via-[var(--color-charcoal-600)] to-transparent relative z-10" />
-        
-        <div className="flex flex-col relative z-10 w-full mb-1">
-         <div className="mb-1">
-          <span className="text-[11px] font-black text-indigo-400 uppercase tracking-widest flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse shadow-[0_0_8px_rgba(129,140,248,0.8)]" /> Nachttarif
-          </span>
-         </div>
-         <div className="flex items-end justify-between">
-          <span className="text-[14px] font-medium text-slate-300 pb-1.5">22:00 – 05:59 Uhr</span>
-          <div className="flex items-baseline gap-1.5 shrink-0">
-           <span className="text-[12px] font-bold text-slate-500 uppercase tracking-wide">ab</span>
-           <span className="text-[44px] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-300 tabular-nums drop-shadow-[0_2px_8px_rgba(255,255,255,0.1)]">149</span>
-           <span className="text-[20px] font-bold text-[var(--color-red-500)]">€</span>
-          </div>
-         </div>
-        </div>
-       </div>
-
-       <ul className="mb-8 space-y-3 flex-1">
-        <li className="flex gap-3 items-start">
-         <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-         <span className="text-[15px] text-[color:var(--text-secondary)]">Priorisierter Notdienst-Einsatz</span>
-        </li>
-        <li className="flex gap-3 items-start">
-         <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-         <span className="text-[15px] text-[color:var(--text-secondary)]">Garantierte Ankunft in 20-30 Min.</span>
-        </li>
-       </ul>
-
-       <div className="w-full flex flex-col gap-1.5 mt-2">
-        <a href="tel:+4964418056279" className="w-full h-[56px] rounded-xl flex items-center justify-center typo-cta-button bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white transition-all duration-300 shadow-[0_4px_20px_rgba(185,28,28,0.3)] hover:shadow-[0_8px_30px_rgba(185,28,28,0.4)] hover:-translate-y-[2px]">
-         Notdienst anfordern
-        </a>
-        <span className="typo-tiny text-[var(--color-charcoal-400)] text-center">Festpreis wird am Telefon bestätigt</span>
-       </div>
-      </div>
 
       {/* Card 3: Wochenende */}
       <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
