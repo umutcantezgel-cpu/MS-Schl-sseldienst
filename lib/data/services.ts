@@ -17,7 +17,7 @@ export const services: Service[] = [
     ],
     pricing: {
       currency: "EUR",
-      amount: 50,
+      amount: 89,
       interval: "one-time",
       features: ["Festpreis für normale zugefallene Türen (Tagsüber)", "Zzgl. fairer Zuschlag am Wochenende/Nacht (30€)"]
     },
@@ -25,7 +25,7 @@ export const services: Service[] = [
     order: 1,
     metadata: {
       title: "Türöffnung Wetzlar | Zerstörungsfrei & Lokaler Festpreis",
-      description: "Professionelle Türöffnung in Wetzlar vom etablierten Fachbetrieb. Zerstörungsfrei in 99% der Fälle. Ehrliche Festpreise ab 50 Euro ohne böse Überraschungen.",
+      description: "Professionelle Türöffnung in Wetzlar vom etablierten Fachbetrieb. Zerstörungsfrei in 99% der Fälle. Ehrliche Festpreise ab 89 Euro ohne böse Überraschungen.",
       keywords: "Türöffnung Wetzlar, Schlüssel Schmiede Türöffnung, Türschloss öffnen, Festpreis Türöffnung, Fachbetrieb"
     }
   },

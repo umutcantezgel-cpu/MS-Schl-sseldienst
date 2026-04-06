@@ -65,8 +65,8 @@ const ContactForm = nextDynamic(() => import("@/components/contact/ContactForm")
 // [FIX: Seobility #3] Canonical resolves to production domain via metadataBase in layout.
 // [FIX: Seobility #4] Self-referencing hreflang de-DE + x-default via generateSharedMetadata.
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 99€",
-  description: "Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst für zerstörungsfreie Türöffnung ab 99€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
+  title: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 89€",
+  description: "Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst für zerstörungsfreie Türöffnung ab 89€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
   path: "/",
   exactTitle: true,
 });
@@ -207,7 +207,7 @@ export default function HomePage() {
         </div>
        </div>
 
-       {/* Card 2: Tagsüber 99€ (Mitte, Highlight) */}
+       {/* Card 2: Tagsüber 89€ (Mitte, Highlight) */}
        <div className="relative flex flex-col rounded-2xl bg-white/90 backdrop-blur-3xl p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 border-2 border-[var(--price-card-accent)] shadow-[0_0_30px_rgba(184,67,42,0.15),0_4px_20px_rgba(0,0,0,0.06)]">
         <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-[var(--action-primary)] text-white text-[11px] font-bold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
          Am häufigsten benötigt
@@ -218,7 +218,7 @@ export default function HomePage() {
 
         <div className="flex items-baseline gap-1 mb-8">
          <span className="text-[13px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wider">ab</span>
-         <span className="text-[80px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">99</span>
+         <span className="text-[80px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">89</span>
          <span className="text-[28px] font-bold text-[var(--value-price)]">€</span>
         </div>
 
@@ -550,7 +550,7 @@ export default function HomePage() {
                 <Star key={i} className="w-4 h-4 text-[var(--color-google-gold)] fill-current" />
               ))}
             </div>
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Aus 44 Google Reviews</span>
+            <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Aus 45 Google Reviews</span>
           </div>
           <p className="italic text-[15px] text-[color:var(--text-secondary)] font-medium leading-relaxed">
             &quot;Mitten in der Nacht ausgesperrt. Der Kollege war in 20 Minuten da, super freundlich, und die Tür war im Handumdrehen auf. Der am Telefon vereinbarte Festpreis wurde strikt eingehalten.&quot;
@@ -616,7 +616,7 @@ export default function HomePage() {
         Transparenz ist das Fundament unserer Preisgestaltung und unterscheidet uns grundlegend von vielen anderen Anbietern in der Region. Den verbindlichen <strong>Festpreis</strong> teilen wir Ihnen bereits am Telefon mit, bevor sich unser Monteur auf den Weg macht.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Eine einfache Türöffnung tagsüber beginnt bei einem <strong>Festpreis ab 99 Euro</strong> inklusive sämtlicher Standardleistungen. In der Wetzlarer Kernstadt berechnen wir darüber hinaus keinerlei zusätzliche Anfahrtskosten für unsere Kunden.
+        Eine einfache Türöffnung tagsüber beginnt bei einem <strong>Festpreis ab 89 Euro</strong> inklusive sämtlicher Standardleistungen. In der Wetzlarer Kernstadt berechnen wir darüber hinaus keinerlei zusätzliche Anfahrtskosten für unsere Kunden.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
         Es gibt bei uns grundsätzlich <strong>keine versteckten Gebühren</strong>, keine nachträglichen Materialzuschläge und keine unerwarteten Aufpreise vor Ort. So können Sie sich voll und ganz auf eine faire und nachvollziehbare Abrechnung nach jedem einzelnen Einsatz verlassen.
