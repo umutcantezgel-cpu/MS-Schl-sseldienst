@@ -105,10 +105,11 @@ export default function HomePage() {
    <section
     id="preise"
     aria-labelledby="preise-heading"
-    className="bg-transparent px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden"
+    className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden"
    >
     <RevealSection className="mx-auto max-w-7xl relative z-10">
       <SectionHeader
+        pill="FAIRE PREISE"
         headingId="preise-heading"
         title={<>Transparente <span className="text-[var(--color-red-500)]">Preise</span></>}
         description="Festpreis am Telefon — keine versteckten Kosten — Rechnung erst nach Abschluss."
@@ -293,9 +294,10 @@ export default function HomePage() {
    </section>
 
    {/* Services Section */}
-   <section aria-labelledby="soforthilfe-heading" className="bg-transparent px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden">
+   <section aria-labelledby="soforthilfe-heading" className="bg-white px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden">
     <RevealSection className="mx-auto max-w-7xl relative z-10">
       <SectionHeader
+        pill="UNSERE LEISTUNGEN"
         headingId="soforthilfe-heading"
         title={<>Unsere <span className="text-[var(--color-red-500)]">Sofort-Hilfe</span></>}
         description="Kompetente und schnelle Lösungen für Ihre individuelle Notsituation."
@@ -318,8 +320,8 @@ export default function HomePage() {
         {service.featured && (
          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-[1px] bg-gradient-to-r from-transparent via-[var(--value-primary)]/50 to-transparent" />
         )}
-        <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[var(--service-card-icon-bg)] text-[var(--service-card-icon-color)] group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 mb-4">
-         <service.icon className="w-6 h-6" aria-hidden="true" />
+        <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-red-50 text-[var(--color-red-500)] group-hover:bg-[var(--color-red-500)] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_20px_-4px_rgba(220,38,38,0.4)] transition-all duration-300 mb-4">
+         <service.icon className="w-7 h-7" aria-hidden="true" />
         </div>
         <Typography variant="h3" as="div" className="mb-2">
          {service.title}
@@ -362,9 +364,10 @@ export default function HomePage() {
    </section>
 
    {/* Why Us Section */}
-   <section aria-labelledby="why-us-heading" className="bg-transparent px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+   <section aria-labelledby="why-us-heading" className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <RevealSection className="mx-auto max-w-7xl">
       <SectionHeader
+        pill="DARUM WIR"
         headingId="why-us-heading"
         title={<>Warum <span className="text-[var(--color-red-500)]">Schlüssel Schmiede</span>?</>}
       />
@@ -409,9 +412,10 @@ export default function HomePage() {
 
 
    {/* Interactive Service Area Map */}
-   <section aria-labelledby="einsatzgebiet-heading" className="bg-transparent px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+   <section aria-labelledby="einsatzgebiet-heading" className="bg-white px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <RevealSection className="mx-auto max-w-7xl">
       <SectionHeader
+        pill="BLITZSCHNELL VOR ORT"
         headingId="einsatzgebiet-heading"
         title={<>Unser <span className="text-[var(--color-red-500)]">Einsatzgebiet</span></>}
         description="Von Wetzlar bis in die gesamte Region — wir sind in wenigen Minuten bei Ihnen."
@@ -465,12 +469,13 @@ export default function HomePage() {
    <TestimonialCarousel testimonials={testimonials} title="Das sagen unsere Kunden" subtitle="Geprüfte Bewertungen aus der Region" />
 
    {/* FAQ Section */}
-   <section aria-labelledby="faq-heading" className="bg-transparent relative px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32">
+   <section aria-labelledby="faq-heading" className="bg-[var(--color-charcoal-50)]/40 relative px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32">
     {/* Subtler Glass-Background for FAQ readability */}
     <div className="absolute inset-0 bg-white/30 backdrop-blur-md z-[-1]"></div>
     <JsonLd data={getFAQSchema(getHomepageFAQs())} />
     <RevealSection className="mx-auto max-w-4xl">
       <SectionHeader
+        pill="FAQ"
         headingId="faq-heading"
         title={<>Häufig gestellte <span className="text-[var(--color-red-500)]">Fragen</span></>}
         description="Schlüsseldienst Wetzlar beantwortet Ihre wichtigsten Fragen — ehrlich und transparent."
@@ -493,10 +498,11 @@ export default function HomePage() {
     </RevealSection>
    </section>
 
-   <section aria-labelledby="kontakt-heading" className="bg-transparent relative px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32">
+   <section aria-labelledby="kontakt-heading" className="bg-white relative px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32">
     <div className="absolute inset-0 bg-[var(--surface-secondary)]/50 backdrop-blur-lg z-[-1]"></div>
     <RevealSection className="mx-auto max-w-7xl">
       <SectionHeader
+        pill="KONTAKT"
         headingId="kontakt-heading"
         title={<>Zwei Wege zu Ihrer <span className="text-[var(--color-red-500)]">Lösung</span></>}
       />

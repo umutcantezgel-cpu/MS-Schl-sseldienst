@@ -5,6 +5,8 @@ import { Typography } from "./Typography"
 interface SectionHeaderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "title" | "id"> {
   /** Forwarded to the container div */
   kicker?: React.ReactNode
+  /** Adam-style pill badge above heading (e.g. "FAIRE PREISE") */
+  pill?: string
   title: React.ReactNode
   description?: React.ReactNode
   align?: "left" | "center"
@@ -13,7 +15,7 @@ interface SectionHeaderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 
 }
 
 const SectionHeader = React.forwardRef<HTMLDivElement, SectionHeaderProps>(
-  ({ className, kicker, title, description, align = "center", headingId, ...props }, ref) => {
+  ({ className, kicker, pill, title, description, align = "center", headingId, ...props }, ref) => {
     return (
       <div
         ref={ref}
@@ -24,6 +26,12 @@ const SectionHeader = React.forwardRef<HTMLDivElement, SectionHeaderProps>(
         )}
         {...props}
       >
+        {pill && (
+          <span className="inline-flex items-center rounded-full bg-red-50 text-[var(--color-red-600)] text-[11px] font-bold uppercase tracking-[0.15em] px-4 py-1.5 mb-4 border border-red-100/60">
+            {pill}
+          </span>
+        )}
+
         {kicker && (
           <Typography
             variant="tiny"
