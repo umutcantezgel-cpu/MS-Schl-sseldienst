@@ -27,7 +27,7 @@ export default function ImpressumPage() {
         <LegalLayout
             heroTitle="Impressum"
             heroSubtitle="Transparenz schafft Vertrauen. Wer wir sind und wie Sie uns erreichen."
-            lastUpdated="27. März 2026"
+            lastUpdated="06. April 2024"
             tocItems={TOC_ITEMS}
         >
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
@@ -47,8 +47,8 @@ export default function ImpressumPage() {
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Schlüsseldienst Wetzlar</strong><br />
                     Inhaberin: Mina Saad<br />
-                    Gloelstraße 11<br />
-                    35576 Wetzlar<br />
+                    Langgasse 70<br />
+                    35578 Wetzlar<br />
                     Deutschland
                 </div>
             </LegalSection>
@@ -57,8 +57,8 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">2. Direkter Kontakt</h2>
                 <p>Wir legen Wert auf Erreichbarkeit. Im Notfall oder bei allgemeinen Anfragen nutzen Sie am besten die folgenden Kontaktwege:</p>
                 <ul>
-                    <li><strong>Telefon (24/7):</strong> <a href="tel:+491782471037" className="font-semibold">0178 2471037</a></li>
-                    <li><strong>E-Mail:</strong> <a href="mailto:notfall-schluessel@proton.me">notfall-schluessel@proton.me</a></li>
+                    <li><strong>Telefon (24/7):</strong> <a href="tel:+4964418056279" className="font-semibold">06441 8056279</a></li>
+                    <li><strong>E-Mail:</strong> <a href="mailto:info@wetzlar-schlüsseldienst.de">info@wetzlar-schlüsseldienst.de</a></li>
                 </ul>
             </LegalSection>
 
@@ -73,7 +73,7 @@ export default function ImpressumPage() {
                         loading="lazy" 
                         allowFullScreen 
                         referrerPolicy="no-referrer-when-downgrade"
-                        src="https://maps.google.com/maps?q=Gloelstra%C3%9Fe+11,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=Langgasse+70,+35578+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         title="Standort Schlüssel Schmiede Wetzlar"
                     />
                 </div>
@@ -93,7 +93,7 @@ export default function ImpressumPage() {
                 <p>Angaben zur beruflichen Tätigkeit gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
                 <ul>
                     <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
-                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wetzlar, Ederstraße 2, 35578 Wetzlar</li>
+                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35578 Wetzlar</li>
                     <li><strong>Geltende berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
                 </ul>
             </LegalSection>
@@ -103,8 +103,8 @@ export default function ImpressumPage() {
                 <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
-                    Gloelstraße 11<br />
-                    35576 Wetzlar
+                    Langgasse 70<br />
+                    35578 Wetzlar
                 </div>
             </LegalSection>
 
@@ -112,7 +112,7 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">7. EU-Streitschlichtung & Verbraucherstreitbeilegung</h2>
                 <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link erreichen:</p>
                 <p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr</a></p>
-                <p>Unsere E-Mail-Adresse lautet: <code>notfall-schluessel@proton.me</code></p>
+                <p>Unsere E-Mail-Adresse lautet: <code>info@wetzlar-schlüsseldienst.de</code></p>
                 <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
             </LegalSection>
 

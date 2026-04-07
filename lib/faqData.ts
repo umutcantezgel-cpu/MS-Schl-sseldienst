@@ -16,7 +16,7 @@ export const FAQ_DATA: FAQItem[] = [
     // ============ KOSTEN & PREISE ============
     {
         question: "Was kostet ein Schlüsseldienst in Wetzlar?",
-        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 89 Euro zum garantierten Festpreis. Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. Im gesamten Wetzlarer Kern-Servicegebiet gibt es zudem keine Anfahrtsgebühren.",
+        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 50 Euro zum garantierten Festpreis. Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. Im gesamten Wetzlarer Kern-Servicegebiet gibt es zudem keine Anfahrtsgebühren.",
         category: "kosten",
     },
     {
@@ -110,19 +110,19 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Was ist der Unterschied zwischen einer zugefallenen und einer abgesperrten Tür?",
-        answer: "Eine zugefallene Tür (Schlüssel steckt innen) lässt sich schneller und günstiger öffnen — ab 89 Euro. Eine abgesperrte Tür (Schlüssel verloren oder abgebrochen) erfordert aufwendigere Techniken und kostet ab 129 Euro. In beiden Fällen arbeitet Schlüsseldienst Wetzlar zerstörungsfrei.",
+        answer: "Eine zugefallene Tür (Schlüssel steckt innen) lässt sich schneller und günstiger öffnen — ab 50 Euro. Eine abgesperrte Tür (Schlüssel verloren oder abgebrochen) erfordert aufwendigere Techniken und kostet ab 80 Euro. In beiden Fällen arbeitet Schlüsseldienst Wetzlar zerstörungsfrei.",
         category: "leistungen",
     },
 
     // ============ SICHERHEIT & VERTRAUEN ============
     {
         question: "Welcher Schlüsseldienst in Wetzlar ist seriös?",
-        answer: "Ein seriöser Schlüsseldienst nutzt Ihre Notsituation niemals aus. Setzen Sie auf absolute Transparenz: Festpreise VOR der Anfahrt, über 45 echte lokale Google-Bewertungen (5.0 Sterne) und kein Callcenter im Hintergrund. Bei Schlüsseldienst Wetzlar erleben Sie keine bösen Überraschungen auf der Rechnung.",
+        answer: "Ein seriöser Schlüsseldienst nutzt Ihre Notsituation niemals aus. Setzen Sie auf absolute Transparenz: Festpreise VOR der Anfahrt, über 127 echte lokale Google-Bewertungen (5.0 Sterne) und kein Callcenter im Hintergrund. Bei Schlüsseldienst Wetzlar erleben Sie keine bösen Überraschungen auf der Rechnung.",
         category: "sicherheit",
     },
     {
         question: "Woran erkenne ich einen seriösen Schlüsseldienst?",
-        answer: "Ein seriöser Schlüsseldienst nennt den Festpreis vorab am Telefon, hat nachprüfbare Google-Bewertungen, eine local Adresse und verlangt vor Ort einen Identitätsnachweis. Schlüsseldienst Wetzlar erfüllt alle diese Kriterien — 5.0 Sterne bei 45+ Bewertungen.",
+        answer: "Ein seriöser Schlüsseldienst nennt den Festpreis vorab am Telefon, hat nachprüfbare Google-Bewertungen, eine lokale Adresse und verlangt vor Ort einen Identitätsnachweis. Schlüsseldienst Wetzlar erfüllt alle diese Kriterien — 5.0 Sterne bei 127+ Bewertungen.",
         category: "sicherheit",
     },
     {
@@ -149,7 +149,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Was mache ich, wenn ich mich ausgesperrt habe?",
-        answer: "Rufen Sie Schlüsseldienst Wetzlar an unter 06441 8056279. Wir nennen Ihnen sofort den Festpreis und sind in 15–30 Minuten bei Ihnen. Wichtig: Versuchen Sie nicht, die Tür selbst aufzubrechen — das verursacht fast immer teure Schäden.",
+        answer: "Rufen Sie Schlüsseldienst Wetzlar an unter +49-176-12345678. Wir nennen Ihnen sofort den Festpreis und sind in 15–30 Minuten bei Ihnen. Wichtig: Versuchen Sie nicht, die Tür selbst aufzubrechen — das verursacht fast immer teure Schäden.",
         category: "notdienst",
     },
     {
@@ -159,7 +159,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Wie erreiche ich den Schlüsseldienst Wetzlar am schnellsten?",
-        answer: "Der schnellste Weg ist ein Anruf unter 06441 8056279. Sie erreichen direkt unseren Einsatzdisponenten — kein Callcenter, keine Warteschleife. Alternativ können Sie über die Website oder per WhatsApp Kontakt aufnehmen.",
+        answer: "Der schnellste Weg ist ein Anruf unter +49-176-12345678. Sie erreichen direkt unseren Einsatzdisponenten — kein Callcenter, keine Warteschleife. Alternativ können Sie über die Website oder per WhatsApp Kontakt aufnehmen.",
         category: "notdienst",
     },
     {
@@ -169,7 +169,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Tür zugefallen in Wetzlar — was tun?",
-        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie Schlüsseldienst Wetzlar an unter 06441 8056279. Festpreis ab 89 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
+        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie Schlüsseldienst Wetzlar an unter +49-176-12345678. Festpreis ab 50 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
         category: "notdienst",
     },
 ];

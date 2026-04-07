@@ -22,11 +22,11 @@ const menuItems: MenuItem[] = [
   title:"Einsatzgebiete",
   links: [
    { text:"Schlüssel Schmiede Gießen", url:"/schluesseldienst-giessen" },
-   { text:"Schlüssel Schmiede Wetzlar", url:"/schluesseldienst-wetzlar-niedergirmes" },
+   { text:"Schlüssel Schmiede Wetzlar", url:"/schluesseldienst-wetzlar" },
    { text:"Schlüssel Schmiede Aßlar", url:"/schluesseldienst-asslar" },
    { text:"Schlüssel Schmiede Herborn", url:"/schluesseldienst-herborn" },
    { text:"Schlüssel Schmiede Dillenburg", url:"/schluesseldienst-dillenburg" },
-   { text:"Alle 20 Gebiete →", url:"/servicegebiet" },
+   { text:"Alle Einsatzgebiete →", url:"/servicegebiet" },
   ],
  },
  {
@@ -221,7 +221,7 @@ export default function Footer() {
 
     {/* Bottom Bar — Semantic Address Region */}
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] md:flex-row md:items-center">
-     <p>© {new Date().getFullYear()} Schlüssel Schmiede Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
+     <p>© 2025–{new Date().getFullYear()} Schlüssel Schmiede Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
       <nav aria-label="Rechtliche Informationen">
        <ul className="flex flex-wrap gap-4">
         {config.legal.map((link) => (

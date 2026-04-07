@@ -84,6 +84,7 @@ export default async function BlogDetailPage({ params }: Props) {
       <JsonLd data={createArticleSchema({
         headline: post.metadata.title,
         description: post.metadata.excerpt || "",
+        image: post.metadata.image ? `${siteUrl}${post.metadata.image}` : undefined,
         datePublished: post.metadata.publishedAt,
         dateModified: post.metadata.publishedAt,
         url: `${siteUrl}/blog/${post.slug}`,

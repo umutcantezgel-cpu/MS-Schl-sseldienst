@@ -65,8 +65,8 @@ const ContactForm = nextDynamic(() => import("@/components/contact/ContactForm")
 // [FIX: Seobility #3] Canonical resolves to production domain via metadataBase in layout.
 // [FIX: Seobility #4] Self-referencing hreflang de-DE + x-default via generateSharedMetadata.
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 89€",
-  description: "Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst für zerstörungsfreie Türöffnung ab 89€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
+  title: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 99€",
+  description: "Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst für zerstörungsfreie Türöffnung ab 99€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
   path: "/",
   exactTitle: true,
 });
@@ -85,14 +85,14 @@ export default function HomePage() {
    <HeroSection />
 
    {/* Trust Signals & Reviews (Docked directly beneath Hero) */}
-   <div className="relative z-20 w-full px-[var(--space-4)] -mt-[44px] lg:-mt-[36px] flex flex-col lg:flex-row items-center justify-center gap-[var(--space-4)] lg:gap-[var(--space-6)] pointer-events-none mb-12 lg:mb-20">
-    {/* Pointer-events-auto on children so they remain clickable, container is none to avoid blocking clicks in between */}
-    
-    <div className="w-full lg:w-max pointer-events-auto px-4 lg:px-0">
+   <div className="relative z-20 w-full px-4 sm:px-6 lg:px-8 -mt-[38px] sm:-mt-[42px] lg:-mt-[36px] flex flex-col items-center justify-center gap-3 sm:gap-4 pointer-events-none mb-8 sm:mb-10 lg:mb-14">
+    {/* TrustStrip marquee — full width, capped at max-w-5xl */}
+    <div className="w-full max-w-5xl pointer-events-auto">
      <TrustStrip />
     </div>
 
-    <aside aria-labelledby="google-reviews-heading" className="pointer-events-auto shrink-0 mt-2 lg:mt-0">
+    {/* Google Reviews Badge — always centered below */}
+    <aside aria-labelledby="google-reviews-heading" className="pointer-events-auto">
      <h2 id="google-reviews-heading" className="sr-only">Kundenbewertungen auf Google</h2>
      <GoogleReviewsBadge rating={aggregateRating.ratingValue} count={aggregateRating.reviewCount} />
     </aside>
@@ -207,19 +207,51 @@ export default function HomePage() {
         </div>
        </div>
 
-       {/* Card 2: Tagsüber 89€ (Mitte, Highlight) */}
+       {/* Card 2: Tagsüber — Zugefallen vs Abgeschlossen (Mitte, Highlight) */}
        <div className="relative flex flex-col rounded-2xl bg-white/90 backdrop-blur-3xl p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 border-2 border-[var(--price-card-accent)] shadow-[0_0_30px_rgba(184,67,42,0.15),0_4px_20px_rgba(0,0,0,0.06)]">
         <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-[var(--action-primary)] text-white text-[11px] font-bold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
          Am häufigsten benötigt
         </div>
 
         <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-8 block">Montag – Freitag (06:00 – 19:59 Uhr)</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Montag – Freitag (06:00 – 19:59 Uhr)</Typography>
 
-        <div className="flex items-baseline gap-1 mb-8">
-         <span className="text-[13px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wider">ab</span>
-         <span className="text-[80px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">89</span>
-         <span className="text-[28px] font-bold text-[var(--value-price)]">€</span>
+        <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
+         {/* Zugefallene Tür */}
+         <div className="flex flex-col relative z-10 w-full">
+          <div className="mb-1">
+           <span className="text-[11px] font-black text-[var(--color-red-500)] uppercase tracking-widest flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-red-500)]" /> Tür zugefallen
+           </span>
+          </div>
+          <div className="flex items-end justify-between">
+           <span className="text-[14px] font-medium text-[color:var(--text-secondary)] pb-1.5">Schlüssel steckt nicht</span>
+           <div className="flex items-baseline gap-1.5 shrink-0">
+            <span className="text-[12px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
+            <span className="text-[44px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">99</span>
+            <span className="text-[20px] font-bold text-[var(--color-red-500)]">€</span>
+           </div>
+          </div>
+         </div>
+
+         <div className="h-px w-full bg-gradient-to-r from-red-200/50 via-red-200/20 to-transparent relative z-10" />
+
+         {/* Abgeschlossene Tür */}
+         <div className="flex flex-col relative z-10 w-full">
+          <div className="mb-1">
+           <span className="text-[11px] font-black text-indigo-600 uppercase tracking-widest flex items-center gap-1.5">
+             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse shadow-[0_0_8px_rgba(99,102,241,0.4)]" /> Tür abgeschlossen
+           </span>
+          </div>
+          <div className="flex items-end justify-between">
+           <span className="text-[14px] font-medium text-[color:var(--text-secondary)] pb-1.5">Schlüssel steckt / zugedreht</span>
+           <div className="flex items-baseline gap-1.5 shrink-0">
+            <span className="text-[12px] font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
+            <span className="text-[44px] font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">189</span>
+            <span className="text-[20px] font-bold text-[var(--color-red-500)]">€</span>
+           </div>
+          </div>
+         </div>
         </div>
 
         <ul className="mb-8 space-y-3 flex-1">
@@ -305,36 +337,43 @@ export default function HomePage() {
 
      {/* Bento Grid */}
      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-      {...[
-       { icon: DoorOpen, title:"Haus- & Wohnungstüren", desc:"Zerstörungsfreie Öffnung in 99% der Fälle. Egal ob zugefallen oder abgeschlossen.", href:"/leistungen/turoeffnung", linkText:"Mehr zur Türöffnung", featured: true },
-       { icon: Car, title:"Fahrzeug-Öffnung", desc:"Schonende Autoöffnung für alle Marken – garantiert ohne Kratzer oder Lackschäden.", href:"/leistungen/autooeffnung", linkText:"Details zur Autoöffnung" },
-       { icon: ShieldCheck, title:"Sicherheitstechnik", desc:"Professionelle Nachrüstung mit Hochsicherheitszylindern, Panzerriegeln und Schutzbeschlägen.", href:"/leistungen/sicherheitstechnik", linkText:"Infos zum Einbruchschutz" },
-       { icon: Lock, title:"Schließanlagen", desc:"Planung und Montage von Schließanlagen für private und gewerbliche Objekte.", href:"/leistungen/schliessanlagen", linkText:"Mehr zu Schließanlagen" },
-       { icon: Key, title:"Schlüssel nachmachen", desc:"Präzise Zweitschlüssel und Ersatzschlüssel als Sofort-Service in unserer Filiale.", href:"/leistungen/schluessel-nachmachen", linkText:"Zum Schlüssel-Service" },
-      ].map((service, idx) => (
-       <div
-        key={idx}
-        className={`group relative flex flex-col items-start p-6 rounded-2xl bg-white/70 backdrop-blur-3xl border border-[var(--color-charcoal-100)] hover:border-[var(--value-hover-border)] hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 h-full overflow-hidden outline-none shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] ${service.featured ? 'lg:col-span-2 lg:row-span-1' : ''}`}
-       >
-        {/* Subtle top glow on featured */}
-        {service.featured && (
-         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-[1px] bg-gradient-to-r from-transparent via-[var(--value-primary)]/50 to-transparent" />
-        )}
-        <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-red-50 text-[var(--color-red-500)] group-hover:bg-[var(--color-red-500)] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_20px_-4px_rgba(220,38,38,0.4)] transition-all duration-300 mb-4">
-         <service.icon className="w-7 h-7" aria-hidden="true" />
+       {...[
+        { icon: DoorOpen, title:"Haus- & Wohnungstüren", desc:"Zerstörungsfreie Öffnung in 99% der Fälle. Egal ob zugefallen oder abgeschlossen.", href:"/leistungen/turoeffnung", linkText:"Mehr zur Türöffnung", featured: true },
+        { icon: Car, title:"Fahrzeug-Öffnung", desc:"Schonende Autoöffnung für alle Marken – garantiert ohne Kratzer oder Lackschäden.", href:"/leistungen/autooeffnung", linkText:"Details zur Autoöffnung" },
+        { icon: ShieldCheck, title:"Sicherheitstechnik", desc:"Professionelle Nachrüstung mit Hochsicherheitszylindern, Panzerriegeln und Schutzbeschlägen.", href:"/leistungen/sicherheitstechnik", linkText:"Infos zum Einbruchschutz" },
+        { icon: Lock, title:"Schließanlagen", desc:"Planung und Montage von Schließanlagen für private und gewerbliche Objekte.", href:"/leistungen/schliessanlagen", linkText:"Kostenlose Beratung anfordern", isCTA: true },
+        { icon: Key, title:"Schlüssel nachmachen", desc:"Präzise Zweitschlüssel und Ersatzschlüssel als Sofort-Service in unserer Filiale.", href:"/leistungen/schluessel-nachmachen", linkText:"Zum Schlüssel-Service" },
+       ].map((service, idx) => (
+        <div
+         key={idx}
+         className={`group relative flex flex-col items-start p-6 rounded-2xl bg-white/70 backdrop-blur-3xl border border-[var(--color-charcoal-100)] hover:border-[var(--value-hover-border)] hover:bg-white/90 hover:-translate-y-1 transition-all duration-300 h-full overflow-hidden outline-none shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] ${service.featured ? 'lg:col-span-2 lg:row-span-1' : ''}`}
+        >
+         {/* Subtle top glow on featured */}
+         {service.featured && (
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-[1px] bg-gradient-to-r from-transparent via-[var(--value-primary)]/50 to-transparent" />
+         )}
+         <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-red-50 text-[var(--color-red-500)] group-hover:bg-[var(--color-red-500)] group-hover:text-white group-hover:scale-110 group-hover:shadow-[0_4px_20px_-4px_rgba(220,38,38,0.4)] transition-all duration-300 mb-4">
+          <service.icon className="w-7 h-7" aria-hidden="true" />
+         </div>
+         <Typography variant="h3" as="div" className="mb-2">
+          {service.title}
+         </Typography>
+         <Typography variant="body" color="secondary" className="mb-auto">
+          {service.desc}
+         </Typography>
+         
+         {service.isCTA ? (
+           <Link href={service.href} className="mt-6 w-full flex items-center justify-center gap-2 h-11 px-4 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-xl font-bold text-[14px] shadow-[0_4px_14px_rgba(185,28,28,0.3)] hover:shadow-[0_6px_20px_rgba(185,28,28,0.4)] transition-all hover:-translate-y-0.5">
+             {service.linkText} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+           </Link>
+         ) : (
+           <Link href={service.href} className="mt-6 flex items-center gap-2 font-semibold typo-small text-[var(--value-link-hover)] hover:text-[var(--color-red-600)] transition-colors">
+            {service.linkText} <ArrowRight className="h-4 w-4 arrow-overshoot" aria-hidden="true" />
+           </Link>
+         )}
         </div>
-        <Typography variant="h3" as="div" className="mb-2">
-         {service.title}
-        </Typography>
-        <Typography variant="body" color="secondary" className="mb-auto">
-         {service.desc}
-        </Typography>
-        <Link href={service.href} className="mt-6 flex items-center gap-2 font-semibold typo-small text-[var(--value-link-hover)] hover:text-[var(--color-red-600)] transition-colors">
-         {service.linkText} <ArrowRight className="h-4 w-4 arrow-overshoot" aria-hidden="true" />
-        </Link>
-       </div>
-      ))}
-     </div>
+       ))}
+      </div>
 
      {/* Persönlichkeits-Quote */}
      <div className="mt-8 relative rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-8 lg:p-10 overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
@@ -350,7 +389,7 @@ export default function HomePage() {
         <div className="flex items-center justify-center md:justify-start gap-1.5 mb-3 text-yellow-500">
          {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />)}
         </div>
-        <Typography variant="h3" as="div" className="mb-3">Chef-Monteur vor Ort</Typography>
+        <Typography variant="h3" as="div" className="mb-3">Unseren Sicherheitsexperten vertrauen</Typography>
         <Typography variant="body" color="secondary" className="italic mb-4">
          &quot;Ihre Tür ist mein Handwerk. Ich verspreche Ihnen eine ehrliche Beratung, keine verdeckten Kosten und eine schnelle Lösung Ihres Problems.&quot;
         </Typography>
@@ -550,7 +589,7 @@ export default function HomePage() {
                 <Star key={i} className="w-4 h-4 text-[var(--color-google-gold)] fill-current" />
               ))}
             </div>
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Aus 45 Google Reviews</span>
+            <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Aus 44 Google Reviews</span>
           </div>
           <p className="italic text-[15px] text-[color:var(--text-secondary)] font-medium leading-relaxed">
             &quot;Mitten in der Nacht ausgesperrt. Der Kollege war in 20 Minuten da, super freundlich, und die Tür war im Handumdrehen auf. Der am Telefon vereinbarte Festpreis wurde strikt eingehalten.&quot;
@@ -616,7 +655,7 @@ export default function HomePage() {
         Transparenz ist das Fundament unserer Preisgestaltung und unterscheidet uns grundlegend von vielen anderen Anbietern in der Region. Den verbindlichen <strong>Festpreis</strong> teilen wir Ihnen bereits am Telefon mit, bevor sich unser Monteur auf den Weg macht.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Eine einfache Türöffnung tagsüber beginnt bei einem <strong>Festpreis ab 89 Euro</strong> inklusive sämtlicher Standardleistungen. In der Wetzlarer Kernstadt berechnen wir darüber hinaus keinerlei zusätzliche Anfahrtskosten für unsere Kunden.
+        Eine einfache Türöffnung tagsüber beginnt bei einem <strong>Festpreis ab 99 Euro</strong> inklusive sämtlicher Standardleistungen. In der Wetzlarer Kernstadt berechnen wir darüber hinaus keinerlei zusätzliche Anfahrtskosten für unsere Kunden.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
         Es gibt bei uns grundsätzlich <strong>keine versteckten Gebühren</strong>, keine nachträglichen Materialzuschläge und keine unerwarteten Aufpreise vor Ort. So können Sie sich voll und ganz auf eine faire und nachvollziehbare Abrechnung nach jedem einzelnen Einsatz verlassen.

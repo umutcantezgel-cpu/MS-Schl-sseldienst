@@ -22,7 +22,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { tueroeffnungImages, schlossImages, generatedServiceImages, generatedHeroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
-  title: "Türöffnung Wetzlar | ab 89€ Festpreis",
+  title: "Türöffnung Wetzlar | ab 99€ Festpreis",
   description: "Zugefallen oder abgeschlossen? ✔️ Zerstörungsfreie Türöffnung zu 99% ✔️ Zertifizierter Meisterbetrieb in Wetzlar. In ca. 20-30 Min. vor Ort. 📞 06441-8056279",
   path: "/leistungen/turoeffnung",
   exactTitle: true,
@@ -39,9 +39,9 @@ export default function TuroeffnungPage() {
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(generateServiceSchema({
       title:"Türöffnung",
-      description:"Zerstörungsfreie Türöffnung ab 89€",
+      description:"Zerstörungsfreie Türöffnung ab 50€",
       url:"/leistungen/turoeffnung",
-      price: 89
+      price: 50
      }))
     }}
    />
@@ -56,7 +56,7 @@ export default function TuroeffnungPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getFAQSchema([
-      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 89 Euro und abgesperrte Türen ab 129 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." },
+      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 50 Euro und abgesperrte Türen ab 80 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." },
       { question:"Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?", answer:"Schlüssel Schmiede Wetzlar ist in 15–30 Minuten bei Ihnen — 24/7, auch nachts, an Wochenenden und Feiertagen." },
       { question:"Wird die Tür bei der Öffnung beschädigt?", answer:"In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." },
      ])),
@@ -97,7 +97,7 @@ export default function TuroeffnungPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
-            Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 89 € – garantiert ohne versteckte Kosten.
+            Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 50 € – garantiert ohne versteckte Kosten.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -201,7 +201,7 @@ export default function TuroeffnungPage() {
         <div className="grid gap-8 sm:grid-cols-2 max-w-4xl mx-auto">
         <PriceCard
           title="Tür zugefallen"
-          price={89}
+          price={50}
           description="Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen."
           features={["Werktags 08-18 Uhr","Zerstörungsfreie Öffnung (99%)","Festpreis vor Ort",
           ]}
@@ -209,7 +209,7 @@ export default function TuroeffnungPage() {
         />
         <PriceCard
           title="Tür abgeschlossen"
-          price={129}
+          price={80}
           description="Schlüssel verloren oder doppelt abgeschlossen."
           features={["Werktags 08-18 Uhr","Profi-Werkzeug Einsatz","Ersatzzylinder zubuchbar (ab 25€)",
           ]}
@@ -257,7 +257,7 @@ export default function TuroeffnungPage() {
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">
-        <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 89 Euro und abgesperrte Türen ab 129 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." />
+        <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 50 Euro und abgesperrte Türen ab 80 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." />
         <FAQAccordion question="Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?" answer="Wir sind in der Regel in 15–30 Minuten bei Ihnen vor Ort in Wetzlar und Umgebung." />
         <FAQAccordion question="Wird die Tür bei der Öffnung beschädigt?" answer="In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." />
       </div>

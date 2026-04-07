@@ -20,8 +20,8 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Herborn — Fachbetrieb vor Ort | Festpreis ab 99€",
-            metaDescription: "Schlüsseldienst Herborn: Spezialist für Fachwerkhäuser & Altstadt. Zerstörungsfreie Öffnung ab 99€. In ca. 20 Min. über die A45 bei Ihnen. 06441-8056279",
+            metaTitle: "Schlüsseldienst Herborn — Fachbetrieb vor Ort | Festpreis ab 89€",
+            metaDescription: "Schlüsseldienst Herborn: Spezialist für Fachwerkhäuser & Altstadt. Zerstörungsfreie Öffnung ab 89€. In ca. 20 Min. über die A45 bei Ihnen. 06441-8056279",
         },
         
         // === 10X ERWEITERUNG ===
@@ -89,7 +89,7 @@ export const ring4Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Ausgesperrt in der Fachwerk-Stadt Herborn? Wir eilen über die A45 zu Ihnen! Garantiert beschädigungsfreie Türöffnung ab 99€.",
+            heroIntro: "Ausgesperrt in der Fachwerk-Stadt Herborn? Wir eilen über die A45 zu Ihnen! Garantiert beschädigungsfreie Türöffnung ab 89€.",
             mainText: "", // Ersetzt durch aboutText im 10x Layout
             serviceZerstörungsfrei: "", // Ersetzt durch scenarios im 10x Layout
             serviceBohren: "",
@@ -129,7 +129,7 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Dillenburg — 24h Notdienst | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Dillenburg — 24h Notdienst | Festpreis ab 89€",
             metaDescription: "Ihr Notdienst in der Oranierstadt Dillenburg (Oberscheld, Niederscheld, Donsbach). Anfahrt via A45 in ca. 25-30 Min. Fairness, Festpreise, Zerstörungsfrei.",
         },
         
@@ -211,7 +211,7 @@ export const ring4Locations: LocationData[] = [
             },
             {
                 question: "Fallen für die recht lange Distanz von Wetzlar horrende Spritkosten für Dillenburg an?",
-                answer: "Nein, da wir über die Bundesautobahn A45 operieren, berechnen wir die Anfahrt für Dillenburg auf ein extrem faires, stark limitiertes Fixum von 20 Euro. Die Festpreise der Öffnung selbst (ab 99€ werktags) bleiben exakt gleich wie im Wetzlarer Zentrum."
+                answer: "Nein, da wir über die Bundesautobahn A45 operieren, berechnen wir die Anfahrt für Dillenburg auf ein extrem faires, stark limitiertes Fixum von 20 Euro. Die Festpreise der Öffnung selbst (ab 89€ werktags) bleiben exakt gleich wie im Wetzlarer Zentrum."
             },
             {
                 question: "Öffnen Sie auch verrostete Garagentor-Schlösser an Dillenburger Hang-Objekten?",
@@ -238,8 +238,8 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Weilburg — Express-Notdienst | Festpreis ab 99€",
-            metaDescription: "Schlüsseldienst für Weilburg & Ortsteile (Odersbach, Kubach). Beschädigungsfreie Öffnung, ca. 20-25 Min. Ankunft über B49. 24/7 faire Preise ab 99€.",
+            metaTitle: "Schlüsseldienst Weilburg — Express-Notdienst | Festpreis ab 89€",
+            metaDescription: "Schlüsseldienst für Weilburg & Ortsteile (Odersbach, Kubach). Beschädigungsfreie Öffnung, ca. 20-25 Min. Ankunft über B49. 24/7 faire Preise ab 89€.",
         },
         
         // === 10X ERWEITERUNG ===

@@ -88,7 +88,7 @@ function getLocalBusinessSchema() {
 
 const storeServices = [
  { icon: Key, title:"Schlüsselkopie", desc:"Standard-, Sicherheits- und Spezialschlüssel – präzise gefräst, sofort zum Mitnehmen.", accent:"bg-blue-500/10 text-blue-600" },
- { icon: Car, title:"KFZ-Schlüssel", desc:"Duplikation, Anfertigung und elektronische Codierung für alle gängigen Fahrzeugtypen.", accent:"bg-emerald-500/10 text-emerald-600" },
+ { icon: Car, title:"KFZ-Schlüssel", desc:"Duplikation, Anfertigung und elektronische Codierung für alle gängigen Fahrzeugtypen.", accent:"bg-red-500/10 text-red-600" },
  { icon: Wrench, title:"Schlösser & Zylinder", desc:"Austausch, Reparatur und Beratung zu Schließzylindern und Kastenschlössern.", accent:"bg-amber-500/10 text-amber-600" },
  { icon: Award, title:"Gravuren", desc:"Klingelschilder, Pokale, Medaillen und Namensschilder – sauber und präzise.", accent:"bg-violet-500/10 text-violet-600" },
  { icon: Camera, title:"Passbilder", desc:"Biometrische Passbilder mit QR-Code – direkt erstellt, sofort abholbereit.", accent:"bg-rose-500/10 text-rose-600" },
@@ -125,7 +125,7 @@ export default function SchluesselSchmiedePage() {
    <section className="relative pt-[160px] pb-[100px] lg:pt-[200px] lg:pb-[140px] bg-gradient-to-b from-slate-900 via-slate-800 to-[var(--surface-primary)] overflow-hidden">
     {/* High-Tech Background Elements */}
     <div className="absolute inset-0 z-0">
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none mix-blend-screen" />
+      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[var(--color-red-500)]/10 blur-[120px] rounded-full pointer-events-none mix-blend-screen" />
       <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-[var(--color-red-500)]/10 blur-[150px] rounded-full pointer-events-none mix-blend-screen" />
     </div>
 
@@ -138,15 +138,15 @@ export default function SchluesselSchmiedePage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <Badge variant="default" className="mb-[var(--space-6)] border-white/10 text-white bg-white/5 backdrop-blur-md pl-1.5 py-1.5 mx-auto">
             <span className="relative flex h-2 w-2 mr-2 ml-1">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-400)] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]"></span>
             </span>
             Ladengeschäft & High-Tech Werkstatt in der Langgasse 70
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <h1 className="text-[40px] sm:text-[56px] lg:text-[72px] font-extrabold tracking-tighter text-white leading-[1.05] text-balance mb-[var(--space-6)]">
-            Die <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-200">Schlüssel Schmiede</span> <br />Wetzlar.
+            Die <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-red-400)] to-red-200">Schlüssel Schmiede</span> <br />Wetzlar.
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -158,7 +158,7 @@ export default function SchluesselSchmiedePage() {
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <a
               href="tel:+4964418056279"
-              className="flex items-center justify-center gap-2 h-[56px] px-8 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold text-[16px] shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:-translate-y-[1px] transition-all"
+              className="flex items-center justify-center gap-2 h-[56px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-xl font-bold text-[16px] shadow-[0_0_20px_rgba(185,28,28,0.3)] hover:shadow-[0_0_30px_rgba(185,28,28,0.5)] hover:-translate-y-[1px] transition-all"
             >
               <Phone className="w-5 h-5" />
               06441 8056279
@@ -196,7 +196,7 @@ export default function SchluesselSchmiedePage() {
               <span className="text-[12px] md:text-[14px] text-slate-400 font-medium uppercase tracking-wider mt-1">Ø Zeit KFZ-Schlüssel</span>
             </div>
             <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-[40px] font-black text-emerald-400 leading-none tracking-tight">
+              <span className="text-[32px] md:text-[40px] font-black text-[var(--color-red-400)] leading-none tracking-tight">
                 <AnimatedCounter end={100} suffix="%" />
               </span>
               <span className="text-[12px] md:text-[14px] text-slate-400 font-medium uppercase tracking-wider mt-1">Festpreis Garantie</span>
@@ -335,7 +335,7 @@ export default function SchluesselSchmiedePage() {
      <StaggerReveal animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="text-center mb-16">
-        <Badge variant="outline" className="mb-4 text-emerald-600 bg-emerald-50 border-emerald-100">Präzisionswerkstatt</Badge>
+        <Badge variant="outline" className="mb-4 text-[var(--color-red-600)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Präzisionswerkstatt</Badge>
         <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
          High-Tech KFZ-Schlüssel <br className="hidden md:block"/>Codierung & Frästechnik
         </h2>
@@ -347,10 +347,10 @@ export default function SchluesselSchmiedePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
           {/* Main Large Card */}
           <div className="md:col-span-2 md:row-span-2 rounded-[var(--radius-24)] bg-[var(--surface-secondary)] border border-[var(--border-subtle)] p-8 lg:p-12 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-emerald-500/5 blur-[80px] rounded-full pointer-events-none group-hover:bg-emerald-500/10 transition-colors duration-700" />
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[var(--color-red-500)]/5 blur-[80px] rounded-full pointer-events-none group-hover:bg-[var(--color-red-500)]/10 transition-colors duration-700" />
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[var(--color-red-500)] text-white shadow-[0_0_20px_rgba(185,28,28,0.3)]">
                   <Car className="h-6 w-6" />
                 </div>
                 <h3 className="text-[28px] font-extrabold text-[color:var(--text-primary)] tracking-tight">Vollständige Fahrzeugintegration</h3>
@@ -366,7 +366,7 @@ export default function SchluesselSchmiedePage() {
                 "Löschen von gestohlenen/verlorenen Schlüsseln",
                ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-[16px] font-medium text-[color:var(--text-primary)]">
-                 <div className="flex h-6 w-6 shrink-0 mt-0.5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                 <div className="flex h-6 w-6 shrink-0 mt-0.5 items-center justify-center rounded-full bg-[var(--color-red-100)] text-[var(--color-red-600)]">
                   <ShieldCheck className="h-4 w-4" />
                  </div>
                  {item}
@@ -376,19 +376,19 @@ export default function SchluesselSchmiedePage() {
             </div>
             {/* Visual element placeholder for large card */}
             <div className="absolute right-0 bottom-0 translate-x-[20%] translate-y-[20%] opacity-20 group-hover:opacity-30 transition-opacity duration-700">
-              <CircuitBoard className="w-[300px] h-[300px] text-emerald-400" />
+              <CircuitBoard className="w-[300px] h-[300px] text-[var(--color-red-300)]" />
             </div>
           </div>
 
           {/* Small Card 1: Speed */}
-          <div className="rounded-[var(--radius-24)] bg-emerald-600 border border-emerald-500 p-8 relative overflow-hidden flex flex-col justify-end group">
-            <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/80 to-transparent z-0" />
+          <div className="rounded-[var(--radius-24)] bg-[var(--color-red-600)] border border-[var(--color-red-500)] p-8 relative overflow-hidden flex flex-col justify-end group">
+            <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 to-transparent z-0" />
             <div className="absolute top-6 right-6 z-10 opacity-50">
               <Clock className="w-16 h-16 text-white" />
             </div>
             <div className="relative z-10">
               <h4 className="text-[24px] font-extrabold text-white mb-2">Kein Termin nötig.</h4>
-              <p className="text-emerald-50 text-[16px] leading-relaxed">
+              <p className="text-red-50 text-[16px] leading-relaxed">
                 Während das Autohaus oft Wochen auf ein Ersatzteil wartet, codieren wir Ihren Schlüssel im Handumdrehen direkt in der Schmiede.
               </p>
             </div>
@@ -558,8 +558,8 @@ export default function SchluesselSchmiedePage() {
             </div>
            ))}
           </div>
-          <div className="mt-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200/50">
-           <p className="text-[14px] text-emerald-700 font-medium flex items-center gap-2">
+          <div className="mt-6 p-4 rounded-xl bg-[var(--color-red-50)] border border-[var(--color-red-200)]/50">
+           <p className="text-[14px] text-[var(--color-red-700)] font-medium flex items-center gap-2">
             <Phone className="h-4 w-4" />
             24/7 Notdienst unter 06441 8056279
            </p>

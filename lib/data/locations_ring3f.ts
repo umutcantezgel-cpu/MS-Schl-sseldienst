@@ -16,7 +16,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.5900, longitude: 8.5750 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Fellingshausen — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Fellingshausen (Biebertal): In 14 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Fellingshausen — 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Fellingshausen (Biebertal): In 14 Min. da. Festpreis ab 89€. Notdienst: 06441-8056279" },
         routeDescription: "Über Dutenhofen und Wettenberg erreichen wir den waldreichen Randort Fellingshausen aus unserer Wetzlarer Zentrale typischerweise in 14 Minuten.",
         mainRoad: "L3286 / L3047",
         distanceKm: 13,
@@ -65,7 +65,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.5950, longitude: 8.5650 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Frankenbach — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Frankenbach (Biebertal): In 15 Min. da. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Frankenbach — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Frankenbach (Biebertal): In 15 Min. da. Ab 89€ Festpreis. Jetzt: 06441-8056279" },
         routeDescription: "Am Rande der Biebertaler Talsenken erreichen wir das verschlafene Frankenbach in konstanten 15 Minuten Fahrzeit.",
         mainRoad: "L3047 / Lokale Landstraßen",
         distanceKm: 14,
@@ -102,7 +102,7 @@ export const ring3fLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie weit ist Frankenbach?", answer: "Ca. 14 km — über Biebertal sind wir in rund 15 Minuten bei Ihnen." },
-            { question: "Was kostet der Notdienst?", answer: "Zugefallene Türen ab 99 Euro Festpreis." }
+            { question: "Was kostet der Notdienst?", answer: "Zugefallene Türen ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-biebertal", "schluesseldienst-fellingshausen", "schluesseldienst-koenigsberg"]
     },
@@ -114,7 +114,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6050, longitude: 8.5700 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Königsberg — 24/7 Türöffnung | Ab 99€", metaDescription: "Schlüsseldienst Königsberg (Biebertal): 16 Min. Anfahrt. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Königsberg — 24/7 Türöffnung | Ab 89€", metaDescription: "Schlüsseldienst Königsberg (Biebertal): 16 Min. Anfahrt. Ab 89€ Festpreis. Notdienst: 06441-8056279" },
         routeDescription: "Über die Höhenstraßen und Kurven der Gemeinde Biebertal erklimmen wir Königsberg souverän in rund 16 rasanten Minuten.",
         mainRoad: "L3286",
         distanceKm: 15,
@@ -163,7 +163,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6100, longitude: 8.5800 },
         logistics: { drivingTimeMinutes: "17", distanceFromHQ: 16 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Krumbach — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Krumbach (Biebertal): In 17 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Krumbach — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Krumbach (Biebertal): In 17 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Über reizvolle Landstraßen an Königsberg vorbei fahren wir in den nordwestlichsten Biebertaler Ortsteil Krumbach in unter 17 Minuten ein.",
         mainRoad: "Lokales Wegenetz",
         distanceKm: 16,
@@ -212,7 +212,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.5800, longitude: 8.5700 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Rodheim-Bieber — 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Rodheim-Bieber: Hauptort von Biebertal. 13 Min. Anfahrt. Ab 99€ Festpreis: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Rodheim-Bieber — 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Rodheim-Bieber: Hauptort von Biebertal. 13 Min. Anfahrt. Ab 89€ Festpreis: 06441-8056279" },
         routeDescription: "Als Direktanbindung durchqueren wir aus Wetzlar das Gießener Umland und sind im Hauptort Rodheim-Bieber in ca. 13 Minuten.",
         mainRoad: "L3286 / Gießener Straße",
         distanceKm: 12,
@@ -261,7 +261,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.5750, longitude: 8.5600 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Vetzberg — Notdienst 24/7 | Festpreis", metaDescription: "Schlüsseldienst Vetzberg (Biebertal): In 14 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Vetzberg — Notdienst 24/7 | Festpreis", metaDescription: "Schlüsseldienst Vetzberg (Biebertal): In 14 Min. da. Festpreis ab 89€. Notdienst: 06441-8056279" },
         routeDescription: "Vorbei am Gleiberg passieren wir die Landstraßen und erreichen das idyllische Burgdorf Vetzberg in meist 14 stabilen Fahrminuten.",
         mainRoad: "Burgstraße / Straßen am Gleiberg",
         distanceKm: 13,
@@ -284,7 +284,7 @@ export const ring3fLocations: LocationData[] = [
 <p>Dank gut ausgebauter Routen rund um den benachbarten Gleiberg verfehlen unsere Techniker ihr Ziel nie. Im Schnitt navigiert sich unser Einsatzteam in <strong>14 Minuten</strong> bis in die engen Gassen direkt vor Ihr Haus in Vetzberg. Im kalten Winter oder bei hereinbrechender Dunkelheit verspricht das ein enormes Aufatmen.</p>
 
 <h3>Festpreise zum Durchatmen in Vetzberg</h3>
-<p>Wir honorieren das Vertrauen ländlicher Dörfer mit eisenharter Preis-Integrität. Am normalen Werktag tagsüber öffnen wir eine schlicht zugezogene Tür absolut beschädigungsfrei für einen Fixbetrag ab 99 Euro. Um die Fahrtkosten für den Sprinter abzugelten, berechnen wir stufenlose 15 Euro Zufuhr. Erstklassige handwerkliche Notöffnung darf und muss kalkulierbar sein – auch rund um die Burg Vetzberg.</p>`,
+<p>Wir honorieren das Vertrauen ländlicher Dörfer mit eisenharter Preis-Integrität. Am normalen Werktag tagsüber öffnen wir eine schlicht zugezogene Tür absolut beschädigungsfrei für einen Fixbetrag ab 89 Euro. Um die Fahrtkosten für den Sprinter abzugelten, berechnen wir stufenlose 15 Euro Zufuhr. Erstklassige handwerkliche Notöffnung darf und muss kalkulierbar sein – auch rund um die Burg Vetzberg.</p>`,
         localTestimonials: [
             { name: "Fam. R.", quote: "Windstoß, alte schwere Haustür zu. Wir standen am Hanghaus im Nieselregen. Der Handwerker war in null Komma nichts aus Wetzlar hochgekommen, schob eine Karte in den Schlitz und die Tür war komplett kratzerfrei wieder offen. 114 Euro – Wahnsinnig gut.", rating: 5 },
             { name: "Bettina H.", quote: "Der Schlüssel brach in einer völlig veralteten Balkontür ab. Am Samstag angerufen, Herr kam sofort, hat es rausgefischt ohne das Holz drum herum zu ruinieren. Top Service.", rating: 5 }
@@ -298,7 +298,7 @@ export const ring3fLocations: LocationData[] = [
         },
         faqs: [
             { question: "Kommen Sie auch nach Vetzberg?", answer: "Ja, Vetzberg gehört zu unserem Einsatzgebiet. Wir sind in ca. 14 Minuten da." },
-            { question: "Was kostet der Schlüsseldienst in Vetzberg?", answer: "Zugefallene Türen ab 99 Euro Festpreis." }
+            { question: "Was kostet der Schlüsseldienst in Vetzberg?", answer: "Zugefallene Türen ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-biebertal", "schluesseldienst-rodheim-bieber", "schluesseldienst-krofdorf-gleiberg"]
     },
@@ -312,7 +312,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6300, longitude: 8.4500 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Ahrdt — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Ahrdt (Hohenahr): In 16 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Ahrdt — 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Ahrdt (Hohenahr): In 16 Min. da. Festpreis ab 89€. Notdienst: 06441-8056279" },
         routeDescription: "In den nördlichsten Zipfel der Gemeinde Hohenahr gelangen unsere Wetzlarer Teams über weitläufige Landstraßen in etwa 16 Minuten.",
         mainRoad: "L3053 / Lokale Landstraßen",
         distanceKm: 15,
@@ -361,7 +361,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6200, longitude: 8.4700 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Erda — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Erda (Hohenahr): In 15 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Erda — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Erda (Hohenahr): In 15 Min. da. Festpreis ab 89€. Notdienst: 06441-8056279" },
         routeDescription: "Den bevölkerungsreichsten Ortsteil der Gemeinde passieren wir auf direkten Landwegen von Wetzlar aus häufig schon nach staufreien 15 Minuten.",
         mainRoad: "L3053 / Gewerbegebiet Erda",
         distanceKm: 14,
@@ -410,7 +410,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6150, longitude: 8.4550 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Großaltenstädten — 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Großaltenstädten (Hohenahr). 14 Min. Anfahrt. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Großaltenstädten — 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Großaltenstädten (Hohenahr). 14 Min. Anfahrt. Ab 89€ Festpreis. Jetzt: 06441-8056279" },
         routeDescription: "Über die Höhenzüge und Erda fahren wir Großaltenstädten im Durchschnitt nach nur 16 Minuten verlässlich von Wetzlar aus an.",
         mainRoad: "L3053 / Bergstraße",
         distanceKm: 15,
@@ -459,7 +459,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6100, longitude: 8.4400 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Hohensolms — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Hohensolms (Hohenahr): In 15 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Hohensolms — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Hohensolms (Hohenahr): In 15 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Über teils kurvige Aufstiege am Dünsberg-Massiv navigieren wir nach Hohensolms in konstanten 17 Minuten.",
         mainRoad: "L3053 / Höhenwege",
         distanceKm: 16,
@@ -508,7 +508,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.6250, longitude: 8.4600 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Mudersbach — 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Mudersbach (Hohenahr): In 16 Min. da. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Mudersbach — 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Mudersbach (Hohenahr): In 16 Min. da. Ab 89€ Festpreis. Jetzt: 06441-8056279" },
         routeDescription: "Auf direkten Forst- und Landstraßenbahnen erreichen wir den tief in der Natur gelegenen Ort Mudersbach in kalkulierten 18 Minuten.",
         mainRoad: "Ortsstraße Mudersbach",
         distanceKm: 17,
@@ -559,7 +559,7 @@ export const ring3fLocations: LocationData[] = [
         coordinates: { latitude: 50.5600, longitude: 8.3700 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Stockhausen — Lokal 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Stockhausen bei Leun: In 14 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Stockhausen — Lokal 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Stockhausen bei Leun: In 14 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Über die Bundesstraße B49 steuern wir aus Wetzlar den Lahn-Ort Stockhausen blitzschnell an – oft unter 14 Minuten.",
         mainRoad: "B49 / Lahnstraße",
         distanceKm: 13,
@@ -596,7 +596,7 @@ export const ring3fLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie weit ist Stockhausen?", answer: "Ca. 13 km — über die B49 sind wir in rund 14 Minuten in Stockhausen." },
-            { question: "Was kostet der Schlüsseldienst?", answer: "Zugefallene Türen öffnen wir ab 99 Euro Festpreis." }
+            { question: "Was kostet der Schlüsseldienst?", answer: "Zugefallene Türen öffnen wir ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-leun", "schluesseldienst-biskirchen", "schluesseldienst-bissenberg"]
     }

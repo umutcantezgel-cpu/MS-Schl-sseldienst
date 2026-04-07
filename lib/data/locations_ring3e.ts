@@ -16,7 +16,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.6050, longitude: 8.3800 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 11 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Daubhausen — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Daubhausen bei Ehringshausen. In 13 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Daubhausen — 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Daubhausen bei Ehringshausen. In 13 Min. da. Festpreis ab 89€. Notdienst: 06441-8056279" },
         routeDescription: "Über die A45 bis Abfahrt Ehringshausen und Landstraßen erreichen wir das übersichtliche Daubhausen zügig aus unserem Zentrum in ca. 13 Minuten.",
         mainRoad: "L3286 / A45",
         distanceKm: 11,
@@ -39,7 +39,7 @@ export const ring3eLocations: LocationData[] = [
 <p>Unsere Leitstelle liegt so zentral, dass wir die Anfahrt über die A45 oder die ländlichen Nebenwege effizient planen können. Meist sind unsere Monteure in <strong>rund 13 Minuten</strong> am Bestimmungsort in Daubhausen. An eiskalten Wintertagen oder bei Regenwetter macht diese Schnelligkeit den entscheidenden Unterschied.</p>
 
 <h3>Preissicherheit bis an den Waldrand</h3>
-<p>Wir differenzieren nicht nach "Stadt" und "Land". In Daubhausen öffnen wir unverriegelte, zugeknallte Eingangs- oder Hoftüren zum Standardwerkpreis ab 99 Euro. Auf die etwas entlegenere Anfahrt entfallen transparente 15 Euro Zufuhrpauschale. Unsere Mitarbeiter fräsen erst dann an sensiblen Schließzylindern, wenn definitiv jede Lockpicking-Chance erschöpft ist.</p>`,
+<p>Wir differenzieren nicht nach "Stadt" und "Land". In Daubhausen öffnen wir unverriegelte, zugeknallte Eingangs- oder Hoftüren zum Standardwerkpreis ab 89 Euro. Auf die etwas entlegenere Anfahrt entfallen transparente 15 Euro Zufuhrpauschale. Unsere Mitarbeiter fräsen erst dann an sensiblen Schließzylindern, wenn definitiv jede Lockpicking-Chance erschöpft ist.</p>`,
         localTestimonials: [
             { name: "Familie H.", quote: "Am Nachmittag riss mir der Briefkasten-Schlüssel in der Haustür ab. Die Firma kam nach gut einer viertel Stunde nach Daubhausen, popelte das Stück heraus und wir waren extrem glücklich. Danke!", rating: 5 },
             { name: "Klaus-Peter J.", quote: "Top Notdienst, abends um halb zehn. Preis war transparent bei 99 am Tag und nachts mit Zuschlag. Stand alles auf der Homepage und klappte reibungslos.", rating: 5 }
@@ -53,7 +53,7 @@ export const ring3eLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie schnell kommen Sie nach Daubhausen?", answer: "Über die Verbindungsstraßen von Ehringshausen sind wir in ca. 13 Minuten in Daubhausen." },
-            { question: "Was kostet der Schlüsseldienst in Daubhausen?", answer: "Zugefallene Türen öffnen wir werktags tagsüber ab 99 Euro Festpreis." }
+            { question: "Was kostet der Schlüsseldienst in Daubhausen?", answer: "Zugefallene Türen öffnen wir werktags tagsüber ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-ehringshausen", "schluesseldienst-katzenfurt", "schluesseldienst-dillheim"]
     },
@@ -65,7 +65,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.6150, longitude: 8.4100 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 12 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Dreisbach — Notdienst 24/7 | Festpreis ab 99€", metaDescription: "Schlüsseldienst Dreisbach bei Ehringshausen. In 14 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Dreisbach — Notdienst 24/7 | Festpreis ab 89€", metaDescription: "Schlüsseldienst Dreisbach bei Ehringshausen. In 14 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Aus Wetzlar startend nehmen wir den Weg über Ehringshausen bzw Kölschhausen, um das landwirtschaftlich geprägte Dreisbach nach einer knapp 14-minütigen Anfahrt zu erreichen.",
         mainRoad: "L3052 / A45-Abzweigungen",
         distanceKm: 12,
@@ -88,7 +88,7 @@ export const ring3eLocations: LocationData[] = [
 <p>Auch wenn Dreisbach tiefer im Lahn-Dill-Kreis liegt, bedeutet dies keine zermürbende Warterei. Unsere professionell geschulten Mechaniker durchmessen die Straßen via Kölschhausen oder der A45-Abfahrt meist in hervorragenden <strong>14 Minuten</strong> Einsatzzeit. Wir pflegen lokale Expertise statt Callcenter-Desorientierung.</p>
 
 <h3>Klare Landestelle für Preis-Dumping-Konkurrenten</h3>
-<p>Uns ist wichtig: Kleinstdörfer werden von uns nicht stiefmütterlich oder gar durch erhöhte Tarife abgestraft. Unser Festpreis ab 99 Euro bei zugefallenen Bauelementen ist heilig – egal ob Stadtzentrum Wetzlar oder die Dreisbacher Ortseinfahrt. Lediglich 15 Euro für den Fuhrpark kommen hinzu. Für dieses Komplettpaket agieren wir zu nahezu hundert Prozent zerstörungsfrei und extrem sicherungserfahren.</p>`,
+<p>Uns ist wichtig: Kleinstdörfer werden von uns nicht stiefmütterlich oder gar durch erhöhte Tarife abgestraft. Unser Festpreis ab 89 Euro bei zugefallenen Bauelementen ist heilig – egal ob Stadtzentrum Wetzlar oder die Dreisbacher Ortseinfahrt. Lediglich 15 Euro für den Fuhrpark kommen hinzu. Für dieses Komplettpaket agieren wir zu nahezu hundert Prozent zerstörungsfrei und extrem sicherungserfahren.</p>`,
         localTestimonials: [
             { name: "Günter F.", quote: "Der Schlüssel brach im Kellerfenster ab. Monteur kam am frühen Abend nach Dreisbach. Äußerst netter Herr, hat das Schloss mit einer Fräse bearbeitet und in null Komma nichts ausgewechselt.", rating: 5 },
             { name: "Sarah M.", quote: "Nach dem Waldspaziergang standen wir verdutzt vor verschlossener Haus-Tür, weil nur zugezogen. Zum Glück fand ich diesen Dienst. Nach 15 Minuten stand er auf dem Hof, Schieber rein, Tür auf, 114 Euro Karte bezahlt. Bombe.", rating: 5 }
@@ -102,7 +102,7 @@ export const ring3eLocations: LocationData[] = [
         },
         faqs: [
             { question: "Kommen Sie auch nach Dreisbach?", answer: "Ja, Dreisbach gehört fest zu unserem Einsatzgebiet. Wir sind in ca. 14 Minuten bei Ihnen." },
-            { question: "Was kostet die Türöffnung in Dreisbach?", answer: "Werktags tagsüber ab 99 Euro Festpreis." }
+            { question: "Was kostet die Türöffnung in Dreisbach?", answer: "Werktags tagsüber ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-ehringshausen", "schluesseldienst-koelschhausen", "schluesseldienst-daubhausen"]
     },
@@ -114,7 +114,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.5950, longitude: 8.3900 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 12 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Greifenthal — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Greifenthal bei Ehringshausen. 14 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Greifenthal — 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Greifenthal bei Ehringshausen. 14 Min. Anfahrt, Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Über die Landstraßen und Daubhausen kreuzend sind wir in überschaubaren 14 Minuten direkt aus Wetzlar kommend in Greifenthal vor Ort.",
         mainRoad: "Lokale Kreisstraßen",
         distanceKm: 12,
@@ -165,7 +165,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.5150, longitude: 8.5350 },
         logistics: { drivingTimeMinutes: "10", distanceFromHQ: 8 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Hochelheim — Festpreis ab 99€ | 24/7", metaDescription: "Schlüsseldienst Hochelheim bei Hüttenberg: In 10 Min. da. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Hochelheim — Festpreis ab 89€ | 24/7", metaDescription: "Schlüsseldienst Hochelheim bei Hüttenberg: In 10 Min. da. Ab 89€ Festpreis. Notdienst: 06441-8056279" },
         routeDescription: "Über die direkte Verbindungsstraße L3020 verlassen wir Wetzlar und pendeln meist ampelfrei in herrlichen 10 Minuten direkt in Hochelheim ein.",
         mainRoad: "L3020 / Frankfurter Straße",
         distanceKm: 8,
@@ -202,7 +202,7 @@ export const ring3eLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie schnell ist der Monteur in Hochelheim?", answer: "Über die L3020 sind wir in ca. 10 Minuten in Hochelheim." },
-            { question: "Was kostet die Türöffnung in Hochelheim?", answer: "Werktags tagsüber öffnen wir zugefallene Türen ab 99 Euro Festpreis." }
+            { question: "Was kostet die Türöffnung in Hochelheim?", answer: "Werktags tagsüber öffnen wir zugefallene Türen ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-huettenberg", "schluesseldienst-hoernsheim", "schluesseldienst-rechtenbach"]
     },
@@ -214,7 +214,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.5120, longitude: 8.5400 },
         logistics: { drivingTimeMinutes: "11", distanceFromHQ: 9 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Hörnsheim — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Hörnsheim bei Hüttenberg: In 11 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Hörnsheim — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Hörnsheim bei Hüttenberg: In 11 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Über die Landstraßen und Wetzlars Ausläufer binden wir Hörnsheim flüssig an unser Routen-Netzwerk an. Normalerweise parken wir den Wagen nach 11 Minuten Einsatzfahrt am Bestimmungsort.",
         mainRoad: "L3020 / Kreisstraßen",
         distanceKm: 9,
@@ -263,7 +263,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.5050, longitude: 8.5200 },
         logistics: { drivingTimeMinutes: "12", distanceFromHQ: 10 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Reiskirchen (Hüttenberg) — 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Reiskirchen bei Hüttenberg: In 12 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Reiskirchen (Hüttenberg) — 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Reiskirchen bei Hüttenberg: In 12 Min. da. Festpreis ab 89€. Notdienst: 06441-8056279" },
         routeDescription: "Über Wetzlar-Süd und das Hüttenberger Umland steuern unsere Service-Fahrzeuge Reiskirchen zumeist innerhalb von 12 Minuten verlässlich an.",
         mainRoad: "B49-Anbindung / L3285",
         distanceKm: 10,
@@ -312,7 +312,7 @@ export const ring3eLocations: LocationData[] = [
         coordinates: { latitude: 50.5000, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 11 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Vollnkirchen — Festpreis ab 99€ | 24/7", metaDescription: "Schlüsseldienst Vollnkirchen bei Hüttenberg: In 13 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Vollnkirchen — Festpreis ab 89€ | 24/7", metaDescription: "Schlüsseldienst Vollnkirchen bei Hüttenberg: In 13 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
         routeDescription: "Vorbei am Wetzlarer Südkreuz peilen wir über Wetzlarer Ausläufer und Hüttenberg in ca. 13 rasanten Minuten Vollnkirchen an.",
         mainRoad: "B49 / L3275",
         distanceKm: 11,
@@ -349,7 +349,7 @@ export const ring3eLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie lange dauert die Anfahrt nach Vollnkirchen?", answer: "Über die B49 sind wir in ca. 13 Minuten in Vollnkirchen." },
-            { question: "Was kostet der Schlüsseldienst?", answer: "Zugefallene Türen öffnen wir ab 99 Euro Festpreis." }
+            { question: "Was kostet der Schlüsseldienst?", answer: "Zugefallene Türen öffnen wir ab 89 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-huettenberg", "schluesseldienst-rechtenbach", "schluesseldienst-schoeffengrund"]
     }

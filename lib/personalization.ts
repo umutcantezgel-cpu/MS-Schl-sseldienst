@@ -19,7 +19,7 @@ interface PersonalizedContent {
 
 const CONTENT_MAP: Record<VisitorSegment, PersonalizedContent> = {
   "new-visitor": {
-    heroHeadline: "Schlüssel Schmiede Wetzlar — Türöffnung ab 99€ Festpreis",
+    heroHeadline: "Schlüssel Schmiede Wetzlar — Türöffnung ab 89€ Festpreis",
     heroSubline: "24/7 Notdienst · In 15-30 Min vor Ort · Keine versteckten Kosten",
     ctaText: "Jetzt kostenlos anrufen",
     ctaSecondary: "Preisliste ansehen",
@@ -41,7 +41,7 @@ const CONTENT_MAP: Record<VisitorSegment, PersonalizedContent> = {
   },
   "high-intent": {
     heroHeadline: "Ausgesperrt? Die Schlüssel Schmiede ist in 30 Min da!",
-    heroSubline: "Festpreis ab 99€ · Keine Anfahrtskosten · Sofort verfügbar",
+    heroSubline: "Festpreis ab 89€ · Keine Anfahrtskosten · Sofort verfügbar",
     ctaText: "Jetzt anrufen — 06441 8056279",
     ctaSecondary: "Festpreis berechnen",
     trustSignal: "Letzte erfolgreiche Türöffnung vor wenigen Stunden",

@@ -28,7 +28,7 @@ export function generateLocalBusinessSchema() {
         // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
         "@type": ["LocalBusiness", "Locksmith"],
         "name": "Schlüssel Schmiede Wetzlar",
-        "description": "Schlüssel Schmiede Wetzlar ist Ihr 24/7-Schlüsseldienst mit Festpreisen ab 89 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 45 Google-Bewertungen mit 5.0 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
+        "description": "Schlüssel Schmiede Wetzlar ist Ihr 24/7-Schlüsseldienst mit Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 44 Google-Bewertungen mit 5.0 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
         "image": `${siteUrl}/hero-bg.jpg`,
         "logo": {
             "@type": "ImageObject",
@@ -78,7 +78,7 @@ export function generateLocalBusinessSchema() {
                 "description": "24/7 Notdienst — auch an Feiertagen und nachts"
             }
         ],
-        "priceRange": "ab 89€",
+        "priceRange": "ab 99€",
         "paymentAccepted": ["Cash", "Credit Card", "EC-Karte"],
         "currenciesAccepted": "EUR",
         "slogan": "Tür zu? Wir helfen sofort.",

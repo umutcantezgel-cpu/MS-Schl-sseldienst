@@ -10,7 +10,7 @@ import { werkstattImages } from "@/lib/data/imageAssets";
 import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
 
 export const metadata = generateSharedMetadata({
- title: "Kontakt Zentrale",
+ title: "Kontakt – Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
  description: "Ausgesperrt? 📞 Rufen Sie uns jetzt an: 06441-8056279. ✔️ 24/7 erreichbar ✔️ In 30 Min in ganz Wetzlar vor Ort. Wir helfen sofort!",
  path: "/kontakt",
 });
@@ -125,7 +125,7 @@ export default function KontaktPage() {
           </div>
           <div>
            <h3 className="text-[14px] font-bold text-[color:var(--text-primary)]">Standort</h3>
-           <p className="text-[14px] text-[color:var(--text-secondary)]">35576 Wetzlar</p>
+           <p className="text-[14px] text-[color:var(--text-secondary)]">Langgasse 70, 35578 Wetzlar</p>
           </div>
          </div>
          <div className="flex gap-4 p-4 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-subtle)] sm:col-span-2">

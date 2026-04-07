@@ -72,7 +72,7 @@ export default function ContactForm() {
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const filledFieldsCount = Object.values(formData).filter((val) => val.trim() !== "").length;
-  const showProgress = filledFieldsCount >= 2;
+  const showProgress = filledFieldsCount > 0;
 
   // Track form start
   const handleFocus = () => {
@@ -480,7 +480,6 @@ export default function ContactForm() {
             type="checkbox"
             id="privacy"
             name="privacy"
-            required
             checked={privacyAccepted}
             onChange={(e) => setPrivacyAccepted(e.target.checked)}
             className="mt-0.5 shrink-0 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] focus:ring-2 outline-none"

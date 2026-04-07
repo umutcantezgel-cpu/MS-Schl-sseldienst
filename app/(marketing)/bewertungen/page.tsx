@@ -68,10 +68,20 @@ function generateReviewSchema() {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Schlüssel Schmiede Wetzlar",
+  "image": "https://www.wetzlar-schlüsseldienst.de/images/og-image.jpg",
+  "telephone": "+4964418056279",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Langgasse 70",
+    "addressLocality": "Wetzlar",
+    "postalCode": "35578",
+    "addressCountry": "DE"
+  },
   "aggregateRating": {
    "@type": "AggregateRating",
    "ratingValue": "5.0",
-   "reviewCount": "45",
+   "reviewCount": "46",
    "bestRating": "5",
    "worstRating": "1"
   },

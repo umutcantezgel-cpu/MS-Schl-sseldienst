@@ -1043,12 +1043,12 @@ body {
   }
 
   100% {
-    transform: translateX(calc(-50% - var(--space-4)/2));
+    transform: translateX(-50%);
   }
 }
 
 .animate-marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes dropdownIn {

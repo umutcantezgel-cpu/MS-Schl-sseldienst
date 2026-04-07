@@ -20,8 +20,8 @@ export const ring1bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Wetzlar-Blasbach — Türöffnung ab 99€ | 24/7",
-            metaDescription: "Schlüsseldienst Blasbach: Lokaler Notdienst ohne Anfahrtskosten. In ca. 7 Min. vor Ort. Festpreis ab 99€. Jetzt anrufen: 06441-8056279!",
+            metaTitle: "Schlüsseldienst Wetzlar-Blasbach — Türöffnung ab 89€ | 24/7",
+            metaDescription: "Schlüsseldienst Blasbach: Lokaler Notdienst ohne Anfahrtskosten. In ca. 7 Min. vor Ort. Festpreis ab 89€. Jetzt anrufen: 06441-8056279!",
         },
         content: {
             heroIntro: "Ausgesperrt in Wetzlar-Blasbach? Unser lokaler Schlüsseldienst ist in etwa 7 Minuten bei Ihnen — zum garantierten Festpreis und ohne Anfahrtskosten.",
@@ -30,7 +30,7 @@ export const ring1bLocations: LocationData[] = [
 
 <p>Die Bebauung in Blasbach besteht überwiegend aus Einfamilienhäusern und kleineren Mehrfamilienhäusern, oft mit soliden Holz- oder Kunststofftüren und modernen Schließzylindern. Unsere Techniker kennen diese Gebäudetypen bestens und bringen das passende Spezialwerkzeug mit, um zugefallene Türen in nahezu allen Fällen vollständig beschädigungsfrei zu öffnen. Kein Bohren, kein Fräsen — nur präzise Handwerkskunst.</p>
 
-<p>Als Stadtteil von Wetzlar fällt Blasbach in unser direktes Kerngebiet. Das bedeutet für Sie: null Anfahrtskosten und ein transparenter Festpreis ab 99 Euro. Über die Solmser Straße und die Verbindung nach Hermannstein erreichen unsere Monteure Blasbach in durchschnittlich 7 Minuten. Tag und Nacht, an 365 Tagen im Jahr.</p>
+<p>Als Stadtteil von Wetzlar fällt Blasbach in unser direktes Kerngebiet. Das bedeutet für Sie: null Anfahrtskosten und ein transparenter Festpreis ab 89 Euro. Über die Solmser Straße und die Verbindung nach Hermannstein erreichen unsere Monteure Blasbach in durchschnittlich 7 Minuten. Tag und Nacht, an 365 Tagen im Jahr.</p>
 
 <p>Ob nach dem Spaziergang an der Lahn der Schlüssel in der Jacke im Flur liegt oder das Türschloss nach Jahren seinen Dienst verweigert — rufen Sie uns an. Unser Schlüsseldienst Wetzlar-Blasbach garantiert Ihnen schnelle Hilfe, ehrliche Preise und echtes Handwerk aus der Region.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Blasbach öffnen wir zugefallene Türen mit speziellen Öffnungstechniken in 99% der Fälle vollständig beschädigungsfrei — Rahmen und Zylinder bleiben intakt.",
@@ -71,8 +71,8 @@ export const ring1bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Wetzlar-Garbenheim — 5 Min. Anfahrt | Festpreis ab 99€",
-            metaDescription: "Lokaler Schlüsseldienst für Wetzlar-Garbenheim. Ohne Anfahrtskosten, Festpreis ab 99€, in 5 Minuten vor Ort. 24/7 Notdienst: 06441-8056279",
+            metaTitle: "Schlüsseldienst Wetzlar-Garbenheim — 5 Min. Anfahrt | Festpreis ab 89€",
+            metaDescription: "Lokaler Schlüsseldienst für Wetzlar-Garbenheim. Ohne Anfahrtskosten, Festpreis ab 89€, in 5 Minuten vor Ort. 24/7 Notdienst: 06441-8056279",
         },
         content: {
             heroIntro: "Schlüssel vergessen in Garbenheim? Kein Problem. Unser regionaler Schlüsseldienst ist in nur 5 Minuten bei Ihnen — mit Festpreisgarantie und kostenloser Anfahrt.",
@@ -81,7 +81,7 @@ export const ring1bLocations: LocationData[] = [
 
 <p>Ob eine ins Schloss gefallene Haustür am Dorfplatz oder ein klemmender Zylinder in einem der Neubauten — unsere erfahrenen Techniker arbeiten stets mit dem Ziel, Ihre Tür schonend und ohne Beschädigungen zu öffnen. Die kurze Distanz zum Wetzlarer Zentrum garantiert Ihnen extrem schnelle Reaktionszeiten von lediglich 5 Minuten.</p>
 
-<p>Garbenheim ist selbstverständlich Teil unseres kostenfreien Kerngebiets. Anfahrtskosten fallen für Sie nicht an. Unser transparenter Festpreis ab 99 Euro gilt ohne Wenn und Aber — auch nachts, am Wochenende und an Feiertagen. Hier gibt es keine bösen Überraschungen auf der Rechnung, denn wir sind Handwerker, keine Abzocker.</p>
+<p>Garbenheim ist selbstverständlich Teil unseres kostenfreien Kerngebiets. Anfahrtskosten fallen für Sie nicht an. Unser transparenter Festpreis ab 89 Euro gilt ohne Wenn und Aber — auch nachts, am Wochenende und an Feiertagen. Hier gibt es keine bösen Überraschungen auf der Rechnung, denn wir sind Handwerker, keine Abzocker.</p>
 
 <p>Vertrauen Sie auf Ihren lokalen Partner in Garbenheim. Wir kennen den Ortsteil, die Straßen und die typischen Türsysteme vor Ort. Ein Anruf genügt und wir sind auf dem Weg zu Ihnen.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Garbenheim öffnen wir routiniert mit feinfühligen Öffnungstechniken — Ihr Türblatt, Beschlag und Zylinder bleiben unbeschädigt.",
@@ -127,7 +127,7 @@ export const ring1bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Steindorf — 24/7 Notdienst für Wetzlar-Steindorf",
-            metaDescription: "Schlüsseldienst Steindorf bei Wetzlar. In 6 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Tag & Nacht erreichbar: 06441-8056279",
+            metaDescription: "Schlüsseldienst Steindorf bei Wetzlar. In 6 Min. vor Ort, Festpreis ab 89€, keine Anfahrtskosten. Tag & Nacht erreichbar: 06441-8056279",
         },
         content: {
             heroIntro: "Türschloss klemmt in Steindorf? Wir kommen sofort! Als lokaler Schlüsseldienst sind wir in ca. 6 Minuten bei Ihnen — ohne Anfahrtskosten und zum festen Preis.",
@@ -136,7 +136,7 @@ export const ring1bLocations: LocationData[] = [
 
 <p>Steindorf zeichnet sich durch vorwiegend freistehende Wohnhäuser und landwirtschaftlich geprägte Anwesen aus. Unsere Monteure sind mit den hier verbreiteten Schließsystemen bestens vertraut — ob robuste Altbau-Schlösser oder moderne Sicherheitszylinder in renovierten Gebäuden. Bei zugefallenen Türen greifen wir auf schonende Öffnungstechniken zurück, die Rahmen, Beschlag und Zylinder unversehrt lassen.</p>
 
-<p>Die gute Erreichbarkeit über die Verbindungsstraßen im Wetzlarer Süden ermöglicht uns eine Anfahrtszeit von nur etwa 6 Minuten. Und da Steindorf zum Kerngebiet von Wetzlar gehört, zahlen Sie bei uns keine Anfahrtskosten. Es gilt unser transparenter Festpreis ab 99 Euro — klar kommuniziert, bevor wir losfahren.</p>
+<p>Die gute Erreichbarkeit über die Verbindungsstraßen im Wetzlarer Süden ermöglicht uns eine Anfahrtszeit von nur etwa 6 Minuten. Und da Steindorf zum Kerngebiet von Wetzlar gehört, zahlen Sie bei uns keine Anfahrtskosten. Es gilt unser transparenter Festpreis ab 89 Euro — klar kommuniziert, bevor wir losfahren.</p>
 
 <p>Verlassen Sie sich nicht auf anonyme Callcenter-Dienste. Rufen Sie Ihren lokalen Partner an und lassen Sie sich von echtem Handwerk im Herzen des Lahntals überzeugen.</p>`,
             serviceZerstörungsfrei: "In Steindorf öffnen wir zugefallene Haustüren mit bewährten, schonenden Techniken — spurlos und ohne Folgekosten für neue Beschläge.",

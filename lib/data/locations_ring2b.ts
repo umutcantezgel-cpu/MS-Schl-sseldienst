@@ -21,16 +21,16 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Albshausen — Schnelle Türöffnung | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Albshausen bei Solms. In 10 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Jetzt anrufen: 06441-8056279!",
+            metaDescription: "Schlüsseldienst Albshausen bei Solms. In 10 Min. vor Ort, Festpreis ab 89€, keine Anfahrtskosten. Jetzt anrufen: 06441-8056279!",
         },
         content: {
-            heroIntro: "Ausgesperrt in Albshausen? Unser Schlüsseldienst ist in ca. 10 Minuten bei Ihnen. Festpreis ab 99€ — ohne versteckte Anfahrtskosten.",
+            heroIntro: "Ausgesperrt in Albshausen? Unser Schlüsseldienst ist in ca. 10 Minuten bei Ihnen. Festpreis ab 89€ — ohne versteckte Anfahrtskosten.",
             mainText: `
 <p>Albshausen ist ein idyllischer Ortsteil von Solms im Lahn-Dill-Kreis, gelegen am westlichen Rand des Solmser Gemeindegebiets. Mit seinen ruhigen Wohnstraßen und dem dörflichen Charakter bietet Albshausen eine hohe Wohnqualität. Doch auch in dieser beschaulichen Umgebung kann ein zugefallenes Schloss schnell zur Stresssituation werden. Als Ihr <strong>Schlüsseldienst Albshausen</strong> sind wir in solchen Momenten Ihr verlässlicher Partner.</p>
 
 <p>Die Bebauung in Albshausen besteht größtenteils aus Einfamilienhäusern und landwirtschaftlich genutzten Gebäuden. Unsere Techniker kennen die typischen Schließsysteme der Region und arbeiten stets mit dem Ziel, Ihre Tür zerstörungsfrei zu öffnen. Bei nur zugefallenen Türen gelingt uns das in über 99 Prozent aller Fälle.</p>
 
-<p>Die direkte Anbindung über die Verbindungsstraßen von Solms nach Wetzlar ermöglicht uns eine zuverlässige Anfahrtszeit von rund 10 Minuten. In Albshausen fallen für Sie keine Anfahrtskosten an — unser Festpreis ab 99 Euro ist Ihre volle Kostensicherheit.</p>`,
+<p>Die direkte Anbindung über die Verbindungsstraßen von Solms nach Wetzlar ermöglicht uns eine zuverlässige Anfahrtszeit von rund 10 Minuten. In Albshausen fallen für Sie keine Anfahrtskosten an — unser Festpreis ab 89 Euro ist Ihre volle Kostensicherheit.</p>`,
             serviceZerstörungsfrei: "Zugefallene Haustüren in Albshausen öffnen wir mit feinfühligen Spezialtechniken — ohne Kratzer, ohne Bohren, ohne Folgekosten.",
             serviceBohren: "Bei defekten Zylindern oder abgebrochenen Schlüsseln in Albshausen tauschen wir das Schloss professionell direkt vor Ort aus.",
             service247: "Unser Notdienst für Albshausen ist rund um die Uhr erreichbar — auch nachts, am Wochenende und an Feiertagen.",
@@ -60,8 +60,8 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Solms)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Niederbiel — Türöffnung ab 99€ Festpreis",
-            metaDescription: "Ihr Schlüsseldienst für Niederbiel bei Solms. In 9 Min. vor Ort. Festpreis ab 99€, ohne Anfahrtskosten. 24/7 Notdienst: 06441-8056279",
+            metaTitle: "Schlüsseldienst Niederbiel — Türöffnung ab 89€ Festpreis",
+            metaDescription: "Ihr Schlüsseldienst für Niederbiel bei Solms. In 9 Min. vor Ort. Festpreis ab 89€, ohne Anfahrtskosten. 24/7 Notdienst: 06441-8056279",
         },
         content: {
             heroIntro: "Tür zugefallen in Niederbiel? Kein Grund zur Panik. Unser lokaler Schlüsseldienst ist in ca. 9 Minuten bei Ihnen — zum Festpreis und ohne versteckte Kosten.",
@@ -70,7 +70,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Als <strong>Schlüsseldienst Niederbiel</strong> wissen wir genau, welche Schließsysteme in den Häusern der Umgebung verbaut sind. Von klassischen Profilzylindern bis zu modernen Mehrfachverriegelungen — wir bringen das passende Werkzeug mit und öffnen Ihre Tür in den allermeisten Fällen vollständig zerstörungsfrei.</p>
 
-<p>Die Anfahrt von unserer Wetzlarer Basis dauert über die B49 nur rund 9 Minuten. Anfahrtskosten fallen für Niederbiel nicht an. Sie zahlen unseren transparenten Festpreis ab 99 Euro und wissen vorher genau, was auf der Rechnung steht.</p>`,
+<p>Die Anfahrt von unserer Wetzlarer Basis dauert über die B49 nur rund 9 Minuten. Anfahrtskosten fallen für Niederbiel nicht an. Sie zahlen unseren transparenten Festpreis ab 89 Euro und wissen vorher genau, was auf der Rechnung steht.</p>`,
             serviceZerstörungsfrei: "In Niederbiel öffnen wir ins Schloss gefallene Türen mit bewährten Handwerkstechniken — Ihr Schloss bleibt dabei vollständig intakt.",
             serviceBohren: "Sollte ein Bohröffnung in Niederbiel nötig sein, arbeiten wir mit höchster Präzision und verbauen anschließend einen neuen Qualitätszylinder.",
             service247: "Schlüsselnotdienst Niederbiel: Erreichbar 24 Stunden am Tag, 365 Tage im Jahr. Kein Anrufbeantworter, sondern ein echter Mensch.",
@@ -100,24 +100,24 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Aßlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Bechlingen — Festpreis ab 99€ | Lokaler Notdienst",
-            metaDescription: "Schlüsseldienst Bechlingen bei Aßlar. In 9 Min. da, Festpreis ab 99€, ohne Anfahrtskosten. Jetzt Notdienst rufen: 06441-8056279",
+            metaTitle: "Schlüsseldienst Bechlingen — Festpreis ab 89€ | Lokaler Notdienst",
+            metaDescription: "Schlüsseldienst Bechlingen bei Aßlar. In 9 Min. da, Festpreis ab 89€, ohne Anfahrtskosten. Jetzt Notdienst rufen: 06441-8056279",
         },
         content: {
-            heroIntro: "Vor verschlossener Tür in Bechlingen? Wir helfen sofort! In ca. 9 Minuten sind unsere Monteure bei Ihnen — zum festen Preis ab 99€.",
+            heroIntro: "Vor verschlossener Tür in Bechlingen? Wir helfen sofort! In ca. 9 Minuten sind unsere Monteure bei Ihnen — zum festen Preis ab 89€.",
             mainText: `
 <p>Bechlingen ist ein kleiner, ruhiger Ortsteil der Stadt Aßlar im Lahn-Dill-Kreis. Die dörfliche Struktur mit überwiegend freistehenden Einfamilienhäusern prägt das Ortsbild. Über die Landesstraße ist Bechlingen gut an Aßlar und damit an das Wetzlarer Stadtgebiet angebunden. Als <strong>Schlüsseldienst Bechlingen</strong> bieten wir Ihnen schnelle, professionelle Hilfe direkt vor Ihrer Haustür.</p>
 
 <p>Die in Bechlingen üblichen Schließsysteme — von bewährten Profilzylindern bis zu modernen Sicherheitsschlössern — sind unserem Team aus der täglichen Arbeit bestens bekannt. Bei zugefallenen Türen setzen wir auf zerstörungsfreie Öffnungstechnik, die Ihren Türrahmen und Zylinder schont. Bei Schlüsselverlust oder abgebrochenen Schlüsseln haben wir Ersatzzylinder verschiedener Qualitätsstufen direkt im Fahrzeug.</p>
 
-<p>Die Anfahrt nach Bechlingen dauert für uns rund 9 Minuten. Anfahrtskosten berechnen wir nicht — es gilt unser Festpreissystem ab 99 Euro, das Ihnen vor der Anfahrt transparent mitgeteilt wird.</p>`,
+<p>Die Anfahrt nach Bechlingen dauert für uns rund 9 Minuten. Anfahrtskosten berechnen wir nicht — es gilt unser Festpreissystem ab 89 Euro, das Ihnen vor der Anfahrt transparent mitgeteilt wird.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Bechlingen öffnen wir in über 99% der Fälle spurlos — ohne den Zylinder auszutauschen.",
             serviceBohren: "Wenn das Schloss in Bechlingen defekt ist, bohren wir kontrolliert und wechseln den Zylinder fachgerecht vor Ort.",
             service247: "Bechlingen bei Aßlar: Unser Notdienst ist 24/7 erreichbar. Nachts wie tags, bei Regen wie bei Sonnenschein.",
         },
         faqs: [
             { question: "Wie schnell ist der Schlüsseldienst in Bechlingen?", answer: "Unsere Monteure sind durchschnittlich in 9 Minuten in Bechlingen — dank der direkten Anbindung über Aßlar." },
-            { question: "Gibt es versteckte Kosten in Bechlingen?", answer: "Nein. Unser Festpreis ab 99 Euro ist verbindlich. Anfahrtskosten fallen für Bechlingen nicht an." },
+            { question: "Gibt es versteckte Kosten in Bechlingen?", answer: "Nein. Unser Festpreis ab 89 Euro ist verbindlich. Anfahrtskosten fallen für Bechlingen nicht an." },
             { question: "Kommen Sie auch nachts nach Bechlingen?", answer: "Ja, unser 24-Stunden-Service gilt auch für Bechlingen. Für Nachteinsätze gilt ein transparenter Zuschlag." }
         ],
         neighbors: ["schluesseldienst-asslar", "schluesseldienst-berghausen", "schluesseldienst-werdorf"]
@@ -141,16 +141,16 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Berghausen bei Aßlar — 24/7 Türöffnung",
-            metaDescription: "Türöffnung in Berghausen bei Aßlar: In 10 Min. vor Ort, Festpreis ab 99€, ohne versteckte Kosten. Notdienst: 06441-8056279",
+            metaDescription: "Türöffnung in Berghausen bei Aßlar: In 10 Min. vor Ort, Festpreis ab 89€, ohne versteckte Kosten. Notdienst: 06441-8056279",
         },
         content: {
-            heroIntro: "Schlüssel vergessen in Berghausen? Unser Schlüsseldienst erreicht Sie in ca. 10 Minuten. Festpreis ab 99€, keine Anfahrtskosten.",
+            heroIntro: "Schlüssel vergessen in Berghausen? Unser Schlüsseldienst erreicht Sie in ca. 10 Minuten. Festpreis ab 89€, keine Anfahrtskosten.",
             mainText: `
 <p>Berghausen, ein Ortsteil der Stadt Aßlar, liegt nördlich im Lahn-Dill-Kreis und ist von weitläufigen Feldern und Waldgebieten umgeben. Die ruhige Ortslage und die Nähe zur Natur machen Berghausen zu einem attraktiven Wohnort. Gleichzeitig ist der Ort über das Straßennetz in Richtung Aßlar und Wetzlar gut erreichbar — ein Vorteil, den wir als <strong>Schlüsseldienst Berghausen</strong> für Sie nutzen.</p>
 
 <p>In Berghausen dominieren freistehende Wohnhäuser mit einer Mischung aus klassischen und modernen Schlössern. Ob die alte Haustür am Dorfplatz oder die Sicherheitstür einer Neubau-Doppelhaushälfte — unser erfahrenes Team öffnet behutsam und zerstörungsfrei, wann immer das möglich ist.</p>
 
-<p>Die Anfahrt nach Berghausen dauert für unsere Techniker rund 10 Minuten. Im gesamten Nahgebiet von Aßlar erheben wir keine Anfahrtskosten. Unser transparenter Festpreis ab 99 Euro wird Ihnen vor der Anfahrt am Telefon mitgeteilt.</p>`,
+<p>Die Anfahrt nach Berghausen dauert für unsere Techniker rund 10 Minuten. Im gesamten Nahgebiet von Aßlar erheben wir keine Anfahrtskosten. Unser transparenter Festpreis ab 89 Euro wird Ihnen vor der Anfahrt am Telefon mitgeteilt.</p>`,
             serviceZerstörungsfrei: "Zerstörungsfreie Türöffnung in Berghausen: Wir öffnen Ihre zugefallene Tür, ohne Spuren am Rahmen oder Zylinder zu hinterlassen.",
             serviceBohren: "Defektes Schloss in Berghausen? Wir bohren den Kern kontrolliert auf und verbauen sofort einen neuen Sicherheitszylinder.",
             service247: "Schlüsseldienst Berghausen: 24/7 erreichbar für jeden Notfall — schnell, professionell und zu fairen Preisen.",
@@ -181,7 +181,7 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Werdorf — Sofort-Hilfe zum Festpreis | 24/7",
-            metaDescription: "Schlüsseldienst Werdorf bei Aßlar. In 8 Min. vor Ort, Festpreis ab 99€. Keine versteckten Kosten. Notdienst: 06441-8056279",
+            metaDescription: "Schlüsseldienst Werdorf bei Aßlar. In 8 Min. vor Ort, Festpreis ab 89€. Keine versteckten Kosten. Notdienst: 06441-8056279",
         },
         content: {
             heroIntro: "Tür zu in Werdorf? Wir kommen blitzschnell! In ca. 8 Minuten ist unser Monteur bei Ihnen — ohne Anfahrtskosten, mit Festpreisgarantie.",
@@ -190,7 +190,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Die Vielfalt der Gebäude in Werdorf — von den Fachwerkhäusern im historischen Zentrum über moderne Reihenhäuser bis hin zu Gewerbeimmobilien — stellt unterschiedliche Anforderungen an unsere Öffnungstechnik. Genau dafür sind unsere Monteure ausgebildet. Wir arbeiten mit spezialisierten Picking-Tools und Öffnungsnadeln, die selbst komplexe Schließzylinder schonend entriegeln, ohne den Mechanismus zu beschädigen.</p>
 
-<p>Werdorf profitiert als Aßlarer Stadtteil von unserem kostenfreien Anfahrtsgebiet. Unser Festpreis ab 99 Euro ist klar kalkuliert und wird Ihnen direkt am Telefon genannt — bevor wir uns auf den Weg machen.</p>`,
+<p>Werdorf profitiert als Aßlarer Stadtteil von unserem kostenfreien Anfahrtsgebiet. Unser Festpreis ab 89 Euro ist klar kalkuliert und wird Ihnen direkt am Telefon genannt — bevor wir uns auf den Weg machen.</p>`,
             serviceZerstörungsfrei: "In Werdorf öffnen wir zugefallene Türen mit professionellen Picking-Techniken — schnell, leise und vollständig beschädigungsfrei.",
             serviceBohren: "Wenn der Zylinder in Werdorf defekt ist, bohren wir ihn mit Präzision heraus und setzen sofort einen neuen hochwertigen Zylinder ein.",
             service247: "Schlüsseldienst Werdorf: Tag und Nacht für Sie da. Unser 24/7-Service kennt keine Geschäftszeiten.",
@@ -220,8 +220,8 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hüttenberg)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Rechtenbach — Notdienst 24/7 | Festpreis ab 99€",
-            metaDescription: "Schlüsseldienst für Rechtenbach bei Hüttenberg. In 11 Min. vor Ort. Festpreis ab 99€, keine versteckten Kosten. Jetzt: 06441-8056279",
+            metaTitle: "Schlüsseldienst Rechtenbach — Notdienst 24/7 | Festpreis ab 89€",
+            metaDescription: "Schlüsseldienst für Rechtenbach bei Hüttenberg. In 11 Min. vor Ort. Festpreis ab 89€, keine versteckten Kosten. Jetzt: 06441-8056279",
         },
         content: {
             heroIntro: "Ausgesperrt in Rechtenbach? Rufen Sie uns an! In ca. 11 Minuten sind wir bei Ihnen — fair, transparent und ohne Anfahrtskosten.",
@@ -230,7 +230,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Als <strong>Schlüsseldienst Rechtenbach</strong> haben wir umfassende Erfahrung mit den typischen Schließsystemen der Gegend. Die vorwiegend ländliche Bebauung mit Einfamilienhäusern und älteren Gebäuden erfordert oft Fingerspitzengefühl beim Öffnen — und genau das bringen unsere Techniker mit. Zugefallene Türen entriegeln wir schonend und spurenlos.</p>
 
-<p>Die Anfahrt nach Rechtenbach dauert ca. 11 Minuten. Im gesamten Hüttenberger Gemeindegebiet erheben wir keine Anfahrtskosten. Unser Festpreis ab 99 Euro ist Ihr finanzieller Rahmen — ohne böse Überraschungen.</p>`,
+<p>Die Anfahrt nach Rechtenbach dauert ca. 11 Minuten. Im gesamten Hüttenberger Gemeindegebiet erheben wir keine Anfahrtskosten. Unser Festpreis ab 89 Euro ist Ihr finanzieller Rahmen — ohne böse Überraschungen.</p>`,
             serviceZerstörungsfrei: "In Rechtenbach öffnen wir zugefallene Türen mit feinfühligen Picking-Methoden — ohne auch nur einen Kratzer zu hinterlassen.",
             serviceBohren: "Bei notwendigen Bohrungen in Rechtenbach arbeiten wir hochpräzise und wechseln den Zylinder sofort vor Ort aus.",
             service247: "Auch um 3 Uhr nachts oder am Feiertagsmorgen: Unser Schlüsseldienst für Rechtenbach ist immer erreichbar.",
@@ -261,7 +261,7 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Volpertshausen — Türöffnung zum Festpreis",
-            metaDescription: "Schlüsseldienst Volpertshausen bei Hüttenberg. 12 Min. Anfahrt, Festpreis ab 99€. Keine versteckten Kosten. 24/7: 06441-8056279",
+            metaDescription: "Schlüsseldienst Volpertshausen bei Hüttenberg. 12 Min. Anfahrt, Festpreis ab 89€. Keine versteckten Kosten. 24/7: 06441-8056279",
         },
         content: {
             heroIntro: "Schlüsselnotfall in Volpertshausen? Wir sind in ca. 12 Minuten bei Ihnen — mit Festpreisgarantie und ohne Anfahrtskosten.",
@@ -270,7 +270,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Die Häuser in Volpertshausen sind überwiegend Einfamilienhäuser mit unterschiedlichen Schließsystemen. Ob ein simpler Profilzylinder oder eine aufwändigere Mehrfachverriegelung — unsere geschulten Techniker meistern jede Herausforderung. Bei zugefallenen Türen arbeiten wir grundsätzlich zerstörungsfrei und schonend.</p>
 
-<p>Über die Verbindungsstraßen im Hüttenberger Gemeindegebiet erreichen unsere Monteure Volpertshausen in rund 12 Minuten. Anfahrtskosten berechnen wir nicht. Es gilt unser bewährter Festpreis ab 99 Euro.</p>`,
+<p>Über die Verbindungsstraßen im Hüttenberger Gemeindegebiet erreichen unsere Monteure Volpertshausen in rund 12 Minuten. Anfahrtskosten berechnen wir nicht. Es gilt unser bewährter Festpreis ab 89 Euro.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Volpertshausen öffnen wir routiniert und ohne Spuren — Ihr Schloss bleibt intakt.",
             serviceBohren: "Bei Schlossdefekten in Volpertshausen fräsen wir den Kern präzise auf und verbauen einen neuen Markenzylinder.",
             service247: "Rund um die Uhr für Volpertshausen im Einsatz: Unser Notdienst ist immer nur einen Anruf entfernt.",
@@ -301,7 +301,7 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Weidenhausen — 24/7 Notdienst bei Hüttenberg",
-            metaDescription: "Schlüsseldienst für Weidenhausen bei Hüttenberg. In 13 Min. da, Festpreis ab 99€. Jetzt Hilfe rufen: 06441-8056279",
+            metaDescription: "Schlüsseldienst für Weidenhausen bei Hüttenberg. In 13 Min. da, Festpreis ab 89€. Jetzt Hilfe rufen: 06441-8056279",
         },
         content: {
             heroIntro: "Ausgesperrt in Weidenhausen? Kein Problem. Unser Schlüsseldienst ist in rund 13 Minuten bei Ihnen — zum transparenten Festpreis.",
@@ -310,7 +310,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Unsere Monteure kennen die ländliche Bebauung Weidenhausens mit ihren robusten Haustüren und älteren Schließsystemen genau. Mit bewährtem Spezialwerkzeug öffnen wir Ihre zugefallene Tür sachkundig und ohne Beschädigungen. Sollte doch ein neuer Zylinder nötig sein, haben wir diesen direkt im Einsatzfahrzeug parat.</p>
 
-<p>Die Anfahrt nach Weidenhausen dauert rund 13 Minuten. Unser Festpreissystem bietet Ihnen volle Kostentransparenz ab 99 Euro — der Preis wird Ihnen am Telefon genannt, bevor wir losfahren.</p>`,
+<p>Die Anfahrt nach Weidenhausen dauert rund 13 Minuten. Unser Festpreissystem bietet Ihnen volle Kostentransparenz ab 89 Euro — der Preis wird Ihnen am Telefon genannt, bevor wir losfahren.</p>`,
             serviceZerstörungsfrei: "Zerstörungsfreie Türöffnung in Weidenhausen: Wir arbeiten leise, sauber und ohne mechanische Gewalt an Ihrer Haustür.",
             serviceBohren: "Bei verklemmten oder defekten Schlössern in Weidenhausen setzen wir präzise Bohrwerkzeuge ein und ersetzen den Zylinder sofort.",
             service247: "Auch nachts und an Feiertagen: Unser Schlüsselnotdienst für Weidenhausen ist rund um die Uhr einsatzbereit.",
@@ -340,8 +340,8 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hohenahr)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Altenkirchen — Notdienst 24/7 | Festpreis ab 99€",
-            metaDescription: "Schlüsseldienst Altenkirchen bei Hohenahr. In 12 Min. vor Ort. Festpreis ab 99€, ohne Anfahrtskosten. Notdienst: 06441-8056279",
+            metaTitle: "Schlüsseldienst Altenkirchen — Notdienst 24/7 | Festpreis ab 89€",
+            metaDescription: "Schlüsseldienst Altenkirchen bei Hohenahr. In 12 Min. vor Ort. Festpreis ab 89€, ohne Anfahrtskosten. Notdienst: 06441-8056279",
         },
         content: {
             heroIntro: "Zugefallene Tür in Altenkirchen? Unser regionaler Schlüsseldienst kommt in rund 12 Minuten — mit garantiertem Festpreis und ohne Anfahrtskosten.",
@@ -350,7 +350,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Die typische Bebauung in Altenkirchen umfasst Einfamilienhäuser, ältere Bauernhäuser und gelegentlich kleinere Mehrfamilienhäuser. Unsere Techniker sind mit den hier verbreiteten Schließmechanismen vertraut und öffnen zugefallene Türen in nahezu allen Fällen zerstörungsfrei. Bei Schlüsselverlust oder abgebrochenen Schlüsseln tauschen wir den Zylinder direkt vor Ort aus.</p>
 
-<p>Über die Route durch Hohenahr und die Anbindung an die B49 erreichen wir Altenkirchen in ca. 12 Minuten. Anfahrtskosten entfallen — es gilt unser Festpreis ab 99 Euro.</p>`,
+<p>Über die Route durch Hohenahr und die Anbindung an die B49 erreichen wir Altenkirchen in ca. 12 Minuten. Anfahrtskosten entfallen — es gilt unser Festpreis ab 89 Euro.</p>`,
             serviceZerstörungsfrei: "Schonende Türöffnung in Altenkirchen: Wir öffnen Ihre zugefallene Tür, ohne dem Schloss oder dem Rahmen zu schaden.",
             serviceBohren: "Defekter Zylinder in Altenkirchen? Wir bohren präzise und setzen umgehend einen neuen Marken-Schließzylinder ein.",
             service247: "Unser Notdienst ist für Altenkirchen rund um die Uhr erreichbar — 365 Tage, ohne Ausnahme.",
@@ -381,23 +381,23 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Klein-Altenstädten — Sofort-Hilfe 24/7",
-            metaDescription: "Lokaler Schlüsseldienst für Klein-Altenstädten. In 13 Min. vor Ort, ab 99€ Festpreis. Anrufen: 06441-8056279",
+            metaDescription: "Lokaler Schlüsseldienst für Klein-Altenstädten. In 13 Min. vor Ort, ab 89€ Festpreis. Anrufen: 06441-8056279",
         },
         content: {
-            heroIntro: "Ausgesperrt in Klein-Altenstädten? Unsere Monteure sind in ca. 13 Minuten vor Ort — Festpreis ab 99€, keine Anfahrtskosten.",
+            heroIntro: "Ausgesperrt in Klein-Altenstädten? Unsere Monteure sind in ca. 13 Minuten vor Ort — Festpreis ab 89€, keine Anfahrtskosten.",
             mainText: `
 <p>Klein-Altenstädten ist ein kleiner Ortsteil der Gemeinde Hohenahr, eingebettet in die sanfte Hügellandschaft des Lahn-Dill-Kreises. Mit seiner ruhigen, dörflichen Struktur und den wenigen Dutzend Wohnhäusern ist der Ort ein Beispiel für ländliches Wohnen mit kurzen Wegen in die größeren Zentren. Als <strong>Schlüsseldienst Klein-Altenstädten</strong> sorgen wir dafür, dass Sie auch hier nie lange vor verschlossener Tür stehen.</p>
 
 <p>In Klein-Altenstädten überwiegen einfache, solide Wohnhäuser mit klassischen Schließsystemen. Unsere erfahrenen Techniker kennen diese Systeme und öffnen zugefallene Türen routiniert und beschädigungsfrei. Selbst bei kniffligeren Schlössern behalten wir die Ruhe und finden die richtige Lösung.</p>
 
-<p>Die Anfahrt dauert rund 13 Minuten über Hohenahr. Anfahrtskosten erheben wir in diesem Gebiet nicht. Unser Festpreis ab 99 Euro gibt Ihnen Planungssicherheit.</p>`,
+<p>Die Anfahrt dauert rund 13 Minuten über Hohenahr. Anfahrtskosten erheben wir in diesem Gebiet nicht. Unser Festpreis ab 89 Euro gibt Ihnen Planungssicherheit.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Klein-Altenstädten öffnet unser Team schonend und zuverlässig — ohne den Zylinder zu beschädigen.",
             serviceBohren: "Sollte in Klein-Altenstädten eine Bohröffnung nötig sein, arbeiten wir mit kontrollierten Präzisionsbohrern und tauschen den Zylinder sofort.",
             service247: "Schlüsseldienst Klein-Altenstädten: 24 Stunden am Tag, 7 Tage die Woche für Sie erreichbar.",
         },
         faqs: [
             { question: "Kommen Sie wirklich bis nach Klein-Altenstädten?", answer: "Selbstverständlich. Klein-Altenstädten liegt in unserem regulären Einsatzgebiet. Wir sind in ca. 13 Minuten bei Ihnen." },
-            { question: "Was kostet der Schlüsseldienst in Klein-Altenstädten?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 99 Euro — ohne Anfahrtskosten." },
+            { question: "Was kostet der Schlüsseldienst in Klein-Altenstädten?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 89 Euro — ohne Anfahrtskosten." },
             { question: "Kann ich auch abends anrufen?", answer: "Ja, unser Notdienst ist rund um die Uhr erreichbar. Für Abend- und Nachteinsätze gelten transparente Zuschläge." }
         ],
         neighbors: ["schluesseldienst-hohenahr", "schluesseldienst-altenkirchen", "schluesseldienst-wetzlar-muenchholzhausen"]
@@ -421,7 +421,7 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Wißmar — 24/7 Türöffnung zum Festpreis",
-            metaDescription: "Ihr Schlüsseldienst für Wißmar bei Gießen. In 12 Min. da, ab 99€ Festpreis, keine versteckten Kosten. Jetzt anrufen: 06441-8056279",
+            metaDescription: "Ihr Schlüsseldienst für Wißmar bei Gießen. In 12 Min. da, ab 89€ Festpreis, keine versteckten Kosten. Jetzt anrufen: 06441-8056279",
         },
         content: {
             heroIntro: "Ausgesperrt in Wißmar? Unser Schlüsseldienst erreicht Sie in rund 12 Minuten — mit garantiertem Festpreis und ohne versteckte Anfahrtskosten.",
@@ -430,7 +430,7 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Die Mischung aus Einfamilienhäusern, Doppelhaushälften und kleinen Mehrfamilienhäusern in Wißmar bringt unterschiedliche Schließsysteme mit sich. Unsere Techniker sind auf die gesamte Bandbreite vorbereitet — von einfachen Profilzylindern bis zu modernen Sicherheitsschlössern. Zugefallene Türen öffnen wir in den allermeisten Fällen vollständig zerstörungsfrei.</p>
 
-<p>Über die Route durch Lahnau und die östlichen Verbindungsstraßen erreichen wir Wißmar in ca. 12 Minuten. Anfahrtskosten fallen nicht an. Unser Festpreis ab 99 Euro gilt transparent und verbindlich.</p>`,
+<p>Über die Route durch Lahnau und die östlichen Verbindungsstraßen erreichen wir Wißmar in ca. 12 Minuten. Anfahrtskosten fallen nicht an. Unser Festpreis ab 89 Euro gilt transparent und verbindlich.</p>`,
             serviceZerstörungsfrei: "Schonende Öffnungstechnik in Wißmar: Ihre zugefallene Tür wird ohne Spuren am Rahmen oder Zylinder geöffnet.",
             serviceBohren: "Defektes Schloss in Wißmar? Wir bohren kontrolliert und verbauen einen neuen Qualitätszylinder direkt vor Ort.",
             service247: "Unser Schlüsselnotdienst ist für Wißmar an 365 Tagen im Jahr erreichbar — auch nachts und am Wochenende.",
@@ -461,7 +461,7 @@ export const ring2bLocations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Niederlemp & Oberlemp — Türöffnung 24/7",
-            metaDescription: "Schlüsseldienst für Niederlemp und Oberlemp. 12 Min. Anfahrt, ab 99€ Festpreis. Ohne versteckte Kosten. Notdienst: 06441-8056279",
+            metaDescription: "Schlüsseldienst für Niederlemp und Oberlemp. 12 Min. Anfahrt, ab 89€ Festpreis. Ohne versteckte Kosten. Notdienst: 06441-8056279",
         },
         content: {
             heroIntro: "Tür zu in Niederlemp oder Oberlemp? Wir sind in ca. 12 Minuten da — mit Festpreisgarantie und ohne Anfahrtskosten.",
@@ -470,14 +470,14 @@ export const ring2bLocations: LocationData[] = [
 
 <p>Die Häuser in Niederlemp und Oberlemp sind überwiegend Einfamilienhäuser und ältere, gewachsene Ortskerngebäude. Unsere erfahrenen Monteure sind mit diesen Gebäudetypen und ihren Schließmechanismen bestens vertraut. Zugefallene Türen öffnen wir schonend und zerstörungsfrei — Ihr Zylinder bleibt intakt, Ihr Rahmen unbeschädigt.</p>
 
-<p>Die Anfahrt über Hohenahr dauert rund 12 Minuten. Im gesamten Hohenahrer Gemeindegebiet berechnen wir keine Anfahrtskosten. Sie zahlen nur unseren transparenten Festpreis ab 99 Euro.</p>`,
+<p>Die Anfahrt über Hohenahr dauert rund 12 Minuten. Im gesamten Hohenahrer Gemeindegebiet berechnen wir keine Anfahrtskosten. Sie zahlen nur unseren transparenten Festpreis ab 89 Euro.</p>`,
             serviceZerstörungsfrei: "In Niederlemp und Oberlemp öffnen wir zugefallene Haustüren mit professionellen Picking-Techniken — zuverlässig und ohne Schäden.",
             serviceBohren: "Defektes Schloss? Wir bohren den Zylinder in Niederlemp oder Oberlemp präzise auf und setzen sofort einen neuen ein.",
             service247: "Für Niederlemp und Oberlemp sind wir rund um die Uhr erreichbar — auch an Sonn- und Feiertagen.",
         },
         faqs: [
             { question: "Kommen Sie auch in die kleinen Ortsteile wie Niederlemp?", answer: "Selbstverständlich. Niederlemp und Oberlemp gehören zu unserem regulären Einsatzgebiet. Wir sind in ca. 12 Minuten da." },
-            { question: "Was kostet die Anfahrt nach Niederlemp/Oberlemp?", answer: "Die Anfahrt ist im gesamten Hohenahrer Gemeindegebiet kostenfrei. Es gilt unser Festpreis ab 99 Euro." },
+            { question: "Was kostet die Anfahrt nach Niederlemp/Oberlemp?", answer: "Die Anfahrt ist im gesamten Hohenahrer Gemeindegebiet kostenfrei. Es gilt unser Festpreis ab 89 Euro." },
             { question: "Bieten Sie in Oberlemp auch Beratung zu Schließanlagen?", answer: "Ja. Nach der Türöffnung beraten wir Sie gerne zu modernen Sicherheitslösungen und Schließanlagen — unverbindlich und vor Ort." }
         ],
         neighbors: ["schluesseldienst-hohenahr", "schluesseldienst-altenkirchen", "schluesseldienst-ehringshausen"]

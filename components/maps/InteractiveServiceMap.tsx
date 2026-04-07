@@ -19,7 +19,7 @@ export default function InteractiveServiceMap() {
     async function initMap() {
       const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
       if (!apiKey) {
-        setError("Google Maps API Key fehlt.");
+        setError("Die interaktive Karte ist derzeit nicht verfügbar. Bitte entnehmen Sie die Gebiete der Liste.");
         return;
       }
 

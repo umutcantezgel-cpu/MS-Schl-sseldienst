@@ -88,12 +88,13 @@ export function createServiceSchema(service: { name: string; description: string
     };
 }
 
-export function createArticleSchema(article: { headline: string; description: string; datePublished: string; dateModified?: string; url: string; author?: string }) {
+export function createArticleSchema(article: { headline: string; description: string; datePublished: string; dateModified?: string; url: string; author?: string; image?: string }) {
     return {
         "@context": "https://schema.org",
         "@type": "Article",
         headline: article.headline,
         description: article.description,
+        image: article.image ? [article.image] : [`${siteUrl}/images/og-image.jpg`],
         datePublished: article.datePublished,
         dateModified: article.dateModified || article.datePublished,
         url: article.url,
@@ -103,7 +104,11 @@ export function createArticleSchema(article: { headline: string; description: st
         },
         publisher: {
             "@type": "Organization",
-            name: companyName
+            name: companyName,
+            logo: {
+                "@type": "ImageObject",
+                url: `${siteUrl}/images/logo-neu.svg`
+            }
         }
     };
 }

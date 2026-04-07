@@ -109,7 +109,7 @@ export const locations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Wetzlar — 24/7 Notdienst | Keine Anfahrtskosten",
-            metaDescription: "Ihr lokaler Schlüsseldienst für Wetzlar Kernstadt. Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. bei Ihnen vor Ort (Altstadt, Forum, Buderus-Areal).",
+            metaDescription: "Ihr lokaler Schlüsseldienst für Wetzlar Kernstadt. Zerstörungsfreie Türöffnung ab 89€. In ca. 5-10 Min. bei Ihnen vor Ort (Altstadt, Forum, Buderus-Areal).",
         },
         
         // === 10X ERWEITERUNG ===
@@ -217,8 +217,8 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Wetzlarer Kernstadt/Bezirk)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Wetzlar-Niedergirmes — Türöffnung ab 99€ | 24/7",
-            metaDescription: "Schlüsseldienst Wetzlar-Niedergirmes: Lokaler Notdienst ohne Anfahrtskosten. In 3-5 Min. vor Ort. Festpreis ab 99€. Rufen Sie 06441-8056279 an!",
+            metaTitle: "Schlüsseldienst Wetzlar-Niedergirmes — Türöffnung ab 89€ | 24/7",
+            metaDescription: "Schlüsseldienst Wetzlar-Niedergirmes: Lokaler Notdienst ohne Anfahrtskosten. In 3-5 Min. vor Ort. Festpreis ab 89€. Rufen Sie 06441-8056279 an!",
         },
         content: {
             heroIntro: "Sie stehen in Wetzlar-Niedergirmes vor verschlossener Tür? Wir sind Ihr direkter, lokaler Schlüsseldienst. Ohne lange Wartezeiten und ohne versteckte Kosten öffnen wir Ihre Tür schnell und professionell.",
@@ -227,7 +227,7 @@ export const locations: LocationData[] = [
 
 <p>Die Architektur in Niedergirmes reicht von modernen Mehrfamilienhäusern über gewerbliche Bauten bis hin zu charakteristischen Altbauten. Diese Vielfalt bedeutet, dass wir es mit unterschiedlichsten Schließsystemen zu tun haben – von der einfachen, ins Schloss gefallenen Haustür im Reihenhaus bis hin zur defekten Mehrfachverriegelung einer Gewerbeimmobilie. Unsere Techniker sind genau auf dieses Spektrum geschult und verfügen über das modernste Spezialwerkzeug, um jede Situation schonend und professionell zu lösen.</p>
 
-<p>Da Niedergirmes Teil des direkten Kerngebiets von Wetzlar ist, profitieren Sie bei uns von einem unschlagbaren Heimvorteil: Wir garantieren Ihnen nicht nur eine extrem schnelle Anfahrtszeit von meist nur 3 bis 5 Minuten, sondern erlassen Ihnen auch jegliche Anfahrtskosten. Unser verbindlicher Festpreis ab 99 Euro gilt hier ohne Wenn und Aber. Keine Callcenter-Warteschleifen, keine Vermittlungsgebühren, sondern direkte, ehrliche Handwerksarbeit vor Ort.</p>
+<p>Da Niedergirmes Teil des direkten Kerngebiets von Wetzlar ist, profitieren Sie bei uns von einem unschlagbaren Heimvorteil: Wir garantieren Ihnen nicht nur eine extrem schnelle Anfahrtszeit von meist nur 3 bis 5 Minuten, sondern erlassen Ihnen auch jegliche Anfahrtskosten. Unser verbindlicher Festpreis ab 89 Euro gilt hier ohne Wenn und Aber. Keine Callcenter-Warteschleifen, keine Vermittlungsgebühren, sondern direkte, ehrliche Handwerksarbeit vor Ort.</p>
 
 <p>Egal, ob Sie nach dem Verlassen Ihrer Wohnung an der Naunheimer Straße feststellen, dass der Schlüssel noch innen auf der Kommode liegt, oder ob abends das Türschloss in der Nähe der Werner-von-Siemens-Schule klemmt: Wenn Sie aus Wetzlar-Niedergirmes anrufen, machen wir uns sofort auf den Weg. Verlassen Sie sich auf einen vertrauensvollen Nachbarschafts-Service, der Ihnen die Sicherheit und das gute Gefühl schnellstmöglich zurückgibt.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Niedergirmes öffnen wir zugefallene Haus- und Wohnungstüren dank spezieller Handwerkstechniken in 99% der Fälle absolut beschädigungsfrei.",
@@ -287,7 +287,7 @@ export const locations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Wetzlar-Dutenhofen — In 5 Min. vor Ort | Festpreis",
-            metaDescription: "Ihr Schlüsseldienst für Wetzlar-Dutenhofen! Transparenter Festpreis ab 99€, kostenlose Anfahrt, 24/7 Notdienst. Jetzt anrufen: 06441-8056279",
+            metaDescription: "Ihr Schlüsseldienst für Wetzlar-Dutenhofen! Transparenter Festpreis ab 89€, kostenlose Anfahrt, 24/7 Notdienst. Jetzt anrufen: 06441-8056279",
         },
         content: {
             heroIntro: "Ausgesperrt in Wetzlar-Dutenhofen? Geraten Sie nicht in Panik. Unser lokaler Schlüsselnotdienst ist in ca. 5 Minuten bei Ihnen – mit Festpreisgarantie und ohne versteckte Anfahrtskosten.",
@@ -296,7 +296,7 @@ export const locations: LocationData[] = [
 
 <p>Dutenhofen zeichnet sich durch seine ruhigen Straßen und viele großzügige Einfamilienhäuser aus. Häufig sind diese Eigenheime mit modernen, teils doppelgefalzten Sicherheitstüren und hochwertigen Schließzylindern ausgestattet. Unser spezialisiertes Team bringt das notwendige Know-how und Fingerspitzengefühl mit, um selbst komplexe Verriegelungen schonend zu öffnen. Wir setzen konsequent auf Zerstörungsfreiheit: Wenn die Tür nur ins Schloss gefallen ist, kriegen wir sie in beinahe jedem Fall auf, ohne den Zylinder oder den Beschlag zu beschädigen.</p>
 
-<p>Dadurch, dass Dutenhofen als Stadtteil von Wetzlar in unser unmittelbares Service-Kerngebiet fällt, entstehen Ihnen für die Anfahrt keinerlei Zusatzkosten. Unsere kalkulierbaren Festpreise ab 99 Euro bieten Ihnen absolute Kostensicherheit, direkt am Telefon und bevor wir bei Ihnen eintreffen. Die unmittelbare Nachbarschaft zu Lahnau und Münchholzhausen sowie die erstklassige Erreichbarkeit sorgen zudem dafür, dass unsere Monteure meist in handgestoppten 5 Minuten bei Ihnen vor der Tür stehen.</p>
+<p>Dadurch, dass Dutenhofen als Stadtteil von Wetzlar in unser unmittelbares Service-Kerngebiet fällt, entstehen Ihnen für die Anfahrt keinerlei Zusatzkosten. Unsere kalkulierbaren Festpreise ab 89 Euro bieten Ihnen absolute Kostensicherheit, direkt am Telefon und bevor wir bei Ihnen eintreffen. Die unmittelbare Nachbarschaft zu Lahnau und Münchholzhausen sowie die erstklassige Erreichbarkeit sorgen zudem dafür, dass unsere Monteure meist in handgestoppten 5 Minuten bei Ihnen vor der Tür stehen.</p>
 
 <p>Ob am späten Abend nach dem Sporttreiben, am Wochenende oder an Feiertagen – wir lassen niemanden im Regen stehen. Rufen Sie uns an und erleben Sie einen Schlüsseldienst für Wetzlar-Dutenhofen, der ehrliches Handwerk mit Fairness und blitzschneller Reaktionszeit verbindet.</p>`,
             serviceZerstörungsfrei: "Zugefallene Haustüren in Wetzlar-Dutenhofen öffnen wir routiniert und in nahezu allen Fällen ohne die Notwendigkeit schwerer Eingriffe.",
@@ -341,8 +341,8 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Türöffnung Wetzlar-Münchholzhausen — 24/7 Schlüsseldienst | Ab 99€",
-            metaDescription: "Schlüsseldienst für Wetzlar-Münchholzhausen. Wir öffnen Türen beschädigungsfrei zum echten Festpreis ab 99€. In ca. 5 Minuten bei Ihnen. Ohne Anfahrtskosten!",
+            metaTitle: "Türöffnung Wetzlar-Münchholzhausen — 24/7 Schlüsseldienst | Ab 89€",
+            metaDescription: "Schlüsseldienst für Wetzlar-Münchholzhausen. Wir öffnen Türen beschädigungsfrei zum echten Festpreis ab 89€. In ca. 5 Minuten bei Ihnen. Ohne Anfahrtskosten!",
         },
         content: {
             heroIntro: "Schlüsseldienst Notfall in Wetzlar-Münchholzhausen? Wir helfen sofort, lokal und transparent. Vertrauen Sie auf faire Festpreise ohne fiese Anfahrtsgebühren.",
@@ -351,7 +351,7 @@ export const locations: LocationData[] = [
 
 <p>Wir haben in Münchholzhausen schon unzählige Türen geöffnet – von den robusten Holztüren am alten Ortskern bis hin zu den stark gesicherten, wärmegedämmten Sicherheitstüren der Neubaugebiete. Da unsere Monteure tief in der Handwerkstechnik verwurzelt sind (Ausgebildet von Uwe Sarfeld), kennen wir die exakten Schließmechanismen moderner und alter Fabrikate. Für Sie bedeutet das: höchste Professionalität, minimale Wartezeiten und eine in über 99 % der Fälle gänzlich zerstörungsfreie Türöffnung bei zugefallenen Türen.</p>
 
-<p>Als Wetzlarer Betrieb ist es für uns eine Selbstverständlichkeit, dass die Anfahrt nach Wetzlar-Münchholzhausen für Sie kostenlos ist. Unser Festpreis von ab 99 Euro ist genau das: ein Festpreis ohne verdeckte Überraschungen auf der Endrechnung. Durch die direkte Nähe zu unserer Basis und die reibungslose Verkehrsanbindung können wir Ihnen eine Ankunftszeit von lediglich rund 5 Minuten garantieren. In Notsituationen, etwa wenn das Essen auf dem Herd steht oder Kleinkinder in der Wohnung geblieben sind, ist diese Schnelligkeit Gold wert.</p>
+<p>Als Wetzlarer Betrieb ist es für uns eine Selbstverständlichkeit, dass die Anfahrt nach Wetzlar-Münchholzhausen für Sie kostenlos ist. Unser Festpreis von ab 89 Euro ist genau das: ein Festpreis ohne verdeckte Überraschungen auf der Endrechnung. Durch die direkte Nähe zu unserer Basis und die reibungslose Verkehrsanbindung können wir Ihnen eine Ankunftszeit von lediglich rund 5 Minuten garantieren. In Notsituationen, etwa wenn das Essen auf dem Herd steht oder Kleinkinder in der Wohnung geblieben sind, ist diese Schnelligkeit Gold wert.</p>
 
 <p>Lassen Sie den Tag nach einem Missgeschick mit der Tür nicht ruiniert sein. Rufen Sie unseren 24-Stunden-Service an. Wir sind pünktlich in Wetzlar-Münchholzhausen zur Stelle, öffnen Ihre Tür behutsam und sorgen dafür, dass Sie schnell und günstig wieder in Ihr Zuhause können.</p>`,
             serviceZerstörungsfrei: "Spezielle Öffnungstechniken erlauben es uns, Ihre zugefallene Tür in Münchholzhausen ohne mechanische Beschädigungen an Rahmen oder Zylinder zu öffnen.",
@@ -393,7 +393,7 @@ export const locations: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Wetzlar-Naunheim — In ca. 5 Min. bei Ihnen",
-            metaDescription: "Ihr Notdienst für Wetzlar-Naunheim. Wir garantieren beschädigungsfreie Türöffnungen (bei zugefallener Tür) ohne Anfahrtskosten. Festpreise ab 99€. Jetzt anrufen!",
+            metaDescription: "Ihr Notdienst für Wetzlar-Naunheim. Wir garantieren beschädigungsfreie Türöffnungen (bei zugefallener Tür) ohne Anfahrtskosten. Festpreise ab 89€. Jetzt anrufen!",
         },
         content: {
             heroIntro: "Sie suchen einen fairen Schlüsseldienst in Wetzlar-Naunheim? Rufen Sie uns an! Wir sind in 3 bis 5 Minuten blitzschnell an Ihrer Haustür und öffnen ohne Schäden zum Festpreis.",
@@ -402,7 +402,7 @@ export const locations: LocationData[] = [
 
 <p>Naunheim charakterisiert sich durch seine vielfältige Architektur, von charmanten Fachwerkhäusern bis hin zu stark frequentierten Mehrfamiliengebäuden. Unsere tiefgehende Expertise und stetige handwerkliche Ausbildung ermöglichen es uns, in Naunheim auf jede noch so spezielle Schließmechanik vorbereitet zu sein. Wir bringen die notwendige Ruhe und Geduld mit, um Ihre Wohnungs- oder Haustür schonend zu entriegeln. Werktags öffnen wir zu über 99 % aller nur zugefallenen Türen absolut zerstörungsfrei, sodass Ihnen teure Folgekosten für neue Zylinder oder Beschläge erspart bleiben.</p>
 
-<p>Ein fairer, ehrlicher Umgangston gehört zu unserer Firmenphilosophie. Für Wetzlar-Naunheim, als direkter Stadtteil, streichen wir die Anfahrtskosten vollständig von der Rechnung. Unser Festpreissystem bietet absolute Transparenz, beginnend ab 99 Euro. Sie wissen exakt, woran Sie sind, bevor wir auch nur einen Handgriff machen.</p>
+<p>Ein fairer, ehrlicher Umgangston gehört zu unserer Firmenphilosophie. Für Wetzlar-Naunheim, als direkter Stadtteil, streichen wir die Anfahrtskosten vollständig von der Rechnung. Unser Festpreissystem bietet absolute Transparenz, beginnend ab 89 Euro. Sie wissen exakt, woran Sie sind, bevor wir auch nur einen Handgriff machen.</p>
 
 <p>Eingeklemmte Schlüssel, defekte Schlösser oder abgebrochene Bärte? In Naunheim garantieren wir Einsatzzeiten von häufig unter 5 Minuten. Verlassen Sie sich nicht auf intransparente Callcenter, sondern auf Ihren echten Nachbarschafts-Ansprechpartner. Wir garantieren Ihnen schnelles Eintreffen, saubere Handwerks-Qualität und absolute Service-Sicherheit mitten in Wetzlar-Naunheim.</p>`,
             serviceZerstörungsfrei: "Unsere schonenden Öffnungstechniken garantieren in Naunheim, dass Ihre ins Schloss gefallene Tür schnell und spurlos wieder geöffnet ist.",
@@ -453,7 +453,7 @@ export const locations: LocationData[] = [
 
 <p>Gerade die älteren, oft liebevoll restaurierten Gebäude und Türen im Hermannsteiner Zentrum verlangen beim Notöffnen ein hohes Maß an Fingerspitzengefühl. Brachiale Gewalt ist dabei ein No-Go! Mit ausgebildetem Know-how, modernsten Spezialpickern und Ziehwerkzeugen garantieren wir für Hermannstein, dass wir Ihre Türen bei bloßem Zufallen ohne jegliche Schäden wieder zugänglich machen. Ob massive Landhaus-Türen oder die Sicherheitstüren modernerer Mehrfamilienhäuser an den Ausfahrtsstraßen Richtung Solms oder Braunfels – wir haben das passende Equipment.</p>
 
-<p>Aufgrund unserer geografischen Nähe und der direkten Route über die Hermannsteiner Straße bzw. Solmser Straße, schaffen es unsere Monteure im Regelfall innerhalb von 5 rasanten Minuten zu Ihnen. Ein weiterer fantastischer Vorteil für Hermannsteiner: Da der Vorort zur Wetzlarer Kernstadt zählt, berechnen wir Ihnen nicht einen Cent Anfahrtskosten. Es gilt unser glasklares Festpreissystem ab 99 Euro.</p>
+<p>Aufgrund unserer geografischen Nähe und der direkten Route über die Hermannsteiner Straße bzw. Solmser Straße, schaffen es unsere Monteure im Regelfall innerhalb von 5 rasanten Minuten zu Ihnen. Ein weiterer fantastischer Vorteil für Hermannsteiner: Da der Vorort zur Wetzlarer Kernstadt zählt, berechnen wir Ihnen nicht einen Cent Anfahrtskosten. Es gilt unser glasklares Festpreissystem ab 89 Euro.</p>
 
 <p>Ehrliche Preise, echtes regionales Handwerk und absolute Verlässlichkeit. Vermeiden Sie überteuerte Vermittlungszentralen. Rufen Sie unseren Schlüsseldienst Wetzlar-Hermannstein rund um die Uhr an und lassen Sie uns Ihre Tür sicher, blitzschnell und zum vereinbarten Festpreis öffnen.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Hermannstein wenden wir schonende Profi-Techniken an, um Ihre Tür unversehrt zu öffnen. Rahmen und Zylinder bleiben makellos.",

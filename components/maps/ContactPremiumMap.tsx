@@ -131,7 +131,7 @@ export default function ContactPremiumMap() {
     async function initMap() {
       const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
       if (!apiKey) {
-        setError("Google Maps API Key fehlt.");
+        setError("Die interaktive Karte steht aktuell nicht zur Verfügung. Bitte nutzen Sie die Liste der Einsatzgebiete.");
         return;
       }
 

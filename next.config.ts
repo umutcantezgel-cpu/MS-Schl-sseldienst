@@ -167,6 +167,18 @@ const nextConfig: NextConfig = {
         destination: "/impressum",
         permanent: true,
       },
+
+      // ── KfW Förderung (redirect to official KfW page) ──
+      {
+        source: "/kfw-foerderung",
+        destination: "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/",
+        permanent: false,
+      },
+      {
+        source: "/kfw",
+        destination: "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/",
+        permanent: false,
+      },
     ];
   },
 

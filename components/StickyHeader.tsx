@@ -332,14 +332,7 @@ export default function StickyHeader() {
 
           {/* 3. CTA & MOBILE MENÜ TOGGLE */}
           <div className="flex items-center gap-3 z-50">
-            {/* Live Status Indicator (Desktop) */}
-            <div className="hidden lg:flex items-center gap-1.5 mr-1">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-              </span>
-              <span className="text-[12px] font-semibold text-emerald-600">Verfügbar</span>
-            </div>
+
             <a
               href="tel:+4964418056279"
               className="hidden sm:flex items-center justify-center gap-2 px-6 h-[46px] bg-[var(--color-red-500)] text-white text-[15px] font-bold rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 group"
