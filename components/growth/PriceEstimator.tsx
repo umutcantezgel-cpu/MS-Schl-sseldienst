@@ -50,7 +50,7 @@ const SITUATIONS: { key: Situation; label: string }[] = [
 ];
 
 const ZEITPUNKTE: { key: Zeitpunkt; label: string; time: string }[] = [
-  { key: "regulaer", label: "Regulär", time: "Mo-Fr 07:00–22:00" },
+  { key: "regulaer", label: "Regulär", time: "Mo-Sa 10:00–18:00" },
   { key: "nacht", label: "Nachtdienst", time: "22:00–07:00" },
   { key: "wochenende", label: "Wochenende/Feiertag", time: "Sa & So ganztags" },
 ];

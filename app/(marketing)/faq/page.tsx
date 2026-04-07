@@ -82,7 +82,7 @@ export default function FAQPage() {
     <StaggerReveal className="mx-auto max-w-3xl" animation={entryAnimations.slideUpFade}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed bg-[var(--surface-secondary)] p-6 rounded-2xl border border-[var(--border-subtle)]">
-        <strong className="text-[color:var(--text-primary)]">Transparenz an erster Stelle:</strong> Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit <strong className="text-[color:var(--text-primary)]">Festpreisen ab 50 Euro</strong>, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von <strong className="text-[color:var(--text-primary)]">15–30 Minuten</strong> erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt. Auf dieser Seite finden Sie Antworten auf über 30 häufig gestellte Fragen zu Kosten, Anfahrt, Leistungen und Sicherheit.
+        <strong className="text-[color:var(--text-primary)]">Transparenz an erster Stelle:</strong> Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit <strong className="text-[color:var(--text-primary)]">Festpreisen ab 99 Euro</strong>, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von <strong className="text-[color:var(--text-primary)]">15–30 Minuten</strong> erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt. Auf dieser Seite finden Sie Antworten auf über 30 häufig gestellte Fragen zu Kosten, Anfahrt, Leistungen und Sicherheit.
       </p>
      </StaggerItem>
     </StaggerReveal>

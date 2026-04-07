@@ -38,7 +38,7 @@ function getLocalBusinessSchema() {
    "@type": "PostalAddress",
    streetAddress: "Langgasse 70",
    addressLocality: "Wetzlar",
-   postalCode: "35576",
+   postalCode: "35578",
    addressRegion: "Hessen",
    addressCountry: "DE",
   },
@@ -50,15 +50,9 @@ function getLocalBusinessSchema() {
   openingHoursSpecification: [
    {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "09:00",
-    closes: "18:00",
-   },
-   {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: "Saturday",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     opens: "10:00",
-    closes: "14:00",
+    closes: "18:00",
    },
   ],
   parentOrganization: {
@@ -96,8 +90,8 @@ const storeServices = [
 ];
 
 const faqItems = [
- { question:"Wo befindet sich die Schlüssel Schmiede?", answer:"Unser Ladengeschäft befindet sich in der Langgasse 70, 35576 Wetzlar, direkt im Stadtzentrum mit guter Erreichbarkeit." },
- { question:"Welche Öffnungszeiten hat die Schlüssel Schmiede?", answer:"Mo–Fr: 09:00–18:00 Uhr, Sa: 10:00–14:00 Uhr. Den 24/7-Notdienst erreichen Sie jederzeit unter 06441 8056279." },
+ { question:"Wo befindet sich die Schlüssel Schmiede?", answer:"Unser Ladengeschäft befindet sich in der Langgasse 70, 35578 Wetzlar, direkt im Stadtzentrum mit guter Erreichbarkeit." },
+ { question:"Welche Öffnungszeiten hat die Schlüssel Schmiede?", answer:"Mo–Sa: 10:00–18:00 Uhr. Den 24/7-Notdienst erreichen Sie jederzeit unter 06441 8056279." },
  { question:"Kann ich ohne Termin vorbeikommen?", answer:"Ja, selbstverständlich! Kommen Sie während der Öffnungszeiten einfach vorbei. Für komplexere Anliegen empfehlen wir einen kurzen Anruf vorab." },
  { question:"Werden KFZ-Schlüssel sofort im Laden angefertigt?", answer:"Ja, viele Autoschlüssel können direkt vor Ort gefräst und elektronisch codiert werden. Je nach Fahrzeugtyp kann eine Bestellung nötig sein." },
  { question:"Bieten Sie auch Gravuren für Vereine an?", answer:"Ja, wir gravieren Pokale, Medaillen und Trophäen für Sportvereine und Veranstaltungen. Kommen Sie vorbei und besprechen Sie die Details persönlich." },
@@ -164,7 +158,7 @@ export default function SchluesselSchmiedePage() {
               06441 8056279
             </a>
             <a
-              href="https://maps.google.com/?q=Langgasse+70,+35576+Wetzlar"
+              href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 h-[56px] px-8 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md rounded-xl font-bold text-[16px] border border-white/20 hover:-translate-y-[1px] transition-all"
@@ -527,7 +521,7 @@ export default function SchluesselSchmiedePage() {
           <address className="not-italic text-[18px] text-[color:var(--text-secondary)] leading-relaxed space-y-1">
            <p className="font-semibold text-[color:var(--text-primary)]">Schlüssel Schmiede Wetzlar</p>
            <p>Langgasse 70</p>
-           <p>35576 Wetzlar</p>
+           <p>35578 Wetzlar</p>
           </address>
           <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-[var(--border-subtle)]">
            <a href="tel:+4964418056279" className="flex items-center gap-3 text-[16px] text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
@@ -548,8 +542,7 @@ export default function SchluesselSchmiedePage() {
           </div>
           <div className="space-y-3">
            {[
-            { day:"Montag – Freitag", time:"09:00 – 18:00 Uhr" },
-            { day:"Samstag", time:"10:00 – 14:00 Uhr" },
+            { day:"Montag – Samstag", time:"10:00 – 18:00 Uhr" },
             { day:"Sonntag", time:"Geschlossen" },
            ].map((row) => (
             <div key={row.day} className="flex justify-between items-center py-2 border-b border-[var(--border-subtle)] last:border-0">
@@ -570,9 +563,9 @@ export default function SchluesselSchmiedePage() {
         {/* Karten-Platzhalter */}
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] border border-[var(--border-subtle)] overflow-hidden min-h-[400px] flex flex-col items-center justify-center">
          <MapPin className="h-16 w-16 text-[var(--color-red-200)] mb-4" />
-         <p className="text-[16px] font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35576 Wetzlar</p>
+         <p className="text-[16px] font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35578 Wetzlar</p>
          <a
-          href="https://maps.google.com/?q=Langgasse+70,+35576+Wetzlar"
+          href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--color-red-500)] text-white font-bold text-[14px] hover:bg-[var(--color-red-600)] transition-colors"

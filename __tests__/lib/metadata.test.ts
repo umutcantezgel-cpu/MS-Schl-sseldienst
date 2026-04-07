@@ -6,7 +6,7 @@ describe("metadata.ts", () => {
         it("generates correct structured metadata for a standard page", () => {
             const meta = generateSharedMetadata({
                 title: "Preise",
-                description: "Transparente Festpreise für Türöffnungen ab 50€.",
+                description: "Transparente Festpreise für Türöffnungen ab 99€.",
                 path: "/preise",
             });
 
@@ -16,7 +16,7 @@ describe("metadata.ts", () => {
             
             // Should append the suffix if exactTitle is default (false)
             expect(meta.title).toBe("Preise | MS Schlüsseldienst Wetzlar");
-            expect(meta.description).toBe("Transparente Festpreise für Türöffnungen ab 50€.");
+            expect(meta.description).toBe("Transparente Festpreise für Türöffnungen ab 99€.");
 
             // Indexable by default
             expect(meta.robots?.index).toBe(true);

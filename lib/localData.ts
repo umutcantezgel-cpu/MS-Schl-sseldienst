@@ -84,7 +84,7 @@ export const cities: CityData[] = [
             },
             {
                 question: "Was kostet eine Türöffnung in Gießen?",
-                answer: "Wir bieten für Gießen transparente Festpreise an. Die einfache Türöffnung inklusive Anfahrt kostet Sie ab 69 Euro – ohne versteckte Extras.",
+                answer: "Wir bieten für Gießen transparente Festpreise an. Die einfache Türöffnung inklusive Anfahrt kostet Sie ab 99 Euro – ohne versteckte Extras.",
             },
             {
                 question: "Helfen Sie auch bei zugefallenen WG-Zimmer-Türen?",

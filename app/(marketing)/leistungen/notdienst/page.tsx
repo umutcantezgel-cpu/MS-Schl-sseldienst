@@ -39,7 +39,7 @@ export default function NotdienstPage() {
       title: "24/7 Schlüsselnotdienst",
       description: "Bereitschaftsdienst für Türöffnungen und Autoöffnungen in Wetzlar rund um die Uhr, 365 Tage im Jahr.",
       url: "/leistungen/notdienst",
-      price: 50
+      price: 99
      }))
     }}
    />

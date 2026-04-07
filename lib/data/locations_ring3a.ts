@@ -20,8 +20,8 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Gießen — Türöffnung ab 89€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Gießen: Türöffnung ab 89€ für Studenten-WGs, Altstadt & Neubauten. Lokaler Meisterbetrieb, zerstörungsfrei, 24/7. In 15-20 Min. 06441-8056279",
+            metaTitle: "Schlüsseldienst Gießen — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Gießen: Türöffnung ab 99€ für Studenten-WGs, Altstadt & Neubauten. Lokaler Meisterbetrieb, zerstörungsfrei, 24/7. In 15-20 Min. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -132,7 +132,7 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Braunfels — Zerstörungsfreie Öffnung | Ab 89€",
+            metaTitle: "Schlüsseldienst Braunfels — Zerstörungsfreie Öffnung | Ab 99€",
             metaDescription: "Schlüsseldienst Braunfels: Rasanter 24 Std Notdienst. In ca. 10-15 Min. an der Haustür. Festpreise, Spezialisten für Altbau / Fachwerkhäuser. 06441-8056279",
         },
         
@@ -241,8 +241,8 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Ehringshausen — Türöffnung ab 89€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Ehringshausen: Zerstörungsfreie Türöffnung ab 89€. In ca. 10-15 Min. in Katzenfurt, Kölschhausen, Daubhausen & allen 9 Ortsteilen. 06441-8056279",
+            metaTitle: "Schlüsseldienst Ehringshausen — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Ehringshausen: Zerstörungsfreie Türöffnung ab 99€. In ca. 10-15 Min. in Katzenfurt, Kölschhausen, Daubhausen & allen 9 Ortsteilen. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -353,8 +353,8 @@ export const ring3LocationsA: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Schöffengrund — Türöffnung ab 89€ | 24/7",
-            metaDescription: "Schlüsseldienst Schöffengrund: Zerstörungsfreie Türöffnung ab 89€. In ca. 12-15 Min. in Schwalbach, Laufdorf, Oberwetz & allen 6 Ortsteilen. 06441-8056279",
+            metaTitle: "Schlüsseldienst Schöffengrund — Türöffnung ab 99€ | 24/7",
+            metaDescription: "Schlüsseldienst Schöffengrund: Zerstörungsfreie Türöffnung ab 99€. In ca. 12-15 Min. in Schwalbach, Laufdorf, Oberwetz & allen 6 Ortsteilen. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===

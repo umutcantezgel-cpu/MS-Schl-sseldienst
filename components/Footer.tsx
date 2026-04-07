@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-400)]">
          <Clock className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
-         <span>Laden: Mo–Fr 09–18 · Sa 09–14 | 24/7 Notdienst</span>
+         <span>Laden: Mo–Sa 10–18 Uhr | 24/7 Notdienst</span>
         </div>
         {/* Social Media */}
         <div className="mt-5 flex items-center gap-3">
@@ -212,7 +212,6 @@ export default function Footer() {
        <div className="flex gap-2">
          <span className="px-3 py-1.5 bg-white/15 rounded-lg text-[10px] uppercase font-bold tracking-wider">EC / Kredit</span>
          <span className="px-3 py-1.5 bg-white/15 rounded-lg text-[10px] uppercase font-bold tracking-wider">Bar</span>
-         <span className="px-3 py-1.5 bg-white/15 rounded-lg text-[10px] uppercase font-bold tracking-wider">PayPal</span>
        </div>
        <span>Sichere Zahlung vor Ort</span>
       </div>

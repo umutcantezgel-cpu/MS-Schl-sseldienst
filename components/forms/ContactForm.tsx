@@ -258,7 +258,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
 
       <FormField label="Adresse / Postleitzahl (Für schnellere Anfahrt)" htmlFor="address">
         <Input 
-          id="address" name="address" placeholder="Wetzlarer Straße 1, 35576 Wetzlar" 
+          id="address" name="address" placeholder="Wetzlarer Straße 1, 35578 Wetzlar" 
           disabled={loading} 
           value={formData.address} onChange={handleChange} onBlur={handleBlur}
         />

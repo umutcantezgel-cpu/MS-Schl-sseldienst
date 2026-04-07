@@ -10,10 +10,10 @@ export async function GET() {
 
 # Startseite
 
-Schlüssel Schmiede Wetzlar ist ein Fachgeschäft für Schlüssel, Schlösser und Sicherheitstechnik mit integriertem 24/7 Schlüsseldienst und Festpreisen ab 89 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 20–30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
+Schlüssel Schmiede Wetzlar ist ein Fachgeschäft für Schlüssel, Schlösser und Sicherheitstechnik mit integriertem 24/7 Schlüsseldienst und Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 20–30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
 
 ## Leistungen im Überblick
-- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Ab 89€ Festpreis (tagsüber).
+- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Ab 99€ Festpreis (tagsüber).
 - **Autoöffnung**: Schonende Öffnung von Fahrzeugen aller Marken ohne Lackschäden. Ab 99€.
 - **Schließanlagen**: Beratung, Planung und Einbau von Schließanlagen für Wohn- und Gewerbeimmobilien.
 - **Sicherheitstechnik**: Einbruchschutz-Beratung, Zusatzschlösser, Panzerriegel, elektronische Schließsysteme.
@@ -39,7 +39,7 @@ Schlüssel Schmiede Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzla
 4. **Abrechnung**: Transparenter Festpreis — Sie zahlen nur den vereinbarten Betrag
 
 ### Preise Türöffnung
-- Tür zugefallen (Schlüssel steckt von innen): ab 89€ (tagsüber), 119€ (abends), 149€ (nachts)
+- Tür zugefallen (Schlüssel steckt von innen): ab 99€ (tagsüber), 119€ (abends), 149€ (nachts)
 - Tür abgesperrt (Schlüssel verloren): ab 129€ (tagsüber), 159€ (abends), 189€ (nachts)
 - Abendzuschlag (18–22 Uhr): im Preis enthalten
 - Nachtzuschlag (22–08 Uhr) / Wochenende: im Preis enthalten
@@ -95,7 +95,7 @@ Schlüssel Schmiede Wetzlar arbeitet ausschließlich mit transparenten Festpreis
 # Häufig gestellte Fragen (FAQ)
 
 ### Was kostet ein Schlüsseldienst in Wetzlar?
-Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 89 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren im Servicegebiet. Abgesperrte Türen kosten ab 129 Euro.
+Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren im Servicegebiet. Abgesperrte Türen kosten ab 129 Euro.
 
 ### Wie schnell kommt der Schlüsseldienst in Wetzlar?
 Unser Schlüsseldienst ist in 20–30 Minuten bei Ihnen in Wetzlar und Umgebung — 24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr.

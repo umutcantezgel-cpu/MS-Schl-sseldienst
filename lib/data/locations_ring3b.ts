@@ -20,8 +20,8 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Biebertal — Türöffnung ab 89€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Biebertal: Zerstörungsfreie Türöffnung ab 89€. In ca. 12-15 Min. in Rodheim-Bieber, Fellingshausen, Vetzberg & allen 6 Ortsteilen. 06441-8056279",
+            metaTitle: "Schlüsseldienst Biebertal — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Biebertal: Zerstörungsfreie Türöffnung ab 99€. In ca. 12-15 Min. in Rodheim-Bieber, Fellingshausen, Vetzberg & allen 6 Ortsteilen. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -132,8 +132,8 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Leun — Türöffnung ab 89€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Leun: Zerstörungsfreie Türöffnung ab 89€. In ca. 12-15 Min. in Biskirchen, Stockhausen, Bissenberg & Kernstadt. Faire Preise. 06441-8056279",
+            metaTitle: "Schlüsseldienst Leun — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Leun: Zerstörungsfreie Türöffnung ab 99€. In ca. 12-15 Min. in Biskirchen, Stockhausen, Bissenberg & Kernstadt. Faire Preise. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -247,8 +247,8 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Waldsolms — Türöffnung ab 89€ | 24/7",
-            metaDescription: "Schlüsseldienst Waldsolms: Türöffnung ab 89€ in Brandoberndorf, Griedelbach & allen 6 Ortsteilen. Lokaler Meisterbetrieb, 15-18 Min. Anfahrt. 06441-8056279",
+            metaTitle: "Schlüsseldienst Waldsolms — Türöffnung ab 99€ | 24/7",
+            metaDescription: "Schlüsseldienst Waldsolms: Türöffnung ab 99€ in Brandoberndorf, Griedelbach & allen 6 Ortsteilen. Lokaler Meisterbetrieb, 15-18 Min. Anfahrt. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -316,7 +316,7 @@ export const ring3LocationsB: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Ausgesperrt in Brandoberndorf, Griedelbach oder einem anderen Waldsolmser Ortsteil? Schnelle, zerstörungsfreie Türöffnung ab 89€ – garantiert fair, 24/7 erreichbar.",
+            heroIntro: "Ausgesperrt in Brandoberndorf, Griedelbach oder einem anderen Waldsolmser Ortsteil? Schnelle, zerstörungsfreie Türöffnung ab 99€ – garantiert fair, 24/7 erreichbar.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -356,8 +356,8 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Butzbach — Türöffnung ab 89€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Butzbach: Zerstörungsfreie Türöffnung ab 89€. In ca. 20-25 Min. in der Friedrich-Ludwig-Weidig-Stadt & allen 14 Ortsteilen. 06441-8056279",
+            metaTitle: "Schlüsseldienst Butzbach — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaDescription: "Schlüsseldienst Butzbach: Zerstörungsfreie Türöffnung ab 99€. In ca. 20-25 Min. in der Friedrich-Ludwig-Weidig-Stadt & allen 14 Ortsteilen. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===

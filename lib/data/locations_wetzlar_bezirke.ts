@@ -19,8 +19,8 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "5-8", distanceFromHQ: 4 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)" },
         seo: {
-            metaTitle: "Schlüsseldienst Wetzlar-Nauborn — Türöffnung ab 89€ | 24/7",
-            metaDescription: "Schlüsseldienst Wetzlar-Nauborn: In 5-8 Min. vor Ort im Wetzbachtal. Festpreis ab 89€, keine Anfahrtskosten. 24/7 Notdienst: 06441-8056279"
+            metaTitle: "Schlüsseldienst Wetzlar-Nauborn — Türöffnung ab 99€ | 24/7",
+            metaDescription: "Schlüsseldienst Wetzlar-Nauborn: In 5-8 Min. vor Ort im Wetzbachtal. Festpreis ab 99€, keine Anfahrtskosten. 24/7 Notdienst: 06441-8056279"
         },
 
         routeDescription: "Von unserem Standort in Wetzlar führt die Route über die Nauborner Straße (L3284) direkt ins Wetzbachtal. Über die Stoppelberger Hohl und die Karl-Kellner-Straße navigieren wir gezielt in jeden Winkel Nauborns.",
@@ -125,7 +125,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5450, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dalheim — In 5 Min. da | Ab 89€", metaDescription: "Schlüsseldienst für Wetzlar-Dalheim. 3-5 Min. Anfahrt, keine Anfahrtskosten. Festpreis ab 89€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dalheim — In 5 Min. da | Ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Dalheim. 3-5 Min. Anfahrt, keine Anfahrtskosten. Festpreis ab 99€. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Dalheim liegt als westlicher Ausläufer direkt im Stadtgebiet. Von unserem Wetzlarer Standort aus erreichen wir den Bezirk meist kreuzungsfrei über die B49 (Abfahrt Dalheim) oder die Europastraße in unter 5 Minuten.",
         mainRoad: "B49 / Europastraße",
@@ -194,7 +194,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             service247: "Egal ob Sonntagnacht oder Feiertag: Unser Notdienst ist für Wetzlar-Dalheim rund um die Uhr auf Abruf bereit."
         },
         faqs: [
-            { question: "Fallen in Dalheim Anfahrtskosten an?", answer: "Nein. Dalheim ist als Kernstadt-Bezirk Teil der kostenfreien Null-Euro-Zone. Sie zahlen ausschließlich die transparente Einsatzpauschale ab 89 Euro." },
+            { question: "Fallen in Dalheim Anfahrtskosten an?", answer: "Nein. Dalheim ist als Kernstadt-Bezirk Teil der kostenfreien Null-Euro-Zone. Sie zahlen ausschließlich die transparente Einsatzpauschale ab 99 Euro." },
             { question: "Sind Sie auch nachts in Dalheim einsatzbereit?", answer: "Unser Notdienst operiert an 365 Tagen im Jahr 24 Stunden durchgängig. Für Dalheim gelten dabei sehr schnelle Anfahrtswege von unter 5 Minuten." },
             { question: "Das Schloss meines Reihenhauses klemmt – können Sie sofort reparieren?", answer: "Ja, unsere Fahrzeuge sind rollende Werkstätten. Wir führen gängige Zylinderformate (BKS, ABUS) mit und können defekte Schließanlagen am Dalheimer Kopf sofort austauschen." },
             { question: "Öffnen Sie auch gewerbliche Türen im Einzelhandel?", answer: "Selbstverständlich. Wir betreuen auch Supermärkte und Ladengeschäfte in Dalheim und öffen verklemmte Rolltore, Glastüren oder Personalzugänge rasch und materialschonend." }
@@ -209,7 +209,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5558, longitude: 8.5020 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Altstadt — Schonende Öffnung | Ab 89€", metaDescription: "Schlüsseldienst für die Wetzlarer Altstadt. Spezialisiert auf denkmalgeschützte Türen. In 3 Min. da. Festpreis ab 89€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Altstadt — Schonende Öffnung | Ab 99€", metaDescription: "Schlüsseldienst für die Wetzlarer Altstadt. Spezialisiert auf denkmalgeschützte Türen. In 3 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Direkt im Herzen der historischen Altstadt. Von unserer Zentrale aus bewegen wir uns in Windeseile – oft mit Sondergenehmigungen – durch die verwinkelten Altstadtstrukturen.",
         mainRoad: "Langgasse / Domplatz",
@@ -293,7 +293,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5570, longitude: 8.5080 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Neustadt — 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Wetzlar-Neustadt. In 3 Min. vor Ort, Festpreis ab 89€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Neustadt — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Wetzlar-Neustadt. In 3 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Direkt östlich/nordöstlich an die historische Altstadt grenzend. Wir erreichen die Neustadt bequem über den Buderusplatz und die Gloelstraße innerhalb weniger Abzweigungen.",
         mainRoad: "Gloelstraße / Eduard-Kaiser-Straße",
@@ -355,7 +355,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Panik in der Wetzlarer Neustadt? Ein Anruf genügt. In 3 bis 5 Minuten öffnet unser Expernteam Wohnungen und Büros von der Gloelstraße bis zum Rathaus. Ohne Fahrkosten, ab 89€.",
+            heroIntro: "Panik in der Wetzlarer Neustadt? Ein Anruf genügt. In 3 bis 5 Minuten öffnet unser Expernteam Wohnungen und Büros von der Gloelstraße bis zum Rathaus. Ohne Fahrkosten, ab 99€.",
             mainText: `<p>Die Wetzlarer Neustadt ist geprägt durch herrschaftliche Gründerzeitbauten, moderne Büros und das städtische Behördenviertel. Falls Sie hier rund um Rathaus oder Gloelstraße vor verschlossener Tür stehen, handeln wir sofort.</p><p>Unsere Monteure öffnen schwere Altbautüren ebenso souverän wie verklemmte Sicherheitsschlösser von Geschäftsräumen – zum Festpreis und <strong>ohne Anfahrtsgebühren</strong>.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Neustadt öffnen wir zugefallene Sicherheitstüren und Kamerasystemtüren schonend und restlos ohne Defekte.",
             serviceBohren: "Verriegelte Türen von Geschäftsräumen öffnen unsere Profis im Notfall durch minimalinvasives Fräsen des Zylinders.",
@@ -377,7 +377,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5430, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Büblingshausen — Festpreis ab 89€ | 24/7", metaDescription: "Schlüsseldienst Büblingshausen: In 5 Min. vor Ort. Festpreis ab 89€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Büblingshausen — Festpreis ab 99€ | 24/7", metaDescription: "Schlüsseldienst Büblingshausen: In 5 Min. vor Ort. Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über den Frankfurter Ring (B49) biegen wir blitzschnell Richtung Süden auf den Wetzlarer Berg (oder Volpertshäuser Straße) ab und stehen sofort in Büblingshausen.",
         mainRoad: "B49 / Frankfurter Straße",
@@ -418,7 +418,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Büblingshausens Varianz zwingt zu universellem Wissen. Während in Alt-Büblingshausen mitunter simple, verzogene Holztürrahmen vorherrschen, die man mit dem geschickten Einzug eines Türspions umgehen kann, verlangen die massiv gedämmten 3-fach-Verriegelungen der Bürogebäude im Spilburg-Areal höchste Ingenieurskunst in Form modernster Hochleistungs-Spiralfräsen, falls ein Zylinder restlos blockiert. Bei Zugefallenen Türen gilt wie eh und je unsere 99% Zerstörungsfrei-Garantie.</p>
 
 <h3>100% Freie Anfahrt</h3>
-<p>Egal ob Gewerbepark Spilburg oder Blücherstraße. Büblingshausen liegt ausnahmslos im kostenfreien Wetzlarer Einsatzring. Werktags-Routineöffnungen fangen konstant und fix ab 89 Euro an. Keinen einzigen Pfennig mehr für Sprit, Auto oder Anfahrts-Arbeitszeit.</p>`,
+<p>Egal ob Gewerbepark Spilburg oder Blücherstraße. Büblingshausen liegt ausnahmslos im kostenfreien Wetzlarer Einsatzring. Werktags-Routineöffnungen fangen konstant und fix ab 99 Euro an. Keinen einzigen Pfennig mehr für Sprit, Auto oder Anfahrts-Arbeitszeit.</p>`,
 
         localTestimonials: [
             {
@@ -461,7 +461,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5480, longitude: 8.4980 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Sturzkopf — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst für Wetzlar-Sturzkopf. In 5 Min. da, Festpreis ab 89€, keine Anfahrtskosten. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Sturzkopf — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Sturzkopf. In 5 Min. da, Festpreis ab 99€, keine Anfahrtskosten. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die Bergstraße und Nauborner Straße erreichen wir den höher gelegenen Sturzkopf aus der Wetzlarer Innenstadt verkehrsarm in unter 5 Minuten.",
         mainRoad: "Nauborner Straße / Waldstraße",
@@ -485,7 +485,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Sobald Sie unseren Notruf wählen, machen sich unsere Servicewagen von der Zentrale auf den Weg. Über die Bergstraße stehen wir oft schon nach <strong>3 bis 5 Minuten</strong> vor Ihrer Haustür am Sturzkopf. Kein langes Warten draußen in der Kälte.</p>
 
 <h3>100% Kostenfreie Anfahrt</h3>
-<p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <strong>0 Euro Anfahrtskosten</strong>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 89 Euro – transparent, fair und ehrlich kommuniziert.</p>`,
+<p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <strong>0 Euro Anfahrtskosten</strong>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 99 Euro – transparent, fair und ehrlich kommuniziert.</p>`,
         localTestimonials: [
             { name: "Michael H.", quote: "Hatte mich an der Waldstraße ausgesperrt. Der Monteur war in rekordverdächtigen 4 Minuten da. Toller, seriöser Schlüsseldienst ohne versteckte Kosten.", rating: 5 },
             { name: "Birgit S.", quote: "Das Türschloss an unserem älteren Haus funktionierte nicht mehr richtig. Innerhalb kurzer Zeit wurde alles professionell und freundlich gewechselt.", rating: 5 }
@@ -511,7 +511,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5460, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Stoppelberger Hohl Wetzlar — Festpreis | 24/7", metaDescription: "Schlüsseldienst für die Stoppelberger Hohl in Wetzlar. In 5 Min. da, ab 89€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Stoppelberger Hohl Wetzlar — Festpreis | 24/7", metaDescription: "Schlüsseldienst für die Stoppelberger Hohl in Wetzlar. In 5 Min. da, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Die Durchgangsstraße Stoppelberger Hohl erreichen wir über den Wöllbacher Tor / Frankfurter Straße meist schnurgerade und staufrei binnen 5 Minuten.",
         mainRoad: "Stoppelberger Hohl / Frankfurter Weg",
@@ -521,7 +521,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         landmark: "Friedhof an der Stoppelberger Hohl",
         buildingTypes: "Mehrparteienhäuser, ansprechende Einfamilienhäuser und Siedlungsbau.",
         parkingInfo: "Trotz der beidseitigen Bebauung entlang der Achse parken wir problemlos durch Sondergenehmigungen nahe des Hauseingangs.",
-        heroVariant: "Schlüsseldienst Wetzlar – Stoppelberger Hohl. Festpreis ab 89€, Anfahrt stets kostenlos.",
+        heroVariant: "Schlüsseldienst Wetzlar – Stoppelberger Hohl. Festpreis ab 99€, Anfahrt stets kostenlos.",
         fareInfo: "Auch die Stoppelberger Hohl profitiert von der Wetzlarer Kernstadt-Garantie: 0 Euro für die Anfahrt.",
         scenarios: [
             { icon: "home", title: "Türöffnung im Mehrfamilienhaus", description: "Im Treppenhaus die Tür hinter sich zugezogen? Wir öffnen die Wohnungstür flüsterleise und restlos ohne Schäden am Holz." },
@@ -561,7 +561,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5580, longitude: 8.4920 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Silhöfer Aue Wetzlar — In 3 Min. da | 89€", metaDescription: "Schlüsseldienst für die Silhöfer Aue und das Westend in Wetzlar. In 3 Min. da, ab 89€ Festpreis. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Silhöfer Aue Wetzlar — In 3 Min. da | 89€", metaDescription: "Schlüsseldienst für die Silhöfer Aue und das Westend in Wetzlar. In 3 Min. da, ab 99€ Festpreis. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Die Silhöfer Aue liegt unmittelbar an der Lahn. Von der Wetzlarer Innenstadt überqueren wir rasch die Lahn und sind oft in unter 3 Minuten auf der Westseite.",
         mainRoad: "Karl-Kellner-Ring / Lahnbrücken",
@@ -611,7 +611,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5620, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dillfeld — 24/7 Notdienst | Festpreis", metaDescription: "Schlüsseldienst Wetzlar-Dillfeld. In 5 Min. vor Ort, Festpreis ab 89€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dillfeld — 24/7 Notdienst | Festpreis", metaDescription: "Schlüsseldienst Wetzlar-Dillfeld. In 5 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die B49 / Bergstraße und den Kreuzungsbereich Dillfeld gelangen wir äußerst flüssig und direkt ins Wetzlarer Dillfeld.",
         mainRoad: "B49 / Dillfeld",

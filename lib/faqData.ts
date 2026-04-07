@@ -16,7 +16,7 @@ export const FAQ_DATA: FAQItem[] = [
     // ============ KOSTEN & PREISE ============
     {
         question: "Was kostet ein Schlüsseldienst in Wetzlar?",
-        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 50 Euro zum garantierten Festpreis. Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. Im gesamten Wetzlarer Kern-Servicegebiet gibt es zudem keine Anfahrtsgebühren.",
+        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 99 Euro zum garantierten Festpreis. Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. Im gesamten Wetzlarer Kern-Servicegebiet gibt es zudem keine Anfahrtsgebühren.",
         category: "kosten",
     },
     {
@@ -110,7 +110,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Was ist der Unterschied zwischen einer zugefallenen und einer abgesperrten Tür?",
-        answer: "Eine zugefallene Tür (Schlüssel steckt innen) lässt sich schneller und günstiger öffnen — ab 50 Euro. Eine abgesperrte Tür (Schlüssel verloren oder abgebrochen) erfordert aufwendigere Techniken und kostet ab 80 Euro. In beiden Fällen arbeitet die Schlüssel Schmiede Wetzlar zerstörungsfrei.",
+        answer: "Eine zugefallene Tür (Schlüssel steckt innen) lässt sich schneller und günstiger öffnen — ab 99 Euro. Eine abgesperrte Tür (Schlüssel verloren oder abgebrochen) erfordert aufwendigere Techniken und kostet ab 80 Euro. In beiden Fällen arbeitet die Schlüssel Schmiede Wetzlar zerstörungsfrei.",
         category: "leistungen",
     },
 
@@ -169,14 +169,14 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Tür zugefallen in Wetzlar — was tun?",
-        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter +49-176-12345678. Festpreis ab 50 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
+        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter +49-176-12345678. Festpreis ab 99 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
         category: "notdienst",
     },
 
     // ============ FACHGESCHÄFT & LADEN ============
     {
         question: "Wo finde ich die Schlüssel Schmiede in Wetzlar?",
-        answer: "Unser Fachgeschäft befindet sich in der Langgasse 70, 35578 Wetzlar — mitten in der Wetzlarer Innenstadt. Wir sind von Montag bis Freitag von 09:00 bis 18:00 Uhr und samstags von 09:00 bis 14:00 Uhr für Sie geöffnet. Unser Schlüsseldienst-Notdienst ist darüber hinaus 24/7 erreichbar.",
+        answer: "Unser Fachgeschäft befindet sich in der Langgasse 70, 35578 Wetzlar — mitten in der Wetzlarer Innenstadt. Wir sind von Montag bis Samstag von 10:00 bis 18:00 Uhr für Sie geöffnet. Unser Schlüsseldienst-Notdienst ist darüber hinaus 24/7 erreichbar.",
         category: "leistungen",
     },
     {

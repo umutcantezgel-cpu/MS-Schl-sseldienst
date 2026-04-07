@@ -70,18 +70,11 @@ export function generateLocalBusinessSchema() {
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
-                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
                 ],
-                "opens": "09:00",
+                "opens": "10:00",
                 "closes": "18:00",
                 "description": "Ladenöffnungszeiten Fachgeschäft"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Saturday"],
-                "opens": "09:00",
-                "closes": "14:00",
-                "description": "Samstags geöffnet"
             },
             {
                 "@type": "OpeningHoursSpecification",

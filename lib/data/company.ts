@@ -18,8 +18,7 @@ export const companyInfo: CompanyInfo = {
   },
   openingHours: {
     "Montag - Sonntag": "00:00-24:00 (24h Notdienst)",
-    "Ladengeschäft (Mo-Fr)": "09:00-18:00",
-    "Samstag": "09:00-14:00"
+    "Ladengeschäft (Mo-Sa)": "10:00-18:00"
   }
 };
 

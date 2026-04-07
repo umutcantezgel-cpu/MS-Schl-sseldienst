@@ -4,7 +4,7 @@ export const faqs: FAQ[] = [
   {
     id: createId("faq-01"),
     question: "Was kostet eine Türöffnung in Wetzlar?",
-    answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 50 Euro zum garantierten Festpreis (tagsüber). Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt.",
+    answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 99 Euro zum garantierten Festpreis (tagsüber). Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt.",
     category: "kosten",
     order: 1
   },

@@ -136,7 +136,7 @@ export default function KontaktPage() {
            <h3 className="text-[14px] font-bold text-[color:var(--text-primary)]">Servicezeiten</h3>
            <p className="text-[14px] text-[color:var(--text-secondary)]">
             <span className="font-semibold text-[color:var(--text-primary)]">Notdienst:</span> 24/7, 365 Tage im Jahr &nbsp;|&nbsp;
-            <span className="font-semibold text-[color:var(--text-primary)]">Büro:</span> Mo-Fr, 08:00 - 18:00 Uhr
+            <span className="font-semibold text-[color:var(--text-primary)]">Büro:</span> Mo-Sa, 10:00 - 18:00 Uhr
            </p>
           </div>
          </div>

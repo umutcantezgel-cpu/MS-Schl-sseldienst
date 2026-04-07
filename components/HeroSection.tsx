@@ -187,7 +187,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-status-success" />
                 </span>
-                <span className="text-status-success font-semibold text-[13px]">Laden geöffnet — Mo–Fr 9–18 · Sa 9–14 Uhr</span>
+                <span className="text-status-success font-semibold text-[13px]">Laden geöffnet — Mo–Sa 10–18 Uhr</span>
               </div>
 
               {/* Phone display */}

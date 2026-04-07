@@ -16,7 +16,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5750, longitude: 8.4350 },
         logistics: { drivingTimeMinutes: "10", distanceFromHQ: 8 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Bermoll bei Aßlar — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Bermoll (Aßlar): In 10 Min. vor Ort. Festpreis ab 89€. 24/7 Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Bermoll bei Aßlar — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Bermoll (Aßlar): In 10 Min. vor Ort. Festpreis ab 99€. 24/7 Notdienst: 06441-8056279" },
         routeDescription: "Von Wetzlar kommend erreichen wir Bermoll verkehrsgünstig über die L3286 und Aßlar, und fahren über ruhige Landstraßen in etwa 10 Minuten direkt in den Ortskern.",
         mainRoad: "L3286 / Kreisstraßen",
         distanceKm: 8,
@@ -39,7 +39,7 @@ export const ring2cLocations: LocationData[] = [
 <p>Dass Bermoll ruhig gelegen ist, bedeutet für uns keinen Zeitverlust. Unsere Einsatzfahrzeuge bewältigen die Route aus dem Wetzlarer Zentrallager über Aßlar oftmals in sehr souveränen <strong>10 Minuten</strong>. Das Warten im Regen oder Schnee hält sich bei uns in absoluten Grenzen.</p>
 
 <h3>Preise fair und klar</h3>
-<p>Die überwiegend ländliche Bausubstanz mit Einfamilienhäusern und älteren Hofreiten stellt für unsere Spezialisten keine Hürde dar. Bei Routineöffnungen von unverschlossenen Türen verlangen wir ab 89 Euro Festpreis zuzüglich einer transparenten und marginalen Anfahrtspauschale, die bereits am Telefon punktgenau geklärt wird.</p>`,
+<p>Die überwiegend ländliche Bausubstanz mit Einfamilienhäusern und älteren Hofreiten stellt für unsere Spezialisten keine Hürde dar. Bei Routineöffnungen von unverschlossenen Türen verlangen wir ab 99 Euro Festpreis zuzüglich einer transparenten und marginalen Anfahrtspauschale, die bereits am Telefon punktgenau geklärt wird.</p>`,
         localTestimonials: [
             { name: "Bernd S.", quote: "Tür in Bermoll zu. Ein Anruf und der Mann war in gut zehn Minuten da. Sehr saubere Arbeit ohne Schäden an unserer alten Holztür.", rating: 5 },
             { name: "Jutta M.", quote: "Der Schlüssel brach beim Aufschließen des Gartentores ab. Der Schlosser entfernte das Bruchstück und machte alles wieder funktionstüchtig. Sehr fair im Preis.", rating: 5 }
@@ -54,7 +54,7 @@ export const ring2cLocations: LocationData[] = [
         faqs: [
             { question: "Kommen Sie auch in so kleine Orte wie Bermoll?", answer: "Selbstverständlich. Bermoll gehört fest zu unserem Einsatzgebiet — egal wie klein der Ort." },
             { question: "Wie schnell sind Sie in Bermoll?", answer: "Über die Verbindungsstraßen von Aßlar sind wir in ca. 10 Minuten bei Ihnen." },
-            { question: "Was kostet der Schlüsseldienst in Bermoll?", answer: "Zugefallene Türen öffnen wir werktags tagsüber ab 89 Euro Festpreis." }
+            { question: "Was kostet der Schlüsseldienst in Bermoll?", answer: "Zugefallene Türen öffnen wir werktags tagsüber ab 99 Euro Festpreis." }
         ],
         neighbors: ["schluesseldienst-asslar", "schluesseldienst-werdorf", "schluesseldienst-berghausen"]
     },
@@ -68,7 +68,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5350, longitude: 8.4050 },
         logistics: { drivingTimeMinutes: "9", distanceFromHQ: 7 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Burgsolms — 24/7 Türöffnung | Ab 89€", metaDescription: "Schlüsseldienst Burgsolms: In 9 Min. vor Ort. Festpreis ab 89€. Notdienst 24/7: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Burgsolms — 24/7 Türöffnung | Ab 99€", metaDescription: "Schlüsseldienst Burgsolms: In 9 Min. vor Ort. Festpreis ab 99€. Notdienst 24/7: 06441-8056279" },
         routeDescription: "Über die B49 bis Abfahrt Solms gleiten wir staufrei und zügig nach Burgsolms. In meist knapp 9 Minuten sind wir aus Wetzlar am Einsatzort.",
         mainRoad: "B49 / L3284",
         distanceKm: 7,
@@ -105,7 +105,7 @@ export const ring2cLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie schnell kommen Sie nach Burgsolms?", answer: "Über die B49 sind wir in ca. 9 Minuten in Burgsolms." },
-            { question: "Was kostet die Türöffnung in Burgsolms?", answer: "Werktags tagsüber öffnen wir zugefallene Türen ab 89 Euro Festpreis." },
+            { question: "Was kostet die Türöffnung in Burgsolms?", answer: "Werktags tagsüber öffnen wir zugefallene Türen ab 99 Euro Festpreis." },
             { question: "Ist Burgsolms im Einsatzgebiet?", answer: "Ja, Burgsolms gehört als Hauptort von Solms fest zu unserem regulären Einsatzgebiet." }
         ],
         neighbors: ["schluesseldienst-solms", "schluesseldienst-niederbiel", "schluesseldienst-albshausen"]
@@ -118,7 +118,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5400, longitude: 8.4200 },
         logistics: { drivingTimeMinutes: "10", distanceFromHQ: 8 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Oberbiel — Sofortige Türöffnung | Ab 89€", metaDescription: "Schlüsseldienst Oberbiel bei Solms: 10 Min. Anfahrt, ab 89€ Festpreis. Notdienst 24/7: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Oberbiel — Sofortige Türöffnung | Ab 99€", metaDescription: "Schlüsseldienst Oberbiel bei Solms: 10 Min. Anfahrt, ab 99€ Festpreis. Notdienst 24/7: 06441-8056279" },
         routeDescription: "Via B49-Brücke und der angrenzenden Wetzlarer Straße sind wir innerhalb von maximal 10 Fahrminuten reibungslos im Zentrum von Oberbiel.",
         mainRoad: "Wetzlarer Straße / B49",
         distanceKm: 8,
@@ -141,7 +141,7 @@ export const ring2cLocations: LocationData[] = [
 <p>Dank der hervorragenden B49-Andockung rücken wir ohne den oft zermürbenden Stadtverkehr unmittelbar zu Ihnen auf. In den allermeisten Szenarien bestätigen wir eine reine Fahrzeit von <strong>rund 10 Minuten</strong> bis zum Eingang auf dem Solmser Gebiet in Oberbiel.</p>
 
 <h3>Eigene Tarife, verlässliche Kosten</h3>
-<p>Die klassische Einfamilienhaus-Architektur verbirgt häufig in die Jahre gekommene Zylinder oder klassische Standard-Schließsysteme. Ungeachtet des Alters öffnen wir routiniert zum Werktags-Festpreis ab 89 Euro zuzüglich moderaten 15 Euro für den schnellen Einsatzwagen. Absolute Seriosität ohne Ausreden in Oberbiel.</p>`,
+<p>Die klassische Einfamilienhaus-Architektur verbirgt häufig in die Jahre gekommene Zylinder oder klassische Standard-Schließsysteme. Ungeachtet des Alters öffnen wir routiniert zum Werktags-Festpreis ab 99 Euro zuzüglich moderaten 15 Euro für den schnellen Einsatzwagen. Absolute Seriosität ohne Ausreden in Oberbiel.</p>`,
         localTestimonials: [
             { name: "Tanja F.", quote: "Der Monteur in Oberbiel war äußerst galant und fix. Obwohl ich ein Sicherheitsschloss hatte, öffnete er es über den Briefschlitz zerstörungsfrei. Exzellenter Service.", rating: 5 },
             { name: "Martin K.", quote: "Wir brauchten abends am Wochenende Hilfe. Der Wochenendzuschlag war im Telefonat klar umrissen. Der Techniker arbeitete extrem sauber. Ich kann das Team nur empfehlen.", rating: 5 }
@@ -155,7 +155,7 @@ export const ring2cLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie weit ist Oberbiel von Wetzlar?", answer: "Oberbiel liegt ca. 8 km westlich. Wir sind in rund 10 Minuten vor Ort." },
-            { question: "Was kostet die Türöffnung in Oberbiel?", answer: "Werktags tagsüber ab 89 Euro Festpreis — verbindlich und transparent." }
+            { question: "Was kostet die Türöffnung in Oberbiel?", answer: "Werktags tagsüber ab 99 Euro Festpreis — verbindlich und transparent." }
         ],
         neighbors: ["schluesseldienst-solms", "schluesseldienst-burgsolms", "schluesseldienst-niederbiel"]
     },
@@ -167,7 +167,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5250, longitude: 8.3950 },
         logistics: { drivingTimeMinutes: "11", distanceFromHQ: 9 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Oberndorf — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Oberndorf bei Solms: In 11 Min. vor Ort. Ab 89€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Oberndorf — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Oberndorf bei Solms: In 11 Min. vor Ort. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
         routeDescription: "Von unserem Wetzlarer Standort aus umfahren wir über Braunfels oder Burgsolms den starken Verkehr und erreichen Oberndorf im Solmser Hügelland zumeist in knapp 11 Minuten.",
         mainRoad: "Wetzlarer Straße / Burgsolmser Straße",
         distanceKm: 9,
@@ -204,7 +204,7 @@ export const ring2cLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie lange brauchen Sie nach Oberndorf?", answer: "Über die Solmser Verbindungsstraßen sind wir in ca. 11 Minuten in Oberndorf." },
-            { question: "Was kostet eine Türöffnung in Oberndorf?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 89 Euro." }
+            { question: "Was kostet eine Türöffnung in Oberndorf?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 99 Euro." }
         ],
         neighbors: ["schluesseldienst-solms", "schluesseldienst-burgsolms", "schluesseldienst-bonbaden"]
     },
@@ -218,7 +218,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5700, longitude: 8.5550 },
         logistics: { drivingTimeMinutes: "8", distanceFromHQ: 6 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Atzbach (Lahnau) — 24/7 Notdienst | Ab 89€", metaDescription: "Schlüsseldienst Atzbach bei Lahnau: In 8 Min. da. Festpreis ab 89€. 24/7 Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Atzbach (Lahnau) — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Atzbach bei Lahnau: In 8 Min. da. Festpreis ab 99€. 24/7 Notdienst: 06441-8056279" },
         routeDescription: "Aus Wetzlar kommend nutzen wir die durchgängige B49 (Gießener Richtung) und pendeln flüssig in ca. 8 Minuten punktgenau nach Atzbach ein.",
         mainRoad: "Gießener Straße / L3286",
         distanceKm: 6,
@@ -255,7 +255,7 @@ export const ring2cLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie schnell ist der Schlüsseldienst in Atzbach?", answer: "Über die B49 Richtung Gießen sind wir in nur 8 Minuten in Atzbach." },
-            { question: "Was kostet die Türöffnung in Atzbach?", answer: "Werktags tagsüber ab 89 Euro Festpreis — transparent und verbindlich." },
+            { question: "Was kostet die Türöffnung in Atzbach?", answer: "Werktags tagsüber ab 99 Euro Festpreis — transparent und verbindlich." },
             { question: "Ist Atzbach gut erreichbar?", answer: "Ja, Atzbach liegt direkt an der B49 und ist mit dem Auto schnell zu erreichen." }
         ],
         neighbors: ["schluesseldienst-lahnau", "schluesseldienst-dorlar", "schluesseldienst-wetzlar-naunheim"]
@@ -268,7 +268,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5650, longitude: 8.5700 },
         logistics: { drivingTimeMinutes: "9", distanceFromHQ: 7 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Dorlar (Lahnau) — Festpreis ab 89€ | 24/7", metaDescription: "Schlüsseldienst Dorlar bei Lahnau: In 9 Min. vor Ort. Festpreis ab 89€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Dorlar (Lahnau) — Festpreis ab 99€ | 24/7", metaDescription: "Schlüsseldienst Dorlar bei Lahnau: In 9 Min. vor Ort. Festpreis ab 99€. Notdienst: 06441-8056279" },
         routeDescription: "Via Gießener Straße lenken wir die Einsatzfahrzeuge aus Wetzlar direkt ins Herz von Dorlar. Die Fahrzeit beträgt zumeist sehr stabile 9 Minuten.",
         mainRoad: "Gießener Straße / Wetzlarer Straße",
         distanceKm: 7,
@@ -305,7 +305,7 @@ export const ring2cLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie lange braucht der Monteur nach Dorlar?", answer: "Über die Lahnau-Verbindungsstraße sind wir in ca. 9 Minuten in Dorlar." },
-            { question: "Was kostet der Schlüsseldienst in Dorlar?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 89 Euro." }
+            { question: "Was kostet der Schlüsseldienst in Dorlar?", answer: "Zugefallene Türen öffnen wir werktags tagsüber zum Festpreis ab 99 Euro." }
         ],
         neighbors: ["schluesseldienst-lahnau", "schluesseldienst-atzbach", "schluesseldienst-waldgirmes"]
     },
@@ -317,7 +317,7 @@ export const ring2cLocations: LocationData[] = [
         coordinates: { latitude: 50.5600, longitude: 8.5500 },
         logistics: { drivingTimeMinutes: "9", distanceFromHQ: 7 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Geringe Anfahrtskosten" },
-        seo: { metaTitle: "Schlüsseldienst Waldgirmes — Notdienst 24/7 | Ab 89€", metaDescription: "Schlüsseldienst Waldgirmes bei Lahnau: In 9 Min. vor Ort. Festpreis ab 89€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Waldgirmes — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst Waldgirmes bei Lahnau: In 9 Min. vor Ort. Festpreis ab 99€. Notdienst: 06441-8056279" },
         routeDescription: "Über die direkte L3451 fahren wir schnurstracks von Wetzlar in das historisch bedeutsame Waldgirmes. In knapp 9 Minuten sichern wir unsere Ankunft zu.",
         mainRoad: "L3451 / Gießener Straße",
         distanceKm: 7,
@@ -354,7 +354,7 @@ export const ring2cLocations: LocationData[] = [
         },
         faqs: [
             { question: "Wie schnell kommen Sie nach Waldgirmes?", answer: "Über die L3451 sind wir in ca. 9 Minuten in Waldgirmes vor Ort." },
-            { question: "Was kostet eine Türöffnung in Waldgirmes?", answer: "Werktags tagsüber ab 89 Euro Festpreis — zuverlässig und transparent." },
+            { question: "Was kostet eine Türöffnung in Waldgirmes?", answer: "Werktags tagsüber ab 99 Euro Festpreis — zuverlässig und transparent." },
             { question: "Bieten Sie auch Schlüsselkopien in Waldgirmes an?", answer: "Ja, Schlüssel nachmachen können Sie in unserer Schlüssel Schmiede in Wetzlar. Wir beraten Sie gerne." }
         ],
         neighbors: ["schluesseldienst-lahnau", "schluesseldienst-dorlar", "schluesseldienst-atzbach"]
