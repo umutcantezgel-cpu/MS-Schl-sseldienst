@@ -197,17 +197,21 @@ export default function StickyHeader() {
                         })}
                       </div>
                       
-                      {/* Premium Trust Footer in the Menu */}
+                      {/* Split Footer: Schlüssel Schmiede + Phone CTA */}
                       <div className="mt-6 pt-5 border-t border-gray-100 flex items-center justify-between px-4 bg-slate-50 rounded-2xl py-4">
-                         <div className="flex items-center gap-4">
-                           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-emerald-600">
-                             <ShieldCheck className="w-6 h-6" />
+                         <Link
+                           href="/schluessel-schmiede"
+                           onClick={() => setActiveMenu(null)}
+                           className="group flex items-center gap-4 hover:opacity-90 transition-opacity"
+                         >
+                           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-amber-100 text-amber-600 group-hover:bg-amber-200 transition-colors">
+                             <Hammer className="w-6 h-6" />
                            </div>
                            <div className="flex flex-col">
-                             <span className="font-extrabold text-gray-900 text-[15px]">100% Festpreis-Garantie</span>
-                             <span className="text-gray-500 text-[13.5px]">Zerstörungsfreie Öffnung vom Fachbetrieb</span>
+                             <span className="font-extrabold text-gray-900 text-[15px] group-hover:text-amber-700 transition-colors">Schlüssel Schmiede</span>
+                             <span className="text-gray-500 text-[13.5px]">Fachgeschäft · Langgasse 70, Wetzlar</span>
                            </div>
-                         </div>
+                         </Link>
                          <a href="tel:+4964418056279" className="flex items-center gap-2.5 px-6 py-3 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold rounded-xl shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] transition-all text-sm group hover:-translate-y-0.5">
                            <Phone className="w-4 h-4 group-hover:animate-pulse" />
                            06441 - 8056279
@@ -292,39 +296,34 @@ export default function StickyHeader() {
               </AnimatePresence>
             </div>
 
-            {/* Premium Direct Link: Schlüssel Schmiede */}
-            <div className="h-4 w-px bg-gray-200 mx-0.5" />
-            <Link
-              href="/schluessel-schmiede"
-              onMouseEnter={() => { setActiveMenu(null); setHoveredLink("schmiede"); }}
-              className="relative px-3 py-2 rounded-full font-bold text-[14px] flex items-center gap-1.5 transition-all duration-300 whitespace-nowrap"
-            >
-              {hoveredLink === "schmiede" && (
-                <m.div layoutId="nav-hover" className="absolute inset-0 bg-amber-50 rounded-full -z-10" transition={{ type: "spring", stiffness: 400, damping: 30 }} />
-              )}
-              <Hammer className={`w-4 h-4 ${pathname === "/schluessel-schmiede" ? "text-amber-600" : "text-amber-500"}`} />
-              <span className={pathname === "/schluessel-schmiede" ? "text-amber-700" : "text-gray-800 hover:text-amber-700"}>Schlüssel Schmiede</span>
-            </Link>
 
-            <div className="h-4 w-px bg-gray-200 mx-0.5" />
 
-            {/* Standard Links: Preise, Ratgeber, Kontakt */}
+            {/* Standard Links: Preise, Ratgeber, Kontakt — with icons for key items */}
             {mainLinks.map((link) => {
               const isActive = (link.activeMatch === 'exact' && pathname === link.href) || 
                                (link.activeMatch === 'prefix' && pathname.startsWith(link.href) && link.href !== '/');
-              const displayLabel = link.label === "Kontakt & Notdienst" ? "Kontakt" : link.label;
+              const displayLabel = 
+                link.label === "Kontakt & Notdienst" ? "Kontakt" :
+                link.label === "Ratgeber & Blog" ? "Ratgeber" :
+                link.label === "Preise & Kosten" ? "Preise" :
+                link.label;
+              const LinkIcon = 
+                link.label === "Ratgeber & Blog" ? BookOpen :
+                link.label === "Kontakt & Notdienst" ? Mail :
+                null;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   onMouseEnter={() => { setActiveMenu(null); setHoveredLink(link.href); }}
-                  className={`relative px-3 py-2 font-bold text-[14px] rounded-full transition-all duration-300 whitespace-nowrap ${
+                  className={`relative px-2.5 py-2 font-bold text-[14px] rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
                     isActive ? "text-[var(--color-red-500)]" : "text-gray-800 hover:text-gray-950"
                   }`}
                 >
                   {hoveredLink === link.href && (
                     <m.div layoutId="nav-hover" className="absolute inset-0 bg-gray-100/80 rounded-full -z-10" transition={{ type: "spring", stiffness: 400, damping: 30 }} />
                   )}
+                  {LinkIcon && <LinkIcon className="w-4 h-4 opacity-60" />}
                   {displayLabel}
                 </Link>
               );
@@ -337,7 +336,7 @@ export default function StickyHeader() {
             {/* Termin buchen Desktop */}
             <Link
               href="/termin-buchen"
-              className="hidden xl:flex items-center justify-center gap-2 px-5 h-[46px] bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 text-[14px] font-bold rounded-full transition-all duration-300 shadow-sm"
+              className="hidden lg:flex items-center justify-center gap-2 px-5 h-[46px] bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 text-[14px] font-bold rounded-full transition-all duration-300 shadow-sm"
             >
               <Calendar className="w-4 h-4 text-[var(--color-blue-600)]" />
               Beratung buchen
