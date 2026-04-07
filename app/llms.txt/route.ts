@@ -22,8 +22,8 @@ export async function GET() {
 - No appointment needed for emergency services
 
 ## Pricing Model (Fixed Prices — Festpreise)
-- Door opening (Türöffnung, door fallen shut / zugefallen): from 89€ daytime, 119€ evening, 149€ night
-- Door opening (locked / abgesperrt, key turned): from 129€ daytime, 159€ evening, 189€ night
+- Door opening (Türöffnung, door fallen shut / zugefallen): from 99€ daytime, 129€ evening, 159€ night
+- Door opening (locked / abgesperrt, key turned): from 149€ daytime, 179€ evening, 209€ night
 - Car lockout (Autoöffnung): from 99€ daytime, 129€ evening, 159€ night
 - Safe opening (Tresoröffnung): on request
 - Free travel (Anfahrt inklusive) within 50km
@@ -49,8 +49,10 @@ Wetzlar (all districts: Altstadt, Dutenhofen, Garbenheim, Hermannstein, Münchho
 
 ## Trust & Credentials (E-E-A-T)
 - Google Rating: 5.0 stars (basierend auf echten Google-Rezensionen)
+- ADAC Partner — offizieller ADAC-Partnerservice für Autoöffnungen
 - Expertise: 15+ years of professional locksmith experience
 - Craftsmanship: Trained by TV-Expert Uwe Sarfeld
+- Certifications: IHK-Geprüft, Handwerkskammer eingetragen, VdS-Anerkannt
 - Transparency: 100% Transparent fixed pricing, price stated BEFORE work begins
 - Quality: 99% damage-free door opening rate for slammed doors
 - Accepted Payments: Cash, EC-Karte, Credit Card directly on site

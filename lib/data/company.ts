@@ -10,7 +10,7 @@ export const companyInfo: CompanyInfo = {
   employeeCount: 8,
   totalProjects: 15400,
   customerSatisfaction: 99,
-  certifications: ["IHK-Geprüft", "Handwerkskammer eingetragen", "VdS-Anerkannt"],
+  certifications: ["IHK-Geprüft", "Handwerkskammer eingetragen", "VdS-Anerkannt", "ADAC Partner"],
   socialMedia: {
     linkedin: "https://linkedin.com/company/schluessel-schmiede-wetzlar",
     twitter: "https://twitter.com/schluessel_schmiede",

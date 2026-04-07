@@ -1,9 +1,10 @@
-import { ShieldCheck, Clock, CheckCircle2, Star, CreditCard } from "lucide-react";
+import { ShieldCheck, Clock, CheckCircle2, Star, CreditCard, Award } from "lucide-react";
 
 const trustItems = [
   { icon: ShieldCheck, text: "Fachgeschäft Langgasse 70" },
   { icon: Clock, text: "24/7 Notdienst" },
   { icon: CheckCircle2, text: "Festpreisgarantie" },
+  { icon: Award, text: "ADAC Partner" },
   { icon: Star, text: "Ausgebildet von Uwe Sarfeld" },
   { icon: CreditCard, text: "Bar · EC · Kreditkarte" },
 ];

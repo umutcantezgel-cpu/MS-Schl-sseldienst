@@ -56,7 +56,32 @@ export function createLocalBusinessSchema() {
                 closes: "23:59",
                 description: "24/7 Schlüsseldienst-Notdienst"
             }
-        ]
+        ],
+        memberOf: [
+            {
+                "@type": "Organization",
+                name: "ADAC",
+                url: "https://www.adac.de"
+            },
+            {
+                "@type": "Organization",
+                name: "Handwerkskammer Wiesbaden",
+                url: "https://www.hwk-wiesbaden.de"
+            }
+        ],
+        hasCredential: [
+            "IHK-Geprüft",
+            "Handwerkskammer eingetragen",
+            "VdS-Anerkannt",
+            "ADAC Partner"
+        ],
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            reviewCount: "120",
+            bestRating: "5",
+            worstRating: "1"
+        }
     };
 }
 
