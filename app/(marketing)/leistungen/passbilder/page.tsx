@@ -66,7 +66,7 @@ export default function PassbilderPage() {
      }}
     />
     <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent z-[1]" />
-    <div className="absolute inset-0 opacity-15 bg-[url('/images/generated/schluesseldienst-wetzlar-passbilder-1.webp')] bg-cover bg-center"></div>
+    <div className="absolute inset-0 opacity-15 bg-[url(/images/generated/schluesseldienst-wetzlar-passbilder-1.webp)] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface-primary)] via-transparent to-transparent opacity-100 z-0"></div>
 
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">

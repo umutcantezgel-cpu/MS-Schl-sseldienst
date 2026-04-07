@@ -55,3 +55,9 @@ lighthouse-report.html
 .qa-*.md
 QA-*.md
 Pipeline/
+
+# Lighthouse reports & build logs
+lhreport.json
+lh-report.json
+err.html
+build_error*.log

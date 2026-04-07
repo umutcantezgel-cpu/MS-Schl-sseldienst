@@ -70,7 +70,7 @@ export default function SchluesselNachmachenPage() {
      }}
     />
     {/* Background Atmosphere */}
-    <div className="absolute inset-0 opacity-10 bg-[url('/images/generated/schluesseldienst-wetzlar-schluessel-fraesen-cnc-maschine.webp')] bg-cover bg-center"></div>
+    <div className="absolute inset-0 opacity-10 bg-[url(/images/generated/schluesseldienst-wetzlar-schluessel-fraesen-cnc-maschine.webp)] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-charcoal-900)] to-transparent opacity-80 z-0"></div>
 
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">

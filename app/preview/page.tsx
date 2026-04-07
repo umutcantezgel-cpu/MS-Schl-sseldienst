@@ -165,7 +165,7 @@ export default function LocalPreviewDashboard() {
         </header>
 
         {/* Iframe Stage */}
-        <div className="flex-1 overflow-auto p-4 md:p-8 flex justify-center bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] relative">
+        <div className="flex-1 overflow-auto p-4 md:p-8 flex justify-center relative" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='none'/%3E%3Cpath d='M0 0h20v20H0zM20 20h20v20H20z' fill='%23f0f0f0' fill-opacity='0.4'/%3E%3C/svg%3E")` }}>
           
           {selectedSlug ? (
             <div 
