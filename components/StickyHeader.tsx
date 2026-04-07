@@ -333,14 +333,6 @@ export default function StickyHeader() {
           {/* 3. CTA & MOBILE MENÜ TOGGLE */}
           <div className="flex items-center gap-3 z-50">
 
-            {/* Termin buchen Desktop */}
-            <Link
-              href="/termin-buchen"
-              className="hidden lg:flex items-center justify-center gap-2 px-5 h-[46px] bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 text-[14px] font-bold rounded-full transition-all duration-300 shadow-sm"
-            >
-              <Calendar className="w-4 h-4 text-[var(--color-blue-600)]" />
-              Beratung buchen
-            </Link>
 
             <a
               href="tel:+4964418056279"
