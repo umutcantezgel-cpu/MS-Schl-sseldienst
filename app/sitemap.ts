@@ -86,11 +86,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${siteUrl}/lexikon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
         { url: `${siteUrl}/referenzen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
         // HTML-Sitemap
-        { url: `${siteUrl}/sitemap`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
+        { url: `${siteUrl}/sitemap-uebersicht`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
         // Legal pages missing from Content Graph
         { url: `${siteUrl}/barrierefreiheit`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
         { url: `${siteUrl}/cookie-richtlinie`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
         { url: `${siteUrl}/widerruf`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
+        // Service pages missing from Content Graph
+        { url: `${siteUrl}/leistungen/passbilder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${siteUrl}/leistungen/autoschluessel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${siteUrl}/leistungen/uhren-service`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     ];
 
     return [

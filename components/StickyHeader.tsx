@@ -127,12 +127,12 @@ export default function StickyHeader() {
               Da das Megamenü an JS & FramerMotion gekoppelt ist, injecten wir hier
               den vollen internen Link-Stammbaum für Googlebot. Dies garantiert 100% Indexierung. */}
           <nav className="sr-only" aria-label="SEO Crawler Navigation" aria-hidden="true">
-            <Link href="/">Startseite</Link>
-            <Link href="/schluessel-schmiede">Schlüssel Schmiede</Link>
-            <Link href="/servicegebiet">Alle Einsatzgebiete</Link>
-            {mainLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}
-            {leistungenLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}
-            {locationsLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}
+            <Link href="/" tabIndex={-1}>Startseite</Link>
+            <Link href="/schluessel-schmiede" tabIndex={-1}>Schlüssel Schmiede</Link>
+            <Link href="/servicegebiet" tabIndex={-1}>Einsatzgebiete im Überblick</Link>
+            {mainLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1}>{l.label}</Link>)}
+            {leistungenLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1}>{l.label}</Link>)}
+            {locationsLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1}>{l.label}</Link>)}
           </nav>
 
           {/* 2. DESKTOP NAVIGATION (Unified) */}
@@ -282,7 +282,7 @@ export default function StickyHeader() {
                            </div>
                          </div>
                          <Link href="/servicegebiet" onClick={() => setActiveMenu(null)} className="flex items-center gap-2.5 px-6 py-3 bg-[var(--color-blue-600)] hover:bg-[var(--color-blue-700)] text-white font-bold rounded-xl shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)] transition-all text-sm group hover:-translate-y-0.5">
-                           Alle Einsatzgebiete
+                           Übersicht aller Einsatzgebiete
                            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                          </Link>
                       </div>

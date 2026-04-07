@@ -47,7 +47,7 @@ export const metadata: Metadata = {
  // Title: default is used when a child page does NOT export its own `metadata.title`.
  // template: appended to every child page title (e.g. "Preise | Schlüssel Schmiede Wetzlar").
  title: {
-   default: "Schlüssel Schmiede Wetzlar | Fachgeschäft für Schlüssel & Sicherheit",   // ≤60 chars
+   default: "Schlüssel Schmiede Wetzlar | Schlüssel & Sicherheit",   // ≤50 chars, ≤580px
    template: "%s",
  },
  // ⚠️  NO description here — set only on individual pages to avoid Seobility #2 (duplicate).

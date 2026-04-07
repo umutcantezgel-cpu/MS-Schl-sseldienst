@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import Link from 'next/link';
 import { ShieldCheck, MapPin, Search } from 'lucide-react';
 import { allLocations } from '@/lib/data/allLocations';
@@ -6,11 +5,13 @@ import { getNavigationConfig } from '@/lib/data/navigation';
 import GlobalBackground from '@/components/GlobalBackground';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Footer from '@/components/Footer';
+import { generateSharedMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'Sitemap | Alle Seiten im Überblick | Schlüsseldienst Wetzlar',
+export const metadata = generateSharedMetadata({
+  title: 'Sitemap | Alle Seiten im Überblick',
   description: 'Unsere vollständige HTML Sitemap. Finden Sie schnell alle Unterseiten, Leistungsbereiche und Einsatzgebiete im Lahn-Dill-Kreis.',
-};
+  path: '/sitemap-uebersicht',
+});
 
 export default function SitemapPage() {
   const navConfig = getNavigationConfig();

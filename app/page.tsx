@@ -65,8 +65,8 @@ const ContactForm = nextDynamic(() => import("@/components/contact/ContactForm")
 // [FIX: Seobility #3] Canonical resolves to production domain via metadataBase in layout.
 // [FIX: Seobility #4] Self-referencing hreflang de-DE + x-default via generateSharedMetadata.
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | Fachgeschäft für Schlüssel & Sicherheit",
-  description: "Schlüssel Schmiede Wetzlar — Ihr Fachgeschäft in der Langgasse 70. Schlüssel nachmachen, Schließanlagen, Sicherheitstechnik & Schlüsseldienst. Beratung vor Ort: 06441-8056279",
+  title: "Schlüssel Schmiede Wetzlar | Schlüssel & Sicherheit",
+  description: "Schlüssel Schmiede Wetzlar — Fachgeschäft Langgasse 70. Schlüssel nachmachen, Schließanlagen & Sicherheitstechnik. ☎ 06441-8056279",
   path: "/",
   exactTitle: true,
 });

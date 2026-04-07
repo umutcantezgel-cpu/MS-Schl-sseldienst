@@ -1,14 +1,16 @@
-import { Metadata } from 'next';
 import { getAllCaseStudies } from '@/lib/data/case-studies';
 import { CaseStudyCard } from '@/components/cards/CaseStudyCard';
 import { TestimonialGrid } from '@/components/sections/TestimonialGrid';
 import { getAllTestimonials } from '@/lib/data/testimonials';
 import Link from 'next/link';
+import { generateSharedMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'Referenzen & Erfolgsgeschichten | Schlüsseldienst Wetzlar',
+export const metadata = generateSharedMetadata({
+  title: 'Referenzen & Erfolgsgeschichten | Schlüssel Schmiede Wetzlar',
   description: 'Erfahren Sie mehr über unsere erfolgreich abgeschlossenen Projekte, Türöffnungen und Sicherheitsinstallationen in und um Wetzlar.',
-};
+  path: '/referenzen',
+  exactTitle: true,
+});
 
 export default function ReferenzenPage() {
   const caseStudies = getAllCaseStudies();
