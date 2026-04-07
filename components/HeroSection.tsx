@@ -1,6 +1,7 @@
 "use client";
 
 import { Phone, ShieldCheck, Clock, Key, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 import { useEffect, useState, useMemo } from "react";
 
@@ -142,7 +143,7 @@ export default function HeroSection() {
                   <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
                 </span>
                 <span className="text-[color:var(--value-primary)] text-[11px] sm:text-[13px] md:text-[14px] font-semibold tracking-wide">
-                  Jetzt erreichbar — in 20-30 Min. bei Ihnen
+                  Fachgeschäft geöffnet — persönliche Beratung vor Ort
                 </span>
               </div>
             </div>
@@ -154,14 +155,14 @@ export default function HeroSection() {
               itemProp="headline"
               className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[32px] sm:text-[40px] md:text-[52px] lg:text-[44px] xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
             >
-              Schlüsseldienst Wetzlar
+              Schlüssel Schmiede Wetzlar
               {' '}
               <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-2 sm:ml-3 -translate-y-1">
-                <span className="text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24h Notdienst</span>
+                <span className="text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">Fachgeschäft · Langgasse 70</span>
               </span>
               {' '}
               <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-[20px] sm:text-[24px]">
-                Türöffnung ab 99€ — schnell & ohne Schäden
+                Ihr Fachgeschäft für Schlüssel, Schlösser & Sicherheit
               </span>
             </h1>
             </div>
@@ -171,8 +172,8 @@ export default function HeroSection() {
               className="text-[14px] sm:text-[16px] md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] hero-entrance leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
               style={{ animationDelay: "150ms" }}
             >
-              Ihre Schlüssel Schmiede Wetzlar bietet einen 24/7 Notdienst für jede
-              Türöffnung. Verlässlich, schnell und immer für Sie da!
+              Persönliche Beratung, handwerkliche Präzision und Zeit für jeden Kunden.
+              Schlüssel nachmachen, Schließanlagen planen, Sicherheitstechnik einbauen — und natürlich auch Schlüsseldienst.
             </p>
 
             {/* 4. Phone Number Block + CTA Buttons */}
@@ -186,7 +187,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-status-success" />
                 </span>
-                <span className="text-status-success font-semibold text-[13px]">Jetzt erreichbar — Techniker verfügbar</span>
+                <span className="text-status-success font-semibold text-[13px]">Laden geöffnet — Mo–Fr 9–18 · Sa 9–14 Uhr</span>
               </div>
 
               {/* Phone display */}
@@ -202,7 +203,7 @@ export default function HeroSection() {
                     06441 8056279
                   </span>
                   <span className="text-[10px] sm:text-[13px] font-medium text-[color:var(--text-secondary)] leading-tight sm:leading-snug max-w-[200px] sm:max-w-none">
-                    Kostenlose Beratung — Festpreis ab 89€ vor Anfahrt genannt
+                    Kostenlose Beratung — Festpreise für alle Leistungen
                   </span>
                 </div>
               </a>
@@ -222,12 +223,13 @@ export default function HeroSection() {
                       <ArrowRight className="h-3.5 w-3.5 sm:h-5 sm:w-5 ml-1.5 sm:ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
                     </a>
                   </HeartbeatCTA>
-                  <a
-                    href="#preise"
-                    className="ghost-button-fill bg-white/60 border border-[var(--border-subtle)] hover:bg-white/90 text-[color:var(--text-primary)] shadow-sm flex items-center justify-center typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl backdrop-blur-md transition-all duration-300 flex-1 hover:-translate-y-[1px] text-[13px] sm:text-[16px] whitespace-nowrap"
+                  <Link
+                    href="/termin-buchen"
+                    className="ghost-button-fill bg-white/60 border border-[var(--border-subtle)] hover:bg-white/90 text-[color:var(--text-primary)] shadow-sm flex items-center justify-center gap-2 typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl backdrop-blur-md transition-all duration-300 flex-1 hover:-translate-y-[1px] text-[13px] sm:text-[16px] whitespace-nowrap"
                   >
-                    Preisliste ansehen
-                  </a>
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-blue-600)]" />
+                    Beratung buchen
+                  </Link>
                 </div>
                 <div className="flex justify-start px-2 mt-3">
                   <TrustSignals preset="default" />
@@ -260,70 +262,72 @@ export default function HeroSection() {
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]" />
                     </div>
                     <span className="text-[var(--color-red-600)] font-bold text-[9px] sm:text-[11px] uppercase tracking-[0.1em]">
-                      Live Status
+                      Ladengeschäft
                     </span>
                   </div>
-                  <div className="text-[15px] sm:text-[22px] font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
-                    24/7 Notdienst in Wetzlar
+                  <div className="text-[clamp(15px,4vw,22px)] sm:text-[22px] font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
+                    Mehr als ein Laden
                   </div>
-                  <p className="text-[10.5px] sm:text-[13px] text-[color:var(--text-secondary)] leading-tight sm:leading-relaxed max-w-[280px]">
-                    Unsere lokalen Experten sind auch an <strong className="text-[color:var(--text-primary)] font-semibold">Wochenenden & Feiertagen</strong> einsatzbereit.
+                  <p className="text-[clamp(10px,3vw,13px)] sm:text-[13px] text-[color:var(--text-secondary)] leading-tight sm:leading-relaxed max-w-[280px]">
+                    Ein Ort für <strong className="text-[color:var(--text-primary)] font-semibold">Vertrauen, Handwerk & Beratung</strong>.
                   </p>
                 </div>
               </div>
 
               {/* === CHASSIS / BODY (Front & Rear splits) === */}
               {/* Breite Basis des Autos mit aerodynamischer Curve */}
-              <div className="w-[110%] -ml-[5%] sm:w-full sm:ml-0 flex flex-row bg-[var(--color-off-white)]/60 backdrop-blur-xl ring-1 ring-white/60 rounded-b-[20px] sm:rounded-b-[30px] rounded-tl-[24px] sm:rounded-tl-[50px] rounded-tr-[24px] sm:rounded-tr-[30px] p-1.5 sm:p-2 relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
+              <div className="w-[110%] -ml-[5%] sm:w-full sm:ml-0 flex flex-row bg-[var(--color-off-white)]/60 backdrop-blur-xl ring-1 ring-white/60 rounded-b-[20px] sm:rounded-b-[30px] rounded-tl-[24px] sm:rounded-tl-[50px] rounded-tr-[24px] sm:rounded-tr-[30px] p-1.5 sm:p-2 relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.12)] mb-8 sm:mb-10">
                 
                 {/* HOOD / FRONT (Ohne Schäden) - Left Side */}
-                <div className="flex-1 bg-white/95 ring-1 ring-black/5 rounded-[14px] sm:rounded-tl-[40px] sm:rounded-bl-[20px] p-2.5 sm:p-5 relative overflow-hidden group/front mr-0.5 sm:mr-1 transition-all duration-500 hover:ring-[var(--color-red-500)]/30 hover:shadow-lg">
+                <div className="flex-1 bg-white/95 ring-1 ring-black/5 rounded-[14px] sm:rounded-tl-[40px] sm:rounded-bl-[20px] p-2.5 sm:p-5 relative overflow-hidden group/front mr-0.5 sm:mr-1 transition-all duration-500 hover:ring-[var(--color-red-500)]/30 hover:shadow-lg flex flex-col justify-center sm:block">
                   {/* Headlight Flow Glow */}
                   <div className="absolute top-1/2 -left-12 w-24 h-24 bg-[var(--color-red-500)]/15 blur-[20px] group-hover/front:bg-[var(--color-red-500)]/30 group-hover/front:translate-x-12 transition-all duration-700 ease-out" />
                   
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-[10px] sm:rounded-[12px] bg-[var(--color-red-500)]/10 flex items-center justify-center mb-1.5 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/front:scale-110">
+                  <div className="w-8 h-8 sm:w-12 sm:h-12 mx-auto sm:mx-0 rounded-[10px] sm:rounded-[12px] bg-[var(--color-red-500)]/10 flex items-center justify-center mb-1 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/front:scale-110">
                     <ShieldCheck className="w-4 h-4 sm:w-6 sm:h-6 text-[var(--color-red-600)]" />
                   </div>
-                  <div className="text-[12px] sm:text-[17px] leading-tight font-extrabold text-[color:var(--text-primary)] mb-0.5 sm:mb-1 relative z-10">
+                  <div className="text-[clamp(11px,3.5vw,17px)] text-center sm:text-left leading-tight font-extrabold text-[color:var(--text-primary)] mb-0 sm:mb-1 relative z-10">
                     Ohne Schäden
                   </div>
-                  <p className="text-[9.5px] sm:text-[13px] text-[color:var(--text-secondary)] leading-tight sm:leading-snug relative z-10 line-clamp-2 sm:line-clamp-none">
+                  <p className="hidden sm:block text-[13px] text-[color:var(--text-secondary)] leading-snug relative z-10">
                     Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
                   </p>
                 </div>
 
                 {/* TRUNK / REAR (Spezialwerkzeug) - Right Side */}
                 {/* Dark Theme for contrast/mechanical feel */}
-                <div className="flex-1 bg-[var(--color-charcoal-900)] ring-1 ring-[var(--color-charcoal-800)] rounded-[14px] sm:rounded-tr-[20px] sm:rounded-br-[20px] p-2.5 sm:p-5 relative overflow-hidden group/rear ml-0.5 sm:ml-1 transition-all duration-500 hover:shadow-lg">
+                <div className="flex-1 bg-[var(--color-charcoal-900)] ring-1 ring-[var(--color-charcoal-800)] rounded-[14px] sm:rounded-tr-[20px] sm:rounded-br-[20px] p-2.5 sm:p-5 relative overflow-hidden group/rear ml-0.5 sm:ml-1 transition-all duration-500 hover:shadow-lg flex flex-col justify-center sm:block">
                   {/* Taillight Glow */}
                   <div className="absolute top-1/2 -right-8 w-20 h-20 bg-[var(--color-red-600)]/30 blur-[20px] group-hover/rear:bg-[var(--color-red-500)]/50 group-hover/rear:-translate-x-4 transition-all duration-500" />
                   {/* Tech Grip Pattern */}
                   <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '8px 8px' }} />
 
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-[10px] sm:rounded-[12px] bg-white/10 flex items-center justify-center mb-1.5 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/rear:scale-110">
+                  <div className="w-8 h-8 sm:w-12 sm:h-12 mx-auto sm:mx-0 rounded-[10px] sm:rounded-[12px] bg-white/10 flex items-center justify-center mb-1 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/rear:scale-110">
                     <Key className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <div className="text-[12px] sm:text-[17px] leading-tight font-extrabold text-white mb-0.5 sm:mb-1 relative z-10">
+                  <div className="text-[clamp(11px,3.5vw,17px)] text-center sm:text-left leading-tight font-extrabold text-white mb-0 sm:mb-1 relative z-10">
                     Spezialwerkzeug
                   </div>
-                  <p className="text-[9.5px] sm:text-[13px] text-zinc-400 leading-tight sm:leading-snug relative z-10 line-clamp-2 sm:line-clamp-none">
+                  <p className="hidden sm:block text-[13px] text-zinc-400 leading-snug relative z-10">
                     Präzisionsgeräte ermöglichen Öffnungen selbst bei schweren Verriegelungen.
                   </p>
                 </div>
-              </div>
 
-              {/* === WHEELS / HOVER RINGS === */}
-              {/* Positioned on the bottom-left and bottom-right of the chassis */}
-              <div className="w-[100%] flex justify-between px-3 sm:px-10 -mt-7 sm:-mt-8 relative z-20 pointer-events-none">
-                {/* Front Wheel */}
-                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[4px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
-                  <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
+                {/* === WHEELS / HOVER RINGS === */}
+                {/* Positioned absolute to the chassis bounds */}
+                <div className="absolute -bottom-6 sm:-bottom-8 left-[10%] sm:left-10 z-20 pointer-events-none">
+                  {/* Front Wheel */}
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[4px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
+                    <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
+                    <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
+                  </div>
                 </div>
-                {/* Rear Wheel */}
-                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[4px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
-                  <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
+                <div className="absolute -bottom-6 sm:-bottom-8 right-[10%] sm:right-10 z-20 pointer-events-none">
+                  {/* Rear Wheel */}
+                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[4px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
+                    <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
+                    <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
+                  </div>
                 </div>
               </div>
 
@@ -332,19 +336,21 @@ export default function HeroSection() {
             {/* Car/Wheel Animations */}
             <style jsx global>{`
               @keyframes spinWheel {
-                from { transform: rotate(0deg); }
-                to { transform: rotate(360deg); }
+                from { transform: rotate(0deg) translateZ(0); }
+                to { transform: rotate(360deg) translateZ(0); }
               }
               .spin-wheel {
                 animation: spinWheel 4s linear infinite;
+                will-change: transform;
               }
               @keyframes speedLine {
-                0% { transform: translateX(-100%); opacity: 0; }
+                0% { transform: translateX(-100%) translateZ(0); opacity: 0; }
                 50% { opacity: 1; }
-                100% { transform: translateX(100%); opacity: 0; }
+                100% { transform: translateX(100%) translateZ(0); opacity: 0; }
               }
               .animate-speed-line-fast {
                 animation: speedLine 2s ease-in-out infinite;
+                will-change: transform, opacity;
               }
               @media (prefers-reduced-motion: reduce) {
                 .spin-wheel, .animate-speed-line-fast { animation: none; }

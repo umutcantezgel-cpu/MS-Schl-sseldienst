@@ -25,7 +25,7 @@ export function createOrganizationSchema() {
 export function createLocalBusinessSchema() {
     return {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "Locksmith", "Store"],
         name: companyName,
         url: siteUrl,
         telephone: telephone,
@@ -45,17 +45,22 @@ export function createLocalBusinessSchema() {
         openingHoursSpecification: [
             {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "09:00",
+                closes: "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Saturday"],
+                opens: "09:00",
+                closes: "14:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
                 opens: "00:00",
-                closes: "23:59"
+                closes: "23:59",
+                description: "24/7 Schlüsseldienst-Notdienst"
             }
         ]
     };

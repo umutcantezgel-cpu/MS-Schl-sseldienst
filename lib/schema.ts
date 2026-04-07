@@ -26,9 +26,9 @@ export function generateLocalBusinessSchema() {
         "@context": "https://schema.org",
         // [SEO: Locksmith Entity Schema for Google Knowledge Graph]
         // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
-        "@type": ["LocalBusiness", "Locksmith"],
+        "@type": ["LocalBusiness", "Locksmith", "Store"],
         "name": "Schlüssel Schmiede Wetzlar",
-        "description": "Schlüssel Schmiede Wetzlar ist Ihr 24/7-Schlüsseldienst mit Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 15–30 Minuten erreicht. Über 44 Google-Bewertungen mit 5.0 Sternen bestätigen zuverlässigen Service, zerstörungsfreie Türöffnung in 99% der Fälle und transparente Festpreise ohne versteckte Kosten. Spezialisiert auf Türöffnung, Schlossaustausch, Autoöffnung, Schließanlagen und Sicherheitstechnik.",
+        "description": "Schlüssel Schmiede Wetzlar ist Ihr Fachgeschäft für Schlüssel, Schlösser und Sicherheitstechnik in der Langgasse 70 in Wetzlar. Wir bieten Schlüssel nachmachen, Schließanlagen-Planung, Sicherheitsberatung und professionellen Schlüsseldienst mit Festpreisen. Persönliche Beratung vor Ort sowie 24/7 Notdienst für den gesamten Lahn-Dill-Kreis.",
         "image": `${siteUrl}/hero-bg.jpg`,
         "logo": {
             "@type": "ImageObject",
@@ -70,18 +70,34 @@ export function generateLocalBusinessSchema() {
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00",
+                "description": "Ladenöffnungszeiten Fachgeschäft"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "09:00",
+                "closes": "14:00",
+                "description": "Samstags geöffnet"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
                     "Monday", "Tuesday", "Wednesday", "Thursday",
                     "Friday", "Saturday", "Sunday", "PublicHolidays"
                 ],
                 "opens": "00:00",
                 "closes": "23:59",
-                "description": "24/7 Notdienst — auch an Feiertagen und nachts"
+                "description": "24/7 Schlüsseldienst-Notdienst — auch an Feiertagen und nachts"
             }
         ],
         "priceRange": "ab 99€",
         "paymentAccepted": ["Cash", "Credit Card", "EC-Karte"],
         "currenciesAccepted": "EUR",
-        "slogan": "Tür zu? Wir helfen sofort.",
+        "slogan": "Mehr als ein Laden — ein Ort für Vertrauen.",
         "foundingDate": "2010",
         "knowsLanguage": ["de", "en", "tr"],
         "sameAs": [
@@ -168,14 +184,16 @@ export function generateLocalBusinessSchema() {
             "worstRating": "1"
         },
         "knowsAbout": [
-            "Türöffnung",
-            "Schlossaustausch",
-            "Autoöffnung",
+            "Schlüssel nachmachen",
             "Schließanlagen",
             "Sicherheitstechnik",
             "Einbruchschutz",
-            "Schlüssel nachmachen",
-            "Notdienst"
+            "Türöffnung",
+            "Schlossaustausch",
+            "Autoöffnung",
+            "Notdienst",
+            "Gravuren",
+            "Passbilder"
         ]
     };
 }
@@ -186,10 +204,10 @@ export function generateWebSiteSchema() {
         "@type": "WebSite",
         "name": "Schlüssel Schmiede Wetzlar",
         "url": siteUrl,
-        "description": "24/7 Schlüsselnotdienst in Wetzlar, Gießen, Marburg und Lahn-Dill-Kreis. Festpreise, 15–30 Min. Anfahrt.",
+        "description": "Schlüssel Schmiede Wetzlar — Fachgeschäft für Schlüssel, Schlösser & Sicherheitstechnik. Auch 24/7 Schlüsseldienst in Wetzlar, Gießen und Lahn-Dill-Kreis.",
         "inLanguage": "de-DE",
         "publisher": {
-            "@type": "Locksmith",
+            "@type": ["LocalBusiness", "Store"],
             "@id": `${siteUrl}/#localbusiness`
         },
         "potentialAction": {

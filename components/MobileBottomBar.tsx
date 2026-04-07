@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Phone, X } from "lucide-react";
+import { Phone, X, Calendar } from "lucide-react";
 import { m, AnimatePresence } from "framer-motion";
 import { springStandard } from "@/lib/motion.config";
 import { triggerHaptic } from "@/lib/haptics";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function MobileBottomBar() {
   const [isVisible, setIsVisible] = useState(false);
@@ -72,15 +73,26 @@ export default function MobileBottomBar() {
           transition={springStandard}
           className="fixed bottom-0 left-0 right-0 z-[var(--z-mobile-bar)] flex h-auto min-h-[56px] w-full items-center justify-center gap-[var(--space-2)] bg-[var(--color-red-500)] text-white py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden shadow-[var(--elevation-4)]"
         >
-          <a
-            href="tel:+4964418056279"
-            onClick={() => triggerHaptic('light')}
-            className="flex items-center justify-center gap-[var(--space-2)] flex-1 h-full active:bg-[var(--color-red-600)] transition-colors"
-            aria-label="Jetzt anrufen: 06441 8056279"
-          >
-            <Phone className="h-5 w-5 animate-heartbeat-cta" aria-hidden="true" />
-            <span className="text-[18px] font-bold">06441 8056279</span>
-          </a>
+          <div className="flex w-full items-center justify-between pr-10">
+            <a
+              href="tel:+4964418056279"
+              onClick={() => triggerHaptic('light')}
+              className="flex items-center justify-center gap-2 flex-[1.2] h-full active:bg-[var(--color-red-600)] transition-colors border-r border-white/20"
+              aria-label="Jetzt anrufen: 06441 8056279"
+            >
+              <Phone className="h-4 w-4 animate-heartbeat-cta" aria-hidden="true" />
+              <span className="text-[14px] font-bold">Anrufen</span>
+            </a>
+            <Link
+              href="/termin-buchen"
+              onClick={() => triggerHaptic('light')}
+              className="flex items-center justify-center gap-2 flex-1 h-full active:bg-[var(--color-red-600)] transition-colors pl-2"
+              aria-label="Beratung buchen"
+            >
+              <Calendar className="h-4 w-4" aria-hidden="true" />
+              <span className="text-[14px] font-bold">Termin</span>
+            </Link>
+          </div>
           <button
             onClick={handleDismiss}
             className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full hover:bg-white/20 transition-colors"

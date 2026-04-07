@@ -65,8 +65,8 @@ const ContactForm = nextDynamic(() => import("@/components/contact/ContactForm")
 // [FIX: Seobility #3] Canonical resolves to production domain via metadataBase in layout.
 // [FIX: Seobility #4] Self-referencing hreflang de-DE + x-default via generateSharedMetadata.
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | 24h Schlüsseldienst & Türöffnung ab 99€",
-  description: "Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst für zerstörungsfreie Türöffnung ab 99€ Festpreis. 24/7 Notdienst, in 20-30 Min. vor Ort. Jetzt anrufen: 06441-8056279",
+  title: "Schlüssel Schmiede Wetzlar | Fachgeschäft für Schlüssel & Sicherheit",
+  description: "Schlüssel Schmiede Wetzlar — Ihr Fachgeschäft in der Langgasse 70. Schlüssel nachmachen, Schließanlagen, Sicherheitstechnik & Schlüsseldienst. Beratung vor Ort: 06441-8056279",
   path: "/",
   exactTitle: true,
 });
@@ -109,7 +109,7 @@ export default function HomePage() {
    >
     <RevealSection className="mx-auto max-w-7xl relative z-10">
       <SectionHeader
-        pill="FAIRE PREISE"
+        pill="SCHLÜSSELDIENST PREISE"
         headingId="preise-heading"
         title={<>Transparente <span className="text-[var(--color-red-500)]">Preise</span></>}
         description="Festpreis am Telefon — keine versteckten Kosten — Rechnung erst nach Abschluss."
@@ -331,8 +331,8 @@ export default function HomePage() {
       <SectionHeader
         pill="UNSERE LEISTUNGEN"
         headingId="soforthilfe-heading"
-        title={<>Unsere <span className="text-[var(--color-red-500)]">Sofort-Hilfe</span></>}
-        description="Kompetente und schnelle Lösungen für Ihre individuelle Notsituation."
+        title={<>Unsere <span className="text-[var(--color-red-500)]">Leistungen</span></>}
+        description="Handwerkliche Qualität aus unserem Fachgeschäft — ob Schlüssel, Schloss oder Notdienst."
       />
 
      {/* Bento Grid */}
@@ -413,9 +413,9 @@ export default function HomePage() {
 
      <div className="grid gap-6 lg:gap-8 md:grid-cols-3 max-w-6xl mx-auto">
       {[
-       { num:"01", icon: ShieldCheck, title:"Zertifizierte Monteure", desc:"Regelmäßige Schulungen an modernster Sicherheitstechnik garantieren eine zu 99% zerstörungsfreie Öffnung Ihrer Haus- und Wohnungstüren." },
-       { num:"02", icon: Check, title:"Garantierter Festpreis", desc:"Dank transparenter Preisgestaltung direkt am Telefon erwarten Sie bei uns niemals versteckte Gebühren oder unnötige Aufschläge vor Ort." },
-       { num:"03", icon: Clock, title:"Regionale Expertise", desc:"Als echter Meisterbetrieb direkt in Wetzlar sind wir dank kurzer Anfahrtszeiten im Notfall meist in 15 bis 30 Minuten bei Ihnen." },
+       { num:"01", icon: ShieldCheck, title:"Fachhandwerk aus Leidenschaft", desc:"In unserer Werkstatt verbinden wir traditionelles Handwerk mit modernster Technik — von der Schlüsselanfertigung bis zur komplexen Schließanlage." },
+       { num:"02", icon: Check, title:"Transparente Festpreise", desc:"Ob im Laden oder beim Notdienst — den verbindlichen Festpreis erfahren Sie vorab. Keine Überraschungen, keine Aufschläge vor Ort." },
+       { num:"03", icon: Clock, title:"Ladengeschäft mit kurzen Wegen", desc:"Unser Fachgeschäft in der Langgasse 70 ist Ihr Anlaufpunkt in Wetzlar. Im Notfall sind wir per 24/7-Dienst in 15 bis 30 Minuten bei Ihnen." },
       ].map((item, idx) => (
        <div key={idx} className="group relative bg-white/70 backdrop-blur-3xl rounded-2xl p-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:bg-white/95 transition-all duration-300 border border-[var(--color-charcoal-100)]">
         {/* Number badge */}
@@ -438,7 +438,7 @@ export default function HomePage() {
    <section aria-label="Zahlen und Fakten" className="bg-white/50 border-y border-[var(--color-charcoal-100)] px-[var(--section-px)] py-16 md:py-24">
     <RevealSection className="mx-auto max-w-6xl">
      <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 md:gap-y-16">
-      <DynamicCounter value={500} suffix="+" label="Erfolgreiche Einsätze" icon={<Check className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
+      <DynamicCounter value={500} suffix="+" label="Zufriedene Kunden" icon={<Check className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
       <DynamicCounter value={99} suffix="%" label="Kundenzufriedenheit" icon={<Star className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
       <DynamicCounter value={30} suffix=" Min" label="Ø Anfahrtszeit" icon={<Clock className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
       <DynamicCounter value={10} suffix="+" label="Jahre Erfahrung" icon={<ShieldCheck className="w-6 h-6 text-[color:var(--color-red-600)]" />} />
@@ -454,10 +454,10 @@ export default function HomePage() {
    <section aria-labelledby="einsatzgebiet-heading" className="bg-white px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
     <RevealSection className="mx-auto max-w-7xl">
       <SectionHeader
-        pill="BLITZSCHNELL VOR ORT"
+        pill="UNSER EINSATZGEBIET"
         headingId="einsatzgebiet-heading"
         title={<>Unser <span className="text-[var(--color-red-500)]">Einsatzgebiet</span></>}
-        description="Von Wetzlar bis in die gesamte Region — wir sind in wenigen Minuten bei Ihnen."
+        description="Ob im Laden oder als Notdienst — wir sind für die gesamte Region da."
       />
 
       {/* Map */}
@@ -517,7 +517,7 @@ export default function HomePage() {
         pill="FAQ"
         headingId="faq-heading"
         title={<>Häufig gestellte <span className="text-[var(--color-red-500)]">Fragen</span></>}
-        description="Schlüsseldienst Wetzlar beantwortet Ihre wichtigsten Fragen — ehrlich und transparent."
+        description="Schlüssel Schmiede Wetzlar beantwortet Ihre wichtigsten Fragen — ehrlich und transparent."
       />
      <div className="space-y-[var(--space-6)]">
       {getHomepageFAQs().map((faq, i) => (
@@ -554,10 +554,10 @@ export default function HomePage() {
         
         <div className="relative z-10">
           <Typography variant="h3" as="div" className="mb-4 text-[color:var(--text-primary)]">
-            Tür zu? <span className="text-[var(--color-red-500)]">Keine Panik.</span>
+            Fragen? <span className="text-[var(--color-red-500)]">Wir beraten Sie gerne.</span>
           </Typography>
           <Typography variant="body" color="secondary" className="mb-8 max-w-sm block">
-            Rufen Sie unseren 24/7 Notdienst direkt an. Wir nennen Ihnen den garantierten Festpreis bereits am Telefon – ohne versteckte Kosten.
+            Rufen Sie uns an oder kommen Sie direkt im Laden vorbei. Persönliche Beratung vor Ort und 24/7 Schlüsseldienst-Notdienst — Festpreis am Telefon.
           </Typography>
 
           <a
@@ -624,57 +624,57 @@ export default function HomePage() {
 
      {/* ── Hauptüberschrift des Content-Blocks ── */}
      <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[color:var(--text-primary)]">
-       Ihr Aufsperrdienst in Wetzlar: Fachbetrieb für Türöffnungen und Sicherheitstechnik
+       Schlüssel Schmiede Wetzlar — Ihr Fachgeschäft für Schlüssel, Sicherheit & Schlüsseldienst
      </h2>
 
      {/* ── Artikel 1: Türöffnung ── */}
      <article className="space-y-4">
       <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-        Professionelle Türöffnungen — schnell, sicher und ohne Beschädigungen
+        Persönliche Beratung und handwerkliche Präzision unter einem Dach
       </h3>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Wenn Sie sich in Wetzlar aus Ihrer Wohnung oder Ihrem Haus ausgesperrt haben, steht Ihnen unser <strong>24/7 Notdienst</strong> jederzeit zur Verfügung. Unsere erfahrenen Monteure erreichen Sie in der Regel innerhalb von <strong>20 bis 30 Minuten</strong> direkt an Ihrer Haustür.
+        In der Langgasse 70 in Wetzlar erwartet Sie ein Fachgeschäft, das <strong>Schlüssel, Schlösser und Sicherheitstechnik</strong> aus einer Hand bietet. Ob Sie einen Ersatzschlüssel benötigen, eine neue Schließanlage planen oder eine <strong>persönliche Sicherheitsberatung</strong> wünschen — bei uns nehmen wir uns Zeit für Ihr Anliegen.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Bei einer zugefallenen Tür setzen wir konsequent auf zerstörungsfreie Öffnungsmethoden mit modernem Spezialwerkzeug. In über 99 Prozent aller Einsätze gelingt uns die Türöffnung vollständig ohne Bohren und ohne Beschädigung des Schließzylinders.
+        Unser Sortiment umfasst hochwertige Schließzylinder namhafter Hersteller, Sicherheitsbeschläge und elektronische Zutrittslösungen. Jedes Produkt wird von unseren Fachkräften individuell auf Ihre Situation abgestimmt und bei Bedarf direkt montiert.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Sollte ein Zylindertausch dennoch erforderlich sein, erledigen unsere Techniker dies direkt im selben Einsatz vor Ort. Sie erhalten anschließend neue Schlüssel und können Ihre Tür sofort wieder wie gewohnt nutzen und abschließen.
+        Darüber hinaus steht Ihnen unser <strong>24/7 Schlüsseldienst</strong> für Notfälle zur Verfügung. Wenn Sie sich ausgesperrt haben, erreichen unsere Monteure Sie in der Regel innerhalb von 20 bis 30 Minuten — mit einer zerstörungsfreien Öffnung in über 99 Prozent aller Fälle.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Auch bei abgeschlossenen Türen, Mehrfachverriegelungen oder Panzerriegelschlössern verfügen wir über das nötige Fachwissen und Werkzeug. Jeder Einsatz wird von unserem Geschäftsführer persönlich koordiniert, um die höchstmögliche Servicequalität zu gewährleisten.
+        Die Kombination aus stationärem Fachhandel und mobilem Notdienst macht die Schlüssel Schmiede Wetzlar zu Ihrem umfassenden Ansprechpartner für alle Fragen rund um Schlüssel und Schlösser in der Region.
       </p>
      </article>
 
      {/* ── Artikel 2: Preistransparenz ── */}
      <article className="space-y-4">
       <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-        Faire und transparente Festpreise ohne versteckte Kosten
+        Ehrliche Preise — im Laden und beim Schlüsseldienst
       </h3>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Transparenz ist das Fundament unserer Preisgestaltung und unterscheidet uns grundlegend von vielen anderen Anbietern in der Region. Den verbindlichen <strong>Festpreis</strong> teilen wir Ihnen bereits am Telefon mit, bevor sich unser Monteur auf den Weg macht.
+        Ob Sie im Laden einen Schlüssel nachmachen lassen oder unseren Schlüsseldienst rufen — bei der Schlüssel Schmiede Wetzlar wissen Sie immer vorher, was es kostet. Den verbindlichen <strong>Festpreis</strong> nennen wir Ihnen am Telefon, bevor sich unser Monteur auf den Weg macht.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Eine einfache Türöffnung tagsüber beginnt bei einem <strong>Festpreis ab 99 Euro</strong> inklusive sämtlicher Standardleistungen. In der Wetzlarer Kernstadt berechnen wir darüber hinaus keinerlei zusätzliche Anfahrtskosten für unsere Kunden.
+        Eine einfache Türöffnung beginnt bei einem <strong>Festpreis ab 99 Euro</strong> inklusive aller Standardleistungen. In der Wetzlarer Kernstadt fallen keine zusätzlichen Anfahrtskosten an. Auch unsere Ladenpreise für Schlüsselanfertigung und Zylindertausch sind klar kalkuliert.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Es gibt bei uns grundsätzlich <strong>keine versteckten Gebühren</strong>, keine nachträglichen Materialzuschläge und keine unerwarteten Aufpreise vor Ort. So können Sie sich voll und ganz auf eine faire und nachvollziehbare Abrechnung nach jedem einzelnen Einsatz verlassen.
+        Bei uns gibt es <strong>keine versteckten Gebühren</strong> und keine unerwarteten Aufpreise. Dieses Versprechen gilt gleichermaßen für den Einkauf in unserem Fachgeschäft wie für jeden einzelnen mobilen Einsatz unserer Techniker.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Nach Abschluss der Arbeiten erhalten Sie selbstverständlich eine ordnungsgemäße Rechnung mit vollständiger Auflistung aller erbrachten Leistungen. Dieses Höchstmaß an Transparenz schätzen unsere Kundinnen und Kunden seit vielen Jahren besonders an unserer Arbeitsweise.
+        Sie erhalten nach jedem Auftrag eine ordnungsgemäße Rechnung mit vollständiger Auflistung aller Leistungen. Dieses Höchstmaß an Transparenz ist ein Grundpfeiler unserer Arbeit — und der Grund, warum unsere Stammkunden seit über einem Jahrzehnt immer wieder zu uns kommen.
       </p>
      </article>
 
      {/* ── Artikel 3: Sicherheitstechnik mit Liste ── */}
      <article className="space-y-4">
       <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-        Umfassende Sicherheitslösungen für Privat und Gewerbe
+        Sicherheitsberatung direkt im Fachgeschäft — für Privat und Gewerbe
       </h3>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Neben der klassischen Notöffnung bieten wir Ihnen ein breites Spektrum an professionellen Sicherheitsdienstleistungen für Ihr Zuhause. Unsere <strong>zertifizierten Sicherheitstechniker</strong> beraten Sie individuell und erarbeiten maßgeschneiderte Schutzkonzepte für Ihre Immobilie.
+        In unserem Fachgeschäft in der Langgasse 70 beraten wir Sie persönlich zu allen Fragen der Gebäudesicherheit. Unsere <strong>zertifizierten Sicherheitstechniker</strong> analysieren Ihre individuelle Situation und entwickeln maßgeschneiderte Schutzkonzepte für Ihre Immobilie.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Unser Leistungsangebot im Bereich mechanischer und elektronischer Sicherheitstechnik umfasst unter anderem folgende Maßnahmen:
+        Im Laden können Sie sich die Produkte ansehen und anfassen. Unser Leistungsangebot im Bereich Sicherheitstechnik umfasst unter anderem:
       </p>
       {/* [SEO: Structured list — Seobility rewards <ul>/<li> for "good text layout"] */}
       <ul className="list-disc list-inside space-y-2 text-[color:var(--text-secondary)] leading-relaxed pl-2">
@@ -692,35 +692,35 @@ export default function HomePage() {
      {/* ── Artikel 4: Qualifikation & Vertrauen ── */}
      <article className="space-y-4">
       <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-        Zertifizierte Fachkräfte mit regionaler Expertise
+        Handwerkliche Kompetenz aus Wetzlar — persönlich und nahbar
       </h3>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Unsere Mitarbeiter durchlaufen regelmäßige Schulungen an modernsten Werkzeugen, Schließsystemen und aktuellen Sicherheitstechnologien. Wir arbeiten strikt nach den Qualitätsstandards der Handwerkskammer und sind als eingetragener Fachbetrieb offiziell anerkannt.
+        Im Fachgeschäft der Schlüssel Schmiede Wetzlar stehen Ihnen ausgebildete Fachkräfte gegenüber, die modernste Schließsysteme und Sicherheitstechnologien beherrschen. Als eingetragener Fachbetrieb arbeiten wir nach den Qualitätsstandards der Handwerkskammer.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
         Unser Gründer und Geschäftsführer wurde persönlich von <strong>Uwe Sarfeld</strong>, einem der bekanntesten Experten für Sicherheitstechnik in Deutschland, professionell ausgebildet. Dieses fundierte Fachwissen geben wir an unser gesamtes Team weiter, um Ihnen stets erstklassigen Service bieten zu können.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Vertrauen, Ehrlichkeit und handwerkliche Präzision bilden die drei Grundpfeiler unserer täglichen Arbeit als Ihr Schlüsseldienst. Wir distanzieren uns klar und deutlich von unseriösen Anbietern, die mit irreführenden Lockpreisen werben und vor Ort dann horrende Zuschläge verlangen.
+        Vertrauen, Ehrlichkeit und handwerkliche Präzision bilden die Grundpfeiler unserer täglichen Arbeit. Als stationäres Fachgeschäft mit echtem Ladenlokal distanzieren wir uns klar von unseriösen Anbietern, die mit irreführenden Lockpreisen werben.
       </p>
      </article>
 
      {/* ── Artikel 5: Einsatzgebiet & CTA ── */}
      <article className="space-y-4">
       <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-        Ihr Schlüsselnotdienst für Wetzlar und die gesamte Region
+        Ihr Fachgeschäft mit Schlüsseldienst — für Wetzlar und die gesamte Region
       </h3>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Als lokal verwurzelter <strong>Aufsperrdienst in Wetzlar</strong> kennen wir die baulichen Gegebenheiten und üblichen Schlosstypen der Region aus langjähriger Berufserfahrung. Unser zentraler Standort in der Langgasse ermöglicht uns besonders kurze Anfahrtswege ins gesamte Stadtgebiet von Wetzlar.
+        Besuchen Sie uns in der <strong>Langgasse 70 in Wetzlar</strong> — unser Fachgeschäft ist Ihr zentraler Anlaufpunkt für Schlüssel, Schlösser und Sicherheitstechnik. Die zentrale Lage ermöglicht uns zudem besonders kurze Anfahrtswege für unseren 24/7 Schlüsseldienst.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
         Zu unseren Einsatzgebieten gehören neben der Wetzlarer Innenstadt auch die Stadtteile Nauborn, Dutenhofen, Garbenheim, Hermannstein und Niedergirmes. Darüber hinaus sind wir regelmäßig in Solms, Braunfels, Aßlar, Lahnau und weiteren Gemeinden im Lahn-Dill-Kreis im Einsatz.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Dank unserer lokalen Verankerung erreichen wir die meisten Einsatzorte in einem Radius von 50 Kilometern zuverlässig innerhalb kürzester Zeit. Unser Notdienst steht Ihnen an 365 Tagen im Jahr rund um die Uhr ohne Einschränkungen zur Verfügung.
+        Dank unserer lokalen Verankerung erreichen wir die meisten Einsatzorte in einem Radius von 50 Kilometern innerhalb kürzester Zeit. Unser Schlüsseldienst-Notdienst steht Ihnen an 365 Tagen im Jahr rund um die Uhr zur Verfügung — auch an Feiertagen und nachts.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed">
-        Rufen Sie uns jetzt an unter <strong>06441 8056279</strong>, und wir nennen Ihnen sofort den garantierten Festpreis für Ihren individuellen Einsatz. Wir freuen uns darauf, Ihnen schnell, professionell und zu einem fairen Preis weiterzuhelfen.
+        Rufen Sie uns an unter <strong>06441 8056279</strong> oder besuchen Sie uns persönlich in der Langgasse 70 in Wetzlar. Wir freuen uns darauf, Sie kompetent und fair zu beraten — ob im Laden oder als Ihr Schlüsseldienst vor Ort.
       </p>
      </article>
 

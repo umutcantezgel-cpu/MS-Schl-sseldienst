@@ -4,25 +4,37 @@ import { z } from "zod";
 import { logger } from "@/lib/logger";
 import { headers } from "next/headers";
 
+// ─── Sanitization Helpers ───
+const sanitizeText = (text: string) => text.trim().replace(/<[^>]*>?/gm, "");
+
 // ─── Zod Schema (shared with client) ───
 const contactSchema = z.object({
   name: z
     .string()
+    .trim()
     .min(2, "Bitte geben Sie Ihren Namen ein.")
-    .max(100, "Name ist zu lang."),
+    .max(100, "Name ist zu lang.")
+    .transform(sanitizeText),
   email: z
     .string()
+    .trim()
+    .toLowerCase()
     .email("Bitte prüfen Sie Ihre E-Mail-Adresse.")
     .max(255, "E-Mail ist zu lang."),
   phone: z
     .string()
+    .trim()
     .max(30, "Telefonnummer ist zu lang.")
+    // Allow empty or mostly valid phone number characters
+    .regex(/^(\+?[0-9\s\-\/\(\)]+)?$/, "Ungültige Telefonnummer.")
     .optional()
     .or(z.literal("")),
   message: z
     .string()
+    .trim()
     .min(5, "Bitte beschreiben Sie kurz Ihr Anliegen.")
-    .max(5000, "Nachricht ist zu lang."),
+    .max(5000, "Nachricht ist zu lang.")
+    .transform(sanitizeText),
   // Honeypot — bots fill this, humans don't see it
   website: z.string().max(0, "Bot detected").optional().or(z.literal("")),
 });
@@ -32,6 +44,7 @@ export type ContactFormState = {
   message: string;
   errors?: Record<string, string[]>;
   submittedName?: string;
+  fallbackToClient?: boolean; // Signalisiert dem Frontend, dass Server Fetch fehlschlug
 };
 
 // ─── Rate-limit (in-memory, resets on server restart) ───
@@ -58,18 +71,34 @@ export async function submitContactForm(
   _prevState: ContactFormState,
   formData: FormData
 ): Promise<ContactFormState> {
-  // 1. Extract data
+  // 1. Extract and format data
   const rawData = {
     name: formData.get("name") as string,
     email: formData.get("email") as string,
     phone: (formData.get("phone") as string) || "",
     message: formData.get("message") as string,
     website: (formData.get("website") as string) || "",
+    startTime: (formData.get("startTime") as string) || "0",
   };
 
   // 2. Honeypot check (bots fill the hidden "website" field)
-  if (rawData.website && rawData.website.length > 0) {
+  if (rawData.website && rawData.website.trim().length > 0) {
+    logger.warn({ action: "contact_bot_blocked", name: rawData.name }, "Honeypot filled");
     // Pretend success to not tip off bots
+    return {
+      success: true,
+      message: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
+      submittedName: rawData.name,
+    };
+  }
+
+  // 2.5 Time-to-Submit Verification (Phase 4.2)
+  const submitTime = parseInt(rawData.startTime, 10);
+  const timeDiff = Date.now() - submitTime;
+  
+  if (submitTime > 0 && timeDiff < 2000) {
+    logger.warn({ action: "contact_bot_blocked", timeDiff }, "Form filled too fast (bot behavior)");
+    // Silent reject for bots
     return {
       success: true,
       message: "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
@@ -93,17 +122,14 @@ export async function submitContactForm(
     };
   }
 
-  // 4. Rate limiting
-  // Note: we can't easily get the real IP in Next.js Server Actions without accessing headers.
-  // We'll use a placeholder or basic header to prevent global lockouts.
+  // 4. Rate limiting (Basic implementation using headers)
   const headersList = await headers();
   const ip = headersList.get("x-forwarded-for") || "unknown";
   
   if (!checkRateLimit(ip)) {
     return {
       success: false,
-      message:
-        "Zu viele Anfragen. Bitte versuchen Sie es in einer Stunde erneut, oder rufen Sie uns direkt an: 06441 8056279.",
+      message: "Zu viele Anfragen (Rate Limit). Bitte versuchen Sie es in einer Stunde erneut.",
     };
   }
 
@@ -130,34 +156,30 @@ export async function submitContactForm(
       });
 
       if (!formspreeResponse.ok) {
+        // Fallback or explicit error code handling (Phase 4.4)
+        if (formspreeResponse.status === 429) {
+          return {
+            success: false,
+            message: "Zu viele Anfragen. Bitte warten Sie 5 Minuten und versuchen Sie es erneut.",
+          };
+        }
+        if (formspreeResponse.status >= 500) {
+          throw new Error("Formspree Serverfehler (500)");
+        }
+        
         const errBody = await formspreeResponse.json().catch(() => ({}));
         throw new Error(errBody.error || `Formspree HTTP ${formspreeResponse.status}`);
       }
     } else {
       // ─── Demo-Mode: Log only ───
       logger.info(
-        {
-          action: "contact_submit_demo",
-          data: {
-            name: parsed.data.name,
-            email: parsed.data.email,
-          },
-        },
-        "Demo-Modus: Kontaktanfrage wurde nicht an Formspree gesendet (kein NEXT_PUBLIC_FORMSPREE_ID konfiguriert)"
+        { action: "contact_submit_demo", data: { email: parsed.data.email } },
+        "Demo-Modus: Kein formspree Token vorhanden"
       );
     }
 
     logger.info(
-      {
-        action: "contact_submit",
-        success: true,
-        data: {
-          name: parsed.data.name,
-          email: parsed.data.email,
-          hasPhone: !!parsed.data.phone,
-          messageLength: parsed.data.message.length,
-        },
-      },
+      { action: "contact_submit", success: true, email: parsed.data.email },
       "Neue Kontaktanfrage erfolgreich verarbeitet"
     );
 
@@ -168,17 +190,14 @@ export async function submitContactForm(
     };
   } catch (error) {
     logger.error(
-      {
-        action: "contact_submit",
-        success: false,
-        error: error instanceof Error ? error.message : String(error),
-      },
-      "Contact form error"
+      { action: "contact_submit", success: false, error: String(error) },
+      "Contact form server action failed"
     );
+    // Explicit Fallback Signal to Client
     return {
       success: false,
-      message:
-        "Leider konnte Ihre Nachricht nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an: 06441 8056279.",
+      message: "Serverfehler beim Versenden. Ein interner Fallback-Versuch wird nun unternommen...",
+      fallbackToClient: true, // Signals ContactForm to use client-side AJAX fetch
     };
   }
 }

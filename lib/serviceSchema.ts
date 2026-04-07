@@ -6,8 +6,8 @@ export function generateServiceSchema({ title, description, url, price }: { titl
         "@type": "Service",
         "serviceType": title,
         "provider": {
-            "@type": "Locksmith",
-            "name": "Schlüsseldienst Wetzlar",
+            "@type": ["Locksmith", "Store"],
+            "name": "Schlüssel Schmiede Wetzlar",
             "@id": `${siteUrl}/#localbusiness`
         },
         "description": description,

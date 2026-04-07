@@ -106,6 +106,36 @@ export const services: Service[] = [
     icon: "Clock",
     features: ["365 Tage im Jahr real besetzt", "Niemals ein Callcenter, immer ein lokaler Meister", "Regionale In-House Stationierung", "Unumstößliche, faire Festpreisnennung am Telefon"],
     order: 8
+  },
+  {
+    id: createId("srv-09"),
+    slug: createSlug("autoschluessel"),
+    title: "Autoschlüssel Service",
+    shortDescription: "Wir programmieren, codieren und reparieren Autoschlüssel direkt vor Ort.",
+    fullDescription: "Gehäuse kaputt? Tasten defekt? Zweitschlüssel benötigt? Wir programmieren und reparieren Transponder-Schlüssel schnell und oft günstiger als im Autohaus direkt in Wetzlar. Kommen Sie mit dem originalen Schlüssel und Auto vorbei.",
+    icon: "CarFront",
+    features: ["Zweitschlüssel programmieren", "Gehäuse und kaputte Tasten tauschen", "Sofort Service in Wetzlar", "Oft günstiger als die Vertragswerkstatt"],
+    order: 9
+  },
+  {
+    id: createId("srv-10"),
+    slug: createSlug("passbilder"),
+    title: "Biometrische Passbilder",
+    shortDescription: "Sofort-Passbilder in Top-Qualität für Ausweis, Führerschein und Visa.",
+    fullDescription: "Egal ob Personalausweis, Reisepass, Führerschein oder Visum: Wir fotografieren Sie nach den offiziellen biometrischen Vorgaben. Ohne Termin einfach im Ladenlokal vorbeikommen und nach 5-10 Minuten Bilder direkt mitnehmen.",
+    icon: "Image",
+    features: ["Sofort zum Mitnehmen", "Offiziell Biometrisch Zertifiziert", "Ohne Termin", "4 Bilder für 15€"],
+    order: 10
+  },
+  {
+    id: createId("srv-11"),
+    slug: createSlug("uhren-service"),
+    title: "Uhren Service",
+    shortDescription: "Schneller Batteriewechsel und Armband-Service ohne Wartezeiten.",
+    fullDescription: "Ihre Uhr steht still oder das Armband ist kaputt? Wir wechseln Batterien hochwertiger Marken (Renata, Varta) und tauschen oder kürzen Gliederarmbänder. Unkomplizierter Express-Service direkt vor Ort.",
+    icon: "Watch",
+    features: ["Fachmännischer Batteriewechsel", "Armbänder kürzen und verlängern", "Sofort Service", "Renata & Varta Batterie-Qualität"],
+    order: 11
   }
 ];
 

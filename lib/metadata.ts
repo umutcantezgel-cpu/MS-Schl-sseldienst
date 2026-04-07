@@ -80,7 +80,7 @@ export const generateSharedMetadata = ({
                     url: `${siteUrl}/og-image.png`,
                     width: 1200,
                     height: 630,
-                    alt: "Schlüsseldienst Wetzlar – 24/7 Notdienst mit Festpreisen",
+                    alt: "Schlüssel Schmiede Wetzlar — Fachgeschäft & Schlüsseldienst mit Festpreisen",
                 },
             ],
         },

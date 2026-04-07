@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Schlüssel Schmiede Wetzlar',
     short_name: 'Schlüssel Schmiede',
-    description: 'Schlüssel Schmiede Wetzlar — Ihr Schlüsseldienst & Werkstatt. 24/7 Notdienst in Wetzlar, Gießen, Marburg und im gesamten Lahn-Dill-Kreis.',
+    description: 'Schlüssel Schmiede Wetzlar — Ihr Fachgeschäft für Schlüssel, Schlösser & Sicherheit. 24/7 Notdienst in Wetzlar, Gießen, Marburg und im gesamten Lahn-Dill-Kreis.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

@@ -67,7 +67,7 @@ export default function TerminBuchenPage() {
                  <CalendlyConsentGate>
                    {/* Provide the actual Calendly link here */}
                    <CalendlyWidget 
-                     url={(process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/schluesseldienst-wz/sicherheitsberatung") + "?timezone=Europe/Berlin"} 
+                     url={process.env.NEXT_PUBLIC_CALENDLY_URL ? `${process.env.NEXT_PUBLIC_CALENDLY_URL}?timezone=Europe/Berlin` : ""} 
                    />
                  </CalendlyConsentGate>
               </div>

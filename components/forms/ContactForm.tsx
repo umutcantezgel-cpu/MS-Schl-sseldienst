@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FormField } from "./FormField";
 import { Input } from "@/components/ui/input";
@@ -32,9 +32,15 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
     serviceOption: "",
     address: "",
     message: "",
-    gdpr: false
+    gdpr: false,
+    startTime: "" // Will be set on mount to prevent SSR mismatch
   });
-  
+
+  // Phase 4.2 StartTime Initialization
+  useEffect(() => {
+    setFormData(prev => ({ ...prev, startTime: Date.now().toString() }));
+  }, []);
+
   const [errors, setErrors] = useState<FormErrors>({});
   const [touched, setTouched] = useState<Set<string>>(new Set());
 
@@ -112,28 +118,70 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
     setTouched(newTouched);
     setErrors(newErrors);
 
-    if (hasErrors) return;
+    if (hasErrors) {
+      addToast("error", "Bitte korrigieren Sie die rot markierten Felder.");
+      return;
+    }
 
     setLoading(true);
 
-    const result = await submitToFormspree(formId, formData);
-    
-    if (result.success) {
-      setSuccess(true);
-      addToast("success", "Ihre Anfrage wurde erfolgreich gesendet!");
-      if (onSuccess) onSuccess();
-    } else {
-      const errorMsg = result.error?.message || "Es ist ein Fehler aufgetreten.";
-      setSubmitError(errorMsg);
-      addToast("error", "Fehler beim Absenden. Bitte versuchen Sie es erneut.");
+    // Build FormData for Server Action
+    const dataForServer = new FormData();
+    dataForServer.append("name", formData.name);
+    dataForServer.append("email", formData.email);
+    dataForServer.append("phone", formData.phone);
+    dataForServer.append("message", `Service: ${formData.serviceOption}\nAdresse: ${formData.address}\n\n${formData.message}`);
+    // Honeypot & Timestamp Field from State
+    // @ts-ignore
+    dataForServer.append("website", formData.website || "");
+    dataForServer.append("startTime", formData.startTime);
+
+    try {
+      import("@/app/actions/contact").then(async ({ submitContactForm }) => {
+        let result = await submitContactForm({ success: false, message: "" }, dataForServer);
+        
+        // Handle Server Action Feedback
+        if (result.success) {
+          setSuccess(true);
+          addToast("success", "Ihre Anfrage wurde erfolgreich gesendet!");
+          if (onSuccess) onSuccess();
+        } else if (result.fallbackToClient) {
+          // If Server Action signals a strict network error on its end, we Fallback to direct AJAX
+          console.warn("Server action fallback triggered, submitting direct via client...");
+          const fallbackResult = await submitToFormspree(formId, Object.fromEntries(dataForServer.entries()));
+          if (fallbackResult.success) {
+            setSuccess(true);
+            addToast("success", "Ihre Anfrage wurde erfolgreich gesendet!");
+            if (onSuccess) onSuccess();
+          } else {
+            setSubmitError(fallbackResult.error?.message || "Fallback fehlgeschlagen. Bitte erneut versuchen.");
+            addToast("error", "Verbindungsfehler auf beiden Netzwerkebenen.");
+          }
+        } else {
+          // Normal validation or rate limit error from server
+          if (result.errors) {
+            // Phase 4.1 Type Resolution Fix
+            const resolvedErrors: Record<string, string> = {};
+            Object.entries(result.errors).forEach(([k, v]) => {
+              resolvedErrors[k] = v[0] || "Ungültige Eingabe"; // Take the first validation message
+            });
+            setErrors(resolvedErrors);
+          }
+          setSubmitError(result.message || "Es ist ein Fehler aufgetreten.");
+          addToast("error", result.message || "Fehler beim Absenden.");
+        }
+        setLoading(false);
+      });
+    } catch (err) {
+      console.error(err);
+      setSubmitError("Unerwarteter Fehler im Client.");
+      setLoading(false);
     }
-    
-    setLoading(false);
   };
 
   if (success) {
     return (
-      <div className={`p-8 bg-green-50 border border-green-200 rounded-xl text-center shadow-sm ${className}`}>
+      <div className={`p-8 bg-green-50 border border-green-200 rounded-xl text-center shadow-sm ${className}`} role="alert" aria-live="polite">
         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-6">
           <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -141,7 +189,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
         </div>
         <div className="text-xl font-bold text-gray-900 mb-2">Nachricht erfolgreich gesendet!</div>
         <p className="text-gray-600 font-medium">
-          Unser Notdienst-Team hat Ihre Anfrage erhalten. Wir prüfen diese sofort und melden uns schnellstmöglich telefonisch bei Ihnen.
+          Unser Team hat Ihre Anfrage erhalten. Wir prüfen diese sofort und melden uns schnellstmöglich bei Ihnen.
         </p>
       </div>
     );

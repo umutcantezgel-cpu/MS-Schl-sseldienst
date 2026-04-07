@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-400)]">
          <Clock className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
-         <span>24/7 Notdienst — auch an Feiertagen</span>
+         <span>Laden: Mo–Fr 09–18 · Sa 09–14 | 24/7 Notdienst</span>
         </div>
         {/* Social Media */}
         <div className="mt-5 flex items-center gap-3">
@@ -162,7 +162,7 @@ export default function Footer() {
       <div className="flex flex-col gap-2">
         <div className="text-xl font-bold text-white">Nichts Passendes gefunden?</div>
         <p className="text-[var(--color-charcoal-400)] text-sm max-w-md">
-          Kontaktieren Sie uns für eine kostenlose, unverbindliche Beratung. Unser Notdienst ist 24/7 in Wetzlar und Umgebung erreichbar.
+          Kommen Sie persönlich im Laden vorbei oder rufen Sie uns an — wir beraten Sie gerne. Auch 24/7 als Schlüsseldienst-Notdienst erreichbar.
         </p>
       </div>
        <a 

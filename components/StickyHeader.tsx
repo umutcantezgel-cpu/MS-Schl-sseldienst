@@ -24,7 +24,8 @@ import {
   BookOpen,
   Banknote,
   Mail,
-  Home
+  Home,
+  Calendar
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getNavigationConfig } from "@/lib/data/navigation";
@@ -333,6 +334,15 @@ export default function StickyHeader() {
           {/* 3. CTA & MOBILE MENÜ TOGGLE */}
           <div className="flex items-center gap-3 z-50">
 
+            {/* Termin buchen Desktop */}
+            <Link
+              href="/termin-buchen"
+              className="hidden xl:flex items-center justify-center gap-2 px-5 h-[46px] bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-800 text-[14px] font-bold rounded-full transition-all duration-300 shadow-sm"
+            >
+              <Calendar className="w-4 h-4 text-[var(--color-blue-600)]" />
+              Beratung buchen
+            </Link>
+
             <a
               href="tel:+4964418056279"
               className="hidden sm:flex items-center justify-center gap-2 px-6 h-[46px] bg-[var(--color-red-500)] text-white text-[15px] font-bold rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 group"
@@ -483,14 +493,22 @@ export default function StickyHeader() {
             </div>
 
             {/* Sticky Mobile CTA */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100/80 bg-white/95 backdrop-blur-md pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10">
+            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100/80 bg-white/95 backdrop-blur-md pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10 flex gap-3">
               <a
                 href="tel:+4964418056279"
-                className="relative overflow-hidden flex items-center justify-center gap-3 w-full h-[60px] bg-gradient-to-r from-[var(--color-red-500)] to-[#e11d48] text-white font-black text-[18px] rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
+                className="relative overflow-hidden flex-1 flex items-center justify-center gap-2 h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-[16px] rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
               >
-                <Phone className="w-6 h-6" />
-                06441 - 8056279
+                <Phone className="w-5 h-5" />
+                Notdienst
               </a>
+              <Link
+                href="/termin-buchen"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex-[0.8] flex items-center justify-center gap-2 h-[60px] bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-[15px] rounded-2xl active:scale-[0.98] transition-all"
+              >
+                <Calendar className="w-5 h-5" />
+                Termin
+              </Link>
             </div>
           </m.div>
         )}

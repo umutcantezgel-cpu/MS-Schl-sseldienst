@@ -21,22 +21,22 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Gibt es versteckte Kosten oder Aufschläge?",
-        answer: "Schlüsseldienst Wetzlar arbeitet ausschließlich mit transparenten Festpreisen — ohne versteckte Kosten, ohne nachträgliche Aufschläge. Der Preis, der am Telefon genannt wird, ist der Preis, den Sie zahlen. Anfahrtskosten innerhalb des Servicegebiets sind im Festpreis bereits enthalten.",
+        answer: "Schlüssel Schmiede Wetzlar arbeitet ausschließlich mit transparenten Festpreisen — ohne versteckte Kosten, ohne nachträgliche Aufschläge. Der Preis, der am Telefon genannt wird, ist der Preis, den Sie zahlen. Anfahrtskosten innerhalb des Servicegebiets sind im Festpreis bereits enthalten.",
         category: "kosten",
     },
     {
         question: "Gibt es Zuschläge für Einsätze nachts oder am Wochenende?",
-        answer: "Schlüsseldienst Wetzlar berechnet einen transparenten Zuschlag von 30 Euro für Einsätze zwischen 18:00 und 8:00 Uhr sowie an Wochenenden und Feiertagen. Dieser Zuschlag wird Ihnen vorab mitgeteilt, bevor der Techniker losfährt.",
+        answer: "Schlüssel Schmiede Wetzlar berechnet einen transparenten Zuschlag von 30 Euro für Einsätze zwischen 18:00 und 8:00 Uhr sowie an Wochenenden und Feiertagen. Dieser Zuschlag wird Ihnen vorab mitgeteilt, bevor der Techniker losfährt.",
         category: "kosten",
     },
     {
         question: "Wie kann ich bezahlen?",
-        answer: "Bei Schlüsseldienst Wetzlar können Sie bequem in bar, per EC-Karte oder per Kreditkarte direkt vor Ort bezahlen. Eine Rechnung wird Ihnen selbstverständlich ausgestellt.",
+        answer: "Bei der Schlüssel Schmiede Wetzlar können Sie bequem in bar, per EC-Karte oder per Kreditkarte direkt vor Ort bezahlen. Eine Rechnung wird Ihnen selbstverständlich ausgestellt.",
         category: "kosten",
     },
     {
         question: "Was kostet eine Autoöffnung?",
-        answer: "Schlüsseldienst Wetzlar öffnet Fahrzeuge aller Marken ab 99 Euro zum Festpreis — ohne Lackschäden und ohne versteckte Kosten. Die Autoöffnung ist 24/7 verfügbar.",
+        answer: "Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken ab 99 Euro zum Festpreis — ohne Lackschäden und ohne versteckte Kosten. Die Autoöffnung ist 24/7 verfügbar.",
         category: "kosten",
     },
     {
@@ -53,22 +53,22 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Kommt der Schlüsseldienst auch nach Gießen?",
-        answer: "Ja, Schlüsseldienst Wetzlar bedient Gießen mit einer Anfahrtszeit von 15–20 Minuten zum identischen Festpreis ohne zusätzliche Anfahrtsgebühren.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar bedient Gießen mit einer Anfahrtszeit von 15–20 Minuten zum identischen Festpreis ohne zusätzliche Anfahrtsgebühren.",
         category: "anfahrt",
     },
     {
         question: "Kommt der Schlüsseldienst auch nach Marburg?",
-        answer: "Ja, Schlüsseldienst Wetzlar bedient auch Marburg an der Lahn mit einer Anfahrtszeit von 25–30 Minuten. Es gelten die gleichen Festpreise wie in Wetzlar.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar bedient auch Marburg an der Lahn mit einer Anfahrtszeit von 25–30 Minuten. Es gelten die gleichen Festpreise wie in Wetzlar.",
         category: "anfahrt",
     },
     {
         question: "Welche Orte bedient der Schlüsseldienst Wetzlar?",
-        answer: "Schlüsseldienst Wetzlar bedient ein Einsatzgebiet im Umkreis von 50 Kilometern: Wetzlar, Gießen, Marburg, Solms, Aßlar, Leun, Braunfels, Hüttenberg, Lahnau, Wettenberg, Biebertal, Heuchelheim, Linden, Pohlheim, Lich, Dillenburg, Herborn, Haiger, Buseck, Lollar, Ehringshausen, Schöffengrund und den gesamten Lahn-Dill-Kreis.",
+        answer: "Schlüssel Schmiede Wetzlar bedient ein Einsatzgebiet im Umkreis von 50 Kilometern: Wetzlar, Gießen, Marburg, Solms, Aßlar, Leun, Braunfels, Hüttenberg, Lahnau, Wettenberg, Biebertal, Heuchelheim, Linden, Pohlheim, Lich, Dillenburg, Herborn, Haiger, Buseck, Lollar, Ehringshausen, Schöffengrund und den gesamten Lahn-Dill-Kreis.",
         category: "anfahrt",
     },
     {
         question: "Gibt es zusätzliche Anfahrtskosten für Orte außerhalb von Wetzlar?",
-        answer: "Schlüsseldienst Wetzlar berechnet innerhalb des gesamten Servicegebiets (50 km Umkreis) keine zusätzlichen Anfahrtskosten. Die Anfahrt ist im Festpreis enthalten.",
+        answer: "Schlüssel Schmiede Wetzlar berechnet innerhalb des gesamten Servicegebiets (50 km Umkreis) keine zusätzlichen Anfahrtskosten. Die Anfahrt ist im Festpreis enthalten.",
         category: "anfahrt",
     },
 
@@ -80,81 +80,81 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Wie läuft eine Türöffnung ab?",
-        answer: "Der Ablauf bei Schlüsseldienst Wetzlar ist einfach: 1. Sie rufen an, 2. Der Preis wird sofort am Telefon genannt, 3. Unser Techniker ist in 15–30 Minuten bei Ihnen, 4. Die Tür wird zerstörungsfrei geöffnet, 5. Sie zahlen den vereinbarten Festpreis.",
+        answer: "Der Ablauf bei der Schlüssel Schmiede Wetzlar ist einfach: 1. Sie rufen an, 2. Der Preis wird sofort am Telefon genannt, 3. Unser Techniker ist in 15–30 Minuten bei Ihnen, 4. Die Tür wird zerstörungsfrei geöffnet, 5. Sie zahlen den vereinbarten Festpreis.",
         category: "leistungen",
     },
     {
         question: "Können Sie auch Tresor- oder Safe-Türen öffnen?",
-        answer: "Tresoröffnungen sind bei Schlüsseldienst Wetzlar nach vorheriger Absprache möglich. Kontaktieren Sie uns für ein individuelles Angebot und die Prüfung der Machbarkeit.",
+        answer: "Tresoröffnungen sind bei der Schlüssel Schmiede Wetzlar nach vorheriger Absprache möglich. Kontaktieren Sie uns für ein individuelles Angebot und die Prüfung der Machbarkeit.",
         category: "leistungen",
     },
     {
         question: "Bieten Sie auch Schließanlagen und Sicherheitsberatung an?",
-        answer: "Ja, Schlüsseldienst Wetzlar berät, plant und installiert Schließanlagen für Wohn- und Gewerbeimmobilien — von der einfachen Gleichschließung bis zur elektronischen Zutrittskontrolle. Kostenlose Sicherheitsberatung vor Ort ist ebenfalls verfügbar.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar berät, plant und installiert Schließanlagen für Wohn- und Gewerbeimmobilien — von der einfachen Gleichschließung bis zur elektronischen Zutrittskontrolle. Kostenlose Sicherheitsberatung vor Ort ist ebenfalls verfügbar.",
         category: "leistungen",
     },
     {
         question: "Können Sie Schlösser direkt vor Ort austauschen?",
-        answer: "Ja, Schlüsseldienst Wetzlar führt gängige Schließzylinder und Schlösser mit und kann den Austausch direkt vor Ort durchführen. So ist Ihre Tür sofort wieder sicher verschließbar.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar führt gängige Schließzylinder und Schlösser mit und kann den Austausch direkt vor Ort durchführen. So ist Ihre Tür sofort wieder sicher verschließbar.",
         category: "leistungen",
     },
     {
         question: "Helfen Sie auch bei einbruchbeschädigten Türen?",
-        answer: "Ja, Schlüsseldienst Wetzlar sichert einbruchbeschädigte Türen sofort ab und tauscht beschädigte Schlösser vor Ort aus. Wir beraten Sie anschließend gerne zu besseren Einbruchschutzmaßnahmen.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar sichert einbruchbeschädigte Türen sofort ab und tauscht beschädigte Schlösser vor Ort aus. Wir beraten Sie anschließend gerne zu besseren Einbruchschutzmaßnahmen.",
         category: "leistungen",
     },
     {
         question: "Bieten Sie auch Autoöffnungen an?",
-        answer: "Ja, Schlüsseldienst Wetzlar öffnet Fahrzeuge aller Marken professionell und ohne Lackschäden ab 99 Euro zum Festpreis. Unser Techniker verwendet Spezialwerkzeug, das das Fahrzeug nicht beschädigt.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken professionell und ohne Lackschäden ab 99 Euro zum Festpreis. Unser Techniker verwendet Spezialwerkzeug, das das Fahrzeug nicht beschädigt.",
         category: "leistungen",
     },
     {
         question: "Was ist der Unterschied zwischen einer zugefallenen und einer abgesperrten Tür?",
-        answer: "Eine zugefallene Tür (Schlüssel steckt innen) lässt sich schneller und günstiger öffnen — ab 50 Euro. Eine abgesperrte Tür (Schlüssel verloren oder abgebrochen) erfordert aufwendigere Techniken und kostet ab 80 Euro. In beiden Fällen arbeitet Schlüsseldienst Wetzlar zerstörungsfrei.",
+        answer: "Eine zugefallene Tür (Schlüssel steckt innen) lässt sich schneller und günstiger öffnen — ab 50 Euro. Eine abgesperrte Tür (Schlüssel verloren oder abgebrochen) erfordert aufwendigere Techniken und kostet ab 80 Euro. In beiden Fällen arbeitet die Schlüssel Schmiede Wetzlar zerstörungsfrei.",
         category: "leistungen",
     },
 
     // ============ SICHERHEIT & VERTRAUEN ============
     {
         question: "Welcher Schlüsseldienst in Wetzlar ist seriös?",
-        answer: "Ein seriöser Schlüsseldienst nutzt Ihre Notsituation niemals aus. Setzen Sie auf absolute Transparenz: Festpreise VOR der Anfahrt, über 127 echte lokale Google-Bewertungen (5.0 Sterne) und kein Callcenter im Hintergrund. Bei Schlüsseldienst Wetzlar erleben Sie keine bösen Überraschungen auf der Rechnung.",
+        answer: "Ein seriöser Schlüsseldienst nutzt Ihre Notsituation niemals aus. Setzen Sie auf absolute Transparenz: Festpreise VOR der Anfahrt, über 127 echte lokale Google-Bewertungen (5.0 Sterne) und kein Callcenter im Hintergrund. Bei der Schlüssel Schmiede Wetzlar erleben Sie keine bösen Überraschungen auf der Rechnung.",
         category: "sicherheit",
     },
     {
         question: "Woran erkenne ich einen seriösen Schlüsseldienst?",
-        answer: "Ein seriöser Schlüsseldienst nennt den Festpreis vorab am Telefon, hat nachprüfbare Google-Bewertungen, eine lokale Adresse und verlangt vor Ort einen Identitätsnachweis. Schlüsseldienst Wetzlar erfüllt alle diese Kriterien — 5.0 Sterne bei 127+ Bewertungen.",
+        answer: "Ein seriöser Schlüsseldienst nennt den Festpreis vorab am Telefon, hat nachprüfbare Google-Bewertungen, eine lokale Adresse und verlangt vor Ort einen Identitätsnachweis. Die Schlüssel Schmiede Wetzlar erfüllt alle diese Kriterien — 5.0 Sterne bei 127+ Bewertungen.",
         category: "sicherheit",
     },
     {
         question: "Muss ich meinen Ausweis vorlegen?",
-        answer: "Ja, Schlüsseldienst Wetzlar prüft grundsätzlich die Zugangsberechtigung des Auftraggebers. Ein Personalausweis, Mietvertrag oder Grundbuchauszug ist als Nachweis ausreichend. Dies dient Ihrer Sicherheit.",
+        answer: "Ja, die Schlüssel Schmiede Wetzlar prüft grundsätzlich die Zugangsberechtigung des Auftraggebers. Ein Personalausweis, Mietvertrag oder Grundbuchauszug ist als Nachweis ausreichend. Dies dient Ihrer Sicherheit.",
         category: "sicherheit",
     },
     {
         question: "Haben Sie eine Versicherung für eventuelle Schäden?",
-        answer: "Ja, Schlüsseldienst Wetzlar ist vollständig betriebshaftpflichtversichert. In dem seltenen Fall, dass bei der Öffnung ein Schaden entsteht, übernimmt unsere Versicherung die Kosten.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar ist vollständig betriebshaftpflichtversichert. In dem seltenen Fall, dass bei der Öffnung ein Schaden entsteht, übernimmt unsere Versicherung die Kosten.",
         category: "sicherheit",
     },
     {
         question: "Sind Ihre Techniker ausgebildet und qualifiziert?",
-        answer: "Alle Techniker von Schlüsseldienst Wetzlar sind ausgebildete Fachkräfte mit langjähriger Erfahrung in der Schloss- und Sicherheitstechnik. Wir bilden regelmäßig zu neuen Schlosstypen und Sicherheitstechnologien weiter.",
+        answer: "Alle Techniker der Schlüssel Schmiede Wetzlar sind ausgebildete Fachkräfte mit langjähriger Erfahrung in der Schloss- und Sicherheitstechnik. Wir bilden regelmäßig zu neuen Schlosstypen und Sicherheitstechnologien weiter.",
         category: "sicherheit",
     },
 
     // ============ NOTDIENST & ERREICHBARKEIT ============
     {
         question: "Gibt es einen Schlüsseldienst in Wetzlar der nachts geöffnet hat?",
-        answer: "Ja, Schlüsseldienst Wetzlar ist rund um die Uhr erreichbar — auch nachts zwischen 22 und 6 Uhr, an Wochenenden und an allen deutschen Feiertagen. Für Nachteinsätze fällt ein transparenter Zuschlag von 30 Euro an.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar ist rund um die Uhr erreichbar — auch nachts zwischen 22 und 6 Uhr, an Wochenenden und an allen deutschen Feiertagen. Für Nachteinsätze fällt ein transparenter Zuschlag von 30 Euro an.",
         category: "notdienst",
     },
     {
         question: "Was mache ich, wenn ich mich ausgesperrt habe?",
-        answer: "Rufen Sie Schlüsseldienst Wetzlar an unter +49-176-12345678. Wir nennen Ihnen sofort den Festpreis und sind in 15–30 Minuten bei Ihnen. Wichtig: Versuchen Sie nicht, die Tür selbst aufzubrechen — das verursacht fast immer teure Schäden.",
+        answer: "Rufen Sie die Schlüssel Schmiede Wetzlar an unter +49-176-12345678. Wir nennen Ihnen sofort den Festpreis und sind in 15–30 Minuten bei Ihnen. Wichtig: Versuchen Sie nicht, die Tür selbst aufzubrechen — das verursacht fast immer teure Schäden.",
         category: "notdienst",
     },
     {
         question: "Kommt der Schlüsseldienst auch an Weihnachten und Silvester?",
-        answer: "Ja, Schlüsseldienst Wetzlar ist an 365 Tagen im Jahr im Einsatz — einschließlich aller Feiertage wie Weihnachten, Silvester, Ostern und Pfingsten. Der Feiertagszuschlag von 30 Euro wird vorab mitgeteilt.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar ist an 365 Tagen im Jahr im Einsatz — einschließlich aller Feiertage wie Weihnachten, Silvester, Ostern und Pfingsten. Der Feiertagszuschlag von 30 Euro wird vorab mitgeteilt.",
         category: "notdienst",
     },
     {
@@ -164,13 +164,30 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Kann ich einen Termin für einen nicht-dringenden Einsatz vereinbaren?",
-        answer: "Ja, Schlüsseldienst Wetzlar bietet neben dem Notdienst auch Terminvereinbarungen für Schlossaustausch, Schließanlagen-Installation und Sicherheitsberatungen an. Rufen Sie uns an und wir finden einen passenden Termin.",
+        answer: "Ja, Die Schlüssel Schmiede Wetzlar bietet neben dem Notdienst auch Terminvereinbarungen für Schlossaustausch, Schließanlagen-Installation und Sicherheitsberatungen an. Rufen Sie uns an und wir finden einen passenden Termin.",
         category: "notdienst",
     },
     {
         question: "Tür zugefallen in Wetzlar — was tun?",
-        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie Schlüsseldienst Wetzlar an unter +49-176-12345678. Festpreis ab 50 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
+        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter +49-176-12345678. Festpreis ab 50 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
         category: "notdienst",
+    },
+
+    // ============ FACHGESCHÄFT & LADEN ============
+    {
+        question: "Wo finde ich die Schlüssel Schmiede in Wetzlar?",
+        answer: "Unser Fachgeschäft befindet sich in der Langgasse 70, 35578 Wetzlar — mitten in der Wetzlarer Innenstadt. Wir sind von Montag bis Freitag von 09:00 bis 18:00 Uhr und samstags von 09:00 bis 14:00 Uhr für Sie geöffnet. Unser Schlüsseldienst-Notdienst ist darüber hinaus 24/7 erreichbar.",
+        category: "leistungen",
+    },
+    {
+        question: "Kann ich auch ohne Termin in den Laden kommen?",
+        answer: "Ja, selbstverständlich! Die Schlüssel Schmiede Wetzlar ist ein offenes Fachgeschäft mit Walk-In-Beratung. Kommen Sie einfach während der Öffnungszeiten vorbei — wir nehmen uns gerne Zeit für eine persönliche Beratung zu Schlüsseln, Schlössern und Sicherheitstechnik.",
+        category: "leistungen",
+    },
+    {
+        question: "Welche Schlüssel kann ich bei der Schlüssel Schmiede nachmachen lassen?",
+        answer: "In unserem Fachgeschäft fertigen wir Ersatzschlüssel für nahezu alle gängigen Schlosstypen an: Haustürschlüssel, Wohnungsschlüssel, Briefkastenschlüssel, Garagentorschlüssel und Sicherheitsschlüssel. Auch Spezialanfertigungen und elektronische Schlüsselkopien sind auf Anfrage möglich.",
+        category: "leistungen",
     },
 ];
 
