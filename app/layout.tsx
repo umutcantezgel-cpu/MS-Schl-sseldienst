@@ -3,10 +3,12 @@ import { Plus_Jakarta_Sans, DM_Sans, JetBrains_Mono } from"next/font/google";
 import { DeviceProvider } from "@/components/providers/DeviceProvider";
 import { WebVitalsReporter } from "@/components/analytics/WebVitalsReporter";
 import"./globals.css";
+import nextDynamic from "next/dynamic";
 import StickyHeader from"@/components/StickyHeader";
-import Footer from"@/components/Footer";
-import MobileBottomBar from"@/components/MobileBottomBar";
 import StickyCtaBar from "@/components/trust/StickyCtaBar";
+
+const Footer = nextDynamic(() => import("@/components/Footer"));
+const MobileBottomBar = nextDynamic(() => import("@/components/MobileBottomBar"));
 import { generateLocalBusinessSchema, generateWebSiteSchema, siteUrl } from"@/lib/schema";
 import { SkipNav } from "@/components/ui/SkipNav";
 import { AnnouncerProvider } from "@/components/providers/Announcer";
@@ -122,6 +124,8 @@ export default function RootLayout({
     {/* next/font self-hosts und no preconnect to Google Fonts CDN needed */}
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://maps.googleapis.com" />
+    <link rel="dns-prefetch" href="https://maps.googleapis.com" />
     {/* [PERF] Preload LCP element (logo) so it starts fetching during HTML parse,
          independent of JS hydration. Without this, the logo waits for Next.js
          App Router JS to execute before it can even start loading. */}

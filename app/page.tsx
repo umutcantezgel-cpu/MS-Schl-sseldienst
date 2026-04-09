@@ -14,11 +14,16 @@ import { PricingSection } from "@/components/sections/home/PricingSection";
 import ServicesSection from "@/components/sections/home/ServicesSection";
 import WhyUsSection from "@/components/sections/home/WhyUsSection";
 import TrustMetricsSection from "@/components/sections/home/TrustMetricsSection";
-import InteractiveMapSection from "@/components/sections/home/InteractiveMapSection";
 import WerkstattImageSection from "@/components/sections/home/WerkstattImageSection";
 import FAQSection from "@/components/sections/home/FAQSection";
-import ContactSection from "@/components/sections/home/ContactSection";
 import SeoContentSection from "@/components/sections/home/SeoContentSection";
+
+const InteractiveMapSection = nextDynamic(() => import("@/components/sections/home/InteractiveMapSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[600px]" role="status" aria-label="Karte wird geladen" />,
+});
+const ContactSection = nextDynamic(() => import("@/components/sections/home/ContactSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[500px]" role="status" aria-label="Kontaktformular wird geladen" />,
+});
 import { getHomepageFAQs } from "@/lib/faqData";
 import { getFAQSchema } from "@/lib/schema";
 
