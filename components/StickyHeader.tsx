@@ -93,10 +93,10 @@ export default function StickyHeader() {
   const isScrolled = scrollPosition > 20 || !isHomePage;
 
   const headerClasses = useMemo(() => 
-    `fixed top-0 left-0 right-0 z-[100] w-full flex items-center transition-all duration-300 ease-out will-change-[background-color,border,box-shadow] ${
+    `fixed top-0 left-0 right-0 z-[100] w-full flex items-center transition-all duration-500 ease-out will-change-[background-color,border,box-shadow,height] ${
       isScrolled
-        ? "bg-white backdrop-blur-md h-[64px] lg:h-[76px] shadow-[0_4px_20px_-8px_rgba(0,0,0,0.1)] border-b border-gray-100"
-        : "bg-white/75 backdrop-blur-md h-[80px] lg:h-[96px] border-b border-transparent shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)]"
+        ? "bg-white/85 backdrop-blur-2xl saturate-150 h-[68px] lg:h-[76px] shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] border-b border-gray-200/50"
+        : "bg-white/60 backdrop-blur-2xl saturate-150 h-[80px] lg:h-[96px] border-b border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)]"
     }`
   , [isScrolled]);
 
@@ -161,7 +161,7 @@ export default function StickyHeader() {
                 }`}
               >
                 {hoveredLink === "leistungen" && (
-                  <m.div layoutId="nav-hover" className="absolute inset-0 bg-gray-100/80 rounded-full -z-10" transition={{ type: "spring", stiffness: 400, damping: 30 }} />
+                  <m.div layoutId="nav-hover" className="absolute inset-0 bg-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.04)] ring-1 ring-black/[0.03] backdrop-blur-3xl rounded-full -z-10" transition={{ type: "spring", stiffness: 450, damping: 35 }} />
                 )}
                 Unsere Leistungen
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeMenu === "leistungen" ? "-rotate-180" : ""}`} />
@@ -234,14 +234,14 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/servicegebiet"
-                className={`relative z-10 flex items-center gap-1.5 px-3 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`relative z-10 flex items-center gap-1.5 px-3.5 py-2 font-semibold text-[15px] tracking-tight rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "servicegebiet" || pathname === "/servicegebiet"
-                    ? "text-[var(--color-blue-600)]"
-                    : "text-gray-800 hover:text-gray-950"
+                    ? "text-[var(--color-red-600)]"
+                    : "text-gray-700 hover:text-gray-950"
                 }`}
               >
                 {hoveredLink === "servicegebiet" && (
-                  <m.div layoutId="nav-hover" className="absolute inset-0 bg-gray-100/80 rounded-full -z-10" transition={{ type: "spring", stiffness: 400, damping: 30 }} />
+                  <m.div layoutId="nav-hover" className="absolute inset-0 bg-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.04)] ring-1 ring-black/[0.03] backdrop-blur-3xl rounded-full -z-10" transition={{ type: "spring", stiffness: 450, damping: 35 }} />
                 )}
                 Einsatzgebiete
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeMenu === "servicegebiet" ? "-rotate-180" : ""}`} />
@@ -334,12 +334,12 @@ export default function StickyHeader() {
                   key={link.href}
                   href={link.href}
                   onMouseEnter={() => { setActiveMenu(null); setHoveredLink(link.href); }}
-                  className={`relative px-2.5 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
-                    isActive ? "text-[var(--color-red-500)]" : "text-gray-800 hover:text-gray-950"
+                  className={`relative px-3.5 py-2 font-semibold text-[15px] tracking-tight rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
+                    isActive ? "text-[var(--color-red-600)]" : "text-gray-700 hover:text-gray-950"
                   }`}
                 >
                   {hoveredLink === link.href && (
-                    <m.div layoutId="nav-hover" className="absolute inset-0 bg-gray-100/80 rounded-full -z-10" transition={{ type: "spring", stiffness: 400, damping: 30 }} />
+                    <m.div layoutId="nav-hover" className="absolute inset-0 bg-white/60 shadow-[0_2px_8px_rgba(0,0,0,0.04)] ring-1 ring-black/[0.03] backdrop-blur-3xl rounded-full -z-10" transition={{ type: "spring", stiffness: 450, damping: 35 }} />
                   )}
                   {LinkIcon && <LinkIcon className="w-4 h-4 opacity-60" />}
                   {displayLabel}
@@ -354,9 +354,9 @@ export default function StickyHeader() {
 
             <a
               href="tel:+4964418056279"
-              className="hidden sm:flex items-center justify-center gap-2 px-6 h-[46px] bg-[var(--color-red-500)] text-white text-base font-bold rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 group"
+              className="hidden sm:flex items-center justify-center gap-2.5 px-7 h-[48px] bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)] text-white text-[15px] font-bold tracking-wide rounded-full shadow-[0_4px_20px_-4px_rgba(220,38,38,0.4)] hover:shadow-[0_8px_25px_-5px_rgba(220,38,38,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 ring-1 ring-inset ring-white/20 group"
             >
-              <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
               06441 - 8056279
             </a>
             
@@ -371,7 +371,7 @@ export default function StickyHeader() {
 
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="lg:hidden flex items-center justify-center w-12 h-12 bg-gray-50 hover:bg-gray-100 text-gray-900 rounded-full transition-colors active:scale-95"
+              className="lg:hidden flex items-center justify-center w-12 h-12 bg-white/70 backdrop-blur-md border border-gray-200/60 hover:bg-white text-gray-900 rounded-full shadow-sm transition-all active:scale-95"
               aria-label="Menü öffnen"
             >
               <Menu className="w-6 h-6" />
