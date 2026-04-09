@@ -9,6 +9,18 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
         `Schnelle Hilfe vor Ort in ca. ${city.logistics.drivingTimeMinutes} Minuten.`
     ], city.slug, 6);
 
+    const trustLine2 = pickVariant([
+        "Festpreis vor Anfahrt",
+        "Verbindlicher Preis am Telefon",
+        "Garantierter Festpreis vorab"
+    ], city.slug, 7);
+
+    const trustLine3 = pickVariant([
+        "Keine versteckten Kosten",
+        "Null versteckte Gebühren",
+        "Transparent ohne Nachberechnung"
+    ], city.slug, 8);
+
     return (
         <section aria-labelledby="cta-heading" className="bg-[var(--action-primary)] relative py-[var(--section-py)] overflow-hidden">
             {/* Radial Rosé-Pattern Background */}
@@ -34,13 +46,13 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
                         <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                             <Check className="w-6 h-6 text-white stroke-[3]" />
                         </div>
-                        <span className="text-xl md:text-2xl font-bold tracking-tight">Festpreis vor Anfahrt</span>
+                        <span className="text-xl md:text-2xl font-bold tracking-tight">{trustLine2}</span>
                     </div>
                     <div className="flex items-center gap-4">
                         <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                             <Check className="w-6 h-6 text-white stroke-[3]" />
                         </div>
-                        <span className="text-xl md:text-2xl font-bold tracking-tight">Keine versteckten Kosten</span>
+                        <span className="text-xl md:text-2xl font-bold tracking-tight">{trustLine3}</span>
                     </div>
                 </div>
 

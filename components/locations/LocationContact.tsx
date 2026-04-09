@@ -20,7 +20,7 @@ export default function LocationContact({ city }: { city: LocationData }) {
                 <div className="max-w-4xl mx-auto bg-[var(--color-slate-50)] rounded-3xl p-10 md:p-20 text-center border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl text-[color:var(--text-primary)] font-extrabold tracking-tight text-balance leading-[1.1] mb-8">
                         Schlüsseldienst in <span className="text-[color:var(--value-primary)]">{city.name}</span> benötigt? <br className="hidden md:block" />
-                        Rufen Sie jetzt an!
+                        {pickVariant(["Rufen Sie jetzt an!", "Direkt Helfer rufen!", "Sofort anrufen!"], city.slug, 9)}
                     </h2>
                     
                     <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance max-w-prose mx-auto mb-12">

@@ -37,7 +37,7 @@ export default function ImpressumPage() {
 
             <LegalSection>
                 <TLDRBox title="Verantwortlichkeit (TL;DR)" icon="info">
-                    <p>Diese Webseite wird betreut von <strong>Mina Saad</strong> (Schlüsseldienst Wetzlar). Unser Hauptfokus ist die regionale, faire Absicherung und Türöffnung im gesamten Lahn-Dill-Kreis. Für direkte Anfragen wählen Sie einfach unsere Notrufnummer.</p>
+                    <p>Diese Webseite wird betreut von <b>Mina Saad</b> (Schlüsseldienst Wetzlar). Unser Hauptfokus ist die regionale, faire Absicherung und Türöffnung im gesamten Lahn-Dill-Kreis. Für direkte Anfragen wählen Sie einfach unsere Notrufnummer.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -45,7 +45,7 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">1. Angaben gemäß § 5 DDG</h2>
                 <p className="text-sm text-gray-500 mb-4">(Digitale-Dienste-Gesetz, ehemals § 5 TMG)</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <strong>Schlüsseldienst Wetzlar</strong><br />
+                    <b>Schlüsseldienst Wetzlar</b><br />
                     Inhaberin: Mina Saad<br />
                     Langgasse 70<br />
                     35578 Wetzlar<br />
@@ -57,8 +57,8 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">2. Direkter Kontakt</h2>
                 <p>Wir legen Wert auf Erreichbarkeit. Im Notfall oder bei allgemeinen Anfragen nutzen Sie am besten die folgenden Kontaktwege:</p>
                 <ul>
-                    <li><strong>Telefon (24/7):</strong> <a href="tel:+4964418056279" className="font-semibold">06441 8056279</a></li>
-                    <li><strong>E-Mail:</strong> <a href="mailto:info@wetzlar-schlüsseldienst.de">info@wetzlar-schlüsseldienst.de</a></li>
+                    <li><b>Telefon (24/7):</b> <a href="tel:+4964418056279" className="font-semibold">06441 8056279</a></li>
+                    <li><b>E-Mail:</b> <a href="mailto:info@wetzlar-schlüsseldienst.de">info@wetzlar-schlüsseldienst.de</a></li>
                 </ul>
             </LegalSection>
 
@@ -83,8 +83,8 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">4. Steuerliche Angaben</h2>
                 <p>Die steuerliche Identifikation ist für die korrekte Rechnungsstellung und gewerbliche Transparenz notwendig.</p>
                 <ul>
-                    <li><strong>Steuernummer:</strong> 03986300160</li>
-                    <li><strong>Umsatzsteuer-ID:</strong> Wird nicht erteilt, da Befreiung als Kleinunternehmen gemäß § 19 UStG vorliegt.</li>
+                    <li><b>Steuernummer:</b> 03986300160</li>
+                    <li><b>Umsatzsteuer-ID:</b> Wird nicht erteilt, da Befreiung als Kleinunternehmen gemäß § 19 UStG vorliegt.</li>
                 </ul>
             </LegalSection>
 
@@ -92,9 +92,9 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">5. Berufs- & Aufsichtsangaben</h2>
                 <p>Angaben zur beruflichen Tätigkeit gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
                 <ul>
-                    <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
-                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35578 Wetzlar</li>
-                    <li><strong>Geltende berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
+                    <li><b>Berufsbezeichnung:</b> Schlüsseldienst / Sicherheitstechnik</li>
+                    <li><b>Zuständige Handwerkskammer:</b> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35578 Wetzlar</li>
+                    <li><b>Geltende berufsrechtliche Regelungen:</b> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
                 </ul>
             </LegalSection>
 
@@ -102,7 +102,7 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">6. Redaktionell Verantwortlicher</h2>
                 <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <strong>Mina Saad</strong><br />
+                    <b>Mina Saad</b><br />
                     Langgasse 70<br />
                     35578 Wetzlar
                 </div>
@@ -113,7 +113,7 @@ export default function ImpressumPage() {
                 <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link erreichen:</p>
                 <p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr</a></p>
                 <p>Unsere E-Mail-Adresse lautet: <code>info@wetzlar-schlüsseldienst.de</code></p>
-                <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                <p><b>Hinweis gemäß § 36 VSBG:</b> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
             </LegalSection>
 
             <LegalSection id="8-haftung">

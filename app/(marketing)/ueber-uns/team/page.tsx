@@ -46,6 +46,7 @@ export default function TeamPage() {
 
       <Section spacing="lg" background="gray">
         <Container>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900">Unsere Schlüsseldienst-Experten im Überblick</h2>
           <Grid columns={3} gap="lg">
             {team.map((member) => (
               <TeamCard key={member.id} member={member} />

@@ -37,6 +37,15 @@ export default function LocalPricing({ city }: { city: LocationData }) {
         "Auch an arbeitsfreien Tagen oder Feiertagen sind wir für Sie da."
     ], city.slug, 4);
 
+    // Rotate feature labels to prevent duplicate content across pages
+    const featureDay1 = pickVariant(["Werktags 06-20 Uhr", "Mo-Fr 06:00-19:59 Uhr", "Werktags tagsüber"], city.slug, 10);
+    const featureDay2 = pickVariant(["Zerstörungsfreie Öffnung (>99%)", "Schonende Öffnung garantiert", "Beschädigungsfreie Technik"], city.slug, 11);
+    const featureDay3 = pickVariant(["Festpreis am Telefon genannt", "Verbindlicher Preis vorab", "Transparente Preisauskunft"], city.slug, 12);
+    const featureNight1 = pickVariant(["20:00 bis 05:59 Uhr", "Nachts 20-06 Uhr", "Abend- und Nachteinsatz"], city.slug, 13);
+    const featureNight2 = pickVariant(["Gleiche Pünktlichkeit", "Schnelle Ankunft auch nachts", "Prompter Nachtservice"], city.slug, 14);
+    const featureWeekend1 = pickVariant(["Rund um die Uhr am Wochenende", "Sa/So 24h Bereitschaft", "Komplettes Wochenende verfügbar"], city.slug, 15);
+    const featureWeekend2 = pickVariant(["Priorisierter Service in Notlagen", "Bevorzugter Noteinsatz", "Schnelle Hilfe bei Notfällen"], city.slug, 16);
+
     return (
         <section id="preise" aria-labelledby="preise-heading" className="bg-transparent relative px-[var(--section-px)] py-[var(--section-py)] border-y border-[var(--border-subtle)]">
             <div className="absolute inset-0 bg-white/60 backdrop-blur-lg z-[-1]"></div>
@@ -60,7 +69,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             title="Tür zugefallen"
                             price={city.pricing.basePrice}
                             description={descDay}
-                            features={["Werktags 06-20 Uhr", "Zerstörungsfreie Öffnung (>99%)", "Festpreis am Telefon genannt",
+                            features={[featureDay1, featureDay2, featureDay3,
                                 ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
                             ]}
                             isPopular={true}
@@ -69,7 +78,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             title="Abends & Nachts"
                             price={city.pricing.basePriceNight || 119}
                             description={descNight}
-                            features={["20:00 bis 05:59 Uhr", "Gleiche Pünktlichkeit", "Gleiche Zerstörungsfreiheit",
+                            features={[featureNight1, featureNight2, "Gleiche Zerstörungsfreiheit",
                                 ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
                             ]}
                         />
@@ -77,7 +86,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             title="Wochenende/Feiertag"
                             price={city.pricing.basePriceWeekend || 179}
                             description={descWeekend}
-                            features={["Rund um die Uhr am Wochenende", "Priorisierter Service in Notlagen", "Defekte Schlösser öffnen",
+                            features={[featureWeekend1, featureWeekend2, "Defekte Schlösser öffnen",
                                 ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
                             ]}
                         />

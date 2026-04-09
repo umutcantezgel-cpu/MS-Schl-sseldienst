@@ -28,9 +28,9 @@ export function TeamCard({ member, className = "" }: TeamCardProps) {
         />
       </div>
 
-      <h4 className="text-lg font-bold text-gray-900 mb-1">
+      <h3 className="text-lg font-bold text-gray-900 mb-1">
         {member.name}
-      </h4>
+      </h3>
       
       <p className="text-sm text-blue-600 font-medium mb-4">
         {member.role}
