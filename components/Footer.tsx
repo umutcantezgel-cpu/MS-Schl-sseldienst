@@ -71,9 +71,9 @@ export default function Footer() {
         <Image
          src="/images/footer-logo.svg"
          alt="Schlüssel Schmiede Wetzlar Logo"
-         width={300}
-         height={80}
-         className="w-auto h-[80px] object-contain"
+         width={500}
+         height={140}
+         className="w-auto h-[140px] object-contain"
          unoptimized
         />
        </Link>
