@@ -98,12 +98,33 @@ function FloatingPaths({ position }: { position: number }) {
   );
 }
 
-// Remove static featureCards array as we are building a bespoke Bento Grid
-export default function HeroSection() {
-  // Parallax Setup
+function DesktopParallax() {
   const { scrollY } = useScroll();
   const backgroundY = useTransform(scrollY, [0, 800], ["0%","25%"]);
   const opacityFade = useTransform(scrollY, [0, 600], [1, 0]);
+
+  return (
+    <m.div 
+      className="absolute inset-0 z-0 pointer-events-none hidden md:block"
+      style={{ y: backgroundY, opacity: opacityFade }}
+    >
+      <div className="absolute inset-0" />
+      <FloatingPaths position={1} />
+    </m.div>
+  );
+}
+
+// Remove static featureCards array as we are building a bespoke Bento Grid
+export default function HeroSection() {
+  const [isMounted, setIsMounted] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    setIsMounted(true);
+    if (window.innerWidth < 768) {
+      setIsDesktop(false);
+    }
+  }, []);
 
   return (
     <section
@@ -117,13 +138,7 @@ export default function HeroSection() {
       </div>
 
       {/* ── Parallax Background Layer (Desktop only) ── */}
-      <m.div 
-        className="absolute inset-0 z-0 pointer-events-none hidden md:block"
-        style={{ y: backgroundY, opacity: opacityFade }}
-      >
-        <div className="absolute inset-0" />
-        <FloatingPaths position={1} />
-      </m.div>
+      {isMounted && isDesktop && <DesktopParallax />}
 
       {/* Content wird über dem global fixierten Hintergrund gerendert */}
       <div className="container relative z-[10] mx-auto px-5 sm:px-8 lg:px-10 h-full flex flex-col justify-center">
