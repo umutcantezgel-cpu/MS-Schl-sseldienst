@@ -7,7 +7,7 @@ import RevealSection from "@/components/motion/RevealSection";
 import { SectionHeader } from "@/components/ui/typography/SectionHeader";
 
 const ServiceMapWrapper = nextDynamic(() => import("@/components/maps/ServiceMapWrapper"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[400px] rounded-xl" aria-label="Karte wird geladen" />,
+  loading: () => <div className="animate-pulse bg-gray-100 h-[400px] rounded-xl" role="status" aria-label="Karte wird geladen" />,
 });
 
 export default function InteractiveMapSection() {

@@ -25,10 +25,10 @@ import { getFAQSchema } from "@/lib/schema";
 const PersonalizedHero = nextDynamic(() => import("@/components/growth/PersonalizedHero"));
 const PersonalizedCTA = nextDynamic(() => import("@/components/growth/PersonalizedCTA"));
 const TestimonialCarousel = nextDynamic(() => import("@/components/sections/TestimonialCarousel").then(mod => mod.TestimonialCarousel), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-96 rounded-xl" aria-label="Bewertungen werden geladen" />,
+  loading: () => <div className="animate-pulse bg-gray-100 h-96 rounded-xl" role="status" aria-label="Bewertungen werden geladen" />,
 });
 const ProcessSteps = nextDynamic(() => import("@/components/trust/ProcessSteps"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-64 rounded-xl" aria-label="Ablauf wird geladen" />,
+  loading: () => <div className="animate-pulse bg-gray-100 h-64 rounded-xl" role="status" aria-label="Ablauf wird geladen" />,
 });
 
 // ── PAGE-LEVEL METADATA (overrides layout defaults) ────────────────────────
