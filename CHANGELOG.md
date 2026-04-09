@@ -2,6 +2,22 @@
 
 Alle Änderungen über die 20-Phasen Enterprise Upgrade Pipeline.
 
+## Phase 23 — Forensic Molecular Codebase Clean
+- **Root-Hygiene:** 27+ verwaiste Scripts, Reports und Artefakte entfernt (~460 KB)
+- **AI-Context:** 10 `.ai-*`/`.*-state.md` Dateien entfernt (~48 KB), lebt in `.github/copilot-instructions.md`
+- **Asset-Ordner:** `Logos/`, `MS-Bilder/`, `Neue Bilder Integrieren/` bereinigt
+- **Dependency:** `react-calendly` (ungenutzt) deinstalliert, `@next/bundle-analyzer` nach devDependencies verschoben
+- **SSOT-Fix (KRITISCH):** Platzhalter-Telefonnummer `+49-176-12345678` → echte Nummer `06441 80 56 279`
+- **SSOT-Fix:** "1530/1520/2530 Minuten" → "15–30/15–20/25–30 Minuten" an 7+ Stellen
+- **SSOT-Fix:** PayPal-Erwähnung aus Blog-MDX entfernt
+- **SSOT-Fix:** Geo-Koordinaten in layout.tsx, metadata.ts, serviceSchema.ts, jsonld.ts auf dynamischen SSOT-Import umgestellt
+- **SSOT-Fix:** Kreditkarte zur `acceptedPayments` in company.ts hinzugefügt (AGB-konform)
+- **SSOT-Fix:** Canonical URL in jsonld.ts auf zentrale siteUrl aus schema.ts umgestellt
+- **Dead Code:** `getFAQsByCategory()`, `generateOrganizationSchema()`, `getCompanyInfo()`, `lib/data/images.ts`, `lib/data/faq.ts` entfernt
+- **Code-Hygiene:** JSX-Tag-Fehler in datenschutz/page.tsx, TypeScript-Fehler in StatsSection.tsx behoben
+- **.gitignore:** Erweitert um 15+ Artefakt-Muster gegen zukünftige Verschmutzung
+- **Build:** 0 Errors (lint + typecheck + build), 7/7 SSOT-Integritätsprüfungen bestanden
+
 ## Phase 22 — Business Data Integrity & NAP-Konsistenz
 - Single Source of Truth (SSOT): Hardcoded Geschäftsdaten durch zentrales `lib/data/company.ts` ersetzt
 - Duplicate Content Entfernung: `schluessel-schmiede/page.tsx` komplett umgeschrieben für SEO-Eindeutigkeit

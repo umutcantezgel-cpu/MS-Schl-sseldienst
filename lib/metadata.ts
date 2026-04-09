@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { siteUrl } from "./schema";
+import { companyInfo } from "@/lib/data/company";
 
 interface GenerateMetadataProps {
     title: string;
@@ -93,8 +94,8 @@ export const generateSharedMetadata = ({
         other: {
             "geo.region": "DE-HE",
             "geo.placename": "Wetzlar",
-            "geo.position": "50.5606;8.5048",
-            "ICBM": "50.5606, 8.5048",
+            "geo.position": `${companyInfo.geo.latitude};${companyInfo.geo.longitude}`,
+            "ICBM": `${companyInfo.geo.latitude}, ${companyInfo.geo.longitude}`,
         },
     };
 };

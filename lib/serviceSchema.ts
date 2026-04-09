@@ -1,4 +1,5 @@
 import { siteUrl } from "./schema";
+import { companyInfo } from "@/lib/data/company";
 
 export function generateServiceSchema({ title, description, url, price }: { title: string, description: string, url: string, price: number }) {
     return {
@@ -16,8 +17,8 @@ export function generateServiceSchema({ title, description, url, price }: { titl
             "@type": "GeoCircle",
             "geoMidpoint": {
                 "@type": "GeoCoordinates",
-                "latitude": 50.5606,
-                "longitude": 8.5048
+                "latitude": companyInfo.geo.latitude,
+                "longitude": companyInfo.geo.longitude
             },
             "geoRadius": "50000"
         },

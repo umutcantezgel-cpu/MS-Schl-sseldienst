@@ -1,6 +1,5 @@
 import { companyInfo } from "@/lib/data/company";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wetzlar-schlüsseldienst.de";
+import { siteUrl } from "@/lib/schema";
 const companyName = companyInfo.localStore.name;
 const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || companyInfo.email;
 const telephone = companyInfo.phone.link;

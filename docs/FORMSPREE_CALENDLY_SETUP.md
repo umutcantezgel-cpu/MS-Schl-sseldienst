@@ -128,7 +128,7 @@ NEXT_PUBLIC_CALENDLY_URL="https://calendly.com/schluesseldienst-wz/sicherheitsbe
 |-----------|-------|----------|
 | Kontaktformular → Formspree | `app/actions/contact.ts` | Server Action mit Zod-Validation + Honeypot → `fetch()` an Formspree API |
 | Fallback AJAX → Formspree | `lib/forms/formspree.ts` | Client-seitige `submitToFormspree()` mit Retry-Logik |
-| Calendly Widget | `components/booking/CalendlyWidget.tsx` | `react-calendly` InlineWidget mit Design-System Theming |
+| Calendly Widget | `components/booking/CalendlyWidget.tsx` | direkter iframe-Embed mit Design-System Theming |
 | DSGVO Consent Gate | `components/booking/CalendlyConsentGate.tsx` | Two-Click-Solution: Calendly erst nach Marketing-Cookie-Zustimmung |
 
 ---

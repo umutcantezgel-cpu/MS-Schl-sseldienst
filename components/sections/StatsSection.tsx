@@ -1,4 +1,4 @@
-import { getCompanyInfo } from "@/lib/data/company";
+import { companyInfo } from "@/lib/data/company";
 import { cn } from "@/lib/utils";
 import { CheckCircle2, History, Briefcase, Users } from "lucide-react";
 
@@ -7,8 +7,6 @@ interface StatsSectionProps {
 }
 
 export function StatsSection({ className }: StatsSectionProps) {
-  const companyInfo = getCompanyInfo();
-  
   const currentYear = new Date().getFullYear();
   const yearsExperience = currentYear - (companyInfo.foundedYear || 2012);
   
@@ -21,19 +19,19 @@ export function StatsSection({ className }: StatsSectionProps) {
     },
     {
       id: "projects",
-      value: `${(companyInfo.totalProjects || 15000).toLocaleString('de-DE')}+`,
+      value: "15.000+",
       label: "Erfolgreiche Einsätze",
       icon: <Briefcase className="w-8 h-8 text-[var(--color-red-500)]" />
     },
     {
       id: "satisfaction",
-      value: `${companyInfo.customerSatisfaction || 99}%`,
+      value: "99%",
       label: "Kundenzufriedenheit",
       icon: <CheckCircle2 className="w-8 h-8 text-[var(--color-red-500)]" />
     },
     {
       id: "team",
-      value: `${companyInfo.employeeCount || 8}`,
+      value: "8",
       label: "Experten im Team",
       icon: <Users className="w-8 h-8 text-[var(--color-red-500)]" />
     }

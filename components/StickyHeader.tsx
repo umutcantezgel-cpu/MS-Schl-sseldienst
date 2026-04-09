@@ -115,7 +115,7 @@ export default function StickyHeader() {
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
-                  src="/images/logo-neu.svg"
+                  src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
               width={500}
               height={500}
@@ -398,7 +398,7 @@ export default function StickyHeader() {
             <div className="flex justify-between items-center px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
-                      src="/images/logo-neu.svg"
+                      src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar"
                   width={500}
                   height={500}

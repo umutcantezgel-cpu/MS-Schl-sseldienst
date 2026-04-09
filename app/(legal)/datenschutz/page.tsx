@@ -71,19 +71,19 @@ export default function DatenschutzPage() {
                       <h3 className="text-lg font-bold text-gray-900 mt-0 mb-4">{entry.name}</h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-6 text-sm">
                         <div className="md:col-span-3">
-                          <b className="text-gray-900 block mb-1">Erhobene Daten:</strong>
+                          <strong className="text-gray-900 block mb-1">Erhobene Daten:</strong>
                           <span className="text-gray-600">{entry.dataCollected.join(", ")}</span>
                         </div>
                         <div>
-                          <b className="text-gray-900 block mb-1">Rechtsgrundlage:</strong>
+                          <strong className="text-gray-900 block mb-1">Rechtsgrundlage:</strong>
                           <span className="text-gray-600">{entry.legalBasis}</span>
                         </div>
                         <div>
-                          <b className="text-gray-900 block mb-1">Empfänger:</strong>
+                          <strong className="text-gray-900 block mb-1">Empfänger:</strong>
                           <span className="text-gray-600">{entry.recipient}</span>
                         </div>
                         <div>
-                          <b className="text-gray-900 block mb-1">Speicherdauer:</strong>
+                          <strong className="text-gray-900 block mb-1">Speicherdauer:</strong>
                           <span className="text-gray-600">{entry.retentionPeriod}</span>
                         </div>
                       </div>

@@ -65,3 +65,12 @@ build_error*.log
 playwright-report/
 test-results/
 coverage/
+
+# Phase 23 Cleanup Artifacts
+sweep_*.py
+lhreport_*.json
+curl_response.html
+.ai-*
+.*-state.md
+netlify.toml
+.lighthouserc.js

@@ -13,7 +13,7 @@ export const companyInfo: CompanyInfo = {
   parentCompany: {
     name: "MS Schlüsseldienst Wetzlar",
     street: "Gloelstraße 11",
-    postalCode: "35576",
+    postalCode: "35578",
     city: "Wetzlar",
     state: "Hessen",
     country: "Deutschland"
@@ -33,7 +33,7 @@ export const companyInfo: CompanyInfo = {
     startingPriceValue: 99,
     travelCostWetzlar: "0 Euro",
     travelCostWetzlarValue: 0,
-    acceptedPayments: ["Barzahlung", "EC-Karte", "Überweisung"]
+    acceptedPayments: ["Barzahlung", "EC-Karte", "Kreditkarte", "Überweisung"]
   },
   partnership: {
     isAdacPartner: true,
@@ -55,7 +55,3 @@ export const companyInfo: CompanyInfo = {
     instagram: "https://instagram.com/schluessel_schmiede_wetzlar"
   }
 };
-
-export function getCompanyInfo(): CompanyInfo {
-  return companyInfo;
-}

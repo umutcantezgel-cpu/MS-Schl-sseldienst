@@ -231,8 +231,8 @@ export function generateHowToSchema(title: string, description: string) {
             {
                 "@type": "HowToStep",
                 "position": 2,
-                "name": "Anfahrt in 1530 Minuten",
-                "text": "Unser lokaler Techniker macht sich sofort auf den Weg und ist in 1530 Minuten bei Ihnen vor Ort."
+                "name": "Anfahrt in 15–30 Minuten",
+                "text": "Unser lokaler Techniker macht sich sofort auf den Weg und ist in 15–30 Minuten bei Ihnen vor Ort."
             },
             {
                 "@type": "HowToStep",
@@ -247,35 +247,6 @@ export function generateHowToSchema(title: string, description: string) {
                 "text": "Sie zahlen nur den vorab vereinbarten Festpreis. Keine versteckten Kosten, keine Überraschungen."
             }
         ]
-    };
-}
-
-function generateOrganizationSchema() {
-    return {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": companyInfo.localStore.name,
-        "url": siteUrl,
-        "logo": `${siteUrl}/images/logo-neu.svg`,
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": companyInfo.phone.link,
-            "contactType": "customer service",
-            "areaServed": "DE",
-            "availableLanguage": ["de", "en", "tr"]
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": companyInfo.localStore.street,
-            "addressLocality": companyInfo.localStore.city,
-            "addressRegion": companyInfo.localStore.state,
-            "postalCode": companyInfo.localStore.postalCode,
-            "addressCountry": "DE"
-        },
-        "sameAs": [
-            companyInfo.socialMedia.facebook,
-            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
-        ].filter(Boolean)
     };
 }
 

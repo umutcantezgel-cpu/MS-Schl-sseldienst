@@ -2,7 +2,7 @@ export type ServiceType = 'doorFallen' | 'doorLocked' | 'carOpening' | 'safeOpen
 export type TimeSlot = 'day' | 'evening' | 'night';
 
 export const PRICING: Record<ServiceType, Record<TimeSlot, number | null>> = {
-    doorFallen: { day: 89, evening: 119, night: 149 },
+    doorFallen: { day: 99, evening: 119, night: 149 },
     doorLocked: { day: 129, evening: 159, night: 189 },
     carOpening: { day: 99, evening: 129, night: 159 },
     safeOpening: { day: null, evening: null, night: null } // "Auf Anfrage"

@@ -10,6 +10,7 @@ import StickyCtaBar from "@/components/trust/StickyCtaBar";
 const Footer = nextDynamic(() => import("@/components/Footer"));
 const MobileBottomBar = nextDynamic(() => import("@/components/MobileBottomBar"));
 import { generateLocalBusinessSchema, generateWebSiteSchema, siteUrl } from"@/lib/schema";
+import { companyInfo } from "@/lib/data/company";
 import { SkipNav } from "@/components/ui/SkipNav";
 import { AnnouncerProvider } from "@/components/providers/Announcer";
 import MotionProvider from "@/components/providers/MotionProvider";
@@ -100,8 +101,8 @@ export const metadata: Metadata = {
  other: {
    "geo.region": "DE-HE",
    "geo.placename": "Wetzlar",
-   "geo.position": "50.5606;8.5048",
-   "ICBM": "50.5606, 8.5048",
+   "geo.position": `${companyInfo.geo.latitude};${companyInfo.geo.longitude}`,
+   "ICBM": `${companyInfo.geo.latitude}, ${companyInfo.geo.longitude}`,
  },
 };
 

@@ -53,12 +53,12 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Kommt der Schlüsseldienst auch nach Gießen?",
-        answer: "Ja, Schlüssel Schmiede Wetzlar bedient Gießen mit einer Anfahrtszeit von 1520 Minuten zum identischen Festpreis ohne zusätzliche Anfahrtsgebühren.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar bedient Gießen mit einer Anfahrtszeit von 15–20 Minuten zum identischen Festpreis ohne zusätzliche Anfahrtsgebühren.",
         category: "anfahrt",
     },
     {
         question: "Kommt der Schlüsseldienst auch nach Marburg?",
-        answer: "Ja, Schlüssel Schmiede Wetzlar bedient auch Marburg an der Lahn mit einer Anfahrtszeit von 2530 Minuten. Es gelten die gleichen Festpreise wie in Wetzlar.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar bedient auch Marburg an der Lahn mit einer Anfahrtszeit von 25–30 Minuten. Es gelten die gleichen Festpreise wie in Wetzlar.",
         category: "anfahrt",
     },
     {
@@ -80,7 +80,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Wie läuft eine Türöffnung ab?",
-        answer: "Der Ablauf bei der Schlüssel Schmiede Wetzlar ist einfach: 1. Sie rufen an, 2. Der Preis wird sofort am Telefon genannt, 3. Unser Techniker ist in 1530 Minuten bei Ihnen, 4. Die Tür wird zerstörungsfrei geöffnet, 5. Sie zahlen den vereinbarten Festpreis.",
+        answer: "Der Ablauf bei der Schlüssel Schmiede Wetzlar ist einfach: 1. Sie rufen an, 2. Der Preis wird sofort am Telefon genannt, 3. Unser Techniker ist in 15–30 Minuten bei Ihnen, 4. Die Tür wird zerstörungsfrei geöffnet, 5. Sie zahlen den vereinbarten Festpreis.",
         category: "leistungen",
     },
     {
@@ -149,7 +149,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Was mache ich, wenn ich mich ausgesperrt habe?",
-        answer: "Rufen Sie die Schlüssel Schmiede Wetzlar an unter +49-176-12345678. Wir nennen Ihnen sofort den Festpreis und sind in 1530 Minuten bei Ihnen. Wichtig: Versuchen Sie nicht, die Tür selbst aufzubrechen und das verursacht fast immer teure Schäden.",
+        answer: "Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441 80 56 279. Wir nennen Ihnen sofort den Festpreis und sind in 15–30 Minuten bei Ihnen. Wichtig: Versuchen Sie nicht, die Tür selbst aufzubrechen und das verursacht fast immer teure Schäden.",
         category: "notdienst",
     },
     {
@@ -159,7 +159,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Wie erreiche ich den Schlüsseldienst Wetzlar am schnellsten?",
-        answer: "Der schnellste Weg ist ein Anruf unter +49-176-12345678. Sie erreichen direkt unseren Einsatzdisponenten und kein Callcenter, keine Warteschleife. Alternativ können Sie über die Website oder per WhatsApp Kontakt aufnehmen.",
+        answer: "Der schnellste Weg ist ein Anruf unter 06441 80 56 279. Sie erreichen direkt unseren Einsatzdisponenten und kein Callcenter, keine Warteschleife. Alternativ können Sie über die Website oder per WhatsApp Kontakt aufnehmen.",
         category: "notdienst",
     },
     {
@@ -169,11 +169,11 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Tür zugefallen in Wetzlar und was tun?",
-        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter +49-176-12345678. Festpreis ab 99 Euro, Anfahrt in 1530 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter und lokale Techniker direkt aus Wetzlar.",
+        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441 80 56 279. Festpreis ab 99 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter und lokale Techniker direkt aus Wetzlar.",
         category: "notdienst",
     },
 
-    // ============ FACHGESCHÄFT & LADEN ============
+    // ============ LADENGESCHÄFT & SERVICE ============
     {
         question: "Wo finde ich die Schlüssel Schmiede in Wetzlar?",
         answer: "Unser Ladengeschäft befindet sich in der Langgasse 70, 35578 Wetzlar und mitten in der Wetzlarer Innenstadt. Wir sind von Montag bis Samstag von 10:00 bis 18:00 Uhr für Sie geöffnet. Unser Schlüsseldienst-Notdienst ist darüber hinaus 24/7 erreichbar.",
@@ -190,14 +190,6 @@ export const FAQ_DATA: FAQItem[] = [
         category: "leistungen",
     },
 ];
-
-/**
- * Get FAQs by category, or all if no category specified
- */
-function getFAQsByCategory(category?: FAQItem["category"]): FAQItem[] {
-    if (!category) return FAQ_DATA;
-    return FAQ_DATA.filter(faq => faq.category === category);
-}
 
 /**
  * Get the top N FAQs for homepage (hand-picked highest-impact questions)
