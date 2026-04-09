@@ -141,10 +141,10 @@ export default function Footer() {
         <nav aria-labelledby={`footer-nav-${idx}`} className="space-y-3">
          <ul className="space-y-3">
           {section.links.map((link, linkIdx) => (
-          <li key={linkIdx}>
+           <li key={linkIdx}>
            <Link
             href={link.url}
-            className="text-sm text-[var(--color-charcoal-300)] hover:text-[var(--color-red-500)] transition-colors"
+            className="text-sm text-[var(--color-charcoal-300)] hover:text-[var(--color-red-500)] transition-colors inline-block py-1.5 w-full"
            >
             {link.text}
            </Link>

@@ -363,7 +363,7 @@ export default function StickyHeader() {
             {/* Mobile Call CTA (Icon Only) */}
             <a
               href="tel:+4964418056279"
-              className="flex sm:hidden items-center justify-center w-[46px] h-[46px] bg-[var(--color-red-500)] text-white rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] active:scale-95 transition-transform"
+              className="flex sm:hidden items-center justify-center w-12 h-12 bg-[var(--color-red-500)] text-white rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] active:scale-95 transition-transform"
               aria-label="Sofort Anrufen"
             >
               <Phone className="w-5 h-5 animate-pulse" />
@@ -371,7 +371,7 @@ export default function StickyHeader() {
 
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="lg:hidden flex items-center justify-center w-[46px] h-[46px] bg-gray-50 hover:bg-gray-100 text-gray-900 rounded-full transition-colors active:scale-95"
+              className="lg:hidden flex items-center justify-center w-12 h-12 bg-gray-50 hover:bg-gray-100 text-gray-900 rounded-full transition-colors active:scale-95"
               aria-label="Menü öffnen"
             >
               <Menu className="w-6 h-6" />
