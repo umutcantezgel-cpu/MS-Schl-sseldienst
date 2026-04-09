@@ -5,7 +5,7 @@ import { SectionHeader } from "@/components/ui/typography/SectionHeader";
 import { Typography } from "@/components/ui/typography/Typography";
 
 const ContactForm = nextDynamic(() => import("@/components/contact/ContactForm"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-96 rounded-xl" aria-label="Formular wird geladen" />,
+  loading: () => <div className="animate-pulse bg-gray-100 h-96 rounded-xl" role="status" aria-label="Formular wird geladen" />,
 });
 
 export default function ContactSection() {
