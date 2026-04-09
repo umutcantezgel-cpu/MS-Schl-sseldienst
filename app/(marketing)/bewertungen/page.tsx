@@ -193,7 +193,7 @@ export default function BewertungenPage() {
    <section aria-label="Einzelne Kundenbewertungen" className="px-[var(--section-px)] -mt-16 lg:-mt-24 pb-[var(--section-py)] relative z-20">
     <div className="mx-auto max-w-7xl">
      <StaggerReveal className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
-      {reviews.map((review) => (
+      {reviews.slice(0, 12).map((review) => (
        <StaggerItem key={review.name} animation={entryAnimations.slideUpFade}>
          <article className="rounded-[var(--radius-24)] bg-white p-8 shadow-[var(--elevation-2)] border border-[var(--border-subtle)] h-full flex flex-col justify-between hover:shadow-[var(--elevation-3)] transition-all group">
           <div>
