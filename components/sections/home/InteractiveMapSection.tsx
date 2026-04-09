@@ -29,7 +29,7 @@ export default function InteractiveMapSection() {
           {[
             { value: "78+", label: "Einsatzgebiete" },
             { value: "50 km", label: "Einsatzradius" },
-            { value: "0 EUR", label: "Anfahrt in Wetzlar" },
+            { value: "0€", label: "Anfahrt in der Wetzlarer Kernstadt" },
             { value: "15-30 Min", label: "Ø Ankunftszeit" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col items-center justify-center gap-1 bg-white/70 backdrop-blur-xl border border-[var(--color-charcoal-100)] rounded-xl px-4 py-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
