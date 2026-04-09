@@ -214,7 +214,7 @@ export default function TresoroeffnungPage() {
 
    <RelatedServices currentServiceId="tresoroeffnung" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Tresor öffnen? Diskret und zertifiziert." benefits={["Mechanische und elektronische Öffnung","Höchste Vertraulichkeit garantiert","Erfahrene Spezialisten vor Ort"]} buttonText="Tresoröffnung anfragen" socialProof="Diskreter Service für Privat und Gewerbe" subtitle="Safes · Tresore · Wertschutzschränke" />
   </div>
  );
 }

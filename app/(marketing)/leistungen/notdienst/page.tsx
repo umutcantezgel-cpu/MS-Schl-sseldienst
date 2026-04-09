@@ -216,7 +216,7 @@ export default function NotdienstPage() {
 
    <RelatedServices currentServiceId="notdienst" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="24/7 Schlüsselnotdienst Wetzlar." benefits={["Lokale Monteure statt Callcenter","Garantierter Festpreis vor Anfahrt","Auch nachts und an Feiertagen"]} buttonText="Notdienst sofort rufen" socialProof="Ihr lokaler 24h-Notdienst seit 15+ Jahren" subtitle="Wetzlar · Gießen · Lahn-Dill-Kreis" />
   </div>
  );
 }

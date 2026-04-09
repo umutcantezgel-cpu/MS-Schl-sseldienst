@@ -203,7 +203,7 @@ export default function AutoschluesselPage() {
 
    <RelatedServices currentServiceId="autoschluessel" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Schlüssel kaputt? Wir reparieren ihn." benefits={["Programmierung und Gehäusetausch","Alle gängigen Fahrzeugmarken","Schneller Service ohne Wartezeit"]} buttonText="KFZ-Schlüssel reparieren lassen" socialProof="Spezialisiert auf Autoschlüssel aller Art" subtitle="Codierung · Elektronik · Sofort-Reparatur" />
   </div>
  );
 }

@@ -604,7 +604,7 @@ export default function SchluesselSchmiedePage() {
    {/* ═══ 11+12. CTAs & Related ═══ */}
    <RelatedServices currentServiceId="schluessel-nachmachen" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Besuchen Sie unsere Schlüssel Schmiede." benefits={["Fachgeschäft in der Langgasse 70","Alle Services ohne Termin","Persönliche Beratung vor Ort"]} buttonText="Jetzt anrufen oder vorbeikommen" socialProof="Ihr Fachgeschäft für Schlüssel und Sicherheit" subtitle="Mo-Sa 10-18 Uhr · Langgasse 70 · Wetzlar" />
   </div>
  );
 }

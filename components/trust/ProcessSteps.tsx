@@ -4,6 +4,16 @@ import { Phone, Euro, DoorOpen, CreditCard } from "lucide-react";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 
+/**
+ * [SEO-FIX: Seobility Duplicate Text Blocks]
+ * headline/subtitle props allow each page to differentiate this section.
+ */
+interface ProcessStepsProps {
+  headline?: string;
+  subtitle?: string;
+  badgeText?: string;
+}
+
 const steps = [
   {
     id: 1,
@@ -35,22 +45,30 @@ const steps = [
   },
 ];
 
-export default function ProcessSteps() {
+export default function ProcessSteps({
+  headline = "So einfach funktioniert unser Service",
+  subtitle = "Keine Überraschungen, keine endlosen Wartezeiten. Ein transparenter 4-Schritte-Ablauf für Ihre maximale Sicherheit.",
+  badgeText = "SO EINFACH GEHT\u0027S",
+}: ProcessStepsProps) {
   return (
     <section aria-labelledby="process-heading" className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] py-[var(--section-py)] overflow-hidden relative">
       <div className="mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-12">
           {/* Pill Badge */}
           <span className="inline-flex items-center rounded-full bg-red-50 text-[var(--color-red-600)] text-xs font-bold uppercase tracking-[0.15em] px-4 py-1.5 mb-4 border border-red-100/60">
-            SO EINFACH GEHT&apos;S
+            {badgeText}
           </span>
 
           <h2 id="process-heading" className="typo-h2 text-[color:var(--text-primary)]">
-            So einfach funktioniert unser <span className="text-[var(--color-red-500)]">Service</span>
+            {headline.includes("Service") ? (
+              <>So einfach funktioniert unser <span className="text-[var(--color-red-500)]">Service</span></>
+            ) : (
+              headline
+            )}
           </h2>
           <div className="mx-auto h-[4px] w-[64px] rounded-full bg-[var(--color-red-500)]" />
           <p className="mt-[var(--space-6)] text-[color:var(--text-secondary)] text-lg max-w-2xl mx-auto leading-relaxed">
-            Keine Überraschungen, keine endlosen Wartezeiten. Ein transparenter 4-Schritte-Ablauf für Ihre maximale Sicherheit.
+            {subtitle}
           </p>
         </div>
 

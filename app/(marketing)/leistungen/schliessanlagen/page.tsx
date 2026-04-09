@@ -260,7 +260,7 @@ export default function SchliessanlagenPage() {
    {/* 7. Final CTA */}
    <RelatedServices currentServiceId="schliessanlagen" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Schließanlage planen? Wir beraten Sie." benefits={["Kostenlose Objektbegehung vor Ort","Ein Schlüssel für alle Türen","Mechanisch und elektronisch"]} buttonText="Beratungstermin vereinbaren" socialProof="Professionelle Anlagen für Gewerbe und Eigenheim" subtitle="Planung · Montage · Wartung" />
   </div>
  );
 }

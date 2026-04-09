@@ -87,7 +87,7 @@ export default function HomePage() {
       <PersonalizedCTA />
       <SeoContentSection />
 
-      <FinalCTA className="bg-[var(--color-red-500)]" />
+      <FinalCTA className="bg-[var(--color-red-500)]" headline="Schlüsselproblem? Rufen Sie jetzt an!" benefits={["Lokaler Fachbetrieb aus Wetzlar","Feste Preise ohne Überraschungen","Sofortige Hilfe rund um die Uhr"]} buttonText="Schlüssel Schmiede anrufen" socialProof="Über 500 zufriedene Kunden aus Wetzlar" subtitle="Langgasse 70 · Wetzlar · 24/7 erreichbar" />
 
       <JsonLd data={getFAQSchema(getHomepageFAQs())} />
     </>

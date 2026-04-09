@@ -159,7 +159,7 @@ export default function UhrenServicePage() {
 
    <RelatedServices currentServiceId="uhren" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Uhren-Service direkt im Fachgeschäft." benefits={["Schneller Batteriewechsel vor Ort","Armbänder kürzen und tauschen","Ohne Termin, sofort erledigt"]} buttonText="Uhren-Service anfragen" socialProof="Professioneller Uhren-Service in Wetzlar" subtitle="Batterien · Armbänder · Alle Uhrenmarken" />
   </div>
  );
 }

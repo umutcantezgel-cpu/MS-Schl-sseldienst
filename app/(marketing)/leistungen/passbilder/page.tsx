@@ -200,7 +200,7 @@ export default function PassbilderPage() {
 
    <RelatedServices currentServiceId="passbilder" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Passbilder? Sofort und biometrisch." benefits={["100% biometrisch korrekte Fotos","Ohne Termin im Laden in Wetzlar","Für Reisepass, Personalausweis und Visum"]} buttonText="Jetzt Passbilder machen" socialProof="Tausende zufriedene Kunden im Laden" subtitle="Langgasse 70 · Sofort-Service · Montags bis Samstags" />
   </div>
  );
 }

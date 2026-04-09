@@ -252,7 +252,7 @@ export default function AutooeffnungPage() {
    {/* 7. Final CTA */}
    <RelatedServices currentServiceId="autooeffnung" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Auto verschlossen? Wir helfen sofort." benefits={["Lackschonende Öffnung aller Marken","Notdienst 24/7 auch am Wochenende","Keine Anfahrtsgebühren in Wetzlar"]} buttonText="Autoöffnung anfordern" socialProof="Schnelle Hilfe bei Autoschlüssel-Notfällen" subtitle="Alle Fahrzeugtypen · Kratzerfrei · Sofort" />
   </div>
  );
 }

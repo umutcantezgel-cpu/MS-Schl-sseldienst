@@ -120,8 +120,10 @@ export default function HeroSection() {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
     if (window.innerWidth < 768) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDesktop(false);
     }
   }, []);

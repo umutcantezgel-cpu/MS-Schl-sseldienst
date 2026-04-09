@@ -341,7 +341,7 @@ export default function SicherheitstechnikPage() {
    {/* 7. Final CTA */}
    <RelatedServices currentServiceId="sicherheitstechnik" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Sicherheitstechnik vom Fachmann." benefits={["Individuelle Beratung zu Hause","Panzerriegel und Zusatzschlösser","Montage am gleichen Tag möglich"]} buttonText="Sicherheitsberatung anfragen" socialProof="Zertifizierte Sicherheitslösungen für Wetzlar" subtitle="Beratung · Einbau · Nachrüstung" />
   </div>
  );
 }

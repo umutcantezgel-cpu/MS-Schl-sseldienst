@@ -234,7 +234,7 @@ export default function SchluesselNachmachenPage() {
    {/* 7. Final CTA */}
    <RelatedServices currentServiceId="schluessel-nachmachen" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Ersatzschlüssel? Sofort zum Mitnehmen." benefits={["Alle Schlüsseltypen auf Lager","Präzise CNC-Fräsung vor Ort","Kein Termin nötig, einfach vorbeikommen"]} buttonText="Jetzt Schlüssel anfertigen" socialProof="Tausende Schlüssel für Wetzlar gefräst" subtitle="Haustür · Briefkasten · Auto · Tresor" />
   </div>
  );
 }

@@ -242,7 +242,7 @@ export default function TuroeffnungPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="So läuft Ihre Türöffnung ab" subtitle="Von Ihrem Anruf bis zur geöffneten Tür – unser bewährter Ablauf für sichere Türöffnungen in Wetzlar." badgeText="ABLAUF TÜRÖFFNUNG" />
 
    {/* 5. Proof (Bewertungen) */}
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Türöffnung" subtitle="Echte Kundenstimmen" />
@@ -318,7 +318,7 @@ export default function TuroeffnungPage() {
    {/* 7. Final CTA */}
    <RelatedServices currentServiceId="turoeffnung" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Tür zugefallen? Wir öffnen sofort." benefits={["Zerstörungsfreie Öffnung in 99% der Fälle","Festpreis ab 50€ ohne Anfahrtskosten","In unter 25 Minuten bei Ihnen"]} buttonText="Türöffnung beauftragen" socialProof="Hunderte Türen in Wetzlar geöffnet" subtitle="Zertifizierter Meisterbetrieb · Festpreise · 24/7" />
   </div>
  );
 }

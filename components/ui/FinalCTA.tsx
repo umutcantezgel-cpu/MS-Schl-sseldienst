@@ -5,7 +5,34 @@ import { cn } from"@/lib/utils";
 import HeartbeatCTA from "@/components/animations/HeartbeatCTA";
 import { triggerHaptic } from "@/lib/haptics";
 
-export default function FinalCTA({ className }: { className?: string }) {
+/**
+ * [SEO-FIX: Seobility Duplicate Text Blocks]
+ * Each page MUST pass unique headline/benefits/buttonText/socialProof
+ * to prevent Seobility from flagging identical text across 165 pages.
+ */
+interface FinalCTAProps {
+  className?: string;
+  headline?: string;
+  benefits?: string[];
+  buttonText?: string;
+  socialProof?: string;
+  subtitle?: string;
+}
+
+const defaultBenefits = [
+  "Techniker in 20-30 Minuten vor Ort",
+  "Festpreis wird sofort am Telefon genannt",
+  "0% Versteckte Kosten garantiert",
+];
+
+export default function FinalCTA({
+  className,
+  headline = "Vor verschlossener Tür? Wir sind sofort für Sie da.",
+  benefits = defaultBenefits,
+  buttonText = "Jetzt Notdienst Rufen",
+  socialProof = "Von über 500+ zufriedenen Kunden gewählt",
+  subtitle = "In 20-30 Min. vor Ort • Festpreis vor Anfahrt • 24/7 Notdienst",
+}: FinalCTAProps) {
   return (
     <section aria-labelledby="final-cta-heading" className={cn("w-full bg-[var(--color-red-500)] py-[var(--section-py)] overflow-hidden relative", className)}>
       {/* Background Pattern for depth */}
@@ -15,12 +42,11 @@ export default function FinalCTA({ className }: { className?: string }) {
       <div className="container mx-auto px-[var(--space-6)] md:px-[var(--space-8)] max-w-4xl relative z-10 flex flex-col items-center text-center">
 
         <h2 id="final-cta-heading" className="typo-h2 text-balance text-white">
-          Vor verschlossener Tür? <br className="hidden md:block" /> Wir sind sofort für Sie da.
+          {headline}
         </h2>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-[var(--space-4)] md:gap-[var(--space-8)] mb-[var(--space-12)]">
-          {["Techniker in 20-30 Minuten vor Ort","Festpreis wird sofort am Telefon genannt","0% Versteckte Kosten garantiert"
-          ].map((benefit, i) => (
+          {benefits.map((benefit, i) => (
             <div key={i} className="flex items-center gap-[var(--space-3)] text-base md:text-lg font-medium text-white shadow-sm">
               <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white/20 shrink-0">
                 <Check className="h-5 w-5 text-white" />
@@ -45,7 +71,7 @@ export default function FinalCTA({ className }: { className?: string }) {
               className="group flex items-center justify-center gap-3 w-full h-[72px] bg-white text-[var(--color-red-500)] hover:bg-slate-50 text-xl font-black rounded-[var(--radius-16)] shadow-[var(--elevation-2)] hover:-translate-y-2 hover:shadow-[var(--elevation-3)] transition-all duration-300 ease-out focus:outline-none focus:ring-4 focus:ring-white/50"
             >
               <Phone className="h-6 w-6" />
-              Jetzt Notdienst Rufen
+              {buttonText}
               <ArrowRight className="h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
           </HeartbeatCTA>
@@ -54,11 +80,11 @@ export default function FinalCTA({ className }: { className?: string }) {
             <div className="flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/20">
               <Users className="w-4 h-4 text-white" />
               <span className="text-sm text-white font-medium">
-                Von über 500+ zufriedenen Kunden gewählt
+                {socialProof}
               </span>
             </div>
             <span className="text-sm text-white/70 font-medium text-center max-w-sm">
-              In 20-30 Min. vor Ort • Festpreis vor Anfahrt • 24/7 Notdienst
+              {subtitle}
             </span>
           </div>
         </div>

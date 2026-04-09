@@ -266,7 +266,7 @@ export default function EinbruchschutzPage() {
 
    <RelatedServices currentServiceId="einbruchschutz" />
    <PersonalizedCTA />
-   <FinalCTA />
+   <FinalCTA headline="Einbruch? Sofortige Absicherung." benefits={["Notfall-Absicherung nach Einbruch","Kostenlose Sicherheitsberatung","VdS-geprüfte Schließtechnik"]} buttonText="Einbruchschutz jetzt anfragen" socialProof="Geprüfte Sicherheitstechnik vom Fachmann" subtitle="Soforthilfe · Panzerriegel · Stangenschlösser" />
   </div>
  );
 }
