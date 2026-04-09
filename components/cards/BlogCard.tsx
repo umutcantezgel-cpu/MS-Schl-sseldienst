@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SeoLink } from "@/components/nav/SeoLink";
 import { BlogPost } from "@/lib/types";
 
 export interface BlogCardProps {
@@ -34,9 +34,9 @@ export function BlogCard({ post, className = "" }: BlogCardProps) {
         </div>
 
         <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight line-clamp-2">
-          <Link href={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors">
+          <SeoLink href={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors" uniqueContext={post.title}>
             {post.title}
-          </Link>
+          </SeoLink>
         </h3>
 
         <p className="text-gray-600 line-clamp-3 mb-6 flex-grow">
@@ -44,15 +44,16 @@ export function BlogCard({ post, className = "" }: BlogCardProps) {
         </p>
 
         <div className="mt-auto border-t border-gray-100 pt-4 flex items-center justify-between">
-          <Link 
+          <SeoLink 
             href={`/blog/${post.slug}`} 
             className="text-blue-600 font-medium hover:text-blue-800 transition-colors text-sm flex items-center"
+            uniqueContext={post.title}
           >
             Artikel lesen <span className="sr-only">: {post.metadata?.title}</span>
             <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </Link>
+          </SeoLink>
         </div>
       </div>
     </article>

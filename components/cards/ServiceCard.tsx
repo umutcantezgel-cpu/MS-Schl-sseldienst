@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SeoLink } from "@/components/nav/SeoLink";
 import { Service } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/Icon";
@@ -36,9 +36,9 @@ export function ServiceCard({ service, className = "" }: ServiceCardProps) {
 
       <div className="mt-auto">
         <Button asChild variant="secondary" className="w-full group-hover:bg-blue-50">
-          <Link href={`/leistungen/${service.slug}`} title={`Details zur Leistung: ${service.title}`}>
+          <SeoLink href={`/leistungen/${service.slug}`} title={`Details zur Leistung: ${service.title}`} uniqueContext={service.title}>
             Zu {service.title}
-          </Link>
+          </SeoLink>
         </Button>
       </div>
     </div>

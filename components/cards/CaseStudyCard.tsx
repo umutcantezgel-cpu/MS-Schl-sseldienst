@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SeoLink } from "@/components/nav/SeoLink";
 import { CaseStudy } from "@/lib/types";
 import { ArrowRight } from "lucide-react";
 
@@ -11,9 +11,10 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
   const displayHighlights = caseStudy.results?.slice(0, 2) || [];
 
   return (
-    <Link 
+    <SeoLink 
       href={`/referenzen/${caseStudy.slug}`}
       className="group block h-full bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+      uniqueContext={caseStudy.title}
     >
       <div className="bg-gradient-to-br from-[#0A1A2F] to-[#122A4E] text-white p-6 relative overflow-hidden">
         {/* Abstract background shape */}
@@ -56,6 +57,6 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>
-    </Link>
+    </SeoLink>
   );
 }

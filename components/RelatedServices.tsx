@@ -1,4 +1,4 @@
-import Link from"next/link";
+import { SeoLink } from "@/components/nav/SeoLink";
 import { CONTENT_GRAPH } from"@/lib/contentGraph";
 import { ArrowRight } from"lucide-react";
 
@@ -15,10 +15,11 @@ export default function RelatedServices({ currentServiceId }: { currentServiceId
           if (!service) return null;
 
           return (
-            <Link
+            <SeoLink
               key={slug}
               href={service.slug}
               className="group block p-6 bg-[var(--surface-primary)] rounded-[var(--radius-lg)] elevation-1 border border-[var(--border-subtle)] hover:shadow-[var(--shadow-lift)] transition-all hover:border-[var(--color-red-600)]"
+              uniqueContext={service.title}
             >
               <div className="text-lg font-semibold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">
                 {service.title}
@@ -27,7 +28,7 @@ export default function RelatedServices({ currentServiceId }: { currentServiceId
                 Details zu {service.title}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
-            </Link>
+            </SeoLink>
           );
         })}
       </div>

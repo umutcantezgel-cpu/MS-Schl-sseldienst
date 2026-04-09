@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SeoLink } from "@/components/nav/SeoLink";
 import { ReactNode } from "react";
 import { MapPin } from "lucide-react";
 
@@ -28,12 +28,13 @@ export default function RegionalLink({ region, children, icon = true }: Props) {
   const url = `/einsatzgebiete/${normalizeRegionSlug(region)}`;
   
   return (
-    <Link 
+    <SeoLink 
       href={url} 
       className="inline-flex items-center gap-1 text-[var(--color-red-600)] hover:text-[var(--color-red-700)] font-medium no-underline hover:underline underline-offset-4"
+      uniqueContext={`Schlüsseldienst in ${region}`}
     >
       {icon && <MapPin className="w-3.5 h-3.5 inline text-[var(--color-red-500)]" />}
       {children}
-    </Link>
+    </SeoLink>
   );
 }
