@@ -209,7 +209,7 @@ export default function TuroeffnungPage() {
         />
         <PriceCard
           title="Tür abgeschlossen"
-          price={80}
+          price={129}
           description="Schlüssel verloren oder doppelt abgeschlossen."
           features={["Werktags 08-18 Uhr","Profi-Werkzeug Einsatz","Ersatzzylinder zubuchbar (ab 25€)",
           ]}

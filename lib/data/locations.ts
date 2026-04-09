@@ -95,7 +95,7 @@ export const locations: LocationData[] = [
         id: "wetzlar-kernstadt",
         slug: "schluesseldienst-wetzlar",
         name: "Wetzlar Kernstadt",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5558, longitude: 8.5047 },
         logistics: {
             drivingTimeMinutes: "5-10",
@@ -147,7 +147,7 @@ export const locations: LocationData[] = [
 <p>Die <strong>Wetzlarer Kernstadt</strong> ist nicht nur das pochende wirtschaftliche wie kulturelle Herz des Lahn-Dill-Kreises, sie ist vor allem unser ureigenes Zuhause. Als ein hier ansässiger, bodenständiger Meisterbetrieb sind wir den Straßen zwischen dem imposanten Wetzlarer Dom, dem Leitz-Park und der belebten Bahnhofstraße tiefer verbunden als jeder überregionale Vermittler. Ob Sie in einem denkmalgeschützten Gebäude in der historischen Altstadt wohnen oder eine hochmoderne Büroeinheit am Forum Wetzlar betreiben: Die Architektur in Wetzlar ist so facettenreich wie Theatervorstellungen in der Rittal Arena.</p>
 
 <h3>Null-Euro Anfahrtskosten direkt im Stadtzentrum</h3>
-<p>Transparenz beginnt bei uns an der Heimat-Postleitzahl 35578. Da wir direkt aus Wetzlar operieren, ist es für uns eine absolute Selbstverständlichkeit, dass Kunden innerhalb der Kernstadt <strong>keinerlei Fahrtkosten</strong> zahlen. Während dubiose Zentralen aus dem Frankfurter oder gar norddeutschen Raum hohe Anfahrtsgelder addieren, startet Ihr Rechnungsbetrag bei null Euro für den Weg. Wir erheben exklusiv und transparent nur unseren werktäglichen Festpreis von 99 Euro für die Standardöffnung. Mehr Lokalkolorit geht nicht.</p>
+<p>Transparenz beginnt bei uns an der Heimat-Postleitzahl 35576. Da wir direkt aus Wetzlar operieren, ist es für uns eine absolute Selbstverständlichkeit, dass Kunden innerhalb der Kernstadt <strong>keinerlei Fahrtkosten</strong> zahlen. Während dubiose Zentralen aus dem Frankfurter oder gar norddeutschen Raum hohe Anfahrtsgelder addieren, startet Ihr Rechnungsbetrag bei null Euro für den Weg. Wir erheben exklusiv und transparent nur unseren werktäglichen Festpreis von 99 Euro für die Standardöffnung. Mehr Lokalkolorit geht nicht.</p>
 
 <h3>Blitzschnelle Hilfe dank Heimvorteil</h3>
 <p>Sie haben den Schlüssel stecken gelassen kurz vor dem Termin im Rathaus? Unser Logistikvorteil in der Goethestadt ist unschlagbar. Wir kennen die Staustrecken am Karl-Kellner-Ring im morgendlichen Berufsverkehr und umfahren Blockaden durch intelligente Routenplanung etwa über Brückenbauwerke der B49. So garantieren wir Anfahrtszeiten von meist unter 10 Minuten und wir sind oft schon unterwegs, bevor Sie aufgelegt haben.</p>
@@ -187,7 +187,7 @@ export const locations: LocationData[] = [
         faqs: [
             {
                 question: "Zahle ich in den Wetzlarer Randgebieten wie Dalheim oder Sturmkopf Anfahrtskosten?",
-                answer: "Nein! Wir verlangen keinerlei Anfahrtskosten für das gesamte Postleitzahlen-Areal 35578 der Kernstadt, inklusive Dalheim und Sturmkopf. Die Fahrt ist für Sie komplett kostenlos."
+                answer: "Nein! Wir verlangen keinerlei Anfahrtskosten für das gesamte Postleitzahlen-Areal 35576 der Kernstadt, inklusive Dalheim und Sturmkopf. Die Fahrt ist für Sie komplett kostenlos."
             },
             {
                 question: "Wie lange muss ich am Wochenende in der Wetzlarer Innenstadt auf Hilfe warten?",

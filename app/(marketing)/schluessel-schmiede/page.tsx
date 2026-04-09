@@ -38,7 +38,7 @@ function getLocalBusinessSchema() {
    "@type": "PostalAddress",
    streetAddress: "Langgasse 70",
    addressLocality: "Wetzlar",
-   postalCode: "35578",
+   postalCode: "35576",
    addressRegion: "Hessen",
    addressCountry: "DE",
   },
@@ -158,7 +158,7 @@ export default function SchluesselSchmiedePage() {
               06441 8056279
             </a>
             <a
-              href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
+              href="https://maps.google.com/?q=Langgasse+70,+35576+Wetzlar"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 h-[56px] px-8 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md rounded-xl font-bold text-base border border-white/20 hover:-translate-y-[1px] transition-all"
@@ -565,7 +565,7 @@ export default function SchluesselSchmiedePage() {
          <MapPin className="h-16 w-16 text-[var(--color-red-200)] mb-4" />
          <p className="text-base font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35576 Wetzlar</p>
          <a
-          href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
+          href="https://maps.google.com/?q=Langgasse+70,+35576+Wetzlar"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--color-red-500)] text-white font-bold text-sm hover:bg-[var(--color-red-600)] transition-colors"

@@ -82,7 +82,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
               <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[color:var(--text-tertiary)]" />
               <input 
                 type="text" 
-                placeholder="Postleitzahl (z.B. 35578)" 
+                placeholder="Postleitzahl (z.B. 35576)" 
                 className="w-full text-base py-4 pl-12 pr-4 bg-[var(--surface-secondary)] border border-[var(--border-subtle)] rounded-xl focus:ring-2 focus:ring-[var(--color-red-500)] focus:border-transparent outline-none transition-all font-medium placeholder:font-normal placeholder:text-gray-400"
                 value={formData.plz}
                 onChange={(e) => setFormData({...formData, plz: e.target.value.replace(/[^0-9]/g, '').slice(0, 5)})}

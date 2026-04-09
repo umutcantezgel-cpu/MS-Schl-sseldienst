@@ -5,7 +5,7 @@ export const companyInfo: CompanyInfo = {
     name: "Schlüssel Schmiede Wetzlar",
     tagline: "24 Stunden Notdienst",
     street: "Langgasse 70",
-    postalCode: "35578",
+    postalCode: "35576",
     city: "Wetzlar",
     state: "Hessen",
     country: "Deutschland"
@@ -13,7 +13,7 @@ export const companyInfo: CompanyInfo = {
   parentCompany: {
     name: "MS Schlüsseldienst Wetzlar",
     street: "Gloelstraße 11",
-    postalCode: "35578",
+    postalCode: "35576",
     city: "Wetzlar",
     state: "Hessen",
     country: "Deutschland"

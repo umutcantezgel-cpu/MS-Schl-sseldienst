@@ -75,7 +75,7 @@ function generateReviewSchema() {
     "@type": "PostalAddress",
     "streetAddress": "Langgasse 70",
     "addressLocality": "Wetzlar",
-    "postalCode": "35578",
+    "postalCode": "35576",
     "addressCountry": "DE"
   },
   "aggregateRating": {

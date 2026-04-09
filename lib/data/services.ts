@@ -17,7 +17,7 @@ export const services: Service[] = [
     ],
     pricing: {
       currency: "EUR",
-      amount: 50,
+      amount: 99,
       interval: "one-time",
       features: ["Festpreis für normale zugefallene Türen (Tagsüber)", "Zzgl. fairer Zuschlag am Wochenende/Nacht (30€)"]
     },

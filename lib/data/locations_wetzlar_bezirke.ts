@@ -122,7 +122,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-dalheim",
         slug: "schluesseldienst-wetzlar-dalheim",
         name: "Wetzlar-Dalheim",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5450, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -164,7 +164,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Durch die unmittelbare Nähe von gerade einmal rund 2 Kilometern zum Stadtzentrum und die hervorragende Anbindung über die B49-Abfahrt Wetzlar-Dalheim erreichen unsere Einsatzfahrzeuge jede Straße in diesem Bezirk in <strong>3 bis 5 Minuten</strong>. Ob im älteren Teil an der Berliner Straße oder in den neueren Wohnkomplexen und wir garantieren Ihnen absolute Bestzeiten.</p>
 
 <h3>Null-Euro-Anfahrt in der Kernstadt</h3>
-<p>Als offizieller Stadtbezirk von Wetzlar (PLZ 35578) fällt Dalheim vollständig in unsere kostenfreie Anfahrtszone. Für die reine Öffnung einer zugefallenen Tür berechnen wir werktags tagsüber einen transparenten <strong>Festpreis von 99 Euro</strong>. Keine Kilometerpauschale, keine Rüstzeit, keine versteckten Gebühren.</p>
+<p>Als offizieller Stadtbezirk von Wetzlar (PLZ 35576) fällt Dalheim vollständig in unsere kostenfreie Anfahrtszone. Für die reine Öffnung einer zugefallenen Tür berechnen wir werktags tagsüber einen transparenten <strong>Festpreis von 99 Euro</strong>. Keine Kilometerpauschale, keine Rüstzeit, keine versteckten Gebühren.</p>
 
 <h3>Handwerkliche Präzision im Dalheimer Wohngebiet</h3>
 <p>Die Architektur in Dalheim ist vielfältig: Von robusten Siedlungshäusern aus der Nachkriegszeit über große Mehrfamilienhaushalte bis hin zu energetisch modernisierten Neubauten. Unsere Monteure sind auf jedes Schloss-Szenario vorbereitet. Mit speziellen Fräsen für verklemmte Riegel und modernsten Elektropicks für simple Fallenöffnungen gewährleisten wir eine spürbar über 99% liegende Zerstörungsfreiheits-Quote bei zugefallenen Haus- und Wohnungstüren in Dalheim.</p>`,
@@ -206,7 +206,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-altstadt",
         slug: "schluesseldienst-wetzlar-altstadt",
         name: "Wetzlar-Altstadt",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5558, longitude: 8.5020 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -290,7 +290,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-neustadt",
         slug: "schluesseldienst-wetzlar-neustadt",
         name: "Wetzlar-Neustadt",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5570, longitude: 8.5080 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -335,7 +335,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Die opulenten Gründerzeitgebäude in der Neustadt sind im Laufe der Jahre stark energetisch und sicherheitsrelevant saniert worden. Schwere Holztüren, massive Mehrfachverriegelungen sowie Kernziehschutzbeschläge sind hier an der Tagesordnung. Unser Monteur-Pool führt Hightech-Öffnungsgeräte im Gepäck, die genau auf solche gehobenen Altbau- und Kanzleisicherungen abgestimmt sind. 99 Prozent der zugefallenen Türen weichen hierbei vollends ohne Aufbohren des Schlosses.</p>
 
 <h3>100% ohne Anfahrtskosten</h3>
-<p>Die Neustadt markiert neben der Altstadt das dichteste Zentrum von Wetzlar (PLZ 35578). Die logische Konsequenz: absolute Null-Toleranz bei Fahrtkosten in diesem Bezirk. Unser Versprechen gilt: Eine Türöffnung am Tag wird Sie hier bei einer ungeprägten zugefallenen Falle fest 99 Euro kosten. Regional, zuverlässig, stark.</p>`,
+<p>Die Neustadt markiert neben der Altstadt das dichteste Zentrum von Wetzlar (PLZ 35576). Die logische Konsequenz: absolute Null-Toleranz bei Fahrtkosten in diesem Bezirk. Unser Versprechen gilt: Eine Türöffnung am Tag wird Sie hier bei einer ungeprägten zugefallenen Falle fest 99 Euro kosten. Regional, zuverlässig, stark.</p>`,
 
         localTestimonials: [
             {
@@ -374,7 +374,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-bueblingshausen",
         slug: "schluesseldienst-wetzlar-bueblingshausen",
         name: "Wetzlar-Büblingshausen",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5430, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -458,7 +458,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-sturzkopf",
         slug: "schluesseldienst-wetzlar-sturzkopf",
         name: "Wetzlar-Sturzkopf",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5480, longitude: 8.4980 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -508,7 +508,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-stoppelberger-hohl",
         slug: "schluesseldienst-wetzlar-stoppelberger-hohl",
         name: "Wetzlar-Stoppelberger Hohl",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5460, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "5", distanceFromHQ: 2 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -558,7 +558,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         id: "wetzlar-silhoefer-aue",
         slug: "schluesseldienst-wetzlar-silhoefer-aue",
         name: "Wetzlar-Silhöfer Aue/Westend",
-        plz: "35578",
+        plz: "35576",
         coordinates: { latitude: 50.5580, longitude: 8.4920 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
@@ -573,7 +573,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         buildingTypes: "Attraktive Neubauten an der Lahn, moderne Appartements sowie Altbaubestände Richtung Westend.",
         parkingInfo: "Durch die Uferbebauung parken wir flexibel in den Anliegerstraßen, dank Handwerker-Sondervignette oft auch bei Parkraummangel direkt am Eingang.",
         heroVariant: "Schlüsseldienst Wetzlar-Silhöfer Aue / Westend. Soforthilfe zum Festpreis.",
-        fareInfo: "Die Silhöfer Aue fällt als 35578er-Bezirk komplett unter unsere 0-Euro-Anfahrtskosten-Kulanz.",
+        fareInfo: "Die Silhöfer Aue fällt als 35576er-Bezirk komplett unter unsere 0-Euro-Anfahrtskosten-Kulanz.",
         scenarios: [
             { icon: "home", title: "Wohnungstür Lahn-Appartement", description: "Zugezogene Tür der neuen Premium-Wohnung? Wir garantieren 100% materialschonende Spion- oder Fallengleit-Öffnung." },
             { icon: "shield-alert", title: "Sportvereine & Gewerbe", description: "Zugang zum Bootsclub oder Restaurant verschlossen? Unauffällige und schnelle Profilzylinder-Öffnung rund um die Uhr." },

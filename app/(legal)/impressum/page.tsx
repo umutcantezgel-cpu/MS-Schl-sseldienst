@@ -73,7 +73,7 @@ export default function ImpressumPage() {
                         loading="lazy" 
                         allowFullScreen 
                         referrerPolicy="no-referrer-when-downgrade"
-                        src="https://maps.google.com/maps?q=Langgasse+70,+35578+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=Langgasse+70,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         title="Standort Schlüssel Schmiede Wetzlar"
                     />
                 </div>

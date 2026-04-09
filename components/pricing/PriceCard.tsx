@@ -24,15 +24,18 @@ export default function PriceCard({
 }: PriceCardProps) {
   return (
     <div
-      className={`relative flex flex-col rounded-[var(--space-4)] bg-[var(--surface-primary)] p-[var(--space-7)] sm:p-[var(--space-8)] ring-1 transition-all duration-300 ${isPopular
-        ?"ring-[var(--color-red-500)] border-t-[3px] border-t-[var(--color-red-500)] shadow-[var(--elevation-3)] -translate-y-1"
-        :"ring-[var(--border-subtle)] shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)] hover:-translate-y-1"
+      className={`relative flex flex-col rounded-[24px] bg-white/90 backdrop-blur-3xl p-8 lg:p-10 transition-all duration-500 overflow-hidden ${isPopular
+        ? "border-2 border-[var(--color-red-500)]/30 shadow-[0_0_40px_rgba(185,28,28,0.1),0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-2 hover:shadow-[0_0_60px_rgba(185,28,28,0.15),0_12px_40px_rgba(0,0,0,0.12)]"
+        : "border border-[var(--border-subtle)] shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-1"
         }`}
     >
       {isPopular && (
-        <div className="absolute -top-[var(--space-4)] left-1/2 -translate-x-1/2 rounded-full bg-[var(--color-red-500)] px-[var(--space-4)] py-[var(--space-1)] text-white shadow-[var(--elevation-2)] font-bold text-xs uppercase tracking-wider">
+        <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)] text-white text-xs font-bold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap z-10">
           Am häufigsten gewählt
         </div>
+      )}
+      {isPopular && (
+        <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/10 rounded-bl-[100px] pointer-events-none" />
       )}
 
       <div className="mb-[var(--space-5)]">
@@ -45,17 +48,17 @@ export default function PriceCard({
       </div>
 
       <div className="mb-[var(--space-5)] flex flex-col gap-[var(--space-1)]">
-        <div className="flex items-baseline gap-[var(--space-1)]">
-          {typeof price ==="number" && (
-            <span className="typo-small text-[color:var(--text-tertiary)]">
+        <div className="flex items-baseline gap-1.5 flex-wrap">
+          {typeof price === "number" && (
+            <span className="text-sm font-bold text-[color:var(--text-tertiary)] uppercase tracking-widest shrink-0">
               ab
             </span>
           )}
-          <span className="typo-price-display">
+          <span className={`${typeof price === "number" ? "text-5xl lg:text-[4.5rem]" : "text-3xl"} font-black leading-none tracking-tighter tabular-nums shrink-0 ${isPopular ? "text-[var(--color-red-500)] drop-shadow-sm" : "text-[color:var(--text-primary)]"}`}>
             {price}
           </span>
-          {typeof price ==="number" && (
-            <span className="typo-price-display typo-price-currency">
+          {typeof price === "number" && (
+            <span className={`text-2xl font-bold shrink-0 ${isPopular ? "text-red-500" : "text-[color:var(--text-secondary)]"}`}>
               €
             </span>
           )}
@@ -70,9 +73,11 @@ export default function PriceCard({
 
       <ul role="list" className="mb-[var(--space-6)] space-y-[var(--space-3)] flex-1">
         {features.map((feature, index) => (
-          <li key={index} className="flex gap-[var(--space-3)]">
-            <Check className="h-5 w-5 shrink-0 text-[var(--color-primary)] mt-0.5" aria-hidden="true" />
-            <span className="text-[color:var(--text-secondary)] text-base leading-relaxed">
+          <li key={index} className="flex gap-3 items-start">
+            <div className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full mt-0.5 ${isPopular ? "bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]" : "bg-[var(--surface-secondary)] text-[color:var(--text-secondary)]"}`}>
+              <Check className="h-3.5 w-3.5" aria-hidden="true" />
+            </div>
+            <span className="text-[color:var(--text-secondary)] text-base leading-relaxed font-medium">
               {feature}
             </span>
           </li>

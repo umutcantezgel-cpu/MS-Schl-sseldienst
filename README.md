@@ -91,7 +91,7 @@ npm start
 
 - **Telefon:** 06441 8056279
 - **E-Mail:** info@wetzlar-schlüsseldienst.de
-- **Adresse:** Langgasse 70, 35578 Wetzlar
+- **Adresse:** Langgasse 70, 35576 Wetzlar
 
 ---
 
