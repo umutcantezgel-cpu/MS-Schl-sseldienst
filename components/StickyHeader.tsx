@@ -115,7 +115,7 @@ export default function StickyHeader() {
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
-              src="/images/logo-header.svg"
+                  src="/images/logo-neu.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
               width={500}
               height={500}
@@ -212,7 +212,7 @@ export default function StickyHeader() {
                            </div>
                            <div className="flex flex-col">
                              <span className="font-extrabold text-gray-900 text-base group-hover:text-amber-700 transition-colors">Schlüssel Schmiede</span>
-                             <span className="text-gray-500 text-[13.5px]">Fachgeschäft · Langgasse 70, Wetzlar</span>
+                             <span className="text-gray-500 text-[13.5px]">24 Stunden Notdienst · Langgasse 70, Wetzlar</span>
                            </div>
                          </Link>
                          <a href="tel:+4964418056279" className="flex items-center gap-2.5 px-6 py-3 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold rounded-xl shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] transition-all text-sm group hover:-translate-y-0.5">
@@ -398,7 +398,7 @@ export default function StickyHeader() {
             <div className="flex justify-between items-center px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
-                  src="/images/logo-header.svg"
+                      src="/images/logo-neu.svg"
                   alt="Schlüssel Schmiede Wetzlar"
                   width={500}
                   height={500}

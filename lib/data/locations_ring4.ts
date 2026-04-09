@@ -1,3 +1,4 @@
+import { companyInfo } from "@/lib/data/company";
 import { LocationData } from "./locations";
 
 export const ring4Locations: LocationData[] = [
@@ -13,7 +14,7 @@ export const ring4Locations: LocationData[] = [
             distanceFromHQ: 20,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 20,
@@ -122,7 +123,7 @@ export const ring4Locations: LocationData[] = [
             distanceFromHQ: 26,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 20,
@@ -231,7 +232,7 @@ export const ring4Locations: LocationData[] = [
             distanceFromHQ: 22,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 20,

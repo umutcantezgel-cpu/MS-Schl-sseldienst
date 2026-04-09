@@ -160,7 +160,7 @@ export default function HeroSection() {
                   <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
                 </span>
                 <span className="text-[color:var(--value-primary)] text-xs sm:text-sm md:text-sm font-semibold tracking-wide">
-                  Fachgeschäft geöffnet für persönliche Beratung vor Ort
+                  24h geöffnet für persönliche Beratung vor Ort
                 </span>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function HeroSection() {
               </span>
               {' '}
               <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-xl sm:text-[24px]">
-                Ihr Fachgeschäft für Schlüssel, Schlösser & Sicherheit
+                Ihr 24 Stunden Notdienst für Schlüssel, Schlösser & Sicherheit
               </span>
             </h1>
             </div>

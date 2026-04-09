@@ -1,3 +1,4 @@
+import { companyInfo } from "@/lib/data/company";
 import { LocationData } from "./locations";
 
 /**
@@ -17,7 +18,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35580",
         coordinates: { latitude: 50.5300, longitude: 8.4914 },
         logistics: { drivingTimeMinutes: "5-8", distanceFromHQ: 4 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)" },
         seo: {
             metaTitle: "Schlüsseldienst Nauborn — Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Wetzlar-Nauborn: In 5-8 Min. vor Ort im Wetzbachtal. Festpreis ab 99€, keine Anfahrtskosten. 24/7 Notdienst: 06441-8056279"
@@ -124,7 +125,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5450, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Dalheim — In 5 Min. da ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Dalheim. 3-5 Min. Anfahrt, keine Anfahrtskosten. Festpreis ab 99€. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Dalheim liegt als westlicher Ausläufer direkt im Stadtgebiet. Von unserem Wetzlarer Standort aus erreichen wir den Bezirk meist kreuzungsfrei über die B49 (Abfahrt Dalheim) oder die Europastraße in unter 5 Minuten.",
@@ -208,7 +209,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5558, longitude: 8.5020 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Wetzlar Altstadt — Schonende Öffnung", metaDescription: "Schlüsseldienst für die Wetzlarer Altstadt. Spezialisiert auf denkmalgeschützte Türen. In 3 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Direkt im Herzen der historischen Altstadt. Von unserer Zentrale aus bewegen wir uns in Windeseile und oft mit Sondergenehmigungen und durch die verwinkelten Altstadtstrukturen.",
@@ -292,7 +293,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5570, longitude: 8.5080 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Wetzlar-Neustadt — 24/7 ab 99€", metaDescription: "Schlüsseldienst Wetzlar-Neustadt. In 3 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Direkt östlich/nordöstlich an die historische Altstadt grenzend. Wir erreichen die Neustadt bequem über den Buderusplatz und die Gloelstraße innerhalb weniger Abzweigungen.",
@@ -376,7 +377,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5430, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Büblingshausen — Festpreis ab 99€", metaDescription: "Schlüsseldienst Büblingshausen: In 5 Min. vor Ort. Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über den Frankfurter Ring (B49) biegen wir blitzschnell Richtung Süden auf den Wetzlarer Berg (oder Volpertshäuser Straße) ab und stehen sofort in Büblingshausen.",
@@ -460,7 +461,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5480, longitude: 8.4980 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Sturzkopf — 24/7 Notdienst ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Sturzkopf. In 5 Min. da, Festpreis ab 99€, keine Anfahrtskosten. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die Bergstraße und Nauborner Straße erreichen wir den höher gelegenen Sturzkopf aus der Wetzlarer Innenstadt verkehrsarm in unter 5 Minuten.",
@@ -510,7 +511,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5460, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "5", distanceFromHQ: 2 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Stoppelberger Hohl — Festpreis 24/7", metaDescription: "Schlüsseldienst für die Stoppelberger Hohl in Wetzlar. In 5 Min. da, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Die Durchgangsstraße Stoppelberger Hohl erreichen wir über den Wöllbacher Tor / Frankfurter Straße meist schnurgerade und staufrei binnen 5 Minuten.",
@@ -560,7 +561,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35578",
         coordinates: { latitude: 50.5580, longitude: 8.4920 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Silhöfer Aue — In 3 Min. da ab 99€", metaDescription: "Schlüsseldienst für die Silhöfer Aue und das Westend in Wetzlar. In 3 Min. da, ab 99€ Festpreis. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Die Silhöfer Aue liegt unmittelbar an der Lahn. Von der Wetzlarer Innenstadt überqueren wir rasch die Lahn und sind oft in unter 3 Minuten auf der Westseite.",
@@ -610,7 +611,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         plz: "35576",
         coordinates: { latitude: 50.5620, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
-        pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
         seo: { metaTitle: "Schlüsseldienst Dillfeld — 24/7 Notdienst Festpreis", metaDescription: "Schlüsseldienst Wetzlar-Dillfeld. In 5 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die B49 / Bergstraße und den Kreuzungsbereich Dillfeld gelangen wir äußerst flüssig und direkt ins Wetzlarer Dillfeld.",

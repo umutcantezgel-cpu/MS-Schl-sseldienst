@@ -318,7 +318,7 @@ export default function TuroeffnungPage() {
    {/* 7. Final CTA */}
    <RelatedServices currentServiceId="turoeffnung" />
    <PersonalizedCTA />
-   <FinalCTA headline="Tür zugefallen? Wir öffnen sofort." benefits={["Zerstörungsfreie Öffnung in 99% der Fälle","Festpreis ab 50€ ohne Anfahrtskosten","In unter 25 Minuten bei Ihnen"]} buttonText="Türöffnung beauftragen" socialProof="Hunderte Türen in Wetzlar geöffnet" subtitle="Zertifizierter Meisterbetrieb · Festpreise · 24/7" />
+   <FinalCTA headline="Tür zugefallen? Wir öffnen sofort." benefits={["Zerstörungsfreie Öffnung in 99% der Fälle","Festpreis ab 99€ ohne Anfahrtskosten","In unter 25 Minuten bei Ihnen"]} buttonText="Türöffnung beauftragen" socialProof="Hunderte Türen in Wetzlar geöffnet" subtitle="Zertifizierter Meisterbetrieb · Festpreise · 24/7" />
   </div>
  );
 }

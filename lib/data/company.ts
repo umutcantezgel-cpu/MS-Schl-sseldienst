@@ -1,33 +1,59 @@
 import { CompanyInfo } from "../types";
 
 export const companyInfo: CompanyInfo = {
-  name: "Schlüssel Schmiede Wetzlar",
-  legalName: "Schlüssel Schmiede Wetzlar und ein Service der MS Schlüsseldienst GmbH",
-  address: "Langgasse 70, 35578 Wetzlar, Deutschland",
-  phone: "+49 6441 8056279",
-  email: "info@wetzlar-schlüsseldienst.de",
-  foundedYear: 2012,
-  employeeCount: 8,
-  totalProjects: 15400,
-  customerSatisfaction: 99,
-  certifications: ["IHK-Geprüft", "Handwerkskammer eingetragen", "VdS-Anerkannt", "ADAC Partner"],
-  socialMedia: {
-    linkedin: "https://linkedin.com/company/schluessel-schmiede-wetzlar",
-    twitter: "https://twitter.com/schluessel_schmiede",
-    instagram: "https://instagram.com/schluessel_schmiede_wetzlar"
+  localStore: {
+    name: "Schlüssel Schmiede Wetzlar",
+    tagline: "24 Stunden Notdienst",
+    street: "Langgasse 70",
+    postalCode: "35578",
+    city: "Wetzlar",
+    state: "Hessen",
+    country: "Deutschland"
   },
+  parentCompany: {
+    name: "MS Schlüsseldienst Wetzlar",
+    street: "Gloelstraße 11",
+    postalCode: "35576",
+    city: "Wetzlar",
+    state: "Hessen",
+    country: "Deutschland"
+  },
+  phone: {
+    main: "064418056279",
+    formatted: "06441 80 56 279",
+    link: "+4964418056279"
+  },
+  email: "info@wetzlar-schlüsseldienst.de",
   openingHours: {
-    "Montag - Sonntag": "00:00-24:00 (24h Notdienst)",
-    "Ladengeschäft (Mo-Sa)": "10:00-18:00"
+    store: "Montag bis Samstag von 10:00 bis 18:00 Uhr",
+    emergency: "24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr"
+  },
+  financial: {
+    startingPrice: "ab 99 Euro",
+    startingPriceValue: 99,
+    travelCostWetzlar: "0 Euro",
+    travelCostWetzlarValue: 0,
+    acceptedPayments: ["Barzahlung", "EC-Karte", "Überweisung"]
+  },
+  partnership: {
+    isAdacPartner: true,
+    certifications: [
+      "ADAC Partner",
+      "IHK-Geprüft", 
+      "Handwerkskammer eingetragen", 
+      "VdS-Anerkannt"
+    ]
   },
   geo: {
-    latitude: 50.5606,
-    longitude: 8.5048
+    latitude: 50.5567, // Adjusted approx Langgasse 70 coordinates
+    longitude: 8.5022
   },
-  paymentAccepted: ["Cash", "Credit Card", "EC-Karte"],
-  currenciesAccepted: "EUR",
-  priceRange: "ab 99€",
-  slogan: "Mehr als ein Laden und ein Ort für Vertrauen."
+  foundedYear: 2012,
+  socialMedia: {
+    facebook: "https://www.facebook.com/profile.php?id=61582567388378", // Existing link. Update if user provides new one.
+    linkedin: "https://linkedin.com/company/schluessel-schmiede-wetzlar",
+    instagram: "https://instagram.com/schluessel_schmiede_wetzlar"
+  }
 };
 
 export function getCompanyInfo(): CompanyInfo {

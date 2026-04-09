@@ -28,40 +28,40 @@ export function generateLocalBusinessSchema() {
         // [SEO: Locksmith Entity Schema for Google Knowledge Graph]
         // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
         "@type": ["LocalBusiness", "Locksmith", "Store"],
-        "name": "Schlüssel Schmiede Wetzlar",
-        "description": "Schlüssel Schmiede Wetzlar ist Ihr Fachgeschäft für Schlüssel, Schlösser und Sicherheitstechnik in der Langgasse 70 in Wetzlar. Wir bieten Schlüssel nachmachen, Schließanlagen-Planung, Sicherheitsberatung und professionellen Schlüsseldienst mit Festpreisen. Persönliche Beratung vor Ort sowie 24/7 Notdienst für den gesamten Lahn-Dill-Kreis.",
+        "name": companyInfo.localStore.name,
+        "description": `Schlüssel Schmiede Wetzlar ist Ihr 24 Stunden Notdienst für Schlüssel, Schlösser und Sicherheitstechnik in der ${companyInfo.localStore.street} in ${companyInfo.localStore.city}. Wir bieten Schlüssel nachmachen, Schließanlagen-Planung, Sicherheitsberatung und professionellen Schlüsseldienst mit Festpreisen ab 99 Euro. Persönliche Beratung vor Ort sowie 24/7 Notdienst für den gesamten Lahn-Dill-Kreis.`,
         "image": `${siteUrl}/hero-bg.jpg`,
         "logo": {
             "@type": "ImageObject",
-            "url": `${siteUrl}/og-image.png`,
+            "url": `${siteUrl}/images/logo-neu.svg`,
             "width": 1200,
             "height": 630
         },
         // [SEO: IDN Punycode applied und @id uses machine-readable canonical]
         "@id": `${siteUrl}/#localbusiness`,
         "url": siteUrl,
-        "telephone": [companyInfo.phone, "+491782471037"].filter(Boolean),
+        "telephone": [companyInfo.phone.link, "+491782471037"].filter(Boolean),
         "email": companyInfo.email,
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Langgasse 70",
-            "addressLocality": "Wetzlar",
-            "addressRegion": "Hessen",
-            "postalCode": "35578",
+            "streetAddress": companyInfo.localStore.street,
+            "addressLocality": companyInfo.localStore.city,
+            "addressRegion": companyInfo.localStore.state,
+            "postalCode": companyInfo.localStore.postalCode,
             "addressCountry": "DE"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": companyInfo.geo?.latitude || 50.5606,
-            "longitude": companyInfo.geo?.longitude || 8.5048
+            "latitude": companyInfo.geo.latitude,
+            "longitude": companyInfo.geo.longitude
         },
         "areaServed": [
             {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
                     "@type": "GeoCoordinates",
-                    "latitude": companyInfo.geo?.latitude || 50.5606,
-                    "longitude": companyInfo.geo?.longitude || 8.5048
+                    "latitude": companyInfo.geo.latitude,
+                    "longitude": companyInfo.geo.longitude
                 },
                 "geoRadius": "50000"
             },
@@ -75,7 +75,7 @@ export function generateLocalBusinessSchema() {
                 ],
                 "opens": "10:00",
                 "closes": "18:00",
-                "description": "Ladenöffnungszeiten Fachgeschäft"
+                "description": "Ladenöffnungszeiten der Schlüssel Schmiede"
             },
             {
                 "@type": "OpeningHoursSpecification",
@@ -85,22 +85,21 @@ export function generateLocalBusinessSchema() {
                 ],
                 "opens": "00:00",
                 "closes": "23:59",
-                "description": "24/7 Schlüsseldienst-Notdienst und auch an Feiertagen und nachts"
+                "description": "24/7 Notdienst"
             }
         ],
-        "priceRange": companyInfo.priceRange || "ab 99€",
-        "paymentAccepted": companyInfo.paymentAccepted || ["Cash", "Credit Card", "EC-Karte"],
-        "currenciesAccepted": companyInfo.currenciesAccepted || "EUR",
-        "slogan": companyInfo.slogan,
-        "foundingDate": companyInfo.foundedYear?.toString() || "2012",
+        "priceRange": companyInfo.financial.startingPrice,
+        "paymentAccepted": companyInfo.financial.acceptedPayments,
+        "currenciesAccepted": "EUR",
+        "slogan": companyInfo.localStore.tagline,
+        "foundingDate": companyInfo.foundedYear.toString(),
         "knowsLanguage": ["de", "en", "tr"],
         "sameAs": [
-            "https://www.facebook.com/profile.php?id=61582567388378",
-            "https://www.instagram.com/schluessel_schmiede_wetzlar/",
-            "https://www.linkedin.com/in/mina-saad-a218413a9/",
-            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar",
-            "https://www.gelbeseiten.de/gsbiz/ef5183d9-c45e-4b5f-9c89-251ff14ccfef"
-        ],
+            companyInfo.socialMedia.facebook,
+            companyInfo.socialMedia.instagram || "",
+            companyInfo.socialMedia.linkedin || "",
+            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
+        ].filter(Boolean),
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Schlüssel Schmiede Leistungen",
@@ -196,9 +195,9 @@ export function generateWebSiteSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Schlüssel Schmiede Wetzlar",
+        "name": companyInfo.localStore.name,
         "url": siteUrl,
-        "description": "Schlüssel Schmiede Wetzlar und Fachgeschäft für Schlüssel, Schlösser & Sicherheitstechnik. Auch 24/7 Schlüsseldienst in Wetzlar, Gießen und Lahn-Dill-Kreis.",
+        "description": `Schlüssel Schmiede Wetzlar und Ihr 24 Stunden Notdienst für Schlüssel, Schlösser & Sicherheitstechnik in Wetzlar, Gießen und Lahn-Dill-Kreis.`,
         "inLanguage": "de-DE",
         "publisher": {
             "@type": ["LocalBusiness", "Store"],
@@ -255,27 +254,28 @@ function generateOrganizationSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Schlüssel Schmiede Wetzlar",
+        "name": companyInfo.localStore.name,
         "url": siteUrl,
-        "logo": `${siteUrl}/og-image.png`,
+        "logo": `${siteUrl}/images/logo-neu.svg`,
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": companyInfo.phone,
+            "telephone": companyInfo.phone.link,
             "contactType": "customer service",
             "areaServed": "DE",
             "availableLanguage": ["de", "en", "tr"]
         },
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Langgasse 70",
-            "addressLocality": "Wetzlar",
-            "addressRegion": "Hessen",
-            "postalCode": "35578",
+            "streetAddress": companyInfo.localStore.street,
+            "addressLocality": companyInfo.localStore.city,
+            "addressRegion": companyInfo.localStore.state,
+            "postalCode": companyInfo.localStore.postalCode,
             "addressCountry": "DE"
         },
         "sameAs": [
+            companyInfo.socialMedia.facebook,
             "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
-        ]
+        ].filter(Boolean)
     };
 }
 

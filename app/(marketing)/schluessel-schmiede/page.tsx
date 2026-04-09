@@ -210,31 +210,31 @@ export default function SchluesselSchmiedePage() {
     </div>
    </div>
 
-   {/* ═══ 3. STORY , "Mehr als ein Laden" ═══ */}
+   {/* ═══ 3. STORY , "Wetzlars Präzisionszentrum" ═══ */}
    <section className="px-[var(--section-px)] py-24 md:py-32 relative z-20">
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="flex items-center gap-3 mb-6">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
-         <Hammer className="h-6 w-6" />
+         <ShieldCheck className="h-6 w-6" />
         </div>
-        <Badge variant="outline" className="text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Unser Ladengeschäft</Badge>
+        <Badge variant="outline" className="text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Wetzlars Präzisionszentrum</Badge>
        </div>
        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Mehr als ein Laden , <br className="hidden sm:block" />ein Ort für Vertrauen.
+        Moderne Sicherheitstechnik, <br className="hidden sm:block" />direkt in der Langgasse 70.
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="space-y-6 text-lg text-[color:var(--text-secondary)] leading-relaxed">
         <p>
-         Die Schlüssel Schmiede ist nicht einfach ein Geschäft. Sie ist aus dem Wunsch entstanden, Menschen direkt vor Ort zu helfen , mit <strong className="text-[color:var(--text-primary)]">Zeit, Verständnis und sauberer Arbeit</strong>.
+         Die Schlüssel Schmiede Wetzlar vereint traditionelle Handwerkskunst mit modernster Sicherheitstechnologie. Zentral gelegen im Herzen von Wetzlar, haben wir es uns als lokaler Handwerksbetrieb zur Aufgabe gemacht, nicht nur schnelle Notdiensteinsätze zu leisten, sondern Ihnen einen verlässlichen Anlaufpunkt für maßgeschneiderte Sicherheitslösungen zu bieten.
         </p>
         <p>
-         Hier geht es nicht darum, schnell etwas &bdquo;abzufertigen&ldquo;. Jeder Auftrag, jeder Schlüssel und jedes Anliegen wird ernst genommen. Kommen Sie herein, stellen Sie Fragen, schildern Sie Probleme , und lassen Sie sich in Ruhe beraten.
+         Wir fertigen hochpräzise mechanische Schlüssel und programmieren elektronische Fahrzeugschlüssel direkt an hochmodernen CNC-Fräsen. Jeder Auftrag – von der einzelnen Schlüsselkopie bis hin zur Konzeption einer komplexen Schließanlage – wird von unseren erfahrenen Sicherheitstechnikern mit höchster Sorgfalt und persönlichem Engagement ausgeführt.
         </p>
         <p>
-         Die Schlüssel Schmiede ist der <strong className="text-[color:var(--text-primary)]">stationäre Ladenbetrieb des Schlüssel Schmiede Wetzlar</strong>. Wir bündeln unsere Erfahrung aus dem mobilen Schlüsseldienst mit präziser Werkstattarbeit vor Ort.
+         Vertrauen Sie auf <strong className="text-[color:var(--text-primary)]">maximale Transparenz</strong> und professionelle Beratung. Besuchen Sie uns in unserem Studio, wo unser Team sich Zeit für Ihre individuellen Anforderungen nimmt, anstatt bloß Standardsätze abzuspulen.
         </p>
        </div>
       </StaggerItem>
@@ -604,7 +604,7 @@ export default function SchluesselSchmiedePage() {
    {/* ═══ 11+12. CTAs & Related ═══ */}
    <RelatedServices currentServiceId="schluessel-nachmachen" />
    <PersonalizedCTA />
-   <FinalCTA headline="Besuchen Sie unsere Schlüssel Schmiede." benefits={["Fachgeschäft in der Langgasse 70","Alle Services ohne Termin","Persönliche Beratung vor Ort"]} buttonText="Jetzt anrufen oder vorbeikommen" socialProof="Ihr Fachgeschäft für Schlüssel und Sicherheit" subtitle="Mo-Sa 10-18 Uhr · Langgasse 70 · Wetzlar" />
+   <FinalCTA headline="Besuchen Sie unsere Schlüssel Schmiede." benefits={["24 Stunden Notdienst in der Langgasse 70","Alle Services ohne Termin","Persönliche Beratung vor Ort"]} buttonText="Jetzt anrufen oder vorbeikommen" socialProof="Ihr 24 Stunden Notdienst für Schlüssel und Sicherheit" subtitle="Mo-Sa 10-18 Uhr · Langgasse 70 · Wetzlar" />
   </div>
  );
 }

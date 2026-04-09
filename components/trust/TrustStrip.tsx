@@ -8,7 +8,7 @@ export default function TrustStrip() {
   const pathname = usePathname() || "default";
 
   // Using pickVariant to ensure each page gets a uniquely worded set of trust items
-  const item1 = pickVariant(["Fachgeschäft Langgasse 70", "Zentrale Wetzlar (Langgasse 70)", "Unser Laden in Wetzlar"], pathname, 10);
+  const item1 = pickVariant(["Langgasse 70", "Zentrale Wetzlar (Langgasse 70)", "Unser Laden in Wetzlar"], pathname, 10);
   const item2 = pickVariant(["24/7 Notdienst", "Rund um die Uhr bereit", "Tag & Nacht Rufbereitschaft"], pathname, 11);
   const item3 = pickVariant(["Festpreisgarantie", "Transparente Festpreise", "Keine versteckten Gebühren"], pathname, 12);
   const item4 = pickVariant(["ADAC Partner", "Offizieller ADAC Partner", "Partner des ADAC"], pathname, 13);

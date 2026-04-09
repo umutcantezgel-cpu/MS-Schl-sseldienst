@@ -1,3 +1,4 @@
+import { companyInfo } from "@/lib/data/company";
 import { LocationData } from "./locations";
 
 export const ring3cLocations: LocationData[] = [
@@ -8,7 +9,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35619",
         coordinates: { latitude: 50.5200, longitude: 8.3900 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Bonbaden — 24/7 Türöffnung", metaDescription: "Schlüsseldienst Bonbaden bei Braunfels. In 14 Min. vor Ort, ab 99€ Festpreis. Jetzt Notdienst rufen: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bonbaden? Unser Schlüsseldienst ist in ca. 14 Minuten bei Ihnen und zum transparenten Festpreis.",
@@ -33,7 +34,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35619",
         coordinates: { latitude: 50.5100, longitude: 8.3750 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Philippstein — Notdienst 24/7", metaDescription: "Schlüsseldienst Philippstein bei Braunfels. In 15 Min. da, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Tür zugefallen in Philippstein? Unser Monteur ist in ca. 15 Minuten bei Ihnen und Festpreis ab 99€.",
@@ -58,7 +59,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35630",
         coordinates: { latitude: 50.6100, longitude: 8.4200 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Katzenfurt — Schnelle Hilfe", metaDescription: "Schlüsseldienst Katzenfurt bei Ehringshausen. In 13 Min. vor Ort. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Katzenfurt? Wir sind in ca. 13 Minuten bei Ihnen und professionell und zum Festpreis.",
@@ -83,7 +84,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35630",
         coordinates: { latitude: 50.6200, longitude: 8.4350 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Kölschhausen — Notdienst 24/7", metaDescription: "Schlüsseldienst Kölschhausen bei Ehringshausen. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kölschhausen? Unser Monteur ist in ca. 15 Minuten bei Ihnen und transparent und zum Festpreis.",
@@ -108,7 +109,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35641",
         coordinates: { latitude: 50.5050, longitude: 8.4500 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Laufdorf — 24/7 Notdienst", metaDescription: "Schlüsseldienst Laufdorf bei Schöffengrund. In 14 Min. vor Ort. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Laufdorf? Wir kommen in ca. 14 Minuten und professionell, schnell und zum transparenten Festpreis.",
@@ -133,7 +134,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35641",
         coordinates: { latitude: 50.4980, longitude: 8.4350 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Schwalbach — Festpreis ab 99€", metaDescription: "Schlüsseldienst Schwalbach bei Schöffengrund. In 13 Min. da. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüsselnotfall in Schwalbach? In ca. 13 Minuten sind wir bei Ihnen und mit Festpreisgarantie und professionellem Service.",
@@ -158,7 +159,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35641",
         coordinates: { latitude: 50.4920, longitude: 8.4700 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Niederquembach & Oberquembach", metaDescription: "Schlüsseldienst Nieder- & Oberquembach. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Niederquembach oder Oberquembach? Wir sind in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
@@ -183,7 +184,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35641",
         coordinates: { latitude: 50.4850, longitude: 8.4550 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Niederwetz & Oberwetz — 24/7", metaDescription: "Schlüsseldienst Nieder- & Oberwetz bei Schöffengrund. In 16 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zugefallen in Niederwetz oder Oberwetz? In ca. 16 Minuten ist unser Monteur bei Ihnen und zum Festpreis.",
@@ -208,7 +209,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35638",
         coordinates: { latitude: 50.5500, longitude: 8.3650 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Biskirchen — Notdienst 24/7", metaDescription: "Schlüsseldienst Biskirchen bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Biskirchen? Wir kommen in ca. 13 Minuten und zum fairen Festpreis und mit professionellem Werkzeug.",
@@ -233,7 +234,7 @@ export const ring3cLocations: LocationData[] = [
         plz: "35638",
         coordinates: { latitude: 50.5550, longitude: 8.3500 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Lahnbahnhof — 24/7 Türöffnung", metaDescription: "Schlüsseldienst für Lahnbahnhof bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür am Lahnbahnhof? Unser Monteur ist in ca. 13 Minuten da und zum transparenten Festpreis.",

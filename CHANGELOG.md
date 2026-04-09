@@ -2,6 +2,17 @@
 
 Alle Änderungen über die 20-Phasen Enterprise Upgrade Pipeline.
 
+## Phase 22 — Business Data Integrity & NAP-Konsistenz
+- Single Source of Truth (SSOT): Hardcoded Geschäftsdaten durch zentrales `lib/data/company.ts` ersetzt
+- Duplicate Content Entfernung: `schluessel-schmiede/page.tsx` komplett umgeschrieben für SEO-Eindeutigkeit
+- Standortseiten: 155+ `locations*.ts` Skripte an SSOT-Preise dynamisch angebunden
+- Pervasive String Replacement: Veraltete "Fachgeschäft" / "50€" Referenzen terminiert
+- Logo-Assets: Globale Standardisierung auf `logo-neu.svg` in Header, Footer, Favicon
+- LLM-Routen: `llms.txt` und `llms-full.txt` an `companyInfo`-SSOT verlinkt
+- Mobile-Layout Fix: Footer `pb-[100px]` gegen `MobileBottomBar`-Überlappung
+- Calendly & Facebook Integration: Konsistente Einbindung von SSOT Links
+
+
 ## Phase 20 — Code-Qualität, Dokumentation & Finale Konsolidierung
 - TypeScript: `noImplicitReturns` aktiviert, `@ts-ignore` eliminiert
 - README.md: Komplett-Overhaul (Tech Stack, Scripts, 20-Phasen-Übersicht)

@@ -1,25 +1,26 @@
 import { NextResponse } from "next/server";
 import { siteUrl } from "@/lib/schema";
+import { companyInfo } from "@/lib/data/company";
 
 export async function GET() {
-    const content = `# Schlüssel Schmiede Wetzlar und Vollständige Website-Inhalte
+    const content = `# ${companyInfo.localStore.name} und Vollständige Website-Inhalte
 
-> Dieses Dokument enthält den vollständigen Inhalt aller Seiten der Website von Schlüssel Schmiede Wetzlar, dem Fachgeschäft für Schlüssel & Sicherheit mit 24/7 Schlüsseldienst in Wetzlar, Gießen, Marburg und dem Lahn-Dill-Kreis.
+> Dieses Dokument enthält den vollständigen Inhalt aller Seiten der Website von ${companyInfo.localStore.name}, dem ${companyInfo.localStore.tagline} in Wetzlar, Gießen, Marburg und dem Lahn-Dill-Kreis.
 
 ---
 
 # Startseite
 
-Schlüssel Schmiede Wetzlar ist ein Fachgeschäft für Schlüssel, Schlösser und Sicherheitstechnik mit integriertem 24/7 Schlüsseldienst und Festpreisen ab 99 Euro, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 2030 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
+${companyInfo.localStore.name} ist ein ${companyInfo.localStore.tagline} für Schlüssel, Schlösser und Sicherheitstechnik mit integriertem 24/7 Schlüsseldienst und Festpreisen ${companyInfo.financial.startingPrice}, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 20-30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
 
 ## Leistungen im Überblick
-- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Ab 99€ Festpreis (tagsüber).
-- **Autoöffnung**: Schonende Öffnung von Fahrzeugen aller Marken ohne Lackschäden. Ab 99€.
+- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Festpreis ${companyInfo.financial.startingPrice} (tagsüber).
+- **Autoöffnung**: Schonende Öffnung von Fahrzeugen aller Marken ohne Lackschäden. ${companyInfo.financial.startingPrice}.
 - **Schließanlagen**: Beratung, Planung und Einbau von Schließanlagen für Wohn- und Gewerbeimmobilien.
 - **Sicherheitstechnik**: Einbruchschutz-Beratung, Zusatzschlösser, Panzerriegel, elektronische Schließsysteme.
 - **Schlüssel nachmachen**: Anfertigung von Ersatzschlüsseln für alle gängigen Schlosstypen.
 
-## Warum Schlüssel Schmiede Wetzlar?
+## Warum ${companyInfo.localStore.name}?
 - **Transparente Festpreise**: Preis wird vorab am Telefon genannt. Keine versteckten Kosten.
 - **Lokaler Anbieter**: Echte Handwerker aus Wetzlar, kein anonymes Callcenter.
 - **Zerstörungsfreie Öffnung**: Mit Spezialwerkzeug öffnen wir zugefallene Türen in 99% der Fälle ohne Schaden.
@@ -30,19 +31,18 @@ Schlüssel Schmiede Wetzlar ist ein Fachgeschäft für Schlüssel, Schlösser un
 
 ## Tür zugefallen in Wetzlar? Schlüsseldienst in 15 Minuten vor Ort.
 
-Schlüssel Schmiede Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis und zerstörungsfrei in 99% der Fälle, innerhalb von 1530 Minuten, 24 Stunden am Tag.
+${companyInfo.localStore.name} öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis und zerstörungsfrei in 99% der Fälle, innerhalb von 15-30 Minuten, 24 Stunden am Tag.
 
 ### So funktioniert eine Türöffnung
-1. **Anruf**: Sie rufen uns an unter +49-6441-8056279
-2. **Anfahrt**: Unser Techniker ist in 1530 Minuten bei Ihnen
+1. **Anruf**: Sie rufen uns an unter ${companyInfo.phone.link}
+2. **Anfahrt**: Unser Techniker ist in 15-30 Minuten bei Ihnen
 3. **Öffnung**: Zerstörungsfreie Öffnung mit Spezialwerkzeug
 4. **Abrechnung**: Transparenter Festpreis und Sie zahlen nur den vereinbarten Betrag
 
 ### Preise Türöffnung
-- Tür zugefallen (Schlüssel steckt von innen): ab 99€ (tagsüber), 119€ (abends), 149€ (nachts)
-- Tür abgesperrt (Schlüssel verloren): ab 129€ (tagsüber), 159€ (abends), 189€ (nachts)
-- Abendzuschlag (1822 Uhr): im Preis enthalten
-- Nachtzuschlag (2208 Uhr) / Wochenende: im Preis enthalten
+- Tür zugefallen (Schlüssel steckt von innen): ${companyInfo.financial.startingPrice} (tagsüber)
+- Tür abgesperrt (Schlüssel verloren): auf Anfrage
+- Abendzuschlag / Nachtzuschlag (22-08 Uhr) / Wochenende: je nach Einsatzzeit
 
 ---
 
@@ -50,7 +50,7 @@ Schlüssel Schmiede Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzla
 
 ## Auto ausgesperrt in Wetzlar? Professionelle Fahrzeugöffnung ohne Lackschäden.
 
-Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken schonend und ohne Beschädigung zum Festpreis ab 99 Euro (tagsüber) und 24/7 erreichbar, in 2030 Minuten vor Ort.
+${companyInfo.localStore.name} öffnet Fahrzeuge aller Marken schonend und ohne Beschädigung. ${companyInfo.financial.startingPrice} (tagsüber) und 24/7 erreichbar, in 20-30 Minuten vor Ort.
 
 ---
 
@@ -58,7 +58,7 @@ Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken schonend und ohne Bes
 
 ## Neue Schließanlage für Ihr Gebäude in Wetzlar? Beratung und Einbau vom Fachmann.
 
-Schlüssel Schmiede Wetzlar plant und installiert Schließanlagen für Wohn- und Gewerbeimmobilien in Wetzlar und Umgebung und von der einfachen Gleichschließung bis zur elektronischen Zutrittskontrolle.
+${companyInfo.localStore.name} plant und installiert Schließanlagen für Wohn- und Gewerbeimmobilien in Wetzlar und Umgebung und von der einfachen Gleichschließung bis zur elektronischen Zutrittskontrolle.
 
 ---
 
@@ -66,7 +66,7 @@ Schlüssel Schmiede Wetzlar plant und installiert Schließanlagen für Wohn- und
 
 ## Einbruchschutz in Wetzlar? Professionelle Sicherheitsberatung und Nachrüstung.
 
-Schlüssel Schmiede Wetzlar berät Sie kostenlos zum Einbruchschutz und rüstet Ihre Türen und Fenster mit Zusatzschlössern, Panzerriegeln und modernen Schließsystemen nach.
+${companyInfo.localStore.name} berät Sie kostenlos zum Einbruchschutz und rüstet Ihre Türen und Fenster mit Zusatzschlössern, Panzerriegeln und modernen Schließsystemen nach.
 
 ---
 
@@ -74,108 +74,78 @@ Schlüssel Schmiede Wetzlar berät Sie kostenlos zum Einbruchschutz und rüstet 
 
 ## Schlüssel nachmachen in Wetzlar? Ersatzschlüssel für alle gängigen Schlosstypen.
 
-Schlüssel Schmiede Wetzlar fertigt Ersatzschlüssel für Haustüren, Wohnungstüren, Briefkästen und Garagentore und schnell, zuverlässig und zu fairen Preisen.
+${companyInfo.localStore.name} fertigt Ersatzschlüssel für Haustüren, Wohnungstüren, Briefkästen und Garagentore und schnell, zuverlässig und zu fairen Preisen.
 
 ---
 
 # Preise & Kosten
 
-Schlüssel Schmiede Wetzlar arbeitet ausschließlich mit transparenten Festpreisen. Der Preis wird Ihnen vorab am Telefon genannt und ohne versteckte Kosten, ohne Anfahrtsgebühren innerhalb des Servicegebiets.
+${companyInfo.localStore.name} arbeitet ausschließlich mit transparenten Preisen. Der Preis wird Ihnen vorab am Telefon genannt und ohne versteckte Kosten. Anfahrtskosten Kernstadt Wetzlar: ${companyInfo.financial.travelCostWetzlar}.
 
-| Leistung | Tagsüber (ab) | Abends (ab) | Nachts/WE (ab) |
-|---|---|---|---|
-| Türöffnung (zugefallen) | 89€ | 119€ | 149€ |
-| Türöffnung (abgesperrt) | 129€ | 159€ | 189€ |
-| Autoöffnung | 99€ | 129€ | 159€ |
-| Tresoröffnung | auf Anfrage | auf Anfrage | auf Anfrage |
-| Schließzylinder-Austausch | ab 25€ (Material) | und | und |
+| Leistung | Tagsüber (ab) | 
+|---|---|
+| Türöffnung (zugefallen) | ${companyInfo.financial.startingPriceValue}€ | 
+| Türöffnung (abgesperrt) | auf Anfrage | 
+| Autoöffnung | auf Anfrage | 
+| Tresoröffnung | auf Anfrage |
+| Schließzylinder-Austausch | auf Anfrage | 
 
 ---
 
 # Häufig gestellte Fragen (FAQ)
 
 ### Was kostet ein Schlüsseldienst in Wetzlar?
-Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren im Servicegebiet. Abgesperrte Türen kosten ab 129 Euro.
+${companyInfo.localStore.name} öffnet zugefallene Türen ${companyInfo.financial.startingPrice} zum Festpreis und ohne versteckte Kosten. Anfahrtsgebühren Kernstadt Wetzlar: ${companyInfo.financial.travelCostWetzlar}. 
 
 ### Wie schnell kommt der Schlüsseldienst in Wetzlar?
-Unser Schlüsseldienst ist in 2030 Minuten bei Ihnen in Wetzlar und Umgebung und 24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr.
+Unser Schlüsseldienst ist in 15-30 Minuten bei Ihnen in Wetzlar und Umgebung und 24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr.
 
 ### Gibt es einen Schlüsseldienst in Wetzlar der nachts geöffnet hat?
-Ja, Schlüssel Schmiede Wetzlar ist rund um die Uhr erreichbar und auch nachts, an Wochenenden und an allen deutschen Feiertagen. Nacht- und Wochenendzuschläge sind transparent in den Festpreisen enthalten.
+Ja, ${companyInfo.localStore.name} ist rund um die Uhr erreichbar und auch nachts, an Wochenenden und an allen deutschen Feiertagen.
 
 ### Welcher Schlüsseldienst in Wetzlar ist seriös?
-Schlüssel Schmiede Wetzlar ist mit 5.0 Sternen bei 44 Google-Bewertungen einer der bestbewerteten Schlüsseldienste der Region. Wir arbeiten mit transparenten Festpreisen und nennen den Preis vorab am Telefon.
+${companyInfo.localStore.name} ist mit 5.0 Sternen bei 44 Google-Bewertungen einer der bestbewerteten Schlüsseldienste der Region. Wir arbeiten mit transparenten Vorab-Preisen am Telefon.
 
 ### Wird die Tür bei der Öffnung beschädigt?
-In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug. Sollte ein Schlossaustausch nötig sein, besprechen wir dies vorher mit Ihnen.
+In 99% der Fälle öffnet ${companyInfo.localStore.name} Ihre Tür zerstörungsfrei mit Spezialwerkzeug. Sollte ein Schlossaustausch nötig sein, besprechen wir dies vorher mit Ihnen.
 
 ### Muss ich einen Ausweis vorlegen?
 Ja, aus rechtlichen Gründen müssen Sie nachweisen, dass Sie berechtigt sind, die Tür zu öffnen. Ein Personalausweis oder Mietvertrag ist ausreichend.
 
 ### Wie kann ich bezahlen?
-Sie können bei der Schlüssel Schmiede Wetzlar in bar, per EC-Karte oder per Kreditkarte bezahlen.
+Sie können bei ${companyInfo.localStore.name} via ${companyInfo.financial.acceptedPayments.join(" oder ")} bezahlen.
 
 ### Kommt der Schlüsseldienst auch nach Gießen?
-Ja, die Schlüssel Schmiede Wetzlar bedient Gießen mit einer Anfahrtszeit von 1520 Minuten zum gleichen Festpreis.
+Ja, ${companyInfo.localStore.name} bedient Gießen.
 
 ### Kommt der Schlüsseldienst auch nach Marburg?
-Ja, die Schlüssel Schmiede Wetzlar bedient auch Marburg mit einer Anfahrtszeit von 2530 Minuten.
+Ja, ${companyInfo.localStore.name} bedient auch Marburg.
 
 ---
 
 # Servicegebiet
 
-Schlüssel Schmiede Wetzlar bedient ein Einsatzgebiet im Umkreis von 50 Kilometern um Wetzlar, einschließlich:
-
-- Wetzlar (alle Stadtteile): 510 Min. Anfahrt
-- Aßlar: 1015 Min. Anfahrt
-- Solms: 1015 Min. Anfahrt
-- Braunfels: 1015 Min. Anfahrt
-- Hüttenberg: 1015 Min. Anfahrt
-- Lahnau: 1015 Min. Anfahrt
-- Ehringshausen: 1015 Min. Anfahrt
-- Schöffengrund: 1015 Min. Anfahrt
-- Gießen: 1520 Min. Anfahrt
-- Wettenberg: 1520 Min. Anfahrt
-- Biebertal: 1520 Min. Anfahrt
-- Heuchelheim: 1520 Min. Anfahrt
-- Linden: 1520 Min. Anfahrt
-- Pohlheim: 1520 Min. Anfahrt
-- Buseck: 2025 Min. Anfahrt
-- Lich: 2025 Min. Anfahrt
-- Lollar: 2025 Min. Anfahrt
-- Dillenburg: 2025 Min. Anfahrt
-- Herborn: 2025 Min. Anfahrt
-- Leun: 1520 Min. Anfahrt
-- Haiger: 2530 Min. Anfahrt
-- Marburg: 2530 Min. Anfahrt
-- Gladenbach: 2530 Min. Anfahrt
-- Staufenberg: 2530 Min. Anfahrt
-- Grünberg: 2530 Min. Anfahrt
-- Reiskirchen: 2530 Min. Anfahrt
-- Fronhausen: 2530 Min. Anfahrt
-- Weimar (Lahn): 2530 Min. Anfahrt
+${companyInfo.localStore.name} bedient ein Einsatzgebiet im Umkreis von 50 Kilometern um Wetzlar.
 
 ---
 
 # Kontakt
 
-- Telefon (24/7 Notdienst): +49-6441-8056279
-- Mobil: +49-178-2471037
-- E-Mail: info@wetzlar-schlüsseldienst.de
-- Adresse: 35578 Wetzlar, Hessen
-- Servicezeiten: 24/7/365
-- Servicezeiten: 24/7/365
+- Telefon (24/7 Notdienst): ${companyInfo.phone.link}
+- E-Mail: ${companyInfo.email}
+- Adresse: ${companyInfo.localStore.street}, ${companyInfo.localStore.postalCode} ${companyInfo.localStore.city}, ${companyInfo.localStore.state}
+- Servicezeiten: ${companyInfo.openingHours.emergency}
+- Ladenzeiten: ${companyInfo.openingHours.store}
 
 ---
 
 # Über uns
 
-Schlüssel Schmiede Wetzlar ist ein Fachgeschäft und Handwerksbetrieb mit über 15 Jahren Erfahrung im Bereich Schlüssel, Schlösser, Sicherheitstechnik und Schlüsseldienst. Wir sind keine Vermittlung und kein Callcenter und jeder Einsatz wird von unseren eigenen Technikern durchgeführt.
+${companyInfo.localStore.name} ist ein 24 Stunden Notdienst & Handwerksbetrieb mit über 15 Jahren Erfahrung im Bereich Schlüssel, Schlösser, Sicherheitstechnik und Schlüsseldienst. Wir sind keine Vermittlung und kein Callcenter und jeder Einsatz wird von unseren eigenen Technikern durchgeführt. ${companyInfo.partnership.isAdacPartner ? "Zudem sind wir stolzer ADAC Partner." : ""}
 
 ---
 
-*Letzte Aktualisierung: 2026-03-26*
+*Letzte Aktualisierung: 2026-04-09*
 *Quelle: ${siteUrl}*
 `;
 

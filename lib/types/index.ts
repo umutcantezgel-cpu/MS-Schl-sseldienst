@@ -188,28 +188,65 @@ export interface FAQ {
 // ==========================================
 
 export interface OpeningHours {
-  [key: string]: string;
+  store: string;     // e.g., "Montag bis Samstag 10:00 bis 18:00 Uhr"
+  emergency: string; // e.g., "24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr"
+}
+
+export interface BusinessEntity {
+  name: string;
+  street: string;
+  postalCode: string; // MUST NOT BE HARDCODED ANYWHERE ELSE
+  city: string;
+  state: string;
+  country: string;
 }
 
 export interface CompanyInfo {
-  name: string;
-  legalName?: string;
-  address?: string;
-  phone?: string;
-  email?: string;
-  foundedYear?: number;
-  employeeCount?: number;
-  totalProjects?: number;
-  customerSatisfaction?: number;
-  certifications?: string[];
-  socialMedia?: SocialLinks;
-  openingHours?: OpeningHours;
-  geo?: {
+  /**
+   * Geschäftseinheit 1: Schlüssel Schmiede Wetzlar (Ladengeschäft, LocalBusiness SEO)
+   */
+  localStore: BusinessEntity & {
+    tagline: string; // z.B. "24 Stunden Notdienst" (NICHT Fachgeschäft)
+  };
+  
+  /**
+   * Geschäftseinheit 2: MS Schlüsseldienst Wetzlar (Muttergesellschaft, administrative & rechtliche Zwecke)
+   * Darf NICHT für LocalBusiness/Sitemap Einträge verwendet werden um NAP Konsistenz nicht zu verwässern!
+   */
+  parentCompany: BusinessEntity;
+
+  // Gemeinsame Daten
+  phone: {
+    main: string;      // "064418056279"
+    formatted: string; // "06441 80 56 279"
+    link: string;      // "+4964418056279"
+  };
+  email: string;
+  openingHours: OpeningHours;
+  
+  financial: {
+    startingPrice: string; // "ab 99 Euro"
+    startingPriceValue: number; // 99 (für Schema.org)
+    travelCostWetzlar: string; // "0 Euro"
+    travelCostWetzlarValue: number; // 0
+    acceptedPayments: string[]; // ["Barzahlung", "EC-Karte", "Überweisung"] (KEIN PayPal)
+  };
+
+  partnership: {
+    isAdacPartner: boolean; // ADAC Partnerschaft aktiv
+    certifications: string[];
+  };
+
+  geo: {
     latitude: number;
     longitude: number;
   };
-  paymentAccepted?: string[];
-  currenciesAccepted?: string;
-  priceRange?: string;
-  slogan?: string;
+  
+  foundedYear: number;
+  
+  socialMedia: {
+    facebook: string; // Muss auf Schlüssel Schmiede verweisen!
+    instagram?: string;
+    linkedin?: string;
+  };
 }

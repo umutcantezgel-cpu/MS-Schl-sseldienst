@@ -1,3 +1,4 @@
+import { companyInfo } from "@/lib/data/company";
 import { LocationData } from "./locations";
 
 export const ring2bLocations: LocationData[] = [
@@ -13,7 +14,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 9,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -53,7 +54,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 8,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -93,7 +94,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 8,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -133,7 +134,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 9,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -173,7 +174,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 7,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -213,7 +214,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 10,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -253,7 +254,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 10,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -293,7 +294,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 11,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -333,7 +334,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 10,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -373,7 +374,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 11,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -413,7 +414,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 10,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -453,7 +454,7 @@ export const ring2bLocations: LocationData[] = [
             distanceFromHQ: 10,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,

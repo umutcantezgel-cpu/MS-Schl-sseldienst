@@ -1,9 +1,9 @@
 import { companyInfo } from "@/lib/data/company";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wetzlar-schlüsseldienst.de";
-const companyName = companyInfo.name;
+const companyName = companyInfo.localStore.name;
 const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || companyInfo.email;
-const telephone = companyInfo.phone || "+4964418056279"; // Landline is prioritized for local SEO trustworthiness
+const telephone = companyInfo.phone.link;
 
 export function createOrganizationSchema() {
     return {
@@ -13,8 +13,9 @@ export function createOrganizationSchema() {
         url: siteUrl,
         logo: `${siteUrl}/images/logo-neu.svg`,
         sameAs: [
+            companyInfo.socialMedia.facebook,
             "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
-        ],
+        ].filter(Boolean),
         contactPoint: {
             "@type": "ContactPoint",
             contactType: "Customer Support",
@@ -34,15 +35,15 @@ export function createLocalBusinessSchema() {
         email: contactEmail,
         address: {
             "@type": "PostalAddress",
-            streetAddress: "Langgasse 70",
-            addressLocality: "Wetzlar",
-            postalCode: "35578",
+            streetAddress: companyInfo.localStore.street,
+            addressLocality: companyInfo.localStore.city,
+            postalCode: companyInfo.localStore.postalCode,
             addressCountry: "DE"
         },
         geo: {
             "@type": "GeoCoordinates",
-            latitude: companyInfo.geo?.latitude || 50.5567, // Accurate coordinate roughly for Langgasse 70, Wetzlar
-            longitude: companyInfo.geo?.longitude || 8.5022
+            latitude: companyInfo.geo.latitude,
+            longitude: companyInfo.geo.longitude
         },
         openingHoursSpecification: [
             {
@@ -71,12 +72,7 @@ export function createLocalBusinessSchema() {
                 url: "https://www.hwk-wiesbaden.de"
             }
         ],
-        hasCredential: [
-            "IHK-Geprüft",
-            "Handwerkskammer eingetragen",
-            "VdS-Anerkannt",
-            "ADAC Partner"
-        ],
+        hasCredential: companyInfo.partnership.certifications,
         aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "5.0",

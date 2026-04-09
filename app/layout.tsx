@@ -81,7 +81,7 @@ export const metadata: Metadata = {
        url: `${siteUrl}/og-image.png`,
        width: 1200,
        height: 630,
-       alt: "Schlüssel Schmiede Wetzlar und Fachgeschäft für Schlüssel & Sicherheitstechnik",
+       alt: "Schlüssel Schmiede Wetzlar und 24 Stunden Notdienst für Schlüssel & Sicherheitstechnik",
      },
    ],
  },
@@ -129,7 +129,7 @@ export default function RootLayout({
     {/* [PERF] Preload LCP element (logo) so it starts fetching during HTML parse,
          independent of JS hydration. Without this, the logo waits for Next.js
          App Router JS to execute before it can even start loading. */}
-    <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-header.svg" fetchPriority="high" />
+    <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-neu.svg" fetchPriority="high" />
     {/* ⚠️  Icons are now handled by the Metadata API `icons` object above.
          NO hardcoded <meta>, <link rel="icon">, or <link rel="alternate"> here.
          Duplicating them in JSX would conflict with the Metadata API output. */}

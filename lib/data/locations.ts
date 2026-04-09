@@ -1,3 +1,4 @@
+import { companyInfo } from "@/lib/data/company";
 import { ReactNode } from "react";
 
 export interface Coordinates {
@@ -101,7 +102,7 @@ export const locations: LocationData[] = [
             distanceFromHQ: 0,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -210,7 +211,7 @@ export const locations: LocationData[] = [
             distanceFromHQ: 2,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -279,7 +280,7 @@ export const locations: LocationData[] = [
             distanceFromHQ: 5,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -334,7 +335,7 @@ export const locations: LocationData[] = [
             distanceFromHQ: 6,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -385,7 +386,7 @@ export const locations: LocationData[] = [
             distanceFromHQ: 4,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 0,
@@ -436,7 +437,7 @@ export const locations: LocationData[] = [
             distanceFromHQ: 3,
         },
         pricing: {
-            basePrice: 99,
+            basePrice: companyInfo.financial.startingPriceValue,
             basePriceNight: 119,
             basePriceWeekend: 179,
             travelCost: 0,

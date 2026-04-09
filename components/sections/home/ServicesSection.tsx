@@ -14,7 +14,7 @@ export default function ServicesSection() {
           pill="UNSERE LEISTUNGEN"
           headingId="soforthilfe-heading"
           title={<>Unsere <span className="text-[var(--color-red-500)]">Leistungen</span></>}
-          description="Handwerkliche Qualität aus unserem Fachgeschäft , ob Schlüssel, Schloss oder Notdienst."
+          description="Handwerkliche Qualität aus unserem Ladengeschäft , ob Schlüssel, Schloss oder Notdienst."
         />
 
         {/* Bento Grid */}

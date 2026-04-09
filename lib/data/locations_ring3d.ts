@@ -1,3 +1,4 @@
+import { companyInfo } from "@/lib/data/company";
 import { LocationData } from "./locations";
 
 export const ring3dLocations: LocationData[] = [
@@ -8,7 +9,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35647",
         coordinates: { latitude: 50.4600, longitude: 8.4800 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Brandoberndorf — 24/7 Notdienst", metaDescription: "Schlüsseldienst Brandoberndorf bei Waldsolms. 16 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Brandoberndorf? Unser Schlüsseldienst ist in ca. 16 Minuten bei Ihnen und zum transparenten Festpreis.",
@@ -33,7 +34,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35647",
         coordinates: { latitude: 50.4700, longitude: 8.4650 },
         logistics: { drivingTimeMinutes: "17", distanceFromHQ: 16 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Griedelbach — Notdienst 24/7", metaDescription: "Schlüsseldienst Griedelbach bei Waldsolms. In 17 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Griedelbach? In ca. 17 Minuten ist unser Monteur da und professionell und zum garantierten Festpreis.",
@@ -58,7 +59,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35647",
         coordinates: { latitude: 50.4550, longitude: 8.4500 },
         logistics: { drivingTimeMinutes: "18", distanceFromHQ: 17 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Hasselborn — Türöffnung ab 99€", metaDescription: "Schlüsseldienst Hasselborn bei Waldsolms. 18 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Hasselborn? Wir kommen in ca. 18 Minuten und mit professionellem Werkzeug und zum Festpreis.",
@@ -83,7 +84,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35647",
         coordinates: { latitude: 50.4750, longitude: 8.4900 },
         logistics: { drivingTimeMinutes: "17", distanceFromHQ: 16 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Kröffelbach — Notdienst 24/7", metaDescription: "Schlüsseldienst Kröffelbach bei Waldsolms. 17 Min. Anfahrt. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kröffelbach? In ca. 17 Minuten ist unser Monteur bei Ihnen und zum festen Preis ab 99€.",
@@ -108,7 +109,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35647",
         coordinates: { latitude: 50.4500, longitude: 8.4600 },
         logistics: { drivingTimeMinutes: "18", distanceFromHQ: 17 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Weiperfelden — 24/7 Türöffnung", metaDescription: "Schlüsseldienst Weiperfelden bei Waldsolms. In 18 Min. da. Ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Weiperfelden? Wir kommen in ca. 18 Minuten und professionell und zum garantierten Festpreis.",
@@ -133,7 +134,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35647",
         coordinates: { latitude: 50.4800, longitude: 8.4400 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Kraftsolms — 24/7 Notdienst", metaDescription: "Schlüsseldienst Kraftsolms bei Waldsolms. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kraftsolms? Unser Monteur ist in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
@@ -158,7 +159,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35649",
         coordinates: { latitude: 50.6350, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "18", distanceFromHQ: 16 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Bischoffen — Notdienst 24/7", metaDescription: "Ihr Schlüsseldienst für Bischoffen im Lahn-Dill-Kreis. 18 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bischoffen? Unser Schlüsseldienst ist in ca. 18 Minuten bei Ihnen und zum transparenten Festpreis.",
@@ -183,7 +184,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35435",
         coordinates: { latitude: 50.6000, longitude: 8.6350 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Wettenberg — 24/7 24/7 Notdienst", metaDescription: "Schlüsseldienst Wettenberg bei Gießen. In 15 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür in Wettenberg? Unser Schlüsseldienst ist in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
@@ -208,7 +209,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35440",
         coordinates: { latitude: 50.5400, longitude: 8.6500 },
         logistics: { drivingTimeMinutes: "18", distanceFromHQ: 17 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Linden — 24/7 Notdienst", metaDescription: "Schlüsseldienst Linden bei Gießen. 18 Min. Anfahrt, ab 99€ Festpreis. Jetzt Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Linden? Unser Schlüsseldienst erreicht Sie in ca. 18 Minuten und mit Festpreisgarantie und professionellem Service.",
@@ -233,7 +234,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35435",
         coordinates: { latitude: 50.6100, longitude: 8.6150 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Krofdorf-Gleiberg — Festpreis ab 99€", metaDescription: "Schlüsseldienst Krofdorf-Gleiberg. In 14 Min. vor Ort. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür in Krofdorf-Gleiberg? Unser Monteur ist in ca. 14 Minuten da und zum transparenten Festpreis.",
@@ -258,7 +259,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35435",
         coordinates: { latitude: 50.5900, longitude: 8.6100 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Launsbach — 24/7 Notdienst", metaDescription: "Schlüsseldienst Launsbach bei Wettenberg. 15 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Launsbach? Wir kommen in ca. 15 Minuten und professionell und zum Festpreis.",
@@ -283,7 +284,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35440",
         coordinates: { latitude: 50.5500, longitude: 8.6400 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Leihgestern — Festpreis ab 99€", metaDescription: "Schlüsseldienst Leihgestern bei Linden. 16 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Leihgestern? In ca. 16 Minuten ist unser Monteur da und professionell und zum Festpreis.",
@@ -308,7 +309,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35764",
         coordinates: { latitude: 50.6500, longitude: 8.3350 },
         logistics: { drivingTimeMinutes: "22", distanceFromHQ: 20 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Sinn — 24/7 Türöffnung", metaDescription: "Schlüsseldienst Sinn im Lahn-Dill-Kreis. In 22 Min. da. Festpreis ab 99€. Jetzt anrufen: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Sinn? Unser Schlüsseldienst erreicht Sie in ca. 22 Minuten und zum transparenten Festpreis.",
@@ -333,7 +334,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35764",
         coordinates: { latitude: 50.6400, longitude: 8.3500 },
         logistics: { drivingTimeMinutes: "23", distanceFromHQ: 21 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Amdorf — 24/7 Notdienst", metaDescription: "Schlüsseldienst Amdorf bei Sinn. 23 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Amdorf? Wir kommen in ca. 23 Minuten und professionell und zum Festpreis.",
@@ -358,7 +359,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35753",
         coordinates: { latitude: 50.5800, longitude: 8.3200 },
         logistics: { drivingTimeMinutes: "20", distanceFromHQ: 18 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Bissenberg — 24/7", metaDescription: "Schlüsseldienst Bissenberg bei Greifenstein. 20 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bissenberg? In ca. 20 Minuten ist unser Monteur bei Ihnen und zum fairen Festpreis.",
@@ -383,7 +384,7 @@ export const ring3dLocations: LocationData[] = [
         plz: "35753",
         coordinates: { latitude: 50.5900, longitude: 8.3100 },
         logistics: { drivingTimeMinutes: "22", distanceFromHQ: 20 },
-        pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Breitenbach — 24/7 Notdienst", metaDescription: "Schlüsseldienst Breitenbach bei Greifenstein. 22 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Breitenbach? In ca. 22 Minuten ist unser Monteur da und professionell und zum Festpreis.",

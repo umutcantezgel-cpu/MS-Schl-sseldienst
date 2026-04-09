@@ -43,7 +43,7 @@ export default function AGBPage() {
             <LegalSection>
                 <TLDRBox title="Wichtigste Punkte im Überblick" icon="info">
                     <p>Wir arbeiten mit <strong>transparenten Festpreisen ab 99,- €</strong> zzgl. Anfahrt. Die Anfahrtskosten werden Ihnen immer <strong>vorab telefonisch genau genannt</strong>.</p>
-                    <p>Bei sofort auszuführenden Notdiensten erlischt das 14-tägige <HoverGlossary explanation="Das gesetzliche Recht, einen Vertrag innerhalb von 14 Tagen zu widerrufen. Bei Notdiensten entfällt dieses Recht jedoch.">Widerrufsrecht</HoverGlossary> gemäß <HoverGlossary explanation="Ein Paragraph im Bürgerlichen Gesetzbuch, der ausdrücklich regelt, dass bei zwingend bestellten Reparaturarbeiten kein Rücktrittsrecht besteht."><strong>§ 312g Abs. 2 Nr. 11 BGB</strong></HoverGlossary>. Stornieren Sie den Auftrag erst, wenn unser Techniker bereits unterwegs oder vor Ort ist, fällt eine branchenübliche <HoverGlossary explanation="Eine pauschale Entschädigung für die Zeit und Benzinkosten unseres Technikers, wenn er umsonst anreist."><strong>Leerfahrtpauschale von 50,- €</strong></HoverGlossary> an.</p>
+                    <p>Bei sofort auszuführenden Notdiensten erlischt das 14-tägige <HoverGlossary explanation="Das gesetzliche Recht, einen Vertrag innerhalb von 14 Tagen zu widerrufen. Bei Notdiensten entfällt dieses Recht jedoch.">Widerrufsrecht</HoverGlossary> gemäß <HoverGlossary explanation="Ein Paragraph im Bürgerlichen Gesetzbuch, der ausdrücklich regelt, dass bei zwingend bestellten Reparaturarbeiten kein Rücktrittsrecht besteht."><strong>§ 312g Abs. 2 Nr. 11 BGB</strong></HoverGlossary>. Stornieren Sie den Auftrag erst, wenn unser Techniker bereits unterwegs oder vor Ort ist, fällt eine branchenübliche <HoverGlossary explanation="Eine pauschale Entschädigung für die Zeit und Benzinkosten unseres Technikers, wenn er umsonst anreist."><strong>Leerfahrtpauschale (Höhe je nach Einsatzzeit)</strong></HoverGlossary> an.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -55,7 +55,7 @@ export default function AGBPage() {
                     Schlüssel Schmiede<br />
                     Mina Saad<br />
                     Gloelstraße 11<br />
-                    35576 Wetzlar<br />
+                    35578 Wetzlar<br />
                     E-Mail: notfall-schluessel@proton.me<br />
                     (im Folgenden &quot;Auftragnehmer&quot; oder &quot;Schlüssel Schmiede&quot; genannt)
                 </div>
@@ -80,13 +80,13 @@ export default function AGBPage() {
                 <p>3.1. Es gelten die zum Zeitpunkt des Vertragsschlusses auf der Webseite unter <Link href="/preise">Preise</Link> ausgewiesenen Festpreise und Anfahrtskosten bzw. die am Telefon individuell verhandelten Tarife.</p>
                 <p>3.2. <strong>Basispreis:</strong> Die Standard-Notöffnung einer nur ins Schloss gefallenen (nicht verriegelten) Tür beträgt werktags zwischen 08:00 und 18:00 Uhr pauschal ab 99,00 € inkl. gesetzlicher MwSt.</p>
                 <p>3.3. <strong>Anfahrtskosten:</strong> Zusätzlich zum Leistungspreis fallen je nach Entfernung gestaffelte Anfahrtskosten an. Diese liegen zwischen 15,00 € (Kernbereich und Stadtteile) und max. 40,00 € (Ferndistanzen über 20km). Die exakte Pauschale wird stets vorher kommuniziert.</p>
-                <p>3.4. <strong>Sonderzuschläge:</strong> Außerhalb der regulären Geschäftszeiten, an Wochenenden und gesetzlichen Feiertagen erheben wir transparente Zuschläge, um die Rufbereitschaft der Techniker zu gewährleisten (Abend-/Nachtzuschlag ab 30,- €, Wochenend-/Feiertagszuschlag ab 50,- €).</p>
+                <p>3.4. <strong>Sonderzuschläge:</strong> Außerhalb der regulären Geschäftszeiten, an Wochenenden und gesetzlichen Feiertagen erheben wir transparente Zuschläge, um die Rufbereitschaft der Techniker zu gewährleisten (Abend-/Nachtzuschlag ab 30,- €, Wochenend-/Feiertagszuschlag ab 99€).</p>
             </LegalSection>
 
             <LegalSection id="4-stornierung">
                 <h2 className="mt-0">4. Stornierung & Fehlfahrten</h2>
                 <p>4.1. Storniert der Kunde einen verbindlich gebuchten Notdienst-Einsatz rechtzeitig, *bevor* der Techniker in sein Fahrzeug gestiegen und die Fahrt angetreten hat, ist die Stornierung völlig kostenfrei.</p>
-                <p>4.2. Hat der Techniker die Anfahrt zum Einsatzort bereits angetreten oder ist bereits dort eingetroffen, wird im Falle einer Stornierung durch den Kunden eine <HoverGlossary explanation="Pauschale Entschädigung für den entstandenen Wegeausfall, da der Techniker in dieser Zeit keinen anderen Kunden bedienen konnte."><strong>Leerfahrt-/Ausfallpauschale in Höhe von pauschal 50,00 € inkl. MwSt.</strong></HoverGlossary> in Rechnung gestellt.</p>
+                <p>4.2. Hat der Techniker die Anfahrt zum Einsatzort bereits angetreten oder ist bereits dort eingetroffen, wird im Falle einer Stornierung durch den Kunden eine <HoverGlossary explanation="Pauschale Entschädigung für den entstandenen Wegeausfall, da der Techniker in dieser Zeit keinen anderen Kunden bedienen konnte."><strong>Leerfahrt-/Ausfallpauschale je nach Anfahrtsweg inkl. MwSt.</strong></HoverGlossary> in Rechnung gestellt.</p>
                 <p>4.3. Dem Kunden bleibt der Nachweis gestattet, dass ein Schaden überhaupt nicht oder in wesentlich niedrigerer Höhe entstanden ist.</p>
             </LegalSection>
 
