@@ -50,7 +50,7 @@ export const companyInfo: CompanyInfo = {
   },
   foundedYear: 2012,
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=61582567388378", // Existing link. Update if user provides new one.
+    facebook: "https://www.facebook.com/61575618662298/mentions/",
     linkedin: "https://linkedin.com/company/schluessel-schmiede-wetzlar",
     instagram: "https://instagram.com/schluessel_schmiede_wetzlar"
   }
