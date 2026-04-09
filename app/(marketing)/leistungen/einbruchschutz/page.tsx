@@ -78,8 +78,9 @@ export default function EinbruchschutzPage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Soforthilfe bei <span className="text-[var(--color-red-500)]">Einbruchschäden.</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
+            Soforthilfe bei <br className="hidden sm:block" />
+            <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/10 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">Einbruchschäden.</span></span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -104,8 +105,12 @@ export default function EinbruchschutzPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Sicherheit auf zwei Säulen
+       <div className="flex items-center gap-3 mb-4">
+         <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Prävention</span>
+       </div>
+       <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+        Sicherheit auf <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">zwei Säulen</span>
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -121,7 +126,7 @@ export default function EinbruchschutzPage() {
           <ShieldAlert className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">
            Notfall: Sofort-Reparatur
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -135,7 +140,7 @@ export default function EinbruchschutzPage() {
           <Wrench className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-emerald-500)] transition-colors">
            Geplant: Präventivberatung
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -153,8 +158,8 @@ export default function EinbruchschutzPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="mb-8">
          <Badge variant="outline" className="mb-4 text-emerald-600 bg-emerald-50 border-emerald-200 uppercase tracking-widest font-bold">Unser Know-How</Badge>
-         <h2 className="text-[28px] md:text-[36px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-           Moderne mechanische Sicherheit
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1]">
+           Moderne <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-emerald-100 -z-10 -rotate-1 rounded-sm"></span>mechanische</span> Sicherheit
          </h2>
         </div>
        </StaggerItem>
@@ -200,9 +205,16 @@ export default function EinbruchschutzPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
-        Häufige Fragen zum Einbruchschutz
-      </h2>
+       <div className="flex flex-col items-center justify-center mb-12">
+         <div className="flex items-center gap-3 mb-4">
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Support</span>
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         </div>
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
+           Häufige Fragen zum <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Einbruchschutz</span>
+         </h2>
+       </div>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">
@@ -217,8 +229,12 @@ export default function EinbruchschutzPage() {
    {/* Offizielle Ressourcen und SEO Authority Links */}
    <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-16 md:py-20">
     <div className="mx-auto max-w-4xl">
-      <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
-        Offizielle Ressourcen zum Einbruchschutz
+      <div className="flex items-center gap-3 mb-4">
+        <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+        <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Weiterbildung</span>
+      </div>
+      <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-[color:var(--text-primary)] mb-6">
+        Offizielle <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Ressourcen</span> zum Einbruchschutz
       </h2>
       <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
         Informieren Sie sich bei diesen offiziellen Stellen über Prävention, Förderungen und Sicherheitsstandards:

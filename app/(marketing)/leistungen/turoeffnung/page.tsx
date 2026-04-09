@@ -91,8 +91,9 @@ export default function TuroeffnungPage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Schnell wieder <span className="text-[var(--color-red-500)]">im Warmen.</span> <br />Türöffnung in Wetzlar.
+          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
+            Schnell wieder <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/10 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">im Warmen.</span></span> <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-charcoal-900)] to-[var(--color-charcoal-600)]">Türöffnung in Wetzlar.</span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -119,8 +120,12 @@ export default function TuroeffnungPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Ausgesperrt? Keine Panik!
+       <div className="flex items-center gap-3 mb-4">
+         <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Das Problem</span>
+       </div>
+       <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+        Ausgesperrt? <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Keine Panik!</span>
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -140,7 +145,7 @@ export default function TuroeffnungPage() {
           <DoorOpen className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">
            Zugefallene Türen
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
@@ -156,7 +161,7 @@ export default function TuroeffnungPage() {
           <ShieldCheck className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">
            Verschlossene Türen
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
@@ -173,9 +178,14 @@ export default function TuroeffnungPage() {
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
-        <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">
-         Was tun, wenn die Tür zu ist?
-        </h3>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-red-500)]/10">
+            <span className="h-2.5 w-2.5 rounded-full bg-[var(--color-red-500)] animate-pulse"></span>
+          </div>
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)]">
+           Was tun, wenn die Tür zu ist?
+          </h3>
+        </div>
         <ol className="list-decimal pl-5 space-y-4 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
          <li className="pl-2">Bewahren Sie Ruhe. Versuchen Sie nicht, die Tür gewaltsam zu öffnen.</li>
          <li className="pl-2">Prüfen Sie, ob ein Fenster offen steht oder ein Zweitschlüssel bei Nachbarn hinterlegt ist.</li>
@@ -192,9 +202,9 @@ export default function TuroeffnungPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Preise</Badge>
-         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-           Unsere fairen Festpreise
-         </h2>
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mt-4">
+            Unsere fairen <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-[var(--color-red-100)] -z-10 -rotate-1 rounded-sm"></span>Festpreise</span>
+          </h2>
         </div>
        </StaggerItem>
        <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -250,11 +260,18 @@ export default function TuroeffnungPage() {
    {/* 6. FAQ (Spezifisch für Türöffnung) */}
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
-     <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
-        Häufige Fragen zur Türöffnung
-      </h2>
-     </StaggerItem>
+      <StaggerItem animation={entryAnimations.slideUpFade}>
+       <div className="flex flex-col items-center justify-center mb-12">
+         <div className="flex items-center gap-3 mb-4">
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Support</span>
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         </div>
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
+           Häufige Fragen zur <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Türöffnung</span>
+         </h2>
+       </div>
+      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">
         <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." />
@@ -268,8 +285,9 @@ export default function TuroeffnungPage() {
    {/* Verbraucherinformationen und SEO Authority Links */}
    <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-16 md:py-20">
     <div className="mx-auto max-w-4xl">
-      <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
-        Verbraucherinformationen zum Thema Schlüsseldienst
+      <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-[color:var(--text-primary)] mb-6 flex items-center gap-3">
+        <ShieldCheck className="h-8 w-8 text-[var(--color-red-500)]" aria-hidden="true" />
+        Verbraucherinformationen
       </h2>
       <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
         Informieren Sie sich bei offiziellen Stellen über Ihre Rechte und faire Preise:

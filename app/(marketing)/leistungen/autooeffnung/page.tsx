@@ -78,8 +78,9 @@ export default function AutooeffnungPage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Sofort wieder <span className="text-[var(--color-red-500)]">mobil.</span> <br />Zerstörungsfreie Autoöffnung.
+          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
+            Sofort wieder <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/10 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">mobil.</span></span> <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-charcoal-900)] to-[var(--color-charcoal-600)]">Zerstörungsfreie Autoöffnung.</span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -106,8 +107,12 @@ export default function AutooeffnungPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Schlüssel im Auto vergessen?
+       <div className="flex items-center gap-3 mb-4">
+         <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Das Problem</span>
+       </div>
+       <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+        Schlüssel im <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Auto vergessen?</span>
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -123,7 +128,7 @@ export default function AutooeffnungPage() {
           <Car className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Alle Marken & Modelle</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Alle Marken & Modelle</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Egal ob VW, Audi, BMW, Mercedes oder andere Marken - wir haben das Know-how und das Spezialwerkzeug für nahezu jedes Fahrzeug.
           </p>
@@ -135,7 +140,7 @@ export default function AutooeffnungPage() {
           <ShieldCheck className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">100% Zerstörungsfrei</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">100% Zerstörungsfrei</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Wir öffnen Ihr Auto garantiert ohne Beschädigung an Lack, Elektronik oder Schloss. Wir verwenden Luftkissen und spezielle kunststoffummantelte Werkzeuge.
           </p>
@@ -147,7 +152,14 @@ export default function AutooeffnungPage() {
       <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
-          <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">Der Ablauf</h3>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-red-500)]/10">
+              <span className="h-2.5 w-2.5 rounded-full bg-[var(--color-red-500)] animate-pulse"></span>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)]">
+             Der Ablauf
+            </h3>
+          </div>
           <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
@@ -176,9 +188,9 @@ export default function AutooeffnungPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Preise</Badge>
-         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-           Unsere fairen Festpreise
-         </h2>
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mt-4">
+            Unsere fairen <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-[var(--color-red-100)] -z-10 -rotate-1 rounded-sm"></span>Festpreise</span>
+          </h2>
         </div>
        </StaggerItem>
        <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -235,9 +247,16 @@ export default function AutooeffnungPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
-        Häufige Fragen zur Autoöffnung
-      </h2>
+       <div className="flex flex-col items-center justify-center mb-12">
+         <div className="flex items-center gap-3 mb-4">
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Support</span>
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         </div>
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
+           Häufige Fragen zur <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Autoöffnung</span>
+         </h2>
+       </div>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">

@@ -83,8 +83,8 @@ export default function PassbilderPage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Biometrische Passbilder <br /><span className="text-blue-600">in Top-Qualität.</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
+            Biometrische Passbilder <br /><span className="relative inline-block"><span className="absolute -inset-1 bg-blue-500/10 blur-xl rounded-full"></span><span className="relative text-blue-600">in Top-Qualität.</span></span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -105,9 +105,13 @@ export default function PassbilderPage() {
    <section className="px-[var(--section-px)] py-24 md:py-32 relative z-20">
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
-      <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Perfekt für alle amtlichen Dokumente</h2>
-      </StaggerItem>
+       <div className="flex items-center gap-3 mb-4">
+         <span className="h-px w-8 bg-blue-500"></span>
+         <span className="text-sm font-bold uppercase tracking-[0.2em] text-blue-500">Qualität</span>
+       </div>
+       <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+        Perfekt für alle amtlichen <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-500">Dokumente</span>
+       </h2>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Die Anforderungen an Passbilder sind streng. Gesichtsausdruck, Ausleuchtung, Hintergrund und Kopfposition müssen genau stimmen. Wir haben die Technik und Erfahrung, um sofort akzeptierte Bilder für Ihre Dokumente zu erstellen.
@@ -183,9 +187,16 @@ export default function PassbilderPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
-        Häufige Fragen zu Passbildern
-      </h2>
+       <div className="flex flex-col items-center justify-center mb-12">
+         <div className="flex items-center gap-3 mb-4">
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Support</span>
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         </div>
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
+           Häufige Fragen zu <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Passbildern</span>
+         </h2>
+       </div>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">

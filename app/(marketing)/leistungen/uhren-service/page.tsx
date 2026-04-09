@@ -82,8 +82,9 @@ export default function UhrenServicePage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Uhren-Service <br /> <span className="text-stone-600">Schnell & Einfach.</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
+            Uhren-Service <br />
+            <span className="relative inline-block"><span className="absolute -inset-1 bg-stone-500/10 blur-xl rounded-full"></span><span className="relative text-stone-600">Schnell & Einfach.</span></span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -104,9 +105,13 @@ export default function UhrenServicePage() {
    <section className="px-[var(--section-px)] py-24 md:py-32 relative z-20">
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
-      <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Wir bringen Ihre Uhr zum Ticken</h2>
-      </StaggerItem>
+       <div className="flex items-center gap-3 mb-4">
+         <span className="h-px w-8 bg-stone-500"></span>
+         <span className="text-sm font-bold uppercase tracking-[0.2em] text-stone-500">Service</span>
+       </div>
+       <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+        Wir bringen Ihre Uhr zum <span className="bg-clip-text text-transparent bg-gradient-to-r from-stone-600 to-stone-500">Ticken</span>
+       </h2>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Mit unserem Sofort-Service tauschen wir leere Batterien hochwertiger Knopfzellen-Marken (wie VARTA, Renata) aus und garantieren eine lange Lebensdauer.
@@ -143,9 +148,16 @@ export default function UhrenServicePage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
-        Häufige Fragen
-      </h2>
+       <div className="flex flex-col items-center justify-center mb-12">
+         <div className="flex items-center gap-3 mb-4">
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Support</span>
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         </div>
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
+           Häufige <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Fragen</span>
+         </h2>
+       </div>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">

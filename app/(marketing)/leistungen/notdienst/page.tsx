@@ -78,8 +78,9 @@ export default function NotdienstPage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-white leading-[1.05] text-balance mb-[var(--space-6)]">
-            Rund um die Uhr <span className="text-[var(--color-red-500)]">für Sie da.</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-white leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
+            Rund um die Uhr <br className="hidden sm:block" />
+            <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/20 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">für Sie da.</span></span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -104,8 +105,12 @@ export default function NotdienstPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Immer ansprechbar. Niemals Callcenter.
+       <div className="flex items-center gap-3 mb-4">
+         <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Zuverlässigkeit</span>
+       </div>
+       <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+        Immer ansprechbar. <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Niemals Callcenter.</span>
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -153,8 +158,8 @@ export default function NotdienstPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="mb-8">
          <Badge variant="outline" className="mb-4 text-blue-600 bg-blue-50 border-blue-200 tracking-widest font-bold">SCHICHTBETRIEB</Badge>
-         <h2 className="text-[28px] md:text-[36px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-           Wann wir für Sie Einsatzbereit sind
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1]">
+           Wann wir für Sie <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-blue-100 -z-10 -rotate-1 rounded-sm"></span>Einsatzbereit sind</span>
          </h2>
         </div>
        </StaggerItem>
@@ -200,9 +205,16 @@ export default function NotdienstPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
-        Häufige Fragen Notdienst
-      </h2>
+       <div className="flex flex-col items-center justify-center mb-12">
+         <div className="flex items-center gap-3 mb-4">
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+           <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Support</span>
+           <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
+         </div>
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
+           Häufige Fragen <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Notdienst</span>
+         </h2>
+       </div>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">
