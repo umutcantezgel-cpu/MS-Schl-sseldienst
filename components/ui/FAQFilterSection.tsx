@@ -130,7 +130,7 @@ export default function FAQFilterSection({ faqs }: FAQFilterSectionProps) {
           Ihre Frage war nicht dabei?
         </h3>
         <p className="text-base text-text-secondary mb-6 max-w-md mx-auto">
-          Rufen Sie uns einfach an — wir beantworten jede Frage persönlich und kostenlos.
+          Rufen Sie uns einfach an und wir beantworten jede Frage persönlich und kostenlos.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

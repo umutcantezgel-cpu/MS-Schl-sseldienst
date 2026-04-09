@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 16 — Cookie & Data Processing Inventory (SSOT)
+ * Phase 16 und Cookie & Data Processing Inventory (SSOT)
  * ══════════════════════════════════════════════════════════════
  * Single Source of Truth für alle Cookies und Datenverarbeitungen.
  * Wird von CookieConsent-Banner UND Datenschutzerklärung konsumiert.
@@ -42,7 +42,7 @@ interface DataProcessingEntry {
 }
 
 export interface ConsentState {
-  /** Immer true — technisch notwendig, nicht deaktivierbar */
+  /** Immer true und technisch notwendig, nicht deaktivierbar */
   essential: true;
   /** GA4, Scroll-Tracking, Web Vitals an GA4 */
   analytics: boolean;
@@ -111,8 +111,8 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     legalBasis: "Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) / Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Anfragebearbeitung)",
     recipient: "Formspree Inc., USA (Auftragsverarbeiter)",
     retentionPeriod: "Bis zur manuellen Löschung im Formspree-Dashboard oder bis Zweckerfüllung",
-    consentCategory: null, // Kein Consent nötig — Vertragsanbahnung
-    thirdCountryTransfer: "USA — EU-US Data Privacy Framework (DPF). Zusätzlich Standardvertragsklauseln (SCCs) als Absicherung.",
+    consentCategory: null, // Kein Consent nötig und Vertragsanbahnung
+    thirdCountryTransfer: "USA und EU-US Data Privacy Framework (DPF). Zusätzlich Standardvertragsklauseln (SCCs) als Absicherung.",
   },
   {
     name: "Google Analytics 4 (GA4)",
@@ -121,16 +121,16 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     recipient: "Google Ireland Limited",
     retentionPeriod: "14 Monate (GA4-Standard)",
     consentCategory: "analytics",
-    thirdCountryTransfer: "USA — Google Ireland Limited als Vertragspartner; Google LLC im EU-US Data Privacy Framework gelistet.",
+    thirdCountryTransfer: "USA und Google Ireland Limited als Vertragspartner; Google LLC im EU-US Data Privacy Framework gelistet.",
   },
   {
     name: "Vercel Analytics (cookieless)",
     dataCollected: ["Aggregierte Seitenaufrufe", "Web Vitals (LCP, CLS, INP, FCP, TTFB)"],
-    legalBasis: "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Website-Optimierung — cookieless, aggregiert, keine PII)",
+    legalBasis: "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Website-Optimierung und cookieless, aggregiert, keine PII)",
     recipient: "Vercel Inc., USA",
     retentionPeriod: "Aggregierte Daten, keine personenbezogenen Daten",
-    consentCategory: null, // Kein Consent nötig — cookieless
-    thirdCountryTransfer: "USA — Vercel DPA vorhanden. Keine personenbezogenen Daten übertragen.",
+    consentCategory: null, // Kein Consent nötig und cookieless
+    thirdCountryTransfer: "USA und Vercel DPA vorhanden. Keine personenbezogenen Daten übertragen.",
   },
   {
     name: "Google Maps (Servicegebiet-Karte)",
@@ -139,7 +139,7 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     recipient: "Google Ireland Limited",
     retentionPeriod: "Gemäß Google-Datenschutzrichtlinie",
     consentCategory: null, // Wird nur auf Servicegebiet-Seite geladen
-    thirdCountryTransfer: "USA — Google im EU-US Data Privacy Framework gelistet.",
+    thirdCountryTransfer: "USA und Google im EU-US Data Privacy Framework gelistet.",
   },
   {
     name: "Technisch notwendige Cookies",
@@ -147,7 +147,7 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     legalBasis: "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Funktionsfähigkeit der Website)",
     recipient: "Eigen (keine Weitergabe)",
     retentionPeriod: "365 Tage",
-    consentCategory: null, // Essentiell — kein Consent nötig
+    consentCategory: null, // Essentiell und kein Consent nötig
     thirdCountryTransfer: null,
   },
   {
@@ -157,7 +157,7 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     recipient: "Vercel Inc. / Netlify Inc., USA (Hosting-Provider)",
     retentionPeriod: "Server-Logfiles: max. 30 Tage",
     consentCategory: null,
-    thirdCountryTransfer: "USA — Vercel/Netlify DPA vorhanden. EU-US Data Privacy Framework.",
+    thirdCountryTransfer: "USA und Vercel/Netlify DPA vorhanden. EU-US Data Privacy Framework.",
   },
 ] as const;
 

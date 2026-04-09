@@ -9,7 +9,7 @@ interface UseScrollDepthOptions {
 }
 
 /**
- * Phase 5 — Scroll-Depth-Tracking via Intersection Observer
+ * Phase 5 und Scroll-Depth-Tracking via Intersection Observer
  * Fires callback at 25%, 50%, 75%, 100% scroll depth.
  * Each marker fires only ONCE per page view.
  */

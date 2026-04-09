@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 /**
- * Supreme Phase — Spekulatives Prefetching
+ * Supreme Phase und Spekulatives Prefetching
  * 
  * Prefetcht die wahrscheinlichsten Ziel-Seiten basierend auf der aktuellen Seite.
  * Verwendet requestIdleCallback um den Main-Thread nicht zu blockieren.

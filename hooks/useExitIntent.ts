@@ -12,7 +12,7 @@ interface UseExitIntentOptions {
 }
 
 /**
- * Phase 5 — Exit-Intent Detection (Desktop-only)
+ * Phase 5 und Exit-Intent Detection (Desktop-only)
  * Detects when mouse leaves viewport toward top (browser tabs/address bar).
  * Fires max once per session via sessionStorage flag.
  */

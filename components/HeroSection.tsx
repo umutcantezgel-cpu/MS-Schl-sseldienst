@@ -11,7 +11,7 @@ import { Typography } from "@/components/ui/typography/Typography";
 import TrustSignals from "@/components/trust/TrustSignals";
 
 /* ============================================================
-  HERO SECTION — Award-Level Design
+  HERO SECTION und Award-Level Design
   
   6-Schicht-Hintergrund:
    1. Charcoal-900 Base
@@ -50,7 +50,7 @@ function FloatingPaths({ position }: { position: number }) {
           684 - i * 5 * position
         } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
         width: 0.5 + i * 0.03,
-        /* Deterministic duration per path index — no Math.random() */
+        /* Deterministic duration per path index und no Math.random() */
         duration: 20 + ((i * 7 + 3) % 10),
       })),
     [position]
@@ -143,12 +143,12 @@ export default function HeroSection() {
                   <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
                 </span>
                 <span className="text-[color:var(--value-primary)] text-xs sm:text-sm md:text-sm font-semibold tracking-wide">
-                  Fachgeschäft geöffnet — persönliche Beratung vor Ort
+                  Fachgeschäft geöffnet für persönliche Beratung vor Ort
                 </span>
               </div>
             </div>
 
-            {/* 2. Headline — Visual heading (H2 since server-rendered H1 exists in page.tsx) */}
+            {/* 2. Headline und Visual heading (H2 since server-rendered H1 exists in page.tsx) */}
             <div className="hero-entrance" style={{ animationDelay: "100ms" }}>
             <h1
               id="hero-heading"
@@ -173,7 +173,7 @@ export default function HeroSection() {
               style={{ animationDelay: "150ms" }}
             >
               Persönliche Beratung, handwerkliche Präzision und Zeit für jeden Kunden.
-              Schlüssel nachmachen, Schließanlagen planen, Sicherheitstechnik einbauen — und natürlich auch Schlüsseldienst.
+              Schlüssel nachmachen, Schließanlagen planen, Sicherheitstechnik einbauen und natürlich auch Schlüsseldienst.
             </p>
 
             {/* 4. Phone Number Block + CTA Buttons */}
@@ -187,7 +187,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-status-success" />
                 </span>
-                <span className="text-status-success font-semibold text-sm">Laden geöffnet — Mo–Sa 10–18 Uhr</span>
+                <span className="text-status-success font-semibold text-sm">Montag bis Samstag 10 bis 18 Uhr und 24/7 Schlüsselnotdienst</span>
               </div>
 
               {/* Phone display */}
@@ -203,7 +203,7 @@ export default function HeroSection() {
                     06441 8056279
                   </span>
                   <span className="text-[10px] sm:text-sm font-medium text-[color:var(--text-secondary)] leading-tight sm:leading-snug max-w-[200px] sm:max-w-none">
-                    Kostenlose Beratung — Festpreise für alle Leistungen
+                    Kostenlose Beratung und Festpreise für alle Leistungen
                   </span>
                 </div>
               </a>
@@ -239,7 +239,7 @@ export default function HeroSection() {
 
           </div>
 
-          {/* ── Rechtes Panel (5 Spalten) — Auto Form (Geometrische Fahrzeug-Silhouette) ── */}
+          {/* ── Rechtes Panel (5 Spalten) und Auto Form (Geometrische Fahrzeug-Silhouette) ── */}
           <div className="lg:col-span-5 relative w-full mt-6 sm:mt-8 lg:mt-0 z-[10] px-2 sm:px-0 flex flex-col items-center justify-center">
             
             {/* Speed Lines Background (Motion Illusion) */}

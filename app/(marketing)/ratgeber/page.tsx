@@ -28,7 +28,7 @@ export default function RatgeberPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Blog",
-            "name": "Ratgeber — Schlüssel Schmiede Wetzlar",
+            "name": "Ratgeber und Schlüssel Schmiede Wetzlar",
             "description": "Erweitertes Wissen und Anleitungen zur Prävention und zum technischen Gebäudeschutz.",
             "url": `${siteUrl}/ratgeber`,
             "blogPost": ratgeberPosts.map(post => ({

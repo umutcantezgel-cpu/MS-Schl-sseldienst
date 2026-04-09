@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 18 — Personalization Content Mapping
+ * Phase 18 und Personalization Content Mapping
  * ══════════════════════════════════════════════════════════════
  * Maps visitor segments to Schlüsseldienst-specific content.
  * Single Source of Truth for all personalized text.
@@ -19,7 +19,7 @@ interface PersonalizedContent {
 
 const CONTENT_MAP: Record<VisitorSegment, PersonalizedContent> = {
   "new-visitor": {
-    heroHeadline: "Schlüssel Schmiede Wetzlar — Türöffnung ab 99€ Festpreis",
+    heroHeadline: "Schlüssel Schmiede Wetzlar und Türöffnung ab 99€ Festpreis",
     heroSubline: "24/7 Notdienst · In 15-30 Min vor Ort · Keine versteckten Kosten",
     ctaText: "Jetzt kostenlos anrufen",
     ctaSecondary: "Preisliste ansehen",
@@ -30,19 +30,19 @@ const CONTENT_MAP: Record<VisitorSegment, PersonalizedContent> = {
     heroSubline: "Schön, dass Sie uns wieder besuchen · Alle Preise transparent & fair",
     ctaText: "Direkt anrufen",
     ctaSecondary: "Leistungen entdecken",
-    trustSignal: "99% Kundenzufriedenheit — auch beim zweiten Einsatz",
+    trustSignal: "99% Kundenzufriedenheit und auch beim zweiten Einsatz",
   },
   "service-interested": {
-    heroHeadline: "Schlüssel Schmiede — Professionell & zum Festpreis",
+    heroHeadline: "Schlüssel Schmiede und Professionell & zum Festpreis",
     heroSubline: "Ausgebildet von Uwe Sarfeld · Beschädigungsfreie Türöffnung · TÜV-geprüft",
     ctaText: "Kostenlose Beratung anfordern",
     ctaSecondary: "Alle Leistungen ansehen",
-    trustSignal: "Jede Leistung zum garantierten Festpreis — vor Anfahrt genannt",
+    trustSignal: "Jede Leistung zum garantierten Festpreis und vor Anfahrt genannt",
   },
   "high-intent": {
     heroHeadline: "Ausgesperrt? Die Schlüssel Schmiede ist in 30 Min da!",
     heroSubline: "Festpreis ab 99€ · Keine Anfahrtskosten · Sofort verfügbar",
-    ctaText: "Jetzt anrufen — 06441 8056279",
+    ctaText: "Jetzt anrufen und 06441 8056279",
     ctaSecondary: "Festpreis berechnen",
     trustSignal: "Letzte erfolgreiche Türöffnung vor wenigen Stunden",
   },

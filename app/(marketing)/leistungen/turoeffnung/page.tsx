@@ -48,7 +48,7 @@ export default function TuroeffnungPage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateHowToSchema("Türöffnung in Wetzlar — So funktioniert der Ablauf","Schlüssel Schmiede Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis — zerstörungsfrei in 99% der Fälle, innerhalb von 15–30 Minuten."
+     __html: JSON.stringify(generateHowToSchema("Türöffnung in Wetzlar und So funktioniert der Ablauf","Schlüssel Schmiede Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis und zerstörungsfrei in 99% der Fälle, innerhalb von 1530 Minuten."
      )),
     }}
    />
@@ -56,14 +56,14 @@ export default function TuroeffnungPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getFAQSchema([
-      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." },
-      { question:"Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?", answer:"Schlüssel Schmiede Wetzlar ist in 15–30 Minuten bei Ihnen — 24/7, auch nachts, an Wochenenden und Feiertagen." },
+      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." },
+      { question:"Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?", answer:"Schlüssel Schmiede Wetzlar ist in 1530 Minuten bei Ihnen und 24/7, auch nachts, an Wochenenden und Feiertagen." },
       { question:"Wird die Tür bei der Öffnung beschädigt?", answer:"In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." },
      ])),
     }}
    />
 
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
@@ -97,7 +97,7 @@ export default function TuroeffnungPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-            Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 99 € – garantiert ohne versteckte Kosten.
+            Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 99 € und garantiert ohne versteckte Kosten.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -257,15 +257,15 @@ export default function TuroeffnungPage() {
      </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">
-        <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis — ohne versteckte Kosten und ohne Anfahrtsgebühren." />
-        <FAQAccordion question="Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?" answer="Wir sind in der Regel in 15–30 Minuten bei Ihnen vor Ort in Wetzlar und Umgebung." />
+        <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." />
+        <FAQAccordion question="Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?" answer="Wir sind in der Regel in 1530 Minuten bei Ihnen vor Ort in Wetzlar und Umgebung." />
         <FAQAccordion question="Wird die Tür bei der Öffnung beschädigt?" answer="In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." />
       </div>
      </StaggerItem>
     </StaggerReveal>
    </section>
 
-   {/* Verbraucherinformationen — SEO Authority Links */}
+   {/* Verbraucherinformationen und SEO Authority Links */}
    <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-16 md:py-20">
     <div className="mx-auto max-w-4xl">
       <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
@@ -289,7 +289,7 @@ export default function TuroeffnungPage() {
             <DoorOpen className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Prävention</span>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Prävention</span>
             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Empfehlungen der Polizei für sichere Türen und Schlösser.</p>
           </div>
         </a>

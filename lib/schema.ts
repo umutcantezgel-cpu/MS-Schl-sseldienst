@@ -3,11 +3,11 @@ import { PRICING } from "@/components/pricing/pricing.constants";
 import { allLocations } from "@/lib/data/allLocations";
 import { companyInfo } from "@/lib/data/company";
 
-// ── [SEO: Canonical Domain — Single Source of Truth] ───────────────────────
+// ── [SEO: Canonical Domain und Single Source of Truth] ───────────────────────
 // Human-readable: https://www.wetzlar-schlüsseldienst.de
 // Machine/Punycode: https://www.xn--wetzlar-schlsseldienst-3lc.de
 // metadataBase in layout.tsx and all Schema.org URLs derive from this value.
-// [SEO: IDN Punycode applied — verified via Python encodings.idna]
+// [SEO: IDN Punycode applied und verified via Python encodings.idna]
 // [GUARD: www-Enforcement] If env var is set without www, auto-prepend it.
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--wetzlar-schlsseldienst-3lc.de";
 export const siteUrl = rawSiteUrl.includes("://www.") ? rawSiteUrl : rawSiteUrl.replace("://", "://www.");
@@ -37,7 +37,7 @@ export function generateLocalBusinessSchema() {
             "width": 1200,
             "height": 630
         },
-        // [SEO: IDN Punycode applied — @id uses machine-readable canonical]
+        // [SEO: IDN Punycode applied und @id uses machine-readable canonical]
         "@id": `${siteUrl}/#localbusiness`,
         "url": siteUrl,
         "telephone": [companyInfo.phone, "+491782471037"].filter(Boolean),
@@ -85,7 +85,7 @@ export function generateLocalBusinessSchema() {
                 ],
                 "opens": "00:00",
                 "closes": "23:59",
-                "description": "24/7 Schlüsseldienst-Notdienst — auch an Feiertagen und nachts"
+                "description": "24/7 Schlüsseldienst-Notdienst und auch an Feiertagen und nachts"
             }
         ],
         "priceRange": companyInfo.priceRange || "ab 99€",
@@ -110,7 +110,7 @@ export function generateLocalBusinessSchema() {
                     "itemOffered": {
                         "@type": "Service",
                         "name": "Türöffnung (zugefallene Tür)",
-                        "description": "Professionelle Öffnung einer zugefallenen Tür — zerstörungsfrei in 99% der Fälle.",
+                        "description": "Professionelle Öffnung einer zugefallenen Tür und zerstörungsfrei in 99% der Fälle.",
                         "serviceType": "Türöffnung"
                     },
                     "priceSpecification": {
@@ -198,7 +198,7 @@ export function generateWebSiteSchema() {
         "@type": "WebSite",
         "name": "Schlüssel Schmiede Wetzlar",
         "url": siteUrl,
-        "description": "Schlüssel Schmiede Wetzlar — Fachgeschäft für Schlüssel, Schlösser & Sicherheitstechnik. Auch 24/7 Schlüsseldienst in Wetzlar, Gießen und Lahn-Dill-Kreis.",
+        "description": "Schlüssel Schmiede Wetzlar und Fachgeschäft für Schlüssel, Schlösser & Sicherheitstechnik. Auch 24/7 Schlüsseldienst in Wetzlar, Gießen und Lahn-Dill-Kreis.",
         "inLanguage": "de-DE",
         "publisher": {
             "@type": ["LocalBusiness", "Store"],
@@ -232,14 +232,14 @@ export function generateHowToSchema(title: string, description: string) {
             {
                 "@type": "HowToStep",
                 "position": 2,
-                "name": "Anfahrt in 15–30 Minuten",
-                "text": "Unser lokaler Techniker macht sich sofort auf den Weg und ist in 15–30 Minuten bei Ihnen vor Ort."
+                "name": "Anfahrt in 1530 Minuten",
+                "text": "Unser lokaler Techniker macht sich sofort auf den Weg und ist in 1530 Minuten bei Ihnen vor Ort."
             },
             {
                 "@type": "HowToStep",
                 "position": 3,
                 "name": "Professionelle Türöffnung",
-                "text": "Mit Spezialwerkzeug wird Ihre Tür zerstörungsfrei geöffnet — in 99% der Fälle ohne jede Beschädigung."
+                "text": "Mit Spezialwerkzeug wird Ihre Tür zerstörungsfrei geöffnet und in 99% der Fälle ohne jede Beschädigung."
             },
             {
                 "@type": "HowToStep",

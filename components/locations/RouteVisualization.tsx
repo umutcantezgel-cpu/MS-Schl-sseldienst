@@ -5,10 +5,10 @@ import { pickVariant } from "@/lib/textRotation";
 
 const subtitleVariants = [
     (name: string) => `Transparente Anfahrt direkt aus Wetzlar nach ${name}. Ohne Umwege, ohne Callcenter.`,
-    (name: string) => `Direkte Route von unserem Standort in Wetzlar zu Ihnen nach ${name} — schnell und zuverlässig.`,
+    (name: string) => `Direkte Route von unserem Standort in Wetzlar zu Ihnen nach ${name} , schnell und zuverlässig.`,
     (name: string) => `Unsere Techniker starten aus Wetzlar und fahren auf direktem Weg nach ${name}. Kein Callcenter dazwischen.`,
     (name: string) => `Von Wetzlar nach ${name}: Kurzer Anfahrtsweg, kalkulierbare Zeiten und volle Transparenz.`,
-    (name: string) => `Wir kommen persönlich aus Wetzlar — die Strecke nach ${name} kennen unsere Monteure im Schlaf.`,
+    (name: string) => `Wir kommen persönlich aus Wetzlar , die Strecke nach ${name} kennen unsere Monteure im Schlaf.`,
 ];
 
 const startLabelVariants = [

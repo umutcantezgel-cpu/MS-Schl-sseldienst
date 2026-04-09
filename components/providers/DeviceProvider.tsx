@@ -177,7 +177,7 @@ export function DeviceProvider({ children }: { children: ReactNode }) {
   return <DeviceCtx.Provider value={value}>{children}</DeviceCtx.Provider>;
 }
 
-/** Consumer hook — use this in components */
+/** Consumer hook und use this in components */
 export function useDevice(): DeviceContext {
   return useContext(DeviceCtx);
 }

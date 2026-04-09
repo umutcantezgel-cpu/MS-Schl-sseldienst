@@ -329,7 +329,7 @@
     --color-off-white: #FAFAFA;
     --color-warm-white: #F5F3F0;
     --color-light-gray: #EDEDED;
-    --color-mid-gray: #6B6B6B; /* Erhöhter Kontrast für WCAG AA */
+    --color-mid-gray: #595959; /* Erhöhter Kontrast für WCAG AA 7:1 auf weiß */
     --color-dark-gray: #4A4A4A;
 
     /* Premium-Rot-Palette (Signal-Rot — Handlung & Dringlichkeit) */
@@ -373,9 +373,9 @@
     --color-charcoal-50: #F7F7F8;
     --color-charcoal-100: #E8E8EA;
     --color-charcoal-200: #D1D1D6;
-    --color-charcoal-300: #A1A1AA;
-    --color-charcoal-400: #71717A;
-    --color-charcoal-500: #63636C;
+    --color-charcoal-300: #D1D5DB; /* WCAG AA 13:1 auf charcoal-950 */
+    --color-charcoal-400: #9CA3AF; /* WCAG AA 7.5:1 auf charcoal-950 */
+    --color-charcoal-500: #9CA3AF; /* WCAG AA 7.5:1 auf charcoal-950 */
     --color-charcoal-600: #52525B;
     --color-charcoal-700: #3F3F46;
     --color-charcoal-800: #27272A;

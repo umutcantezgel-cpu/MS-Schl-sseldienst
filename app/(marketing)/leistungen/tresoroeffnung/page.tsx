@@ -54,7 +54,7 @@ export default function TresoroeffnungPage() {
     }}
    />
 
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-charcoal-900)] to-[#0A0A0A] overflow-hidden text-white">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"

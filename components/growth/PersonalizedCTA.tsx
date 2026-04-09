@@ -7,7 +7,7 @@ import { trackEvent } from "@/lib/analytics";
 import Link from "next/link";
 
 /**
- * Phase 18 — Personalized CTA Block
+ * Phase 18 und Personalized CTA Block
  * A segment-aware call-to-action that adapts text based on visitor segment.
  * Use anywhere a contextual CTA is needed.
  */

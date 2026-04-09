@@ -35,7 +35,7 @@ export default function WiderrufPage() {
             </div>
 
             <LegalSection>
-                <TLDRBox title="Widerruf — das Wichtigste auf einen Blick" icon="info">
+                <TLDRBox title="Widerruf und das Wichtigste auf einen Blick" icon="info">
                     <p>Als Verbraucher haben Sie grundsätzlich ein <strong>14-tägiges Widerrufsrecht</strong> bei Fernabsatzverträgen (z.B. telefonische Beauftragung).</p>
                     <p><strong>Wichtige Ausnahme bei Notdiensten:</strong> Wenn Sie unseren Schlüsseldienst zur sofortigen Notöffnung beauftragen und wir die Dienstleistung vor Ablauf der Widerrufsfrist vollständig erbringen, <strong>erlischt Ihr Widerrufsrecht</strong> gemäß § 356 Abs. 4 Nr. 2 BGB. Dies gilt, sofern Sie vor Beginn der Leistung ausdrücklich zugestimmt und bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung verlieren.</p>
                 </TLDRBox>

@@ -30,7 +30,7 @@ export default function ContactSection() {
                 Fragen? <span className="text-[var(--color-red-500)]">Wir beraten Sie gerne.</span>
               </Typography>
               <Typography variant="body" color="secondary" className="mb-8 max-w-sm block">
-                Rufen Sie uns an oder kommen Sie direkt im Laden vorbei. Persönliche Beratung vor Ort und 24/7 Schlüsseldienst-Notdienst — Festpreis am Telefon.
+                Rufen Sie uns an oder kommen Sie direkt im Laden vorbei. Persönliche Beratung vor Ort und 24/7 Schlüsseldienst-Notdienst und Festpreis am Telefon.
               </Typography>
 
               <a

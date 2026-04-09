@@ -237,7 +237,7 @@ export default function ContactPremiumMap() {
         new Marker({
           position: WETZLAR_CENTER,
           map,
-          title: "Schlüssel Schmiede Wetzlar — Hauptstandort",
+          title: "Schlüssel Schmiede Wetzlar und Hauptstandort",
           zIndex: 100,
           icon: {
             url:

@@ -6,9 +6,9 @@ import { trackEvent } from "@/lib/analytics";
 import { useEffect, useRef } from "react";
 
 /**
- * Phase 18 — Personalized Hero Overlay
+ * Phase 18 und Personalized Hero Overlay
  * Renders segment-specific trust signal below the hero section.
- * Does NOT replace the hero — it enhances it with a contextual trust bar.
+ * Does NOT replace the hero und it enhances it with a contextual trust bar.
  */
 export default function PersonalizedHero() {
   const segment = useVisitorSegment();

@@ -20,7 +20,7 @@ interface DynamicCounterProps {
 }
 
 /**
- * Phase 18 — Animated Counter with IntersectionObserver
+ * Phase 18 und Animated Counter with IntersectionObserver
  * Counts up from 0 to target value when element enters viewport.
  * Respects prefers-reduced-motion → shows final value immediately.
  */

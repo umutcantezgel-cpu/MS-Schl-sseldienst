@@ -49,7 +49,7 @@ export default function SchluesselNachmachenPage() {
     }}
    />
    
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div

@@ -1,7 +1,7 @@
 /**
- * Zentraler Bild-SEO-Katalog — Schlüsseldienst Wetzlar
+ * Zentraler Bild-SEO-Katalog und Schlüsseldienst Wetzlar
  *
- * Jedes Bild ist mit striktem SEO-Naming, Alt-Text (40–100 Zeichen),
+ * Jedes Bild ist mit striktem SEO-Naming, Alt-Text (40100 Zeichen),
  * Title-Tag und Kategorie versehen. Komponenten importieren aus diesem
  * Katalog, sodass Metadaten an einer einzigen Stelle gepflegt werden.
  *
@@ -21,7 +21,7 @@ export type ImageCategory =
 export interface ImageAsset {
   /** Pfad relativ zu /public (für Next.js <Image src={}>) */
   src: string;
-  /** SEO Alt-Text (40–100 Zeichen, Keywords + Lokalbezug) */
+  /** SEO Alt-Text (40100 Zeichen, Keywords + Lokalbezug) */
   alt: string;
   /** HTML Title-Tag */
   title: string;
@@ -41,46 +41,46 @@ export const teamImages: ImageAsset[] = [
   {
     src: "/images/mina-saad-schluesseldienst-wetzlar-einsatzfahrzeug.jpeg",
     alt: "Mina Saad vom Schlüsseldienst Wetzlar am Einsatzfahrzeug",
-    title: "Mina Saad – Ihr Schlüsseldienst-Monteur in Wetzlar",
+    title: "Mina Saad und Ihr Schlüsseldienst-Monteur in Wetzlar",
     width: 800,
     height: 1067,
     category: "team",
   },
   {
     src: "/images/mina-saad-inhaber-schluessel-schmiede-portrait.jpeg",
-    alt: "Mina Saad – Inhaber der Schlüssel-Schmiede Wetzlar im Portrait",
-    title: "Mina Saad – Portrait des Inhabers",
+    alt: "Mina Saad und Inhaber der Schlüssel-Schmiede Wetzlar im Portrait",
+    title: "Mina Saad und Portrait des Inhabers",
     width: 800,
     height: 1200,
     category: "team",
   },
   {
     src: "/images/mina-saad-schluesseldienst-wetzlar-outdoor-portrait.jpeg",
-    alt: "Mina Saad vom Schlüsseldienst Wetzlar – Outdoor-Portrait",
-    title: "Mina Saad – Outdoor-Portrait",
+    alt: "Mina Saad vom Schlüsseldienst Wetzlar und Outdoor-Portrait",
+    title: "Mina Saad und Outdoor-Portrait",
     width: 800,
     height: 1200,
     category: "team",
   },
   {
     src: "/images/mina-saad-schluesseldienst-wetzlar-ganzkoerper.jpeg",
-    alt: "Mina Saad – Schlüsseldienst Wetzlar Inhaber Ganzkörperaufnahme",
-    title: "Mina Saad – Ganzkörperaufnahme",
+    alt: "Mina Saad und Schlüsseldienst Wetzlar Inhaber Ganzkörperaufnahme",
+    title: "Mina Saad und Ganzkörperaufnahme",
     width: 800,
     height: 1200,
     category: "team",
   },
   {
     src: "/images/mina-saad-inhaber-selfie-schluesseldienst-wetzlar.jpeg",
-    alt: "Mina Saad – Inhaber-Selfie vom Schlüsseldienst Wetzlar",
-    title: "Mina Saad – Inhaber Selfie",
+    alt: "Mina Saad und Inhaber-Selfie vom Schlüsseldienst Wetzlar",
+    title: "Mina Saad und Inhaber Selfie",
     width: 800,
     height: 800,
     category: "team",
   },
   {
     src: "/images/mina-saad-arbeitseinsatz-tueroeffnung-wetzlar.jpeg",
-    alt: "Mina Saad während der Arbeit – Türöffnung in Wetzlar",
+    alt: "Mina Saad während der Arbeit und Türöffnung in Wetzlar",
     title: "Mina Saad bei der Türöffnung",
     width: 800,
     height: 1067,
@@ -89,7 +89,7 @@ export const teamImages: ImageAsset[] = [
   {
     src: "/images/mina-saad-smart-lock-installation-wetzlar.jpeg",
     alt: "Mina Saad installiert Smart-Lock an Tür in Wetzlar",
-    title: "Mina Saad – Smart-Lock Installation",
+    title: "Mina Saad und Smart-Lock Installation",
     width: 800,
     height: 1067,
     category: "team",
@@ -104,7 +104,7 @@ export const werkstattImages: ImageAsset[] = [
   {
     src: "/images/schluessel-schmiede-wetzlar-aussenansicht-ladengeschaeft.webp",
     alt: "Außenansicht Ladengeschäft Schlüssel-Schmiede Wetzlar Langgasse",
-    title: "Schlüssel-Schmiede Wetzlar – Außenansicht Langgasse 70",
+    title: "Schlüssel-Schmiede Wetzlar und Außenansicht Langgasse 70",
     width: 1200,
     height: 800,
     category: "werkstatt",
@@ -112,7 +112,7 @@ export const werkstattImages: ImageAsset[] = [
   {
     src: "/images/schluessel-schmiede-wetzlar-innenbereich-laden.webp",
     alt: "Innenbereich des Ladengeschäfts Schlüssel-Schmiede Wetzlar",
-    title: "Schlüssel-Schmiede Wetzlar – Innenbereich",
+    title: "Schlüssel-Schmiede Wetzlar und Innenbereich",
     width: 1200,
     height: 800,
     category: "werkstatt",
@@ -128,7 +128,7 @@ export const werkstattImages: ImageAsset[] = [
   {
     src: "/images/schluessel-schmiede-wetzlar-glasvitrine-sortiment.jpeg",
     alt: "Glasvitrine mit Schlüssel-Sortiment in der Schlüssel-Schmiede Wetzlar",
-    title: "Glasvitrine – Schlüssel-Sortiment",
+    title: "Glasvitrine und Schlüssel-Sortiment",
     width: 800,
     height: 1067,
     category: "werkstatt",
@@ -136,7 +136,7 @@ export const werkstattImages: ImageAsset[] = [
   {
     src: "/images/glasschrank-schloss-auswahl-schluessel-schmiede-wetzlar.jpeg",
     alt: "Glasschrank mit Schloss-Auswahl in der Schlüssel-Schmiede Wetzlar",
-    title: "Glasschrank – Schloss-Auswahl",
+    title: "Glasschrank und Schloss-Auswahl",
     width: 800,
     height: 1067,
     category: "werkstatt",
@@ -144,7 +144,7 @@ export const werkstattImages: ImageAsset[] = [
   {
     src: "/images/schluesseldienst-wetzlar-werkzeug-einsatzfahrzeug.jpeg",
     alt: "Werkzeug-Vorbereitung im Einsatzfahrzeug Schlüsseldienst Wetzlar",
-    title: "Werkzeug im Einsatzfahrzeug – mobiler Schlüsseldienst",
+    title: "Werkzeug im Einsatzfahrzeug und mobiler Schlüsseldienst",
     width: 800,
     height: 600,
     category: "werkstatt",
@@ -167,7 +167,7 @@ export const maschinenImages: ImageAsset[] = [
   {
     src: "/images/schluessel-fraesmaschine-schluesseldienst-wetzlar.jpeg",
     alt: "Schlüsselfräsmaschine im Ladengeschäft Schlüsseldienst Wetzlar",
-    title: "Schlüsselfräsmaschine – Ladengeschäft",
+    title: "Schlüsselfräsmaschine und Ladengeschäft",
     width: 800,
     height: 600,
     category: "werkstatt",
@@ -175,7 +175,7 @@ export const maschinenImages: ImageAsset[] = [
   {
     src: "/images/schluessel-kopierfraese-werkstatt-wetzlar.jpeg",
     alt: "Schlüssel-Kopierfräse in der Werkstatt der Schlüssel-Schmiede Wetzlar",
-    title: "Schlüssel-Kopierfräse – Werkstatt",
+    title: "Schlüssel-Kopierfräse und Werkstatt",
     width: 800,
     height: 600,
     category: "werkstatt",
@@ -183,7 +183,7 @@ export const maschinenImages: ImageAsset[] = [
   {
     src: "/images/cnc-schluesselmaschine-schluessel-schmiede-wetzlar.jpeg",
     alt: "CNC-Schlüsselmaschine in der Schlüssel-Schmiede Wetzlar",
-    title: "CNC-Schlüsselmaschine – Präzisionstechnik",
+    title: "CNC-Schlüsselmaschine und Präzisionstechnik",
     width: 800,
     height: 600,
     category: "werkstatt",
@@ -206,15 +206,15 @@ export const tueroeffnungImages: ImageAsset[] = [
   {
     src: "/images/lockpicking-tueroeffnung-schluesseldienst-wetzlar.webp",
     alt: "Zerstörungsfreie Türöffnung per Lockpicking Schlüsseldienst Wetzlar",
-    title: "Lockpicking – zerstörungsfreie Türöffnung",
+    title: "Lockpicking und zerstörungsfreie Türöffnung",
     width: 1200,
     height: 800,
     category: "tueroeffnung",
   },
   {
     src: "/images/tueroeffnung-prozess-zerstoerungsfrei-wetzlar.jpeg",
-    alt: "Zerstörungsfreier Türöffnungsprozess – Schlüsseldienst Wetzlar",
-    title: "Türöffnungsprozess – zerstörungsfrei",
+    alt: "Zerstörungsfreier Türöffnungsprozess und Schlüsseldienst Wetzlar",
+    title: "Türöffnungsprozess und zerstörungsfrei",
     width: 800,
     height: 600,
     category: "tueroeffnung",
@@ -222,7 +222,7 @@ export const tueroeffnungImages: ImageAsset[] = [
   {
     src: "/images/tueroeffnung-arbeit-obertuerband-schluesseldienst.jpeg",
     alt: "Schlüsseldienst bei der Arbeit am Obertürband während Türöffnung",
-    title: "Arbeit am Obertürband – Türöffnung",
+    title: "Arbeit am Obertürband und Türöffnung",
     width: 800,
     height: 1067,
     category: "tueroeffnung",
@@ -230,23 +230,23 @@ export const tueroeffnungImages: ImageAsset[] = [
   {
     src: "/images/geoeffnetes-schloss-tueroeffnung-wetzlar.jpeg",
     alt: "Geöffnetes Schloss nach erfolgreicher Türöffnung in Wetzlar",
-    title: "Geöffnetes Schloss – erfolgreiche Türöffnung",
+    title: "Geöffnetes Schloss und erfolgreiche Türöffnung",
     width: 800,
     height: 600,
     category: "tueroeffnung",
   },
   {
     src: "/images/schloss-mit-schluessel-tueroeffnung-schluesseldienst-wetzlar.webp",
-    alt: "Schloss mit Schlüssel bei Türöffnung – Schlüsseldienst Wetzlar",
-    title: "Schloss mit Schlüssel – Türöffnung",
+    alt: "Schloss mit Schlüssel bei Türöffnung und Schlüsseldienst Wetzlar",
+    title: "Schloss mit Schlüssel und Türöffnung",
     width: 1200,
     height: 800,
     category: "tueroeffnung",
   },
   {
     src: "/images/schluessel-an-haustuer-schluesseldienst-wetzlar.webp",
-    alt: "Schlüssel steckt in Haustür – Schlüsseldienst Wetzlar Einsatz",
-    title: "Schlüssel in Haustür – Einsatzfoto",
+    alt: "Schlüssel steckt in Haustür und Schlüsseldienst Wetzlar Einsatz",
+    title: "Schlüssel in Haustür und Einsatzfoto",
     width: 1200,
     height: 800,
     category: "tueroeffnung",
@@ -260,16 +260,16 @@ export const tueroeffnungImages: ImageAsset[] = [
 export const schlossImages: ImageAsset[] = [
   {
     src: "/images/leerer-schliesszylinder-tuerschloss-wetzlar.jpeg",
-    alt: "Leerer Schließzylinder ohne Schlüssel – Türschloss Wetzlar",
-    title: "Leerer Schließzylinder – Türschloss",
+    alt: "Leerer Schließzylinder ohne Schlüssel und Türschloss Wetzlar",
+    title: "Leerer Schließzylinder und Türschloss",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/aufgebrochenes-tuerschloss-vermessung-wetzlar.jpeg",
-    alt: "Aufgebrochenes Türschloss wird vermessen – Schlüsseldienst Wetzlar",
-    title: "Aufgebrochenes Türschloss – Vermessung",
+    alt: "Aufgebrochenes Türschloss wird vermessen und Schlüsseldienst Wetzlar",
+    title: "Aufgebrochenes Türschloss und Vermessung",
     width: 800,
     height: 600,
     category: "schloss",
@@ -277,23 +277,23 @@ export const schlossImages: ImageAsset[] = [
   {
     src: "/images/tuerschloss-innenleben-technik-nahaufnahme.jpeg",
     alt: "Technische Nahaufnahme des Innenlebens eines Türschlosses",
-    title: "Türschloss-Innenleben – Technik-Nahaufnahme",
+    title: "Türschloss-Innenleben und Technik-Nahaufnahme",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/kaputtes-verrostetes-schloss-austausch-wetzlar.jpeg",
-    alt: "Kaputtes verrostetes Schloss – Austausch durch Schlüsseldienst Wetzlar",
-    title: "Verrostetes Schloss – Austausch nötig",
+    alt: "Kaputtes verrostetes Schloss und Austausch durch Schlüsseldienst Wetzlar",
+    title: "Verrostetes Schloss und Austausch nötig",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/defektes-tuerschloss-reparatur-schluesseldienst.jpeg",
-    alt: "Defektes Türschloss vor der Reparatur – Schlüsseldienst Wetzlar",
-    title: "Defektes Türschloss – vor Reparatur",
+    alt: "Defektes Türschloss vor der Reparatur und Schlüsseldienst Wetzlar",
+    title: "Defektes Türschloss und vor Reparatur",
     width: 800,
     height: 600,
     category: "schloss",
@@ -301,7 +301,7 @@ export const schlossImages: ImageAsset[] = [
   {
     src: "/images/aufgebrochenes-tuerschloss-einbruchschaden-wetzlar.jpeg",
     alt: "Aufgebrochenes Türschloss mit Einbruchschaden in Wetzlar",
-    title: "Einbruchschaden – aufgebrochenes Türschloss",
+    title: "Einbruchschaden und aufgebrochenes Türschloss",
     width: 800,
     height: 600,
     category: "schloss",
@@ -309,31 +309,31 @@ export const schlossImages: ImageAsset[] = [
   {
     src: "/images/aufgebrochenes-sicherheitsschloss-wetzlar-einsatz.jpeg",
     alt: "Aufgebrochenes Sicherheitsschloss bei Einsatz in Wetzlar",
-    title: "Aufgebrochenes Sicherheitsschloss – Einsatz",
+    title: "Aufgebrochenes Sicherheitsschloss und Einsatz",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/demontiertes-tuerschloss-wandmontage-wetzlar.jpeg",
-    alt: "Demontiertes Türschloss von der Wand entfernt – Wetzlar Einsatz",
-    title: "Demontiertes Türschloss – Wandmontage",
+    alt: "Demontiertes Türschloss von der Wand entfernt und Wetzlar Einsatz",
+    title: "Demontiertes Türschloss und Wandmontage",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/demontiertes-tuerschloss-auf-werkbank-wetzlar.jpeg",
-    alt: "Demontiertes Türschloss auf Werkbank – Schlüsseldienst Wetzlar",
-    title: "Türschloss auf Werkbank – demontiert",
+    alt: "Demontiertes Türschloss auf Werkbank und Schlüsseldienst Wetzlar",
+    title: "Türschloss auf Werkbank und demontiert",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/tuerschloss-holztuer-sicherheitstechnik-wetzlar.jpeg",
-    alt: "Türschloss in Holztür – Sicherheitstechnik Schlüsseldienst Wetzlar",
-    title: "Türschloss in Holztür – Sicherheitstechnik",
+    alt: "Türschloss in Holztür und Sicherheitstechnik Schlüsseldienst Wetzlar",
+    title: "Türschloss in Holztür und Sicherheitstechnik",
     width: 800,
     height: 600,
     category: "schloss",
@@ -341,22 +341,22 @@ export const schlossImages: ImageAsset[] = [
   {
     src: "/images/elektronisches-tuerschloss-aufgebrochen-kabel-sichtbar.jpeg",
     alt: "Elektronisches Türschloss aufgebrochen mit sichtbaren Kabeln",
-    title: "Elektronisches Türschloss – aufgebrochen",
+    title: "Elektronisches Türschloss und aufgebrochen",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/tuerschloss-aufbruch-prozess-nahaufnahme-wetzlar.jpeg",
-    alt: "Türschloss während Aufbruchprozess – Nahaufnahme Wetzlar",
-    title: "Türschloss-Aufbruch – Nahaufnahme",
+    alt: "Türschloss während Aufbruchprozess und Nahaufnahme Wetzlar",
+    title: "Türschloss-Aufbruch und Nahaufnahme",
     width: 800,
     height: 600,
     category: "schloss",
   },
   {
     src: "/images/tuerschloss-vermessung-zollstock-schluesseldienst.jpeg",
-    alt: "Türschloss-Vermessung mit Zollstock – Schlüsseldienst Wetzlar",
+    alt: "Türschloss-Vermessung mit Zollstock und Schlüsseldienst Wetzlar",
     title: "Türschloss-Vermessung mit Zollstock",
     width: 800,
     height: 600,
@@ -371,8 +371,8 @@ export const schlossImages: ImageAsset[] = [
 export const schluesselImages: ImageAsset[] = [
   {
     src: "/images/original-schluessel-kopie-vergleich-wetzlar.jpeg",
-    alt: "Originalschlüssel neben kopierter Version – Vergleich Wetzlar",
-    title: "Originalschlüssel vs. Kopie – Vergleich",
+    alt: "Originalschlüssel neben kopierter Version und Vergleich Wetzlar",
+    title: "Originalschlüssel vs. Kopie und Vergleich",
     width: 800,
     height: 600,
     category: "schluessel",
@@ -380,15 +380,15 @@ export const schluesselImages: ImageAsset[] = [
   {
     src: "/images/schluessel-sortiment-haengend-schluessel-schmiede.jpeg",
     alt: "Hängendes Schlüssel-Sortiment in der Schlüssel-Schmiede Wetzlar",
-    title: "Schlüssel-Sortiment – hängend",
+    title: "Schlüssel-Sortiment und hängend",
     width: 800,
     height: 1067,
     category: "schluessel",
   },
   {
     src: "/images/antiker-schluessel-design-schluessel-schmiede.jpeg",
-    alt: "Antiker Schlüssel mit kunstvollem Design – Schlüssel-Schmiede",
-    title: "Antiker Schlüssel – kunstvolles Design",
+    alt: "Antiker Schlüssel mit kunstvollem Design und Schlüssel-Schmiede",
+    title: "Antiker Schlüssel und kunstvolles Design",
     width: 800,
     height: 600,
     category: "schluessel",
@@ -411,7 +411,7 @@ export const sicherheitImages: ImageAsset[] = [
   {
     src: "/images/elektronisches-tuerschloss-nachruestung-alte-tuer.jpeg",
     alt: "Modernes elektronisches Türschloss nachgerüstet in alter Holztür",
-    title: "Elektronisches Türschloss – Nachrüstung",
+    title: "Elektronisches Türschloss und Nachrüstung",
     width: 800,
     height: 1067,
     category: "sicherheit",
@@ -419,7 +419,7 @@ export const sicherheitImages: ImageAsset[] = [
   {
     src: "/images/smart-lock-innenleben-nachruestung-holztuer.jpeg",
     alt: "Smart-Lock Innenleben bei Nachrüstung in alter Holztür",
-    title: "Smart-Lock Innenleben – Nachrüstung",
+    title: "Smart-Lock Innenleben und Nachrüstung",
     width: 800,
     height: 600,
     category: "sicherheit",
@@ -433,15 +433,15 @@ export const sicherheitImages: ImageAsset[] = [
 export const montageImages: ImageAsset[] = [
   {
     src: "/images/edelstahl-tuereingang-montage-schluesseldienst.jpeg",
-    alt: "Installierter Edelstahl-Türeingang – Montage Schlüsseldienst Wetzlar",
-    title: "Edelstahl-Türeingang – nach Montage",
+    alt: "Installierter Edelstahl-Türeingang und Montage Schlüsseldienst Wetzlar",
+    title: "Edelstahl-Türeingang und nach Montage",
     width: 800,
     height: 1067,
     category: "montage",
   },
   {
     src: "/images/edelstahl-tueranlage-premium-montage-wetzlar.jpeg",
-    alt: "Premium Edelstahl-Türanlage montiert – Schlüsseldienst Wetzlar",
+    alt: "Premium Edelstahl-Türanlage montiert und Schlüsseldienst Wetzlar",
     title: "Premium Edelstahl-Türanlage",
     width: 800,
     height: 1067,
@@ -450,7 +450,7 @@ export const montageImages: ImageAsset[] = [
   {
     src: "/images/glastuer-eingang-montage-schluesseldienst-wetzlar.jpeg",
     alt: "Glastür-Eingang Montage durch den Schlüsseldienst Wetzlar",
-    title: "Glastür-Eingang – Montage",
+    title: "Glastür-Eingang und Montage",
     width: 800,
     height: 600,
     category: "montage",
@@ -465,15 +465,15 @@ export const auszeichnungImages: ImageAsset[] = [
   {
     src: "/images/wetzlar-open-medaillen-gold-silber-nahaufnahme.jpeg",
     alt: "Gold- und Silbermedaillen vom Wetzlar Open 2025 in Nahaufnahme",
-    title: "Wetzlar Open 2025 – Medaillen Nahaufnahme",
+    title: "Wetzlar Open 2025 und Medaillen Nahaufnahme",
     width: 800,
     height: 600,
     category: "auszeichnung",
   },
   {
     src: "/images/wetzlar-open-2025-medaillen-gold-silber.jpeg",
-    alt: "Sechs Medaillen vom Wetzlar Open 2025 – Gold und Silber",
-    title: "Wetzlar Open 2025 – alle Medaillen",
+    alt: "Sechs Medaillen vom Wetzlar Open 2025 und Gold und Silber",
+    title: "Wetzlar Open 2025 und alle Medaillen",
     width: 800,
     height: 600,
     category: "auszeichnung",
@@ -481,7 +481,7 @@ export const auszeichnungImages: ImageAsset[] = [
   {
     src: "/images/siegermedaille-wetzlar-open-2025-mina-saad.jpeg",
     alt: "Siegermedaille Wetzlar Open 2025 gewonnen von Mina Saad",
-    title: "Siegermedaille Wetzlar Open 2025 – Mina Saad",
+    title: "Siegermedaille Wetzlar Open 2025 und Mina Saad",
     width: 800,
     height: 800,
     category: "auszeichnung",
@@ -489,15 +489,15 @@ export const auszeichnungImages: ImageAsset[] = [
 ];
 
 // ═══════════════════════════════════════════════════════════
-//  AI-GENERIERTE BILDER — Visual DNA Library (20 Bilder)
+//  AI-GENERIERTE BILDER und Visual DNA Library (20 Bilder)
 // ═══════════════════════════════════════════════════════════
 
 /** Hero-Bilder (Startseite Desktop & Mobile) */
 export const generatedHeroImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-notoeffnung-haustuer-nacht-regen.webp",
-    alt: "Notöffnung bei Nacht im Regen – Schlüsseldienst Wetzlar Profi-Werkzeug",
-    title: "Schlüssel Schmiede Wetzlar – Notöffnung bei Nacht im Regen",
+    alt: "Notöffnung bei Nacht im Regen und Schlüsseldienst Wetzlar Profi-Werkzeug",
+    title: "Schlüssel Schmiede Wetzlar und Notöffnung bei Nacht im Regen",
     width: 1024,
     height: 1024,
     category: "tueroeffnung",
@@ -505,7 +505,7 @@ export const generatedHeroImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-neue-schluessel-tueroeffnung.webp",
     alt: "Neue Sicherheitsschlüssel nach erfolgreicher Türöffnung Wetzlar",
-    title: "Neue Schlüssel nach Türöffnung – Schlüssel Schmiede",
+    title: "Neue Schlüssel nach Türöffnung und Schlüssel Schmiede",
     width: 1024,
     height: 1024,
     category: "schluessel",
@@ -517,7 +517,7 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-zerstoerungsfreie-tueroeffnung-werkzeug.webp",
     alt: "Spezialwerkzeug für zerstörungsfreie Türöffnung Schlüsseldienst Wetzlar",
-    title: "Zerstörungsfreie Türöffnung – Spezialwerkzeug",
+    title: "Zerstörungsfreie Türöffnung und Spezialwerkzeug",
     width: 1024,
     height: 1024,
     category: "tueroeffnung",
@@ -525,7 +525,7 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-autooeffnung-nacht-werkzeug.webp",
     alt: "Professionelle Autoöffnung bei Nacht Schlüsseldienst Wetzlar",
-    title: "Autoöffnung bei Nacht – professionelle KFZ-Öffnung",
+    title: "Autoöffnung bei Nacht und professionelle KFZ-Öffnung",
     width: 1024,
     height: 1024,
     category: "tueroeffnung",
@@ -533,7 +533,7 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-tresoroeffnung-schliessmechanismus.webp",
     alt: "Tresoröffnung mit Diagnosegerät Schlüsseldienst Wetzlar",
-    title: "Tresoröffnung – professionelle Safe-Öffnung",
+    title: "Tresoröffnung und professionelle Safe-Öffnung",
     width: 1024,
     height: 1024,
     category: "sicherheit",
@@ -541,15 +541,15 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-sicherheitszylinder-einbau.webp",
     alt: "Neuer Sicherheitszylinder beim Einbau Schlüsseldienst Wetzlar",
-    title: "Sicherheitszylinder-Einbau – Schließanlagen",
+    title: "Sicherheitszylinder-Einbau und Schließanlagen",
     width: 1024,
     height: 1024,
     category: "schloss",
   },
   {
     src: "/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp",
-    alt: "Panzerriegel an Altbau-Holztür – Einbruchschutz Wetzlar",
-    title: "Panzerriegel – Einbruchschutz für Altbau",
+    alt: "Panzerriegel an Altbau-Holztür und Einbruchschutz Wetzlar",
+    title: "Panzerriegel und Einbruchschutz für Altbau",
     width: 1024,
     height: 1024,
     category: "sicherheit",
@@ -557,7 +557,7 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-einbruchschaden-aufgebohrtes-schloss.webp",
     alt: "Einbruchschaden aufgebohrter Zylinder Schlüsseldienst Wetzlar",
-    title: "Einbruchschaden – Soforthilfe und Reparatur",
+    title: "Einbruchschaden und Soforthilfe und Reparatur",
     width: 1024,
     height: 1024,
     category: "schloss",
@@ -565,7 +565,7 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-notdienst-werkzeug-haustuer-nacht.webp",
     alt: "Notdienst-Werkzeugkoffer vor Haustür bei Nacht Schlüsseldienst Wetzlar",
-    title: "24/7 Notdienst – Werkzeug vor Haustür bei Nacht",
+    title: "24/7 Notdienst und Werkzeug vor Haustür bei Nacht",
     width: 1024,
     height: 1024,
     category: "tueroeffnung",
@@ -573,7 +573,7 @@ export const generatedServiceImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-tuerschliesser-gewerbetuer-montage.webp",
     alt: "Türschließer-Montage an Gewerbetür Schlüsseldienst Wetzlar",
-    title: "Türschließer – Montage an Gewerbetür",
+    title: "Türschließer und Montage an Gewerbetür",
     width: 1024,
     height: 1024,
     category: "montage",
@@ -585,7 +585,7 @@ export const generatedTrustImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-einsatzfahrzeug-profi-werkzeug.webp",
     alt: "Einsatzfahrzeug mit Profi-Werkzeug Schlüsseldienst Wetzlar",
-    title: "Einsatzfahrzeug – professionelle Ausstattung",
+    title: "Einsatzfahrzeug und professionelle Ausstattung",
     width: 1024,
     height: 1024,
     category: "werkstatt",
@@ -593,7 +593,7 @@ export const generatedTrustImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-werkstatt-schluesselwand.webp",
     alt: "Werkstatt mit Schlüsselwand und Fräsmaschine Schlüsseldienst Wetzlar",
-    title: "Werkstatt – Schlüsselwand mit Fräsmaschine",
+    title: "Werkstatt und Schlüsselwand mit Fräsmaschine",
     width: 1024,
     height: 1024,
     category: "werkstatt",
@@ -601,7 +601,7 @@ export const generatedTrustImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-neues-sicherheitsschloss-schluessel.webp",
     alt: "Neues Sicherheitsschloss mit Schlüsseln Schlüsseldienst Wetzlar",
-    title: "Neues Sicherheitsschloss – frisch eingebaut",
+    title: "Neues Sicherheitsschloss und frisch eingebaut",
     width: 1024,
     height: 1024,
     category: "schloss",
@@ -609,7 +609,7 @@ export const generatedTrustImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-sicherheitsprodukte-schliessanlagen-vitrine.webp",
     alt: "Vitrine mit Sicherheitsprodukten und Schließanlagen Schlüsseldienst Wetzlar",
-    title: "Vitrine – Sicherheitsprodukte und Schließanlagen",
+    title: "Vitrine und Sicherheitsprodukte und Schließanlagen",
     width: 1024,
     height: 1024,
     category: "werkstatt",
@@ -620,8 +620,8 @@ export const generatedTrustImages: ImageAsset[] = [
 export const generatedMacroImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-sicherheitszylinder-querschnitt-makro.webp",
-    alt: "Sicherheitszylinder Querschnitt Makro – Stiftzuhaltung Schlüsseldienst Wetzlar",
-    title: "Sicherheitszylinder – technischer Querschnitt",
+    alt: "Sicherheitszylinder Querschnitt Makro und Stiftzuhaltung Schlüsseldienst Wetzlar",
+    title: "Sicherheitszylinder und technischer Querschnitt",
     width: 1024,
     height: 1024,
     category: "schloss",
@@ -629,7 +629,7 @@ export const generatedMacroImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-schluessel-fraesen-cnc-maschine.webp",
     alt: "Schlüssel fräsen auf CNC-Maschine Schlüsseldienst Wetzlar",
-    title: "CNC-Schlüsselfräsung – Präzisionstechnik",
+    title: "CNC-Schlüsselfräsung und Präzisionstechnik",
     width: 1024,
     height: 1024,
     category: "werkstatt",
@@ -637,7 +637,7 @@ export const generatedMacroImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-autoschluessel-programmierung-transponder.webp",
     alt: "Autoschlüssel-Programmierung Transponder-Chip Schlüsseldienst Wetzlar",
-    title: "Autoschlüssel – Transponder-Programmierung",
+    title: "Autoschlüssel und Transponder-Programmierung",
     width: 1024,
     height: 1024,
     category: "schluessel",
@@ -645,7 +645,7 @@ export const generatedMacroImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-alte-neue-schluessel-handwerkskunst.webp",
     alt: "Alte Buntbart-Schlüssel neben modernem Sicherheitsschlüssel Handwerkskunst",
-    title: "Handwerkskunst – traditionelle und moderne Schlüssel",
+    title: "Handwerkskunst und traditionelle und moderne Schlüssel",
     width: 1024,
     height: 1024,
     category: "schluessel",
@@ -657,7 +657,7 @@ export const generatedLocalImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-einsatzfahrzeug-nachtfahrt.webp",
     alt: "Einsatzfahrzeug bei Nachtfahrt in deutscher Altstadt Schlüsseldienst Wetzlar",
-    title: "Nachtfahrt – schnelle Anfahrt zum Notdienst-Einsatz",
+    title: "Nachtfahrt und schnelle Anfahrt zum Notdienst-Einsatz",
     width: 1024,
     height: 1024,
     category: "werkstatt",
@@ -665,7 +665,7 @@ export const generatedLocalImages: ImageAsset[] = [
   {
     src: "/images/generated/schluesseldienst-wetzlar-einsatzfahrzeug-stadtpanorama.webp",
     alt: "Einsatzfahrzeug vor Stadtpanorama Schlüsseldienst Wetzlar Einsatzgebiet",
-    title: "Einsatzgebiet – Stadtpanorama mit Fahrzeug",
+    title: "Einsatzgebiet und Stadtpanorama mit Fahrzeug",
     width: 1024,
     height: 1024,
     category: "werkstatt",

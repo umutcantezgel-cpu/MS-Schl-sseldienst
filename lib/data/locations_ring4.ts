@@ -20,7 +20,7 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Herborn — Fachbetrieb vor Ort | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Herborn und Fachbetrieb vor Ort | Festpreis ab 99€",
             metaDescription: "Schlüsseldienst Herborn: Spezialist für Fachwerkhäuser & Altstadt. Zerstörungsfreie Öffnung ab 99€. In ca. 20 Min. über die A45 bei Ihnen. 06441-8056279",
         },
         
@@ -58,13 +58,13 @@ export const ring4Locations: LocationData[] = [
 <p>Die Bärenstadt <strong>Herborn</strong> gehört mit ihrer über 800 Jahre alten Geschichte und der malerischen, in unzähligen Reiseführern gepriesenen, historischen Fachwerk-Altstadt zweifelsohne zu den reizvollsten Orten im gesamten Lahn-Dill-Kreis. Rund um den berühmten Kornmarkt, das Rathaus mit den Herborner Wappen und die historische Hohe Schule pulsiert das Leben zwischen denkmalgeschützten Mauern. Doch diese architektonische Idylle bringt bei einer verschlossenen Tür eine ganz besondere Verantwortung mit sich: Wer sich in der Herborner Altstadt aussperrt, braucht keinen x-beliebigen Vermittlungsdienst mit schwerem Gerät, sondern filigrane Meisterarbeit.</p>
 
 <h3>Historisches Erbe bewahren: Spezialwerkzeug für Herborner Fachwerkhäuser</h3>
-<p>Wenn die massive, womöglich handgeschnitzte Haustür eines Fachwerkhauses unglücklich ins Schloss fällt – und der Bewohner draußen im strömenden Regen steht – dürfen keine Laien mit Gewalt ans Werk. Die Reparaturkosten oder gar der unersetzbare historische Wertverlust an jahrhundertealtem Holz gehen hier schnell in die Tausende. Als langjähriger Partner in der Region distanzieren wir uns extrem von groben Bohr- und Hebelmethoden. Wir setzen auf modernste Lockpicking-, Zieh- und Fangmethoden. In fantastischen 99 % der alltäglichen Fälle, in denen in Herborn eine Haustür bloß von außen zugefallen (nicht zweifach verschlossen) ist, entriegeln unsere Techniker diese Türen völlig materialschonend, kratzerfrei und unberührt.</p>
+<p>Wenn die massive, womöglich handgeschnitzte Haustür eines Fachwerkhauses unglücklich ins Schloss fällt und und der Bewohner draußen im strömenden Regen steht und dürfen keine Laien mit Gewalt ans Werk. Die Reparaturkosten oder gar der unersetzbare historische Wertverlust an jahrhundertealtem Holz gehen hier schnell in die Tausende. Als langjähriger Partner in der Region distanzieren wir uns extrem von groben Bohr- und Hebelmethoden. Wir setzen auf modernste Lockpicking-, Zieh- und Fangmethoden. In fantastischen 99 % der alltäglichen Fälle, in denen in Herborn eine Haustür bloß von außen zugefallen (nicht zweifach verschlossen) ist, entriegeln unsere Techniker diese Türen völlig materialschonend, kratzerfrei und unberührt.</p>
 
 <h3>Schnelle Hilfe über die Sauerlandlinie (A45)</h3>
 <p>Wenn der Notfall eintritt, zählt jede Minute. Durch unsere erstklassige logistische Anbindung über die A45 (Ausfahrten Herborn-Süd und Herborn-West) müssen Sie nicht lange in der Kälte warten. Die rund 20 Kilometer von unserem Hauptstandort bewältigen unsere Einsatzfahrzeuge in einer erstklassigen Regeldauer von etwa 20 bis 25 Minuten. Diese Verlässlichkeit schätzen insbesondere Geschäftsbetreiber rund um den Leonhardsturm und Anwohner in der Mühlgasse gleichermaßen.</p>
 
 <h3>Flächendeckender Service: Auch in den Herborner Ortsteilen im Einsatz</h3>
-<p>Herborn ist jedoch weit mehr als "nur" seine weltbekannte Altstadt. Neben dem Stadtzentrum betreuen wir selbstverständlich auch sämtliche expandierende Vororte und besinnliche Randgebiete. Egal, ob Sie in den Eigenheimsiedlungen von <strong>Seelbach</strong> und <strong>Burg</strong>, in den ländlicheren Gebieten von <strong>Schönbach</strong> und <strong>Sinn</strong> (angrenzend), oder drüben in <strong>Merkenbach</strong> und <strong>Uckersdorf</strong> schnelle Hilfe benötigen – unser Schlüsseldienst garantiert für das gesamte Stadtgebiet von Herborn denselben Festpreis. Ohne Ausnahme.</p>
+<p>Herborn ist jedoch weit mehr als "nur" seine weltbekannte Altstadt. Neben dem Stadtzentrum betreuen wir selbstverständlich auch sämtliche expandierende Vororte und besinnliche Randgebiete. Egal, ob Sie in den Eigenheimsiedlungen von <strong>Seelbach</strong> und <strong>Burg</strong>, in den ländlicheren Gebieten von <strong>Schönbach</strong> und <strong>Sinn</strong> (angrenzend), oder drüben in <strong>Merkenbach</strong> und <strong>Uckersdorf</strong> schnelle Hilfe benötigen und unser Schlüsseldienst garantiert für das gesamte Stadtgebiet von Herborn denselben Festpreis. Ohne Ausnahme.</p>
 
 <h3>Transparenz & Ehrlichkeit statt Kostenfallen</h3>
 <p>Für unsere Dienstleistung setzen wir im Basis-Werktagsturnus auf den transparenten Festpreis von exakt 99 Euro. Sie zahlen zusätzlich lediglich eine absolut maßvolle und strikt limitierte Anfahrtspauschale in Höhe von 20 Euro. Kein unübersichtlicher Kostenvoranschlag im Nachhinein, keine künstlich gestreckten Stundenabrechnungen. Retten Sie Ihren Termin, schützen Sie Ihre Wertsachen und ordern Sie unseren seriösen, ortskundigen Schlüsseldienst direkt für Herborn.</p>
@@ -129,7 +129,7 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Dillenburg — 24h Notdienst | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Dillenburg und 24h Notdienst | Festpreis ab 99€",
             metaDescription: "Ihr Notdienst in der Oranierstadt Dillenburg (Oberscheld, Niederscheld, Donsbach). Anfahrt via A45 in ca. 25-30 Min. Fairness, Festpreise, Zerstörungsfrei.",
         },
         
@@ -164,7 +164,7 @@ export const ring4Locations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Die stolze <strong>Oranierstadt Dillenburg</strong> erstreckt sich malerisch rund um das weithin sichtbare historische Juwel der Region – den majestätischen Wilhelmsturm. Als zentraler Verwaltungssitz im nördlichen Lahn-Dill-Kreis und Zuhause von etwa 23.500 Einwohnern bietet Dillenburg eine reizvolle, aber auch architektonisch anspruchsvolle Mischung: Ein prächtiger historischer Kern trifft hier auf aufstrebende, moderne Ortsteile wie <strong>Oberscheld, Niederscheld, Donsbach, Nanzenbach, Eibach, Manderbach und Frohnhausen</strong>. Genau diese Vielfalt an Türtypen und Sicherheitssystemen erfordert einen Schlüsseldienst, der nicht nur schnell, sondern mit größter handwerklicher Präzision arbeitet.</p>
+<p>Die stolze <strong>Oranierstadt Dillenburg</strong> erstreckt sich malerisch rund um das weithin sichtbare historische Juwel der Region und den majestätischen Wilhelmsturm. Als zentraler Verwaltungssitz im nördlichen Lahn-Dill-Kreis und Zuhause von etwa 23.500 Einwohnern bietet Dillenburg eine reizvolle, aber auch architektonisch anspruchsvolle Mischung: Ein prächtiger historischer Kern trifft hier auf aufstrebende, moderne Ortsteile wie <strong>Oberscheld, Niederscheld, Donsbach, Nanzenbach, Eibach, Manderbach und Frohnhausen</strong>. Genau diese Vielfalt an Türtypen und Sicherheitssystemen erfordert einen Schlüsseldienst, der nicht nur schnell, sondern mit größter handwerklicher Präzision arbeitet.</p>
 
 <h3>Zerstörungsfreie Öffnung in der Dillenburger Altstadt</h3>
 <p>Wenn die jahrhundertealte Holztür eines Fachwerkhauses am Fuße des Schlossberges oder nahe dem Kassierer Tor ungewollt ins Schloss fällt, zählen zwei Dinge: Ruhen bewahren und Profis rufen. Historisch wertvolle Türbeschläge und massive Holzstrukturen behandeln unsere erfahrenen Monteure wie rohe Eier. Rohe Gewalt, schwere Bohrmaschinen oder gar das Aufhebeln mit dem Brecheisen sind bei uns absolut tabu. Durch den Einsatz extrem filigraner Spezialwerkzeuge (Lockpicking, Luftkissen, Fallengleiter) liegt unsere Erfolgschance auf spurlos und völlig abrissfreie Entriegelung einer lediglich zugefallenen Tür bei beeindruckenden 99 %. Sie sparen sich ruinierte Türblätter und extrem teure Tischlerreparaturen.</p>
@@ -173,7 +173,7 @@ export const ring4Locations: LocationData[] = [
 <p>Wer seine Tür am nördlichen 30-km-Rand des Kreises hastig zuzieht, fühlt sich oft von schnellen städtischen Hilfsdiensten abgeschnitten. Doch keine Sorge: Durch die unschlagbar direkte Streckenführung der Autobahn A45 (Sauerlandlinie) befahren unsere Techniker die Distanz zwischen Wetzlar und Dillenburg weitaus rasanter als mancher lokale Regionalbetrieb. Zumeist dringen wir von unserer Alarmzentrale in hervorragenden <strong>25 bis 30 Minuten</strong> direkt bis vor Ihre Haustür vor. Keine Callcenter-Warteschleifen, sondern reibungslose Tourenplanung von Fachleuten.</p>
 
 <h3>Sicherheit für Dillenburger Industrie und Gewerbe</h3>
-<p>Dillenburg ist nicht nur Wohnort, sondern starker Industriestandort. Zahlreiche Betriebe und Werkshallen entlang der Dill und im Gewerbegebiet vertrauen auf unsere B2B-Sicherheitsexpertise. Wir tauschen defekte Schließanlagen, reparieren aufgebrochene Bürotüren und helfen bei Serverraum-Sperrungen direkt vor Ort – 24 Stunden am Tag. Die Absicherung Ihrer geschäftlichen Infrastruktur liegt uns am Herzen.</p>
+<p>Dillenburg ist nicht nur Wohnort, sondern starker Industriestandort. Zahlreiche Betriebe und Werkshallen entlang der Dill und im Gewerbegebiet vertrauen auf unsere B2B-Sicherheitsexpertise. Wir tauschen defekte Schließanlagen, reparieren aufgebrochene Bürotüren und helfen bei Serverraum-Sperrungen direkt vor Ort und 24 Stunden am Tag. Die Absicherung Ihrer geschäftlichen Infrastruktur liegt uns am Herzen.</p>
 
 <h3>Garantierte Festpreise statt böser Überraschungen</h3>
 <p>Ehrliche Handwerksarbeit muss transparent sein. Transparenz bedeutet bei uns am nördlichsten Einsatzrand: Für die klassische Standardöffnung einer zugefallenen Tür erheben wir an ganz normalen Werktagen unseren strikten <strong>99 Euro Fixbetrag</strong>. Hinzu kommt eine äußerst knapp kalkulierte und vorher klar kommunizierte Autobahn-Routenpauschale von 20 Euro. Kein unübersichtlicher Kostenvoranschlag im Nachhinein, keine künstlichen Stundenabrechnungen. Wenn Sie die 06441-Nummer wählen, starten wir den Wagen nach Dillenburg noch, während wir telefonieren.</p>
@@ -198,7 +198,7 @@ export const ring4Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Schlüsseldienst in der Oranierstadt Dillenburg gesucht? Unser Service-Team fährt für Sie direkt los. Über die A45 in ca. 25-30 Minuten vor Ort – mit ehrlichem Festpreis-Versprechen.",
+            heroIntro: "Schlüsseldienst in der Oranierstadt Dillenburg gesucht? Unser Service-Team fährt für Sie direkt los. Über die A45 in ca. 25-30 Minuten vor Ort und mit ehrlichem Festpreis-Versprechen.",
             mainText: "", // Ersetzt durch aboutText
             serviceZerstörungsfrei: "", // Ersetzt durch scenarios
             serviceBohren: "",
@@ -238,12 +238,12 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Weilburg — Express-Notdienst | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Weilburg und Express-Notdienst | Festpreis ab 99€",
             metaDescription: "Schlüsseldienst für Weilburg & Ortsteile (Odersbach, Kubach). Beschädigungsfreie Öffnung, ca. 20-25 Min. Ankunft über B49. 24/7 faire Preise ab 99€.",
         },
         
         // === 10X ERWEITERUNG ===
-        routeDescription: "Über die vierspurig ausgebaute Bundesstraße 49 fahren wir von Wetzlar aus direkt an die Lahn-Schleife nach Weilburg – oft schneller als Betriebe aus Limburg.",
+        routeDescription: "Über die vierspurig ausgebaute Bundesstraße 49 fahren wir von Wetzlar aus direkt an die Lahn-Schleife nach Weilburg und oft schneller als Betriebe aus Limburg.",
         mainRoad: "B49",
         distanceKm: 22,
         character: "Majestätische Residenzstadt an der Lahn",
@@ -282,9 +282,9 @@ export const ring4Locations: LocationData[] = [
 <p>Wer nach einem Schlüsseldienst in Weilburg googelt, befürchtet oft extreme Anfahrtswege aus Limburg, Gießen oder Frankfurt. Hier trumpfen wir auf: Durch unsere direkte Nähe zu Wetzlar und die durchgängig famos ausgebaute B49 (Verlauf Richtung Limburg) steuern wir Weilburg absolut direkt an. Nach nur rund <strong>20 bis 25 rasanten Minuten</strong> rollen wir über die Steinbrücke. Das bedeutet für Sie: Spätestens eine halbe Stunde, nachdem Sie uns in der Notsituation angerufen haben, beginnt die technische Öffnung vor Ihrer eigenen Tür in Weilburg.</p>
 
 <h3>Modernes Know-how für Kubach & Hirschhausen</h3>
-<p>Natürlich öffnet unser Notfallteam nicht bloß antike Objekte der Kernstadt. Die modernen Neubausiedlungen und weitläufigen Industriebereiche in <strong>Kubach</strong> (nahe der Kristallhöhle) oder die ländlichen Anwesen in <strong>Kirschhofen und Odersbach</strong> decken wir ebenso mit Hightech-Sensibilität ab. Ob schwere Dreifachverriegelung, elektronische Zylinder-Komponenten an gewerblichen Bauten oder streikende Garagenantriebe – unsere rollende Werkstatt führt das exakte Ersatzmaterial in modernster DIN-Norm direkt mit sich.</p>
+<p>Natürlich öffnet unser Notfallteam nicht bloß antike Objekte der Kernstadt. Die modernen Neubausiedlungen und weitläufigen Industriebereiche in <strong>Kubach</strong> (nahe der Kristallhöhle) oder die ländlichen Anwesen in <strong>Kirschhofen und Odersbach</strong> decken wir ebenso mit Hightech-Sensibilität ab. Ob schwere Dreifachverriegelung, elektronische Zylinder-Komponenten an gewerblichen Bauten oder streikende Garagenantriebe und unsere rollende Werkstatt führt das exakte Ersatzmaterial in modernster DIN-Norm direkt mit sich.</p>
 
-<h3>Transparente Festpreise – ohne Wenn und Aber für Weilburg</h3>
+<h3>Transparente Festpreise und ohne Wenn und Aber für Weilburg</h3>
 <p>Unser Ruf eilt uns im Lahntal voraus, denn wir spielen niemals mit der Angst der Menschen. Unsere Preise sind gemeißelt: Für ein standardmäßiges Entriegeln am Werktag zahlen Sie fest verankerte <strong>99 Euro für die reine Arbeitsleistung</strong>, auf den Cent genau. Die längere Fahrt über die Bundesstraße 49 nach Weilburg schlägt mit einem fest fixierten, äußerst human kalkulierten Anteil von marginalen 20 Euro zu Buche. Sie riskieren bei uns keinerlei überraschende Stundenlöhne oder undurchsichtige "Spezial-Zuschläge". Wir stehen in Weilburg für Handwerksehre pur.</p>
 `,
         
@@ -307,7 +307,7 @@ export const ring4Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Dringende Türöffnung in der Residenzstadt Weilburg gesucht? Unser Service-Team fährt für Sie über die B49 direkt los. In ca. 20-25 Minuten vor Ort – mit ehrlichem Festpreis-Versprechen.",
+            heroIntro: "Dringende Türöffnung in der Residenzstadt Weilburg gesucht? Unser Service-Team fährt für Sie über die B49 direkt los. In ca. 20-25 Minuten vor Ort und mit ehrlichem Festpreis-Versprechen.",
             mainText: "", // Ersetzt durch aboutText im 10x-System
             serviceZerstörungsfrei: "", // Ersetzt durch scenarios
             serviceBohren: "",
@@ -324,7 +324,7 @@ export const ring4Locations: LocationData[] = [
             },
             {
                 question: "Gibt es verdeckte Kosten für die Mehrwertsteuer in Weilburg?",
-                answer: "Alle von uns im Privatkunden-Bereich (B2C) kommunizierten Öffnungspreise – wie unser 99 Euro Festpreis an Werktagen – verstehen sich immer als faire, transparente Bruttopreise inklusive der 19 % Mehrwertsteuer."
+                answer: "Alle von uns im Privatkunden-Bereich (B2C) kommunizierten Öffnungspreise und wie unser 99 Euro Festpreis an Werktagen und verstehen sich immer als faire, transparente Bruttopreise inklusive der 19 % Mehrwertsteuer."
             }
         ],
         neighbors: ["schluesseldienst-solms", "schluesseldienst-braunfels", "schluesseldienst-leun"]

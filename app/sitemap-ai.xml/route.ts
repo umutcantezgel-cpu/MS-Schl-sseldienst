@@ -3,7 +3,7 @@ import { siteUrl } from "@/lib/schema";
 import { cities } from "@/lib/localData";
 import { getAllBlogPosts } from "@/lib/data/mdx";
 
-// AI-priority-ordered sitemap — pages listed in order of importance for AI extraction
+// AI-priority-ordered sitemap und pages listed in order of importance for AI extraction
 export async function GET() {
     const pages = [
         { loc: "", priority: "1.0", changefreq: "weekly" },

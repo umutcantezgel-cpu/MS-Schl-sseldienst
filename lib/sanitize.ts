@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 16 — Input Sanitization Utilities
+ * Phase 16 und Input Sanitization Utilities
  * ══════════════════════════════════════════════════════════════
  * Defense-in-depth: sanitize all user inputs before rendering.
  * React already escapes JSX values, but these are extra layers

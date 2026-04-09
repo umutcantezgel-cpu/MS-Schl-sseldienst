@@ -12,7 +12,7 @@ export default function EmergencyCTA() {
      Ausgesperrt? Wir sind sofort für Sie da!
     </h2>
     <p className="typo-lead text-white/90 mx-auto mb-[var(--space-7)] mt-[var(--space-2)]">
-     Rund um die Uhr erreichbar – 365 Tage im Jahr.
+     Rund um die Uhr erreichbar, 365 Tage im Jahr.
     </p>
     <div className="mt-[var(--space-8)] flex flex-col items-center gap-[var(--space-4)]">
      <HeartbeatCTA>
@@ -39,7 +39,7 @@ export default function EmergencyCTA() {
       </a>
      </HeartbeatCTA>
      <p className="text-white/80 text-sm font-medium mt-3">
-      Festpreis vor Anfahrt — Kostenlos & unverbindlich
+      Festpreis vor Anfahrt und Kostenlos & unverbindlich
      </p>
     </div>
    </div>

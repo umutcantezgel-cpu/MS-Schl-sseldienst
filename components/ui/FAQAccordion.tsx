@@ -21,7 +21,7 @@ const callVariants = [
   "Rückfragen unter 06441-8056279",
   "Persönliche Hilfe: 06441-8056279",
   "Zum Festpreis anrufen: 06441 8056279",
-  "06441 8056279 — Jetzt beraten lassen",
+  "06441 8056279 und Jetzt beraten lassen",
   "Notrufnummer: 06441-8056279",
   "Experten-Hotline: 06441 8056279",
   "Telefonische Auskunft: 06441-8056279",

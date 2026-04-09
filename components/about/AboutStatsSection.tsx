@@ -31,7 +31,7 @@ export default function AboutStatsSection() {
           <blockquote className="relative bg-white rounded-2xl px-7 py-6 mb-[var(--space-8)] w-full overflow-hidden border border-[var(--color-charcoal-100)] shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)] transition-shadow duration-300">
             <Quote className="absolute top-4 left-4 w-10 h-10 text-[var(--atmosphere-glow)] opacity-[0.15]" aria-hidden="true" />
             <p className="relative z-10 text-lg font-semibold text-[color:var(--text-primary)] leading-relaxed">
-              Ausgebildet von <span className="text-[color:var(--value-primary)] font-bold">TV-Experte Uwe Sarfeld</span> — renommierter Fachmann und aus dem Fernsehen bekannt.
+              Ausgebildet von <span className="text-[color:var(--value-primary)] font-bold">TV-Experte Uwe Sarfeld</span> und renommierter Fachmann und aus dem Fernsehen bekannt.
             </p>
             <p className="relative z-10 mt-2 text-sm text-[color:var(--text-secondary)] leading-relaxed">
               Unsere Techniker arbeiten mit den modernsten Methoden und dem höchsten Qualitätsstandard.

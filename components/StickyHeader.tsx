@@ -107,11 +107,11 @@ export default function StickyHeader() {
         <div className="mx-auto flex h-full w-full max-w-[1400px] items-center justify-between px-4 lg:px-8">
           
           {/* 1. LOGO */}
-          {/* [SEO: Resolved "No Text" via sr-only — crawler needs DOM text, not just aria-label] */}
+          {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
           <Link
             href="/"
             className="flex-shrink-0 relative flex items-center cursor-pointer transition-transform duration-300 hover:scale-[1.02] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] rounded-xl"
-            aria-label="Startseite – Schlüssel Schmiede Wetzlar"
+            aria-label="Startseite und Schlüssel Schmiede Wetzlar"
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
@@ -301,7 +301,7 @@ export default function StickyHeader() {
 
 
 
-            {/* Schlüssel Schmiede — Priority Link */}
+            {/* Schlüssel Schmiede und Priority Link */}
             <Link
               href="/schluessel-schmiede"
               onMouseEnter={() => { setActiveMenu(null); setHoveredLink("schmiede"); }}
@@ -316,7 +316,7 @@ export default function StickyHeader() {
               Schlüssel Schmiede
             </Link>
 
-            {/* Standard Links: Preise, Ratgeber, Kontakt — with icons for key items */}
+            {/* Standard Links: Preise, Ratgeber, Kontakt und with icons for key items */}
             {mainLinks.map((link) => {
               const isActive = (link.activeMatch === 'exact' && pathname === link.href) || 
                                (link.activeMatch === 'prefix' && pathname.startsWith(link.href) && link.href !== '/');

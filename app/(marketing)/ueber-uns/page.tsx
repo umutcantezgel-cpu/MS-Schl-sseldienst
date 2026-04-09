@@ -24,7 +24,7 @@ export default function UeberUnsPage() {
  return (
   <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans min-h-screen">
    
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[60vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] sm:pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div

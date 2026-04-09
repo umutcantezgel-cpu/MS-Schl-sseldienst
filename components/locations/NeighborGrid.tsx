@@ -9,7 +9,7 @@ import { pickVariant } from "@/lib/textRotation";
 
 const subtitleVariants = [
     (cityName: string, neighbors: string) => `Von ${cityName} aus sind wir auch schnell in ${neighbors}. Unser Einsatzgebiet deckt den gesamten Lahn-Dill-Kreis ab.`,
-    (cityName: string, neighbors: string) => `Neben ${cityName} betreuen wir auch ${neighbors} — immer mit kurzen Anfahrtszeiten und Festpreisgarantie.`,
+    (cityName: string, neighbors: string) => `Neben ${cityName} betreuen wir auch ${neighbors} , immer mit kurzen Anfahrtszeiten und Festpreisgarantie.`,
     (cityName: string, neighbors: string) => `Unser Schlüsseldienst ist nicht nur in ${cityName} aktiv, sondern auch in ${neighbors} schnell vor Ort.`,
     (cityName: string, neighbors: string) => `Rund um ${cityName} versorgen wir auch ${neighbors} zuverlässig mit unserem mobilen Schlüsseldienst.`,
     (cityName: string, neighbors: string) => `Ob in ${cityName} oder in ${neighbors}: Unsere Monteure kennen die Region und sind blitzschnell bei Ihnen.`,

@@ -54,7 +54,7 @@ export default function CookieRichtliniePage() {
 
             <LegalSection>
                 <TLDRBox title="Cookies auf einen Blick" icon="info">
-                    <p>Wir verwenden <strong>nur 5 Cookies</strong> auf dieser Website — davon sind 3 technisch notwendig und 2 optional (Analyse). <strong>Marketing-Cookies verwenden wir derzeit nicht aktiv.</strong></p>
+                    <p>Wir verwenden <strong>nur 5 Cookies</strong> auf dieser Website und davon sind 3 technisch notwendig und 2 optional (Analyse). <strong>Marketing-Cookies verwenden wir derzeit nicht aktiv.</strong></p>
                     <p>Sie können nicht-essentielle Cookies jederzeit ablehnen oder Ihre Einstellungen ändern. Klicken Sie dazu auf den Button &quot;Cookie-Einstellungen&quot; im Footer oder nutzen Sie unser <Link href="/datenschutz#4-cookies" className="underline hover:text-gray-900 font-medium">Privacy Center</Link>.</p>
                 </TLDRBox>
             </LegalSection>
@@ -63,7 +63,7 @@ export default function CookieRichtliniePage() {
                 <h2 className="mt-0">1. Was sind Cookies?</h2>
                 <p>Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Endgerät (Computer, Tablet, Smartphone) gespeichert werden. Sie ermöglichen es der Website, bestimmte Informationen über Ihr Nutzungsverhalten zu speichern und beim nächsten Besuch wiederzuerkennen.</p>
                 <p>Cookies können von der Website selbst gesetzt werden (<strong>First-Party-Cookies</strong>) oder von Drittanbietern, deren Dienste in die Website eingebunden sind (<strong>Third-Party-Cookies</strong>).</p>
-                <p>Cookies allein können Sie <strong>nicht identifizieren</strong> — sie enthalten keine personenbezogenen Daten wie Name, E-Mail oder Adresse. Sie speichern lediglich anonyme oder pseudonyme Kennungen.</p>
+                <p>Cookies allein können Sie <strong>nicht identifizieren</strong> und sie enthalten keine personenbezogenen Daten wie Name, E-Mail oder Adresse. Sie speichern lediglich anonyme oder pseudonyme Kennungen.</p>
             </LegalSection>
 
             <LegalSection id="2-welche-cookies">
@@ -108,7 +108,7 @@ export default function CookieRichtliniePage() {
                 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse) i.V.m. § 25 Abs. 2 Nr. 2 TTDSG (technisch notwendig).</p>
                 <ul className="mt-2 space-y-1.5 text-gray-600">
                     {essentialCookies.map(c => (
-                        <li key={c.name}><code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">{c.name}</code> — {c.purpose}</li>
+                        <li key={c.name}><code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">{c.name}</code> und {c.purpose}</li>
                     ))}
                 </ul>
 
@@ -117,7 +117,7 @@ export default function CookieRichtliniePage() {
                 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) i.V.m. § 25 Abs. 1 TTDSG.</p>
                 <ul className="mt-2 space-y-1.5 text-gray-600">
                     {analyticsCookies.map(c => (
-                        <li key={c.name}><code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">{c.name}</code> — {c.purpose} (Anbieter: {c.provider})</li>
+                        <li key={c.name}><code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">{c.name}</code> und {c.purpose} (Anbieter: {c.provider})</li>
                     ))}
                 </ul>
 
@@ -126,7 +126,7 @@ export default function CookieRichtliniePage() {
                 {marketingCookies.length > 0 ? (
                     <ul className="mt-2 space-y-1.5 text-gray-600">
                         {marketingCookies.map(c => (
-                            <li key={c.name}><code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">{c.name}</code> — {c.purpose}</li>
+                            <li key={c.name}><code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">{c.name}</code> und {c.purpose}</li>
                         ))}
                     </ul>
                 ) : (
@@ -181,10 +181,10 @@ export default function CookieRichtliniePage() {
                 <h2 className="mt-0">6. Rechtsgrundlage</h2>
                 <p>Die Rechtsgrundlage für den Einsatz von Cookies ergibt sich aus:</p>
                 <ul className="mt-3 space-y-2 text-gray-600">
-                    <li><strong>§ 25 Abs. 2 Nr. 2 TTDSG</strong> (Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz) — Für technisch notwendige Cookies ist keine Einwilligung erforderlich, da sie für die Bereitstellung des vom Nutzer ausdrücklich gewünschten Dienstes unbedingt erforderlich sind.</li>
-                    <li><strong>§ 25 Abs. 1 TTDSG</strong> — Für alle nicht technisch notwendigen Cookies (Analyse, Marketing) holen wir Ihre ausdrückliche Einwilligung ein, bevor diese gesetzt werden.</li>
-                    <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> — Die Verarbeitung personenbezogener Daten durch optionale Cookies erfolgt auf Grundlage Ihrer Einwilligung.</li>
-                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> — Die Verarbeitung durch essentielle Cookies erfolgt auf Grundlage eines berechtigten Interesses an der technischen Funktionsfähigkeit der Website.</li>
+                    <li><strong>§ 25 Abs. 2 Nr. 2 TTDSG</strong> (Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz) und Für technisch notwendige Cookies ist keine Einwilligung erforderlich, da sie für die Bereitstellung des vom Nutzer ausdrücklich gewünschten Dienstes unbedingt erforderlich sind.</li>
+                    <li><strong>§ 25 Abs. 1 TTDSG</strong> und Für alle nicht technisch notwendigen Cookies (Analyse, Marketing) holen wir Ihre ausdrückliche Einwilligung ein, bevor diese gesetzt werden.</li>
+                    <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> und Die Verarbeitung personenbezogener Daten durch optionale Cookies erfolgt auf Grundlage Ihrer Einwilligung.</li>
+                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> und Die Verarbeitung durch essentielle Cookies erfolgt auf Grundlage eines berechtigten Interesses an der technischen Funktionsfähigkeit der Website.</li>
                 </ul>
             </LegalSection>
 

@@ -17,7 +17,7 @@ interface GenerateMetadataProps {
  * - page.tsx uses it for page-specific overrides (title, description)
  * 
  * Next.js MERGES layout + page metadata. To avoid duplicate <meta name="description">
- * tags (Seobility #2), the layout.tsx must NOT set its own `description` —  
+ * tags (Seobility #2), the layout.tsx must NOT set its own `description` und  
  * only pages should set descriptions.
  */
 export const generateSharedMetadata = ({
@@ -27,29 +27,29 @@ export const generateSharedMetadata = ({
     noindex = false,
     exactTitle = false,
 }: GenerateMetadataProps): Metadata => {
-    // Canonical URLs WITHOUT trailing slash — matches Vercel production behavior
+    // Canonical URLs WITHOUT trailing slash und matches Vercel production behavior
     // siteUrl from schema.ts already includes "www." prefix via Punycode.
     const urlPath = path === '/' ? '' : (path.endsWith('/') ? path.slice(0, -1) : path);
     const url = `${siteUrl}${urlPath}`;
 
     return {
-        // ── [FIX: Seobility #1 — Title too long] ──────────────────────────
+        // ── [FIX: Seobility #1 und Title too long] ──────────────────────────
         // exactTitle=true → use as-is (for layout default or short page titles)
         // exactTitle=false → append brand suffix via template
         // exactTitle=true → { absolute: title } bypasses layout.tsx template "%s | Schlüssel Schmiede Wetzlar"
         // exactTitle=false → plain string, layout template auto-appends suffix
         title: exactTitle ? { absolute: title } : title,
 
-        // ── [FIX: Seobility #2 — Duplicate Description] ───────────────────
+        // ── [FIX: Seobility #2 und Duplicate Description] ───────────────────
         // Single description output. Layout must NOT also set description.
         description,
 
-        // ── [FIX: Seobility #3 — Canonical Mismatch] ──────────────────────
+        // ── [FIX: Seobility #3 und Canonical Mismatch] ──────────────────────
         // Forces all generated URLs to use the production domain,
         // regardless of which host serves the page (Netlify preview, localhost, etc.)
         metadataBase: new URL(siteUrl),
 
-        // ── [FIX: Seobility #4 — Missing hreflang self-reference] ─────────
+        // ── [FIX: Seobility #4 und Missing hreflang self-reference] ─────────
         alternates: {
             canonical: url,
             languages: {
@@ -80,7 +80,7 @@ export const generateSharedMetadata = ({
                     url: `${siteUrl}/og-image.png`,
                     width: 1200,
                     height: 630,
-                    alt: "Schlüssel Schmiede Wetzlar — Fachgeschäft & Schlüsseldienst mit Festpreisen",
+                    alt: "Schlüssel Schmiede Wetzlar und Fachgeschäft & Schlüsseldienst mit Festpreisen",
                 },
             ],
         },

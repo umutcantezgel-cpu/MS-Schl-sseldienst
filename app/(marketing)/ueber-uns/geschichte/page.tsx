@@ -21,7 +21,7 @@ export default function GeschichtePage() {
     {
       year: "Gründung",
       title: "Der Anfang",
-      text: "Schlüssel Schmiede Wetzlar wurde als lokaler Handwerksbetrieb gegründet — mit dem klaren Ziel, faire und transparente Schlüsseldienstleistungen in der Region Wetzlar anzubieten.",
+      text: "Schlüssel Schmiede Wetzlar wurde als lokaler Handwerksbetrieb gegründet und mit dem klaren Ziel, faire und transparente Schlüsseldienstleistungen in der Region Wetzlar anzubieten.",
     },
     {
       year: "Aufbau",
@@ -31,7 +31,7 @@ export default function GeschichtePage() {
     {
       year: "Erweiterung",
       title: "24/7-Notdienst",
-      text: "Erweiterung zum Rund-um-die-Uhr-Notdienst. Egal ob nachts, am Wochenende oder an Feiertagen — wir sind immer erreichbar.",
+      text: "Erweiterung zum Rund-um-die-Uhr-Notdienst. Egal ob nachts, am Wochenende oder an Feiertagen und wir sind immer erreichbar.",
     },
     {
       year: "Heute",

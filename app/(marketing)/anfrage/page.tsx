@@ -40,7 +40,7 @@ export default function AnfragePage() {
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <p className="text-lg text-[color:var(--text-secondary)] max-w-xl">
                 Beschreiben Sie Ihr Anliegen und wir melden uns mit einem transparenten
-                Festpreis-Angebot — kostenlos und unverbindlich.
+                Festpreis-Angebot und kostenlos und unverbindlich.
               </p>
             </StaggerItem>
           </StaggerReveal>
@@ -74,7 +74,7 @@ export default function AnfragePage() {
                       Sofort-Angebot per Telefon
                     </h3>
                     <p className="text-sm text-[color:var(--text-secondary)] mb-4">
-                      Für dringende Anliegen — direkter Kontakt mit Festpreis-Auskunft.
+                      Für dringende Anliegen und direkter Kontakt mit Festpreis-Auskunft.
                     </p>
                     <Link
                       href="tel:+491782471037"

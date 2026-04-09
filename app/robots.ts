@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
                 disallow: ['/private/', '/api/'],
             },
-            // AI Crawlers — explicit full access
+            // AI Crawlers und explicit full access
             {
                 userAgent: 'GPTBot',
                 allow: '/',

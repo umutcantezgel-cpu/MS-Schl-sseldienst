@@ -3,12 +3,12 @@ import { LocationData } from "./locations";
 /**
  * ══════════════════════════════════════════════════════════════
  * Wetzlar Nauborn (fehlender Stadtteil) + 8 Kernstadt-Bezirke
- * Ring 1 — 0-3 km, keine Anfahrtskosten
+ * Ring 1 und 0-3 km, keine Anfahrtskosten
  * ══════════════════════════════════════════════════════════════
  */
 export const wetzlarBezirkeLocations: LocationData[] = [
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    // NAUBORN — Offizieller Stadtteil (KRITISCH)
+    // NAUBORN und Offizieller Stadtteil (KRITISCH)
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     {
         id: "wetzlar-nauborn",
@@ -19,20 +19,20 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "5-8", distanceFromHQ: 4 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)" },
         seo: {
-            metaTitle: "Schlüsseldienst Wetzlar-Nauborn — Türöffnung ab 99€ | 24/7",
+            metaTitle: "Schlüsseldienst Wetzlar-Nauborn und Türöffnung ab 99€ | 24/7",
             metaDescription: "Schlüsseldienst Wetzlar-Nauborn: In 5-8 Min. vor Ort im Wetzbachtal. Festpreis ab 99€, keine Anfahrtskosten. 24/7 Notdienst: 06441-8056279"
         },
 
         routeDescription: "Von unserem Standort in Wetzlar führt die Route über die Nauborner Straße (L3284) direkt ins Wetzbachtal. Über die Stoppelberger Hohl und die Karl-Kellner-Straße navigieren wir gezielt in jeden Winkel Nauborns.",
         mainRoad: "L3284",
         distanceKm: 4,
-        character: "Zweitgrößter Stadtteil Wetzlars im idyllischen Wetzbachtal — ehemaliges Bergarbeiterdorf mit hoher Wohn- und Lebensqualität",
+        character: "Zweitgrößter Stadtteil Wetzlars im idyllischen Wetzbachtal und ehemaliges Bergarbeiterdorf mit hoher Wohn- und Lebensqualität",
         populationApprox: "~4.000",
         landmark: "Evangelische Kirche Nauborn (romanische Hallenkirche, hessisches Kulturdenkmal)",
         buildingTypes: "Historische Fachwerkhäuser im alten Ortskern, Nachkriegs-Siedlungshäuser, moderne Neubaugebiete mit klimafreundlichen Wohngebäuden und Tiefgaragen.",
         parkingInfo: "In den engen Gassen des historischen Ortskerns nutzen wir kompakte Einsatzfahrzeuge. In den Neubaugebieten stehen ausreichend Parkflächen zur Verfügung.",
         heroVariant: "Ausgesperrt im Wetzbachtal? Ihr Schlüsseldienst für Nauborn ist sofort da.",
-        fareInfo: "Nauborn ist ein offizieller Stadtteil von Wetzlar. Deshalb berechnen wir in ganz Nauborn — vom historischen Ortskern bis zu den Neubaugebieten — absolut keine Anfahrtskosten.",
+        fareInfo: "Nauborn ist ein offizieller Stadtteil von Wetzlar. Deshalb berechnen wir in ganz Nauborn und vom historischen Ortskern bis zu den Neubaugebieten und absolut keine Anfahrtskosten.",
 
         scenarios: [
             {
@@ -48,30 +48,30 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Schlüsselverlust nach Wanderung am Stoppelberg",
-                description: "Nach einem Ausflug zum Stoppelberg (402 m) den Schlüssel verloren? Wir öffnen Ihre Haustür und tauschen den Zylinder direkt vor Ort aus — für Ihre Sicherheit."
+                description: "Nach einem Ausflug zum Stoppelberg (402 m) den Schlüssel verloren? Wir öffnen Ihre Haustür und tauschen den Zylinder direkt vor Ort aus und für Ihre Sicherheit."
             }
         ],
 
         aboutText: `
-<p>Der Stadtteil <strong>Nauborn</strong> liegt südwestlich der Wetzlarer Innenstadt, eingebettet in das malerische <strong>Wetzbachtal</strong>, das historisch auch als „Siebenmühlental" bekannt ist — benannt nach den sieben Mühlen, die einst das Tal prägten. Von den ursprünglichen Mühlenbetrieben existieren noch zwei im Ort. Mit rund 4.000 Einwohnern ist Nauborn nach Niedergirmes der zweitgrößte Stadtteil Wetzlars und verbindet ländliche Idylle mit urbaner Anbindung.</p>
+<p>Der Stadtteil <strong>Nauborn</strong> liegt südwestlich der Wetzlarer Innenstadt, eingebettet in das malerische <strong>Wetzbachtal</strong>, das historisch auch als „Siebenmühlental" bekannt ist und benannt nach den sieben Mühlen, die einst das Tal prägten. Von den ursprünglichen Mühlenbetrieben existieren noch zwei im Ort. Mit rund 4.000 Einwohnern ist Nauborn nach Niedergirmes der zweitgrößte Stadtteil Wetzlars und verbindet ländliche Idylle mit urbaner Anbindung.</p>
 
 <h3>Vom Bergarbeiterdorf zum modernen Wohnort</h3>
-<p>Ende des 19. Jahrhunderts war Nauborn ein typisches mittelhessisches Bergarbeiterdorf, geprägt durch Kleinlandwirtschaft und die bedeutenden Eisenerzbergwerke Uranus, Juno und Amanda in der Region. Heute hat sich Nauborn zu einem attraktiven Wohnstandort mit hoher Lebensqualität entwickelt. Die Infrastruktur umfasst Geschäfte, Ärzte, Apotheken und Banken — alles im Ort verfügbar, ohne in die Kernstadt fahren zu müssen.</p>
+<p>Ende des 19. Jahrhunderts war Nauborn ein typisches mittelhessisches Bergarbeiterdorf, geprägt durch Kleinlandwirtschaft und die bedeutenden Eisenerzbergwerke Uranus, Juno und Amanda in der Region. Heute hat sich Nauborn zu einem attraktiven Wohnstandort mit hoher Lebensqualität entwickelt. Die Infrastruktur umfasst Geschäfte, Ärzte, Apotheken und Banken und alles im Ort verfügbar, ohne in die Kernstadt fahren zu müssen.</p>
 
 <h3>Keine Anfahrtskosten im gesamten Wetzbachtal</h3>
-<p>Als offizieller Stadtteil von Wetzlar (PLZ 35580) liegt Nauborn vollständig in unserem kostenfreien Kern-Einsatzgebiet. Über die L3284, die kürzlich grundlegend saniert wurde, erreichen unsere Monteure jeden Winkel Nauborns in nur 5 bis 8 Minuten. Die Anfahrt ist für Sie komplett kostenfrei — Ihr Festpreis von 99 Euro ist genau das: ein Festpreis ohne versteckte Aufschläge.</p>
+<p>Als offizieller Stadtteil von Wetzlar (PLZ 35580) liegt Nauborn vollständig in unserem kostenfreien Kern-Einsatzgebiet. Über die L3284, die kürzlich grundlegend saniert wurde, erreichen unsere Monteure jeden Winkel Nauborns in nur 5 bis 8 Minuten. Die Anfahrt ist für Sie komplett kostenfrei und Ihr Festpreis von 99 Euro ist genau das: ein Festpreis ohne versteckte Aufschläge.</p>
 
 <h3>Schonende Öffnung für jede Nauborner Bausubstanz</h3>
-<p>Nauborns Architektur ist vielfältig: Im historischen Ortskern dominieren liebevoll erhaltene Fachwerkhäuser und denkmalgeschützte Gebäude wie die romanische Evangelische Kirche und die Dickesmühle. Am Ortsrand entstehen moderne, klimafreundliche Neubauten mit Tiefgaragen und hochwertigen Sicherheitstüren. Unsere Techniker beherrschen das gesamte Spektrum — von der behutsamen Öffnung jahrhundertealter Holztüren bis zur professionellen Entriegelung modernster Mehrfachverriegelungen.</p>
+<p>Nauborns Architektur ist vielfältig: Im historischen Ortskern dominieren liebevoll erhaltene Fachwerkhäuser und denkmalgeschützte Gebäude wie die romanische Evangelische Kirche und die Dickesmühle. Am Ortsrand entstehen moderne, klimafreundliche Neubauten mit Tiefgaragen und hochwertigen Sicherheitstüren. Unsere Techniker beherrschen das gesamte Spektrum und von der behutsamen Öffnung jahrhundertealter Holztüren bis zur professionellen Entriegelung modernster Mehrfachverriegelungen.</p>
 
 <h3>Der höchste Punkt Wetzlars</h3>
-<p>Mit dem Stoppelberg (402 Meter) liegt der höchste Punkt der gesamten Stadt Wetzlar in Nauborn. Der „Wilde Stein" bietet einen atemberaubenden Ausblick über den Stadtteil und das Wetzbachtal. Egal ob Sie von einer Wanderung zurückkehren und feststellen, dass der Schlüssel fehlt, oder ob abends plötzlich das Türschloss klemmt: Wir sind in wenigen Minuten bei Ihnen und lösen das Problem — professionell, fair und zum Festpreis.</p>
+<p>Mit dem Stoppelberg (402 Meter) liegt der höchste Punkt der gesamten Stadt Wetzlar in Nauborn. Der „Wilde Stein" bietet einen atemberaubenden Ausblick über den Stadtteil und das Wetzbachtal. Egal ob Sie von einer Wanderung zurückkehren und feststellen, dass der Schlüssel fehlt, oder ob abends plötzlich das Türschloss klemmt: Wir sind in wenigen Minuten bei Ihnen und lösen das Problem und professionell, fair und zum Festpreis.</p>
 `,
 
         localTestimonials: [
             {
                 name: "Familie Hoffmann",
-                quote: "Sonntagabend in Nauborn ausgesperrt — der Monteur war in 7 Minuten da! Tür wurde ohne jeden Kratzer geöffnet, obwohl es eine alte Holztür ist. Und wirklich null Anfahrtskosten. Top-Service!",
+                quote: "Sonntagabend in Nauborn ausgesperrt und der Monteur war in 7 Minuten da! Tür wurde ohne jeden Kratzer geöffnet, obwohl es eine alte Holztür ist. Und wirklich null Anfahrtskosten. Top-Service!",
                 rating: 5
             },
             {
@@ -81,17 +81,17 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             },
             {
                 name: "Ingrid M.",
-                quote: "Im Neubaugebiet die Sicherheitstür zugezogen. Hatte Angst vor hohen Kosten. Aber 99 Euro werktags, keine Anfahrt — genau wie am Telefon gesagt. Sehr seriös!",
+                quote: "Im Neubaugebiet die Sicherheitstür zugezogen. Hatte Angst vor hohen Kosten. Aber 99 Euro werktags, keine Anfahrt und genau wie am Telefon gesagt. Sehr seriös!",
                 rating: 5
             }
         ],
 
         content: {
-            heroIntro: "Ausgesperrt im idyllischen Wetzbachtal? Keine Sorge — als offizieller Stadtteil von Wetzlar sind wir in nur 5 bis 8 Minuten bei Ihnen in Nauborn. Ohne Anfahrtskosten, zum garantierten Festpreis.",
+            heroIntro: "Ausgesperrt im idyllischen Wetzbachtal? Keine Sorge und als offizieller Stadtteil von Wetzlar sind wir in nur 5 bis 8 Minuten bei Ihnen in Nauborn. Ohne Anfahrtskosten, zum garantierten Festpreis.",
             mainText: "",
-            serviceZerstörungsfrei: "In Wetzlar-Nauborn öffnen wir zugefallene Türen — vom Fachwerkhaus bis zum Neubau — in 99% der Fälle absolut zerstörungsfrei.",
+            serviceZerstörungsfrei: "In Wetzlar-Nauborn öffnen wir zugefallene Türen und vom Fachwerkhaus bis zum Neubau und in 99% der Fälle absolut zerstörungsfrei.",
             serviceBohren: "Bei abgebrochenen Schlüsseln oder defekten Zylindern in Nauborn verwenden wir Spezialwerkzeug und tauschen den Zylinder sofort vor Ort aus.",
-            service247: "Unser 24/7-Notdienst steht Ihnen in Wetzlar-Nauborn an 365 Tagen im Jahr zur Verfügung — auch nachts und an Feiertagen."
+            service247: "Unser 24/7-Notdienst steht Ihnen in Wetzlar-Nauborn an 365 Tagen im Jahr zur Verfügung und auch nachts und an Feiertagen."
         },
         faqs: [
             {
@@ -100,7 +100,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             },
             {
                 question: "Wie lange braucht der Monteur nach Nauborn?",
-                answer: "Über die L3284 erreichen wir Nauborn in 5 bis 8 Minuten — sowohl den alten Ortskern als auch die Neubaugebiete."
+                answer: "Über die L3284 erreichen wir Nauborn in 5 bis 8 Minuten und sowohl den alten Ortskern als auch die Neubaugebiete."
             },
             {
                 question: "Können Sie die historischen Türen im Nauborner Ortskern öffnen?",
@@ -108,7 +108,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             },
             {
                 question: "Was kostet die Türöffnung in Nauborn am Wochenende?",
-                answer: "An Wochenenden und Feiertagen beträgt unser Festpreis 179 Euro — ohne Anfahrtskosten, da Nauborn zum Wetzlarer Kerngebiet gehört."
+                answer: "An Wochenenden und Feiertagen beträgt unser Festpreis 179 Euro und ohne Anfahrtskosten, da Nauborn zum Wetzlarer Kerngebiet gehört."
             }
         ],
         neighbors: ["schluesseldienst-wetzlar", "schluesseldienst-wetzlar-hermannstein", "schluesseldienst-schoeffengrund", "schluesseldienst-wetzlar-steindorf"]
@@ -125,7 +125,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5450, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dalheim — In 5 Min. da | Ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Dalheim. 3-5 Min. Anfahrt, keine Anfahrtskosten. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dalheim und In 5 Min. da | Ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Dalheim. 3-5 Min. Anfahrt, keine Anfahrtskosten. Festpreis ab 99€. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Dalheim liegt als westlicher Ausläufer direkt im Stadtgebiet. Von unserem Wetzlarer Standort aus erreichen wir den Bezirk meist kreuzungsfrei über die B49 (Abfahrt Dalheim) oder die Europastraße in unter 5 Minuten.",
         mainRoad: "B49 / Europastraße",
@@ -142,7 +142,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Mehrfamilienhaus Dalheimer Kopf",
-                description: "Die Tür zur Etagenwohnung ist ins Schloss gefallen. Wir öffnen mit feinsten Fallengleitern – absolut lautlos und garantiert ohne Schäden am Zylinder."
+                description: "Die Tür zur Etagenwohnung ist ins Schloss gefallen. Wir öffnen mit feinsten Fallengleitern und absolut lautlos und garantiert ohne Schäden am Zylinder."
             },
             {
                 icon: "shield-alert",
@@ -157,10 +157,10 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der historischen Altstadt und beherbergt rund 3.250 Einwohner. Das Quartier zeichnet sich durch einen hohen Grünanteil und parkähnliche Strukturen aus – eine Folge der Bergbauvergangenheit, da die komplexen Bodenverhältnisse dichte Bebauung oft verhinderten. Archäologische Funde aus der Zeit der Linearbandkeramik belegen, dass Menschen hier schon vor 7.500 Jahren siedelten. Heute ist Dalheim ein lebendiger Wohnbezirk. Wenn hier der Schlüssel klemmt, ist unser <strong>Schlüsseldienst Wetzlar-Dalheim</strong> in Minutenschnelle zur Stelle.</p>
+<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der historischen Altstadt und beherbergt rund 3.250 Einwohner. Das Quartier zeichnet sich durch einen hohen Grünanteil und parkähnliche Strukturen aus und eine Folge der Bergbauvergangenheit, da die komplexen Bodenverhältnisse dichte Bebauung oft verhinderten. Archäologische Funde aus der Zeit der Linearbandkeramik belegen, dass Menschen hier schon vor 7.500 Jahren siedelten. Heute ist Dalheim ein lebendiger Wohnbezirk. Wenn hier der Schlüssel klemmt, ist unser <strong>Schlüsseldienst Wetzlar-Dalheim</strong> in Minutenschnelle zur Stelle.</p>
 
 <h3>3 bis 5 Minuten: Direkte Nachbarschaft</h3>
-<p>Durch die unmittelbare Nähe von gerade einmal rund 2 Kilometern zum Stadtzentrum und die hervorragende Anbindung über die B49-Abfahrt Wetzlar-Dalheim erreichen unsere Einsatzfahrzeuge jede Straße in diesem Bezirk in <strong>3 bis 5 Minuten</strong>. Ob im älteren Teil an der Berliner Straße oder in den neueren Wohnkomplexen – wir garantieren Ihnen absolute Bestzeiten.</p>
+<p>Durch die unmittelbare Nähe von gerade einmal rund 2 Kilometern zum Stadtzentrum und die hervorragende Anbindung über die B49-Abfahrt Wetzlar-Dalheim erreichen unsere Einsatzfahrzeuge jede Straße in diesem Bezirk in <strong>3 bis 5 Minuten</strong>. Ob im älteren Teil an der Berliner Straße oder in den neueren Wohnkomplexen und wir garantieren Ihnen absolute Bestzeiten.</p>
 
 <h3>Null-Euro-Anfahrt in der Kernstadt</h3>
 <p>Als offizieller Stadtbezirk von Wetzlar (PLZ 35578) fällt Dalheim vollständig in unsere kostenfreie Anfahrtszone. Für die reine Öffnung einer zugefallenen Tür berechnen wir werktags tagsüber einen transparenten <strong>Festpreis von 99 Euro</strong>. Keine Kilometerpauschale, keine Rüstzeit, keine versteckten Gebühren.</p>
@@ -188,7 +188,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Dringend Hilfe in Wetzlar-Dalheim gesucht? Wir sind Ihr lokaler Schlüsseldienst aus direkter Nachbarschaft. Festpreis von 99€, absolut keine Anfahrtskosten, 24/7 erreichbar.",
-            mainText: `<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der Kernstadt Wetzlar. Als lokaler Schlüsseldienst sind wir in Dalheim extrem schnell vor Ort. Ob am Dalheimer Kopf oder in der Berliner Straße – Sie zahlen <strong>keine Anfahrtskosten</strong> und profitieren von transparenten Festpreisen.</p><p>Unsere Monteure öffnen täglich zugefallene Türen am Dalheimer Kopf und in den umliegenden Wohngebieten zu über 99% materialschonend.</p>`,
+            mainText: `<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der Kernstadt Wetzlar. Als lokaler Schlüsseldienst sind wir in Dalheim extrem schnell vor Ort. Ob am Dalheimer Kopf oder in der Berliner Straße und Sie zahlen <strong>keine Anfahrtskosten</strong> und profitieren von transparenten Festpreisen.</p><p>Unsere Monteure öffnen täglich zugefallene Türen am Dalheimer Kopf und in den umliegenden Wohngebieten zu über 99% materialschonend.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Dalheim öffnen wir zugefallene Haustüren in Wohnquartieren mit maximaler Materialschonung ohne Schäden.",
             serviceBohren: "Sollte ein Schlossdefekt vorliegen, bohren wir mit Präzisionsgeräten und setzen sofort ein neues Marken-Zylinderschloss ein.",
             service247: "Egal ob Sonntagnacht oder Feiertag: Unser Notdienst ist für Wetzlar-Dalheim rund um die Uhr auf Abruf bereit."
@@ -196,7 +196,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         faqs: [
             { question: "Fallen in Dalheim Anfahrtskosten an?", answer: "Nein. Dalheim ist als Kernstadt-Bezirk Teil der kostenfreien Null-Euro-Zone. Sie zahlen ausschließlich die transparente Einsatzpauschale ab 99 Euro." },
             { question: "Sind Sie auch nachts in Dalheim einsatzbereit?", answer: "Unser Notdienst operiert an 365 Tagen im Jahr 24 Stunden durchgängig. Für Dalheim gelten dabei sehr schnelle Anfahrtswege von unter 5 Minuten." },
-            { question: "Das Schloss meines Reihenhauses klemmt – können Sie sofort reparieren?", answer: "Ja, unsere Fahrzeuge sind rollende Werkstätten. Wir führen gängige Zylinderformate (BKS, ABUS) mit und können defekte Schließanlagen am Dalheimer Kopf sofort austauschen." },
+            { question: "Das Schloss meines Reihenhauses klemmt und können Sie sofort reparieren?", answer: "Ja, unsere Fahrzeuge sind rollende Werkstätten. Wir führen gängige Zylinderformate (BKS, ABUS) mit und können defekte Schließanlagen am Dalheimer Kopf sofort austauschen." },
             { question: "Öffnen Sie auch gewerbliche Türen im Einzelhandel?", answer: "Selbstverständlich. Wir betreuen auch Supermärkte und Ladengeschäfte in Dalheim und öffen verklemmte Rolltore, Glastüren oder Personalzugänge rasch und materialschonend." }
         ],
         neighbors: ["schluesseldienst-wetzlar", "schluesseldienst-wetzlar-niedergirmes", "schluesseldienst-wetzlar-nauborn"]
@@ -209,9 +209,9 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5558, longitude: 8.5020 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Altstadt — Schonende Öffnung | Ab 99€", metaDescription: "Schlüsseldienst für die Wetzlarer Altstadt. Spezialisiert auf denkmalgeschützte Türen. In 3 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Altstadt und Schonende Öffnung | Ab 99€", metaDescription: "Schlüsseldienst für die Wetzlarer Altstadt. Spezialisiert auf denkmalgeschützte Türen. In 3 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
-        routeDescription: "Direkt im Herzen der historischen Altstadt. Von unserer Zentrale aus bewegen wir uns in Windeseile – oft mit Sondergenehmigungen – durch die verwinkelten Altstadtstrukturen.",
+        routeDescription: "Direkt im Herzen der historischen Altstadt. Von unserer Zentrale aus bewegen wir uns in Windeseile und oft mit Sondergenehmigungen und durch die verwinkelten Altstadtstrukturen.",
         mainRoad: "Langgasse / Domplatz",
         distanceKm: 1,
         character: "Historischer Stadtkern der ehemals Freien Reichsstadt (Kulturdenkmal-Ensemble), geprägt durch dichte Fachwerkarchitektur und verwinkelte Gassen.",
@@ -220,13 +220,13 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         buildingTypes: "Geschlossene Fachwerkbebauung (Kulturdenkmäler), historische Holzportale, teils denkmalgeschützte Kasten- und Buntbartschlösser sowie enge Treppenhauszugänge in der Kramerstraße.",
         parkingInfo: "Dank polizeilicher Ausnahmegenehmigungen für Handwerker-Notdienste parken unsere Kompaktwagen extrem dicht am Einsatzort in der verkehrsberuhigten Kernzone.",
         heroVariant: "Ausgesperrt im Herzen von Wetzlar? Wir sind die Experten für Fachwerk und Denkmalschutz.",
-        fareInfo: "Die Wetzlarer Altstadt liegt in der Zone 0. Keine Fahrtkosten, keine Parkgebührenzuschläge – 100% kostenloser Antritt.",
+        fareInfo: "Die Wetzlarer Altstadt liegt in der Zone 0. Keine Fahrtkosten, keine Parkgebührenzuschläge und 100% kostenloser Antritt.",
 
         scenarios: [
             {
                 icon: "home",
                 title: "Historische Fachwerktür zugefallen",
-                description: "Spaziergang auf dem Domplatz und der Wind drückt die schwere Eichentür am Brodschirm zu? Wir öffnen sensible Altbau-Portale mit weichen Fallengleitern – garantiert kratzfrei."
+                description: "Spaziergang auf dem Domplatz und der Wind drückt die schwere Eichentür am Brodschirm zu? Wir öffnen sensible Altbau-Portale mit weichen Fallengleitern und garantiert kratzfrei."
             },
             {
                 icon: "shield-alert",
@@ -241,7 +241,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Die <strong>Wetzlarer Altstadt</strong> ist das unumstrittene historische und touristische Zentrum der Stadt. Anerkannt als Gesamtanlage und Kulturdenkmal, beheimatet dieses Areal Schätze wie den weltberühmten, architektonisch einzigartigen Wetzlarer Dom, historische Plätze wie den Eisenmarkt und Fischmarkt sowie das Lottehaus, das Literaturgeschichte schrieb. Inmitten geschlossener, pittoresker Fachwerkensembles wie dem Brodschirm – wo das älteste Fachwerkhaus der Stadt (erbaut 1356) steht – leben rund 2.500 Menschen in denkmalgeschützter Substanz. Fällt an solch wertvollen und oft sensiblen Gebäuden die Tür ins Schloss, ist der <strong>Schlüsseldienst Wetzlar-Altstadt</strong> mit besonderem Fingerspitzengefühl gefragt.</p>
+<p>Die <strong>Wetzlarer Altstadt</strong> ist das unumstrittene historische und touristische Zentrum der Stadt. Anerkannt als Gesamtanlage und Kulturdenkmal, beheimatet dieses Areal Schätze wie den weltberühmten, architektonisch einzigartigen Wetzlarer Dom, historische Plätze wie den Eisenmarkt und Fischmarkt sowie das Lottehaus, das Literaturgeschichte schrieb. Inmitten geschlossener, pittoresker Fachwerkensembles wie dem Brodschirm und wo das älteste Fachwerkhaus der Stadt (erbaut 1356) steht und leben rund 2.500 Menschen in denkmalgeschützter Substanz. Fällt an solch wertvollen und oft sensiblen Gebäuden die Tür ins Schloss, ist der <strong>Schlüsseldienst Wetzlar-Altstadt</strong> mit besonderem Fingerspitzengefühl gefragt.</p>
 
 <h3>Blitzschnell durch die Gassen</h3>
 <p>Die enge, mittelalterliche Straßenführung, oft steil ansteigend, fordert Logistik. Durch unsere absolute Standortnähe und spezielle Zufahrtsgenehmigungen für die Fußgängerzonen am Kornmarkt oder am Schillerplatz reduzieren wir die Wartezeit der Altstadtbewohner auf ein absolutes Minimum. Erfahrungsgemäß stehen wir in den verwinkelten Altstadtbereichen oft bereits in <strong>3 bis 5 Minuten</strong> mit unserem Werkzeug direkt an Ihrem Türportal.</p>
@@ -271,7 +271,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Behutsame Notöffnung am Wetzlarer Dom oder am Fischmarkt gewünscht? Spezialisten für Fachwerk- und Denkmalschutztüren direkt in der Nachbarschaft helfen – für 99€, ohne Anfahrtskosten.",
+            heroIntro: "Behutsame Notöffnung am Wetzlarer Dom oder am Fischmarkt gewünscht? Spezialisten für Fachwerk- und Denkmalschutztüren direkt in der Nachbarschaft helfen und für 99€, ohne Anfahrtskosten.",
             mainText: `<p>Die Wetzlarer Altstadt ist das kulturelle und historische Herz der Stadt. Wer sich hier am Domplatz, Schillerplatz oder Kornmarkt aussperrt, braucht Handwerker, die mit <strong>denkmalgeschützter Architektur</strong> umgehen können.</p><p>Unser Schlüsseldienst befreit Sie in den verwinkelten Altstadtgassen oft in Rekordzeit von 3 bis 5 Minuten. Dabei arbeiten wir mit speziellem Werkzeug an historischen Türen, um keinerlei Schäden zu hinterlassen.</p>`,
             serviceZerstörungsfrei: "Zugefallene antike Wohnungstüren in der Altstadt öffnen wir mit speziell angepassten, materialschonenden Gleitern.",
             serviceBohren: "Müssen Schließzylinder ausgetauscht werden, tun wir das absolut vorsichtig, damit Beschläge historischer Türen unversehrt bleiben.",
@@ -280,7 +280,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         faqs: [
             { question: "Beschädigen Sie meine antike Holztür?", answer: "Nein. Liegt nur eine zugefallene Falle vor, arbeiten wir an der historischen Substanz in der Wetzlarer Altstadt vollständig zerstörungsfrei und extrem materialschonend." },
             { question: "Muss ich Anfahrtskosten zahlen, weil ich in der Fußgängerzone am Kornmarkt wohne?", answer: "Selbstverständlich nicht. Wir verfügen über Ausnahmegenehmigungen und stornieren innerhalb der Kernstadt sämtliche Anfahrtsgebühren für Sie." },
-            { question: "Helfen Sie auch nachts nach dem Besuch im Altstadt-Erlebnis?", answer: "Wir sind 365 Tage im Jahr 24/7 bereit. Egal ob Sie nachts um zwei Uhr vom Lahnfleck kommen und den Schlüssel vermissen – ein Monteur ist in wenigen Minuten vor Ort." },
+            { question: "Helfen Sie auch nachts nach dem Besuch im Altstadt-Erlebnis?", answer: "Wir sind 365 Tage im Jahr 24/7 bereit. Egal ob Sie nachts um zwei Uhr vom Lahnfleck kommen und den Schlüssel vermissen und ein Monteur ist in wenigen Minuten vor Ort." },
             { question: "Können Sie alte antike Schlösser sofort nachrüsten?", answer: "Sollte ein historisches Schloss defekt sein, prüfen wir zunächst eine Reparatur. Falls ein Austausch der Mechanik zwingend ist, verbauen wir sicherheitstechnisch hochwertige Modernisierungen unter Bewahrung der Optik." }
         ],
         neighbors: ["schluesseldienst-wetzlar", "schluesseldienst-wetzlar-dalheim", "schluesseldienst-wetzlar-neustadt"]
@@ -293,7 +293,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5570, longitude: 8.5080 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Neustadt — 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Wetzlar-Neustadt. In 3 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Neustadt und 24/7 Notdienst | Ab 99€", metaDescription: "Schlüsseldienst Wetzlar-Neustadt. In 3 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Direkt östlich/nordöstlich an die historische Altstadt grenzend. Wir erreichen die Neustadt bequem über den Buderusplatz und die Gloelstraße innerhalb weniger Abzweigungen.",
         mainRoad: "Gloelstraße / Eduard-Kaiser-Straße",
@@ -356,13 +356,13 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Panik in der Wetzlarer Neustadt? Ein Anruf genügt. In 3 bis 5 Minuten öffnet unser Expernteam Wohnungen und Büros von der Gloelstraße bis zum Rathaus. Ohne Fahrkosten, ab 99€.",
-            mainText: `<p>Die Wetzlarer Neustadt ist geprägt durch herrschaftliche Gründerzeitbauten, moderne Büros und das städtische Behördenviertel. Falls Sie hier rund um Rathaus oder Gloelstraße vor verschlossener Tür stehen, handeln wir sofort.</p><p>Unsere Monteure öffnen schwere Altbautüren ebenso souverän wie verklemmte Sicherheitsschlösser von Geschäftsräumen – zum Festpreis und <strong>ohne Anfahrtsgebühren</strong>.</p>`,
+            mainText: `<p>Die Wetzlarer Neustadt ist geprägt durch herrschaftliche Gründerzeitbauten, moderne Büros und das städtische Behördenviertel. Falls Sie hier rund um Rathaus oder Gloelstraße vor verschlossener Tür stehen, handeln wir sofort.</p><p>Unsere Monteure öffnen schwere Altbautüren ebenso souverän wie verklemmte Sicherheitsschlösser von Geschäftsräumen und zum Festpreis und <strong>ohne Anfahrtsgebühren</strong>.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Neustadt öffnen wir zugefallene Sicherheitstüren und Kamerasystemtüren schonend und restlos ohne Defekte.",
             serviceBohren: "Verriegelte Türen von Geschäftsräumen öffnen unsere Profis im Notfall durch minimalinvasives Fräsen des Zylinders.",
             service247: "Egal ob Arbeits- oder Wochenende: Für die Wetzlarer Neustadt bieten wir unsere garantierte 24/7-Schlüsselbereitschaft an."
         },
         faqs: [
-            { question: "Ich wohne im Gründerzeit-Altbau in der Neustadt – wird gebohrt?", answer: "Nein, solange die Tür nicht dreifach verriegelt ist, öffnen wir mit sanften Methoden (Bleche, Spione, Angeltechnik) absolut ohne Bohrer." },
+            { question: "Ich wohne im Gründerzeit-Altbau in der Neustadt und wird gebohrt?", answer: "Nein, solange die Tür nicht dreifach verriegelt ist, öffnen wir mit sanften Methoden (Bleche, Spione, Angeltechnik) absolut ohne Bohrer." },
             { question: "Berechnen Sie eine Anfahrt bis zur Ernst-Leitz-Straße?", answer: "Sämtliche Straßen innerhalb der Wetzlarer Neustadt sind für uns Anfahrts- und Kilometergebührenfrei. Sie zahlen lediglich die Öffnung." },
             { question: "Öffnen Sie auch gewerbliche Schließsysteme im Behördenviertel?", answer: "Ja, wir betreuen mehrere Dienstleister und Behörden und sind Spezialisten für das Öffnen, Reparieren und Auslesen vernetzter oder komplexer Schließanlagen." },
             { question: "Wie hoch sind die Kosten nachts in der Wetzlarer Neustadt?", answer: "Für Späteinsätze (ab 18 Uhr bis 22 Uhr) sowie tiefe Nachtstunden gelten Staffelungsaufschläge, die wir Ihnen am Mobiltelefon ohne Umschweife millimetergenau auflisten." }
@@ -377,7 +377,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5430, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Büblingshausen — Festpreis ab 99€ | 24/7", metaDescription: "Schlüsseldienst Büblingshausen: In 5 Min. vor Ort. Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Büblingshausen und Festpreis ab 99€ | 24/7", metaDescription: "Schlüsseldienst Büblingshausen: In 5 Min. vor Ort. Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über den Frankfurter Ring (B49) biegen wir blitzschnell Richtung Süden auf den Wetzlarer Berg (oder Volpertshäuser Straße) ab und stehen sofort in Büblingshausen.",
         mainRoad: "B49 / Frankfurter Straße",
@@ -447,7 +447,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         },
         faqs: [
             { question: "Kostet mich die Anfahrt bis ins tiefste Büblingshausen etwas?", answer: "Ganz klares Nein. Ob Alt-Büblingshausen oder Spilburg-Kaserne, das Quartier gehört zur gebührenfreien Null-Euro-Wetzlar-Zone." },
-            { question: "Öffnen Sie auch extrem moderne Sicherheitstüren unbeschadet?", answer: "Ja, gerade die hochwertigen Brandschutz- oder Sicherheitsobjekte in der Spilburg entriegeln wir bei bloßem Zufallen des Riegels über Manipulation – oft ganz ohne Bohrer." },
+            { question: "Öffnen Sie auch extrem moderne Sicherheitstüren unbeschadet?", answer: "Ja, gerade die hochwertigen Brandschutz- oder Sicherheitsobjekte in der Spilburg entriegeln wir bei bloßem Zufallen des Riegels über Manipulation und oft ganz ohne Bohrer." },
             { question: "Wann sind Sie nachts am Leitz-Park?", answer: "Wir verwalten einen rigorosen 24-Stunden-Shift. Zwischen Anruf und Eintreffen des Monteurs vergehen meist lediglich handgestoppte 3 bis 6 Minuten." },
             { question: "Kann ich den Notdienst mit Maestro-, Giro- oder Kreditkarte zahlen?", answer: "Definitiv. In unseren Service-Campern befinden sich drahtlose SumUp/EC-Terminals, die kontaktloses Bezahlen problemlos gestatten." }
         ],
@@ -461,7 +461,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5480, longitude: 8.4980 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Sturzkopf — Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Sturzkopf. In 5 Min. da, Festpreis ab 99€, keine Anfahrtskosten. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Sturzkopf und Notdienst 24/7 | Ab 99€", metaDescription: "Schlüsseldienst für Wetzlar-Sturzkopf. In 5 Min. da, Festpreis ab 99€, keine Anfahrtskosten. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die Bergstraße und Nauborner Straße erreichen wir den höher gelegenen Sturzkopf aus der Wetzlarer Innenstadt verkehrsarm in unter 5 Minuten.",
         mainRoad: "Nauborner Straße / Waldstraße",
@@ -485,13 +485,13 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Sobald Sie unseren Notruf wählen, machen sich unsere Servicewagen von der Zentrale auf den Weg. Über die Bergstraße stehen wir oft schon nach <strong>3 bis 5 Minuten</strong> vor Ihrer Haustür am Sturzkopf. Kein langes Warten draußen in der Kälte.</p>
 
 <h3>100% Kostenfreie Anfahrt</h3>
-<p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <strong>0 Euro Anfahrtskosten</strong>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 99 Euro – transparent, fair und ehrlich kommuniziert.</p>`,
+<p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <strong>0 Euro Anfahrtskosten</strong>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 99 Euro und transparent, fair und ehrlich kommuniziert.</p>`,
         localTestimonials: [
             { name: "Michael H.", quote: "Hatte mich an der Waldstraße ausgesperrt. Der Monteur war in rekordverdächtigen 4 Minuten da. Toller, seriöser Schlüsseldienst ohne versteckte Kosten.", rating: 5 },
             { name: "Birgit S.", quote: "Das Türschloss an unserem älteren Haus funktionierte nicht mehr richtig. Innerhalb kurzer Zeit wurde alles professionell und freundlich gewechselt.", rating: 5 }
         ],
         content: {
-            heroIntro: "Tür zugefallen am Sturzkopf? Unser Monteur ist in 3 bis 5 Minuten bei Ihnen — zum fairen Festpreis und Anfahrtskosten-frei.",
+            heroIntro: "Tür zugefallen am Sturzkopf? Unser Monteur ist in 3 bis 5 Minuten bei Ihnen und zum fairen Festpreis und Anfahrtskosten-frei.",
             mainText: `<p>Wir sind Ihr schneller und ehrlicher Notdienst für den <strong>Sturzkopf</strong>. Dank unserer tiefen Verwurzelung in Wetzlar garantieren wir eine extrem schnelle Reaktionszeit direkt zu Ihnen an den Südhang.</p>`,
             serviceZerstörungsfrei: "Am Sturzkopf öffnen wir Ihre zugefallene Tür routiniert mit Spezialgleitern und ohne Beschädigungen.",
             serviceBohren: "Bei defekten Schlössern am Sturzkopf arbeiten wir mit Präzisionsbohrern und ersetzen den Zylinder sofort durch Markenware.",
@@ -499,7 +499,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         },
         faqs: [
             { question: "Ist der Sturzkopf im kostenlosen Gebiet?", answer: "Ja, der Sturzkopf gehört zur Kernstadt Wetzlar. Keine Anfahrtskosten für Sie." },
-            { question: "Wie lange brauchen Sie zum Sturzkopf?", answer: "Wir sind in 3 bis 5 Minuten bei Ihnen — der Sturzkopf liegt nur 2 km entfernt." }
+            { question: "Wie lange brauchen Sie zum Sturzkopf?", answer: "Wir sind in 3 bis 5 Minuten bei Ihnen und der Sturzkopf liegt nur 2 km entfernt." }
         ],
         neighbors: ["schluesseldienst-wetzlar", "schluesseldienst-wetzlar-dalheim", "schluesseldienst-wetzlar-nauborn"]
     },
@@ -511,7 +511,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5460, longitude: 8.4950 },
         logistics: { drivingTimeMinutes: "5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Stoppelberger Hohl Wetzlar — Festpreis | 24/7", metaDescription: "Schlüsseldienst für die Stoppelberger Hohl in Wetzlar. In 5 Min. da, ab 99€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Stoppelberger Hohl Wetzlar und Festpreis | 24/7", metaDescription: "Schlüsseldienst für die Stoppelberger Hohl in Wetzlar. In 5 Min. da, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Die Durchgangsstraße Stoppelberger Hohl erreichen wir über den Wöllbacher Tor / Frankfurter Straße meist schnurgerade und staufrei binnen 5 Minuten.",
         mainRoad: "Stoppelberger Hohl / Frankfurter Weg",
@@ -521,7 +521,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         landmark: "Friedhof an der Stoppelberger Hohl",
         buildingTypes: "Mehrparteienhäuser, ansprechende Einfamilienhäuser und Siedlungsbau.",
         parkingInfo: "Trotz der beidseitigen Bebauung entlang der Achse parken wir problemlos durch Sondergenehmigungen nahe des Hauseingangs.",
-        heroVariant: "Schlüsseldienst Wetzlar – Stoppelberger Hohl. Festpreis ab 99€, Anfahrt stets kostenlos.",
+        heroVariant: "Schlüsseldienst Wetzlar und Stoppelberger Hohl. Festpreis ab 99€, Anfahrt stets kostenlos.",
         fareInfo: "Auch die Stoppelberger Hohl profitiert von der Wetzlarer Kernstadt-Garantie: 0 Euro für die Anfahrt.",
         scenarios: [
             { icon: "home", title: "Türöffnung im Mehrfamilienhaus", description: "Im Treppenhaus die Tür hinter sich zugezogen? Wir öffnen die Wohnungstür flüsterleise und restlos ohne Schäden am Holz." },
@@ -529,7 +529,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { icon: "briefcase", title: "Kellerschloss hakt", description: "Verrostetes Kellerschloss? Wir ersetzen einfache Bartschlösser kostengünstig und schnell." }
         ],
         aboutText: `
-<p>Die <strong>Stoppelberger Hohl</strong> bildet eine markante Wohnachse im südwestlichen Teil der Wetzlarer Kernstadt. Ob traditionelle Einfamilienhäuser oder belebte Mehrparteien-Komplexe – als direkter Nachbar helfen wir mit dem <strong>Schlüsseldienst Stoppelberger Hohl</strong> bei jedem Schloss-Notfall kompetent weiter.</p>
+<p>Die <strong>Stoppelberger Hohl</strong> bildet eine markante Wohnachse im südwestlichen Teil der Wetzlarer Kernstadt. Ob traditionelle Einfamilienhäuser oder belebte Mehrparteien-Komplexe und als direkter Nachbar helfen wir mit dem <strong>Schlüsseldienst Stoppelberger Hohl</strong> bei jedem Schloss-Notfall kompetent weiter.</p>
 
 <h3>Flotte Ankunftszeit garantiert</h3>
 <p>Dank kurzer Dispatch-Zeiten und freier Strecke erreichen wir das Quartier an der Stoppelberger Hohl im Durchschnitt nach nur <strong>4 bis 5 Minuten</strong>. Sie stehen also niemals lange fluchend im Treppenhaus.</p>
@@ -541,7 +541,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { name: "Eva K.", quote: "Der Techniker hat mir an einem Sonntag kurzfristig geholfen, Tür war zugefallen. Es gab vorher klare Preisansagen, die auch genau so in der Rechnung gestanden haben.", rating: 5 }
         ],
         content: {
-            heroIntro: "Ausgesperrt an der Stoppelberger Hohl? Wir sind in etwa 5 Minuten da — mit Festpreisgarantie und ohne Anfahrtskosten.",
+            heroIntro: "Ausgesperrt an der Stoppelberger Hohl? Wir sind in etwa 5 Minuten da und mit Festpreisgarantie und ohne Anfahrtskosten.",
             mainText: `<p>Die <strong>Stoppelberger Hohl</strong> ist ein etablierter Wohnbezirk in der Wetzlarer Kernstadt. Als erfahrener lokaler Schlüsseldienst garantieren wir schnelle, seriöse und preistransparente Hilfe bei allen Türöffnungen.</p>`,
             serviceZerstörungsfrei: "An der Stoppelberger Hohl öffnen wir zugefallene Türen aller Art schonend und mit Profiwerkzeug.",
             serviceBohren: "Defekte Zylinder tauschen wir an der Stoppelberger Hohl sofort vor Ort durch langlebige BKS-Qualität aus.",
@@ -549,7 +549,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         },
         faqs: [
             { question: "Ist die Stoppelberger Hohl im kostenfreien Gebiet?", answer: "Ja, als Kernstadt-Bezirk zahlen Sie keine Anfahrtskosten." },
-            { question: "Wie schnell kommen Sie zur Stoppelberger Hohl?", answer: "In etwa 5 Minuten — der Bezirk liegt direkt im Wetzlarer Stadtgebiet." }
+            { question: "Wie schnell kommen Sie zur Stoppelberger Hohl?", answer: "In etwa 5 Minuten und der Bezirk liegt direkt im Wetzlarer Stadtgebiet." }
         ],
         neighbors: ["schluesseldienst-wetzlar-sturzkopf", "schluesseldienst-wetzlar-nauborn", "schluesseldienst-wetzlar-dalheim"]
     },
@@ -561,7 +561,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5580, longitude: 8.4920 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 1 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Silhöfer Aue Wetzlar — In 3 Min. da | 89€", metaDescription: "Schlüsseldienst für die Silhöfer Aue und das Westend in Wetzlar. In 3 Min. da, ab 99€ Festpreis. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Silhöfer Aue Wetzlar und In 3 Min. da | 89€", metaDescription: "Schlüsseldienst für die Silhöfer Aue und das Westend in Wetzlar. In 3 Min. da, ab 99€ Festpreis. Jetzt: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Die Silhöfer Aue liegt unmittelbar an der Lahn. Von der Wetzlarer Innenstadt überqueren wir rasch die Lahn und sind oft in unter 3 Minuten auf der Westseite.",
         mainRoad: "Karl-Kellner-Ring / Lahnbrücken",
@@ -591,14 +591,14 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { name: "Philipp D.", quote: "Wohne am Colo Park, Tür war zugefallen. Es hat keine drei Minuten gedauert, bis der Pkw vor der Tür stand. Fairer Festpreis, exzellente Kommunikation.", rating: 5 }
         ],
         content: {
-            heroIntro: "Schlüsselnotfall in der Silhöfer Aue oder im Westend? Wir sind in nur 3 Minuten bei Ihnen — zum transparenten Festpreis.",
+            heroIntro: "Schlüsselnotfall in der Silhöfer Aue oder im Westend? Wir sind in nur 3 Minuten bei Ihnen und zum transparenten Festpreis.",
             mainText: `<p>Die <strong>Silhöfer Aue</strong> verbindet modernes Wohnen mit erholsamer Flussnähe. Wenn Sie hier den Schlüsseldienst benötigen, punkten wir durch unsere absolute Standortnähe und eine völlig <strong>kostenfreie Anfahrt</strong>.</p>`,
             serviceZerstörungsfrei: "In der Silhöfer Aue rutschen wir mit Spezialwerkzeug über die Falle und öffnen Ihre Tür spurenlos.",
             serviceBohren: "Bei massiven Schlossausfällen im Westend bohren wir den Zylinderkern und fixieren sofort einen BKS Marken-Ersatz.",
             service247: "Notdienst Silhöfer Aue/Westend: Wir stehen an 365 Tagen zu jeder Tages- und Nachtzeit für Sie bereit."
         },
         faqs: [
-            { question: "Wie schnell sind Sie in der Silhöfer Aue?", answer: "In nur 3 Minuten — der Bezirk liegt direkt neben unserem Einsatzgebiet im Zentrum." },
+            { question: "Wie schnell sind Sie in der Silhöfer Aue?", answer: "In nur 3 Minuten und der Bezirk liegt direkt neben unserem Einsatzgebiet im Zentrum." },
             { question: "Fallen Anfahrtskosten an?", answer: "Nein, die Silhöfer Aue ist Teil der Wetzlarer Kernstadt. Keine Anfahrtskosten." }
         ],
         neighbors: ["schluesseldienst-wetzlar-altstadt", "schluesseldienst-wetzlar", "schluesseldienst-wetzlar-neustadt"]
@@ -611,7 +611,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         coordinates: { latitude: 50.5620, longitude: 8.5100 },
         logistics: { drivingTimeMinutes: "3-5", distanceFromHQ: 2 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 0, travelCostText: "Keine Anfahrtskosten (Kernstadt Wetzlar)" },
-        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dillfeld — 24/7 Notdienst | Festpreis", metaDescription: "Schlüsseldienst Wetzlar-Dillfeld. In 5 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wetzlar-Dillfeld und 24/7 Notdienst | Festpreis", metaDescription: "Schlüsseldienst Wetzlar-Dillfeld. In 5 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Notdienst: 06441-8056279" },
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die B49 / Bergstraße und den Kreuzungsbereich Dillfeld gelangen wir äußerst flüssig und direkt ins Wetzlarer Dillfeld.",
         mainRoad: "B49 / Dillfeld",
@@ -641,7 +641,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { name: "Anja K.", quote: "Hatte mich im Randbezirk am Dillfeld im Mehrfamilienhaus ausgeschlossen. Der Schlüsseldienst war kompetent, ruhig und hat die Tür mit einem Gleiter einfach weggeschoben. 99 Euro, super gemacht.", rating: 5 }
         ],
         content: {
-            heroIntro: "Tür zu im Dillfeld? Unser Schlüsseldienst ist in 3 bis 5 Minuten vor Ort — zum transparenten Festpreis.",
+            heroIntro: "Tür zu im Dillfeld? Unser Schlüsseldienst ist in 3 bis 5 Minuten vor Ort und zum transparenten Festpreis.",
             mainText: `<p>Das Gewerbegebiet und Wohnareal <strong>Dillfeld</strong> versorgen wir extrem zügig mit Notöffnungen aller Art. Profitieren Sie von lokaler Expertise und <strong>komplett wegfallenden Anfahrtskosten</strong>.</p>`,
             serviceZerstörungsfrei: "Im Dillfeld öffnen wir private und gewerbliche nicht-verriegelte Türen zu 99% materialschonend.",
             serviceBohren: "Sicherheitsschlösser an Industrieanlagen oder Shops im Dillfeld tauschen wir nach exakter Fräsung direkt vor Ort.",
@@ -649,7 +649,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         },
         faqs: [
             { question: "Ist das Dillfeld im kostenfreien Anfahrtsgebiet?", answer: "Ja, das Dillfeld gehört zur Wetzlarer Kernstadt. Keine Anfahrtskosten für Sie." },
-            { question: "Wie schnell kommen Sie ins Dillfeld?", answer: "In 3 bis 5 Minuten — das Dillfeld liegt zentral im Wetzlarer Stadtgebiet." }
+            { question: "Wie schnell kommen Sie ins Dillfeld?", answer: "In 3 bis 5 Minuten und das Dillfeld liegt zentral im Wetzlarer Stadtgebiet." }
         ],
         neighbors: ["schluesseldienst-wetzlar-niedergirmes", "schluesseldienst-wetzlar", "schluesseldienst-wetzlar-naunheim"]
     }

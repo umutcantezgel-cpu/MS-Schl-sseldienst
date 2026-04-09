@@ -9,7 +9,7 @@ import { pickVariant } from "@/lib/textRotation";
 const keywordVariants = [
     (name: string) => `Zusammenfassung: Als zertifizierter Schlüsseldienst für ${name} garantieren wir eine professionelle Türöffnung zum Festpreis. Wir sind als 24/7 Notdienst rund um die Uhr verfügbar.`,
     (name: string) => `Ihr Schlüsseldienst in ${name}: Professionelle Türöffnung ohne Beschädigungen, faire Festpreise und ein 24/7 Notdienst, der wirklich rund um die Uhr erreichbar ist.`,
-    (name: string) => `Schlüssel Schmiede ${name} — Ihre lokale Anlaufstelle für Türöffnungen, Schlosswechsel und Einbruchschutz. Zum garantierten Festpreis, 24 Stunden am Tag.`,
+    (name: string) => `Schlüssel Schmiede ${name} , Ihre lokale Anlaufstelle für Türöffnungen, Schlosswechsel und Einbruchschutz. Zum garantierten Festpreis, 24 Stunden am Tag.`,
     (name: string) => `Schlüsseldienst ${name}: Wir öffnen Ihre Tür schnell, sauber und zum vereinbarten Festpreis. Unser 24/7 Notdienst steht Ihnen jederzeit zur Verfügung.`,
     (name: string) => `Notfall-Schlüsseldienst für ${name} und Umgebung. Festpreis-Garantie bei jeder Türöffnung. Tag und Nacht für Sie im Einsatz als zuverlässiger 24/7 Notdienst.`,
 ];
@@ -66,7 +66,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                                 <span dangerouslySetInnerHTML={{ __html: city.heroVariant.replace(city.name, `<span class="text-[color:var(--value-primary)]">${city.name}</span>`) }} />
                             ) : (
                                 <>
-                                    Schlüsseldienst <span className="text-[color:var(--value-primary)]">{city.name}</span> — <br className="hidden md:block" />
+                                    Schlüsseldienst <span className="text-[color:var(--value-primary)]">{city.name}</span> , <br className="hidden md:block" />
                                     Türöffnung zum Festpreis | 24/7 Notdienst
                                 </>
                             )}
@@ -100,10 +100,10 @@ export default function LocalHero({ city }: LocalHeroProps) {
                                 className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-6 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto"
                             >
                                 <Phone className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:rotate-12" />
-                                <span className="text-base sm:text-xl tracking-tight">Jetzt Anrufen — 06441-8056279</span>
+                                <span className="text-base sm:text-xl tracking-tight">Jetzt Anrufen , 06441-8056279</span>
                             </a>
                             <span className="typo-tiny text-[color:var(--text-tertiary)] text-center font-medium tracking-wide uppercase mt-2">
-                                Kostenlos & unverbindlich — Antwort in 30 Min
+                                Kostenlos & unverbindlich , Antwort in 30 Min
                             </span>
                         </div>
                     </StaggerItem>

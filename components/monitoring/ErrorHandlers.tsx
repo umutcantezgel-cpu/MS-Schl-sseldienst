@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { errorLogger } from "@/lib/monitoring/error-logger";
 
 /**
- * Phase 19 — Global Error Handlers
+ * Phase 19 und Global Error Handlers
  * Captures unhandled errors and promise rejections.
  * Mount once in layout.tsx via dynamic import.
  */

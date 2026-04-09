@@ -1,7 +1,7 @@
 import { Testimonial, createId, createSlug, Slug, Id } from "../types";
 
 /**
- * Echte Kundenbewertungen — basierend auf verifizierten Google Reviews.
+ * Echte Kundenbewertungen und basierend auf verifizierten Google Reviews.
  * Quelle: reviews.data.ts (Google Business Profile)
  */
 export const testimonials: Testimonial[] = [

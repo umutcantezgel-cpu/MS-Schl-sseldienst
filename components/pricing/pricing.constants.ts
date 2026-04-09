@@ -9,8 +9,8 @@ export const PRICING: Record<ServiceType, Record<TimeSlot, number | null>> = {
 };
 
 export const TIME_MODIFIERS: Record<TimeSlot, { label: string }> = {
-    day: { label: 'Tagsüber (Mo–Sa 10–18h)' },
-    evening: { label: 'Abends (18–22h)' },
+    day: { label: 'Tagsüber (Mo-Sa 10-18h)' },
+    evening: { label: 'Abends (18-22h)' },
     night: { label: 'Nachts & Wochenende' },
 };
 

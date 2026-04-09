@@ -50,7 +50,7 @@ export default function SicherheitstechnikPage() {
     }}
    />
    
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section , Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
@@ -94,7 +94,7 @@ export default function SicherheitstechnikPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-            Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik – für ein unerschütterliches Sicherheitsgefühl.
+            Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik - für ein unerschütterliches Sicherheitsgefühl.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -288,7 +288,7 @@ export default function SicherheitstechnikPage() {
      </StaggerReveal>
     </section>
 
-    {/* Weiterführende Informationen — SEO Authority Links */}
+    {/* Weiterführende Informationen , SEO Authority Links */}
     <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-16 md:py-20">
      <div className="mx-auto max-w-4xl">
        <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
@@ -312,7 +312,7 @@ export default function SicherheitstechnikPage() {
              <Lock className="h-5 w-5" />
            </div>
            <div>
-             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Prävention</span>
+             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH , Polizeiliche Prävention</span>
              <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Offizielle Empfehlungen der Polizei zum Schutz Ihres Zuhauses.</p>
            </div>
          </a>

@@ -20,7 +20,7 @@ export function HoverGlossary({
       onFocus={() => setIsHovered(true)}
       onBlur={() => setIsHovered(false)}
       tabIndex={0}
-      aria-description={explanation}
+      title={explanation}
     >
       <span className="border-b border-dashed border-primary/50 font-medium text-gray-900 group-hover:text-primary transition-colors decoration-clone">
         {children}

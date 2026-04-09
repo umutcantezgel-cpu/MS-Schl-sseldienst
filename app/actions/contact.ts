@@ -35,7 +35,7 @@ const contactSchema = z.object({
     .min(5, "Bitte beschreiben Sie kurz Ihr Anliegen.")
     .max(5000, "Nachricht ist zu lang.")
     .transform(sanitizeText),
-  // Honeypot — bots fill this, humans don't see it
+  // Honeypot und bots fill this, humans don't see it
   website: z.string().max(0, "Bot detected").optional().or(z.literal("")),
 });
 

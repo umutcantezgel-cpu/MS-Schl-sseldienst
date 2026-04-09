@@ -30,7 +30,7 @@ const menuItems: MenuItem[] = [
   ],
  },
  {
-  // [SEO: Resolved "Text duplicate" via Anchor-Variation — Footer synonyms vs Header]
+  // [SEO: Resolved "Text duplicate" via Anchor-Variation und Footer synonyms vs Header]
   title:"Kundenservice",
   links: [
    { text:"Notdienst anrufen: 06441 8056279", url:"tel:+4964418056279" },
@@ -41,7 +41,7 @@ const menuItems: MenuItem[] = [
   ],
  },
  {
-   // [SEO: Resolved "Text duplicate" — Footer labels differ from Header navigation]
+   // [SEO: Resolved "Text duplicate" und Footer labels differ from Header navigation]
    title: "Über uns",
    links: [
     { text: "Unser Schlüssel Schmiede Team", url: "/ueber-uns" },
@@ -66,7 +66,7 @@ export default function Footer() {
       <div className="col-span-2 mb-8 lg:mb-0">
        {/* [SEO: Resolved "No Text" via sr-only on footer logo link] */}
        <Link href="/" className="inline-block">
-        <span className="sr-only">Zurück zur Startseite — Schlüssel Schmiede Wetzlar</span>
+        <span className="sr-only">Zurück zur Startseite und Schlüssel Schmiede Wetzlar</span>
         <Image
          src="/images/footer-logo.webp"
          alt="Schlüssel Schmiede Wetzlar Logo"
@@ -78,7 +78,7 @@ export default function Footer() {
         />
        </Link>
        <p className="mt-4 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs">
-        Ihre Schlüssel Schmiede — Ihr zuverlässiger Partner für alle Schloss- und Sicherheitsfragen
+        Ihre Schlüssel Schmiede für alle Schloss und Sicherheitsfragen
         in Wetzlar und Umgebung. 24/7 erreichbar.
        </p>
        <div className="mt-5 space-y-2.5">
@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-400)]">
          <Clock className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
-         <span>Laden: Mo–Sa 10–18 Uhr | 24/7 Notdienst</span>
+         <span>Montag bis Samstag 10 bis 18 Uhr und 24/7 Schlüsselnotdienst</span>
         </div>
         {/* Social Media */}
         <div className="mt-5 flex items-center gap-3">
@@ -120,7 +120,7 @@ export default function Footer() {
         {section.title}
        </div>
        {section.title === "Kundenservice" ? (
-        <address aria-labelledby={`footer-nav-${idx}`} className="space-y-3 not-italic block">
+        <address id={`footer-nav-${idx}-address`} className="space-y-3 not-italic block">
          <ul className="space-y-3">
           {section.links.map((link, linkIdx) => (
           <li key={linkIdx}>
@@ -162,7 +162,7 @@ export default function Footer() {
       <div className="flex flex-col gap-2">
         <div className="text-xl font-bold text-white">Nichts Passendes gefunden?</div>
         <p className="text-[var(--color-charcoal-400)] text-sm max-w-md">
-          Kommen Sie persönlich im Laden vorbei oder rufen Sie uns an — wir beraten Sie gerne. Auch 24/7 als Schlüsseldienst-Notdienst erreichbar.
+          Kommen Sie persönlich im Laden vorbei oder rufen Sie uns an, wir beraten Sie gerne. Auch 24/7 als Schlüsseldienst Notdienst erreichbar.
         </p>
       </div>
        <a 
@@ -174,18 +174,18 @@ export default function Footer() {
       </a>
     </div>
 
-     {/* [SEO: Outbound Trust-Signals added — dofollow links to authoritative institutions] */}
+     {/* [SEO: Outbound Trust-Signals added und dofollow links to authoritative institutions] */}
      {/* rel="noopener noreferrer" WITHOUT nofollow = intentional dofollow for trust signaling */}
      <div className="mt-12 pt-8 border-t border-white/10">
        <div className="mb-4 font-bold uppercase text-xs tracking-widest text-[var(--color-charcoal-400)]">
          Vertrauenswürdige Partner & Institutionen
        </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
-         {/* [SEO: Sister-Site Cross-Link — bidirektional dofollow für Domain-Authority-Transfer] */}
-         <a href="https://www.schluesseldienst-wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">Schlüsseldienst Wetzlar — Unsere Partnerseite</a>
+         {/* [SEO: Sister-Site Cross-Link und bidirektional dofollow für Domain-Authority-Transfer] */}
+         <a href="https://www.schluesseldienst-wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">Schlüsseldienst Wetzlar und Unsere Partnerseite</a>
          {/* [SEO: Outbound Trust-Signal added] */}
-         <a href="https://www.adac.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">ADAC — Offizieller Partner</a>
-         <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</a>
+         <a href="https://www.adac.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">ADAC und Offizieller Partner</a>
+         <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Kriminalprävention</a>
          <a href="https://www.abus.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">ABUS Sicherheitstechnik</a>
          <a href="https://www.hwk-wiesbaden.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</a>
          <a href="https://www.wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Stadtverwaltung Wetzlar</a>
@@ -219,9 +219,9 @@ export default function Footer() {
      </div>
     </div>
 
-    {/* Bottom Bar — Semantic Address Region */}
+    {/* Bottom Bar und Semantic Address Region */}
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] md:flex-row md:items-center">
-     <p>© 2025–{new Date().getFullYear()} Schlüssel Schmiede Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
+     <p>© 2025{new Date().getFullYear()} Schlüssel Schmiede Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
       <nav aria-label="Rechtliche Informationen">
        <ul className="flex flex-wrap gap-4">
         {config.legal.map((link) => (

@@ -54,7 +54,7 @@ export default function EinbruchschutzPage() {
     }}
    />
 
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
@@ -214,7 +214,7 @@ export default function EinbruchschutzPage() {
     </StaggerReveal>
    </section>
 
-   {/* Offizielle Ressourcen — SEO Authority Links */}
+   {/* Offizielle Ressourcen und SEO Authority Links */}
    <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-16 md:py-20">
     <div className="mx-auto max-w-4xl">
       <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
@@ -229,7 +229,7 @@ export default function EinbruchschutzPage() {
             <Siren className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</span>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Kriminalprävention</span>
             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Die offizielle Kampagne der Polizei mit Tipps und Empfehlungen zum Einbruchschutz.</p>
           </div>
         </a>
@@ -257,7 +257,7 @@ export default function EinbruchschutzPage() {
           </div>
           <div>
             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</span>
-            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Unabhängige Beratung zu Ihren Rechten — auch zum Thema Schlüsseldienst-Kosten.</p>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Unabhängige Beratung zu Ihren Rechten und auch zum Thema Schlüsseldienst-Kosten.</p>
           </div>
         </a>
       </div>

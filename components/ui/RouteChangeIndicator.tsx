@@ -17,7 +17,7 @@ export default function RouteChangeIndicator() {
 
   useEffect(() => {
     if (pathname !== prevPathname.current) {
-      // Route changed — stop loading
+      // Route changed und stop loading
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsNavigating(false);
       setProgress(100);

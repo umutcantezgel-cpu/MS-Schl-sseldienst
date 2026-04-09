@@ -10,7 +10,7 @@ import { werkstattImages } from "@/lib/data/imageAssets";
 import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
 
 export const metadata = generateSharedMetadata({
- title: "Kontakt – Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
+ title: "Kontakt und Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
  description: "Ausgesperrt? 📞 Rufen Sie uns jetzt an: 06441-8056279. ✔️ 24/7 erreichbar ✔️ In 30 Min in ganz Wetzlar vor Ort. Wir helfen sofort!",
  path: "/kontakt",
 });
@@ -23,7 +23,7 @@ export default function KontaktPage() {
  return (
   <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans min-h-screen">
    
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden dark-focus">
     {/* CSS Noise Texture */}
     <div
@@ -80,7 +80,7 @@ export default function KontaktPage() {
          Der schnellste Weg zu uns
         </h2>
         <p className="mt-4 text-base text-[color:var(--text-secondary)] leading-relaxed max-w-prose text-balance">
-         Bei Notfällen — Tür zugefallen, Schlüssel abgebrochen, ausgesperrt — rufen Sie uns direkt an. Wir nennen Ihnen den Festpreis sofort am Telefon.
+         Bei Notfällen (Tür zugefallen, Schlüssel abgebrochen, ausgesperrt) rufen Sie uns direkt an. Wir nennen Ihnen den Festpreis sofort am Telefon.
         </p>
 
         {/* Availability indicator */}
@@ -89,7 +89,7 @@ export default function KontaktPage() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
          </span>
-         <span className="text-sm font-semibold text-green-800">Jetzt erreichbar — 24/7 Notdienst</span>
+         <span className="text-sm font-semibold text-green-800">Jetzt erreichbar | 24/7 Notdienst</span>
         </div>
 
         {/* Giant Phone CTA */}
@@ -102,7 +102,7 @@ export default function KontaktPage() {
          </div>
          <div className="flex flex-col">
           <span className="font-extrabold text-[32px] sm:text-[36px] tabular-nums tracking-tight">06441 8056279</span>
-          <span className="text-[color:var(--text-secondary)] text-base font-medium">Kostenlose Beratung — Festpreis vor Anfahrt</span>
+          <span className="text-[color:var(--text-secondary)] text-base font-medium">Kostenlose Beratung und 0€ Anfahrt in der Wetzlarer Kernstadt</span>
          </div>
         </a>
 
@@ -135,8 +135,7 @@ export default function KontaktPage() {
           <div>
            <h3 className="text-sm font-bold text-[color:var(--text-primary)]">Servicezeiten</h3>
            <p className="text-sm text-[color:var(--text-secondary)]">
-            <span className="font-semibold text-[color:var(--text-primary)]">Notdienst:</span> 24/7, 365 Tage im Jahr &nbsp;|&nbsp;
-            <span className="font-semibold text-[color:var(--text-primary)]">Büro:</span> Mo-Sa, 10:00 - 18:00 Uhr
+            Montag bis Samstag 10 bis 18 Uhr und 24/7 Schlüsselnotdienst
            </p>
           </div>
          </div>
@@ -158,7 +157,7 @@ export default function KontaktPage() {
            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
           </svg>
-          <span>Ihre Anfrage wird vertraulich behandelt — Antwort innerhalb von 30 Minuten</span>
+          <span>Ihre Anfrage wird vertraulich behandelt und Antwort innerhalb von 30 Minuten</span>
          </div>
        </div>
       </StaggerItem>

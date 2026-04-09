@@ -11,7 +11,7 @@ export type VisitorSegment =
   | "new-visitor";
 
 /**
- * Phase 18 — Visitor Segment Hook
+ * Phase 18 und Visitor Segment Hook
  * Reads the visitor_segment cookie set by middleware and
  * re-evaluates based on current pathname for SPA navigation.
  * Priority: high-intent > service-interested > returning > new-visitor

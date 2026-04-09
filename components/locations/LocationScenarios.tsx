@@ -8,7 +8,7 @@ import { pickVariant } from "@/lib/textRotation";
 
 const subtitleVariants = [
     (name: string) => `Als lokaler Schlüsseldienst in ${name} kennen wir die häufigsten Notsituationen in Ihrer Nachbarschaft genau.`,
-    (name: string) => `Diese typischen Situationen erleben unsere Kunden in ${name} am häufigsten — und wir lösen jede davon professionell.`,
+    (name: string) => `Diese typischen Situationen erleben unsere Kunden in ${name} am häufigsten , und wir lösen jede davon professionell.`,
     (name: string) => `Ob nachts, am Wochenende oder an Feiertagen: In ${name} sind wir für genau diese Szenarien ausgerüstet.`,
     (name: string) => `Unser Schlüsseldienst-Team kennt ${name} und weiß, welche Probleme hier besonders oft auftreten.`,
     (name: string) => `Von zugefallenen Türen bis zum Schlüsselverlust: In ${name} helfen wir Ihnen bei jedem Szenario schnell weiter.`,

@@ -14,7 +14,7 @@ const defaultItems: TrustItem[] = [
 
 const emergencyItems: TrustItem[] = [
   { icon: ShieldCheck, text: "Festpreis vor Anfahrt" },
-  { icon: Clock, text: "In 20–30 Min. vor Ort" },
+  { icon: Clock, text: "In 20-30 Min. vor Ort" },
   { icon: Lock, text: "Keine versteckten Kosten" },
 ];
 

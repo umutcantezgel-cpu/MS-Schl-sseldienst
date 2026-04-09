@@ -50,13 +50,13 @@ const SITUATIONS: { key: Situation; label: string }[] = [
 ];
 
 const ZEITPUNKTE: { key: Zeitpunkt; label: string; time: string }[] = [
-  { key: "regulaer", label: "Regulär", time: "Mo-Sa 10:00–18:00" },
-  { key: "nacht", label: "Nachtdienst", time: "22:00–07:00" },
+  { key: "regulaer", label: "Regulär", time: "Mo-Sa 10:00-18:00" },
+  { key: "nacht", label: "Nachtdienst", time: "22:00-07:00" },
   { key: "wochenende", label: "Wochenende/Feiertag", time: "Sa & So ganztags" },
 ];
 
 /**
- * Phase 18 — Interactive Price Estimator for Schlüsseldienst
+ * Phase 18 , Interactive Price Estimator for Schlüsseldienst
  * 3 steps: Situation → Zeitpunkt → Result with CTA
  */
 export default function PriceEstimator() {
@@ -192,7 +192,7 @@ export default function PriceEstimator() {
                 Geschätzter Preis
               </p>
               <p className="text-3xl font-bold text-[var(--color-red-600)]">
-                {price.from}€ – {price.to}€
+                {price.from}€ - {price.to}€
               </p>
               <p className="text-xs text-[var(--color-charcoal-500)] mt-2">
                 {price.note}
@@ -215,7 +215,7 @@ export default function PriceEstimator() {
                 className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold rounded-xl transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                Jetzt anrufen — 06441 8056279
+                Jetzt anrufen , 06441 8056279
               </a>
 
               <button

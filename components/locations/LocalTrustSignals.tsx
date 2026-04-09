@@ -59,7 +59,7 @@ export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
                                 ))}
                             </div>
                             <p className="text-base md:text-lg font-medium text-[color:var(--text-secondary)] leading-relaxed italic mb-4">&quot;{testimonial.quote}&quot;</p>
-                            <p className="text-sm font-bold text-[color:var(--color-charcoal-900)] tracking-wide uppercase">— {testimonial.name}</p>
+                            <p className="text-sm font-bold text-[color:var(--color-charcoal-900)] tracking-wide uppercase">{testimonial.name}</p>
                         </div>
                     ))}
                 </div>

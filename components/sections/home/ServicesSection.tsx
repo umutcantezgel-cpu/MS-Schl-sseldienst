@@ -14,14 +14,14 @@ export default function ServicesSection() {
           pill="UNSERE LEISTUNGEN"
           headingId="soforthilfe-heading"
           title={<>Unsere <span className="text-[var(--color-red-500)]">Leistungen</span></>}
-          description="Handwerkliche Qualität aus unserem Fachgeschäft — ob Schlüssel, Schloss oder Notdienst."
+          description="Handwerkliche Qualität aus unserem Fachgeschäft , ob Schlüssel, Schloss oder Notdienst."
         />
 
         {/* Bento Grid */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
           {[
             { icon: DoorOpen, title:"Haus- & Wohnungstüren", desc:"Zerstörungsfreie Öffnung in 99% der Fälle. Egal ob zugefallen oder abgeschlossen.", href:"/leistungen/turoeffnung", linkText:"Mehr zur Türöffnung", featured: true },
-            { icon: Car, title:"Fahrzeug-Öffnung", desc:"Schonende Autoöffnung für alle Marken – garantiert ohne Kratzer oder Lackschäden.", href:"/leistungen/autooeffnung", linkText:"Details zur Autoöffnung" },
+            { icon: Car, title:"Fahrzeug-Öffnung", desc:"Schonende Autoöffnung für alle Marken - garantiert ohne Kratzer oder Lackschäden.", href:"/leistungen/autooeffnung", linkText:"Details zur Autoöffnung" },
             { icon: ShieldCheck, title:"Sicherheitstechnik", desc:"Professionelle Nachrüstung mit Hochsicherheitszylindern, Panzerriegeln und Schutzbeschlägen.", href:"/leistungen/sicherheitstechnik", linkText:"Infos zum Einbruchschutz" },
             { icon: Lock, title:"Schließanlagen", desc:"Planung und Montage von Schließanlagen für private und gewerbliche Objekte.", href:"/leistungen/schliessanlagen", linkText:"Kostenlose Beratung anfordern", isCTA: true },
             { icon: Key, title:"Schlüssel nachmachen", desc:"Präzise Zweitschlüssel und Ersatzschlüssel als Sofort-Service in unserer Filiale.", href:"/leistungen/schluessel-nachmachen", linkText:"Zum Schlüssel-Service" },

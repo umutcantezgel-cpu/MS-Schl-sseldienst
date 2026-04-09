@@ -40,7 +40,7 @@ export default function LeistungenPage() {
             Unsere Leistungen im <span className="text-[var(--color-red-500)]">Überblick</span>
           </h1>
           <p className="text-lg md:text-xl text-[color:var(--text-secondary)] mx-auto max-w-3xl leading-relaxed">
-            Egal ob Sie sich ausgesperrt haben, ein neues Schloss benötigen oder Ihr Haus absichern wollen – 
+            Egal ob Sie sich ausgesperrt haben, ein neues Schloss benötigen oder Ihr Haus absichern wollen - 
             wir sind 24/7 für Sie da. Mit Festpreis-Garantie und ehrlicher Arbeitsausführung.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function LeistungenPage() {
           </div>
 
           <h2 className="relative z-10 text-3xl md:text-5xl font-black text-white mb-6 tracking-tight max-w-2xl">
-            Wir öffnen jede Tür – Schnell, sicher & zum Festpreis.
+            Wir öffnen jede Tür - Schnell, sicher & zum Festpreis.
           </h2>
 
           <p className="relative z-10 text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
@@ -122,7 +122,7 @@ export default function LeistungenPage() {
 
           <a href="tel:+4964418056279" className="relative z-10 inline-flex items-center justify-center h-16 px-10 rounded-full font-black text-lg text-white bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] hover:scale-105 active:scale-95 transition-all shadow-[0_10px_30px_rgba(220,38,38,0.4)]">
             <Phone className="w-5 h-5 mr-2" />
-            06441 – 8056279
+            06441 - 8056279
           </a>
           
           <div className="relative z-10 flex flex-wrap justify-center gap-4 mt-8 opacity-80">

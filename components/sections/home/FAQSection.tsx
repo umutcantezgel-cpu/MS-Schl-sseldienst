@@ -18,7 +18,7 @@ export default function FAQSection() {
           pill="FAQ"
           headingId="faq-heading"
           title={<>Häufig gestellte <span className="text-[var(--color-red-500)]">Fragen</span></>}
-          description="Schlüssel Schmiede Wetzlar beantwortet Ihre wichtigsten Fragen — ehrlich und transparent."
+          description="Schlüssel Schmiede Wetzlar beantwortet Ihre wichtigsten Fragen und ehrlich und transparent."
         />
         <div className="space-y-[var(--space-6)]">
           {getHomepageFAQs().map((faq, i) => (

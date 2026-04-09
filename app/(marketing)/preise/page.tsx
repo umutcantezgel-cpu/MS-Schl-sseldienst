@@ -51,7 +51,7 @@ export default function PreisePage() {
     dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }}
    />
 
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[60vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] sm:pb-[var(--space-24)] lg:pt-[200px] lg:pb-[var(--space-32)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
@@ -148,7 +148,7 @@ export default function PreisePage() {
     </StaggerReveal>
    </section>
 
-   {/* Phase 18 — Quick Price Estimator */}
+   {/* Phase 18 und Quick Price Estimator */}
    <section className="px-[var(--section-px)] py-[var(--section-py)] bg-[var(--surface-secondary)]">
     <div className="mx-auto max-w-2xl">
      <h2 className="typo-h2 text-[color:var(--text-primary)] text-center mb-2">Schnell-Schätzung</h2>

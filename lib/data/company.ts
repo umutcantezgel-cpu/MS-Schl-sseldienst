@@ -2,7 +2,7 @@ import { CompanyInfo } from "../types";
 
 export const companyInfo: CompanyInfo = {
   name: "Schlüssel Schmiede Wetzlar",
-  legalName: "Schlüssel Schmiede Wetzlar — ein Service der MS Schlüsseldienst GmbH",
+  legalName: "Schlüssel Schmiede Wetzlar und ein Service der MS Schlüsseldienst GmbH",
   address: "Langgasse 70, 35578 Wetzlar, Deutschland",
   phone: "+49 6441 8056279",
   email: "info@wetzlar-schlüsseldienst.de",
@@ -27,7 +27,7 @@ export const companyInfo: CompanyInfo = {
   paymentAccepted: ["Cash", "Credit Card", "EC-Karte"],
   currenciesAccepted: "EUR",
   priceRange: "ab 99€",
-  slogan: "Mehr als ein Laden — ein Ort für Vertrauen."
+  slogan: "Mehr als ein Laden und ein Ort für Vertrauen."
 };
 
 export function getCompanyInfo(): CompanyInfo {

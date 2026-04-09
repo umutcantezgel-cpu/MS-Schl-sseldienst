@@ -50,7 +50,7 @@ export default function AutooeffnungPage() {
     }}
    />
    
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section , Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
@@ -84,7 +84,7 @@ export default function AutooeffnungPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-            Ihr Autoschlüssel ist eingeschlossen? Wir öffnen Ihr Fahrzeug schnell, professionell und garantiert ohne Lackkratzer – zum fairen Festpreis ab 80 €.
+            Ihr Autoschlüssel ist eingeschlossen? Wir öffnen Ihr Fahrzeug schnell, professionell und garantiert ohne Lackkratzer - zum fairen Festpreis ab 80 €.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -125,7 +125,7 @@ export default function AutooeffnungPage() {
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Alle Marken & Modelle</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
-           Egal ob VW, Audi, BMW, Mercedes oder andere Marken – wir haben das Know-how und das Spezialwerkzeug für nahezu jedes Fahrzeug.
+           Egal ob VW, Audi, BMW, Mercedes oder andere Marken - wir haben das Know-how und das Spezialwerkzeug für nahezu jedes Fahrzeug.
           </p>
          </div>
         </div>
@@ -205,7 +205,7 @@ export default function AutooeffnungPage() {
     </div>
    </section>
 
-   {/* Auto-Bild — Werkzeug & Schlüssel */}
+   {/* Auto-Bild , Werkzeug & Schlüssel */}
    <section className="px-[var(--section-px)] py-16">
     <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-6">
      <div className="rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">

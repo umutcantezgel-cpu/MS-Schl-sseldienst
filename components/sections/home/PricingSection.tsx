@@ -19,7 +19,7 @@ export function PricingSection() {
         pill="SCHLÜSSELDIENST PREISE"
         headingId="preise-heading"
         title={<>Transparente <span className="text-[var(--color-red-500)]">Preise</span></>}
-        description="Festpreis am Telefon — keine versteckten Kosten — Rechnung erst nach Abschluss."
+        description="Festpreis am Telefon , keine versteckten Kosten , Rechnung erst nach Abschluss."
       />
 
      {/* Garantie-Leiste */}
@@ -67,7 +67,7 @@ export function PricingSection() {
            </span>
           </div>
           <div className="flex items-end justify-between">
-           <span className="text-sm font-medium text-[color:var(--text-secondary)] pb-1.5">20:00 – 21:59 Uhr</span>
+           <span className="text-sm font-medium text-[color:var(--text-secondary)] pb-1.5">20:00 - 21:59 Uhr</span>
            <div className="flex items-baseline gap-1.5 shrink-0">
             <span className="text-xs font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
             <span className="text-4xl font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">119</span>
@@ -85,7 +85,7 @@ export function PricingSection() {
            </span>
           </div>
           <div className="flex items-end justify-between">
-           <span className="text-sm font-medium text-[color:var(--text-secondary)] pb-1.5">22:00 – 05:59 Uhr</span>
+           <span className="text-sm font-medium text-[color:var(--text-secondary)] pb-1.5">22:00 - 05:59 Uhr</span>
            <div className="flex items-baseline gap-1.5 shrink-0">
             <span className="text-xs font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
             <span className="text-5xl font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">149</span>
@@ -114,14 +114,14 @@ export function PricingSection() {
         </div>
        </div>
 
-       {/* Card 2: Tagsüber — Zugefallen vs Abgeschlossen (Mitte, Highlight) */}
+       {/* Card 2: Tagsüber , Zugefallen vs Abgeschlossen (Mitte, Highlight) */}
        <div className="relative flex flex-col rounded-2xl bg-white/90 backdrop-blur-3xl p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 border-2 border-[var(--price-card-accent)] shadow-[0_0_30px_rgba(184,67,42,0.15),0_4px_20px_rgba(0,0,0,0.06)]">
         <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-[var(--action-primary)] text-white text-xs font-bold uppercase tracking-[0.15em] px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
          Am häufigsten benötigt
         </div>
 
         <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Montag – Freitag (06:00 – 19:59 Uhr)</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Montag - Freitag (06:00 - 19:59 Uhr)</Typography>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          {/* Zugefallene Tür */}

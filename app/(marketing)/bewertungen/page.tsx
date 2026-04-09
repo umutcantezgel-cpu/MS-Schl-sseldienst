@@ -20,7 +20,7 @@ const reviews = [
   { name: "Sidan Uguztemur", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Zuverlässige und schnelle Schlüsselschmiede. Ich habe hier schon mehrfach Schlüssel nachmachen lassen und war jedes Mal vollumfänglich zufrieden.", timeAgo: "Vor 2 Monaten" },
   { name: "Felix Humpert", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Gestern ist es passiert, mir ist die Tür zugefallen und wir standen in der Kälte. Der Schlüsseldienst war super schnell da.", timeAgo: "Vor 2 Monaten" },
   { name: "Rezensent von golocal", city: "Wetzlar", rating: 5, date: "2026-02-01", text: "Von dem Moment an, als ich den Laden betrat, wurde ich freundlich und kompetent empfangen. Das Team dort ist nicht nur professionell, sondern auch unglaublich hilfsbereit.", timeAgo: "Vor 2 Monaten" },
-  { name: "Denis Ceylan", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Super Service – schnell, zuverlässig und sogar an einem Samstag! Herr Mina war total freundlich und kompetent. Klare Empfehlung, jederzeit wieder 👍", timeAgo: "Vor 1 Monat" },
+  { name: "Denis Ceylan", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Super Service und schnell, zuverlässig und sogar an einem Samstag! Herr Mina war total freundlich und kompetent. Klare Empfehlung, jederzeit wieder 👍", timeAgo: "Vor 1 Monat" },
   { name: "Fabian599", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Falls jemand in Zukunft für Wetzlar und die Umgebung einen Schlüsseldienst benötigt, ich kann seit heute die „Schlüssel-Schmiede Wetzlar“ aus der Langgasse 100% empfehlen.", timeAgo: "Vor 1 Monat" },
   { name: "Ronnii Ka", city: "Wetzlar", rating: 5, date: "2025-11-02", text: "Habe einen Autoschlüssel nachmachen lassen von einem alten Opel Astra, da ich den Ersatzschlüssel verloren hatte. Lief alles perfekt.", timeAgo: "Vor 5 Monaten" },
   { name: "Philipp He", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Super hilfsbereit! Guter Service! Wir haben ein paar Versuche gebraucht, um einen Schlüssel für ein altes Schloss nachmachen zu lassen, am Ende hat aber alles funktioniert.", timeAgo: "Vor 2 Monaten" },
@@ -134,7 +134,7 @@ export default function BewertungenPage() {
     dangerouslySetInnerHTML={{ __html: JSON.stringify(generateReviewSchema()) }}
    />
 
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[var(--space-64)] lg:pt-[220px] lg:pb-[var(--space-96)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div

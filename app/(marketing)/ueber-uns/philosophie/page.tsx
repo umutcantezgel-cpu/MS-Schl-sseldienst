@@ -8,7 +8,7 @@ import { auszeichnungImages } from "@/lib/data/imageAssets";
 export const metadata = generateSharedMetadata({
   title: "Unsere Philosophie",
   description:
-    "Transparenz, Fairness und Handwerksqualität — die drei Säulen unserer Philosophie als Schlüsseldienst in Wetzlar.",
+    "Transparenz, Fairness und Handwerksqualität und die drei Säulen unserer Philosophie als Schlüsseldienst in Wetzlar.",
   path: "/ueber-uns/philosophie",
 });
 

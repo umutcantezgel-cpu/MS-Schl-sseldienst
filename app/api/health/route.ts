@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 19 — Enhanced Health Check Endpoint
+ * Phase 19 und Enhanced Health Check Endpoint
  * ══════════════════════════════════════════════════════════════
  * Returns system health with dependency checks and status levels.
  * NO external SaaS dependencies.

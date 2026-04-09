@@ -76,22 +76,22 @@ function getLocalBusinessSchema() {
    bestRating: "5",
   },
   image: `${siteUrl}/og-image.png`,
-  priceRange: "€–€€",
+  priceRange: "€-€€",
  };
 }
 
 const storeServices = [
- { icon: Key, title:"Schlüsselkopie", desc:"Standard-, Sicherheits- und Spezialschlüssel – präzise gefräst, sofort zum Mitnehmen.", accent:"bg-blue-500/10 text-blue-600" },
+ { icon: Key, title:"Schlüsselkopie", desc:"Standard-, Sicherheits- und Spezialschlüssel - präzise gefräst, sofort zum Mitnehmen.", accent:"bg-blue-500/10 text-blue-600" },
  { icon: Car, title:"KFZ-Schlüssel", desc:"Duplikation, Anfertigung und elektronische Codierung für alle gängigen Fahrzeugtypen.", accent:"bg-red-500/10 text-red-600" },
  { icon: Wrench, title:"Schlösser & Zylinder", desc:"Austausch, Reparatur und Beratung zu Schließzylindern und Kastenschlössern.", accent:"bg-amber-500/10 text-amber-600" },
- { icon: Award, title:"Gravuren", desc:"Klingelschilder, Pokale, Medaillen und Namensschilder – sauber und präzise.", accent:"bg-violet-500/10 text-violet-600" },
- { icon: Camera, title:"Passbilder", desc:"Biometrische Passbilder mit QR-Code – direkt erstellt, sofort abholbereit.", accent:"bg-rose-500/10 text-rose-600" },
+ { icon: Award, title:"Gravuren", desc:"Klingelschilder, Pokale, Medaillen und Namensschilder - sauber und präzise.", accent:"bg-violet-500/10 text-violet-600" },
+ { icon: Camera, title:"Passbilder", desc:"Biometrische Passbilder mit QR-Code - direkt erstellt, sofort abholbereit.", accent:"bg-rose-500/10 text-rose-600" },
  { icon: Battery, title:"Batteriewechsel", desc:"Schneller Batterieservice für Uhren, Autoschlüssel und kleine Geräte.", accent:"bg-cyan-500/10 text-cyan-600" },
 ];
 
 const faqItems = [
  { question:"Wo befindet sich die Schlüssel Schmiede?", answer:"Unser Ladengeschäft befindet sich in der Langgasse 70, 35578 Wetzlar, direkt im Stadtzentrum mit guter Erreichbarkeit." },
- { question:"Welche Öffnungszeiten hat die Schlüssel Schmiede?", answer:"Mo–Sa: 10:00–18:00 Uhr. Den 24/7-Notdienst erreichen Sie jederzeit unter 06441 8056279." },
+ { question:"Welche Öffnungszeiten hat die Schlüssel Schmiede?", answer:"Mo-Sa: 10:00-18:00 Uhr. Den 24/7-Notdienst erreichen Sie jederzeit unter 06441 8056279." },
  { question:"Kann ich ohne Termin vorbeikommen?", answer:"Ja, selbstverständlich! Kommen Sie während der Öffnungszeiten einfach vorbei. Für komplexere Anliegen empfehlen wir einen kurzen Anruf vorab." },
  { question:"Werden KFZ-Schlüssel sofort im Laden angefertigt?", answer:"Ja, viele Autoschlüssel können direkt vor Ort gefräst und elektronisch codiert werden. Je nach Fahrzeugtyp kann eine Bestellung nötig sein." },
  { question:"Bieten Sie auch Gravuren für Vereine an?", answer:"Ja, wir gravieren Pokale, Medaillen und Trophäen für Sportvereine und Veranstaltungen. Kommen Sie vorbei und besprechen Sie die Details persönlich." },
@@ -210,7 +210,7 @@ export default function SchluesselSchmiedePage() {
     </div>
    </div>
 
-   {/* ═══ 3. STORY — "Mehr als ein Laden" ═══ */}
+   {/* ═══ 3. STORY , "Mehr als ein Laden" ═══ */}
    <section className="px-[var(--section-px)] py-24 md:py-32 relative z-20">
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
@@ -222,16 +222,16 @@ export default function SchluesselSchmiedePage() {
         <Badge variant="outline" className="text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Unser Ladengeschäft</Badge>
        </div>
        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Mehr als ein Laden — <br className="hidden sm:block" />ein Ort für Vertrauen.
+        Mehr als ein Laden , <br className="hidden sm:block" />ein Ort für Vertrauen.
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="space-y-6 text-lg text-[color:var(--text-secondary)] leading-relaxed">
         <p>
-         Die Schlüssel Schmiede ist nicht einfach ein Geschäft. Sie ist aus dem Wunsch entstanden, Menschen direkt vor Ort zu helfen — mit <strong className="text-[color:var(--text-primary)]">Zeit, Verständnis und sauberer Arbeit</strong>.
+         Die Schlüssel Schmiede ist nicht einfach ein Geschäft. Sie ist aus dem Wunsch entstanden, Menschen direkt vor Ort zu helfen , mit <strong className="text-[color:var(--text-primary)]">Zeit, Verständnis und sauberer Arbeit</strong>.
         </p>
         <p>
-         Hier geht es nicht darum, schnell etwas &bdquo;abzufertigen&ldquo;. Jeder Auftrag, jeder Schlüssel und jedes Anliegen wird ernst genommen. Kommen Sie herein, stellen Sie Fragen, schildern Sie Probleme — und lassen Sie sich in Ruhe beraten.
+         Hier geht es nicht darum, schnell etwas &bdquo;abzufertigen&ldquo;. Jeder Auftrag, jeder Schlüssel und jedes Anliegen wird ernst genommen. Kommen Sie herein, stellen Sie Fragen, schildern Sie Probleme , und lassen Sie sich in Ruhe beraten.
         </p>
         <p>
          Die Schlüssel Schmiede ist der <strong className="text-[color:var(--text-primary)]">stationäre Ladenbetrieb des Schlüssel Schmiede Wetzlar</strong>. Wir bündeln unsere Erfahrung aus dem mobilen Schlüsseldienst mit präziser Werkstattarbeit vor Ort.
@@ -285,7 +285,7 @@ export default function SchluesselSchmiedePage() {
     </div>
    </section>
 
-   {/* ═══ 4. BENTO-GRID — 6 Services ═══ */}
+   {/* ═══ 4. BENTO-GRID , 6 Services ═══ */}
    <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-24 md:py-32">
     <div className="mx-auto max-w-6xl">
      <StaggerReveal animation={entryAnimations.slideUpFade} staggerDelay={0.08}>
@@ -296,7 +296,7 @@ export default function SchluesselSchmiedePage() {
          Unsere Leistungen im Laden
         </h2>
         <p className="mt-4 text-lg text-[color:var(--text-secondary)] max-w-2xl mx-auto">
-         Von der Schlüsselkopie bis zum KFZ-Schlüssel, von Gravuren bis Passbilder — alles persönlich und direkt vor Ort.
+         Von der Schlüsselkopie bis zum KFZ-Schlüssel, von Gravuren bis Passbilder , alles persönlich und direkt vor Ort.
         </p>
        </div>
       </StaggerItem>
@@ -542,7 +542,7 @@ export default function SchluesselSchmiedePage() {
           </div>
           <div className="space-y-3">
            {[
-            { day:"Montag – Samstag", time:"10:00 – 18:00 Uhr" },
+            { day:"Montag - Samstag", time:"10:00 - 18:00 Uhr" },
             { day:"Sonntag", time:"Geschlossen" },
            ].map((row) => (
             <div key={row.day} className="flex justify-between items-center py-2 border-b border-[var(--border-subtle)] last:border-0">

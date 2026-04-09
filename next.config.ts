@@ -13,7 +13,7 @@ const PUNYCODE_WWW  = `www.${PUNYCODE_HOST}`;
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
-  // [SEO: Removed X-Powered-By Header — Seobility Server Configuration Fix]
+  // [SEO: Removed X-Powered-By Header und Seobility Server Configuration Fix]
   // Prevents Next.js from sending "X-Powered-By: Next.js" in response headers.
   poweredByHeader: false,
 
@@ -58,7 +58,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // ═════════════════════════════════════════════════════════════════════
-      // [SEO: WWW Enforcer — non-www to www canonical redirect]
+      // [SEO: WWW Enforcer und non-www to www canonical redirect]
       // ═════════════════════════════════════════════════════════════════════
       {
         source: "/:path*",
@@ -183,7 +183,7 @@ const nextConfig: NextConfig = {
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
-  // [SEO: Security Headers — Seobility Server Configuration Hardening]
+  // [SEO: Security Headers und Seobility Server Configuration Hardening]
   //
   // Injects premium security headers on all responses to maximize the
   // "Server configuration" score and harden the site against common attacks.
@@ -194,7 +194,7 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: [
-          // [SEO: HSTS — forces HTTPS for 1 year, including subdomains, preload-eligible]
+          // [SEO: HSTS und forces HTTPS for 1 year, including subdomains, preload-eligible]
           {
             key: "Strict-Transport-Security",
             value: "max-age=31536000; includeSubDomains; preload",
@@ -209,12 +209,12 @@ const nextConfig: NextConfig = {
             key: "X-Frame-Options",
             value: "SAMEORIGIN",
           },
-          // [SEO: Controls Referer header — sends origin only on cross-origin requests]
+          // [SEO: Controls Referer header und sends origin only on cross-origin requests]
           {
             key: "Referrer-Policy",
             value: "strict-origin-when-cross-origin",
           },
-          // [SEO: Permissions Policy — restricts browser feature access]
+          // [SEO: Permissions Policy und restricts browser feature access]
           {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=(self), browsing-topics=(), interest-cohort=(), payment=(), usb=(), bluetooth=()",
@@ -239,6 +239,14 @@ const nextConfig: NextConfig = {
         ],
       },
 
+      // ── Page caching (non-API, revalidation-aware) ──
+      {
+        source: "/((?!api).*)",
+        headers: [
+          { key: "Cache-Control", value: "public, s-maxage=86400, stale-while-revalidate=43200" },
+        ],
+      },
+
       // ── Static asset immutable caching (1 year) ──
       {
         source: "/_next/static/:path*",
@@ -258,14 +266,6 @@ const nextConfig: NextConfig = {
         source: "/:all*(png|jpg|jpeg|gif|svg|avif|webp|ico|woff|woff2)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-        ],
-      },
-
-      // ── Page caching (non-API, revalidation-aware) ──
-      {
-        source: "/((?!api).*)",
-        headers: [
-          { key: "Cache-Control", value: "public, s-maxage=86400, stale-while-revalidate=43200" },
         ],
       },
 

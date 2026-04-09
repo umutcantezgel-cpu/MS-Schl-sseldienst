@@ -2,7 +2,7 @@
 
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 16 — Cookie-Consent Banner (DSGVO + TTDSG konform)
+ * Phase 16 und Cookie-Consent Banner (DSGVO + TTDSG konform)
  * ══════════════════════════════════════════════════════════════
  * - 3 Optionen: "Alle akzeptieren", "Nur Essentiell", "Einstellungen"
  * - "Alle ablehnen" genauso einfach wie "Alle akzeptieren"
@@ -105,7 +105,6 @@ export default function CookieConsent() {
     <div
       role="dialog"
       aria-label="Cookie-Einstellungen"
-      aria-modal="false"
       className="fixed bottom-0 left-0 right-0 z-[9998] p-4 md:p-6"
     >
       <div className="mx-auto max-w-4xl rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.08)] backdrop-blur-xl">

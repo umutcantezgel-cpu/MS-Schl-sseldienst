@@ -39,7 +39,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 // ── GLOBAL METADATA (Layout-Level) ─────────────────────────────────────────
 // [FIX: Seobility #1] title.template caps all child page titles via "%s" pattern.
-// [FIX: Seobility #2] NO `description` here — only pages set description.
+// [FIX: Seobility #2] NO `description` here und only pages set description.
 //                      This prevents Next.js from merging two <meta name="description"> tags.
 // [FIX: Seobility #3] metadataBase forces absolute canonical URLs → production domain.
 // [FIX: Seobility #4] alternates.languages provides self-referencing hreflang.
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
    default: "Schlüssel Schmiede Wetzlar | Schlüssel & Sicherheit",   // ≤50 chars, ≤580px
    template: "%s",
  },
- // ⚠️  NO description here — set only on individual pages to avoid Seobility #2 (duplicate).
+ // ⚠️  NO description here und set only on individual pages to avoid Seobility #2 (duplicate).
  metadataBase: new URL(siteUrl),
  alternates: {
    canonical: siteUrl,
@@ -79,14 +79,14 @@ export const metadata: Metadata = {
        url: `${siteUrl}/og-image.png`,
        width: 1200,
        height: 630,
-       alt: "Schlüssel Schmiede Wetzlar – Fachgeschäft für Schlüssel & Sicherheitstechnik",
+       alt: "Schlüssel Schmiede Wetzlar und Fachgeschäft für Schlüssel & Sicherheitstechnik",
      },
    ],
  },
  twitter: {
    card: "summary_large_image",
  },
- // [SEO: Apple Touch Icon & Favicon Fixed — Seobility Mobile Optimization]
+ // [SEO: Apple Touch Icon & Favicon Fixed und Seobility Mobile Optimization]
  icons: {
    icon: [
      { url: "/favicon.ico", sizes: "any" },
@@ -119,7 +119,7 @@ export default function RootLayout({
  return (
      <html lang="de" className="light">
    <head>
-    {/* next/font self-hosts — no preconnect to Google Fonts CDN needed */}
+    {/* next/font self-hosts und no preconnect to Google Fonts CDN needed */}
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     {/* [PERF] Preload LCP element (logo) so it starts fetching during HTML parse,

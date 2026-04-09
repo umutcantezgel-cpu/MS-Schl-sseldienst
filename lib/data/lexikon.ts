@@ -86,7 +86,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Panzerriegel (Querriegel)",
     category: "Einbruchschutz",
     definition: "Ein Panzerriegelschloss sichert eine Tür über die gesamte Breite und wird tief im Mauerwerk auf der Schloss- und Scharnierseite verankert.",
-    longDescription: "Er gilt als das Nonplusultra der mechanischen Nachrüstung. Wenn ein Täter versucht, die Tür aufzustemmen oder einzutreten, muss er nicht nur das normale Türschloss überwinden, sondern auch den Panzerriegel samt dem anliegenden Mauerwerk durchbrechen – ein Vorhaben, das Krach macht und viel Zeit kostet. Panzerriegel (z.B. von Abus) sind in Wetzlar besonders bei Wohnungen im Erdgeschoss oder freistehenden Häusern sehr begehrt.",
+    longDescription: "Er gilt als das Nonplusultra der mechanischen Nachrüstung. Wenn ein Täter versucht, die Tür aufzustemmen oder einzutreten, muss er nicht nur das normale Türschloss überwinden, sondern auch den Panzerriegel samt dem anliegenden Mauerwerk durchbrechen und ein Vorhaben, das Krach macht und viel Zeit kostet. Panzerriegel (z.B. von Abus) sind in Wetzlar besonders bei Wohnungen im Erdgeschoss oder freistehenden Häusern sehr begehrt.",
     seoKeywords: ["Panzerriegel Montage Wetzlar", "Querriegel einbauen", "Tür sichern", "Abus PR2700 Installation"],
     faqs: [
       {
@@ -135,7 +135,7 @@ export const lexikonData: LexikonEntry[] = [
     title: "Einsteckschloss",
     category: "Schlösser",
     definition: "Das Einsteckschloss ist die mechanische Kassette (Schlosskasten), die unsichtbar im Türblatt eingelassen ist und die Riegel- und Fallenmechanik enthält.",
-    longDescription: "Viele verwechseln das Türschloss mit dem Schließzylinder. Der Zylinder ist nur der Antrieb – das eigentliche Schloss ist das Einsteckschloss im Türblatt. Es überträgt die Drehbewegung des Schlüssels auf den Riegel (zum Abschließen) und die Klinkenbetätigung auf die Falle (zum Zuziehen). Ein defektes Einsteckschloss äußert sich oft durch eine 'durchdrehende' Türklinke. Wir von Schlüssel Schmiede haben stets alle gängigen Dornmaße (Entfernung zwischen Türkante und Schlüssellochmitte) in unseren Einsatzfahrzeugen im Lahn-Dill-Kreis vorrätig.",
+    longDescription: "Viele verwechseln das Türschloss mit dem Schließzylinder. Der Zylinder ist nur der Antrieb und das eigentliche Schloss ist das Einsteckschloss im Türblatt. Es überträgt die Drehbewegung des Schlüssels auf den Riegel (zum Abschließen) und die Klinkenbetätigung auf die Falle (zum Zuziehen). Ein defektes Einsteckschloss äußert sich oft durch eine 'durchdrehende' Türklinke. Wir von Schlüssel Schmiede haben stets alle gängigen Dornmaße (Entfernung zwischen Türkante und Schlüssellochmitte) in unseren Einsatzfahrzeugen im Lahn-Dill-Kreis vorrätig.",
     seoKeywords: ["Einsteckschloss wechseln Wetzlar", "Türschloss kaputt", "Dornmaß messen", "Falle klemmt"],
     faqs: [
       {

@@ -4,7 +4,7 @@ import Image from "next/image";
 import type { ImageAsset } from "@/lib/data/imageAssets";
 
 /**
- * SeoHeroImage — Above-the-Fold LCP-optimiertes Bild
+ * SeoHeroImage und Above-the-Fold LCP-optimiertes Bild
  *
  * Wird NIEMALS lazy-loaded. Erhält:
  * - priority={true} → Next.js setzt fetchpriority="high" + preload
@@ -44,7 +44,7 @@ export function SeoHeroImage({
 }
 
 /**
- * SeoContentImage — Below-the-Fold ressourcen-schonendes Bild
+ * SeoContentImage und Below-the-Fold ressourcen-schonendes Bild
  *
  * Wird strikt lazy-loaded. Erhält:
  * - loading="lazy" + decoding="async"

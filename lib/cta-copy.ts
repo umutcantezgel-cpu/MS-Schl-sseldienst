@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 5 — CTA-Copy-System
+ * Phase 5 und CTA-Copy-System
  * ══════════════════════════════════════════════════════════════
  * REGEL: Kein CTA-Text beschreibt eine Aktion ("Senden").
  * Jeder CTA-Text beschreibt das ERGEBNIS ("Kostenlose Beratung erhalten").
@@ -22,7 +22,7 @@ export const CTA_COPY = {
   allFaqs: "Alle Fragen & Antworten anzeigen",
 
   // ─── Notfall-CTAs (Urgency) ───
-  emergencyCall: "Sofort anrufen — 24/7 erreichbar",
+  emergencyCall: "Sofort anrufen und 24/7 erreichbar",
   emergencyShort: "Notdienst anfordern",
 
   // ─── Formular-Loading-States ───

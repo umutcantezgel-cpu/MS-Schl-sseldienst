@@ -67,7 +67,7 @@ export default function AGBPage() {
             <LegalSection id="2-vertragsschluss">
                 <h2 className="mt-0">2. Vertragsschluss & Notöffnungen</h2>
                 <p>2.1. Die Angebote des Schlüssel Schmiede auf der Webseite oder in Werbematerialien sind stets freibleibend und unverbindlich.</p>
-                <p>2.2. Ein rechtsverbindlicher Vertrag kommt zustande, sobald der Kunde – mündlich (z.B. am Telefon) oder schriftlich – einen Einsatz anfordert und der Auftragnehmer diesen Einsatz bestätigt und disponiert.</p>
+                <p>2.2. Ein rechtsverbindlicher Vertrag kommt zustande, sobald der Kunde - mündlich (z.B. am Telefon) oder schriftlich - einen Einsatz anfordert und der Auftragnehmer diesen Einsatz bestätigt und disponiert.</p>
                 <p>2.3. Der konkrete Auftragsinhalt und der Preis werden spätestens bei Eintreffen des Technikers am Einsatzort vor Beginn der handwerklichen Tätigkeit besprochen und vom Kunden (digital oder in Papierform) durch Unterschrift auf dem Auftragsformular bestätigt.</p>
                 <p>2.4. Der Auftragnehmer behält sich das Recht vor, die Durchführung einer Notöffnung zu verweigern, wenn berechtigte Zweifel an der Zugangsberechtigung des Kunden zum Objekt bestehen. Der Kunde ist verpflichtet, sich durch ein gültiges amtliches Ausweisdokument auszuweisen.</p>
             </LegalSection>

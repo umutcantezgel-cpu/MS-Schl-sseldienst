@@ -2,7 +2,7 @@
 
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 16 — Consent Management Hook
+ * Phase 16 und Consent Management Hook
  * ══════════════════════════════════════════════════════════════
  * Reads/writes the consent_status cookie.
  * Used by CookieConsent banner AND by analytics.ts.

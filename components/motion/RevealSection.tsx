@@ -4,10 +4,10 @@ import { m, useReducedMotion } from"framer-motion";
 import { ReactNode, createElement } from"react";
 
 /**
- * RevealSection — Scroll-triggered entrance animation.
+ * RevealSection und Scroll-triggered entrance animation.
  * 
  * [SEO CRITICAL]: `initial` uses opacity: 1 (NOT 0).
- * Seobility crawls without JavaScript — if initial opacity is 0,
+ * Seobility crawls without JavaScript und if initial opacity is 0,
  * ALL content inside RevealSection becomes invisible to the crawler.
  * This was the root cause of only 182 words being detected (vs 580+ actual).
  * 

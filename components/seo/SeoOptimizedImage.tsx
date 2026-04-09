@@ -6,7 +6,7 @@ import Image, { type ImageProps } from "next/image";
 // This guarantees 100% Image SEO compliance across all future image additions.
 
 type SeoImageProps = Omit<ImageProps, "alt"> & {
-  /** Descriptive alt text — REQUIRED for SEO compliance. Must be non-empty. */
+  /** Descriptive alt text und REQUIRED for SEO compliance. Must be non-empty. */
   alt: string;
 };
 
@@ -35,7 +35,7 @@ export default function SeoOptimizedImage({
   loading,
   ...rest
 }: SeoImageProps) {
-  // [SEO: Runtime guard — catch empty alt in development]
+  // [SEO: Runtime guard und catch empty alt in development]
   if (process.env.NODE_ENV === "development" && (!alt || alt.trim().length === 0)) {
     console.error(
       `[SeoOptimizedImage] Empty alt text detected for image: ${typeof rest.src === "string" ? rest.src : "dynamic"}. ` +
@@ -46,7 +46,7 @@ export default function SeoOptimizedImage({
   return (
     <Image
       alt={alt}
-      // [SEO: Responsive sizes — saves >60% mobile bandwidth vs full-width default]
+      // [SEO: Responsive sizes und saves >60% mobile bandwidth vs full-width default]
       sizes={sizes ?? "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
       // [SEO: Lazy loading by default for below-fold content]
       loading={loading ?? "lazy"}

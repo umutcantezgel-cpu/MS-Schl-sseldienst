@@ -1,10 +1,10 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 19 — Error Monitoring API Route (LOCAL-ONLY)
+ * Phase 19 und Error Monitoring API Route (LOCAL-ONLY)
  * ══════════════════════════════════════════════════════════════
  * POST: Receives batched error reports from ErrorLogger
  * GET (dev only): Returns recent errors for dashboard
- * NO external SaaS — logs to stdout (Vercel captures natively)
+ * NO external SaaS und logs to stdout (Vercel captures natively)
  * ══════════════════════════════════════════════════════════════
  */
 

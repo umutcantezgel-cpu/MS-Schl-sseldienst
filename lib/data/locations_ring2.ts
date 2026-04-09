@@ -20,7 +20,7 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 10€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Aßlar — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Aßlar und Türöffnung ab 99€ | 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Aßlar: Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. an der Laguna, Werdorf, Berghausen & Kernstadt. Faire Preise. 06441-8056279",
         },
         
@@ -40,7 +40,7 @@ export const ring2Locations: LocationData[] = [
             {
                 icon: "home",
                 title: "Wohnungstür zu in der Kernstadt",
-                description: "Vom Wind in einem der Aßlarer Mehrfamilienhäuser zugeschlagen? Wir manipulieren die Falle schonend von außen, Sie sind in Sekunden wieder drin – zu 99% spurlos."
+                description: "Vom Wind in einem der Aßlarer Mehrfamilienhäuser zugeschlagen? Wir manipulieren die Falle schonend von außen, Sie sind in Sekunden wieder drin und zu 99% spurlos."
             },
             {
                 icon: "shield-alert",
@@ -89,7 +89,7 @@ export const ring2Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Ausgesperrt in Aßlar oder den Ortsteilen? Unser lokaler Schlüsseldienst ist schnell für Sie im Einsatz. Transparente Festpreise und beschädigungsfreie Türöffnungen – 24 Stunden am Tag.",
+            heroIntro: "Ausgesperrt in Aßlar oder den Ortsteilen? Unser lokaler Schlüsseldienst ist schnell für Sie im Einsatz. Transparente Festpreise und beschädigungsfreie Türöffnungen und 24 Stunden am Tag.",
             mainText: "", // Erweitert durch aboutText
             serviceZerstörungsfrei: "", // Ersetzt durch scenarios
             serviceBohren: "",
@@ -129,32 +129,32 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 10€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Solms — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Solms und Türöffnung ab 99€ | 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Solms: Zerstörungsfreie Türöffnung ab 99€. In ca. 8-12 Min. in Burgsolms, Oberbiel, Niederbiel, Oberndorf & Albshausen. Faire Preise. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
-        routeDescription: "Über die B49 durchs malerische Lahntal oder die L3020 erreichen unsere Techniker sämtliche fünf Solmser Stadtteile in kürzester Zeit – typischerweise innerhalb von 8 bis 12 Minuten.",
+        routeDescription: "Über die B49 durchs malerische Lahntal oder die L3020 erreichen unsere Techniker sämtliche fünf Solmser Stadtteile in kürzester Zeit und typischerweise innerhalb von 8 bis 12 Minuten.",
         mainRoad: "B49 / L3020",
         distanceKm: 8,
         character: "Historische Lahn-Stadt mit Bergbautradition, Klosterkultur und fünf eigenständigen Ortsteilen",
         populationApprox: "~13.500",
         landmark: "Besucherbergwerk Grube Fortuna & Kloster Altenberg",
         buildingTypes: "Breiter Mix aus historischen Fachwerkhäusern in Burgsolms, soliden Nachkriegs-Reihenhäusern in Oberbiel/Niederbiel, moderneren Einfamilienhaussiedlungen in Albshausen und vereinzelten Gewerbebauten entlang der Lahntalstraße.",
-        parkingInfo: "Die überwiegend kleinstädtische bis dörfliche Bebauung in allen fünf Solmser Ortsteilen bietet reichlich Parkmöglichkeiten direkt vor dem Einsatzort – unser Werkzeugkoffer ist stets in Griffweite.",
+        parkingInfo: "Die überwiegend kleinstädtische bis dörfliche Bebauung in allen fünf Solmser Ortsteilen bietet reichlich Parkmöglichkeiten direkt vor dem Einsatzort und unser Werkzeugkoffer ist stets in Griffweite.",
         heroVariant: "Schlüsseldienst für Solms und alle 5 Ortsteile. Von der Grube Fortuna bis Kloster Altenberg.",
-        fareInfo: "Solms liegt als direkter Nachbar von Wetzlar im absolut günstigen Nahbereich. Die Anfahrt wird mit nur 10 Euro berechnet – für alle fünf Ortsteile identisch.",
+        fareInfo: "Solms liegt als direkter Nachbar von Wetzlar im absolut günstigen Nahbereich. Die Anfahrt wird mit nur 10 Euro berechnet und für alle fünf Ortsteile identisch.",
 
         scenarios: [
             {
                 icon: "home",
                 title: "Zugefallene Tür in Burgsolms",
-                description: "In der Hektik des Alltags die Haustür im größten Ortsteil Burgsolms zugezogen? Unsere Techniker nutzen feinste Fallengleiter und öffnen Ihre Standardtür in Sekunden – ohne jede Beschädigung am Schloss."
+                description: "In der Hektik des Alltags die Haustür im größten Ortsteil Burgsolms zugezogen? Unsere Techniker nutzen feinste Fallengleiter und öffnen Ihre Standardtür in Sekunden und ohne jede Beschädigung am Schloss."
             },
             {
                 icon: "shield-alert",
                 title: "Schlüsselverlust nach Wanderung",
-                description: "Nach einer Wanderung entlang des Lahnuferwegs oder einem Besuch im Kloster Altenberg den Schlüssel verloren? Wir öffnen Ihre Tür und tauschen bei Bedarf den Zylinder sofort aus – für Ihre Sicherheit."
+                description: "Nach einer Wanderung entlang des Lahnuferwegs oder einem Besuch im Kloster Altenberg den Schlüssel verloren? Wir öffnen Ihre Tür und tauschen bei Bedarf den Zylinder sofort aus und für Ihre Sicherheit."
             },
             {
                 icon: "briefcase",
@@ -164,22 +164,22 @@ export const ring2Locations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Eingebettet ins idyllische Lahntal, westlich von Wetzlar, erstreckt sich die geschichtsträchtige <strong>Stadt Solms</strong> mit ihren rund 13.500 Einwohnern über fünf eigenständige, charakterstarke Ortsteile: <strong>Burgsolms, Oberbiel, Niederbiel, Oberndorf und Albshausen</strong>. Was Solms von vielen Nachbargemeinden abhebt, ist die faszinierende Verbindung aus lebendigem Bergbauerbe – verkörpert durch das deutschlandweit bekannte <strong>Besucherbergwerk Grube Fortuna</strong> in Oberbiel – und klösterlicher Kulturlandschaft rund um das ehrwürdige <strong>Kloster Altenberg</strong> auf dem Michelsberg. Wenn in einer solch facettenreichen Gemeinde der Haustürschlüssel abhanden kommt oder ein Schloss seinen Dienst versagt, brauchen die Bewohner einen <strong>Schlüsseldienst Solms</strong>, der die Besonderheiten jedes einzelnen Ortsteils kennt.</p>
+<p>Eingebettet ins idyllische Lahntal, westlich von Wetzlar, erstreckt sich die geschichtsträchtige <strong>Stadt Solms</strong> mit ihren rund 13.500 Einwohnern über fünf eigenständige, charakterstarke Ortsteile: <strong>Burgsolms, Oberbiel, Niederbiel, Oberndorf und Albshausen</strong>. Was Solms von vielen Nachbargemeinden abhebt, ist die faszinierende Verbindung aus lebendigem Bergbauerbe und verkörpert durch das deutschlandweit bekannte <strong>Besucherbergwerk Grube Fortuna</strong> in Oberbiel und und klösterlicher Kulturlandschaft rund um das ehrwürdige <strong>Kloster Altenberg</strong> auf dem Michelsberg. Wenn in einer solch facettenreichen Gemeinde der Haustürschlüssel abhanden kommt oder ein Schloss seinen Dienst versagt, brauchen die Bewohner einen <strong>Schlüsseldienst Solms</strong>, der die Besonderheiten jedes einzelnen Ortsteils kennt.</p>
 
 <h3>Direkte Lahntal-Route: In Minuten bei Ihnen</h3>
-<p>Die verkehrstechnische Anbindung von Solms ist für unseren Einsatzdienst nahezu ideal. Über die <strong>B49</strong>, die sich als Hauptschlagader durchs Lahntal zieht, sowie die <strong>L3020</strong> erreichen unsere Monteure sowohl die höher gelegenen Siedlungen in Oberndorf als auch die ufernahen Wohngebiete in Niederbiel und Oberbiel zuverlässig in <strong>8 bis 12 Minuten</strong>. Diese Verlässlichkeit verdanken wir nicht nur der kurzen Distanz von etwa 8 Kilometern, sondern auch unserer intimen Kenntnis der lokalen Verkehrsführung – wo in der Rushhour Stau entsteht, welche Nebenstraße schneller führt und wo Baustellen den Weg versperren könnten.</p>
+<p>Die verkehrstechnische Anbindung von Solms ist für unseren Einsatzdienst nahezu ideal. Über die <strong>B49</strong>, die sich als Hauptschlagader durchs Lahntal zieht, sowie die <strong>L3020</strong> erreichen unsere Monteure sowohl die höher gelegenen Siedlungen in Oberndorf als auch die ufernahen Wohngebiete in Niederbiel und Oberbiel zuverlässig in <strong>8 bis 12 Minuten</strong>. Diese Verlässlichkeit verdanken wir nicht nur der kurzen Distanz von etwa 8 Kilometern, sondern auch unserer intimen Kenntnis der lokalen Verkehrsführung und wo in der Rushhour Stau entsteht, welche Nebenstraße schneller führt und wo Baustellen den Weg versperren könnten.</p>
 
 <h3>Von Fachwerk bis Neubau: Handwerk für jedes Schloss</h3>
-<p>Die bauliche Vielfalt in Solms ist bemerkenswert. In <strong>Burgsolms</strong>, dem mit rund 4.500 Einwohnern größten Stadtteil und historischem Stammsitz der Grafen zu Solms, finden sich zahlreiche ältere Fachwerkhäuser mit teilweise jahrhundertealten, massiven Holztüren und komplizierten Kastenschlössern. In <strong>Oberbiel</strong> und <strong>Niederbiel</strong> dominieren solide Nachkriegs-Reihenhäuser und Mehrfamilienhäuser mit klassischen Profilzylindern. <strong>Albshausen</strong> wiederum bietet modernere Einfamilienhaussiedlungen mit aktuellen Mehrfachverriegelungen und Sicherheitsbeschlägen. Unsere Fachkräfte beherrschen all diese Varianten gleichermaßen souverän – vom behutsamen Öffnen einer antiken Langkammklinke bis zur Manipulation modernster elektronischer Zugangssysteme.</p>
+<p>Die bauliche Vielfalt in Solms ist bemerkenswert. In <strong>Burgsolms</strong>, dem mit rund 4.500 Einwohnern größten Stadtteil und historischem Stammsitz der Grafen zu Solms, finden sich zahlreiche ältere Fachwerkhäuser mit teilweise jahrhundertealten, massiven Holztüren und komplizierten Kastenschlössern. In <strong>Oberbiel</strong> und <strong>Niederbiel</strong> dominieren solide Nachkriegs-Reihenhäuser und Mehrfamilienhäuser mit klassischen Profilzylindern. <strong>Albshausen</strong> wiederum bietet modernere Einfamilienhaussiedlungen mit aktuellen Mehrfachverriegelungen und Sicherheitsbeschlägen. Unsere Fachkräfte beherrschen all diese Varianten gleichermaßen souverän und vom behutsamen Öffnen einer antiken Langkammklinke bis zur Manipulation modernster elektronischer Zugangssysteme.</p>
 
 <h3>Grube Fortuna, Kloster Altenberg & Sternwarte</h3>
-<p>Solms ist keine gesichtslose Schlafstadt, sondern ein lebendiger Ort mit kulturellem Selbstbewusstsein. Das Besucherbergwerk <strong>Grube Fortuna</strong> zieht Familien und Geschichtsinteressierte aus der gesamten Region an. Das malerisch auf dem Michelsberg gelegene <strong>Kloster Altenberg</strong> bietet nicht nur einen atemberaubenden Blick über die Lahn, sondern beherbergt auch Konzerte und Veranstaltungen. In Burgsolms lädt die <strong>Sternwarte</strong> zu faszinierenden Himmelsbeobachtungen ein. Am Lahnufer erinnert in Niederbiel das <strong>Schweitzer-Kreuz</strong> – ein neugotisches gusseisernes Denkmal – an ein tragisches Fährunglück von 1881. Wer hier lebt, lebt bewusst und schätzt Qualität – auch bei der Wahl des Schlüsseldienstes.</p>
+<p>Solms ist keine gesichtslose Schlafstadt, sondern ein lebendiger Ort mit kulturellem Selbstbewusstsein. Das Besucherbergwerk <strong>Grube Fortuna</strong> zieht Familien und Geschichtsinteressierte aus der gesamten Region an. Das malerisch auf dem Michelsberg gelegene <strong>Kloster Altenberg</strong> bietet nicht nur einen atemberaubenden Blick über die Lahn, sondern beherbergt auch Konzerte und Veranstaltungen. In Burgsolms lädt die <strong>Sternwarte</strong> zu faszinierenden Himmelsbeobachtungen ein. Am Lahnufer erinnert in Niederbiel das <strong>Schweitzer-Kreuz</strong> und ein neugotisches gusseisernes Denkmal und an ein tragisches Fährunglück von 1881. Wer hier lebt, lebt bewusst und schätzt Qualität und auch bei der Wahl des Schlüsseldienstes.</p>
 
-<h3>24/7 Notdienst – Auch nachts am Lahnufer</h3>
-<p>Ein Schlüsselnotfall kennt keine Uhrzeit. Ob Sie nach einem späten Spaziergang entlang des Lahnuferwegs feststellen, dass Ihr Schlüssel fehlt, oder ob nachts im Gewerbegebiet ein Schloss blockiert: Unser <strong>Schlüsselnotdienst Solms</strong> ist 24 Stunden am Tag erreichbar, an 365 Tagen im Jahr. Wir kommen auch an Feiertagen, bei Schneefall oder in den frühen Morgenstunden – zuverlässig, diskret und ohne Wucherpreise.</p>
+<h3>24/7 Notdienst und Auch nachts am Lahnufer</h3>
+<p>Ein Schlüsselnotfall kennt keine Uhrzeit. Ob Sie nach einem späten Spaziergang entlang des Lahnuferwegs feststellen, dass Ihr Schlüssel fehlt, oder ob nachts im Gewerbegebiet ein Schloss blockiert: Unser <strong>Schlüsselnotdienst Solms</strong> ist 24 Stunden am Tag erreichbar, an 365 Tagen im Jahr. Wir kommen auch an Feiertagen, bei Schneefall oder in den frühen Morgenstunden und zuverlässig, diskret und ohne Wucherpreise.</p>
 
 <h3>Festpreise ohne Wenn und Aber</h3>
-<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Dazu kommt lediglich eine symbolische Anfahrtspauschale von 10 Euro, die für ganz Solms gilt – egal ob Burgsolms im Zentrum oder Oberndorf am Rand. Diese Transparenz garantieren wir Ihnen bereits am Telefon, bevor sich unser Techniker überhaupt auf den Weg macht. Keine überraschenden Aufschläge, keine erfundenen Materialkosten, keine Tricks. Solide Handwerkerleistung zum ehrlichen Preis.</p>
+<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Dazu kommt lediglich eine symbolische Anfahrtspauschale von 10 Euro, die für ganz Solms gilt und egal ob Burgsolms im Zentrum oder Oberndorf am Rand. Diese Transparenz garantieren wir Ihnen bereits am Telefon, bevor sich unser Techniker überhaupt auf den Weg macht. Keine überraschenden Aufschläge, keine erfundenen Materialkosten, keine Tricks. Solide Handwerkerleistung zum ehrlichen Preis.</p>
 `,
 
         localTestimonials: [
@@ -201,7 +201,7 @@ export const ring2Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Suchen Sie einen ehrlichen Schlüsseldienst in Solms? Wir helfen sofort in Burgsolms, Oberbiel, Niederbiel, Oberndorf & Albshausen – schonend, schnell und zum garantierten Festpreis. 24/7 erreichbar.",
+            heroIntro: "Suchen Sie einen ehrlichen Schlüsseldienst in Solms? Wir helfen sofort in Burgsolms, Oberbiel, Niederbiel, Oberndorf & Albshausen und schonend, schnell und zum garantierten Festpreis. 24/7 erreichbar.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -210,7 +210,7 @@ export const ring2Locations: LocationData[] = [
         faqs: [
             {
                 question: "Gilt der gleiche Preis für alle fünf Solmser Ortsteile?",
-                answer: "Ja, absolut. Ob Burgsolms, Oberbiel, Niederbiel, Oberndorf oder Albshausen – die Anfahrtspauschale beträgt pauschal 10 Euro für ganz Solms. Keinerlei Aufschläge für entlegenere Ortsteile."
+                answer: "Ja, absolut. Ob Burgsolms, Oberbiel, Niederbiel, Oberndorf oder Albshausen und die Anfahrtspauschale beträgt pauschal 10 Euro für ganz Solms. Keinerlei Aufschläge für entlegenere Ortsteile."
             },
             {
                 question: "Ich habe eine alte, massive Holztür in Burgsolms. Können Sie die öffnen, ohne sie zu beschädigen?",
@@ -218,7 +218,7 @@ export const ring2Locations: LocationData[] = [
             },
             {
                 question: "Bieten Sie auch Schließanlagen-Beratung für Hausverwaltungen in Solms an?",
-                answer: "Selbstverständlich. Wir beraten und installieren komplette Schließanlagen-Systeme für Mehrfamilienhäuser, Gewerbeobjekte und öffentliche Einrichtungen in Solms – inklusive Generalschlüssel-Konzepten und modernster Sicherheitstechnik."
+                answer: "Selbstverständlich. Wir beraten und installieren komplette Schließanlagen-Systeme für Mehrfamilienhäuser, Gewerbeobjekte und öffentliche Einrichtungen in Solms und inklusive Generalschlüssel-Konzepten und modernster Sicherheitstechnik."
             }
         ],
         neighbors: ["schluesseldienst-wetzlar-hermannstein", "schluesseldienst-braunfels", "schluesseldienst-asslar"]
@@ -241,7 +241,7 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 10€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Lahnau — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Lahnau und Türöffnung ab 99€ | 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Lahnau: Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. in Waldgirmes, Dorlar & Atzbach. Faire Preise, 24/7 Notdienst. 06441-8056279",
         },
 
@@ -253,15 +253,15 @@ export const ring2Locations: LocationData[] = [
         populationApprox: "~8.300",
         landmark: "Römisches Forum Waldgirmes (Augustus-Ära) & Klosterkirche Dorlar",
         buildingTypes: "Überwiegend Einfamilienhäuser und Doppelhaushälften mit modernen Sicherheitszylindern, ergänzt durch ältere Siedlungshäuser und vereinzelte Mehrfamilienhäuser in den Ortskernen.",
-        parkingInfo: "In allen drei Lahnauer Ortsteilen parken unsere Einsatzfahrzeuge direkt vor dem Gebäude – die suburban-ländliche Bebauung bietet stets ausreichend Platz.",
-        heroVariant: "Schlüsseldienst für Lahnau – Waldgirmes, Dorlar & Atzbach in Rekordzeit.",
-        fareInfo: "Lahnau ist quasi ein Heimspiel: Die Anfahrt beträgt minimalste 10 Euro – für alle drei Ortsteile Waldgirmes, Dorlar und Atzbach identisch.",
+        parkingInfo: "In allen drei Lahnauer Ortsteilen parken unsere Einsatzfahrzeuge direkt vor dem Gebäude und die suburban-ländliche Bebauung bietet stets ausreichend Platz.",
+        heroVariant: "Schlüsseldienst für Lahnau und Waldgirmes, Dorlar & Atzbach in Rekordzeit.",
+        fareInfo: "Lahnau ist quasi ein Heimspiel: Die Anfahrt beträgt minimalste 10 Euro und für alle drei Ortsteile Waldgirmes, Dorlar und Atzbach identisch.",
 
         scenarios: [
             {
                 icon: "home",
                 title: "Zugefallene Tür im Eigenheim",
-                description: "In Lahnaus dichten Wohnsiedlungen passiert es täglich: Tür fällt zu, Schlüssel liegt drinnen. Unsere Techniker öffnen Ihre Haustür mit Präzisionswerkzeug in Sekunden – absolut spurlos und ohne Folgeschäden."
+                description: "In Lahnaus dichten Wohnsiedlungen passiert es täglich: Tür fällt zu, Schlüssel liegt drinnen. Unsere Techniker öffnen Ihre Haustür mit Präzisionswerkzeug in Sekunden und absolut spurlos und ohne Folgeschäden."
             },
             {
                 icon: "shield-alert",
@@ -276,22 +276,22 @@ export const ring2Locations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Eingebettet ins Lahntal zwischen den Oberzentren Wetzlar und Gießen, ist die Gemeinde <strong>Lahnau</strong> mit ihren rund 8.300 Einwohnern ein äußerst beliebter Wohnstandort. Die drei Ortsteile <strong>Waldgirmes, Dorlar und Atzbach</strong> verbinden ländliche Lebensqualität mit perfekter Verkehrsanbindung. Was Lahnau jedoch weit über die Region hinaus bekannt macht, ist eine archäologische Sensation: Das <strong>Römische Forum in Waldgirmes</strong> – der früheste Beleg für steinerne Stadtarchitektur in der Germania Magna aus der Zeit Kaiser Augustus', inklusive des spektakulären Fundes eines lebensgroßen bronzenen Pferdekopfes. Wenn in einer so geschichtsreichen Gemeinde die Haustür ins Schloss fällt, ist unser <strong>Schlüsseldienst Lahnau</strong> in Rekordzeit zur Stelle.</p>
+<p>Eingebettet ins Lahntal zwischen den Oberzentren Wetzlar und Gießen, ist die Gemeinde <strong>Lahnau</strong> mit ihren rund 8.300 Einwohnern ein äußerst beliebter Wohnstandort. Die drei Ortsteile <strong>Waldgirmes, Dorlar und Atzbach</strong> verbinden ländliche Lebensqualität mit perfekter Verkehrsanbindung. Was Lahnau jedoch weit über die Region hinaus bekannt macht, ist eine archäologische Sensation: Das <strong>Römische Forum in Waldgirmes</strong> und der früheste Beleg für steinerne Stadtarchitektur in der Germania Magna aus der Zeit Kaiser Augustus', inklusive des spektakulären Fundes eines lebensgroßen bronzenen Pferdekopfes. Wenn in einer so geschichtsreichen Gemeinde die Haustür ins Schloss fällt, ist unser <strong>Schlüsseldienst Lahnau</strong> in Rekordzeit zur Stelle.</p>
 
 <h3>5 bis 10 Minuten: Schneller geht es kaum</h3>
-<p>Durch die optimale Lage direkt an der <strong>B49</strong> und die geringe Distanz von nur 7 Kilometern zu unserer Wetzlarer Basis gehört Lahnau zu unseren schnellsten Einsatzgebieten. In <strong>5 bis 10 Minuten</strong> stehen unsere Monteure vor Ihrer Tür – ob in Waldgirmes am Ortsrand, im historischen Kern von Dorlar oder in den Wohnstraßen von Atzbach. Diese Blitzreaktion ist besonders wertvoll, wenn Kinder allein im Haus sind, Essen auf dem Herd steht oder Sie im strömenden Regen draußen ausharren müssen.</p>
+<p>Durch die optimale Lage direkt an der <strong>B49</strong> und die geringe Distanz von nur 7 Kilometern zu unserer Wetzlarer Basis gehört Lahnau zu unseren schnellsten Einsatzgebieten. In <strong>5 bis 10 Minuten</strong> stehen unsere Monteure vor Ihrer Tür und ob in Waldgirmes am Ortsrand, im historischen Kern von Dorlar oder in den Wohnstraßen von Atzbach. Diese Blitzreaktion ist besonders wertvoll, wenn Kinder allein im Haus sind, Essen auf dem Herd steht oder Sie im strömenden Regen draußen ausharren müssen.</p>
 
 <h3>Römisches Forum, Klosterkirche & Lahnauen</h3>
-<p>Lahnau ist kulturell und naturkundlich ein Juwel. In <strong>Waldgirmes</strong> dokumentiert das <strong>Römische Forum</strong> eine einzigartige Siedlung aus der Zeit um 4 v. Chr., die als frühester Beweis für römische Stadtplanung östlich des Rheins gilt. Das <strong>Heimatmuseum Waldgirmes</strong> im ehemaligen Schulhaus von 1840 ergänzt dieses Erbe mit Einblicken in regionale Handwerkskunst. In <strong>Dorlar</strong> zeugt die <strong>frühgotische Klosterkirche</strong> – errichtet nach 1218 als Teil des Prämonstratenserinnen-Klosters – von mittelalterlicher Baukunst. Und in <strong>Atzbach</strong> erstreckt sich das <strong>Naturschutzgebiet Lahnauen</strong> mit seinem berühmten Storchennest als wichtiges Rast- und Durchzugsgebiet für Wasservögel.</p>
+<p>Lahnau ist kulturell und naturkundlich ein Juwel. In <strong>Waldgirmes</strong> dokumentiert das <strong>Römische Forum</strong> eine einzigartige Siedlung aus der Zeit um 4 v. Chr., die als frühester Beweis für römische Stadtplanung östlich des Rheins gilt. Das <strong>Heimatmuseum Waldgirmes</strong> im ehemaligen Schulhaus von 1840 ergänzt dieses Erbe mit Einblicken in regionale Handwerkskunst. In <strong>Dorlar</strong> zeugt die <strong>frühgotische Klosterkirche</strong> und errichtet nach 1218 als Teil des Prämonstratenserinnen-Klosters und von mittelalterlicher Baukunst. Und in <strong>Atzbach</strong> erstreckt sich das <strong>Naturschutzgebiet Lahnauen</strong> mit seinem berühmten Storchennest als wichtiges Rast- und Durchzugsgebiet für Wasservögel.</p>
 
 <h3>Drei Ortsteile, ein Versprechen: Spurlos offen</h3>
 <p>Die Bebauung in Lahnau ist typisch für eine suburbanisierte Lahntalgemeinde: <strong>Waldgirmes</strong> (ca. 3.300 Einwohner) und <strong>Atzbach</strong> (ca. 3.200 Einwohner) bieten vornehmlich Einfamilienhäuser und Doppelhaushälften mit modernen Schließsystemen. <strong>Dorlar</strong> (ca. 1.850 Einwohner) hat einen etwas älteren Gebäudebestand mit vereinzelten historischen Türen im Ortskern. Unser Versprechen gilt überall gleichermaßen: Bei zugefallenen Türen liegt unsere zerstörungsfreie Öffnungsrate bei über 99 Prozent. Kein Kratzer, kein beschädigter Zylinder, keine Folgekosten.</p>
 
 <h3>24/7 Notdienst an 365 Tagen</h3>
-<p>Die Pendlergemeinde Lahnau lebt im Takt von Wetzlar und Gießen. Viele Bewohner kommen erst spätabends nach Hause – und genau dann passieren die meisten Aussperrungen. Unser <strong>Schlüsselnotdienst Lahnau</strong> ist deshalb rund um die Uhr einsatzbereit, auch an Sonn- und Feiertagen, bei Hitze und Frost. Verlassen Sie sich auf uns.</p>
+<p>Die Pendlergemeinde Lahnau lebt im Takt von Wetzlar und Gießen. Viele Bewohner kommen erst spätabends nach Hause und und genau dann passieren die meisten Aussperrungen. Unser <strong>Schlüsselnotdienst Lahnau</strong> ist deshalb rund um die Uhr einsatzbereit, auch an Sonn- und Feiertagen, bei Hitze und Frost. Verlassen Sie sich auf uns.</p>
 
 <h3>Festpreise für gute Nachbarschaft</h3>
-<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Lahnau kostet nur <strong>10 Euro</strong> – für alle drei Ortsteile identisch. Diese Preise nennen wir Ihnen am Telefon, bevor unser Monteur losfährt. Keine Tricks, keine versteckten Kosten. Ehrliches Handwerk aus der direkten Nachbarschaft.</p>
+<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Lahnau kostet nur <strong>10 Euro</strong> und für alle drei Ortsteile identisch. Diese Preise nennen wir Ihnen am Telefon, bevor unser Monteur losfährt. Keine Tricks, keine versteckten Kosten. Ehrliches Handwerk aus der direkten Nachbarschaft.</p>
 `,
 
         localTestimonials: [
@@ -322,7 +322,7 @@ export const ring2Locations: LocationData[] = [
         faqs: [
             {
                 question: "Warum sind Sie in Lahnau so schnell?",
-                answer: "Mit nur 7 Kilometern Entfernung und direkter B49-Anbindung ist Lahnau eines unserer schnellsten Einsatzgebiete. In 5 bis 10 Minuten sind wir vor Ihrer Tür – egal ob Waldgirmes, Dorlar oder Atzbach."
+                answer: "Mit nur 7 Kilometern Entfernung und direkter B49-Anbindung ist Lahnau eines unserer schnellsten Einsatzgebiete. In 5 bis 10 Minuten sind wir vor Ihrer Tür und egal ob Waldgirmes, Dorlar oder Atzbach."
             },
             {
                 question: "Können Sie auch eine Haustür am historischen Ortskern von Dorlar öffnen?",
@@ -353,7 +353,7 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Hüttenberg — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Hüttenberg und Türöffnung ab 99€ | 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Hüttenberg: Zerstörungsfreie Türöffnung ab 99€. In ca. 10-15 Min. in Rechtenbach, Hochelheim, Volpertshausen & allen 6 Ortsteilen. 06441-8056279",
         },
 
@@ -366,14 +366,14 @@ export const ring2Locations: LocationData[] = [
         landmark: "Goethehaus Volpertshausen (Heimatmuseum) & Gottfrieds Haus in Rechtenbach (1807)",
         buildingTypes: "Stark von Eigenheimen und gewachsenen Dorfgemeinschaften geprägt. Ältere Fachwerkhäuser in den Ortskernen, moderne Einfamilienhäuser in den Randlagen, vereinzelt Gewerbeobjekte entlang der Kleebach-Niederung.",
         parkingInfo: "In allen sechs Hüttenberger Ortsteilen bieten die ländlichen Straßen und Grundstücke ideale Parkmöglichkeiten direkt vor dem Einsatzort.",
-        heroVariant: "Schlüsseldienst für Hüttenberg – die Handkäse-Gemeinde verdient ehrliches Handwerk.",
-        fareInfo: "Hüttenberg liegt im mittleren Ring unseres Einsatzgebiets. Die Anfahrt beträgt faire 15 Euro – identisch für alle sechs Ortsteile.",
+        heroVariant: "Schlüsseldienst für Hüttenberg und die Handkäse-Gemeinde verdient ehrliches Handwerk.",
+        fareInfo: "Hüttenberg liegt im mittleren Ring unseres Einsatzgebiets. Die Anfahrt beträgt faire 15 Euro und identisch für alle sechs Ortsteile.",
 
         scenarios: [
             {
                 icon: "home",
                 title: "Zugefallene Tür im Eigenheim",
-                description: "In Hüttenbergs dichten Siedlungen mit ihren zahlreichen Einfamilienhäusern passiert es regelmäßig: Kurz zum Briefkasten, Tür fällt ins Schloss. Wir öffnen schnell und spurlos – Ihr Schloss bleibt intakt."
+                description: "In Hüttenbergs dichten Siedlungen mit ihren zahlreichen Einfamilienhäusern passiert es regelmäßig: Kurz zum Briefkasten, Tür fällt ins Schloss. Wir öffnen schnell und spurlos und Ihr Schloss bleibt intakt."
             },
             {
                 icon: "shield-alert",
@@ -383,18 +383,18 @@ export const ring2Locations: LocationData[] = [
             {
                 icon: "briefcase",
                 title: "Gewerbe & Handwerksbetriebe",
-                description: "Blockierte Bürotür oder defekte Schließanlage in einem der Hüttenberger Handwerksbetriebe oder Käsereien? Wir reagieren schnell und diskret – auch außerhalb der Geschäftszeiten."
+                description: "Blockierte Bürotür oder defekte Schließanlage in einem der Hüttenberger Handwerksbetriebe oder Käsereien? Wir reagieren schnell und diskret und auch außerhalb der Geschäftszeiten."
             }
         ],
 
         aboutText: `
-<p>Südlich von Wetzlar gelegen, ist die Gemeinde <strong>Hüttenberg</strong> mit ihren rund 10.500 Einwohnern weit über die Region hinaus als <strong>Hessens Handkäse-Hauptstadt</strong> bekannt – vier der landesweit sechs Handkäse-Produzenten haben hier ihren Sitz, darunter die berühmte Käserei Birkenstock mit 28 Sorten. Doch Hüttenberg ist weit mehr als Kulinarik: Sechs gewachsene Ortsteile – <strong>Hochelheim/Hörnsheim (Kernort), Rechtenbach, Weidenhausen, Volpertshausen, Reiskirchen und Vollnkirchen</strong> – bieten eine einzigartige Mischung aus ländlicher Idylle, historischen Schätzen und dichter Wohnbesiedlung. Wenn in dieser vertrauten Atmosphäre die Haustür ins Schloss fällt, ist unser <strong>Schlüsseldienst Hüttenberg</strong> in wenigen Minuten zur Stelle.</p>
+<p>Südlich von Wetzlar gelegen, ist die Gemeinde <strong>Hüttenberg</strong> mit ihren rund 10.500 Einwohnern weit über die Region hinaus als <strong>Hessens Handkäse-Hauptstadt</strong> bekannt und vier der landesweit sechs Handkäse-Produzenten haben hier ihren Sitz, darunter die berühmte Käserei Birkenstock mit 28 Sorten. Doch Hüttenberg ist weit mehr als Kulinarik: Sechs gewachsene Ortsteile und <strong>Hochelheim/Hörnsheim (Kernort), Rechtenbach, Weidenhausen, Volpertshausen, Reiskirchen und Vollnkirchen</strong> und bieten eine einzigartige Mischung aus ländlicher Idylle, historischen Schätzen und dichter Wohnbesiedlung. Wenn in dieser vertrauten Atmosphäre die Haustür ins Schloss fällt, ist unser <strong>Schlüsseldienst Hüttenberg</strong> in wenigen Minuten zur Stelle.</p>
 
 <h3>L3360 direkt ins Herz von Hüttenberg</h3>
-<p>Die <strong>L3360</strong> ist für unsere Einsatzfahrten nach Hüttenberg eine absolute Hausstrecke. Von der Wetzlarer Basis aus sind wir in <strong>10 bis 15 Minuten</strong> vor Ihrer Tür – ob im Verwaltungssitz Rechtenbach, in Hochelheim, im ländlichen Reiskirchen oder im kleinen Vollnkirchen. Diese Zuverlässigkeit ist für uns tägliche Routine: Wir kennen jede Abzweigung, jede Engstelle und jeden Schleichweg in der Gemeinde.</p>
+<p>Die <strong>L3360</strong> ist für unsere Einsatzfahrten nach Hüttenberg eine absolute Hausstrecke. Von der Wetzlarer Basis aus sind wir in <strong>10 bis 15 Minuten</strong> vor Ihrer Tür und ob im Verwaltungssitz Rechtenbach, in Hochelheim, im ländlichen Reiskirchen oder im kleinen Vollnkirchen. Diese Zuverlässigkeit ist für uns tägliche Routine: Wir kennen jede Abzweigung, jede Engstelle und jeden Schleichweg in der Gemeinde.</p>
 
 <h3>Goethehaus, Gottfrieds Haus & uralte Hügelgräber</h3>
-<p>Hüttenberg überrascht mit einer kulturellen Tiefe, die weit über den Handkäse hinausgeht. In <strong>Volpertshausen</strong> dient das <strong>Goethehaus</strong> als Heimatmuseum und erinnert an den berühmten Besuch des Dichters. <strong>Rechtenbach</strong> begeistert mit <strong>„Gottfrieds Haus"</strong>, einem sorgfältig renovierten Fachwerkhaus von 1807, das den typischen „Hessenmann" der regionalen Fachwerkbaukunst zeigt. In der Umgebung finden sich <strong>zweieinhalbtausend Jahre alte Hügelgräber</strong>, die von keltischer Besiedlung zeugen. In <strong>Hochelheim</strong> mahlen die historische Kunstmühle und Dorfmühle seit Generationen. Für unsere Techniker bedeutet diese architektonische Vielfalt: Wir treffen auf alles – von antiken Kastenschlössern an Fachwerktüren bis zu modernen Mehrfachverriegelungen in Neubauten.</p>
+<p>Hüttenberg überrascht mit einer kulturellen Tiefe, die weit über den Handkäse hinausgeht. In <strong>Volpertshausen</strong> dient das <strong>Goethehaus</strong> als Heimatmuseum und erinnert an den berühmten Besuch des Dichters. <strong>Rechtenbach</strong> begeistert mit <strong>„Gottfrieds Haus"</strong>, einem sorgfältig renovierten Fachwerkhaus von 1807, das den typischen „Hessenmann" der regionalen Fachwerkbaukunst zeigt. In der Umgebung finden sich <strong>zweieinhalbtausend Jahre alte Hügelgräber</strong>, die von keltischer Besiedlung zeugen. In <strong>Hochelheim</strong> mahlen die historische Kunstmühle und Dorfmühle seit Generationen. Für unsere Techniker bedeutet diese architektonische Vielfalt: Wir treffen auf alles und von antiken Kastenschlössern an Fachwerktüren bis zu modernen Mehrfachverriegelungen in Neubauten.</p>
 
 <h3>6 Ortsteile, eine Qualität</h3>
 <p>Der <strong>Kernort Hüttenberg</strong> (Hochelheim/Hörnsheim) bildet das Zentrum mit seiner dichten Mischung aus Einfamilienhäusern und älteren Siedlungsbauten. <strong>Rechtenbach</strong>, wo auch die Gemeindeverwaltung ihren Sitz hat, ist der bevölkerungsreichste Ortsteil. <strong>Weidenhausen</strong> mit seiner alten evangelischen Kirche, das kulturell bedeutsame <strong>Volpertshausen</strong>, das beschauliche <strong>Reiskirchen</strong> und das ländliche <strong>Vollnkirchen</strong> komplettieren das Gemeindegebiet. Für alle sechs Ortsteile gilt: identische Anfahrtskosten, identische Reaktionszeit, identische handwerkliche Qualität.</p>
@@ -409,7 +409,7 @@ export const ring2Locations: LocationData[] = [
         localTestimonials: [
             {
                 name: "Thomas B.",
-                quote: "In Rechtenbach abends ausgesperrt. Der Techniker war in 12 Minuten da und hatte die Tür in Sekunden offen – kein Kratzer, kein Schaden. 114 Euro total, genau wie am Telefon gesagt. So muss ein Schlüsseldienst sein!",
+                quote: "In Rechtenbach abends ausgesperrt. Der Techniker war in 12 Minuten da und hatte die Tür in Sekunden offen und kein Kratzer, kein Schaden. 114 Euro total, genau wie am Telefon gesagt. So muss ein Schlüsseldienst sein!",
                 rating: 5
             },
             {
@@ -425,7 +425,7 @@ export const ring2Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Dringende Türöffnung in Hüttenberg? Ihr seriöser Schlüsselnotdienst für alle 6 Ortsteile – von Rechtenbach bis Vollnkirchen. Garantiert schnelle Hilfe, 24/7 erreichbar, Festpreise.",
+            heroIntro: "Dringende Türöffnung in Hüttenberg? Ihr seriöser Schlüsselnotdienst für alle 6 Ortsteile und von Rechtenbach bis Vollnkirchen. Garantiert schnelle Hilfe, 24/7 erreichbar, Festpreise.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -434,11 +434,11 @@ export const ring2Locations: LocationData[] = [
         faqs: [
             {
                 question: "Erreichen Sie auch die kleinen Ortsteile wie Reiskirchen oder Vollnkirchen?",
-                answer: "Selbstverständlich. Die 15 Euro Anfahrt gelten pauschal für alle sechs Hüttenberger Ortsteile – von Rechtenbach über Hochelheim bis ins ländliche Vollnkirchen. Keine Sonderzuschläge."
+                answer: "Selbstverständlich. Die 15 Euro Anfahrt gelten pauschal für alle sechs Hüttenberger Ortsteile und von Rechtenbach über Hochelheim bis ins ländliche Vollnkirchen. Keine Sonderzuschläge."
             },
             {
-                question: "Mein Schloss ist sehr alt – können Sie das öffnen ohne es zu zerstören?",
-                answer: "Ja, unsere Techniker sind speziell im Umgang mit älteren Schließmechanismen geschult. Ob Kastenschloss, Buntbartschlüssel oder historischer Beschlag – wir behandeln jedes Schloss mit der gebotenen Sorgfalt."
+                question: "Mein Schloss ist sehr alt und können Sie das öffnen ohne es zu zerstören?",
+                answer: "Ja, unsere Techniker sind speziell im Umgang mit älteren Schließmechanismen geschult. Ob Kastenschloss, Buntbartschlüssel oder historischer Beschlag und wir behandeln jedes Schloss mit der gebotenen Sorgfalt."
             },
             {
                 question: "Bieten Sie auch Sicherheitsberatung nach einem Einbruch in Hüttenberg?",
@@ -465,27 +465,27 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Hohenahr — Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Hohenahr und Türöffnung ab 99€ | 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Hohenahr: Zerstörungsfreie Türöffnung ab 99€. In ca. 8-12 Min. in Erda, Hohensolms, Mudersbach & allen 6 Ortsteilen. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
-        routeDescription: "Über die L3053 durch das bewaldete Gladenbacher Bergland erreichen unsere Monteure alle sechs Ortsteile von Hohenahr in 8 bis 12 Minuten – trotz der hügeligen Topografie.",
+        routeDescription: "Über die L3053 durch das bewaldete Gladenbacher Bergland erreichen unsere Monteure alle sechs Ortsteile von Hohenahr in 8 bis 12 Minuten und trotz der hügeligen Topografie.",
         mainRoad: "L3053",
         distanceKm: 10,
         character: "Ländliche Berggemeinde im Gladenbacher Bergland mit mittelalterlichen Burgruinen, Aussichtstürmen und dem Aartalsee als Naherholungsgebiet",
         populationApprox: "~4.900",
         landmark: "Burg Hohensolms (um 1350) & Altenberg-Aussichtsturm (442m)",
         buildingTypes: "Überwiegend Eigenheime und ländliche Hofreiten in den Dorfkernen, ergänzt durch neuere Einfamilienhausbebauung in den Randlagen. Vereinzelt historische Fachwerkhäuser und landwirtschaftliche Gebäude.",
-        parkingInfo: "In der ländlichen Gemeinde Hohenahr finden unsere Einsatzwagen überall direkte Parkmöglichkeiten – sogar in den kleinsten Ortsteilen wie Ahrdt.",
-        heroVariant: "Schlüsseldienst für Hohenahr – von Burg Hohensolms bis zum Aartalsee.",
-        fareInfo: "Hohenahr liegt im mittleren Ring unseres Einsatzgebiets. Die Anfahrt beträgt faire 15 Euro – identisch für alle sechs Ortsteile von Erda bis Ahrdt.",
+        parkingInfo: "In der ländlichen Gemeinde Hohenahr finden unsere Einsatzwagen überall direkte Parkmöglichkeiten und sogar in den kleinsten Ortsteilen wie Ahrdt.",
+        heroVariant: "Schlüsseldienst für Hohenahr und von Burg Hohensolms bis zum Aartalsee.",
+        fareInfo: "Hohenahr liegt im mittleren Ring unseres Einsatzgebiets. Die Anfahrt beträgt faire 15 Euro und identisch für alle sechs Ortsteile von Erda bis Ahrdt.",
 
         scenarios: [
             {
                 icon: "home",
                 title: "Zugefallene Tür im Eigenheim",
-                description: "In den ruhigen Wohnsiedlungen von Erda oder Altenkirchen die Tür zugezogen? Kein Problem: Unsere Techniker öffnen Ihr Schloss spurlos und professionell – auch in den abgelegensten Ortsteilen."
+                description: "In den ruhigen Wohnsiedlungen von Erda oder Altenkirchen die Tür zugezogen? Kein Problem: Unsere Techniker öffnen Ihr Schloss spurlos und professionell und auch in den abgelegensten Ortsteilen."
             },
             {
                 icon: "shield-alert",
@@ -500,7 +500,7 @@ export const ring2Locations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Im Herzen des <strong>Gladenbacher Berglands</strong>, auf Höhen zwischen 260 und 442 Metern, erstreckt sich die Gemeinde <strong>Hohenahr</strong> mit ihren rund 4.900 Einwohnern über eine waldreiche Landschaft, die zu 42 Prozent aus Mischwald besteht. Sechs eigenständige Ortsteile – <strong>Erda, Hohensolms, Altenkirchen, Mudersbach, Groß-Altenstädten und Ahrdt</strong> – bilden ein weitläufiges Gemeindegebiet im <strong>Naturpark Lahn-Dill-Bergland</strong>. Die Abgeschiedenheit und Naturverbundenheit dieser Gemeinde macht sie zum idealen Wohnort für Ruhesuchende – doch wenn der Schlüssel verloren geht oder die Tür ins Schloss fällt, braucht man einen <strong>Schlüsseldienst Hohenahr</strong>, der schnell und zuverlässig kommt.</p>
+<p>Im Herzen des <strong>Gladenbacher Berglands</strong>, auf Höhen zwischen 260 und 442 Metern, erstreckt sich die Gemeinde <strong>Hohenahr</strong> mit ihren rund 4.900 Einwohnern über eine waldreiche Landschaft, die zu 42 Prozent aus Mischwald besteht. Sechs eigenständige Ortsteile und <strong>Erda, Hohensolms, Altenkirchen, Mudersbach, Groß-Altenstädten und Ahrdt</strong> und bilden ein weitläufiges Gemeindegebiet im <strong>Naturpark Lahn-Dill-Bergland</strong>. Die Abgeschiedenheit und Naturverbundenheit dieser Gemeinde macht sie zum idealen Wohnort für Ruhesuchende und doch wenn der Schlüssel verloren geht oder die Tür ins Schloss fällt, braucht man einen <strong>Schlüsseldienst Hohenahr</strong>, der schnell und zuverlässig kommt.</p>
 
 <h3>8 bis 12 Minuten trotz Bergland</h3>
 <p>Trotz der hügeligen Topografie erreichen unsere Monteure über die <strong>L3053</strong> alle Hohenahrer Ortsteile in verlässlichen <strong>8 bis 12 Minuten</strong>. Unsere Disponenten kennen die Strecke durch das Bergland so gut, dass wir auch bei Schneeglätte oder Nebel zuverlässig vor Ihrer Tür stehen. <strong>Erda</strong>, der Verwaltungssitz und größte Ortsteil mit rund 2.050 Einwohnern, ist besonders schnell erreichbar.</p>
@@ -509,22 +509,22 @@ export const ring2Locations: LocationData[] = [
 <p>Geschichte ist in Hohenahr allgegenwärtig. Die <strong>Burg Hohensolms</strong> (Neu-Hohensolms), eine um 1350 erbaute Höhenburg auf dem Ramsberg in 435 Metern Höhe, thront majestätisch über dem gleichnamigen Ortsteil. Sie ersetzte die 1349 zerstörte Burg Alt-Hohensolms und wurde im 16. Jahrhundert zu Wohnzwecken ausgebaut. Auf dem <strong>Altenberg</strong> (442,2 m), dem höchsten Punkt der Gemeinde, bietet ein Aussichtsturm spektakuläre Panoramablicke über die Wetterau, den Hochtaunus, das Gießener Becken und den Hessischen Westerwald. In <strong>Erda</strong> ist die mittelalterliche <strong>Wehrkirche</strong>, dem Heiligen Nikolaus geweiht, ein architektonisches Zeugnis der Vergangenheit. <strong>Altenkirchen</strong> war historisch ein bedeutender Gerichtsort mit „Centgericht". Für unsere Techniker bedeutet diese Vielfalt: Wir treffen auf historische Schlösser an Burgmauern ebenso wie auf moderne Sicherheitstüren in Neubauten.</p>
 
 <h3>Aartalsee & Naturparadies</h3>
-<p>Der <strong>Aartalsee</strong>, der direkt an <strong>Mudersbach</strong> grenzt, ist eines der beliebtesten Naherholungsgebiete der Region – ideal zum Wandern, Radfahren und Verweilen. Die <strong>Zweiburgentour</strong> ab Hohensolms führt Wanderer durch die malerische Landschaft. Der gesamte Naturpark Lahn-Dill-Bergland mit seinen markierten Wanderwegen, der Minigolfanlage, dem Freischwimmbad und sogar einem <strong>Ski- und Rodellift am Schlossberg</strong> macht Hohenahr zum Ganzjahres-Freizeitziel.</p>
+<p>Der <strong>Aartalsee</strong>, der direkt an <strong>Mudersbach</strong> grenzt, ist eines der beliebtesten Naherholungsgebiete der Region und ideal zum Wandern, Radfahren und Verweilen. Die <strong>Zweiburgentour</strong> ab Hohensolms führt Wanderer durch die malerische Landschaft. Der gesamte Naturpark Lahn-Dill-Bergland mit seinen markierten Wanderwegen, der Minigolfanlage, dem Freischwimmbad und sogar einem <strong>Ski- und Rodellift am Schlossberg</strong> macht Hohenahr zum Ganzjahres-Freizeitziel.</p>
 
-<h3>6 Ortsteile – vom Verwaltungssitz bis zum 238-Einwohner-Dorf</h3>
+<h3>6 Ortsteile und vom Verwaltungssitz bis zum 238-Einwohner-Dorf</h3>
 <p>Die Bandbreite der Ortsteile ist bemerkenswert: <strong>Erda</strong> mit ca. 2.050 und <strong>Altenkirchen</strong> mit ca. 775 Einwohnern sind die größten Zentren. <strong>Hohensolms</strong> (760 Einwohner) besticht durch seine Burganlage. <strong>Groß-Altenstädten</strong> (ca. 555), <strong>Mudersbach</strong> (ca. 515) und das winzige <strong>Ahrdt</strong> (ca. 240 Einwohner) vervollständigen das Gemeindegebiet. Für alle gilt: gleiche Anfahrtskosten, gleiche Qualität, gleiche Zuverlässigkeit.</p>
 
 <h3>24/7 Notdienst an 365 Tagen</h3>
-<p>Gerade in einer so ländlichen Gemeinde ist die Erreichbarkeit eines zuverlässigen Notdienstes Gold wert. Unser <strong>Schlüsselnotdienst Hohenahr</strong> steht Ihnen rund um die Uhr zur Verfügung – auch nachts um 2 Uhr im verschneiten Ahrdt, am Sonntagmorgen in Mudersbach oder an einem Feiertag in Erda.</p>
+<p>Gerade in einer so ländlichen Gemeinde ist die Erreichbarkeit eines zuverlässigen Notdienstes Gold wert. Unser <strong>Schlüsselnotdienst Hohenahr</strong> steht Ihnen rund um die Uhr zur Verfügung und auch nachts um 2 Uhr im verschneiten Ahrdt, am Sonntagmorgen in Mudersbach oder an einem Feiertag in Erda.</p>
 
 <h3>Ehrliche Preise für ehrliche Bergland-Nachbarn</h3>
-<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Hohenahr kostet <strong>15 Euro</strong> – pauschal für alle sechs Ortsteile. Sie erfahren den Gesamtpreis am Telefon, bevor unser Monteur losfährt. In einer Gemeinschaft, die auf Vertrauen und Nachbarschaftshilfe setzt, sind wir der Schlüsseldienst, der dieses Vertrauen verdient.</p>
+<p>Für eine einfache zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Hohenahr kostet <strong>15 Euro</strong> und pauschal für alle sechs Ortsteile. Sie erfahren den Gesamtpreis am Telefon, bevor unser Monteur losfährt. In einer Gemeinschaft, die auf Vertrauen und Nachbarschaftshilfe setzt, sind wir der Schlüsseldienst, der dieses Vertrauen verdient.</p>
 `,
 
         localTestimonials: [
             {
                 name: "Wolfgang K.",
-                quote: "In Erda abends die Tür zugezogen. Der Monteur war nach 9 Minuten da und hatte die Tür blitzschnell offen – kein einziger Kratzer. 114 Euro für alles, wie am Telefon gesagt. Super Service hier oben im Bergland!",
+                quote: "In Erda abends die Tür zugezogen. Der Monteur war nach 9 Minuten da und hatte die Tür blitzschnell offen und kein einziger Kratzer. 114 Euro für alles, wie am Telefon gesagt. Super Service hier oben im Bergland!",
                 rating: 5
             },
             {
@@ -540,7 +540,7 @@ export const ring2Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Schlüsseldienst für die Berggemeinde Hohenahr: Von Erda über Hohensolms bis Mudersbach – schnelle Hilfe, faire Preise, 24/7 Notdienst. Vertrauen Sie dem Meisterbetrieb Ihrer Region.",
+            heroIntro: "Schlüsseldienst für die Berggemeinde Hohenahr: Von Erda über Hohensolms bis Mudersbach und schnelle Hilfe, faire Preise, 24/7 Notdienst. Vertrauen Sie dem Meisterbetrieb Ihrer Region.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -549,11 +549,11 @@ export const ring2Locations: LocationData[] = [
         faqs: [
             {
                 question: "Kommen Sie auch nach Ahrdt, dem kleinsten Ortsteil von Hohenahr?",
-                answer: "Selbstverständlich. Die 15 Euro Anfahrt gelten pauschal für alle sechs Hohenahrer Ortsteile – von Erda über Hohensolms bis ins kleine Ahrdt. Keine Bergzuschläge, keine versteckten Kosten."
+                answer: "Selbstverständlich. Die 15 Euro Anfahrt gelten pauschal für alle sechs Hohenahrer Ortsteile und von Erda über Hohensolms bis ins kleine Ahrdt. Keine Bergzuschläge, keine versteckten Kosten."
             },
             {
                 question: "Können Sie auch historische Schlösser an älteren Gebäuden in Hohensolms öffnen?",
-                answer: "Ja, unsere Techniker sind im Umgang mit historischen Schlössern und Beschlägen bestens geschult. Ob antikes Kastenschloss oder moderner Profilzylinder – wir behandeln jedes Schloss mit maximaler Sorgfalt."
+                answer: "Ja, unsere Techniker sind im Umgang mit historischen Schlössern und Beschlägen bestens geschult. Ob antikes Kastenschloss oder moderner Profilzylinder und wir behandeln jedes Schloss mit maximaler Sorgfalt."
             },
             {
                 question: "Schaffen Sie die Anfahrt auch bei Schnee und Eis im Winter?",

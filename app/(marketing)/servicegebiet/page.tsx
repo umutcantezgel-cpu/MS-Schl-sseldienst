@@ -44,7 +44,7 @@ export default function ServicegebietPage() {
        })
      }}
    />
-   {/* Hero Section — Premium Dark */}
+   {/* Hero Section , Premium Dark */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
@@ -72,7 +72,7 @@ export default function ServicegebietPage() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--value-primary)]"></span>
             </span>
-            15–30 Min. Anfahrt garantiert
+            15-30 Min. Anfahrt garantiert
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -157,7 +157,7 @@ export default function ServicegebietPage() {
           </div>
           <div>
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-4">
-            Kalkulierbare Ankunft: 15–30 Minuten
+            Kalkulierbare Ankunft: 15-30 Minuten
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-6">
             In Notsituationen zählt jede Minute. Dank unserer strategischen Positionierung in Wetzlar sind wir in der Lage, jeden Punkt in unserem Kern-Einsatzgebiet innerhalb von <strong className="text-[color:var(--value-primary)] font-bold">15 bis 30 Minuten</strong> zu erreichen.
@@ -178,7 +178,7 @@ export default function ServicegebietPage() {
     </StaggerReveal>
    </section>
 
-    {/* Lokale Informationen — SEO Outbound Links */}
+    {/* Lokale Informationen , SEO Outbound Links */}
     <section className="px-[var(--section-px)] py-16 md:py-20 bg-[var(--surface-primary)] border-t border-[var(--border-subtle)]">
      <div className="mx-auto max-w-4xl">
        <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-4">

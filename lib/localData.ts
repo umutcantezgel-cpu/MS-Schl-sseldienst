@@ -51,7 +51,7 @@ export const cities: CityData[] = [
         faqs: [
             {
                 question: "Wie schnell sind Sie bei mir in Wetzlar?",
-                answer: "Als lokaler Schlüsseldienst in Wetzlar sind wir in der Regel innerhalb von 5 bis 10 Minuten bei Ihnen vor Ort – unabhängig davon, ob Sie in der Altstadt, Niedergirmes oder Dutenhofen wohnen.",
+                answer: "Als lokaler Schlüsseldienst in Wetzlar sind wir in der Regel innerhalb von 5 bis 10 Minuten bei Ihnen vor Ort und unabhängig davon, ob Sie in der Altstadt, Niedergirmes oder Dutenhofen wohnen.",
             },
             {
                 question: "Gibt es versteckte Anfahrtskosten in Wetzlar?",
@@ -84,7 +84,7 @@ export const cities: CityData[] = [
             },
             {
                 question: "Was kostet eine Türöffnung in Gießen?",
-                answer: "Wir bieten für Gießen transparente Festpreise an. Die einfache Türöffnung inklusive Anfahrt kostet Sie ab 99 Euro – ohne versteckte Extras.",
+                answer: "Wir bieten für Gießen transparente Festpreise an. Die einfache Türöffnung inklusive Anfahrt kostet Sie ab 99 Euro und ohne versteckte Extras.",
             },
             {
                 question: "Helfen Sie auch bei zugefallenen WG-Zimmer-Türen?",

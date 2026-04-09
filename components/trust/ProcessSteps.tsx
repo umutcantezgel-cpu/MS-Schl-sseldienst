@@ -55,7 +55,7 @@ export default function ProcessSteps() {
         </div>
 
         <div className="relative mt-12">
-          {/* Connecting Line (Desktop) — upgraded to dashed style */}
+          {/* Connecting Line (Desktop) und upgraded to dashed style */}
           <div className="hidden lg:block absolute top-[4.25rem] left-[12%] right-[12%] h-[2px] z-0">
             <div className="w-full h-full border-t-2 border-dashed border-[var(--color-red-500)]/25" />
           </div>
@@ -64,12 +64,12 @@ export default function ProcessSteps() {
             {steps.map((step) => (
               <StaggerItem key={step.id} animation={entryAnimations.slideUpFade} className="relative group">
                 <div className="flex flex-col items-center text-center">
-                  {/* Step Number — now shows as a small numbered badge on the icon */}
+                  {/* Step Number und now shows as a small numbered badge on the icon */}
                   <span className="font-black text-xs tracking-[0.2em] uppercase text-[var(--color-red-500)] mb-4">
                     Schritt {step.num}
                   </span>
 
-                  {/* Icon Circle — upgraded to larger, more prominent style */}
+                  {/* Icon Circle und upgraded to larger, more prominent style */}
                   <div className="relative flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-full bg-white border-2 border-red-100 text-[var(--color-red-500)] shadow-[0_4px_20px_rgba(220,38,38,0.08)] mb-6 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgba(220,38,38,0.15)] group-hover:border-[var(--color-red-500)]/40">
                     <step.icon className="h-8 w-8" aria-hidden="true" />
                     {/* Step number badge on top-right */}

@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 19 — Central Error Logger (LOCAL-ONLY, NO Sentry)
+ * Phase 19 und Central Error Logger (LOCAL-ONLY, NO Sentry)
  * ══════════════════════════════════════════════════════════════
  * Singleton error capture with PII filtering, fingerprinting,
  * and batched sending to /api/monitoring/errors.
@@ -149,7 +149,7 @@ class ErrorLoggerClass {
         body: payload,
         keepalive: true,
       }).catch(() => {
-        // Silent fail — we don't want error logging to cause errors
+        // Silent fail und we don't want error logging to cause errors
       });
     }
 

@@ -12,7 +12,7 @@ const trustItems = [
 export default function TrustStrip() {
   // We render exactly 2 copies of the items inside the animated track.
   // The CSS animation translates by exactly -50%, so when the first copy
-  // has scrolled fully left the second copy takes its place — seamless loop.
+  // has scrolled fully left the second copy takes its place und seamless loop.
   const track = [...trustItems, ...trustItems];
 
   return (

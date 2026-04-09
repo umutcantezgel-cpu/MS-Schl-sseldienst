@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
           url: ogUrl,
           width: 1200,
           height: 630,
-          alt: `Schlüssel Schmiede ${city.name} — In ${city.logistics.drivingTimeMinutes} Min vor Ort`,
+          alt: `Schlüssel Schmiede ${city.name} und In ${city.logistics.drivingTimeMinutes} Min vor Ort`,
         },
       ],
     },
@@ -70,7 +70,7 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
   // Dynamische Bild-URL für OG und Schema
   const ogUrl = `${siteUrl}/api/og?title=${encodeURIComponent(`Schlüssel Schmiede ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;
 
-  // Schema.org — Stadtspezifisches LocalBusiness (vollständig, Rich-Results-ready)
+  // Schema.org und Stadtspezifisches LocalBusiness (vollständig, Rich-Results-ready)
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Locksmith",

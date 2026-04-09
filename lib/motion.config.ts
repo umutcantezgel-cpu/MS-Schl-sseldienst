@@ -2,7 +2,7 @@ import { Transition, Variants } from "framer-motion";
 
 /**
  * ═══════════════════════════════════════════════════════════════
- * MOTION CONFIG — Single Source of Truth (Phase 4)
+ * MOTION CONFIG und Single Source of Truth (Phase 4)
  * ═══════════════════════════════════════════════════════════════
  *
  * Dieses Modul definiert ALLE Animations-Primitiven der Website:
@@ -19,7 +19,7 @@ import { Transition, Variants } from "framer-motion";
 // 1. SPRING-PROFILE (Framer Motion)
 // ═══════════════════════════════════════════════
 
-/** Ruhig, kontrolliert — Inhaltsenthüllungen, Sektions-Einblendungen, Navigation */
+/** Ruhig, kontrolliert und Inhaltsenthüllungen, Sektions-Einblendungen, Navigation */
 export const springStandard: Transition = {
     type: "spring",
     stiffness: 170,
@@ -27,7 +27,7 @@ export const springStandard: Transition = {
     mass: 1.0,
 };
 
-/** Schnell, knackig — Button-Hover, Card-Press, UI-Feedback */
+/** Schnell, knackig und Button-Hover, Card-Press, UI-Feedback */
 export const springSnappy: Transition = {
     type: "spring",
     stiffness: 400,
@@ -35,7 +35,7 @@ export const springSnappy: Transition = {
     mass: 0.8,
 };
 
-/** Schnappend, lebendig — CTA-Buttons, Aufmerksamkeitselemente, Benachrichtigungen */
+/** Schnappend, lebendig und CTA-Buttons, Aufmerksamkeitselemente, Benachrichtigungen */
 export const springEnergetic: Transition = {
     type: "spring",
     stiffness: 300,
@@ -43,7 +43,7 @@ export const springEnergetic: Transition = {
     mass: 0.7,
 };
 
-/** Langsam, elegant — Testimonials, Hintergrund-Elemente, Trust-Sektionen */
+/** Langsam, elegant und Testimonials, Hintergrund-Elemente, Trust-Sektionen */
 export const springGentle: Transition = {
     type: "spring",
     stiffness: 90,
@@ -51,7 +51,7 @@ export const springGentle: Transition = {
     mass: 1.1,
 };
 
-/** Deutliches Überschwingen — Erfolgs-Animationen, Badge-Erscheinungen, spielerische Momente */
+/** Deutliches Überschwingen und Erfolgs-Animationen, Badge-Erscheinungen, spielerische Momente */
 export const springBouncy: Transition = {
     type: "spring",
     stiffness: 300,
@@ -65,15 +65,15 @@ export const springBouncy: Transition = {
 // Spiegeln die CSS Custom Properties in globals.css
 
 export const cssEasings = {
-    /** Elemente, die IN den Viewport kommen — Ball landet auf Kissen */
+    /** Elemente, die IN den Viewport kommen und Ball landet auf Kissen */
     out: "cubic-bezier(0.0, 0.0, 0.2, 1)",
-    /** Elemente, die den Viewport VERLASSEN — Stein der fällt */
+    /** Elemente, die den Viewport VERLASSEN und Stein der fällt */
     in: "cubic-bezier(0.4, 0.0, 1, 1)",
-    /** Elemente, die ihre Position wechseln — sanfter Start und Ende */
+    /** Elemente, die ihre Position wechseln und sanfter Start und Ende */
     inOut: "cubic-bezier(0.4, 0.0, 0.2, 1)",
-    /** Leichtes Überschwingen — Hover-Lifts, Button-Presses */
+    /** Leichtes Überschwingen und Hover-Lifts, Button-Presses */
     spring: "cubic-bezier(0.34, 1.56, 0.64, 1)",
-    /** Stärkeres Überschwingen — spielerische Mikro-Interaktionen */
+    /** Stärkeres Überschwingen und spielerische Mikro-Interaktionen */
     bounce: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
 } as const;
 
@@ -83,17 +83,17 @@ export const cssEasings = {
 // REGEL: Keine Animation darf > 1000ms dauern.
 
 export const durations = {
-    /** 100ms — Checkbox-Toggle, Button-Active, Input-Toggle */
+    /** 100ms und Checkbox-Toggle, Button-Active, Input-Toggle */
     instant: 0.1,
-    /** 150ms — Hover-States, Tooltip-Appear, Input-Focus */
+    /** 150ms und Hover-States, Tooltip-Appear, Input-Focus */
     fast: 0.15,
-    /** 250ms — Standard: Card-Hover, Dropdown, Tab-Switch */
+    /** 250ms und Standard: Card-Hover, Dropdown, Tab-Switch */
     normal: 0.25,
-    /** 400ms — Modal-Open, Seiten-Transition, Akkordeon */
+    /** 400ms und Modal-Open, Seiten-Transition, Akkordeon */
     slow: 0.4,
-    /** 600ms — Hero-Entrance, Sektion-Reveal */
+    /** 600ms und Hero-Entrance, Sektion-Reveal */
     dramatic: 0.6,
-    /** 1000ms — Erster Seitenaufruf, einmalige epische Momente */
+    /** 1000ms und Erster Seitenaufruf, einmalige epische Momente */
     cinematic: 1.0,
 } as const;
 
@@ -103,11 +103,11 @@ export const durations = {
 // Maximal 8 Elemente in einer Stagger-Sequenz.
 
 export const staggers = {
-    /** 50ms pro Element — schnelle Listen */
+    /** 50ms pro Element und schnelle Listen */
     fast: 0.05,
-    /** 80ms pro Element — Standard */
+    /** 80ms pro Element und Standard */
     normal: 0.08,
-    /** 120ms pro Element — dramatische Reveals */
+    /** 120ms pro Element und dramatische Reveals */
     slow: 0.12,
     /** Maximale Anzahl gestaggerter Elemente */
     maxItems: 8,

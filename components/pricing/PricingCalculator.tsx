@@ -15,9 +15,9 @@ const SERVICES = [
 ] as const;
 
 const TIME_SLOTS = [
-  { id:"day", label:"Tagsüber", desc:"Mo–Sa 10:00 – 18:00", icon: Clock },
-  { id:"evening", label:"Abends", desc:"18:00 – 22:00", icon: Clock },
-  { id:"night", label:"Nacht / Wochenende", desc:"22:00 – 08:00 oder Sa/So", icon: CalendarDays },
+  { id:"day", label:"Tagsüber", desc:"Mo-Sa 10:00 - 18:00", icon: Clock },
+  { id:"evening", label:"Abends", desc:"18:00 - 22:00", icon: Clock },
+  { id:"night", label:"Nacht / Wochenende", desc:"22:00 - 08:00 oder Sa/So", icon: CalendarDays },
 ] as const;
 
 export default function PricingCalculator() {

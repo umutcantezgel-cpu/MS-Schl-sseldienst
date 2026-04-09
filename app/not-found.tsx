@@ -30,7 +30,7 @@ export default async function NotFound() {
     Seite nicht gefunden
    </h1>
    <p className="mt-4 text-lg text-[color:var(--text-secondary)] max-w-md">
-    Diese Seite existiert nicht — aber wir können Ihnen trotzdem helfen.
+    Diese Seite existiert nicht und aber wir können Ihnen trotzdem helfen.
    </p>
 
    {/* Popular Pages */}

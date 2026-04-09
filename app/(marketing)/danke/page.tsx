@@ -91,7 +91,7 @@ export default function DankePage() {
                 {
                   step: "3",
                   title: "Transparentes Angebot",
-                  text: "Sie erhalten ein unverbindliches Festpreis-Angebot — keine versteckten Kosten.",
+                  text: "Sie erhalten ein unverbindliches Festpreis-Angebot und keine versteckten Kosten.",
                 },
               ].map((item) => (
                 <div

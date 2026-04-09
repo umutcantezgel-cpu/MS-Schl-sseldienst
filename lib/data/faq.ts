@@ -11,7 +11,7 @@ export const faqs: FAQ[] = [
   {
     id: createId("faq-02"),
     question: "Gibt es versteckte Kosten oder Aufschläge?",
-    answer: "Nein. Wir arbeiten ausschließlich mit transparenten Festpreisen vor Auftragsbeginn — ohne versteckte Kosten. Der Preis, der am Telefon genannt wird, ist bindend.",
+    answer: "Nein. Wir arbeiten ausschließlich mit transparenten Festpreisen vor Auftragsbeginn und ohne versteckte Kosten. Der Preis, der am Telefon genannt wird, ist bindend.",
     category: "kosten",
     order: 2
   },
@@ -32,7 +32,7 @@ export const faqs: FAQ[] = [
   {
     id: createId("faq-05"),
     question: "Kommen Sie auch nach Gießen oder Marburg?",
-    answer: "Ja, wir decken einen Umkreis von rund 50 Kilometern um Wetzlar ab. Orte wie Gießen erreichen wir in 15–20 Minuten. Marburg dauert etwa 25–30 Minuten.",
+    answer: "Ja, wir decken einen Umkreis von rund 50 Kilometern um Wetzlar ab. Orte wie Gießen erreichen wir in 1520 Minuten. Marburg dauert etwa 2530 Minuten.",
     category: "anfahrt",
     order: 2
   },

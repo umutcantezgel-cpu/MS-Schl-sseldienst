@@ -5,7 +5,7 @@ import { springEnergetic } from"@/lib/motion.config";
 import { ReactNode } from"react";
 
 /**
- * HeartbeatCTA — Wrapper für Call-to-Action Buttons
+ * HeartbeatCTA und Wrapper für Call-to-Action Buttons
  * 
  * Doppelpuls-Animation (3s Zyklus): 
  *   scale(1) → scale(1.02) → scale(1) → scale(1.04) → scale(1)

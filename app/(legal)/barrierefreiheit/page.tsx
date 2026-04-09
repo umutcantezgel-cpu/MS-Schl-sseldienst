@@ -51,7 +51,7 @@ export default function BarrierefreiheitPage() {
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <p className="text-lg text-[var(--text-on-dark-secondary)] max-w-2xl">
-                Unsere Website soll für alle Menschen zugänglich sein — unabhängig von
+                Unsere Website soll für alle Menschen zugänglich sein , unabhängig von
                 visuellen, motorischen, auditiven oder kognitiven Fähigkeiten.
               </p>
             </StaggerItem>
@@ -91,10 +91,10 @@ export default function BarrierefreiheitPage() {
               </h3>
               <ul className="mt-3 space-y-2 text-[color:var(--text-secondary)]">
                 <li>Kern-Textkontraste von mindestens 7:1 (WCAG AAA)</li>
-                <li>Doppelter Fokusring — auf jedem Hintergrund sichtbar</li>
+                <li>Doppelter Fokusring , auf jedem Hintergrund sichtbar</li>
                 <li>Unterstützung für Dark Mode, hohen Kontrast und reduzierte Transparenz</li>
                 <li>Kompatibilität mit dem Windows-Hochkontrastmodus</li>
-                <li>Informationen werden nie nur durch Farbe vermittelt — immer zusätzlich durch Icon und Text</li>
+                <li>Informationen werden nie nur durch Farbe vermittelt , immer zusätzlich durch Icon und Text</li>
                 <li>Schriftgrößen-Anpassung über ein Widget (Normal, Groß, Sehr groß)</li>
                 <li>Zoom bis 400% ohne Informationsverlust</li>
               </ul>
@@ -115,7 +115,7 @@ export default function BarrierefreiheitPage() {
               </h3>
               <ul className="mt-3 space-y-2 text-[color:var(--text-secondary)]">
                 <li>Semantisches HTML mit korrekter Landmark-Struktur</li>
-                <li>Lückenlose Überschriften-Hierarchie (h1–h4)</li>
+                <li>Lückenlose Überschriften-Hierarchie (h1-h4)</li>
                 <li>Alle Bilder haben aussagekräftige Alternativtexte</li>
                 <li>ARIA-Labels auf allen interaktiven Elementen</li>
                 <li>Dekorative Elemente sind für Screenreader ausgeblendet</li>

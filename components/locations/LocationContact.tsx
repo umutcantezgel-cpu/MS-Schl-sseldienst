@@ -4,11 +4,11 @@ import RevealSection from "@/components/motion/RevealSection";
 import { pickVariant } from "@/lib/textRotation";
 
 const descVariants = [
-    (name: string, time: string) => `Unser Techniker ist in ca. ${time} Minuten bei Ihnen in ${name}. Der verbindliche Festpreis wird direkt am Telefon genannt — garantiert keine Überraschungen oder versteckten Kosten.`,
-    (name: string, time: string) => `Wir sind durchschnittlich in ${time} Minuten in ${name} vor Ort. Noch am Telefon nennen wir Ihnen den verbindlichen Festpreis — ohne Nachberechnung, ohne Kleingedrucktes.`,
+    (name: string, time: string) => `Unser Techniker ist in ca. ${time} Minuten bei Ihnen in ${name}. Der verbindliche Festpreis wird direkt am Telefon genannt , garantiert keine Überraschungen oder versteckten Kosten.`,
+    (name: string, time: string) => `Wir sind durchschnittlich in ${time} Minuten in ${name} vor Ort. Noch am Telefon nennen wir Ihnen den verbindlichen Festpreis , ohne Nachberechnung, ohne Kleingedrucktes.`,
     (name: string, time: string) => `Ihr Schlüsseldienst für ${name}: In nur ${time} Minuten bei Ihnen. Festpreisgarantie ab dem ersten Telefonat, damit Sie genau wissen, was der Einsatz kostet.`,
-    (name: string, time: string) => `Von Wetzlar nach ${name} brauchen wir ca. ${time} Minuten. Den verbindlichen Einsatzpreis erfahren Sie sofort — transparent und fair, ohne versteckte Zuschläge.`,
-    (name: string, time: string) => `Schlüsseldienst-Notfall in ${name}? Unser Team ist in rund ${time} Minuten da. Den Komplettpreis erhalten Sie vorab am Telefon — mit Festpreisgarantie.`,
+    (name: string, time: string) => `Von Wetzlar nach ${name} brauchen wir ca. ${time} Minuten. Den verbindlichen Einsatzpreis erfahren Sie sofort , transparent und fair, ohne versteckte Zuschläge.`,
+    (name: string, time: string) => `Schlüsseldienst-Notfall in ${name}? Unser Team ist in rund ${time} Minuten da. Den Komplettpreis erhalten Sie vorab am Telefon , mit Festpreisgarantie.`,
 ];
 
 export default function LocationContact({ city }: { city: LocationData }) {

@@ -18,7 +18,7 @@ export default function InteractiveMapSection() {
           pill="UNSER EINSATZGEBIET"
           headingId="einsatzgebiet-heading"
           title={<>Unser <span className="text-[var(--color-red-500)]">Einsatzgebiet</span></>}
-          description="Ob im Laden oder als Notdienst — wir sind für die gesamte Region da."
+          description="Ob im Laden oder als Notdienst und wir sind für die gesamte Region da."
         />
 
         {/* Map */}

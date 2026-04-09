@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 
 /**
- * Phase 19 — Dev-Only Monitoring Dashboard
+ * Phase 19 und Dev-Only Monitoring Dashboard
  * Unified view of errors, health, and system info.
  * Protected: redirects to 404 in production.
  */
@@ -101,7 +101,7 @@ export default function DevDashboardPage() {
               Monitoring Dashboard
             </h1>
             <p className="text-zinc-500 text-sm mt-1">
-              Phase 19 — Local-Only (kein Sentry)
+              Phase 19 und Local-Only (kein Sentry)
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -238,12 +238,12 @@ export default function DevDashboardPage() {
                 <dl className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   {[
                     ["Environment", health?.environment || "unknown"],
-                    ["Version", health?.version || "—"],
-                    ["Commit SHA", health?.commit || "—"],
+                    ["Version", health?.version || ""],
+                    ["Commit SHA", health?.commit || ""],
                     ["Monitoring", "Local-Only (kein Sentry)"],
                     ["Error Buffer", `${errorTotal} Einträge`],
                     ["Dashboard Refresh", "60 Sekunden"],
-                    ["Phase", "19 — Monitoring & Observability"],
+                    ["Phase", "19 und Monitoring & Observability"],
                     ["Docs", "/docs/MONITORING-GUIDE.md"],
                   ].map(([label, value]) => (
                     <div key={label} className="flex justify-between py-2 border-b border-zinc-800">

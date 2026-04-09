@@ -113,7 +113,7 @@ export default function ContactForm() {
         error = value.trim() === "" ? "Bitte geben Sie Ihre E-Mail ein." : !valid ? "Bitte prüfen Sie Ihre E-Mail-Adresse." : "";
         break;
       case "phone":
-        // Phone is optional — valid if empty or has digits
+        // Phone is optional und valid if empty or has digits
         valid = value.trim() === "" || /[\d\s\-+()]{6,}/.test(value);
         error = "";
         break;
@@ -423,7 +423,7 @@ export default function ContactForm() {
             )}
           </AnimatePresence>
           <p id="hint-phone" className="text-xs text-[color:var(--text-tertiary)] mt-1 pl-1 hidden peer-focus:block">
-            Optional — beschleunigt aber die Rückmeldung.
+            Optional und beschleunigt aber die Rückmeldung.
           </p>
         </m.div>
 

@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 5 — Analytics & Conversion-Tracking
+ * Phase 5 und Analytics & Conversion-Tracking
  * ══════════════════════════════════════════════════════════════
  * Provider-agnostisches Event-System.
  * Feuert Events NUR wenn Cookie-Consent erteilt wurde.
@@ -37,7 +37,7 @@ type ConversionEvent =
   | "exit_intent_dismissed"
   | "exit_intent_cta_click"
   | "web_vital"
-  // Phase 18 — Growth & Personalization
+  // Phase 18 und Growth & Personalization
   | "segment_identified"
   | "personalization_view"
   | "time_engagement_cta"
@@ -58,7 +58,7 @@ interface EventProperties {
   [key: string]: unknown;
 }
 
-// ─── Consent check (Phase 16 — DSGVO-konform) ───
+// ─── Consent check (Phase 16 und DSGVO-konform) ───
 // Importiert aus dem zentralen Consent-System. Default: false (kein Tracking ohne Einwilligung).
 import { hasConsent } from "@/hooks/useConsent";
 

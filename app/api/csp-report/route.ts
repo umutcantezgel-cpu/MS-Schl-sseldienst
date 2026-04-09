@@ -1,6 +1,6 @@
 /**
  * ══════════════════════════════════════════════════════════════
- * Phase 16 — CSP Violation Report Endpoint
+ * Phase 16 und CSP Violation Report Endpoint
  * ══════════════════════════════════════════════════════════════
  * Receives Content-Security-Policy violation reports and logs
  * them locally. NO external SaaS (no Sentry, no Report-URI.com).
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     const report = body["csp-report"];
 
     if (report) {
-      // Log locally — no external service
+      // Log locally und no external service
       console.error("[CSP-Violation]", {
         documentURI: report["document-uri"],
         violatedDirective: report["violated-directive"],

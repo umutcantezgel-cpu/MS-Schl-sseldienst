@@ -96,9 +96,9 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">3. Rechtsgrundlagen der Verarbeitung</h2>
                 <p>Nachfolgend informieren wir Sie über die in der DSGVO festgeschriebenen Rechtsgrundlagen unserer Datenverarbeitungen:</p>
                 <ul>
-                    <li><strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</strong> – Sie haben explizit eingewilligt (z.B. im Cookie-Consent Code).</li>
-                    <li><strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</strong> – Anbahnung und Durchführung des Schlüsseldienst-Auftrags.</li>
-                    <li><strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</strong> – Gewährleistung der IT-Sicherheit und des reibungslosen Betriebs (Vercel Logfiles).</li>
+                    <li><strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</strong> - Sie haben explizit eingewilligt (z.B. im Cookie-Consent Code).</li>
+                    <li><strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</strong> - Anbahnung und Durchführung des Schlüsseldienst-Auftrags.</li>
+                    <li><strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</strong> - Gewährleistung der IT-Sicherheit und des reibungslosen Betriebs (Vercel Logfiles).</li>
                 </ul>
             </LegalSection>
 

@@ -4,7 +4,7 @@ import { useReportWebVitals } from "next/web-vitals";
 import { trackEvent } from "@/lib/analytics";
 
 /**
- * Phase 19 — Enhanced Web Vitals Reporter
+ * Phase 19 und Enhanced Web Vitals Reporter
  * Sends CWV to GA4 and checks performance budgets.
  * Budget violations logged via ErrorLogger as warnings.
  */
@@ -29,7 +29,7 @@ export function WebVitalsReporter() {
       rating: metric.rating,
     });
 
-    // Performance budget check (SKIP in dev — Turbopack inflates all metrics)
+    // Performance budget check (SKIP in dev und Turbopack inflates all metrics)
     if (process.env.NODE_ENV === 'development') return;
 
     const budget = BUDGETS[metric.name];
