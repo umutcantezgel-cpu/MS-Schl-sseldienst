@@ -65,9 +65,8 @@ export default function TerminBuchenPage() {
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <div className="bg-white p-2 sm:p-4 rounded-[var(--radius-24)] shadow-[var(--elevation-2)] border border-[var(--border-subtle)] h-full min-h-[600px] flex flex-col">
                  <CalendlyConsentGate>
-                   {/* Provide the actual Calendly link here */}
                    <CalendlyWidget 
-                     url={process.env.NEXT_PUBLIC_CALENDLY_URL ? `${process.env.NEXT_PUBLIC_CALENDLY_URL}?timezone=Europe/Berlin` : ""} 
+                     url="https://calendly.com/schluesseldienst-wz/sicherheitsberatung?timezone=Europe/Berlin" 
                    />
                  </CalendlyConsentGate>
               </div>
@@ -126,4 +125,3 @@ export default function TerminBuchenPage() {
   );
 }
 
-export const dynamic = "force-static";
