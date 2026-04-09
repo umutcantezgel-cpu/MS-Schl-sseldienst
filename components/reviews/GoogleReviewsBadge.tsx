@@ -4,7 +4,7 @@ import GoogleIcon from"@/components/ui/GoogleIcon";
 export default function GoogleReviewsBadge({ rating, count }: { rating: number, count: number }) {
   return (
     <a 
-      href="https://www.google.com/search?q=MS+Schl%C3%BCsseldienst+Wetzlar" 
+      href="https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar+Rezensionen" 
       target="_blank" 
       rel="noopener noreferrer"
       title="Zu den Google Bewertungen"

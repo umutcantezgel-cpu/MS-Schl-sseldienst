@@ -140,7 +140,7 @@ export default function StickyHeader() {
 
           {/* 2. DESKTOP NAVIGATION (Unified) */}
           <nav 
-            className="hidden lg:flex items-center gap-1 xl:gap-2 absolute left-[50%] -translate-x-[50%]"
+            className="hidden lg:flex items-center gap-0.5 xl:gap-1 absolute left-[50%] -translate-x-[50%]"
             onMouseLeave={() => {
               setActiveMenu(null);
               setHoveredLink(null);
@@ -154,7 +154,7 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/leistungen"
-                className={`relative z-10 flex items-center gap-1.5 px-3 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`relative z-10 flex items-center gap-1 px-2.5 py-2 font-bold text-[13px] xl:text-sm rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "leistungen" || pathname.startsWith("/leistungen")
                     ? "text-[var(--color-red-500)]"
                     : "text-gray-800 hover:text-gray-950"
@@ -234,7 +234,7 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/servicegebiet"
-                className={`relative z-10 flex items-center gap-1.5 px-3.5 py-2 font-semibold text-[15px] tracking-tight rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`relative z-10 flex items-center gap-1 px-2.5 py-2 font-semibold text-[13px] xl:text-sm tracking-tight rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "servicegebiet" || pathname === "/servicegebiet"
                     ? "text-[var(--color-red-600)]"
                     : "text-gray-700 hover:text-gray-950"
@@ -305,7 +305,7 @@ export default function StickyHeader() {
             <Link
               href="/schluessel-schmiede"
               onMouseEnter={() => { setActiveMenu(null); setHoveredLink("schmiede"); }}
-              className={`relative px-3 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
+              className={`relative px-2.5 py-2 font-bold text-[13px] xl:text-sm rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1 ${
                 pathname === "/schluessel-schmiede" ? "text-amber-600" : "text-gray-800 hover:text-gray-950"
               }`}
             >
@@ -334,7 +334,7 @@ export default function StickyHeader() {
                   key={link.href}
                   href={link.href}
                   onMouseEnter={() => { setActiveMenu(null); setHoveredLink(link.href); }}
-                  className={`relative px-3.5 py-2 font-semibold text-[15px] tracking-tight rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
+                  className={`relative px-2.5 py-2 font-semibold text-[13px] xl:text-sm tracking-tight rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1 ${
                     isActive ? "text-[var(--color-red-600)]" : "text-gray-700 hover:text-gray-950"
                   }`}
                 >
@@ -354,10 +354,11 @@ export default function StickyHeader() {
 
             <a
               href="tel:+4964418056279"
-              className="hidden sm:flex items-center justify-center gap-2.5 px-7 h-[48px] bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)] text-white text-[15px] font-bold tracking-wide rounded-full shadow-[0_4px_20px_-4px_rgba(220,38,38,0.4)] hover:shadow-[0_8px_25px_-5px_rgba(220,38,38,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 ring-1 ring-inset ring-white/20 group"
+              className="hidden sm:flex items-center justify-center gap-2 px-5 xl:px-7 h-[44px] lg:h-[48px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm xl:text-[15px] font-extrabold tracking-wide rounded-full shadow-[0_4px_20px_-4px_rgba(220,38,38,0.45)] hover:shadow-[0_8px_30px_-5px_rgba(220,38,38,0.55)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300 ring-1 ring-inset ring-white/20 group whitespace-nowrap"
+              aria-label="Jetzt anrufen: 06441 8056279"
             >
-              <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform duration-300" />
-              06441 - 8056279
+              <Phone className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300" />
+              <span>06441 - 8056279</span>
             </a>
             
             {/* Mobile Call CTA (Icon Only) */}

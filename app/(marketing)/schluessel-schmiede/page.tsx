@@ -90,7 +90,7 @@ const storeServices = [
 ];
 
 const faqItems = [
- { question:"Wo befindet sich die Schlüssel Schmiede?", answer:"Unser Ladengeschäft befindet sich in der Langgasse 70, 35578 Wetzlar, direkt im Stadtzentrum mit guter Erreichbarkeit." },
+ { question:"Wo befindet sich die Schlüssel Schmiede?", answer:"Unser Ladengeschäft befindet sich in der Langgasse 70, 35576 Wetzlar, direkt im Stadtzentrum mit guter Erreichbarkeit." },
  { question:"Welche Öffnungszeiten hat die Schlüssel Schmiede?", answer:"Mo-Sa: 10:00-18:00 Uhr. Den 24/7-Notdienst erreichen Sie jederzeit unter 06441 8056279." },
  { question:"Kann ich ohne Termin vorbeikommen?", answer:"Ja, selbstverständlich! Kommen Sie während der Öffnungszeiten einfach vorbei. Für komplexere Anliegen empfehlen wir einen kurzen Anruf vorab." },
  { question:"Werden KFZ-Schlüssel sofort im Laden angefertigt?", answer:"Ja, viele Autoschlüssel können direkt vor Ort gefräst und elektronisch codiert werden. Je nach Fahrzeugtyp kann eine Bestellung nötig sein." },
@@ -170,30 +170,30 @@ export default function SchluesselSchmiedePage() {
         </StaggerItem>
 
         <StaggerItem animation={entryAnimations.slideUpFade} className="w-full mt-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
-            <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-4xl font-black text-white leading-none tracking-tight">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 p-4 md:p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
+            <div className="flex flex-col items-center p-3 md:p-4">
+              <span className="text-2xl sm:text-[28px] md:text-4xl font-black text-white leading-tight tracking-tight whitespace-nowrap">
                 <AnimatedCounter end={2005} />
               </span>
-              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Gründungsjahr</span>
+              <span className="text-[10px] sm:text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-2">Gründungsjahr</span>
             </div>
-            <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-4xl font-black text-white leading-none tracking-tight">
+            <div className="flex flex-col items-center p-3 md:p-4">
+              <span className="text-2xl sm:text-[28px] md:text-4xl font-black text-white leading-tight tracking-tight whitespace-nowrap">
                 <AnimatedCounter end={18500} prefix="+" />
               </span>
-              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Gefräste Schlüssel</span>
+              <span className="text-[10px] sm:text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-2">Gefräste Schlüssel</span>
             </div>
-            <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-4xl font-black text-white leading-none tracking-tight">
+            <div className="flex flex-col items-center p-3 md:p-4">
+              <span className="text-2xl sm:text-[28px] md:text-4xl font-black text-white leading-tight tracking-tight whitespace-nowrap">
                 <AnimatedCounter end={15} suffix=" Min" />
               </span>
-              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Ø Zeit KFZ-Schlüssel</span>
+              <span className="text-[10px] sm:text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-2">Ø Zeit KFZ-Schlüssel</span>
             </div>
-            <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-4xl font-black text-[var(--color-red-400)] leading-none tracking-tight">
+            <div className="flex flex-col items-center p-3 md:p-4">
+              <span className="text-2xl sm:text-[28px] md:text-4xl font-black text-[var(--color-red-400)] leading-tight tracking-tight whitespace-nowrap">
                 <AnimatedCounter end={100} suffix="%" />
               </span>
-              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Festpreis Garantie</span>
+              <span className="text-[10px] sm:text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-2">Festpreis Garantie</span>
             </div>
           </div>
         </StaggerItem>
@@ -521,7 +521,7 @@ export default function SchluesselSchmiedePage() {
           <address className="not-italic text-lg text-[color:var(--text-secondary)] leading-relaxed space-y-1">
            <p className="font-semibold text-[color:var(--text-primary)]">Schlüssel Schmiede Wetzlar</p>
            <p>Langgasse 70</p>
-           <p>35578 Wetzlar</p>
+           <p>35576 Wetzlar</p>
           </address>
           <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-[var(--border-subtle)]">
            <a href="tel:+4964418056279" className="flex items-center gap-3 text-base text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
@@ -563,7 +563,7 @@ export default function SchluesselSchmiedePage() {
         {/* Karten-Platzhalter */}
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] border border-[var(--border-subtle)] overflow-hidden min-h-[400px] flex flex-col items-center justify-center">
          <MapPin className="h-16 w-16 text-[var(--color-red-200)] mb-4" />
-         <p className="text-base font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35578 Wetzlar</p>
+         <p className="text-base font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35576 Wetzlar</p>
          <a
           href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
           target="_blank"

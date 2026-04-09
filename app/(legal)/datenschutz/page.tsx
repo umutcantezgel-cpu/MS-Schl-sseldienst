@@ -54,7 +54,7 @@ export default function DatenschutzPage() {
                     <strong>Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
-                    35578 Wetzlar<br />
+                    35576 Wetzlar<br />
                     Deutschland<br /><br />
                     Telefon: 0178 2471037<br />
                     E-Mail: <a href="mailto:notfall-schluessel@proton.me">notfall-schluessel@proton.me</a>

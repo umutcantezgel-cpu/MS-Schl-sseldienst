@@ -125,7 +125,7 @@ export default function KontaktPage() {
           </div>
           <div>
            <h3 className="text-sm font-bold text-[color:var(--text-primary)]">Standort</h3>
-           <p className="text-sm text-[color:var(--text-secondary)]">Langgasse 70, 35578 Wetzlar</p>
+           <p className="text-sm text-[color:var(--text-secondary)]">Langgasse 70, 35576 Wetzlar</p>
           </div>
          </div>
          <div className="flex gap-4 p-4 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-subtle)] sm:col-span-2">

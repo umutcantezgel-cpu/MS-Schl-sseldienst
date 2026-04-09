@@ -248,5 +248,6 @@ export interface CompanyInfo {
     facebook: string; // Muss auf Schlüssel Schmiede verweisen!
     instagram?: string;
     linkedin?: string;
+    whatsapp?: string; // WhatsApp Nummer im Format +49XXXXXXXXXXX
   };
 }

@@ -176,7 +176,7 @@ export const FAQ_DATA: FAQItem[] = [
     // ============ LADENGESCHÄFT & SERVICE ============
     {
         question: "Wo finde ich die Schlüssel Schmiede in Wetzlar?",
-        answer: "Unser Ladengeschäft befindet sich in der Langgasse 70, 35578 Wetzlar und mitten in der Wetzlarer Innenstadt. Wir sind von Montag bis Samstag von 10:00 bis 18:00 Uhr für Sie geöffnet. Unser Schlüsseldienst-Notdienst ist darüber hinaus 24/7 erreichbar.",
+        answer: "Unser Ladengeschäft befindet sich in der Langgasse 70, 35576 Wetzlar und mitten in der Wetzlarer Innenstadt. Wir sind von Montag bis Samstag von 10:00 bis 18:00 Uhr für Sie geöffnet. Unser Schlüsseldienst-Notdienst ist darüber hinaus 24/7 erreichbar.",
         category: "leistungen",
     },
     {

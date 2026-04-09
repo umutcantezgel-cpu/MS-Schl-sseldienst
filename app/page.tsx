@@ -59,7 +59,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Trust Signals & Reviews */}
-      <div className="relative z-20 w-full px-4 sm:px-6 lg:px-8 -mt-[38px] sm:-mt-[42px] lg:-mt-[36px] flex flex-col items-center justify-center gap-3 sm:gap-4 pointer-events-none mb-8 sm:mb-10 lg:mb-14">
+      <div className="relative z-20 w-full px-4 sm:px-6 lg:px-8 -mt-[38px] sm:-mt-[42px] lg:-mt-[44px] flex flex-col items-center justify-center gap-3 sm:gap-4 pointer-events-none mb-8 sm:mb-10 lg:mb-14">
         <div className="w-full max-w-5xl pointer-events-auto">
           <TrustStrip />
         </div>

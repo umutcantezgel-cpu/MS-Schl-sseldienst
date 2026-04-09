@@ -48,7 +48,7 @@ export default function ImpressumPage() {
                     <strong>Schlüsseldienst Wetzlar</strong><br />
                     Inhaberin: Mina Saad<br />
                     Langgasse 70<br />
-                    35578 Wetzlar<br />
+                    35576 Wetzlar<br />
                     Deutschland
                 </div>
             </LegalSection>
@@ -93,7 +93,7 @@ export default function ImpressumPage() {
                 <p>Angaben zur beruflichen Tätigkeit gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
                 <ul>
                     <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
-                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35578 Wetzlar</li>
+                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35576 Wetzlar</li>
                     <li><strong>Geltende berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
                 </ul>
             </LegalSection>
@@ -104,7 +104,7 @@ export default function ImpressumPage() {
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
                     Langgasse 70<br />
-                    35578 Wetzlar
+                    35576 Wetzlar
                 </div>
             </LegalSection>
 

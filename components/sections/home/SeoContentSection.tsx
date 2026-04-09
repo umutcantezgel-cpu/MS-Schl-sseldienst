@@ -5,102 +5,102 @@ export default function SeoContentSection() {
 
         {/* ── Hauptüberschrift des Content-Blocks ── */}
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[color:var(--text-primary)]">
-          Schlüssel Schmiede Wetzlar und Ihr 24 Stunden Notdienst für Schlüssel, Sicherheit & Schlüsseldienst
+          Schlüsselnotdienst & Sicherheitstechnik Wetzlar: Ihr zuverlässiger Partner in der Region
         </h2>
 
         {/* ── Artikel 1: Türöffnung ── */}
         <article className="space-y-4">
           <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-            Persönliche Beratung und handwerkliche Präzision unter einem Dach
+            Kompetente Soforthilfe und professionelles Handwerk zentral vereint
           </h3>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            In der Langgasse 70 in Wetzlar erwartet Sie ein 24 Stunden Notdienst, der <strong>Schlüssel, Schlösser und Sicherheitstechnik</strong> aus einer Hand bietet. Ob Sie einen Ersatzschlüssel benötigen, eine neue Schließanlage planen oder eine <strong>persönliche Sicherheitsberatung</strong> wünschen und bei uns nehmen wir uns Zeit für Ihr Anliegen.
+            Suchen Sie einen vertrauensvollen Experten für <strong>Schlösser, Profilzylinder und moderne Sicherungskonzepte</strong>? Direkt im Herzen der Stadt, in der Langgasse 70, stehen wir Ihnen mit umfassendem Know-how zur Seite. Wir bieten Ihnen von der schnellen Anfertigung eines Zweitschlüssels bis hin zum Entwurf einer kompletten Schließanlage stets eine fundierte und individuelle Beratung an.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Unser Sortiment umfasst hochwertige Schließzylinder namhafter Hersteller, Sicherheitsbeschläge und elektronische Zutrittslösungen. Jedes Produkt wird von unseren Fachkräften individuell auf Ihre Situation abgestimmt und bei Bedarf direkt montiert.
+            In unserem Fachgeschäft finden Sie eine breite Auswahl an Qualitätsschlössern renommierter Marken, robuster Beschläge und zukunftssicherer Elektronik-Lösungen. Unsere geschulten Techniker beraten Sie passgenau zu Ihrem Anliegen und übernehmen auf Wunsch sofort die fachmännische Installation.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Darüber hinaus steht Ihnen unser <strong>24/7 Schlüsseldienst</strong> für Notfälle zur Verfügung. Wenn Sie sich ausgesperrt haben, erreichen unsere Monteure Sie in der Regel innerhalb von 20 bis 30 Minuten und mit einer zerstörungsfreien Öffnung in über 99 Prozent aller Fälle.
+            Als <strong>24-Stunden-Schlüsselnotdienst</strong> sind wir darüber hinaus an 365 Tagen im Jahr abrufbereit. Eine zugefallene Tür öffnen unsere Profis in den überwiegenden Fällen absolut beschädigungsfrei, und dank unserer zentralen Lage erreichen wir Sie oft schon innerhalb von einer halben Stunde.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Die Kombination aus stationärem Fachhandel und mobilem Notdienst macht die Schlüssel Schmiede Wetzlar zu Ihrem umfassenden Ansprechpartner für alle Fragen rund um Schlüssel und Schlösser in der Region.
+            Dieser Dual-Service aus festem Ladenlokal und schnellem Vor-Ort-Einsatz etabliert uns als Ihren primären Spezialisten für sämtliche Anliegen rund um Tür, Tor und Schloss in der gesamten Umgebung Wetzlars.
           </p>
         </article>
 
         {/* ── Artikel 2: Preistransparenz ── */}
         <article className="space-y-4">
           <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-            Ehrliche Preise und im Laden und beim Schlüsseldienst
+            Volle Kostentransparenz – ob im Fachgeschäft oder beim Notruf
           </h3>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Ob Sie im Laden einen Schlüssel nachmachen lassen oder unseren Schlüsseldienst rufen und bei der Schlüssel Schmiede Wetzlar wissen Sie immer vorher, was es kostet. Den verbindlichen <strong>Festpreis</strong> nennen wir Ihnen am Telefon, bevor sich unser Monteur auf den Weg macht.
+            Ganz gleich, ob Sie am Tresen eine Dienstleistung beauftragen oder unser Notfall-Fahrzeug anfordern: Bei uns erleben Sie keine preislichen Überraschungen. Wir garantieren Ihnen vorab bereits telefonisch einen bindenden <strong>Festpreis</strong>, bevor unser Teammitglied sich zu Ihnen auf den Weg macht.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Eine einfache Türöffnung beginnt bei einem <strong>Festpreis ab 99 Euro</strong> inklusive aller Standardleistungen. In der Wetzlarer Kernstadt fallen keine zusätzlichen Anfahrtskosten an. Auch unsere Ladenpreise für Schlüsselanfertigung und Zylindertausch sind klar kalkuliert.
+            Für eine materialschonende Türöffnung am Tag berechnen wir lediglich einen <strong>transparenten Preis ab 99 Euro</strong>, in dem alle regulären Arbeiten inkludiert sind. Ist Ihr Wohnsitz zudem zentral in Wetzlar gelegen, entfällt sogar die Wegepauschale.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Bei uns gibt es <strong>keine versteckten Gebühren</strong> und keine unerwarteten Aufpreise. Dieses Versprechen gilt gleichermaßen für den Besuch in unserem Ladengeschäft wie für jeden einzelnen mobilen Einsatz unserer Techniker.
+            Hinterlistige <strong>versteckte Aufschläge</strong> suchen Sie bei uns vergebens. Diese Philosophie verfolgen wir strikt – im regulären Verkauf genauso konsequent wie bei Noteinsätzen zur späten Stunde.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Sie erhalten nach jedem Auftrag eine ordnungsgemäße Rechnung mit vollständiger Auflistung aller Leistungen. Dieses Höchstmaß an Transparenz ist ein Grundpfeiler unserer Arbeit und und der Grund, warum unsere Stammkunden seit über einem Jahrzehnt immer wieder zu uns kommen.
+            Zusätzlich stellen wir Ihnen nach getaner Arbeit immer einen sauberen Beleg aus, der jeden Posten detailliert aufzeigt. Diese Seriosität ist unser Markenzeichen und der Garant für unseren wachsenden und loyalen Kundenstamm.
           </p>
         </article>
 
         {/* ── Artikel 3: Sicherheitstechnik mit Liste ── */}
         <article className="space-y-4">
           <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-            Sicherheitsberatung direkt im Ladengeschäft und für Privat und Gewerbe
+            Maßgeschneiderte Absicherung für Privathaushalte und Unternehmen
           </h3>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            In unserem 24 Stunden Notdienst in der Langgasse 70 beraten wir Sie persönlich zu allen Fragen der Gebäudesicherheit. Unsere <strong>zertifizierten Sicherheitstechniker</strong> analysieren Ihre individuelle Situation und entwickeln maßgeschneiderte Schutzkonzepte für Ihre Immobilie.
+            Besuchen Sie die Schlüssel Schmiede Wetzlar in der Langgasse 70 für einen ehrlichen Risiko-Check. Unsere <strong>qualifizierten Spezialisten</strong> eruieren die Eigenheiten Ihres Objekts und konzeptionieren die perfekte Verteidigungslinie für Ihr Hab und Gut.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Im Laden können Sie sich die Produkte ansehen und anfassen. Unser Leistungsangebot im Bereich Sicherheitstechnik umfasst unter anderem:
+            In der Ausstellung demonstrieren wir Ihnen gerne die Funktionsweisen der einzelnen System-Komponenten. Unser Repertoire in der Gebäudesicherheit beinhaltet:
           </p>
           <ul className="list-disc list-inside space-y-2 text-[color:var(--text-secondary)] leading-relaxed pl-2">
-            <li>Einbau von Hochsicherheitszylindern und Schutzbeschlägen mit integriertem Kernziehschutz gegen Aufbruchversuche</li>
-            <li>Montage von Panzerriegeln und Zusatzschlössern zur Erhöhung der mechanischen Widerstandsklasse Ihrer Eingangstür</li>
-            <li>Planung, Lieferung und fachgerechte Installation von mechanischen und elektronischen Schließanlagen</li>
-            <li>Professionelle Schwachstellenanalyse und persönliche Einbruchschutzberatung direkt an Ihrem Wohnobjekt</li>
-            <li>Anfertigung von Zweit- und Ersatzschlüsseln im schnellen Sofort-Service in unserer Schlüssel-Schmiede Filiale</li>
+            <li>Fachmännischer Einsatz von Sicherheitszylindern inklusive Kernzieh- und Aufbohrschutz</li>
+            <li>Nachrüstung mit Querriegeln und Zusatzsicherungen für eine massive Stärkung der Türstatik</li>
+            <li>Passgenaue Beratung, Bestellung und Installation mechanischer sowie smarter Schließanlagen</li>
+            <li>Kostenlose Inspektion potenzieller Schwachstellen direkt vor Ort an Ihrem Wohnobjekt</li>
+            <li>Zügige Fertigung benötigter Ersatz- oder Zugangsschlüssel in unserer Werkstatt</li>
           </ul>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Jedes Sicherheitsprojekt wird dabei individuell an die spezifischen Schwachstellen Ihrer Wohnung oder Ihres Gebäudes angepasst. So stellen wir sicher, dass Sie einen optimalen und langfristig nachhaltigen Schutz vor unberechtigtem Zutritt erhalten.
+            Durch diesen Fokus auf Individualität bewirken wir, dass jede Sicherungsmaßnahme exakt auf Ihre persönlichen Raumbedingungen kalibriert wird und dauerhaften, beruhigenden Schutz gewährleistet.
           </p>
         </article>
 
         {/* ── Artikel 4: Qualifikation & Vertrauen ── */}
         <article className="space-y-4">
           <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-            Handwerkliche Kompetenz aus Wetzlar und persönlich und nahbar
+            Herausragende Fachkenntnis – lokal, familiär und greifbar
           </h3>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            In der Zentrale der Schlüssel Schmiede Wetzlar stehen Ihnen ausgebildete Fachkräfte gegenüber, die modernste Schließsysteme und Sicherheitstechnologien beherrschen. Als eingetragener Fachbetrieb arbeiten wir nach den Qualitätsstandards der Handwerkskammer.
+            Hinter dem Namen unserer Schlüssel Schmiede steht ein fähiges Team, welches sein Handwerk auf höchstem Niveau ausführt. Als offizieller Fachbetrieb erfüllen wir sämtliche Auflagen und Qualitätsansprüche, welche die ansässige Handwerkskammer an uns stellt.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Unser Gründer und Geschäftsführer wurde persönlich von <strong>Uwe Sarfeld</strong>, einem der bekanntesten Experten für Sicherheitstechnik in Deutschland, professionell ausgebildet. Dieses fundierte Fachwissen geben wir an unser gesamtes Team weiter, um Ihnen stets erstklassigen Service bieten zu können.
+            Unser Inhaber genoss das Privileg einer intensiven Schulung bei <strong>Uwe Sarfeld</strong>, einer echten Koryphäe der Sicherheitstechnik. Diese enorme fachliche Kompetenz fließt täglich in die Ausbildung unserer Mitarbeiter ein und garantiert Ihnen so handwerkliche Spitzenleistungen.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Vertrauen, Ehrlichkeit und handwerkliche Präzision bilden die Grundpfeiler unserer täglichen Arbeit. Als echter lokaler Notdienst mit Ladenlokal distanzieren wir uns klar von unseriösen Anbietern, die mit irreführenden Lockpreisen werben.
+            Dabei setzen wir bewusst auf Offenheit, handwerkliche Souveränität und direkte Nähe zum Verbraucher. Mit unserem eigenen Fachgeschäft positionieren wir uns als greifbarer Gegenpol zu jenen Betrieben, die im Internet mit Lockangeboten operieren und ihre Identität verschleiern.
           </p>
         </article>
 
         {/* ── Artikel 5: Einsatzgebiet & CTA ── */}
         <article className="space-y-4">
           <h3 className="text-xl md:text-2xl font-bold text-[color:var(--text-primary)]">
-            Ihr 24 Stunden Notdienst mit Schlüsseldienst und für Wetzlar und die gesamte Region
+            Immer für Sie erreichbar: Unser Express-Notdienst in weitem Umkreis
           </h3>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Besuchen Sie uns in der <strong>Langgasse 70 in Wetzlar</strong> und unser 24 Stunden Notdienst ist Ihr zentraler Anlaufpunkt für Schlüssel, Schlösser und Sicherheitstechnik. Die zentrale Lage ermöglicht uns zudem besonders kurze Anfahrtswege für unseren 24/7 Schlüsseldienst.
+            Unsere Filiale finden Sie unter der Anschrift <strong>Langgasse 70 in Wetzlar</strong>. In Sachen Zutrittssysteme und Türnotöffnungen laufen hier alle Fäden zusammen. Unser verkehrsgünstiger Standort ermöglicht den Mechanikern ein rasantes Ausrücken auf allen wichtigen Verkehrswegen.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Zu unseren Einsatzgebieten gehören neben der Wetzlarer Innenstadt auch die Stadtteile Nauborn, Dutenhofen, Garbenheim, Hermannstein und Niedergirmes. Darüber hinaus sind wir regelmäßig in Solms, Braunfels, Aßlar, Lahnau und weiteren Gemeinden im Lahn-Dill-Kreis im Einsatz.
+            Neben dem Kernbereich der Domstadt fahren unsere Servicefahrzeuge regelmäßig in Randbezirke wie Dutenhofen, Nauborn oder Garbenheim. Auch Umlandgemeinden wie Braunfels, Solms oder Aßlar decken wir flächendeckend und zügig ab.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Dank unserer lokalen Verankerung erreichen wir die meisten Einsatzorte in einem Radius von 50 Kilometern innerhalb kürzester Zeit. Unser Schlüsseldienst-Notdienst steht Ihnen an 365 Tagen im Jahr rund um die Uhr zur Verfügung und auch an Feiertagen und nachts.
+            Unser Versprechen: Innerhalb eines Reaktionsradius von 50 Kilometern lässt unser Team Sie nicht lange warten. Der Bereitschaftsdienst reagiert pausenlos – egal ob tiefe Nacht, sonntags oder an staatlichen Feiertagen.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Rufen Sie uns an unter <strong>06441 8056279</strong> oder besuchen Sie uns persönlich in der Langgasse 70 in Wetzlar. Wir freuen uns darauf, Sie kompetent und fair zu beraten und ob im Laden oder als Ihr Schlüsseldienst vor Ort.
+            Wählen Sie jederzeit die <strong>06441 8056279</strong> oder schauen Sie persönlich bei uns im Ladenlokal in Wetzlar herein. Wir unterstützen Sie in allen Notsituationen und Sicherheitsfragen fair, verlässlich und umgehend.
           </p>
         </article>
 

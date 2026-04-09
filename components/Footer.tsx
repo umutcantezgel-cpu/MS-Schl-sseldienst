@@ -71,10 +71,9 @@ export default function Footer() {
         <Image
          src="/images/footer-logo.svg"
          alt="Schlüssel Schmiede Wetzlar Logo"
-         width={280}
-         height={84}
-         className="w-auto object-contain"
-         style={{ height: '80px' }}
+         width={300}
+         height={80}
+         className="w-auto h-[80px] object-contain"
          unoptimized
         />
        </Link>
@@ -93,7 +92,7 @@ export default function Footer() {
         </a>
         <div className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-400)]">
          <MapPin className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
-         <span>Langgasse 70, 35578 Wetzlar</span>
+         <span>Langgasse 70, 35576 Wetzlar</span>
         </div>
         <div className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-400)]">
          <Clock className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />

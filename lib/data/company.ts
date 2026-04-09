@@ -51,7 +51,8 @@ export const companyInfo: CompanyInfo = {
   foundedYear: 2012,
   socialMedia: {
     facebook: "https://www.facebook.com/61575618662298/mentions/",
-    linkedin: "https://linkedin.com/company/schluessel-schmiede-wetzlar",
-    instagram: "https://instagram.com/schluessel_schmiede_wetzlar"
+    linkedin: "https://www.linkedin.com/in/mina-saad-a218413a9/",
+    instagram: "https://instagram.com/schluessel_schmiede_wetzlar",
+    whatsapp: "+4917616310315"
   }
 };

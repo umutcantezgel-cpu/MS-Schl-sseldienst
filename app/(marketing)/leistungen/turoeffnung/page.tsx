@@ -201,7 +201,7 @@ export default function TuroeffnungPage() {
         <div className="grid gap-8 sm:grid-cols-2 max-w-4xl mx-auto">
         <PriceCard
           title="Tür zugefallen"
-          price={50}
+          price={99}
           description="Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen."
           features={["Werktags 08-18 Uhr","Zerstörungsfreie Öffnung (99%)","Festpreis vor Ort",
           ]}

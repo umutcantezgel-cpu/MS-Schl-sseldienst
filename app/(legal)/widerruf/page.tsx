@@ -61,7 +61,7 @@ export default function WiderrufPage() {
                     <strong>Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
-                    35578 Wetzlar<br />
+                    35576 Wetzlar<br />
                     Deutschland<br /><br />
                     Telefon: <Link href="tel:+491782471037" className="text-[var(--action-primary)] hover:underline">0178 2471037</Link><br />
                     E-Mail: <Link href="mailto:notfall-schluessel@proton.me?subject=Widerruf" className="text-[var(--action-primary)] hover:underline">notfall-schluessel@proton.me</Link>
@@ -110,7 +110,7 @@ export default function WiderrufPage() {
                         <strong>Mina Saad</strong><br />
                         Schlüssel Schmiede Wetzlar<br />
                         Gloelstraße 11<br />
-                        35578 Wetzlar<br />
+                        35576 Wetzlar<br />
                         E-Mail: notfall-schluessel@proton.me</p>
 
                         <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*):</p>
@@ -147,7 +147,7 @@ export default function WiderrufPage() {
                     <strong>Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
-                    35578 Wetzlar<br />
+                    35576 Wetzlar<br />
                     Deutschland<br /><br />
                     Telefon: <Link href="tel:+491782471037" className="text-[var(--action-primary)] hover:underline">0178 2471037</Link><br />
                     E-Mail: <Link href="mailto:notfall-schluessel@proton.me" className="text-[var(--action-primary)] hover:underline">notfall-schluessel@proton.me</Link>

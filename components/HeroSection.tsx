@@ -8,7 +8,6 @@ import { useEffect, useState, useMemo } from "react";
 import { m, useScroll, useTransform } from "framer-motion";
 import HeartbeatCTA from "@/components/animations/HeartbeatCTA";
 import { Typography } from "@/components/ui/typography/Typography";
-import TrustSignals from "@/components/trust/TrustSignals";
 
 /* ============================================================
   HERO SECTION und Award-Level Design
@@ -131,7 +130,7 @@ export default function HeroSection() {
     <section
       id="hero-section"
       aria-labelledby="hero-heading"
-      className="relative w-full flex items-center overflow-hidden pt-[90px] sm:pt-[100px] lg:pt-[110px] xl:pt-[140px] pb-12 sm:pb-8 lg:pb-[20px] bg-gradient-to-b from-[var(--color-off-white)] to-white"
+      className="relative w-full flex items-center overflow-hidden pt-[90px] sm:pt-[100px] lg:pt-[90px] xl:pt-[100px] pb-16 sm:pb-14 lg:pb-[24px] bg-gradient-to-b from-[var(--color-off-white)] to-white"
     >
       {/* ── Static Background Layer (Mobile Performance) ── */}
       <div className="absolute inset-0 z-0 pointer-events-none md:hidden block">
@@ -246,9 +245,6 @@ export default function HeroSection() {
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-blue-600)]" />
                     Beratung buchen
                   </Link>
-                </div>
-                <div className="flex justify-start px-2 mt-3">
-                  <TrustSignals preset="default" />
                 </div>
               </div>
             </div>
