@@ -1,25 +1,14 @@
 "use client";
 
-import { InlineWidget, useCalendlyEventListener } from "react-calendly";
 import { AlertCircle } from "lucide-react";
 
 interface CalendlyWidgetProps {
-  /** The Calendly slug (e.g., 'your-name/15min') */
+  /** The full Calendly URL (e.g., 'https://calendly.com/user/event?timezone=Europe/Berlin') */
   url?: string;
 }
 
 export default function CalendlyWidget({ url }: CalendlyWidgetProps) {
-  // Phase 3.3 Event Listener for Analytics integration / Conversion tracking
-  useCalendlyEventListener({
-    onProfilePageViewed: () => console.log("Calendly: Profile page viewed"),
-    onDateAndTimeSelected: () => console.log("Calendly: Date and time selected"),
-    onEventScheduled: (e) => {
-      console.log("Calendly: Event scheduled", e.data.payload);
-      // Here GTM dataLayer push would happen
-    },
-  });
-
-  // Phase 3.4 Missing ENV variable check
+  // Missing ENV variable check
   if (!url || url === "") {
     return (
       <div className="w-full relative min-h-[600px] sm:min-h-[700px] h-full flex flex-col items-center justify-center text-center p-8 bg-[var(--surface-secondary)] rounded-2xl border border-[var(--border-color)]">
@@ -35,33 +24,23 @@ export default function CalendlyWidget({ url }: CalendlyWidgetProps) {
   }
 
   return (
-    <div 
-      className="w-full relative min-h-[600px] sm:min-h-[700px] h-full" 
+    <div
+      className="w-full relative h-full"
       data-testid="calendly-widget"
-      style={{
-        // Phase 3.2 Mobile Iframe Scroll-Bug Prävention
-        overflow: "hidden", 
-        WebkitOverflowScrolling: "touch"
-      }}
+      style={{ minHeight: "700px" }}
     >
-      <InlineWidget
-        url={url}
-        styles={{
-          height: "100%",
-          width: "100%",
-          minHeight: "600px",
-          overflow: "hidden", // Further scroll bug hardening
+      <iframe
+        src={url}
+        title="Terminbuchung — Schlüssel Schmiede Wetzlar"
+        width="100%"
+        height="100%"
+        style={{
+          border: "none",
+          minHeight: "700px",
+          borderRadius: "16px",
         }}
-        pageSettings={{
-          backgroundColor: 'ffffff', // from --surface-primary
-          hideEventTypeDetails: true,
-          hideGdprBanner: true, // We handle GDPR ourselves
-          primaryColor: 'dc2626', // Tailwinds red-600 / our main theme
-          textColor: '0f172a', // text-slate-900 / our text-primary
-        }}
-        prefill={{
-          // Can connect searchparams later
-        }}
+        allow="payment"
+        loading="lazy"
       />
     </div>
   );

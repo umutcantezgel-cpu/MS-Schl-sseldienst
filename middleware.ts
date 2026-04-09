@@ -40,19 +40,36 @@ function getDeviceType(userAgent: string): 'mobile' | 'tablet' | 'desktop' {
 export function middleware(request: NextRequest) {
     // ─── Dynamic Security Headers (Nonce CSRF/XSS Check) ───
     const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
+    const pathname = request.nextUrl.pathname;
+    const isProduction = process.env.NODE_ENV === 'production';
 
-    const cspDirectives = [
-        "default-src 'self'",
+    // Skip strict CSP for the booking page so Calendly iframe renders fully
+    const isBookingPage = pathname === '/termin-buchen';
+
+    const cspDirectives = isBookingPage ? [
+        "default-src 'self' https://calendly.com https://*.calendly.com",
         "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
-        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com",
         "img-src 'self' data: blob: https: http:",
-        "font-src 'self' data: https://fonts.gstatic.com",
-        "connect-src 'self' https://formspree.io https://www.google-analytics.com https://vitals.vercel-insights.com https://maps.googleapis.com https://*.googleapis.com https://calendly.com https://assets.calendly.com",
-        "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com https://calendly.com",
+        "font-src 'self' data: https://fonts.gstatic.com https://assets.calendly.com",
+        "connect-src 'self' https: wss:",
+        "frame-src 'self' https://calendly.com https://*.calendly.com https://www.google.com https://maps.google.com https://maps.googleapis.com",
         "base-uri 'self'",
         "form-action 'self' https://formspree.io",
-        "frame-ancestors 'none'",
-        "upgrade-insecure-requests"
+        "frame-ancestors 'self'",
+        ...(isProduction ? ["upgrade-insecure-requests"] : []),
+    ].join("; ") : [
+        "default-src 'self'",
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com",
+        "img-src 'self' data: blob: https: http:",
+        "font-src 'self' data: https://fonts.gstatic.com",
+        "connect-src 'self' https://formspree.io https://www.google-analytics.com https://vitals.vercel-insights.com https://maps.googleapis.com https://*.googleapis.com https://calendly.com https://*.calendly.com https://assets.calendly.com",
+        "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com https://calendly.com https://*.calendly.com",
+        "base-uri 'self'",
+        "form-action 'self' https://formspree.io",
+        "frame-ancestors 'self'",
+        ...(isProduction ? ["upgrade-insecure-requests"] : []),
     ].join("; ");
 
     // Initialize request headers to pass along to Next.js rendering
@@ -94,7 +111,6 @@ export function middleware(request: NextRequest) {
     }
 
     // ─── Visitor Segment Detection (Phase 18) ───
-    const pathname = request.nextUrl.pathname;
     const visitorTypeStr = visitorCookie?.value || 'new';
 
     let segment = 'new-visitor';
