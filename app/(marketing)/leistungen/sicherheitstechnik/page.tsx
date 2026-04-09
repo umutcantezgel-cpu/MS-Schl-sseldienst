@@ -93,7 +93,7 @@ export default function SicherheitstechnikPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik – für ein unerschütterliches Sicherheitsgefühl.
           </p>
         </StaggerItem>
@@ -116,10 +116,10 @@ export default function SicherheitstechnikPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Unsere Leistungen im Überblick</h2>
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Unsere Leistungen im Überblick</h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Wir bieten maßgeschneiderte Lösungen für jeden Sicherheitsbedarf. Von einfachen mechanischen Sicherungen bis hin zu komplexen elektronischen Systemen.
        </p>
       </StaggerItem>
@@ -132,7 +132,7 @@ export default function SicherheitstechnikPage() {
          </div>
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Schließzylinder & Anlagen</h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Hochsichere Profilzylinder mit Kopierschutz und komplexe Schließanlagen für Gebäude jeder Größe.
           </p>
          </div>
@@ -144,7 +144,7 @@ export default function SicherheitstechnikPage() {
          </div>
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Alarmanlagen</h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Intelligente Einbruchmeldeanlagen, verkabelt oder als Funklösung für Bestandsbauten.
           </p>
          </div>
@@ -156,7 +156,7 @@ export default function SicherheitstechnikPage() {
          </div>
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Videoüberwachung</h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Hochauflösende Kamerasysteme mit Fernzugriff und intelligenter Bewegungserkennung.
           </p>
          </div>
@@ -168,7 +168,7 @@ export default function SicherheitstechnikPage() {
          </div>
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Fenster- & Türsicherung</h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Mechanischer Zusatzschutz zur effektiven Erschwerung von Aufbruchversuchen.
           </p>
          </div>
@@ -180,7 +180,7 @@ export default function SicherheitstechnikPage() {
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">Unser Beratungsprozess</h3>
-          <ul className="space-y-6 text-[18px] text-[color:var(--text-secondary)] m-0 font-medium">
+          <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
               <span><strong>1. Termin vereinbaren:</strong> Kontaktieren Sie uns für ein unverbindliches Erstgespräch.</span>
@@ -208,7 +208,7 @@ export default function SicherheitstechnikPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Preise</Badge>
-         <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
            Kalkulation & Richtpreise
          </h2>
         </div>
@@ -274,7 +274,7 @@ export default function SicherheitstechnikPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen
       </h2>
      </StaggerItem>
@@ -294,7 +294,7 @@ export default function SicherheitstechnikPage() {
        <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
          Weiterführende Informationen zum Einbruchschutz
        </h2>
-       <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-8">
+       <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
          Informieren Sie sich bei offiziellen Stellen über staatliche Förderungen und polizeiliche Empfehlungen zum Einbruchschutz:
        </p>
        <div className="grid gap-4 sm:grid-cols-2">
@@ -303,8 +303,8 @@ export default function SicherheitstechnikPage() {
              <ShieldCheck className="h-5 w-5" />
            </div>
            <div>
-             <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</span>
-             <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Staatliche Zuschüsse bis zu 1.600€ für Einbruchschutz-Maßnahmen an Ihrer Immobilie.</p>
+             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</span>
+             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Staatliche Zuschüsse bis zu 1.600€ für Einbruchschutz-Maßnahmen an Ihrer Immobilie.</p>
            </div>
          </a>
          <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -312,8 +312,8 @@ export default function SicherheitstechnikPage() {
              <Lock className="h-5 w-5" />
            </div>
            <div>
-             <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Prävention</span>
-             <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Offizielle Empfehlungen der Polizei zum Schutz Ihres Zuhauses.</p>
+             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Prävention</span>
+             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Offizielle Empfehlungen der Polizei zum Schutz Ihres Zuhauses.</p>
            </div>
          </a>
          <a href="https://www.vds.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -321,8 +321,8 @@ export default function SicherheitstechnikPage() {
              <Check className="h-5 w-5" />
            </div>
            <div>
-             <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">VdS Schadenverhütung</span>
-             <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Zertifizierungs- und Prüfstelle für Sicherheitstechnik und Einbruchschutz.</p>
+             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">VdS Schadenverhütung</span>
+             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Zertifizierungs- und Prüfstelle für Sicherheitstechnik und Einbruchschutz.</p>
            </div>
          </a>
          <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -330,8 +330,8 @@ export default function SicherheitstechnikPage() {
              <Bell className="h-5 w-5" />
            </div>
            <div>
-             <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</span>
-             <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Kriminalprävention und Einbruchschutz-Beratung für den Lahn-Dill-Kreis.</p>
+             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</span>
+             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Kriminalprävention und Einbruchschutz-Beratung für den Lahn-Dill-Kreis.</p>
            </div>
          </a>
        </div>

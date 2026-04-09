@@ -241,7 +241,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
             </div>
 
             <div className="bg-[var(--surface-secondary)] p-5 rounded-xl border border-[var(--border-subtle)] text-center mb-6">
-              <p className="text-[15px] text-[color:var(--text-primary)] font-medium leading-relaxed m-0">
+              <p className="text-base text-[color:var(--text-primary)] font-medium leading-relaxed m-0">
                 {result > 60 
                   ? "Türen in Erdgeschossen und Einfamilienhäusern ohne Zusatzsicherung werden in Wetzlar häufig von Gelegenheitstätern angegriffen. Ein Nachrüsten wird dringend empfohlen."
                   : result > 30 
@@ -268,7 +268,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
       <div className="bg-[var(--color-gray-900)] p-4 text-center border-t border-[var(--color-gray-800)]">
         <p className="text-xs font-semibold text-gray-400">
           Datenbereitstellung & Analyse durch<br/>
-          <a href="https://wetzlar-schlüsseldienst.de" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--color-red-500)] transition-colors mt-1 inline-block text-[13px] font-bold">
+          <a href="https://wetzlar-schlüsseldienst.de" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--color-red-500)] transition-colors mt-1 inline-block text-sm font-bold">
             Schlüssel Schmiede Wetzlar
           </a>
         </p>

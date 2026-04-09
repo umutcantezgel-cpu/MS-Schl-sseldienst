@@ -68,43 +68,43 @@ export default function PricingCalculator() {
         {/* Step Progress Indicator */}
         <div className="flex items-center gap-3 mb-8">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-[var(--color-red-500)] text-white flex items-center justify-center text-[13px] font-bold shadow-sm">
+            <div className="w-8 h-8 rounded-full bg-[var(--color-red-500)] text-white flex items-center justify-center text-sm font-bold shadow-sm">
               {serviceType ? <CheckCircle2 className="w-4 h-4" /> : "1"}
             </div>
-            <span className="text-[13px] font-semibold text-[color:var(--text-primary)] hidden sm:inline">Situation</span>
+            <span className="text-sm font-semibold text-[color:var(--text-primary)] hidden sm:inline">Situation</span>
           </div>
           <div className="flex-1 h-[2px] bg-[var(--color-red-500)]" />
           <div className="flex items-center gap-2">
-            <div className={cn("w-8 h-8 rounded-full flex items-center justify-center text-[13px] font-bold shadow-sm transition-colors duration-300",
+            <div className={cn("w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-sm transition-colors duration-300",
               timeSlot ? "bg-[var(--color-red-500)] text-white" : "bg-[var(--color-charcoal-100)] text-[color:var(--text-tertiary)]"
             )}>
               {timeSlot ? <CheckCircle2 className="w-4 h-4" /> : "2"}
             </div>
-            <span className="text-[13px] font-semibold text-[color:var(--text-primary)] hidden sm:inline">Zeitpunkt</span>
+            <span className="text-sm font-semibold text-[color:var(--text-primary)] hidden sm:inline">Zeitpunkt</span>
           </div>
           <div className={cn("flex-1 h-[2px] transition-colors duration-300",
             timeSlot ? "bg-[var(--color-red-500)]" : "bg-[var(--color-charcoal-200)]"
           )} />
           <div className="flex items-center gap-2">
-            <div className={cn("w-8 h-8 rounded-full flex items-center justify-center text-[13px] font-bold shadow-sm transition-colors duration-300",
+            <div className={cn("w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-sm transition-colors duration-300",
               serviceType && timeSlot ? "bg-[var(--color-red-500)] text-white" : "bg-[var(--color-charcoal-100)] text-[color:var(--text-tertiary)]"
             )}>
               €
             </div>
-            <span className="text-[13px] font-semibold text-[color:var(--text-primary)] hidden sm:inline">Festpreis</span>
+            <span className="text-sm font-semibold text-[color:var(--text-primary)] hidden sm:inline">Festpreis</span>
           </div>
         </div>
 
         <fieldset className="mb-8">
           <legend className="block w-full">
-            <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-[var(--value-primary)]/10 text-[color:var(--value-primary)] text-[13px] font-bold tracking-wide border border-[var(--value-primary)]/20 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-[var(--value-primary)]/10 text-[color:var(--value-primary)] text-sm font-bold tracking-wide border border-[var(--value-primary)]/20 shadow-sm">
               <ShieldCheck className="w-4 h-4" aria-hidden="true" />
               Interaktiver Live-Rechner
             </div>
             <div className="typo-h3 text-[color:var(--text-primary)] mb-2">
               1. Was ist passiert?
             </div>
-            <p className="text-[color:var(--text-secondary)] text-[15px] mb-4">
+            <p className="text-[color:var(--text-secondary)] text-base mb-4">
               Wählen Sie Ihre exakte Situation aus, um den verbindlichen Preis zu ermitteln.
             </p>
           </legend>
@@ -147,7 +147,7 @@ export default function PricingCalculator() {
                       )}>
                         {service.label}
                       </span>
-                      <span className={cn("text-[13px] transition-colors duration-300",
+                      <span className={cn("text-sm transition-colors duration-300",
                         isSelected ?"text-[color:var(--color-red-700)] font-medium" :"text-[color:var(--text-tertiary)]"
                       )}>
                         {service.desc}
@@ -173,7 +173,7 @@ export default function PricingCalculator() {
                 2. Wann brauchen Sie uns?
               </div>
               {isAutoDetected && (
-                <span className="text-[12px] font-bold bg-status-success/15 text-status-success px-2 py-1 rounded-md animate-in fade-in zoom-in duration-500">
+                <span className="text-xs font-bold bg-status-success/15 text-status-success px-2 py-1 rounded-md animate-in fade-in zoom-in duration-500">
                   Auto-Erkannt
                 </span>
               )}
@@ -202,10 +202,10 @@ export default function PricingCalculator() {
                 />
                 <Icon className={cn("h-6 w-6 transition-colors", isSelected ?"text-[var(--color-red-500)]" :"text-[color:var(--text-tertiary)]")} />
                 <div className="flex flex-col">
-                  <span className={cn("font-bold text-[15px]", isSelected ?"text-white" :"text-[color:var(--text-primary)]")}>
+                  <span className={cn("font-bold text-base", isSelected ?"text-white" :"text-[color:var(--text-primary)]")}>
                     {slot.label}
                   </span>
-                  <span className={cn("text-[12px] font-medium leading-tight mt-1", isSelected ?"text-white/70" :"text-[color:var(--text-tertiary)]")}>
+                  <span className={cn("text-xs font-medium leading-tight mt-1", isSelected ?"text-white/70" :"text-[color:var(--text-tertiary)]")}>
                     {slot.desc}
                   </span>
                 </div>
@@ -226,45 +226,45 @@ export default function PricingCalculator() {
 
         <div className="relative z-10 flex flex-col h-full">
           <div className="mb-auto">
-            <span className="text-[var(--color-red-500)] font-bold tracking-widest uppercase text-[12px] mb-2 block">
+            <span className="text-[var(--color-red-500)] font-bold tracking-widest uppercase text-xs mb-2 block">
               Ihr Garantierter Festpreis
             </span>
             <div className="flex items-baseline gap-2 mt-4">
               {isNullPrice ? (
-                <span className="text-[40px] font-black tracking-tighter leading-none text-white">Auf Anfrage</span>
+                <span className="text-4xl font-black tracking-tighter leading-none text-white">Auf Anfrage</span>
               ) : (
                 <>
-                  <span className="text-[20px] font-bold text-white/60 uppercase tracking-widest">ab</span>
-                  <AnimatedNumber value={currentPrice} className="text-[72px] lg:text-[88px] font-black tracking-tighter leading-none text-white tabular-nums drop-shadow-lg" />
-                  <span className="text-[32px] lg:text-[40px] font-bold text-[var(--color-red-500)]">€</span>
+                  <span className="text-xl font-bold text-white/60 uppercase tracking-widest">ab</span>
+                  <AnimatedNumber value={currentPrice} className="text-[4.5rem] lg:text-[88px] font-black tracking-tighter leading-none text-white tabular-nums drop-shadow-lg" />
+                  <span className="text-[32px] lg:text-4xl font-bold text-[var(--color-red-500)]">€</span>
                 </>
               )}
             </div>
             
             {!isNullPrice && (
               <div className="mt-8 bg-black/20 rounded-2xl p-6 border border-white/5 backdrop-blur-sm">
-                <div className="text-[14px] font-bold text-white/50 uppercase tracking-wider mb-4 border-b border-white/10 pb-3">
+                <div className="text-sm font-bold text-white/50 uppercase tracking-wider mb-4 border-b border-white/10 pb-3">
                   Transparenz-Beleg
                 </div>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center text-[15px]">
+                  <div className="flex justify-between items-center text-base">
                     <span className="text-white/80">{SERVICES.find(s => s.id === serviceType)?.label}</span>
                     <span className="font-bold">{basePrice} €</span>
                   </div>
                   {surcharge > 0 && (
-                    <div className="flex justify-between items-center text-[15px] text-[var(--color-red-400)]">
+                    <div className="flex justify-between items-center text-base text-[var(--color-red-400)]">
                       <span>Nacht/Abend-Zuschlag</span>
                       <span className="font-bold">+{surcharge} €</span>
                     </div>
                   )}
-                  <div className="flex justify-between items-center text-[15px]">
+                  <div className="flex justify-between items-center text-base">
                     <span className="text-white/80">Anfahrtskosten (bis 50km)</span>
-                    <span className="font-bold text-[var(--color-success)] text-[13px] tracking-wide uppercase">Kostenlos</span>
+                    <span className="font-bold text-[var(--color-success)] text-sm tracking-wide uppercase">Kostenlos</span>
                   </div>
                   
                   <div className="pt-3 mt-3 border-t border-white/10 flex justify-between items-center">
                     <span className="font-bold text-white">Endsumme ab</span>
-                    <span className="font-black text-[20px] text-white">
+                    <span className="font-black text-xl text-white">
                       {currentPrice} €
                     </span>
                   </div>
@@ -277,7 +277,7 @@ export default function PricingCalculator() {
             <HeartbeatCTA>
               <a
                 href="tel:+4964418056279"
-                className="group relative flex items-center justify-center gap-3 w-full min-h-[64px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-[18px] font-bold rounded-[16px] transition-all duration-300 shadow-[var(--shadow-brand-2)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-1 overflow-hidden"
+                className="group relative flex items-center justify-center gap-3 w-full min-h-[64px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-lg font-bold rounded-[16px] transition-all duration-300 shadow-[var(--shadow-brand-2)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-1 overflow-hidden"
               >
                 {/* Shimmer effect */}
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
@@ -286,14 +286,14 @@ export default function PricingCalculator() {
               </a>
             </HeartbeatCTA>
             
-            <p className="text-center text-[13px] text-white/50 font-medium">
+            <p className="text-center text-sm text-white/50 font-medium">
               Ein Mitarbeiter ist direkt am Apparat.<br />Kein Callcenter, keine Warteschleife.
             </p>
 
             {/* Trust Guarantee Badges */}
             <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-white/10">
               {GUARANTEES.map((guarantee, idx) => (
-                <div key={idx} className="flex items-center gap-2 text-[13px] text-white/70">
+                <div key={idx} className="flex items-center gap-2 text-sm text-white/70">
                   <BadgeCheck className="w-4 h-4 text-[var(--color-success)] shrink-0" />
                   <span>{guarantee}</span>
                 </div>

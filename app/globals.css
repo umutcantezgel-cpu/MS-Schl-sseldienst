@@ -329,7 +329,7 @@
     --color-off-white: #FAFAFA;
     --color-warm-white: #F5F3F0;
     --color-light-gray: #EDEDED;
-    --color-mid-gray: #737373; /* Erhöhter Kontrast für WCAG AA */
+    --color-mid-gray: #6B6B6B; /* Erhöhter Kontrast für WCAG AA */
     --color-dark-gray: #4A4A4A;
 
     /* Premium-Rot-Palette (Signal-Rot — Handlung & Dringlichkeit) */

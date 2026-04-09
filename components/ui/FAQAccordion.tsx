@@ -47,7 +47,7 @@ export default function FAQAccordion({ question, answer, isDarkerBg = false }: F
           aria-expanded={isOpen}
           aria-controls={panelId}
         >
-          <span className="flex gap-3 text-[18px] font-bold text-[color:var(--text-primary)]">
+          <span className="flex gap-3 text-lg font-bold text-[color:var(--text-primary)]">
             <HelpCircle className="h-6 w-6 text-[var(--value-icon-color)] shrink-0" aria-hidden="true" />
             {question}
           </span>
@@ -65,10 +65,10 @@ export default function FAQAccordion({ question, answer, isDarkerBg = false }: F
       >
         <div className="overflow-hidden">
           <div className="px-6 pb-6 pt-0 sm:px-8 sm:pb-8 flex flex-col gap-[var(--space-4)]">
-            <p className="text-[16px] text-[color:var(--text-secondary)] leading-[1.75]">
+            <p className="text-base text-[color:var(--text-secondary)] leading-[1.75]">
               {answer}
             </p>
-            <div className="mt-2 text-[15px] font-medium text-[color:var(--text-tertiary)] pt-4 flex flex-col sm:flex-row sm:items-center gap-2">
+            <div className="mt-2 text-base font-medium text-[color:var(--text-tertiary)] pt-4 flex flex-col sm:flex-row sm:items-center gap-2">
               <span>Direkte Rückfrage?</span>
               <a href="tel:+4964418056279" className="inline-flex items-center text-[var(--color-red-500)] hover:underline font-bold">
                 {linkText}

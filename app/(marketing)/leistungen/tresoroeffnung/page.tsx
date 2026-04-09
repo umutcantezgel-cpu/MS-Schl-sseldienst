@@ -82,7 +82,7 @@ export default function TresoroeffnungPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-gray-300 leading-relaxed font-medium">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-gray-300 leading-relaxed font-medium">
             Schlüssel verloren oder Zahlencode vergessen? Wir analysieren die Konstruktion Ihres Tresors und wenden schonende Methoden an, um Ihre Wertsachen sicher und vertraulich freizugeben.
           </p>
         </StaggerItem>
@@ -103,12 +103,12 @@ export default function TresoroeffnungPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
         Absolute Verschwiegenheit
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12 font-medium">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12 font-medium">
         Die Öffnung von Safes, Geldschränken und antiken Tresoren erfordert ein Höchstmaß an Präzision und Fingerspitzengefühl. Gewaltanwendung zerstört oft nicht nur das äußere Schloss, sondern auch irreversible innere Riegelwerke. 
        </p>
       </StaggerItem>
@@ -123,7 +123,7 @@ export default function TresoroeffnungPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Garantierte Diskretion
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Wir bewahren Stillschweigen über Ihre Wertsachen. Unsere Techniker arbeiten diskret, schnell und ohne unnötiges Aufsehen.
           </p>
          </div>
@@ -137,7 +137,7 @@ export default function TresoroeffnungPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Spezialwerkzeuge
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Wir setzen hochmoderne Bohrtechniken und Manipulationswerkzeuge (z.B. Endoskope) ein, um elektronische & mechanische Tresore zu entriegeln.
           </p>
          </div>
@@ -161,7 +161,7 @@ export default function TresoroeffnungPage() {
           {["Öffnung von mechanischen Tresoren (z.B. Doppelbartschloss)", "Öffnung von elektronischen Schlüsselsafes / Panzerschränken", "Mikrochirurgische Aufbohrtechniken zur Vermeidung von Schäden", "Wiederherstellung: Wir reparieren den Zylinder, damit der Safe weiter genutzt werden kann."].map((item, idx) => (
             <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white border border-[var(--border-subtle)] items-center">
               <CheckCircle2 className="w-6 h-6 text-amber-500 shrink-0" />
-              <span className="font-semibold text-gray-800 text-[16px]">{item}</span>
+              <span className="font-semibold text-gray-800 text-base">{item}</span>
             </li>
           ))}
         </ul>
@@ -198,7 +198,7 @@ export default function TresoroeffnungPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen zur Safe-Öffnung
       </h2>
      </StaggerItem>

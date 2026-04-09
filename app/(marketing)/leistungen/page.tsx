@@ -120,7 +120,7 @@ export default function LeistungenPage() {
             Rufen Sie uns direkt an. Wir nennen Ihnen den Preis unverbindlich am Telefon. Keine versteckten Gebühren.
           </p>
 
-          <a href="tel:+4964418056279" className="relative z-10 inline-flex items-center justify-center h-16 px-10 rounded-full font-black text-[18px] text-white bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] hover:scale-105 active:scale-95 transition-all shadow-[0_10px_30px_rgba(220,38,38,0.4)]">
+          <a href="tel:+4964418056279" className="relative z-10 inline-flex items-center justify-center h-16 px-10 rounded-full font-black text-lg text-white bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] hover:scale-105 active:scale-95 transition-all shadow-[0_10px_30px_rgba(220,38,38,0.4)]">
             <Phone className="w-5 h-5 mr-2" />
             06441 – 8056279
           </a>

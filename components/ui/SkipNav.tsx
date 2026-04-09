@@ -1,14 +1,4 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 export function SkipNav() {
-  const [mounted, setMounted] = useState(false);
-
-  // Verhindert Hydration Mismatch, falls es minimal client-seitige Skripte gäbe, 
-  // aber SkipNav sollte idealerweise Server-Rendered bleiben. Da es statisches HTML ist,
-  // können wir es simpel zurückgeben:
-  
   return (
     <a 
       href="#main-content" 

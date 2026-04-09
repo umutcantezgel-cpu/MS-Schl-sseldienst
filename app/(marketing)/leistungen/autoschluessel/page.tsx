@@ -89,7 +89,7 @@ export default function AutoschluesselPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Gehäuse kaputt? Tasten defekt? Zweitschlüssel benötigt? Wir programmieren und reparieren Transponder-Schlüssel schnell und oft günstiger als im Autohaus direkt in Wetzlar.
           </p>
         </StaggerItem>
@@ -109,10 +109,10 @@ export default function AutoschluesselPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Unser Autoschlüssel-Service</h2>
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Unser Autoschlüssel-Service</h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Sie müssen nicht zwingend teures Geld im Autohaus lassen. Mit unserer Ausrüstung können wir Fehler auslesen, Chips programmieren und defekte Gehäuse wechseln. Kommen Sie mit Fahrzeug und allen restlichen Schlüsseln zu unserem Shop!
        </p>
       </StaggerItem>
@@ -121,7 +121,7 @@ export default function AutoschluesselPage() {
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">Ablauf der Codierung</h3>
-          <ul className="space-y-6 text-[18px] text-[color:var(--text-secondary)] m-0 font-medium">
+          <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
               <span><strong>1. Termin direkt vor Ort:</strong> Für alles, was Wegfahrsperren angeht, muss das Fahrzeug vor unserem Geschäft stehen.</span>
@@ -144,7 +144,7 @@ export default function AutoschluesselPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Preise</Badge>
-         <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
            Transparente Konditionen
          </h2>
         </div>
@@ -187,7 +187,7 @@ export default function AutoschluesselPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen
       </h2>
      </StaggerItem>

@@ -217,7 +217,24 @@ const nextConfig: NextConfig = {
           // [SEO: Permissions Policy — restricts browser feature access]
           {
             key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=(self)",
+            value: "camera=(), microphone=(), geolocation=(self), browsing-topics=(), interest-cohort=(), payment=(), usb=(), bluetooth=()",
+          },
+          // [SEO: Advanced Security Headers Migration]
+          {
+            key: "X-XSS-Protection",
+            value: "0",
+          },
+          {
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
+          },
+          {
+            key: "Cross-Origin-Opener-Policy",
+            value: "same-origin",
+          },
+          {
+            key: "Cross-Origin-Resource-Policy",
+            value: "same-origin",
           },
         ],
       },

@@ -47,7 +47,7 @@ export default function UeberUnsPage() {
       
       <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
             <MapPin className="w-4 h-4 text-[var(--color-red-500)]" />
             <span>Aus Wetzlar. Für Wetzlar.</span>
           </div>
@@ -59,7 +59,7 @@ export default function UeberUnsPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto mt-6 max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed text-balance">
+          <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
             Mehr als 15 Jahre Erfahrung, über 50 gerettete Situationen jeden Monat. Wir sind der Handwerksbetrieb von nebenan, dem Sie blind vertrauen können.
           </p>
         </StaggerItem>
@@ -96,7 +96,7 @@ export default function UeberUnsPage() {
        </div>
        Warum wir den Ruf unserer Branche reparieren
       </h2>
-      <p className="lead text-[20px] text-[color:var(--text-secondary)] font-medium leading-relaxed">
+      <p className="lead text-xl text-[color:var(--text-secondary)] font-medium leading-relaxed">
        Jeder kennt die Schauergeschichten aus dem Fernsehen: Wenn die Tür ins Schloss fällt, beginnt oft nicht nur der Stress, sondern auch die Angst vor der Rechnung.
       </p>
       <p className="text-[color:var(--text-secondary)] leading-relaxed mt-4">
@@ -119,28 +119,28 @@ export default function UeberUnsPage() {
          <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
           <AnimatedCounter end={15} suffix="+" duration={1500} />
          </div>
-         <div className="text-[12px] font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Jahre Erfahrung</div>
+         <div className="text-xs font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Jahre Erfahrung</div>
          <Medal className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
         </div>
         <div className="flex flex-col gap-2 relative">
          <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
           <AnimatedCounter end={50} suffix="+" duration={2000} />
          </div>
-         <div className="text-[12px] font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Notöffnungen/Monat</div>
+         <div className="text-xs font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Notöffnungen/Monat</div>
          <Users className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
         </div>
         <div className="flex flex-col gap-2 relative pt-6 md:pt-0">
          <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
           <AnimatedCounter end={99} suffix="%" duration={2000} />
          </div>
-         <div className="text-[12px] font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Zerstörungsfrei</div>
+         <div className="text-xs font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Zerstörungsfrei</div>
          <ThumbsUp className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
         </div>
         <div className="flex flex-col gap-2 relative pt-6 md:pt-0">
          <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
           <AnimatedCounter end={25} suffix=" Min" duration={1200} />
          </div>
-         <div className="text-[12px] font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Mittel. Anfahrtszeit</div>
+         <div className="text-xs font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Mittel. Anfahrtszeit</div>
          <Clock className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
         </div>
        </div>
@@ -154,7 +154,7 @@ export default function UeberUnsPage() {
           <Heart className="h-6 w-6" />
          </div>
          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Maximale Sorgfalt</h3>
-         <p className="text-[color:var(--text-secondary)] text-[15px] leading-relaxed">
+         <p className="text-[color:var(--text-secondary)] text-base leading-relaxed">
           Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. Zu 99% öffnen wir zerstörungsfrei. Darum vertrauen uns seit Jahren zahllose private Haushalte.
          </p>
         </div>
@@ -164,7 +164,7 @@ export default function UeberUnsPage() {
           <Clock className="h-6 w-6" />
          </div>
          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Zeit ist Empathie</h3>
-         <p className="text-[color:var(--text-secondary)] text-[15px] leading-relaxed">
+         <p className="text-[color:var(--text-secondary)] text-base leading-relaxed">
           Wer vor verschlossener Tür steht, oft bei Regen oder Kälte, braucht keine Warteschleifen. Wir garantieren in und um Wetzlar eine Anfahrt von unter 25 Minuten.
          </p>
         </div>
@@ -174,7 +174,7 @@ export default function UeberUnsPage() {
           <Wrench className="h-6 w-6" />
          </div>
          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Meisterliche Expertise</h3>
-         <p className="text-[color:var(--text-secondary)] text-[15px] leading-relaxed">
+         <p className="text-[color:var(--text-secondary)] text-base leading-relaxed">
           Echtes Handwerk: Wir sind mit Spezialwerkzeug ausgestattet, mit dem selbst moderne Hochsicherheitsschlösser professionell und nachhaltig bearbeitet werden können.
          </p>
         </div>
@@ -191,18 +191,18 @@ export default function UeberUnsPage() {
          <span className="absolute top-4 right-6 text-[120px] font-serif text-[var(--color-red-500)]/[0.06] leading-none pointer-events-none select-none" aria-hidden="true">“</span>
          
          <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-6">
-          <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[var(--color-charcoal-900)] shrink-0 text-white text-[20px] md:text-[24px] font-bold shadow-lg">
+          <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-[var(--color-charcoal-900)] shrink-0 text-white text-xl md:text-[24px] font-bold shadow-lg">
            US
           </div>
           <div className="flex flex-col text-center md:text-left">
            <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
             <ShieldCheck className="w-5 h-5 text-[var(--color-red-500)]" />
-            <span className="text-[12px] font-bold tracking-widest uppercase text-[var(--color-red-500)]">Zertifizierte Ausbildung</span>
+            <span className="text-xs font-bold tracking-widest uppercase text-[var(--color-red-500)]">Zertifizierte Ausbildung</span>
            </div>
-           <h3 className="text-[22px] font-bold text-[color:var(--text-primary)] mb-3">
+           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3">
             Ausgebildet von Uwe Sarfeld
            </h3>
-           <p className="text-[color:var(--text-secondary)] text-[16px] leading-relaxed">
+           <p className="text-[color:var(--text-secondary)] text-base leading-relaxed">
             Unser Chef-Techniker wurde von Uwe Sarfeld, einem der bekanntesten Schlüsseldienst-Experten Deutschlands (TV-Experte bei Kabel 1 & WDR), ausgebildet.
             Wir bringen nicht nur das richtige Werkzeug mit, sondern absolutes Meister-Know-how.
            </p>
@@ -219,18 +219,18 @@ export default function UeberUnsPage() {
           MS
          </div>
          <div className="flex flex-col items-center gap-1">
-          <h3 className="text-[22px] font-bold text-[color:var(--text-primary)]"> Schlüssel Schmiede Wetzlar</h3>
-          <span className="text-[14px] font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">Inhaber & Geschäftsführer</span>
+          <h3 className="text-xl font-bold text-[color:var(--text-primary)]"> Schlüssel Schmiede Wetzlar</h3>
+          <span className="text-sm font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">Inhaber & Geschäftsführer</span>
          </div>
          <div className="flex items-center gap-1 text-[var(--color-red-500)]">
           {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}
          </div>
-         <p className="text-[color:var(--text-secondary)] text-[17px] leading-relaxed max-w-lg">
+         <p className="text-[color:var(--text-secondary)] text-lg leading-relaxed max-w-lg">
           Lassen Sie sich überzeugen, wenn Sie uns am meisten brauchen. Speichern Sie unsere Nummer am besten gleich in Ihrem Handy ein.
          </p>
          <a
           href="tel:+4964418056279"
-          className="inline-flex items-center justify-center gap-3 h-[56px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-[17px] font-bold rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-1 transition-all duration-300"
+          className="inline-flex items-center justify-center gap-3 h-[56px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-lg font-bold rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-1 transition-all duration-300"
          >
           <svg aria-hidden="true" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           06441 8056279 anrufen
@@ -259,8 +259,8 @@ export default function UeberUnsPage() {
               href={page.href}
               className="group flex flex-col gap-2 p-6 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all"
             >
-              <span className="text-[16px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">{page.name}</span>
-              <span className="text-[14px] text-[color:var(--text-secondary)]">{page.desc}</span>
+              <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">{page.name}</span>
+              <span className="text-sm text-[color:var(--text-secondary)]">{page.desc}</span>
             </Link>
           ))}
         </div>

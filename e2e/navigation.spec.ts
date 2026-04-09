@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test.describe("Navigation", () => {
   test("homepage loads with correct title", async ({ page }) => {
     await page.goto("/");
-    await expect(page).toHaveTitle(/Schlüsseldienst Wetzlar/);
+    await expect(page).toHaveTitle(/Schlüssel Schmiede Wetzlar/);
   });
 
   test("header navigation links work", async ({ page }) => {

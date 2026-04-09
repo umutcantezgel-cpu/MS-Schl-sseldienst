@@ -80,14 +80,14 @@ export default function ReviewsSection() {
                   ))}
                 </div>
               </div>
-              <span className="text-[14px] text-[color:var(--text-secondary)] font-medium mt-2">Basierend auf {liveRating.reviewCount} Google Rezensionen</span>
+              <span className="text-sm text-[color:var(--text-secondary)] font-medium mt-2">Basierend auf {liveRating.reviewCount} Google Rezensionen</span>
             </div>
           </div>
 
           {/* Right: Animated Distribution Bars */}
           <div className="flex-1 flex flex-col gap-[var(--space-3)] sm:pl-[var(--space-8)]">
             {distribution.map((row, idx) => (
-              <div key={row.stars} className="flex items-center gap-[var(--space-4)] text-[14px] text-[color:var(--text-secondary)] font-bold">
+              <div key={row.stars} className="flex items-center gap-[var(--space-4)] text-sm text-[color:var(--text-secondary)] font-bold">
                 <span className="w-[60px] shrink-0 text-[color:var(--text-primary)]">{row.stars} Sterne</span>
                 <AnimatedBar pct={row.pct} delay={idx * 0.12} />
                 <span className="w-10 shrink-0 text-right text-[color:var(--text-tertiary)]">{row.count}</span>

@@ -131,10 +131,10 @@ export default function BlogPage() {
                              {post.metadata.readingTime} Min.
                           </span>
                         </div>
-                        <h3 className="text-[22px] sm:text-2xl font-bold mb-3 group-hover:text-[var(--color-red-500)] transition-colors text-balance">
+                        <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-[var(--color-red-500)] transition-colors text-balance">
                           {post.metadata.title}
                         </h3>
-                        <p className="text-[16px] text-[color:var(--text-secondary)] mb-6 line-clamp-3 leading-relaxed">
+                        <p className="text-base text-[color:var(--text-secondary)] mb-6 line-clamp-3 leading-relaxed">
                           {post.metadata.excerpt}
                         </p>
                         <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[var(--color-red-500)]/5 text-sm font-bold text-[color:var(--text-primary)] group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-all duration-300 mt-auto">

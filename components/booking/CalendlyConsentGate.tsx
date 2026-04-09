@@ -70,7 +70,7 @@ export default function CalendlyConsentGate({ children }: CalendlyConsentGatePro
           Terminbuchung blockiert
         </div>
         
-        <p className="text-[15px] text-[color:var(--text-secondary)] leading-relaxed mb-8">
+        <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
           Um unseren digitalen Terminkalender anzuzeigen, benötigen wir Ihre Zustimmung. Wir nutzen <strong>Calendly</strong>, einen externen Dienstleister. Beim Laden werden Marketing-Cookies gesetzt und Verbindungen zu Fremdservern aufgebaut.
         </p>
 
@@ -84,7 +84,7 @@ export default function CalendlyConsentGate({ children }: CalendlyConsentGatePro
           
           <button
             onClick={openSettings}
-            className="w-full h-12 rounded-[var(--radius-8)] flex items-center justify-center gap-2 text-[14px] font-medium text-[color:var(--text-secondary)] hover:bg-[var(--surface-secondary)] hover:text-[color:var(--text-primary)] transition-colors border border-transparent hover:border-[var(--border-color)]"
+            className="w-full h-12 rounded-[var(--radius-8)] flex items-center justify-center gap-2 text-sm font-medium text-[color:var(--text-secondary)] hover:bg-[var(--surface-secondary)] hover:text-[color:var(--text-primary)] transition-colors border border-transparent hover:border-[var(--border-color)]"
           >
             <Settings2 className="w-4 h-4" />
             Cookie-Einstellungen anpassen

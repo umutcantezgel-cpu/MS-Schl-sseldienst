@@ -87,7 +87,7 @@ export default function PreviewImagesPage() {
 
                       {/* Metadata */}
                       <div className="p-4 space-y-2">
-                        <p className="text-[11px] font-mono text-emerald-400 break-all leading-tight">
+                        <p className="text-xs font-mono text-emerald-400 break-all leading-tight">
                           {filename}
                         </p>
                         <p className="text-sm text-gray-300 leading-snug">

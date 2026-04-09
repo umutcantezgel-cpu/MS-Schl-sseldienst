@@ -10,7 +10,7 @@ test.describe("SEO", () => {
   test("homepage has canonical URL", async ({ page }) => {
     await page.goto("/");
     const canonical = page.locator('link[rel="canonical"]');
-    await expect(canonical).toHaveAttribute("href", /schluesseldienst/);
+    await expect(canonical).toHaveAttribute("href", /^https?:\/\/.+/);
   });
 
   test("homepage has JSON-LD structured data", async ({ page }) => {

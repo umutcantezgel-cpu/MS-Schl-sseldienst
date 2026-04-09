@@ -62,8 +62,8 @@ export default function LocalPreviewDashboard() {
               MS
             </div>
             <div>
-              <h1 className="text-[13px] font-black tracking-tight leading-none">Mission Control</h1>
-              <p className="text-[11px] text-slate-500 font-medium">Local Preview Env</p>
+              <h1 className="text-sm font-black tracking-tight leading-none">Mission Control</h1>
+              <p className="text-xs text-slate-500 font-medium">Local Preview Env</p>
             </div>
           </div>
           <div className="relative">
@@ -73,7 +73,7 @@ export default function LocalPreviewDashboard() {
               placeholder={`Search ${allLocations.length} locations...`}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full h-9 pl-9 pr-3 text-[13px] bg-white border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all placeholder:text-slate-400"
+              className="w-full h-9 pl-9 pr-3 text-sm bg-white border border-slate-200 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all placeholder:text-slate-400"
             />
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function LocalPreviewDashboard() {
               <button
                 key={loc.slug}
                 onClick={() => setSelectedSlug(loc.slug)}
-                className={`w-full text-left px-3 py-2 rounded-md text-[13px] transition-all flex flex-col gap-0.5 group ${
+                className={`w-full text-left px-3 py-2 rounded-md text-sm transition-all flex flex-col gap-0.5 group ${
                   isSelected 
                     ? "bg-red-50 text-red-700 font-bold" 
                     : "hover:bg-slate-50 text-slate-700"
@@ -141,8 +141,8 @@ export default function LocalPreviewDashboard() {
             
             {currentLoc && (
               <div className="flex items-center gap-2 text-sm text-slate-500 bg-slate-50 px-3 py-1.5 rounded-md border border-slate-200">
-                <span className="font-mono text-[11px] text-slate-400">URL:</span>
-                <span className="font-medium text-slate-700 text-[13px]">/{currentLoc.slug}</span>
+                <span className="font-mono text-xs text-slate-400">URL:</span>
+                <span className="font-medium text-slate-700 text-sm">/{currentLoc.slug}</span>
                 <a 
                   href={`/${currentLoc.slug}`} 
                   target="_blank" 
@@ -157,7 +157,7 @@ export default function LocalPreviewDashboard() {
           </div>
           
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1.5 text-[12px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full">
               <ShieldCheck className="w-4 h-4" />
               <span>SEO Active</span>
             </div>

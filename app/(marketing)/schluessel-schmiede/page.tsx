@@ -139,12 +139,12 @@ export default function SchluesselSchmiedePage() {
           </Badge>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-[40px] sm:text-[56px] lg:text-[72px] font-extrabold tracking-tighter text-white leading-[1.05] text-balance mb-[var(--space-6)]">
+          <h1 className="text-4xl sm:text-[56px] lg:text-[4.5rem] font-extrabold tracking-tighter text-white leading-[1.05] text-balance mb-[var(--space-6)]">
             Die <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-red-400)] to-red-200">Schlüssel Schmiede</span> <br />Wetzlar.
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[22px] text-slate-300 leading-relaxed font-light">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-slate-300 leading-relaxed font-light">
             Wo Traditionshandwerk auf modernste Mikroelektronik trifft. Von der klassischen Schlüsselkopie bis zur komplexen KFZ-Transponder-Codierung an unseren CNC-Fräsen.
           </p>
         </StaggerItem>
@@ -152,7 +152,7 @@ export default function SchluesselSchmiedePage() {
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <a
               href="tel:+4964418056279"
-              className="flex items-center justify-center gap-2 h-[56px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-xl font-bold text-[16px] shadow-[0_0_20px_rgba(185,28,28,0.3)] hover:shadow-[0_0_30px_rgba(185,28,28,0.5)] hover:-translate-y-[1px] transition-all"
+              className="flex items-center justify-center gap-2 h-[56px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-xl font-bold text-base shadow-[0_0_20px_rgba(185,28,28,0.3)] hover:shadow-[0_0_30px_rgba(185,28,28,0.5)] hover:-translate-y-[1px] transition-all"
             >
               <Phone className="w-5 h-5" />
               06441 8056279
@@ -161,7 +161,7 @@ export default function SchluesselSchmiedePage() {
               href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 h-[56px] px-8 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md rounded-xl font-bold text-[16px] border border-white/20 hover:-translate-y-[1px] transition-all"
+              className="flex items-center justify-center gap-2 h-[56px] px-8 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md rounded-xl font-bold text-base border border-white/20 hover:-translate-y-[1px] transition-all"
             >
               <MapPin className="w-5 h-5" />
               Route zur Werkstatt
@@ -172,28 +172,28 @@ export default function SchluesselSchmiedePage() {
         <StaggerItem animation={entryAnimations.slideUpFade} className="w-full mt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
             <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-[40px] font-black text-white leading-none tracking-tight">
+              <span className="text-[32px] md:text-4xl font-black text-white leading-none tracking-tight">
                 <AnimatedCounter end={2005} />
               </span>
-              <span className="text-[12px] md:text-[14px] text-slate-400 font-medium uppercase tracking-wider mt-1">Gründungsjahr</span>
+              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Gründungsjahr</span>
             </div>
             <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-[40px] font-black text-white leading-none tracking-tight">
+              <span className="text-[32px] md:text-4xl font-black text-white leading-none tracking-tight">
                 <AnimatedCounter end={18500} prefix="+" />
               </span>
-              <span className="text-[12px] md:text-[14px] text-slate-400 font-medium uppercase tracking-wider mt-1">Gefräste Schlüssel</span>
+              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Gefräste Schlüssel</span>
             </div>
             <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-[40px] font-black text-white leading-none tracking-tight">
+              <span className="text-[32px] md:text-4xl font-black text-white leading-none tracking-tight">
                 <AnimatedCounter end={15} suffix=" Min" />
               </span>
-              <span className="text-[12px] md:text-[14px] text-slate-400 font-medium uppercase tracking-wider mt-1">Ø Zeit KFZ-Schlüssel</span>
+              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Ø Zeit KFZ-Schlüssel</span>
             </div>
             <div className="flex flex-col items-center p-2">
-              <span className="text-[32px] md:text-[40px] font-black text-[var(--color-red-400)] leading-none tracking-tight">
+              <span className="text-[32px] md:text-4xl font-black text-[var(--color-red-400)] leading-none tracking-tight">
                 <AnimatedCounter end={100} suffix="%" />
               </span>
-              <span className="text-[12px] md:text-[14px] text-slate-400 font-medium uppercase tracking-wider mt-1">Festpreis Garantie</span>
+              <span className="text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-1">Festpreis Garantie</span>
             </div>
           </div>
         </StaggerItem>
@@ -221,12 +221,12 @@ export default function SchluesselSchmiedePage() {
         </div>
         <Badge variant="outline" className="text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Unser Ladengeschäft</Badge>
        </div>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
         Mehr als ein Laden — <br className="hidden sm:block" />ein Ort für Vertrauen.
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <div className="space-y-6 text-[18px] text-[color:var(--text-secondary)] leading-relaxed">
+       <div className="space-y-6 text-lg text-[color:var(--text-secondary)] leading-relaxed">
         <p>
          Die Schlüssel Schmiede ist nicht einfach ein Geschäft. Sie ist aus dem Wunsch entstanden, Menschen direkt vor Ort zu helfen — mit <strong className="text-[color:var(--text-primary)]">Zeit, Verständnis und sauberer Arbeit</strong>.
         </p>
@@ -292,10 +292,10 @@ export default function SchluesselSchmiedePage() {
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="text-center mb-16">
         <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-white border-[var(--color-red-100)]">Alles unter einem Dach</Badge>
-        <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
          Unsere Leistungen im Laden
         </h2>
-        <p className="mt-4 text-[18px] text-[color:var(--text-secondary)] max-w-2xl mx-auto">
+        <p className="mt-4 text-lg text-[color:var(--text-secondary)] max-w-2xl mx-auto">
          Von der Schlüsselkopie bis zum KFZ-Schlüssel, von Gravuren bis Passbilder — alles persönlich und direkt vor Ort.
         </p>
        </div>
@@ -311,8 +311,8 @@ export default function SchluesselSchmiedePage() {
             <Icon className="h-7 w-7" />
            </div>
            <div>
-            <h3 className="text-[20px] font-bold text-[color:var(--text-primary)] mb-2">{service.title}</h3>
-            <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">{service.desc}</p>
+            <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">{service.title}</h3>
+            <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">{service.desc}</p>
            </div>
           </div>
          );
@@ -330,7 +330,7 @@ export default function SchluesselSchmiedePage() {
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="text-center mb-16">
         <Badge variant="outline" className="mb-4 text-[var(--color-red-600)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Präzisionswerkstatt</Badge>
-        <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
          High-Tech KFZ-Schlüssel <br className="hidden md:block"/>Codierung & Frästechnik
         </h2>
        </div>
@@ -349,7 +349,7 @@ export default function SchluesselSchmiedePage() {
                 </div>
                 <h3 className="text-[28px] font-extrabold text-[color:var(--text-primary)] tracking-tight">Vollständige Fahrzeugintegration</h3>
               </div>
-              <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed max-w-md mb-8">
+              <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed max-w-md mb-8">
                 Wir fräsen den Rohling nicht nur nach Originalmaßen, sondern verheiraten den Kryptochip elektronisch mit der Wegfahrsperre Ihres Autos. Perfekte Funktion, so als kämen Sie direkt aus dem Autohaus.
               </p>
               
@@ -359,7 +359,7 @@ export default function SchluesselSchmiedePage() {
                 "Auslesen des PIN-Codes vor Ort",
                 "Löschen von gestohlenen/verlorenen Schlüsseln",
                ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-[16px] font-medium text-[color:var(--text-primary)]">
+                <li key={idx} className="flex items-start gap-3 text-base font-medium text-[color:var(--text-primary)]">
                  <div className="flex h-6 w-6 shrink-0 mt-0.5 items-center justify-center rounded-full bg-[var(--color-red-100)] text-[var(--color-red-600)]">
                   <ShieldCheck className="h-4 w-4" />
                  </div>
@@ -382,7 +382,7 @@ export default function SchluesselSchmiedePage() {
             </div>
             <div className="relative z-10">
               <h4 className="text-[24px] font-extrabold text-white mb-2">Kein Termin nötig.</h4>
-              <p className="text-red-50 text-[16px] leading-relaxed">
+              <p className="text-red-50 text-base leading-relaxed">
                 Während das Autohaus oft Wochen auf ein Ersatzteil wartet, codieren wir Ihren Schlüssel im Handumdrehen direkt in der Schmiede.
               </p>
             </div>
@@ -396,8 +396,8 @@ export default function SchluesselSchmiedePage() {
               </div>
               <Badge variant="outline" className="bg-transparent text-violet-600 border-violet-200">CNC Fräse</Badge>
             </div>
-            <h4 className="text-[20px] font-bold text-[color:var(--text-primary)] mb-3">Laser & Bahnfräsung</h4>
-            <p className="text-[15px] text-[color:var(--text-secondary)] leading-relaxed">
+            <h4 className="text-xl font-bold text-[color:var(--text-primary)] mb-3">Laser & Bahnfräsung</h4>
+            <p className="text-base text-[color:var(--text-secondary)] leading-relaxed">
               Unsere computergesteuerten CNC-Maschinen arbeiten auf den Hundertstel-Millimeter exakt. Das garantiert, dass der Schließzylinder in der Autotür nicht klemmt.
             </p>
           </div>
@@ -416,7 +416,7 @@ export default function SchluesselSchmiedePage() {
      <StaggerReveal animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade} className="text-center mb-16">
         <Badge variant="outline" className="mb-4 text-violet-600 bg-violet-50 border-violet-100">Präzision & biometrische Fotografie</Badge>
-        <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
          Lasergravuren & <br className="hidden md:block"/>Passbild-Studio
         </h2>
       </StaggerItem>
@@ -436,7 +436,7 @@ export default function SchluesselSchmiedePage() {
               </div>
               <h3 className="text-[24px] font-extrabold text-[color:var(--text-primary)]">Biometrische Passbilder</h3>
             </div>
-            <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-8">
+            <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
               Wir erstellen offizielle, biometrische Passfotos nach den strengen ICAO-Normen, die von den Bürgerbüros für Ausweise und Führerscheine akzeptiert werden.
             </p>
             <div className="space-y-3">
@@ -446,8 +446,8 @@ export default function SchluesselSchmiedePage() {
                 { label: "Kein Termin", text: "Direkt im Laden shoooten & mitnehmen" }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                  <div className="font-bold text-rose-600 text-[14px] w-[120px] shrink-0">{item.label}</div>
-                  <div className="text-[14px] text-[color:var(--text-secondary)]">{item.text}</div>
+                  <div className="font-bold text-rose-600 text-sm w-[120px] shrink-0">{item.label}</div>
+                  <div className="text-sm text-[color:var(--text-secondary)]">{item.text}</div>
                 </div>
               ))}
             </div>
@@ -467,7 +467,7 @@ export default function SchluesselSchmiedePage() {
               </div>
               <h3 className="text-[24px] font-extrabold text-white">Präzisions-Gravuren</h3>
             </div>
-            <p className="text-[16px] text-violet-100 leading-relaxed mb-8 max-w-sm">
+            <p className="text-base text-violet-100 leading-relaxed mb-8 max-w-sm">
               Materialschonende Gravurarbeiten direkt im Laden. Für Vereine, Unternehmen oder private Erinnerungsstücke.
             </p>
             <div className="grid grid-cols-2 gap-3">
@@ -479,7 +479,7 @@ export default function SchluesselSchmiedePage() {
                 "Schließanlagen-Schlüssel",
                 "Edelstahl & Messing"
               ].map((item) => (
-                <div key={item} className="flex items-center gap-2 px-4 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-[14px] font-medium text-white hover:bg-white/20 transition-colors">
+                <div key={item} className="flex items-center gap-2 px-4 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium text-white hover:bg-white/20 transition-colors">
                   <span className="w-1.5 h-1.5 rounded-full bg-violet-300" />
                   {item}
                 </div>
@@ -501,7 +501,7 @@ export default function SchluesselSchmiedePage() {
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="text-center mb-16">
         <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Besuchen Sie uns</Badge>
-        <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
          Standort & Öffnungszeiten
         </h2>
        </div>
@@ -516,18 +516,18 @@ export default function SchluesselSchmiedePage() {
            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
             <MapPin className="h-5 w-5" />
            </div>
-           <h3 className="text-[20px] font-bold text-[color:var(--text-primary)]">Adresse</h3>
+           <h3 className="text-xl font-bold text-[color:var(--text-primary)]">Adresse</h3>
           </div>
-          <address className="not-italic text-[18px] text-[color:var(--text-secondary)] leading-relaxed space-y-1">
+          <address className="not-italic text-lg text-[color:var(--text-secondary)] leading-relaxed space-y-1">
            <p className="font-semibold text-[color:var(--text-primary)]">Schlüssel Schmiede Wetzlar</p>
            <p>Langgasse 70</p>
            <p>35578 Wetzlar</p>
           </address>
           <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-[var(--border-subtle)]">
-           <a href="tel:+4964418056279" className="flex items-center gap-3 text-[16px] text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
+           <a href="tel:+4964418056279" className="flex items-center gap-3 text-base text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
             <Phone className="h-4 w-4" /> 06441 8056279
            </a>
-           <a href="tel:+491782471037" className="flex items-center gap-3 text-[16px] text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
+           <a href="tel:+491782471037" className="flex items-center gap-3 text-base text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
             <Phone className="h-4 w-4" /> 0178 2471037
            </a>
           </div>
@@ -538,7 +538,7 @@ export default function SchluesselSchmiedePage() {
            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
             <Clock className="h-5 w-5" />
            </div>
-           <h3 className="text-[20px] font-bold text-[color:var(--text-primary)]">Öffnungszeiten</h3>
+           <h3 className="text-xl font-bold text-[color:var(--text-primary)]">Öffnungszeiten</h3>
           </div>
           <div className="space-y-3">
            {[
@@ -546,13 +546,13 @@ export default function SchluesselSchmiedePage() {
             { day:"Sonntag", time:"Geschlossen" },
            ].map((row) => (
             <div key={row.day} className="flex justify-between items-center py-2 border-b border-[var(--border-subtle)] last:border-0">
-             <span className="text-[16px] text-[color:var(--text-secondary)]">{row.day}</span>
-             <span className="text-[16px] font-semibold text-[color:var(--text-primary)]">{row.time}</span>
+             <span className="text-base text-[color:var(--text-secondary)]">{row.day}</span>
+             <span className="text-base font-semibold text-[color:var(--text-primary)]">{row.time}</span>
             </div>
            ))}
           </div>
           <div className="mt-6 p-4 rounded-xl bg-[var(--color-red-50)] border border-[var(--color-red-200)]/50">
-           <p className="text-[14px] text-[var(--color-red-700)] font-medium flex items-center gap-2">
+           <p className="text-sm text-[var(--color-red-700)] font-medium flex items-center gap-2">
             <Phone className="h-4 w-4" />
             24/7 Notdienst unter 06441 8056279
            </p>
@@ -563,12 +563,12 @@ export default function SchluesselSchmiedePage() {
         {/* Karten-Platzhalter */}
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] border border-[var(--border-subtle)] overflow-hidden min-h-[400px] flex flex-col items-center justify-center">
          <MapPin className="h-16 w-16 text-[var(--color-red-200)] mb-4" />
-         <p className="text-[16px] font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35578 Wetzlar</p>
+         <p className="text-base font-semibold text-[color:var(--text-tertiary)]">Langgasse 70, 35578 Wetzlar</p>
          <a
           href="https://maps.google.com/?q=Langgasse+70,+35578+Wetzlar"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--color-red-500)] text-white font-bold text-[14px] hover:bg-[var(--color-red-600)] transition-colors"
+          className="mt-4 flex items-center gap-2 px-6 py-3 rounded-xl bg-[var(--color-red-500)] text-white font-bold text-sm hover:bg-[var(--color-red-600)] transition-colors"
          >
           <MapPin className="h-4 w-4" />
           In Google Maps öffnen
@@ -584,7 +584,7 @@ export default function SchluesselSchmiedePage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen zur Schlüssel Schmiede
       </h2>
      </StaggerItem>

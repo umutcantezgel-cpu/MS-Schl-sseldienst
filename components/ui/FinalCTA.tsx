@@ -21,7 +21,7 @@ export default function FinalCTA({ className }: { className?: string }) {
         <div className="flex flex-col md:flex-row items-center justify-center gap-[var(--space-4)] md:gap-[var(--space-8)] mb-[var(--space-12)]">
           {["Techniker in 20-30 Minuten vor Ort","Festpreis wird sofort am Telefon genannt","0% Versteckte Kosten garantiert"
           ].map((benefit, i) => (
-            <div key={i} className="flex items-center gap-[var(--space-3)] text-[16px] md:text-[18px] font-medium text-white shadow-sm">
+            <div key={i} className="flex items-center gap-[var(--space-3)] text-base md:text-lg font-medium text-white shadow-sm">
               <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white/20 shrink-0">
                 <Check className="h-5 w-5 text-white" />
               </div>
@@ -42,7 +42,7 @@ export default function FinalCTA({ className }: { className?: string }) {
             <a
                href="tel:+4964418056279"
               onClick={() => triggerHaptic('light')}
-              className="group flex items-center justify-center gap-3 w-full h-[72px] bg-white text-[var(--color-red-500)] hover:bg-slate-50 text-[20px] font-black rounded-[var(--radius-16)] shadow-[var(--elevation-2)] hover:-translate-y-2 hover:shadow-[var(--elevation-3)] transition-all duration-300 ease-out focus:outline-none focus:ring-4 focus:ring-white/50"
+              className="group flex items-center justify-center gap-3 w-full h-[72px] bg-white text-[var(--color-red-500)] hover:bg-slate-50 text-xl font-black rounded-[var(--radius-16)] shadow-[var(--elevation-2)] hover:-translate-y-2 hover:shadow-[var(--elevation-3)] transition-all duration-300 ease-out focus:outline-none focus:ring-4 focus:ring-white/50"
             >
               <Phone className="h-6 w-6" />
               Jetzt Notdienst Rufen
@@ -53,11 +53,11 @@ export default function FinalCTA({ className }: { className?: string }) {
           <div className="flex flex-col items-center gap-2 mt-2">
             <div className="flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full border border-white/20">
               <Users className="w-4 h-4 text-white" />
-              <span className="text-[14px] text-white font-medium">
+              <span className="text-sm text-white font-medium">
                 Von über 500+ zufriedenen Kunden gewählt
               </span>
             </div>
-            <span className="text-[13px] text-white/70 font-medium text-center max-w-sm">
+            <span className="text-sm text-white/70 font-medium text-center max-w-sm">
               In 20-30 Min. vor Ort • Festpreis vor Anfahrt • 24/7 Notdienst
             </span>
           </div>

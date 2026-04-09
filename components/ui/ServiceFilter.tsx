@@ -55,7 +55,7 @@ export default function ServiceFilter({ services }: ServiceFilterProps) {
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
               className={`
-                inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-[14px] font-semibold
+                inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold
                 transition-all duration-300 border
                 ${isActive
                   ? "bg-[var(--color-red-500)] text-white border-[var(--color-red-500)] shadow-[var(--shadow-brand-1)]"

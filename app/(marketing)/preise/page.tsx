@@ -74,7 +74,7 @@ export default function PreisePage() {
       
       <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
             <CheckCircle2 className="w-4 h-4 text-[var(--color-success)]" />
             <span>Garantiert keine versteckten Kosten</span>
           </div>
@@ -85,7 +85,7 @@ export default function PreisePage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto mt-6 max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed text-balance">
+          <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
             Wir hassen versteckte Gebühren. Berechnen Sie Ihren verbindlichen Endpreis für Wetzlar in unter 3 Sekunden.
           </p>
         </StaggerItem>
@@ -119,7 +119,7 @@ export default function PreisePage() {
       </h2>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.scaleFade}>
-      <p className="mt-6 text-[18px] text-[color:var(--text-secondary)] leading-relaxed">
+      <p className="mt-6 text-lg text-[color:var(--text-secondary)] leading-relaxed">
         Der Preis, den Ihnen der Monteur vor Ort nach der Besichtigung der Tür nennt, ist ein verbindlicher Festpreis. Es kommen keine Fantasie-Gebühren für &quot;Spezialwerkzeuge&quot; oder &quot;Erschwerniszulagen&quot; im Nachhinein dazu.
       </p>
      </StaggerItem>
@@ -139,8 +139,8 @@ export default function PreisePage() {
            <path d={item.icon} />
           </svg>
          </div>
-         <h3 className="text-[15px] font-bold text-[color:var(--text-primary)] mb-1">{item.label}</h3>
-         <p className="text-[13px] text-[color:var(--text-tertiary)]">{item.desc}</p>
+         <h3 className="text-base font-bold text-[color:var(--text-primary)] mb-1">{item.label}</h3>
+         <p className="text-sm text-[color:var(--text-tertiary)]">{item.desc}</p>
         </div>
        ))}
       </div>

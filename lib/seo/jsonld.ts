@@ -1,7 +1,9 @@
+import { companyInfo } from "@/lib/data/company";
+
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wetzlar-schlüsseldienst.de";
-const companyName = "Schlüssel Schmiede Wetzlar";
-const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "info@wetzlar-schlüsseldienst.de";
-const telephone = "+4964418056279"; // Landline is prioritized for local SEO trustworthiness
+const companyName = companyInfo.name;
+const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || companyInfo.email;
+const telephone = companyInfo.phone || "+4964418056279"; // Landline is prioritized for local SEO trustworthiness
 
 export function createOrganizationSchema() {
     return {
@@ -39,8 +41,8 @@ export function createLocalBusinessSchema() {
         },
         geo: {
             "@type": "GeoCoordinates",
-            latitude: 50.5567, // Accurate coordinate roughly for Langgasse 70, Wetzlar
-            longitude: 8.5022
+            latitude: companyInfo.geo?.latitude || 50.5567, // Accurate coordinate roughly for Langgasse 70, Wetzlar
+            longitude: companyInfo.geo?.longitude || 8.5022
         },
         openingHoursSpecification: [
             {

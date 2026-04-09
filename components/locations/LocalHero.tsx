@@ -51,7 +51,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
 
                 <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
                             <span className="relative flex h-3 w-3">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-400)] opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--color-red-500)]"></span>
@@ -74,7 +74,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <p className="mx-auto max-w-prose text-[15px] sm:text-xl text-[color:var(--text-secondary)] text-center text-balance leading-snug sm:leading-relaxed mb-4 sm:mb-8">
+                        <p className="mx-auto max-w-prose text-base sm:text-xl text-[color:var(--text-secondary)] text-center text-balance leading-snug sm:leading-relaxed mb-4 sm:mb-8">
                             {city.content.heroIntro}
                         </p>
                         
@@ -100,7 +100,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                                 className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-6 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto"
                             >
                                 <Phone className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:rotate-12" />
-                                <span className="text-[16px] sm:text-xl tracking-tight">Jetzt Anrufen — 06441-8056279</span>
+                                <span className="text-base sm:text-xl tracking-tight">Jetzt Anrufen — 06441-8056279</span>
                             </a>
                             <span className="typo-tiny text-[color:var(--text-tertiary)] text-center font-medium tracking-wide uppercase mt-2">
                                 Kostenlos & unverbindlich — Antwort in 30 Min

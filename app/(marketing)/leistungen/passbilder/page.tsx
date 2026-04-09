@@ -88,7 +88,7 @@ export default function PassbilderPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Egal ob Personalausweis, Reisepass, Führerschein oder Visum: Wir fotografieren Sie nach den offiziellen biometrischen Vorgaben. Sofort fertig zum Mitnehmen.
           </p>
         </StaggerItem>
@@ -106,10 +106,10 @@ export default function PassbilderPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Perfekt für alle amtlichen Dokumente</h2>
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Perfekt für alle amtlichen Dokumente</h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Die Anforderungen an Passbilder sind streng. Gesichtsausdruck, Ausleuchtung, Hintergrund und Kopfposition müssen genau stimmen. Wir haben die Technik und Erfahrung, um sofort akzeptierte Bilder für Ihre Dokumente zu erstellen.
        </p>
        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -156,7 +156,7 @@ export default function PassbilderPage() {
         <div className="rounded-[var(--radius-24)] bg-gradient-to-br from-blue-50 to-white p-8 md:p-10 border border-blue-100 mb-16 relative overflow-hidden">
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">4 Bilder - Ein Preis</h3>
           <p className="text-xl font-bold mb-4">Nur 15,- €</p>
-          <ul className="space-y-4 text-[18px] text-[color:var(--text-secondary)] m-0 font-medium">
+          <ul className="space-y-4 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
             <li className="flex items-start gap-4">
               <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600 mt-1"><Check className="h-4 w-4" /></div>
               <span>4 Passbilder gedruckt</span>
@@ -183,7 +183,7 @@ export default function PassbilderPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen zu Passbildern
       </h2>
      </StaggerItem>

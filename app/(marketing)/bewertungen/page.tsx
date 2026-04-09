@@ -157,7 +157,7 @@ export default function BewertungenPage() {
       
       <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
             <Award className="w-4 h-4 text-[var(--color-yellow-400)]" />
             <span>45 verifizierte Rezensionen</span>
           </div>
@@ -199,9 +199,9 @@ export default function BewertungenPage() {
           <div>
             <div className="flex justify-between items-start mb-6">
             <StarRating rating={review.rating} />
-            <time className="text-[13px] font-medium text-[color:var(--text-tertiary)] bg-[var(--surface-secondary)] px-3 py-1 rounded-full" dateTime={review.date}>{review.timeAgo}</time>
+            <time className="text-sm font-medium text-[color:var(--text-tertiary)] bg-[var(--surface-secondary)] px-3 py-1 rounded-full" dateTime={review.date}>{review.timeAgo}</time>
             </div>
-            <blockquote className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed relative">
+            <blockquote className="text-base text-[color:var(--text-secondary)] leading-relaxed relative">
             <span className="absolute -left-2 -top-2 text-4xl text-[var(--border-subtle)] font-serif leading-none opacity-50">&quot;</span>
             <span className="relative z-10 italic">{(review.text)}</span>
             </blockquote>

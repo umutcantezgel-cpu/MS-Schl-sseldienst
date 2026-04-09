@@ -11,7 +11,7 @@ export interface FormSubmitError {
 
 export const submitToFormspree = async (
   formId: string, 
-  data: Record<string, any>
+  data: Record<string, unknown>
 ): Promise<{ success: boolean; error?: FormSubmitError }> => {
   if (!formId || formId === 'demo-form' || formId.includes('REPLACE')) {
     // Demo-Mode Simulator

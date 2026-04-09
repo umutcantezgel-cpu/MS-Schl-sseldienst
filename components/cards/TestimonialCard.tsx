@@ -21,13 +21,13 @@ export function TestimonialCard({
     return (
       <div className={cn("flex flex-col bg-white border border-slate-100 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow", className)}>
         <StarRating rating={rating} className="mb-3" />
-        <p className="text-slate-700 text-[14px] flex-grow mb-4 leading-relaxed italic line-clamp-4">
+        <p className="text-slate-700 text-sm flex-grow mb-4 leading-relaxed italic line-clamp-4">
           &quot;{testimonial.shortQuote || testimonial.quote}&quot;
         </p>
         <div>
           <div className="font-bold text-slate-900 text-sm leading-tight">{testimonial.clientName}</div>
           {(testimonial.company || testimonial.clientRole) && (
-            <div className="text-[12px] text-slate-500 mt-0.5 leading-tight">{testimonial.company || testimonial.clientRole}</div>
+            <div className="text-xs text-slate-500 mt-0.5 leading-tight">{testimonial.company || testimonial.clientRole}</div>
           )}
         </div>
       </div>
@@ -73,7 +73,7 @@ export function TestimonialCard({
       <StarRating rating={rating} className="mb-6" />
 
       <blockquote className="flex-grow z-10 relative">
-        <p className="text-slate-700 text-[16px] leading-relaxed">
+        <p className="text-slate-700 text-base leading-relaxed">
           &quot;{testimonial.shortQuote || testimonial.quote}&quot;
         </p>
       </blockquote>
@@ -92,7 +92,7 @@ export function TestimonialCard({
         <div>
           <div className="font-bold text-slate-900 leading-tight">{testimonial.clientName}</div>
           {(testimonial.company || testimonial.clientRole) && (
-            <div className="text-[13px] text-slate-500 mt-1 leading-tight">{testimonial.company || testimonial.clientRole}</div>
+            <div className="text-sm text-slate-500 mt-1 leading-tight">{testimonial.company || testimonial.clientRole}</div>
           )}
         </div>
       </div>

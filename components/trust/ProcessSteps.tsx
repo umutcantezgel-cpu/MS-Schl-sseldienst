@@ -41,7 +41,7 @@ export default function ProcessSteps() {
       <div className="mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-12">
           {/* Pill Badge */}
-          <span className="inline-flex items-center rounded-full bg-red-50 text-[var(--color-red-600)] text-[11px] font-bold uppercase tracking-[0.15em] px-4 py-1.5 mb-4 border border-red-100/60">
+          <span className="inline-flex items-center rounded-full bg-red-50 text-[var(--color-red-600)] text-xs font-bold uppercase tracking-[0.15em] px-4 py-1.5 mb-4 border border-red-100/60">
             SO EINFACH GEHT&apos;S
           </span>
 
@@ -49,7 +49,7 @@ export default function ProcessSteps() {
             So einfach funktioniert unser <span className="text-[var(--color-red-500)]">Service</span>
           </h2>
           <div className="mx-auto h-[4px] w-[64px] rounded-full bg-[var(--color-red-500)]" />
-          <p className="mt-[var(--space-6)] text-[color:var(--text-secondary)] text-[17px] max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-[var(--space-6)] text-[color:var(--text-secondary)] text-lg max-w-2xl mx-auto leading-relaxed">
             Keine Überraschungen, keine endlosen Wartezeiten. Ein transparenter 4-Schritte-Ablauf für Ihre maximale Sicherheit.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function ProcessSteps() {
               <StaggerItem key={step.id} animation={entryAnimations.slideUpFade} className="relative group">
                 <div className="flex flex-col items-center text-center">
                   {/* Step Number — now shows as a small numbered badge on the icon */}
-                  <span className="font-black text-[12px] tracking-[0.2em] uppercase text-[var(--color-red-500)] mb-4">
+                  <span className="font-black text-xs tracking-[0.2em] uppercase text-[var(--color-red-500)] mb-4">
                     Schritt {step.num}
                   </span>
 
@@ -73,7 +73,7 @@ export default function ProcessSteps() {
                   <div className="relative flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-full bg-white border-2 border-red-100 text-[var(--color-red-500)] shadow-[0_4px_20px_rgba(220,38,38,0.08)] mb-6 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgba(220,38,38,0.15)] group-hover:border-[var(--color-red-500)]/40">
                     <step.icon className="h-8 w-8" aria-hidden="true" />
                     {/* Step number badge on top-right */}
-                    <span className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-[var(--color-red-500)] text-white text-[11px] font-black flex items-center justify-center shadow-md">
+                    <span className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-[var(--color-red-500)] text-white text-xs font-black flex items-center justify-center shadow-md">
                       {step.id}
                     </span>
                   </div>

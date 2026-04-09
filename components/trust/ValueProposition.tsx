@@ -20,7 +20,7 @@ export default function ValueProposition({
     <div className={cn("p-[var(--space-6)] sm:p-[var(--space-7)] bg-[var(--surface-primary)] ring-1 ring-[var(--border-subtle)] rounded-[var(--space-4)] shadow-[var(--elevation-1)]", className)}>
       <div className="flex flex-col md:flex-row items-center justify-between gap-[var(--space-4)] md:gap-[var(--space-6)]">
         <div className="flex-1 space-y-[var(--space-2)] w-full text-center md:text-left">
-          <span className="text-[color:var(--text-tertiary)] uppercase tracking-wide text-[11px] font-bold">Vorher</span>
+          <span className="text-[color:var(--text-tertiary)] uppercase tracking-wide text-xs font-bold">Vorher</span>
           <p className="text-[color:var(--text-secondary)] font-medium !mb-0 opacity-80">{beforeState}</p>
         </div>
         
@@ -32,7 +32,7 @@ export default function ValueProposition({
         </div>
 
         <div className="flex-1 space-y-[var(--space-2)] w-full text-center md:text-left">
-          <span className="text-[color:var(--color-primary)] uppercase tracking-wide text-[11px] font-bold">Ihre Lösung</span>
+          <span className="text-[color:var(--color-primary)] uppercase tracking-wide text-xs font-bold">Ihre Lösung</span>
           <p className="typo-h5 !mb-0 text-[color:var(--text-primary)]">{afterState}</p>
         </div>
       </div>

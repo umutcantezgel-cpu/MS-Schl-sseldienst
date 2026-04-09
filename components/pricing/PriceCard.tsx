@@ -62,7 +62,7 @@ export default function PriceCard({
         </div>
         
         {costBreakdown && (
-          <span className="text-[13px] font-medium text-[color:var(--color-success)] uppercase tracking-wide">
+          <span className="text-sm font-medium text-[color:var(--color-success)] uppercase tracking-wide">
             {costBreakdown}
           </span>
         )}
@@ -72,7 +72,7 @@ export default function PriceCard({
         {features.map((feature, index) => (
           <li key={index} className="flex gap-[var(--space-3)]">
             <Check className="h-5 w-5 shrink-0 text-[var(--color-primary)] mt-0.5" aria-hidden="true" />
-            <span className="text-[color:var(--text-secondary)] text-[15px] leading-relaxed">
+            <span className="text-[color:var(--text-secondary)] text-base leading-relaxed">
               {feature}
             </span>
           </li>
@@ -82,13 +82,13 @@ export default function PriceCard({
       {(comparisonAnchor || roi) && (
         <div className="mt-auto pt-[var(--space-5)] border-t border-[var(--border-subtle)] space-y-[var(--space-2)]">
           {comparisonAnchor && (
-            <div className="flex items-start gap-2 text-[13px] text-[color:var(--text-tertiary)]">
+            <div className="flex items-start gap-2 text-sm text-[color:var(--text-tertiary)]">
               <Info className="w-4 h-4 shrink-0 mt-0.5" />
               <p className="!mb-0 leading-tight">{comparisonAnchor}</p>
             </div>
           )}
           {roi && (
-            <div className="flex items-start gap-2 text-[13px] text-[color:var(--color-success)] font-medium">
+            <div className="flex items-start gap-2 text-sm text-[color:var(--color-success)] font-medium">
               <Check className="w-4 h-4 shrink-0 mt-0.5" />
               <p className="!mb-0 leading-tight">{roi}</p>
             </div>

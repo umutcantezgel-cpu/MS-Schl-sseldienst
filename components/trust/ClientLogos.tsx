@@ -29,7 +29,7 @@ export default function ClientLogos() {
                 className="group flex items-center gap-3 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer"
               >
                 <Icon className="w-8 h-8 text-[var(--color-charcoal-800)] group-hover:text-[var(--value-primary)] transition-colors duration-300" />
-                <span className="font-bold text-[18px] text-[color:var(--text-secondary)] group-hover:text-[color:var(--text-primary)] transition-colors duration-300 tracking-tight">
+                <span className="font-bold text-lg text-[color:var(--text-secondary)] group-hover:text-[color:var(--text-primary)] transition-colors duration-300 tracking-tight">
                   {client.name}
                 </span>
               </div>
@@ -45,7 +45,7 @@ export default function ClientLogos() {
               return (
                 <div key={idx} className="flex items-center gap-2.5 grayscale opacity-60">
                   <Icon className="w-6 h-6 text-[var(--color-charcoal-800)]" />
-                  <span className="font-bold text-[15px] text-[color:var(--text-secondary)] tracking-tight whitespace-nowrap">
+                  <span className="font-bold text-base text-[color:var(--text-secondary)] tracking-tight whitespace-nowrap">
                     {client.name}
                   </span>
                 </div>

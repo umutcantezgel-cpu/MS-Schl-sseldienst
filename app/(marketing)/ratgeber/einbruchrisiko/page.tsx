@@ -92,7 +92,7 @@ export default function EinbruchrisikoPage() {
                   <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">iFrame Embed Code</span>
                 </div>
                 <div className="relative group">
-                  <pre className="bg-[#0D1117] p-4 rounded-xl overflow-x-auto text-[13px] md:text-sm text-gray-300 font-mono border border-white/5">
+                  <pre className="bg-[#0D1117] p-4 rounded-xl overflow-x-auto text-sm md:text-sm text-gray-300 font-mono border border-white/5">
                     {iframeCode}
                   </pre>
                   {/* Note: the copy button is static here for SEO, in a real app would use a Client Component for clipboard, 

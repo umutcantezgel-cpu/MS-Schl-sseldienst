@@ -55,7 +55,7 @@ export default function FAQPage() {
       
       <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
             <HelpCircle className="w-4 h-4 text-[var(--color-red-500)]" />
             <span>Antworten auf Ihre Fragen</span>
           </div>
@@ -66,7 +66,7 @@ export default function FAQPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto mt-6 max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Die Schlüssel Schmiede Wetzlar beantwortet die wichtigsten Fragen rund um Kosten, Anfahrt, Leistungen und Notdienst — transparent und ehrlich.
           </p>
         </StaggerItem>
@@ -81,7 +81,7 @@ export default function FAQPage() {
    <section className="px-[var(--section-px)] py-[var(--section-py)]">
     <StaggerReveal className="mx-auto max-w-3xl" animation={entryAnimations.slideUpFade}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed bg-[var(--surface-secondary)] p-6 rounded-2xl border border-[var(--border-subtle)]">
+      <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed bg-[var(--surface-secondary)] p-6 rounded-2xl border border-[var(--border-subtle)]">
         <strong className="text-[color:var(--text-primary)]">Transparenz an erster Stelle:</strong> Schlüsseldienst Wetzlar ist ein 24/7-Schlüsselnotdienst mit <strong className="text-[color:var(--text-primary)]">Festpreisen ab 99 Euro</strong>, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von <strong className="text-[color:var(--text-primary)]">15–30 Minuten</strong> erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt. Auf dieser Seite finden Sie Antworten auf über 30 häufig gestellte Fragen zu Kosten, Anfahrt, Leistungen und Sicherheit.
       </p>
      </StaggerItem>

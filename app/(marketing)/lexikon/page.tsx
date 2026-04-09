@@ -70,7 +70,7 @@ export default function LexikonIndexPage() {
                           </h3>
                           <ArrowRight className="w-5 h-5 text-[color:var(--text-tertiary)] group-hover:text-[var(--color-red-500)] transition-transform group-hover:translate-x-1" />
                         </div>
-                        <p className="text-[15px] text-[color:var(--text-secondary)] line-clamp-2 m-0 group-hover:text-[color:var(--text-primary)] transition-colors">
+                        <p className="text-base text-[color:var(--text-secondary)] line-clamp-2 m-0 group-hover:text-[color:var(--text-primary)] transition-colors">
                           {entry.definition}
                         </p>
                       </Link>

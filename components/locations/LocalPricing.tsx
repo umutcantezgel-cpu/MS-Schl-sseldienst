@@ -49,7 +49,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                         <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance mx-auto">
                             {introText}
                         </p>
-                        <div className="mt-8 inline-block font-bold text-[18px] text-[color:var(--value-primary)] bg-[var(--value-primary)]/10 py-3 px-8 rounded-full border border-[var(--value-primary)]/20 shadow-sm tracking-wide">
+                        <div className="mt-8 inline-block font-bold text-lg text-[color:var(--value-primary)] bg-[var(--value-primary)]/10 py-3 px-8 rounded-full border border-[var(--value-primary)]/20 shadow-sm tracking-wide">
                             {city.pricing.travelCostText}
                         </div>
                     </div>

@@ -83,7 +83,7 @@ export default function EinbruchschutzPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed font-medium">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed font-medium">
             Nach einem Einbruch stellen wir sofort die mechanische Sicherheit Ihrer Türen wieder her. Wir reparieren Beschläge, tauschen Schließzylinder aus und beraten Sie präventiv.
           </p>
         </StaggerItem>
@@ -104,12 +104,12 @@ export default function EinbruchschutzPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
         Sicherheit auf zwei Säulen
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12 font-medium">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12 font-medium">
         Unsere Abteilung für Einbruchschutz gliedert sich in zwei wesentliche Phasen: Die Not-Absicherung für Betroffene mitten in der Nacht, und die geplante Präventiv-Absicherung für Hausbesitzer, die vorbauen möchten.
        </p>
       </StaggerItem>
@@ -124,7 +124,7 @@ export default function EinbruchschutzPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Notfall: Sofort-Reparatur
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Aufgebrochene Türen sichern wir provisorisch oder reparieren sie sofort permanent, tauschen Zylinder aus und stellen den Schutz Ihres Eigentums schnellstmöglich wieder her.
           </p>
          </div>
@@ -138,7 +138,7 @@ export default function EinbruchschutzPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Geplant: Präventivberatung
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Wir prüfen Schwachstellen bei Ihnen vor Ort. Der Großteil aller Einbrüche kann durch den professionellen Einbau von Panzerriegeln oder Fenster-Zusatzschlössern verhindert werden.
           </p>
          </div>
@@ -200,7 +200,7 @@ export default function EinbruchschutzPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen zum Einbruchschutz
       </h2>
      </StaggerItem>
@@ -220,7 +220,7 @@ export default function EinbruchschutzPage() {
       <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
         Offizielle Ressourcen zum Einbruchschutz
       </h2>
-      <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-8">
+      <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
         Informieren Sie sich bei diesen offiziellen Stellen über Prävention, Förderungen und Sicherheitsstandards:
       </p>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -229,8 +229,8 @@ export default function EinbruchschutzPage() {
             <Siren className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Die offizielle Kampagne der Polizei mit Tipps und Empfehlungen zum Einbruchschutz.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Kriminalprävention</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Die offizielle Kampagne der Polizei mit Tipps und Empfehlungen zum Einbruchschutz.</p>
           </div>
         </a>
         <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -238,8 +238,8 @@ export default function EinbruchschutzPage() {
             <ShieldCheck className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Staatliche Zuschüsse bis zu 1.600€ für Einbruchschutz-Maßnahmen an Ihrer Immobilie.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Staatliche Zuschüsse bis zu 1.600€ für Einbruchschutz-Maßnahmen an Ihrer Immobilie.</p>
           </div>
         </a>
         <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -247,8 +247,8 @@ export default function EinbruchschutzPage() {
             <ShieldAlert className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Kriminalprävention und Einbruchschutztipps für den Lahn-Dill-Kreis und die Region Wetzlar.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Kriminalprävention und Einbruchschutztipps für den Lahn-Dill-Kreis und die Region Wetzlar.</p>
           </div>
         </a>
         <a href="https://www.verbraucherzentrale-hessen.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -256,8 +256,8 @@ export default function EinbruchschutzPage() {
             <CheckCircle2 className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Unabhängige Beratung zu Ihren Rechten — auch zum Thema Schlüsseldienst-Kosten.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Unabhängige Beratung zu Ihren Rechten — auch zum Thema Schlüsseldienst-Kosten.</p>
           </div>
         </a>
       </div>

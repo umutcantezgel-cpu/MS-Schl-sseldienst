@@ -58,7 +58,7 @@ export const validateCheckbox = (checked: boolean): ValidationResult => {
 };
 
 export const validateForm = (
-  data: Record<string, any>, 
+  data: Record<string, unknown>, 
   fieldValidators: Record<string, () => ValidationResult>
 ): FormErrors => {
   const errors: FormErrors = {};

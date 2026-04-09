@@ -82,7 +82,7 @@ export default async function LexikonEntryPage({ params }: Props) {
             <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
               {entry.title}
             </h1>
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[13px] font-bold text-[color:var(--text-secondary)] uppercase tracking-wider mb-6">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-sm font-bold text-[color:var(--text-secondary)] uppercase tracking-wider mb-6">
               FAQ & {entry.category}
             </div>
             <p className="text-xl text-[color:var(--text-secondary)] font-medium">
@@ -107,8 +107,8 @@ export default async function LexikonEntryPage({ params }: Props) {
             <div className="grid gap-6">
               {entry.faqs.map((faq, index) => (
                 <div key={index} className="bg-[var(--surface-secondary)] p-6 md:p-8 rounded-[var(--radius-24)] border border-[var(--border-subtle)]">
-                  <h4 className="text-[17px] font-bold text-[color:var(--text-primary)] mb-3">{faq.question}</h4>
-                  <p className="text-[15px] text-[color:var(--text-secondary)] leading-relaxed m-0">{faq.answer}</p>
+                  <h4 className="text-lg font-bold text-[color:var(--text-primary)] mb-3">{faq.question}</h4>
+                  <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">{faq.answer}</p>
                 </div>
               ))}
             </div>

@@ -36,7 +36,7 @@ export default function TrustSignals({
   return (
     <div
       className={cn(
-        "flex gap-x-4 gap-y-2 text-[12px] sm:text-[13px] font-medium text-[color:var(--text-tertiary)]",
+        "flex gap-x-4 gap-y-2 text-xs sm:text-sm font-medium text-[color:var(--text-tertiary)]",
         variant === "inline"
           ? "flex-wrap items-center justify-center"
           : "flex-col items-start",

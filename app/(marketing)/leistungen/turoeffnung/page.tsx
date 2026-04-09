@@ -96,7 +96,7 @@ export default function TuroeffnungPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 99 € – garantiert ohne versteckte Kosten.
           </p>
         </StaggerItem>
@@ -119,12 +119,12 @@ export default function TuroeffnungPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
         Ausgesperrt? Keine Panik!
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Es passiert schneller, als man denkt: Ein kurzer Moment der
         Unachtsamkeit, ein Windstoß, und die Tür fällt ins Schloss. Der
         Schlüssel steckt von innen oder liegt noch auf dem Küchentisch. In
@@ -143,7 +143,7 @@ export default function TuroeffnungPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Zugefallene Türen
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Eine nur ins Schloss gefallene Tür öffnen wir mit
            Spezialwerkzeug in der Regel innerhalb weniger Minuten und
            zu 99% ohne jegliche Beschädigung an Schloss oder Zylinder.
@@ -159,7 +159,7 @@ export default function TuroeffnungPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Verschlossene Türen
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Auch wenn die Tür abgeschlossen ist oder der Schlüssel
            abgebrochen ist, helfen wir kompetent. Hierbei muss der
            Zylinder oft aufgebohrt werden, wir haben jedoch immer
@@ -176,7 +176,7 @@ export default function TuroeffnungPage() {
         <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">
          Was tun, wenn die Tür zu ist?
         </h3>
-        <ol className="list-decimal pl-5 space-y-4 text-[18px] text-[color:var(--text-secondary)] m-0 font-medium">
+        <ol className="list-decimal pl-5 space-y-4 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
          <li className="pl-2">Bewahren Sie Ruhe. Versuchen Sie nicht, die Tür gewaltsam zu öffnen.</li>
          <li className="pl-2">Prüfen Sie, ob ein Fenster offen steht oder ein Zweitschlüssel bei Nachbarn hinterlegt ist.</li>
          <li className="pl-2">Rufen Sie uns an: <a href="tel:+4964418056279" className="font-bold text-[var(--color-red-500)] hover:text-[color:var(--color-red-600)] hover:underline transition-colors inline-block ml-1">06441 8056279</a></li>
@@ -192,7 +192,7 @@ export default function TuroeffnungPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Preise</Badge>
-         <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
            Unsere fairen Festpreise
          </h2>
         </div>
@@ -251,7 +251,7 @@ export default function TuroeffnungPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen zur Türöffnung
       </h2>
      </StaggerItem>
@@ -271,7 +271,7 @@ export default function TuroeffnungPage() {
       <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-6">
         Verbraucherinformationen zum Thema Schlüsseldienst
       </h2>
-      <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-8">
+      <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
         Informieren Sie sich bei offiziellen Stellen über Ihre Rechte und faire Preise:
       </p>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -280,8 +280,8 @@ export default function TuroeffnungPage() {
             <ShieldCheck className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Tipps zum Schutz vor unseriösen Schlüsseldiensten und Ihre Rechte als Verbraucher.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Tipps zum Schutz vor unseriösen Schlüsseldiensten und Ihre Rechte als Verbraucher.</p>
           </div>
         </a>
         <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -289,8 +289,8 @@ export default function TuroeffnungPage() {
             <DoorOpen className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Prävention</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Empfehlungen der Polizei für sichere Türen und Schlösser.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH — Polizeiliche Prävention</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Empfehlungen der Polizei für sichere Türen und Schlösser.</p>
           </div>
         </a>
         <a href="https://www.wetzlar.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -298,8 +298,8 @@ export default function TuroeffnungPage() {
             <HelpCircle className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Stadt Wetzlar</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Offizielle Informationen und Bürgerservice der Stadt Wetzlar.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Stadt Wetzlar</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Offizielle Informationen und Bürgerservice der Stadt Wetzlar.</p>
           </div>
         </a>
         <a href="https://www.hwk-wiesbaden.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
@@ -307,8 +307,8 @@ export default function TuroeffnungPage() {
             <Check className="h-5 w-5" />
           </div>
           <div>
-            <span className="text-[15px] font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</span>
-            <p className="text-[13px] text-[color:var(--text-secondary)] mt-1 m-0">Finden Sie geprüfte Handwerksbetriebe in Ihrer Region.</p>
+            <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</span>
+            <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Finden Sie geprüfte Handwerksbetriebe in Ihrer Region.</p>
           </div>
         </a>
       </div>

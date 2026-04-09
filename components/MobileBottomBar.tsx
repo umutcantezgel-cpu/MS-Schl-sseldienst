@@ -81,7 +81,7 @@ export default function MobileBottomBar() {
               aria-label="Jetzt anrufen: 06441 8056279"
             >
               <Phone className="h-4 w-4 animate-heartbeat-cta" aria-hidden="true" />
-              <span className="text-[14px] font-bold">Anrufen</span>
+              <span className="text-sm font-bold">Anrufen</span>
             </a>
             <Link
               href="/termin-buchen"
@@ -90,7 +90,7 @@ export default function MobileBottomBar() {
               aria-label="Beratung buchen"
             >
               <Calendar className="h-4 w-4" aria-hidden="true" />
-              <span className="text-[14px] font-bold">Termin</span>
+              <span className="text-sm font-bold">Termin</span>
             </Link>
           </div>
           <button

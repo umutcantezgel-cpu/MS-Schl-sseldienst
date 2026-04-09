@@ -303,7 +303,7 @@ export default function ContactPremiumMap() {
           {/* Sidebar header */}
           <div className="p-4 border-b border-[var(--color-charcoal-100)] shrink-0">
             <div className="flex items-center justify-between mb-3">
-              <div className="text-[15px] font-bold text-[color:var(--text-primary)]">
+              <div className="text-base font-bold text-[color:var(--text-primary)]">
                 Einsatzgebiete
               </div>
               <button
@@ -327,7 +327,7 @@ export default function ContactPremiumMap() {
               />
             </div>
 
-            <p className="mt-2 text-[11px] text-[color:var(--text-tertiary)]">
+            <p className="mt-2 text-xs text-[color:var(--text-tertiary)]">
               {filteredLocations.length} von {locations.length} Gebieten
             </p>
           </div>
@@ -350,14 +350,14 @@ export default function ContactPremiumMap() {
                     style={{ backgroundColor: ringInfo.text }}
                   />
                   <div className="flex-1 min-w-0">
-                    <p className="text-[13px] font-semibold text-[color:var(--text-primary)] truncate">
+                    <p className="text-sm font-semibold text-[color:var(--text-primary)] truncate">
                       {loc.name}
                     </p>
                     <div className="flex items-center gap-3 mt-0.5">
-                      <span className="text-[11px] text-[color:var(--text-tertiary)]">
+                      <span className="text-xs text-[color:var(--text-tertiary)]">
                         PLZ {loc.plz}
                       </span>
-                      <span className="text-[11px] text-[color:var(--text-tertiary)]">
+                      <span className="text-xs text-[color:var(--text-tertiary)]">
                         ca. {loc.logistics.drivingTimeMinutes} Min
                       </span>
                     </div>
@@ -385,7 +385,7 @@ export default function ContactPremiumMap() {
           <div className="p-3 border-t border-[var(--color-charcoal-100)] bg-[var(--surface-secondary)] shrink-0">
             <a
               href="tel:+4964418056279"
-              className="flex items-center justify-center gap-2 w-full py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-xl text-[13px] font-bold transition-colors"
+              className="flex items-center justify-center gap-2 w-full py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white rounded-xl text-sm font-bold transition-colors"
             >
               <Phone className="w-4 h-4" />
               06441 8056279
@@ -410,7 +410,7 @@ export default function ContactPremiumMap() {
           {/* Mobile sidebar toggle */}
           <button
             onClick={() => setIsSidebarOpen(true)}
-            className="lg:hidden absolute top-3 left-3 z-20 flex items-center gap-2 px-3 py-2 bg-white rounded-xl shadow-lg border border-[var(--color-charcoal-100)] text-[13px] font-semibold text-[color:var(--text-primary)]"
+            className="lg:hidden absolute top-3 left-3 z-20 flex items-center gap-2 px-3 py-2 bg-white rounded-xl shadow-lg border border-[var(--color-charcoal-100)] text-sm font-semibold text-[color:var(--text-primary)]"
           >
             <MapPin className="w-4 h-4 text-[var(--color-red-500)]" />
             <span>{allLocations.length} Gebiete</span>

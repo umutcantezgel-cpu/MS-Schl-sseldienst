@@ -37,7 +37,7 @@ export default function TerminBuchenPage() {
           
           <StaggerReveal className="mt-8 flex flex-col items-center w-full" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-white border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+              <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-white border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
                 <Calendar className="w-4 h-4 text-[var(--color-red-500)]" />
                 <span>Digitale Terminbuchung</span>
               </div>
@@ -48,7 +48,7 @@ export default function TerminBuchenPage() {
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <p className="mx-auto mt-6 text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed text-balance">
+              <p className="mx-auto mt-6 text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
                 Wählen Sie Ihren passenden Termin für eine kostenlose Beratung zum Thema Sicherheitstechnik, Schließanlagen oder Einbruchschutz.
               </p>
             </StaggerItem>
@@ -82,15 +82,15 @@ export default function TerminBuchenPage() {
                   <ul className="space-y-4">
                     <li className="flex gap-3">
                       <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                      <span className="text-[15px] sm:text-[16px] text-[color:var(--text-secondary)]">Kostenlose und unverbindliche Beratung bei Ihnen vor Ort.</span>
+                      <span className="text-base sm:text-base text-[color:var(--text-secondary)]">Kostenlose und unverbindliche Beratung bei Ihnen vor Ort.</span>
                     </li>
                     <li className="flex gap-3">
                       <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                      <span className="text-[15px] sm:text-[16px] text-[color:var(--text-secondary)]">Planung von modernen Schließanlagen (mechanisch & elektronisch).</span>
+                      <span className="text-base sm:text-base text-[color:var(--text-secondary)]">Planung von modernen Schließanlagen (mechanisch & elektronisch).</span>
                     </li>
                     <li className="flex gap-3">
                       <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                      <span className="text-[15px] sm:text-[16px] text-[color:var(--text-secondary)]">Sicherheits-Check an Fenstern und Türen nach KfW/DIN Vorgaben.</span>
+                      <span className="text-base sm:text-base text-[color:var(--text-secondary)]">Sicherheits-Check an Fenstern und Türen nach KfW/DIN Vorgaben.</span>
                     </li>
                   </ul>
                 </div>
@@ -102,7 +102,7 @@ export default function TerminBuchenPage() {
                     <AlertCircle className="w-6 h-6 text-red-600" />
                     <h4 className="font-bold text-red-900 text-lg">Haben Sie sich ausgesperrt?</h4>
                   </div>
-                  <p className="text-red-800 text-[14px] leading-relaxed mb-4">
+                  <p className="text-red-800 text-sm leading-relaxed mb-4">
                     Bitte buchen Sie bei akuten Notfällen (Tür zugefallen, Schlüssel abgebrochen) <strong>keinen</strong> Termin online, sondern rufen Sie uns direkt an!
                   </p>
                   <a

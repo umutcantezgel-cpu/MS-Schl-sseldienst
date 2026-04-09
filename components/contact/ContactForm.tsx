@@ -213,12 +213,12 @@ export default function ContactForm() {
         <p className="text-[color:var(--text-secondary)] mb-2">
           Wir melden uns innerhalb von 24 Stunden bei Ihnen.
         </p>
-        <p className="text-[14px] text-[color:var(--text-tertiary)] mb-8">
+        <p className="text-sm text-[color:var(--text-tertiary)] mb-8">
           Oder rufen Sie uns direkt an:
         </p>
         <a
           href="tel:+4964418056279"
-          className="flex items-center justify-center gap-2 h-[52px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-[16px] rounded-[var(--radius-8)] transition-all shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[2px] w-full sm:w-auto"
+          className="flex items-center justify-center gap-2 h-[52px] px-8 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-base rounded-[var(--radius-8)] transition-all shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[2px] w-full sm:w-auto"
         >
           <Phone className="w-5 h-5" />
           06441 8056279
@@ -388,7 +388,7 @@ export default function ContactForm() {
               </m.p>
             )}
           </AnimatePresence>
-          <p id="hint-email" className="text-[11px] text-[color:var(--text-tertiary)] mt-1 pl-1 hidden peer-focus:block">
+          <p id="hint-email" className="text-xs text-[color:var(--text-tertiary)] mt-1 pl-1 hidden peer-focus:block">
             Wir verwenden Ihre E-Mail ausschließlich für die Antwort.
           </p>
         </m.div>
@@ -422,7 +422,7 @@ export default function ContactForm() {
               </div>
             )}
           </AnimatePresence>
-          <p id="hint-phone" className="text-[11px] text-[color:var(--text-tertiary)] mt-1 pl-1 hidden peer-focus:block">
+          <p id="hint-phone" className="text-xs text-[color:var(--text-tertiary)] mt-1 pl-1 hidden peer-focus:block">
             Optional — beschleunigt aber die Rückmeldung.
           </p>
         </m.div>
@@ -493,7 +493,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isPending || !privacyAccepted}
-            className={cn("bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-[16px] h-[52px] rounded-[var(--radius-8)] flex items-center justify-center transition-all shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)]", "w-full transition-all duration-200", filledFieldsCount === 4 && privacyAccepted && !isPending && "animate-pulse-glow", isPending && "opacity-70 pointer-events-none hover:-translate-y-[0px] shadow-none", (!isPending && privacyAccepted) && "hover:-translate-y-[2px]", !privacyAccepted && "opacity-50 cursor-not-allowed hover:-translate-y-[0px]")}
+            className={cn("bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-base h-[52px] rounded-[var(--radius-8)] flex items-center justify-center transition-all shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)]", "w-full transition-all duration-200", filledFieldsCount === 4 && privacyAccepted && !isPending && "animate-pulse-glow", isPending && "opacity-70 pointer-events-none hover:-translate-y-[0px] shadow-none", (!isPending && privacyAccepted) && "hover:-translate-y-[2px]", !privacyAccepted && "opacity-50 cursor-not-allowed hover:-translate-y-[0px]")}
           >
             {isPending ? (
               <span className="flex items-center gap-2">

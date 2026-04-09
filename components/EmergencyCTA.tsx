@@ -38,7 +38,7 @@ export default function EmergencyCTA() {
        </div>
       </a>
      </HeartbeatCTA>
-     <p className="text-white/80 text-[14px] font-medium mt-3">
+     <p className="text-white/80 text-sm font-medium mt-3">
       Festpreis vor Anfahrt — Kostenlos & unverbindlich
      </p>
     </div>

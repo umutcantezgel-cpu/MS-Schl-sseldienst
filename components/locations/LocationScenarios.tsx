@@ -1,5 +1,6 @@
 import { LocationData } from "@/lib/data/locations";
 import * as Icons from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import RevealSection from "@/components/motion/RevealSection";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
@@ -44,7 +45,7 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
 
                 <StaggerReveal className="grid md:grid-cols-3 gap-12 lg:gap-16 max-w-7xl mx-auto" animation={entryAnimations.slideUpFade}>
                     {city.scenarios.map((scenario, idx) => {
-                        const IconComponent = (Icons as Record<string, any>)[scenario.icon] || Icons.Key;
+                        const IconComponent = (Icons as unknown as Record<string, LucideIcon>)[scenario.icon] || Icons.Key;
 
                         return (
                             <StaggerItem key={idx} animation={entryAnimations.slideUpFade} className="flex flex-col">

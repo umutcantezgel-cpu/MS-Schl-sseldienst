@@ -81,7 +81,7 @@ export default function ServicegebietPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed text-balance">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
             Wir sind Ihr lokaler Schlüsseldienst für Wetzlar und die direkte Umgebung. Wir kennen die Straßen und sind besonders schnell bei Ihnen vor Ort.
           </p>
         </StaggerItem>
@@ -97,12 +97,12 @@ export default function ServicegebietPage() {
     <div className="mx-auto max-w-5xl">
      <StaggerReveal className="text-center mb-[var(--space-12)]" animation={entryAnimations.slideUpFade}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-        <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+        <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
         Unsere <span className="text-[color:var(--value-primary)]">Einsatzgebiete</span> auf einen Blick
         </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-        <p className="mt-4 text-[18px] text-[color:var(--text-secondary)]">
+        <p className="mt-4 text-lg text-[color:var(--text-secondary)]">
         Der rote Kreis zeigt unser 50-km-Einsatzgebiet. Erkunden Sie die interaktive Karte.
         </p>
       </StaggerItem>
@@ -124,7 +124,7 @@ export default function ServicegebietPage() {
         <h2 className="text-[28px] md:text-[36px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
         Schlüsselnotdienst in Ihrer Nähe
         </h2>
-        <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-10">
+        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-10">
         Wir sind für Sie in folgenden Städten und Regionen schnell und zuverlässig im Einsatz. Garantiert ohne versteckte Anfahrtskosten.
         </p>
       </StaggerItem>
@@ -134,11 +134,11 @@ export default function ServicegebietPage() {
         {allLocations.map((gebiet) => (
           <Link key={gebiet.slug} href={`/${gebiet.slug}`} className="group">
           <Card className="flex flex-col gap-2 p-5 bg-[var(--surface-primary)] hover:-translate-y-1 hover:border-[var(--value-primary)] hover:shadow-[var(--elevation-2)] transition-all duration-300 ease-out border border-[var(--border-subtle)] rounded-[var(--radius-16)] h-full">
-            <div className="flex items-center gap-3 font-bold text-[color:var(--text-primary)] group-hover:text-[color:var(--value-primary)] transition-colors text-[16px]">
+            <div className="flex items-center gap-3 font-bold text-[color:var(--text-primary)] group-hover:text-[color:var(--value-primary)] transition-colors text-base">
             <MapPin className="h-5 w-5 text-[var(--value-icon-color)] shrink-0" aria-hidden="true" />
             {gebiet.name} ({gebiet.plz})
             </div>
-            <div className="flex items-center gap-2 text-[14px] font-bold text-[color:var(--value-primary)] pl-8">
+            <div className="flex items-center gap-2 text-sm font-bold text-[color:var(--value-primary)] pl-8">
             <Clock className="h-4 w-4" aria-hidden="true" />
             ca. {gebiet.logistics.drivingTimeMinutes} Min. Anfahrt
             </div>
@@ -159,15 +159,15 @@ export default function ServicegebietPage() {
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-4">
             Kalkulierbare Ankunft: 15–30 Minuten
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-6">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-6">
             In Notsituationen zählt jede Minute. Dank unserer strategischen Positionierung in Wetzlar sind wir in der Lage, jeden Punkt in unserem Kern-Einsatzgebiet innerhalb von <strong className="text-[color:var(--value-primary)] font-bold">15 bis 30 Minuten</strong> zu erreichen.
           </p>
-          <h4 className="text-[18px] font-bold text-[color:var(--text-primary)] mb-3 pt-4 border-t border-[var(--border-subtle)]">Warum wir besonders schnell sind</h4>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-6">
+          <h4 className="text-lg font-bold text-[color:var(--text-primary)] mb-3 pt-4 border-t border-[var(--border-subtle)]">Warum wir besonders schnell sind</h4>
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-6">
             Dank unserer lokalen Präsenz und ausgeklügelten Einsatzkoordination sind wir in der Lage, im gesamten Lahn-Dill-Kreis besonders schnell vor Ort zu sein. Unsere Monteure sind dezentral stationiert.
           </p>
-          <h4 className="text-[18px] font-bold text-[color:var(--text-primary)] mb-3 pt-4 border-t border-[var(--border-subtle)]">Service auch über die Region hinaus</h4>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-0">
+          <h4 className="text-lg font-bold text-[color:var(--text-primary)] mb-3 pt-4 border-t border-[var(--border-subtle)]">Service auch über die Region hinaus</h4>
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-0">
             Falls Ihr Wohnort nicht in unserer Liste der Einsatzgebiete auftaucht, kontaktieren Sie uns einfach. Wir finden eine schnelle Lösung, um Ihnen auch in Randgebieten zu helfen.
           </p>
           </div>
@@ -184,7 +184,7 @@ export default function ServicegebietPage() {
        <h2 className="text-[24px] md:text-[28px] font-extrabold tracking-tight text-[color:var(--text-primary)] mb-4">
          Lokale Informationen
        </h2>
-       <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed mb-6">
+       <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-6">
          Offizielle Webseiten unserer Serviceregion:
        </p>
        <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm">

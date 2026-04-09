@@ -62,7 +62,7 @@ export default function TableOfContents({ selector = "main" }: { selector?: stri
         className="flex items-center justify-between cursor-pointer xl:cursor-default active:scale-[0.98] xl:active:scale-100 transition-transform"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3 className="flex items-center gap-2 text-[15px] font-bold text-slate-900">
+        <h3 className="flex items-center gap-2 text-base font-bold text-slate-900">
           <List className="h-4 w-4 text-[var(--color-red-500)]" />
           Inhaltsverzeichnis
         </h3>
@@ -90,9 +90,9 @@ export default function TableOfContents({ selector = "main" }: { selector?: stri
               setIsOpen(false);
             }}
             className={cn(
-              "text-[14px] leading-snug transition-colors hover:text-[var(--color-red-500)] relative block",
+              "text-sm leading-snug transition-colors hover:text-[var(--color-red-500)] relative block",
               activeId === heading.id ? "font-bold text-[var(--color-red-500)]" : "text-slate-600",
-              heading.level === 3 ? "pl-4 text-[13px]" : ""
+              heading.level === 3 ? "pl-4 text-sm" : ""
             )}
           >
             {activeId === heading.id && (

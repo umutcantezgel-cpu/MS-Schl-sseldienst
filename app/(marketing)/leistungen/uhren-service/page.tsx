@@ -87,7 +87,7 @@ export default function UhrenServicePage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Ihre Uhr steht still oder das Armband ist kaputt? Wir wechseln Batterien und tauschen oder kürzen Gliederarmbänder für gängige Uhrenmarken.
           </p>
         </StaggerItem>
@@ -105,10 +105,10 @@ export default function UhrenServicePage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Wir bringen Ihre Uhr zum Ticken</h2>
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Wir bringen Ihre Uhr zum Ticken</h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Mit unserem Sofort-Service tauschen wir leere Batterien hochwertiger Knopfzellen-Marken (wie VARTA, Renata) aus und garantieren eine lange Lebensdauer.
        </p>
       </StaggerItem>
@@ -143,7 +143,7 @@ export default function UhrenServicePage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen
       </h2>
      </StaggerItem>

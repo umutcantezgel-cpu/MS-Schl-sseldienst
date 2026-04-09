@@ -32,7 +32,7 @@ export default function PersonalizedHero() {
   return (
     <div className="w-full max-w-5xl mx-auto px-4 -mt-4 mb-8 relative z-20">
       <div className="bg-white/80 backdrop-blur-xl border border-[var(--color-charcoal-100)] rounded-xl px-5 py-3 flex items-center justify-between gap-4 shadow-sm">
-        <p className="text-[13px] sm:text-[14px] font-medium text-[var(--color-charcoal-700)]">
+        <p className="text-sm sm:text-sm font-medium text-[var(--color-charcoal-700)]">
           {content.trustSignal}
         </p>
         <a
@@ -43,7 +43,7 @@ export default function PersonalizedHero() {
               category: "trust_signal_cta",
             })
           }
-          className="shrink-0 text-[12px] sm:text-[13px] font-bold text-[var(--color-red-500)] hover:text-[var(--color-red-600)] transition-colors whitespace-nowrap"
+          className="shrink-0 text-xs sm:text-sm font-bold text-[var(--color-red-500)] hover:text-[var(--color-red-600)] transition-colors whitespace-nowrap"
         >
           {content.ctaText} →
         </a>

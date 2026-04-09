@@ -204,4 +204,12 @@ export interface CompanyInfo {
   certifications?: string[];
   socialMedia?: SocialLinks;
   openingHours?: OpeningHours;
+  geo?: {
+    latitude: number;
+    longitude: number;
+  };
+  paymentAccepted?: string[];
+  currenciesAccepted?: string;
+  priceRange?: string;
+  slogan?: string;
 }

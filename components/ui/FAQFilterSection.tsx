@@ -51,7 +51,7 @@ export default function FAQFilterSection({ faqs }: FAQFilterSectionProps) {
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`
-                inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-[14px] font-semibold
+                inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-semibold
                 transition-all duration-300 border
                 ${isActive
                   ? "bg-brand-primary text-text-on-primary border-brand-primary shadow-elevated-2"
@@ -104,7 +104,7 @@ export default function FAQFilterSection({ faqs }: FAQFilterSectionProps) {
               <div className="mt-2 mb-4 pl-4">
                 <a
                   href="tel:+4964418056279"
-                  className="inline-flex items-center gap-2 text-[13px] font-medium text-[var(--color-red-500)] hover:text-[color:var(--color-red-600)] transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-red-500)] hover:text-[color:var(--color-red-600)] transition-colors"
                 >
                   <Phone className="w-3.5 h-3.5" aria-hidden="true" />
                   Noch Fragen? 06441 8056279
@@ -118,7 +118,7 @@ export default function FAQFilterSection({ faqs }: FAQFilterSectionProps) {
       {/* Empty State */}
       {filteredFAQs.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-[color:var(--text-tertiary)] text-[16px]">
+          <p className="text-[color:var(--text-tertiary)] text-base">
             Keine Fragen in dieser Kategorie.
           </p>
         </div>
@@ -126,23 +126,23 @@ export default function FAQFilterSection({ faqs }: FAQFilterSectionProps) {
 
       {/*"Frage nicht gefunden?" CTA Block */}
       <div className="mt-12 bg-surface-secondary border border-border-default rounded-2xl p-8 text-center">
-        <h3 className="text-[20px] font-bold text-text-primary mb-2">
+        <h3 className="text-xl font-bold text-text-primary mb-2">
           Ihre Frage war nicht dabei?
         </h3>
-        <p className="text-[15px] text-text-secondary mb-6 max-w-md mx-auto">
+        <p className="text-base text-text-secondary mb-6 max-w-md mx-auto">
           Rufen Sie uns einfach an — wir beantworten jede Frage persönlich und kostenlos.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="tel:+4964418056279"
-            className="inline-flex items-center justify-center gap-3 h-[50px] px-7 bg-brand-primary hover:bg-action-primary-hover text-text-on-primary font-bold text-[15px] rounded-xl shadow-elevated-1 hover:shadow-elevated-2 hover:-translate-y-1 transition-all duration-300"
+            className="inline-flex items-center justify-center gap-3 h-[50px] px-7 bg-brand-primary hover:bg-action-primary-hover text-text-on-primary font-bold text-base rounded-xl shadow-elevated-1 hover:shadow-elevated-2 hover:-translate-y-1 transition-all duration-300"
           >
             <Phone className="w-4.5 h-4.5" />
             06441 8056279 anrufen
           </a>
           <Link
             href="/kontakt"
-            className="inline-flex items-center justify-center gap-2 h-[50px] px-7 bg-surface-elevated border-2 border-border-default hover:border-brand-primary text-text-primary font-semibold text-[15px] rounded-xl hover:-translate-y-[1px] transition-all duration-300"
+            className="inline-flex items-center justify-center gap-2 h-[50px] px-7 bg-surface-elevated border-2 border-border-default hover:border-brand-primary text-text-primary font-semibold text-base rounded-xl hover:-translate-y-[1px] transition-all duration-300"
           >
             Nachricht schreiben
             <ArrowRight className="w-4 h-4" />

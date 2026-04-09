@@ -46,7 +46,7 @@ export default function KontaktPage() {
       
       <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-[14px] font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
             <MessageSquare className="w-4 h-4 text-[var(--color-red-500)]" />
             <span>Rund um die Uhr erreichbar</span>
           </div>
@@ -57,7 +57,7 @@ export default function KontaktPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto mt-6 max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed text-balance">
+          <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
             Rufen Sie uns im Notfall direkt an oder schreiben Sie uns eine Nachricht für allgemeine Anfragen und Termine.
           </p>
         </StaggerItem>
@@ -79,7 +79,7 @@ export default function KontaktPage() {
         <h2 className="typo-h2 text-balance text-[color:var(--text-primary)]">
          Der schnellste Weg zu uns
         </h2>
-        <p className="mt-4 text-[16px] text-[color:var(--text-secondary)] leading-relaxed max-w-prose text-balance">
+        <p className="mt-4 text-base text-[color:var(--text-secondary)] leading-relaxed max-w-prose text-balance">
          Bei Notfällen — Tür zugefallen, Schlüssel abgebrochen, ausgesperrt — rufen Sie uns direkt an. Wir nennen Ihnen den Festpreis sofort am Telefon.
         </p>
 
@@ -89,7 +89,7 @@ export default function KontaktPage() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
          </span>
-         <span className="text-[14px] font-semibold text-green-800">Jetzt erreichbar — 24/7 Notdienst</span>
+         <span className="text-sm font-semibold text-green-800">Jetzt erreichbar — 24/7 Notdienst</span>
         </div>
 
         {/* Giant Phone CTA */}
@@ -102,7 +102,7 @@ export default function KontaktPage() {
          </div>
          <div className="flex flex-col">
           <span className="font-extrabold text-[32px] sm:text-[36px] tabular-nums tracking-tight">06441 8056279</span>
-          <span className="text-[color:var(--text-secondary)] text-[15px] font-medium">Kostenlose Beratung — Festpreis vor Anfahrt</span>
+          <span className="text-[color:var(--text-secondary)] text-base font-medium">Kostenlose Beratung — Festpreis vor Anfahrt</span>
          </div>
         </a>
 
@@ -113,8 +113,8 @@ export default function KontaktPage() {
            <Mail className="h-5 w-5" aria-hidden="true" />
           </div>
           <div>
-           <h3 className="text-[14px] font-bold text-[color:var(--text-primary)]">E-Mail</h3>
-           <a href="mailto:info@wetzlar-schlüsseldienst.de" className="text-[14px] text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] hover:underline transition-colors">
+           <h3 className="text-sm font-bold text-[color:var(--text-primary)]">E-Mail</h3>
+           <a href="mailto:info@wetzlar-schlüsseldienst.de" className="text-sm text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] hover:underline transition-colors">
             info@wetzlar-schlüsseldienst.de
            </a>
           </div>
@@ -124,8 +124,8 @@ export default function KontaktPage() {
            <MapPin className="h-5 w-5" aria-hidden="true" />
           </div>
           <div>
-           <h3 className="text-[14px] font-bold text-[color:var(--text-primary)]">Standort</h3>
-           <p className="text-[14px] text-[color:var(--text-secondary)]">Langgasse 70, 35578 Wetzlar</p>
+           <h3 className="text-sm font-bold text-[color:var(--text-primary)]">Standort</h3>
+           <p className="text-sm text-[color:var(--text-secondary)]">Langgasse 70, 35578 Wetzlar</p>
           </div>
          </div>
          <div className="flex gap-4 p-4 rounded-xl bg-[var(--surface-secondary)] border border-[var(--border-subtle)] sm:col-span-2">
@@ -133,8 +133,8 @@ export default function KontaktPage() {
            <Clock className="h-5 w-5" aria-hidden="true" />
           </div>
           <div>
-           <h3 className="text-[14px] font-bold text-[color:var(--text-primary)]">Servicezeiten</h3>
-           <p className="text-[14px] text-[color:var(--text-secondary)]">
+           <h3 className="text-sm font-bold text-[color:var(--text-primary)]">Servicezeiten</h3>
+           <p className="text-sm text-[color:var(--text-secondary)]">
             <span className="font-semibold text-[color:var(--text-primary)]">Notdienst:</span> 24/7, 365 Tage im Jahr &nbsp;|&nbsp;
             <span className="font-semibold text-[color:var(--text-primary)]">Büro:</span> Mo-Sa, 10:00 - 18:00 Uhr
            </p>
@@ -150,10 +150,10 @@ export default function KontaktPage() {
          <h2 className="typo-h2 text-balance text-[color:var(--text-primary)]">
           Oder schreiben Sie uns
          </h2>
-         <p className="text-[14px] text-[color:var(--text-secondary)] mb-8 text-balance">Für allgemeine Anfragen, Terminwünsche und Rückrufe.</p>
+         <p className="text-sm text-[color:var(--text-secondary)] mb-8 text-balance">Für allgemeine Anfragen, Terminwünsche und Rückrufe.</p>
          <ContactForm />
          {/* Trust line */}
-         <div className="mt-6 flex items-center justify-center gap-2 text-[13px] text-[color:var(--text-tertiary)]">
+         <div className="mt-6 flex items-center justify-center gap-2 text-sm text-[color:var(--text-tertiary)]">
           <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
@@ -174,7 +174,7 @@ export default function KontaktPage() {
        <h2 id="standort-heading" className="typo-h2 text-[color:var(--text-primary)] text-balance">
         Finden Sie uns in <span className="text-[var(--color-red-500)]">Ihrer Nähe</span>
        </h2>
-       <p className="mt-4 text-[16px] text-[color:var(--text-secondary)] max-w-2xl mx-auto text-balance">
+       <p className="mt-4 text-base text-[color:var(--text-secondary)] max-w-2xl mx-auto text-balance">
         Über 78 Einsatzgebiete in der Region Wetzlar. Suchen Sie Ihren Standort und sehen Sie Festpreise, Anfahrtszeiten und direkte Kontaktmöglichkeiten.
        </p>
       </div>
@@ -190,8 +190,8 @@ export default function KontaktPage() {
         { value: "24/7", label: "Erreichbarkeit" },
        ].map((stat) => (
         <div key={stat.label} className="flex flex-col items-center justify-center gap-0.5 bg-white border border-[var(--border-subtle)] rounded-xl px-3 py-3 shadow-sm">
-         <span className="text-[18px] font-black text-[color:var(--text-primary)] tabular-nums">{stat.value}</span>
-         <span className="text-[11px] font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">{stat.label}</span>
+         <span className="text-lg font-black text-[color:var(--text-primary)] tabular-nums">{stat.value}</span>
+         <span className="text-xs font-semibold text-[color:var(--text-tertiary)] uppercase tracking-wider">{stat.label}</span>
         </div>
        ))}
       </div>

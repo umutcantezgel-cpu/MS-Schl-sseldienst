@@ -38,7 +38,34 @@ function getDeviceType(userAgent: string): 'mobile' | 'tablet' | 'desktop' {
 }
 
 export function middleware(request: NextRequest) {
-    const response = NextResponse.next();
+    // ─── Dynamic Security Headers (Nonce CSRF/XSS Check) ───
+    const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
+
+    const cspDirectives = [
+        "default-src 'self'",
+        `script-src 'self' 'nonce-${nonce}' 'unsafe-inline' 'strict-dynamic' https:`,
+        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+        "img-src 'self' data: blob: https: http:",
+        "font-src 'self' data: https://fonts.gstatic.com",
+        "connect-src 'self' https://formspree.io https://www.google-analytics.com https://vitals.vercel-insights.com https://maps.googleapis.com https://*.googleapis.com https://calendly.com https://assets.calendly.com",
+        "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com https://calendly.com",
+        "base-uri 'self'",
+        "form-action 'self' https://formspree.io",
+        "frame-ancestors 'none'",
+        "upgrade-insecure-requests"
+    ].join("; ");
+
+    // Initialize request headers to pass along to Next.js rendering
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set('x-nonce', nonce);
+    requestHeaders.set('Content-Security-Policy', cspDirectives);
+
+    const response = NextResponse.next({
+        request: {
+            headers: requestHeaders,
+        },
+    });
+
     const userAgent = request.headers.get('user-agent') || '';
 
     // ─── Device Detection Header ───
@@ -68,14 +95,14 @@ export function middleware(request: NextRequest) {
 
     // ─── Visitor Segment Detection (Phase 18) ───
     const pathname = request.nextUrl.pathname;
-    const visitorType = visitorCookie?.value || 'new';
+    const visitorTypeStr = visitorCookie?.value || 'new';
 
     let segment = 'new-visitor';
     if (pathname === '/kontakt' || pathname === '/preise') {
         segment = 'high-intent';
     } else if (pathname.startsWith('/leistungen/')) {
         segment = 'service-interested';
-    } else if (visitorType === 'returning') {
+    } else if (visitorTypeStr === 'returning') {
         segment = 'returning';
     }
 
@@ -94,40 +121,8 @@ export function middleware(request: NextRequest) {
         response.headers.set('x-save-data', 'on');
     }
 
-    // Basic Security Headers
-    response.headers.set('X-Content-Type-Options', 'nosniff');
-    response.headers.set('X-Frame-Options', 'DENY');
-    response.headers.set('X-XSS-Protection', '0');
-    response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-    response.headers.set(
-        'Strict-Transport-Security',
-        'max-age=63072000; includeSubDomains; preload'
-    );
-    response.headers.set('X-DNS-Prefetch-Control', 'on');
-
-    const cspDirectives = [
-        "default-src 'self'",
-        "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://assets.calendly.com",
-        "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-        "img-src 'self' data: blob: https: http:",
-        "font-src 'self' data: https://fonts.gstatic.com",
-        "connect-src 'self' https://formspree.io https://www.google-analytics.com https://vitals.vercel-insights.com https://maps.googleapis.com https://*.googleapis.com https://calendly.com https://assets.calendly.com",
-        "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com https://calendly.com",
-        "base-uri 'self'",
-        "form-action 'self' https://formspree.io",
-        "frame-ancestors 'none'",
-        "upgrade-insecure-requests",
-        "report-uri /api/csp-report"
-    ].join("; ");
-
     response.headers.set('Content-Security-Policy', cspDirectives);
-
-    response.headers.set(
-        'Permissions-Policy',
-        'camera=(), microphone=(), geolocation=(), browsing-topics=(), interest-cohort=(), payment=(), usb=(), bluetooth=()'
-    );
-    response.headers.set('Cross-Origin-Opener-Policy', 'same-origin');
-    response.headers.set('Cross-Origin-Resource-Policy', 'same-origin');
+    response.headers.set('x-nonce', nonce);
 
     // AI Crawler-specific headers
     if (isAICrawler(userAgent)) {

@@ -42,7 +42,7 @@ export default function TrustStrip() {
                     aria-hidden="true"
                   />
                 </div>
-                <span className="font-semibold text-[12px] sm:text-[13px] lg:text-[15px] text-[color:var(--text-primary)] whitespace-nowrap">
+                <span className="font-semibold text-xs sm:text-sm lg:text-base text-[color:var(--text-primary)] whitespace-nowrap">
                   {item.text}
                 </span>
                 {/* Visual Separator */}

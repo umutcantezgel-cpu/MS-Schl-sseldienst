@@ -126,10 +126,10 @@ export default function CookieConsent() {
                 <Shield className="w-5 h-5 text-[var(--color-red-500)]" />
               </div>
               <div className="flex-1 pr-6">
-                <h2 className="text-[15px] font-semibold text-[color:var(--text-primary)] mb-1.5">
+                <h2 className="text-base font-semibold text-[color:var(--text-primary)] mb-1.5">
                   Wir respektieren Ihre Privatsphäre
                 </h2>
-                <p className="text-[13px] text-[color:var(--text-secondary)] leading-relaxed mb-4">
+                <p className="text-sm text-[color:var(--text-secondary)] leading-relaxed mb-4">
                   Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten.
                   Essentielle Cookies sind für die Funktion der Website notwendig.
                   Analyse-Cookies helfen uns, die Website zu verbessern.{" "}
@@ -146,19 +146,19 @@ export default function CookieConsent() {
                 <div className="flex flex-col sm:flex-row gap-2.5">
                   <button
                     onClick={acceptAll}
-                    className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-[13px] font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm"
+                    className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm"
                   >
                     Alle akzeptieren
                   </button>
                   <button
                     onClick={acceptEssentialOnly}
-                    className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:bg-gray-50 text-[color:var(--text-primary)] text-[13px] font-semibold rounded-xl transition-all duration-200"
+                    className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200"
                   >
                     Nur Essentiell
                   </button>
                   <button
                     onClick={handleOpenSettings}
-                    className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-[13px] font-medium transition-colors underline-offset-2 hover:underline"
+                    className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-sm font-medium transition-colors underline-offset-2 hover:underline"
                   >
                     Einstellungen
                   </button>
@@ -169,7 +169,7 @@ export default function CookieConsent() {
         ) : (
           /* ── Settings View ── */
           <div className="p-6 md:p-6">
-            <h2 className="text-[15px] font-semibold text-[color:var(--text-primary)] mb-4">
+            <h2 className="text-base font-semibold text-[color:var(--text-primary)] mb-4">
               Cookie-Einstellungen
             </h2>
 
@@ -197,15 +197,15 @@ export default function CookieConsent() {
                       className="mt-0.5 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] disabled:opacity-60"
                     />
                     <div className="flex-1">
-                      <span className="text-[13px] font-semibold text-[color:var(--text-primary)]">
+                      <span className="text-sm font-semibold text-[color:var(--text-primary)]">
                         {info.label}
                         {info.required && (
-                          <span className="ml-1.5 text-[11px] font-normal text-[color:var(--text-tertiary)]">
+                          <span className="ml-1.5 text-xs font-normal text-[color:var(--text-tertiary)]">
                             (immer aktiv)
                           </span>
                         )}
                       </span>
-                      <p className="text-[12px] text-[color:var(--text-secondary)] mt-0.5 leading-relaxed">
+                      <p className="text-xs text-[color:var(--text-secondary)] mt-0.5 leading-relaxed">
                         {info.description}
                       </p>
                     </div>
@@ -218,19 +218,19 @@ export default function CookieConsent() {
             <div className="flex flex-col sm:flex-row gap-2.5">
               <button
                 onClick={handleSaveSettings}
-                className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-[13px] font-semibold rounded-xl transition-all duration-200 shadow-sm"
+                className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-sm"
               >
                 Auswahl speichern
               </button>
               <button
                 onClick={acceptAll}
-                className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:bg-gray-50 text-[color:var(--text-primary)] text-[13px] font-semibold rounded-xl transition-all duration-200"
+                className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200"
               >
                 Alle akzeptieren
               </button>
               <button
                 onClick={() => setShowSettings(false)}
-                className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-[13px] font-medium transition-colors"
+                className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-sm font-medium transition-colors"
               >
                 Zurück
               </button>

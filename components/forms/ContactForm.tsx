@@ -10,7 +10,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select } from "@/components/ui/select";
 import { getAllServices } from "@/lib/data/services";
 import { submitToFormspree } from "@/lib/forms/formspree";
-import { validateRequired, validatePhone, FormErrors } from "@/lib/forms/validation";
+import { validateRequired, validatePhone, FormErrors, ValidationResult } from "@/lib/forms/validation";
 import { useUI } from "@/lib/context/UIContext";
 
 export interface ContactFormProps {
@@ -33,7 +33,8 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
     address: "",
     message: "",
     gdpr: false,
-    startTime: "" // Will be set on mount to prevent SSR mismatch
+    startTime: "", // Will be set on mount to prevent SSR mismatch
+    website: ""
   });
 
   // Phase 4.2 StartTime Initialization
@@ -46,7 +47,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
 
   const services = typeof getAllServices === 'function' ? getAllServices() : [];
 
-  const validateField = (name: string, value: string | boolean) => {
+  const validateField = (name: string, value: string | boolean): ValidationResult => {
     switch (name) {
       case "name":
         return validateRequired(value);
@@ -80,8 +81,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
-    // @ts-ignore
-    const finalValue = type === 'checkbox' ? e.target.checked : value;
+    const finalValue = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value;
     
     setFormData(prev => ({ ...prev, [name]: finalValue }));
     
@@ -110,7 +110,6 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
       const res = validateField(key, value);
       if (!res.valid) {
         hasErrors = true;
-        // @ts-ignore
         newErrors[key] = res.message;
       }
     });
@@ -132,7 +131,6 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
     dataForServer.append("phone", formData.phone);
     dataForServer.append("message", `Service: ${formData.serviceOption}\nAdresse: ${formData.address}\n\n${formData.message}`);
     // Honeypot & Timestamp Field from State
-    // @ts-ignore
     dataForServer.append("website", formData.website || "");
     dataForServer.append("startTime", formData.startTime);
 
@@ -298,7 +296,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
         <Button 
           type="submit" 
           size="lg" 
-          className="w-full text-[16px] h-12 shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] transition-all bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)]"
+          className="w-full text-base h-12 shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] transition-all bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)]"
           disabled={loading}
         >
           {loading ? (

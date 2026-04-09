@@ -25,10 +25,12 @@ import {
   Banknote,
   Mail,
   Home,
-  Calendar
+  Calendar,
+  LucideIcon
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getNavigationConfig } from "@/lib/data/navigation";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 
 // --- Data Layer ---
 const navConfig = getNavigationConfig();
@@ -37,7 +39,7 @@ const mainLinks = navConfig.main.filter(l => !['Startseite', 'Unsere Leistungen'
 const leistungenLinks = navConfig.services.items;
 const locationsLinks = navConfig.locations?.items || [];
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, LucideIcon> = {
   "DoorOpen": DoorOpen,
   "Car": Car,
   "Shield": ShieldCheck,
@@ -56,6 +58,7 @@ export default function StickyHeader() {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
   
   const pathname = usePathname();
+  const trapRef = useFocusTrap(isMobileMenuOpen);
 
   // Scroll Behavior
   useEffect(() => {
@@ -151,7 +154,7 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/leistungen"
-                className={`relative z-10 flex items-center gap-1.5 px-3 py-2 font-bold text-[14px] rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`relative z-10 flex items-center gap-1.5 px-3 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "leistungen" || pathname.startsWith("/leistungen")
                     ? "text-[var(--color-red-500)]"
                     : "text-gray-800 hover:text-gray-950"
@@ -177,7 +180,7 @@ export default function StickyHeader() {
                     <div className="bg-white rounded-3xl p-6 shadow-[0_30px_80px_-15px_rgba(0,0,0,0.2)] border border-gray-100 flex flex-col focus:outline-none">
                       <div className="grid grid-cols-2 gap-x-6 gap-y-4">
                         {leistungenLinks.map((link) => {
-                          const Icon = iconMap[link.icon || "default"] || iconMap.default;
+                          const Icon = (iconMap[link.icon || "default"] || iconMap.default) as LucideIcon;
                           return (
                             <Link
                               key={link.href}
@@ -189,7 +192,7 @@ export default function StickyHeader() {
                                 <Icon className="w-6 h-6" />
                               </div>
                               <div className="flex flex-col justify-center">
-                                <span className="font-extrabold text-[15px] text-gray-900 group-hover:text-[var(--color-red-600)] transition-colors tracking-tight">{link.label}</span>
+                                <span className="font-extrabold text-base text-gray-900 group-hover:text-[var(--color-red-600)] transition-colors tracking-tight">{link.label}</span>
                                 <span className="text-[13.5px] text-gray-500 leading-snug mt-1 line-clamp-2 pr-2">{link.description}</span>
                               </div>
                             </Link>
@@ -208,7 +211,7 @@ export default function StickyHeader() {
                              <Hammer className="w-6 h-6" />
                            </div>
                            <div className="flex flex-col">
-                             <span className="font-extrabold text-gray-900 text-[15px] group-hover:text-amber-700 transition-colors">Schlüssel Schmiede</span>
+                             <span className="font-extrabold text-gray-900 text-base group-hover:text-amber-700 transition-colors">Schlüssel Schmiede</span>
                              <span className="text-gray-500 text-[13.5px]">Fachgeschäft · Langgasse 70, Wetzlar</span>
                            </div>
                          </Link>
@@ -231,7 +234,7 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/servicegebiet"
-                className={`relative z-10 flex items-center gap-1.5 px-3 py-2 font-bold text-[14px] rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`relative z-10 flex items-center gap-1.5 px-3 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "servicegebiet" || pathname === "/servicegebiet"
                     ? "text-[var(--color-blue-600)]"
                     : "text-gray-800 hover:text-gray-950"
@@ -267,7 +270,7 @@ export default function StickyHeader() {
                               <MapPin className="w-6 h-6 group-hover:animate-bounce-subtle" />
                             </div>
                             <div className="flex flex-col justify-center">
-                              <span className="font-extrabold text-[15px] text-gray-900 group-hover:text-[var(--color-blue-700)] transition-colors tracking-tight">{link.label}</span>
+                              <span className="font-extrabold text-base text-gray-900 group-hover:text-[var(--color-blue-700)] transition-colors tracking-tight">{link.label}</span>
                               <span className="text-[13.5px] text-gray-500 leading-snug mt-1 max-w-[200px]">{link.description}</span>
                             </div>
                           </Link>
@@ -281,7 +284,7 @@ export default function StickyHeader() {
                              <Home className="w-6 h-6" />
                            </div>
                            <div className="flex flex-col">
-                             <span className="font-extrabold text-gray-900 text-[15px]">Dein Ort fehlt in der Liste?</span>
+                             <span className="font-extrabold text-gray-900 text-base">Dein Ort fehlt in der Liste?</span>
                              <span className="text-gray-500 text-[13.5px]">Kein Problem. Wir fahren im Umkreis von +50km</span>
                            </div>
                          </div>
@@ -297,6 +300,21 @@ export default function StickyHeader() {
             </div>
 
 
+
+            {/* Schlüssel Schmiede — Priority Link */}
+            <Link
+              href="/schluessel-schmiede"
+              onMouseEnter={() => { setActiveMenu(null); setHoveredLink("schmiede"); }}
+              className={`relative px-3 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
+                pathname === "/schluessel-schmiede" ? "text-amber-600" : "text-gray-800 hover:text-gray-950"
+              }`}
+            >
+              {hoveredLink === "schmiede" && (
+                <m.div layoutId="nav-hover" className="absolute inset-0 bg-gray-100/80 rounded-full -z-10" transition={{ type: "spring", stiffness: 400, damping: 30 }} />
+              )}
+              <Hammer className="w-4 h-4 opacity-60" />
+              Schlüssel Schmiede
+            </Link>
 
             {/* Standard Links: Preise, Ratgeber, Kontakt — with icons for key items */}
             {mainLinks.map((link) => {
@@ -316,7 +334,7 @@ export default function StickyHeader() {
                   key={link.href}
                   href={link.href}
                   onMouseEnter={() => { setActiveMenu(null); setHoveredLink(link.href); }}
-                  className={`relative px-2.5 py-2 font-bold text-[14px] rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
+                  className={`relative px-2.5 py-2 font-bold text-sm rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1.5 ${
                     isActive ? "text-[var(--color-red-500)]" : "text-gray-800 hover:text-gray-950"
                   }`}
                 >
@@ -336,7 +354,7 @@ export default function StickyHeader() {
 
             <a
               href="tel:+4964418056279"
-              className="hidden sm:flex items-center justify-center gap-2 px-6 h-[46px] bg-[var(--color-red-500)] text-white text-[15px] font-bold rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 group"
+              className="hidden sm:flex items-center justify-center gap-2 px-6 h-[46px] bg-[var(--color-red-500)] text-white text-base font-bold rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 group"
             >
               <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" />
               06441 - 8056279
@@ -366,6 +384,10 @@ export default function StickyHeader() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <m.div 
+            ref={trapRef}
+            aria-modal="true"
+            role="dialog"
+            aria-label="Mobile Navigation"
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
@@ -398,10 +420,10 @@ export default function StickyHeader() {
               
               {/* Leistungen Section */}
               <div className="flex flex-col gap-3">
-                <span className="font-black text-gray-400 uppercase tracking-widest text-[11px] pl-2">Unsere Leistungen</span>
+                <span className="font-black text-gray-400 uppercase tracking-widest text-xs pl-2">Unsere Leistungen</span>
                 <div className="grid grid-cols-1 gap-2">
                   {leistungenLinks.map((link) => {
-                    const Icon = iconMap[link.icon || "default"] || iconMap.default;
+                    const Icon = (iconMap[link.icon || "default"] || iconMap.default) as LucideIcon;
                     return (
                       <Link
                         key={link.href}
@@ -413,8 +435,8 @@ export default function StickyHeader() {
                           <Icon className="w-6 h-6" />
                         </div>
                         <div className="flex flex-col">
-                          <span className="font-bold text-[16px] text-gray-900">{link.label}</span>
-                          <span className="text-[13px] text-gray-500">{link.description}</span>
+                          <span className="font-bold text-base text-gray-900">{link.label}</span>
+                          <span className="text-sm text-gray-500">{link.description}</span>
                         </div>
                       </Link>
                     )
@@ -432,15 +454,15 @@ export default function StickyHeader() {
                   <Hammer className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
-                  <span className="text-[17px] font-extrabold text-amber-950">Schlüssel Schmiede</span>
-                  <span className="text-[13px] text-amber-800/80 font-medium">Langgasse 70, Wetzlar</span>
+                  <span className="text-lg font-extrabold text-amber-950">Schlüssel Schmiede</span>
+                  <span className="text-sm text-amber-800/80 font-medium">Langgasse 70, Wetzlar</span>
                 </div>
                 <ChevronRight className="w-5 h-5 text-amber-500" />
               </Link>
               
               {/* Einsatzgebiete Section */}
               <div className="flex flex-col gap-3">
-                <span className="font-black text-gray-400 uppercase tracking-widest text-[11px] pl-2">Unsere Einsatzgebiete</span>
+                <span className="font-black text-gray-400 uppercase tracking-widest text-xs pl-2">Unsere Einsatzgebiete</span>
                 <div className="grid grid-cols-2 gap-2">
                   {locationsLinks.map((link) => (
                     <Link
@@ -453,24 +475,24 @@ export default function StickyHeader() {
                         <MapPin className="w-5 h-5" />
                       </div>
                       <div className="flex flex-col justify-center">
-                        <span className="font-bold text-[14px] text-gray-900 leading-tight">{link.label}</span>
-                        <span className="text-[11px] text-gray-500 leading-tight mt-0.5 max-w-[80px] truncate">{link.description}</span>
+                        <span className="font-bold text-sm text-gray-900 leading-tight">{link.label}</span>
+                        <span className="text-xs text-gray-500 leading-tight mt-0.5 max-w-[80px] truncate">{link.description}</span>
                       </div>
                     </Link>
                   ))}
                 </div>
-                <Link href="/servicegebiet" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center gap-2 mt-2 py-3.5 px-4 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-xl font-bold text-[14px] shadow-lg shadow-gray-900/20 active:scale-[0.98] transition-all">
+                <Link href="/servicegebiet" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center gap-2 mt-2 py-3.5 px-4 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-xl font-bold text-sm shadow-lg shadow-gray-900/20 active:scale-[0.98] transition-all">
                   Alle 50+ Gebiete anzeigen <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
 
               {/* Other Links */}
               <div className="flex flex-col gap-3">
-                <span className="font-black text-gray-400 uppercase tracking-widest text-[11px] pl-2">Weitere Informationen</span>
+                <span className="font-black text-gray-400 uppercase tracking-widest text-xs pl-2">Weitere Informationen</span>
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden divide-y divide-gray-50">
                   {mainLinks.map((link) => (
                     <Link key={link.href} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-between p-4 active:bg-gray-50 transition-colors">
-                      <span className="font-bold text-[16px] text-gray-800 flex items-center gap-3">
+                      <span className="font-bold text-base text-gray-800 flex items-center gap-3">
                         {link.label === "Preise & Kosten" && <div className="p-2 bg-gray-50 rounded-lg text-gray-500"><Banknote className="w-5 h-5" /></div>}
                         {link.label === "Ratgeber & Blog" && <div className="p-2 bg-gray-50 rounded-lg text-gray-500"><BookOpen className="w-5 h-5" /></div>}
                         {link.label === "Kontakt & Notdienst" && <div className="p-2 bg-gray-50 rounded-lg text-gray-500"><Mail className="w-5 h-5" /></div>}
@@ -487,7 +509,7 @@ export default function StickyHeader() {
             <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100/80 bg-white/95 backdrop-blur-md pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10 flex gap-3">
               <a
                 href="tel:+4964418056279"
-                className="relative overflow-hidden flex-1 flex items-center justify-center gap-2 h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-[16px] rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
+                className="relative overflow-hidden flex-1 flex items-center justify-center gap-2 h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-base rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
               >
                 <Phone className="w-5 h-5" />
                 Notdienst
@@ -495,7 +517,7 @@ export default function StickyHeader() {
               <Link
                 href="/termin-buchen"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex-[0.8] flex items-center justify-center gap-2 h-[60px] bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-[15px] rounded-2xl active:scale-[0.98] transition-all"
+                className="flex-[0.8] flex items-center justify-center gap-2 h-[60px] bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-base rounded-2xl active:scale-[0.98] transition-all"
               >
                 <Calendar className="w-5 h-5" />
                 Termin

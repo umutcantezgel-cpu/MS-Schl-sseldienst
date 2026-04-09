@@ -37,20 +37,20 @@ export default function StickyCtaBar() {
                   <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center">
                     <ShieldCheck className="w-4 h-4 text-emerald-600" />
                   </div>
-                  <span className="text-[13px] font-semibold text-gray-700">Festpreisgarantie</span>
+                  <span className="text-sm font-semibold text-gray-700">Festpreisgarantie</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center">
                     <Check className="w-4 h-4 text-[var(--color-red-500)]" />
                   </div>
-                  <span className="text-[13px] font-semibold text-gray-700">Keine versteckten Kosten</span>
+                  <span className="text-sm font-semibold text-gray-700">Keine versteckten Kosten</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
                   </span>
-                  <span className="text-[13px] font-semibold text-emerald-600">Monteur verfügbar</span>
+                  <span className="text-sm font-semibold text-emerald-600">Monteur verfügbar</span>
                 </div>
               </div>
 
@@ -58,7 +58,7 @@ export default function StickyCtaBar() {
               <div className="flex items-center gap-2">
                 <a
                   href="tel:+4964418056279"
-                  className="group flex items-center gap-2.5 px-7 h-[44px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-[15px] rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                  className="group flex items-center gap-2.5 px-7 h-[44px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold text-base rounded-full shadow-[0_4px_14px_rgba(220,38,38,0.3)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                 >
                   <Phone className="w-4 h-4 group-hover:animate-pulse" />
                   06441 - 8056279

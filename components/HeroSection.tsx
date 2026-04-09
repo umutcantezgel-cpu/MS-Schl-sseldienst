@@ -142,7 +142,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
                 </span>
-                <span className="text-[color:var(--value-primary)] text-[11px] sm:text-[13px] md:text-[14px] font-semibold tracking-wide">
+                <span className="text-[color:var(--value-primary)] text-xs sm:text-sm md:text-sm font-semibold tracking-wide">
                   Fachgeschäft geöffnet — persönliche Beratung vor Ort
                 </span>
               </div>
@@ -153,15 +153,15 @@ export default function HeroSection() {
             <h1
               id="hero-heading"
               itemProp="headline"
-              className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[32px] sm:text-[40px] md:text-[52px] lg:text-[44px] xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
+              className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[32px] sm:text-4xl md:text-[52px] lg:text-5xl xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
             >
               Schlüssel Schmiede Wetzlar
               {' '}
               <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-2 sm:ml-3 -translate-y-1">
-                <span className="text-[10px] sm:text-[12px] font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">Fachgeschäft · Langgasse 70</span>
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24h Notdienst</span>
               </span>
               {' '}
-              <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-[20px] sm:text-[24px]">
+              <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-xl sm:text-[24px]">
                 Ihr Fachgeschäft für Schlüssel, Schlösser & Sicherheit
               </span>
             </h1>
@@ -169,7 +169,7 @@ export default function HeroSection() {
 
             {/* 3. Subheadline */}
             <p
-              className="text-[14px] sm:text-[16px] md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] hero-entrance leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
+              className="text-sm sm:text-base md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] hero-entrance leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
               style={{ animationDelay: "150ms" }}
             >
               Persönliche Beratung, handwerkliche Präzision und Zeit für jeden Kunden.
@@ -187,7 +187,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-status-success" />
                 </span>
-                <span className="text-status-success font-semibold text-[13px]">Laden geöffnet — Mo–Sa 10–18 Uhr</span>
+                <span className="text-status-success font-semibold text-sm">Laden geöffnet — Mo–Sa 10–18 Uhr</span>
               </div>
 
               {/* Phone display */}
@@ -199,10 +199,10 @@ export default function HeroSection() {
                   <Phone className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[var(--color-red-500)] group-hover:animate-ring transition-all duration-300" />
                 </div>
                 <div className="flex flex-col gap-0.5">
-                  <span className="text-[22px] sm:text-[length:40px] font-bold text-[color:var(--text-primary)] tabular-nums tracking-tighter m-0 leading-none">
+                  <span className="text-xl sm:text-[length:40px] font-bold text-[color:var(--text-primary)] tabular-nums tracking-tighter m-0 leading-none">
                     06441 8056279
                   </span>
-                  <span className="text-[10px] sm:text-[13px] font-medium text-[color:var(--text-secondary)] leading-tight sm:leading-snug max-w-[200px] sm:max-w-none">
+                  <span className="text-[10px] sm:text-sm font-medium text-[color:var(--text-secondary)] leading-tight sm:leading-snug max-w-[200px] sm:max-w-none">
                     Kostenlose Beratung — Festpreise für alle Leistungen
                   </span>
                 </div>
@@ -214,7 +214,7 @@ export default function HeroSection() {
                   <HeartbeatCTA className="flex-1 min-w-0 sm:min-w-[200px]">
                     <a
                       href="tel:+4964418056279"
-                      className="group relative bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white flex items-center justify-center typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[2px] transition-all duration-300 w-full overflow-hidden text-[13px] sm:text-[16px]"
+                      className="group relative bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white flex items-center justify-center typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[2px] transition-all duration-300 w-full overflow-hidden text-sm sm:text-base"
                     >
                       {/* Shimmer effect */}
                       <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
@@ -225,7 +225,7 @@ export default function HeroSection() {
                   </HeartbeatCTA>
                   <Link
                     href="/termin-buchen"
-                    className="ghost-button-fill bg-white/60 border border-[var(--border-subtle)] hover:bg-white/90 text-[color:var(--text-primary)] shadow-sm flex items-center justify-center gap-2 typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl backdrop-blur-md transition-all duration-300 flex-1 hover:-translate-y-[1px] text-[13px] sm:text-[16px] whitespace-nowrap"
+                    className="ghost-button-fill bg-white/60 border border-[var(--border-subtle)] hover:bg-white/90 text-[color:var(--text-primary)] shadow-sm flex items-center justify-center gap-2 typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl backdrop-blur-md transition-all duration-300 flex-1 hover:-translate-y-[1px] text-sm sm:text-base whitespace-nowrap"
                   >
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-blue-600)]" />
                     Beratung buchen
@@ -261,14 +261,14 @@ export default function HeroSection() {
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-500)] opacity-75" />
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]" />
                     </div>
-                    <span className="text-[var(--color-red-600)] font-bold text-[9px] sm:text-[11px] uppercase tracking-[0.1em]">
+                    <span className="text-[var(--color-red-600)] font-bold text-[9px] sm:text-xs uppercase tracking-[0.1em]">
                       Ladengeschäft
                     </span>
                   </div>
-                  <div className="text-[clamp(15px,4vw,22px)] sm:text-[22px] font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
+                  <div className="text-[clamp(15px,4vw,22px)] sm:text-xl font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
                     Mehr als ein Laden
                   </div>
-                  <p className="text-[clamp(10px,3vw,13px)] sm:text-[13px] text-[color:var(--text-secondary)] leading-tight sm:leading-relaxed max-w-[280px]">
+                  <p className="text-[clamp(10px,3vw,13px)] sm:text-sm text-[color:var(--text-secondary)] leading-tight sm:leading-relaxed max-w-[280px]">
                     Ein Ort für <strong className="text-[color:var(--text-primary)] font-semibold">Vertrauen, Handwerk & Beratung</strong>.
                   </p>
                 </div>
@@ -289,7 +289,7 @@ export default function HeroSection() {
                   <div className="text-[clamp(11px,3.5vw,17px)] text-center sm:text-left leading-tight font-extrabold text-[color:var(--text-primary)] mb-0 sm:mb-1 relative z-10">
                     Ohne Schäden
                   </div>
-                  <p className="hidden sm:block text-[13px] text-[color:var(--text-secondary)] leading-snug relative z-10">
+                  <p className="hidden sm:block text-sm text-[color:var(--text-secondary)] leading-snug relative z-10">
                     Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
                   </p>
                 </div>
@@ -308,7 +308,7 @@ export default function HeroSection() {
                   <div className="text-[clamp(11px,3.5vw,17px)] text-center sm:text-left leading-tight font-extrabold text-white mb-0 sm:mb-1 relative z-10">
                     Spezialwerkzeug
                   </div>
-                  <p className="hidden sm:block text-[13px] text-zinc-400 leading-snug relative z-10">
+                  <p className="hidden sm:block text-sm text-zinc-400 leading-snug relative z-10">
                     Präzisionsgeräte ermöglichen Öffnungen selbst bei schweren Verriegelungen.
                   </p>
                 </div>

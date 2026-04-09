@@ -27,7 +27,7 @@ const SectionHeader = React.forwardRef<HTMLDivElement, SectionHeaderProps>(
         {...props}
       >
         {pill && (
-          <span className="inline-flex items-center rounded-full bg-red-50 text-[var(--color-red-600)] text-[11px] font-bold uppercase tracking-[0.15em] px-4 py-1.5 mb-4 border border-red-100/60">
+          <span className="inline-flex items-center rounded-full bg-red-50 text-[var(--color-red-600)] text-xs font-bold uppercase tracking-[0.15em] px-4 py-1.5 mb-4 border border-red-100/60">
             {pill}
           </span>
         )}

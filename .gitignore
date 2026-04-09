@@ -41,7 +41,8 @@ next-env.d.ts
 # Misc
 Thumbs.db
 *.log
-
+*.bak
+*.orig
 # QA Pipeline artifacts (dev-only, not for production)
 qa_*.js
 qa_*.py
@@ -61,3 +62,6 @@ lhreport.json
 lh-report.json
 err.html
 build_error*.log
+playwright-report/
+test-results/
+coverage/

@@ -93,7 +93,7 @@ export default function SchliessanlagenPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-[color:var(--text-secondary)] leading-relaxed">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
             Intelligente Schließanlagen für Ihr Objekt. Wir planen und installieren passgenaue Systeme für maximalen Komfort und kompromisslose Sicherheit.
           </p>
         </StaggerItem>
@@ -116,10 +116,10 @@ export default function SchliessanlagenPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Komfort und Sicherheit</h2>
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">Komfort und Sicherheit</h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Eine Schließanlage organisiert Zugangsberechtigungen effizient. Ein Hauptschlüssel öffnet alle Türen, während individuelle Schlüssel nur für spezifische Bereiche berechtigt sind. Ideal für komplexe Gebäudestrukturen.
        </p>
       </StaggerItem>
@@ -132,7 +132,7 @@ export default function SchliessanlagenPage() {
          </div>
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Für Gewerbe & Verwaltung</h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Sichere und verwaltbare Systeme für Mehrfamilienhäuser, Bürogebäude und Produktionsstätten.
           </p>
          </div>
@@ -144,7 +144,7 @@ export default function SchliessanlagenPage() {
          </div>
          <div>
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Weniger Schlüssel</h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Reduzieren Sie den Schlüsselbund auf ein Minimum. Ein einziger Schlüssel reicht für alle autorisierten Zugänge.
           </p>
          </div>
@@ -156,7 +156,7 @@ export default function SchliessanlagenPage() {
         <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-6">In 4 Schritten zu Ihrer Schließanlage</h3>
-          <ul className="space-y-6 text-[18px] text-[color:var(--text-secondary)] m-0 font-medium">
+          <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
               <span><strong>1. Erstberatung:</strong> Analyse Ihrer Anforderungen vor Ort in Wetzlar.</span>
@@ -184,7 +184,7 @@ export default function SchliessanlagenPage() {
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Preise</Badge>
-         <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
+         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
            Kalkulation & Richtpreise
          </h2>
         </div>
@@ -243,7 +243,7 @@ export default function SchliessanlagenPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen zu Schließanlagen
       </h2>
      </StaggerItem>

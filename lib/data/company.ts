@@ -19,7 +19,15 @@ export const companyInfo: CompanyInfo = {
   openingHours: {
     "Montag - Sonntag": "00:00-24:00 (24h Notdienst)",
     "Ladengeschäft (Mo-Sa)": "10:00-18:00"
-  }
+  },
+  geo: {
+    latitude: 50.5606,
+    longitude: 8.5048
+  },
+  paymentAccepted: ["Cash", "Credit Card", "EC-Karte"],
+  currenciesAccepted: "EUR",
+  priceRange: "ab 99€",
+  slogan: "Mehr als ein Laden — ein Ort für Vertrauen."
 };
 
 export function getCompanyInfo(): CompanyInfo {

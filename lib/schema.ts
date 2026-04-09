@@ -1,6 +1,7 @@
 import { CONTENT_GRAPH } from "./contentGraph";
 import { PRICING } from "@/components/pricing/pricing.constants";
 import { allLocations } from "@/lib/data/allLocations";
+import { companyInfo } from "@/lib/data/company";
 
 // ── [SEO: Canonical Domain — Single Source of Truth] ───────────────────────
 // Human-readable: https://www.wetzlar-schlüsseldienst.de
@@ -39,8 +40,8 @@ export function generateLocalBusinessSchema() {
         // [SEO: IDN Punycode applied — @id uses machine-readable canonical]
         "@id": `${siteUrl}/#localbusiness`,
         "url": siteUrl,
-        "telephone": ["+4964418056279", "+491782471037"],
-        "email": "info@wetzlar-schlüsseldienst.de",
+        "telephone": [companyInfo.phone, "+491782471037"].filter(Boolean),
+        "email": companyInfo.email,
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Langgasse 70",
@@ -51,16 +52,16 @@ export function generateLocalBusinessSchema() {
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 50.5606,
-            "longitude": 8.5048
+            "latitude": companyInfo.geo?.latitude || 50.5606,
+            "longitude": companyInfo.geo?.longitude || 8.5048
         },
         "areaServed": [
             {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
                     "@type": "GeoCoordinates",
-                    "latitude": 50.5606,
-                    "longitude": 8.5049
+                    "latitude": companyInfo.geo?.latitude || 50.5606,
+                    "longitude": companyInfo.geo?.longitude || 8.5048
                 },
                 "geoRadius": "50000"
             },
@@ -87,11 +88,11 @@ export function generateLocalBusinessSchema() {
                 "description": "24/7 Schlüsseldienst-Notdienst — auch an Feiertagen und nachts"
             }
         ],
-        "priceRange": "ab 99€",
-        "paymentAccepted": ["Cash", "Credit Card", "EC-Karte"],
-        "currenciesAccepted": "EUR",
-        "slogan": "Mehr als ein Laden — ein Ort für Vertrauen.",
-        "foundingDate": "2010",
+        "priceRange": companyInfo.priceRange || "ab 99€",
+        "paymentAccepted": companyInfo.paymentAccepted || ["Cash", "Credit Card", "EC-Karte"],
+        "currenciesAccepted": companyInfo.currenciesAccepted || "EUR",
+        "slogan": companyInfo.slogan,
+        "foundingDate": companyInfo.foundedYear?.toString() || "2012",
         "knowsLanguage": ["de", "en", "tr"],
         "sameAs": [
             "https://www.facebook.com/profile.php?id=61582567388378",
@@ -259,7 +260,7 @@ function generateOrganizationSchema() {
         "logo": `${siteUrl}/og-image.png`,
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+4964418056279",
+            "telephone": companyInfo.phone,
             "contactType": "customer service",
             "areaServed": "DE",
             "availableLanguage": ["de", "en", "tr"]

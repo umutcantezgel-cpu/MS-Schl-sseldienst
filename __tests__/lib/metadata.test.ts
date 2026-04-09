@@ -11,11 +11,11 @@ describe("metadata.ts", () => {
             });
 
             // Canonical should NOT have trailing slash for non-root paths per the logic
-            expect(meta.alternates?.canonical).toBe("https://wetzlar-schluesseldienst.de/preise");
-            expect(meta.alternates?.languages?.["de-DE"]).toBe("https://wetzlar-schluesseldienst.de/preise");
+            expect(meta.alternates?.canonical).toBe("https://www.xn--wetzlar-schlsseldienst-3lc.de/preise");
+            expect(meta.alternates?.languages?.["de-DE"]).toBe("https://www.xn--wetzlar-schlsseldienst-3lc.de/preise");
             
             // Should append the suffix if exactTitle is default (false)
-            expect(meta.title).toBe("Preise | MS Schlüsseldienst Wetzlar");
+            expect(meta.title).toBe("Preise");
             expect(meta.description).toBe("Transparente Festpreise für Türöffnungen ab 99€.");
 
             // Indexable by default
@@ -24,7 +24,7 @@ describe("metadata.ts", () => {
 
             // OpenGraph properties
             expect(meta.openGraph?.title).toBe("Preise");
-            expect(meta.openGraph?.url).toBe("https://wetzlar-schluesseldienst.de/preise");
+            expect(meta.openGraph?.url).toBe("https://www.xn--wetzlar-schlsseldienst-3lc.de/preise");
         });
 
         it("handles exactTitle prop correctly", () => {
@@ -35,8 +35,8 @@ describe("metadata.ts", () => {
                 exactTitle: true,
             });
 
-            expect(meta.title).toBe("MS Schlüsseldienst Wetzlar");
-            expect(meta.alternates?.canonical).toBe("https://wetzlar-schluesseldienst.de");
+            expect(meta.title).toEqual({ absolute: "MS Schlüsseldienst Wetzlar" });
+            expect(meta.alternates?.canonical).toBe("https://www.xn--wetzlar-schlsseldienst-3lc.de");
         });
 
         it("handles noindex prop correctly for protected/legal routes", () => {

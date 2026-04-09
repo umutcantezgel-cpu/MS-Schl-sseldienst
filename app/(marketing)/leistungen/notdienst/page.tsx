@@ -83,7 +83,7 @@ export default function NotdienstPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-[18px] sm:text-[20px] text-gray-300 leading-relaxed font-medium">
+          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-gray-300 leading-relaxed font-medium">
             Ein Notfall kennt keine Feierabendzeiten. Aus diesem Grund ist unser Notdienst-Telefon 365 Tage im Jahr, 24 Stunden am Tag für die Region Wetzlar besetzt.
           </p>
         </StaggerItem>
@@ -104,12 +104,12 @@ export default function NotdienstPage() {
     <div className="mx-auto max-w-4xl">
      <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
+       <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
         Immer ansprechbar. Niemals Callcenter.
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <p className="text-[18px] text-[color:var(--text-secondary)] leading-relaxed mb-12 font-medium">
+       <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12 font-medium">
          Transparenz und absolute Verlässlichkeit. Wo viele Dienstleister Sie nachts stundenlang warten lassen, machen wir uns lokal von Lahnau aus sofort auf den Weg nach Wetzlar und Umgebung.
        </p>
       </StaggerItem>
@@ -124,7 +124,7 @@ export default function NotdienstPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Regionale Stationierung
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Wir sind ein echter Dienstleister aus der Region. Das bedeutet keine langen Autobahnfahrten von Frankfurt aus: in 15 bis 30 Minuten sind wir bei Ihnen.
           </p>
          </div>
@@ -138,7 +138,7 @@ export default function NotdienstPage() {
           <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
            Verbindliche Preisnennung
           </h3>
-          <p className="text-[16px] text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Rufen Sie uns an: Wir schätzen das Problem direkt mit Ihnen ein und nennen Ihnen einen fairen, fixen Preis für die Öffnung.
           </p>
          </div>
@@ -163,7 +163,7 @@ export default function NotdienstPage() {
           {["Alltagsniederlassung (Mo-Fr)", "Schichtbetrieb (Mo-So, Tag/Nacht)", "Wochenend-Notdienst (Sa & So)", "Feiertagsbereitschaft (Weihnachten etc.)", "Regional stationiert in Lahnau / Wetzlar", "Zerstörungsfreie Methoden auch bei Nacht"].map((item, idx) => (
             <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white border border-[var(--border-subtle)] items-center">
               <CalendarDays className="w-6 h-6 text-blue-500 shrink-0" />
-              <span className="font-semibold text-gray-800 text-[16px]">{item}</span>
+              <span className="font-semibold text-gray-800 text-base">{item}</span>
             </li>
           ))}
         </ul>
@@ -200,7 +200,7 @@ export default function NotdienstPage() {
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
      <StaggerItem animation={entryAnimations.slideUpFade}>
-      <h2 className="text-[32px] md:text-[40px] font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
+      <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] text-center leading-[1.1] mb-12">
         Häufige Fragen Notdienst
       </h2>
      </StaggerItem>

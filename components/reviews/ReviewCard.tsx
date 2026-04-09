@@ -47,7 +47,7 @@ export default function ReviewCard({ review }: { review: Review }) {
       {/* Header: Avatar + Name + Stars */}
       <div className="flex justify-between items-start mb-6 relative z-10">
         <div className="flex items-center gap-4">
-          <div className={`relative flex items-center justify-center w-14 h-14 rounded-full font-bold text-[20px] shrink-0 bg-surface-secondary overflow-hidden ring-2 ring-white shadow-sm ${!review.avatarUrl ? avatarColor : ''}`}>
+          <div className={`relative flex items-center justify-center w-14 h-14 rounded-full font-bold text-xl shrink-0 bg-surface-secondary overflow-hidden ring-2 ring-white shadow-sm ${!review.avatarUrl ? avatarColor : ''}`}>
             {review.avatarUrl ? (
               <Image 
                 src={review.avatarUrl} 
@@ -61,11 +61,11 @@ export default function ReviewCard({ review }: { review: Review }) {
             )}
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-[17px] text-[color:var(--text-primary)] flex items-center gap-1.5" itemProp="author" itemScope itemType="https://schema.org/Person">
+            <span className="font-bold text-lg text-[color:var(--text-primary)] flex items-center gap-1.5" itemProp="author" itemScope itemType="https://schema.org/Person">
               <span itemProp="name">{review.authorName}</span>
               <CheckCircle2 className="w-4 h-4 text-status-success shrink-0" aria-label="Verifizierter Kunde" />
             </span>
-            <div className="flex items-center gap-1.5 text-[13px] text-[color:var(--text-tertiary)] mt-0.5">
+            <div className="flex items-center gap-1.5 text-sm text-[color:var(--text-tertiary)] mt-0.5">
               {review.location && <span className="font-medium text-[color:var(--text-secondary)]">{review.location}</span>}
               {review.location && <span className="opacity-50">•</span>}
               <span>{review.date}</span>
@@ -88,7 +88,7 @@ export default function ReviewCard({ review }: { review: Review }) {
         <span className="absolute -top-4 -left-3 text-[80px] leading-none text-[var(--color-red-500)]/10 font-serif z-0 select-none transition-transform duration-300 group-hover:-translate-y-2">&quot;</span>
 
         <p
-          className="relative z-10 text-[16px] text-[color:var(--text-secondary)] font-medium leading-relaxed italic line-clamp-4"
+          className="relative z-10 text-base text-[color:var(--text-secondary)] font-medium leading-relaxed italic line-clamp-4"
           itemProp="reviewBody"
         >
           &quot;{review.text}&quot;
@@ -97,13 +97,13 @@ export default function ReviewCard({ review }: { review: Review }) {
 
       {/* Google Logo Source Indicator */}
       <div className="mt-[var(--space-6)] pt-[var(--space-4)] border-t border-[var(--color-charcoal-100)] flex items-center justify-between relative z-10">
-        <span className="text-[12px] font-medium text-[color:var(--text-tertiary)] uppercase tracking-wider">
+        <span className="text-xs font-medium text-[color:var(--text-tertiary)] uppercase tracking-wider">
           {review.source} Rezension
         </span>
         {review.source ==="Google" ? (
           <GoogleIcon size={18} className="opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
         ) : (
-          <span className="text-[12px] font-bold text-status-success opacity-60 group-hover:opacity-100 transition-opacity duration-300">PE</span>
+          <span className="text-xs font-bold text-status-success opacity-60 group-hover:opacity-100 transition-opacity duration-300">PE</span>
         )}
       </div>
     </article>
