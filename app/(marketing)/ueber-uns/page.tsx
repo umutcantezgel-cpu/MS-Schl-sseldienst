@@ -11,7 +11,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { teamImages, werkstattImages, auszeichnungImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Über Uns",
+ title: "Über uns — Lokaler Schlüsseldienst seit 15+ Jahren",
  description: "Ihr lokaler Partner aus Wetzlar! ✔️ Über 15 Jahre Erfahrung ✔️ Keine Callcenter ✔️ Lokale Monteure. Lernen Sie uns kennen.",
  path: "/ueber-uns",
 });

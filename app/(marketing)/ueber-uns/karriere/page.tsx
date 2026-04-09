@@ -7,7 +7,7 @@ import { teamImages } from "@/lib/data/imageAssets";
 import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
-  title: "Karriere & Jobs",
+  title: "Karriere & Jobs als Servicemonteur in Wetzlar",
   description: "Wir suchen Servicemonteure (m/w/d) in Wetzlar! ✔️ Gutes Gehalt ✔️ Firmenwagen ✔️ Notdienst-Zuschläge. Jetzt lokal bewerben.",
   path: "/ueber-uns/karriere",
 });
@@ -43,7 +43,7 @@ export default function KarrierePage() {
           <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Karriere
+                Karriere und Jobs bei der Schlüssel Schmiede
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>

@@ -9,7 +9,7 @@ export const ring4bLocations: LocationData[] = [
         coordinates: { latitude: 50.7410, longitude: 8.2050 },
         logistics: { drivingTimeMinutes: "30", distanceFromHQ: 28 },
         pricing: { basePrice: 99, basePriceNight: 119, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
-        seo: { metaTitle: "Schlüsseldienst Haiger und 24/7 Notdienst | Festpreis ab 99€", metaDescription: "Schlüsseldienst Haiger (Sechshelden, Allendorf, Langenaubach). Zerstörungsfreie Türöffnung, Festpreis ab 99€. In ca. 30 Min. am Paradeplatz oder Rödgen. 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Haiger — 24/7 Notdienst", metaDescription: "Schlüsseldienst Haiger: Türöffnung ab 99€ in Sechshelden, Allendorf & Langenaubach. In ca. 30 Min. vor Ort. 06441-8056279" },
         
         // === 10X ERWEITERUNG ===
         routeDescription: "Über die A45 (Sauerlandlinie) steuern unsere Techniker das Haigerer Stadtgebiet inklusive der Ausläufer bis zur NRW-Landesgrenze weitaus schneller an als viele regionale Landstraßen-Anbieter.",
@@ -98,7 +98,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "20-25", distanceFromHQ: 20 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Greifenstein und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Greifenstein — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Greifenstein (Beilstein, Ulmtal uvm.). Festpreis ab 99€. In ca. 20-25 Min. bei Ihnen. Zerstörungsfreie Öffnung, regionaler Meisterbetrieb." 
         },
 
@@ -198,7 +198,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25-30", distanceFromHQ: 28 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Breitscheid und Ehrlicher 24/7 Notdienst ab 99€", 
+            metaTitle: "Schlüsseldienst Breitscheid — Ehrlicher 24/7 Notdienst ab 99€", 
             metaDescription: "Schlüsseldienst Breitscheid (Erdbach, Gusternhain uvm.): Schnelle Türöffnung ohne Abzocke in ca. 25-30 Min. Herbstlabyrinth & Töpferdorf. Festpreis garantiert." 
         },
 
@@ -295,7 +295,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25-30", distanceFromHQ: 26 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Dietzhölztal und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Dietzhölztal — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Dietzhölztal (Ewersbach, Rittershausen, Mandeln, Steinbrücken). Festpreis ab 99€. In ca. 30 Min. am äußersten Rand des Lahn-Dill-Kreises." 
         },
 
@@ -392,7 +392,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "30-35", distanceFromHQ: 30 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Driedorf und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Driedorf — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Driedorf inkl. aller 9 Ortsteile. Höllberg & Krombachtalsperre. Festpreis ab 99€. In ca. 30-35 Min. bei Ihnen vor Ort im Westerwald." 
         },
 
@@ -486,7 +486,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25-30", distanceFromHQ: 28 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Eschenburg und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Eschenburg — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Eschenburg (Eibelshausen, Wissenbach, Hirzenhain). Festpreis ab 99€. Zerstörungsfreie Öffnung in ca. 30 Minuten, 100% ohne Abzocke." 
         },
 
@@ -583,7 +583,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25-30", distanceFromHQ: 26 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Mittenaar und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Mittenaar — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Mittenaar (Bicken, Ballersbach, Bellersdorf, Offenbach). Festpreis ab 99€. In 30 Min. bei Ihnen am Lahn-Dill-Bergland." 
         },
 
@@ -680,7 +680,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "30-35", distanceFromHQ: 30 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Siegbach und Ehrlicher 24/7 Notdienst ab 99€", 
+            metaTitle: "Schlüsseldienst Siegbach — Ehrlicher 24/7 Notdienst ab 99€", 
             metaDescription: "Schlüsseldienst Siegbach (Eisemroth, Tringenstein, Übernthal, Wallenfels, Oberndorf). Festpreis ab 99€. In ca. 35 Min. bei Ihnen vor Ort im Schelder Wald." 
         },
 
@@ -777,7 +777,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25-30", distanceFromHQ: 28 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Weilmünster und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Weilmünster — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Weilmünster (Laubuseschbach, Wolfenhausen, Möttau uvm.). Zerstörungsfreie Öffnung in ca. 30 Min. Festpreis ab 99€, absolut vertrauenswürdig." 
         },
 
@@ -874,7 +874,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "20-25", distanceFromHQ: 20 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Seelbach (Herborn) und 24/7 Notdienst ab 99€", 
+            metaTitle: "Schlüsseldienst Seelbach (Herborn) — 24/7 Notdienst ab 99€", 
             metaDescription: "Schlüsseldienst für Herborn-Seelbach. Festpreis ab 99€, Anfahrt nur 20€. Zerstörungsfreie Premium-Türöffnung in ca. 20 Minuten. 100% regional." 
         },
 
@@ -971,7 +971,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25", distanceFromHQ: 22 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Herborn Schönbach & Hörbach und 24/7 Notdienst", 
+            metaTitle: "Schlüsseldienst Herborn Schönbach & Hörbach — 24/7 Notdienst", 
             metaDescription: "Schlüsseldienst für Schönbach und Hörbach. Festpreis ab 99€. Regionale Fachkräfte, in ca. 25 Min. bei Ihnen vor Ort. 100% transparent und seriös." 
         },
 
@@ -1068,7 +1068,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "20", distanceFromHQ: 18 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Merkenbach (Herborn) und 24/7 Türöffnung ab 99€", 
+            metaTitle: "Schlüsseldienst Merkenbach (Herborn) — 24/7 Türöffnung ab 99€", 
             metaDescription: "Schlüsseldienst Merkenbach bei Herborn. Schonende 24/7 Türöffnung in 20 Minuten. Festpreis ab 99€ + faire 20€ Anfahrt. 100% regional und seriös." 
         },
 
@@ -1165,7 +1165,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "25-30", distanceFromHQ: 23 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Guntersdorf & Uckersdorf (Herborn) und Ab 99€", 
+            metaTitle: "Schlüsseldienst Guntersdorf & Uckersdorf (Herborn) — Ab 99€", 
             metaDescription: "Schlüsseldienst für Guntersdorf und Uckersdorf bei Herborn. Zerstörungsfreie Premium-Öffnung in 25-30 Minuten. Festpreis ab 99€ + 20€ Anfahrt." 
         },
 
@@ -1262,7 +1262,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "12-15", distanceFromHQ: 12 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 15, travelCostText: "+ 15€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Dillheim (Ehringshausen) und 24/7 Notdienst ab 99€", 
+            metaTitle: "Schlüsseldienst Dillheim (Ehringshausen) — 24/7 Notdienst ab 99€", 
             metaDescription: "Schlüsseldienst für Ehringshausen-Dillheim. Schnelle Türöffnung in ca. 15 Min. Festpreis ab 99€. Zerstörungsfrei, fair und 100% regional." 
         },
 
@@ -1359,7 +1359,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "20-25", distanceFromHQ: 18 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Neukirchen (Braunfels) und 24/7 Notdienst ab 99€", 
+            metaTitle: "Schlüsseldienst Neukirchen (Braunfels) — 24/7 Notdienst ab 99€", 
             metaDescription: "Schlüsseldienst Neukirchen im Hintertaunus (Braunfels). Fachkundige Türöffnung in ca. 25 Min. 99€ Festpreis, transparente 20€ Anfahrt, zerstörungsfrei." 
         },
 
@@ -1456,7 +1456,7 @@ export const ring4bLocations: LocationData[] = [
         logistics: { drivingTimeMinutes: "15-20", distanceFromHQ: 15 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: 15, travelCostText: "+ 15€ Anfahrt" },
         seo: { 
-            metaTitle: "Schlüsseldienst Tiefenbach (Braunfels) und 24/7 Festpreis ab 99€", 
+            metaTitle: "Schlüsseldienst Tiefenbach (Braunfels) — 24/7 Festpreis ab 99€", 
             metaDescription: "Schlüsseldienst Tiefenbach bei Braunfels. 24h Türöffnung in 15-20 Minuten. Zerstörungsfrei, regional und günstig: Festpreis ab 99€, Anfahrt nur 15€." 
         },
 

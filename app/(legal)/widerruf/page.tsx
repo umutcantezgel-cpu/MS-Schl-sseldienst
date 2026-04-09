@@ -6,7 +6,7 @@ import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Widerrufsbelehrung",
+    title: "Widerrufsbelehrung für Schlüsseldienst-Aufträge",
     description: "Widerrufsbelehrung des Schlüssel Schmiede Wetzlar. ✔️ Informationen zum Widerrufsrecht ✔️ Muster-Widerrufsformular.",
     path: "/widerruf",
   })
@@ -24,7 +24,7 @@ const TOC_ITEMS = [
 export default function WiderrufPage() {
     return (
         <LegalLayout
-            heroTitle="Widerrufsbelehrung"
+            heroTitle="Widerrufsbelehrung für Schlüsseldienst-Aufträge"
             heroSubtitle="Ihre Rechte als Verbraucher gemäß dem Bürgerlichen Gesetzbuch. Transparent, verständlich und ohne Kleingedrucktes."
             lastUpdated="27. März 2026"
             tocItems={TOC_ITEMS}

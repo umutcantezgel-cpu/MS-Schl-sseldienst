@@ -81,7 +81,7 @@ export default function PreisePage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-[var(--space-6)]">
-            Ehrliche <span className="text-[var(--color-red-500)]">Festpreise</span>
+            Ehrliche <span className="text-[var(--color-red-500)]">Festpreise</span> für Ihren Schlüsseldienst
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>

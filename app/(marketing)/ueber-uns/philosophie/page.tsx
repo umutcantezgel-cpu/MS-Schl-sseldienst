@@ -6,7 +6,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { auszeichnungImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
-  title: "Unsere Philosophie",
+  title: "Unsere Philosophie — Transparenz, Fairness & Qualität",
   description:
     "Transparenz, Fairness und Handwerksqualität und die drei Säulen unserer Philosophie als Schlüsseldienst in Wetzlar.",
   path: "/ueber-uns/philosophie",
@@ -64,7 +64,7 @@ export default function PhilosophiePage() {
           <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Unsere Philosophie
+                Unsere Philosophie als Handwerksbetrieb
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>

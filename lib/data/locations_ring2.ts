@@ -20,7 +20,7 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 10€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Aßlar und Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Aßlar — Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Aßlar: Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. an der Laguna, Werdorf, Berghausen & Kernstadt. Faire Preise. 06441-8056279",
         },
         
@@ -129,8 +129,8 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 10€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Solms und Türöffnung ab 99€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Solms: Zerstörungsfreie Türöffnung ab 99€. In ca. 8-12 Min. in Burgsolms, Oberbiel, Niederbiel, Oberndorf & Albshausen. Faire Preise. 06441-8056279",
+            metaTitle: "Schlüsseldienst Solms — Türöffnung ab 99€",
+            metaDescription: "Schlüsseldienst Solms: Türöffnung ab 99€. In 8-12 Min. in Burgsolms, Oberbiel & Albshausen. Faire Festpreise. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -241,7 +241,7 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 10€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Lahnau und Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Lahnau — Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Lahnau: Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. in Waldgirmes, Dorlar & Atzbach. Faire Preise, 24/7 Notdienst. 06441-8056279",
         },
 
@@ -353,8 +353,8 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Hüttenberg und Türöffnung ab 99€ | 24/7 Notdienst",
-            metaDescription: "Schlüsseldienst Hüttenberg: Zerstörungsfreie Türöffnung ab 99€. In ca. 10-15 Min. in Rechtenbach, Hochelheim, Volpertshausen & allen 6 Ortsteilen. 06441-8056279",
+            metaTitle: "Schlüsseldienst Hüttenberg — Türöffnung ab 99€",
+            metaDescription: "Schlüsseldienst Hüttenberg: Türöffnung ab 99€. In 10-15 Min. in Rechtenbach, Hochelheim & allen Ortsteilen. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -465,7 +465,7 @@ export const ring2Locations: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Hohenahr und Türöffnung ab 99€ | 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Hohenahr — Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Hohenahr: Zerstörungsfreie Türöffnung ab 99€. In ca. 8-12 Min. in Erda, Hohensolms, Mudersbach & allen 6 Ortsteilen. 06441-8056279",
         },
 

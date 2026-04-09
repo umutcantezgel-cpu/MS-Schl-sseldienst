@@ -5,7 +5,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
-  title: "Barrierefreiheit",
+  title: "Barrierefreiheit unserer Schlüsseldienst-Website",
   description: "Informationen zur Barrierefreiheit des Schlüssel Schmiede Wetzlar. Wir setzen uns für eine uneingeschränkte Nutzung unserer Website ein.",
   path: "/barrierefreiheit",
 });
@@ -46,7 +46,7 @@ export default function BarrierefreiheitPage() {
           >
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-6)]">
-                Barrierefreiheit
+                Erklärung zur Barrierefreiheit unserer Website
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>

@@ -77,7 +77,7 @@ export default function ServicegebietPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Unser <span className="text-[color:var(--value-primary)]">Servicegebiet</span>
+            Schlüsseldienst <span className="text-[color:var(--value-primary)]">Einsatzgebiete</span> im Lahn-Dill-Kreis
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>

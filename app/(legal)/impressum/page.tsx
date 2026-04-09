@@ -6,7 +6,7 @@ import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Impressum",
+    title: "Impressum & Anbieterkennzeichnung",
     description: "Impressum und rechtliche Angaben des Schlüssel Schmiede Wetzlar. ✔️ Kontaktdaten ✔️ Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
   })
@@ -25,7 +25,7 @@ const TOC_ITEMS = [
 export default function ImpressumPage() {
     return (
         <LegalLayout
-            heroTitle="Impressum"
+            heroTitle="Impressum der Schlüssel Schmiede Wetzlar"
             heroSubtitle="Transparenz schafft Vertrauen. Wer wir sind und wie Sie uns erreichen."
             lastUpdated="06. April 2024"
             tocItems={TOC_ITEMS}

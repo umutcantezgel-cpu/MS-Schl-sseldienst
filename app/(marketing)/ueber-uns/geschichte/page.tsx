@@ -6,7 +6,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
-  title: "Historie",
+  title: "Unsere Geschichte als Schlüsseldienst in Wetzlar",
   description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom Schlüssel Schmiede in Wetzlar. ✔️ Über 15 Jahre Erfahrung.",
   path: "/ueber-uns/geschichte",
 });
@@ -57,7 +57,7 @@ export default function GeschichtePage() {
           <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Unsere Geschichte
+                Unsere Geschichte als Schlüsseldienst in Wetzlar
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>

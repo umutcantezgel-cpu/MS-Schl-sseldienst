@@ -7,7 +7,7 @@ import { COOKIE_INVENTORY, DATA_PROCESSING_INVENTORY } from "@/lib/cookie-invent
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Datenschutz",
+    title: "Datenschutzerklärung nach DSGVO",
     description: "Datenschutzerklärung des Schlüssel Schmiede Wetzlar. ✔️ DSGVO-konform ✔️ Transparenz über Datenverarbeitung und Cookies.",
     path: "/datenschutz",
   })
@@ -30,7 +30,7 @@ import { PrivacyPreferenceCenter } from "@/components/legal/PrivacyPreferenceCen
 export default function DatenschutzPage() {
     return (
         <LegalLayout
-            heroTitle="Datenschutzerklärung"
+            heroTitle="Datenschutzerklärung nach DSGVO"
             heroSubtitle="Ihre Daten, Ihre Kontrolle. Wir legen größten Wert auf Datenschutz nach DSGVO-Standards."
             lastUpdated="27. März 2026"
             tocItems={TOC_ITEMS}

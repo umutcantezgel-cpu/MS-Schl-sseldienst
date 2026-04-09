@@ -20,7 +20,7 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Herborn und Fachbetrieb vor Ort | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Herborn — Fachbetrieb vor Ort",
             metaDescription: "Schlüsseldienst Herborn: Spezialist für Fachwerkhäuser & Altstadt. Zerstörungsfreie Öffnung ab 99€. In ca. 20 Min. über die A45 bei Ihnen. 06441-8056279",
         },
         
@@ -129,7 +129,7 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Dillenburg und 24h Notdienst | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Dillenburg — 24h Notdienst",
             metaDescription: "Ihr Notdienst in der Oranierstadt Dillenburg (Oberscheld, Niederscheld, Donsbach). Anfahrt via A45 in ca. 25-30 Min. Fairness, Festpreise, Zerstörungsfrei.",
         },
         
@@ -238,7 +238,7 @@ export const ring4Locations: LocationData[] = [
             travelCostText: "+ 20€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Weilburg und Express-Notdienst | Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Weilburg — Express-Notdienst",
             metaDescription: "Schlüsseldienst für Weilburg & Ortsteile (Odersbach, Kubach). Beschädigungsfreie Öffnung, ca. 20-25 Min. Ankunft über B49. 24/7 faire Preise ab 99€.",
         },
         

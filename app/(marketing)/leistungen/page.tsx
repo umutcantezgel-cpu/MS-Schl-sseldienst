@@ -6,7 +6,7 @@ import { Phone, CheckCircle2, ShieldCheck, DoorOpen, Car, KeyRound, Copy, Siren,
 import RelatedPosts from "@/components/blog/RelatedPosts";
 
 export const metadata = generateSharedMetadata({
-  title: "Unsere Leistungen",
+  title: "Alle Leistungen im Überblick",
   description: "Alle Services im Überblick: ✔️ Türöffnung ab 99€ ✔️ Tresoröffnung ✔️ Einbruchschutz. Zertifiziert, schnell & lokal in Wetzlar verankert. Jetzt anrufen!",
   path: "/leistungen",
 });

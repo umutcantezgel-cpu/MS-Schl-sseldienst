@@ -31,10 +31,10 @@ export default function SitemapPage() {
       
       <main className="relative pt-[120px] lg:pt-[140px] pb-16 z-10 w-full overflow-hidden min-h-screen">
         <div className="mx-auto max-w-7xl px-[var(--section-px)]">
-          <Breadcrumbs items={[{ name: 'Inhaltsübersicht (Sitemap)', href: '/sitemap' }]} />
+          <Breadcrumbs items={[{ name: 'Inhaltsübersicht', href: '/sitemap-uebersicht' }]} />
           
           <div className="mt-8 mb-12">
-            <h1 className="typo-h1 mb-4 text-[color:var(--text-primary)]">Inhaltsübersicht <span className="text-[var(--color-red-500)]">(Sitemap)</span></h1>
+            <h1 className="typo-h1 mb-4 text-[color:var(--text-primary)]">Vollständige Sitemap aller <span className="text-[var(--color-red-500)]">Schlüsseldienst-Seiten</span></h1>
             <p className="typo-lead">Hier finden Sie eine Übersicht aller Unterseiten, Themen und Einsatzgebiete unseres Schlüsseldienstes.</p>
           </div>
 

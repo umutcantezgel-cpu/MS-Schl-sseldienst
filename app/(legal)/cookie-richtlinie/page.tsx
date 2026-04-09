@@ -7,7 +7,7 @@ import { COOKIE_INVENTORY, CONSENT_CATEGORY_INFO, type ConsentCategory } from "@
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Cookie-Richtlinie",
+    title: "Cookie-Richtlinie & Datenschutz-Einstellungen",
     description: "Cookie-Richtlinie des Schlüssel Schmiede Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
     path: "/cookie-richtlinie",
   })
@@ -42,7 +42,7 @@ export default function CookieRichtliniePage() {
 
     return (
         <LegalLayout
-            heroTitle="Cookie-Richtlinie"
+            heroTitle="Cookie-Richtlinie und Datenschutz-Einstellungen"
             heroSubtitle="Vollständige Transparenz darüber, welche Cookies wir verwenden, warum wir sie brauchen und wie Sie die Kontrolle behalten."
             lastUpdated="27. März 2026"
             tocItems={TOC_ITEMS}
