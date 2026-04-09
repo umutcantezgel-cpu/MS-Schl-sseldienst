@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Tresoröffnung Wetzlar | Diskret & Zertifiziert",
+ title: "Tresoröffnung Wetzlar | Schlüsseldienst",
  description: "Tresor aufbekommen? ✔️ Diskrete Safe-Öffnung ✔️ Mechanisch & Elektronisch. Höchste Vertraulichkeit durch Experten. 📞 06441-8056279",
  path: "/leistungen/tresoroeffnung",
  exactTitle: true,

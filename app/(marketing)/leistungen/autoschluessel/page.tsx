@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Autoschlüssel Wetzlar | Reparatur & Programmierung",
+ title: "Autoschlüssel Wetzlar | Schlüsseldienst",
  description: "KfZ-Schlüssel kaputt oder verloren? Wir reparieren und programmieren Gehäuse und Elektronik von Autoschlüsseln in Wetzlar. ✔️ Schnell & Günstig",
  path: "/leistungen/autoschluessel",
  exactTitle: true,

@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Einbruchschutz Wetzlar | Absicherung & Soforthilfe",
+ title: "Einbruchschutz Wetzlar | Schlüsseldienst",
  description: "Kostenlose Risiko-Analyse in Wetzlar! ✔️ Tür- und Fensterabsicherung ✔️ VdS-geprüfte Technik ✔️ Soforthilfe nach Einbruch. Rufen Sie uns an!",
  path: "/leistungen/einbruchschutz",
  exactTitle: true,
@@ -195,7 +195,7 @@ export default function EinbruchschutzPage() {
 
    <ProcessSteps />
 
-   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen Einbruchschutz" subtitle="Echte Kundenstimmen" />
+   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen Einbruchschutz" subtitle="Erfahrungen unserer Kunden" />
 
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">
     <StaggerReveal className="mx-auto max-w-4xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>

@@ -36,29 +36,29 @@ export default function WiderrufPage() {
 
             <LegalSection>
                 <TLDRBox title="Widerruf und das Wichtigste auf einen Blick" icon="info">
-                    <p>Als Verbraucher haben Sie grundsätzlich ein <b>14-tägiges Widerrufsrecht</b> bei Fernabsatzverträgen (z.B. telefonische Beauftragung).</p>
-                    <p><b>Wichtige Ausnahme bei Notdiensten:</b> Wenn Sie unseren Schlüsseldienst zur sofortigen Notöffnung beauftragen und wir die Dienstleistung vor Ablauf der Widerrufsfrist vollständig erbringen, <b>erlischt Ihr Widerrufsrecht</b> gemäß § 356 Abs. 4 Nr. 2 BGB. Dies gilt, sofern Sie vor Beginn der Leistung ausdrücklich zugestimmt und bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung verlieren.</p>
+                    <p>Als Verbraucher haben Sie grundsätzlich ein <strong>14-tägiges Widerrufsrecht</strong> bei Fernabsatzverträgen (z.B. telefonische Beauftragung).</p>
+                    <p><strong>Wichtige Ausnahme bei Notdiensten:</strong> Wenn Sie unseren Schlüsseldienst zur sofortigen Notöffnung beauftragen und wir die Dienstleistung vor Ablauf der Widerrufsfrist vollständig erbringen, <strong>erlischt Ihr Widerrufsrecht</strong> gemäß § 356 Abs. 4 Nr. 2 BGB. Dies gilt, sofern Sie vor Beginn der Leistung ausdrücklich zugestimmt und bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung verlieren.</p>
                 </TLDRBox>
             </LegalSection>
 
             <LegalSection id="1-widerrufsrecht">
                 <h2 className="mt-0">1. Widerrufsrecht</h2>
-                <p>Sie haben das Recht, binnen <b>vierzehn Tagen</b> ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
+                <p>Sie haben das Recht, binnen <strong>vierzehn Tagen</strong> ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
                 <p>Das Widerrufsrecht besteht bei Verträgen, die außerhalb von Geschäftsräumen geschlossen werden (§ 312b BGB) sowie bei Fernabsatzverträgen (§ 312c BGB), also insbesondere bei telefonischer oder elektronischer Beauftragung unserer Dienstleistungen.</p>
             </LegalSection>
 
             <LegalSection id="2-widerrufsfrist">
                 <h2 className="mt-0">2. Widerrufsfrist</h2>
-                <p>Die Widerrufsfrist beträgt <b>14 Tage ab dem Tag des Vertragsschlusses</b>.</p>
+                <p>Die Widerrufsfrist beträgt <strong>14 Tage ab dem Tag des Vertragsschlusses</strong>.</p>
                 <p>Bei telefonischer Beauftragung unseres Schlüsseldienstes beginnt die Frist mit dem Moment der telefonischen Vertragsannahme durch unseren Disponenten.</p>
-                <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer <b>eindeutigen Erklärung</b> (z.B. ein mit der Post versandter Brief, ein Telefax oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.</p>
+                <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer <strong>eindeutigen Erklärung</strong> (z.B. ein mit der Post versandter Brief, ein Telefax oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.</p>
             </LegalSection>
 
             <LegalSection id="3-ausuebung">
                 <h2 className="mt-0">3. Ausübung des Widerrufs</h2>
                 <p>Um Ihr Widerrufsrecht auszuüben, richten Sie Ihre Widerrufserklärung bitte an:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <b>Mina Saad</b><br />
+                    <strong>Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
@@ -67,34 +67,34 @@ export default function WiderrufPage() {
                     E-Mail: <Link href="mailto:notfall-schluessel@proton.me?subject=Widerruf" className="text-[var(--action-primary)] hover:underline">notfall-schluessel@proton.me</Link>
                 </div>
                 <p>Sie können dafür das unten beigefügte <Link href="#6-muster-formular" className="text-[var(--action-primary)] hover:underline font-medium">Muster-Widerrufsformular</Link> verwenden, das jedoch nicht vorgeschrieben ist.</p>
-                <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts <b>vor Ablauf der Widerrufsfrist absenden</b>.</p>
+                <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts <strong>vor Ablauf der Widerrufsfrist absenden</strong>.</p>
             </LegalSection>
 
             <LegalSection id="4-folgen">
                 <h2 className="mt-0">4. Folgen des Widerrufs</h2>
-                <p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), <b>unverzüglich und spätestens binnen vierzehn Tagen</b> ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf bei uns eingegangen ist.</p>
+                <p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), <strong>unverzüglich und spätestens binnen vierzehn Tagen</strong> ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf bei uns eingegangen ist.</p>
                 <p>Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart. In keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.</p>
 
                 <h3 className="mt-6 text-base font-bold text-gray-900">Wertersatz bei teilweise erbrachter Leistung</h3>
-                <p>Haben Sie verlangt, dass die Dienstleistung während der Widerrufsfrist beginnen soll, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, <b>bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen</b> entspricht.</p>
+                <p>Haben Sie verlangt, dass die Dienstleistung während der Widerrufsfrist beginnen soll, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, bereits erbrachten Dienstleistungen entspricht.</p>
             </LegalSection>
 
             <LegalSection id="5-ausnahmen">
                 <h2 className="mt-0">5. Ausnahmen vom Widerrufsrecht</h2>
-                <p>Das Widerrufsrecht besteht <b>nicht</b> bei folgenden Verträgen:</p>
+                <p>Das Widerrufsrecht besteht <strong>nicht</strong> bei folgenden Verträgen:</p>
 
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
                     <h3 className="text-base font-bold text-red-900 mt-0 mb-3">Ausnahme bei Notdienst-Einsätzen</h3>
-                    <p className="text-red-800">Gemäß <b>§ 356 Abs. 4 Nr. 2 BGB</b> erlischt das Widerrufsrecht bei einem Vertrag zur Erbringung von Dienstleistungen, wenn der Unternehmer die Dienstleistung <b>vollständig erbracht hat</b> und mit der Ausführung der Dienstleistung erst begonnen hat, nachdem der Verbraucher dazu seine ausdrückliche Zustimmung gegeben und gleichzeitig seine Kenntnis davon bestätigt hat, dass er sein Widerrufsrecht bei vollständiger Vertragserfüllung durch den Unternehmer verliert.</p>
+                    <p className="text-red-800">Gemäß <strong>§ 356 Abs. 4 Nr. 2 BGB</strong> erlischt das Widerrufsrecht bei einem Vertrag zur Erbringung von Dienstleistungen, wenn der Unternehmer die Dienstleistung <strong>vollständig erbracht hat</strong> und mit der Ausführung der Dienstleistung erst begonnen hat, nachdem der Verbraucher dazu seine ausdrückliche Zustimmung gegeben und gleichzeitig seine Kenntnis davon bestätigt hat, dass er sein Widerrufsrecht bei vollständiger Vertragserfüllung durch den Unternehmer verliert.</p>
                 </div>
 
-                <p><b>In der Praxis bedeutet das:</b> Wenn Sie uns zum Beispiel um 22:00 Uhr anrufen, weil Sie sich ausgesperrt haben, und wir Ihre Tür sofort öffnen, ist die Dienstleistung vollständig erbracht. Ein Widerruf nach der Öffnung ist nicht mehr möglich, da die Leistung nicht rückgängig gemacht werden kann.</p>
+                <p><strong>In der Praxis bedeutet das:</strong> Wenn Sie uns zum Beispiel um 22:00 Uhr anrufen, weil Sie sich ausgesperrt haben, und wir Ihre Tür sofort öffnen, ist die Dienstleistung vollständig erbracht. Ein Widerruf nach der Öffnung ist nicht mehr möglich, da die Leistung nicht rückgängig gemacht werden kann.</p>
                 <p>Unser Disponent weist Sie vor Ihrer Beauftragung telefonisch auf diese Ausnahme hin.</p>
 
                 <h3 className="mt-6 text-base font-bold text-gray-900">Weitere gesetzliche Ausnahmen (§ 312g Abs. 2 BGB)</h3>
                 <ul className="mt-3 space-y-2 text-gray-600">
-                    <li><b>Nr. 11:</b> Verträge zur Erbringung von Dienstleistungen in den Bereichen Beherbergung (zu anderen Zwecken als zu Wohnzwecken), Beförderung von Waren, Kraftfahrzeugvermietung, Lieferung von Speisen und Getränken sowie zur Erbringung weiterer Dienstleistungen im Zusammenhang mit Freizeitbetätigungen, wenn der Vertrag für die Erbringung einen spezifischen Termin vorsieht.</li>
-                    <li><b>Nr. 1:</b> Verträge zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist (z.B. maßangefertigte Sicherheitsschlösser).</li>
+                    <li><strong>Nr. 11:</strong> Verträge zur Erbringung von Dienstleistungen in den Bereichen Beherbergung (zu anderen Zwecken als zu Wohnzwecken), Beförderung von Waren, Kraftfahrzeugvermietung, Lieferung von Speisen und Getränken sowie zur Erbringung weiterer Dienstleistungen im Zusammenhang mit Freizeitbetätigungen, wenn der Vertrag für die Erbringung einen spezifischen Termin vorsieht.</li>
+                    <li><strong>Nr. 1:</strong> Verträge zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist (z.B. maßangefertigte Sicherheitsschlösser).</li>
                 </ul>
             </LegalSection>
 
@@ -107,7 +107,7 @@ export default function WiderrufPage() {
 
                     <div className="bg-white border border-gray-300 rounded-xl p-6 space-y-3 text-sm">
                         <p>An:<br />
-                        <b>Mina Saad</b><br />
+                        <strong>Mina Saad</strong><br />
                         Schlüssel Schmiede Wetzlar<br />
                         Gloelstraße 11<br />
                         35576 Wetzlar<br />
@@ -144,7 +144,7 @@ export default function WiderrufPage() {
                 <h2 className="mt-0">7. Kontakt</h2>
                 <p>Bei Fragen zum Widerrufsrecht wenden Sie sich bitte an:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <b>Mina Saad</b><br />
+                    <strong>Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />

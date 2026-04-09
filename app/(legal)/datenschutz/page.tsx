@@ -43,7 +43,7 @@ export default function DatenschutzPage() {
             <LegalSection>
                 <TLDRBox title="Datenschutz auf einen Blick" icon="info">
                     <p>Wenn Sie unsere Website besuchen, werden bestimmte Daten (wie Ihre IP-Adresse) erfasst, um den technischen Betrieb sicherzustellen (Server-Logfiles). Im Kontaktformular angegebene Daten dienen rein der Auftragsabwicklung und Beantwortung.</p>
-                    <p><b>Wir verkaufen Ihre Daten nicht.</b> Sie haben jederzeit das Recht auf Löschung, Berichtigung und kostenlose Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten.</p>
+                    <p><strong>Wir verkaufen Ihre Daten nicht.</strong> Sie haben jederzeit das Recht auf Löschung, Berichtigung und kostenlose Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -51,7 +51,7 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">1. Verantwortlicher</h2>
                 <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <b>Mina Saad</b><br />
+                    <strong>Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
@@ -71,19 +71,19 @@ export default function DatenschutzPage() {
                       <h3 className="text-lg font-bold text-gray-900 mt-0 mb-4">{entry.name}</h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-6 text-sm">
                         <div className="md:col-span-3">
-                          <b className="text-gray-900 block mb-1">Erhobene Daten:</b>
+                          <b className="text-gray-900 block mb-1">Erhobene Daten:</strong>
                           <span className="text-gray-600">{entry.dataCollected.join(", ")}</span>
                         </div>
                         <div>
-                          <b className="text-gray-900 block mb-1">Rechtsgrundlage:</b>
+                          <b className="text-gray-900 block mb-1">Rechtsgrundlage:</strong>
                           <span className="text-gray-600">{entry.legalBasis}</span>
                         </div>
                         <div>
-                          <b className="text-gray-900 block mb-1">Empfänger:</b>
+                          <b className="text-gray-900 block mb-1">Empfänger:</strong>
                           <span className="text-gray-600">{entry.recipient}</span>
                         </div>
                         <div>
-                          <b className="text-gray-900 block mb-1">Speicherdauer:</b>
+                          <b className="text-gray-900 block mb-1">Speicherdauer:</strong>
                           <span className="text-gray-600">{entry.retentionPeriod}</span>
                         </div>
                       </div>
@@ -96,9 +96,9 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">3. Rechtsgrundlagen der Verarbeitung</h2>
                 <p>Nachfolgend informieren wir Sie über die in der DSGVO festgeschriebenen Rechtsgrundlagen unserer Datenverarbeitungen:</p>
                 <ul>
-                    <li><b>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</b> - Sie haben explizit eingewilligt (z.B. im Cookie-Consent Code).</li>
-                    <li><b>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</b> - Anbahnung und Durchführung des Schlüsseldienst-Auftrags.</li>
-                    <li><b>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</b> - Gewährleistung der IT-Sicherheit und des reibungslosen Betriebs (Vercel Logfiles).</li>
+                    <li><strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</strong> - Sie haben explizit eingewilligt (z.B. im Cookie-Consent Code).</li>
+                    <li><strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</strong> - Anbahnung und Durchführung des Schlüsseldienst-Auftrags.</li>
+                    <li><strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</strong> - Gewährleistung der IT-Sicherheit und des reibungslosen Betriebs (Vercel Logfiles).</li>
                 </ul>
             </LegalSection>
 
@@ -114,14 +114,14 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">5. Rechte der betroffenen Personen</h2>
                 <p>Die DSGVO stattet Verbraucher mit weitreichenden Rechten aus. Kontaktieren Sie uns jederzeit kostenfrei, um Folgendes auszuüben:</p>
                 <ul>
-                    <li><b>Art. 15 DSGVO:</b> Auskunftsrecht über gespeicherte Daten.</li>
-                    <li><b>Art. 16 DSGVO:</b> Recht auf Berichtigung unvollständiger Daten.</li>
-                    <li><b>Art. 17 DSGVO:</b> Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;).</li>
-                    <li><b>Art. 18 DSGVO:</b> Recht auf Einschränkung der Datenverarbeitung.</li>
-                    <li><b>Art. 20 DSGVO:</b> Datenübertragbarkeit an andere Anbieter.</li>
-                    <li><b>Art. 21 DSGVO:</b> Widerspruchsrecht gegen die Verarbeitung.</li>
+                    <li><strong>Art. 15 DSGVO:</strong> Auskunftsrecht über gespeicherte Daten.</li>
+                    <li><strong>Art. 16 DSGVO:</strong> Recht auf Berichtigung unvollständiger Daten.</li>
+                    <li><strong>Art. 17 DSGVO:</strong> Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;).</li>
+                    <li><strong>Art. 18 DSGVO:</strong> Recht auf Einschränkung der Datenverarbeitung.</li>
+                    <li><strong>Art. 20 DSGVO:</strong> Datenübertragbarkeit an andere Anbieter.</li>
+                    <li><strong>Art. 21 DSGVO:</strong> Widerspruchsrecht gegen die Verarbeitung.</li>
                 </ul>
-                <p>Zudem steht Ihnen ein <b>Beschwerderecht (Art. 77 DSGVO)</b> bei der zuständigen Aufsichtsbehörde in Hessen (Wiesbaden) zu.</p>
+                <p>Zudem steht Ihnen ein <strong>Beschwerderecht (Art. 77 DSGVO)</strong> bei der zuständigen Aufsichtsbehörde in Hessen (Wiesbaden) zu.</p>
             </LegalSection>
 
             <LegalSection id="6-drittlaender">

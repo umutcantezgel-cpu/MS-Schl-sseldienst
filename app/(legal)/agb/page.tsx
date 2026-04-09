@@ -42,8 +42,8 @@ export default function AGBPage() {
 
             <LegalSection>
                 <TLDRBox title="Wichtigste Punkte im Überblick" icon="info">
-                    <p>Wir arbeiten mit <b>transparenten Festpreisen ab 99,- €</b> zzgl. Anfahrt. Die Anfahrtskosten werden Ihnen immer <b>vorab telefonisch genau genannt</b>.</p>
-                    <p>Bei sofort auszuführenden Notdiensten erlischt das 14-tägige <HoverGlossary explanation="Das gesetzliche Recht, einen Vertrag innerhalb von 14 Tagen zu widerrufen. Bei Notdiensten entfällt dieses Recht jedoch.">Widerrufsrecht</HoverGlossary> gemäß <b><HoverGlossary explanation="Ein Paragraph im Bürgerlichen Gesetzbuch, der ausdrücklich regelt, dass bei zwingend bestellten Reparaturarbeiten kein Rücktrittsrecht besteht.">§ 312g Abs. 2 Nr. 11 BGB</HoverGlossary></b>. Stornieren Sie den Auftrag erst, wenn unser Techniker bereits unterwegs oder vor Ort ist, fällt eine branchenübliche <b><HoverGlossary explanation="Eine pauschale Entschädigung für die Zeit und Benzinkosten unseres Technikers, wenn er umsonst anreist.">Leerfahrtpauschale von 50,- €</HoverGlossary></b> an.</p>
+                    <p>Wir arbeiten mit <strong>transparenten Festpreisen ab 99,- €</strong> zzgl. Anfahrt. Die Anfahrtskosten werden Ihnen immer <strong>vorab telefonisch genau genannt</strong>.</p>
+                    <p>Bei sofort auszuführenden Notdiensten erlischt das 14-tägige <HoverGlossary explanation="Das gesetzliche Recht, einen Vertrag innerhalb von 14 Tagen zu widerrufen. Bei Notdiensten entfällt dieses Recht jedoch.">Widerrufsrecht</HoverGlossary> gemäß <HoverGlossary explanation="Ein Paragraph im Bürgerlichen Gesetzbuch, der ausdrücklich regelt, dass bei zwingend bestellten Reparaturarbeiten kein Rücktrittsrecht besteht."><strong>§ 312g Abs. 2 Nr. 11 BGB</strong></HoverGlossary>. Stornieren Sie den Auftrag erst, wenn unser Techniker bereits unterwegs oder vor Ort ist, fällt eine branchenübliche <HoverGlossary explanation="Eine pauschale Entschädigung für die Zeit und Benzinkosten unseres Technikers, wenn er umsonst anreist."><strong>Leerfahrtpauschale von 50,- €</strong></HoverGlossary> an.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -51,7 +51,7 @@ export default function AGBPage() {
                 <h2 className="mt-0">1. Geltungsbereich & Vertragspartner</h2>
                 <p>1.1. Diese Allgemeinen Geschäftsbedingungen (im Folgenden &quot;AGB&quot;) gelten für alle gegenwärtigen und zukünftigen Rechtsgeschäfte, Dienstleistungen, Werkleistungen und Lieferungen zwischen:</p>
                 <div className="bg-gray-50 p-4 rounded-lg my-4 text-sm border border-gray-200">
-                    <b>Vertragspartner:</b><br />
+                    <strong>Vertragspartner:</strong><br />
                     Schlüssel Schmiede<br />
                     Mina Saad<br />
                     Gloelstraße 11<br />
@@ -75,24 +75,24 @@ export default function AGBPage() {
             <LegalSection id="3-preise">
                 <h2 className="mt-0">3. Preise, Zuschläge & Anfahrtskosten</h2>
                 <TLDRBox title="Unsere Preisphilosophie">
-                    <p>Wir distanzieren uns strikt von unseriösen Lockangeboten. Wenn Sie uns anrufen, nennen wir Ihnen einen <b>verbindlichen Endpreis</b> für eine einfache Öffnung. Sie zahlen exakt das, was vereinbart wurde.</p>
+                    <p>Wir distanzieren uns strikt von unseriösen Lockangeboten. Wenn Sie uns anrufen, nennen wir Ihnen einen <strong>verbindlichen Endpreis</strong> für eine einfache Öffnung. Sie zahlen exakt das, was vereinbart wurde.</p>
                 </TLDRBox>
                 <p>3.1. Es gelten die zum Zeitpunkt des Vertragsschlusses auf der Webseite unter <Link href="/preise">Preise</Link> ausgewiesenen Festpreise und Anfahrtskosten bzw. die am Telefon individuell verhandelten Tarife.</p>
-                <p>3.2. <b>Basispreis:</b> Die Standard-Notöffnung einer nur ins Schloss gefallenen (nicht verriegelten) Tür beträgt werktags zwischen 08:00 und 18:00 Uhr pauschal ab 99,00 € inkl. gesetzlicher MwSt.</p>
-                <p>3.3. <b>Anfahrtskosten:</b> Zusätzlich zum Leistungspreis fallen je nach Entfernung gestaffelte Anfahrtskosten an. Diese liegen zwischen 15,00 € (Kernbereich und Stadtteile) und max. 40,00 € (Ferndistanzen über 20km). Die exakte Pauschale wird stets vorher kommuniziert.</p>
-                <p>3.4. <b>Sonderzuschläge:</b> Außerhalb der regulären Geschäftszeiten, an Wochenenden und gesetzlichen Feiertagen erheben wir transparente Zuschläge, um die Rufbereitschaft der Techniker zu gewährleisten (Abend-/Nachtzuschlag ab 30,- €, Wochenend-/Feiertagszuschlag ab 50,- €).</p>
+                <p>3.2. <strong>Basispreis:</strong> Die Standard-Notöffnung einer nur ins Schloss gefallenen (nicht verriegelten) Tür beträgt werktags zwischen 08:00 und 18:00 Uhr pauschal ab 99,00 € inkl. gesetzlicher MwSt.</p>
+                <p>3.3. <strong>Anfahrtskosten:</strong> Zusätzlich zum Leistungspreis fallen je nach Entfernung gestaffelte Anfahrtskosten an. Diese liegen zwischen 15,00 € (Kernbereich und Stadtteile) und max. 40,00 € (Ferndistanzen über 20km). Die exakte Pauschale wird stets vorher kommuniziert.</p>
+                <p>3.4. <strong>Sonderzuschläge:</strong> Außerhalb der regulären Geschäftszeiten, an Wochenenden und gesetzlichen Feiertagen erheben wir transparente Zuschläge, um die Rufbereitschaft der Techniker zu gewährleisten (Abend-/Nachtzuschlag ab 30,- €, Wochenend-/Feiertagszuschlag ab 50,- €).</p>
             </LegalSection>
 
             <LegalSection id="4-stornierung">
                 <h2 className="mt-0">4. Stornierung & Fehlfahrten</h2>
                 <p>4.1. Storniert der Kunde einen verbindlich gebuchten Notdienst-Einsatz rechtzeitig, *bevor* der Techniker in sein Fahrzeug gestiegen und die Fahrt angetreten hat, ist die Stornierung völlig kostenfrei.</p>
-                <p>4.2. Hat der Techniker die Anfahrt zum Einsatzort bereits angetreten oder ist bereits dort eingetroffen, wird im Falle einer Stornierung durch den Kunden eine <b><HoverGlossary explanation="Pauschale Entschädigung für den entstandenen Wegeausfall, da der Techniker in dieser Zeit keinen anderen Kunden bedienen konnte.">Leerfahrt-/Ausfallpauschale in Höhe von pauschal 50,00 € inkl. MwSt.</HoverGlossary></b> in Rechnung gestellt.</p>
+                <p>4.2. Hat der Techniker die Anfahrt zum Einsatzort bereits angetreten oder ist bereits dort eingetroffen, wird im Falle einer Stornierung durch den Kunden eine <HoverGlossary explanation="Pauschale Entschädigung für den entstandenen Wegeausfall, da der Techniker in dieser Zeit keinen anderen Kunden bedienen konnte."><strong>Leerfahrt-/Ausfallpauschale in Höhe von pauschal 50,00 € inkl. MwSt.</strong></HoverGlossary> in Rechnung gestellt.</p>
                 <p>4.3. Dem Kunden bleibt der Nachweis gestattet, dass ein Schaden überhaupt nicht oder in wesentlich niedrigerer Höhe entstanden ist.</p>
             </LegalSection>
 
             <LegalSection id="5-zahlung">
                 <h2 className="mt-0">5. Zahlungsbedingungen</h2>
-                <p>5.1. Nach erbrachter Dienstleistung an der Einsatzstelle ist die Rechnungssumme grundsätzlich <b>sofort und ohne Abzug</b> zur Zahlung fällig.</p>
+                <p>5.1. Nach erbrachter Dienstleistung an der Einsatzstelle ist die Rechnungssumme grundsätzlich <strong>sofort und ohne Abzug</strong> zur Zahlung fällig.</p>
                 <p>5.2. Schlüssel Schmiede akzeptiert folgende Zahlungsmittel direkt vor Ort:</p>
                 <ul>
                     <li>Bargeld</li>
@@ -106,17 +106,17 @@ export default function AGBPage() {
             <LegalSection id="6-widerrufsrecht">
                 <h2 className="mt-0">6. Ausschluss des Widerrufsrechts für Verbraucher</h2>
                 <TLDRBox title="Wichtig: Notfalleinsätze" icon="help">
-                    <p>Wenn Sie einen Handwerker dringend bestellen, um eine Reparatur durchzuführen (z.B. eine verschlossene Tür zu öffnen), gibt es <b>kein 14-tägiges Rücktrittsrecht</b> auf diese spezifische Vor-Ort-Leistung.</p>
+                    <p>Wenn Sie einen Handwerker dringend bestellen, um eine Reparatur durchzuführen (z.B. eine verschlossene Tür zu öffnen), gibt es <strong>kein 14-tägiges Rücktrittsrecht</strong> auf diese spezifische Vor-Ort-Leistung.</p>
                 </TLDRBox>
                 <p>6.1. Verbrauchern steht grundsätzlich ein Widerrufsrecht zu. Dieses Gesetz sieht jedoch Ausnahmen für spezielle Not- und Reparaturdienste vor.</p>
-                <p>6.2. <b>Ausschluss nach <HoverGlossary explanation="Gesetzesgrundlage zum Erlöschen des Widerrufsrechts bei dringenden Reparaturmaßnahmen an der Haustür.">§ 312g Abs. 2 Nr. 11 BGB</HoverGlossary>:</b> Das Widerrufsrecht besteht nicht bei Verträgen zur Erbringung dringender Reparatur- oder Instandhaltungsarbeiten, bei denen der Verbraucher den Unternehmer ausdrücklich aufgefordert hat, ihn aufzusuchen, um diese Arbeiten auszuführen. Da es sich bei der Beauftragung eines Schlüsseldienst-Notdienstes um exakt eine solche &quot;dringende Reparatur/Instandsetzung&quot; handelt, erlischt das elektronische/fernmündliche Widerrufsrecht für die Türöffnungs-Dienstleistung mit Aufnahme der handwerklichen Tätigkeit bzw. Anfahrt.</p>
+                <p>6.2. Ausschluss nach <HoverGlossary explanation="Gesetzesgrundlage zum Erlöschen des Widerrufsrechts bei dringenden Reparaturmaßnahmen an der Haustür."><strong>§ 312g Abs. 2 Nr. 11 BGB</strong></HoverGlossary>: Das Widerrufsrecht besteht nicht bei Verträgen zur Erbringung dringender Reparatur- oder Instandhaltungsarbeiten, bei denen der Verbraucher den Unternehmer ausdrücklich aufgefordert hat, ihn aufzusuchen, um diese Arbeiten auszuführen. Da es sich bei der Beauftragung eines Schlüsseldienst-Notdienstes um exakt eine solche &quot;dringende Reparatur/Instandsetzung&quot; handelt, erlischt das elektronische/fernmündliche Widerrufsrecht für die Türöffnungs-Dienstleistung mit Aufnahme der handwerklichen Tätigkeit bzw. Anfahrt.</p>
                 <p>6.3. Wurde im Zuge des Einsatzes Neuware verkauft (z.B. Zylinder originalverpackt verkauft, aber noch nicht starr im Haus verbaut), so gilt für diese nicht montierten Bauteile das gesetzliche Widerrufsrecht von 14 Tagen.</p>
             </LegalSection>
 
             <LegalSection id="7-haftung">
                 <h2 className="mt-0">7. Haftung & Gewährleistung</h2>
                 <p>7.1. Schlüssel Schmiede haftet nach den gesetzlichen Bestimmungen, sofern der Kunde Schadensersatzansprüche geltend macht, die auf Vorsatz oder grober Fahrlässigkeit, einschließlich von Vorsatz oder grober Fahrlässigkeit der Vertreter oder <HoverGlossary explanation="Personen oder Hilfskräfte (z.B. fest angestellte Subunternehmer oder Monteure), die wir zur Ausführung des Auftrags einsetzen.">Erfüllungsgehilfen</HoverGlossary>, beruhen.</p>
-                <p>7.2. Bei einfachen und standardisierten Türöffnungen (nicht-verriegelte Türen) zielt Schlüssel Schmiede auf 100% beschädigungsfreie Verfahren ab. Besteht bereits ein mechanical Defekt an Tür oder Schloss, oder handelt es sich um eine festverriegelte Tür mit extrem hoher Sicherheitsklasse, kann eine Beschädigung des Zylinders/Schutzbeschlags zur vollendeten Öffnung bauartbedingt notwendig sein. Dies wird dem Kunden zwingend <b>vor Ausführung</b> auf Risikoabsprache mitgeteilt.</p>
+                <p>7.2. Bei einfachen und standardisierten Türöffnungen (nicht-verriegelte Türen) zielt Schlüssel Schmiede auf 100% beschädigungsfreie Verfahren ab. Besteht bereits ein mechanical Defekt an Tür oder Schloss, oder handelt es sich um eine festverriegelte Tür mit extrem hoher Sicherheitsklasse, kann eine Beschädigung des Zylinders/Schutzbeschlags zur vollendeten Öffnung bauartbedingt notwendig sein. Dies wird dem Kunden zwingend <strong>vor Ausführung</strong> auf Risikoabsprache mitgeteilt.</p>
                 <p>7.3. Für Folgeschäden durch zwingend notwendiges Auffräsen oder Aufbohren von Verriegelungen an verschlossen übergebenen Türen, deren Öffnung anders physikalisch nicht durchführbar ist, wird keine Haftung übernommen, sofern der Kunde dem Eingriff zuvor zugestimmt hat.</p>
                 <p>7.4. Es gilt das gesetzliche Mängelhaftungsrecht für installierte Produkte (z.B. Einbau-Schließzylinder).</p>
             </LegalSection>

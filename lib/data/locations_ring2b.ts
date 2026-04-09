@@ -60,7 +60,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Solms)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Niederbiel — Türöffnung ab 99€ Festpreis",
+            metaTitle: "Schlüsseldienst Niederbiel — 24/7 Notdienst",
             metaDescription: "Ihr Schlüsseldienst für Niederbiel bei Solms. In 9 Min. vor Ort. Festpreis ab 99€, ohne Anfahrtskosten. 24/7 Notdienst: 06441-8056279",
         },
         content: {
@@ -260,7 +260,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hüttenberg)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Volpertshausen — Türöffnung zum Festpreis",
+            metaTitle: "Schlüsseldienst Volpertshausen — 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Volpertshausen bei Hüttenberg. 12 Min. Anfahrt, Festpreis ab 99€. Keine versteckten Kosten. 24/7: 06441-8056279",
         },
         content: {
@@ -300,7 +300,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Geringe Anfahrtskosten (Randgebiet Hüttenberg)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Weidenhausen — 24/7 Notdienst bei Hüttenberg",
+            metaTitle: "Schlüsseldienst Weidenhausen — 24/7 Notdienst",
             metaDescription: "Schlüsseldienst für Weidenhausen bei Hüttenberg. In 13 Min. da, Festpreis ab 99€. Jetzt Hilfe rufen: 06441-8056279",
         },
         content: {
@@ -420,7 +420,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Wißmar — 24/7 Türöffnung zum Festpreis",
+            metaTitle: "Schlüsseldienst Wißmar — 24/7 24/7 Notdienst",
             metaDescription: "Ihr Schlüsseldienst für Wißmar bei Gießen. In 12 Min. da, ab 99€ Festpreis, keine versteckten Kosten. Jetzt anrufen: 06441-8056279",
         },
         content: {

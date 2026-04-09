@@ -21,7 +21,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Autoöffnung Wetzlar | Ohne Lackschäden",
+ title: "Autoöffnung Wetzlar | Schlüsseldienst",
  description: "Schlüssel im Auto eingesperrt? ✔️ Autoöffnung für alle Marken. ✔️ Garantiert kratzerfrei und ohne Lackschäden. Schnell vor Ort in Wetzlar! 📞 06441-8056279",
  path: "/leistungen/autooeffnung",
  exactTitle: true,
@@ -229,7 +229,7 @@ export default function AutooeffnungPage() {
    <ProcessSteps />
 
    {/* 5. Proof (Bewertungen) */}
-   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Autoöffnung" subtitle="Echte Kundenstimmen" />
+   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Autoöffnung" subtitle="Darum vertrauen uns unsere Kunden" />
 
    {/* 6. FAQ (Spezifisch für Autoöffnung) */}
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">

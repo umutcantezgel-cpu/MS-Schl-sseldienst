@@ -1,18 +1,31 @@
-import { ShieldCheck, Clock, CheckCircle2, Star, CreditCard, Award } from "lucide-react";
+"use client";
 
-const trustItems = [
-  { icon: ShieldCheck, text: "Fachgeschäft Langgasse 70" },
-  { icon: Clock, text: "24/7 Notdienst" },
-  { icon: CheckCircle2, text: "Festpreisgarantie" },
-  { icon: Award, text: "ADAC Partner" },
-  { icon: Star, text: "Ausgebildet von Uwe Sarfeld" },
-  { icon: CreditCard, text: "Bar · EC · Kreditkarte" },
-];
+import { usePathname } from "next/navigation";
+import { ShieldCheck, Clock, CheckCircle2, Star, CreditCard, Award } from "lucide-react";
+import { pickVariant } from "@/lib/textRotation";
 
 export default function TrustStrip() {
+  const pathname = usePathname() || "default";
+
+  // Using pickVariant to ensure each page gets a uniquely worded set of trust items
+  const item1 = pickVariant(["Fachgeschäft Langgasse 70", "Zentrale Wetzlar (Langgasse 70)", "Unser Laden in Wetzlar"], pathname, 10);
+  const item2 = pickVariant(["24/7 Notdienst", "Rund um die Uhr bereit", "Tag & Nacht Rufbereitschaft"], pathname, 11);
+  const item3 = pickVariant(["Festpreisgarantie", "Transparente Festpreise", "Keine versteckten Gebühren"], pathname, 12);
+  const item4 = pickVariant(["ADAC Partner", "Offizieller ADAC Partner", "Partner des ADAC"], pathname, 13);
+  const item5 = pickVariant(["Ausgebildet von Uwe Sarfeld", "Meister-Ausbildung (U. Sarfeld)", "Geprüfter Meisterbetrieb"], pathname, 14);
+  const item6 = pickVariant(["Bar · EC · Kreditkarte", "Zahlung: Flexibel & Bar", "EC, Kreditkarte oder Bar"], pathname, 15);
+
+  const trustItems = [
+    { icon: ShieldCheck, text: item1 },
+    { icon: Clock, text: item2 },
+    { icon: CheckCircle2, text: item3 },
+    { icon: Award, text: item4 },
+    { icon: Star, text: item5 },
+    { icon: CreditCard, text: item6 },
+  ];
+
   // We render exactly 2 copies of the items inside the animated track.
-  // The CSS animation translates by exactly -50%, so when the first copy
-  // has scrolled fully left the second copy takes its place und seamless loop.
+  // The CSS animation translates by exactly -50%.
   const track = [...trustItems, ...trustItems];
 
   return (

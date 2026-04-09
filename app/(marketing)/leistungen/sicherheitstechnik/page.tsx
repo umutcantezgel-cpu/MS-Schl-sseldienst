@@ -21,7 +21,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Sicherheitstechnik Wetzlar | VdS-Zertifiziert",
+ title: "Sicherheitstechnik Wetzlar | Schlüsseldienst",
  description: "Einbruchschutz für Wetzlar: ✔️ Panzerriegel ✔️ Stangenschlösser ✔️ Elektronik. Kostenlose & unverbindliche Sicherheitsberatung anfordern!",
  path: "/leistungen/sicherheitstechnik",
  exactTitle: true,
@@ -268,7 +268,7 @@ export default function SicherheitstechnikPage() {
    <ProcessSteps />
 
    {/* 5. Proof (Bewertungen) */}
-   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Sicherheitstechnik" subtitle="Echte Kundenstimmen" />
+   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Sicherheitstechnik" subtitle="Was Kunden über uns sagen" />
 
    {/* 6. FAQ (Spezifisch für Sicherheitstechnik) */}
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">

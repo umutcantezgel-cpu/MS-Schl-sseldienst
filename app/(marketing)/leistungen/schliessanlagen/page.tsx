@@ -21,7 +21,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Schließanlagen Wetzlar | Für Gewerbe & Eigenheim",
+ title: "Schließanlagen Wetzlar | Schlüsseldienst",
  description: "Kostenlose Objektbegehung! ✔️ Elektronische & Mechanische Anlagen ✔️ Nur 1 Schlüssel für alle Leitungen. Planung & Montage in Wetzlar.",
  path: "/leistungen/schliessanlagen",
  exactTitle: true,
@@ -237,7 +237,7 @@ export default function SchliessanlagenPage() {
    <ProcessSteps />
 
    {/* 5. Proof (Bewertungen) */}
-   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zu Schließanlagen" subtitle="Echte Kundenstimmen" />
+   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zu Schließanlagen" subtitle="Das sagen unsere Kunden vor Ort" />
 
    {/* 6. FAQ (Spezifisch für Schließanlagen) */}
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">

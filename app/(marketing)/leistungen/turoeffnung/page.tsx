@@ -22,7 +22,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { tueroeffnungImages, schlossImages, generatedServiceImages, generatedHeroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
-  title: "Türöffnung Wetzlar | ab 99€ Festpreis",
+  title: "Türöffnung Wetzlar | Schlüsseldienst",
   description: "Zugefallen oder abgeschlossen? ✔️ Zerstörungsfreie Türöffnung zu 99% ✔️ Zertifizierter Meisterbetrieb in Wetzlar. In ca. 20-30 Min. vor Ort. 📞 06441-8056279",
   path: "/leistungen/turoeffnung",
   exactTitle: true,
@@ -245,7 +245,7 @@ export default function TuroeffnungPage() {
    <ProcessSteps headline="So läuft Ihre Türöffnung ab" subtitle="Von Ihrem Anruf bis zur geöffneten Tür – unser bewährter Ablauf für sichere Türöffnungen in Wetzlar." badgeText="ABLAUF TÜRÖFFNUNG" />
 
    {/* 5. Proof (Bewertungen) */}
-   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Türöffnung" subtitle="Echte Kundenstimmen" />
+   <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Türöffnung" subtitle="Geprüfte Bewertungen aus der Region" />
 
    {/* 6. FAQ (Spezifisch für Türöffnung) */}
    <section className="bg-[var(--surface-primary)] px-[var(--section-px)] py-24 md:py-32">

@@ -184,7 +184,7 @@ export const ring3dLocations: LocationData[] = [
         coordinates: { latitude: 50.6000, longitude: 8.6350 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Wettenberg — 24/7 Türöffnung zum Festpreis", metaDescription: "Schlüsseldienst Wettenberg bei Gießen. In 15 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Wettenberg — 24/7 24/7 Notdienst", metaDescription: "Schlüsseldienst Wettenberg bei Gießen. In 15 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür in Wettenberg? Unser Schlüsseldienst ist in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
             mainText: `<p>Wettenberg liegt nördlich von Gießen an der Grenze zum Lahn-Dill-Kreis und ist mit seinen drei Ortsteilen Krofdorf-Gleiberg, Launsbach und Wißmar ein beliebter Wohnstandort. Die hervorragende Verkehrsanbindung und die Nähe zur Universitätsstadt machen Wettenberg besonders attraktiv. Als <strong>Schlüsseldienst Wettenberg</strong> bieten wir schnelle und professionelle Hilfe bei Türnotfällen in der gesamten Gemeinde.</p>

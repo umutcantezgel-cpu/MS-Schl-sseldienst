@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Schlüssel nachmachen Wetzlar | Sofort-Dienst",
+ title: "Schlüssel nachmachen | Schlüsseldienst Wetzlar",
  description: "Ersatzschlüssel gebraucht? ✔️ Haustür, Briefkasten & Auto ✔️ Sofort zum Mitnehmen aus Wetzlar. Ohne Wartezeit! Jetzt vorbeikommen.",
  path: "/leistungen/schluessel-nachmachen",
  exactTitle: true,

@@ -18,7 +18,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 import Image from "next/image";
 
 export const metadata = generateSharedMetadata({
- title: "Biometrische Passbilder in Wetzlar | Sofort zum Mitnehmen",
+ title: "Passbilder Wetzlar | Schlüsseldienst",
  description: "Professionelle Passbilder für Personalausweis, Reisepass, Visum oder Führerschein in Wetzlar. Ohne Termin, sofort zum Mitnehmen. 100% biometrisch korrekt.",
  path: "/leistungen/passbilder",
  exactTitle: true,

@@ -19,7 +19,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { werkstattImages, maschinenImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Schlüssel Schmiede Wetzlar | Ihr Laden vor Ort",
+ title: "Schlüssel Schmiede | Schlüsseldienst Wetzlar",
  description: "Langgasse 70 in Wetzlar: ✔️ KFZ-Schlüssel Codierung ✔️ Ersatzschlüssel sofort ✔️ Passbilder & Gravuren. Kommen Sie ohne Termin vorbei!",
  path: "/schluessel-schmiede",
  exactTitle: true,

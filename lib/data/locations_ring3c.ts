@@ -159,7 +159,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.4920, longitude: 8.4700 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: 99, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Niederquembach & Oberquembach — 24/7 Notdienst", metaDescription: "Schlüsseldienst Nieder- & Oberquembach. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Niederquembach & Oberquembach", metaDescription: "Schlüsseldienst Nieder- & Oberquembach. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Niederquembach oder Oberquembach? Wir sind in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
             mainText: `<p>Niederquembach und Oberquembach sind zwei eng verbundene Ortsteile der Gemeinde Schöffengrund im Lahn-Dill-Kreis. Die beiden Dörfer liegen auf einer Anhöhe südlich von Wetzlar und bieten ländliche Idylle mit Blick über das Quembachtal. Als <strong>Schlüsseldienst Niederquembach und Oberquembach</strong> garantieren wir Ihnen schnelle Hilfe, auch in den kleinsten Ortsteilen unserer Region.</p>
