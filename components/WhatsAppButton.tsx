@@ -26,7 +26,7 @@ export default function WhatsAppButton() {
   const animFrame = useRef<number>(0);
   const [, forceRender] = useState(0);
 
-  const SIZE = 56;
+  const SIZE = 64;
   const FRICTION = 0.92;
   const BOUNCE = 0.6;
   const MIN_VEL = 0.3;
@@ -195,22 +195,22 @@ export default function WhatsAppButton() {
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
-      className="fixed z-[9999] flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white no-underline select-none touch-none"
+      className="fixed z-[9999] flex items-center justify-center w-16 h-16 rounded-full bg-[#25D366] text-white no-underline select-none touch-none ring-4 ring-[#25D366]/30"
       style={{
         left: pos.current.x,
         top: pos.current.y,
         cursor: isDragging.current ? "grabbing" : "grab",
         boxShadow: isDragging.current
-          ? "0 8px 32px rgba(37,211,102,0.5), 0 0 0 3px rgba(37,211,102,0.2)"
-          : "0 4px 20px rgba(37,211,102,0.4)",
-        transform: isDragging.current ? "scale(1.12)" : "scale(1)",
+          ? "0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25)"
+          : "0 6px 28px rgba(37,211,102,0.55), 0 2px 8px rgba(0,0,0,0.15)",
+        transform: isDragging.current ? "scale(1.15)" : "scale(1)",
         transition: isDragging.current ? "none" : "box-shadow 0.3s, transform 0.2s",
         willChange: "left, top, transform",
       }}
     >
       <svg
-        width="28"
-        height="28"
+        width="32"
+        height="32"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden="true"
