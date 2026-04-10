@@ -1,14 +1,9 @@
 import type { Metadata, Viewport } from"next";
-import { Plus_Jakarta_Sans, DM_Sans, JetBrains_Mono } from"next/font/google";
+import { Plus_Jakarta_Sans, DM_Sans } from"next/font/google";
 import { DeviceProvider } from "@/components/providers/DeviceProvider";
-import { WebVitalsReporter } from "@/components/analytics/WebVitalsReporter";
 import"./globals.css";
 import nextDynamic from "next/dynamic";
 import StickyHeader from"@/components/StickyHeader";
-import StickyCtaBar from "@/components/trust/StickyCtaBar";
-
-const Footer = nextDynamic(() => import("@/components/Footer"));
-const MobileBottomBar = nextDynamic(() => import("@/components/MobileBottomBar"));
 import { generateLocalBusinessSchema, generateWebSiteSchema, siteUrl } from"@/lib/schema";
 import { companyInfo } from "@/lib/data/company";
 import { SkipNav } from "@/components/ui/SkipNav";
@@ -16,12 +11,18 @@ import { AnnouncerProvider } from "@/components/providers/Announcer";
 import MotionProvider from "@/components/providers/MotionProvider";
 import ClientShell from "@/components/ClientShell";
 import JsonLd from "@/components/seo/JsonLd";
-import BackToTop from "@/components/ui/BackToTop";
-import FloatingWhatsAppWidget from "@/components/FloatingWhatsAppWidget";
 import { AppProvider } from "@/lib/context/AppContext";
 import { UIProvider } from "@/lib/context/UIContext";
 import { ToastContainer } from "@/components/ui/ToastContainer";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+
+// [PERF] Layout-Chrome: lazy-loaded (not needed for initial paint)
+const StickyCtaBar = nextDynamic(() => import("@/components/trust/StickyCtaBar"));
+const Footer = nextDynamic(() => import("@/components/Footer"));
+const MobileBottomBar = nextDynamic(() => import("@/components/MobileBottomBar"));
+const BackToTop = nextDynamic(() => import("@/components/ui/BackToTop"));
+const FloatingWhatsAppWidget = nextDynamic(() => import("@/components/FloatingWhatsAppWidget"));
+const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVitalsReporter").then(mod => mod.WebVitalsReporter), { ssr: false });
 
 const plusJakarta = Plus_Jakarta_Sans({
  subsets: ["latin", "latin-ext"],
@@ -35,11 +36,7 @@ const dmSans = DM_Sans({
  variable:"--font-body",
 });
 
-const jetbrainsMono = JetBrains_Mono({
- subsets: ["latin", "latin-ext"],
- display:"swap",
- variable:"--font-mono",
-});
+
 
 // ── GLOBAL METADATA (Layout-Level) ─────────────────────────────────────────
 // [FIX: Seobility #1] title.template caps all child page titles via "%s" pattern.
@@ -125,22 +122,18 @@ export default function RootLayout({
  return (
      <html lang="de" className="light">
    <head>
-    {/* next/font self-hosts und no preconnect to Google Fonts CDN needed */}
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-    <link rel="preconnect" href="https://maps.googleapis.com" />
-    <link rel="dns-prefetch" href="https://maps.googleapis.com" />
-    {/* [PERF] Preload LCP element (logo) so it starts fetching during HTML parse,
-         independent of JS hydration. Without this, the logo waits for Next.js
-         App Router JS to execute before it can even start loading. */}
-    <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-neu.svg" fetchPriority="high" />
-    {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
-         die Metadata.icons API verzögert ausliefern. */}
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
-    <link rel="apple-touch-icon" href="/apple-icon.png" />
+    {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
+     <link rel="preconnect" href="https://maps.googleapis.com" />
+     <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+     {/* [PERF] Logo preload with auto priority to avoid competing with critical CSS downloads */}
+     <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-neu.svg" />
+     {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
+          die Metadata.icons API verzögert ausliefern. */}
+     <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
+     <link rel="apple-touch-icon" href="/apple-icon.png" />
    </head>
    <body
-    className={`${plusJakarta.variable} ${dmSans.variable} ${jetbrainsMono.variable} min-h-screen bg-background text-foreground font-sans flex flex-col antialiased`}
+    className={`${plusJakarta.variable} ${dmSans.variable} min-h-screen bg-background text-foreground font-sans flex flex-col antialiased`}
    >
      <AppProvider>
       <UIProvider>

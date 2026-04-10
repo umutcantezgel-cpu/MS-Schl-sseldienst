@@ -7,7 +7,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-body), system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-heading: var(--font-display), var(--font-body), system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", Consolas, Monaco, monospace;
+  --font-mono: ui-monospace, "Fira Code", Consolas, Monaco, "Courier New", monospace;
   
   /* --- Typography Scale (Major Third - Fluid) --- */
   --text-display: clamp(2rem, 5vw + 0.75rem, 4rem);
