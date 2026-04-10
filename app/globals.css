@@ -1008,6 +1008,20 @@ body {
     width: 100%;
   }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 0.5s ease-in-out;
+}
+
 @keyframes ring {
   0% { transform: rotate(0); }
   25% { transform: rotate(15deg); }

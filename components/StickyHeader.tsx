@@ -125,7 +125,7 @@ export default function StickyHeader() {
                   ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
                   : "w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] lg:w-[86px] lg:h-[86px] xl:w-[92px] xl:h-[92px]"
               }`}
-              style={{ background: 'transparent', imageRendering: 'high-quality' }}
+              style={{ background: 'transparent', imageRendering: '-webkit-optimize-contrast' as React.CSSProperties['imageRendering'] }}
               priority
             />
           </Link>
