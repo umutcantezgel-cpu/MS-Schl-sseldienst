@@ -1,15 +1,22 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { companyInfo } from "@/lib/data/company";
 
 /**
  * Floating WhatsApp CTA button — fixed bottom-right position.
  * Uses SSOT whatsapp number from company.ts.
- * Uses inline styles to guarantee rendering regardless of Tailwind purge.
+ * Renders only after hydration to prevent SSR/client mismatch.
  */
 export default function WhatsAppButton() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const whatsappNumber = companyInfo.socialMedia.whatsapp;
-  if (!whatsappNumber) return null;
+  if (!whatsappNumber || !mounted) return null;
 
   // Strip non-numeric chars for the wa.me link
   const cleanNumber = whatsappNumber.replace(/[^0-9]/g, "");
@@ -24,23 +31,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Nachricht per WhatsApp senden"
       id="whatsapp-floating-btn"
-      style={{
-        position: "fixed",
-        bottom: "96px",
-        right: "24px",
-        zIndex: 9999,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "56px",
-        height: "56px",
-        borderRadius: "9999px",
-        backgroundColor: "#25D366",
-        color: "white",
-        boxShadow: "0 4px 20px rgba(37,211,102,0.4)",
-        textDecoration: "none",
-        cursor: "pointer",
-      }}
+      className="fixed bottom-24 right-6 z-[9999] flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform duration-200 no-underline cursor-pointer"
     >
       {/* WhatsApp SVG Icon */}
       <svg
