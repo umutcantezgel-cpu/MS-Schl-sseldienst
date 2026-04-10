@@ -115,13 +115,13 @@ export default function StickyHeader() {
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
-                  src="/images/logo-header.svg"
+              src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
-              width={500}
-              height={500}
-              className="w-[52px] h-[52px] sm:w-[60px] sm:h-[60px] lg:w-[68px] lg:h-[68px] xl:w-[78px] xl:h-[78px] object-contain transition-all duration-300"
-              style={{ background: 'transparent' }}
-              unoptimized
+              width={800}
+              height={800}
+              quality={100}
+              className="w-[72px] h-[72px] sm:w-[86px] sm:h-[86px] lg:w-[100px] lg:h-[100px] xl:w-[115px] xl:h-[115px] object-contain transition-all duration-300 drop-shadow-sm"
+              style={{ background: 'transparent', imageRendering: 'high-quality' }}
               priority
             />
           </Link>
