@@ -23,9 +23,9 @@ export default function InteractiveServiceMap() {
         return;
       }
 
-      if (!isInitialized) {
+      if (!(window as any).__GOOGLE_MAPS_INITIALIZED__) {
         setOptions({ key: apiKey, v:"weekly" });
-        isInitialized = true;
+        (window as any).__GOOGLE_MAPS_INITIALIZED__ = true;
       }
       try {
         const { Map } = await importLibrary("maps") as google.maps.MapsLibrary;

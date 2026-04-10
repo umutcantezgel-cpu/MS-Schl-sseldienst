@@ -135,9 +135,9 @@ export default function ContactPremiumMap() {
         return;
       }
 
-      if (!isInitialized) {
+      if (!(window as any).__GOOGLE_MAPS_INITIALIZED__) {
         setOptions({ key: apiKey, v: "weekly" });
-        isInitialized = true;
+        (window as any).__GOOGLE_MAPS_INITIALIZED__ = true;
       }
 
       try {
