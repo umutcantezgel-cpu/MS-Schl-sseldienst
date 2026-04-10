@@ -51,7 +51,7 @@ export const metadata: Metadata = {
  // Title: default is used when a child page does NOT export its own `metadata.title`.
  // template: appended to every child page title (e.g. "Preise | Schlüssel Schmiede Wetzlar").
  title: {
-   default: "Schlüssel Schmiede Wetzlar | Schlüssel & Sicherheit",   // ≤50 chars, ≤580px
+   default: "Schlüssel Schmiede Wetzlar | 24 H Notdienst",   // ≤50 chars, ≤580px
    template: "%s",
  },
  // ⚠️  NO description here und set only on individual pages to avoid Seobility #2 (duplicate).
@@ -89,15 +89,6 @@ export const metadata: Metadata = {
  },
  twitter: {
    card: "summary_large_image",
- },
- // [SEO: Apple Touch Icon & Favicon Fixed und Seobility Mobile Optimization]
- icons: {
-   icon: [
-     { url: "/favicon.ico", sizes: "any" },
-   ],
-   apple: [
-     { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
-   ],
  },
  other: {
    "geo.region": "DE-HE",

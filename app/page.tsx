@@ -38,7 +38,7 @@ const ProcessSteps = nextDynamic(() => import("@/components/trust/ProcessSteps")
 
 // ── PAGE-LEVEL METADATA (overrides layout defaults) ────────────────────────
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | Schlüssel & Sicherheit",
+  title: "Schlüssel Schmiede Wetzlar | 24 H Notdienst",
   description: "Schlüssel Schmiede Wetzlar und Langgasse 70. Schlüssel nachmachen, Schließanlagen & Sicherheitstechnik. ☎ 06441-8056279",
   path: "/",
   exactTitle: true,
