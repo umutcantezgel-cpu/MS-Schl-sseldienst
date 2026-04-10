@@ -47,9 +47,9 @@ export function createLocalBusinessSchema() {
         openingHoursSpecification: [
             {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                opens: "10:00",
-                closes: "18:00"
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "06:00",
+                closes: "19:59"
             },
             {
                 "@type": "OpeningHoursSpecification",

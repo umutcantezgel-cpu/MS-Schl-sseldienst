@@ -15,9 +15,10 @@ const SERVICES = [
 ] as const;
 
 const TIME_SLOTS = [
-  { id:"day", label:"Tagsüber", desc:"Mo-Sa 10:00 - 18:00", icon: Clock },
-  { id:"evening", label:"Abends", desc:"18:00 - 22:00", icon: Clock },
-  { id:"night", label:"Nacht / Wochenende", desc:"22:00 - 08:00 oder Sa/So", icon: CalendarDays },
+  { id:"day", label:"Regulär", desc:"06:00 - 19:59", icon: Clock },
+  { id:"evening", label:"Abends", desc:"20:00 - 21:59", icon: Clock },
+  { id:"night", label:"Nachts", desc:"22:00 - 05:59", icon: Clock },
+  { id:"weekend", label:"Wochenende", desc:"Sa, So & Feiertage", icon: CalendarDays },
 ] as const;
 
 export default function PricingCalculator() {
@@ -35,10 +36,10 @@ export default function PricingCalculator() {
       let detectedSlot: TimeSlot ="day";
       
       if (day === 0 || day === 6) {
-        detectedSlot ="night";
+        detectedSlot ="weekend";
       } else {
-        if (hour >= 22 || hour < 8) detectedSlot ="night";
-        else if (hour >= 18 && hour < 22) detectedSlot ="evening";
+        if (hour >= 22 || hour < 6) detectedSlot ="night";
+        else if (hour >= 20 && hour < 22) detectedSlot ="evening";
         else detectedSlot ="day";
       }
       return detectedSlot;
@@ -179,7 +180,7 @@ export default function PricingCalculator() {
               )}
             </div>
           </legend>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {TIME_SLOTS.map((slot) => {
             const Icon = slot.icon;
             const isSelected = timeSlot === slot.id;
@@ -253,12 +254,12 @@ export default function PricingCalculator() {
                   </div>
                   {surcharge > 0 && (
                     <div className="flex justify-between items-center text-base text-[var(--color-red-400)]">
-                      <span>Nacht/Abend-Zuschlag</span>
+                      <span>{timeSlot === 'weekend' ? 'Wochenend-' : timeSlot === 'night' ? 'Nacht-' : 'Abend-'}Zuschlag</span>
                       <span className="font-bold">+{surcharge} €</span>
                     </div>
                   )}
                   <div className="flex justify-between items-center text-base">
-                    <span className="text-white/80">Anfahrtskosten (bis 50km)</span>
+                    <span className="text-white/80">Anfahrt (Wetzlar Kernstadt)</span>
                     <span className="font-bold text-[var(--color-success)] text-sm tracking-wide uppercase">Kostenlos</span>
                   </div>
                   

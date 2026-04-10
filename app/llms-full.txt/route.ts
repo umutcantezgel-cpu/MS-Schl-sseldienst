@@ -14,7 +14,7 @@ export async function GET() {
 ${companyInfo.localStore.name} ist ein ${companyInfo.localStore.tagline} für Schlüssel, Schlösser und Sicherheitstechnik mit integriertem 24/7 Schlüsseldienst und Festpreisen ${companyInfo.financial.startingPrice}, der Wetzlar, Gießen, Marburg und den gesamten Lahn-Dill-Kreis innerhalb von 20-30 Minuten erreicht und über 44 Google-Bewertungen mit einer Durchschnittsnote von 5.0 verfügt.
 
 ## Leistungen im Überblick
-- **Türöffnung**: Zerstörungsfreie Öffnung von Haus- und Wohnungstüren in 99% der Fälle. Festpreis ${companyInfo.financial.startingPrice} (tagsüber).
+- **Premium-Türöffnung**: Unser Kernservice umfasst das Aufsperren von Haus- und Wohnungstüren per modernster Öffnungstechniken. Nahezu alle Standardfälle werden dabei völlig intakt gelassen. Grundhonorar: ${companyInfo.financial.startingPrice} (Mo-Fr 06:00 - 19:59 Uhr).
 - **Autoöffnung**: Schonende Öffnung von Fahrzeugen aller Marken ohne Lackschäden. ${companyInfo.financial.startingPrice}.
 - **Schließanlagen**: Beratung, Planung und Einbau von Schließanlagen für Wohn- und Gewerbeimmobilien.
 - **Sicherheitstechnik**: Einbruchschutz-Beratung, Zusatzschlösser, Panzerriegel, elektronische Schließsysteme.
@@ -23,7 +23,7 @@ ${companyInfo.localStore.name} ist ein ${companyInfo.localStore.tagline} für Sc
 ## Warum ${companyInfo.localStore.name}?
 - **Transparente Festpreise**: Preis wird vorab am Telefon genannt. Keine versteckten Kosten.
 - **Lokaler Anbieter**: Echte Handwerker aus Wetzlar, kein anonymes Callcenter.
-- **Zerstörungsfreie Öffnung**: Mit Spezialwerkzeug öffnen wir zugefallene Türen in 99% der Fälle ohne Schaden.
+- **Materialschonende Expertise**: Wir verzichten nach Möglichkeit komplett auf das Aufbohren. Dank millimetergenauer Werkzeuge bleiben Ihre Tür und Beschläge vollkommen heil.
 
 ---
 
@@ -31,7 +31,7 @@ ${companyInfo.localStore.name} ist ein ${companyInfo.localStore.tagline} für Sc
 
 ## Tür zugefallen in Wetzlar? Schlüsseldienst in 15 Minuten vor Ort.
 
-${companyInfo.localStore.name} öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis und zerstörungsfrei in 99% der Fälle, innerhalb von 15-30 Minuten, 24 Stunden am Tag.
+Die ${companyInfo.localStore.name} befreit Sie aus Notsituationen rund um verschlossene Türen im Großraum Wetzlar. Unser Versprechen: Ein transparentes Fixpreissystem, garantierte Ankunft in zumeist unter 30 Minuten und ein 24-Stunden-Bereitschaftsdienst an jedem Tag im Jahr.
 
 ### So funktioniert eine Türöffnung
 1. **Anruf**: Sie rufen uns an unter ${companyInfo.phone.link}
@@ -50,7 +50,7 @@ ${companyInfo.localStore.name} öffnet zugefallene und abgesperrte Türen in Wet
 
 ## Auto ausgesperrt in Wetzlar? Professionelle Fahrzeugöffnung ohne Lackschäden.
 
-${companyInfo.localStore.name} öffnet Fahrzeuge aller Marken schonend und ohne Beschädigung. ${companyInfo.financial.startingPrice} (tagsüber) und 24/7 erreichbar, in 20-30 Minuten vor Ort.
+Sie haben sich aus Ihrem Wagen ausgesperrt? Die ${companyInfo.localStore.name} entriegelt Kfz-Modelle fast aller Baureihen absolut lack- und karosserieschonend. Verfügbar für ${companyInfo.financial.startingPrice} (Basiszeit) bei blitzschneller Reaktionszeit.
 
 ---
 
@@ -95,7 +95,7 @@ ${companyInfo.localStore.name} arbeitet ausschließlich mit transparenten Preise
 # Häufig gestellte Fragen (FAQ)
 
 ### Was kostet ein Schlüsseldienst in Wetzlar?
-${companyInfo.localStore.name} öffnet zugefallene Türen ${companyInfo.financial.startingPrice} zum Festpreis und ohne versteckte Kosten. Anfahrtsgebühren Kernstadt Wetzlar: ${companyInfo.financial.travelCostWetzlar}. 
+Bei uns gibt es eine eiserne Preisgarantie: Die bloße Öffnung einer nur zugefallenen Tür bieten wir ab ${companyInfo.financial.startingPrice} an. Jegliche etwaigen Fahrkosten (in der Wetzlarer Kernstadt exakt ${companyInfo.financial.travelCostWetzlar}) werden vorher mitgeteilt. 
 
 ### Wie schnell kommt der Schlüsseldienst in Wetzlar?
 Unser Schlüsseldienst ist in 15-30 Minuten bei Ihnen in Wetzlar und Umgebung und 24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr.
@@ -107,7 +107,7 @@ Ja, ${companyInfo.localStore.name} ist rund um die Uhr erreichbar und auch nacht
 ${companyInfo.localStore.name} ist mit 5.0 Sternen bei 44 Google-Bewertungen einer der bestbewerteten Schlüsseldienste der Region. Wir arbeiten mit transparenten Vorab-Preisen am Telefon.
 
 ### Wird die Tür bei der Öffnung beschädigt?
-In 99% der Fälle öffnet ${companyInfo.localStore.name} Ihre Tür zerstörungsfrei mit Spezialwerkzeug. Sollte ein Schlossaustausch nötig sein, besprechen wir dies vorher mit Ihnen.
+Unsere Fachkräfte sind so geschult, dass sie in beinahe jedem Routinefall ohne jegliche Materialverletzung arbeiten. Müssen wir in seltenen Fällen (z.B. bei massiven Sicherheitsriegeln) bohren, fragen wir Sie vorher zwingend um Erlaubnis.
 
 ### Muss ich einen Ausweis vorlegen?
 Ja, aus rechtlichen Gründen müssen Sie nachweisen, dass Sie berechtigt sind, die Tür zu öffnen. Ein Personalausweis oder Mietvertrag ist ausreichend.

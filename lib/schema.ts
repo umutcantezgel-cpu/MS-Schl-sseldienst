@@ -29,7 +29,7 @@ export function generateLocalBusinessSchema() {
         // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
         "@type": ["LocalBusiness", "Locksmith", "Store"],
         "name": companyInfo.localStore.name,
-        "description": `Schlüssel Schmiede Wetzlar ist Ihr 24 Stunden Notdienst für Schlüssel, Schlösser und Sicherheitstechnik in der ${companyInfo.localStore.street} in ${companyInfo.localStore.city}. Wir bieten Schlüssel nachmachen, Schließanlagen-Planung, Sicherheitsberatung und professionellen Schlüsseldienst mit Festpreisen ab 99 Euro. Persönliche Beratung vor Ort sowie 24/7 Notdienst für den gesamten Lahn-Dill-Kreis.`,
+        "description": `Die Schlüssel Schmiede Wetzlar fungiert als fachmännischer Ansprechpartner für modernste Sicherheitstechnik und Not-Sperrdienste an der Adresse ${companyInfo.localStore.street}, ${companyInfo.localStore.city}. Als Premium-Handwerksbetrieb fokussieren wir uns auf maximal materialschonende Öffnungen zum strikten Grundfestpreis.`,
         "image": `${siteUrl}/hero-bg.jpg`,
         "logo": {
             "@type": "ImageObject",
@@ -71,10 +71,10 @@ export function generateLocalBusinessSchema() {
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
-                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
                 ],
-                "opens": "10:00",
-                "closes": "18:00",
+                "opens": "06:00",
+                "closes": "19:59",
                 "description": "Ladenöffnungszeiten der Schlüssel Schmiede"
             },
             {
@@ -197,7 +197,7 @@ export function generateWebSiteSchema() {
         "@type": "WebSite",
         "name": companyInfo.localStore.name,
         "url": siteUrl,
-        "description": `Schlüssel Schmiede Wetzlar und Ihr 24 Stunden Notdienst für Schlüssel, Schlösser & Sicherheitstechnik in Wetzlar, Gießen und Lahn-Dill-Kreis.`,
+        "description": `Die Schlüssel Schmiede Wetzlar: Ihr kompetenter Fachbetrieb für spezialisierte Sicherheitslösungen und zerstörungsfreie Türöffnungen im Großraum Wetzlar.`,
         "inLanguage": "de-DE",
         "publisher": {
             "@type": ["LocalBusiness", "Store"],

@@ -63,6 +63,17 @@ export const metadata: Metadata = {
      "x-default": siteUrl,
    },
  },
+ icons: {
+   icon: [
+     { url: '/icon.svg', type: 'image/svg+xml' }
+   ],
+   apple: [
+     { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+   ],
+   shortcut: [
+     { url: '/icon.svg', type: 'image/svg+xml' }
+   ]
+ },
  robots: {
    index: true,
    follow: true,
@@ -123,9 +134,10 @@ export default function RootLayout({
          independent of JS hydration. Without this, the logo waits for Next.js
          App Router JS to execute before it can even start loading. */}
     <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-neu.svg" fetchPriority="high" />
-    {/* ⚠️  Icons are now handled by the Metadata API `icons` object above.
-         NO hardcoded <meta>, <link rel="icon">, or <link rel="alternate"> here.
-         Duplicating them in JSX would conflict with the Metadata API output. */}
+    {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
+         die Metadata.icons API verzögert ausliefern. */}
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-icon.png" />
    </head>
    <body
     className={`${plusJakarta.variable} ${dmSans.variable} ${jetbrainsMono.variable} min-h-screen bg-background text-foreground font-sans flex flex-col antialiased`}

@@ -58,6 +58,20 @@ export const generateSharedMetadata = ({
                 "x-default": url,   // fallback hreflang for non-German crawlers
             },
         },
+        // ── [FIX: Google Search Favicons] ──────────────────────────────────
+        // Hard-binding the favicons via Metadata API mapping to prevent
+        // Next.js discovery bugs on dynamically generated deeply nested pages.
+        icons: {
+            icon: [
+                { url: '/icon.svg', type: 'image/svg+xml' }
+            ],
+            apple: [
+                { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+            ],
+            shortcut: [
+                { url: '/icon.svg', type: 'image/svg+xml' }
+            ]
+        },
         robots: {
             index: !noindex,
             follow: !noindex,

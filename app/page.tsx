@@ -36,10 +36,9 @@ const ProcessSteps = nextDynamic(() => import("@/components/trust/ProcessSteps")
   loading: () => <div className="animate-pulse bg-gray-100 h-64 rounded-xl" role="status" aria-label="Ablauf wird geladen" />,
 });
 
-// ── PAGE-LEVEL METADATA (overrides layout defaults) ────────────────────────
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | 24 H Notdienst",
-  description: "Schlüssel Schmiede Wetzlar und Langgasse 70. Schlüssel nachmachen, Schließanlagen & Sicherheitstechnik. ☎ 06441-8056279",
+  title: "Schlüssel Schmiede Wetzlar | Fachbetrieb für Sicherheitstechnik",
+  description: "Zerstörungsfreie Türöffnungen vom Spezialisten in Wetzlar (Gloelstraße 11). Erleben Sie maximale Kostensicherheit durch unser garantiertes Festpreis-System.",
   path: "/",
   exactTitle: true,
 });

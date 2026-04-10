@@ -10,7 +10,7 @@ type Situation =
   | "abgebrochen"
   | "schliessanlage"
   | "sicherheit";
-type Zeitpunkt = "regulaer" | "nacht" | "wochenende";
+type Zeitpunkt = "regulaer" | "abend" | "nacht" | "wochenende";
 
 interface PriceRange {
   from: number;
@@ -22,23 +22,27 @@ interface PriceRange {
 const PRICE_MATRIX: Record<Situation, Record<Zeitpunkt, PriceRange>> = {
   zugefallen: {
     regulaer: { from: 99, to: 149, note: "Einfache Türöffnung ohne Beschädigung" },
+    abend: { from: 119, to: 169, note: "Spätdienst-Zuschlag inkl." },
     nacht: { from: 149, to: 199, note: "Nachtdienst-Zuschlag inkl." },
-    wochenende: { from: 129, to: 179, note: "Wochenend-Zuschlag inkl." },
+    wochenende: { from: 179, to: 229, note: "Sonn- und Feiertag inkl." },
   },
   abgebrochen: {
     regulaer: { from: 129, to: 199, note: "Inkl. Schlüsselentfernung" },
+    abend: { from: 159, to: 229, note: "Spätdienst + Schlüsselentfernung" },
     nacht: { from: 179, to: 249, note: "Nachtdienst + Schlüsselentfernung" },
-    wochenende: { from: 159, to: 229, note: "Wochenend + Schlüsselentfernung" },
+    wochenende: { from: 209, to: 279, note: "Sonn- und Feiertag + Schlüsselentfernung" },
   },
   schliessanlage: {
     regulaer: { from: 199, to: 499, note: "Je nach Schließsystem und Umfang" },
+    abend: { from: 219, to: 519, note: "Spätschicht-Verfügbarkeit" },
     nacht: { from: 249, to: 549, note: "Express-Service nachts verfügbar" },
-    wochenende: { from: 229, to: 529, note: "Wochenend-Verfügbarkeit" },
+    wochenende: { from: 279, to: 579, note: "Wochenend-Verfügbarkeit" },
   },
   sicherheit: {
     regulaer: { from: 149, to: 399, note: "Einbruchschutz-Beratung & Installation" },
+    abend: { from: 169, to: 419, note: "Spätschicht-Installation" },
     nacht: { from: 199, to: 449, note: "Notfall-Sicherung nach Einbruch" },
-    wochenende: { from: 179, to: 429, note: "Wochenend-Express" },
+    wochenende: { from: 229, to: 479, note: "Wochenend-Express" },
   },
 };
 
@@ -50,9 +54,10 @@ const SITUATIONS: { key: Situation; label: string }[] = [
 ];
 
 const ZEITPUNKTE: { key: Zeitpunkt; label: string; time: string }[] = [
-  { key: "regulaer", label: "Regulär", time: "Mo-Sa 10:00-18:00" },
-  { key: "nacht", label: "Nachtdienst", time: "22:00-07:00" },
-  { key: "wochenende", label: "Wochenende/Feiertag", time: "Sa & So ganztags" },
+  { key: "regulaer", label: "Regulär", time: "06:00 - 19:59 Uhr" },
+  { key: "abend", label: "Abends", time: "20:00 - 21:59 Uhr" },
+  { key: "nacht", label: "Nachtdienst", time: "22:00 - 05:59 Uhr" },
+  { key: "wochenende", label: "Wochenende/Feiertag", time: "Sa, So & Feiertage" },
 ];
 
 /**

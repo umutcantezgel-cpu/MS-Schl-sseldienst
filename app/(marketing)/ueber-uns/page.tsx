@@ -203,7 +203,7 @@ export default function UeberUnsPage() {
             Ausgebildet von Uwe Sarfeld
            </h3>
            <p className="text-[color:var(--text-secondary)] text-base leading-relaxed">
-            Unser Chef-Techniker wurde von Uwe Sarfeld, einem der bekanntesten Schlüsseldienst-Experten Deutschlands (TV-Experte bei Kabel 1 & WDR), ausgebildet.
+            Unser technischer Leiter durchlief ein hochkarätiges Mentoring-Programm bei Uwe Sarfeld, einem der profiliertesten TV-Sicherheitsexperten (bekannt aus Kabel 1 & WDR). Diese Spitzenausbildung befähigt unser Team zu branchenführenden Öffnungstechniken.
             Wir bringen nicht nur das richtige Werkzeug mit, sondern absolutes Meister-Know-how.
            </p>
           </div>

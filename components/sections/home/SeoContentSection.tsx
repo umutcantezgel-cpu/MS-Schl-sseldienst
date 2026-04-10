@@ -78,7 +78,7 @@ export default function SeoContentSection() {
             Hinter dem Namen unserer Schlüssel Schmiede steht ein fähiges Team, welches sein Handwerk auf höchstem Niveau ausführt. Als offizieller Fachbetrieb erfüllen wir sämtliche Auflagen und Qualitätsansprüche, welche die ansässige Handwerkskammer an uns stellt.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
-            Unser Inhaber genoss das Privileg einer intensiven Schulung bei <strong>Uwe Sarfeld</strong>, einer echten Koryphäe der Sicherheitstechnik. Diese enorme fachliche Kompetenz fließt täglich in die Ausbildung unserer Mitarbeiter ein und garantiert Ihnen so handwerkliche Spitzenleistungen.
+            Unser Betrieb greift auf das exklusive Master-Training des bundesweit bekannten TV-Sicherheitsprofis <strong>Uwe Sarfeld</strong> zurück. Dieses Spezialwissen rund um schonende Öffnungstechniken wird kontinuierlich an unser gesamtes Spezialisten-Team weitergegeben, um stets an der Spitze der technischen Möglichkeiten zu stehen.
           </p>
           <p className="text-[color:var(--text-secondary)] leading-relaxed">
             Dabei setzen wir bewusst auf Offenheit, handwerkliche Souveränität und direkte Nähe zum Verbraucher. Mit unserem eigenen Fachgeschäft positionieren wir uns als greifbarer Gegenpol zu jenen Betrieben, die im Internet mit Lockangeboten operieren und ihre Identität verschleiern.

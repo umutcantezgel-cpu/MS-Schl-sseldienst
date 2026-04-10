@@ -25,7 +25,7 @@ export const companyInfo: CompanyInfo = {
   },
   email: "info@wetzlar-schlüsseldienst.de",
   openingHours: {
-    store: "Montag bis Samstag von 10:00 bis 18:00 Uhr",
+    store: "Montag bis Freitag von 06:00 bis 19:59 Uhr",
     emergency: "24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr"
   },
   financial: {

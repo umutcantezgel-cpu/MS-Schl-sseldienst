@@ -57,7 +57,8 @@ export function PricingSection() {
        {/* Card 1: Abends/Nachts (links, normal) */}
        <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
         <Typography variant="h3" as="div" className="mb-1">Abends oder nachts?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Spätzuschlag je nach Uhrzeit</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Spät- und Nachtzuschläge fair kalkuliert</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Die Notdienst-Tarife decken standardmäßige Türöffnungen komplett ab. Sollten erschwerende Faktoren (z.B. defektes Sicherheitsschloss) eintreffen, garantieren wir absolute Kostentransparenz durch eine detaillierte Absprache direkt an der Tür, bevor wir loslegen.</p>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          <div className="flex flex-col relative z-10 w-full">
@@ -121,7 +122,8 @@ export function PricingSection() {
         </div>
 
         <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-6 block">Montag - Freitag (06:00 - 19:59 Uhr)</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Werktags von 06:00 bis 19:59 Uhr</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Profitieren Sie von unserem Basis-Festpreis in Höhe von 99 €. Dank jahrelanger Branchenerfahrung und modernem Spezialwerkzeug lösen wir nahezu alle Standardfälle für exakt diese Summe – fair, schnell und völlig ohne versteckte Fallstricke.</p>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          {/* Zugefallene Tür */}
@@ -187,7 +189,8 @@ export function PricingSection() {
        {/* Card 3: Wochenende */}
        <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
         <Typography variant="h3" as="div" className="mb-1">Wochenende / Feiertag?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-8 block">Samstag, Sonntag & Feiertage</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">An Wochenenden und Feiertagen</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-8 leading-relaxed">Unser Wochenend-Notdienst steht Ihnen zum transparenten Fixpreis von 179 € zur Verfügung. Dieser Betrag inkludiert die professionelle Basisöffnung Ihrer Tür. Jeder etwaige Mehraufwand wird im Vornherein klar kommuniziert, damit Sie finanziell sicher planen können.</p>
 
         <div className="flex items-baseline gap-1 mb-8">
          <span className="text-sm font-bold text-[color:var(--text-tertiary)] uppercase tracking-wider">ab</span>
