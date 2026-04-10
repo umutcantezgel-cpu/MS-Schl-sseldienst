@@ -49,9 +49,19 @@ export default function SicherheitstechnikPage() {
      }))
     }}
    />
-   
-   {/* Hero Section , Premium Dark */}
-   <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+     __html: JSON.stringify(getFAQSchema([
+      { question: "Ist eine Beratung bei mir zu Hause wirklich kostenlos?", answer: "Ja, im Großraum Wetzlar bieten wir eine völlig kostenfreie und unverbindliche Sicherheitsanalyse bei Ihnen vor Ort an." },
+      { question: "Kann Sicherheitstechnik auch in Mietwohnungen installiert werden?", answer: "Definitiv! Wir bieten spezielle Klebe- oder Klemm-Lösungen sowie Funk-Alarmanlagen an, die sich später beim Auszug spurlos entfernen und mitnehmen lassen." },
+      { question: "Wie lange dauert der Einbau einer Alarmanlage?", answer: "Dank moderner Funktechnologie lassen sich die meisten Alarmsysteme für kleinere bis mittlere Objekte innerhalb eines Tages komplett kabellos und ohne Schmutz installieren." },
+     ]))
+    }}
+   />
+
+   {/* Hero Section — Ultrathink V2 Glassmorphism */}
+   <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
@@ -60,26 +70,16 @@ export default function SicherheitstechnikPage() {
         backgroundSize:"200px 200px",
       }}
     />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(getFAQSchema([
-       { question: "Ist eine Beratung bei mir zu Hause wirklich kostenlos?", answer: "Ja, im Großraum Wetzlar bieten wir eine völlig kostenfreie und unverbindliche Sicherheitsanalyse bei Ihnen vor Ort an." },
-       { question: "Kann Sicherheitstechnik auch in Mietwohnungen installiert werden?", answer: "Definitiv! Wir bieten spezielle Klebe- oder Klemm-Lösungen sowie Funk-Alarmanlagen an, die sich später beim Auszug spurlos entfernen und mitnehmen lassen." },
-       { question: "Wie lange dauert der Einbau einer Alarmanlage?", answer: "Dank moderner Funktechnologie lassen sich die meisten Alarmsysteme für kleinere bis mittlere Objekte innerhalb eines Tages komplett kabellos und ohne Schmutz installieren." },
-      ]))
-     }}
-    />
-    {/* Background Atmosphere */}
-    <div className="absolute inset-0 opacity-10 bg-[url(/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp)] bg-cover bg-center"></div>
-    <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-charcoal-900)] to-transparent opacity-80 z-0"></div>
+    {/* Background Atmosphere — increased visibility */}
+    <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp)] bg-cover bg-center"></div>
+    <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent z-0"></div>
 
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
       <Breadcrumbs items={breadcrumbs} light={false} />
       
-      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+      <StaggerReveal className="mt-6 sm:mt-8 flex flex-col items-center w-full max-w-3xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <Badge variant="default" className="mb-[var(--space-6)] border-[var(--border-subtle)] text-[color:var(--text-primary)] bg-[var(--surface-secondary)] pl-1.5 py-1.5 mx-auto">
+          <Badge variant="default" className="mb-5 sm:mb-6 border-[var(--border-subtle)] text-[color:var(--text-primary)] bg-[var(--surface-secondary)] pl-1.5 py-1.5 mx-auto">
             <span className="relative flex h-2 w-2 mr-2 ml-1">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]"></span>
@@ -87,16 +87,18 @@ export default function SicherheitstechnikPage() {
             Kostenfreie Beratung in Wetzlar verfügbar
           </Badge>
         </StaggerItem>
+
+        {/* Glassmorphism Hero Card */}
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-charcoal-900)] to-[var(--color-charcoal-600)]">Ruhig schlafen,</span> <br />
-            <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/10 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">sicher leben.</span></span>
-          </h1>
-        </StaggerItem>
-        <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-            Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik - für ein unerschütterliches Sicherheitsgefühl.
-          </p>
+          <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
+              Ruhig schlafen,{" "}
+              <span className="text-[var(--color-red-500)]">sicher leben.</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+              Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik — für ein unerschütterliches Sicherheitsgefühl.
+            </p>
+          </div>
         </StaggerItem>
       </StaggerReveal>
     </div>
@@ -121,7 +123,7 @@ export default function SicherheitstechnikPage() {
          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Lösungen</span>
        </div>
        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Unsere Leistungen im <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Überblick</span>
+        Unsere Leistungen im <span className="text-[var(--color-red-500)]">Überblick</span>
        </h2>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
@@ -283,7 +285,7 @@ export default function SicherheitstechnikPage() {
            <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
          </div>
          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
-           Häufige <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Fragen</span>
+           Häufige <span className="text-[color:var(--text-primary)]">Fragen</span>
          </h2>
        </div>
      </StaggerItem>
@@ -305,7 +307,7 @@ export default function SicherheitstechnikPage() {
          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Wissensdatenbank</span>
        </div>
        <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-[color:var(--text-primary)] mb-6">
-         Weiterführende <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Informationen</span> zum Einbruchschutz
+         Weiterführende <span className="text-[var(--color-red-500)]">Informationen</span> zum Einbruchschutz
        </h2>
        <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
          Informieren Sie sich bei offiziellen Stellen über staatliche Förderungen und polizeiliche Empfehlungen zum Einbruchschutz:

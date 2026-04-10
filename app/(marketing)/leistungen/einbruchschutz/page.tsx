@@ -54,8 +54,8 @@ export default function EinbruchschutzPage() {
     }}
    />
 
-   {/* Hero Section und Premium Dark */}
-   <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
+   {/* Hero Section — Ultrathink V2 Glassmorphism */}
+   <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
       style={{
@@ -68,25 +68,27 @@ export default function EinbruchschutzPage() {
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
       <Breadcrumbs items={[{ name: "Einbruchschutz", href: "/leistungen/einbruchschutz" }]} light={false} />
       
-      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+      <StaggerReveal className="mt-6 sm:mt-8 flex flex-col items-center w-full max-w-3xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <Badge variant="default" className="mb-[var(--space-6)] border-transparent text-white bg-[var(--color-red-500)] pl-1.5 py-1.5 mx-auto font-bold tracking-wide">
+          <Badge variant="default" className="mb-5 sm:mb-6 border-transparent text-white bg-[var(--color-red-500)] pl-1.5 py-1.5 mx-auto font-bold tracking-wide">
             <span className="relative flex h-2 w-2 mr-2 ml-1">
             <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
             </span>
             24/7 Not-Absicherung
           </Badge>
         </StaggerItem>
+
+        {/* Glassmorphism Hero Card */}
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
-            Soforthilfe bei <br className="hidden sm:block" />
-            <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/10 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">Einbruchschäden.</span></span>
-          </h1>
-        </StaggerItem>
-        <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed font-medium">
-            Nach einem Einbruch stellen wir sofort die mechanische Sicherheit Ihrer Türen wieder her. Wir reparieren Beschläge, tauschen Schließzylinder aus und beraten Sie präventiv.
-          </p>
+          <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
+              Soforthilfe bei{" "}
+              <span className="text-[var(--color-red-500)]">Einbruchschäden.</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "auto" }} lang="de">
+              Nach einem Einbruch stellen wir sofort die mechanische Sicherheit Ihrer Türen wieder her. Wir reparieren Beschläge, tauschen Schließzylinder aus und beraten Sie präventiv.
+            </p>
+          </div>
         </StaggerItem>
       </StaggerReveal>
     </div>
@@ -110,7 +112,7 @@ export default function EinbruchschutzPage() {
          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Prävention</span>
        </div>
        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Sicherheit auf <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">zwei Säulen</span>
+        Sicherheit auf <span className="text-[var(--color-red-500)]">zwei Säulen</span>
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -215,7 +217,7 @@ export default function EinbruchschutzPage() {
            <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
          </div>
          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
-           Häufige Fragen zum <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Einbruchschutz</span>
+           Häufige Fragen zum <span className="text-[color:var(--text-primary)]">Einbruchschutz</span>
          </h2>
        </div>
      </StaggerItem>
@@ -237,7 +239,7 @@ export default function EinbruchschutzPage() {
         <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Weiterbildung</span>
       </div>
       <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-[color:var(--text-primary)] mb-6">
-        Offizielle <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Ressourcen</span> zum Einbruchschutz
+        Offizielle <span className="text-[var(--color-red-500)]">Ressourcen</span> zum Einbruchschutz
       </h2>
       <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
         Informieren Sie sich bei diesen offiziellen Stellen über Prävention, Förderungen und Sicherheitsstandards:

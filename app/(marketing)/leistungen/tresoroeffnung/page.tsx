@@ -54,8 +54,8 @@ export default function TresoroeffnungPage() {
     }}
    />
 
-   {/* Hero Section und Premium Dark */}
-   <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-charcoal-900)] to-[#0A0A0A] overflow-hidden text-white">
+   {/* Hero Section — Ultrathink V2 Dark Glassmorphism */}
+   <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-charcoal-900)] to-[#0A0A0A] overflow-hidden text-white">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
       style={{
@@ -67,25 +67,27 @@ export default function TresoroeffnungPage() {
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
       <Breadcrumbs items={[{ name: "Tresoröffnung", href: "/leistungen/tresoroeffnung" }]} light={true} />
       
-      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+      <StaggerReveal className="mt-6 sm:mt-8 flex flex-col items-center w-full max-w-3xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <Badge variant="default" className="mb-[var(--space-6)] border-transparent text-gray-900 bg-amber-400 pl-1.5 py-1.5 mx-auto font-bold tracking-wide">
+          <Badge variant="default" className="mb-5 sm:mb-6 border-transparent text-gray-900 bg-amber-400 pl-1.5 py-1.5 mx-auto font-bold tracking-wide">
             <span className="relative flex h-2 w-2 mr-2 ml-1">
             <span className="relative inline-flex rounded-full h-2 w-2 bg-gray-900"></span>
             </span>
             Höchste Diskretion Garantiert
           </Badge>
         </StaggerItem>
+
+        {/* Glassmorphism Hero Card — Dark */}
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-white leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400">Diskrete</span> <br />
-            <span className="relative inline-block"><span className="absolute -inset-1 bg-amber-500/20 blur-xl rounded-full"></span><span className="relative text-amber-400">Tresoröffnung.</span></span>
-          </h1>
-        </StaggerItem>
-        <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-gray-300 leading-relaxed font-medium">
-            Schlüssel verloren oder Zahlencode vergessen? Wir analysieren die Konstruktion Ihres Tresors und wenden schonende Methoden an, um Ihre Wertsachen sicher und vertraulich freizugeben.
-          </p>
+          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-white leading-[1.15] mb-4 sm:mb-6">
+              Diskrete{" "}
+              <span className="text-amber-400">Tresoröffnung.</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "auto" }} lang="de">
+              Schlüssel verloren oder Zahlencode vergessen? Wir analysieren die Konstruktion Ihres Tresors und wenden schonende Methoden an, um Ihre Wertsachen sicher und vertraulich freizugeben.
+            </p>
+          </div>
         </StaggerItem>
       </StaggerReveal>
     </div>
@@ -109,7 +111,7 @@ export default function TresoroeffnungPage() {
          <span className="text-sm font-bold uppercase tracking-[0.2em] text-amber-500">Qualität</span>
        </div>
        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Absolute <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-amber-500">Verschwiegenheit</span>
+        Absolute <span className="text-amber-600">Verschwiegenheit</span>
        </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -211,7 +213,7 @@ export default function TresoroeffnungPage() {
            <span className="h-px w-8 bg-amber-500"></span>
          </div>
          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
-           Häufige Fragen zur <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Safe-Öffnung</span>
+           Häufige Fragen zur <span className="text-[color:var(--text-primary)]">Safe-Öffnung</span>
          </h2>
        </div>
      </StaggerItem>

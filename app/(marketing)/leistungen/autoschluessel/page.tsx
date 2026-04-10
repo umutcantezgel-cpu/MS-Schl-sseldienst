@@ -49,7 +49,8 @@ export default function AutoschluesselPage() {
     }}
    />
    
-   <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
+   {/* Hero Section — Ultrathink V2 Glassmorphism */}
+   <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
       style={{
@@ -67,15 +68,16 @@ export default function AutoschluesselPage() {
       ]))
      }}
     />
-    <div className="absolute inset-0 opacity-15 bg-[url(/images/generated/schluesseldienst-wetzlar-autoschluessel-programmierung-1.webp)] bg-cover bg-center"></div>
-    <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-charcoal-900)] to-transparent opacity-80 z-0"></div>
+    {/* Background Atmosphere — increased visibility */}
+    <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/generated/schluesseldienst-wetzlar-autoschluessel-programmierung-1.webp)] bg-cover bg-center"></div>
+    <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent z-0"></div>
 
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
       <Breadcrumbs items={breadcrumbs} light={false} />
       
-      <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+      <StaggerReveal className="mt-6 sm:mt-8 flex flex-col items-center w-full max-w-3xl" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <Badge variant="default" className="mb-[var(--space-6)] border-[var(--border-subtle)] text-[color:var(--text-primary)] bg-[var(--surface-secondary)] pl-1.5 py-1.5 mx-auto">
+          <Badge variant="default" className="mb-5 sm:mb-6 border-[var(--border-subtle)] text-[color:var(--text-primary)] bg-[var(--surface-secondary)] pl-1.5 py-1.5 mx-auto">
             <span className="relative flex h-2 w-2 mr-2 ml-1">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]"></span>
@@ -83,16 +85,18 @@ export default function AutoschluesselPage() {
             KfZ-Schlüssel & Transponder Service
           </Badge>
         </StaggerItem>
+
+        {/* Glassmorphism Hero Card */}
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <h1 className="text-4xl sm:text-5xl lg:text-[72px] font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)] drop-shadow-sm">
-            Autoschlüssel <br />
-            <span className="relative inline-block"><span className="absolute -inset-1 bg-[var(--color-red-500)]/10 blur-xl rounded-full"></span><span className="relative text-[var(--color-red-500)]">reparieren & codieren.</span></span>
-          </h1>
-        </StaggerItem>
-        <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-            Gehäuse kaputt? Tasten defekt? Zweitschlüssel benötigt? Wir programmieren und reparieren Transponder-Schlüssel schnell und oft günstiger als im Autohaus direkt in Wetzlar.
-          </p>
+          <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
+              Autoschlüssel{" "}
+              <span className="text-[var(--color-red-500)]">reparieren & codieren.</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+              Gehäuse kaputt? Tasten defekt? Zweitschlüssel benötigt? Wir programmieren und reparieren Transponder-Schlüssel schnell und oft günstiger als im Autohaus direkt in Wetzlar.
+            </p>
+          </div>
         </StaggerItem>
       </StaggerReveal>
     </div>
@@ -114,7 +118,7 @@ export default function AutoschluesselPage() {
          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Dienstleistung</span>
        </div>
        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Unser <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)]">Autoschlüssel-Service</span>
+        Unser <span className="text-[var(--color-red-500)]">Autoschlüssel-Service</span>
        </h2>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
@@ -200,7 +204,7 @@ export default function AutoschluesselPage() {
            <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
          </div>
          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
-           Häufige <span className="bg-clip-text text-transparent bg-gradient-to-br from-[var(--color-charcoal-900)] to-[var(--color-charcoal-500)]">Fragen</span>
+           Häufige <span className="text-[color:var(--text-primary)]">Fragen</span>
          </h2>
        </div>
      </StaggerItem>
