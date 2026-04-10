@@ -109,8 +109,12 @@ export default function LocalPricing({ city }: { city: LocationData }) {
             </div>
 
             <div className="mt-20 flex flex-col items-center gap-4">
-                <a href="tel:+4964418056279" className="text-[color:var(--color-red-600)] bg-[var(--color-red-50)] px-10 py-5 rounded-full font-bold shadow-sm border border-[var(--color-red-100)] hover:bg-[var(--color-red-600)] hover:text-white transition-all flex items-center justify-center gap-3 text-lg tracking-wide group">
-                    <Phone className="w-5 h-5 transition-transform group-hover:rotate-12" /> 06441-8056279 - Preisauskunft für {city.name}
+                <a href="tel:+4964418056279" className="text-[color:var(--color-red-600)] bg-[var(--color-red-50)] px-6 sm:px-10 py-4 sm:py-5 rounded-2xl sm:rounded-full font-bold shadow-sm border border-[var(--color-red-100)] hover:bg-[var(--color-red-600)] hover:text-white transition-all flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-base sm:text-lg tracking-wide group w-full sm:w-auto text-center mx-auto max-w-[90vw]">
+                    <div className="flex items-center gap-2">
+                        <Phone className="w-5 h-5 transition-transform group-hover:rotate-12 shrink-0" />
+                        <span>06441-8056279</span>
+                    </div>
+                    <span className="text-sm sm:text-lg sm:opacity-80">Preisauskunft für {city.name}</span>
                 </a>
                 <span className="text-sm text-[color:var(--text-tertiary)] text-center font-medium tracking-widest uppercase">Festpreis wird vor Abfahrt garantiert</span>
             </div>

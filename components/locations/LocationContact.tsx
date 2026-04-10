@@ -36,10 +36,10 @@ export default function LocationContact({ city }: { city: LocationData }) {
                             <span className="text-2xl md:text-3xl font-extrabold tracking-tight">06441 - 805 65 44</span>
                         </a>
                         
-                        <div className="flex items-center gap-2 mt-4 bg-white/50 px-6 py-3 rounded-full border border-[var(--border-subtle)]">
+                        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mt-4 bg-white/50 px-6 py-4 sm:py-3 rounded-2xl sm:rounded-full border border-[var(--border-subtle)] text-center text-balance w-full sm:w-auto mx-auto max-w-[90vw]">
                             <span className="text-[color:var(--text-tertiary)] font-medium tracking-wide">Alternative Mobilnummer:</span>
-                            <a href="tel:+491782471037" className="text-[color:var(--value-primary)] font-bold hover:underline flex items-center gap-2 tracking-wide text-lg">
-                                <PhoneCall className="w-5 h-5" /> 0178 - 247 10 37
+                            <a href="tel:+491782471037" className="text-[color:var(--value-primary)] font-bold hover:underline flex items-center gap-2 tracking-wide text-lg justify-center">
+                                <PhoneCall className="w-5 h-5 shrink-0" /> 0178 - 247 10 37
                             </a>
                         </div>
                     </div>

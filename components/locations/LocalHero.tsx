@@ -31,7 +31,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
         <section
             id="hero-section"
             aria-label={`Notfall-Hilfe ${city.name}`}
-            className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[80vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] lg:pt-[200px] sm:pb-[100px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
+            className="relative min-h-[80svh] flex items-center pt-[100px] pb-12 sm:pt-[140px] lg:pt-[180px] sm:pb-[80px] lg:pb-[100px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
         >
             {/* CSS Noise Texture */}
             <div
@@ -54,17 +54,17 @@ export default function LocalHero({ city }: LocalHeroProps) {
 
                 <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
-                            <span className="relative flex h-3 w-3">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide w-full max-w-[90vw] sm:max-w-none sm:w-auto overflow-hidden whitespace-nowrap">
+                            <span className="relative flex h-3 w-3 shrink-0">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-400)] opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--color-red-500)]"></span>
                             </span>
-                            In ca. {city.logistics.drivingTimeMinutes} Min. bei Ihnen in {city.name}
+                            <span className="truncate">In ca. {city.logistics.drivingTimeMinutes} Min. bei Ihnen in {city.name}</span>
                         </div>
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-2 sm:mb-[var(--space-6)] text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.05] text-[32px] sm:text-[48px] md:text-[64px]">
+                        <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-2 sm:mb-[var(--space-6)] text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.1] sm:leading-[1.05] text-[clamp(28px,7vw,64px)] break-words hyphens-auto w-full px-2 sm:px-0">
                             {city.heroVariant ? (
                                 <span dangerouslySetInnerHTML={{ __html: city.heroVariant.replace(city.name, `<span class="text-[color:var(--value-primary)]">${city.name}</span>`) }} />
                             ) : (
