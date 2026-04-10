@@ -1,9 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import GoogleReviewsBadge from "@/components/reviews/GoogleReviewsBadge";
-import TrustStrip from "@/components/trust/TrustStrip";
-import { aggregateRating } from "@/components/reviews/reviews.data";
 import { LocationData } from "@/lib/data/locations";
 
 interface LocalTrustSignalsProps {
@@ -11,25 +7,15 @@ interface LocalTrustSignalsProps {
 }
 
 export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
-    const [liveRating, setLiveRating] = useState(aggregateRating);
+    if (!city.routeDescription && (!city.localTestimonials || city.localTestimonials.length === 0)) {
+        return null;
+    }
 
-    useEffect(() => {
-        fetch('/api/reviews')
-            .then(res => res.json())
-            .then(data => {
-                if (data && data.reviewCount) setLiveRating(data);
-            })
-            .catch(err => console.error("Failed to fetch live reviews:", err));
-    }, []);
     return (
-        <div className="relative z-20 w-full px-[var(--space-4)] -mt-[88px] lg:-mt-[120px] flex flex-col items-center gap-[var(--space-6)] pointer-events-none mb-24">
-            <aside aria-label={`Google-Bewertungen für Schlüsseldienst ${city.name}`} className="pointer-events-auto">
-                <GoogleReviewsBadge rating={liveRating.ratingValue} count={liveRating.reviewCount} />
-            </aside>
-
+        <section className="relative z-20 w-full px-[var(--space-4)] flex flex-col items-center gap-[var(--space-6)] mb-24 -mt-12 sm:-mt-8">
             {/* Hyper-Lokale Trust-Signale */}
             {city.routeDescription && (
-                <div className="flex flex-wrap items-center justify-center gap-4 text-sm md:text-base font-medium text-[color:var(--color-charcoal-600)] pointer-events-auto bg-white/80 backdrop-blur-md px-8 py-4 rounded-full border border-[var(--border-subtle)] shadow-sm">
+                <div className="flex flex-wrap items-center justify-center gap-4 text-sm md:text-base font-medium text-[color:var(--color-charcoal-600)] bg-white/80 backdrop-blur-md px-8 py-4 rounded-3xl sm:rounded-full border border-[var(--border-subtle)] shadow-sm">
                     <span className="flex items-center gap-3">
                         <span className="w-2.5 h-2.5 rounded-full bg-[var(--value-primary)]"></span>
                         Anfahrt aus Wetzlar {city.routeDescription}
@@ -41,14 +27,10 @@ export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
                     </span>
                 </div>
             )}
-
-            <div className="w-full pointer-events-auto px-4 mt-6">
-                <TrustStrip />
-            </div>
             
             {/* Ortsspezifischer Trust-Injector */}
             {city.localTestimonials && city.localTestimonials.length > 0 && (
-                <div className="mt-12 pointer-events-auto flex flex-wrap justify-center gap-6">
+                <div className="mt-8 flex flex-wrap justify-center gap-6">
                     {city.localTestimonials.map((testimonial, idx) => (
                         <div key={idx} className="bg-white/90 backdrop-blur-xl p-8 rounded-3xl shadow-[var(--elevation-1)] border border-[var(--border-subtle)] max-w-md">
                             <div className="flex text-[color:var(--value-primary)] mb-4">
@@ -64,6 +46,6 @@ export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
                     ))}
                 </div>
             )}
-        </div>
+        </section>
     );
 }

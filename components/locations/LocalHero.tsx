@@ -5,6 +5,9 @@ import { Phone } from "lucide-react";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { pickVariant } from "@/lib/textRotation";
+import { aggregateRating } from "@/components/reviews/reviews.data";
+import GoogleReviewsBadge from "@/components/reviews/GoogleReviewsBadge";
+import TrustStrip from "@/components/trust/TrustStrip";
 
 const keywordVariants = [
     (name: string) => `Zusammenfassung: Als zertifizierter Schlüsseldienst für ${name} garantieren wir eine professionelle Türöffnung zum Festpreis. Wir sind als 24/7 Notdienst rund um die Uhr verfügbar.`,
@@ -91,20 +94,27 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <div className="mt-4 sm:mt-12 mb-4 sm:mb-6">
-                            <TrustBadges />
-                        </div>
-                        <div className="flex flex-col items-center gap-2 sm:gap-3">
-                            <a
-                                href="tel:+4964418056279"
-                                className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-6 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto"
-                            >
-                                <Phone className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:rotate-12" />
-                                <span className="text-base sm:text-xl tracking-tight">Jetzt Anrufen , 06441-8056279</span>
-                            </a>
-                            <span className="typo-tiny text-[color:var(--text-tertiary)] text-center font-medium tracking-wide uppercase mt-2">
-                                Kostenlos & unverbindlich , Antwort in 30 Min
-                            </span>
+                        <div className="mt-8 mb-4 sm:mb-6 w-full flex flex-col items-center gap-8">
+                            <div className="flex flex-col items-center gap-2 sm:gap-3 w-full sm:w-auto">
+                                <a
+                                    href="tel:+4964418056279"
+                                    className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-6 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto"
+                                >
+                                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:rotate-12" />
+                                    <span className="text-base sm:text-lg tracking-tight">Jetzt Anrufen , 06441-8056279</span>
+                                </a>
+                                <span className="typo-tiny text-[color:var(--text-tertiary)] text-center font-bold tracking-wide uppercase mt-2">
+                                    Kostenlos & unverbindlich , Antwort in 30 Min
+                                </span>
+                            </div>
+
+                            <div className="flex justify-center w-full relative z-20">
+                                <GoogleReviewsBadge rating={aggregateRating.ratingValue} count={aggregateRating.reviewCount} />
+                            </div>
+
+                            <div className="w-full max-w-[100vw] overflow-hidden px-0 sm:px-4 pointer-events-auto relative z-20 mt-2">
+                                <TrustStrip />
+                            </div>
                         </div>
                     </StaggerItem>
                 </StaggerReveal>
