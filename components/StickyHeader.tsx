@@ -120,7 +120,11 @@ export default function StickyHeader() {
               width={800}
               height={800}
               quality={100}
-              className="w-[72px] h-[72px] sm:w-[86px] sm:h-[86px] lg:w-[100px] lg:h-[100px] xl:w-[115px] xl:h-[115px] object-contain transition-all duration-300 drop-shadow-sm"
+              className={`object-contain transition-all duration-500 drop-shadow-sm ${
+                isScrolled
+                  ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
+                  : "w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] lg:w-[86px] lg:h-[86px] xl:w-[92px] xl:h-[92px]"
+              }`}
               style={{ background: 'transparent', imageRendering: 'high-quality' }}
               priority
             />
