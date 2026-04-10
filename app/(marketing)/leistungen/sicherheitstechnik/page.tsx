@@ -131,48 +131,48 @@ export default function SicherheitstechnikPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Lock className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Schließzylinder & Anlagen</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Schließzylinder & Anlagen</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Hochsichere Profilzylinder mit Kopierschutz und komplexe Schließanlagen für Gebäude jeder Größe.
           </p>
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Bell className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Alarmanlagen</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Alarmanlagen</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Intelligente Einbruchmeldeanlagen, verkabelt oder als Funklösung für Bestandsbauten.
           </p>
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Video className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Videoüberwachung</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Videoüberwachung</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Hochauflösende Kamerasysteme mit Fernzugriff und intelligenter Bewegungserkennung.
           </p>
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <ShieldCheck className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Fenster- & Türsicherung</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Fenster- & Türsicherung</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Mechanischer Zusatzschutz zur effektiven Erschwerung von Aufbruchversuchen.
           </p>
@@ -192,26 +192,16 @@ export default function SicherheitstechnikPage() {
              Unser Beratungsprozess
             </h3>
           </div>
-          <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>1. Termin vereinbaren:</strong> Kontaktieren Sie uns für ein unverbindliches Erstgespräch.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>2. Kostenlose Begehung:</strong> Wir analysieren die Sicherheitslage direkt bei Ihnen vor Ort.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>3. Konzept & Angebot:</strong> Sie erhalten ein maßgeschneidertes Sicherheitskonzept.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>4. Fachgerechte Installation:</strong> Unsere Experten montieren die Technik sauber und zuverlässig.</span>
-            </li>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left relative z-10">
+            {["1. Termin vereinbaren", "2. Kostenlose Begehung", "3. Konzept & Angebot", "4. Fachgerechte Installation"].map((item, idx) => (
+              <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center">
+                <Check className="w-6 h-6 text-[var(--color-red-500)] shrink-0" />
+                <span className="font-semibold text-gray-800 text-base">{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
-      </StaggerItem>
+       </StaggerItem>
      </StaggerReveal>
 
      {/* 4. Lösung & Preis-Teaser */}

@@ -96,7 +96,7 @@ export default function UhrenServicePage() {
     </div>
    </section>
 
-   <div className="relative z-20 w-full px-[var(--space-4)] flex flex-col items-center pointer-events-none mb-12">
+   <div className="relative z-20 w-full px-[var(--space-4)] -mt-[88px] lg:-mt-[112px] flex flex-col items-center pointer-events-none mb-12">
     <div className="w-full pointer-events-auto px-4">
      <TrustStrip />
     </div>

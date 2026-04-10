@@ -131,24 +131,24 @@ export default function SchliessanlagenPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Building className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Für Gewerbe & Verwaltung</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Für Gewerbe & Verwaltung</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Sichere und verwaltbare Systeme für Mehrfamilienhäuser, Bürogebäude und Produktionsstätten.
           </p>
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Key className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">Weniger Schlüssel</h3>
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Weniger Schlüssel</h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
            Reduzieren Sie den Schlüsselbund auf ein Minimum. Ein einziger Schlüssel reicht für alle autorisierten Zugänge.
           </p>
@@ -168,23 +168,13 @@ export default function SchliessanlagenPage() {
              In 4 Schritten zu Ihrer Schließanlage
             </h3>
           </div>
-          <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>1. Erstberatung:</strong> Analyse Ihrer Anforderungen vor Ort in Wetzlar.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>2. Schließplan:</strong> Erstellung eines detaillierten Berechtigungskonzepts.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>3. Fertigung:</strong> Maßgenaue Produktion durch unsere Markenpartner.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>4. Installation:</strong> Fachgerechter Einbau und Schlüsselübergabe.</span>
-            </li>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left relative z-10">
+            {["1. Erstberatung in Wetzlar", "2. Detaillierter Schließplan", "3. Maßgenaue Fertigung", "4. Fachgerechte Installation"].map((item, idx) => (
+              <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center">
+                <Check className="w-6 h-6 text-[var(--color-red-500)] shrink-0" />
+                <span className="font-semibold text-gray-800 text-base">{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </StaggerItem>

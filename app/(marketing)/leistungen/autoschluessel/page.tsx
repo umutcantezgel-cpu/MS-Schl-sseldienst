@@ -133,19 +133,13 @@ export default function AutoschluesselPage() {
              Ablauf der Codierung
             </h3>
           </div>
-          <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>1. Termin direkt vor Ort:</strong> Für alles, was Wegfahrsperren angeht, muss das Fahrzeug vor unserem Geschäft stehen.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>2. Diagnose & Programmierung:</strong> Wir lesen die Wegfahrsperre aus und übertragen sie auf den neuen Transponder.</span>
-            </li>
-            <li className="flex items-start gap-4">
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>3. Mechanisches Fräsen:</strong> Bei Bedarf fräsen wir den Schlüsselbart exakt nach Muster nach.</span>
-            </li>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left relative z-10">
+            {["1. Termin direkt vor Ort am Geschäft", "2. Diagnose & Programmierung", "3. Mechanisches Fräsen bei Bedarf"].map((item, idx) => (
+              <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center">
+                <Check className="w-6 h-6 text-[var(--color-red-500)] shrink-0" />
+                <span className="font-semibold text-gray-800 text-base">{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </StaggerItem>

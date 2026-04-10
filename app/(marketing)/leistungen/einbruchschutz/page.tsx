@@ -121,7 +121,7 @@ export default function EinbruchschutzPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-lg transition-all duration-300">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <ShieldAlert className="h-6 w-6" />
          </div>
@@ -135,12 +135,12 @@ export default function EinbruchschutzPage() {
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-[var(--surface-secondary)] border border-[var(--border-subtle)] hover:shadow-lg transition-all duration-300">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gray-900 border border-gray-100 text-white">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-emerald-50 shadow-[var(--elevation-1)] border border-emerald-100 hover:shadow-[var(--elevation-2)] transition-shadow">
+         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500 text-white">
           <Wrench className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-emerald-500)] transition-colors">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-emerald-600 transition-colors">
            Geplant: Präventivberatung
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -156,22 +156,25 @@ export default function EinbruchschutzPage() {
      <div className="pt-16 border-t border-[var(--border-subtle)]">
       <StaggerReveal className="" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
        <StaggerItem animation={entryAnimations.slideUpFade}>
-        <div className="mb-8">
+        <div className="text-center mb-12">
          <Badge variant="outline" className="mb-4 text-emerald-600 bg-emerald-50 border-emerald-200 uppercase tracking-widest font-bold">Unser Know-How</Badge>
-         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1]">
+         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mt-4">
            Moderne <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-emerald-100 -z-10 -rotate-1 rounded-sm"></span>mechanische</span> Sicherheit
          </h2>
         </div>
        </StaggerItem>
        <StaggerItem animation={entryAnimations.slideUpFade}>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-          {["Sicherheitszylinder der VdS-Klassen B & BZ", "Sicherheitsbeschläge mit Kernziehschutz", "Kastenzusatzschlösser & Sperrbügel", "Stangenschlösser für Altbautüren", "Fenster- und Terrassentürabsicherungen", "Beratung komplett vor Ort"].map((item, idx) => (
-            <li key={idx} className="flex gap-3 p-4 rounded-xl bg-white border border-[var(--border-subtle)] items-center">
-              <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
-              <span className="font-semibold text-gray-800">{item}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-bl-[100px] pointer-events-none" />
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left relative z-10">
+            {["Sicherheitszylinder der VdS-Klassen B & BZ", "Sicherheitsbeschläge mit Kernziehschutz", "Kastenzusatzschlösser & Sperrbügel", "Stangenschlösser für Altbautüren", "Fenster- und Terrassentürabsicherungen", "Beratung komplett vor Ort"].map((item, idx) => (
+              <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center">
+                <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
+                <span className="font-semibold text-gray-800 text-base">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
        </StaggerItem>
       </StaggerReveal>
      </div>

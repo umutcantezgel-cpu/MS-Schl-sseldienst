@@ -120,12 +120,12 @@ export default function TresoroeffnungPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-lg transition-all duration-300">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gray-900 text-white">
           <EyeOff className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-amber-600 transition-colors">
            Garantierte Diskretion
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -134,12 +134,12 @@ export default function TresoroeffnungPage() {
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-amber-50 border border-amber-200 hover:shadow-lg transition-all duration-300">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-amber-50 border border-amber-200 hover:shadow-[var(--elevation-2)] transition-shadow">
          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-500 text-white">
           <Lock className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-amber-600 transition-colors">
            Spezialwerkzeuge
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -155,11 +155,12 @@ export default function TresoroeffnungPage() {
      <div className="pt-16 border-t border-[var(--border-subtle)]">
       <StaggerReveal className="" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
        <StaggerItem animation={entryAnimations.slideUpFade}>
-        <div className="mb-8">
-         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1]">
-           Unsere <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-amber-100 -z-10 -rotate-1 rounded-sm"></span>Expertise</span> im Tresorbereich
-         </h2>
-        </div>
+        <div className="text-center mb-12">
+          <Badge variant="outline" className="mb-4 text-amber-600 bg-amber-50 border-amber-200">Zusammenfassung</Badge>
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mt-4">
+            Unsere <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-amber-100 -z-10 -rotate-1 rounded-sm"></span>Expertise</span> im Tresorbereich
+          </h2>
+         </div>
        </StaggerItem>
        <StaggerItem animation={entryAnimations.slideUpFade}>
         <ul className="grid grid-cols-1 gap-4 text-left">

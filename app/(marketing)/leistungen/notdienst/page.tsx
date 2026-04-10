@@ -121,12 +121,12 @@ export default function NotdienstPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-lg transition-all duration-300">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-500">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Navigation2 className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">
            Regionale Stationierung
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -135,12 +135,12 @@ export default function NotdienstPage() {
          </div>
         </div>
 
-        <div className="flex gap-4 p-6 rounded-[var(--radius-24)] bg-red-50 border border-red-100 hover:shadow-lg transition-all duration-300">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-500 text-white">
+        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
+         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
           <Phone className="h-6 w-6" />
          </div>
          <div>
-          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-2">
+          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">
            Verbindliche Preisnennung
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
@@ -156,22 +156,25 @@ export default function NotdienstPage() {
      <div className="pt-16 border-t border-[var(--border-subtle)]">
       <StaggerReveal className="" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
        <StaggerItem animation={entryAnimations.slideUpFade}>
-        <div className="mb-8">
-         <Badge variant="outline" className="mb-4 text-blue-600 bg-blue-50 border-blue-200 tracking-widest font-bold">SCHICHTBETRIEB</Badge>
+        <div className="text-center mb-12">
+         <Badge variant="outline" className="mb-4 text-[var(--color-red-500)] bg-[var(--color-red-50)] border-[var(--color-red-100)] tracking-widest font-bold">SCHICHTBETRIEB</Badge>
          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1]">
-           Wann wir für Sie <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-blue-100 -z-10 -rotate-1 rounded-sm"></span>Einsatzbereit sind</span>
+           Wann wir für Sie <span className="relative inline-block"><span className="absolute bottom-2 left-0 w-full h-3 bg-[var(--color-red-100)] -z-10 -rotate-1 rounded-sm"></span>Einsatzbereit sind</span>
          </h2>
         </div>
        </StaggerItem>
        <StaggerItem animation={entryAnimations.slideUpFade}>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-          {["Alltagsniederlassung (Mo-Fr)", "Schichtbetrieb (Mo-So, Tag/Nacht)", "Wochenend-Notdienst (Sa & So)", "Feiertagsbereitschaft (Weihnachten etc.)", "Regional stationiert in Lahnau / Wetzlar", "Zerstörungsfreie Methoden auch bei Nacht"].map((item, idx) => (
-            <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white border border-[var(--border-subtle)] items-center">
-              <CalendarDays className="w-6 h-6 text-blue-500 shrink-0" />
-              <span className="font-semibold text-gray-800 text-base">{item}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left relative z-10">
+            {["Alltagsniederlassung (Mo-Fr)", "Schichtbetrieb (Mo-So, Tag/Nacht)", "Wochenend-Notdienst (Sa & So)", "Feiertagsbereitschaft (Weihnachten)", "Regional stationiert in Wetzlar", "Zerstörungsfreie Methoden bei Nacht"].map((item, idx) => (
+              <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center">
+                <CheckCircle2 className="w-6 h-6 text-[var(--color-red-500)] shrink-0" />
+                <span className="font-semibold text-gray-800 text-base">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
        </StaggerItem>
       </StaggerReveal>
      </div>
