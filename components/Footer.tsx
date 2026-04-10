@@ -64,20 +64,24 @@ export default function Footer() {
     {/* Main Grid */}
      <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
      {/* Brand Column */}
-      <div className="col-span-2 mb-8 lg:mb-0">
+      <div className="col-span-2 mb-8 lg:mb-0 relative">
+       {/* Leuchtender Hintergrund-Glow für das Logo */}
+       <div className="absolute -top-10 -left-10 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] bg-white/10 blur-[60px] rounded-full pointer-events-none z-0" />
+       
        {/* [SEO: Resolved "No Text" via sr-only on footer logo link] */}
-       <Link href="/" className="inline-block">
+       <Link href="/" className="inline-block relative z-10 group">
         <span className="sr-only">Zurück zur Startseite und Schlüssel Schmiede Wetzlar</span>
+        <div className="absolute inset-4 bg-white/20 blur-[30px] rounded-full group-hover:bg-white/30 transition-all duration-300" />
         <Image
          src="/images/logo-header.svg"
          alt="Schlüssel Schmiede Wetzlar Logo"
          width={500}
          height={500}
-         className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain"
+         className="relative z-10 w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.15)] group-hover:scale-105 transition-transform duration-300"
          unoptimized
         />
        </Link>
-       <p className="mt-4 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs">
+       <p className="mt-6 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs relative z-10">
         Ihre Schlüssel Schmiede für alle Schloss und Sicherheitsfragen
         in Wetzlar und Umgebung. 24/7 erreichbar.
        </p>
