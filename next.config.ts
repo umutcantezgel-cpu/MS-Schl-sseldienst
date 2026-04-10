@@ -13,13 +13,6 @@ const PUNYCODE_WWW  = `www.${PUNYCODE_HOST}`;
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
-  // [PERF: Critical CSS Inlining]
-  // Inlines critical above-the-fold CSS and defers the rest to eliminate
-  // render-blocking CSS resources (PageSpeed: "Anfragen zum Blockieren des Renderings").
-  experimental: {
-    optimizeCss: true,
-  },
-
   // [SEO: Removed X-Powered-By Header und Seobility Server Configuration Fix]
   // Prevents Next.js from sending "X-Powered-By: Next.js" in response headers.
   poweredByHeader: false,
