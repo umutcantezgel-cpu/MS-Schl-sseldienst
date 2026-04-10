@@ -272,7 +272,7 @@ export default function CookieConsent() {
             <p className="mt-4 text-[10px] text-[color:var(--text-tertiary)] leading-relaxed">
               Rechtsgrundlagen: §25 TTDSG (Einwilligung für nicht-essentielle Cookies), Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), 
               Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse für essentielle Cookies). 
-              Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen" im Footer widerrufen.
+              Sie können Ihre Einwilligung jederzeit über den Link &bdquo;Cookie-Einstellungen&quot; im Footer widerrufen.
             </p>
           </div>
         )}
