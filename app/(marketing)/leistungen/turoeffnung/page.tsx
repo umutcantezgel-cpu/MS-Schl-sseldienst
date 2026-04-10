@@ -94,7 +94,7 @@ export default function TuroeffnungPage() {
         {/* Glassmorphism Hero Card */}
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
+            <h1 className="text-[clamp(28px,7vw,36px)] sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
               Schnell wieder{" "}
               <span className="text-[var(--color-red-500)]">im Warmen.</span>
               <br />
@@ -113,8 +113,8 @@ export default function TuroeffnungPage() {
    </section>
 
    {/* 2. Trust-Bar */}
-   <div className="relative z-20 w-full px-[var(--space-4)] -mt-[88px] lg:-mt-[112px] flex flex-col items-center pointer-events-none mb-12">
-    <div className="w-full pointer-events-auto px-4">
+   <div className="relative z-20 w-full max-w-[100vw] overflow-hidden px-[var(--space-4)] -mt-[88px] lg:-mt-[112px] flex flex-col items-center pointer-events-none mb-12">
+    <div className="w-full pointer-events-auto px-0 sm:px-4">
      <TrustStrip />
     </div>
    </div>
@@ -190,7 +190,7 @@ export default function TuroeffnungPage() {
            Was tun, wenn die Tür zu ist?
           </h3>
         </div>
-        <ol className="list-decimal pl-5 space-y-4 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
+        <ol className="list-decimal pl-5 space-y-4 text-base sm:text-lg text-[color:var(--text-secondary)] m-0 font-medium break-words">
          <li className="pl-2">Bewahren Sie Ruhe. Versuchen Sie nicht, die Tür gewaltsam zu öffnen.</li>
          <li className="pl-2">Prüfen Sie, ob ein Fenster offen steht oder ein Zweitschlüssel bei Nachbarn hinterlegt ist.</li>
          <li className="pl-2">Rufen Sie uns an: <a href="tel:+4964418056279" className="font-bold text-[var(--color-red-500)] hover:text-[color:var(--color-red-600)] hover:underline transition-colors inline-block ml-1">06441 8056279</a></li>

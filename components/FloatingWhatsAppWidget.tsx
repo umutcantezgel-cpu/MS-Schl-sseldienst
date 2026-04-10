@@ -35,9 +35,11 @@ export default function FloatingWhatsAppWidget() {
   useEffect(() => {
     setMounted(true);
     // Initialize position: bottom-right
+    // Offset higher on mobile to avoid sticky bottom bar (e.g. 140px instead of 96px)
+    const isMobile = window.innerWidth < 768;
     pos.current = {
-      x: window.innerWidth - SIZE - 24,
-      y: window.innerHeight - SIZE - 96,
+      x: window.innerWidth - SIZE - (isMobile ? 16 : 24),
+      y: window.innerHeight - SIZE - (isMobile ? 140 : 96),
     };
     forceRender((n) => n + 1);
   }, []);

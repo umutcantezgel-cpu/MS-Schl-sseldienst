@@ -15,20 +15,13 @@ export default function CalendlyWidget({ url }: CalendlyWidgetProps) {
 
   return (
     <div
-      className="w-full relative h-full"
+      className="w-full relative h-[600px] md:h-[700px]"
       data-testid="calendly-widget"
-      style={{ minHeight: "700px" }}
     >
       <iframe
         src={calendlyUrl}
         title="Terminbuchung — Schlüssel Schmiede Wetzlar"
-        width="100%"
-        height="100%"
-        style={{
-          border: "none",
-          minHeight: "700px",
-          borderRadius: "16px",
-        }}
+        className="w-full h-full rounded-2xl border-none"
         allow="payment"
         loading="lazy"
       />

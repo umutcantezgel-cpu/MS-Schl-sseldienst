@@ -12,7 +12,7 @@ export function PricingSection() {
    <section
     id="preise"
     aria-labelledby="preise-heading"
-    className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden"
+    className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] pt-8 pb-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden"
    >
     <RevealSection className="mx-auto max-w-7xl relative z-10">
       <SectionHeader

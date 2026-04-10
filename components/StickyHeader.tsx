@@ -417,7 +417,7 @@ export default function StickyHeader() {
             </div>
 
             {/* Drawer Content */}
-            <div className="flex-1 overflow-y-auto px-4 py-8 pb-32 flex flex-col gap-8 bg-slate-50/50">
+            <div className="flex-1 overflow-y-auto px-5 py-8 pb-32 flex flex-col gap-8 bg-slate-50/50">
               
               {/* Leistungen Section */}
               <div className="flex flex-col gap-3">

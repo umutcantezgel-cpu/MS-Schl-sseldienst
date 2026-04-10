@@ -168,15 +168,15 @@ export default function HeroSection() {
             <h1
               id="hero-heading"
               itemProp="headline"
-              className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[32px] sm:text-4xl md:text-[52px] lg:text-5xl xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
+              className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[clamp(26px,7vw,32px)] sm:text-4xl md:text-[52px] lg:text-5xl xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
             >
               Schlüssel Schmiede Wetzlar
               {' '}
-              <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-2 sm:ml-3 -translate-y-1">
+              <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-1 sm:ml-3 -translate-y-1">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24h Notdienst</span>
               </span>
               {' '}
-              <span className="block w-full text-[color:var(--text-secondary)] mt-1.5 sm:mt-2 font-semibold text-xl sm:text-[24px]">
+              <span className="block w-full text-[color:var(--text-secondary)] mt-2 font-semibold text-[18px] sm:text-[24px]">
                 Ihr 24 Stunden Notdienst für Schlüssel, Schlösser & Sicherheit
               </span>
             </h1>

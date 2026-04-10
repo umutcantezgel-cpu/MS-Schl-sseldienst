@@ -63,7 +63,7 @@ export default function TerminBuchenPage() {
             
             {/* LEFT: The Calendly Widget Wrapper */}
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <div className="bg-white p-2 sm:p-4 rounded-[var(--radius-24)] shadow-[var(--elevation-2)] border border-[var(--border-subtle)] h-full min-h-[600px] flex flex-col">
+              <div className="bg-white p-2 sm:p-4 rounded-[var(--radius-24)] shadow-[var(--elevation-2)] border border-[var(--border-subtle)] h-full flex flex-col">
                  <CalendlyConsentGate>
                    <CalendlyWidget 
                      url="https://calendly.com/schluesseldienst-wz/sicherheitsberatung?timezone=Europe/Berlin" 
