@@ -195,14 +195,15 @@ export default function FloatingWhatsAppWidget() {
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
-      className="fixed z-[9999] flex items-center justify-center w-16 h-16 rounded-full bg-[#25D366] text-white no-underline select-none touch-none ring-4 ring-[#25D366]/30"
+      className="fixed z-[9999] flex items-center justify-center w-[64px] h-[64px] rounded-full text-white no-underline select-none touch-none"
       style={{
         left: pos.current.x,
         top: pos.current.y,
+        backgroundColor: "#25D366",
         cursor: isDragging.current ? "grabbing" : "grab",
         boxShadow: isDragging.current
           ? "0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25)"
-          : "0 6px 28px rgba(37,211,102,0.55), 0 2px 8px rgba(0,0,0,0.15)",
+          : "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)",
         transform: isDragging.current ? "scale(1.15)" : "scale(1)",
         transition: isDragging.current ? "none" : "box-shadow 0.3s, transform 0.2s",
         willChange: "left, top, transform",
