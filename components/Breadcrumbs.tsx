@@ -29,21 +29,19 @@ export default function Breadcrumbs({ items, light = false }: { items: Breadcrum
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <nav aria-label="Breadcrumb-Navigation" className={`flex items-center text-sm overflow-x-auto whitespace-nowrap px-4 py-3 sm:px-6 border-b ${light ?"text-white/60 bg-transparent border-white/10" :"text-[color:var(--text-tertiary)] bg-[var(--surface-secondary)] border-[var(--border-subtle)]"}`}>
-        <ol className="max-w-7xl mx-auto w-full flex items-center">
+      <nav aria-label="Breadcrumb-Navigation" className={`flex items-center justify-center text-xs tracking-wide overflow-x-auto whitespace-nowrap py-1 ${light ? "text-white/50" : "text-[color:var(--text-tertiary)] opacity-60"}`}>
+        <ol className="flex items-center gap-1">
           <li className="flex items-center">
-            <Link href="/" className={`transition-colors flex items-center ${light ?"hover:text-white" :"hover:text-[color:var(--text-primary)]"}`}>
-              <Home className="h-4 w-4" aria-hidden="true" />
-              <span className="sr-only">Startseite</span>
+            <Link href="/" className={`transition-colors flex items-center gap-1 ${light ? "hover:text-white/80" : "hover:text-[color:var(--text-secondary)]"}`}>
+              <Home className="h-3.5 w-3.5" aria-hidden="true" />
             </Link>
           </li>
           {items.map((item, index) => (
             <li key={item.href} className="flex items-center">
-              <ChevronRight className={`h-4 w-4 mx-2 flex-shrink-0 ${light ?"text-white/40" :"text-[var(--color-charcoal-400)]"}`} aria-hidden="true" />
+              <ChevronRight className={`h-3 w-3 mx-0.5 flex-shrink-0 ${light ? "text-white/30" : "text-[var(--color-charcoal-300)]"}`} aria-hidden="true" />
               <Link
                 href={item.href}
-                className={`transition-colors ${index === items.length - 1 ? (light ? 'text-white font-medium pointer-events-none' : 'text-[color:var(--text-primary)] font-medium pointer-events-none') : (light ? 'hover:text-white' : 'hover:text-[color:var(--text-primary)]')
-                  }`}
+                className={`transition-colors ${index === items.length - 1 ? (light ? 'text-white/70 font-medium pointer-events-none' : 'text-[color:var(--text-secondary)] font-medium pointer-events-none') : (light ? 'hover:text-white/80' : 'hover:text-[color:var(--text-primary)]')}`}
                 aria-current={index === items.length - 1 ? 'page' : undefined}
               >
                 {item.name}
