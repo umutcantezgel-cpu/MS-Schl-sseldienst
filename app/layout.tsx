@@ -17,7 +17,7 @@ import MotionProvider from "@/components/providers/MotionProvider";
 import ClientShell from "@/components/ClientShell";
 import JsonLd from "@/components/seo/JsonLd";
 import BackToTop from "@/components/ui/BackToTop";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import FloatingWhatsAppWidget from "@/components/FloatingWhatsAppWidget";
 import { AppProvider } from "@/lib/context/AppContext";
 import { UIProvider } from "@/lib/context/UIContext";
 import { ToastContainer } from "@/components/ui/ToastContainer";
@@ -156,7 +156,7 @@ export default function RootLayout({
             <MobileBottomBar />
             <StickyCtaBar />
             <BackToTop />
-            <WhatsAppButton />
+            <FloatingWhatsAppWidget />
             <WebVitalsReporter />
             <ToastContainer />
            </div>

@@ -11,7 +11,7 @@ import { companyInfo } from "@/lib/data/company";
  * - Settles with friction
  * - Click (without drag) opens WhatsApp
  */
-export default function WhatsAppButton() {
+export default function FloatingWhatsAppWidget() {
   const [mounted, setMounted] = useState(false);
   const btnRef = useRef<HTMLAnchorElement>(null);
 
