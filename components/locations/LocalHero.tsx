@@ -31,7 +31,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
         <section
             id="hero-section"
             aria-label={`Notfall-Hilfe ${city.name}`}
-            className="relative min-h-[80svh] flex items-center pt-[100px] pb-12 sm:pt-[140px] lg:pt-[180px] sm:pb-[80px] lg:pb-[100px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
+            className="relative min-h-[70svh] sm:min-h-[80svh] flex items-center pt-[90px] pb-8 sm:pt-[140px] lg:pt-[180px] sm:pb-[80px] lg:pb-[100px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden"
         >
             {/* CSS Noise Texture */}
             <div
@@ -52,9 +52,9 @@ export default function LocalHero({ city }: LocalHeroProps) {
             <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
                 <Breadcrumbs items={breadcrumbs} light={false} />
 
-                <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+                <StaggerReveal className="mt-4 sm:mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide w-full max-w-[90vw] sm:max-w-none sm:w-auto overflow-hidden whitespace-nowrap">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 sm:mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-xs sm:text-sm font-medium tracking-wide w-full max-w-[90vw] sm:max-w-none sm:w-auto overflow-hidden whitespace-nowrap">
                             <span className="relative flex h-3 w-3 shrink-0">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-400)] opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--color-red-500)]"></span>
@@ -94,7 +94,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <div className="mt-8 mb-4 sm:mb-6 w-full flex flex-col items-center gap-8">
+                        <div className="mt-6 sm:mt-8 mb-4 sm:mb-6 w-full flex flex-col items-center gap-5 sm:gap-8">
                             <div className="flex flex-col items-center gap-2 sm:gap-3 w-full sm:w-auto">
                                 <a
                                     href="tel:+4964418056279"

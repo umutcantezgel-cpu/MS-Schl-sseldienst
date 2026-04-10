@@ -17,7 +17,7 @@ export default function LocationContact({ city }: { city: LocationData }) {
     return (
         <RevealSection className="py-[var(--section-py)] bg-white border-b border-[var(--border-subtle)]">
             <div className="container mx-auto px-[var(--section-px)]">
-                <div className="max-w-4xl mx-auto bg-[var(--color-slate-50)] rounded-3xl p-10 md:p-20 text-center border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
+                <div className="max-w-4xl mx-auto bg-[var(--color-slate-50)] rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-20 text-center border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl text-[color:var(--text-primary)] font-extrabold tracking-tight text-balance leading-[1.1] mb-8">
                         Schlüsseldienst in <span className="text-[color:var(--value-primary)]">{city.name}</span> benötigt? <br className="hidden md:block" />
                         {pickVariant(["Rufen Sie jetzt an!", "Direkt Helfer rufen!", "Sofort anrufen!"], city.slug, 9)}

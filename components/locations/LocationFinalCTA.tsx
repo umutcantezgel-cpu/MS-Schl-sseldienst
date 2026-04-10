@@ -29,30 +29,30 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
             </div>
 
             <div className="container mx-auto px-[var(--section-px)] relative z-10 text-center text-white">
-                <h2 id="cta-heading" className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-balance leading-[1.05] mb-12">
+                <h2 id="cta-heading" className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-balance leading-[1.1] sm:leading-[1.05] mb-8 sm:mb-12">
                     Vor verschlossener Tür in {city.name}? <br className="hidden md:block" />
                     {subtitle}
                 </h2>
 
                 {/* Drei Bestätigungszeilen mit Check-Icons */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-16">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-12 mb-10 sm:mb-16">
                     <div className="flex items-center gap-4">
                         <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                             <Check className="w-6 h-6 text-white stroke-[3]" />
                         </div>
-                        <span className="text-xl md:text-2xl font-bold tracking-tight">Techniker in {city.logistics.drivingTimeMinutes} Min.</span>
+                        <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">Techniker in {city.logistics.drivingTimeMinutes} Min.</span>
                     </div>
                     <div className="flex items-center gap-4">
                         <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                             <Check className="w-6 h-6 text-white stroke-[3]" />
                         </div>
-                        <span className="text-xl md:text-2xl font-bold tracking-tight">{trustLine2}</span>
+                        <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">{trustLine2}</span>
                     </div>
                     <div className="flex items-center gap-4">
                         <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                             <Check className="w-6 h-6 text-white stroke-[3]" />
                         </div>
-                        <span className="text-xl md:text-2xl font-bold tracking-tight">{trustLine3}</span>
+                        <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">{trustLine3}</span>
                     </div>
                 </div>
 

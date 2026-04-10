@@ -40,14 +40,14 @@ export default function RouteVisualization({ city }: RouteVisualizationProps) {
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto relative mt-16 md:mt-24">
+                <div className="max-w-4xl mx-auto relative mt-8 sm:mt-16 md:mt-24">
                     {/* Desktop Connecting Line */}
                     <div className="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-0.5 bg-[var(--color-charcoal-100)] z-0">
                         <div className="absolute inset-0 bg-gradient-to-r from-[var(--value-primary)]/20 via-[var(--value-primary)] to-[var(--value-primary)]/20 shadow-[0_0_10px_var(--value-primary)] opacity-50" />
                         <div className="h-full w-24 bg-[var(--value-primary)] shadow-[0_0_15px_var(--value-primary)] rounded-full animate-[pulse_2s_ease-in-out_infinite] blur-[2px]" />
                     </div>
 
-                    <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 md:gap-0 relative z-10">
+                    <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 sm:gap-12 md:gap-0 relative z-10">
                         
                         {/* Step 1 */}
                         <div className="flex flex-col items-center flex-1 w-full relative">
@@ -88,7 +88,7 @@ export default function RouteVisualization({ city }: RouteVisualizationProps) {
                                 <MapPinned className="w-6 h-6 stroke-[1.5]" />
                             </div>
                             <div className="text-lg font-bold text-[color:var(--text-primary)] text-center">Ziel: {city.name}</div>
-                            <p className="text-sm text-[color:var(--text-tertiary)] text-center mt-1 font-medium text-[color:var(--color-red-600)] bg-[var(--color-red-50)] px-3 py-1 rounded-full border border-[var(--color-red-100)] inline-block mt-2">
+                            <p className="text-sm font-medium text-[color:var(--color-red-600)] bg-[var(--color-red-50)] px-3 py-1 rounded-full border border-[var(--color-red-100)] inline-block mt-2">
                                 Ankunft in ca. {city.logistics.drivingTimeMinutes} Min.
                             </p>
                         </div>

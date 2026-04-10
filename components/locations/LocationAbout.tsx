@@ -14,9 +14,9 @@ export default function LocationAbout({ city }: LocationAboutProps) {
     const imageSet = getLocationImageSet(city.slug);
 
     return (
-        <RevealSection className="py-24 md:py-32 bg-white border-b border-[var(--border-subtle)]">
+        <RevealSection className="py-12 sm:py-24 md:py-32 bg-white border-b border-[var(--border-subtle)]">
             <div className="container mx-auto px-[var(--section-px)]">
-                <div className="max-w-5xl mx-auto grid md:grid-cols-[1fr_320px] gap-12 lg:gap-16 items-start">
+                <div className="max-w-5xl mx-auto grid md:grid-cols-[1fr_320px] gap-8 sm:gap-12 lg:gap-16 items-start">
                     {/* Editorial Text */}
                     <main>
                         <div 

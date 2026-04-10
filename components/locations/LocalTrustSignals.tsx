@@ -12,10 +12,10 @@ export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
     }
 
     return (
-        <section className="relative z-20 w-full px-[var(--space-4)] flex flex-col items-center gap-[var(--space-6)] mb-24 -mt-12 sm:-mt-8">
+        <section className="relative z-20 w-full px-4 sm:px-[var(--space-4)] flex flex-col items-center gap-[var(--space-6)] mb-12 sm:mb-24 mt-0 sm:-mt-8">
             {/* Hyper-Lokale Trust-Signale */}
             {city.routeDescription && (
-                <div className="flex flex-wrap items-center justify-center gap-4 text-sm md:text-base font-medium text-[color:var(--color-charcoal-600)] bg-white/80 backdrop-blur-md px-8 py-4 rounded-3xl sm:rounded-full border border-[var(--border-subtle)] shadow-sm">
+                <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base font-medium text-[color:var(--color-charcoal-600)] bg-white/80 backdrop-blur-md px-4 sm:px-8 py-3 sm:py-4 rounded-2xl sm:rounded-full border border-[var(--border-subtle)] shadow-sm max-w-[95vw]">
                     <span className="flex items-center gap-3">
                         <span className="w-2.5 h-2.5 rounded-full bg-[var(--value-primary)]"></span>
                         Anfahrt aus Wetzlar {city.routeDescription}
@@ -30,9 +30,9 @@ export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
             
             {/* Ortsspezifischer Trust-Injector */}
             {city.localTestimonials && city.localTestimonials.length > 0 && (
-                <div className="mt-8 flex flex-wrap justify-center gap-6">
+                <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 sm:gap-6 w-full">
                     {city.localTestimonials.map((testimonial, idx) => (
-                        <div key={idx} className="bg-white/90 backdrop-blur-xl p-8 rounded-3xl shadow-[var(--elevation-1)] border border-[var(--border-subtle)] max-w-md">
+                        <div key={idx} className="bg-white/90 backdrop-blur-xl p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-[var(--elevation-1)] border border-[var(--border-subtle)] max-w-md w-full sm:w-auto">
                             <div className="flex text-[color:var(--value-primary)] mb-4">
                                 {[...Array(testimonial.rating)].map((_, i) => (
                                     <svg aria-hidden="true" key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

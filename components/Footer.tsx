@@ -228,7 +228,7 @@ export default function Footer() {
 
     {/* Bottom Bar und Semantic Address Region */}
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] md:flex-row md:items-center">
-     <p>© 2025{new Date().getFullYear()} Schlüssel Schmiede Wetzlar. Alle Rechte vorbehalten. | Festpreis Garantie Wetzlarer Kernstadt</p>
+     <p>© 2025{new Date().getFullYear() > 2025 ? `–${new Date().getFullYear()}` : ""} Schlüssel Schmiede Wetzlar · Meisterbetrieb · Alle Rechte vorbehalten. | Festpreis-Garantie Wetzlarer Kernstadt</p>
       <nav aria-label="Rechtliche Informationen">
        <ul className="flex flex-wrap gap-4">
         {config.legal.map((link) => (
