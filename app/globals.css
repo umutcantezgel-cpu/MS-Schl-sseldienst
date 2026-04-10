@@ -1783,3 +1783,19 @@ main[id="main-content"] {
     min-width: unset;
   }
 }
+
+/* =============================================
+   WHATSAPP FLOATING BUTTON — FORCED GREEN
+   ============================================= */
+#whatsapp-floating-btn {
+  background-color: #25D366 !important;
+  color: #fff !important;
+  box-shadow: 0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3) !important;
+}
+#whatsapp-floating-btn:active {
+  box-shadow: 0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25) !important;
+}
+#whatsapp-floating-btn svg {
+  fill: #fff !important;
+  color: #fff !important;
+}
