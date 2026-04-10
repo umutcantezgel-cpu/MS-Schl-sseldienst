@@ -117,10 +117,10 @@ export default function StickyHeader() {
             <Image
               src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
-              width={800}
-              height={800}
+              width={100}
+              height={100}
               quality={100}
-              className={`object-contain transition-all duration-500 drop-shadow-sm ${
+              className={`object-contain transition-all duration-500 max-w-[92px] max-h-[92px] ${
                 isScrolled
                   ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
                   : "w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] lg:w-[86px] lg:h-[86px] xl:w-[92px] xl:h-[92px]"
@@ -413,9 +413,9 @@ export default function StickyHeader() {
                 <Image
                       src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar"
-                  width={500}
-                  height={500}
-                  className="w-[44px] h-[44px] object-contain"
+                  width={48}
+                  height={48}
+                  className="w-[44px] h-[44px] max-w-[44px] max-h-[44px] object-contain"
                   style={{ background: 'transparent' }}
                   unoptimized
                 />
