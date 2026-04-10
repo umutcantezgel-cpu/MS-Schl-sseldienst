@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -385,7 +385,7 @@ export default function StickyHeader() {
         </div>
       </header>
 
-      {/* 4. MOBILE DRAWER (Redesigned) */}
+      {/* 4. MOBILE DRAWER (Redesigned with Swipe-to-Close) */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <m.div 
@@ -397,6 +397,14 @@ export default function StickyHeader() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={{ left: 0, right: 0.5 }}
+            onDragEnd={(_e, info) => {
+              if (info.offset.x > 100 || info.velocity.x > 500) {
+                setIsMobileMenuOpen(false);
+              }
+            }}
             className="fixed inset-0 z-[110] bg-white flex flex-col overflow-hidden will-change-transform"
           >
             {/* Drawer Header */}

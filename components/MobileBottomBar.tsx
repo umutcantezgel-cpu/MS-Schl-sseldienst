@@ -77,7 +77,11 @@ export default function MobileBottomBar() {
             <a
               href="tel:+4964418056279"
               onClick={() => triggerHaptic('light')}
-              className="flex items-center justify-center gap-2 flex-[1.2] h-full active:bg-[var(--color-red-600)] transition-colors border-r border-white/20"
+              className={`flex items-center justify-center gap-2 flex-[1.2] h-full min-h-[56px] active:bg-[var(--color-red-600)] transition-colors border-r border-white/20 ${
+                pathname.includes("/notdienst") || pathname.includes("/turoeffnung")
+                  ? "bg-[var(--color-red-600)]"
+                  : ""
+              }`}
               aria-label="Jetzt anrufen: 06441 8056279"
             >
               <Phone className="h-4 w-4 animate-heartbeat-cta" aria-hidden="true" />
@@ -86,7 +90,11 @@ export default function MobileBottomBar() {
             <Link
               href="/termin-buchen"
               onClick={() => triggerHaptic('light')}
-              className="flex items-center justify-center gap-2 flex-1 h-full active:bg-[var(--color-red-600)] transition-colors pl-2"
+              className={`flex items-center justify-center gap-2 flex-1 h-full min-h-[56px] active:bg-[var(--color-red-600)] transition-colors pl-2 ${
+                pathname === "/termin-buchen"
+                  ? "bg-[var(--color-red-600)]"
+                  : ""
+              }`}
               aria-label="Beratung buchen"
             >
               <Calendar className="h-4 w-4" aria-hidden="true" />

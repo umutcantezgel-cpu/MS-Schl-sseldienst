@@ -883,6 +883,15 @@ body {
   .prose-body { max-width: 65ch; }
   .prose-heading { max-width: 35ch; }
 
+  /* Scrollbar-Hide: Hides scrollbar but keeps scroll functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Elevation utility classes (Token-basiert) */
   .elevation-1 { box-shadow: var(--elevation-1); }
   .elevation-2 { box-shadow: var(--elevation-2); }
