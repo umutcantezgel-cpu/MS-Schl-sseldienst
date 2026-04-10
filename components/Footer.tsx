@@ -69,11 +69,11 @@ export default function Footer() {
        <Link href="/" className="inline-block">
         <span className="sr-only">Zurück zur Startseite und Schlüssel Schmiede Wetzlar</span>
         <Image
-         src="/images/schluesselschmiede-logo.svg"
+         src="/images/logo-header.svg"
          alt="Schlüssel Schmiede Wetzlar Logo"
          width={500}
-         height={140}
-         className="w-auto h-[140px] object-contain"
+         height={500}
+         className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] object-contain"
          unoptimized
         />
        </Link>

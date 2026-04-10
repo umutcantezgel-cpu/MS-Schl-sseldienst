@@ -259,7 +259,7 @@ export default function HeroSection() {
             <div className="absolute inset-x-0 bottom-8 h-px bg-gradient-to-r from-transparent via-[var(--color-charcoal-400)]/20 to-transparent w-[120%] -ml-[10%] z-0 pointer-events-none animate-speed-line-fast" />
 
             {/* THE CAR BODY CONTAINER */}
-            <div className="w-full max-w-[500px] flex flex-col items-center relative z-10 hero-entrance group" style={{ animationDelay: '250ms' }}>
+            <div className="w-full max-w-[500px] flex flex-col items-center relative z-10 hero-entrance group scale-[0.85] sm:scale-100 origin-top transform-gpu" style={{ animationDelay: '250ms' }}>
               
               {/* === ROOF / CABIN (24/7 Notdienst) === */}
               {/* Geometrisch: Abgerundete aerodynamische Kuppel */}
