@@ -4,19 +4,37 @@ import TrustStrip from "@/components/trust/TrustStrip";
 import GoogleReviewsBadge from "@/components/reviews/GoogleReviewsBadge";
 import { aggregateRating } from "@/components/reviews/reviews.data";
 import FinalCTA from "@/components/ui/FinalCTA";
-import { ClientLogos } from "@/components/sections/ClientLogos";
 import nextDynamic from "next/dynamic";
+
+const ClientLogos = nextDynamic(() => import("@/components/sections/ClientLogos").then(mod => mod.ClientLogos), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[100px]" role="status" aria-label="Partner werden geladen" />,
+});
 import JsonLd from "@/components/seo/JsonLd";
 import { createOrganizationSchema, createLocalBusinessSchema, createWebsiteSchema } from "@/lib/seo/jsonld";
 import { getAllTestimonials } from "@/lib/data/testimonials";
 
-import { PricingSection } from "@/components/sections/home/PricingSection";
-import ServicesSection from "@/components/sections/home/ServicesSection";
-import WhyUsSection from "@/components/sections/home/WhyUsSection";
-import TrustMetricsSection from "@/components/sections/home/TrustMetricsSection";
-import WerkstattImageSection from "@/components/sections/home/WerkstattImageSection";
-import FAQSection from "@/components/sections/home/FAQSection";
-import SeoContentSection from "@/components/sections/home/SeoContentSection";
+// ── [PERF] Below-the-fold sections: lazy-loaded to slash Main Thread work, TBT & Speed Index ──
+const PricingSection = nextDynamic(() => import("@/components/sections/home/PricingSection").then(mod => mod.PricingSection), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[500px]" role="status" aria-label="Preise werden geladen" />,
+});
+const ServicesSection = nextDynamic(() => import("@/components/sections/home/ServicesSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[400px]" role="status" aria-label="Leistungen werden geladen" />,
+});
+const WhyUsSection = nextDynamic(() => import("@/components/sections/home/WhyUsSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[350px]" role="status" aria-label="Vorteile werden geladen" />,
+});
+const TrustMetricsSection = nextDynamic(() => import("@/components/sections/home/TrustMetricsSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[200px]" role="status" aria-label="Kennzahlen werden geladen" />,
+});
+const WerkstattImageSection = nextDynamic(() => import("@/components/sections/home/WerkstattImageSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[400px]" role="status" aria-label="Werkstatt wird geladen" />,
+});
+const FAQSection = nextDynamic(() => import("@/components/sections/home/FAQSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[300px]" role="status" aria-label="FAQ werden geladen" />,
+});
+const SeoContentSection = nextDynamic(() => import("@/components/sections/home/SeoContentSection"), {
+  loading: () => <div className="animate-pulse bg-gray-100 h-[250px]" role="status" aria-label="Inhalte werden geladen" />,
+});
 
 const InteractiveMapSection = nextDynamic(() => import("@/components/sections/home/InteractiveMapSection"), {
   loading: () => <div className="animate-pulse bg-gray-100 h-[600px]" role="status" aria-label="Karte wird geladen" />,
