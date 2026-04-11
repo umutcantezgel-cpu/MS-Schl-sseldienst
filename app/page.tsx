@@ -40,9 +40,6 @@ const InteractiveMapSection = nextDynamic(() => import("@/components/sections/ho
 const ContactSection = nextDynamic(() => import("@/components/sections/home/ContactSection"), {
   loading: () => <div className="animate-pulse bg-gray-100 h-[500px]" role="status" aria-label="Kontaktformular wird geladen" />,
 });
-import { getHomepageFAQs } from "@/lib/faqData";
-import { getFAQSchema } from "@/lib/schema";
-
 const PersonalizedHero = nextDynamic(() => import("@/components/growth/PersonalizedHero"));
 const PersonalizedCTA = nextDynamic(() => import("@/components/growth/PersonalizedCTA"));
 const TestimonialCarousel = nextDynamic(() => import("@/components/sections/TestimonialCarousel").then(mod => mod.TestimonialCarousel), {
@@ -102,8 +99,6 @@ export default function HomePage() {
       <SeoContentSection />
 
       <FinalCTA className="bg-[var(--color-red-500)]" headline="Schlüsselproblem? Rufen Sie jetzt an!" benefits={["Lokaler Fachbetrieb aus Wetzlar","Feste Preise ohne Überraschungen","Sofortige Hilfe rund um die Uhr"]} buttonText="Schlüssel Schmiede anrufen" socialProof="Über 500 zufriedene Kunden aus Wetzlar" subtitle="Langgasse 70 · Wetzlar · 24/7 erreichbar" />
-
-      <JsonLd data={getFAQSchema(getHomepageFAQs())} />
     </>
   );
 }
