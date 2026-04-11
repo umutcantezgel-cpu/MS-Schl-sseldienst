@@ -33,7 +33,7 @@ export default function LocationContact({ city }: { city: LocationData }) {
                             className="group relative inline-flex items-center justify-center gap-4 overflow-hidden rounded-full bg-[var(--color-red-500)] px-12 py-6 text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[0_8px_40px_rgba(185,28,28,0.25)] hover:-translate-y-1 w-full sm:w-auto"
                         >
                             <Phone className="h-8 w-8 transition-transform group-hover:rotate-12" />
-                            <span className="text-2xl md:text-3xl font-extrabold tracking-tight">06441 - 805 65 44</span>
+                            <span className="text-2xl md:text-3xl font-extrabold tracking-tight tabular-nums">06441 8056279</span>
                         </a>
                         
                         <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mt-4 bg-white/50 px-6 py-4 sm:py-3 rounded-2xl sm:rounded-full border border-[var(--border-subtle)] text-center text-balance w-full sm:w-auto mx-auto max-w-[90vw]">

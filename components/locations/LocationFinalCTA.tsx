@@ -64,7 +64,7 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
                     >
                         <div className="flex items-center gap-2 sm:gap-4 font-extrabold text-2xl sm:text-3xl md:text-4xl tracking-tighter">
                             <Phone className="w-6 h-6 sm:w-8 sm:h-8 fill-current shrink-0" />
-                            <span>06441 - 805 65 44</span>
+                            <span className="tabular-nums">06441 8056279</span>
                         </div>
                         <span className="text-base font-bold opacity-80 uppercase tracking-widest text-[var(--color-charcoal-500)]">Jetzt Techniker rufen</span>
                     </a>
