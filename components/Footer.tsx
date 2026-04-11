@@ -65,27 +65,24 @@ export default function Footer() {
      <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
      {/* Brand Column */}
       <div className="col-span-2 mb-8 lg:mb-0 relative">
-       {/* Symbiotic Multi-Layer Glow Effect */}
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0 flex items-center justify-center">
-         {/* Deep Brand Red Ambient Glow - Pulsing */}
-         <div className="absolute w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] bg-[var(--color-red-500)]/40 rounded-full blur-[60px] mix-blend-screen animate-pulse" style={{ animationDuration: '3s' }} />
-         {/* Inner Hotspot Glow */}
-         <div className="absolute w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] bg-gradient-to-tr from-white/80 to-white/30 rounded-full blur-[30px] mix-blend-overlay" />
-       </div>
-       
        <Link href="/" className="flex items-center justify-center relative z-10 group w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] transition-all duration-700 hover:scale-110">
         <span className="sr-only">Zurück zur Startseite und Schlüssel Schmiede Wetzlar</span>
         
-        {/* Dynamic Hover Ring / Halo */}
-        <div className="absolute inset-0 rounded-full border border-white/0 group-hover:border-[var(--color-red-400)]/30 group-hover:bg-white/5 transition-all duration-700 pointer-events-none shadow-[0_0_30px_rgba(255,0,0,0)] group-hover:shadow-[0_0_40px_rgba(239,68,68,0.2)]" />
+        {/* Subtle Logo Glow - centered behind logo */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+          <div className="absolute w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] bg-[var(--color-red-500)]/15 rounded-full blur-[50px]" />
+          <div className="absolute w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] bg-white/10 rounded-full blur-[25px]" />
+        </div>
+        
+        {/* Hover Ring */}
+        <div className="absolute inset-0 rounded-full border border-white/0 group-hover:border-[var(--color-red-400)]/30 group-hover:bg-white/5 transition-all duration-700 pointer-events-none" />
         
         <Image
           src="/images/logo-brand.svg"
           alt="Schlüssel Schmiede Wetzlar Logo"
           width={220}
           height={220}
-          className="relative z-10 w-full h-full max-w-[220px] max-h-[220px] object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] group-hover:drop-shadow-[0_0_30px_rgba(239,68,68,0.6)] transition-all duration-700 p-2"
-          style={{ mixBlendMode: 'lighten' }}
+          className="relative z-10 w-full h-full max-w-[220px] max-h-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:drop-shadow-[0_0_25px_rgba(239,68,68,0.5)] transition-all duration-700 p-2"
           priority={false}
           sizes="(max-width: 768px) 180px, 220px"
           unoptimized
