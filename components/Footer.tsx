@@ -208,7 +208,6 @@ export default function Footer() {
          <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</a>
          <a href="https://www.verbraucherzentrale-hessen.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</a>
          <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</a>
-         <a href="https://www.webspider24.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Webspider24 Webkatalog</a>
        </div>
      </div>
 
