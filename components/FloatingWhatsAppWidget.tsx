@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { companyInfo } from "@/lib/data/company";
 
 /* ═══════════════════════════════════════════════════════════════════════════
- * Floating WhatsApp CTA — ULTRATHINK Phase 2 Expansion
+ * Floating WhatsApp CTA ULTRATHINK Phase 2 Expansion
  *
  * Features:
  *  1. Physics-based drag & throw (momentum, bounce, friction)
@@ -240,7 +240,7 @@ export default function FloatingWhatsAppWidget() {
       if (Math.abs(vel.current.x) > MIN_VEL || Math.abs(vel.current.y) > MIN_VEL) {
         animFrame.current = requestAnimationFrame(animate);
       } else {
-        // No throw velocity — snap immediately
+        // No throw velocity snap immediately
         snapToEdge();
       }
     },

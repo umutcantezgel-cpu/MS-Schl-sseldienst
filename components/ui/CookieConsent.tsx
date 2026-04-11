@@ -152,7 +152,7 @@ export default function CookieConsent() {
                   </Link>
                 </p>
 
-                {/* Action Buttons — DSGVO: "Ablehnen" muss gleichwertig zu "Akzeptieren" sein */}
+                {/* Action Buttons DSGVO: "Ablehnen" muss gleichwertig zu "Akzeptieren" sein */}
                 <div className="flex flex-col sm:flex-row gap-2.5">
                   <button
                     onClick={acceptAll}

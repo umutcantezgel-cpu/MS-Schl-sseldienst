@@ -59,7 +59,7 @@ export function PricingSection() {
        <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
         <Typography variant="h3" as="div" className="mb-1">Nacht- & Abendtarif</Typography>
         <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Zuschläge ab 20 Uhr</Typography>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Gleiche Qualität, fairer Aufpreis. Mehraufwand wird vorab besprochen — keine Überraschungen.</p>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Gleiche Qualität, fairer Aufpreis. Mehraufwand wird vorab besprochen keine Überraschungen.</p>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          <div className="flex flex-col relative z-10 w-full">

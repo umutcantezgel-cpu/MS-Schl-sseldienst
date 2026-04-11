@@ -54,7 +54,7 @@ export default function NotdienstPage() {
     }}
    />
 
-   {/* Hero Section — Ultrathink V2 Dark Glassmorphism */}
+   {/* Hero Section Ultrathink V2 Dark Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-gray-900 to-[#121212] overflow-hidden text-white">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
@@ -78,7 +78,7 @@ export default function NotdienstPage() {
           </Badge>
         </StaggerItem>
 
-        {/* Glassmorphism Hero Card — Dark */}
+        {/* Glassmorphism Hero Card Dark */}
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-white leading-[1.15] mb-4 sm:mb-6">

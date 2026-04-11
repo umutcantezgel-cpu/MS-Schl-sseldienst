@@ -60,7 +60,7 @@ export default function SicherheitstechnikPage() {
     }}
    />
 
-   {/* Hero Section — Ultrathink V2 Glassmorphism */}
+   {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     {/* CSS Noise Texture */}
     <div
@@ -70,7 +70,7 @@ export default function SicherheitstechnikPage() {
         backgroundSize:"200px 200px",
       }}
     />
-    {/* Background Atmosphere — increased visibility */}
+    {/* Background Atmosphere increased visibility */}
     <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp)] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent z-0"></div>
 
@@ -96,7 +96,7 @@ export default function SicherheitstechnikPage() {
               <span className="text-[var(--color-red-500)]">sicher leben.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
-              Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik — für ein unerschütterliches Sicherheitsgefühl.
+              Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik für ein unerschütterliches Sicherheitsgefühl.
             </p>
           </div>
         </StaggerItem>

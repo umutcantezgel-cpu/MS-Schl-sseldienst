@@ -41,7 +41,7 @@ export default function RouteVisualization({ city }: RouteVisualizationProps) {
                     </p>
                 </div>
 
-                {/* Route Steps — Card-based layout */}
+                {/* Route Steps Card-based layout */}
                 <div className="max-w-4xl mx-auto">
                     
                     {/* Desktop: Horizontal 3-column card layout */}

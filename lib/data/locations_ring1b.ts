@@ -21,7 +21,7 @@ export const ring1bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Blasbach — Türöffnung ab 99€",
+            metaTitle: "Schlüsseldienst Blasbach Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Blasbach: Lokaler Notdienst ohne Anfahrtskosten. In ca. 7 Min. vor Ort. Festpreis ab 99€. Jetzt anrufen: 06441-8056279!",
         },
         content: {
@@ -72,7 +72,7 @@ export const ring1bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Garbenheim — 5 Min. Anfahrt",
+            metaTitle: "Schlüsseldienst Garbenheim 5 Min. Anfahrt",
             metaDescription: "Lokaler Schlüsseldienst für Wetzlar-Garbenheim. Ohne Anfahrtskosten, Festpreis ab 99€, in 5 Minuten vor Ort. 24/7 Notdienst: 06441-8056279",
         },
         content: {
@@ -127,7 +127,7 @@ export const ring1bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Steindorf — 24/7 Notdienst ab 99€",
+            metaTitle: "Schlüsseldienst Steindorf 24/7 Notdienst ab 99€",
             metaDescription: "Schlüsseldienst Steindorf bei Wetzlar. In 6 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Tag & Nacht erreichbar: 06441-8056279",
         },
         content: {

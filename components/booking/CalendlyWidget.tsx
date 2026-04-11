@@ -20,7 +20,7 @@ export default function CalendlyWidget({ url }: CalendlyWidgetProps) {
     >
       <iframe
         src={calendlyUrl}
-        title="Terminbuchung — Schlüssel Schmiede Wetzlar"
+        title="Terminbuchung Schlüssel Schmiede Wetzlar"
         className="w-full h-full rounded-2xl border-none"
         allow="payment"
         loading="lazy"

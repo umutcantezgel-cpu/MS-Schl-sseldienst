@@ -432,7 +432,7 @@ export default function StickyHeader() {
             {/* Drawer Content */}
             <div className="flex-1 overflow-y-auto px-5 py-8 pb-32 flex flex-col gap-8 bg-slate-50/50">
 
-              {/* ★ Schlüssel Schmiede — Premium Hero Card (Top Position) */}
+              {/* ★ Schlüssel Schmiede Premium Hero Card (Top Position) */}
               <Link
                 href="/schluessel-schmiede"
                 onClick={() => setIsMobileMenuOpen(false)}

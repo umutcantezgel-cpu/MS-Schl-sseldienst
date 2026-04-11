@@ -38,7 +38,7 @@ export const companyInfo: CompanyInfo = {
       headline: "Türöffnung tagsüber ab 99 €",
       baseNote: "Festpreis für zugefallene Türen an Werktagen. Inklusive aller Standardleistungen, zzgl. Anfahrt außerhalb Wetzlars.",
       consistencyNote: "In 99 % der Fälle bleibt es bei diesem Preis.",
-      transparencyNote: "Mehraufwand? Wird vor Ort abgesprochen — nie ohne Ihr OK."
+      transparencyNote: "Mehraufwand? Wird vor Ort abgesprochen nie ohne Ihr OK."
     }
   },
   partnership: {

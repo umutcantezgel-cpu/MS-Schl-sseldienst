@@ -10,7 +10,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.5200, longitude: 8.3900 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Bonbaden — 24/7 Türöffnung", metaDescription: "Schlüsseldienst Bonbaden bei Braunfels. In 14 Min. vor Ort, ab 99€ Festpreis. Jetzt Notdienst rufen: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Bonbaden 24/7 Türöffnung", metaDescription: "Schlüsseldienst Bonbaden bei Braunfels. In 14 Min. vor Ort, ab 99€ Festpreis. Jetzt Notdienst rufen: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bonbaden? Unser Schlüsseldienst ist in ca. 14 Minuten bei Ihnen und zum transparenten Festpreis.",
             mainText: `<p>Bonbaden ist ein beschaulicher Ortsteil der Stadt Braunfels, gelegen in der sanften Hügellandschaft westlich von Wetzlar. Der Ort vereint ländliches Wohnen mit der Nähe zum historischen Braunfels und seinem bekannten Schloss. Als <strong>Schlüsseldienst Bonbaden</strong> bieten wir schnelle, professionelle Hilfe bei Schlüsselnotfällen aller Art.</p>
@@ -35,7 +35,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.5100, longitude: 8.3750 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Philippstein — Notdienst 24/7", metaDescription: "Schlüsseldienst Philippstein bei Braunfels. In 15 Min. da, Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Philippstein Notdienst 24/7", metaDescription: "Schlüsseldienst Philippstein bei Braunfels. In 15 Min. da, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Tür zugefallen in Philippstein? Unser Monteur ist in ca. 15 Minuten bei Ihnen und Festpreis ab 99€.",
             mainText: `<p>Philippstein gehört zur Stadt Braunfels und liegt südwestlich im Solms-Braunfelser Raum. Der Ortsteil mit seinem historischen Ortskern bietet eine Mischung aus renovierten Altbauten und neueren Wohnhäusern. Als <strong>Schlüsseldienst Philippstein</strong> kennen wir die typischen Schließsysteme der Region und sind schnell zur Stelle.</p>
@@ -60,7 +60,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.6100, longitude: 8.4200 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Katzenfurt — Schnelle Hilfe", metaDescription: "Schlüsseldienst Katzenfurt bei Ehringshausen. In 13 Min. vor Ort. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Katzenfurt Schnelle Hilfe", metaDescription: "Schlüsseldienst Katzenfurt bei Ehringshausen. In 13 Min. vor Ort. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Katzenfurt? Wir sind in ca. 13 Minuten bei Ihnen und professionell und zum Festpreis.",
             mainText: `<p>Katzenfurt, ein lebhafter Ortsteil der Gemeinde Ehringshausen, liegt an der Dill und ist über die B277 hervorragend an das Straßennetz angebunden. Der Ort bietet eine Mischung aus älteren Wohnhäusern entlang der Dorfstraße und neueren Siedlungen am Ortsrand. Als <strong>Schlüsseldienst Katzenfurt</strong> sind wir Ihr regionaler Partner für schnelle Türöffnungen.</p>
@@ -85,7 +85,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.6200, longitude: 8.4350 },
         logistics: { drivingTimeMinutes: "15", distanceFromHQ: 14 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Kölschhausen — Notdienst 24/7", metaDescription: "Schlüsseldienst Kölschhausen bei Ehringshausen. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Kölschhausen Notdienst 24/7", metaDescription: "Schlüsseldienst Kölschhausen bei Ehringshausen. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kölschhausen? Unser Monteur ist in ca. 15 Minuten bei Ihnen und transparent und zum Festpreis.",
             mainText: `<p>Kölschhausen ist ein ruhiger Ortsteil der Gemeinde Ehringshausen im nördlichen Lahn-Dill-Kreis. Der Ort liegt oberhalb des Dilltals und bietet eine herrliche Aussicht über die mittelhessische Landschaft. Die überschaubare Größe und die dörfliche Gemeinschaft schaffen eine besondere Wohnqualität. Als <strong>Schlüsseldienst Kölschhausen</strong> stehen wir Ihnen bei Schlüsselnotfällen professionell zur Seite.</p>
@@ -110,7 +110,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.5050, longitude: 8.4500 },
         logistics: { drivingTimeMinutes: "14", distanceFromHQ: 13 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Laufdorf — 24/7 Notdienst", metaDescription: "Schlüsseldienst Laufdorf bei Schöffengrund. In 14 Min. vor Ort. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Laufdorf 24/7 Notdienst", metaDescription: "Schlüsseldienst Laufdorf bei Schöffengrund. In 14 Min. vor Ort. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Laufdorf? Wir kommen in ca. 14 Minuten und professionell, schnell und zum transparenten Festpreis.",
             mainText: `<p>Laufdorf ist ein Ortsteil der Gemeinde Schöffengrund und liegt im südwestlichen Bereich des Lahn-Dill-Kreises. Die ruhige Wohnlage auf einer Anhöhe und die Nähe zur Natur machen Laufdorf zu einem beliebten Wohnort. Als <strong>Schlüsseldienst Laufdorf</strong> bieten wir schnelle Hilfe, wenn Sie sich versehentlich ausgesperrt haben.</p>
@@ -135,7 +135,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.4980, longitude: 8.4350 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Schwalbach — Festpreis ab 99€", metaDescription: "Schlüsseldienst Schwalbach bei Schöffengrund. In 13 Min. da. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Schwalbach Festpreis ab 99€", metaDescription: "Schlüsseldienst Schwalbach bei Schöffengrund. In 13 Min. da. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüsselnotfall in Schwalbach? In ca. 13 Minuten sind wir bei Ihnen und mit Festpreisgarantie und professionellem Service.",
             mainText: `<p>Schwalbach gehört zur Gemeinde Schöffengrund und liegt im ländlichen Süden des Lahn-Dill-Kreises. Der Ortsteil ist durch seine ruhige Lage und die Nähe zu den Waldgebieten des Taunus-Vorlandes geprägt. Als <strong>Schlüsseldienst Schwalbach</strong> sind wir Ihr regionaler Ansprechpartner, wenn die Haustür plötzlich ins Schloss fällt.</p>
@@ -185,7 +185,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.4850, longitude: 8.4550 },
         logistics: { drivingTimeMinutes: "16", distanceFromHQ: 15 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Niederwetz & Oberwetz — 24/7", metaDescription: "Schlüsseldienst Nieder- & Oberwetz bei Schöffengrund. In 16 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Niederwetz & Oberwetz 24/7", metaDescription: "Schlüsseldienst Nieder- & Oberwetz bei Schöffengrund. In 16 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zugefallen in Niederwetz oder Oberwetz? In ca. 16 Minuten ist unser Monteur bei Ihnen und zum Festpreis.",
             mainText: `<p>Niederwetz und Oberwetz sind idyllische Ortsteile der Gemeinde Schöffengrund, gelegen am südlichen Rand des Lahn-Dill-Kreises. Die ruhige, naturnahe Lage inmitten grüner Hügel macht die beiden Orte zu beliebten Wohnstandorten. Als <strong>Schlüsseldienst Niederwetz und Oberwetz</strong> stehen wir Ihnen bei Schlüsselnotfällen verlässlich zur Seite.</p>
@@ -210,7 +210,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.5500, longitude: 8.3650 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Biskirchen — Notdienst 24/7", metaDescription: "Schlüsseldienst Biskirchen bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Biskirchen Notdienst 24/7", metaDescription: "Schlüsseldienst Biskirchen bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Biskirchen? Wir kommen in ca. 13 Minuten und zum fairen Festpreis und mit professionellem Werkzeug.",
             mainText: `<p>Biskirchen ist ein Ortsteil der Stadt Leun und liegt malerisch an der Lahn westlich von Wetzlar. Der Ort ist bekannt für seine Mineralquellen und seine ruhige Wohnlage. Die B49 in der Nähe sorgt für eine gute Verkehrsanbindung. Als <strong>Schlüsseldienst Biskirchen</strong> stehen wir Ihnen bei Schlüsselnotfällen jeden Tag zur Verfügung.</p>
@@ -235,7 +235,7 @@ export const ring3cLocations: LocationData[] = [
         coordinates: { latitude: 50.5550, longitude: 8.3500 },
         logistics: { drivingTimeMinutes: "13", distanceFromHQ: 12 },
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
-        seo: { metaTitle: "Schlüsseldienst Lahnbahnhof — 24/7 Türöffnung", metaDescription: "Schlüsseldienst für Lahnbahnhof bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
+        seo: { metaTitle: "Schlüsseldienst Lahnbahnhof 24/7 Türöffnung", metaDescription: "Schlüsseldienst für Lahnbahnhof bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür am Lahnbahnhof? Unser Monteur ist in ca. 13 Minuten da und zum transparenten Festpreis.",
             mainText: `<p>Der Ortsteil Lahnbahnhof gehört zur Stadt Leun und liegt direkt an der Lahnstrecke westlich von Wetzlar. Die verkehrsgünstige Lage mit Bahnanschluss und Nähe zur B49 macht den kleinen Ortsteil attraktiv. Als <strong>Schlüsseldienst Lahnbahnhof</strong> sind wir Ihr Ansprechpartner für Türöffnungen aller Art.</p>

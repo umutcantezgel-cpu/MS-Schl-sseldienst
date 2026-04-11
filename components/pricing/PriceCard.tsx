@@ -46,7 +46,7 @@ export default function PriceCard({
         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[var(--color-red-500)]/8 to-transparent pointer-events-none rounded-tr-[24px]" />
       )}
 
-      {/* Popular Badge — INLINE, not overlapping */}
+      {/* Popular Badge INLINE, not overlapping */}
       {isPopular && (
         <div className="mb-4">
           <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[var(--color-red-600)] to-[var(--color-red-500)] text-white text-[11px] font-bold uppercase tracking-[0.12em] px-4 py-1.5 rounded-full shadow-md shadow-red-500/20">

@@ -21,7 +21,7 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Biebertal — Türöffnung ab 99€",
+            metaTitle: "Schlüsseldienst Biebertal Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Biebertal: Zerstörungsfreie Türöffnung ab 99€. In ca. 12-15 Min. in Rodheim-Bieber, Fellingshausen, Vetzberg & allen 6 Ortsteilen. 06441-8056279",
         },
 
@@ -133,7 +133,7 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Leun — Türöffnung ab 99€",
+            metaTitle: "Schlüsseldienst Leun Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Leun: Zerstörungsfreie Türöffnung ab 99€. In ca. 12-15 Min. in Biskirchen, Stockhausen, Bissenberg & Kernstadt. Faire Preise. 06441-8056279",
         },
 
@@ -248,7 +248,7 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Waldsolms — Türöffnung ab 99€",
+            metaTitle: "Schlüsseldienst Waldsolms Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Waldsolms: Türöffnung ab 99€ in Brandoberndorf, Griedelbach & allen 6 Ortsteilen. Lokaler Fachbetrieb, 15-18 Min. Anfahrt. 06441-8056279",
         },
 
@@ -357,7 +357,7 @@ export const ring3LocationsB: LocationData[] = [
             travelCostText: "+ 15€ Anfahrt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Butzbach — Türöffnung ab 99€",
+            metaTitle: "Schlüsseldienst Butzbach Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Butzbach: Zerstörungsfreie Türöffnung ab 99€. In ca. 20-25 Min. in der Friedrich-Ludwig-Weidig-Stadt & allen 14 Ortsteilen. 06441-8056279",
         },
 

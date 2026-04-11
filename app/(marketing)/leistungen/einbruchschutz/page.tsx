@@ -54,7 +54,7 @@ export default function EinbruchschutzPage() {
     }}
    />
 
-   {/* Hero Section — Ultrathink V2 Glassmorphism */}
+   {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"

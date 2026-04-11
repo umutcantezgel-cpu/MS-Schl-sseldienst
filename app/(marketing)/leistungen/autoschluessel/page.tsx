@@ -49,7 +49,7 @@ export default function AutoschluesselPage() {
     }}
    />
    
-   {/* Hero Section — Ultrathink V2 Glassmorphism */}
+   {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     <div
       className="absolute inset-0 z-0 opacity-[0.035] mix-blend-overlay pointer-events-none"
@@ -68,7 +68,7 @@ export default function AutoschluesselPage() {
       ]))
      }}
     />
-    {/* Background Atmosphere — increased visibility */}
+    {/* Background Atmosphere increased visibility */}
     <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/generated/schluesseldienst-wetzlar-autoschluessel-programmierung-1.webp)] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent z-0"></div>
 

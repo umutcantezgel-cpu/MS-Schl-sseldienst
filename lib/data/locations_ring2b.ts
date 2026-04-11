@@ -21,7 +21,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Solms)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Albshausen — Schnelle Türöffnung",
+            metaTitle: "Schlüsseldienst Albshausen Schnelle Türöffnung",
             metaDescription: "Schlüsseldienst Albshausen bei Solms. In 10 Min. vor Ort, Festpreis ab 99€, keine Anfahrtskosten. Jetzt anrufen: 06441-8056279!",
         },
         content: {
@@ -61,7 +61,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Solms)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Niederbiel — 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Niederbiel 24/7 Notdienst",
             metaDescription: "Ihr Schlüsseldienst für Niederbiel bei Solms. In 9 Min. vor Ort. Festpreis ab 99€, ohne Anfahrtskosten. 24/7 Notdienst: 06441-8056279",
         },
         content: {
@@ -101,7 +101,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Aßlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Bechlingen — Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Bechlingen Festpreis ab 99€",
             metaDescription: "Schlüsseldienst Bechlingen bei Aßlar. In 9 Min. da, Festpreis ab 99€, ohne Anfahrtskosten. Jetzt Notdienst rufen: 06441-8056279",
         },
         content: {
@@ -141,7 +141,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Aßlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Berghausen bei Aßlar — 24/7 Türöffnung",
+            metaTitle: "Schlüsseldienst Berghausen bei Aßlar 24/7 Türöffnung",
             metaDescription: "Türöffnung in Berghausen bei Aßlar: In 10 Min. vor Ort, Festpreis ab 99€, ohne versteckte Kosten. Notdienst: 06441-8056279",
         },
         content: {
@@ -181,7 +181,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Aßlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Werdorf — Sofort-Hilfe zum Festpreis",
+            metaTitle: "Schlüsseldienst Werdorf Sofort-Hilfe zum Festpreis",
             metaDescription: "Schlüsseldienst Werdorf bei Aßlar. In 8 Min. vor Ort, Festpreis ab 99€. Keine versteckten Kosten. Notdienst: 06441-8056279",
         },
         content: {
@@ -221,7 +221,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hüttenberg)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Rechtenbach — Notdienst 24/7",
+            metaTitle: "Schlüsseldienst Rechtenbach Notdienst 24/7",
             metaDescription: "Schlüsseldienst für Rechtenbach bei Hüttenberg. In 11 Min. vor Ort. Festpreis ab 99€, keine versteckten Kosten. Jetzt: 06441-8056279",
         },
         content: {
@@ -261,7 +261,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hüttenberg)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Volpertshausen — 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Volpertshausen 24/7 Notdienst",
             metaDescription: "Schlüsseldienst Volpertshausen bei Hüttenberg. 12 Min. Anfahrt, Festpreis ab 99€. Keine versteckten Kosten. 24/7: 06441-8056279",
         },
         content: {
@@ -301,7 +301,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Geringe Anfahrtskosten (Randgebiet Hüttenberg)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Weidenhausen — 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Weidenhausen 24/7 Notdienst",
             metaDescription: "Schlüsseldienst für Weidenhausen bei Hüttenberg. In 13 Min. da, Festpreis ab 99€. Jetzt Hilfe rufen: 06441-8056279",
         },
         content: {
@@ -341,7 +341,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hohenahr)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Altenkirchen — Notdienst 24/7",
+            metaTitle: "Schlüsseldienst Altenkirchen Notdienst 24/7",
             metaDescription: "Schlüsseldienst Altenkirchen bei Hohenahr. In 12 Min. vor Ort. Festpreis ab 99€, ohne Anfahrtskosten. Notdienst: 06441-8056279",
         },
         content: {
@@ -381,7 +381,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hohenahr)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Klein-Altenstädten — Sofort-Hilfe 24/7",
+            metaTitle: "Schlüsseldienst Klein-Altenstädten Sofort-Hilfe 24/7",
             metaDescription: "Lokaler Schlüsseldienst für Klein-Altenstädten. In 13 Min. vor Ort, ab 99€ Festpreis. Anrufen: 06441-8056279",
         },
         content: {
@@ -421,7 +421,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Wißmar — 24/7 24/7 Notdienst",
+            metaTitle: "Schlüsseldienst Wißmar 24/7 24/7 Notdienst",
             metaDescription: "Ihr Schlüsseldienst für Wißmar bei Gießen. In 12 Min. da, ab 99€ Festpreis, keine versteckten Kosten. Jetzt anrufen: 06441-8056279",
         },
         content: {
@@ -461,7 +461,7 @@ export const ring2bLocations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Nahgebiet Hohenahr)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Niederlemp & Oberlemp — Türöffnung 24/7",
+            metaTitle: "Schlüsseldienst Niederlemp & Oberlemp Türöffnung 24/7",
             metaDescription: "Schlüsseldienst für Niederlemp und Oberlemp. 12 Min. Anfahrt, ab 99€ Festpreis. Ohne versteckte Kosten. Notdienst: 06441-8056279",
         },
         content: {

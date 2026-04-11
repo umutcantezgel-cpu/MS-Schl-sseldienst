@@ -109,7 +109,7 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten in der Wetzlarer Kernstadt",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Wetzlar — 24/7 Notdienst ab 99€",
+            metaTitle: "Schlüsseldienst Wetzlar 24/7 Notdienst ab 99€",
             metaDescription: "Ihr lokaler Schlüsseldienst für Wetzlar Kernstadt. Zerstörungsfreie Türöffnung ab 99€. In ca. 5-10 Min. bei Ihnen vor Ort (Altstadt, Forum, Buderus-Areal).",
         },
         
@@ -218,7 +218,7 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Wetzlarer Kernstadt/Bezirk)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Niedergirmes — Türöffnung ab 99€",
+            metaTitle: "Schlüsseldienst Niedergirmes Türöffnung ab 99€",
             metaDescription: "Schlüsseldienst Wetzlar-Niedergirmes: Lokaler Notdienst ohne Anfahrtskosten. In 3-5 Min. vor Ort. Festpreis ab 99€. Rufen Sie 06441-8056279 an!",
         },
         content: {
@@ -287,7 +287,7 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Dutenhofen — In 5 Min. vor Ort",
+            metaTitle: "Schlüsseldienst Dutenhofen In 5 Min. vor Ort",
             metaDescription: "Ihr Schlüsseldienst für Wetzlar-Dutenhofen! Transparenter Festpreis ab 99€, kostenlose Anfahrt, 24/7 Notdienst. Jetzt anrufen: 06441-8056279",
         },
         content: {
@@ -342,7 +342,7 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Münchholzhausen — 24/7 ab 99€",
+            metaTitle: "Schlüsseldienst Münchholzhausen 24/7 ab 99€",
             metaDescription: "Schlüsseldienst Münchholzhausen. Türen beschädigungsfrei zum Festpreis ab 99€. In ca. 5 Min. bei Ihnen. Ohne Anfahrtskosten!",
         },
         content: {
@@ -393,7 +393,7 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Naunheim — In 5 Min. bei Ihnen",
+            metaTitle: "Schlüsseldienst Naunheim In 5 Min. bei Ihnen",
             metaDescription: "Schlüsseldienst Naunheim. Beschädigungsfreie Türöffnungen ohne Anfahrtskosten. Festpreis ab 99€. Jetzt anrufen!",
         },
         content: {
@@ -444,7 +444,7 @@ export const locations: LocationData[] = [
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
         },
         seo: {
-            metaTitle: "Schlüsseldienst Hermannstein — Festpreis ab 99€",
+            metaTitle: "Schlüsseldienst Hermannstein Festpreis ab 99€",
             metaDescription: "Ihr Schlüsseldienst für Wetzlar-Hermannstein. Wir garantieren 24/7 Notdienst, schonende Öffnungen und Festpreise ohne versteckte Anfahrtskosten.",
         },
         content: {
