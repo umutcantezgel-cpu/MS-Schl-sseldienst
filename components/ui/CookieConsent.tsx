@@ -106,9 +106,9 @@ export default function CookieConsent() {
       aria-modal="false"
       aria-label="Cookie-Einwilligungsbanner gemäß DSGVO und TTDSG"
       aria-describedby="cookie-consent-description"
-      className="fixed bottom-0 left-0 right-0 z-[9998] p-3 sm:p-4 md:p-6"
+      className="fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6"
     >
-      <div className="mx-auto max-w-4xl rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl">
+      <div className="mx-auto max-w-4xl max-h-[85vh] overflow-y-auto overscroll-contain rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl">
         {!showSettings ? (
           /* ── Banner View ── */
           <div className="p-5 sm:p-6 md:p-6 relative">
