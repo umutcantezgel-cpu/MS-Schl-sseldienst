@@ -22,7 +22,7 @@ const Footer = nextDynamic(() => import("@/components/Footer"));
 const MobileBottomBar = nextDynamic(() => import("@/components/MobileBottomBar"));
 const BackToTop = nextDynamic(() => import("@/components/ui/BackToTop"));
 const FloatingWhatsAppWidget = nextDynamic(() => import("@/components/FloatingWhatsAppWidget"));
-const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVitalsReporter").then(mod => mod.WebVitalsReporter), { ssr: false });
+const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVitalsReporter").then(mod => mod.WebVitalsReporter));
 
 const plusJakarta = Plus_Jakarta_Sans({
  subsets: ["latin", "latin-ext"],
@@ -61,13 +61,13 @@ export const metadata: Metadata = {
  },
  icons: {
    icon: [
-     { url: '/icon.svg', type: 'image/svg+xml' }
+     { url: '/icon.png', type: 'image/png' }
    ],
    apple: [
      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
    ],
    shortcut: [
-     { url: '/icon.svg', type: 'image/svg+xml' }
+     { url: '/icon.png', type: 'image/png' }
    ]
  },
  robots: {
