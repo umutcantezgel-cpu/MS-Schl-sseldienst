@@ -122,7 +122,12 @@ export default function RootLayout({
  return (
      <html lang="de" className="light">
    <head>
-    {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
+     {/* [PERF] Manual Preload for LCP SVG Logo.
+          We use native <img> in StickyHeader instead of next/image for SVG.
+          This ensures the SVG is requested at high priority instantly. */}
+     <link rel="preload" as="image" href="/images/logo-header.svg" type="image/svg+xml" fetchPriority="high" />
+          
+     {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
      <link rel="dns-prefetch" href="https://maps.googleapis.com" />
      {/* [PERF] Logo preload removed: was pointing to wrong file (logo-neu.svg vs logo-header.svg used by StickyHeader).

@@ -114,19 +114,20 @@ export default function StickyHeader() {
             aria-label="Startseite und Schlüssel Schmiede Wetzlar"
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
-            <Image
+            {/* [PERF] Use native <img> with fetchPriority="high" for SVG to bypass Next.js image optimization engine and accelerate LCP */}
+            <img
               src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
               width={100}
               height={100}
-              quality={100}
-              className={`object-contain transition-all duration-500 max-w-[92px] max-h-[92px] ${
+              fetchPriority="high"
+              decoding="async"
+              className={`object-contain transition-[width,height] duration-300 max-w-[92px] max-h-[92px] ${
                 isScrolled
                   ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
                   : "w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] lg:w-[86px] lg:h-[86px] xl:w-[92px] xl:h-[92px]"
               }`}
-              style={{ background: 'transparent', imageRendering: '-webkit-optimize-contrast' as React.CSSProperties['imageRendering'] }}
-              priority
+              style={{ background: 'transparent' }}
             />
           </Link>
 
