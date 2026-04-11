@@ -160,21 +160,21 @@ export default function SchliessanlagenPage() {
       </StaggerItem>
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
-        <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
+        <div className="rounded-[var(--radius-24)] bg-[var(--surface-secondary)] p-5 sm:p-8 md:p-10 border border-[var(--border-subtle)] mb-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-red-500)]/5 rounded-bl-[100px] pointer-events-none" />
           <div className="flex items-center gap-3 mb-6">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-red-500)]/10">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
               <span className="h-2.5 w-2.5 rounded-full bg-[var(--color-red-500)] animate-pulse"></span>
             </div>
-            <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)]">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)]">
              In 4 Schritten zu Ihrer Schließanlage
             </h3>
           </div>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left relative z-10">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 text-left relative z-10 w-full">
             {["1. Erstberatung in Wetzlar", "2. Detaillierter Schließplan", "3. Maßgenaue Fertigung", "4. Fachgerechte Installation"].map((item, idx) => (
-              <li key={idx} className="flex gap-4 p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center">
-                <Check className="w-6 h-6 text-[var(--color-red-500)] shrink-0" />
-                <span className="font-semibold text-gray-800 text-base">{item}</span>
+              <li key={idx} className="flex gap-3 sm:gap-4 p-4 sm:p-5 rounded-[var(--radius-xl)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] items-center w-full">
+                <Check className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-red-500)] shrink-0" />
+                <span className="font-semibold text-gray-800 text-sm sm:text-base break-words">{item}</span>
               </li>
             ))}
           </ul>
