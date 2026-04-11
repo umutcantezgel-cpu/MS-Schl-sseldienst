@@ -435,33 +435,31 @@ export default function StickyHeader() {
               <Link
                 href="/schluessel-schmiede"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="group relative flex flex-col gap-4 p-6 rounded-2xl bg-gradient-to-br from-[var(--color-red-600)] to-[var(--color-red-800)] border border-red-500/50 active:scale-[0.98] transition-all shadow-[0_8px_30px_-5px_rgba(220,38,38,0.4)] overflow-hidden w-full"
+                data-version="v5-fixed"
+                className="group block w-full rounded-2xl active:scale-[0.98] transition-all"
+                style={{ background: 'linear-gradient(135deg, #b91c1c, #7f1d1d)', padding: 20, borderRadius: 16, boxShadow: '0 8px 30px -5px rgba(220,38,38,0.4)', border: '1px solid rgba(185,28,28,0.4)' }}
               >
-                {/* Glowing Orbs & Background Details */}
-                <div className="absolute -top-12 -right-12 w-40 h-40 bg-[var(--color-red-400)] rounded-full blur-[40px] pointer-events-none opacity-50" />
-                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-                
-                <div className="flex items-start justify-between relative z-10 w-full">
-                  <div className="flex shrink-0 w-14 h-14 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-md text-white border border-white/20 shadow-lg">
-                    <Hammer className="w-7 h-7 drop-shadow-md" />
+                {/* Row 1: Icon + Badge */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+                  <div style={{ width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 12, background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                    <Hammer className="w-6 h-6 text-white" />
                   </div>
-                  <div className="flex items-center justify-center bg-black/20 backdrop-blur-sm self-start px-3 py-1.5 rounded-full border border-white/10">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-red-50">Ladengeschäft</span>
+                  <span style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', background: 'rgba(255,255,255,0.1)', padding: '4px 12px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.1)' }}>Ladengeschäft</span>
+                </div>
+                
+                {/* Row 2: Title + Address */}
+                <div style={{ marginBottom: 16 }}>
+                  <p style={{ fontSize: 22, fontWeight: 900, color: 'white', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 4 }}>Schlüssel Schmiede</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                    <MapPin className="w-3.5 h-3.5 text-red-200 shrink-0" />
+                    <span style={{ fontSize: 13, color: 'rgba(255,200,200,0.9)', fontWeight: 500 }}>Langgasse 70, 35576 Wetzlar</span>
                   </div>
                 </div>
 
-                <div className="relative z-10 mt-1">
-                  <span className="text-xl sm:text-2xl font-black text-white block tracking-tight mb-1.5">Schlüssel Schmiede</span>
-                  <div className="flex items-center gap-2 text-red-100/90">
-                     <MapPin className="w-4 h-4 shrink-0" />
-                     <span className="text-sm font-medium leading-tight">Langgasse 70, Wetzlar</span>
-                  </div>
-                </div>
-                
-                <div className="flex items-center justify-between w-full mt-2 relative z-10 bg-black/20 backdrop-blur-sm rounded-xl p-3 sm:p-4 border border-white/10 group-hover:bg-black/30 transition-colors">
-                   <span className="text-sm font-bold text-white tracking-wide">Jetzt besuchen</span>
-                   <ChevronRight className="w-5 h-5 text-white group-active:translate-x-1 transition-transform" />
+                {/* Row 3: CTA bar */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '12px 16px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <span style={{ fontSize: 14, fontWeight: 700, color: 'white' }}>Jetzt besuchen</span>
+                  <ChevronRight className="w-5 h-5 text-white/80 group-active:translate-x-1 transition-transform" />
                 </div>
               </Link>
               

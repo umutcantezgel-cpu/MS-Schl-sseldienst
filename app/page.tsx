@@ -6,9 +6,7 @@ import { aggregateRating } from "@/components/reviews/reviews.data";
 import FinalCTA from "@/components/ui/FinalCTA";
 import nextDynamic from "next/dynamic";
 
-const ClientLogos = nextDynamic(() => import("@/components/sections/ClientLogos").then(mod => mod.ClientLogos), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[100px]" role="status" aria-label="Partner werden geladen" />,
-});
+
 import JsonLd from "@/components/seo/JsonLd";
 import { createOrganizationSchema, createLocalBusinessSchema, createWebsiteSchema } from "@/lib/seo/jsonld";
 import { getAllTestimonials } from "@/lib/data/testimonials";
@@ -91,7 +89,6 @@ export default function HomePage() {
       <ServicesSection />
       <WhyUsSection />
       <TrustMetricsSection />
-      <ClientLogos />
       <InteractiveMapSection />
       <WerkstattImageSection />
       <ProcessSteps />

@@ -301,6 +301,9 @@ export default function HeroSection() {
                   <p className="hidden sm:block text-sm text-[color:var(--text-secondary)] leading-snug relative z-10">
                     Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
                   </p>
+                  
+                  {/* Spacer to prevent wheels from overlapping text */}
+                  <div className="h-6 sm:h-10 shrink-0 w-full" />
                 </div>
 
                 {/* TRUNK / REAR (Spezialwerkzeug) - Right Side */}
@@ -320,6 +323,9 @@ export default function HeroSection() {
                   <p className="hidden sm:block text-sm text-zinc-400 leading-snug relative z-10">
                     Präzisionsgeräte ermöglichen Öffnungen selbst bei schweren Verriegelungen.
                   </p>
+                  
+                  {/* Spacer to prevent wheels from overlapping text */}
+                  <div className="h-6 sm:h-10 shrink-0 w-full" />
                 </div>
 
                 {/* === WHEELS / HOVER RINGS === */}
