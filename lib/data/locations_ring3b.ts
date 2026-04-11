@@ -249,7 +249,7 @@ export const ring3LocationsB: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Waldsolms — Türöffnung ab 99€",
-            metaDescription: "Schlüsseldienst Waldsolms: Türöffnung ab 99€ in Brandoberndorf, Griedelbach & allen 6 Ortsteilen. Lokaler Meisterbetrieb, 15-18 Min. Anfahrt. 06441-8056279",
+            metaDescription: "Schlüsseldienst Waldsolms: Türöffnung ab 99€ in Brandoberndorf, Griedelbach & allen 6 Ortsteilen. Lokaler Fachbetrieb, 15-18 Min. Anfahrt. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -407,7 +407,7 @@ export const ring3LocationsB: LocationData[] = [
 <p>Butzbach lebt und pulsiert: Wochenmarkt, Kulturveranstaltungen im Solmser Schloss, Vereinsleben in den Ortsteilen. Wo Leben ist, passieren Aussperrungen. Unser <strong>Schlüsselnotdienst Butzbach</strong> ist deshalb rund um die Uhr einsatzbereit und an Feiertagen, bei Wetterau-Karneval und auch an einem nasskalten Februartag.</p>
 
 <h3>Transparente Festpreise</h3>
-<p>Für eine zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Butzbach kostet <strong>15 Euro</strong> und pauschal für alle 14 Ortsteile. In einer Stadt, die den Kampf für Gerechtigkeit in ihrem Namen trägt, passen wir als ehrlicher und transparenter Meisterbetrieb bestens hinein.</p>
+<p>Für eine zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Butzbach kostet <strong>15 Euro</strong> und pauschal für alle 14 Ortsteile. In einer Stadt, die den Kampf für Gerechtigkeit in ihrem Namen trägt, passen wir als ehrlicher und transparenter Fachbetrieb bestens hinein.</p>
 `,
 
         localTestimonials: [

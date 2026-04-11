@@ -22,7 +22,7 @@ export const ring3LocationsA: LocationData[] = [
         },
         seo: {
             metaTitle: "Schlüsseldienst Gießen — Türöffnung ab 99€",
-            metaDescription: "Schlüsseldienst Gießen: Türöffnung ab 99€ für Studenten-WGs, Altstadt & Neubauten. Lokaler Meisterbetrieb, zerstörungsfrei, 24/7. In 15-20 Min. 06441-8056279",
+            metaDescription: "Schlüsseldienst Gießen: Türöffnung ab 99€ für Studenten-WGs, Altstadt & Neubauten. Lokaler Fachbetrieb, zerstörungsfrei, 24/7. In 15-20 Min. 06441-8056279",
         },
 
         // === 10X ERWEITERUNG ===
@@ -71,7 +71,7 @@ export const ring3LocationsA: LocationData[] = [
 <p>Gießen schläft nie: Vorlesungen bis spät in den Abend, Bibliotheksbesuche bis Mitternacht, Kneipentour am Wochenende. Unser <strong>Schlüsselnotdienst Gießen</strong> ist deshalb rund um die Uhr einsatzbereit und auch nach einer langen Nacht, an Feiertagen, bei Gewitter und Schnee. Wir lassen keinen Gießener im Regen stehen.</p>
 
 <h3>Transparente Preise gegen Callcenter-Betrug</h3>
-<p>Gerade in der Universitätsstadt haben dubiose Callcenter-Schlüsseldienste traurige Berühmtheit erlangt. Wir sind das Gegenteil: Ein <strong>regionaler Meisterbetrieb</strong> mit transparenten Festpreisen. Für eine zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Gießen kostet <strong>15 Euro</strong>. Sie erfahren den Gesamtpreis am Telefon, bevor sich unser Monteur auf den Weg macht.</p>
+<p>Gerade in der Universitätsstadt haben dubiose Callcenter-Schlüsseldienste traurige Berühmtheit erlangt. Wir sind das Gegenteil: Ein <strong>regionaler Fachbetrieb</strong> mit transparenten Festpreisen. Für eine zugefallene Tür berechnen wir werktags tagsüber <strong>fix 99 Euro</strong>. Die Anfahrt nach Gießen kostet <strong>15 Euro</strong>. Sie erfahren den Gesamtpreis am Telefon, bevor sich unser Monteur auf den Weg macht.</p>
 `,
 
         localTestimonials: [
@@ -174,7 +174,7 @@ export const ring3LocationsA: LocationData[] = [
 <p>Mit denkmalgeschützten Altbauten, historischen Beschlagssystemen und teils aufwendigen Doppelfalz-Türen darf in Braunfels unter keinen Umständen ungeschultes Personal mit Brecheisen oder schweren Bohrern ans Werk gehen! Wer hier rohe Gewalt anwendet, verursacht an antiken Türen massive, teils irreversible und extrem kostspielige Holz- und Rahmenschäden. Vermeiden Sie dieses Horrorszenario kategorisch. Unser Team ist handwerklich meisterhaft auf sensible Restaurationsobjekte geschult. Sofern Ihre Braunfelser Eingangstür lediglich zugefallen und nicht mehrfach verriegelt ist, setzen wir hochentwickelte, lackschonende Gleitwerkzeuge ein. Das Resultat: Über 99 % dieser Türen öffnen wir komplett spurlos und ohne Kratzer, ohne Bohren, ohne Zylinder-Neukauf. Der Originalschlüssel sperrt danach exakt wie am Tag zuvor.</p>
 
 <h3>Extreme Schnelligkeit über die B49 und L3020</h3>
-<p>Viele Kur-Patienten oder zugezogene Anwohner in Braunfels befürchten bei Notdiensten stundenlanges Warten auf einen Monteur aus Frankfurt oder dem fernen Ruhrgebiet. Nicht mit uns! Als vertrauensvoller, regional agierender Meisterbetrieb befahren wir von Wetzlar aus die direkte Route über die B49 (Abfahrt Solms) und die L3020. So erreichen wir Braunfels und seine ausgedehnten, waldreichen Ortsteile in der Regel bequem in bemerkenswerten <strong>10 bis 15 Minuten</strong>. Sie legen auf und und unser Servicefahrzeug biegt oft schon in Ihre Straße ein.</p>
+<p>Viele Kur-Patienten oder zugezogene Anwohner in Braunfels befürchten bei Notdiensten stundenlanges Warten auf einen Monteur aus Frankfurt oder dem fernen Ruhrgebiet. Nicht mit uns! Als vertrauensvoller, regional agierender Fachbetrieb befahren wir von Wetzlar aus die direkte Route über die B49 (Abfahrt Solms) und die L3020. So erreichen wir Braunfels und seine ausgedehnten, waldreichen Ortsteile in der Regel bequem in bemerkenswerten <strong>10 bis 15 Minuten</strong>. Sie legen auf und und unser Servicefahrzeug biegt oft schon in Ihre Straße ein.</p>
 
 <h3>24/7 Service für Kliniken und den privaten Sektor</h3>
 <p>Als Gesundheits- und Tourismusstandort pulsiert das Leben in Kliniken, Gaststätten am Herrengarten und Hotels auch nachts. Klemmt das Schloss zum Lieferanteneingang, streikt das Garagentor oder funktioniert der Schließzylinder einer Reha-Einrichtung nicht mehr? Wir bieten diskrete, blitzschnelle Gewerbe-Öffnungen im laufenden Betrieb. Auch für den privaten Sektor gilt unsere 365-Tage-Rufbereitschaft rund um die Uhr und auch am Wochenende oder an Feiertagen.</p>
@@ -202,7 +202,7 @@ export const ring3LocationsA: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Schlüsseldienst für die historische Schlossstadt Braunfels gesucht? Unser verlässlicher Meisterbetrieb steht Tag und Nacht zur Verfügung, um Ihnen zum Festpreis die Tür zu öffnen.",
+            heroIntro: "Schlüsseldienst für die historische Schlossstadt Braunfels gesucht? Unser verlässlicher Fachbetrieb steht Tag und Nacht zur Verfügung, um Ihnen zum Festpreis die Tür zu öffnen.",
             mainText: "", // Ersetzt durch aboutText im 10x-System
             serviceZerstörungsfrei: "", // Ersetzt durch scenarios
             serviceBohren: "",

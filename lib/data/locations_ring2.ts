@@ -541,7 +541,7 @@ export const ring2Locations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Schlüsseldienst für die Berggemeinde Hohenahr: Von Erda über Hohensolms bis Mudersbach und schnelle Hilfe, faire Preise, 24/7 Notdienst. Vertrauen Sie dem Meisterbetrieb Ihrer Region.",
+            heroIntro: "Schlüsseldienst für die Berggemeinde Hohenahr: Von Erda über Hohensolms bis Mudersbach und schnelle Hilfe, faire Preise, 24/7 Notdienst. Vertrauen Sie dem Fachbetrieb Ihrer Region.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",

@@ -11,8 +11,8 @@ export default function TrustStrip() {
   const item1 = pickVariant(["Langgasse 70", "Zentrale Wetzlar (Langgasse 70)", "Unser Laden in Wetzlar"], pathname, 10);
   const item2 = pickVariant(["24/7 Notdienst", "Rund um die Uhr bereit", "Tag & Nacht Rufbereitschaft"], pathname, 11);
   const item3 = pickVariant(["Festpreisgarantie", "Transparente Festpreise", "Keine versteckten Gebühren"], pathname, 12);
-  const item4 = pickVariant(["ADAC Partner", "Offizieller ADAC Partner", "Partner des ADAC"], pathname, 13);
-  const item5 = pickVariant(["Ausgebildet von Uwe Sarfeld", "Meister-Ausbildung (U. Sarfeld)", "Geprüfter Meisterbetrieb"], pathname, 14);
+  const item4 = pickVariant(["Fachbetrieb Sicherheitstechnik", "Zertifizierter Fachbetrieb", "Regionaler Fachbetrieb"], pathname, 13);
+  const item5 = pickVariant(["Ausgebildet von Uwe Sarfeld", "Ausbildung bei U. Sarfeld", "Geprüfter Fachbetrieb"], pathname, 14);
   const item6 = pickVariant(["Bar · EC · Kreditkarte", "Zahlung: Flexibel & Bar", "EC, Kreditkarte oder Bar"], pathname, 15);
 
   const trustItems = [

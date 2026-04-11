@@ -62,11 +62,6 @@ export function createLocalBusinessSchema() {
         memberOf: [
             {
                 "@type": "Organization",
-                name: "ADAC",
-                url: "https://www.adac.de"
-            },
-            {
-                "@type": "Organization",
                 name: "Handwerkskammer Wiesbaden",
                 url: "https://www.hwk-wiesbaden.de"
             }

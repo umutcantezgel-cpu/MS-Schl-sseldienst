@@ -92,7 +92,7 @@ export const services: Service[] = [
     slug: createSlug("tresoroeffnung"),
     title: "Tresor- & Safe-Öffnung",
     shortDescription: "Diskrete und fachmännische Notöffnung von Safes, Geldkassetten und alten Schränken.",
-    fullDescription: "Schlüssel zum Familientresor verloren oder den Zahlencode der Elektronik vergessen? Als vertrauenswürdiger Fachbetrieb analysieren unsere Meister die komplexe Konstruktion Ihres Tresors. Wir wenden mikrochirurgische Aufbohrtechniken oder hochspezialisierte Manipulationstools an, um Ihre sensiblen Wertsachen absolut intakt und unbeschädigt zu bergen. Bei uns gilt strenge Verschwiegenheitspflicht.",
+    fullDescription: "Schlüssel zum Familientresor verloren oder den Zahlencode der Elektronik vergessen? Als vertrauenswürdiger Fachbetrieb analysieren unsere Techniker die komplexe Konstruktion Ihres Tresors. Wir wenden mikrochirurgische Aufbohrtechniken oder hochspezialisierte Manipulationstools an, um Ihre sensiblen Wertsachen absolut intakt und unbeschädigt zu bergen. Bei uns gilt strenge Verschwiegenheitspflicht.",
     icon: "Safe",
     features: ["100% Diskretion und Verschwiegenheit garantiert", "Hochmoderne Spezialwerkzeuge und Endoskope", "Erfahrung mit elektronischen und mechanischen Safes", "Optionale Wiederherstellung von manipulierten Zylindern"],
     order: 7
@@ -104,7 +104,7 @@ export const services: Service[] = [
     shortDescription: "Kein Call-Center. Wir sind Ihr echter, verlässlicher lokaler Handwerker im nächtlichen Notfall.",
     fullDescription: "Ein unvorhergesehener Notfall kennt keine Geschäftszeiten. Aus diesem Grund ist das Notdienst-Telefon der Schlüssel Schmiede an 365 Tagen im Jahr, rund um die Uhr persönlich besetzt und ohne nervige Warteschleifen in anonymen Call-Centern. Wenn Sie anrufen, sprechen Sie direkt mit einem Fachmann aus Wetzlar. Wir lassen Sie niemals im Kalten stehen und garantieren transparente Festpreise mit fairen, branchenüblichen Nacht- und Wochenendtarifen.",
     icon: "Clock",
-    features: ["365 Tage im Jahr real besetzt", "Niemals ein Callcenter, immer ein lokaler Meister", "Regionale In-House Stationierung", "Unumstößliche, faire Festpreisnennung am Telefon"],
+    features: ["365 Tage im Jahr real besetzt", "Niemals ein Callcenter, immer ein lokaler Fachmann", "Regionale In-House Stationierung", "Unumstößliche, faire Festpreisnennung am Telefon"],
     order: 8
   },
   {

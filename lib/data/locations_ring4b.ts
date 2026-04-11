@@ -43,7 +43,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Im äußersten Nordwesten des Lahn-Dill-Kreises, dort wo sich das raue Rothaargebirge und der nördliche Westerwald fast berühren, liegt <strong>Haiger</strong>. Die rund 19.500 Einwohner starke Stadt markiert nicht nur die Grenze zum benachbarten Nordrhein-Westfalen (Siegerland), sondern ist ein absolutes wirtschaftliches Schwergewicht der Region. Neben dem historischen Stadtkern rund um den Paradeplatz und die Haigerer Stadtkirche prägen massive Industrieunternehmen (wie Weiss oder Klingspor) an Standorten wie dem Industriepark Kalteiche das Bild. Wer sich hier in einem der stark verzweigten, hügeligen Ortsteile wie <strong>Sechshelden, Allendorf, Langenaubach, Roßbach, Fellerdilln oder Dillbrecht</strong> aussperrt, fühlt sich bei schlechtem Wetter fernab von urbanen Hilfsdiensten. Doch keine Panik: Der <strong>Schlüsseldienst Haiger</strong> unseres Meisterbetriebes deckt dieses Gebiet vollends ab.</p>
+<p>Im äußersten Nordwesten des Lahn-Dill-Kreises, dort wo sich das raue Rothaargebirge und der nördliche Westerwald fast berühren, liegt <strong>Haiger</strong>. Die rund 19.500 Einwohner starke Stadt markiert nicht nur die Grenze zum benachbarten Nordrhein-Westfalen (Siegerland), sondern ist ein absolutes wirtschaftliches Schwergewicht der Region. Neben dem historischen Stadtkern rund um den Paradeplatz und die Haigerer Stadtkirche prägen massive Industrieunternehmen (wie Weiss oder Klingspor) an Standorten wie dem Industriepark Kalteiche das Bild. Wer sich hier in einem der stark verzweigten, hügeligen Ortsteile wie <strong>Sechshelden, Allendorf, Langenaubach, Roßbach, Fellerdilln oder Dillbrecht</strong> aussperrt, fühlt sich bei schlechtem Wetter fernab von urbanen Hilfsdiensten. Doch keine Panik: Der <strong>Schlüsseldienst Haiger</strong> unseres Fachbetriebes deckt dieses Gebiet vollends ab.</p>
 
 <h3>A45-Routenplanung: Rasanter in Haiger als gedacht</h3>
 <p>Wer fernab des Wetzlarer Kernbereichs wohnt, befürchtet bei der Suche nach einem Schlüsseldienst endlose Wartezeiten und undurchsichtige Anfahrtsgebühren aus dem Ruhrgebiet oder Frankfurt. Wir brechen mit diesem Stigma. Über die unschlagbar schnelle Bundesautobahn 45 (Sauerlandlinie) passieren unsere voll ausgestatteten Notdienst-Mobile die Distanz nach Haiger in der Regel in unter bemerkenswerten <strong>30 Minuten</strong>. Ob im Schneetreiben am Rödgen oder nachts um drei in Fellerdilln und unser Fahrzeug ist bereits zu Ihnen unterwegs, während Sie im Warmen auf das Klingeln warten.</p>
@@ -100,7 +100,7 @@ export const ring4bLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
             metaTitle: "Schlüsseldienst Greifenstein — 24/7 Türöffnung ab 99€", 
-            metaDescription: "Schlüsseldienst Greifenstein (Beilstein, Ulmtal uvm.). Festpreis ab 99€. In ca. 20-25 Min. bei Ihnen. Zerstörungsfreie Öffnung, regionaler Meisterbetrieb." 
+            metaDescription: "Schlüsseldienst Greifenstein (Beilstein, Ulmtal uvm.). Festpreis ab 99€. In ca. 20-25 Min. bei Ihnen. Zerstörungsfreie Öffnung, regionaler Fachbetrieb." 
         },
 
         // === 10X ERWEITERUNG ===

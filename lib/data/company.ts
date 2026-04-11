@@ -42,9 +42,9 @@ export const companyInfo: CompanyInfo = {
     }
   },
   partnership: {
-    isAdacPartner: true,
+    isAdacPartner: false,
     certifications: [
-      "ADAC Partner",
+      "Fachbetrieb Sicherheitstechnik",
       "IHK-Geprüft", 
       "Handwerkskammer eingetragen", 
       "VdS-Anerkannt"
