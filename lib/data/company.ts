@@ -25,15 +25,21 @@ export const companyInfo: CompanyInfo = {
   },
   email: "info@wetzlar-schlüsseldienst.de",
   openingHours: {
-    store: "Montag bis Freitag von 06:00 bis 19:59 Uhr",
+    store: "06:00 - 19:59 Uhr",
     emergency: "24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr"
   },
   financial: {
-    startingPrice: "ab 99 Euro",
+    startingPrice: "99 €",
     startingPriceValue: 99,
     travelCostWetzlar: "0 Euro",
     travelCostWetzlarValue: 0,
-    acceptedPayments: ["Barzahlung", "EC-Karte", "Kreditkarte", "Überweisung"]
+    acceptedPayments: ["Barzahlung", "EC-Karte", "Kreditkarte", "Überweisung"],
+    pricingTexts: {
+      headline: "Türöffnung 06:00 - 19:59 Uhr 99 €",
+      baseNote: "Unsere Türöffnung während der regulären Geschäftszeiten bieten wir für 99€ an und allen Standardleistungen. zzgl. Anfahrtskosten",
+      consistencyNote: "In den meisten Fällen bleibt der Preis bei diesem Betrag, da wir auf Erfahrung und effiziente Arbeitsweise setzen.",
+      transparencyNote: "Sollte es jedoch aufgrund unvorhergesehener Umstände zu einem höheren Aufwand kommen, besprechen wir die zusätzlichen Kosten direkt mit Ihnen vor Ort – damit Sie immer genau wissen, was auf Sie zukommt."
+    }
   },
   partnership: {
     isAdacPartner: true,

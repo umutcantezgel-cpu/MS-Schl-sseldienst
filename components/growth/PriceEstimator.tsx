@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Phone, ArrowRight, ArrowLeft, CheckCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { companyInfo } from "@/lib/data/company";
 
 // ─── Step Types ───
 type Situation =
@@ -21,7 +22,7 @@ interface PriceRange {
 // ─── Price Matrix ───
 const PRICE_MATRIX: Record<Situation, Record<Zeitpunkt, PriceRange>> = {
   zugefallen: {
-    regulaer: { from: 99, to: 149, note: "Einfache Türöffnung ohne Beschädigung" },
+    regulaer: { from: companyInfo.financial.startingPriceValue, to: 149, note: "Einfache Türöffnung ohne Beschädigung" },
     abend: { from: 119, to: 169, note: "Spätdienst-Zuschlag inkl." },
     nacht: { from: 149, to: 199, note: "Nachtdienst-Zuschlag inkl." },
     wochenende: { from: 179, to: 229, note: "Sonn- und Feiertag inkl." },
@@ -54,7 +55,7 @@ const SITUATIONS: { key: Situation; label: string }[] = [
 ];
 
 const ZEITPUNKTE: { key: Zeitpunkt; label: string; time: string }[] = [
-  { key: "regulaer", label: "Regulär", time: "06:00 - 19:59 Uhr" },
+  { key: "regulaer", label: "Regulär", time: companyInfo.openingHours.store },
   { key: "abend", label: "Abends", time: "20:00 - 21:59 Uhr" },
   { key: "nacht", label: "Nachtdienst", time: "22:00 - 05:59 Uhr" },
   { key: "wochenende", label: "Wochenende/Feiertag", time: "Sa, So & Feiertage" },

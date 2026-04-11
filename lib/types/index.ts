@@ -230,6 +230,12 @@ export interface CompanyInfo {
     travelCostWetzlar: string; // "0 Euro"
     travelCostWetzlarValue: number; // 0
     acceptedPayments: string[]; // ["Barzahlung", "EC-Karte", "Überweisung"] (KEIN PayPal)
+    pricingTexts?: {
+      headline: string;
+      baseNote: string;
+      consistencyNote: string;
+      transparencyNote: string;
+    };
   };
 
   partnership: {

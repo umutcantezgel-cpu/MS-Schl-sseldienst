@@ -6,6 +6,7 @@ import RevealSection from "@/components/motion/RevealSection";
 import { SectionHeader } from "@/components/ui/typography/SectionHeader";
 import { Typography } from "@/components/ui/typography/Typography";
 import { TrustBadgeRow } from "@/components/ui/TrustBadgeRow";
+import { companyInfo } from "@/lib/data/company";
 
 export function PricingSection() {
   return (
@@ -121,9 +122,11 @@ export function PricingSection() {
          Am häufigsten benötigt
         </div>
 
-        <Typography variant="h3" as="div" className="mb-1">Tagsüber ausgesperrt?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Werktags von 06:00 bis 19:59 Uhr</Typography>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Profitieren Sie von unserem Basis-Festpreis in Höhe von 99 €. Dank jahrelanger Branchenerfahrung und modernem Spezialwerkzeug lösen wir nahezu alle Standardfälle für exakt diese Summe – fair, schnell und völlig ohne versteckte Fallstricke.</p>
+        <Typography variant="h3" as="div" className="mb-1">{companyInfo.financial.pricingTexts?.headline}</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Werktags von {companyInfo.openingHours.store}</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-3 leading-relaxed">{companyInfo.financial.pricingTexts?.baseNote}</p>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-3 leading-relaxed">{companyInfo.financial.pricingTexts?.consistencyNote}</p>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed italic opacity-90">{companyInfo.financial.pricingTexts?.transparencyNote}</p>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          {/* Zugefallene Tür */}
@@ -137,7 +140,7 @@ export function PricingSection() {
            <span className="text-sm font-medium text-[color:var(--text-secondary)] pb-1.5">Schlüssel steckt nicht</span>
            <div className="flex items-baseline gap-1.5 shrink-0">
             <span className="text-xs font-bold text-[color:var(--text-tertiary)] uppercase tracking-wide">ab</span>
-            <span className="text-5xl font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">99</span>
+            <span className="text-5xl font-black leading-none tracking-tighter text-[color:var(--text-primary)] tabular-nums">{companyInfo.financial.startingPriceValue}</span>
             <span className="text-xl font-bold text-[var(--color-red-500)]">€</span>
            </div>
           </div>

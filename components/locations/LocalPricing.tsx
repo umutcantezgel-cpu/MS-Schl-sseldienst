@@ -4,6 +4,7 @@ import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { Phone } from "lucide-react";
 import { pickVariant } from "@/lib/textRotation";
+import { companyInfo } from "@/lib/data/company";
 
 export default function LocalPricing({ city }: { city: LocationData }) {
     // Duplicate Content Prevention (Spinning)
@@ -38,7 +39,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
     ], city.slug, 4);
 
     // Rotate feature labels to prevent duplicate content across pages
-    const featureDay1 = pickVariant(["Werktags 06-20 Uhr", "Mo-Fr 06:00-19:59 Uhr", "Werktags tagsüber"], city.slug, 10);
+    const featureDay1 = pickVariant([`Werktags ${companyInfo.openingHours.store}`, `Mo-Fr ${companyInfo.openingHours.store}`, "Werktags tagsüber"], city.slug, 10);
     const featureDay2 = pickVariant(["Zerstörungsfreie Öffnung (>99%)", "Schonende Öffnung garantiert", "Beschädigungsfreie Technik"], city.slug, 11);
     const featureDay3 = pickVariant(["Festpreis am Telefon genannt", "Verbindlicher Preis vorab", "Transparente Preisauskunft"], city.slug, 12);
     const featureNight1 = pickVariant(["20:00 bis 05:59 Uhr", "Nachts 20-06 Uhr", "Abend- und Nachteinsatz"], city.slug, 13);

@@ -50,26 +50,30 @@ export const generateSharedMetadata = ({
         // regardless of which host serves the page (Netlify preview, localhost, etc.)
         metadataBase: new URL(siteUrl),
 
-        // ── [FIX: Seobility #4 und Missing hreflang self-reference] ─────────
+        // ── [FIX: Seobility #4 & Cross-Domain Duplicate Content] ───────────
+        // To prevent duplicate content penalties with the primary domain (schluesseldienst-wetzlar.de),
+        // we use a cross-domain canonical tag. This tells search engines that schluesseldienst-wetzlar.de
+        // is the original source, consolidating ranking power.
         alternates: {
-            canonical: url,
+            // Cross-domain canonical
+            canonical: `https://www.schluesseldienst-wetzlar.de${urlPath}`,
             languages: {
-                "de-DE": url,       // self-referencing hreflang (required by Seobility)
-                "x-default": url,   // fallback hreflang for non-German crawlers
+                "de-DE": url,       // self-referencing hreflang (required by Seobility, current domain)
+                "x-default": url,   // fallback
             },
         },
-        // ── [FIX: Google Search Favicons] ──────────────────────────────────
-        // Hard-binding the favicons via Metadata API mapping to prevent
-        // Next.js discovery bugs on dynamically generated deeply nested pages.
+        // ── [FIX: Google Search Favicons & Base64 Perf] ───────────────────────
+        // Hard-binding the favicons via Metadata API mapping. Pointing to pure PNGs
+        // instead of SVGs that contain Base64 wrappers for better PageSpeed & valid SEO icons.
         icons: {
             icon: [
-                { url: '/icon.svg', type: 'image/svg+xml' }
+                { url: '/icon.png', type: 'image/png' }
             ],
             apple: [
                 { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
             ],
             shortcut: [
-                { url: '/icon.svg', type: 'image/svg+xml' }
+                { url: '/icon.png', type: 'image/png' }
             ]
         },
         robots: {

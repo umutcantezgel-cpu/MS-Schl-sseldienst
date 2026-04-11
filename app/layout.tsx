@@ -54,7 +54,6 @@ export const metadata: Metadata = {
  // ⚠️  NO description here und set only on individual pages to avoid Seobility #2 (duplicate).
  metadataBase: new URL(siteUrl),
  alternates: {
-   canonical: siteUrl,
    languages: {
      "de-DE": siteUrl,
      "x-default": siteUrl,
@@ -122,10 +121,10 @@ export default function RootLayout({
  return (
      <html lang="de" className="light" suppressHydrationWarning>
    <head>
-     {/* [PERF] Manual Preload for LCP SVG Logo.
-          We use native <img> in StickyHeader instead of next/image for SVG.
-          This ensures the SVG is requested at high priority instantly. */}
-     <link rel="preload" as="image" href="/images/logo-header.svg" type="image/svg+xml" fetchPriority="high" />
+     {/* [PERF] Manual Preload for LCP WebP Logo.
+          We use native <img> in StickyHeader instead of next/image for critical LCP.
+          This ensures the WebP is requested at high priority instantly. */}
+     <link rel="preload" as="image" href="/images/logo-header.webp" type="image/webp" fetchPriority="high" />
           
      {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
@@ -134,12 +133,15 @@ export default function RootLayout({
           The Next/Image priority prop in StickyHeader handles preloading correctly. */}
      {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
           die Metadata.icons API verzögert ausliefern. */}
-     <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
+     <link rel="icon" href="/icon.png" type="image/png" sizes="any" />
      <link rel="apple-touch-icon" href="/apple-icon.png" />
    </head>
    <body
-    className={`${plusJakarta.variable} ${dmSans.variable} min-h-screen bg-background text-foreground font-sans flex flex-col antialiased`}
-   >
+      className={`${plusJakarta.variable} ${dmSans.variable} font-sans text-[color:var(--text-primary)] min-h-[100dvh] flex flex-col antialiased bg-gray-50`}
+      itemScope 
+      itemType="https://schema.org/WebPage"
+      suppressHydrationWarning
+    >
      <AppProvider>
       <UIProvider>
        <DeviceProvider>
