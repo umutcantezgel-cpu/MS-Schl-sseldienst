@@ -26,13 +26,13 @@ const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVi
 
 const plusJakarta = Plus_Jakarta_Sans({
  subsets: ["latin", "latin-ext"],
- display:"swap",
+ display:"optional",
  variable:"--font-display",
 });
 
 const dmSans = DM_Sans({
  subsets: ["latin", "latin-ext"],
- display:"swap",
+ display:"optional",
  variable:"--font-body",
 });
 

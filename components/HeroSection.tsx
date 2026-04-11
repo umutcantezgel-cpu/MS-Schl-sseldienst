@@ -164,7 +164,7 @@ export default function HeroSection() {
             </div>
 
             {/* 2. Headline und Visual heading (H2 since server-rendered H1 exists in page.tsx) */}
-            <div className="hero-entrance" style={{ animationDelay: "100ms" }}>
+            <div>
             <h1
               id="hero-heading"
               itemProp="headline"

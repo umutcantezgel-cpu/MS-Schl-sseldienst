@@ -34,10 +34,6 @@ export function WebVitalsReporter() {
 
     const budget = BUDGETS[metric.name];
     if (budget !== undefined && metric.value > budget) {
-      console.warn(
-        `[PerfBudget] ${metric.name} exceeded: ${metric.value.toFixed(2)} > ${budget} (rating: ${metric.rating})`
-      );
-
       // Log as warning via ErrorLogger (lazy import to avoid circular deps)
       import("@/lib/monitoring/error-logger").then(({ errorLogger }) => {
         errorLogger.warn(
