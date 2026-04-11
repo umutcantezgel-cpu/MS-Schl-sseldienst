@@ -125,8 +125,8 @@ export default function RootLayout({
     {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
      <link rel="dns-prefetch" href="https://maps.googleapis.com" />
-     {/* [PERF] Logo preload with auto priority to avoid competing with critical CSS downloads */}
-     <link rel="preload" as="image" type="image/svg+xml" href="/images/logo-neu.svg" />
+     {/* [PERF] Logo preload removed: was pointing to wrong file (logo-neu.svg vs logo-header.svg used by StickyHeader).
+          The Next/Image priority prop in StickyHeader handles preloading correctly. */}
      {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
           die Metadata.icons API verzögert ausliefern. */}
      <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
