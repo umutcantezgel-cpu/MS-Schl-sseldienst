@@ -80,14 +80,16 @@ export default function Footer() {
         <div className="absolute inset-0 rounded-full border border-white/0 group-hover:border-[var(--color-red-400)]/30 group-hover:bg-white/5 transition-all duration-700 pointer-events-none shadow-[0_0_30px_rgba(255,0,0,0)] group-hover:shadow-[0_0_40px_rgba(239,68,68,0.2)]" />
         
         <Image
-         src="/images/logo-footer.png"
-         alt="Schlüssel Schmiede Wetzlar Logo"
-         width={220}
-         height={220}
-         className="relative z-10 w-full h-full max-w-[220px] max-h-[220px] object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] group-hover:drop-shadow-[0_0_30px_rgba(239,68,68,0.6)] transition-all duration-700 p-2"
-         priority={false}
-         sizes="(max-width: 768px) 180px, 220px"
-        />
+          src="/images/logo-brand.svg"
+          alt="Schlüssel Schmiede Wetzlar Logo"
+          width={220}
+          height={220}
+          className="relative z-10 w-full h-full max-w-[220px] max-h-[220px] object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] group-hover:drop-shadow-[0_0_30px_rgba(239,68,68,0.6)] transition-all duration-700 p-2"
+          style={{ mixBlendMode: 'lighten' }}
+          priority={false}
+          sizes="(max-width: 768px) 180px, 220px"
+          unoptimized
+         />
        </Link>
        <p className="mt-8 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs relative z-10">
         Ihre Schlüssel Schmiede für alle Schloss und Sicherheitsfragen

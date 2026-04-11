@@ -114,9 +114,9 @@ export default function StickyHeader() {
             aria-label="Startseite und Schlüssel Schmiede Wetzlar"
           >
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
-            {/* [PERF] Use native <img> with fetchPriority="high" for WebP to accelerate LCP */}
+            {/* [PERF] Use native <img> with fetchPriority="high" for SVG to accelerate LCP */}
             <img
-              src="/images/logo-header.webp"
+              src="/images/logo-brand.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
               width={100}
               height={100}
@@ -127,7 +127,7 @@ export default function StickyHeader() {
                   ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
                   : "w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] lg:w-[86px] lg:h-[86px] xl:w-[92px] xl:h-[92px]"
               }`}
-              style={{ background: 'transparent' }}
+              style={{ background: 'transparent', mixBlendMode: 'screen' }}
             />
           </Link>
 
@@ -410,14 +410,14 @@ export default function StickyHeader() {
           >
             {/* Drawer Header */}
             <div className="flex justify-between items-center px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
-              <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
-                  src="/images/logo-header.webp"
+                  src="/images/logo-brand.svg"
                   alt="Schlüssel Schmiede Wetzlar"
                   width={48}
                   height={48}
                   className="w-[44px] h-[44px] max-w-[44px] max-h-[44px] object-contain"
-                  style={{ background: 'transparent' }}
+                  style={{ mixBlendMode: 'screen' }}
                   unoptimized
                 />
               </Link>

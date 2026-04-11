@@ -179,10 +179,27 @@
   h1, h2, h3, h4, h5, h6, .typo-hero-display, .typo-h2, .typo-h3, .typo-h4-card {
     text-rendering: optimizeLegibility;
     text-wrap: balance;
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   p, .text-body, .text-lead {
     text-wrap: pretty;
+  }
+
+  /* ── Mobile-First Responsive Overrides (< 640px) ── */
+  @media (max-width: 639px) {
+    /* Bug 3 Fix: Cap H2 size on mobile to prevent viewport domination */
+    h2 {
+      font-size: clamp(1.5rem, 6vw, 1.75rem) !important; /* 24–28px */
+    }
+
+    /* Bug 5 Fix: Reduce vertical padding in content sections on mobile */
+    section {
+      padding-top: clamp(2rem, 6vw, 3rem);
+      padding-bottom: clamp(2rem, 6vw, 3rem);
+    }
   }
 
   :root {
