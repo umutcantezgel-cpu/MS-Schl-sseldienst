@@ -149,8 +149,7 @@ export default function HeroSection() {
 
             {/* 1. Verfügbarkeits-Badge */}
             <div
-              className="flex hero-entrance"
-              style={{ animationDelay: "0ms" }}
+              className="flex"
             >
               <div className="flex items-center gap-2 sm:gap-2.5 bg-[var(--value-primary)]/10 border border-[var(--value-primary)]/20 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full backdrop-blur-sm w-fit">
                 <span className="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5 shrink-0">
@@ -184,8 +183,7 @@ export default function HeroSection() {
 
             {/* 3. Subheadline */}
             <p
-              className="text-sm sm:text-base md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] hero-entrance leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
-              style={{ animationDelay: "150ms" }}
+              className="text-sm sm:text-base md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
             >
               Persönliche Beratung, handwerkliche Präzision und Zeit für jeden Kunden.
               Schlüssel nachmachen, Schließanlagen planen, Sicherheitstechnik einbauen und natürlich auch Schlüsseldienst.
@@ -193,8 +191,7 @@ export default function HeroSection() {
 
             {/* 4. Phone Number Block + CTA Buttons */}
             <div
-              className="flex flex-col gap-2.5 sm:gap-4 w-full max-w-[540px] mt-0 lg:mt-1 hero-entrance"
-              style={{ animationDelay: "200ms" }}
+              className="flex flex-col gap-2.5 sm:gap-4 w-full max-w-[540px] mt-0 lg:mt-1"
             >
               {/* Verfügbarkeits-Indikator */}
               <div className="flex items-center gap-2 mb-1">
@@ -259,7 +256,7 @@ export default function HeroSection() {
             <div className="absolute inset-x-0 bottom-8 h-px bg-gradient-to-r from-transparent via-[var(--color-charcoal-400)]/20 to-transparent w-[120%] -ml-[10%] z-0 pointer-events-none animate-speed-line-fast" />
 
             {/* THE CAR BODY CONTAINER */}
-            <div className="w-full max-w-[500px] flex flex-col items-center relative z-10 hero-entrance group scale-[0.85] sm:scale-100 origin-top transform-gpu" style={{ animationDelay: '250ms' }}>
+            <div className="w-full max-w-[500px] flex flex-col items-center relative z-10 group scale-[0.85] sm:scale-100 origin-top transform-gpu">
               
               {/* === ROOF / CABIN (24/7 Notdienst) === */}
               {/* Geometrisch: Abgerundete aerodynamische Kuppel */}
