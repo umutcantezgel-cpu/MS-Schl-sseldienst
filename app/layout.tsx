@@ -59,17 +59,18 @@ export const metadata: Metadata = {
      "x-default": siteUrl,
    },
  },
- icons: {
-   icon: [
-     { url: '/icon.png', type: 'image/png' }
-   ],
-   apple: [
-     { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
-   ],
-   shortcut: [
-     { url: '/icon.png', type: 'image/png' }
-   ]
- },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    shortcut: [
+      { url: '/favicon.ico' }
+    ]
+  },
  robots: {
    index: true,
    follow: true,
@@ -133,7 +134,8 @@ export default function RootLayout({
           The Next/Image priority prop in StickyHeader handles preloading correctly. */}
      {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
           die Metadata.icons API verzögert ausliefern. */}
-     <link rel="icon" href="/icon.png" type="image/png" sizes="any" />
+     <link rel="icon" href="/favicon.ico" sizes="48x48" />
+     <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />
      <link rel="apple-touch-icon" href="/apple-icon.png" />
    </head>
    <body
