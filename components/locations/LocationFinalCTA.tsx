@@ -60,11 +60,11 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
                 <div className="flex justify-center flex-col items-center">
                     <a 
                         href="tel:+4964418056279" 
-                        className="group flex flex-col items-center justify-center gap-2 bg-white px-6 sm:px-14 py-4 sm:py-6 rounded-3xl sm:rounded-full text-[var(--action-primary)] hover:bg-slate-50 transition-all duration-300 hover:scale-[1.02] shadow-[var(--elevation-4)] w-full sm:w-auto max-w-[90vw]"
+                        className="group flex flex-col items-center justify-center gap-2 bg-white px-4 sm:px-14 py-4 sm:py-6 rounded-3xl sm:rounded-full text-[var(--action-primary)] hover:bg-slate-50 transition-all duration-300 hover:scale-[1.02] shadow-[var(--elevation-4)] w-full sm:w-auto max-w-[90vw] whitespace-nowrap"
                     >
-                        <div className="flex items-center gap-2 sm:gap-4 font-extrabold text-2xl sm:text-3xl md:text-4xl tracking-tighter">
+                        <div className="flex items-center gap-2 sm:gap-4 font-extrabold text-xl sm:text-3xl md:text-4xl tracking-tighter">
                             <Phone className="w-6 h-6 sm:w-8 sm:h-8 fill-current shrink-0" />
-                            <span className="tabular-nums">06441 8056279</span>
+                            <span className="tabular-nums whitespace-nowrap">06441 8056279</span>
                         </div>
                         <span className="text-base font-bold opacity-80 uppercase tracking-widest text-[var(--color-charcoal-500)]">Jetzt Techniker rufen</span>
                     </a>

@@ -476,7 +476,6 @@ export default function SchluesselSchmiedePage() {
                 "Hausnummern",
                 "Pokale & Medaillen",
                 "Namensschilder",
-                "Schließanlagen-Schlüssel",
                 "Edelstahl & Messing"
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2 px-4 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium text-white hover:bg-white/20 transition-colors">

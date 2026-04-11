@@ -98,10 +98,10 @@ export default function LocalHero({ city }: LocalHeroProps) {
                             <div className="flex flex-col items-center gap-2 sm:gap-3 w-full sm:w-auto">
                                 <a
                                     href="tel:+4964418056279"
-                                    className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-6 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto"
+                                    className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 overflow-hidden rounded-xl sm:rounded-full bg-[var(--color-red-500)] px-4 sm:px-10 py-3 sm:py-5 typo-cta-button text-white shadow-[var(--shadow-cta)] transition-all hover:bg-[var(--color-red-600)] hover:shadow-[var(--shadow-brand-3)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-400)] focus-visible:ring-offset-2 w-full sm:w-auto whitespace-nowrap"
                                 >
-                                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:rotate-12" />
-                                    <span className="text-base sm:text-lg tracking-tight">Jetzt Anrufen , 06441-8056279</span>
+                                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 shrink-0 transition-transform group-hover:rotate-12" />
+                                    <span className="text-base sm:text-lg tracking-tight whitespace-nowrap">Jetzt Anrufen , 06441-8056279</span>
                                 </a>
                                 <span className="typo-tiny text-[color:var(--text-tertiary)] text-center font-bold tracking-wide uppercase mt-2">
                                     Kostenlos & unverbindlich , Antwort in 30 Min

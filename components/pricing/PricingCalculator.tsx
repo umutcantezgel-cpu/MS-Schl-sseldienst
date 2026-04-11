@@ -282,8 +282,8 @@ export default function PricingCalculator() {
               >
                 {/* Shimmer effect */}
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                <Phone className="w-6 h-6 z-10" />
-                <span className="z-10 tracking-wide">{isNullPrice ?"Kostenlos beraten lassen" :"06441 8056279 anrufen"}</span>
+                <Phone className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 z-10" />
+                <span className="z-10 tracking-wide whitespace-nowrap text-base sm:text-lg">{isNullPrice ?"Kostenlos beraten lassen" :"06441 8056279 anrufen"}</span>
               </a>
             </HeartbeatCTA>
             

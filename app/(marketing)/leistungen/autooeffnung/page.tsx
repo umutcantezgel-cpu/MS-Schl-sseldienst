@@ -45,7 +45,7 @@ export default function AutooeffnungPage() {
       title:"Autoöffnung",
       description:"Professionelle Fahrzeugöffnung ohne Beschädigung aller Marken.",
       url:"/leistungen/autooeffnung",
-      price: 80
+      price: 149
      }))
     }}
    />
@@ -88,7 +88,7 @@ export default function AutooeffnungPage() {
               <span className="text-[color:var(--text-secondary)]">Zerstörungsfreie Autoöffnung.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
-              Ihr Autoschlüssel ist eingeschlossen? Wir öffnen Ihr Fahrzeug schnell, professionell und garantiert ohne Lackkratzer zum fairen Festpreis ab 80€.
+              Ihr Autoschlüssel ist eingeschlossen? Wir öffnen Ihr Fahrzeug schnell, professionell und garantiert ohne Lackkratzer zum fairen Festpreis ab 149€.
             </p>
           </div>
         </StaggerItem>
@@ -201,7 +201,7 @@ export default function AutooeffnungPage() {
         <div className="grid gap-8 sm:grid-cols-2 max-w-4xl mx-auto">
           <PriceCard
             title="Einfache Autoöffnung"
-            price={80}
+            price={149}
             description="Für gängige Modelle ohne Doppelverriegelung."
             features={["Werktags 08-18 Uhr","100% Zerstörungsfrei","Festpreis vor Ort",
             ]}
@@ -209,7 +209,7 @@ export default function AutooeffnungPage() {
           />
           <PriceCard
             title="Premium/Luxus Modelle"
-            price={120}
+            price={180}
             description="Moderne Fahrzeuge mit Deadlock-Funktion (Safe-Sicherung)."
             features={["Werktags 08-18 Uhr","Spezialwerkzeug Einsatz","Keine Lack- oder Elektronikschäden",
             ]}
@@ -266,7 +266,7 @@ export default function AutooeffnungPage() {
       <div className="space-y-4">
         <FAQAccordion question="Können Sie jede Automarke öffnen?" answer="Ja, wir haben Spezialwerkzeuge und das Know-how für nahezu alle gängigen Marken, einschließlich moderner Fahrzeuge mit Deadlock-Systemen." />
         <FAQAccordion question="Entstehen bei der Öffnung Kratzer am Auto?" answer="Nein, wir garantieren eine hundertprozentig zerstörungsfreie Öffnung ohne Schäden an Lack, Dichtungen oder Elektronik." />
-        <FAQAccordion question="Was kostet die Autoöffnung?" answer="Eine einfache Autoöffnung bieten wir ab 80 Euro an. Bei modernen Fahrzeugen mit spezieller Diebstahlsicherung (Safe-Sicherung) starten die Preise ab 120 Euro." />
+        <FAQAccordion question="Was kostet die Autoöffnung?" answer="Eine einfache Autoöffnung bieten wir ab 149 Euro an. Bei modernen Fahrzeugen mit spezieller Diebstahlsicherung (Safe-Sicherung) starten die Preise ab 180 Euro." />
       </div>
      </StaggerItem>
     </StaggerReveal>

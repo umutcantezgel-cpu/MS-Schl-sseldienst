@@ -127,7 +127,7 @@ export default function StickyHeader() {
                   ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
                   : "w-[64px] h-[64px] sm:w-[76px] sm:h-[76px] lg:w-[86px] lg:h-[86px] xl:w-[92px] xl:h-[92px]"
               }`}
-              style={{ background: 'transparent', mixBlendMode: 'screen' }}
+              style={{ background: 'transparent' }}
             />
           </Link>
 
@@ -417,7 +417,6 @@ export default function StickyHeader() {
                   width={48}
                   height={48}
                   className="w-[44px] h-[44px] max-w-[44px] max-h-[44px] object-contain"
-                  style={{ mixBlendMode: 'screen' }}
                   unoptimized
                 />
               </Link>
@@ -436,22 +435,33 @@ export default function StickyHeader() {
               <Link
                 href="/schluessel-schmiede"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="group relative flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-br from-[var(--color-red-500)] to-[var(--color-red-700)] border border-red-400/30 active:scale-[0.98] transition-all shadow-[0_8px_30px_-5px_rgba(220,38,38,0.35)] overflow-hidden"
+                className="group relative flex flex-col gap-4 p-6 rounded-2xl bg-gradient-to-br from-[var(--color-red-600)] to-[var(--color-red-800)] border border-red-500/50 active:scale-[0.98] transition-all shadow-[0_8px_30px_-5px_rgba(220,38,38,0.4)] overflow-hidden w-full"
               >
-                {/* Decorative glow */}
-                <div className="absolute -top-8 -right-8 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+                {/* Glowing Orbs & Background Details */}
+                <div className="absolute -top-12 -right-12 w-40 h-40 bg-[var(--color-red-400)] rounded-full blur-[40px] pointer-events-none opacity-50" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
                 
-                <div className="flex shrink-0 w-14 h-14 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-sm text-white border border-white/20 shadow-lg">
-                  <Hammer className="w-7 h-7" />
+                <div className="flex items-start justify-between relative z-10 w-full">
+                  <div className="flex shrink-0 w-14 h-14 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-md text-white border border-white/20 shadow-lg">
+                    <Hammer className="w-7 h-7 drop-shadow-md" />
+                  </div>
+                  <div className="flex items-center justify-center bg-black/20 backdrop-blur-sm self-start px-3 py-1.5 rounded-full border border-white/10">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-red-50">Ladengeschäft</span>
+                  </div>
                 </div>
-                <div className="flex-1 relative z-10">
-                  <span className="text-lg font-extrabold text-white block">Schlüssel Schmiede</span>
-                  <span className="text-sm text-white/80 font-medium block">Langgasse 70, Wetzlar</span>
+
+                <div className="relative z-10 mt-1">
+                  <span className="text-xl sm:text-2xl font-black text-white block tracking-tight mb-1.5">Schlüssel Schmiede</span>
+                  <div className="flex items-center gap-2 text-red-100/90">
+                     <MapPin className="w-4 h-4 shrink-0" />
+                     <span className="text-sm font-medium leading-tight">Langgasse 70, Wetzlar</span>
+                  </div>
                 </div>
-                <div className="flex flex-col items-end gap-1 relative z-10">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-white/60 bg-white/10 px-2 py-0.5 rounded-full">Jetzt besuchen</span>
-                  <ChevronRight className="w-5 h-5 text-white/80 group-active:translate-x-1 transition-transform" />
+                
+                <div className="flex items-center justify-between w-full mt-2 relative z-10 bg-black/20 backdrop-blur-sm rounded-xl p-3 sm:p-4 border border-white/10 group-hover:bg-black/30 transition-colors">
+                   <span className="text-sm font-bold text-white tracking-wide">Jetzt besuchen</span>
+                   <ChevronRight className="w-5 h-5 text-white group-active:translate-x-1 transition-transform" />
                 </div>
               </Link>
               

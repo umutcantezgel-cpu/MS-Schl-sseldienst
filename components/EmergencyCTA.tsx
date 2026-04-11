@@ -19,10 +19,10 @@ export default function EmergencyCTA() {
       <a
        href="tel:+4964418056279"
        onClick={() => triggerHaptic('light')}
-       className="inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-2xl font-extrabold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 transition-all duration-150 ease-out bg-white hover:bg-gray-50 hover:scale-[1.02] active:scale-100 h-16 px-8 shadow-xl text-lg text-red-600"
+       className="inline-flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap rounded-2xl font-extrabold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 transition-all duration-150 ease-out bg-white hover:bg-gray-50 hover:scale-[1.02] active:scale-100 h-14 sm:h-16 px-6 sm:px-8 shadow-xl text-[var(--color-red-600)] w-full sm:w-auto max-w-[90vw]"
       >
-       <Phone className="h-5 w-5 shrink-0" aria-hidden="true" />
-       <span className="tabular-nums tracking-tight">06441 8056279</span>
+       <Phone className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" aria-hidden="true" />
+       <span className="tabular-nums tracking-tight text-lg sm:text-xl whitespace-nowrap">06441 8056279</span>
       </a>
      </HeartbeatCTA>
      <p className="text-white/80 text-sm font-medium mt-3">
