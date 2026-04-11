@@ -216,16 +216,24 @@ export default function TuroeffnungPage() {
         <PriceCard
           title="Tür zugefallen"
           price={99}
-          description="Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen."
-          features={["Werktags 08-18 Uhr","Zerstörungsfreie Öffnung (99%)","Festpreis vor Ort",
+          description="Einfache Öffnung einer unverschlossenen Tür, oft in Sekunden erledigt."
+          features={[
+            "Mo-Fr 06:00 - 19:59 Uhr",
+            "Beschädigungsfreie Technik",
+            "Festpreis am Telefon genannt",
+            "Inkl. Anfahrt in diesem Bezirk",
           ]}
           isPopular={true}
         />
         <PriceCard
           title="Tür abgeschlossen"
           price={129}
-          description="Schlüssel verloren oder doppelt abgeschlossen."
-          features={["Werktags 08-18 Uhr","Profi-Werkzeug Einsatz","Ersatzzylinder zubuchbar (ab 25€)",
+          description="Schlüssel verloren oder doppelt abgeschlossen – Profi-Werkzeug erforderlich."
+          features={[
+            "Mo-Fr 06:00 - 19:59 Uhr",
+            "Profi-Werkzeug Einsatz",
+            "Festpreis-Garantie",
+            "Ersatzzylinder zubuchbar (ab 25€)",
           ]}
         />
         </div>
