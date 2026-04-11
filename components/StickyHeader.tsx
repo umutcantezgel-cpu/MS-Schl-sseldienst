@@ -431,6 +431,29 @@ export default function StickyHeader() {
 
             {/* Drawer Content */}
             <div className="flex-1 overflow-y-auto px-5 py-8 pb-32 flex flex-col gap-8 bg-slate-50/50">
+
+              {/* ★ Schlüssel Schmiede — Premium Hero Card (Top Position) */}
+              <Link
+                href="/schluessel-schmiede"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="group relative flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-br from-[var(--color-red-500)] to-[var(--color-red-700)] border border-red-400/30 active:scale-[0.98] transition-all shadow-[0_8px_30px_-5px_rgba(220,38,38,0.35)] overflow-hidden"
+              >
+                {/* Decorative glow */}
+                <div className="absolute -top-8 -right-8 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                
+                <div className="flex shrink-0 w-14 h-14 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-sm text-white border border-white/20 shadow-lg">
+                  <Hammer className="w-7 h-7" />
+                </div>
+                <div className="flex-1 relative z-10">
+                  <span className="text-lg font-extrabold text-white block">Schlüssel Schmiede</span>
+                  <span className="text-sm text-white/80 font-medium block">Langgasse 70, Wetzlar</span>
+                </div>
+                <div className="flex flex-col items-end gap-1 relative z-10">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-white/60 bg-white/10 px-2 py-0.5 rounded-full">Jetzt besuchen</span>
+                  <ChevronRight className="w-5 h-5 text-white/80 group-active:translate-x-1 transition-transform" />
+                </div>
+              </Link>
               
               {/* Leistungen Section */}
               <div className="flex flex-col gap-3">
@@ -457,22 +480,6 @@ export default function StickyHeader() {
                   })}
                 </div>
               </div>
-
-              {/* USP Schmiede */}
-              <Link
-                href="/schluessel-schmiede"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200/60 active:scale-[0.98] transition-all shadow-[0_4px_15px_-5px_rgba(245,158,11,0.15)]"
-              >
-                <div className="flex shrink-0 w-12 h-12 items-center justify-center rounded-xl bg-amber-500/10 text-amber-600">
-                  <Hammer className="w-6 h-6" />
-                </div>
-                <div className="flex-1">
-                  <span className="text-lg font-extrabold text-amber-950">Schlüssel Schmiede</span>
-                  <span className="text-sm text-amber-800/80 font-medium">Langgasse 70, Wetzlar</span>
-                </div>
-                <ChevronRight className="w-5 h-5 text-amber-500" />
-              </Link>
               
               {/* Einsatzgebiete Section */}
               <div className="flex flex-col gap-3">

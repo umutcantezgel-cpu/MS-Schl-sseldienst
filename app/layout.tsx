@@ -124,7 +124,7 @@ export default function RootLayout({
      {/* [PERF] Manual Preload for LCP WebP Logo.
           We use native <img> in StickyHeader instead of next/image for critical LCP.
           This ensures the WebP is requested at high priority instantly. */}
-     <link rel="preload" as="image" href="/images/logo-header.webp" type="image/webp" fetchPriority="high" />
+     <link rel="preload" as="image" href="/images/logo-brand.svg" type="image/svg+xml" fetchPriority="high" />
           
      {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
