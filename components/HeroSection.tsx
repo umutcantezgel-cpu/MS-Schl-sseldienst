@@ -342,29 +342,7 @@ export default function HeroSection() {
 
             </div>
 
-            {/* Car/Wheel Animations */}
-            <style jsx global>{`
-              @keyframes spinWheel {
-                from { transform: rotate(0deg) translateZ(0); }
-                to { transform: rotate(360deg) translateZ(0); }
-              }
-              .spin-wheel {
-                animation: spinWheel 4s linear infinite;
-                will-change: transform;
-              }
-              @keyframes speedLine {
-                0% { transform: translateX(-100%) translateZ(0); opacity: 0; }
-                50% { opacity: 1; }
-                100% { transform: translateX(100%) translateZ(0); opacity: 0; }
-              }
-              .animate-speed-line-fast {
-                animation: speedLine 2s ease-in-out infinite;
-                will-change: transform, opacity;
-              }
-              @media (prefers-reduced-motion: reduce) {
-                .spin-wheel, .animate-speed-line-fast { animation: none; }
-              }
-            `}</style>
+            {/* Car/Wheel Animations moved to globals.css to fix React Hydration Mismatch Error 418 */}
           </div>
         </div>
       </div>

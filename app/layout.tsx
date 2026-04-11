@@ -120,7 +120,7 @@ export default function RootLayout({
  children: React.ReactNode;
 }) {
  return (
-     <html lang="de" className="light">
+     <html lang="de" className="light" suppressHydrationWarning>
    <head>
      {/* [PERF] Manual Preload for LCP SVG Logo.
           We use native <img> in StickyHeader instead of next/image for SVG.
