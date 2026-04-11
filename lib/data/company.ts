@@ -35,10 +35,10 @@ export const companyInfo: CompanyInfo = {
     travelCostWetzlarValue: 0,
     acceptedPayments: ["Barzahlung", "EC-Karte", "Kreditkarte", "Überweisung"],
     pricingTexts: {
-      headline: "Türöffnung 06:00 - 19:59 Uhr 99 €",
-      baseNote: "Unsere Türöffnung während der regulären Geschäftszeiten bieten wir für 99€ an und allen Standardleistungen. zzgl. Anfahrtskosten",
-      consistencyNote: "In den meisten Fällen bleibt der Preis bei diesem Betrag, da wir auf Erfahrung und effiziente Arbeitsweise setzen.",
-      transparencyNote: "Sollte es jedoch aufgrund unvorhergesehener Umstände zu einem höheren Aufwand kommen, besprechen wir die zusätzlichen Kosten direkt mit Ihnen vor Ort – damit Sie immer genau wissen, was auf Sie zukommt."
+      headline: "Türöffnung tagsüber ab 99 €",
+      baseNote: "Festpreis für zugefallene Türen an Werktagen. Inklusive aller Standardleistungen, zzgl. Anfahrt außerhalb Wetzlars.",
+      consistencyNote: "In 99 % der Fälle bleibt es bei diesem Preis.",
+      transparencyNote: "Mehraufwand? Wird vor Ort abgesprochen — nie ohne Ihr OK."
     }
   },
   partnership: {

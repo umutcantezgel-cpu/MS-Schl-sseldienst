@@ -57,9 +57,9 @@ export function PricingSection() {
 
        {/* Card 1: Abends/Nachts (links, normal) */}
        <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-        <Typography variant="h3" as="div" className="mb-1">Abends oder nachts?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Spät- und Nachtzuschläge fair kalkuliert</Typography>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Die Notdienst-Tarife decken standardmäßige Türöffnungen komplett ab. Sollten erschwerende Faktoren (z.B. defektes Sicherheitsschloss) eintreffen, garantieren wir absolute Kostentransparenz durch eine detaillierte Absprache direkt an der Tür, bevor wir loslegen.</p>
+        <Typography variant="h3" as="div" className="mb-1">Nacht- & Abendtarif</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Zuschläge ab 20 Uhr</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">Gleiche Qualität, fairer Aufpreis. Mehraufwand wird vorab besprochen — keine Überraschungen.</p>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          <div className="flex flex-col relative z-10 w-full">
@@ -100,11 +100,11 @@ export function PricingSection() {
         <ul className="mb-8 space-y-3 flex-1">
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Priorisierter Notdienst-Einsatz</span>
+          <span className="text-base text-[color:var(--text-secondary)]">In 20–30 Min. bei Ihnen</span>
          </li>
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Garantierte Ankunft in 20-30 Min.</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Preis vorab am Telefon</span>
          </li>
         </ul>
 
@@ -123,10 +123,8 @@ export function PricingSection() {
         </div>
 
         <Typography variant="h3" as="div" className="mb-1">{companyInfo.financial.pricingTexts?.headline}</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Werktags von {companyInfo.openingHours.store}</Typography>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-3 leading-relaxed">{companyInfo.financial.pricingTexts?.baseNote}</p>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-3 leading-relaxed">{companyInfo.financial.pricingTexts?.consistencyNote}</p>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed italic opacity-90">{companyInfo.financial.pricingTexts?.transparencyNote}</p>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Mo–Fr {companyInfo.openingHours.store}</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-6 leading-relaxed">{companyInfo.financial.pricingTexts?.baseNote} {companyInfo.financial.pricingTexts?.consistencyNote} {companyInfo.financial.pricingTexts?.transparencyNote}</p>
 
         <div className="flex flex-col gap-4 mb-8 bg-red-50/50 p-5 rounded-xl border border-red-100 relative overflow-hidden shadow-inner">
          {/* Zugefallene Tür */}
@@ -169,15 +167,15 @@ export function PricingSection() {
         <ul className="mb-8 space-y-3 flex-1">
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Professionelle Türöffnung</span>
+          <span className="text-base text-[color:var(--text-secondary)]">99 % zerstörungsfrei</span>
          </li>
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Ohne Beschädigung (bei zugefallener Tür)</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Festpreis ohne Extras</span>
          </li>
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Festpreis inkl. Standardleistungen</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Anfahrt Wetzlar kostenlos</span>
          </li>
         </ul>
 
@@ -191,9 +189,9 @@ export function PricingSection() {
 
        {/* Card 3: Wochenende */}
        <div className="flex flex-col rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-7 lg:p-8 hover:-translate-y-1 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-        <Typography variant="h3" as="div" className="mb-1">Wochenende / Feiertag?</Typography>
-        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">An Wochenenden und Feiertagen</Typography>
-        <p className="text-sm text-[color:var(--text-secondary)] mb-8 leading-relaxed">Unser Wochenend-Notdienst steht Ihnen zum transparenten Fixpreis von 179 € zur Verfügung. Dieser Betrag inkludiert die professionelle Basisöffnung Ihrer Tür. Jeder etwaige Mehraufwand wird im Vornherein klar kommuniziert, damit Sie finanziell sicher planen können.</p>
+        <Typography variant="h3" as="div" className="mb-1">Wochenende & Feiertag</Typography>
+        <Typography variant="small" color="secondary" weight="semibold" className="mb-4 block">Sa · So · Feiertags</Typography>
+        <p className="text-sm text-[color:var(--text-secondary)] mb-8 leading-relaxed">Fixpreis inkl. Basisöffnung. Zusatzaufwand wird vorher abgestimmt.</p>
 
         <div className="flex items-baseline gap-1 mb-8">
          <span className="text-sm font-bold text-[color:var(--text-tertiary)] uppercase tracking-wider">ab</span>
@@ -204,11 +202,11 @@ export function PricingSection() {
         <ul className="mb-8 space-y-3 flex-1">
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Rund um die Uhr Einsatzbereitschaft</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Selber Techniker wie werktags</span>
          </li>
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Zerstörungsfreie Öffnung</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Kein Callcenter, direkt Wetzlar</span>
          </li>
         </ul>
 
