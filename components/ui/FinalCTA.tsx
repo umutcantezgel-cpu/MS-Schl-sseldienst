@@ -59,7 +59,7 @@ export default function FinalCTA({
         <div className="flex flex-col items-center gap-[var(--space-6)] w-full max-w-md mx-auto">
           <a
             href="tel:+4964418056279"
-            className="text-[48px] md:text-[56px] font-black text-white hover:text-white/90 transition-colors tracking-tighter"
+            className="text-[clamp(1.75rem,6vw,3rem)] font-black text-white hover:text-white/90 transition-colors tracking-tight tabular-nums whitespace-nowrap"
           >
             06441 8056279
           </a>

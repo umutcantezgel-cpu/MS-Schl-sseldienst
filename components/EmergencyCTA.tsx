@@ -19,27 +19,14 @@ export default function EmergencyCTA() {
       <a
        href="tel:+4964418056279"
        onClick={() => triggerHaptic('light')}
-       className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[var(--radius-md,6px)] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 transition-all duration-[var(--duration-fast,150ms)] ease-out bg-white hover:bg-gray-50 hover:scale-[1.02] hover:-translate-y-px active:scale-100 active:translate-y-px h-14 min-h-[56px] min-w-[56px] px-8 shadow-xl text-base"
+       className="inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-2xl font-extrabold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 transition-all duration-150 ease-out bg-white hover:bg-gray-50 hover:scale-[1.02] active:scale-100 h-16 px-8 shadow-xl text-lg text-red-600"
       >
-       <Phone className="h-5 w-5 text-red-600" aria-hidden="true" />
-       <div className="flex flex-col items-start ml-2">
-        <span
-         className="font-[800] text-red-600 leading-none mb-[var(--space-1)]"
-         style={{ fontSize: 'var(--text-lead)', letterSpacing: 'var(--tracking-cta)' }}
-        >
-         Jetzt anrufen
-        </span>
-        <span
-         className="font-[700] text-red-600 leading-none"
-         style={{ fontSize: 'var(--text-body)', letterSpacing: 'var(--tracking-cta)' }}
-        >
-         06441 8056279
-        </span>
-       </div>
+       <Phone className="h-5 w-5 shrink-0" aria-hidden="true" />
+       <span className="tabular-nums tracking-tight">06441 8056279</span>
       </a>
      </HeartbeatCTA>
      <p className="text-white/80 text-sm font-medium mt-3">
-      Festpreis vor Anfahrt und Kostenlos & unverbindlich
+      Festpreis vor Anfahrt und Kostenlos &amp; unverbindlich
      </p>
     </div>
    </div>
