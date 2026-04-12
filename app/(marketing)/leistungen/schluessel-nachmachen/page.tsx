@@ -44,7 +44,7 @@ export default function SchluesselNachmachenPage() {
       title:"Schlüssel nachmachen",
       description:"Ersatzschlüssel aller Art direkt vor Ort anfertigen lassen.",
       url:"/leistungen/schluessel-nachmachen",
-      price: 8.5
+      price: 9.90
      }))
     }}
    />
@@ -168,7 +168,7 @@ export default function SchluesselNachmachenPage() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
           <PriceCard
             title="Standard-Schlüssel"
-            price={8.5}
+            price={9.90}
             description="Zimmer-, Briefkasten- und normale Haustürschlüssel."
             features={["Sofort-Mitnahme","Präzise Kopie","Passgenauigkeit",
             ]}
