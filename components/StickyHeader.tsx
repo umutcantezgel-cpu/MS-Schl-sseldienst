@@ -431,33 +431,46 @@ export default function StickyHeader() {
             {/* Drawer Content */}
             <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-3 sm:px-5 py-4 sm:py-8 pb-28 sm:pb-32 flex flex-col gap-4 sm:gap-8 bg-slate-50/50" style={{ WebkitOverflowScrolling: 'touch' }}>
 
-              {/* ★ Schlüssel Schmiede Premium Hero Card */}
+              {/* ★ Schlüssel Schmiede Premium Hero Card — iOS Safari fix: single div child inside Link */}
               <Link
                 href="/schluessel-schmiede"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="group block w-full rounded-2xl active:scale-[0.98] transition-all bg-gradient-to-br from-red-700 to-red-900 border border-red-600/40 shadow-[0_8px_30px_-5px_rgba(220,38,38,0.4)] p-3 sm:p-5"
+                className="group block w-full active:scale-[0.98] transition-all"
+                style={{ display: 'block', textDecoration: 'none', WebkitTapHighlightColor: 'transparent' }}
               >
-                {/* Row 1: Icon + Badge */}
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <div className="w-9 h-9 sm:w-12 sm:h-12 flex items-center justify-center rounded-lg sm:rounded-xl bg-white/15 border border-white/20">
-                    <Hammer className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    background: 'linear-gradient(135deg, #b91c1c, #7f1d1d)',
+                    borderRadius: 16,
+                    padding: 14,
+                    boxShadow: '0 8px 30px -5px rgba(220,38,38,0.4)',
+                    border: '1px solid rgba(185,28,28,0.4)',
+                  }}
+                >
+                  {/* Row 1: Icon + Badge */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+                    <div style={{ width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 8, background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                      <Hammer style={{ width: 16, height: 16, color: 'white' }} />
+                    </div>
+                    <span style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'rgba(255,255,255,0.8)', background: 'rgba(255,255,255,0.1)', padding: '3px 10px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.1)' }}>Ladengeschäft</span>
                   </div>
-                  <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-white/80 bg-white/10 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-white/10">Ladengeschäft</span>
-                </div>
-                
-                {/* Row 2: Title + Address */}
-                <div className="mb-3 sm:mb-4">
-                  <p className="text-[17px] sm:text-[22px] font-black text-white leading-tight tracking-tight mb-1 sm:mb-1.5 break-words">Schlüssel Schmiede</p>
-                  <div className="flex items-start sm:items-center gap-1.5 sm:gap-2">
-                    <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-200 shrink-0 mt-0.5 sm:mt-0" />
-                    <span className="text-[11px] sm:text-[13px] text-red-100/90 font-medium leading-snug break-words">Langgasse 70, 35576 Wetzlar</span>
+                  
+                  {/* Row 2: Title + Address */}
+                  <div style={{ marginBottom: 10 }}>
+                    <p style={{ fontSize: 17, fontWeight: 900, color: 'white', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 4, wordBreak: 'break-word' }}>Schlüssel Schmiede</p>
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: 6 }}>
+                      <MapPin style={{ width: 14, height: 14, color: '#fecaca', flexShrink: 0, marginTop: 2 }} />
+                      <span style={{ fontSize: 11, color: 'rgba(255,200,200,0.9)', fontWeight: 500, lineHeight: 1.3 }}>Langgasse 70, 35576 Wetzlar</span>
+                    </div>
                   </div>
-                </div>
 
-                {/* Row 3: CTA bar */}
-                <div className="flex items-center justify-between bg-black/20 rounded-lg sm:rounded-xl px-3 py-2 sm:px-4 sm:py-3 border border-white/10">
-                  <span className="text-[12px] sm:text-[14px] font-bold text-white">Jetzt besuchen</span>
-                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/80 group-active:translate-x-1 transition-transform shrink-0" />
+                  {/* Row 3: CTA bar */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '8px 12px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                    <span style={{ fontSize: 12, fontWeight: 700, color: 'white' }}>Jetzt besuchen</span>
+                    <ChevronRight style={{ width: 16, height: 16, color: 'rgba(255,255,255,0.8)', flexShrink: 0 }} />
+                  </div>
                 </div>
               </Link>
               
