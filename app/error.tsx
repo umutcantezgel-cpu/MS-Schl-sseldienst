@@ -176,10 +176,6 @@ export default function Error({
         Wenn das Problem bestehen bleibt, erreichen Sie uns unter{" "}
         <a href="tel:+4964418056279" style={{ color: "#DC2626" }}>
           06441 8056279
-        </a>{" "}
-        oder{" "}
-        <a href="tel:+491782471037" style={{ color: "#DC2626" }}>
-          0178 2471037
         </a>
         .
       </p>

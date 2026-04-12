@@ -47,23 +47,9 @@ export default function GlobalError({
             </a>
             <p style={{ fontSize: "0.8125rem", color: "#71717A", marginTop: "0.5rem" }}>Festpreis und keine versteckten Kosten</p>
 
-            <a
-              href="tel:+491782471037"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "0.5rem",
-                color: "#52525B",
-                textDecoration: "none",
-                padding: "1rem",
-                marginTop: "0.5rem",
-                fontWeight: "normal",
-                fontSize: "1rem"
-              }}
-            >
-              Mobilfunk: 0178-2471037
-            </a>
+            <p style={{ fontSize: "0.875rem", color: "#71717A", marginTop: "0.75rem" }}>
+              Festnetz: 06441 - 80 56 279
+            </p>
 
             <div style={{ marginTop: "3rem" }}>
               <button

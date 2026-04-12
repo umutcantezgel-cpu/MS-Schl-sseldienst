@@ -77,10 +77,10 @@ export default function AnfragePage() {
                       Für dringende Anliegen und direkter Kontakt mit Festpreis-Auskunft.
                     </p>
                     <Link
-                      href="tel:+491782471037"
+                      href="tel:+4964418056279"
                       className="inline-flex items-center justify-center w-full px-5 py-3 rounded-[var(--radius-md)] bg-[var(--color-red-500)] text-white font-semibold hover:bg-[var(--color-red-600)] transition-colors"
                     >
-                      0178 2471037
+                      06441 8056279
                     </Link>
                   </div>
 

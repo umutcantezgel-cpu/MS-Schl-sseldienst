@@ -35,7 +35,7 @@ const menuItems: MenuItem[] = [
   title:"Kundenservice",
   links: [
    { text:"Notdienst anrufen: 06441 8056279", url:"tel:+4964418056279" },
-   { text:"E-Mail schreiben", url:"mailto:info@wetzlar-schlüsseldienst.de" },
+   { text:"E-Mail schreiben", url:"mailto:schluesselschmiede@gmail.com" },
    { text:"Unsere Filiale besuchen", url:"/schluessel-schmiede" },
    { text:"Nachricht senden", url:"/kontakt" },
    { text:"Häufige Fragen zur Türöffnung", url:"/faq" },
@@ -97,9 +97,9 @@ export default function Footer() {
          <Phone className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
          <span>06441 8056279</span>
         </a>
-        <a href="mailto:info@wetzlar-schlüsseldienst.de" className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-300)] hover:text-[var(--color-red-500)] transition-colors">
+        <a href="mailto:schluesselschmiede@gmail.com" className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-300)] hover:text-[var(--color-red-500)] transition-colors">
          <Mail className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
-         <span>info@wetzlar-schlüsseldienst.de</span>
+         <span>schluesselschmiede@gmail.com</span>
         </a>
         <div className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-400)]">
          <MapPin className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />
@@ -143,8 +143,8 @@ export default function Footer() {
             className="flex items-center gap-2.5 text-sm text-[var(--color-charcoal-300)] hover:text-[var(--color-red-500)] transition-colors"
            >
             {link.text.includes('06441') && <Phone className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />}
-            {link.text.includes('info@') && <Mail className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />}
-            {!link.text.includes('06441') && !link.text.includes('info@') && <span className="w-4 h-4 shrink-0" aria-hidden="true" />} {/* Placeholder for alignment */}
+            {link.text.includes('schluessel') && <Mail className="h-4 w-4 text-[var(--color-red-500)] shrink-0" aria-hidden="true" />}
+            {!link.text.includes('06441') && !link.text.includes('schluessel') && <span className="w-4 h-4 shrink-0" aria-hidden="true" />} {/* Placeholder for alignment */}
             {link.text}
            </Link>
           </li>

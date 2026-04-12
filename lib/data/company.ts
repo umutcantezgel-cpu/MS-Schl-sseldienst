@@ -23,7 +23,7 @@ export const companyInfo: CompanyInfo = {
     formatted: "06441 80 56 279",
     link: "+4964418056279"
   },
-  email: "info@wetzlar-schlüsseldienst.de",
+  email: "schluesselschmiede@gmail.com",
   openingHours: {
     store: "06:00 - 19:59 Uhr",
     emergency: "24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr"

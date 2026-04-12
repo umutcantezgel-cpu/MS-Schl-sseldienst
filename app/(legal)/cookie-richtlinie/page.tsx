@@ -203,8 +203,8 @@ export default function CookieRichtliniePage() {
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />
-                    Telefon: <Link href="tel:+491782471037" className="text-[var(--action-primary)] hover:underline">0178 2471037</Link><br />
-                    E-Mail: <Link href="mailto:notfall-schluessel@proton.me" className="text-[var(--action-primary)] hover:underline">notfall-schluessel@proton.me</Link>
+                    Telefon: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline">06441 8056279</Link><br />
+                    E-Mail: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline">schluesselschmiede@gmail.com</Link>
                 </div>
                 <p>Weiterführende Informationen finden Sie in unserer <Link href="/datenschutz" className="text-[var(--action-primary)] hover:underline font-medium">Datenschutzerklärung</Link>.</p>
             </LegalSection>

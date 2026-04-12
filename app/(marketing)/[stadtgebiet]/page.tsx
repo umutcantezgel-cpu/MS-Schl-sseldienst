@@ -76,8 +76,8 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
     "@type": "Locksmith",
     "name": `Schlüssel Schmiede ${city.name}`,
     "url": `${siteUrl}/${city.slug}`,
-    "telephone": ["+4964418056279", "+491782471037"],
-    "email": "info@wetzlar-schlüsseldienst.de",
+    "telephone": "+4964418056279",
+    "email": "schluesselschmiede@gmail.com",
     "priceRange": "ab 99€",
     "image": ogUrl,
     "address": {

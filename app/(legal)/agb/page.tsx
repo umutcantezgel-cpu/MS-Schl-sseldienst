@@ -56,7 +56,7 @@ export default function AGBPage() {
                     Mina Saad<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
-                    E-Mail: notfall-schluessel@proton.me<br />
+                    E-Mail: schluesselschmiede@gmail.com<br />
                     (im Folgenden &quot;Auftragnehmer&quot; oder &quot;Schlüssel Schmiede&quot; genannt)
                 </div>
                 <p>und dem Auftraggeber (im Folgenden &quot;Kunde&quot; genannt).</p>

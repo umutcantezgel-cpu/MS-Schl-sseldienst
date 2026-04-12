@@ -58,7 +58,7 @@ export default function ImpressumPage() {
                 <p>Wir legen Wert auf Erreichbarkeit. Im Notfall oder bei allgemeinen Anfragen nutzen Sie am besten die folgenden Kontaktwege:</p>
                 <ul>
                     <li><strong>Telefon (24/7):</strong> <a href="tel:+4964418056279" className="font-semibold">06441 8056279</a></li>
-                    <li><strong>E-Mail:</strong> <a href="mailto:info@wetzlar-schlüsseldienst.de">info@wetzlar-schlüsseldienst.de</a></li>
+                    <li><strong>E-Mail:</strong> <a href="mailto:schluesselschmiede@gmail.com">schluesselschmiede@gmail.com</a></li>
                 </ul>
             </LegalSection>
 
@@ -112,7 +112,7 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">7. EU-Streitschlichtung & Verbraucherstreitbeilegung</h2>
                 <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link erreichen:</p>
                 <p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr</a></p>
-                <p>Unsere E-Mail-Adresse lautet: <code>info@wetzlar-schlüsseldienst.de</code></p>
+                <p>Unsere E-Mail-Adresse lautet: <code>schluesselschmiede@gmail.com</code></p>
                 <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
             </LegalSection>
 

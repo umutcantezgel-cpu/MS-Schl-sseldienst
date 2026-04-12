@@ -56,8 +56,8 @@ export default function DatenschutzPage() {
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />
-                    Telefon: 0178 2471037<br />
-                    E-Mail: <a href="mailto:notfall-schluessel@proton.me">notfall-schluessel@proton.me</a>
+                    Telefon: 06441 8056279<br />
+                    E-Mail: <a href="mailto:schluesselschmiede@gmail.com">schluesselschmiede@gmail.com</a>
                 </div>
             </LegalSection>
 
@@ -146,7 +146,7 @@ export default function DatenschutzPage() {
 
             <LegalSection id="10-kontakt">
                 <h2 className="mt-0">10. Datenauskunft & Kontakt</h2>
-                <p>Wenn Sie Fragen, Löschwünsche oder Anregungen zum Datenschutz haben, erreichen Sie unseren zuständigen Datenschutzbeauftragten direkt unter <a href="mailto:notfall-schluessel@proton.me">notfall-schluessel@proton.me</a> oder schriftlich über die Wetzlarer Anschrift im Impressum.</p>
+                <p>Wenn Sie Fragen, Löschwünsche oder Anregungen zum Datenschutz haben, erreichen Sie unseren zuständigen Datenschutzbeauftragten direkt unter <a href="mailto:schluesselschmiede@gmail.com">schluesselschmiede@gmail.com</a> oder schriftlich über die Wetzlarer Anschrift im Impressum.</p>
             </LegalSection>
         </LegalLayout>
     )

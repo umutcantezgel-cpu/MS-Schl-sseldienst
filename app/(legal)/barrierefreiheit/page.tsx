@@ -179,19 +179,19 @@ export default function BarrierefreiheitPage() {
                 <li>
                   Telefon:{" "}
                   <Link
-                    href="tel:+491782471037"
+                    href="tel:+4964418056279"
                     className="text-[var(--action-primary)] hover:underline font-medium"
                   >
-                    0178 2471037
+                    06441 8056279
                   </Link>
                 </li>
                 <li>
                   E-Mail:{" "}
                   <Link
-                    href="mailto:notfall-schluessel@proton.me?subject=Barrierefreiheit"
+                    href="mailto:schluesselschmiede@gmail.com?subject=Barrierefreiheit"
                     className="text-[var(--action-primary)] hover:underline font-medium"
                   >
-                    notfall-schluessel@proton.me
+                    schluesselschmiede@gmail.com
                   </Link>
                 </li>
                 <li>

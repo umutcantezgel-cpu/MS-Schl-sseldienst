@@ -40,7 +40,7 @@ export function generateLocalBusinessSchema() {
         // [SEO: IDN Punycode applied und @id uses machine-readable canonical]
         "@id": `${siteUrl}/#localbusiness`,
         "url": siteUrl,
-        "telephone": [companyInfo.phone.link, "+491782471037"].filter(Boolean),
+        "telephone": companyInfo.phone.link,
         "email": companyInfo.email,
         "address": {
             "@type": "PostalAddress",
@@ -226,7 +226,7 @@ export function generateHowToSchema(title: string, description: string) {
                 "@type": "HowToStep",
                 "position": 1,
                 "name": "Anruf",
-                "text": "Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441-8056279 oder 0178-2471037. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
+                "text": "Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441-8056279. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
             },
             {
                 "@type": "HowToStep",

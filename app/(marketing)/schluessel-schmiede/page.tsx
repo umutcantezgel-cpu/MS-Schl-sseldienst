@@ -526,8 +526,8 @@ export default function SchluesselSchmiedePage() {
            <a href="tel:+4964418056279" className="flex items-center gap-3 text-base text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
             <Phone className="h-4 w-4" /> 06441 8056279
            </a>
-           <a href="tel:+491782471037" className="flex items-center gap-3 text-base text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
-            <Phone className="h-4 w-4" /> 0178 2471037
+           <a href="tel:+4964418056279" className="flex items-center gap-3 text-base text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] transition-colors">
+            <Phone className="h-4 w-4" /> 06441 8056279
            </a>
           </div>
          </div>

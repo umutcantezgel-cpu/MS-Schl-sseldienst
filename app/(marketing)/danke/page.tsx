@@ -123,10 +123,10 @@ export default function DankePage() {
                 Zur Startseite
               </Link>
               <Link
-                href="tel:+491782471037"
+                href="tel:+4964418056279"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-[var(--radius-md)] border-2 border-[var(--border-medium)] text-[color:var(--text-primary)] font-semibold hover:bg-[var(--surface-elevated)] transition-colors"
               >
-                Direkt anrufen: 0178 2471037
+                Direkt anrufen: 06441 8056279
               </Link>
             </div>
           </StaggerItem>

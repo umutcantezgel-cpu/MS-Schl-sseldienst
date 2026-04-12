@@ -63,8 +63,8 @@ export default function WiderrufPage() {
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />
-                    Telefon: <Link href="tel:+491782471037" className="text-[var(--action-primary)] hover:underline">0178 2471037</Link><br />
-                    E-Mail: <Link href="mailto:notfall-schluessel@proton.me?subject=Widerruf" className="text-[var(--action-primary)] hover:underline">notfall-schluessel@proton.me</Link>
+                    Telefon: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline">06441 8056279</Link><br />
+                    E-Mail: <Link href="mailto:schluesselschmiede@gmail.com?subject=Widerruf" className="text-[var(--action-primary)] hover:underline">schluesselschmiede@gmail.com</Link>
                 </div>
                 <p>Sie können dafür das unten beigefügte <Link href="#6-muster-formular" className="text-[var(--action-primary)] hover:underline font-medium">Muster-Widerrufsformular</Link> verwenden, das jedoch nicht vorgeschrieben ist.</p>
                 <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts <strong>vor Ablauf der Widerrufsfrist absenden</strong>.</p>
@@ -111,7 +111,7 @@ export default function WiderrufPage() {
                         Schlüssel Schmiede Wetzlar<br />
                         Gloelstraße 11<br />
                         35576 Wetzlar<br />
-                        E-Mail: notfall-schluessel@proton.me</p>
+                        E-Mail: schluesselschmiede@gmail.com</p>
 
                         <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*):</p>
 
@@ -149,8 +149,8 @@ export default function WiderrufPage() {
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland<br /><br />
-                    Telefon: <Link href="tel:+491782471037" className="text-[var(--action-primary)] hover:underline">0178 2471037</Link><br />
-                    E-Mail: <Link href="mailto:notfall-schluessel@proton.me" className="text-[var(--action-primary)] hover:underline">notfall-schluessel@proton.me</Link>
+                    Telefon: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline">06441 8056279</Link><br />
+                    E-Mail: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline">schluesselschmiede@gmail.com</Link>
                 </div>
                 <p>Weitere Informationen zu Ihren Rechten finden Sie in unseren <Link href="/agb#6-widerrufsrecht" className="text-[var(--action-primary)] hover:underline font-medium">Allgemeinen Geschäftsbedingungen</Link> und in unserer <Link href="/datenschutz" className="text-[var(--action-primary)] hover:underline font-medium">Datenschutzerklärung</Link>.</p>
             </LegalSection>

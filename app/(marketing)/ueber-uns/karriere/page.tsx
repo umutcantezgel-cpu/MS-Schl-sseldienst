@@ -100,7 +100,7 @@ export default function KarrierePage() {
                     Senden Sie uns Ihren Lebenslauf ganz unkompliziert per E-Mail. Wir melden uns umgehend bei Ihnen.
                   </p>
                   <Link
-                    href="mailto:info@wetzlar-schlüsseldienst.de"
+                    href="mailto:schluesselschmiede@gmail.com"
                     className="flex justify-center w-full px-5 py-3 rounded-[var(--radius-md)] bg-[var(--text-primary)] text-[var(--surface-primary)] font-semibold hover:bg-[var(--text-secondary)] transition-colors"
                   >
                     Bewerbung per E-Mail senden

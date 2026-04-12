@@ -37,9 +37,9 @@ export default function LocationContact({ city }: { city: LocationData }) {
                         </a>
                         
                         <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 mt-4 bg-white/50 px-6 py-4 sm:py-3 rounded-2xl sm:rounded-full border border-[var(--border-subtle)] text-center text-balance w-full sm:w-auto mx-auto max-w-[90vw]">
-                            <span className="text-[color:var(--text-tertiary)] font-medium tracking-wide">Alternative Mobilnummer:</span>
-                            <a href="tel:+491782471037" className="text-[color:var(--value-primary)] font-bold hover:underline flex items-center gap-2 tracking-wide text-base sm:text-lg justify-center whitespace-nowrap">
-                                <PhoneCall className="w-5 h-5 shrink-0" /> 0178 - 247 10 37
+                            <span className="text-[color:var(--text-tertiary)] font-medium tracking-wide">Festnetz:</span>
+                            <a href="tel:+4964418056279" className="text-[color:var(--value-primary)] font-bold hover:underline flex items-center gap-2 tracking-wide text-base sm:text-lg justify-center whitespace-nowrap">
+                                <PhoneCall className="w-5 h-5 shrink-0" /> 06441 - 80 56 279
                             </a>
                         </div>
                     </div>

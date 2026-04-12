@@ -114,8 +114,8 @@ export default function KontaktPage() {
           </div>
           <div>
            <h3 className="text-sm font-bold text-[color:var(--text-primary)]">E-Mail</h3>
-           <a href="mailto:info@wetzlar-schlüsseldienst.de" className="text-sm text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] hover:underline transition-colors">
-            info@wetzlar-schlüsseldienst.de
+           <a href="mailto:schluesselschmiede@gmail.com" className="text-sm text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] hover:underline transition-colors">
+            schluesselschmiede@gmail.com
            </a>
           </div>
          </div>

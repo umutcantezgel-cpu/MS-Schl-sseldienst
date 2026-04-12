@@ -252,7 +252,7 @@ export default function ContactForm() {
             <div>
               <p className="text-red-800 text-sm font-medium">{state.message}</p>
               <p className="text-red-700 text-xs mt-1">
-                Alternativ: <a href="tel:+4964418056279" className="underline font-medium">06441 8056279 anrufen</a> oder <a href="mailto:info@wetzlar-schlüsseldienst.de" className="underline font-medium">E-Mail schreiben</a>
+                Alternativ: <a href="tel:+4964418056279" className="underline font-medium">06441 8056279 anrufen</a> oder <a href="mailto:schluesselschmiede@gmail.com" className="underline font-medium">E-Mail schreiben</a>
               </p>
             </div>
           </m.div>
