@@ -406,10 +406,10 @@ export default function StickyHeader() {
                 setIsMobileMenuOpen(false);
               }
             }}
-            className="fixed inset-0 z-[110] bg-white flex flex-col overflow-hidden will-change-transform"
+            className="fixed inset-0 z-[110] bg-white flex flex-col overflow-hidden will-change-transform" style={{ height: '100dvh' }}
           >
             {/* Drawer Header */}
-            <div className="flex justify-between items-center px-4 sm:px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
+            <div className="flex justify-between items-center px-4 sm:px-5 h-[64px] sm:h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
                   src="/images/logo-brand.svg"
@@ -429,7 +429,7 @@ export default function StickyHeader() {
             </div>
 
             {/* Drawer Content */}
-            <div className="flex-1 overflow-y-auto px-3 sm:px-5 py-6 sm:py-8 pb-32 flex flex-col gap-6 sm:gap-8 bg-slate-50/50">
+            <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-3 sm:px-5 py-4 sm:py-8 pb-28 sm:pb-32 flex flex-col gap-4 sm:gap-8 bg-slate-50/50" style={{ WebkitOverflowScrolling: 'touch' }}>
 
               {/* ★ Schlüssel Schmiede Premium Hero Card */}
               <Link
@@ -464,7 +464,7 @@ export default function StickyHeader() {
               {/* Leistungen Section */}
               <div className="flex flex-col gap-3">
                 <span className="font-black text-gray-400 uppercase tracking-widest text-xs pl-2">Unsere Leistungen</span>
-                <div className="grid grid-cols-1 gap-2">
+                <div className="grid grid-cols-1 gap-1.5 sm:gap-2">
                   {leistungenLinks.map((link) => {
                     const Icon = (iconMap[link.icon || "default"] || iconMap.default) as LucideIcon;
                     return (
@@ -477,9 +477,9 @@ export default function StickyHeader() {
                         <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-gradient-to-br from-red-50 to-orange-50 text-[var(--color-red-600)] rounded-xl border border-red-100/50 shadow-sm">
                           <Icon className="w-6 h-6" />
                         </div>
-                        <div className="flex flex-col">
-                          <span className="font-bold text-[15px] sm:text-base text-gray-900">{link.label}</span>
-                          <span className="text-[13px] sm:text-sm text-gray-500 line-clamp-2">{link.description}</span>
+                        <div className="flex flex-col min-w-0">
+                          <span className="font-bold text-[14px] sm:text-base text-gray-900 truncate">{link.label}</span>
+                          <span className="hidden sm:block text-[12px] sm:text-sm text-gray-500 line-clamp-1">{link.description}</span>
                         </div>
                       </Link>
                     )
@@ -488,23 +488,18 @@ export default function StickyHeader() {
               </div>
               
               {/* Einsatzgebiete Section */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2 sm:gap-3">
                 <span className="font-black text-gray-400 uppercase tracking-widest text-xs pl-2">Unsere Einsatzgebiete</span>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
                   {locationsLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-2xl bg-white border border-gray-100/80 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] active:scale-[0.98] transition-all hover:border-[var(--color-blue-200)]"
+                      className="flex flex-col items-center justify-center p-2 sm:p-3 rounded-xl bg-white border border-gray-100/80 shadow-[0_1px_4px_-2px_rgba(0,0,0,0.06)] active:scale-[0.97] transition-all hover:border-[var(--color-blue-200)] text-center min-h-[52px]"
                     >
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 flex shrink-0 items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 text-[var(--color-blue-600)] rounded-xl border border-blue-100/50 shadow-sm">
-                        <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
-                      </div>
-                      <div className="flex flex-col justify-center">
-                        <span className="font-bold text-[13px] sm:text-sm text-gray-900 leading-tight">{link.label}</span>
-                        <span className="text-[11px] sm:text-xs text-gray-500 leading-tight mt-0.5 line-clamp-1">{link.description}</span>
-                      </div>
+                      <MapPin className="w-3.5 h-3.5 text-[var(--color-blue-600)] mb-1" />
+                      <span className="font-semibold text-[11px] sm:text-xs text-gray-900 leading-tight">{link.label}</span>
                     </Link>
                   ))}
                 </div>
@@ -514,7 +509,7 @@ export default function StickyHeader() {
               </div>
 
               {/* Other Links */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2 sm:gap-3">
                 <span className="font-black text-gray-400 uppercase tracking-widest text-xs pl-2">Weitere Informationen</span>
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden divide-y divide-gray-50">
                   {mainLinks.map((link) => (
