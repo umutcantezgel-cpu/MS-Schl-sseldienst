@@ -126,7 +126,12 @@ export default function DatenschutzPage() {
 
             <LegalSection id="6-drittlaender">
                 <h2 className="mt-0">6. Datenübermittlung in Drittländer</h2>
-                <p>Einige unserer Dienstleister (Vercel Inc. für das Hosting, Google LLC für Maps/Reviews) sitzen in den USA. Die Übermittlung ist sichergestellt durch das EU-US Data Privacy Framework (DPF), in dem diese Unternehmen zertifiziert sind. Zusätzlich bauen wir auf Standardvertragsklauseln (SCCs).</p>
+                <p>Einige unserer Dienstleister sitzen in den USA. Die Übermittlung ist je nach Anbieter sichergestellt durch das EU-US Data Privacy Framework (DPF) und/oder Standardvertragsklauseln (SCCs) gem. Art. 46 Abs. 2 lit. c DSGVO:</p>
+                <ul>
+                    <li><strong>Vercel Inc.</strong> (Hosting): DPF-zertifiziert.</li>
+                    <li><strong>Google LLC</strong> (Maps, Reviews): DPF-zertifiziert.</li>
+                    <li><strong>Formspree Inc.</strong> (Kontaktformular): Auftragsverarbeitung gem. Art. 28 DSGVO auf Basis eines abgeschlossenen Auftragsverarbeitungsvertrags (AVV). Datenübertragung auf Grundlage von Standardvertragsklauseln.</li>
+                </ul>
             </LegalSection>
 
             <LegalSection id="7-verschluesselung">

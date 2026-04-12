@@ -26,7 +26,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Gibt es Zuschläge für Einsätze nachts oder am Wochenende?",
-        answer: "Schlüssel Schmiede Wetzlar berechnet einen transparenten Zuschlag von 30 Euro für Einsätze zwischen 18:00 und 8:00 Uhr sowie an Wochenenden und Feiertagen. Dieser Zuschlag wird Ihnen vorab mitgeteilt, bevor der Techniker losfährt.",
+        answer: "Ja, außerhalb unserer Kernzeiten (Montag bis Freitag, 06:00 bis 19:59 Uhr) berechnet Schlüssel Schmiede Wetzlar einen transparenten, leistungsabhängigen Zuschlag je nach Einsatzzeit und Dienstleistung. Die genaue Höhe erfahren Sie vorab am Telefon oder über unseren Preiskalkulator auf der Website, bevor der Techniker losfährt.",
         category: "kosten",
     },
     {
@@ -41,7 +41,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Welche Kosten entstehen bei einer Stornierung?",
-        answer: "Wenn Sie Ihren Einsatz stornieren, bevor der Techniker sich auf den Weg gemacht hat, fallen keine Kosten an. Ist der Techniker bereits unterwegs, fällt eine Anfahrtspauschale von 80 Euro an.",
+        answer: "Wenn Sie Ihren Einsatz stornieren, bevor der Techniker sich auf den Weg gemacht hat, fallen keine Kosten an. Ist der Techniker bereits unterwegs, fällt eine angemessene Anfahrtspauschale an, deren Höhe Ihnen vorab mitgeteilt wird.",
         category: "kosten",
     },
 
@@ -144,7 +144,7 @@ export const FAQ_DATA: FAQItem[] = [
     // ============ NOTDIENST & ERREICHBARKEIT ============
     {
         question: "Gibt es einen Schlüsseldienst in Wetzlar der nachts geöffnet hat?",
-        answer: "Ja, Schlüssel Schmiede Wetzlar ist rund um die Uhr erreichbar und auch nachts zwischen 22 und 6 Uhr, an Wochenenden und an allen deutschen Feiertagen. Für Nachteinsätze fällt ein transparenter Zuschlag von 30 Euro an.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar ist rund um die Uhr erreichbar, auch nachts zwischen 22 und 6 Uhr, an Wochenenden und an allen deutschen Feiertagen. Für Einsätze außerhalb der Kernzeiten fällt ein transparenter Zuschlag an, dessen Höhe Sie vorab am Telefon erfahren.",
         category: "notdienst",
     },
     {
@@ -154,7 +154,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Kommt der Schlüsseldienst auch an Weihnachten und Silvester?",
-        answer: "Ja, Schlüssel Schmiede Wetzlar ist an 365 Tagen im Jahr im Einsatz und einschließlich aller Feiertage wie Weihnachten, Silvester, Ostern und Pfingsten. Der Feiertagszuschlag von 30 Euro wird vorab mitgeteilt.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar ist an 365 Tagen im Jahr im Einsatz, einschließlich aller Feiertage wie Weihnachten, Silvester, Ostern und Pfingsten. Der Feiertagszuschlag wird Ihnen vorab am Telefon transparent mitgeteilt.",
         category: "notdienst",
     },
     {

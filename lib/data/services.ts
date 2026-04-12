@@ -19,7 +19,7 @@ export const services: Service[] = [
       currency: "EUR",
       amount: 99,
       interval: "one-time",
-      features: ["Festpreis für normale zugefallene Türen (Tagsüber)", "Zzgl. fairer Zuschlag am Wochenende/Nacht (30€)"]
+      features: ["Festpreis für normale zugefallene Türen (Tagsüber)", "Zzgl. leistungsabhängiger Zuschlag außerhalb der Kernzeiten"]
     },
     relatedServices: [createSlug("schliessanlagen"), createSlug("einbruchschutz")],
     order: 1,

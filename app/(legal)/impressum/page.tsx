@@ -4,6 +4,7 @@ import { TLDRBox } from "@/components/legal/TLDRBox"
 import { PrintButton } from "@/components/legal/PrintButton"
 import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
+import { MapConsentGate } from "@/components/legal/MapConsentGate"
 
 export const metadata = generateSharedMetadata({
     title: "Impressum & Anbieterkennzeichnung",
@@ -27,7 +28,7 @@ export default function ImpressumPage() {
         <LegalLayout
             heroTitle="Impressum der Schlüssel Schmiede Wetzlar"
             heroSubtitle="Transparenz schafft Vertrauen. Wer wir sind und wie Sie uns erreichen."
-            lastUpdated="06. April 2024"
+            lastUpdated="12. April 2026"
             tocItems={TOC_ITEMS}
         >
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
@@ -47,9 +48,14 @@ export default function ImpressumPage() {
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Schlüsseldienst Wetzlar</strong><br />
                     Inhaberin: Mina Saad<br />
-                    Langgasse 70<br />
+                    Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland
+                </div>
+                <div className="bg-gray-50 p-4 rounded-xl my-4 text-sm border border-gray-200">
+                    <strong>Ladengeschäft (Filiale):</strong><br />
+                    Langgasse 70<br />
+                    35576 Wetzlar
                 </div>
             </LegalSection>
 
@@ -66,14 +72,8 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">3. Hauptsitz & Standort</h2>
                 <p>Unser technischer und administrativer Hauptsitz befindet sich zentral in Wetzlar.</p>
                 <div className="w-full h-[300px] bg-gray-100 rounded-xl overflow-hidden shadow-inner my-6 print:hidden">
-                    <iframe 
-                        width="100%" 
-                        height="100%" 
-                        style={{ border: 0 }}
-                        loading="lazy" 
-                        allowFullScreen 
-                        referrerPolicy="no-referrer-when-downgrade"
-                        src="https://maps.google.com/maps?q=Langgasse+70,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    <MapConsentGate
+                        src="https://maps.google.com/maps?q=Gloelstra%C3%9Fe+11,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         title="Standort Schlüssel Schmiede Wetzlar"
                     />
                 </div>
@@ -103,7 +103,7 @@ export default function ImpressumPage() {
                 <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
                     <strong>Mina Saad</strong><br />
-                    Langgasse 70<br />
+                    Gloelstraße 11<br />
                     35576 Wetzlar
                 </div>
             </LegalSection>
