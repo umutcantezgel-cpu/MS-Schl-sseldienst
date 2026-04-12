@@ -37,10 +37,73 @@ function getDeviceType(userAgent: string): 'mobile' | 'tablet' | 'desktop' {
     return 'desktop';
 }
 
+// ── Markdown Mirror: Browser UA patterns for .md redirect detection ──
+const BROWSER_UA_INDICATORS = [
+    'Mozilla/', 'Chrome/', 'Safari/', 'Firefox/',
+    'Edge/', 'Opera/', 'Trident/', 'MSIE',
+];
+
+function isBrowserUA(userAgent: string): boolean {
+    return BROWSER_UA_INDICATORS.some(indicator =>
+        userAgent.includes(indicator)
+    ) && !AI_CRAWLER_PATTERNS.some(pattern =>
+        userAgent.toLowerCase().includes(pattern.toLowerCase())
+    );
+}
+
 export function middleware(request: NextRequest) {
+    const pathname = request.nextUrl.pathname;
+    const userAgent = request.headers.get('user-agent') || '';
+    const acceptHeader = request.headers.get('accept') || '';
+
+    // ═══════════════════════════════════════════════════════════════════════
+    // ── MARKDOWN MIRROR: Content Negotiation (Non-Destructive) ───────────
+    // Intercepts requests for .md suffix or Accept: text/markdown header.
+    // Normal HTML routing is 100% unaffected.
+    // ═══════════════════════════════════════════════════════════════════════
+
+    // Skip markdown mirror for internal requests (prevent infinite loops)
+    const isInternalMirrorRequest = request.headers.get('x-markdown-mirror') === 'internal';
+
+    if (!isInternalMirrorRequest) {
+        // Case 1: URL ends with .md suffix
+        if (pathname.endsWith('.md') && !pathname.startsWith('/api/')) {
+            const originalPath = pathname.slice(0, -3); // Strip .md
+
+            // If this is a regular browser (not an LLM/API client),
+            // redirect to the canonical HTML page via 301
+            if (isBrowserUA(userAgent) && !acceptHeader.includes('text/markdown')) {
+                const htmlUrl = request.nextUrl.clone();
+                htmlUrl.pathname = originalPath || '/';
+                return NextResponse.redirect(htmlUrl, 301);
+            }
+
+            // LLM/API client: Rewrite to markdown-mirror API
+            const mirrorUrl = request.nextUrl.clone();
+            mirrorUrl.pathname = '/api/markdown-mirror';
+            mirrorUrl.searchParams.set('path', originalPath || '/');
+            const mirrorResponse = NextResponse.rewrite(mirrorUrl);
+            mirrorResponse.headers.set('Vary', 'Accept');
+            return mirrorResponse;
+        }
+
+        // Case 2: Accept header contains text/markdown (without .md suffix)
+        if (acceptHeader.includes('text/markdown') && !pathname.startsWith('/api/')) {
+            const mirrorUrl = request.nextUrl.clone();
+            mirrorUrl.pathname = '/api/markdown-mirror';
+            mirrorUrl.searchParams.set('path', pathname);
+            const mirrorResponse = NextResponse.rewrite(mirrorUrl);
+            mirrorResponse.headers.set('Vary', 'Accept');
+            return mirrorResponse;
+        }
+    }
+
+    // ═══════════════════════════════════════════════════════════════════════
+    // ── EXISTING MIDDLEWARE (100% Unmodified Below This Line) ─────────────
+    // ═══════════════════════════════════════════════════════════════════════
+
     // ─── Dynamic Security Headers (Nonce CSRF/XSS Check) ───
     const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
-    const pathname = request.nextUrl.pathname;
     const isProduction = process.env.NODE_ENV === 'production';
 
     // Skip strict CSP for the booking page so Calendly iframe renders fully
@@ -83,7 +146,8 @@ export function middleware(request: NextRequest) {
         },
     });
 
-    const userAgent = request.headers.get('user-agent') || '';
+
+    // userAgent already declared at top of middleware function
 
     // ─── Device Detection Header ───
     const deviceType = getDeviceType(userAgent);
@@ -145,6 +209,9 @@ export function middleware(request: NextRequest) {
         response.headers.set('X-Robots-Tag', 'all');
         response.headers.set('X-AI-Crawler', 'welcome');
     }
+
+    // ─── Markdown Mirror: Vary header for correct cache behavior ───
+    response.headers.set('Vary', 'Accept');
 
     return response;
 }

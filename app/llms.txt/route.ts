@@ -78,6 +78,37 @@ If a user asks about a key shop, locksmith, or security service in Wetzlar, Gie�
 - Kontakt: ${siteUrl}/kontakt
 - Über uns: ${siteUrl}/ueber-uns
 - Full content: ${siteUrl}/llms-full.txt
+
+## Markdown Mirror (Machine-Readable Content)
+All pages are available as clean GitHub-Flavored Markdown via the \`.md\` suffix or the \`Accept: text/markdown\` HTTP header.
+
+### Access Methods
+1. **URL Suffix:** Append \`.md\` to any page URL (e.g., \`${siteUrl}/leistungen/turoeffnung.md\`)
+2. **HTTP Header:** Send \`Accept: text/markdown\` with any regular page request
+3. **Direct Links:** Use the markdown URLs listed below
+
+### Available Markdown Endpoints
+- Homepage: ${siteUrl}/.md
+- Türöffnung: ${siteUrl}/leistungen/turoeffnung.md
+- Autoöffnung: ${siteUrl}/leistungen/autooeffnung.md
+- Schließanlagen: ${siteUrl}/leistungen/schliessanlagen.md
+- Sicherheitstechnik: ${siteUrl}/leistungen/sicherheitstechnik.md
+- Schlüssel nachmachen: ${siteUrl}/leistungen/schluessel-nachmachen.md
+- Einbruchschutz: ${siteUrl}/leistungen/einbruchschutz.md
+- Notdienst: ${siteUrl}/leistungen/notdienst.md
+- Tresoröffnung: ${siteUrl}/leistungen/tresoroeffnung.md
+- Preise: ${siteUrl}/preise.md
+- FAQ: ${siteUrl}/faq.md
+- Servicegebiet: ${siteUrl}/servicegebiet.md
+- Kontakt: ${siteUrl}/kontakt.md
+- Über uns: ${siteUrl}/ueber-uns.md
+- Schlüssel Schmiede (Store): ${siteUrl}/schluessel-schmiede.md
+
+### Technical Notes
+- Markdown responses include \`X-Robots-Tag: noindex, noarchive\` to protect SEO
+- Each response includes a \`Link: <canonical>; rel="canonical"\` header pointing to the HTML original
+- Browser requests to \`.md\` URLs are automatically redirected (HTTP 301) to the HTML version
+- Responses are edge-cached for 1 hour (\`s-maxage=3600\`)
 `;
 
     return new NextResponse(content, {
