@@ -117,16 +117,7 @@ export const services: Service[] = [
     features: ["Zweitschlüssel programmieren", "Gehäuse und kaputte Tasten tauschen", "Sofort Service in Wetzlar", "Oft günstiger als die Vertragswerkstatt"],
     order: 9
   },
-  {
-    id: createId("srv-10"),
-    slug: createSlug("passbilder"),
-    title: "Biometrische Passbilder",
-    shortDescription: "Sofort-Passbilder in Top-Qualität für Ausweis, Führerschein und Visa.",
-    fullDescription: "Egal ob Personalausweis, Reisepass, Führerschein oder Visum: Wir fotografieren Sie nach den offiziellen biometrischen Vorgaben. Ohne Termin einfach im Ladenlokal vorbeikommen und nach 5-10 Minuten Bilder direkt mitnehmen.",
-    icon: "Image",
-    features: ["Sofort zum Mitnehmen", "Offiziell Biometrisch Zertifiziert", "Ohne Termin", "4 Bilder für 15€"],
-    order: 10
-  },
+
   {
     id: createId("srv-11"),
     slug: createSlug("uhren-service"),

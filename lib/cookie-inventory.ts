@@ -86,20 +86,6 @@ export const COOKIE_INVENTORY: readonly CookieEntry[] = [
     purpose: "Speichert die vom Nutzer gewählte Schriftgröße (Barrierefreiheit)",
     provider: "Eigen (Schlüssel Schmiede)",
   },
-  {
-    name: "_ga",
-    category: "analytics",
-    duration: "2 Jahre",
-    purpose: "Google Analytics: Unterscheidet Nutzer durch eine zufällig generierte ID",
-    provider: "Google Ireland Limited",
-  },
-  {
-    name: "_ga_*",
-    category: "analytics",
-    duration: "2 Jahre",
-    purpose: "Google Analytics: Speichert den Session-Status",
-    provider: "Google Ireland Limited",
-  },
 ] as const;
 
 // ─── Data Processing Inventory (DSGVO Art. 30) ───
@@ -115,15 +101,6 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     thirdCountryTransfer: "USA und EU-US Data Privacy Framework (DPF). Zusätzlich Standardvertragsklauseln (SCCs) als Absicherung.",
   },
   {
-    name: "Google Analytics 4 (GA4)",
-    dataCollected: ["IP-Adresse (anonymisiert)", "Seitenaufrufe", "Events", "Geräteinformationen", "Browser-Typ"],
-    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)",
-    recipient: "Google Ireland Limited",
-    retentionPeriod: "14 Monate (GA4-Standard)",
-    consentCategory: "analytics",
-    thirdCountryTransfer: "USA und Google Ireland Limited als Vertragspartner; Google LLC im EU-US Data Privacy Framework gelistet.",
-  },
-  {
     name: "Vercel Analytics (cookieless)",
     dataCollected: ["Aggregierte Seitenaufrufe", "Web Vitals (LCP, CLS, INP, FCP, TTFB)"],
     legalBasis: "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Website-Optimierung und cookieless, aggregiert, keine PII)",
@@ -135,7 +112,7 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
   {
     name: "Google Maps (Servicegebiet-Karte)",
     dataCollected: ["IP-Adresse", "Browser-Typ", "Standortdaten (wenn freigegeben)"],
-    legalBasis: "Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Darstellung des Servicegebiets)",
+    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung via Two-Click-Lösung auf der Impressumsseite)",
     recipient: "Google Ireland Limited",
     retentionPeriod: "Gemäß Google-Datenschutzrichtlinie",
     consentCategory: null, // Wird nur auf Servicegebiet-Seite geladen

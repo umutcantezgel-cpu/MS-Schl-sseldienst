@@ -44,7 +44,7 @@ export default function CookieRichtliniePage() {
         <LegalLayout
             heroTitle="Cookie-Richtlinie und Datenschutz-Einstellungen"
             heroSubtitle="Vollständige Transparenz darüber, welche Cookies wir verwenden, warum wir sie brauchen und wie Sie die Kontrolle behalten."
-            lastUpdated="27. März 2026"
+            lastUpdated="12. April 2026"
             tocItems={TOC_ITEMS}
         >
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
@@ -54,7 +54,7 @@ export default function CookieRichtliniePage() {
 
             <LegalSection>
                 <TLDRBox title="Cookies auf einen Blick" icon="info">
-                    <p>Wir verwenden <strong>nur 5 Cookies</strong> auf dieser Website und davon sind 3 technisch notwendig und 2 optional (Analyse). <strong>Marketing-Cookies verwenden wir derzeit nicht aktiv.</strong></p>
+                    <p>Wir verwenden <strong>nur 3 Cookies</strong> auf dieser Website, die alle technisch notwendig sind. <strong>Analyse- und Marketing-Cookies setzen wir derzeit nicht aktiv ein.</strong></p>
                     <p>Sie können nicht-essentielle Cookies jederzeit ablehnen oder Ihre Einstellungen ändern. Klicken Sie dazu auf den Button &quot;Cookie-Einstellungen&quot; im Footer oder nutzen Sie unser <Link href="/datenschutz#4-cookies" className="underline hover:text-gray-900 font-medium">Privacy Center</Link>.</p>
                 </TLDRBox>
             </LegalSection>
@@ -113,7 +113,7 @@ export default function CookieRichtliniePage() {
                 </ul>
 
                 <h3 className="mt-8 text-lg font-bold text-gray-900">3.2 Analyse-Cookies (optional)</h3>
-                <p>Diese Cookies werden <strong>nur nach Ihrer aktiven Einwilligung</strong> gesetzt. Sie helfen uns zu verstehen, wie Besucher unsere Website nutzen, um sie kontinuierlich zu verbessern. Alle Daten werden anonymisiert erhoben.</p>
+                <p>Wir haben die technische Infrastruktur für Analyse-Cookies (Google Analytics 4) vorbereitet und das Consent-System unterstützt die Kategorie. <strong>Derzeit setzen wir jedoch keine Analyse-Cookies aktiv ein.</strong> Sollten wir GA4 zukünftig aktivieren, werden die Cookies erst nach Ihrer ausdrücklichen Einwilligung gesetzt.</p>
                 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) i.V.m. § 25 Abs. 1 TTDSG.</p>
                 <ul className="mt-2 space-y-1.5 text-gray-600">
                     {analyticsCookies.map(c => (

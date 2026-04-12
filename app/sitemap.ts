@@ -92,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${siteUrl}/cookie-richtlinie`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
         { url: `${siteUrl}/widerruf`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
         // Service pages missing from Content Graph
-        { url: `${siteUrl}/leistungen/passbilder`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
         { url: `${siteUrl}/leistungen/autoschluessel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${siteUrl}/leistungen/uhren-service`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     ];

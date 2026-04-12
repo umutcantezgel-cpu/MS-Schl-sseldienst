@@ -185,8 +185,7 @@ export function generateLocalBusinessSchema() {
             "Schlossaustausch",
             "Autoöffnung",
             "Notdienst",
-            "Gravuren",
-            "Passbilder"
+            "Gravuren"
         ]
     };
 }

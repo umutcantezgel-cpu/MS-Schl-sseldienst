@@ -12,7 +12,7 @@ import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { getFAQSchema } from "@/lib/schema";
 import { siteUrl } from "@/lib/schema";
-import { Key, MapPin, Clock, Phone, Hammer, Car, Fingerprint, Award, Camera, Battery, ChevronRight, Star, ShieldCheck, Wrench, CircuitBoard, Cpu } from "lucide-react";
+import { Key, MapPin, Clock, Phone, Hammer, Car, Award, Battery, ChevronRight, Star, ShieldCheck, Wrench, CircuitBoard, Cpu } from "lucide-react";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import Link from "next/link";
 import { SeoContentImage } from "@/components/seo/SeoImage";
@@ -20,7 +20,7 @@ import { werkstattImages, maschinenImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Schlüssel Schmiede | Schlüsseldienst Wetzlar",
- description: "Langgasse 70 in Wetzlar: ✔️ KFZ-Schlüssel Codierung ✔️ Ersatzschlüssel sofort ✔️ Passbilder & Gravuren. Kommen Sie ohne Termin vorbei!",
+ description: "Langgasse 70 in Wetzlar: ✔️ KFZ-Schlüssel Codierung ✔️ Ersatzschlüssel sofort ✔️ Gravuren & Batterieservice. Kommen Sie ohne Termin vorbei!",
  path: "/schluessel-schmiede",
  exactTitle: true,
 });
@@ -66,7 +66,6 @@ function getLocalBusinessSchema() {
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Schlüsselanfertigung" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "KFZ-Schlüssel Codierung" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gravurarbeiten" } },
-    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Biometrische Passbilder" } },
    ],
   },
   aggregateRating: {
@@ -85,7 +84,7 @@ const storeServices = [
  { icon: Car, title:"KFZ-Schlüssel", desc:"Duplikation, Anfertigung und elektronische Codierung für alle gängigen Fahrzeugtypen.", accent:"bg-red-500/10 text-red-600" },
  { icon: Wrench, title:"Schlösser & Zylinder", desc:"Austausch, Reparatur und Beratung zu Schließzylindern und Kastenschlössern.", accent:"bg-amber-500/10 text-amber-600" },
  { icon: Award, title:"Gravuren", desc:"Klingelschilder, Pokale, Medaillen und Namensschilder - sauber und präzise.", accent:"bg-violet-500/10 text-violet-600" },
- { icon: Camera, title:"Passbilder", desc:"Biometrische Passbilder mit QR-Code - direkt erstellt, sofort abholbereit.", accent:"bg-rose-500/10 text-rose-600" },
+
  { icon: Battery, title:"Batteriewechsel", desc:"Schneller Batterieservice für Uhren, Autoschlüssel und kleine Geräte.", accent:"bg-cyan-500/10 text-cyan-600" },
 ];
 
@@ -296,7 +295,7 @@ export default function SchluesselSchmiedePage() {
          Unsere Leistungen im Laden
         </h2>
         <p className="mt-4 text-lg text-[color:var(--text-secondary)] max-w-2xl mx-auto">
-         Von der Schlüsselkopie bis zum KFZ-Schlüssel, von Gravuren bis Passbilder , alles persönlich und direkt vor Ort.
+         Von der Schlüsselkopie bis zum KFZ-Schlüssel, von Gravuren bis Batterieservice, alles persönlich und direkt vor Ort.
         </p>
        </div>
       </StaggerItem>
@@ -407,52 +406,20 @@ export default function SchluesselSchmiedePage() {
     </div>
    </section>
 
-   {/* ═══ 6. BSS & GRAVUR HIGHLIGHT (Bento 2.0) ═══ */}
+   {/* ═══ 6. GRAVUR HIGHLIGHT ═══ */}
    <section className="bg-[var(--surface-secondary)] px-[var(--section-px)] py-24 md:py-32 overflow-hidden relative">
     {/* Background Shapes */}
     <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-violet-500/5 blur-[120px] rounded-full pointer-events-none" />
 
-    <div className="mx-auto max-w-6xl relative z-10">
+    <div className="mx-auto max-w-4xl relative z-10">
      <StaggerReveal animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade} className="text-center mb-16">
-        <Badge variant="outline" className="mb-4 text-violet-600 bg-violet-50 border-violet-100">Präzision & biometrische Fotografie</Badge>
+        <Badge variant="outline" className="mb-4 text-violet-600 bg-violet-50 border-violet-100">Handwerkskunst im Detail</Badge>
         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-         Lasergravuren & <br className="hidden md:block"/>Passbild-Studio
+         Präzisions-Gravuren
         </h2>
       </StaggerItem>
-
       <StaggerItem animation={entryAnimations.slideUpFade}>
-       <div className="grid md:grid-cols-2 gap-6 items-stretch">
-        
-        {/* Passbilder Sektion */}
-        <div className="rounded-[var(--radius-24)] bg-white border border-[var(--border-subtle)] p-8 lg:p-10 relative overflow-hidden group shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)] transition-shadow">
-          <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-            <Camera className="w-32 h-32 text-rose-500" />
-          </div>
-          <div className="relative z-10">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-rose-500/10 text-rose-600">
-                <Fingerprint className="h-6 w-6" />
-              </div>
-              <h3 className="text-[24px] font-extrabold text-[color:var(--text-primary)]">Biometrische Passbilder</h3>
-            </div>
-            <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-8">
-              Wir erstellen offizielle, biometrische Passfotos nach den strengen ICAO-Normen, die von den Bürgerbüros für Ausweise und Führerscheine akzeptiert werden.
-            </p>
-            <div className="space-y-3">
-              {[
-                { label: "Behörden-Konform", text: "Strenge Einhaltung aller Vorgaben" },
-                { label: "E-Pass-Ready", text: "Sofort mit QR-Code zum Einscannen" },
-                { label: "Kein Termin", text: "Direkt im Laden shoooten & mitnehmen" }
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                  <div className="font-bold text-rose-600 text-sm w-[120px] shrink-0">{item.label}</div>
-                  <div className="text-sm text-[color:var(--text-secondary)]">{item.text}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Gravuren Sektion */}
         <div className="rounded-[var(--radius-24)] bg-violet-600 border border-violet-500 p-8 lg:p-10 relative overflow-hidden group shadow-lg">
@@ -487,7 +454,7 @@ export default function SchluesselSchmiedePage() {
           </div>
         </div>
 
-       </div>
+
       </StaggerItem>
      </StaggerReveal>
     </div>

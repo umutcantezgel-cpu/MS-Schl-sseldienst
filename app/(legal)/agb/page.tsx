@@ -32,7 +32,7 @@ export default function AGBPage() {
         <LegalLayout
             heroTitle="Allgemeine Geschäftsbedingungen"
             heroSubtitle="Klare und transparente Spielregeln für unsere Zusammenarbeit. Keine Überraschungen, keine versteckten Kosten."
-            lastUpdated="27. März 2026"
+            lastUpdated="12. April 2026"
             tocItems={TOC_ITEMS}
         >
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
@@ -70,6 +70,7 @@ export default function AGBPage() {
                 <p>2.2. Ein rechtsverbindlicher Vertrag kommt zustande, sobald der Kunde - mündlich (z.B. am Telefon) oder schriftlich - einen Einsatz anfordert und der Auftragnehmer diesen Einsatz bestätigt und disponiert.</p>
                 <p>2.3. Der konkrete Auftragsinhalt und der Preis werden spätestens bei Eintreffen des Technikers am Einsatzort vor Beginn der handwerklichen Tätigkeit besprochen und vom Kunden (digital oder in Papierform) durch Unterschrift auf dem Auftragsformular bestätigt.</p>
                 <p>2.4. Der Auftragnehmer behält sich das Recht vor, die Durchführung einer Notöffnung zu verweigern, wenn berechtigte Zweifel an der Zugangsberechtigung des Kunden zum Objekt bestehen. Der Kunde ist verpflichtet, sich durch ein gültiges amtliches Ausweisdokument auszuweisen.</p>
+                <p>2.5. <strong>Textform-Bestätigung bei Fernabsatz (Telefonbuchung):</strong> Bei telefonischer Auftragserteilung übermittelt der Auftragnehmer dem Kunden eine Zusammenfassung der wesentlichen Vertragsinhalte (Art der Dienstleistung, verbindlicher Festpreis, ggf. Zuschlagshöhe) in Textform (per SMS, E-Mail oder WhatsApp) gemäß § 312f BGB, sofern dies technisch möglich ist und die Dringlichkeit des Einsatzes eine Verzögerung zulässt.</p>
             </LegalSection>
 
             <LegalSection id="3-preise">

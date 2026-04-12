@@ -94,6 +94,7 @@ export default function ImpressumPage() {
                 <ul>
                     <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
                     <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35576 Wetzlar</li>
+                    <li><strong>Handwerksrollen-Eintragung:</strong> Schlüsseldienst-Tätigkeiten fallen je nach Leistungsumfang unter die Handwerksordnung (HwO). Eine Eintragung in die Handwerksrolle der HWK Wiesbaden wird ggf. beantragt bzw. liegt vor. Bitte kontaktieren Sie uns bei Rückfragen.</li>
                     <li><strong>Geltende berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
                 </ul>
             </LegalSection>
