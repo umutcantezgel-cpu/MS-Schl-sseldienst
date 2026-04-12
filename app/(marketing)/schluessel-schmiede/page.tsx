@@ -172,7 +172,7 @@ export default function SchluesselSchmiedePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 p-4 md:p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl">
             <div className="flex flex-col items-center p-3 md:p-4">
               <span className="text-2xl sm:text-[28px] md:text-4xl font-black text-white leading-tight tracking-tight whitespace-nowrap">
-                <AnimatedCounter end={2005} />
+                <AnimatedCounter end={2025} />
               </span>
               <span className="text-[10px] sm:text-xs md:text-sm text-slate-400 font-medium uppercase tracking-wider mt-2">Gründungsjahr</span>
             </div>

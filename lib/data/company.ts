@@ -54,7 +54,7 @@ export const companyInfo: CompanyInfo = {
     latitude: 50.5567, // Adjusted approx Langgasse 70 coordinates
     longitude: 8.5022
   },
-  foundedYear: 2012,
+  foundedYear: 2025,
   socialMedia: {
     facebook: "https://www.facebook.com/61575618662298/mentions/",
     linkedin: "https://www.linkedin.com/in/mina-saad-a218413a9/",
