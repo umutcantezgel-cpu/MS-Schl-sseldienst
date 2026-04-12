@@ -409,7 +409,7 @@ export default function StickyHeader() {
             className="fixed inset-0 z-[110] bg-white flex flex-col overflow-hidden will-change-transform"
           >
             {/* Drawer Header */}
-            <div className="flex justify-between items-center px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
+            <div className="flex justify-between items-center px-4 sm:px-5 h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
                 <Image
                   src="/images/logo-brand.svg"
@@ -429,7 +429,7 @@ export default function StickyHeader() {
             </div>
 
             {/* Drawer Content */}
-            <div className="flex-1 overflow-y-auto px-5 py-8 pb-32 flex flex-col gap-8 bg-slate-50/50">
+            <div className="flex-1 overflow-y-auto px-3 sm:px-5 py-6 sm:py-8 pb-32 flex flex-col gap-6 sm:gap-8 bg-slate-50/50">
 
               {/* ★ Schlüssel Schmiede Premium Hero Card (Top Position) */}
               <Link
@@ -437,28 +437,28 @@ export default function StickyHeader() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 data-version="v5-fixed"
                 className="group block w-full rounded-2xl active:scale-[0.98] transition-all"
-                style={{ background: 'linear-gradient(135deg, #b91c1c, #7f1d1d)', padding: 20, borderRadius: 16, boxShadow: '0 8px 30px -5px rgba(220,38,38,0.4)', border: '1px solid rgba(185,28,28,0.4)' }}
+                style={{ background: 'linear-gradient(135deg, #b91c1c, #7f1d1d)', padding: 16, borderRadius: 16, boxShadow: '0 8px 30px -5px rgba(220,38,38,0.4)', border: '1px solid rgba(185,28,28,0.4)' }}
               >
                 {/* Row 1: Icon + Badge */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
-                  <div style={{ width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 12, background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.2)' }}>
-                    <Hammer className="w-6 h-6 text-white" />
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+                  <div style={{ width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 10, background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                    <Hammer className="w-5 h-5 text-white" />
                   </div>
                   <span style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', background: 'rgba(255,255,255,0.1)', padding: '4px 12px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.1)' }}>Ladengeschäft</span>
                 </div>
                 
                 {/* Row 2: Title + Address */}
-                <div style={{ marginBottom: 16 }}>
-                  <p style={{ fontSize: 22, fontWeight: 900, color: 'white', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 4 }}>Schlüssel Schmiede</p>
+                <div style={{ marginBottom: 12 }}>
+                  <p style={{ fontSize: 19, fontWeight: 900, color: 'white', lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 4 }}>Schlüssel Schmiede</p>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                     <MapPin className="w-3.5 h-3.5 text-red-200 shrink-0" />
-                    <span style={{ fontSize: 13, color: 'rgba(255,200,200,0.9)', fontWeight: 500 }}>Langgasse 70, 35576 Wetzlar</span>
+                    <span style={{ fontSize: 12, color: 'rgba(255,200,200,0.9)', fontWeight: 500 }}>Langgasse 70, 35576 Wetzlar</span>
                   </div>
                 </div>
 
                 {/* Row 3: CTA bar */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(0,0,0,0.2)', borderRadius: 12, padding: '12px 16px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                  <span style={{ fontSize: 14, fontWeight: 700, color: 'white' }}>Jetzt besuchen</span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'rgba(0,0,0,0.2)', borderRadius: 10, padding: '10px 14px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: 'white' }}>Jetzt besuchen</span>
                   <ChevronRight className="w-5 h-5 text-white/80 group-active:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -474,14 +474,14 @@ export default function StickyHeader() {
                         key={link.href}
                         href={link.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="group flex items-center gap-4 p-4 rounded-2xl bg-white border border-gray-100/80 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] active:scale-[0.98] transition-all hover:border-[var(--color-red-200)]"
+                        className="group flex items-center gap-3 p-3 sm:p-4 rounded-2xl bg-white border border-gray-100/80 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] active:scale-[0.98] transition-all hover:border-[var(--color-red-200)]"
                       >
-                        <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-red-50 to-orange-50 text-[var(--color-red-600)] rounded-xl border border-red-100/50 shadow-sm">
+                        <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-gradient-to-br from-red-50 to-orange-50 text-[var(--color-red-600)] rounded-xl border border-red-100/50 shadow-sm">
                           <Icon className="w-6 h-6" />
                         </div>
                         <div className="flex flex-col">
-                          <span className="font-bold text-base text-gray-900">{link.label}</span>
-                          <span className="text-sm text-gray-500">{link.description}</span>
+                          <span className="font-bold text-[15px] sm:text-base text-gray-900">{link.label}</span>
+                          <span className="text-[13px] sm:text-sm text-gray-500 line-clamp-2">{link.description}</span>
                         </div>
                       </Link>
                     )
@@ -498,14 +498,14 @@ export default function StickyHeader() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center gap-3 p-3 rounded-2xl bg-white border border-gray-100/80 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] active:scale-[0.98] transition-all hover:border-[var(--color-blue-200)]"
+                      className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-2xl bg-white border border-gray-100/80 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] active:scale-[0.98] transition-all hover:border-[var(--color-blue-200)]"
                     >
-                      <div className="w-10 h-10 flex shrink-0 items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 text-[var(--color-blue-600)] rounded-xl border border-blue-100/50 shadow-sm">
-                        <MapPin className="w-5 h-5" />
+                      <div className="w-9 h-9 sm:w-10 sm:h-10 flex shrink-0 items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 text-[var(--color-blue-600)] rounded-xl border border-blue-100/50 shadow-sm">
+                        <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                       </div>
                       <div className="flex flex-col justify-center">
-                        <span className="font-bold text-sm text-gray-900 leading-tight">{link.label}</span>
-                        <span className="text-xs text-gray-500 leading-tight mt-0.5 max-w-[80px] truncate">{link.description}</span>
+                        <span className="font-bold text-[13px] sm:text-sm text-gray-900 leading-tight">{link.label}</span>
+                        <span className="text-[11px] sm:text-xs text-gray-500 leading-tight mt-0.5 line-clamp-1">{link.description}</span>
                       </div>
                     </Link>
                   ))}
@@ -535,10 +535,10 @@ export default function StickyHeader() {
             </div>
 
             {/* Sticky Mobile CTA */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100/80 bg-white/95 backdrop-blur-md pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10 flex gap-3">
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 border-t border-gray-100/80 bg-white/95 backdrop-blur-md pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10 flex gap-2.5 sm:gap-3">
               <a
                 href="tel:+4964418056279"
-                className="relative overflow-hidden flex-1 flex items-center justify-center gap-2 h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-base rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
+                className="relative overflow-hidden flex-1 flex items-center justify-center gap-2 h-[52px] sm:h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-[15px] sm:text-base rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
               >
                 <Phone className="w-5 h-5" />
                 Notdienst
@@ -546,7 +546,7 @@ export default function StickyHeader() {
               <Link
                 href="/termin-buchen"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="flex-[0.8] flex items-center justify-center gap-2 h-[60px] bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-base rounded-2xl active:scale-[0.98] transition-all"
+                className="flex-[0.8] flex items-center justify-center gap-2 h-[52px] sm:h-[60px] bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-[15px] sm:text-base rounded-2xl active:scale-[0.98] transition-all"
               >
                 <Calendar className="w-5 h-5" />
                 Termin
