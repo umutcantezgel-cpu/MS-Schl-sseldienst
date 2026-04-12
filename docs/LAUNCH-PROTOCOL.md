@@ -17,7 +17,7 @@ Bevor die Domain umgestellt wird, muss Vercel genau wissen, mit welchen API-Schl
 - **WO:** Im Vercel Deployment-Screen (oder unter Projekt "Settings" -> "Environment Variables").
 - **WAS:** Alle Variablen aus unserer lokalen `.env.local` 1:1 in die Produktionsumgebung kopieren.
 - **WIE:** Kopiere einfach den gesamten Inhalt deiner lokalen `.env.local` und füge ihn in das erste Feld bei Vercel ein. Vercel zerlegt die Liste automatisch:
-  - `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` = `AIzaSyDGmJeJsMRAh3Z9PZWNJRTomvM3URcm5B8`
+  - `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` = `(Dein Google Maps API Key aus .env.local)`
   - `NEXT_PUBLIC_SITE_URL` = `https://wetzlar-schluesseldienst.de` (Exakt so, **ohne** `/` am Ende)
   - `NEXT_PUBLIC_FORMSPREE_ID` = `(Deine Formspree-ID)`
   - `FORMSPREE_EMERGENCY_ENDPOINT` = `(Dein Formspree Notdienst-Link)`
