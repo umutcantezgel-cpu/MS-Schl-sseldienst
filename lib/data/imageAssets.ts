@@ -50,8 +50,8 @@ export const teamImages: ImageAsset[] = [
     src: "/images/mina-saad-inhaber-schluessel-schmiede-portrait.jpeg",
     alt: "Mina Saad und Inhaber der Schlüssel-Schmiede Wetzlar im Portrait",
     title: "Mina Saad und Portrait des Inhabers",
-    width: 1600,
-    height: 1200,
+    width: 682,
+    height: 1024,
     category: "team",
   },
   {
