@@ -60,11 +60,12 @@ export default function ServicesSection() {
         {/* Persönlichkeits-Quote */}
         <div className="mt-8 relative rounded-2xl bg-white/70 backdrop-blur-2xl border border-[var(--color-charcoal-100)] p-8 lg:p-10 overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
           <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center md:items-start">
-            <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(184,67,42,0.3)]">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-[260px] lg:w-56 lg:h-[300px] shrink-0 rounded-2xl overflow-hidden border-2 border-white/80 shadow-[0_12px_40px_-12px_rgba(184,67,42,0.6)]">
               <SeoContentImage
                 image={teamImages[1]!}
-                className="w-full h-full"
-                sizes="96px"
+                className="w-full h-full object-cover object-[50%_15%] md:object-[50%_20%]"
+                sizes="(max-width: 768px) 160px, (max-width: 1024px) 192px, 224px"
+                quality={100}
               />
             </div>
             <div className="flex flex-col flex-1 text-center md:text-left">

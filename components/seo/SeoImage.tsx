@@ -59,6 +59,7 @@ interface SeoContentImageProps {
   altOverride?: string;
   className?: string;
   sizes?: string;
+  quality?: number;
 }
 
 export function SeoContentImage({
@@ -67,6 +68,7 @@ export function SeoContentImage({
   altOverride,
   className = "",
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px",
+  quality = 80,
 }: SeoContentImageProps) {
   // Dynamische Alt-Text-Generierung für Local SEO (115+ Städte)
   const dynamicAlt = altOverride
@@ -86,7 +88,7 @@ export function SeoContentImage({
       decoding="async"
       sizes={sizes}
       className={`object-cover ${className}`}
-      quality={80}
+      quality={quality}
     />
   );
 }
