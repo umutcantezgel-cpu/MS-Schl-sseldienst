@@ -50,7 +50,7 @@ export default function BarrierefreiheitPage() {
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <p className="text-lg text-[var(--text-on-dark-secondary)] max-w-2xl">
+              <p className="text-lg text-[color:var(--text-secondary)] max-w-2xl">
                 Unsere Website soll für alle Menschen zugänglich sein , unabhängig von
                 visuellen, motorischen, auditiven oder kognitiven Fähigkeiten.
               </p>
