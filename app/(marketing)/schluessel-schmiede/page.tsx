@@ -144,7 +144,7 @@ export default function SchluesselSchmiedePage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto max-w-2xl text-lg sm:text-xl text-slate-300 leading-relaxed font-light">
-            Wo Traditionshandwerk auf modernste Mikroelektronik trifft. Von der klassischen Schlüsselkopie bis zur komplexen KFZ-Transponder-Codierung an unseren CNC-Fräsen.
+            Wo Traditionshandwerk auf moderne Technik trifft. Von der klassischen Schlüsselkopie über präzise CNC-gefräste Schlüssel bis hin zur fachgerechten Programmierung von KFZ-Transpondern.
           </p>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
