@@ -153,7 +153,7 @@ export const locations: LocationData[] = [
 <p>Sie haben den Schlüssel stecken gelassen kurz vor dem Termin im Rathaus? Unser Logistikvorteil in der Goethestadt ist unschlagbar. Wir kennen die Staustrecken am Karl-Kellner-Ring im morgendlichen Berufsverkehr und umfahren Blockaden durch intelligente Routenplanung etwa über Brückenbauwerke der B49. So garantieren wir Anfahrtszeiten von meist unter 10 Minuten und wir sind oft schon unterwegs, bevor Sie aufgelegt haben.</p>
 
 <h3>Schonende Öffnungen für sensible Denkmal- und Altbauarchitektur</h3>
-<p>Besonders die Gebäude rund um den pittoresken Kornmarkt, die Lahnstraße und den Schillerplatz unterliegen strengem Denkmalschutz. Die historischen, teilweise reich verzierten Holztüren (etwa am alten Kestner-Haus) dulden keine Fehler durch rohe Gewalt. Wenn Sie sich hier versehentlich aussperren, benötigen Sie Feinmechanik, keine Bohrmaschinen. Dank hochsensibler Spezialwerkzeuge, wie feinsten Zugnadeln (Lockpicking) und beschichteten Türfallen-Gleitern, können wir fast jede zugefallene, aber nicht aktiv verriegelte Haustür Wetzlars zu fantastischen 99 % komplett schadensfrei aufziehen. Die massive Substanz Ihres Heims bleibt unangetastet.</p>
+<p>Besonders die Gebäude rund um den pittoresken Kornmarkt, die Lahnstraße und den Schillerplatz unterliegen strengem Denkmalschutz. Die historischen, teilweise reich verzierten Holztüren (etwa am alten Kestner-Haus) dulden keine Fehler durch rohe Gewalt. Wenn Sie sich hier versehentlich aussperren, benötigen Sie Feinmechanik, keine Bohrmaschinen. Dank hochsensibler Spezialwerkzeuge, wie feinsten Zugnadeln (Lockpicking) und beschichteten Türfallen-Gleitern, können wir fast jede zugefallene, aber nicht aktiv verriegelte Haustür Wetzlars zu nahezu allen komplett schadensfrei aufziehen. Die massive Substanz Ihres Heims bleibt unangetastet.</p>
 
 <h3>B2B-Partner für Wetzlarer Geschäftsleute</h3>
 <p>Doch nicht nur die Einwohnerschaft Wetzlars verlässt sich auf uns. Zahlreiche Gewerbetreibende in der Krämerstraße, Anwälte in der Bahnhofsvorstadt oder Systemgastronomen rund ums Forum Wetzlar zählen zu unseren Notfall-Kunden. Defekte an komplexen BKS- oder Ikon-Schließanlagen beheben wir direkt vor Ort. Der Schutz Ihrer Wetzlarer Liegenschaft hat für unseren Schlüsseldienst jederzeit allerhöchste Priorität.</p>
@@ -195,7 +195,7 @@ export const locations: LocationData[] = [
             },
             {
                 question: "Meine Türrahmendichtung an meiner Neubau-Wohnung am Dom darf nicht kaputtgehen. Wie arbeiten Sie?",
-                answer: "Wir nutzen extrem weiche, materialschonende Spezialspatel und Luftkissen. Bei zugefallenen Türen in Wetzlar garantieren wir eine absolut materialschonende Öffnung mit annähernd 100% Erfolgsquote, ohne das Holz oder den Lack zu zerkratzen."
+                answer: "Wir nutzen extrem weiche, materialschonende Spezialspatel und Luftkissen. Bei zugefallenen Türen in Wetzlar garantieren wir eine absolut materialschonende Öffnung mit höchster Erfolgsquote, ohne das Holz oder den Lack zu zerkratzen."
             }
         ],
         neighbors: ["schluesseldienst-asslar", "schluesseldienst-wetzlar-niedergirmes", "schluesseldienst-wetzlar-naunheim"]
@@ -231,7 +231,7 @@ export const locations: LocationData[] = [
 <p>Da Niedergirmes Teil des direkten Kerngebiets von Wetzlar ist, profitieren Sie bei uns von einem unschlagbaren Heimvorteil: Wir garantieren Ihnen nicht nur eine extrem schnelle Anfahrtszeit von meist nur 3 bis 5 Minuten, sondern erlassen Ihnen auch jegliche Anfahrtskosten. Unser verbindlicher Festpreis ab 99 Euro gilt hier ohne Wenn und Aber. Keine Callcenter-Warteschleifen, keine Vermittlungsgebühren, sondern direkte, ehrliche Handwerksarbeit vor Ort.</p>
 
 <p>Egal, ob Sie nach dem Verlassen Ihrer Wohnung an der Naunheimer Straße feststellen, dass der Schlüssel noch innen auf der Kommode liegt, oder ob abends das Türschloss in der Nähe der Werner-von-Siemens-Schule klemmt: Wenn Sie aus Wetzlar-Niedergirmes anrufen, machen wir uns sofort auf den Weg. Verlassen Sie sich auf einen vertrauensvollen Nachbarschafts-Service, der Ihnen die Sicherheit und das gute Gefühl schnellstmöglich zurückgibt.</p>`,
-            serviceZerstörungsfrei: "In Wetzlar-Niedergirmes öffnen wir zugefallene Haus- und Wohnungstüren dank spezieller Handwerkstechniken in 99% der Fälle absolut beschädigungsfrei.",
+            serviceZerstörungsfrei: "In Wetzlar-Niedergirmes öffnen wir zugefallene Haus- und Wohnungstüren dank spezieller Handwerkstechniken in nahezu allen Fällen absolut beschädigungsfrei.",
             serviceBohren: "Auch schwere Sicherheitsverriegelungen, wie sie in den Neubaugebieten von Niedergirmes oft vorkommen, überwinden wir mit Präzisionswerkzeug souverän.",
             service247: "Unsere regionalen Experten sind für Sie in Wetzlar-Niedergirmes an 365 Tagen im Jahr, auch nachts und an allen Feiertagen, sofort einsatzbereit.",
         },
@@ -291,7 +291,7 @@ export const locations: LocationData[] = [
             metaDescription: "Ihr Schlüsseldienst für Wetzlar-Dutenhofen! Transparenter Festpreis ab 99€, kostenlose Anfahrt, 24/7 Notdienst. Jetzt anrufen: 06441-8056279",
         },
         content: {
-            heroIntro: "Ausgesperrt in Wetzlar-Dutenhofen? Geraten Sie nicht in Panik. Unser lokaler Schlüsselnotdienst ist in ca. 5 Minuten bei Ihnen und mit Festpreisgarantie und ohne versteckte Anfahrtskosten.",
+            heroIntro: "Ausgesperrt in Wetzlar-Dutenhofen? Geraten Sie nicht in Panik. Unser lokaler Schlüsselnotdienst ist in ca. 5 Minuten bei Ihnen und mit verbindlicher Preisauskunft vorab und ohne versteckte Anfahrtskosten.",
             mainText: `
 <p>Als östlicher Stadtteil Wetzlars und dank der exponierten Lage direkt an der A45, ist Wetzlar-Dutenhofen nicht nur ein wichtiger Verkehrsknotenpunkt, sondern vor allem ein familienfreundliches Wohngebiet. Wenn Sie hier und vielleicht kurz vor der Fahrt mit der Dillstrecke ab dem Bahnhaltepunkt Dutenhofen und feststellen, dass der Schlüssel von innen steckt, ist schnelle, professionelle Hilfe gefragt. Unser <strong>Schlüsseldienst Wetzlar-Dutenhofen</strong> ist genau für diese Situationen Ihr verlässlicher Ansprechpartner.</p>
 
@@ -350,7 +350,7 @@ export const locations: LocationData[] = [
             mainText: `
 <p>Im beschaulichen Nordosten der Stadt liegt Wetzlar-Münchholzhausen, ein Stadtteil, der ruhiges, ländlich-suburbanes Wohnen mit einer hervorragenden Infrastruktur verbindet. Die eigene A45-Anschlussstelle und die charmante Kombination aus altem Ortskern und neu erschlossenen Wohngebieten machen es zu einem beliebten Lebensmittelpunkt. Doch auch hier passiert der Klassiker: Die Haustür fällt ins Schloss und der Schlüssel liegt noch auf dem Küchentisch. Genau hier kommt unser regionaler <strong>Schlüsseldienst Wetzlar-Münchholzhausen</strong> ins Spiel.</p>
 
-<p>Wir haben in Münchholzhausen schon unzählige Türen geöffnet und von den robusten Holztüren am alten Ortskern bis hin zu den stark gesicherten, wärmegedämmten Sicherheitstüren der Neubaugebiete. Da unsere Monteure tief in der Handwerkstechnik verwurzelt sind (Ausgebildet von Uwe Sarfeld), kennen wir die exakten Schließmechanismen moderner und alter Fabrikate. Für Sie bedeutet das: höchste Professionalität, minimale Wartezeiten und eine in über 99 % der Fälle gänzlich zerstörungsfreie Türöffnung bei zugefallenen Türen.</p>
+<p>Wir haben in Münchholzhausen schon unzählige Türen geöffnet und von den robusten Holztüren am alten Ortskern bis hin zu den stark gesicherten, wärmegedämmten Sicherheitstüren der Neubaugebiete. Da unsere Monteure tief in der Handwerkstechnik verwurzelt sind (Ausgebildet von Uwe Sarfeld), kennen wir die exakten Schließmechanismen moderner und alter Fabrikate. Für Sie bedeutet das: höchste Professionalität, minimale Wartezeiten und eine in nahezu alle der Fälle gänzlich zerstörungsfreie Türöffnung bei zugefallenen Türen.</p>
 
 <p>Als Wetzlarer Betrieb ist es für uns eine Selbstverständlichkeit, dass die Anfahrt nach Wetzlar-Münchholzhausen für Sie kostenlos ist. Unser Festpreis von ab 99 Euro ist genau das: ein Festpreis ohne verdeckte Überraschungen auf der Endrechnung. Durch die direkte Nähe zu unserer Basis und die reibungslose Verkehrsanbindung können wir Ihnen eine Ankunftszeit von lediglich rund 5 Minuten garantieren. In Notsituationen, etwa wenn das Essen auf dem Herd steht oder Kleinkinder in der Wohnung geblieben sind, ist diese Schnelligkeit Gold wert.</p>
 
@@ -401,7 +401,7 @@ export const locations: LocationData[] = [
             mainText: `
 <p>Gelegen im nördlichen Teil der Kernstadt und hervorragend angebunden an die B49 ist Wetzlar-Naunheim ein äußerst beliebtes, gewachsenes und dichtes Wohngebiet. Ob in den ruhigen Seitenstraßen am Lahnufer, in der Nähe der Naunheimer Mühle oder tief im Ortskern: Ein kurzer Moment der Unachtsamkeit, ein Windstoß und und die Tür fällt unwiderruflich ins Schloss. Für genau diesen Ernstfall sind wir Ihr verlässlicher <strong>Schlüsseldienst Wetzlar-Naunheim</strong>.</p>
 
-<p>Naunheim charakterisiert sich durch seine vielfältige Architektur, von charmanten Fachwerkhäusern bis hin zu stark frequentierten Mehrfamiliengebäuden. Unsere tiefgehende Expertise und stetige handwerkliche Ausbildung ermöglichen es uns, in Naunheim auf jede noch so spezielle Schließmechanik vorbereitet zu sein. Wir bringen die notwendige Ruhe und Geduld mit, um Ihre Wohnungs- oder Haustür schonend zu entriegeln. Werktags öffnen wir zu über 99 % aller nur zugefallenen Türen absolut zerstörungsfrei, sodass Ihnen teure Folgekosten für neue Zylinder oder Beschläge erspart bleiben.</p>
+<p>Naunheim charakterisiert sich durch seine vielfältige Architektur, von charmanten Fachwerkhäusern bis hin zu stark frequentierten Mehrfamiliengebäuden. Unsere tiefgehende Expertise und stetige handwerkliche Ausbildung ermöglichen es uns, in Naunheim auf jede noch so spezielle Schließmechanik vorbereitet zu sein. Wir bringen die notwendige Ruhe und Geduld mit, um Ihre Wohnungs- oder Haustür schonend zu entriegeln. Werktags öffnen wir zu nahezu alle aller nur zugefallenen Türen absolut zerstörungsfrei, sodass Ihnen teure Folgekosten für neue Zylinder oder Beschläge erspart bleiben.</p>
 
 <p>Ein fairer, ehrlicher Umgangston gehört zu unserer Firmenphilosophie. Für Wetzlar-Naunheim, als direkter Stadtteil, streichen wir die Anfahrtskosten vollständig von der Rechnung. Unser Festpreissystem bietet absolute Transparenz, beginnend ab 99 Euro. Sie wissen exakt, woran Sie sind, bevor wir auch nur einen Handgriff machen.</p>
 

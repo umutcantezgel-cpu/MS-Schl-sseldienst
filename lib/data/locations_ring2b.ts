@@ -29,7 +29,7 @@ export const ring2bLocations: LocationData[] = [
             mainText: `
 <p>Albshausen ist ein idyllischer Ortsteil von Solms im Lahn-Dill-Kreis, gelegen am westlichen Rand des Solmser Gemeindegebiets. Mit seinen ruhigen Wohnstraßen und dem dörflichen Charakter bietet Albshausen eine hohe Wohnqualität. Doch auch in dieser beschaulichen Umgebung kann ein zugefallenes Schloss schnell zur Stresssituation werden. Als Ihr <strong>Schlüsseldienst Albshausen</strong> sind wir in solchen Momenten Ihr verlässlicher Partner.</p>
 
-<p>Die Bebauung in Albshausen besteht größtenteils aus Einfamilienhäusern und landwirtschaftlich genutzten Gebäuden. Unsere Techniker kennen die typischen Schließsysteme der Region und arbeiten stets mit dem Ziel, Ihre Tür zerstörungsfrei zu öffnen. Bei nur zugefallenen Türen gelingt uns das in über 99 Prozent aller Fälle.</p>
+<p>Die Bebauung in Albshausen besteht größtenteils aus Einfamilienhäusern und landwirtschaftlich genutzten Gebäuden. Unsere Techniker kennen die typischen Schließsysteme der Region und arbeiten stets mit dem Ziel, Ihre Tür zerstörungsfrei zu öffnen. Bei nur zugefallenen Türen gelingt uns das in nahezu allen aller Fälle.</p>
 
 <p>Die direkte Anbindung über die Verbindungsstraßen von Solms nach Wetzlar ermöglicht uns eine zuverlässige Anfahrtszeit von rund 10 Minuten. In Albshausen fallen für Sie keine Anfahrtskosten an und unser Festpreis ab 99 Euro ist Ihre volle Kostensicherheit.</p>`,
             serviceZerstörungsfrei: "Zugefallene Haustüren in Albshausen öffnen wir mit feinfühligen Spezialtechniken und ohne Kratzer, ohne Bohren, ohne Folgekosten.",
@@ -112,7 +112,7 @@ export const ring2bLocations: LocationData[] = [
 <p>Die in Bechlingen üblichen Schließsysteme und von bewährten Profilzylindern bis zu modernen Sicherheitsschlössern und sind unserem Team aus der täglichen Arbeit bestens bekannt. Bei zugefallenen Türen setzen wir auf zerstörungsfreie Öffnungstechnik, die Ihren Türrahmen und Zylinder schont. Bei Schlüsselverlust oder abgebrochenen Schlüsseln haben wir Ersatzzylinder verschiedener Qualitätsstufen direkt im Fahrzeug.</p>
 
 <p>Die Anfahrt nach Bechlingen dauert für uns rund 9 Minuten. Anfahrtskosten berechnen wir nicht und es gilt unser Festpreissystem ab 99 Euro, das Ihnen vor der Anfahrt transparent mitgeteilt wird.</p>`,
-            serviceZerstörungsfrei: "Zugefallene Türen in Bechlingen öffnen wir in über 99% der Fälle spurlos und ohne den Zylinder auszutauschen.",
+            serviceZerstörungsfrei: "Zugefallene Türen in Bechlingen öffnen wir in nahezu alle der Fälle spurlos und ohne den Zylinder auszutauschen.",
             serviceBohren: "Wenn das Schloss in Bechlingen defekt ist, bohren wir kontrolliert und wechseln den Zylinder fachgerecht vor Ort.",
             service247: "Bechlingen bei Aßlar: Unser Notdienst ist 24/7 erreichbar. Nachts wie tags, bei Regen wie bei Sonnenschein.",
         },
@@ -185,7 +185,7 @@ export const ring2bLocations: LocationData[] = [
             metaDescription: "Schlüsseldienst Werdorf bei Aßlar. In 8 Min. vor Ort, Festpreis ab 99€. Keine versteckten Kosten. Notdienst: 06441-8056279",
         },
         content: {
-            heroIntro: "Tür zu in Werdorf? Wir kommen blitzschnell! In ca. 8 Minuten ist unser Monteur bei Ihnen und ohne Anfahrtskosten, mit Festpreisgarantie.",
+            heroIntro: "Tür zu in Werdorf? Wir kommen blitzschnell! In ca. 8 Minuten ist unser Monteur bei Ihnen und ohne Anfahrtskosten, mit verbindlicher Preisauskunft vorab.",
             mainText: `
 <p>Werdorf ist der größte Stadtteil von Aßlar und liegt zentral im Lahntal, direkt an der B49. Diese strategische Lage macht Werdorf für uns als <strong>Schlüsseldienst Werdorf</strong> besonders gut erreichbar und in nur rund 8 Minuten sind wir bei Ihnen. Der Ortsteil bietet eine lebendige Mischung aus Wohn- und Gewerbegebieten, altem Ortskern und neueren Siedlungen.</p>
 
@@ -265,7 +265,7 @@ export const ring2bLocations: LocationData[] = [
             metaDescription: "Schlüsseldienst Volpertshausen bei Hüttenberg. 12 Min. Anfahrt, Festpreis ab 99€. Keine versteckten Kosten. 24/7: 06441-8056279",
         },
         content: {
-            heroIntro: "Schlüsselnotfall in Volpertshausen? Wir sind in ca. 12 Minuten bei Ihnen und mit Festpreisgarantie und ohne Anfahrtskosten.",
+            heroIntro: "Schlüsselnotfall in Volpertshausen? Wir sind in ca. 12 Minuten bei Ihnen und mit verbindlicher Preisauskunft vorab und ohne Anfahrtskosten.",
             mainText: `
 <p>Volpertshausen gehört zur Gemeinde Hüttenberg und liegt eingebettet in die hügelige Landschaft südlich von Wetzlar. Der Ortsteil ist geprägt durch eine lockere Wohnbebauung mit viel Grün und ländlichem Flair. Als <strong>Schlüsseldienst Volpertshausen</strong> sind wir Ihr regionaler Ansprechpartner für schnelle und professionelle Türöffnungen.</p>
 
@@ -465,7 +465,7 @@ export const ring2bLocations: LocationData[] = [
             metaDescription: "Schlüsseldienst für Niederlemp und Oberlemp. 12 Min. Anfahrt, ab 99€ Festpreis. Ohne versteckte Kosten. Notdienst: 06441-8056279",
         },
         content: {
-            heroIntro: "Tür zu in Niederlemp oder Oberlemp? Wir sind in ca. 12 Minuten da und mit Festpreisgarantie und ohne Anfahrtskosten.",
+            heroIntro: "Tür zu in Niederlemp oder Oberlemp? Wir sind in ca. 12 Minuten da und mit verbindlicher Preisauskunft vorab und ohne Anfahrtskosten.",
             mainText: `
 <p>Niederlemp und Oberlemp sind zwei eng verbundene Ortsteile der Gemeinde Hohenahr, gelegen im nördlichen Lahn-Dill-Kreis. Zusammen bilden sie eine kleine, überschaubare Siedlung inmitten der mittelhessischen Hügellandschaft. Die ruhige Wohnlage und die Verbindung ins Aartal machen die beiden Ortsteile zu beliebten Wohnorten. Als <strong>Schlüsseldienst Niederlemp und Oberlemp</strong> sind wir Ihr direkter Ansprechpartner bei Schlüsselnotfällen.</p>
 

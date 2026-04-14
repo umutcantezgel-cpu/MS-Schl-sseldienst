@@ -34,7 +34,7 @@ export const ring1bLocations: LocationData[] = [
 <p>Als Stadtteil von Wetzlar fällt Blasbach in unser direktes Kerngebiet. Das bedeutet für Sie: null Anfahrtskosten und ein transparenter Festpreis ab 99 Euro. Über die Solmser Straße und die Verbindung nach Hermannstein erreichen unsere Monteure Blasbach in durchschnittlich 7 Minuten. Tag und Nacht, an 365 Tagen im Jahr.</p>
 
 <p>Ob nach dem Spaziergang an der Lahn der Schlüssel in der Jacke im Flur liegt oder das Türschloss nach Jahren seinen Dienst verweigert und rufen Sie uns an. Unser Schlüsseldienst Wetzlar-Blasbach garantiert Ihnen schnelle Hilfe, ehrliche Preise und echtes Handwerk aus der Region.</p>`,
-            serviceZerstörungsfrei: "In Wetzlar-Blasbach öffnen wir zugefallene Türen mit speziellen Öffnungstechniken in 99% der Fälle vollständig beschädigungsfrei und Rahmen und Zylinder bleiben intakt.",
+            serviceZerstörungsfrei: "In Wetzlar-Blasbach öffnen wir zugefallene Türen mit speziellen Öffnungstechniken in nahezu allen Fällen vollständig beschädigungsfrei und Rahmen und Zylinder bleiben intakt.",
             serviceBohren: "Bei defekten oder abgebrochenen Schlüsseln in Blasbach setzen wir präzise Spezialwerkzeuge ein und tauschen bei Bedarf den Schließzylinder direkt vor Ort aus.",
             service247: "Auch spätabends oder am Wochenende stehen wir für Blasbach bereit. Unser 24/7-Notdienst kennt keine Feiertage und keine Öffnungszeiten.",
         },
@@ -76,7 +76,7 @@ export const ring1bLocations: LocationData[] = [
             metaDescription: "Lokaler Schlüsseldienst für Wetzlar-Garbenheim. Ohne Anfahrtskosten, Festpreis ab 99€, in 5 Minuten vor Ort. 24/7 Notdienst: 06441-8056279",
         },
         content: {
-            heroIntro: "Schlüssel vergessen in Garbenheim? Kein Problem. Unser regionaler Schlüsseldienst ist in nur 5 Minuten bei Ihnen und mit Festpreisgarantie und kostenloser Anfahrt.",
+            heroIntro: "Schlüssel vergessen in Garbenheim? Kein Problem. Unser regionaler Schlüsseldienst ist in nur 5 Minuten bei Ihnen und mit verbindlicher Preisauskunft vorab und kostenloser Anfahrt.",
             mainText: `
 <p>Wetzlar-Garbenheim, westlich der Kernstadt gelegen, ist ein beschaulicher Stadtteil mit gewachsener Dorfstruktur und viel Grün. Die Nähe zur Altstadt und die ruhige Wohnlage machen Garbenheim besonders für Familien attraktiv. Zwischen renovierten Fachwerkhäusern im alten Ortskern und modernen Einfamilienhäusern am Ortsrand bietet der Stadtteil eine architektonische Vielfalt, die auch unterschiedliche Schließsysteme mit sich bringt. Als Ihr <strong>Schlüsseldienst Wetzlar-Garbenheim</strong> sind wir auf all diese Systeme bestens vorbereitet.</p>
 

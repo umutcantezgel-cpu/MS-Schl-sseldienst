@@ -92,15 +92,15 @@ export const ring2cLocations: LocationData[] = [
 <p>Die ausgebaute und meist frei fließende B49 macht es unserer Flotte leicht: In nur etwa <strong>9 Minuten</strong> cruisen wir von der Kernstadt Wetzlars bis nach Burgsolms. Unsere Techniker sparen am Gas nicht, solange es die Sicherheitstechnik erfordert.</p>
 
 <h3>Transparente Solmser Preise</h3>
-<p>Sie befürchten astronomische Fahrtkosten? Nicht mit uns. Für Burgsolms deckeln wir die Einsatz-Zufuhr bei moderaten 15 Euro Aufschlag. Der Basis-Festpreis der handwerklichen Öffnung unverschlossener Fallen bei Tag beläuft sich nachvollziehbar auf 99 Euro. Alle Komponenten der modernen Schließtechnik in Burgsolms und von einfachen Profilzylindern bis zu verknüpften Systemen und bedienen wir souverän und zu 99% materialschonend.</p>`,
+<p>Sie befürchten astronomische Fahrtkosten? Nicht mit uns. Für Burgsolms deckeln wir die Einsatz-Zufuhr bei moderaten 15 Euro Aufschlag. Der Basis-Festpreis der handwerklichen Öffnung unverschlossener Fallen bei Tag beläuft sich nachvollziehbar auf 99 Euro. Alle Komponenten der modernen Schließtechnik in Burgsolms und von einfachen Profilzylindern bis zu verknüpften Systemen und bedienen wir souverän und nahezu immer materialschonend.</p>`,
         localTestimonials: [
             { name: "Familie D.", quote: "Der Techniker kam wie besprochen in knapp zehn Minuten nach Burgsolms. Er griff zu Drahtwerkzeug und nach Sekunden waren wir drin. 99 Euro Öffnung, extrem sympathisch.", rating: 5 },
             { name: "Klaus P.", quote: "Nachts aus einem Lokal in Burgsolms gekommen und der Wohnungsschlüssel war weg. Der Monteur bohrte das Schloss kurz an und verbaute sofort ein neues Sicherheitsschloss. Perfekt.", rating: 5 }
         ],
         content: {
             heroIntro: "Schlüssel vergessen in Burgsolms? Unser Monteur ist in ca. 9 Minuten da und professionell und zum Festpreis.",
-            mainText: `<p>Der <strong>Schlüsseldienst Burgsolms</strong> hilft Ihnen aus der direkten Nachbarschaft in Wetzlar. Durch kurze Reaktionswege und Festpreis-Garantien lösen wir Notfälle im Solmser Hauptort besonders kundenorientiert.</p>`,
-            serviceZerstörungsfrei: "In Burgsolms entsperren wir nur zugefallene Türen über Fallengleiter zu fast 100% einwandfrei ohne Neuschluss-Notwendigkeit.",
+            mainText: `<p>Der <strong>Schlüsseldienst Burgsolms</strong> hilft Ihnen aus der direkten Nachbarschaft in Wetzlar. Durch kurze Reaktionswege und verbindlichen Preiszusagen lösen wir Notfälle im Solmser Hauptort besonders kundenorientiert.</p>`,
+            serviceZerstörungsfrei: "In Burgsolms entsperren wir nur zugefallene Türen über Fallengleiter nahezu immer einwandfrei ohne Neuschluss-Notwendigkeit.",
             serviceBohren: "Sollte ein Schlossdefekt in Burgsolms final vorliegen, arbeiten wir effizient mit Spiralfräsen zum marktgerechten Zylindertausch.",
             service247: "Für ganz Burgsolms gilt unser verlässlicher Wetzlarer 24/7 Not-Bereitschaftsdienst ohne Ausfallzeiten."
         },
@@ -292,7 +292,7 @@ export const ring2cLocations: LocationData[] = [
 <p>Langes Frieren in der Kälte ist Geschichte: Über die Wetzlarer Zufahrtswege sind unsere Techniker nach der Alarmierung in oft unter <strong>9 Minuten</strong> einsatzbereit in Dorlar. Diese Schnelligkeit erkaufen Sie sich bei uns nicht mit Horrorsummen: Mit knappen 15 Euro Fahrpauschale federn wir sämtliche Anfahrtskosten ehrlich ab.</p>
 
 <h3>Moderne Technik erfordert moderne Öffner</h3>
-<p>Gerade in Dorlars neueren Baugebieten dominieren hochsichere Mehrfachverriegelungen und enge Türfalze. Mit klassischen "Scheckkarten-Tricks" richtet man hier nur teuren Schaden an. Wir bedienen uns feinster Türfallengleiter, um Ihre neue Haustür zu 100% spurlos zu öffnen. Der garantierte Festpreis von 99 Euro für Standardöffnungen bleibt das verlässliche Maß aller Dinge.</p>`,
+<p>Gerade in Dorlars neueren Baugebieten dominieren hochsichere Mehrfachverriegelungen und enge Türfalze. Mit klassischen "Scheckkarten-Tricks" richtet man hier nur teuren Schaden an. Wir bedienen uns feinster Türfallengleiter, um Ihre neue Haustür nahezu immer spurlos zu öffnen. Der garantierte Festpreis von 99 Euro für Standardöffnungen bleibt das verlässliche Maß aller Dinge.</p>`,
         localTestimonials: [
             { name: "Fam. E.", quote: "Der Techniker kam in zehn Minuten nach Dorlar, schob ein spezielles Kunststoffteil durch unsere neue Alutür und sie war nach Sekunden offen. Einwandfreier Preis von 99+15 Euro.", rating: 5 },
             { name: "Svenja W.", quote: "Hatte mich mittags aus dem Haus ausgesperrt. Der Monteur war freundlich, schnell und hielt sich exakt an die Preisansage am Telefon.", rating: 5 }

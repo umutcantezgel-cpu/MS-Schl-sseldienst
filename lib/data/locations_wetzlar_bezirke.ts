@@ -90,7 +90,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt im idyllischen Wetzbachtal? Keine Sorge und als offizieller Stadtteil von Wetzlar sind wir in nur 5 bis 8 Minuten bei Ihnen in Nauborn. Ohne Anfahrtskosten, zum garantierten Festpreis.",
             mainText: "",
-            serviceZerstörungsfrei: "In Wetzlar-Nauborn öffnen wir zugefallene Türen und vom Fachwerkhaus bis zum Neubau und in 99% der Fälle absolut zerstörungsfrei.",
+            serviceZerstörungsfrei: "In Wetzlar-Nauborn öffnen wir zugefallene Türen und vom Fachwerkhaus bis zum Neubau und in nahezu allen Fällen absolut zerstörungsfrei.",
             serviceBohren: "Bei abgebrochenen Schlüsseln oder defekten Zylindern in Nauborn verwenden wir Spezialwerkzeug und tauschen den Zylinder sofort vor Ort aus.",
             service247: "Unser 24/7-Notdienst steht Ihnen in Wetzlar-Nauborn an 365 Tagen im Jahr zur Verfügung und auch nachts und an Feiertagen."
         },
@@ -167,7 +167,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Als offizieller Stadtbezirk von Wetzlar (PLZ 35576) fällt Dalheim vollständig in unsere kostenfreie Anfahrtszone. Für die reine Öffnung einer zugefallenen Tür berechnen wir werktags tagsüber einen transparenten <strong>Festpreis von 99 Euro</strong>. Keine Kilometerpauschale, keine Rüstzeit, keine versteckten Gebühren.</p>
 
 <h3>Handwerkliche Präzision im Dalheimer Wohngebiet</h3>
-<p>Die Architektur in Dalheim ist vielfältig: Von robusten Siedlungshäusern aus der Nachkriegszeit über große Mehrfamilienhaushalte bis hin zu energetisch modernisierten Neubauten. Unsere Monteure sind auf jedes Schloss-Szenario vorbereitet. Mit speziellen Fräsen für verklemmte Riegel und modernsten Elektropicks für simple Fallenöffnungen gewährleisten wir eine spürbar über 99% liegende Zerstörungsfreiheits-Quote bei zugefallenen Haus- und Wohnungstüren in Dalheim.</p>`,
+<p>Die Architektur in Dalheim ist vielfältig: Von robusten Siedlungshäusern aus der Nachkriegszeit über große Mehrfamilienhaushalte bis hin zu energetisch modernisierten Neubauten. Unsere Monteure sind auf jedes Schloss-Szenario vorbereitet. Mit speziellen Fräsen für verklemmte Riegel und modernsten Elektropicks für simple Fallenöffnungen gewährleisten wir eine spürbar nahezu alle liegende Zerstörungsfreiheits-Quote bei zugefallenen Haus- und Wohnungstüren in Dalheim.</p>`,
 
         localTestimonials: [
             {
@@ -189,7 +189,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Dringend Hilfe in Wetzlar-Dalheim gesucht? Wir sind Ihr lokaler Schlüsseldienst aus direkter Nachbarschaft. Festpreis von 99€, absolut keine Anfahrtskosten, 24/7 erreichbar.",
-            mainText: `<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der Kernstadt Wetzlar. Als lokaler Schlüsseldienst sind wir in Dalheim extrem schnell vor Ort. Ob am Dalheimer Kopf oder in der Berliner Straße und Sie zahlen <strong>keine Anfahrtskosten</strong> und profitieren von transparenten Festpreisen.</p><p>Unsere Monteure öffnen täglich zugefallene Türen am Dalheimer Kopf und in den umliegenden Wohngebieten zu über 99% materialschonend.</p>`,
+            mainText: `<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der Kernstadt Wetzlar. Als lokaler Schlüsseldienst sind wir in Dalheim extrem schnell vor Ort. Ob am Dalheimer Kopf oder in der Berliner Straße und Sie zahlen <strong>keine Anfahrtskosten</strong> und profitieren von transparenten Festpreisen.</p><p>Unsere Monteure öffnen täglich zugefallene Türen am Dalheimer Kopf und in den umliegenden Wohngebieten in nahezu allen Fällen materialschonend.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Dalheim öffnen wir zugefallene Haustüren in Wohnquartieren mit maximaler Materialschonung ohne Schäden.",
             serviceBohren: "Sollte ein Schlossdefekt vorliegen, bohren wir mit Präzisionsgeräten und setzen sofort ein neues Marken-Zylinderschloss ein.",
             service247: "Egal ob Sonntagnacht oder Feiertag: Unser Notdienst ist für Wetzlar-Dalheim rund um die Uhr auf Abruf bereit."
@@ -221,7 +221,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         buildingTypes: "Geschlossene Fachwerkbebauung (Kulturdenkmäler), historische Holzportale, teils denkmalgeschützte Kasten- und Buntbartschlösser sowie enge Treppenhauszugänge in der Kramerstraße.",
         parkingInfo: "Dank polizeilicher Ausnahmegenehmigungen für Handwerker-Notdienste parken unsere Kompaktwagen extrem dicht am Einsatzort in der verkehrsberuhigten Kernzone.",
         heroVariant: "Ausgesperrt im Herzen von Wetzlar? Wir sind die Experten für Fachwerk und Denkmalschutz.",
-        fareInfo: "Die Wetzlarer Altstadt liegt in der Zone 0. Keine Fahrtkosten, keine Parkgebührenzuschläge und 100% kostenloser Antritt.",
+        fareInfo: "Die Wetzlarer Altstadt liegt in der Zone 0. Keine Fahrtkosten, keine Parkgebührenzuschläge und kostenloser Antritt.",
 
         scenarios: [
             {
@@ -248,7 +248,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Die enge, mittelalterliche Straßenführung, oft steil ansteigend, fordert Logistik. Durch unsere absolute Standortnähe und spezielle Zufahrtsgenehmigungen für die Fußgängerzonen am Kornmarkt oder am Schillerplatz reduzieren wir die Wartezeit der Altstadtbewohner auf ein absolutes Minimum. Erfahrungsgemäß stehen wir in den verwinkelten Altstadtbereichen oft bereits in <strong>3 bis 5 Minuten</strong> mit unserem Werkzeug direkt an Ihrem Türportal.</p>
 
 <h3>Fachexpertise für Denkmal und Fachwerk</h3>
-<p>Ein modernes Kunststoff-Portal erfordert andere Öffnungstechniken als eine 300 Jahre alte, mehrfach handgeschnitzte Eichenholztür am Buttermarkt. Wer hier unsachgemäß bohrt oder hebelt, riskiert an unwiederbringlicher Bausubstanz tausende Euro Schaden. Unsere Techniker sind auf denkmalgeschützte Türen trainiert. 99 % der zugefallenen Altstadttüren öffnen unsere Handwerker dank minimalinvasiver Haken, spezieller Slider und professioneller Pick-Geräte vollkommen materialschonend.</p>
+<p>Ein modernes Kunststoff-Portal erfordert andere Öffnungstechniken als eine 300 Jahre alte, mehrfach handgeschnitzte Eichenholztür am Buttermarkt. Wer hier unsachgemäß bohrt oder hebelt, riskiert an unwiederbringlicher Bausubstanz tausende Euro Schaden. Unsere Techniker sind auf denkmalgeschützte Türen trainiert. nahezu alle zugefallenen Altstadttüren öffnen unsere Handwerker dank minimalinvasiver Haken, spezieller Slider und professioneller Pick-Geräte vollkommen materialschonend.</p>
 
 <h3>Null-Euro-Anfahrt im Wetzlarer Zentrum</h3>
 <p>Wie für alle Gemarkungen des Kernbereichs kassieren wir auch im exklusiven Altstadtring <strong>keinerlei Fahrt- oder Rüstkosten</strong>. Die reine Arbeitsleistung zur Öffnung beginnt werktags bei 99 Euro Festpreis. Ehrlicher, regionaler und handwerklich perfekter Service direkt im Herzen der Goethestadt.</p>`,
@@ -332,9 +332,9 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Ob Sie im Schatten des neuen Rathauses (Ernst-Leitz-Straße) oder an der geschäftigen Gloelstraße nächtigen: Unser Zentrallager liegt fast auf Steinwurfdistanz. Lange Dispotouren? Fehlanzeige. Wir rücken innerhalb der Neustadt in einem verlässlichen <strong>3- bis 5-Minuten-Zeitfenster</strong> an und erlösen Sie rasch aus Ihrer Warteposition.</p>
 
 <h3>Professionelles Vorgehen bei Altbau-Giganten</h3>
-<p>Die opulenten Gründerzeitgebäude in der Neustadt sind im Laufe der Jahre stark energetisch und sicherheitsrelevant saniert worden. Schwere Holztüren, massive Mehrfachverriegelungen sowie Kernziehschutzbeschläge sind hier an der Tagesordnung. Unser Monteur-Pool führt Hightech-Öffnungsgeräte im Gepäck, die genau auf solche gehobenen Altbau- und Kanzleisicherungen abgestimmt sind. 99 Prozent der zugefallenen Türen weichen hierbei vollends ohne Aufbohren des Schlosses.</p>
+<p>Die opulenten Gründerzeitgebäude in der Neustadt sind im Laufe der Jahre stark energetisch und sicherheitsrelevant saniert worden. Schwere Holztüren, massive Mehrfachverriegelungen sowie Kernziehschutzbeschläge sind hier an der Tagesordnung. Unser Monteur-Pool führt Hightech-Öffnungsgeräte im Gepäck, die genau auf solche gehobenen Altbau- und Kanzleisicherungen abgestimmt sind. nahezu alle zugefallenen Türen weichen hierbei vollends ohne Aufbohren des Schlosses.</p>
 
-<h3>100% ohne Anfahrtskosten</h3>
+<h3>Ohne Anfahrtskosten</h3>
 <p>Die Neustadt markiert neben der Altstadt das dichteste Zentrum von Wetzlar (PLZ 35576). Die logische Konsequenz: absolute Null-Toleranz bei Fahrtkosten in diesem Bezirk. Unser Versprechen gilt: Eine Türöffnung am Tag wird Sie hier bei einer ungeprägten zugefallenen Falle fest 99 Euro kosten. Regional, zuverlässig, stark.</p>`,
 
         localTestimonials: [
@@ -416,9 +416,9 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <p>Dank flüssiger Zuwegung über den Frankfurter Straßen Ring erreichen wir Büblingshausen nahezu lückenlos kreuzungsfrei. Eine Dispo-Ansage bedeutet meist: In <strong>3 bis 5 Minuten</strong> schnallt der Service-Mann den Werkzeugkoffer ab und checkt direkt live am Einsatzort (z.B. Blücherstraße oder Am Leitz-Park) Ihr Problem.</p>
 
 <h3>Von Omas Kellerschloss bis zur Firmen-Sicherheitsanlage</h3>
-<p>Büblingshausens Varianz zwingt zu universellem Wissen. Während in Alt-Büblingshausen mitunter simple, verzogene Holztürrahmen vorherrschen, die man mit dem geschickten Einzug eines Türspions umgehen kann, verlangen die massiv gedämmten 3-fach-Verriegelungen der Bürogebäude im Spilburg-Areal höchste Ingenieurskunst in Form modernster Hochleistungs-Spiralfräsen, falls ein Zylinder restlos blockiert. Bei Zugefallenen Türen gilt wie eh und je unsere 99% Zerstörungsfrei-Garantie.</p>
+<p>Büblingshausens Varianz zwingt zu universellem Wissen. Während in Alt-Büblingshausen mitunter simple, verzogene Holztürrahmen vorherrschen, die man mit dem geschickten Einzug eines Türspions umgehen kann, verlangen die massiv gedämmten 3-fach-Verriegelungen der Bürogebäude im Spilburg-Areal höchste Ingenieurskunst in Form modernster Hochleistungs-Spiralfräsen, falls ein Zylinder restlos blockiert. Bei Zugefallenen Türen gilt wie eh und je unsere nahezu durchgängige Zerstörungsfreiheit.</p>
 
-<h3>100% Freie Anfahrt</h3>
+<h3>Freie Anfahrt</h3>
 <p>Egal ob Gewerbepark Spilburg oder Blücherstraße. Büblingshausen liegt ausnahmslos im kostenfreien Wetzlarer Einsatzring. Werktags-Routineöffnungen fangen konstant und fix ab 99 Euro an. Keinen einzigen Pfennig mehr für Sprit, Auto oder Anfahrts-Arbeitszeit.</p>`,
 
         localTestimonials: [
@@ -485,7 +485,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <h3>Flotte Anfahrt über die Bergstraße</h3>
 <p>Sobald Sie unseren Notruf wählen, machen sich unsere Servicewagen von der Zentrale auf den Weg. Über die Bergstraße stehen wir oft schon nach <strong>3 bis 5 Minuten</strong> vor Ihrer Haustür am Sturzkopf. Kein langes Warten draußen in der Kälte.</p>
 
-<h3>100% Kostenfreie Anfahrt</h3>
+<h3>Kostenfreie Anfahrt</h3>
 <p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <strong>0 Euro Anfahrtskosten</strong>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 99 Euro und transparent, fair und ehrlich kommuniziert.</p>`,
         localTestimonials: [
             { name: "Michael H.", quote: "Hatte mich an der Waldstraße ausgesperrt. Der Monteur war in rekordverdächtigen 4 Minuten da. Toller, seriöser Schlüsseldienst ohne versteckte Kosten.", rating: 5 },
@@ -542,7 +542,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { name: "Eva K.", quote: "Der Techniker hat mir an einem Sonntag kurzfristig geholfen, Tür war zugefallen. Es gab vorher klare Preisansagen, die auch genau so in der Rechnung gestanden haben.", rating: 5 }
         ],
         content: {
-            heroIntro: "Ausgesperrt an der Stoppelberger Hohl? Wir sind in etwa 5 Minuten da und mit Festpreisgarantie und ohne Anfahrtskosten.",
+            heroIntro: "Ausgesperrt an der Stoppelberger Hohl? Wir sind in etwa 5 Minuten da und mit verbindlicher Preisauskunft vorab und ohne Anfahrtskosten.",
             mainText: `<p>Die <strong>Stoppelberger Hohl</strong> ist ein etablierter Wohnbezirk in der Wetzlarer Kernstadt. Als erfahrener lokaler Schlüsseldienst garantieren wir schnelle, seriöse und preistransparente Hilfe bei allen Türöffnungen.</p>`,
             serviceZerstörungsfrei: "An der Stoppelberger Hohl öffnen wir zugefallene Türen aller Art schonend und mit Profiwerkzeug.",
             serviceBohren: "Defekte Zylinder tauschen wir an der Stoppelberger Hohl sofort vor Ort durch langlebige BKS-Qualität aus.",
@@ -575,7 +575,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Wetzlar-Silhöfer Aue / Westend. Soforthilfe zum Festpreis.",
         fareInfo: "Die Silhöfer Aue fällt als 35576er-Bezirk komplett unter unsere 0-Euro-Anfahrtskosten-Kulanz.",
         scenarios: [
-            { icon: "home", title: "Wohnungstür Lahn-Appartement", description: "Zugezogene Tür der neuen Premium-Wohnung? Wir garantieren 100% materialschonende Spion- oder Fallengleit-Öffnung." },
+            { icon: "home", title: "Wohnungstür Lahn-Appartement", description: "Zugezogene Tür der neuen Premium-Wohnung? Wir garantieren schonende Spion- oder Fallengleit-Öffnung." },
             { icon: "shield-alert", title: "Sportvereine & Gewerbe", description: "Zugang zum Bootsclub oder Restaurant verschlossen? Unauffällige und schnelle Profilzylinder-Öffnung rund um die Uhr." },
             { icon: "briefcase", title: "Reparatur nach Defekt", description: "Bunte Mechanik streikt im Westend: Kostengünstiger Ausbau und Neuinstallation der Schließtechnik am selben Tag." }
         ],
@@ -621,7 +621,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         populationApprox: "~900",
         landmark: "Raststätte Wetzlar / Gewerbepark Dillfeld",
         buildingTypes: "Große Industrie- und Gewerbehallen sowie Mehrfamilienhäuser der 70er Jahre am Rand des Gebiets.",
-        parkingInfo: "Durch reichlich Dimensionierte Gewerbe- und Industrie-Parkplätze ist das Heranfahren an die verschlossene Tür zu 100% gesichert.",
+        parkingInfo: "Durch reichlich Dimensionierte Gewerbe- und Industrie-Parkplätze ist das Heranfahren an die verschlossene Tür stets gesichert.",
         heroVariant: "Türöffnung im Wetzlarer Gewerbegebiet Dillfeld. Lokal, schnell und ohne Fahrtkosten.",
         fareInfo: "Auch das Wetzlarer Dillfeld ist ein Null-Euro-Anfahrtskosten Bezirk.",
         scenarios: [
@@ -635,7 +635,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 <h3>Hohe Maschinenverfügbarkeit</h3>
 <p>Für unsere Monteure ist das Dillfeld logistisch ein Traum. Meist erreichen wir das Gebiet ohne nennenswerten Stop&Go-Innerortsverkehr über die umarmenden Hauptverkehrsadern in oft unter <strong>5 Minuten</strong>. Gerade im B2B-Umfeld zählt jede Minute Betriebszeit.</p>
 
-<h3>100% Anfahrtskosten-Kulanz</h3>
+<h3>Anfahrtskosten-Kulanz</h3>
 <p>Trotz der klaren gewerblichen Prägung gelten im Dillfeld unsere ehrlichen Konditionen der Wetzlarer Kernstadt: Sie entrichten <strong>keinerlei Wege- oder Anfahrtskostenpauschalen</strong>. Eine ungeplante Türöffnung schlägt werktags konstant mit marktgerechten 99 Euro zu Buche.</p>`,
         localTestimonials: [
             { name: "Sven P. (Firmeninhaber)", quote: "Unsere Lagerhalle im Dillfeld ließ sich morgens nicht aufschließen. Der Monteur war zügig da, reparierte den massiven Profilzylinder und wir konnten die Arbeit aufnehmen. Sehr zufrieden.", rating: 5 },
@@ -644,7 +644,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         content: {
             heroIntro: "Tür zu im Dillfeld? Unser Schlüsseldienst ist in 3 bis 5 Minuten vor Ort und zum transparenten Festpreis.",
             mainText: `<p>Das Gewerbegebiet und Wohnareal <strong>Dillfeld</strong> versorgen wir extrem zügig mit Notöffnungen aller Art. Profitieren Sie von lokaler Expertise und <strong>komplett wegfallenden Anfahrtskosten</strong>.</p>`,
-            serviceZerstörungsfrei: "Im Dillfeld öffnen wir private und gewerbliche nicht-verriegelte Türen zu 99% materialschonend.",
+            serviceZerstörungsfrei: "Im Dillfeld öffnen wir private und gewerbliche nicht-verriegelte Türen nahezu immer materialschonend.",
             serviceBohren: "Sicherheitsschlösser an Industrieanlagen oder Shops im Dillfeld tauschen wir nach exakter Fräsung direkt vor Ort.",
             service247: "24/7-Notdienst im Dillfeld: Ob Spätschicht oder Werkstag, unser Notruf ist für Sie immer da."
         },

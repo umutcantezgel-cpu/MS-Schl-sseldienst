@@ -146,7 +146,7 @@ export const ring3fLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt in Königsberg? Wir sind in ca. 16 Minuten bei Ihnen und professionell und zum Festpreis.",
             mainText: `<p>Die besondere Höhenlage von <strong>Königsberg</strong> meistern unsere Monteure anstandslos und und das zu bodenständigen Wetzlar-Dorfpreisen.</p>`,
-            serviceZerstörungsfrei: "Bei Standard-Aussperrungen sind in Königsberg keine groben Maschinen nötig. Die Türen bleiben zu 99% unbeschädigt.",
+            serviceZerstörungsfrei: "Bei Standard-Aussperrungen sind in Königsberg keine groben Maschinen nötig. Die Türen bleiben nahezu immer unbeschädigt.",
             serviceBohren: "Verriegelte Gebäude oder schwer defekte Zylinder lösen wir durch kontrolliertes Aufbohren und ersetzen das Material normgerecht.",
             service247: "Für das Königsberger Gebiet garantieren wir eine 24-stündige Erreichbarkeit auch an extrem abgelegenen Hofreiten."
         },
@@ -393,7 +393,7 @@ export const ring3fLocations: LocationData[] = [
         content: {
             heroIntro: "Tür zu in Erda? Wir sind in ca. 15 Minuten bei Ihnen und kompetent und zum Festpreis.",
             mainText: `<p>In <strong>Erda</strong>, dem lebendigen Herzstück von Hohenahr, leisten wir Aufsperrhilfe der Spitzenklasse und verlässlich ohne jegliche Knebelverträge.</p>`,
-            serviceZerstörungsfrei: "In rund 99 Prozent der simplen Tür-Zufälle entriegeln unsere Meister das Türblatt in Erda absolut spurenlos.",
+            serviceZerstörungsfrei: "In rund nahezu alle simplen Tür-Zufälle entriegeln unsere Meister das Türblatt in Erda absolut spurenlos.",
             serviceBohren: "Verriegelte Gebäude oder schwer defekte Zylinder lösen wir durch kontrolliertes Aufbohren und ersetzen das Material normgerecht durch DIN EN-Ware.",
             service247: "Für Erda und dem Sitz der Gemeinde Hohenahr und garantieren wir 24/7 ununterbrochene Dienst-Bereitschaft."
         },
@@ -433,7 +433,7 @@ export const ring3fLocations: LocationData[] = [
 <h3>Flotte Reaktion, keine Landflucht</h3>
 <p>Obwohl Großaltenstädten weit abseits der Lahn-Metropolen liegt, behandeln wir diesen Ortsteil mit höchster Alarmierungs-Priorität. Durch unser zentrales Routing aus Wetzlar über Erda erreichen unsere Mechaniker in ca. <strong>16 Minuten</strong> den idyllischen Ortskern. Keine ewige Wartezeit, kein nervöses Auf-und-Ab-Gehen vor der Tür.</p>
 
-<h3>Unsere eiserne Festpreis-Garantie</h3>
+<h3>Unsere verbindliche Preiszusage</h3>
 <p>Dorfbewohner tappen oft in die Kostenfalle von weit entfernten Vermittler-Zentralen. Unsere Wetzlarer Strategie lautet: 99 Euro für die zugezogene Wohnungs- oder Haustür auf glatter Tagesbasis. Zu dieser transparent kalkulierten Fix-Leistung gesellt sich nach Großaltenstädten ausschließlich eine geringe, statische Auto-Pauschale in Höhe von 15 Euro. Nichts ist versteckt, jede Eventualität offengelegt. Wir öffnen lieber spurlos, reparieren fair und montieren bei Bedarf hochwertigen Schloss-Ersatz direkt aus unserem Transporter.</p>`,
         localTestimonials: [
             { name: "S. K.", quote: "Mein Schlüssel klemmte derart in der alten Hoftür, dass er abbrach. Der Mechaniker aus Wetzlar entfernte den Rest, hat das Schloss mit Spezialöl gerettet und nahm exakt die 114 Euro. Absolut ehrenhaft für Großaltenstädten.", rating: 5 },
@@ -442,9 +442,9 @@ export const ring3fLocations: LocationData[] = [
         content: {
             heroIntro: "Schlüsselverlust in Großaltenstädten? Wir sind in ca. 16 Minuten bei Ihnen und absolut transparent.",
             mainText: `<p>In der beschaulichen Stille von <strong>Großaltenstädten</strong> operieren unsere Servicetechniker als Fels in der Brandung und hochprofessionell, regional und zu humanen Dorf-Preisen.</p>`,
-            serviceZerstörungsfrei: "Unser Equipment verarztet zugefallene, historische Haus-Eingänge bei rund 99% aller Einsätze ganzheitlich ohne den kleinsten Makel.",
+            serviceZerstörungsfrei: "Unser Equipment verarztet zugefallene, historische Haus-Eingänge bei nahezu allen Einsätzen ganzheitlich ohne den kleinsten Makel.",
             serviceBohren: "Verkeilte Schlossanlagen werden exakt gefräst, das teure Holz Ihrer antiken Holztür bleibt gänzlich intakt, als wäre nie etwas gewesen.",
-            service247: "Für das Hohenahrer Umland und Großaltenstädten greift unser 100%iges Versprechen auf 24-stündige Präsenz, ganzjährig."
+            service247: "Für das Hohenahrer Umland und Großaltenstädten greift unser zuverlässiges Versprechen auf 24-stündige Präsenz, ganzjährig."
         },
         faqs: [
             { question: "Wie schnell kommen Sie nach Großaltenstädten?", answer: "In ca. 14 Minuten über die Hohenahr-Verbindungsstraßen." },
@@ -486,7 +486,7 @@ export const ring3fLocations: LocationData[] = [
 <p>Es existiert kein "Höhenmeter-Zuschlag". Transparenz ist das einzige, was zählt. Wenn die Falle (ohne aktives Verriegeln) ins geschlossene Schließblech gerutscht ist, rufen wir werktags tagsüber bescheidene 99 Euro Festpreis auf. Die Sprit-Pauschale nach Hohensolms macht magere 15 Euro aus. Wir verzichten radikal auf das stumpfe Aufbohren, solange das Material keinen tiefgreifenden, irreversiblen Defekt aufweist. In diesen extrem seltenen Fallen kommunizieren wir alle weiteren Schritte und Preise absolut haargenau voraus.</p>`,
         localTestimonials: [
             { name: "S. Hoffmann", quote: "Direkt oben an der Burg wohnhaft. Haustür (massives Holz) abends zugezogen. Der Schlüsseldienst kam sehr flink, hantierte mit so einer Gummi-Gleitkarte und die Tür war sofort auf, ohne jede Macke. 114 Euro. Besser gehts nicht.", rating: 5 },
-            { name: "Fam. L.", quote: "Der Techniker erklärte den defekten Schließzylinder, bot mir Alternativen an und bohrte extrem vorsichtig aus. Ich bin handwerklich selbst fit und konnte sehen, dass der Mann 100% profi ist. Fair und schnell.", rating: 5 }
+            { name: "Fam. L.", quote: "Der Techniker erklärte den defekten Schließzylinder, bot mir Alternativen an und bohrte extrem vorsichtig aus. Ich bin handwerklich selbst fit und konnte sehen, dass der Mann absolut professionell ist. Fair und schnell.", rating: 5 }
         ],
         content: {
             heroIntro: "Schlüssel verloren in Hohensolms? Wir kommen in ca. 17 Minuten und zum transparenten Festpreis.",

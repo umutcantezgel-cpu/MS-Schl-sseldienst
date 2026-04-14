@@ -212,7 +212,7 @@ export const ring3dLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Linden 24/7 Notdienst", metaDescription: "Schlüsseldienst Linden bei Gießen. 18 Min. Anfahrt, ab 99€ Festpreis. Jetzt Notdienst: 06441-8056279" },
         content: {
-            heroIntro: "Ausgesperrt in Linden? Unser Schlüsseldienst erreicht Sie in ca. 18 Minuten und mit Festpreisgarantie und professionellem Service.",
+            heroIntro: "Ausgesperrt in Linden? Unser Schlüsseldienst erreicht Sie in ca. 18 Minuten und mit verbindlicher Preisauskunft vorab und professionellem Service.",
             mainText: `<p>Die Stadt Linden liegt südöstlich von Gießen und grenzt an den Lahn-Dill-Kreis. Mit ihren drei Stadtteilen Großen-Linden, Leihgestern und Oberkleen ist Linden ein attraktiver Wohnstandort in der Region Mittelhessen. Als <strong>Schlüsseldienst Linden</strong> sind wir Ihr regionaler Ansprechpartner für Türöffnungen aller Art.</p>
 <p>Die Bausubstanz in Linden reicht von historischen Ortskernen über gewachsene Wohngebiete bis zu modernen Neubausiedlungen. Unsere Monteure meistern jedes Schließsystem und öffnen zugefallene Türen zerstörungsfrei.</p>
 <p>Anfahrtszeit: ca. 18 Minuten. Festpreis ab 99 Euro und Ihr verlässlicher Kostenrahmen.</p>`,

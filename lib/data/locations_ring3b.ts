@@ -93,7 +93,7 @@ export const ring3LocationsB: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Dringende Türöffnung in Biebertal? Unsere regionalen Techniker öffnen in Rodheim-Bieber, Fellingshausen und allen 6 Ortsteilen und blitzschnell, spurlos, zu 100% transparenten Festpreisen.",
+            heroIntro: "Dringende Türöffnung in Biebertal? Unsere regionalen Techniker öffnen in Rodheim-Bieber, Fellingshausen und allen 6 Ortsteilen und blitzschnell, spurlos, transparenten Preisen.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -174,7 +174,7 @@ export const ring3LocationsB: LocationData[] = [
 <p>Die <strong>B49</strong>, die sich als Lebensader parallel zur Lahn durchs Tal schlängelt, ist für unsere Einsatzfahrten die perfekte Verbindung. Von unserer Wetzlarer Basis aus erreichen wir über diese Strecke sowohl die Leuner Kernstadt als auch die etwas abgelegeneren Ortsteile Stockhausen und Bissenberg in verlässlichen <strong>12 bis 15 Minuten</strong>. Diese Schnelligkeit ist kein leeres Versprechen, sondern tägliche Praxis: Wir kennen jeden Kreisverkehr, jede Ampelphase und jede Abkürzung im Lahntal. Wenn Sie frierend vor Ihrer verschlossenen Haustür stehen, zählt jede einzelne Minute.</p>
 
 <h3>Fachwerk, Erkerhaus & historische Schlösser</h3>
-<p>Was Leun architektonisch so besonders macht, ist der bemerkenswert gut erhaltene <strong>historische Stadtkern</strong>. Die <strong>Limburger Straße</strong> mit ihren malerischen Fachwerkhäusern aus dem 17. Jahrhundert, das stadtbekannte <strong>Erkerhaus</strong> als Wahrzeichen und das barocke Hofportal des ehemaligen Junkerhofs zeugen von jahrhundertelanger Bautradition. Für unsere Techniker bedeutet das: Wir treffen hier auf eine enorme Bandbreite an Schlössern und Türkonstruktionen und von antiken Kastenschlössern an schweren Eichenholztüren bis hin zu modernen Mehrfachverriegelungen in neueren Siedlungen am Stadtrand. Unser Versprechen bleibt dabei immer dasselbe: maximale Schonung, minimaler Eingriff. Bei zugefallenen Türen liegt unsere zerstörungsfreie Öffnungsrate bei über 99 Prozent.</p>
+<p>Was Leun architektonisch so besonders macht, ist der bemerkenswert gut erhaltene <strong>historische Stadtkern</strong>. Die <strong>Limburger Straße</strong> mit ihren malerischen Fachwerkhäusern aus dem 17. Jahrhundert, das stadtbekannte <strong>Erkerhaus</strong> als Wahrzeichen und das barocke Hofportal des ehemaligen Junkerhofs zeugen von jahrhundertelanger Bautradition. Für unsere Techniker bedeutet das: Wir treffen hier auf eine enorme Bandbreite an Schlössern und Türkonstruktionen und von antiken Kastenschlössern an schweren Eichenholztüren bis hin zu modernen Mehrfachverriegelungen in neueren Siedlungen am Stadtrand. Unser Versprechen bleibt dabei immer dasselbe: maximale Schonung, minimaler Eingriff. Bei zugefallenen Türen liegt unsere zerstörungsfreie Öffnungsrate bei nahezu allen.</p>
 
 <h3>Biskirchen, Stockhausen & Bissenberg: Jeder Ortsteil gleich schnell</h3>
 <p>In <strong>Biskirchen</strong>, dem zweitgrößten Stadtteil mit gut 1.500 Einwohnern, finden sich neben der sehenswerten Kirche auch zahlreiche gut erhaltene historische Höfe wie „Heebs Hof" mit typischem Fachwerk aus dem 19. Jahrhundert. <strong>Stockhausen</strong> ist durch den <strong>Bahnhof an der Lahntalbahn</strong> ein beliebter Ausgangspunkt für Wanderungen in den Hessischen Westerwald und und genau dort, wo Outdoor-Enthusiasten unterwegs sind, gehen gelegentlich Schlüssel verloren. Das ländliche <strong>Bissenberg</strong> mit seinen rund 730 Einwohnern zeichnet sich durch Eigenheime inmitten grüner Natur aus. Für alle vier Ortsteile gilt: identische Anfahrtskosten, identische Reaktionszeit, identische Qualität.</p>
@@ -330,7 +330,7 @@ export const ring3LocationsB: LocationData[] = [
             },
             {
                 question: "Können Sie hochwertige Sicherheitstüren in den Neubaugebieten öffnen?",
-                answer: "Selbstverständlich. Unsere Techniker sind auf moderne Mehrfachverriegelungen und gedämmte Sicherheitstüren spezialisiert. Bei zugefallenen Türen öffnen wir zu über 99% zerstörungsfrei."
+                answer: "Selbstverständlich. Unsere Techniker sind auf moderne Mehrfachverriegelungen und gedämmte Sicherheitstüren spezialisiert. Bei zugefallenen Türen öffnen wir in nahezu allen Fällen zerstörungsfrei."
             },
             {
                 question: "Bieten Sie auch Zylindertausch nach Schlüsselverlust in Waldsolms an?",

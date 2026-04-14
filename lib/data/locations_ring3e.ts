@@ -48,7 +48,7 @@ export const ring3eLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt in Daubhausen? Wir sind in ca. 13 Minuten bei Ihnen und professionell und zum Festpreis.",
             mainText: `<p>Die Ortschaft <strong>Daubhausen</strong> wird lückenlos vom Aufsperrdienst Wetzlar versorgt. Unsere mobilen Einsatzleiter bedienen Ihre historischen Türen und modernen Verriegelungen zuverlässig.</p>`,
-            serviceZerstörungsfrei: "Alte Schlösser oder moderne Türfalze in Daubhausen entriegeln wir zu über 99% der Routine-Aufträge gewaltfrei.",
+            serviceZerstörungsfrei: "Alte Schlösser oder moderne Türfalze in Daubhausen entriegeln wir in nahezu allen Fällen der Routine-Aufträge gewaltfrei.",
             serviceBohren: "Müssen in Daubhausen Zylinder gebohrt werden, hinterlassen wir niemals Schäden am restlichen Türblatt.",
             service247: "Für Daubhausen (und Greifenthal) erstreckt sich unser Bereitschaftsradars lückenlos auf 24 Stunden, jede Woche."
         },

@@ -137,7 +137,7 @@ export const ring3cLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: null, travelCostText: "Anfahrtskosten nach Absprache" },
         seo: { metaTitle: "Schlüsseldienst Schwalbach Festpreis ab 99€", metaDescription: "Schlüsseldienst Schwalbach bei Schöffengrund. In 13 Min. da. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
-            heroIntro: "Schlüsselnotfall in Schwalbach? In ca. 13 Minuten sind wir bei Ihnen und mit Festpreisgarantie und professionellem Service.",
+            heroIntro: "Schlüsselnotfall in Schwalbach? In ca. 13 Minuten sind wir bei Ihnen und mit verbindlicher Preisauskunft vorab und professionellem Service.",
             mainText: `<p>Schwalbach gehört zur Gemeinde Schöffengrund und liegt im ländlichen Süden des Lahn-Dill-Kreises. Der Ortsteil ist durch seine ruhige Lage und die Nähe zu den Waldgebieten des Taunus-Vorlandes geprägt. Als <strong>Schlüsseldienst Schwalbach</strong> sind wir Ihr regionaler Ansprechpartner, wenn die Haustür plötzlich ins Schloss fällt.</p>
 <p>Die typischen Einfamilienhäuser in Schwalbach haben verschiedenste Schließsysteme. Unsere geschulten Techniker öffnen zugefallene Türen in nahezu allen Fällen ohne jede Beschädigung und präzise und professionell.</p>
 <p>Die Anfahrt nach Schwalbach dauert ca. 13 Minuten. Unser Festpreis ab 99 Euro ist Ihr verbindlicher Kostenrahmen.</p>`,

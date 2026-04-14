@@ -28,7 +28,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Zugezogene Tür im Fachwerkhaus",
-                description: "Verzogene Holztüren rund um den Paradeplatz? Mit lackschonenden Türfallen-Gleitern öffnen wir historische Eingänge in Haiger zu 99% komplett spurfrei."
+                description: "Verzogene Holztüren rund um den Paradeplatz? Mit lackschonenden Türfallen-Gleitern öffnen wir historische Eingänge in Haiger nahezu immer komplett spurfrei."
             },
             {
                 icon: "shield-alert",
@@ -49,7 +49,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Wer fernab des Wetzlarer Kernbereichs wohnt, befürchtet bei der Suche nach einem Schlüsseldienst endlose Wartezeiten und undurchsichtige Anfahrtsgebühren aus dem Ruhrgebiet oder Frankfurt. Wir brechen mit diesem Stigma. Über die unschlagbar schnelle Bundesautobahn 45 (Sauerlandlinie) passieren unsere voll ausgestatteten Notdienst-Mobile die Distanz nach Haiger in der Regel in unter bemerkenswerten <strong>30 Minuten</strong>. Ob im Schneetreiben am Rödgen oder nachts um drei in Fellerdilln und unser Fahrzeug ist bereits zu Ihnen unterwegs, während Sie im Warmen auf das Klingeln warten.</p>
 
 <h3>Zerstörungsfreie Öffnung in Haigers Fachwerkgassen</h3>
-<p>In der Altstadt von Haiger existieren noch zahlreiche wertvolle, teils denkmalgeschützte Fachwerkhäuser mit schweren Eichenholztüren. Wer hier mit roher Gewalt (Brechstange, dicke Bohrer) eine bloß zugefallene Haustür zu entriegeln versucht, verursacht vierstellige Holz- und Zylinderschäden. Wir garantieren Ihnen als seriöser Schlüsseldienst: Unser handwerkliches Niveau, geprägt durch die Schulung erfahrener Meister, schützt Ihre Immobilienwerte in Haiger. Sofern Sie nicht zweifach abgeschlossen haben, öffnen wir in atemberaubenden 99 % aller Fälle ihre Wohnung vollkommen materialschonend, per feinem Lockpicking oder modernen Fallenziehern. Der Originalschlüssel funktioniert im Nachgang völlig ohne Einschränkung weiter.</p>
+<p>In der Altstadt von Haiger existieren noch zahlreiche wertvolle, teils denkmalgeschützte Fachwerkhäuser mit schweren Eichenholztüren. Wer hier mit roher Gewalt (Brechstange, dicke Bohrer) eine bloß zugefallene Haustür zu entriegeln versucht, verursacht vierstellige Holz- und Zylinderschäden. Wir garantieren Ihnen als seriöser Schlüsseldienst: Unser handwerkliches Niveau, geprägt durch die Schulung erfahrener Meister, schützt Ihre Immobilienwerte in Haiger. Sofern Sie nicht zweifach abgeschlossen haben, öffnen wir in atemberaubenden nahezu allen Fälle ihre Wohnung vollkommen materialschonend, per feinem Lockpicking oder modernen Fallenziehern. Der Originalschlüssel funktioniert im Nachgang völlig ohne Einschränkung weiter.</p>
 
 <h3>Gebäudesicherheit für Haigers Industrieparks</h3>
 <p>Nicht nur Privatpersonen, auch die großen Player am Wirtschaftsstandort Haiger zählen zu unseren Stammkunden. Bricht ein Generalschlüssel an einer Brandschutztür im Werk, oder blockiert das Schließsystem im Bürokomplex auf der Kalteiche? Wir leisten 24/7 sofortigen Ersatz, installieren auf Wunsch neue BKS-Profilzylinder oder beseitigen Einbruchschäden an Industrietoren diskret im laufenden Schichtbetrieb.</p>
@@ -119,7 +119,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Haustür in Beilstein zugefallen",
-                description: "Sie stehen im bevölkerungsreichsten Ortsteil Beilstein vor verschlossener Tür? Wir öffnen Ihr Eigenheim routiniert und zu über 99 % ohne jegliche Zylinderschäden."
+                description: "Sie stehen im bevölkerungsreichsten Ortsteil Beilstein vor verschlossener Tür? Wir öffnen Ihr Eigenheim routiniert und zu nahezu alle ohne jegliche Zylinderschäden."
             },
             {
                 icon: "shield-alert",
@@ -240,7 +240,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Die weite Distanz ist für uns kein Hindernis. Von unserer Wetzlarer Einsatzbasis aus nutzen wir die schnelle Autobahnverbindung (<strong>A45 bis Herborn</strong>) und biegen dann auf die Landstraßen in den Westerwald ab. In gut <strong>25 bis 30 Minuten</strong> stehen unsere Einsatzfahrzeuge bei Ihnen auf dem Hof. Ob im belebten Kernort Breitscheid, in der Nähe des Töpfermuseums Erdbach, oder oben am Gusternhainer Barstein (614 m) und wir lassen niemanden im Regen oder Schnee stehen.</p>
 
 <h3>Von der Tropfsteinhöhle bis zum Flugplatz: Handwerk mit Herz</h3>
-<p>Wir respektieren die teuren Investitionen, die viele Menschen rund um Breitscheid in Sicherheitstechnik (Einbruchschutz, Mehrfachverriegelungen, Isolier-Türen) getätigt haben. Unser Vorgehen ist deshalb geprägt von „Materialerhalt durch Know-how". In ca. 99 Prozent aller reinen Sperrfälle, bei denen eine Tür nur zugefallen und nicht mehrfach verriegelt ist, setzen wir hochentwickelte, biegsame Federdrähte („Türfallengleiter") ein. Diese schieben den Riegel sanft zurück, ganz ohne Beschädigungen an Farbprofil oder Zylinder.</p>
+<p>Wir respektieren die teuren Investitionen, die viele Menschen rund um Breitscheid in Sicherheitstechnik (Einbruchschutz, Mehrfachverriegelungen, Isolier-Türen) getätigt haben. Unser Vorgehen ist deshalb geprägt von „Materialerhalt durch Know-how". In ca. nahezu allen reinen Sperrfälle, bei denen eine Tür nur zugefallen und nicht mehrfach verriegelt ist, setzen wir hochentwickelte, biegsame Federdrähte („Türfallengleiter") ein. Diese schieben den Riegel sanft zurück, ganz ohne Beschädigungen an Farbprofil oder Zylinder.</p>
 
 <h3>Flächendeckende Transparenz</h3>
 <p>Ehrgeizige Preismodelle oder horrende Kosten haben bei uns keinen Platz. Wir bringen unseren Service für eine <strong>Basis von 99 Euro</strong> an die Haustür. Die Anfahrt in den äußersten Teil des Kreises berechnen wir mit fairen und fest vereinbarten <strong>20 Euro</strong>. Keine „Grenzort-Zuschläge", keine Fantasierechnungen am Wochenend-Sonntag. Transparente und faire Abwicklung für Breitscheid, Erdbach, Gusternhain, Medenbach und Rabenscheid.</p>
@@ -278,11 +278,11 @@ export const ring4bLocations: LocationData[] = [
             },
             {
                 question: "Wie hoch ist die Gefahr einer kaputten Tür beim Schlossöffnen in Breitscheid?",
-                answer: "Solange die Türe nicht zugeschlossen (verriegelt) wurde, minimiert unser Fachbetrieb die Schäden auf annähernd Null (99% spurenlose Öffnung). Es muss weder gebohrt noch der Rahmen eingedrückt werden."
+                answer: "Solange die Türe nicht zugeschlossen (verriegelt) wurde, minimiert unser Fachbetrieb die Schäden auf annähernd Null (nahezu spurenlose Öffnung). Es muss weder gebohrt noch der Rahmen eingedrückt werden."
             },
             {
                 question: "Haben Sie am Wochenende einen Notdienst für den Raum Breitscheid / Erdbach?",
-                answer: "Wir sind zu 100% notdienstfähig. Ob Sonntagmorgen beim Töpfermarkt oder nachts im kältesten Westerwald-Winter: Telefonisch erreichen Sie immer einen kompetenten Disponenten unserer Zentrale."
+                answer: "Wir sind rund um die Uhr einsatzbereit. Ob Sonntagmorgen beim Töpfermarkt oder nachts im kältesten Westerwald-Winter: Telefonisch erreichen Sie immer einen kompetenten Disponenten unserer Zentrale."
             }
         ],
         neighbors: ["schluesseldienst-haiger", "schluesseldienst-herborn", "schluesseldienst-driedorf", "schluesseldienst-dietzhoelztal"]
@@ -337,7 +337,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Dass Dietzhölztal geografisch weit von Zentren wie Wetzlar oder Gießen entfernt ist, spüren unsere Kunden nicht bei der Verfügbarkeit. Egal ob Sie an einem kalten Winterabend in <strong>Rittershausen</strong> ausgesperrt sind oder sonntags in <strong>Steinbrücken</strong> der Schlüssel abgebrochen ist: Wir machen uns umgehend auf den Weg über die A45 und B277 in Richtung Dietzhölze. In aller Regel erreichen unsere erfahrenen Monteure jeden der vier Ortsteile in maximal <strong>25 bis 30 Minuten</strong>.</p>
 
 <h3>Kratzerfreie Öffnung und auch bei älteren Türen</h3>
-<p>Die ländliche Architektur im Dietzhölztal umfasst historische Fachwerkhöfe mit jahrzehntealten Holz-Türen genauso wie moderne, gut gedämmte Energiesparhäuser in Ewersbach. Ist Ihre Tür leidglich ins Schloss gefallen (also nicht mehrfach per Schlüssel verriegelt), versprechen wir Ihnen eine <strong>zerstörungsfreie Öffnung in 99% der Fällen</strong>. Unsere Monteure arbeiten nicht mit purer Kraft, sondern mit hochsensiblen Federdrähten und Spiralgleitern, die das Material von Rahmen und Zylinder vollständig intakt lassen.</p>
+<p>Die ländliche Architektur im Dietzhölztal umfasst historische Fachwerkhöfe mit jahrzehntealten Holz-Türen genauso wie moderne, gut gedämmte Energiesparhäuser in Ewersbach. Ist Ihre Tür leidglich ins Schloss gefallen (also nicht mehrfach per Schlüssel verriegelt), versprechen wir Ihnen eine <strong>zerstörungsfreie Öffnung in nahezu allen Fällenn</strong>. Unsere Monteure arbeiten nicht mit purer Kraft, sondern mit hochsensiblen Federdrähten und Spiralgleitern, die das Material von Rahmen und Zylinder vollständig intakt lassen.</p>
 
 <h3>Fair kalkulierter Preis für das weite Tal</h3>
 <p>Viele auswärtige Notdienste verlangen extreme Zuschläge für Ortschaften an den Kreisgrenzen. Nicht bei uns: Sie profitieren von unserer Basisgebühr von ehrlichen <strong>99 Euro für die reine Türöffnung</strong>. Die weite Anfahrt von der Zentrale in den tiefen Lahn-Dill-Kreis kompensieren wir mit einer pauschalen, absolut transparenten Anfahrt von <strong>25 Euro</strong>. So gibt es in Dietzhölztal keine versteckten Kosten, sondern ehrliches Handwerk mit klaren Zahlen.</p>
@@ -431,7 +431,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Die Großgemeinde <strong>Driedorf</strong> bildet den westlichen „Balkon" des Lahn-Dill-Kreises und liegt eingebettet in die Höhen des beginnenden hessischen Westerwalds. Aus den 9 charakteristischen Ortsteilen und <strong>Driedorf, Heiligenborn, Heisterberg, Hohenroth, Mademühlen, Münchhausen, Roth, Seilhofen und Waldaubach</strong> und blickt man teils bis ins benachbarte Rheinland-Pfalz. Auf über 643 Metern Höhe ragt der <strong>Höllberg (Höllkopf)</strong> auf. Natur pur und beliebte Ausflugsziele wie die <strong>Krombachtalsperre</strong> oder der <strong>Heisterberger Weiher</strong> ziehen nicht nur die 5.150 festen Einwohner, sondern auch zahllose Touristen an. Bei Skibetrieb im Winter oder Wassersport im Sommer gehen Schlüssel schnell verloren. Hier rückt unser <strong>Schlüsseldienst Driedorf</strong> im 24-Stunden-Takt zur Hilfe aus.</p>
 
 <h3>Zerstörungsfreie Öffnung im gesamten Westerwald</h3>
-<p>Unsere Monteure fahren von Wetzlar aus zügig über die A45 (Abfahrt Herborn) hinauf in die Westerwald-Gemeinde. Wir kennen das dichte Netz an Landstraßen und sind selbst bei winterlichen Bedingungen in aller Regel in <strong>30 bis 35 Minuten</strong> in Mademühlen, Driedorf oder Waldaubach vor Ort. Das Besondere: Die weite Landfahrt oder extreme Wetterbedingungen ändern nichts an unserer strikten Service-Qualität. Sofern eine Tür nur ins Fachwerk geschnappt (zugezogen) ist, wenden wir unsere Premium-Aufschließtechnik an, die zu <strong>über 99% keinerlei Spuren an Zylinderholz oder Beschlägen</strong> hinterlässt.</p>
+<p>Unsere Monteure fahren von Wetzlar aus zügig über die A45 (Abfahrt Herborn) hinauf in die Westerwald-Gemeinde. Wir kennen das dichte Netz an Landstraßen und sind selbst bei winterlichen Bedingungen in aller Regel in <strong>30 bis 35 Minuten</strong> in Mademühlen, Driedorf oder Waldaubach vor Ort. Das Besondere: Die weite Landfahrt oder extreme Wetterbedingungen ändern nichts an unserer strikten Service-Qualität. Sofern eine Tür nur ins Fachwerk geschnappt (zugezogen) ist, wenden wir unsere Premium-Aufschließtechnik an, die zu <strong>nahezu alle keinerlei Spuren an Zylinderholz oder Beschlägen</strong> hinterlässt.</p>
 
 <h3>Flächendeckende Preise für alle 9 Ortsteile</h3>
 <p>Viele Schlüsseldienste lassen Kunden in abgelegenen Gebieten wie Münchhausen oder am äußersten Ende der Krombachtalsperre bluten. Das ist nicht unsere Philosophie. Wir behandeln die gesamte Gemeinde Driedorf mit einer klaren <strong>25 Euro Anfahrtspauschale</strong>. Ob Sie im Kernort neben der Burgruine oder im kleinsten Dorf Heiligenborn wohnen: Der Einsatz zur zerstörungsfreien Türöffnung kostet ehrliche <strong>99 Euro Festpreis am Werktag</strong> für den Handwerker, plus den transparenten Fahrtkostenanteil. Keine Höhenzuschläge, kein Ausnutzen der Randlage.</p>
@@ -488,7 +488,7 @@ export const ring4bLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 25, travelCostText: "+ 25€ Anfahrt" },
         seo: { 
             metaTitle: "Schlüsseldienst Eschenburg 24/7 Türöffnung ab 99€", 
-            metaDescription: "Schlüsseldienst Eschenburg (Eibelshausen, Wissenbach, Hirzenhain). Festpreis ab 99€. Zerstörungsfreie Öffnung in ca. 30 Minuten, 100% ohne Abzocke." 
+            metaDescription: "Schlüsseldienst Eschenburg (Eibelshausen, Wissenbach, Hirzenhain). Festpreis ab 99€. Zerstörungsfreie Öffnung in ca. 30 Minuten, seriös und transparent." 
         },
 
         // === 10X ERWEITERUNG ===
@@ -528,7 +528,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Über die Autobahn A45 und Dillenburg setzen wir schnellstmöglich ins Tal zu Ihnen über. Ob in Tal-Lage (Wissenbach, Eibelshausen) oder am Hang bei Hirzenhain mit dem Segelflugplatz: Die veranschlagte Fahrtzeit für nahezu jeden Winkel der Großgemeinde liegt bei exzellenten <strong>25 bis 30 Minuten</strong>. Das gilt für regnerische Herbstabende genauso wie für sonnige Sommerwochenenden inmitten von Touristen am Holderberg.</p>
 
 <h3>Handwerkskunst an alten und neuen Türen</h3>
-<p>In Eschenburg mischt sich historische Bausubstanz mit modernsten Eigenheimen. Eine klassisch, nur zugefallene Haustür behandeln wir durch schonende Aufsperrtechniken („Picking", Gleiterkrallen, Zylinderhaken). Damit können wir <strong>über 99 % aller reinen „Tür zu"-Notfälle ohne kleinste Kratzer</strong> öffnen. Ist ein Zylinderschloss allerdings durch Verschleiß verklemmt oder mutwillig zugeklebt worden, fräsen Spezialgeräte den Bohrschutz gezielt aus, sodass ein Sicherheitszylinder passgenau direkt vor Ort (auf Wunsch „Gleichschließend") neu eingesetzt werden kann.</p>
+<p>In Eschenburg mischt sich historische Bausubstanz mit modernsten Eigenheimen. Eine klassisch, nur zugefallene Haustür behandeln wir durch schonende Aufsperrtechniken („Picking", Gleiterkrallen, Zylinderhaken). Damit können wir <strong>nahezu alle aller reinen „Tür zu"-Notfälle ohne kleinste Kratzer</strong> öffnen. Ist ein Zylinderschloss allerdings durch Verschleiß verklemmt oder mutwillig zugeklebt worden, fräsen Spezialgeräte den Bohrschutz gezielt aus, sodass ein Sicherheitszylinder passgenau direkt vor Ort (auf Wunsch „Gleichschließend") neu eingesetzt werden kann.</p>
 
 <h3>Absolute Preissicherheit im Nordosten</h3>
 <p>In den äußersten Randlagen von Kreisen tummeln sich oft dubiose Briefkasten-Firmen, die Mondpreise von teils weit über 500 Euro verlangen. Bei uns erhalten Sie echte Transparenz aus der Region für die Region: Die Basis-Türöffnung (zugefallen, am Werktag) bieten wir für ehrliche <strong>99 Euro Festpreis</strong> an. Hinzu kommt eine fair gedeckelte Fahrtpauschale von <strong>25 Euro</strong> für das Eschenburger Gesamtgebiet.</p>
@@ -604,7 +604,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Haustür in Bicken zugezogen",
-                description: "Vom Heimatmuseum nach Hause gekommen und die Tür ist im Wind zugefallen? Kein Grund zur Panik. Wir öffnen 99 % der zugefallenen Türen spurlos."
+                description: "Vom Heimatmuseum nach Hause gekommen und die Tür ist im Wind zugefallen? Kein Grund zur Panik. Wir öffnen nahezu alle zugefallenen Türen spurlos."
             },
             {
                 icon: "shield-alert",
@@ -625,7 +625,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Dank der guten überregionalen Anbindung via A45 (Herborn) und Bundesstraße 255 navigieren unsere Disponenten die Einsatzwagen schnellstmöglich zu Ihnen. Für Ballersbach, Bicken oder das kleinere Bellersdorf können Sie mit einer sehr verlässlichen Ankunftszeit von <strong>25 bis 30 Minuten</strong> rechnen und egal, ob in einer Regennacht oder am Sonntagmittag.</p>
 
 <h3>Professionelles Werkzeug für jedes Schloss</h3>
-<p>Einfach eine Scheckkarte durchziehen? So leicht lassen sich massive Haustüren in Mittenaar nicht knacken. Unsere ausgebildeten Monteure nutzen filigranste Fiberglas-Gleiter, Türfallen-Nadeln und spezielles Zug-Werkzeug. Damit können wir in über 99 % der Fälle zugezogene Türen <strong>komplett zerstörungsfrei und ohne einen einzigen Kratzer</strong> öffnen. Sollte der Schlüssel hingegen abgebrochen oder das Schloss mutwillig verklebt worden sein, setzen wir professionelle Akku-Zylinderfräsen ein und montieren Ihnen auf Wunsch sofort einen neuen Hochsicherheits-Zylinder nach DIN-Norm.</p>
+<p>Einfach eine Scheckkarte durchziehen? So leicht lassen sich massive Haustüren in Mittenaar nicht knacken. Unsere ausgebildeten Monteure nutzen filigranste Fiberglas-Gleiter, Türfallen-Nadeln und spezielles Zug-Werkzeug. Damit können wir in nahezu alle der Fälle zugezogene Türen <strong>komplett zerstörungsfrei und ohne einen einzigen Kratzer</strong> öffnen. Sollte der Schlüssel hingegen abgebrochen oder das Schloss mutwillig verklebt worden sein, setzen wir professionelle Akku-Zylinderfräsen ein und montieren Ihnen auf Wunsch sofort einen neuen Hochsicherheits-Zylinder nach DIN-Norm.</p>
 
 <h3>Ehrliche Preise für Mittenaar</h3>
 <p>Gute Arbeit darf nicht durch Wucherpreise getrübt werden. Bei uns gilt für ganz Mittenaar ein transparentes Versprechen: Die einfache Türöffnung kostet tagsüber <strong>genau 99 Euro Festpreis</strong>. Hinzu kommt eine fair gedeckelte Fahrtpauschale in das Lahn-Dill-Bergland von pauschalen <strong>25 Euro</strong>. So wissen alle Bewohner von Bicken bis Offenbach vorher auf den Cent genau, was transparent am Telefon kommuniziert wurde.</p>
@@ -634,7 +634,7 @@ export const ring4bLocations: LocationData[] = [
         localTestimonials: [
             {
                 name: "Heinz K.",
-                quote: "In Bicken ausgesperrt, als ich nur kurz Briefkasten leeren wollte. Nach einem kurzen Anruf war der Handwerker in einer halben Stunde da. Freundlich, hat zügig geöffnet, Preis hat 100% gepasst.",
+                quote: "In Bicken ausgesperrt, als ich nur kurz Briefkasten leeren wollte. Nach einem kurzen Anruf war der Handwerker in einer halben Stunde da. Freundlich, hat zügig geöffnet, Preis hat genau gepasst.",
                 rating: 5
             },
             {
@@ -650,7 +650,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Ehrlicher regionaler Support für Bicken, Ballersbach, Bellersdorf und Offenbach. Wir entsperren Haustüren und PKWs in Mittenaar und zu 99% spurenlos und absolut fair kalkuliert.",
+            heroIntro: "Ehrlicher regionaler Support für Bicken, Ballersbach, Bellersdorf und Offenbach. Wir entsperren Haustüren und PKWs in Mittenaar und nahezu immer spurenlos und absolut fair kalkuliert.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -819,7 +819,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Zwar liegt das Gemeindegebiet am Rande unseres eigentlichen Lahn-Dill-Epizentrums, doch durch die flüssig befahrbaren Bundesstraßen (B456) können wir Weilmünster effektiv in <strong>nahezu 30 Minuten</strong> abdecken. Und das Besondere: Wir bedienen nicht nur den großen Kernort rund um das Alte Nassauische Amtshaus. Wenn Sie am äußeren Rand in Wolfenhausen, Rohnstadt oder Laubuseschbach verzweifeln, kommen wir mit exakt gleicher Priorisierung und exakt gleicher Dauer zu Ihnen.</p>
 
 <h3>Wir erhalten die Bausubstanz im Taunus</h3>
-<p>Weilmünsters architektonische Vielfalt reicht von historischen Gemäuern und urigen Bauernhäusern bis zu massiv gesicherten KFW-Häusern an den Rändern des Weiltals. Bevor wir zur Bohrmaschine greifen, inspizieren unsere professionellen Handwerker jede Tür präzise. Ist sie schlichtweg zugefallen (unverriegelt), nutzen wir schonendes Spezialzubehör, um Fallbleche zurückzuschieben. Dieser Vorgang gewährt uns in beinahe <strong>99 von 100 Fällen eine völlig schadenfreie, saubere Öffnung</strong>. Rahmen, Türblatt und teurer Zylinder bleiben makellos erhalten.</p>
+<p>Weilmünsters architektonische Vielfalt reicht von historischen Gemäuern und urigen Bauernhäusern bis zu massiv gesicherten KFW-Häusern an den Rändern des Weiltals. Bevor wir zur Bohrmaschine greifen, inspizieren unsere professionellen Handwerker jede Tür präzise. Ist sie schlichtweg zugefallen (unverriegelt), nutzen wir schonendes Spezialzubehör, um Fallbleche zurückzuschieben. Dieser Vorgang gewährt uns in beinahe <strong>nahezu allen Fällen eine völlig schadenfreie, saubere Öffnung</strong>. Rahmen, Türblatt und teurer Zylinder bleiben makellos erhalten.</p>
 
 <h3>Ein Wort zur Preisgestaltung</td>
 <p>Handwerk in der Region muss für alle verlässlich bezahlbar sein. Deshalb verzichten wir auf undurchsichtige Anfahrtspauschalen nach Kilometern. Die gesamte Gemarkung Weilmünster, vom Kernort bis ins entlegenste Audenschmiede, wird von uns mit einer pauschalen <strong>25 Euro Anfahrtsgebühr</strong> abgedeckt. Die Türöffnung selbst verbleibt an Werktagen bei dem ehrlichen <strong>99 Euro Festpreis-Garant</strong>. Sie erleben keine horrende Endrechnung, sondern faire, nachvollziehbare Zahlen.</p>
@@ -876,7 +876,7 @@ export const ring4bLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
             metaTitle: "Schlüsseldienst Seelbach (Herborn) 24/7", 
-            metaDescription: "Schlüsseldienst für Herborn-Seelbach. Festpreis ab 99€, Anfahrt nur 20€. Zerstörungsfreie Premium-Türöffnung in ca. 20 Minuten. 100% regional." 
+            metaDescription: "Schlüsseldienst für Herborn-Seelbach. Festpreis ab 99€, Anfahrt nur 20€. Zerstörungsfreie Premium-Türöffnung in ca. 20 Minuten. regional." 
         },
 
         // === 10X ERWEITERUNG ===
@@ -895,7 +895,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Wohnungstür zugezogen",
-                description: "Sie wollten nur kurz nach dem Rechten sehen und der Wind hat die Tür am Seelbacher Hang zugeschlagen? Wir öffnen zu 99% spurlos."
+                description: "Sie wollten nur kurz nach dem Rechten sehen und der Wind hat die Tür am Seelbacher Hang zugeschlagen? Wir öffnen nahezu immer spurlos."
             },
             {
                 icon: "key",
@@ -916,7 +916,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Von unserem Wetzlarer Hauptsitz aus nutzen wir die direkte Route über die Bundesstraße 277 oder die A45. Dadurch garantieren wir für Herborn-Seelbach in der Regel eine Eintreffzeit von <strong>lediglich 20 bis 25 Minuten</strong>. Wir sind ein echter regionaler Fachbetrieb und sitzen nicht in irgendeinem Callcenter, das Ihre Notlage an Dritte verkauft. Wenn Sie bei uns anrufen, fährt unser Monteur direkt los.</p>
 
 <h3>Fokus auf den Werterhalt von Türen</h3>
-<p>Egal ob historische Eichentür in den eng bebauten Gassen am alten Schulhaus oder hochmoderne Kunststoff-Sicherheitstür in den Neubaustraßen: Wir bohren nicht blindlings drauf los. Liegt ein klassischer Fall von „zugezogen, nicht abgeschlossen" vor, wenden unsere spezialisierten Techniker modernste Zug- und Gleitmethoden an. Über <strong>99 Prozent dieser einfachen Türöffnungen in Seelbach erfolgen vollkommen beschädigungsfrei</strong>. Weder das Türblatt noch der eingebaute Schließzylinder nehmen Schaden.</p>
+<p>Egal ob historische Eichentür in den eng bebauten Gassen am alten Schulhaus oder hochmoderne Kunststoff-Sicherheitstür in den Neubaustraßen: Wir bohren nicht blindlings drauf los. Liegt ein klassischer Fall von „zugezogen, nicht abgeschlossen" vor, wenden unsere spezialisierten Techniker modernste Zug- und Gleitmethoden an. Über <strong>nahezu alle dieser einfachen Türöffnungen in Seelbach erfolgen vollkommen beschädigungsfrei</strong>. Weder das Türblatt noch der eingebaute Schließzylinder nehmen Schaden.</p>
 
 <h3>Festpreise, auf die Sie sich verlassen können</h3>
 <p>Versteckte Kosten suchen Sie bei uns vergeblich. Den Basispreis für eine Standard-Türöffnung am Werktag garantieren wir mit <strong>exakt 99 Euro</strong>. Die Fahrtkosten in den Herborner Ortsteil Seelbach betragen pauschal und fair <strong>20 Euro</strong>. Auch an Wochenenden oder tief in der Nacht kommunizieren wir jeden Cent transparent am Telefon (orientiert an den offiziellen Empfehlungen der IHK), noch bevor wir uns ins Auto setzen.</p>
@@ -941,7 +941,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Dringende Türöffnungen in Herborn-Seelbach. Wir arbeiten zu 99% absolut zerstörungsfrei und bieten volle Preistransparenz ab der ersten Minute.",
+            heroIntro: "Dringende Türöffnungen in Herborn-Seelbach. Wir arbeiten nahezu immer absolut zerstörungsfrei und bieten volle Preistransparenz ab der ersten Minute.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -973,7 +973,7 @@ export const ring4bLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
             metaTitle: "Schlüsseldienst Herborn Schönbach & Hörbach", 
-            metaDescription: "Schlüsseldienst für Schönbach und Hörbach. Festpreis ab 99€. Regionale Fachkräfte, in ca. 25 Min. bei Ihnen vor Ort. 100% transparent und seriös." 
+            metaDescription: "Schlüsseldienst für Schönbach und Hörbach. Festpreis ab 99€. Regionale Fachkräfte, in ca. 25 Min. bei Ihnen vor Ort. transparent und seriös." 
         },
 
         // === 10X ERWEITERUNG ===
@@ -1070,7 +1070,7 @@ export const ring4bLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { 
             metaTitle: "Schlüsseldienst Merkenbach (Herborn) 24/7 Notdienst", 
-            metaDescription: "Schlüsseldienst Merkenbach bei Herborn. Schonende 24/7 Türöffnung in 20 Minuten. Festpreis ab 99€ + faire 20€ Anfahrt. 100% regional und seriös." 
+            metaDescription: "Schlüsseldienst Merkenbach bei Herborn. Schonende 24/7 Türöffnung in 20 Minuten. Festpreis ab 99€ + faire 20€ Anfahrt. regional und seriös." 
         },
 
         // === 10X ERWEITERUNG ===
@@ -1082,7 +1082,7 @@ export const ring4bLocations: LocationData[] = [
         landmark: "Historische Fachwerkhöfe im Ortskern und neuere Wohnerschließungen im Merkenbacher Hang",
         buildingTypes: "Mix aus gewachsener ländlicher Bebauung, liebevoll saniertem Fachwerk und Mehrfamilienhäusern an den Hauptachsen.",
         parkingInfo: "Unmittelbar in Merkenbach finden sich nahezu überall gute Haltemöglichkeiten für unsere kompakten Einsatzfahrzeuge direkt am Haus.",
-        heroVariant: "Schlüssel steckt in Merkenbach von innen? Wir lösen das Problem schnell und 100% zerstörungsfrei.",
+        heroVariant: "Schlüssel steckt in Merkenbach von innen? Wir lösen das Problem schnell und nahezu immer zerstörungsfrei.",
         fareInfo: "Die ideale Anbindung über die Ausfahrt Herborn-Süd erlaubt uns für Merkenbach unsere gedeckelte Herborn-Pauschale von nur 20 Euro.",
 
         scenarios: [
@@ -1110,7 +1110,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Merkenbach ist verkehrstechnisch für uns ein absolutes Heimspiel. Durch unsere Abdeckung via Autobahn A45 oder alternativ die parallele B277 sind unsere Monteure oftmals bereits in rasanten <strong>20 Minuten</strong> an Ihrer Hausnummer in Merkenbach. Das bedeutet kurze Wartezeiten im Treppenhaus oder draußen in der Kälte und und eine extrem planbare Abwicklung.</p>
 
 <h3>Wir erhalten Türen und Beschläge</h3>
-<p>Niemand möchte wegen eines vergessenen Schlüssels gleich einen massiven Holz- oder Lackschaden an seiner teuren Hauseingangstür erleiden. Unser geschultes Personal setzt deshalb voll auf Zerstörungsfreiheit. Wenn die Tür in Merkenbach lediglich „zugezogen", also nicht aktiv verriegelt ist, verwenden wir spezielle Türfallen-Bypass-Werkzeuge aus unserem Koffer (wie biegsame Nadeln und Gleiter). In weit <strong>über 99 Prozent der Einsätze gleitet die Tür damit lautlos und komplett unbeschädigt auf</strong>.</p>
+<p>Niemand möchte wegen eines vergessenen Schlüssels gleich einen massiven Holz- oder Lackschaden an seiner teuren Hauseingangstür erleiden. Unser geschultes Personal setzt deshalb voll auf Zerstörungsfreiheit. Wenn die Tür in Merkenbach lediglich „zugezogen", also nicht aktiv verriegelt ist, verwenden wir spezielle Türfallen-Bypass-Werkzeuge aus unserem Koffer (wie biegsame Nadeln und Gleiter). In weit <strong>nahezu allen der Einsätze gleitet die Tür damit lautlos und komplett unbeschädigt auf</strong>.</p>
 
 <h3>Ehrlichkeit vor Ort</h3>
 <p>Die Branche der Schlüsselnotdienste ist leider durchzogen von falschen Versprechungen. Schlüssel Schmiede Wetzlar steht für das komplette Gegenteil: Werktags öffnen wir einfache Haustüren für einen glasklaren <strong>Festpreis von 99 Euro</strong>. Die Fahrtkosten nach Merkenbach und an die benachbarte B277 pauschalisieren wir ehrlich und offen auf exakt <strong>20 Euro</strong>. Weder berechnen wir Ihnen den Feierabendzuschlag in der Minute vor Ort noch versteckte Bereitstellungspreise.</p>
@@ -1135,7 +1135,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Dringende Einsätze in Herborn-Merkenbach: Wir entsperren Haustüren und Schlösser im Eiltempo, zu 99% spurenlos und mit echter Preisgarantie.",
+            heroIntro: "Dringende Einsätze in Herborn-Merkenbach: Wir entsperren Haustüren und Schlösser im Eiltempo, nahezu immer spurenlos und mit verbindlicher Preiszusage.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -1186,7 +1186,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Ein Windzug in Guntersdorf",
-                description: "Sie wässern den Vorgarten im ruhigen Guntersdorf und die Haustür fällt zu? In 99% unserer Einsätze entsperren wir die Anlage sofort und absolut spurlos."
+                description: "Sie wässern den Vorgarten im ruhigen Guntersdorf und die Haustür fällt zu? In nahezu allen unserer Einsätze entsperren wir die Anlage sofort und absolut spurlos."
             },
             {
                 icon: "shield-alert",
@@ -1232,7 +1232,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Dringende Notöffnungen für das Herborner Umland (Guntersdorf & Uckersdorf). Wir öffnen Haus- sowie PKW-Türen rasch, zu 99% spurenlos und mit echte Preisgarantie.",
+            heroIntro: "Dringende Notöffnungen für das Herborner Umland (Guntersdorf & Uckersdorf). Wir öffnen Haus- sowie PKW-Türen rasch, nahezu immer spurenlos und mit verbindliche Preiszusage.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -1264,7 +1264,7 @@ export const ring4bLocations: LocationData[] = [
         pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 15, travelCostText: "+ 15€ Anfahrt" },
         seo: { 
             metaTitle: "Schlüsseldienst Dillheim (Ehringshausen) 24/7 ab 99€", 
-            metaDescription: "Schlüsseldienst für Ehringshausen-Dillheim. Schnelle Türöffnung in ca. 15 Min. Festpreis ab 99€. Zerstörungsfrei, fair und 100% regional." 
+            metaDescription: "Schlüsseldienst für Ehringshausen-Dillheim. Schnelle Türöffnung in ca. 15 Min. Festpreis ab 99€. Zerstörungsfrei, fair und regional." 
         },
 
         // === 10X ERWEITERUNG ===
@@ -1304,7 +1304,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Anders als manch überregionale Vermittler, die Fahrer teilweise aus Gießen oder Siegen schicken, operieren wir regional direkt auf der Achse des Lahn-Dill-Gebiets. Fahren wir von Wetzlar über die Bundesstraße 277 nach Ehringshausen ein, erreichen wir Dillheim in aller Regel in unfassbar schnellen <strong>12 bis 15 Minuten</strong>. Damit ersparen wir Ihnen lange Frustration vor einer regnerischen Kulisse.</p>
 
 <h3>Wir erhalten Schlösser, statt sie zu zerstören</h3>
-<p>Es ist unser oberstes Handwerker-Gebot: Wenn Ihre Tür lediglich ins Schloss gefallen ist, rücken wir ihr nicht mit grobem Bohr-Werkzeug auf die Pelle. Unsere erfahrenen Monteure nutzen stattdessen feine Metallschieber und Bypass-Werkzeuge aus Federspezialstahl. Diese Technik führt in weit <strong>über 99 % aller einfachen Einsätze zum sofortigen Erfolg und ganz ohne Schäden</strong>. Sie können anschließend Ihren gewohnten Schlüssel einfach weiterverwenden.</p>
+<p>Es ist unser oberstes Handwerker-Gebot: Wenn Ihre Tür lediglich ins Schloss gefallen ist, rücken wir ihr nicht mit grobem Bohr-Werkzeug auf die Pelle. Unsere erfahrenen Monteure nutzen stattdessen feine Metallschieber und Bypass-Werkzeuge aus Federspezialstahl. Diese Technik führt in weit <strong>nahezu alle aller einfachen Einsätze zum sofortigen Erfolg und ganz ohne Schäden</strong>. Sie können anschließend Ihren gewohnten Schlüssel einfach weiterverwenden.</p>
 
 <h3>Faire Preise und absolute Transparenz</h3>
 <p>Dillheim fällt aufgrund seiner Nähe zu Wetzlar und Ehringshausen in unsere bevorzugte Tarifzone. Die Anfahrts- und Bereitstellungspauschale liegt hier bei überaus günstigen und gedeckelten <strong>15 Euro</strong>. Das eigentliche Handwerk und also die Standardöffnung der zugefallenen Tür am Werktag und dokumentieren wir ganz transparent für einen <strong>Festpreis von 99 Euro</strong>. Selbst am Wochenende tappen Sie bei uns in keine Kostenfallen, unsere Aufschläge sind seriös und telefonisch im Vorfeld abfragbar.</p>
@@ -1380,7 +1380,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Haustür zugezogen am Hang",
-                description: "Ein Moment der Unaufmerksamkeit, und die Tür rastet ein. Wir nutzen in Neukirchen schonende Fallengleiter, um zu 99% makellos und kratzerfrei öffnen zu können."
+                description: "Ein Moment der Unaufmerksamkeit, und die Tür rastet ein. Wir nutzen in Neukirchen schonende Fallengleiter, um nahezu immer makellos und kratzerfrei öffnen zu können."
             },
             {
                 icon: "shield-alert",
@@ -1401,7 +1401,7 @@ export const ring4bLocations: LocationData[] = [
 <p>Wir scheuen auch die längeren Wege ins Hinterland nicht. Unsere Wetzlarer Stützpunkte ermöglichen ein rasches Ausrücken. Über Schwalbach und Niederquembach nähern sich unsere Einsatzwagen dem Ortsteil in durchgehend planbaren <strong>20 bis 25 Minuten</strong>. Sie hängen bei uns in keiner bundesweiten Hotline fest, sondern sprechen direkt mit Disponenten, die die Region um Braunfels bestens kennen.</p>
 
 <h3>Materialschonende Präzision im Fokus</h3>
-<p>Eine verschlossene Haustür, an der nicht zwingend doppelt abgeriegelt wurde, ist für gut ausgerüstete Fachexperten kein Grund für laute Bohrmaschinen. Unsere kompetenten Monteure setzen in Neukirchen in erster Linie auf Spezialwerkzeuge, die den Schließzylinder umgehen und die Türfalle von außen elegant zurückschieben. So bleibt Ihr Eingangsportal absolut intakt, und Sie können den alten Schlüssel problemlos weiterverwenden. <strong>Über 99 Prozent jener simplen Zugefallen-Öffnungen verlaufen spurenlos.</strong></p>
+<p>Eine verschlossene Haustür, an der nicht zwingend doppelt abgeriegelt wurde, ist für gut ausgerüstete Fachexperten kein Grund für laute Bohrmaschinen. Unsere kompetenten Monteure setzen in Neukirchen in erster Linie auf Spezialwerkzeuge, die den Schließzylinder umgehen und die Türfalle von außen elegant zurückschieben. So bleibt Ihr Eingangsportal absolut intakt, und Sie können den alten Schlüssel problemlos weiterverwenden. <strong>Nahezu alle jener simplen Zugefallen-Öffnungen verlaufen spurenlos.</strong></p>
 
 <h3>Der Land-Tarif ohne böse Überraschungen</h3>
 <p>Ein kleiner, abgelegener Ortsteil bei Braunfels zu sein, darf nicht in exorbitanten Fahrtkosten resultieren. Schlüssel Schmiede Wetzlar garantiert Ihnen für die gesamte Südschleife des Lahn-Dill-Kreises echte Festpreise. Wir verlangen für Neukirchen eine deckelnde Anfahrtspauschale von lediglich <strong>20 Euro</strong>. Die Türöffnung an sich wird werktäglich zu einem glasklaren Festbetrag von exakt <strong>99 Euro</strong> abgewickelt. Seriosität, die man spüren und beweisen kann.</p>
@@ -1426,7 +1426,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Regionalschiene Braunfels-Neukirchen: Wir knacken defekte Schlösser und entsperren zugefallene Türen - schnell, zu 99% spurenlos und mit vollem Preisschutz.",
+            heroIntro: "Regionalschiene Braunfels-Neukirchen: Wir knacken defekte Schlösser und entsperren zugefallene Türen - schnell, nahezu immer spurenlos und mit verbindlicher Preiszusage.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -1477,7 +1477,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Haustür zugezogen am Weinberg",
-                description: "Ein kalter Windstoß in Hanglage drückt die Haustür ins Schloss. Wir setzen spezielle Fallengleiter an und versprechen: in 99% aller solchen Fälle gibt es absolut keine Schäden!"
+                description: "Ein kalter Windstoß in Hanglage drückt die Haustür ins Schloss. Wir setzen spezielle Fallengleiter an und versprechen: in nahezu allen solchen Fällen gibt es absolut keine Schäden!"
             },
             {
                 icon: "shield-alert",
@@ -1523,7 +1523,7 @@ export const ring4bLocations: LocationData[] = [
         ],
 
         content: {
-            heroIntro: "Professioneller und ortsnaher Notdienst für Braunfels-Tiefenbach. Wir entsperren Haustüren und Schlösser sicher, zu 99% makellos und mit verlässlicher Preisgarantie.",
+            heroIntro: "Professioneller und ortsnaher Notdienst für Braunfels-Tiefenbach. Wir entsperren Haustüren und Schlösser sicher, nahezu immer makellos und mit verbindlicher Preiszusage.",
             mainText: "",
             serviceZerstörungsfrei: "",
             serviceBohren: "",
@@ -1532,7 +1532,7 @@ export const ring4bLocations: LocationData[] = [
         faqs: [
             {
                 question: "Wie transparent ist Ihr Festpreis-Zusprechen für Tiefenbach?",
-                answer: "Er ist ein Versprechen. Die 15 Euro Anfahrt und der Basispreis von 99 Euro wochentags schließen böse Preisaufschläge zu 100% aus. Sämtliche Nachtzuschläge kommunizieren wir ungefragt vorab am Telefon."
+                answer: "Er ist ein Versprechen. Die 15 Euro Anfahrt und der Basispreis von 99 Euro wochentags schließen böse Preisaufschläge kategorisch aus. Sämtliche Nachtzuschläge kommunizieren wir ungefragt vorab am Telefon."
             },
             {
                 question: "Mein Schließzylinder klemmt. Reißen Sie in Tiefenbach alte Schlösser heraus?",
