@@ -20,7 +20,7 @@ export default function ServicesSection() {
         {/* Bento Grid */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
           {[
-            { icon: DoorOpen, title:"Haus- & Wohnungstüren", desc:"Zerstörungsfreie Öffnung in 99% der Fälle. Egal ob zugefallen oder abgeschlossen.", href:"/leistungen/turoeffnung", linkText:"Mehr zur Türöffnung", featured: true },
+            { icon: DoorOpen, title:"Haus- & Wohnungstüren", desc:"Zerstörungsfreie Öffnung in nahezu allen Fällen. Egal ob zugefallen oder abgeschlossen.", href:"/leistungen/turoeffnung", linkText:"Mehr zur Türöffnung", featured: true },
             { icon: Car, title:"Fahrzeug-Öffnung", desc:"Schonende Autoöffnung für alle Marken - garantiert ohne Kratzer oder Lackschäden.", href:"/leistungen/autooeffnung", linkText:"Details zur Autoöffnung" },
             { icon: ShieldCheck, title:"Sicherheitstechnik", desc:"Professionelle Nachrüstung mit Hochsicherheitszylindern, Panzerriegeln und Schutzbeschlägen.", href:"/leistungen/sicherheitstechnik", linkText:"Infos zum Einbruchschutz" },
             { icon: Lock, title:"Schließanlagen", desc:"Planung und Montage von Schließanlagen für private und gewerbliche Objekte.", href:"/leistungen/schliessanlagen", linkText:"Kostenlose Beratung anfordern", isCTA: true },

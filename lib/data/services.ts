@@ -5,10 +5,10 @@ export const services: Service[] = [
     id: createId("srv-01"),
     slug: createSlug("turoeffnung"),
     title: "Zerstörungsfreie Türöffnung",
-    shortDescription: "Wir öffnen zugefallene Türen in 99% der Fälle absolut beschädigungsfrei und mit 100% Festpreis-Garantie.",
+    shortDescription: "Wir öffnen zugefallene Türen in nahezu allen Fällen absolut beschädigungsfrei — mit verbindlicher Preisnennung vor Anfahrt.",
     fullDescription: "Eine zugefallene Tür ist ärgerlich, aber mit dem richtigen Partner kein Grund zur Panik. Als lokaler Fachbetrieb aus Wetzlar verzichten wir auf fragwürdige Callcenter-Strukturen. Unsere IHK-zertifizierten Monteure sind binnen 15 bis 30 Minuten bei Ihnen. Mit Spezialwerkzeug öffnen wir die meisten Türen innerhalb weniger Minuten, ohne den Schließzylinder, den Beschlag oder das Türblatt zu beschädigen. Auch bei verschlossenen (abgesperrten) Türen wenden wir modernste, materialschonende Techniken an.",
     icon: "DoorOpen",
-    features: ["Zerstörungsfreie Öffnung in 99% der Fälle", "100% Festpreis-Garantie ohne versteckte Anfahrtskosten", "24/7 Notdienst direkt aus dem Lahn-Dill-Kreis", "Ausschließlich geschultes Fachpersonal"],
+    features: ["Zerstörungsfreie Öffnung in nahezu allen Fällen", "Verbindliche Preisnennung vor Anfahrt", "24/7 Notdienst direkt aus dem Lahn-Dill-Kreis", "Ausschließlich geschultes Fachpersonal"],
     benefits: ["Keine unnötigen Zusatzkosten für neue Schlösser", "Erspart den Ärger über überhöhte Rechnungen", "Sofortige Hilfe im Notfall durch lokale Präsenz"],
     process: [
       { title: "Transparente Preisnennung", description: "Sie schildern Ihr Problem am Telefon, wir nennen Ihnen sofort den exakten, unumstößlichen Festpreis." },
@@ -25,7 +25,7 @@ export const services: Service[] = [
     order: 1,
     metadata: {
       title: "Türöffnung Wetzlar | Zerstörungsfrei & Lokaler Festpreis",
-      description: "Professionelle Türöffnung in Wetzlar vom etablierten Fachbetrieb. Zerstörungsfrei in 99% der Fälle. Ehrliche Festpreise ab 99 Euro ohne böse Überraschungen.",
+      description: "Professionelle Türöffnung in Wetzlar vom etablierten Fachbetrieb. Zerstörungsfrei in nahezu allen Fällen. Ehrliche Preise ab 99 Euro (Endpreis) ohne böse Überraschungen.",
       keywords: "Türöffnung Wetzlar, Schlüssel Schmiede Türöffnung, Türschloss öffnen, Festpreis Türöffnung, Fachbetrieb"
     }
   },
@@ -36,7 +36,7 @@ export const services: Service[] = [
     shortDescription: "Fahrzeug verschlossen? Wir öffnen alle Marken beschädigungsfrei und garantieerhaltend ab 99 Euro.",
     fullDescription: "Ein Moment der Unachtsamkeit und der Schlüssel liegt im verriegelten Auto. Verzweifeln Sie nicht und riskieren Sie keine zerstörerischen Selbstversuche. Unsere spezialisierten KFZ-Monteure nutzen sanfte Lockpicking-Techniken und zertifizierte Air-Wedges. Damit öffnen wir Autotüren aller Marken und von alten Liebhaberfahrzeugen bis zu hochmodernen Limousinen mit Keyless-Go und absolut kratzfrei und schonend für Ihre Fahrzeuggarantie.",
     icon: "Car",
-    features: ["100% ohne Lack- oder Blechschäden", "Für alle Automarken und Fabrikate", "Keine teure Neucodierung im Autohaus nötig", "Direkt vor Ort Service in wenigen Minuten"],
+    features: ["In der Regel ohne Lack- oder Blechschäden", "Für alle Automarken und Fabrikate", "Keine teure Neucodierung im Autohaus nötig", "Direkt vor Ort Service in wenigen Minuten"],
     benefits: ["Stressfreie Rückkehr an Ihr Lenkrad", "Weitaus günstiger als das Einschlagen der Scheibe", "Keine Wartezeiten auf langsame Abschleppdienste"],
     order: 2,
     metadata: {
@@ -61,7 +61,7 @@ export const services: Service[] = [
     slug: createSlug("schluessel-nachmachen"),
     title: "Schlüsselanfertigung",
     shortDescription: "Präzise Zweitschlüssel und offizielle Kopien von Sicherheitsschlüsseln direkt aus der Schmiede.",
-    fullDescription: "Sie benötigen dringend einen Ersatzschlüssel? In unserer Wetzlarer Schlüssel Schmiede fertigen wir Kopien von Zylinder-, Buntbart- und KFZ-Sicherheitsschlüsseln in industrieller Präzision direkt nach Vorlage. Für geschützte Profilzylinder-Anlagen fordern wir und unter Vorlage Ihrer authorisierten Sicherungskarte und eine legale und zu 100% passgenaue Nachfertigung beim Original-Hersteller an.",
+    fullDescription: "Sie benötigen dringend einen Ersatzschlüssel? In unserer Wetzlarer Schlüssel Schmiede fertigen wir Kopien von Zylinder-, Buntbart- und KFZ-Sicherheitsschlüsseln in industrieller Präzision direkt nach Vorlage. Für geschützte Profilzylinder-Anlagen fordern wir — unter Vorlage Ihrer autorisierten Sicherungskarte — eine legale und passgenaue Nachfertigung beim Original-Hersteller an.",
     icon: "Copy",
     features: ["Standard-, Rohr- und Sicherheitsschlüssel", "Nachfertigung ausschließlich mit legaler Sicherungskarte", "Höchste CNC-Passgenauigkeit", "Kurze Wartezeiten direkt im Ladengeschäft"],
     order: 4
@@ -75,7 +75,7 @@ export const services: Service[] = [
     icon: "Shield",
     features: ["Kostenfreie, ehrliche Sicherheitsberatung vor Ort", "Absicherungen streng nach DIN 18104 Standard", "Massive Querriegel und Panzer-Zusatzschlösser", "Polizeilich anerkannte Präventivmaßnahmen"],
     order: 5,
-    pricing: { amount: 0, interval: "one-time", features: ["Sicherheits-Schwachstellenanalyse vor Ort ist 100% kostenfrei!"] }
+    pricing: { amount: 0, interval: "one-time", features: ["Sicherheits-Schwachstellenanalyse vor Ort ist kostenfrei!"] }
   },
   {
     id: createId("srv-06"),
@@ -94,7 +94,7 @@ export const services: Service[] = [
     shortDescription: "Diskrete und fachmännische Notöffnung von Safes, Geldkassetten und alten Schränken.",
     fullDescription: "Schlüssel zum Familientresor verloren oder den Zahlencode der Elektronik vergessen? Als vertrauenswürdiger Fachbetrieb analysieren unsere Techniker die komplexe Konstruktion Ihres Tresors. Wir wenden mikrochirurgische Aufbohrtechniken oder hochspezialisierte Manipulationstools an, um Ihre sensiblen Wertsachen absolut intakt und unbeschädigt zu bergen. Bei uns gilt strenge Verschwiegenheitspflicht.",
     icon: "Safe",
-    features: ["100% Diskretion und Verschwiegenheit garantiert", "Hochmoderne Spezialwerkzeuge und Endoskope", "Erfahrung mit elektronischen und mechanischen Safes", "Optionale Wiederherstellung von manipulierten Zylindern"],
+    features: ["Absolute Diskretion und Verschwiegenheit", "Hochmoderne Spezialwerkzeuge und Endoskope", "Erfahrung mit elektronischen und mechanischen Safes", "Optionale Wiederherstellung von manipulierten Zylindern"],
     order: 7
   },
   {

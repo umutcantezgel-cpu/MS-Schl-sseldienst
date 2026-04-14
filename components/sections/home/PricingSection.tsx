@@ -20,7 +20,7 @@ export function PricingSection() {
         pill="SCHLÜSSELDIENST PREISE"
         headingId="preise-heading"
         title={<>Transparente <span className="text-[var(--color-red-500)]">Preise</span></>}
-        description="Festpreis am Telefon , keine versteckten Kosten , Rechnung erst nach Abschluss."
+        description="Verbindlicher Preis am Telefon, keine versteckten Kosten, Rechnung erst nach Abschluss."
       />
 
      {/* Garantie-Leiste */}
@@ -167,7 +167,7 @@ export function PricingSection() {
         <ul className="mb-8 space-y-3 flex-1">
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">99 % zerstörungsfrei</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Nahezu immer zerstörungsfrei</span>
          </li>
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
@@ -175,7 +175,7 @@ export function PricingSection() {
          </li>
          <li className="flex gap-3 items-start">
           <Check className="h-5 w-5 shrink-0 text-[var(--value-icon-color)] mt-0.5" />
-          <span className="text-base text-[color:var(--text-secondary)]">Anfahrt Wetzlar kostenlos</span>
+          <span className="text-base text-[color:var(--text-secondary)]">Anfahrt Kernstadt kostenlos</span>
          </li>
         </ul>
 
@@ -221,7 +221,7 @@ export function PricingSection() {
 
       {/* Unified Footnote */}
       <Typography variant="small" color="tertiary" align="center" className="mt-8 italic max-w-3xl mx-auto block">
-       *zzgl. Anfahrt. Wetzlarer Kernstadt: keine Anfahrtskosten. Festpreis richtet sich nach Art der Türbeschaffenheit (z.B. Doppelfalz).
+       *Basispreis für zugefallene, nicht verschlossene Standardtüren. Zzgl. Anfahrt außerhalb der Wetzlarer Kernstadt. Endpreise gem. § 19 UStG (Kleinunternehmerregelung).
       </Typography>
 
       <div className="mt-10 text-center">

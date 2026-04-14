@@ -31,7 +31,7 @@ const mainServicesSchema = [
 
 export const metadata = generateSharedMetadata({
  title: "Preise & Kosten | Schlüssel Schmiede Wetzlar",
- description: "Türöffnung ab 99€! ✔️ 100% Festpreis-Garantie in Wetzlar ✔️ Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
+ description: "Türöffnung ab 99€! ✔️ Verbindliche Preisnennung vor Anfahrt ✔️ Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
  path: "/preise",
 });
 
@@ -115,7 +115,7 @@ export default function PreisePage() {
      </StaggerItem>
      <StaggerItem animation={entryAnimations.scaleFade}>
       <h2 className="typo-h2 text-[color:var(--text-primary)]">
-        Ihre Sicherheit: Unsere Festpreisgarantie
+        Ihre Sicherheit: Unsere Preisgarantie
       </h2>
      </StaggerItem>
      <StaggerItem animation={entryAnimations.scaleFade}>
@@ -144,6 +144,11 @@ export default function PreisePage() {
         </div>
        ))}
       </div>
+     </StaggerItem>
+     <StaggerItem animation={entryAnimations.scaleFade}>
+      <p className="mt-8 text-sm text-[color:var(--text-tertiary)] text-center italic max-w-xl mx-auto">
+       Alle Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gem. § 19 UStG wird keine Umsatzsteuer ausgewiesen.
+      </p>
      </StaggerItem>
     </StaggerReveal>
    </section>

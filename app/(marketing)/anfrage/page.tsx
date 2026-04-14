@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
   title: "Angebot anfragen | Schlüsseldienst Wetzlar",
-  description: "Unverbindliche Anfrage stellen: ✔️ 100% Festpreis-Angebot in 30 Min. ✔️ Transparent & lokal in Wetzlar. Keine versteckten Kosten. Jetzt anfragen!",
+  description: "Unverbindliche Anfrage stellen: ✔️ Verbindliches Preisangebot in 30 Min. ✔️ Transparent & lokal in Wetzlar. Keine versteckten Kosten. Jetzt anfragen!",
   path: "/anfrage",
 });
 

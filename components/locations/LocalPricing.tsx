@@ -16,8 +16,8 @@ export default function LocalPricing({ city }: { city: LocationData }) {
 
     const warnText = pickVariant([
         `Ein seriöser lokaler Schlüsseldienst nennt Ihnen IMMER den verbindlichen Festpreis am Telefon, BEVOR der Monteur zu Ihnen nach ${city.name} aufbricht. Wir garantieren absolute Transparenz ohne Callcenter-Fantasiepreise.`,
-        `Fallen Sie nicht auf Lockangebote herein! Wir geben Ihnen stets vorab am Telefon eine verlässliche Preisgarantie für unseren Einsatz in ${city.name}. Keine versteckten Kosten, direkt vor Ort.`,
-        `Vorsicht vor überregionalen Callcentern. Als verlässlicher Partner für ${city.name} garantieren wir Ihnen einen echten Festpreis am Telefon, auf den Sie sich zu 100% verlassen können.`
+        `Fallen Sie nicht auf Lockangebote herein! Wir geben Ihnen stets vorab am Telefon eine verlässliche Preisauskunft für unseren Einsatz in ${city.name}. Keine versteckten Kosten, direkt vor Ort.`,
+        `Vorsicht vor überregionalen Callcentern. Als verlässlicher Partner für ${city.name} nennen wir Ihnen einen verbindlichen Preis am Telefon, auf den Sie sich verlassen können.`
     ], city.slug, 1);
 
     const descDay = pickVariant([
@@ -40,7 +40,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
 
     // Rotate feature labels to prevent duplicate content across pages
     const featureDay1 = pickVariant([`Werktags ${companyInfo.openingHours.store}`, `Mo-Fr ${companyInfo.openingHours.store}`, "Werktags tagsüber"], city.slug, 10);
-    const featureDay2 = pickVariant(["Zerstörungsfreie Öffnung (>99%)", "Schonende Öffnung garantiert", "Beschädigungsfreie Technik"], city.slug, 11);
+    const featureDay2 = pickVariant(["Zerstörungsfreie Öffnung", "Schonende Öffnung", "Beschädigungsfreie Technik"], city.slug, 11);
     const featureDay3 = pickVariant(["Festpreis am Telefon genannt", "Verbindlicher Preis vorab", "Transparente Preisauskunft"], city.slug, 12);
     const featureNight1 = pickVariant(["20:00 bis 05:59 Uhr", "Nachts 20-06 Uhr", "Abend- und Nachteinsatz"], city.slug, 13);
     const featureNight2 = pickVariant(["Gleiche Pünktlichkeit", "Schnelle Ankunft auch nachts", "Prompter Nachtservice"], city.slug, 14);
@@ -54,7 +54,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                 <StaggerItem animation={entryAnimations.slideUpFade}>
                     <div className="text-center mb-10 sm:mb-20 max-w-3xl mx-auto">
                         <h2 id="preise-heading" className="text-3xl md:text-4xl lg:text-5xl text-[color:var(--text-primary)] font-extrabold tracking-tight text-balance leading-[1.1] mb-8">
-                            Transparente <span className="text-[color:var(--value-primary)]">Festpreise</span> für {city.name}
+                            Transparente <span className="text-[color:var(--value-primary)]">Preise</span> für {city.name}
                         </h2>
                         <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance mx-auto">
                             {introText}
@@ -117,7 +117,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                     </div>
                     <span className="text-sm sm:text-lg sm:opacity-80 break-words hyphens-auto">Preisauskunft für {city.name}</span>
                 </a>
-                <span className="text-sm text-[color:var(--text-tertiary)] text-center font-medium tracking-widest uppercase">Festpreis wird vor Abfahrt garantiert</span>
+                <span className="text-sm text-[color:var(--text-tertiary)] text-center font-medium tracking-widest uppercase">Verbindlicher Preis wird vor Abfahrt genannt</span>
             </div>
         </section>
     );

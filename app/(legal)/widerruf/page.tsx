@@ -37,7 +37,7 @@ export default function WiderrufPage() {
             <LegalSection>
                 <TLDRBox title="Widerruf und das Wichtigste auf einen Blick" icon="info">
                     <p>Als Verbraucher haben Sie grundsätzlich ein <strong>14-tägiges Widerrufsrecht</strong> bei Fernabsatzverträgen (z.B. telefonische Beauftragung).</p>
-                    <p><strong>Wichtige Ausnahme bei Notdiensten:</strong> Wenn Sie unseren Schlüsseldienst zur sofortigen Notöffnung beauftragen und wir die Dienstleistung vor Ablauf der Widerrufsfrist vollständig erbringen, <strong>erlischt Ihr Widerrufsrecht</strong> gemäß § 356 Abs. 4 Nr. 2 BGB. Dies gilt, sofern Sie vor Beginn der Leistung ausdrücklich zugestimmt und bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung verlieren.</p>
+                    <p><strong>Wichtige Ausnahme bei Notdiensten:</strong> Wenn Sie unseren Schlüsseldienst zur sofortigen Notöffnung beauftragen und wir die Dienstleistung vor Ablauf der Widerrufsfrist vollständig erbringen, <strong>erlischt Ihr Widerrufsrecht</strong> gemäß § 356 Abs. 4 Satz 1 BGB i.V.m. § 312g Abs. 2 Nr. 11 BGB. Dies gilt, sofern Sie vor Beginn der Leistung ausdrücklich zugestimmt und bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung verlieren.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -85,11 +85,11 @@ export default function WiderrufPage() {
 
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
                     <h3 className="text-base font-bold text-red-900 mt-0 mb-3">Ausnahme bei Notdienst-Einsätzen</h3>
-                    <p className="text-red-800">Gemäß <strong>§ 356 Abs. 4 Nr. 2 BGB</strong> erlischt das Widerrufsrecht bei einem Vertrag zur Erbringung von Dienstleistungen, wenn der Unternehmer die Dienstleistung <strong>vollständig erbracht hat</strong> und mit der Ausführung der Dienstleistung erst begonnen hat, nachdem der Verbraucher dazu seine ausdrückliche Zustimmung gegeben und gleichzeitig seine Kenntnis davon bestätigt hat, dass er sein Widerrufsrecht bei vollständiger Vertragserfüllung durch den Unternehmer verliert.</p>
+                    <p className="text-red-800">Gemäß <strong>§ 356 Abs. 4 Satz 1 BGB i.V.m. § 312g Abs. 2 Nr. 11 BGB</strong> erlischt das Widerrufsrecht bei einem Vertrag zur Erbringung von Dienstleistungen, wenn der Unternehmer die Dienstleistung <strong>vollständig erbracht hat</strong> und mit der Ausführung der Dienstleistung erst begonnen hat, nachdem der Verbraucher dazu seine ausdrückliche Zustimmung gegeben und gleichzeitig seine Kenntnis davon bestätigt hat, dass er sein Widerrufsrecht bei vollständiger Vertragserfüllung durch den Unternehmer verliert.</p>
                 </div>
 
                 <p><strong>In der Praxis bedeutet das:</strong> Wenn Sie uns zum Beispiel um 22:00 Uhr anrufen, weil Sie sich ausgesperrt haben, und wir Ihre Tür sofort öffnen, ist die Dienstleistung vollständig erbracht. Ein Widerruf nach der Öffnung ist nicht mehr möglich, da die Leistung nicht rückgängig gemacht werden kann.</p>
-                <p>Unser Disponent weist Sie vor Ihrer Beauftragung telefonisch auf diese Ausnahme hin.</p>
+                <p>Unser Disponent weist Sie vor Ihrer Beauftragung telefonisch auf diese Ausnahme hin. Zusätzlich erhalten Sie eine <strong>Bestätigung in Textform</strong> (per SMS oder WhatsApp), die Ihren ausdrücklichen Verzicht auf das Widerrufsrecht vor Leistungsbeginn dokumentiert.</p>
 
                 <h3 className="mt-6 text-base font-bold text-gray-900">Weitere gesetzliche Ausnahmen (§ 312g Abs. 2 BGB)</h3>
                 <ul className="mt-3 space-y-2 text-gray-600">

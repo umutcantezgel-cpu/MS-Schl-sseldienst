@@ -33,7 +33,7 @@ const steps = [
     id: 3,
     num: "03",
     title: "Zerstörungsfreie Öffnung",
-    description: "Unser Monteur ist pünktlich vor Ort und öffnet Ihre Tür dank Spezialwerkzeug in 99% der Fälle völlig beschädigungsfrei.",
+    description: "Unser Monteur ist pünktlich vor Ort und öffnet Ihre Tür dank Spezialwerkzeug in nahezu allen Fällen völlig beschädigungsfrei.",
     icon: DoorOpen,
   },
   {

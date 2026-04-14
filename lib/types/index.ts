@@ -235,6 +235,7 @@ export interface CompanyInfo {
       baseNote: string;
       consistencyNote: string;
       transparencyNote: string;
+      legalNote?: string;
     };
   };
 

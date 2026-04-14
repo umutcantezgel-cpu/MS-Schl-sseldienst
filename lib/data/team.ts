@@ -31,7 +31,7 @@ export const teamMembers: TeamMember[] = [
     name: "Ahmet Y.",
     role: "Monteur 24/7 Notdienst",
     department: "Notdienst",
-    bio: "Ahmet ist rund um die Uhr auf den Straßen im Lahn-Dill-Kreis im Einsatz. Er zeichnet sich durch seine extrem schnelle Anfahrtszeit und seine hohe Erfolgsquote bei zerstörungsfreien Türöffnungen (99%) aus.",
+    bio: "Ahmet ist rund um die Uhr auf den Straßen im Lahn-Dill-Kreis im Einsatz. Er zeichnet sich durch seine extrem schnelle Anfahrtszeit und seine hohe Erfolgsquote bei zerstörungsfreien Türöffnungen aus.",
     shortBio: "Rund um die Uhr im Einsatz für schnelle Türöffnungen.",
     image: "/team/ahmet.jpg",
     skills: ["Zerstörungsfreie Öffnung", "Autoöffnung", "Schnellreparaturen"],

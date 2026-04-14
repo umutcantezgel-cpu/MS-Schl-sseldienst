@@ -141,6 +141,13 @@ export default function DatenschutzPage() {
                 </ul>
             </LegalSection>
 
+            <LegalSection id="6b-whatsapp">
+                <h2 className="mt-0">6a. WhatsApp-Kontakt</h2>
+                <p>Auf unserer Website befindet sich ein Link zur Kontaktaufnahme über den Messenger-Dienst WhatsApp (Meta Platforms Ireland Ltd.). Der Link nutzt das offene <code>wa.me</code>-Protokoll und leitet Sie bei Klick direkt in die WhatsApp-Anwendung auf Ihrem Endgerät weiter.</p>
+                <p><strong>Technische Funktionsweise:</strong> Es handelt sich um einen reinen Hyperlink. Es werden <strong>keine Cookies gesetzt</strong>, keine Tracking-Skripte geladen und <strong>keine Daten an Meta/WhatsApp übertragen</strong>, solange Sie den Link nicht aktiv anklicken. Erst durch Ihren bewussten Klick öffnet sich die WhatsApp-App, wobei die weitere Kommunikation den <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">Datenschutzbestimmungen von WhatsApp (Meta)</a> unterliegt.</p>
+                <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktives Anklicken).</p>
+            </LegalSection>
+
             <LegalSection id="7-verschluesselung">
                 <h2 className="mt-0">7. SSL/TLS-Verschlüsselung</h2>
                 <p>Ihre Kommunikation mit dieser Website ist durch moderne Zertifikate (SSL/TLS) stark verschlüsselt. Dies erkennen Sie am Schloss-Symbol in der Suchmaske Ihres Browsers. Dritte können abgesendete Daten (z.B. im Kontaktformular) nicht abgreifen.</p>

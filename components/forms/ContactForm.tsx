@@ -287,7 +287,7 @@ export function ContactForm({ onSuccess, className = "", formId = process.env.NE
             setTouched(prev => new Set(prev).add("gdpr"));
             setErrors(prev => ({ ...prev, gdpr: formData.gdpr ? "" : "Bitte akzeptieren Sie die DSGVO" }));
           }}
-          label={<span className="text-sm">Ich erkläre mich mit den <Link href="/datenschutz" className="text-[var(--color-red-500)] underline">Datenschutzbestimmungen</Link> einverstanden.</span>}
+          label={<span className="text-sm">Ich erkläre mich mit den <Link href="/datenschutz" className="text-[var(--color-red-500)] underline">Datenschutzbestimmungen</Link> einverstanden. Die Daten werden über Formspree Inc. (USA) auf Basis von Standardvertragsklauseln übermittelt.</span>}
         />
         {errors.gdpr && <p className="text-red-500 text-xs mt-1 font-medium">{errors.gdpr}</p>}
       </div>

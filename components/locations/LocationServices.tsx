@@ -19,7 +19,7 @@ export default function LocationServices({ city }: LocationServicesProps) {
     // Dynamic sentences based on city name and character
     const service1 = isUrban 
         ? `In den Geschäfts- und Wohnanlagen von ${city.name} öffnen wir jede Tür schonend und absolut beschädigungsfrei.`
-        : `Egal ob Eigenheim oder Scheunentor: In ${city.name} öffnen wir jede Tür zu 99% komplett beschädigungsfrei.`;
+        : `Egal ob Eigenheim oder Scheunentor: In ${city.name} öffnen wir jede Tür nahezu immer komplett beschädigungsfrei.`;
 
     const service2 = isUrban
         ? `Wenn in ${city.name} nach einem Defekt oder Einbruch ein neues Schloss benötigt wird, bauen wir Qualitäts-Zylinder direkt vor Ort ein.`

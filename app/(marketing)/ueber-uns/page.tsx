@@ -131,9 +131,9 @@ export default function UeberUnsPage() {
         </div>
         <div className="flex flex-col gap-2 relative pt-6 md:pt-0">
          <div className="text-[36px] font-extrabold text-[var(--color-red-500)]">
-          <AnimatedCounter end={99} suffix="%" duration={2000} />
+          <AnimatedCounter end={5} suffix=".0★" duration={2000} />
          </div>
-         <div className="text-xs font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Zerstörungsfrei</div>
+         <div className="text-xs font-bold text-[color:var(--text-secondary)] uppercase tracking-wider">Google-Bewertung</div>
          <ThumbsUp className="absolute -top-4 -right-2 text-[var(--color-red-500)]/5 w-16 h-16" />
         </div>
         <div className="flex flex-col gap-2 relative pt-6 md:pt-0">
@@ -155,7 +155,7 @@ export default function UeberUnsPage() {
          </div>
          <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3 pt-2 border-t border-[var(--border-subtle)]">Maximale Sorgfalt</h3>
          <p className="text-[color:var(--text-secondary)] text-base leading-relaxed">
-          Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. Zu 99% öffnen wir zerstörungsfrei. Darum vertrauen uns seit Jahren zahllose private Haushalte.
+          Wir behandeln jede Tür so vorsichtig, als wäre es unsere eigene. In nahezu allen Fällen öffnen wir zerstörungsfrei. Darum vertrauen uns seit Jahren zahllose private Haushalte.
          </p>
         </div>
 

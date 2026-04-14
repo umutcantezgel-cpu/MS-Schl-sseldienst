@@ -25,6 +25,6 @@ export const ADDONS = {
 
 export const GUARANTEES = [
     "Garantiert keine versteckten Kosten",
-    "Festpreis vor Arbeitsbeginn",
+    "Verbindlicher Preis vor Arbeitsbeginn",
     "Keine Abzocke - Lokaler Fachbetrieb",
 ];

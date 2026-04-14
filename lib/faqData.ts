@@ -16,12 +16,12 @@ export const FAQ_DATA: FAQItem[] = [
     // ============ KOSTEN & PREISE ============
     {
         question: "Was kostet ein Schlüsseldienst in Wetzlar?",
-        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 99 Euro zum garantierten Festpreis. Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. Im gesamten Wetzlarer Kern-Servicegebiet gibt es zudem keine Anfahrtsgebühren.",
+        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 99 Euro (Endpreis gem. § 19 UStG). Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. In der Wetzlarer Kernstadt fallen keine Anfahrtsgebühren an.",
         category: "kosten",
     },
     {
         question: "Gibt es versteckte Kosten oder Aufschläge?",
-        answer: "Schlüssel Schmiede Wetzlar arbeitet ausschließlich mit transparenten Festpreisen und ohne versteckte Kosten, ohne nachträgliche Aufschläge. Der Preis, der am Telefon genannt wird, ist der Preis, den Sie zahlen. Anfahrtskosten innerhalb des Servicegebiets sind im Festpreis bereits enthalten.",
+        answer: "Schlüssel Schmiede Wetzlar arbeitet ausschließlich mit transparenten Preisen — ohne versteckte Kosten, ohne nachträgliche Aufschläge. Der Preis, der am Telefon genannt wird, ist der Preis, den Sie zahlen.",
         category: "kosten",
     },
     {
@@ -36,7 +36,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Was kostet eine Autoöffnung?",
-        answer: "Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken ab 99 Euro zum Festpreis und ohne Lackschäden und ohne versteckte Kosten. Die Autoöffnung ist 24/7 verfügbar.",
+        answer: "Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken ab 99 Euro (Endpreis) — in der Regel ohne Lackschäden und ohne versteckte Kosten. Die Autoöffnung ist 24/7 verfügbar.",
         category: "kosten",
     },
     {
@@ -53,12 +53,12 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Kommt der Schlüsseldienst auch nach Gießen?",
-        answer: "Ja, Schlüssel Schmiede Wetzlar bedient Gießen mit einer Anfahrtszeit von 15–20 Minuten zum identischen Festpreis ohne zusätzliche Anfahrtsgebühren.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar bedient Gießen mit einer Anfahrtszeit von 15–20 Minuten. Mögliche Anfahrtskosten werden Ihnen vorab transparent am Telefon genannt.",
         category: "anfahrt",
     },
     {
         question: "Kommt der Schlüsseldienst auch nach Marburg?",
-        answer: "Ja, Schlüssel Schmiede Wetzlar bedient auch Marburg an der Lahn mit einer Anfahrtszeit von 25–30 Minuten. Es gelten die gleichen Festpreise wie in Wetzlar.",
+        answer: "Ja, Schlüssel Schmiede Wetzlar bedient auch Marburg an der Lahn mit einer Anfahrtszeit von 25–30 Minuten. Mögliche Anfahrtspauschalen werden vorab am Telefon mitgeteilt.",
         category: "anfahrt",
     },
     {
@@ -68,14 +68,14 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Gibt es zusätzliche Anfahrtskosten für Orte außerhalb von Wetzlar?",
-        answer: "Schlüssel Schmiede Wetzlar berechnet innerhalb des gesamten Servicegebiets (50 km Umkreis) keine zusätzlichen Anfahrtskosten. Die Anfahrt ist im Festpreis enthalten.",
+        answer: "In der Wetzlarer Kernstadt fallen keine Anfahrtskosten an. Für Orte außerhalb der Kernstadt berechnet Schlüssel Schmiede Wetzlar eine moderate, entfernungsabhängige Anfahrtspauschale. Die genaue Höhe wird Ihnen vorab am Telefon transparent mitgeteilt.",
         category: "anfahrt",
     },
 
     // ============ LEISTUNGEN & ABLAUF ============
     {
         question: "Wird die Tür bei der Öffnung beschädigt?",
-        answer: "Nein. Wir verstehen Ihre Sorge vor teuren Schäden. Mit modernstem Spezialwerkzeug können wir 99% aller zugefallenen Türen völlig zerstörungsfrei öffnen. Sollte bei abgebrochenen Schlüsseln der Zylinder aufgebohrt werden müssen, klären wir das samt Materialkosten immer vorher transparent ab.",
+        answer: "Nein. Wir verstehen Ihre Sorge vor teuren Schäden. Mit modernstem Spezialwerkzeug können wir nahezu alle zugefallenen Türen völlig zerstörungsfrei öffnen. Sollte bei abgebrochenen Schlüsseln der Zylinder aufgebohrt werden müssen, klären wir das samt Materialkosten immer vorher transparent ab.",
         category: "leistungen",
     },
     {
@@ -169,7 +169,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Tür zugefallen in Wetzlar und was tun?",
-        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441 80 56 279. Festpreis ab 99 Euro, Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in 99% der Fälle. Kein Callcenter und lokale Techniker direkt aus Wetzlar.",
+        answer: "Wenn Ihre Tür zugefallen ist: Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441 80 56 279. Ab 99 Euro (Endpreis), Anfahrt in 15–30 Minuten, zerstörungsfreie Öffnung in nahezu allen Fällen. Kein Callcenter — lokale Techniker direkt aus Wetzlar.",
         category: "notdienst",
     },
 

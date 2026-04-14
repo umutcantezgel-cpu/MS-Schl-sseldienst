@@ -299,7 +299,7 @@ export default function HeroSection() {
                     Ohne Schäden
                   </div>
                   <p className="hidden sm:block text-sm text-[color:var(--text-secondary)] leading-snug relative z-10">
-                    Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in 99% der Fälle.
+                    Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in nahezu allen Fällen.
                   </p>
                   
                   {/* Spacer to prevent wheels from overlapping text */}

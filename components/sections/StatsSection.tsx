@@ -25,8 +25,8 @@ export function StatsSection({ className }: StatsSectionProps) {
     },
     {
       id: "satisfaction",
-      value: "99%",
-      label: "Kundenzufriedenheit",
+      value: "5.0★",
+      label: "Google-Bewertung",
       icon: <CheckCircle2 className="w-8 h-8 text-[var(--color-red-500)]" />
     },
     {

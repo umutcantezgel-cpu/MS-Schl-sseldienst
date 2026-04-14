@@ -74,7 +74,7 @@ export default function AboutStatsSection() {
           <div className="bg-white rounded-2xl p-6 flex flex-col justify-center items-center text-center hover:-translate-y-1 transition-all duration-300 border border-[var(--color-charcoal-100)] shadow-[var(--elevation-1)] hover:shadow-[var(--elevation-2)] hover:border-[var(--value-primary)]/30">
             <AnimatedCounter target={50} suffix="+" className="font-black text-5xl leading-tight text-[color:var(--value-primary)] tracking-tight" />
             <span className="text-base font-bold text-[color:var(--text-primary)] mt-2">Geöffnete Türen</span>
-            <span className="text-sm text-[color:var(--text-secondary)] mt-1">99% beschädigungsfrei</span>
+            <span className="text-sm text-[color:var(--text-secondary)] mt-1">Nahezu immer beschädigungsfrei</span>
           </div>
 
           {/* Stat 4 */}

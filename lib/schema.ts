@@ -109,7 +109,7 @@ export function generateLocalBusinessSchema() {
                     "itemOffered": {
                         "@type": "Service",
                         "name": "Türöffnung (zugefallene Tür)",
-                        "description": "Professionelle Öffnung einer zugefallenen Tür und zerstörungsfrei in 99% der Fälle.",
+                        "description": "Professionelle Öffnung einer zugefallenen Tür — zerstörungsfrei in nahezu allen Fällen.",
                         "serviceType": "Türöffnung"
                     },
                     "priceSpecification": {
@@ -237,7 +237,7 @@ export function generateHowToSchema(title: string, description: string) {
                 "@type": "HowToStep",
                 "position": 3,
                 "name": "Professionelle Türöffnung",
-                "text": "Mit Spezialwerkzeug wird Ihre Tür zerstörungsfrei geöffnet und in 99% der Fälle ohne jede Beschädigung."
+                "text": "Mit Spezialwerkzeug wird Ihre Tür zerstörungsfrei geöffnet — in nahezu allen Fällen ohne jede Beschädigung."
             },
             {
                 "@type": "HowToStep",

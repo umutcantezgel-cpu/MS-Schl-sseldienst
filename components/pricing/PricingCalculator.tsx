@@ -92,7 +92,7 @@ export default function PricingCalculator() {
             )}>
               €
             </div>
-            <span className="text-sm font-semibold text-[color:var(--text-primary)] hidden sm:inline">Festpreis</span>
+            <span className="text-sm font-semibold text-[color:var(--text-primary)] hidden sm:inline">Preis</span>
           </div>
         </div>
 
@@ -228,7 +228,7 @@ export default function PricingCalculator() {
         <div className="relative z-10 flex flex-col h-full">
           <div className="mb-auto">
             <span className="text-[var(--color-red-500)] font-bold tracking-widest uppercase text-xs mb-2 block">
-              Ihr Garantierter Festpreis
+              Ihr Verbindlicher Preis
             </span>
             <div className="flex items-baseline gap-2 mt-4">
               {isNullPrice ? (
@@ -289,6 +289,9 @@ export default function PricingCalculator() {
             
             <p className="text-center text-sm text-white/50 font-medium">
               Ein Mitarbeiter ist direkt am Apparat.<br />Kein Callcenter, keine Warteschleife.
+            </p>
+            <p className="text-center text-[11px] text-white/35 font-medium mt-1">
+              Endpreise gem. § 19 UStG (Kleinunternehmerregelung).
             </p>
 
             {/* Trust Guarantee Badges */}
