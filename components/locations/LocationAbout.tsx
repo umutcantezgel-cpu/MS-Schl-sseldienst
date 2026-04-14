@@ -3,13 +3,15 @@ import RevealSection from "@/components/motion/RevealSection";
 import { sanitizeHTML } from "@/lib/sanitize";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { getLocationImageSet } from "@/lib/imageRotation";
+import { getAboutText } from "@/lib/contentDifferentiation";
 
 interface LocationAboutProps {
     city: LocationData;
 }
 
 export default function LocationAbout({ city }: LocationAboutProps) {
-    if (!city.aboutText) return null;
+    const aboutContent = getAboutText(city);
+    if (!aboutContent) return null;
 
     const imageSet = getLocationImageSet(city.slug);
 
@@ -26,7 +28,7 @@ export default function LocationAbout({ city }: LocationAboutProps) {
                                        prose-strong:text-[color:var(--text-primary)] prose-strong:font-bold
                                        prose-a:text-[color:var(--value-primary)] prose-a:no-underline hover:prose-a:underline 
                                        prose-h3:mt-16 mx-auto"
-                            dangerouslySetInnerHTML={{ __html: sanitizeHTML(city.aboutText) }}
+                            dangerouslySetInnerHTML={{ __html: sanitizeHTML(aboutContent) }}
                         />
                     </main>
 

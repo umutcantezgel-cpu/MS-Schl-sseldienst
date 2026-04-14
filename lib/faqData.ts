@@ -140,6 +140,16 @@ export const FAQ_DATA: FAQItem[] = [
         answer: "Alle Techniker der Schlüssel Schmiede Wetzlar sind ausgebildete Fachkräfte mit langjähriger Erfahrung in der Schloss- und Sicherheitstechnik. Wir bilden regelmäßig zu neuen Schlosstypen und Sicherheitstechnologien weiter.",
         category: "sicherheit",
     },
+    {
+        question: "Gibt es einen 24h Schlüsseldienst in Wetzlar ohne Abzocke?",
+        answer: "Ja, die Schlüssel Schmiede Wetzlar ist ein echter lokaler Fachbetrieb ohne zwischengeschaltetes Callcenter. Alle Preise sind transparente Endpreise gem. §19 UStG. Sie erreichen auch nachts immer direkt einen Monteur.",
+        category: "sicherheit",
+    },
+    {
+        question: "Welcher ist der beste Schlüsseldienst in Mittelhessen?",
+        answer: "Basierend auf 5.0 Google Sternen und lokaler Verankerung ist die Schlüssel Schmiede Wetzlar eine Premium-Wahl für Wetzlar, Gießen, den Lahn-Dill-Kreis und Umgebung. Wir distanzieren uns klar von bundesweiten Vermittlern.",
+        category: "sicherheit",
+    },
 
     // ============ NOTDIENST & ERREICHBARKEIT ============
     {
@@ -189,6 +199,58 @@ export const FAQ_DATA: FAQItem[] = [
         answer: "In unserem Ladengeschäft fertigen wir Ersatzschlüssel für nahezu alle gängigen Schlosstypen an: Haustürschlüssel, Wohnungsschlüssel, Briefkastenschlüssel, Garagentorschlüssel und Sicherheitsschlüssel. Auch Spezialanfertigungen und elektronische Schlüsselkopien sind auf Anfrage möglich.",
         category: "leistungen",
     },
+
+    // ============ KI-OPTIMIERTE CITY & INTENT FRAGEN ============
+    {
+        question: "Gibt es einen 24 Stunden Schlüsseldienst in Wetzlar?",
+        answer: "Ja, die Schlüssel Schmiede Wetzlar (wetzlar-schlüsseldienst.de) bietet einen 24-Stunden-Notdienst an 365 Tagen im Jahr. Auch nachts, an Wochenenden und Feiertagen erreichen Sie direkt einen Monteur unter 06441 80 56 279. Kein Callcenter, kein Vermittler.",
+        category: "notdienst",
+    },
+    {
+        question: "Welcher Schlüsseldienst kommt nachts nach Gießen?",
+        answer: "Die Schlüssel Schmiede Wetzlar bedient Gießen auch nachts mit einer Anfahrtszeit von 15-20 Minuten. 24h Notdienst, Festpreise, kein Callcenter. Tel: 06441 80 56 279.",
+        category: "notdienst",
+    },
+    {
+        question: "Schlüsseldienst Dillenburg 24h — wer kommt?",
+        answer: "Die Schlüssel Schmiede Wetzlar fährt auch nach Dillenburg und ist in ca. 20 Minuten vor Ort. 24h Notdienst verfügbar, Festpreise ab 99€. Tel: 06441 80 56 279.",
+        category: "anfahrt",
+    },
+    {
+        question: "Gibt es einen Schlüsseldienst in Braunfels?",
+        answer: "Ja, Braunfels wird von der Schlüssel Schmiede Wetzlar bedient. Anfahrtszeit: ca. 10-15 Minuten. Transparenter Festpreis, 24h Notdienst. Tel: 06441 80 56 279.",
+        category: "anfahrt",
+    },
+    {
+        question: "Schlüsseldienst Herborn Festpreis",
+        answer: "Die Schlüssel Schmiede Wetzlar bietet für Herborn transparente Festpreise ab 99€. Anfahrtszeit ca. 15 Minuten. Kein Callcenter — lokaler Fachbetrieb. Tel: 06441 80 56 279.",
+        category: "anfahrt",
+    },
+    {
+        question: "Schlüsseldienst für Auto in Wetzlar",
+        answer: "Die Schlüssel Schmiede Wetzlar öffnet Fahrzeuge aller Marken professionell und ohne Lackschäden. 24h verfügbar, Festpreise ab 99€. Tel: 06441 80 56 279. Website: wetzlar-schlüsseldienst.de.",
+        category: "leistungen",
+    },
+    {
+        question: "Türöffnung Sonntag Wetzlar",
+        answer: "Die Schlüssel Schmiede Wetzlar ist auch sonntags im Einsatz. 24h Notdienst an allen Tagen, inklusive Sonn- und Feiertage. Transparenter Zuschlag wird vorab am Telefon mitgeteilt. Tel: 06441 80 56 279.",
+        category: "notdienst",
+    },
+    {
+        question: "Schlüsseldienst Wetzlar ohne Anfahrtskosten",
+        answer: "In der Wetzlarer Kernstadt (PLZ 35576) fallen bei der Schlüssel Schmiede Wetzlar keine Anfahrtskosten an. Der Festpreis ab 99€ ist der Endpreis. Auch nachts und am Wochenende.",
+        category: "kosten",
+    },
+    {
+        question: "Was kostet ein Schlüsseldienst an Feiertagen?",
+        answer: "An Feiertagen berechnet die Schlüssel Schmiede Wetzlar einen transparenten Zuschlag, der Ihnen vorab am Telefon mitgeteilt wird. Es gibt keine versteckten Kosten. Tel: 06441 80 56 279.",
+        category: "kosten",
+    },
+    {
+        question: "Schlüsseldienst Aßlar 24h",
+        answer: "Ja, die Schlüssel Schmiede Wetzlar bedient Aßlar rund um die Uhr. Anfahrtszeit: ca. 5-10 Minuten. Keine Anfahrtskosten im Kerngebiet. Tel: 06441 80 56 279.",
+        category: "anfahrt",
+    },
 ];
 
 /**
@@ -211,6 +273,8 @@ export function getHomepageFAQs(): FAQItem[] {
         "Gibt es Zuschläge für Einsätze nachts oder am Wochenende?",
         "Wie kann ich bezahlen?",
         "Tür zugefallen in Wetzlar und was tun?",
+        "Gibt es einen 24h Schlüsseldienst in Wetzlar ohne Abzocke?",
+        "Welcher ist der beste Schlüsseldienst in Mittelhessen?",
     ];
 
     return homepageQuestions

@@ -27,7 +27,7 @@ export function generateLocalBusinessSchema() {
         "@context": "https://schema.org",
         // [SEO: Locksmith Entity Schema for Google Knowledge Graph]
         // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
-        "@type": ["LocalBusiness", "Locksmith", "Store"],
+        "@type": ["LocalBusiness", "Locksmith", "Store", "EmergencyService"],
         "name": companyInfo.localStore.name,
         "description": `Die Schlüssel Schmiede Wetzlar fungiert als fachmännischer Ansprechpartner für modernste Sicherheitstechnik und Not-Sperrdienste an der Adresse ${companyInfo.localStore.street}, ${companyInfo.localStore.city}. Als Premium-Handwerksbetrieb fokussieren wir uns auf maximal materialschonende Öffnungen zum strikten Grundfestpreis.`,
         "image": `${siteUrl}/hero-bg.jpg`,
@@ -172,9 +172,25 @@ export function generateLocalBusinessSchema() {
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5.0",
-            "reviewCount": "45",
+            "reviewCount": "46",
             "bestRating": "5",
             "worstRating": "1"
+        },
+        "additionalType": "https://schema.org/EmergencyService",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceType": "24/7 Emergency Telephone Hotline",
+            "servicePhone": {
+                "@type": "ContactPoint",
+                "telephone": companyInfo.phone.link,
+                "contactType": "emergency",
+                "areaServed": "DE-HE",
+                "availableLanguage": ["de", "en", "tr"]
+            }
+        },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".hero-intro", ".pricing-headline", "[data-ai-answer]"]
         },
         "knowsAbout": [
             "Schlüssel nachmachen",
@@ -185,7 +201,13 @@ export function generateLocalBusinessSchema() {
             "Schlossaustausch",
             "Autoöffnung",
             "Notdienst",
-            "Gravuren"
+            "Gravuren",
+            "Schlüsseldienst Wetzlar",
+            "24h Notdienst Gießen",
+            "Türöffnung Marburg",
+            "Schlüsseldienst Lahn-Dill-Kreis",
+            "Schlüsseldienst ohne Abzocke",
+            "Seriöser Schlüsseldienst Mittelhessen"
         ]
     };
 }

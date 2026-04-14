@@ -25,8 +25,41 @@ interface LocationScenariosProps {
     city: LocationData;
 }
 
+function getDefaultScenarios(city: LocationData) {
+    const isDense = city.demographicsFocus === "urban" || city.demographicsFocus === "business";
+    const isRural = city.demographicsFocus === "rural" || (!city.demographicsFocus && (city.logistics.distanceFromHQ > 10));
+    
+    return [
+        {
+            icon: "home",
+            title: isDense 
+                ? `Zugefallene Wohnungstür in ${city.name}` 
+                : `Haustür zugefallen in ${city.name}`,
+            description: isDense
+                ? `In den Mehrfamilienhäusern von ${city.name} fallen Wohnungstüren besonders häufig ins Schloss. Wir öffnen sie zerstörungsfrei mit Spezialwerkzeug, ohne Ihren Vermieter oder Ihre Kaution zu gefährden.`
+                : `Die typischen Einfamilienhäuser in ${city.name} haben oft massive Haustüren mit Mehrfachverriegelung. Wir öffnen zugefallene Türen schonend und ohne Beschädigung an Schloss, Rahmen oder Türblatt.`
+        },
+        {
+            icon: "shield-alert",
+            title: isRural
+                ? `Einbruchschaden in ${city.name}`
+                : `Schlüssel verloren in ${city.name}`,
+            description: isRural
+                ? `Einbruchschutz wird auch in ländlichen Gebieten wie ${city.name} immer wichtiger. Wir tauschen beschädigte Zylinder sofort aus und beraten Sie zu Nachrüstungen wie Sicherheitsbeschlägen und Panzerriegeln.`
+                : `Schlüssel verloren oder im Büro vergessen? In ${city.name} sind wir in ${city.logistics.drivingTimeMinutes} Minuten bei Ihnen und öffnen Ihre Tür, ohne das Schloss zu beschädigen. Auf Wunsch tauschen wir den Zylinder sofort aus.`
+        },
+        {
+            icon: "briefcase",
+            title: `Nacht- & Wochenendeinsatz ${city.name}`,
+            description: `Ausgesperrt am Wochenende oder mitten in der Nacht in ${city.name}? Unser 24/7-Notdienst ist jederzeit erreichbar. Wir nennen Ihnen den transparenten Nacht- oder Wochenendzuschlag bereits am Telefon, bevor wir losfahren.`
+        }
+    ];
+}
+
 export default function LocationScenarios({ city }: LocationScenariosProps) {
-    if (!city.scenarios || city.scenarios.length === 0) return null;
+    const scenarios = (city.scenarios && city.scenarios.length > 0) 
+        ? city.scenarios 
+        : getDefaultScenarios(city);
 
     const subtitle = pickVariant(subtitleVariants, city.slug)(city.name);
     const ctaLabel = pickVariant(ctaLabelVariants, city.slug, 2);
@@ -44,7 +77,7 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
                 </div>
 
                 <StaggerReveal className="grid md:grid-cols-3 gap-6 sm:gap-12 lg:gap-16 max-w-7xl mx-auto" animation={entryAnimations.slideUpFade}>
-                    {city.scenarios.map((scenario, idx) => {
+                    {scenarios.map((scenario, idx) => {
                         const IconComponent = (Icons as unknown as Record<string, LucideIcon>)[scenario.icon] || Icons.Key;
 
                         return (

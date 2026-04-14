@@ -50,16 +50,14 @@ export const generateSharedMetadata = ({
         // regardless of which host serves the page (Netlify preview, localhost, etc.)
         metadataBase: new URL(siteUrl),
 
-        // ── [FIX: Seobility #4 & Cross-Domain Duplicate Content] ───────────
-        // To prevent duplicate content penalties with the primary domain (schluesseldienst-wetzlar.de),
-        // we use a cross-domain canonical tag. This tells search engines that schluesseldienst-wetzlar.de
-        // is the original source, consolidating ranking power.
+        // ── [FIX: Seobility #4 & Pure Entity Separation] ───────────
+        // We ensure strict entity separation. The new domain relies purely on its own ranking power
+        // and does NOT pass canonical rank to any other domain. Self-referencing only.
         alternates: {
-            // Cross-domain canonical
-            canonical: `https://www.schluesseldienst-wetzlar.de${urlPath}`,
+            canonical: url,
             languages: {
-                "de-DE": url,       // self-referencing hreflang (required by Seobility, current domain)
-                "x-default": url,   // fallback
+                "de-DE": url,
+                "x-default": url,
             },
         },
         // ── [FIX: Google Search Favicons & Base64 Perf] ───────────────────────

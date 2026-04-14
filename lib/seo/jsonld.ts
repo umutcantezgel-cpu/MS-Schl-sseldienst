@@ -27,7 +27,7 @@ export function createOrganizationSchema() {
 export function createLocalBusinessSchema() {
     return {
         "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "Locksmith", "Store"],
+        "@type": ["LocalBusiness", "Locksmith", "Store", "EmergencyService"],
         name: companyName,
         url: siteUrl,
         telephone: telephone,
@@ -70,10 +70,45 @@ export function createLocalBusinessSchema() {
         aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "5.0",
-            reviewCount: "120",
+            reviewCount: "46",
             bestRating: "5",
             worstRating: "1"
-        }
+        },
+        additionalType: "https://schema.org/EmergencyService",
+        sameAs: [
+            companyInfo.socialMedia.facebook,
+            companyInfo.socialMedia.instagram || "",
+            companyInfo.socialMedia.linkedin || "",
+            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
+        ].filter(Boolean),
+        availableChannel: {
+            "@type": "ServiceChannel",
+            serviceType: "24/7 Emergency Telephone Hotline",
+            servicePhone: {
+                "@type": "ContactPoint",
+                telephone: companyInfo.phone.link,
+                contactType: "emergency",
+                areaServed: "DE-HE",
+                availableLanguage: ["de", "en", "tr"]
+            }
+        },
+        speakable: {
+            "@type": "SpeakableSpecification",
+            cssSelector: ["h1", ".hero-intro", ".pricing-headline", "[data-ai-answer]"]
+        },
+        knowsAbout: [
+            "Schlüsseldienst Wetzlar",
+            "24h Notdienst",
+            "Türöffnung",
+            "Autoöffnung",
+            "Schließanlagen",
+            "Sicherheitstechnik",
+            "Einbruchschutz",
+            "Schlüssel nachmachen",
+            "Schlüsseldienst Gießen",
+            "Schlüsseldienst Marburg",
+            "Schlüsseldienst Lahn-Dill-Kreis"
+        ]
     };
 }
 

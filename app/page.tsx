@@ -10,6 +10,7 @@ import nextDynamic from "next/dynamic";
 import JsonLd from "@/components/seo/JsonLd";
 import { createOrganizationSchema, createLocalBusinessSchema, createWebsiteSchema } from "@/lib/seo/jsonld";
 import { getAllTestimonials } from "@/lib/data/testimonials";
+import AIAnswerBox from "@/components/seo/AIAnswerBox";
 
 // ── [PERF] Below-the-fold sections: lazy-loaded to slash Main Thread work, TBT & Speed Index ──
 const PricingSection = nextDynamic(() => import("@/components/sections/home/PricingSection").then(mod => mod.PricingSection), {
@@ -50,8 +51,8 @@ const ProcessSteps = nextDynamic(() => import("@/components/trust/ProcessSteps")
 });
 
 export const metadata = generateSharedMetadata({
-  title: "Schlüssel Schmiede Wetzlar | Fachbetrieb für Sicherheitstechnik",
-  description: "Zerstörungsfreie Türöffnungen vom Spezialisten in Wetzlar (Gloelstraße 11). Erleben Sie maximale Kostensicherheit durch unser garantiertes Festpreis-System.",
+  title: "Schlüsseldienst Wetzlar | 24h Notdienst ab 99€ | Schlüssel Schmiede",
+  description: "Zerstörungsfreie Türöffnungen vom Fachbetrieb in Wetzlar. Erleben Sie unseren 24h Notdienst mit transparenter, verbindlicher Preisauskunft vorab.",
   path: "/",
   exactTitle: true,
 });
@@ -66,6 +67,7 @@ export default function HomePage() {
       <JsonLd data={createOrganizationSchema()} />
       <JsonLd data={createLocalBusinessSchema()} />
       <JsonLd data={createWebsiteSchema()} />
+      <AIAnswerBox />
       
       {/* Hero Section */}
       <HeroSection />

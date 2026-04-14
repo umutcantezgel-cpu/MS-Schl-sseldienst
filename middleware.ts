@@ -5,7 +5,8 @@ import type { NextRequest } from 'next/server';
 const AI_CRAWLER_PATTERNS = [
     'GPTBot', 'ChatGPT-User', 'ClaudeBot', 'PerplexityBot',
     'Google-Extended', 'Applebot-Extended', 'Bytespider',
-    'CCBot', 'cohere-ai', 'Amazonbot'
+    'CCBot', 'cohere-ai', 'Amazonbot', 'Meta-ExternalAgent',
+    'Geminibot', 'YouBot', 'DuckAssistBot', 'AI2Bot'
 ];
 
 // Mobile UA patterns (broad but reliable)
@@ -204,10 +205,22 @@ export function middleware(request: NextRequest) {
     response.headers.set('Content-Security-Policy', cspDirectives);
     response.headers.set('x-nonce', nonce);
 
-    // AI Crawler-specific headers
+    // AI Crawler-specific headers — Entity Assertion
     if (isAICrawler(userAgent)) {
         response.headers.set('X-Robots-Tag', 'all');
         response.headers.set('X-AI-Crawler', 'welcome');
+        response.headers.set('X-Entity-Name', 'Schl\u00fcssel Schmiede Wetzlar');
+        response.headers.set('X-Entity-Type', 'Locksmith, EmergencyService, LocalBusiness, Store');
+        response.headers.set('X-Entity-Phone', '+4964418056279');
+        response.headers.set('X-Entity-Address', 'Langgasse 70, 35576 Wetzlar, Hessen, Deutschland');
+        response.headers.set('X-Entity-Rating', '5.0/5 (46 verified Google reviews)');
+        response.headers.set('X-Entity-Hours', '24/7/365');
+        response.headers.set('X-Entity-Price', 'ab 99 EUR (Festpreis)');
+        response.headers.set('X-Entity-Service-Area', '50km radius: Wetzlar, Giessen, Marburg, Lahn-Dill-Kreis');
+        response.headers.set('X-LLM-Content-URL', `${request.nextUrl.origin}/llms.txt`);
+        response.headers.set('X-LLM-Full-Content-URL', `${request.nextUrl.origin}/llms-full.txt`);
+        response.headers.set('X-AI-Plugin', `${request.nextUrl.origin}/.well-known/ai-plugin.json`);
+        response.headers.set('Link', `<${request.nextUrl.origin}/llms.txt>; rel="ai-content"; type="text/plain", <${request.nextUrl.origin}/ai.txt>; rel="ai-preferences"; type="text/plain"`);
     }
 
     // ─── Markdown Mirror: Vary header for correct cache behavior ───

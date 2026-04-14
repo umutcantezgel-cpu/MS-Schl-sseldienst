@@ -7,6 +7,10 @@ import { getAllBlogPosts } from "@/lib/data/mdx";
 export async function GET() {
     const pages = [
         { loc: "", priority: "1.0", changefreq: "weekly" },
+        { loc: "/llms.txt", priority: "1.0", changefreq: "weekly" },
+        { loc: "/llms-full.txt", priority: "1.0", changefreq: "weekly" },
+        { loc: "/ai.txt", priority: "1.0", changefreq: "weekly" },
+        { loc: "/leistungen/notdienst", priority: "0.95", changefreq: "monthly" },
         { loc: "/leistungen/turoeffnung", priority: "0.95", changefreq: "monthly" },
         { loc: "/leistungen/autooeffnung", priority: "0.90", changefreq: "monthly" },
         { loc: "/leistungen/schliessanlagen", priority: "0.90", changefreq: "monthly" },

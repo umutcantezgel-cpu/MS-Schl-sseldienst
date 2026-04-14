@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
   if (!city) return notFound();
 
   const baseMeta = generateSharedMetadata({
-    title: city.seo.metaTitle,
+    title: `Schlüsseldienst ${city.name} | 24h Notdienst ab 99€ | Schlüssel Schmiede`,
     description: city.seo.metaDescription,
     path: `/${city.slug}`,
     exactTitle: true,

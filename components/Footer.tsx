@@ -195,9 +195,7 @@ export default function Footer() {
          Vertrauenswürdige Partner & Institutionen
        </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
-         {/* [SEO: Sister-Site Cross-Link und bidirektional dofollow für Domain-Authority-Transfer] */}
-         <a href="https://www.schluesseldienst-wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors font-medium text-[var(--color-charcoal-300)]">Schlüsseldienst Wetzlar und Unsere Partnerseite</a>
-         {/* [SEO: Outbound Trust-Signal added] */}
+
          <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Kriminalprävention</a>
          <a href="https://www.abus.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">ABUS Sicherheitstechnik</a>
          <a href="https://www.hwk-wiesbaden.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</a>

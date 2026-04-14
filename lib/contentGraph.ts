@@ -95,8 +95,32 @@ export const CONTENT_GRAPH: ContentNode[] = [
         slug: '/bewertungen',
         title: 'Bewertungen',
         type: 'info',
-        keywords: ['bewertungen', 'erfahrungen', 'google'],
+        keywords: ['bewertungen', 'erfahrungen', 'google', 'seriös', 'ohne abzocke', '5 sterne'],
         relatedSlugs: ['/leistungen/turoeffnung', '/kontakt']
+    },
+    {
+        slug: '/leistungen/notdienst',
+        title: 'Schlüsseldienst Notdienst 24h Wetzlar',
+        type: 'service',
+        keywords: ['notdienst', '24h', '24 stunden', 'nacht', 'wochenende', 'feiertag', 'sofort', 'notruf'],
+        relatedSlugs: ['/leistungen/turoeffnung', '/preise', '/kontakt'],
+        parentSlug: '/'
+    },
+    {
+        slug: '/leistungen/tresoroeffnung',
+        title: 'Tresoröffnung Wetzlar',
+        type: 'service',
+        keywords: ['tresoröffnung', 'safe', 'tresor öffnen', 'tresor'],
+        relatedSlugs: ['/leistungen/turoeffnung', '/preise'],
+        parentSlug: '/'
+    },
+    {
+        slug: '/leistungen/einbruchschutz',
+        title: 'Einbruchschutz Wetzlar',
+        type: 'service',
+        keywords: ['einbruchschutz', 'nachrüstung', 'panzerriegel', 'zusatzschloss', 'sicherheit'],
+        relatedSlugs: ['/leistungen/sicherheitstechnik', '/leistungen/schliessanlagen'],
+        parentSlug: '/'
     },
     {
         slug: '/datenschutz',

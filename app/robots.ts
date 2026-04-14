@@ -51,6 +51,26 @@ export default function robots(): MetadataRoute.Robots {
                 userAgent: 'Amazonbot',
                 allow: '/',
             },
+            {
+                userAgent: 'Meta-ExternalAgent',
+                allow: '/',
+            },
+            {
+                userAgent: 'Geminibot',
+                allow: '/',
+            },
+            {
+                userAgent: 'YouBot',
+                allow: '/',
+            },
+            {
+                userAgent: 'DuckAssistBot',
+                allow: '/',
+            },
+            {
+                userAgent: 'AI2Bot',
+                allow: '/',
+            },
         ],
         sitemap: [
             `${siteUrl}/sitemap.xml`,
