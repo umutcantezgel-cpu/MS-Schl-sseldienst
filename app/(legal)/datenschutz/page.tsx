@@ -32,7 +32,7 @@ export default function DatenschutzPage() {
         <LegalLayout
             heroTitle="Datenschutzerklärung nach DSGVO"
             heroSubtitle="Ihre Daten, Ihre Kontrolle. Wir legen größten Wert auf Datenschutz nach DSGVO-Standards."
-            lastUpdated="27. März 2026"
+            lastUpdated="14. April 2026"
             tocItems={TOC_ITEMS}
         >
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
@@ -121,7 +121,14 @@ export default function DatenschutzPage() {
                     <li><strong>Art. 20 DSGVO:</strong> Datenübertragbarkeit an andere Anbieter.</li>
                     <li><strong>Art. 21 DSGVO:</strong> Widerspruchsrecht gegen die Verarbeitung.</li>
                 </ul>
-                <p>Zudem steht Ihnen ein <strong>Beschwerderecht (Art. 77 DSGVO)</strong> bei der zuständigen Aufsichtsbehörde in Hessen (Wiesbaden) zu.</p>
+                <p>Zudem steht Ihnen ein <strong>Beschwerderecht (Art. 77 DSGVO)</strong> bei der zuständigen Aufsichtsbehörde zu:</p>
+                <div className="bg-gray-50 p-4 rounded-xl my-3 text-sm border border-gray-200">
+                    <strong>Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI)</strong><br />
+                    Gustav-Stresemann-Ring 1<br />
+                    65189 Wiesbaden<br />
+                    Telefon: 0611 1408-0<br />
+                    Website: <a href="https://datenschutz.hessen.de" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">datenschutz.hessen.de</a>
+                </div>
             </LegalSection>
 
             <LegalSection id="6-drittlaender">
@@ -146,7 +153,7 @@ export default function DatenschutzPage() {
 
             <LegalSection id="9-aktualitaet">
                 <h2 className="mt-0">9. Aktualität der Erklärung</h2>
-                <p>Durch die kontinuierliche Ausweitung unseres Notdienst-Angebots in Hessen sowie rechtlicher Anpassungen auf EU-Ebene behalten wir uns das Recht vor, diese Erklärung fortlaufend zu aktualisieren. Gültig ist stets die aktuelle Live-Fassung vom Stand März 2026.</p>
+                <p>Durch die kontinuierliche Ausweitung unseres Notdienst-Angebots in Hessen sowie rechtlicher Anpassungen auf EU-Ebene behalten wir uns das Recht vor, diese Erklärung fortlaufend zu aktualisieren. Gültig ist stets die aktuelle Live-Fassung vom Stand April 2026.</p>
             </LegalSection>
 
             <LegalSection id="10-kontakt">

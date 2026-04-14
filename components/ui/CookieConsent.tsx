@@ -13,13 +13,16 @@
  * ✅ Consent-Timestamp in Cookie gespeichert
  * ✅ Widerruf jederzeit über Footer-Link "Cookie-Einstellungen"
  * ✅ Banner blockiert keinen Inhalt (fixed bottom, nicht modal)
+ * ✅ Cookie-Details (Namen, Anbieter, Dauer) pro Kategorie einsehbar
+ * ✅ Consent-Proof-Logging via useConsent (Art. 7 Abs. 1 DSGVO)
+ * ✅ Slide-up micro-animation
  * ══════════════════════════════════════════════════════════════
  */
 
 import { useState, useEffect } from "react";
 import { useConsent } from "@/hooks/useConsent";
-import { CONSENT_CATEGORY_INFO, type ConsentCategory } from "@/lib/cookie-inventory";
-import { Shield, X, Cookie, ExternalLink } from "lucide-react";
+import { CONSENT_CATEGORY_INFO, COOKIE_INVENTORY, type ConsentCategory } from "@/lib/cookie-inventory";
+import { Shield, X, Cookie, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 
 export default function CookieConsent() {
@@ -35,6 +38,7 @@ export default function CookieConsent() {
   const [showSettings, setShowSettings] = useState(false);
   const [analyticsChecked, setAnalyticsChecked] = useState(false);
   const [marketingChecked, setMarketingChecked] = useState(false);
+  const [expandedCategory, setExpandedCategory] = useState<ConsentCategory | null>(null);
 
   // [PERF-FIX] Delay banner mount so it doesn't steal LCP from the hero section.
   const [isDelayComplete, setIsDelayComplete] = useState(false);
@@ -44,6 +48,19 @@ export default function CookieConsent() {
     }, 3500);
     return () => clearTimeout(timer);
   }, []);
+
+  // Slide-in animation state
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    if (showBanner && isDelayComplete) {
+      // Small delay to trigger CSS transition after mount
+      const timer = setTimeout(() => setIsVisible(true), 50);
+      return () => clearTimeout(timer);
+    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsVisible(false);
+    return undefined;
+  }, [showBanner, isDelayComplete]);
 
   // Global event listener to listen for `#cookie-settings` in the URL or custom events
   useEffect(() => {
@@ -106,7 +123,9 @@ export default function CookieConsent() {
       aria-modal="false"
       aria-label="Cookie-Einwilligungsbanner gemäß DSGVO und TTDSG"
       aria-describedby="cookie-consent-description"
-      className="fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6"
+      className={`fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6 transition-all duration-500 ease-out ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+      }`}
     >
       <div className="mx-auto max-w-4xl max-h-[85vh] overflow-y-auto overscroll-contain rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl">
         {!showSettings ? (
@@ -152,17 +171,33 @@ export default function CookieConsent() {
                   </Link>
                 </p>
 
+                {/* Current consent status (shown on re-open via Footer link) */}
+                {consent && (
+                  <div className="bg-blue-50 border border-blue-100 rounded-lg px-3 py-2 mb-4 text-xs text-blue-700">
+                    <strong>Aktueller Status:</strong>{" "}
+                    {consent.analytics && consent.marketing
+                      ? "Alle Cookies akzeptiert"
+                      : consent.analytics
+                        ? "Analyse erlaubt, Marketing abgelehnt"
+                        : consent.marketing
+                          ? "Marketing erlaubt, Analyse abgelehnt"
+                          : "Nur essentielle Cookies"
+                    }
+                    {" "}(seit {new Date(consent.timestamp).toLocaleString("de-DE")})
+                  </div>
+                )}
+
                 {/* Action Buttons DSGVO: "Ablehnen" muss gleichwertig zu "Akzeptieren" sein */}
                 <div className="flex flex-col sm:flex-row gap-2.5">
                   <button
                     onClick={acceptAll}
-                    className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px]"
+                    className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px] flex-1"
                   >
                     Alle akzeptieren
                   </button>
                   <button
                     onClick={acceptEssentialOnly}
-                    className="px-5 py-2.5 bg-white border-2 border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 min-h-[44px]"
+                    className="px-5 py-2.5 bg-[var(--color-charcoal-800)] hover:bg-[var(--color-charcoal-700)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px] flex-1"
                   >
                     Alle ablehnen
                   </button>
@@ -197,46 +232,79 @@ export default function CookieConsent() {
 
             <div className="space-y-3 mb-5">
               {(Object.entries(CONSENT_CATEGORY_INFO) as [ConsentCategory, typeof CONSENT_CATEGORY_INFO[ConsentCategory]][]).map(
-                ([key, info]) => (
-                  <label
-                    key={key}
-                    className={`flex items-start gap-3 p-3.5 rounded-xl border transition-colors cursor-pointer ${
-                      info.required
-                        ? "border-green-200 bg-green-50/30"
-                        : "border-[var(--border-subtle)] hover:border-[var(--border-default)]"
-                    }`}
-                  >
-                    <input
-                      type="checkbox"
-                      checked={
-                        key === "essential"
-                          ? true
-                          : key === "analytics"
-                            ? analyticsChecked
-                            : marketingChecked
-                      }
-                      disabled={info.required}
-                      onChange={(e) => {
-                        if (key === "analytics") setAnalyticsChecked(e.target.checked);
-                        if (key === "marketing") setMarketingChecked(e.target.checked);
-                      }}
-                      className="mt-0.5 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] disabled:opacity-60 min-w-[16px]"
-                    />
-                    <div className="flex-1">
-                      <span className="text-sm font-semibold text-[color:var(--text-primary)] flex items-center gap-2 flex-wrap">
-                        {info.label}
-                        {info.required && (
-                          <span className="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded-full uppercase tracking-wider">
-                            Immer aktiv
+                ([key, info]) => {
+                  const relatedCookies = COOKIE_INVENTORY.filter(c => c.category === key);
+                  const isExpanded = expandedCategory === key;
+
+                  return (
+                    <div key={key} className="rounded-xl border transition-colors overflow-hidden">
+                      <label
+                        className={`flex items-start gap-3 p-3.5 cursor-pointer ${
+                          info.required
+                            ? "border-green-200 bg-green-50/30"
+                            : "border-[var(--border-subtle)] hover:border-[var(--border-default)]"
+                        }`}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={
+                            key === "essential"
+                              ? true
+                              : key === "analytics"
+                                ? analyticsChecked
+                                : marketingChecked
+                          }
+                          disabled={info.required}
+                          onChange={(e) => {
+                            if (key === "analytics") setAnalyticsChecked(e.target.checked);
+                            if (key === "marketing") setMarketingChecked(e.target.checked);
+                          }}
+                          className="mt-0.5 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] disabled:opacity-60 min-w-[16px]"
+                        />
+                        <div className="flex-1">
+                          <span className="text-sm font-semibold text-[color:var(--text-primary)] flex items-center gap-2 flex-wrap">
+                            {info.label}
+                            {info.required && (
+                              <span className="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                Immer aktiv
+                              </span>
+                            )}
                           </span>
-                        )}
-                      </span>
-                      <p className="text-xs text-[color:var(--text-secondary)] mt-1 leading-relaxed">
-                        {info.description}
-                      </p>
+                          <p className="text-xs text-[color:var(--text-secondary)] mt-1 leading-relaxed">
+                            {info.description}
+                          </p>
+                        </div>
+                      </label>
+                      
+                      {/* Cookie Detail Expansion */}
+                      {relatedCookies.length > 0 && (
+                        <>
+                          <button
+                            onClick={() => setExpandedCategory(isExpanded ? null : key)}
+                            className="w-full flex items-center justify-between px-3.5 py-2 text-xs font-medium text-[color:var(--text-tertiary)] hover:text-[color:var(--text-secondary)] hover:bg-gray-50 transition-colors border-t border-gray-100"
+                          >
+                            <span>{relatedCookies.length} Cookie(s) in dieser Kategorie</span>
+                            {isExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+                          </button>
+                          {isExpanded && (
+                            <div className="px-3.5 pb-3 space-y-2 bg-gray-50/40 border-t border-gray-100">
+                              {relatedCookies.map(cookie => (
+                                <div key={cookie.name} className="bg-white border border-gray-100 rounded-lg p-2.5 text-xs mt-2">
+                                  <div className="flex items-center justify-between mb-0.5">
+                                    <code className="font-mono font-bold text-gray-800 bg-gray-100 px-1.5 py-0.5 rounded text-[10px]">{cookie.name}</code>
+                                    <span className="text-gray-400">{cookie.duration}</span>
+                                  </div>
+                                  <p className="text-gray-500 mt-0.5">{cookie.purpose}</p>
+                                  <p className="text-gray-400 mt-0.5">Anbieter: {cookie.provider}</p>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </>
+                      )}
                     </div>
-                  </label>
-                )
+                  );
+                }
               )}
             </div>
 
@@ -244,19 +312,19 @@ export default function CookieConsent() {
             <div className="flex flex-col sm:flex-row gap-2.5">
               <button
                 onClick={handleSaveSettings}
-                className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-sm min-h-[44px]"
+                className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-sm min-h-[44px] flex-1"
               >
                 Auswahl speichern
               </button>
               <button
                 onClick={acceptAll}
-                className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 min-h-[44px]"
+                className="px-5 py-2.5 bg-[var(--color-charcoal-800)] hover:bg-[var(--color-charcoal-700)] text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-sm min-h-[44px] flex-1"
               >
                 Alle akzeptieren
               </button>
               <button
                 onClick={acceptEssentialOnly}
-                className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 min-h-[44px]"
+                className="px-5 py-2.5 bg-white border-2 border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 min-h-[44px] flex-1"
               >
                 Alle ablehnen
               </button>

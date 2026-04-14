@@ -3,9 +3,11 @@
 import React, { useState, useEffect } from "react"
 import { m, AnimatePresence } from "framer-motion"
 import { ShieldCheck, Radar, Magnet, X, Check, Settings2, Info } from "lucide-react"
-import { COOKIE_INVENTORY, CONSENT_CATEGORY_INFO, ConsentCategory, CONSENT_COOKIE_NAME, CONSENT_VERSION, ConsentState } from "@/lib/cookie-inventory"
+import { COOKIE_INVENTORY, CONSENT_CATEGORY_INFO, type ConsentCategory } from "@/lib/cookie-inventory"
+import { useConsent } from "@/hooks/useConsent"
 
 export function PrivacyPreferenceCenter() {
+    const { consent, updateConsent, acceptAll: hookAcceptAll } = useConsent()
     const [isOpen, setIsOpen] = useState(false)
     const [expandedCategory, setExpandedCategory] = useState<ConsentCategory | null>(null)
     
@@ -16,25 +18,17 @@ export function PrivacyPreferenceCenter() {
         marketing: false
     })
 
-    // Load saved preferences on mount
+    // Sync local preferences with consent state from hook
     useEffect(() => {
-        try {
-            const match = document.cookie.match(new RegExp('(^| )' + CONSENT_COOKIE_NAME + '=([^;]+)'))
-            if (match?.[2]) {
-                const savedConsent: ConsentState = JSON.parse(decodeURIComponent(match[2]))
-                if (savedConsent.version === CONSENT_VERSION) {
-                    // eslint-disable-next-line react-hooks/set-state-in-effect
-                    setPreferences({
-                        essential: true,
-                        analytics: savedConsent.analytics,
-                        marketing: savedConsent.marketing
-                    })
-                }
-            }
-        } catch (e) {
-            console.error("Error parsing consent cookie", e)
+        if (consent) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            setPreferences({
+                essential: true,
+                analytics: consent.analytics,
+                marketing: consent.marketing
+            })
         }
-    }, [])
+    }, [consent])
 
     // Prevent body scroll when modal is open
     useEffect(() => {
@@ -55,36 +49,19 @@ export function PrivacyPreferenceCenter() {
     }
 
     const handleSave = () => {
-        const consentData: ConsentState = {
-            essential: true,
+        // Use the central useConsent hook (SSOT) instead of writing cookies directly
+        updateConsent({
             analytics: preferences.analytics,
             marketing: preferences.marketing,
-            timestamp: new Date().toISOString(),
-            version: CONSENT_VERSION
-        }
-        document.cookie = `${CONSENT_COOKIE_NAME}=${encodeURIComponent(JSON.stringify(consentData))}; max-age=${365 * 24 * 60 * 60}; path=/; SameSite=Lax`
-        
-        // Dispatch custom event for GTM / re-renders
-        window.dispatchEvent(new CustomEvent('cookie_consent_updated', { detail: consentData }))
-        
+        })
         setIsOpen(false)
     }
 
     const handleAcceptAll = () => {
         const newPrefs = { essential: true, analytics: true, marketing: true }
         setPreferences(newPrefs)
-        
-        const consentData: ConsentState = {
-            essential: true,
-            analytics: true,
-            marketing: true,
-            timestamp: new Date().toISOString(),
-            version: CONSENT_VERSION
-        }
-        document.cookie = `${CONSENT_COOKIE_NAME}=${encodeURIComponent(JSON.stringify(consentData))}; max-age=${365 * 24 * 60 * 60}; path=/; SameSite=Lax`
-        
-        window.dispatchEvent(new CustomEvent('cookie_consent_updated', { detail: consentData }))
-        
+        // Use the central useConsent hook (SSOT) instead of writing cookies directly
+        hookAcceptAll()
         setIsOpen(false)
     }
 
@@ -149,6 +126,21 @@ export function PrivacyPreferenceCenter() {
                                 <p className="text-sm text-gray-600 mb-6">
                                     Wir nutzen Cookies, um Ihnen das bestmögliche Erlebnis zu bieten. Hier können Sie transparente Kontrolle über den Datenfluss übernehmen.
                                 </p>
+
+                                {/* Current Consent Status Banner */}
+                                {consent && (
+                                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4 text-sm text-blue-800">
+                                        <strong>Ihr aktueller Status:</strong>{" "}
+                                        {consent.analytics && consent.marketing
+                                            ? "Alle Cookies akzeptiert"
+                                            : consent.analytics
+                                                ? "Analyse erlaubt, Marketing abgelehnt"
+                                                : consent.marketing
+                                                    ? "Marketing erlaubt, Analyse abgelehnt"
+                                                    : "Nur essentielle Cookies"}
+                                        {" "}(seit {new Date(consent.timestamp).toLocaleString("de-DE")})
+                                    </div>
+                                )}
 
                                 {categoriesList.map((cat) => {
                                     const info = CONSENT_CATEGORY_INFO[cat.id]

@@ -121,6 +121,33 @@ export function useConsent() {
       writeConsentCookie(newState);
       setConsent(newState);
       setShowBanner(false);
+
+      // ── Consent-Proof-Logging (Art. 7 Abs. 1 DSGVO) ──
+      // Dispatches a structured event for audit trail. Can be captured
+      // by any logging system to prove consent was given/changed.
+      if (typeof window !== "undefined") {
+        const proofPayload = {
+          action: consent ? "update" : "initial",
+          consent: {
+            essential: true,
+            analytics: newState.analytics,
+            marketing: newState.marketing,
+          },
+          timestamp: newState.timestamp,
+          version: newState.version,
+          userAgent: navigator.userAgent,
+          url: window.location.href,
+        };
+        window.dispatchEvent(
+          new CustomEvent("cookie_consent_updated", { detail: newState })
+        );
+        window.dispatchEvent(
+          new CustomEvent("consent_proof_log", { detail: proofPayload })
+        );
+        // Console log for audit (visible in Vercel Function Logs if SSR)
+        // eslint-disable-next-line no-console
+        console.info("[CONSENT-PROOF]", JSON.stringify(proofPayload));
+      }
     },
     [consent]
   );

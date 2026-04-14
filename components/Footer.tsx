@@ -251,7 +251,7 @@ export default function Footer() {
         <li><Link href="/cookie-richtlinie" className="hover:text-[var(--color-red-500)] transition-colors underline">Cookie-Richtlinie</Link></li>
         <li><Link href="/barrierefreiheit" className="hover:text-[var(--color-red-500)] transition-colors underline">Barrierefreiheit</Link></li>
         <li><Link href="/sitemap-uebersicht" className="hover:text-[var(--color-red-500)] transition-colors underline">Sitemap</Link></li>
-        <li><a href="#cookie-settings" className="hover:text-[var(--color-red-500)] transition-colors underline cursor-pointer">Cookie-Einstellungen</a></li>
+        <li><a href="#cookie-settings" className="hover:text-[var(--color-red-500)] transition-colors underline cursor-pointer inline-flex items-center gap-1">⚙️ Cookie-Einstellungen</a></li>
        </ul>
       </nav>
     </div>
