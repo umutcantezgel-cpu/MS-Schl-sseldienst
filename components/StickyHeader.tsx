@@ -31,6 +31,7 @@ import {
 import { cn } from "@/lib/utils";
 import { getNavigationConfig } from "@/lib/data/navigation";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
+import { TrustAvatar } from "@/components/ui/TrustAvatar";
 
 // --- Data Layer ---
 const navConfig = getNavigationConfig();
@@ -359,10 +360,10 @@ export default function StickyHeader() {
 
             <a
               href="tel:+4964418056279"
-              className="hidden sm:flex items-center justify-center gap-2 px-5 xl:px-7 h-[44px] lg:h-[48px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm xl:text-[15px] font-extrabold tracking-wide rounded-full shadow-[0_4px_20px_-4px_rgba(220,38,38,0.45)] hover:shadow-[0_8px_30px_-5px_rgba(220,38,38,0.55)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300 ring-1 ring-inset ring-white/20 group whitespace-nowrap"
+              className="hidden sm:flex items-center justify-center gap-2.5 px-4 xl:px-6 h-[44px] lg:h-[48px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-[14px] xl:text-[15px] font-extrabold tracking-wide rounded-full shadow-[0_4px_20px_-4px_rgba(220,38,38,0.45)] hover:shadow-[0_8px_30px_-5px_rgba(220,38,38,0.55)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300 ring-1 ring-inset ring-white/20 group whitespace-nowrap"
               aria-label="Jetzt anrufen: 06441 8056279"
             >
-              <Phone className="w-4 h-4 group-hover:rotate-12 group-hover:scale-110 transition-transform duration-300" />
+              <TrustAvatar size={30} className="-ml-1" />
               <span>06441 - 8056279</span>
             </a>
             
@@ -544,10 +545,10 @@ export default function StickyHeader() {
             <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 border-t border-gray-100/80 bg-white/95 backdrop-blur-md pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-10 flex gap-2.5 sm:gap-3">
               <a
                 href="tel:+4964418056279"
-                className="relative overflow-hidden flex-1 flex items-center justify-center gap-2 h-[52px] sm:h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-[15px] sm:text-base rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all animate-heartbeat-cta"
+                className="relative overflow-hidden flex-[1.2] flex items-center justify-center gap-3 h-[52px] sm:h-[60px] bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-black text-[15px] sm:text-base rounded-2xl shadow-[0_8px_25px_-5px_rgba(220,38,38,0.4)] active:scale-[0.98] transition-all group"
               >
-                <Phone className="w-5 h-5" />
-                Notdienst
+                <TrustAvatar size={34} />
+                <span className="animate-heartbeat-cta">Notruf</span>
               </a>
               <Link
                 href="/termin-buchen"
