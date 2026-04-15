@@ -117,6 +117,20 @@ export default function CookieConsent() {
     setShowSettings(true);
   };
 
+  const handleDeclineAll = () => {
+    setAnalyticsChecked(false);
+    setMarketingChecked(false);
+    acceptEssentialOnly();
+    setShowSettings(false);
+  };
+
+  const handleAcceptAll = () => {
+    setAnalyticsChecked(true);
+    setMarketingChecked(true);
+    acceptAll();
+    setShowSettings(false);
+  };
+
   return (
     <div
       role="dialog"
@@ -133,6 +147,7 @@ export default function CookieConsent() {
           <div className="p-5 sm:p-6 md:p-6 relative">
             {/* Close button = Nur Essentiell */}
             <button
+              type="button"
               onClick={handleClose}
               className="absolute top-3 right-3 p-2 text-[color:var(--text-tertiary)] hover:text-[color:var(--text-primary)] transition-colors rounded-lg hover:bg-gray-100"
               aria-label="Cookie-Banner schließen – nur essentielle Cookies werden gesetzt"
@@ -190,18 +205,21 @@ export default function CookieConsent() {
                 {/* Action Buttons DSGVO: "Ablehnen" muss gleichwertig zu "Akzeptieren" sein */}
                 <div className="flex flex-col sm:flex-row gap-2.5">
                   <button
-                    onClick={acceptAll}
+                    type="button"
+                    onClick={handleAcceptAll}
                     className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px] flex-1"
                   >
                     Alle akzeptieren
                   </button>
                   <button
-                    onClick={acceptEssentialOnly}
+                    type="button"
+                    onClick={handleDeclineAll}
                     className="px-5 py-2.5 bg-[var(--color-charcoal-800)] hover:bg-[var(--color-charcoal-700)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px] flex-1"
                   >
                     Alle ablehnen
                   </button>
                   <button
+                    type="button"
                     onClick={handleOpenSettings}
                     className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-sm font-medium transition-colors underline-offset-2 hover:underline min-h-[44px]"
                   >
@@ -310,6 +328,7 @@ export default function CookieConsent() {
                       {relatedCookies.length > 0 && (
                         <>
                           <button
+                            type="button"
                             onClick={() => setExpandedCategory(isExpanded ? null : key)}
                             className="w-full flex items-center justify-between px-3.5 py-2 text-xs font-medium text-[color:var(--text-tertiary)] hover:text-[color:var(--text-secondary)] hover:bg-gray-50 transition-colors border-t border-gray-100"
                           >
@@ -341,24 +360,28 @@ export default function CookieConsent() {
             {/* Settings Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-2.5">
               <button
+                type="button"
                 onClick={handleSaveSettings}
                 className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-sm min-h-[44px] flex-1"
               >
                 Auswahl speichern
               </button>
               <button
-                onClick={acceptAll}
+                type="button"
+                onClick={handleAcceptAll}
                 className="px-5 py-2.5 bg-[var(--color-charcoal-800)] hover:bg-[var(--color-charcoal-700)] text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-sm min-h-[44px] flex-1"
               >
                 Alle akzeptieren
               </button>
               <button
-                onClick={acceptEssentialOnly}
+                type="button"
+                onClick={handleDeclineAll}
                 className="px-5 py-2.5 bg-white border-2 border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 min-h-[44px] flex-1"
               >
                 Alle ablehnen
               </button>
               <button
+                type="button"
                 onClick={() => setShowSettings(false)}
                 className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-sm font-medium transition-colors min-h-[44px]"
               >
