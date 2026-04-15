@@ -100,6 +100,33 @@ export function middleware(request: NextRequest) {
     }
 
     // ═══════════════════════════════════════════════════════════════════════
+    // ── VEKTOR 3: PANIC-MODE EDGE LOGIC (Behavioral Signal Manipulation) ─
+    // Silent rewrite for mobile users at night (22:00-06:00 Europe/Berlin).
+    // URL stays as-is (no visible redirect). User sees stripped crisis page.
+    // Targets ONLY homepage "/" to avoid breaking deep links.
+    // ═══════════════════════════════════════════════════════════════════════
+
+    if (pathname === '/') {
+        const deviceType = getDeviceType(userAgent);
+        if (deviceType === 'mobile') {
+            // [EDGE] Calculate Berlin time without external deps
+            const berlinTime = new Date().toLocaleString('en-US', { timeZone: 'Europe/Berlin' });
+            const berlinHour = new Date(berlinTime).getHours();
+            const isPanicWindow = berlinHour >= 22 || berlinHour < 6;
+
+            if (isPanicWindow) {
+                // [BEHAVIORAL] Silent rewrite — URL stays "/"
+                const emergencyUrl = request.nextUrl.clone();
+                emergencyUrl.pathname = '/_emergency';
+                const panicResponse = NextResponse.rewrite(emergencyUrl);
+                panicResponse.headers.set('x-panic-mode', 'active');
+                panicResponse.headers.set('x-berlin-hour', berlinHour.toString());
+                return panicResponse;
+            }
+        }
+    }
+
+    // ═══════════════════════════════════════════════════════════════════════
     // ── EXISTING MIDDLEWARE (100% Unmodified Below This Line) ─────────────
     // ═══════════════════════════════════════════════════════════════════════
 
