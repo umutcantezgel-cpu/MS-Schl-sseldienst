@@ -2,6 +2,7 @@
 
 import { Phone, ShieldCheck, Clock, Key, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { useEffect, useState, useMemo } from "react";
 
@@ -157,7 +158,7 @@ export default function HeroSection() {
                   <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
                 </span>
                 <span className="text-[color:var(--value-primary)] text-xs sm:text-sm md:text-sm font-semibold tracking-wide">
-                  24h geöffnet für persönliche Beratung vor Ort
+                  Fachgeschäft & 24h Schlüsselnotdienst
                 </span>
               </div>
             </div>
@@ -176,7 +177,7 @@ export default function HeroSection() {
               </span>
               {' '}
               <span className="block w-full text-[color:var(--text-secondary)] mt-2 font-semibold text-[18px] sm:text-[24px]">
-                Ihr 24 Stunden Notdienst für Schlüssel, Schlösser & Sicherheit
+                Ladenlokal in der Langgasse & Mobiler Notdienst
               </span>
             </h1>
             </div>
@@ -248,107 +249,78 @@ export default function HeroSection() {
 
           </div>
 
-          {/* ── Rechtes Panel (5 Spalten) und Auto Form (Geometrische Fahrzeug-Silhouette) ── */}
-          <div className="lg:col-span-5 relative w-full mt-6 sm:mt-8 lg:mt-0 z-[10] px-2 sm:px-0 flex flex-col items-center justify-center">
+          {/* ── Rechtes Panel (5 Spalten) - Dual Image Composition (Ladenlokal & Notdienst) ── */}
+          <div className="lg:col-span-5 relative w-full mt-10 sm:mt-16 lg:mt-0 z-[10] px-2 sm:px-4 flex flex-col items-center justify-center min-h-[380px] sm:min-h-[480px] lg:min-h-[540px]">
             
-            {/* Speed Lines Background (Motion Illusion) */}
-            <div className="absolute inset-x-0 bottom-12 h-px bg-gradient-to-r from-transparent via-[var(--color-red-500)]/30 to-transparent w-full z-0 pointer-events-none" />
-            <div className="absolute inset-x-0 bottom-8 h-px bg-gradient-to-r from-transparent via-[var(--color-charcoal-400)]/20 to-transparent w-[120%] -ml-[10%] z-0 pointer-events-none animate-speed-line-fast" />
-
-            {/* THE CAR BODY CONTAINER */}
-            <div className="w-full max-w-[500px] flex flex-col items-center relative z-10 group scale-[0.85] sm:scale-100 origin-top transform-gpu">
-              
-              {/* === ROOF / CABIN (24/7 Notdienst) === */}
-              {/* Geometrisch: Abgerundete aerodynamische Kuppel */}
-              <div className="w-[85%] sm:w-[75%] bg-white/70 backdrop-blur-2xl ring-1 ring-white/80 rounded-t-[30px] sm:rounded-t-[60px] px-4 sm:px-6 py-2 sm:py-6 shadow-[0_-15px_30px_rgba(185,28,28,0.08)] relative overflow-hidden transition-all duration-500 z-20 group-hover:-translate-y-1">
-                {/* Internal Dome Glow */}
-                <div className="absolute top-0 right-10 w-40 h-40 bg-[var(--color-red-500)]/10 rounded-full blur-[40px]" />
+            {/* Speed Lines Background for dynamic feel */}
+            <div className="absolute inset-x-0 bottom-12 h-px bg-gradient-to-r from-transparent via-[var(--color-red-500)]/20 to-transparent w-full z-0 pointer-events-none" />
+            
+            {/* --- Image 1: Ladenlokal (Shop Exterior/Interior) --- */}
+            <div className="absolute top-[5%] md:top-0 right-[15%] lg:right-[5%] w-[70%] max-w-[340px] rounded-[1.5rem] overflow-hidden ring-[6px] ring-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] z-10 transform-gpu rotate-2 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
+              <div className="relative aspect-[4/3] w-full bg-[var(--color-charcoal-100)]">
+                <Image
+                  src="/images/schluessel-schmiede-wetzlar-aussenansicht-ladengeschaeft.webp"
+                  alt="Das Ladengeschäft der Schlüssel Schmiede Wetzlar in der Langgasse 70"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 70vw, 340px"
+                  priority
+                />
+                {/* Gradient overlay for bottom text */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
                 
-                <div className="flex flex-col items-center text-center gap-1 sm:gap-2 relative z-10">
-                  <div className="flex items-center gap-2 mb-0 sm:mb-1 bg-white/70 px-3 py-1 rounded-full shadow-sm ring-1 ring-black/5">
-                    <div className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-red-500)] opacity-75" />
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-red-500)]" />
-                    </div>
-                    <span className="text-[var(--color-red-600)] font-bold text-[9px] sm:text-xs uppercase tracking-[0.1em]">
-                      Ladengeschäft
-                    </span>
-                  </div>
-                  <div className="text-[clamp(15px,4vw,22px)] sm:text-xl font-extrabold text-[color:var(--text-primary)] leading-tight sm:leading-[1.15]">
-                    Mehr als ein Laden
-                  </div>
-                  <p className="text-[clamp(10px,3vw,13px)] sm:text-sm text-[color:var(--text-secondary)] leading-tight sm:leading-relaxed max-w-[280px]">
-                    Ein Ort für <strong className="text-[color:var(--text-primary)] font-semibold">Vertrauen, Handwerk & Beratung</strong>.
-                  </p>
+                {/* Status Badge */}
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 border border-white/50 shadow-sm">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-status-success" />
+                  </span>
+                  <span className="text-[var(--text-primary)] text-[10px] sm:text-xs font-bold uppercase tracking-wider">Ladenlokal</span>
+                </div>
+
+                {/* Bottom Text */}
+                <div className="absolute bottom-4 left-4 right-4 flex flex-col">
+                  <span className="text-white font-bold text-[clamp(14px,3vw,18px)] drop-shadow-md leading-tight">Fachgeschäft Wetzlar</span>
+                  <span className="text-white/90 text-[10px] sm:text-xs font-medium">Langgasse 70 · Persönliche Beratung</span>
                 </div>
               </div>
-
-              {/* === CHASSIS / BODY (Front & Rear splits) === */}
-              {/* Breite Basis des Autos mit aerodynamischer Curve */}
-              <div className="w-[110%] -ml-[5%] sm:w-full sm:ml-0 flex flex-row bg-[var(--color-off-white)]/60 backdrop-blur-xl ring-1 ring-white/60 rounded-b-[20px] sm:rounded-b-[30px] rounded-tl-[24px] sm:rounded-tl-[50px] rounded-tr-[24px] sm:rounded-tr-[30px] p-1.5 sm:p-2 relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.12)] mb-8 sm:mb-10">
-                
-                {/* HOOD / FRONT (Ohne Schäden) - Left Side */}
-                <div className="flex-1 bg-white/95 ring-1 ring-black/5 rounded-[14px] sm:rounded-tl-[40px] sm:rounded-bl-[20px] p-2.5 sm:p-5 relative overflow-hidden group/front mr-0.5 sm:mr-1 transition-all duration-500 hover:ring-[var(--color-red-500)]/30 hover:shadow-lg flex flex-col justify-center sm:block">
-                  {/* Headlight Flow Glow */}
-                  <div className="absolute top-1/2 -left-12 w-24 h-24 bg-[var(--color-red-500)]/15 blur-[20px] group-hover/front:bg-[var(--color-red-500)]/30 group-hover/front:translate-x-12 transition-all duration-700 ease-out" />
-                  
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 mx-auto sm:mx-0 rounded-[10px] sm:rounded-[12px] bg-[var(--color-red-500)]/10 flex items-center justify-center mb-1 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/front:scale-110">
-                    <ShieldCheck className="w-4 h-4 sm:w-6 sm:h-6 text-[var(--color-red-600)]" />
-                  </div>
-                  <div className="text-[clamp(11px,3.5vw,17px)] text-center sm:text-left leading-tight font-extrabold text-[color:var(--text-primary)] mb-0 sm:mb-1 relative z-10">
-                    Ohne Schäden
-                  </div>
-                  <p className="hidden sm:block text-sm text-[color:var(--text-secondary)] leading-snug relative z-10">
-                    Zerstörungsfreie Öffnung von Haus- & Wohnungstüren in nahezu allen Fällen.
-                  </p>
-                  
-                  {/* Spacer to prevent wheels from overlapping text */}
-                  <div className="h-6 sm:h-10 shrink-0 w-full" />
-                </div>
-
-                {/* TRUNK / REAR (Spezialwerkzeug) - Right Side */}
-                {/* Dark Theme for contrast/mechanical feel */}
-                <div className="flex-1 bg-[var(--color-charcoal-900)] ring-1 ring-[var(--color-charcoal-800)] rounded-[14px] sm:rounded-tr-[20px] sm:rounded-br-[20px] p-2.5 sm:p-5 relative overflow-hidden group/rear ml-0.5 sm:ml-1 transition-all duration-500 hover:shadow-lg flex flex-col justify-center sm:block">
-                  {/* Taillight Glow */}
-                  <div className="absolute top-1/2 -right-8 w-20 h-20 bg-[var(--color-red-600)]/30 blur-[20px] group-hover/rear:bg-[var(--color-red-500)]/50 group-hover/rear:-translate-x-4 transition-all duration-500" />
-                  {/* Tech Grip Pattern */}
-                  <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '8px 8px' }} />
-
-                  <div className="w-8 h-8 sm:w-12 sm:h-12 mx-auto sm:mx-0 rounded-[10px] sm:rounded-[12px] bg-white/10 flex items-center justify-center mb-1 sm:mb-3 relative z-10 transition-transform duration-500 group-hover/rear:scale-110">
-                    <Key className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
-                  </div>
-                  <div className="text-[clamp(11px,3.5vw,17px)] text-center sm:text-left leading-tight font-extrabold text-white mb-0 sm:mb-1 relative z-10">
-                    Spezialwerkzeug
-                  </div>
-                  <p className="hidden sm:block text-sm text-zinc-400 leading-snug relative z-10">
-                    Präzisionsgeräte ermöglichen Öffnungen selbst bei schweren Verriegelungen.
-                  </p>
-                  
-                  {/* Spacer to prevent wheels from overlapping text */}
-                  <div className="h-6 sm:h-10 shrink-0 w-full" />
-                </div>
-
-                {/* === WHEELS / HOVER RINGS === */}
-                {/* Positioned absolute to the chassis bounds */}
-                <div className="absolute -bottom-6 sm:-bottom-8 left-[10%] sm:left-10 z-20 pointer-events-none">
-                  {/* Front Wheel */}
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[4px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
-                    <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
-                    <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
-                  </div>
-                </div>
-                <div className="absolute -bottom-6 sm:-bottom-8 right-[10%] sm:right-10 z-20 pointer-events-none">
-                  {/* Rear Wheel */}
-                  <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-[4px] sm:border-[6px] border-[var(--color-charcoal-900)] shadow-[0_15px_25px_rgba(0,0,0,0.35)] bg-[var(--color-charcoal-800)] flex items-center justify-center relative spin-wheel">
-                    <div className="absolute inset-1.5 rounded-full border-[2px] border-dashed border-[var(--color-red-500)]/60" />
-                    <div className="w-4 h-4 sm:w-5 sm:h-5 bg-[var(--color-red-500)] rounded-full shadow-[0_0_15px_rgba(185,28,28,0.9)]" />
-                  </div>
-                </div>
-              </div>
-
             </div>
 
-            {/* Car/Wheel Animations moved to globals.css to fix React Hydration Mismatch Error 418 */}
+            {/* --- Image 2: Notdienst (Einsatzfahrzeug) --- */}
+            <div className="absolute bottom-[5%] md:bottom-2 left-[5%] lg:left-0 w-[75%] max-w-[360px] rounded-[1.5rem] overflow-hidden ring-[6px] ring-[var(--color-off-white)] shadow-[0_30px_60px_-15px_rgba(185,28,28,0.25)] z-20 transform-gpu -rotate-3 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
+              <div className="relative aspect-[4/3] w-full bg-[var(--color-charcoal-900)]">
+                <Image
+                  src="/images/mina-saad-schluesseldienst-wetzlar-einsatzfahrzeug.jpeg"
+                  alt="Einsatzfahrzeug des Schlüsselnotdienstes Wetzlar"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 75vw, 360px"
+                  priority
+                />
+                
+                {/* Gradient overlay for modern look */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-red-600)]/90 via-black/30 to-transparent" />
+                
+                {/* 24h Badge */}
+                <div className="absolute top-4 right-4">
+                  <div className="bg-[var(--color-red-500)] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-lg shadow-[0_4px_12px_rgba(185,28,28,0.5)] flex items-center gap-1.5 border border-white/20">
+                    <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                    24/7 Bereit
+                  </div>
+                </div>
+
+                {/* Bottom Text */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="text-white font-bold text-[clamp(15px,3.5vw,20px)] drop-shadow-md flex items-center gap-2 mb-1">
+                    <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-white" /> Mobiler Notdienst
+                  </span>
+                  <span className="text-white/90 text-[11px] sm:text-xs font-medium flex items-center gap-1.5">
+                    <ArrowRight className="w-3 h-3" /> In ~20 Min. vor Ort
+                  </span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
