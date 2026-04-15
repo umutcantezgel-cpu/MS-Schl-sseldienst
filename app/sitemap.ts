@@ -5,6 +5,7 @@ import { allLocations } from '@/lib/data/allLocations'
 import { getAllBlogPosts, getAllRatgeberPosts } from '@/lib/data/mdx'
 import { lexikonData } from '@/lib/data/lexikon'
 import { getAllCaseStudies } from '@/lib/data/case-studies'
+import { MICRO_POIS } from '@/lib/data/pois'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     // ── 1. Content Graph Nodes (Hauptseiten, Services, Legal) ──
@@ -97,9 +98,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${siteUrl}/leistungen/uhren-service`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     ];
 
+    // ── 8. Micro-POI Standortseiten (VEKTOR 2: SERP Choking) ──
+    const poiNodes = MICRO_POIS.map((poi) => ({
+        url: `${siteUrl}/standorte/${poi.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+    }));
+
     return [
         ...sitemapNodes,
         ...cityNodes,
+        ...poiNodes,
         ...blogNodes,
         ...ratgeberNodes,
         ...lexikonNodes,
