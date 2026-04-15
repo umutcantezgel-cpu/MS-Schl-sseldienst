@@ -61,15 +61,51 @@ function deleteConsentCookie(): void {
 // ─── Delete cookies by category ───
 function deleteCookiesByCategory(category: ConsentCategory): void {
   if (typeof document === "undefined") return;
+  
+  const targetCookies = COOKIE_INVENTORY.filter(c => c.category === category);
+  if (targetCookies.length === 0) return;
+
   const cookies = document.cookie.split("; ");
   for (const cookie of cookies) {
-    const name = cookie.split("=")[0] ?? "";
-    // GA4 cookies
-    if (category === "analytics" && (name === "_ga" || name.startsWith("_ga_"))) {
-      document.cookie = `${name}=; path=/; max-age=0; domain=${window.location.hostname}`;
-      document.cookie = `${name}=; path=/; max-age=0`; // Without domain for safety
+    const rawName = cookie.split("=")[0] ?? "";
+    const name = rawName.trim();
+    
+    // Check if cookie matches inventory (exact or pattern)
+    const shouldDelete = targetCookies.some(tc => {
+      if (tc.name.endsWith("*")) {
+        const prefix = tc.name.replace("*", "");
+        return name.startsWith(prefix);
+      }
+      return tc.name === name;
+    });
+
+    if (shouldDelete) {
+      const host = window.location.hostname;
+      const domainParts = host.split(".");
+      
+      // 1. Current host
+      document.cookie = `${name}=; path=/; max-age=0; domain=${host}`;
+      // 2. No explicit domain
+      document.cookie = `${name}=; path=/; max-age=0`; 
+      // 3. Root domain (e.g. .example.com) for cross-subdomain cookies
+      if (domainParts.length >= 2) {
+        const rootDomain = `.${domainParts.slice(-2).join(".")}`;
+        document.cookie = `${name}=; path=/; max-age=0; domain=${rootDomain}`;
+      }
     }
   }
+}
+
+// Helper for UUID Generation (simple crypto fallback)
+function generateUUID() {
+  if (typeof crypto !== "undefined" && crypto.randomUUID) {
+    return crypto.randomUUID();
+  }
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    const r = Math.random() * 16 | 0;
+    const v = c === 'x' ? r : ((r & 0x3) | 0x8);
+    return v.toString(16);
+  });
 }
 
 // ─── Hook ───
@@ -102,12 +138,14 @@ export function useConsent() {
 
   const updateConsent = useCallback(
     (updates: Partial<Pick<ConsentState, "analytics" | "marketing">>) => {
+      const receiptId = consent?.receiptId || generateUUID();
       const newState: ConsentState = {
         essential: true,
         analytics: updates.analytics ?? consent?.analytics ?? false,
         marketing: updates.marketing ?? consent?.marketing ?? false,
         timestamp: new Date().toISOString(),
         version: CONSENT_VERSION,
+        receiptId,
       };
 
       // If a category was revoked, delete its cookies
@@ -128,6 +166,7 @@ export function useConsent() {
       if (typeof window !== "undefined") {
         const proofPayload = {
           action: consent ? "update" : "initial",
+          consent_receipt_id: receiptId,
           consent: {
             essential: true,
             analytics: newState.analytics,
@@ -138,15 +177,34 @@ export function useConsent() {
           userAgent: navigator.userAgent,
           url: window.location.href,
         };
+        
         window.dispatchEvent(
           new CustomEvent("cookie_consent_updated", { detail: newState })
         );
         window.dispatchEvent(
           new CustomEvent("consent_proof_log", { detail: proofPayload })
         );
-        // Console log for audit (visible in Vercel Function Logs if SSR)
+        
+        // Console log for local audit
         // eslint-disable-next-line no-console
         console.info("[CONSENT-PROOF]", JSON.stringify(proofPayload));
+
+        // Submit to Backend API (Vercel KV or Database)
+        try {
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon("/api/consent-audit", JSON.stringify(proofPayload));
+          } else {
+            // Fallback for browsers without sendBeacon
+            fetch("/api/consent-audit", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(proofPayload),
+              keepalive: true
+            }).catch(e => console.warn("Failed to log consent", e));
+          }
+        } catch (e) {
+          console.warn("Error sending consent audit trail", e);
+        }
       }
     },
     [consent]

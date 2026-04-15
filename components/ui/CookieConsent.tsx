@@ -94,8 +94,8 @@ export default function CookieConsent() {
     };
   }, [consent, setShowBanner]);
 
-  // Don't render if consent is already given, banner is not requested, OR delay hasn't completed
-  if (!showBanner || !isDelayComplete) return null;
+  // Don't render anything if delay hasn't completed
+  if (!isDelayComplete) return null;
 
   const handleSaveSettings = () => {
     updateConsent({
@@ -132,15 +132,16 @@ export default function CookieConsent() {
   };
 
   return (
-    <div
-      role="dialog"
-      aria-modal="false"
-      aria-label="Cookie-Einwilligungsbanner gemäß DSGVO und TTDSG"
-      aria-describedby="cookie-consent-description"
-      className={`fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6 transition-all duration-500 ease-out ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-      }`}
-    >
+    <>
+      <div
+        role="dialog"
+        aria-modal="false"
+        aria-label="Cookie-Einwilligungsbanner gemäß DSGVO und TTDSG"
+        aria-describedby="cookie-consent-description"
+        className={`fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6 transition-all duration-500 ease-out ${
+          isVisible && showBanner ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"
+        }`}
+      >
       <div className="mx-auto max-w-4xl max-h-[85vh] overflow-y-auto overscroll-contain rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl">
         {!showSettings ? (
           /* ── Banner View ── */
@@ -399,5 +400,27 @@ export default function CookieConsent() {
         )}
       </div>
     </div>
+
+      {/* ── Floating Consent Badge (DSGVO "Einfacher Widerruf") ── */}
+      {!showBanner && consent && (
+        <button
+          type="button"
+          onClick={() => {
+            setShowBanner(true);
+            setShowSettings(true);
+            setAnalyticsChecked(consent?.analytics ?? false);
+            setMarketingChecked(consent?.marketing ?? false);
+          }}
+          className="fixed bottom-4 left-4 z-[9998] w-12 h-12 bg-white rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] border border-[var(--border-subtle)] flex items-center justify-center hover:scale-110 transition-all duration-300 hover:shadow-[0_6px_25px_rgba(0,0,0,0.2)] text-[var(--color-charcoal-700)] group"
+          aria-label="Cookie-Einstellungen öffnen"
+          title="Cookie-Einstellungen verwalten"
+        >
+          <div className="relative">
+            <Shield className="w-5 h-5 group-hover:text-[var(--color-red-500)] transition-colors" />
+            <div className="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full border-2 border-white shadow-sm" />
+          </div>
+        </button>
+      )}
+    </>
   );
 }

@@ -52,11 +52,13 @@ export interface ConsentState {
   timestamp: string;
   /** Consent-Konfigurationsversion (bei Änderung → Re-Consent) */
   version: string;
+  /** Eindeutige cryptografische ID zur Nachweisbarkeit im Backend-Log (Art 5 Abs. 2 DSGVO) */
+  receiptId?: string;
 }
 
 // ─── Current Consent Version ───
 // Bump this when cookie categories change → triggers re-consent
-export const CONSENT_VERSION = "1.0.0";
+export const CONSENT_VERSION = "1.1.0";
 
 // ─── Cookie Consent Cookie Config ───
 export const CONSENT_COOKIE_NAME = "consent_status";
@@ -65,6 +67,7 @@ export const CONSENT_COOKIE_MAX_AGE_DAYS = 365;
 // ─── Cookie Inventory (SSOT) ───
 
 export const COOKIE_INVENTORY: readonly CookieEntry[] = [
+  // ── ESSENTIAL ──
   {
     name: "consent_status",
     category: "essential",
@@ -86,6 +89,43 @@ export const COOKIE_INVENTORY: readonly CookieEntry[] = [
     purpose: "Speichert die vom Nutzer gewählte Schriftgröße (Barrierefreiheit)",
     provider: "Eigen (Schlüssel Schmiede)",
   },
+  // ── ANALYTICS ──
+  {
+    name: "_ga",
+    category: "analytics",
+    duration: "2 Jahre",
+    purpose: "Wird von Google Analytics verwendet, um User zu unterscheiden.",
+    provider: "Google Ireland Limited",
+  },
+  {
+    name: "_ga_*",
+    category: "analytics",
+    duration: "2 Jahre",
+    purpose: "Wird von Google Analytics verwendet, um den Sitzungsstatus zu erhalten.",
+    provider: "Google Ireland Limited",
+  },
+  // ── MARKETING ──
+  {
+    name: "_fbp",
+    category: "marketing",
+    duration: "3 Monate",
+    purpose: "Wird von Meta/Facebook genutzt, um Werbemaßnahmen zu messen und gezielte Werbung auszuspielen.",
+    provider: "Meta Platforms Ireland Ltd.",
+  },
+  {
+    name: "NID / AEC / SOCS",
+    category: "marketing",
+    duration: "6 Monate",
+    purpose: "Wird von Google Maps in interaktiven Karten genutzt, um Nutzerpräferenzen zu speichern.",
+    provider: "Google Ireland Limited",
+  },
+  {
+    name: "Calendly_*",
+    category: "marketing",
+    duration: "App-Sitzung",
+    purpose: "Wird für die Funktionsfähigkeit des Terminbuchungs-Widgets (Calendly) verwendet.",
+    provider: "Calendly LLC",
+  }
 ] as const;
 
 // ─── Data Processing Inventory (DSGVO Art. 30) ───
@@ -110,13 +150,40 @@ export const DATA_PROCESSING_INVENTORY: readonly DataProcessingEntry[] = [
     thirdCountryTransfer: "USA und Vercel DPA vorhanden. Keine personenbezogenen Daten übertragen.",
   },
   {
+    name: "Google Analytics 4",
+    dataCollected: ["IP-Adresse (anonymisiert)", "Geräteinformationen", "Seitenpfade", "Verweildauer"],
+    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)",
+    recipient: "Google Ireland Limited",
+    retentionPeriod: "2 Monate (oder 14 Monate, je nach Einstellung)",
+    consentCategory: "analytics",
+    thirdCountryTransfer: "USA und EU-US Data Privacy Framework gelistet.",
+  },
+  {
+    name: "Meta / Facebook Pixel",
+    dataCollected: ["IP-Adresse", "Browser-Informationen", "Conversion-Daten (Klicks, Buchungen)"],
+    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)",
+    recipient: "Meta Platforms Ireland Ltd.",
+    retentionPeriod: "Gemäß Meta-Datenschutzrichtlinie",
+    consentCategory: "marketing",
+    thirdCountryTransfer: "USA und EU-US Data Privacy Framework gelistet.",
+  },
+  {
     name: "Google Maps (Servicegebiet-Karte)",
     dataCollected: ["IP-Adresse", "Browser-Typ", "Standortdaten (wenn freigegeben)"],
-    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung via Two-Click-Lösung auf der Impressumsseite)",
+    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)",
     recipient: "Google Ireland Limited",
     retentionPeriod: "Gemäß Google-Datenschutzrichtlinie",
-    consentCategory: null, // Wird nur auf Servicegebiet-Seite geladen
+    consentCategory: "marketing", // Maps setzt Cookies und überträgt IP, bedarf Marketing/Externe Medien Einwilligung
     thirdCountryTransfer: "USA und Google im EU-US Data Privacy Framework gelistet.",
+  },
+  {
+    name: "Calendly Terminbuchung",
+    dataCollected: ["Name", "E-Mail", "IP-Adresse", "Termindetails"],
+    legalBasis: "Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung)",
+    recipient: "Calendly LLC, USA",
+    retentionPeriod: "Bis zur Löschung des Accounts oder Anfrage-Realisierung",
+    consentCategory: "marketing", // Externe Widgets benötigen Consent für Third-Party Cookies
+    thirdCountryTransfer: "USA und EU-US Data Privacy Framework gelistet.",
   },
   {
     name: "Technisch notwendige Cookies",
