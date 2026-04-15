@@ -235,42 +235,72 @@ export default function CookieConsent() {
                 ([key, info]) => {
                   const relatedCookies = COOKIE_INVENTORY.filter(c => c.category === key);
                   const isExpanded = expandedCategory === key;
+                  const isChecked = key === "essential" ? true : key === "analytics" ? analyticsChecked : marketingChecked;
 
                   return (
-                    <div key={key} className="rounded-xl border transition-colors overflow-hidden">
-                      <label
-                        className={`flex items-start gap-3 p-3.5 cursor-pointer ${
-                          info.required
-                            ? "border-green-200 bg-green-50/30"
+                    <div 
+                      key={key} 
+                      className={`rounded-xl border transition-all duration-200 overflow-hidden ${
+                        info.required
+                          ? "border-green-200"
+                          : isChecked
+                            ? "border-[var(--color-red-500)] shadow-sm"
                             : "border-[var(--border-subtle)] hover:border-[var(--border-default)]"
+                      }`}
+                    >
+                      <label
+                        className={`flex items-start gap-4 p-3.5 sm:p-4 cursor-pointer transition-colors duration-200 ${
+                          info.required
+                            ? "bg-green-50/40"
+                            : isChecked
+                              ? "bg-[var(--color-red-500)]/5"
+                              : "hover:bg-gray-50/50"
                         }`}
                       >
-                        <input
-                          type="checkbox"
-                          checked={
-                            key === "essential"
-                              ? true
-                              : key === "analytics"
-                                ? analyticsChecked
-                                : marketingChecked
-                          }
-                          disabled={info.required}
-                          onChange={(e) => {
-                            if (key === "analytics") setAnalyticsChecked(e.target.checked);
-                            if (key === "marketing") setMarketingChecked(e.target.checked);
-                          }}
-                          className="mt-0.5 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] disabled:opacity-60 min-w-[16px]"
-                        />
+                        <div className="relative flex items-center justify-center mt-0.5 shrink-0">
+                          <input
+                            type="checkbox"
+                            checked={isChecked}
+                            disabled={info.required}
+                            onChange={(e) => {
+                              if (key === "analytics") setAnalyticsChecked(e.target.checked);
+                              if (key === "marketing") setMarketingChecked(e.target.checked);
+                            }}
+                            className="peer sr-only"
+                            aria-label={`${info.label} aktivieren`}
+                          />
+                          <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
+                            isChecked 
+                              ? info.required
+                                ? "bg-green-500 border-green-500"
+                                : "bg-[var(--color-red-500)] border-[var(--color-red-500)] text-white"
+                              : "bg-white border-gray-300 peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-[var(--color-red-500)] peer-active:border-[var(--color-red-500)]"
+                          }`}>
+                            {isChecked && (
+                              <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                              </svg>
+                            )}
+                          </div>
+                        </div>
+
                         <div className="flex-1">
-                          <span className="text-sm font-semibold text-[color:var(--text-primary)] flex items-center gap-2 flex-wrap">
-                            {info.label}
+                          <span className="text-sm font-semibold flex items-center gap-2 flex-wrap mb-1">
+                            <span className={info.required ? "text-green-800" : isChecked ? "text-[color:var(--text-primary)]" : "text-[color:var(--text-secondary)]"}>
+                              {info.label}
+                            </span>
                             {info.required && (
                               <span className="text-[10px] font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded-full uppercase tracking-wider">
                                 Immer aktiv
                               </span>
                             )}
+                            {isChecked && !info.required && (
+                              <span className="text-[10px] font-bold text-[var(--color-red-600)] bg-[var(--color-red-500)]/10 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                Aktiviert
+                              </span>
+                            )}
                           </span>
-                          <p className="text-xs text-[color:var(--text-secondary)] mt-1 leading-relaxed">
+                          <p className={`text-xs leading-relaxed ${isChecked ? "text-[color:var(--text-secondary)]" : "text-[color:var(--text-tertiary)]"}`}>
                             {info.description}
                           </p>
                         </div>
