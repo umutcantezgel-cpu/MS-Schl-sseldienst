@@ -14,6 +14,7 @@ import {
   CONSENT_COOKIE_NAME,
   CONSENT_COOKIE_MAX_AGE_DAYS,
   CONSENT_VERSION,
+  COOKIE_INVENTORY,
   type ConsentState,
   type ConsentCategory,
 } from "@/lib/cookie-inventory";

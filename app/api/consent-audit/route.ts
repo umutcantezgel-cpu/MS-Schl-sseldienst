@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
-import { kv } from '@vercel/kv';
 
+/**
+ * Consent Audit Trail Endpoint.
+ * Logs consent proof to Vercel Function Logs (always available).
+ * Optionally stores to Vercel KV if configured (dynamic import).
+ */
 export async function POST(req: Request) {
   try {
     const data = await req.json();
@@ -24,18 +28,16 @@ export async function POST(req: Request) {
     // Edge-Logging for Vercel Function Logs (Free Tier Audit Trail)
     console.info('[CONSENT_AUDIT_TRAIL]', JSON.stringify(auditRecord));
 
-    // Try Vercel KV if available
-    try {
-      if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
-        // Store the consent with receipt ID as key
+    // Try Vercel KV if available (dynamic import to avoid build errors)
+    if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+      try {
+        const { kv } = await import('@vercel/kv');
         await kv.set(`consent:${data.consent_receipt_id}`, auditRecord);
-        // Add to a global list of recently updated consents
         await kv.lpush('recent_consents', data.consent_receipt_id);
-        // Keep list bounded to last 1000
         await kv.ltrim('recent_consents', 0, 999);
+      } catch (kvError) {
+        console.warn('Vercel KV not configured or failed, relying on stdout logging', kvError);
       }
-    } catch (kvError) {
-      console.warn('Vercel KV not configured or failed, relying on stdout logging', kvError);
     }
 
     return NextResponse.json({ success: true, receiptId: data.consent_receipt_id }, { status: 200 });

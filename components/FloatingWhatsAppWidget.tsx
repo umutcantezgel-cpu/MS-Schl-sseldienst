@@ -300,7 +300,7 @@ export default function FloatingWhatsAppWidget() {
         <div
           style={{
             position: "fixed",
-            zIndex: 9998,
+            zIndex: 9996,
             left: pos.current.x - 110,
             top: pos.current.y + 8,
             pointerEvents: "none",
@@ -342,7 +342,7 @@ export default function FloatingWhatsAppWidget() {
         onMouseLeave={() => setShowTooltip(false)}
         style={{
           position: "fixed",
-          zIndex: 9999,
+          zIndex: 9997,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",

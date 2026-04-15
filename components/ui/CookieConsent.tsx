@@ -138,11 +138,11 @@ export default function CookieConsent() {
         aria-modal="false"
         aria-label="Cookie-Einwilligungsbanner gemäß DSGVO und TTDSG"
         aria-describedby="cookie-consent-description"
-        className={`fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6 transition-all duration-500 ease-out ${
-          isVisible && showBanner ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"
+        className={`fixed bottom-0 left-0 right-0 z-[9999] p-3 sm:p-4 md:p-6 pb-[max(1rem,calc(env(safe-area-inset-bottom)+64px))] sm:pb-6 transition-all duration-500 ease-out pointer-events-none ${
+          isVisible && showBanner ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
         }`}
       >
-      <div className="mx-auto max-w-4xl max-h-[85vh] overflow-y-auto overscroll-contain rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl">
+      <div className="pointer-events-auto mx-auto max-w-4xl max-h-[85vh] overflow-y-auto overscroll-contain rounded-2xl border border-[var(--border-subtle)] bg-white shadow-[0_-4px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl">
         {!showSettings ? (
           /* ── Banner View ── */
           <div className="p-5 sm:p-6 md:p-6 relative">
@@ -267,34 +267,38 @@ export default function CookieConsent() {
                             : "border-[var(--border-subtle)] hover:border-[var(--border-default)]"
                       }`}
                     >
-                      <label
-                        className={`flex items-start gap-4 p-3.5 sm:p-4 cursor-pointer transition-colors duration-200 ${
+                      <div
+                        className={`flex items-start gap-4 p-3.5 sm:p-4 transition-colors duration-200 ${
                           info.required
                             ? "bg-green-50/40"
                             : isChecked
                               ? "bg-[var(--color-red-500)]/5"
                               : "hover:bg-gray-50/50"
-                        }`}
+                        } ${!info.required ? "cursor-pointer" : ""}`}
+                        onClick={!info.required ? () => {
+                          if (key === "analytics") setAnalyticsChecked(!analyticsChecked);
+                          if (key === "marketing") setMarketingChecked(!marketingChecked);
+                        } : undefined}
+                        role={!info.required ? "button" : undefined}
+                        tabIndex={!info.required ? 0 : undefined}
+                        onKeyDown={!info.required ? (e) => {
+                          if (e.key === " " || e.key === "Enter") {
+                            e.preventDefault();
+                            if (key === "analytics") setAnalyticsChecked(!analyticsChecked);
+                            if (key === "marketing") setMarketingChecked(!marketingChecked);
+                          }
+                        } : undefined}
                       >
                         <div className="relative flex items-center justify-center mt-0.5 shrink-0">
-                          <input
-                            type="checkbox"
-                            checked={isChecked}
-                            disabled={info.required}
-                            onChange={(e) => {
-                              if (key === "analytics") setAnalyticsChecked(e.target.checked);
-                              if (key === "marketing") setMarketingChecked(e.target.checked);
-                            }}
-                            className="peer sr-only"
-                            aria-label={`${info.label} aktivieren`}
-                          />
                           <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
                             isChecked 
                               ? info.required
                                 ? "bg-green-500 border-green-500"
                                 : "bg-[var(--color-red-500)] border-[var(--color-red-500)] text-white"
-                              : "bg-white border-gray-300 peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-[var(--color-red-500)] peer-active:border-[var(--color-red-500)]"
-                          }`}>
+                              : "bg-white border-gray-300"
+                          }`}
+                            aria-hidden="true"
+                          >
                             {isChecked && (
                               <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -323,7 +327,7 @@ export default function CookieConsent() {
                             {info.description}
                           </p>
                         </div>
-                      </label>
+                      </div>
                       
                       {/* Cookie Detail Expansion */}
                       {relatedCookies.length > 0 && (
