@@ -4,7 +4,7 @@ import { DeviceProvider } from "@/components/providers/DeviceProvider";
 import"./globals.css";
 import nextDynamic from "next/dynamic";
 import StickyHeader from"@/components/StickyHeader";
-import { generateLocalBusinessSchema, generateWebSiteSchema, siteUrl } from"@/lib/schema";
+import { generateLocalBusinessSchema, generateWebSiteSchema, generateProductSchema, siteUrl } from"@/lib/schema";
 import { companyInfo } from "@/lib/data/company";
 import { SkipNav } from "@/components/ui/SkipNav";
 import { AnnouncerProvider } from "@/components/providers/Announcer";
@@ -137,6 +137,10 @@ export default function RootLayout({
      <link rel="icon" href="/favicon.ico" sizes="48x48" />
      <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />
      <link rel="apple-touch-icon" href="/apple-icon.png" />
+     <script
+       type="application/ld+json"
+       dangerouslySetInnerHTML={{ __html: JSON.stringify(generateProductSchema()) }}
+     />
    </head>
    <body
       className={`${plusJakarta.variable} ${dmSans.variable} font-sans text-[color:var(--text-primary)] min-h-[100dvh] flex flex-col antialiased bg-gray-50`}

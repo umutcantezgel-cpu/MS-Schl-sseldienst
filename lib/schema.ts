@@ -285,3 +285,30 @@ export const getFAQSchema = (faqs: { question: string; answer: string }[]) => {
         }))
     };
 };
+
+export function generateProductSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Schlüsseldienst Leistung & Sicherheitstechnik",
+        "description": "24h Schlüsselnotdienst Wetzlar, zerstörungsfreie Türöffnungen und professionelle Sicherheitstechnik zum Festpreis.",
+        "image": `${siteUrl}/hero-bg.jpg`,
+        "brand": {
+            "@type": "Brand",
+            "name": companyInfo.localStore.name
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": companyInfo.financial.startingPriceValue,
+            "priceCurrency": "EUR",
+            "offerCount": "1"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "46",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    };
+}
