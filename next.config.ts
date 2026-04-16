@@ -12,9 +12,9 @@ const PUNYCODE_WWW  = `www.${PUNYCODE_HOST}`;
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    optimizeCss: true,
-  },
+  // experimental: {
+  //   optimizeCss: true,
+  // },
 
   // [SEO: Removed X-Powered-By Header und Seobility Server Configuration Fix]
   // Prevents Next.js from sending "X-Powered-By: Next.js" in response headers.
