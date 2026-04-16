@@ -28,17 +28,20 @@ export async function POST(req: Request) {
     // Edge-Logging for Vercel Function Logs (Free Tier Audit Trail)
     console.info('[CONSENT_AUDIT_TRAIL]', JSON.stringify(auditRecord));
 
-    // Try Vercel KV if available (dynamic import to avoid build errors)
+    // Try Vercel KV if available
+    /* 
     if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
       try {
-        const { kv } = await import('@vercel/kv');
-        await kv.set(`consent:${data.consent_receipt_id}`, auditRecord);
-        await kv.lpush('recent_consents', data.consent_receipt_id);
-        await kv.ltrim('recent_consents', 0, 999);
+        // Requires @vercel/kv to be installed
+        // const { kv } = await import('@vercel/kv');
+        // await kv.set(`consent:${data.consent_receipt_id}`, auditRecord);
+        // await kv.lpush('recent_consents', data.consent_receipt_id);
+        // await kv.ltrim('recent_consents', 0, 999);
       } catch (kvError) {
         console.warn('Vercel KV not configured or failed, relying on stdout logging', kvError);
       }
     }
+    */
 
     return NextResponse.json({ success: true, receiptId: data.consent_receipt_id }, { status: 200 });
 

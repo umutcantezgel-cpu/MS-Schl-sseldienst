@@ -278,6 +278,7 @@ export function getHomepageFAQs(): FAQItem[] {
     ];
 
     return homepageQuestions
+        .slice(0, 5)
         .map(q => FAQ_DATA.find(faq => faq.question === q))
         .filter((faq): faq is FAQItem => faq !== undefined);
 }

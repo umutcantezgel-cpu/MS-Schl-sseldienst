@@ -26,13 +26,13 @@ const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVi
 
 const plusJakarta = Plus_Jakarta_Sans({
  subsets: ["latin", "latin-ext"],
- display:"optional",
+ display: "swap",
  variable:"--font-display",
 });
 
 const dmSans = DM_Sans({
  subsets: ["latin", "latin-ext"],
- display:"optional",
+ display: "swap",
  variable:"--font-body",
 });
 
@@ -125,13 +125,11 @@ export default function RootLayout({
      {/* [PERF] Manual Preload for LCP WebP Logo.
           We use native <img> in StickyHeader instead of next/image for critical LCP.
           This ensures the WebP is requested at high priority instantly. */}
-     <link rel="preload" as="image" href="/images/logo-brand.svg" type="image/svg+xml" fetchPriority="high" />
+     <link rel="preload" as="image" href="/images/logo-header.webp" type="image/webp" fetchPriority="high" />
           
      {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
      <link rel="dns-prefetch" href="https://maps.googleapis.com" />
-     {/* [PERF] Logo preload removed: was pointing to wrong file (logo-neu.svg vs logo-header.svg used by StickyHeader).
-          The Next/Image priority prop in StickyHeader handles preloading correctly. */}
      {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
           die Metadata.icons API verzögert ausliefern. */}
      <link rel="icon" href="/favicon.ico" sizes="48x48" />

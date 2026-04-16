@@ -290,7 +290,7 @@ export default function HeroSection() {
             <div className="absolute bottom-[5%] md:bottom-2 left-[5%] lg:left-0 w-[75%] max-w-[360px] rounded-[1.5rem] overflow-hidden ring-[6px] ring-[var(--color-off-white)] shadow-[0_30px_60px_-15px_rgba(185,28,28,0.25)] z-20 transform-gpu -rotate-3 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
               <div className="relative aspect-[4/3] w-full bg-[var(--color-charcoal-900)]">
                 <Image
-                  src="/images/mina-saad-schluesseldienst-wetzlar-einsatzfahrzeug.jpeg"
+                  src="/images/mina-saad-schluesseldienst-wetzlar-einsatzfahrzeug.webp"
                   alt="Einsatzfahrzeug des Schlüsselnotdienstes Wetzlar"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
