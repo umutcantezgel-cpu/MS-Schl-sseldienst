@@ -187,7 +187,6 @@ export function useConsent() {
         );
         
         // Console log for local audit
-        // eslint-disable-next-line no-console
         console.info("[CONSENT-PROOF]", JSON.stringify(proofPayload));
 
         // Submit to Backend API (Vercel KV or Database)
