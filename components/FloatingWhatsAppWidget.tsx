@@ -164,8 +164,8 @@ export default function FloatingWhatsAppWidget() {
     else if (p.y >= maxY) { p.y = maxY; v.y = -Math.abs(v.y) * BOUNCE; }
 
     forceRender((n) => n + 1);
-    animFrame.current = requestAnimationFrame(animate);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
+    animFrame.current = requestAnimationFrame(() => animate());
   }, [snapToEdge]);
 
   const onPointerDown = useCallback(

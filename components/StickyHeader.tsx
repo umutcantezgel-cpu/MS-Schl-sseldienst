@@ -116,14 +116,13 @@ export default function StickyHeader() {
           >
             {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
-            {/* [PERF] Use native <img> with fetchPriority="high" for SVG to accelerate LCP */}
-            <img
+            <Image
               src="/images/logo-header.webp"
               alt="Schlüssel Schmiede Wetzlar Logo"
               width={100}
               height={100}
-              fetchPriority="high"
-              decoding="sync"
+              priority={true}
+              unoptimized={true}
               className={`object-contain max-w-[92px] max-h-[92px] ${
                 isScrolled
                   ? "w-[48px] h-[48px] sm:w-[54px] sm:h-[54px] lg:w-[60px] lg:h-[60px] xl:w-[66px] xl:h-[66px]"
