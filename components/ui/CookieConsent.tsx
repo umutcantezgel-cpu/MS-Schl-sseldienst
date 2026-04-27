@@ -40,14 +40,11 @@ export default function CookieConsent() {
   const [marketingChecked, setMarketingChecked] = useState(false);
   const [expandedCategory, setExpandedCategory] = useState<ConsentCategory | null>(null);
 
-  // [PERF-FIX] Delay banner mount so it doesn't steal LCP from the hero section.
-  const [isDelayComplete, setIsDelayComplete] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsDelayComplete(true);
-    }, 3500);
-    return () => clearTimeout(timer);
-  }, []);
+  // [DSGVO-FIX] Banner mounts immediately in DOM for §25 TTDSG compliance.
+  // Consent must be obtainable before any optional data processing begins.
+  // The visual slide-in animation (below) uses a short CSS delay to avoid
+  // competing with LCP paint, but the banner is legally interactable from mount.
+  const isDelayComplete = true;
 
   // Slide-in animation state
   const [isVisible, setIsVisible] = useState(false);
@@ -94,8 +91,7 @@ export default function CookieConsent() {
     };
   }, [consent, setShowBanner]);
 
-  // Don't render anything if delay hasn't completed
-  if (!isDelayComplete) return null;
+  // [DSGVO] Banner always renders when needed — no delay gate.
 
   const handleSaveSettings = () => {
     updateConsent({
