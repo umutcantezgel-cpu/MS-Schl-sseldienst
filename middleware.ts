@@ -155,7 +155,7 @@ export function middleware(request: NextRequest) {
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com",
         "img-src 'self' data: blob: https: http:",
         "font-src 'self' data: https://fonts.gstatic.com",
-        "connect-src 'self' https://formspree.io https://www.google-analytics.com https://vitals.vercel-insights.com https://maps.googleapis.com https://*.googleapis.com https://calendly.com https://*.calendly.com https://assets.calendly.com",
+        "connect-src 'self' https://formspree.io https://vitals.vercel-insights.com https://maps.googleapis.com https://*.googleapis.com https://calendly.com https://*.calendly.com https://assets.calendly.com",
         "frame-src 'self' https://www.google.com https://maps.google.com https://maps.googleapis.com https://calendly.com https://*.calendly.com",
         "base-uri 'self'",
         "form-action 'self' https://formspree.io",
