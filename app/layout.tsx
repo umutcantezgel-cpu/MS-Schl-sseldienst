@@ -4,13 +4,13 @@ import { DeviceProvider } from "@/components/providers/DeviceProvider";
 import"./globals.css";
 import nextDynamic from "next/dynamic";
 import StickyHeader from"@/components/StickyHeader";
-import { generateLocalBusinessSchema, generateWebSiteSchema, generateProductSchema, siteUrl } from"@/lib/schema";
+import { generateProductSchema, siteUrl } from"@/lib/schema";
 import { companyInfo } from "@/lib/data/company";
 import { SkipNav } from "@/components/ui/SkipNav";
 import { AnnouncerProvider } from "@/components/providers/Announcer";
 import MotionProvider from "@/components/providers/MotionProvider";
 import ClientShell from "@/components/ClientShell";
-import JsonLd from "@/components/seo/JsonLd";
+
 import { AppProvider } from "@/lib/context/AppContext";
 import { UIProvider } from "@/lib/context/UIContext";
 import { ToastContainer } from "@/components/ui/ToastContainer";
@@ -122,10 +122,10 @@ export default function RootLayout({
  return (
      <html lang="de" className="light" suppressHydrationWarning>
    <head>
-     {/* [PERF] Manual Preload for LCP WebP Logo.
+     {/* [PERF] Manual Preload for LCP SVG Logo.
           We use native <img> in StickyHeader instead of next/image for critical LCP.
-          This ensures the WebP is requested at high priority instantly. */}
-     <link rel="preload" as="image" href="/images/logo-header.webp" type="image/webp" fetchPriority="high" />
+          This ensures the SVG is requested at high priority instantly. */}
+     <link rel="preload" as="image" href="/images/logo-header.svg" type="image/svg+xml" fetchPriority="high" />
           
      {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
@@ -155,8 +155,6 @@ export default function RootLayout({
            <div className="flex flex-col min-h-screen relative dark-focus">
             <SkipNav />
             <ClientShell />
-            <JsonLd data={generateLocalBusinessSchema()} />
-            <JsonLd data={generateWebSiteSchema()} />
             <StickyHeader />
             <main id="main-content" className="flex-grow" aria-label="Hauptinhalt">{children}</main>
             <Footer />
