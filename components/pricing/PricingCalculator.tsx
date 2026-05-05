@@ -291,7 +291,7 @@ export default function PricingCalculator() {
               Ein Mitarbeiter ist direkt am Apparat.<br />Kein Callcenter, keine Warteschleife.
             </p>
             <p className="text-center text-[11px] text-white/35 font-medium mt-1">
-              Endpreise gem. § 19 UStG (Kleinunternehmerregelung).
+              Alle berechneten Preise verstehen sich inkl. 19% MwSt.
             </p>
 
             {/* Trust Guarantee Badges */}

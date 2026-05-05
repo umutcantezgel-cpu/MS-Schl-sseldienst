@@ -233,9 +233,6 @@ export default function Footer() {
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] lg:flex-row lg:items-center">
      <p className="leading-relaxed">
        © {new Date().getFullYear()} Schlüssel Schmiede Wetzlar · Alle Rechte vorbehalten. | Festpreis-Garantie Wetzlarer Kernstadt
-       <span className="block mt-1 lg:mt-0 lg:inline lg:ml-2">
-         | Konzept & Webdesign von <a href="https://codayweb.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors underline font-semibold text-[var(--color-charcoal-300)]">Coday</a>
-       </span>
      </p>
       <nav aria-label="Rechtliche Informationen">
        <ul className="flex flex-wrap gap-4">

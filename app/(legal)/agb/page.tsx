@@ -42,7 +42,7 @@ export default function AGBPage() {
 
             <LegalSection>
                 <TLDRBox title="Wichtigste Punkte im Überblick" icon="info">
-                    <p>Wir arbeiten mit <strong>transparenten Festpreisen ab 99,- €</strong> zzgl. Anfahrt. Die Anfahrtskosten werden Ihnen immer <strong>vorab telefonisch genau genannt</strong>.</p>
+                    <p>Wir arbeiten mit <strong>transparenten Festpreisen ab 99,- € (inkl. 19% MwSt.)</strong> zzgl. Anfahrt. Die Anfahrtskosten werden Ihnen immer <strong>vorab telefonisch genau genannt</strong>.</p>
                     <p>Bei sofort auszuführenden Notdiensten erlischt das 14-tägige <HoverGlossary explanation="Das gesetzliche Recht, einen Vertrag innerhalb von 14 Tagen zu widerrufen. Bei Notdiensten entfällt dieses Recht jedoch.">Widerrufsrecht</HoverGlossary> gemäß <HoverGlossary explanation="Ein Paragraph im Bürgerlichen Gesetzbuch, der ausdrücklich regelt, dass bei zwingend bestellten Reparaturarbeiten kein Rücktrittsrecht besteht."><strong>§ 312g Abs. 2 Nr. 11 BGB</strong></HoverGlossary>. Stornieren Sie den Auftrag erst, wenn unser Techniker bereits unterwegs oder vor Ort ist, fällt eine branchenübliche <HoverGlossary explanation="Eine pauschale Entschädigung für die Zeit und Benzinkosten unseres Technikers, wenn er umsonst anreist."><strong>Leerfahrtpauschale (Höhe je nach Einsatzzeit)</strong></HoverGlossary> an.</p>
                 </TLDRBox>
             </LegalSection>
@@ -76,7 +76,7 @@ export default function AGBPage() {
             <LegalSection id="3-preise">
                 <h2 className="mt-0">3. Preise, Zuschläge & Anfahrtskosten</h2>
                 <TLDRBox title="Unsere Preisphilosophie">
-                    <p>Wir distanzieren uns strikt von unseriösen Lockangeboten. Wenn Sie uns anrufen, nennen wir Ihnen einen <strong>verbindlichen Endpreis</strong> für eine einfache Öffnung. Sie zahlen exakt das, was vereinbart wurde.</p>
+                    <p>Wir distanzieren uns strikt von unseriösen Lockangeboten. Wenn Sie uns anrufen, nennen wir Ihnen einen <strong>verbindlichen Endpreis (inkl. 19% MwSt.)</strong> für eine einfache Öffnung. Sie zahlen exakt das, was vereinbart wurde.</p>
                 </TLDRBox>
                 <p>3.1. Es gelten die zum Zeitpunkt des Vertragsschlusses auf der Webseite unter <Link href="/preise">Preise</Link> ausgewiesenen Festpreise und Anfahrtskosten bzw. die am Telefon individuell verhandelten Tarife.</p>
                 <p>3.2. <strong>Grundtarif Türöffnung:</strong> Für die Basis-Dienstleistung des Öffnens einer nicht-verschlossenen, sondern lediglich zugefallenen Haus- oder Wohnungstür berechnen wir innerhalb der Kernarbeitszeiten (Montag bis Freitag, 06:00 Uhr bis 19:59 Uhr) ein Festpreis-Honorar ab 99,00 € (brutto).</p>

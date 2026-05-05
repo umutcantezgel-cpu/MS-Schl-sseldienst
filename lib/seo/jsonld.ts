@@ -101,6 +101,8 @@ export function createLocalBusinessSchema() {
         currenciesAccepted: "EUR",
         slogan: companyInfo.localStore.tagline,
         foundingDate: companyInfo.foundedYear.toString(),
+        vatID: companyInfo.vatId,
+        taxID: companyInfo.taxId,
         knowsLanguage: ["de", "en", "tr"],
         // [SERP: Price Carousel] OfferCatalog with structured pricing
         hasOfferCatalog: {

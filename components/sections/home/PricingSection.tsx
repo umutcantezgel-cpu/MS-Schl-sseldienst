@@ -221,7 +221,7 @@ export function PricingSection() {
 
       {/* Unified Footnote */}
       <Typography variant="small" color="tertiary" align="center" className="mt-8 italic max-w-3xl mx-auto block">
-       *Basispreis für zugefallene, nicht verschlossene Standardtüren. Zzgl. Anfahrt außerhalb der Wetzlarer Kernstadt. Endpreise gem. § 19 UStG (Kleinunternehmerregelung).
+       *Basispreis für zugefallene, nicht verschlossene Standardtüren. Zzgl. Anfahrt außerhalb der Wetzlarer Kernstadt. {companyInfo.financial.pricingTexts?.legalNote || "Alle berechneten Preise verstehen sich inkl. 19% MwSt."}
       </Typography>
 
       <div className="mt-10 text-center">

@@ -83,8 +83,8 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">4. Steuerliche Angaben</h2>
                 <p>Die steuerliche Identifikation ist für die korrekte Rechnungsstellung und gewerbliche Transparenz notwendig.</p>
                 <ul>
+                    <li><strong>Umsatzsteuer-Identifikationsnummer (gemäß § 27a UStG):</strong> DE 282140471</li>
                     <li><strong>Steuernummer:</strong> 03986300160</li>
-                    <li><strong>Umsatzsteuer-ID:</strong> Wird nicht erteilt, da Befreiung als Kleinunternehmen gemäß § 19 UStG vorliegt.</li>
                 </ul>
             </LegalSection>
 

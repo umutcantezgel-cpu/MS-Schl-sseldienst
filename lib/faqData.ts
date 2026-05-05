@@ -16,7 +16,7 @@ export const FAQ_DATA: FAQItem[] = [
     // ============ KOSTEN & PREISE ============
     {
         question: "Was kostet ein Schlüsseldienst in Wetzlar?",
-        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 99 Euro (Endpreis gem. § 19 UStG). Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. In der Wetzlarer Kernstadt fallen keine Anfahrtsgebühren an.",
+        answer: "Wir wissen, wie sehr versteckte Kosten verärgern. Deshalb öffnen wir zugefallene Türen ab 99 Euro (Endpreis inkl. 19% MwSt.). Sie erfahren den exakten Preis immer verbindlich am Telefon, noch bevor unser Techniker überhaupt losfährt. In der Wetzlarer Kernstadt fallen keine Anfahrtsgebühren an.",
         category: "kosten",
     },
     {
@@ -142,7 +142,7 @@ export const FAQ_DATA: FAQItem[] = [
     },
     {
         question: "Gibt es einen 24h Schlüsseldienst in Wetzlar ohne Abzocke?",
-        answer: "Ja, die Schlüssel Schmiede Wetzlar ist ein echter lokaler Fachbetrieb ohne zwischengeschaltetes Callcenter. Alle Preise sind transparente Endpreise gem. §19 UStG. Sie erreichen auch nachts immer direkt einen Monteur.",
+        answer: "Ja, die Schlüssel Schmiede Wetzlar ist ein echter lokaler Fachbetrieb ohne zwischengeschaltetes Callcenter. Alle Preise sind transparente Endpreise inkl. 19% MwSt. Sie erreichen auch nachts immer direkt einen Monteur.",
         category: "sicherheit",
     },
     {

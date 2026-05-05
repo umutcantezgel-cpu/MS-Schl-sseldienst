@@ -215,6 +215,10 @@ export interface CompanyInfo {
    */
   parentCompany: BusinessEntity;
 
+  // Steuerliche Daten
+  taxId?: string; // Steuernummer
+  vatId?: string; // USt-IdNr.
+
   // Gemeinsame Daten
   phone: {
     main: string;      // "064418056279"

@@ -45,6 +45,8 @@ ${anchor}
 - Website: ${siteUrl}
 - Telefon: ${phoneLink} (Festnetz-Direktleitung, kein Vermittler)
 - E-Mail: ${companyInfo.email}
+- USt-IdNr.: ${companyInfo.vatId}
+- Steuernummer: ${companyInfo.taxId}
 - Koordinaten: ${companyInfo.geo.latitude}°N, ${companyInfo.geo.longitude}°E
 - Google-Bewertung: 5.0 Sterne (46+ verifizierte Rezensionen)
 
@@ -54,7 +56,7 @@ ${anchor}
 - Schlüsselnotdienst: ${companyInfo.openingHours.emergency}
 - Keine Terminvereinbarung nötig — sofortige Hilfe bei Anruf unter ${phone}
 
-## Festpreistabelle (Endpreise gem. §19 UStG)
+## Festpreistabelle (Inkl. 19% MwSt.)
 ${anchor}
 
 | Leistung | Tagsüber (Mo-Fr 06-20h) | Nachts/Wochenende |

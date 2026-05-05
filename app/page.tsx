@@ -12,46 +12,23 @@ import { createOrganizationSchema, createLocalBusinessSchema, createWebsiteSchem
 import { getAllTestimonials } from "@/lib/data/testimonials";
 import AIAnswerBox from "@/components/seo/AIAnswerBox";
 
-// ── [PERF] Below-the-fold sections: lazy-loaded to slash Main Thread work, TBT & Speed Index ──
-const PricingSection = nextDynamic(() => import("@/components/sections/home/PricingSection").then(mod => mod.PricingSection), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[500px]" role="status" aria-label="Preise werden geladen" />,
-});
-const ServicesSection = nextDynamic(() => import("@/components/sections/home/ServicesSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[400px]" role="status" aria-label="Leistungen werden geladen" />,
-});
-const WhyUsSection = nextDynamic(() => import("@/components/sections/home/WhyUsSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[350px]" role="status" aria-label="Vorteile werden geladen" />,
-});
-const TrustMetricsSection = nextDynamic(() => import("@/components/sections/home/TrustMetricsSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[200px]" role="status" aria-label="Kennzahlen werden geladen" />,
-});
-const WerkstattImageSection = nextDynamic(() => import("@/components/sections/home/WerkstattImageSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[400px]" role="status" aria-label="Werkstatt wird geladen" />,
-});
-const FAQSection = nextDynamic(() => import("@/components/sections/home/FAQSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[300px]" role="status" aria-label="FAQ werden geladen" />,
-});
-const SeoContentSection = nextDynamic(() => import("@/components/sections/home/SeoContentSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[250px]" role="status" aria-label="Inhalte werden geladen" />,
-});
+import { PricingSection } from "@/components/sections/home/PricingSection";
+import ServicesSection from "@/components/sections/home/ServicesSection";
+import WhyUsSection from "@/components/sections/home/WhyUsSection";
+import TrustMetricsSection from "@/components/sections/home/TrustMetricsSection";
+import WerkstattImageSection from "@/components/sections/home/WerkstattImageSection";
+import FAQSection from "@/components/sections/home/FAQSection";
+import SeoContentSection from "@/components/sections/home/SeoContentSection";
 
-const InteractiveMapSection = nextDynamic(() => import("@/components/sections/home/InteractiveMapSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[600px]" role="status" aria-label="Karte wird geladen" />,
-});
-const ContactSection = nextDynamic(() => import("@/components/sections/home/ContactSection"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-[500px]" role="status" aria-label="Kontaktformular wird geladen" />,
-});
-const PersonalizedHero = nextDynamic(() => import("@/components/growth/PersonalizedHero"));
-const PersonalizedCTA = nextDynamic(() => import("@/components/growth/PersonalizedCTA"));
-const TestimonialCarousel = nextDynamic(() => import("@/components/sections/TestimonialCarousel").then(mod => mod.TestimonialCarousel), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-96 rounded-xl" role="status" aria-label="Bewertungen werden geladen" />,
-});
-const ProcessSteps = nextDynamic(() => import("@/components/trust/ProcessSteps"), {
-  loading: () => <div className="animate-pulse bg-gray-100 h-64 rounded-xl" role="status" aria-label="Ablauf wird geladen" />,
-});
+import InteractiveMapSection from "@/components/sections/home/InteractiveMapSection";
+import ContactSection from "@/components/sections/home/ContactSection";
+import PersonalizedHero from "@/components/growth/PersonalizedHero";
+import PersonalizedCTA from "@/components/growth/PersonalizedCTA";
+import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
+import ProcessSteps from "@/components/trust/ProcessSteps";
 
 export const metadata = generateSharedMetadata({
-  title: "Schlüsseldienst Wetzlar | 24h Notdienst ab 99€ | Schlüssel Schmiede",
+  title: "Schlüsseldienst Wetzlar | 24h Notdienst ab 99€",
   description: "Zerstörungsfreie Türöffnungen vom Fachbetrieb in Wetzlar. Erleben Sie unseren 24h Notdienst mit transparenter, verbindlicher Preisauskunft vorab.",
   path: "/",
   exactTitle: true,

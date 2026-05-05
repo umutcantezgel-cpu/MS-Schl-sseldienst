@@ -147,7 +147,7 @@ export default function PreisePage() {
      </StaggerItem>
      <StaggerItem animation={entryAnimations.scaleFade}>
       <p className="mt-8 text-sm text-[color:var(--text-tertiary)] text-center italic max-w-xl mx-auto">
-       Alle Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gem. § 19 UStG wird keine Umsatzsteuer ausgewiesen.
+       Alle berechneten Preise verstehen sich als Endpreise inklusive 19% MwSt.
       </p>
      </StaggerItem>
     </StaggerReveal>

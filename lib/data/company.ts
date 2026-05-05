@@ -18,6 +18,8 @@ export const companyInfo: CompanyInfo = {
     state: "Hessen",
     country: "Deutschland"
   },
+  taxId: "03986300160",
+  vatId: "DE 282140471",
   phone: {
     main: "064418056279",
     formatted: "06441 80 56 279",
@@ -39,7 +41,7 @@ export const companyInfo: CompanyInfo = {
       baseNote: "Basispreis für eine zugefallene, nicht verschlossene Standardtür an Werktagen (Mo–Fr, 06:00–19:59 Uhr). Zzgl. Anfahrt außerhalb der Wetzlarer Kernstadt.",
       consistencyNote: "In den weitaus meisten Fällen bleibt es bei diesem Preis.",
       transparencyNote: "Mehraufwand? Wird vor Ort abgesprochen, nie ohne Ihr OK.",
-      legalNote: "Alle Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gem. § 19 UStG wird keine Umsatzsteuer ausgewiesen."
+      legalNote: "Alle Preise verstehen sich als Endpreise inklusive 19% der gesetzlichen Mehrwertsteuer."
     }
   },
   partnership: {

@@ -78,3 +78,4 @@ netlify.toml
 # Agent / AI tool artifacts
 .system_generated/
 dev.log
+.env*.local

@@ -170,14 +170,14 @@ export default function HeroSection() {
               itemProp="headline"
               className="text-[color:var(--text-primary)] !mt-0 !mb-0 text-balance text-[clamp(26px,7vw,32px)] sm:text-4xl md:text-[52px] lg:text-5xl xl:text-[52px] font-extrabold tracking-tight leading-[1.1]"
             >
-              Schlüssel Schmiede Wetzlar
+              Schlüsseldienst Wetzlar
               {' '}
               <span className="relative inline-flex items-center align-middle bg-[var(--color-red-600)] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-lg sm:rounded-xl shadow-md -rotate-2 ml-1 sm:ml-3 -translate-y-1">
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24h Notdienst</span>
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.05em] sm:tracking-[0.1em] m-0">24h Notdienst ab 99€</span>
               </span>
               {' '}
               <span className="block w-full text-[color:var(--text-secondary)] mt-2 font-semibold text-[18px] sm:text-[24px]">
-                Ladenlokal in der Langgasse & Mobiler Notdienst
+                Schlüssel Schmiede: Ladenlokal & Mobiler Notdienst
               </span>
             </h1>
             </div>

@@ -62,6 +62,7 @@ const nextConfig: NextConfig = {
     return [
       // ═════════════════════════════════════════════════════════════════════
       // [SEO: WWW Enforcer und non-www to www canonical redirect]
+      // Catch both Punycode AND raw UTF-8 host headers (for old crawlers)
       // ═════════════════════════════════════════════════════════════════════
       {
         source: "/:path*",
@@ -69,6 +70,17 @@ const nextConfig: NextConfig = {
           {
             type: "host",
             value: PUNYCODE_HOST,
+          },
+        ],
+        destination: `https://${PUNYCODE_WWW}/:path*`,
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "wetzlar-schlüsseldienst.de",
           },
         ],
         destination: `https://${PUNYCODE_WWW}/:path*`,
