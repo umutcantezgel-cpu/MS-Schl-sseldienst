@@ -16,7 +16,7 @@ import { PricingSection } from "@/components/sections/home/PricingSection";
 import ServicesSection from "@/components/sections/home/ServicesSection";
 import WhyUsSection from "@/components/sections/home/WhyUsSection";
 import TrustMetricsSection from "@/components/sections/home/TrustMetricsSection";
-import WerkstattImageSection from "@/components/sections/home/WerkstattImageSection";
+
 import FAQSection from "@/components/sections/home/FAQSection";
 import SeoContentSection from "@/components/sections/home/SeoContentSection";
 
@@ -66,7 +66,6 @@ export default function HomePage() {
       <WhyUsSection />
       <TrustMetricsSection />
       <InteractiveMapSection />
-      <WerkstattImageSection />
       <ProcessSteps />
       
       {/* Testimonials */}
