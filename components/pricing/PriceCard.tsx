@@ -74,7 +74,11 @@ export default function PriceCard({
           </span>
         )}
         <span className={`${typeof price === "number" ? "text-5xl sm:text-[3.5rem]" : "text-3xl"} font-black leading-none tracking-tighter tabular-nums ${isPopular ? "text-[var(--color-red-500)]" : "text-[color:var(--text-primary)]"}`}>
-          {price}
+          {typeof price === "number" 
+            ? (price % 1 !== 0 
+                ? price.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                : price.toLocaleString('de-DE'))
+            : price}
         </span>
         {typeof price === "number" && (
           <span className={`text-2xl font-bold mb-0.5 ${isPopular ? "text-red-400" : "text-[color:var(--text-secondary)]"}`}>
