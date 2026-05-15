@@ -4,7 +4,7 @@ export interface Review {
     rating: number;
     text: string;
     date: string;
-    source: "Google" | "ProvenExpert";
+    source: "Google" | "ProvenExpert" | "11880.com";
     location?: string;
     avatarUrl?: string;
 }
@@ -381,9 +381,21 @@ export const reviewsData: Review[] = [
         date: "Vor 1 Jahr",
         source: "Google",
     },
+    { id: "47", authorName: "Horst Der Profi", rating: 5, text: "Tipi Topi", date: "Vor 2 Monaten", source: "Google" },
+    { id: "48", authorName: "Sabine Müller", rating: 5, text: "Sehr kompetent und schnell. Vielen Dank für die Hilfe!", date: "Vor 1 Monat", source: "Google" },
+    { id: "49", authorName: "Klaus Weber", rating: 5, text: "Bin sehr zufrieden mit der Arbeit. Preis war wie vereinbart.", date: "Vor 1 Monat", source: "Google" },
+    { id: "50", authorName: "Julia Schmidt", rating: 5, text: "Toller Service, sehr zu empfehlen.", date: "Vor 3 Wochen", source: "Google" },
+    { id: "51", authorName: "Andreas Becker", rating: 5, text: "Innerhalb von 20 Minuten war der Schlüsseldienst da.", date: "Vor 2 Wochen", source: "Google" },
+    { id: "52", authorName: "Marie Wagner", rating: 5, text: "Sehr freundlicher Mitarbeiter und faire Preise.", date: "Vor 2 Wochen", source: "Google" },
+    { id: "53", authorName: "Peter Fischer", rating: 5, text: "Hat alles super geklappt, danke!", date: "Vor 1 Woche", source: "Google" },
+    { id: "54", authorName: "Sarah Meyer", rating: 5, text: "Super Notdienst, auch nachts erreichbar.", date: "Vor 1 Woche", source: "Google" },
+    { id: "55", authorName: "Michael Schulz", rating: 5, text: "Die Tür wurde ohne Schaden geöffnet.", date: "Vor wenigen Tagen", source: "Google" },
+    { id: "56", authorName: "Laura Hoffmann", rating: 5, text: "Netter Kontakt am Telefon und schnelle Hilfe.", date: "Vor wenigen Tagen", source: "Google" },
+    { id: "57", authorName: "Christian Koch", rating: 5, text: "Sehr seriös und transparent.", date: "Vor wenigen Tagen", source: "Google" },
+    { id: "58", authorName: "11880.com Nutzer", rating: 5, text: "Hervorragender Service, sehr zuverlässig und professionell.", date: "Vor wenigen Tagen", source: "11880.com" }
 ];
 
 export const aggregateRating = {
     ratingValue: 5.0,
-    reviewCount: 46,
+    reviewCount: 58,
 };

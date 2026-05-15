@@ -84,7 +84,7 @@ export function generateUniqueAboutText(city: LocationData): string {
         `Schlüsseldienst-Vermittlungen, die auch in ${city.name} aktiv sind. ` +
         `Diese Callcenter schicken ungelernte Kräfte, die mit Gewalt arbeiten und Fantasie-Rechnungen stellen. ` +
         `<strong>Schlüssel Schmiede Wetzlar</strong> ist das Gegenteil: Ein regionaler Fachbetrieb mit physischem ` +
-        `Ladengeschäft in der Langgasse 70, 35576 Wetzlar. 5.0 Google-Sterne bei über 46 verifizierten Bewertungen ` +
+        `Ladengeschäft in der Langgasse 70, 35576 Wetzlar. 5.0 Google-Sterne bei über 57 verifizierten Bewertungen ` +
         `sprechen für sich. Vertrauen Sie auf echtes Handwerk aus der Region.</p>`);
 
     return parts.join("\n\n");

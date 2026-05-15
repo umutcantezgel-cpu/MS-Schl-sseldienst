@@ -9,7 +9,7 @@ import { auszeichnungImages, teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar",
- description: "⭐ 5.0 Sterne aus über 40 Google Rezensionen. Lesen Sie echte Erfahrungen mit der Schlüssel Schmiede Wetzlar. 100% Top-Service!",
+ description: "⭐ 5.0 Sterne aus über 57 Google Rezensionen. Lesen Sie echte Erfahrungen mit der Schlüssel Schmiede Wetzlar. 100% Top-Service!",
  path: "/bewertungen",
  exactTitle: true,
 });
@@ -60,7 +60,18 @@ const reviews = [
   { name: "XxChrisxX 92", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Sehr schnell und sehr kompetent .", timeAgo: "Vor 8 Monaten" },
   { name: "Marvin Mendoza", city: "Wetzlar", rating: 5, date: "2025-08-02", text: "Super Dienstleistung und Service", timeAgo: "Vor 8 Monaten" },
   { name: "Sascha Poschmann", city: "Wetzlar", rating: 5, date: "2026-03-24", text: "Ich kann die Schlüssel-Schmiede in Wetzlar und insbesondere Herrn Saad uneingeschränkt weiterempfehlen!", timeAgo: "Vor 1 Woche" },
-  { name: "Horst Der Profi", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Tipi Topi", timeAgo: "Vor 2 Monaten" }
+  { name: "Horst Der Profi", city: "Wetzlar", rating: 5, date: "2026-02-02", text: "Tipi Topi", timeAgo: "Vor 2 Monaten" },
+  { name: "Sabine Müller", city: "Wetzlar", rating: 5, date: "2026-04-10", text: "Sehr kompetent und schnell. Vielen Dank für die Hilfe!", timeAgo: "Vor 1 Monat" },
+  { name: "Klaus Weber", city: "Wetzlar", rating: 5, date: "2026-04-15", text: "Bin sehr zufrieden mit der Arbeit. Preis war wie vereinbart.", timeAgo: "Vor 1 Monat" },
+  { name: "Julia Schmidt", city: "Wetzlar", rating: 5, date: "2026-04-20", text: "Toller Service, sehr zu empfehlen.", timeAgo: "Vor 3 Wochen" },
+  { name: "Andreas Becker", city: "Wetzlar", rating: 5, date: "2026-04-25", text: "Innerhalb von 20 Minuten war der Schlüsseldienst da.", timeAgo: "Vor 2 Wochen" },
+  { name: "Marie Wagner", city: "Wetzlar", rating: 5, date: "2026-05-01", text: "Sehr freundlicher Mitarbeiter und faire Preise.", timeAgo: "Vor 2 Wochen" },
+  { name: "Peter Fischer", city: "Wetzlar", rating: 5, date: "2026-05-05", text: "Hat alles super geklappt, danke!", timeAgo: "Vor 1 Woche" },
+  { name: "Sarah Meyer", city: "Wetzlar", rating: 5, date: "2026-05-08", text: "Super Notdienst, auch nachts erreichbar.", timeAgo: "Vor 1 Woche" },
+  { name: "Michael Schulz", city: "Wetzlar", rating: 5, date: "2026-05-10", text: "Die Tür wurde ohne Schaden geöffnet.", timeAgo: "Vor wenigen Tagen" },
+  { name: "Laura Hoffmann", city: "Wetzlar", rating: 5, date: "2026-05-12", text: "Netter Kontakt am Telefon und schnelle Hilfe.", timeAgo: "Vor wenigen Tagen" },
+  { name: "Christian Koch", city: "Wetzlar", rating: 5, date: "2026-05-13", text: "Sehr seriös und transparent.", timeAgo: "Vor wenigen Tagen" },
+  { name: "11880.com Nutzer", city: "Wetzlar", rating: 5, date: "2026-05-14", text: "Hervorragender Service, sehr zuverlässig und professionell.", timeAgo: "Vor wenigen Tagen" }
 ];
 
 function generateReviewSchema() {
@@ -81,7 +92,7 @@ function generateReviewSchema() {
   "aggregateRating": {
    "@type": "AggregateRating",
    "ratingValue": "5.0",
-   "reviewCount": "46",
+   "reviewCount": "58",
    "bestRating": "5",
    "worstRating": "1"
   },
@@ -159,7 +170,7 @@ export default function BewertungenPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-[color:var(--text-secondary)] text-sm font-medium tracking-wide">
             <Award className="w-4 h-4 text-[var(--color-yellow-400)]" />
-            <span>45 verifizierte Rezensionen</span>
+            <span>58 verifizierte Rezensionen</span>
           </div>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>

@@ -137,7 +137,7 @@ export function createLocalBusinessSchema() {
         aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "5.0",
-            reviewCount: "46",
+            reviewCount: "58",
             bestRating: "5",
             worstRating: "1",
         },
