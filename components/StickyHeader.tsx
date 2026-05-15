@@ -125,8 +125,8 @@ export default function StickyHeader() {
               unoptimized
               className={`object-contain transition-all duration-500 ease-out ${
                 isScrolled
-                  ? "h-[28px] w-auto sm:h-[32px] lg:h-[38px] xl:h-[42px]"
-                  : "h-[36px] w-auto sm:h-[42px] lg:h-[48px] xl:h-[52px]"
+                  ? "h-[32px] w-[140px] sm:h-[38px] sm:w-[166px] lg:h-[44px] lg:w-[193px] xl:h-[48px] xl:w-[210px]"
+                  : "h-[42px] w-[184px] sm:h-[48px] sm:w-[210px] lg:h-[56px] lg:w-[245px] xl:h-[62px] xl:w-[272px]"
               }`}
             />
           </Link>
@@ -416,7 +416,7 @@ export default function StickyHeader() {
                   alt="Schlüssel Schmiede Wetzlar Logo"
                   width={356}
                   height={81}
-                  className="h-[28px] w-auto max-h-[28px] object-contain"
+                  className="h-[38px] w-[166px] object-contain"
                   unoptimized
                 />
               </Link>
