@@ -71,7 +71,7 @@ export default function SicherheitstechnikPage() {
       }}
     />
     {/* Background Atmosphere increased visibility */}
-    <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/generated/schluesseldienst-wetzlar-panzerriegel-altbau-holztuer.webp)] bg-cover bg-center"></div>
+    <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/bg-sicherheitstechnik.png)] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent z-0"></div>
 
     <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">

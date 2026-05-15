@@ -236,7 +236,7 @@ export const tueroeffnungImages: ImageAsset[] = [
     category: "tueroeffnung",
   },
   {
-    src: "/images/schloss-mit-schluessel-tueroeffnung-schluesseldienst-wetzlar.webp",
+    src: "/images/schloss-mit-schluessel-tueroeffnung-schluesseldienst-wetzlar.jpeg",
     alt: "Schloss mit Schlüssel bei Türöffnung und Schlüsseldienst Wetzlar",
     title: "Schloss mit Schlüssel und Türöffnung",
     width: 1200,
