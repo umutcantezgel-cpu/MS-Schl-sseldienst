@@ -117,16 +117,16 @@ export default function StickyHeader() {
             {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
-              src="/images/logo-source-1024.png"
+              src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
-              width={512}
-              height={512}
+              width={356}
+              height={81}
               priority={true}
-              quality={100}
+              unoptimized
               className={`object-contain transition-all duration-500 ease-out ${
                 isScrolled
-                  ? "w-[52px] h-[52px] sm:w-[58px] sm:h-[58px] lg:w-[64px] lg:h-[64px] xl:w-[70px] xl:h-[70px]"
-                  : "w-[68px] h-[68px] sm:w-[80px] sm:h-[80px] lg:w-[90px] lg:h-[90px] xl:w-[96px] xl:h-[96px]"
+                  ? "h-[28px] w-auto sm:h-[32px] lg:h-[38px] xl:h-[42px]"
+                  : "h-[36px] w-auto sm:h-[42px] lg:h-[48px] xl:h-[52px]"
               }`}
             />
           </Link>
@@ -414,9 +414,9 @@ export default function StickyHeader() {
                 <Image
                   src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar Logo"
-                  width={120}
-                  height={120}
-                  className="w-[44px] h-[44px] max-w-[44px] max-h-[44px] object-contain"
+                  width={356}
+                  height={81}
+                  className="h-[28px] w-auto max-h-[28px] object-contain"
                   unoptimized
                 />
               </Link>
