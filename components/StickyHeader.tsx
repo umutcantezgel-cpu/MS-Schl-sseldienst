@@ -111,7 +111,7 @@ export default function StickyHeader() {
           {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
           <Link
             href="/"
-            className="flex-shrink-0 relative flex items-center cursor-pointer transition-transform duration-300 hover:scale-[1.02] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] rounded-xl"
+            className="flex-shrink-0 relative flex items-center cursor-pointer transition-transform duration-300 hover:scale-[1.02] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] rounded-xl -ml-2 lg:-ml-4"
             aria-label="Startseite und Schlüssel Schmiede Wetzlar"
           >
             {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
