@@ -117,7 +117,7 @@ export function middleware(request: NextRequest) {
             if (isPanicWindow) {
                 // [BEHAVIORAL] Silent rewrite — URL stays "/"
                 const emergencyUrl = request.nextUrl.clone();
-                emergencyUrl.pathname = '/_emergency';
+                emergencyUrl.pathname = '/emergency';
                 const panicResponse = NextResponse.rewrite(emergencyUrl);
                 panicResponse.headers.set('x-panic-mode', 'active');
                 panicResponse.headers.set('x-berlin-hour', berlinHour.toString());

@@ -4,6 +4,7 @@ import { ArrowRight, Key, Phone } from"lucide-react";
 import { buttonVariants } from"@/components/ui/button";
 import { cn } from"@/lib/utils";
 import { generateSharedMetadata } from"@/lib/metadata";
+import PathDisplay from"@/components/debug/PathDisplay";
 
 export const metadata = generateSharedMetadata({
  title: "Seite nicht gefunden",
@@ -30,7 +31,7 @@ export default async function NotFound() {
     Seite nicht gefunden
    </h1>
    <p className="mt-4 text-lg text-[color:var(--text-secondary)] max-w-md">
-    Diese Seite existiert nicht und aber wir können Ihnen trotzdem helfen.
+    Diese Seite existiert leider nicht, aber wir können Ihnen trotzdem helfen.
    </p>
 
    {/* Popular Pages */}
@@ -80,7 +81,9 @@ export default async function NotFound() {
      06441 8056279 anrufen
     </a>
    </div>
+
+   {/* Debug: Show actual pathname so customer screenshots reveal the real URL */}
+   <PathDisplay />
   </div>
  );
 }
-
