@@ -87,7 +87,7 @@ export default function AutooeffnungPage() {
               <br />
               <span className="text-[color:var(--text-secondary)]">Zerstörungsfreie Autoöffnung.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Ihr Autoschlüssel ist eingeschlossen? Wir öffnen Ihr Fahrzeug schnell, professionell und garantiert ohne Lackkratzer zum fairen Festpreis ab 149€.
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function AutooeffnungPage() {
    {/* Content Section */}
    <section className="px-[var(--section-px)] py-24 md:py-32 relative z-20">
     <div className="mx-auto max-w-4xl">
-     <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+     <StaggerReveal className="prose prose-lg prose-slate max-w-none mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="flex items-center gap-3 mb-4">
          <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
@@ -127,25 +127,25 @@ export default function AutooeffnungPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
-          <Car className="h-6 w-6" />
+        <div className="group flex flex-col items-center text-center gap-6 p-8 md:p-10 rounded-[32px] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-all duration-300 hover:-translate-y-1">
+         <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-colors duration-300">
+          <Car className="h-10 w-10" strokeWidth={1.5} />
          </div>
          <div>
-          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">Alle Marken & Modelle</h3>
-          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-[var(--color-red-500)] transition-colors">Alle Marken & Modelle</h3>
+          <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Egal ob VW, Audi, BMW, Mercedes oder andere Marken - wir haben das Know-how und das Spezialwerkzeug für nahezu jedes Fahrzeug.
           </p>
          </div>
         </div>
 
-        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
-          <ShieldCheck className="h-6 w-6" />
+        <div className="group flex flex-col items-center text-center gap-6 p-8 md:p-10 rounded-[32px] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-all duration-300 hover:-translate-y-1">
+         <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-colors duration-300">
+          <ShieldCheck className="h-10 w-10" strokeWidth={1.5} />
          </div>
          <div>
-          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">100% Zerstörungsfrei</h3>
-          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0">
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-[var(--color-red-500)] transition-colors">100% Zerstörungsfrei</h3>
+          <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Wir öffnen Ihr Auto garantiert ohne Beschädigung an Lack, Elektronik oder Schloss. Wir verwenden Luftkissen und spezielle kunststoffummantelte Werkzeuge.
           </p>
          </div>

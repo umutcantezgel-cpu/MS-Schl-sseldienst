@@ -100,7 +100,7 @@ export default function TuroeffnungPage() {
               <br />
               <span className="text-[color:var(--text-secondary)]">Türöffnung in Wetzlar.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 99€ und garantiert ohne versteckte Kosten.
             </p>
           </div>

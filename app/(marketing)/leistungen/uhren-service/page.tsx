@@ -89,7 +89,7 @@ export default function UhrenServicePage() {
               Uhren-Service{" "}
               <span className="text-stone-600">Schnell & Einfach.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Ihre Uhr steht still oder das Armband ist kaputt? Wir wechseln Batterien und tauschen oder kürzen Gliederarmbänder für gängige Uhrenmarken.
             </p>
           </div>

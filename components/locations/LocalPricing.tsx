@@ -115,7 +115,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                         <Phone className="w-5 h-5 transition-transform group-hover:rotate-12 shrink-0" />
                         <span className="whitespace-nowrap">06441-8056279</span>
                     </div>
-                    <span className="text-sm sm:text-lg sm:opacity-80 break-words hyphens-auto">Preisauskunft für {city.name}</span>
+                    <span className="text-sm sm:text-lg sm:opacity-80 break-words hyphens-none">Preisauskunft für {city.name}</span>
                 </a>
                 <span className="text-sm text-[color:var(--text-tertiary)] text-center font-medium tracking-widest uppercase">Verbindlicher Preis wird vor Abfahrt genannt</span>
             </div>

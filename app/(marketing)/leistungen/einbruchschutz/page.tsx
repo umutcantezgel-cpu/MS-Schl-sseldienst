@@ -85,7 +85,7 @@ export default function EinbruchschutzPage() {
               Soforthilfe bei{" "}
               <span className="text-[var(--color-red-500)]">Einbruchschäden.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "auto" }} lang="de">
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "none" }} lang="de">
               Nach einem Einbruch stellen wir sofort die mechanische Sicherheit Ihrer Türen wieder her. Wir reparieren Beschläge, tauschen Schließzylinder aus und beraten Sie präventiv.
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function EinbruchschutzPage() {
    {/* Problem-Analyse */}
    <section className="px-[var(--section-px)] py-24 md:py-32 relative z-20">
     <div className="mx-auto max-w-4xl">
-     <StaggerReveal className="prose prose-lg prose-slate mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+     <StaggerReveal className="prose prose-lg prose-slate max-w-none mx-auto" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="flex items-center gap-3 mb-4">
          <span className="h-px w-8 bg-[var(--color-red-500)]"></span>
@@ -123,29 +123,29 @@ export default function EinbruchschutzPage() {
 
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <div className="grid gap-8 sm:grid-cols-2 mb-16">
-        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-shadow">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
-          <ShieldAlert className="h-6 w-6" />
+        <div className="group flex flex-col items-center text-center gap-6 p-8 md:p-10 rounded-[32px] bg-white shadow-[var(--elevation-1)] border border-[var(--border-subtle)] hover:shadow-[var(--elevation-2)] transition-all duration-300 hover:-translate-y-1">
+         <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-colors duration-300">
+          <ShieldAlert className="h-10 w-10" strokeWidth={1.5} />
          </div>
          <div>
-          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-[var(--color-red-500)] transition-colors">
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-[var(--color-red-500)] transition-colors">
            Notfall: Sofort-Reparatur
           </h3>
-          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Aufgebrochene Türen sichern wir provisorisch oder reparieren sie sofort permanent, tauschen Zylinder aus und stellen den Schutz Ihres Eigentums schnellstmöglich wieder her.
           </p>
          </div>
         </div>
 
-        <div className="group flex gap-4 p-6 rounded-[var(--radius-24)] bg-emerald-50 shadow-[var(--elevation-1)] border border-emerald-100 hover:shadow-[var(--elevation-2)] transition-shadow">
-         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500 text-white">
-          <Wrench className="h-6 w-6" />
+        <div className="group flex flex-col items-center text-center gap-6 p-8 md:p-10 rounded-[32px] bg-emerald-50 shadow-[var(--elevation-1)] border border-emerald-100 hover:shadow-[var(--elevation-2)] transition-all duration-300 hover:-translate-y-1">
+         <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-white group-hover:bg-emerald-600 transition-colors duration-300">
+          <Wrench className="h-10 w-10" strokeWidth={1.5} />
          </div>
          <div>
-          <h3 className="text-2xl font-black tracking-tight text-[color:var(--text-primary)] mb-2 group-hover:text-emerald-600 transition-colors">
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-emerald-600 transition-colors">
            Geplant: Präventivberatung
           </h3>
-          <p className="text-base text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
+          <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Wir prüfen Schwachstellen bei Ihnen vor Ort. Der Großteil aller Einbrüche kann durch den professionellen Einbau von Panzerriegeln oder Fenster-Zusatzschlössern verhindert werden.
           </p>
          </div>

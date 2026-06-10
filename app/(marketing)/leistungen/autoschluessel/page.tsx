@@ -93,7 +93,7 @@ export default function AutoschluesselPage() {
               Autoschlüssel{" "}
               <span className="text-[var(--color-red-500)]">reparieren & codieren.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Gehäuse kaputt? Tasten defekt? Zweitschlüssel benötigt? Wir programmieren und reparieren Transponder-Schlüssel schnell und oft günstiger als im Autohaus direkt in Wetzlar.
             </p>
           </div>

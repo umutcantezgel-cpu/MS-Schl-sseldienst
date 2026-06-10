@@ -64,7 +64,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     </StaggerItem>
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
-                        <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-2 sm:mb-[var(--space-6)] text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.1] sm:leading-[1.05] text-[clamp(28px,7vw,64px)] break-words hyphens-auto w-full px-2 sm:px-0">
+                        <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-2 sm:mb-[var(--space-6)] text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.1] sm:leading-[1.05] text-[clamp(28px,7vw,64px)] break-words hyphens-none w-full px-2 sm:px-0">
                             {city.heroVariant ? (
                                 <span dangerouslySetInnerHTML={{ __html: city.heroVariant.replace(city.name, `<span class="text-[color:var(--value-primary)]">${city.name}</span>`) }} />
                             ) : (

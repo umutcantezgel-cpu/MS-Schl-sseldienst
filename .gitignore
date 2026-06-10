@@ -79,3 +79,4 @@ netlify.toml
 .system_generated/
 dev.log
 .env*.local
+.env*

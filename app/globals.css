@@ -167,7 +167,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    hyphens: auto;
+    hyphens: none !important;
   }
   
   body {

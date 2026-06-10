@@ -45,14 +45,14 @@ export default function ImpressumPage() {
             <LegalSection id="1-angaben">
                 <h2 className="mt-0">1. Angaben gemäß § 5 DDG</h2>
                 <p className="text-sm text-gray-500 mb-4">(Digitale-Dienste-Gesetz, ehemals § 5 TMG)</p>
-                <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
+                <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-6 rounded-xl my-4 text-base border border-gray-200 dark:border-[#27272a]">
                     <strong>Schlüsseldienst Wetzlar</strong><br />
                     Inhaberin: Mina Saad<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland
                 </div>
-                <div className="bg-gray-50 p-4 rounded-xl my-4 text-sm border border-gray-200">
+                <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-4 rounded-xl my-4 text-sm border border-gray-200 dark:border-[#27272a]">
                     <strong>Ladengeschäft (Filiale):</strong><br />
                     Langgasse 70<br />
                     35576 Wetzlar
@@ -102,7 +102,7 @@ export default function ImpressumPage() {
             <LegalSection id="6-redaktionell">
                 <h2 className="mt-0">6. Redaktionell Verantwortlicher</h2>
                 <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
-                <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
+                <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-6 rounded-xl my-4 text-base border border-gray-200 dark:border-[#27272a]">
                     <strong>Mina Saad</strong><br />
                     Gloelstraße 11<br />
                     35576 Wetzlar

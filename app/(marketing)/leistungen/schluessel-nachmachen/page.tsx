@@ -94,7 +94,7 @@ export default function SchluesselNachmachenPage() {
               Der perfekte Ersatzschlüssel{" "}
               <span className="text-[var(--color-red-500)]">in Rekordzeit.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "auto" }} lang="de">
+            <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Vom einfachen Haustürschlüssel bis zum Autoschlüssel: Wir fertigen Ihr passgenaues Duplikat direkt vor Ort. Sparen Sie Zeit und Nerven mit unserem Präzisionsservice.
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function SchluesselNachmachenPage() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
           <PriceCard
             title="Standard-Schlüssel"
-            price={9.90}
+            price="ab 9,90 €"
             description="Zimmer-, Briefkasten- und normale Haustürschlüssel."
             features={["Sofort-Mitnahme","Präzise Kopie","Passgenauigkeit",
             ]}
@@ -176,7 +176,7 @@ export default function SchluesselNachmachenPage() {
           />
           <PriceCard
             title="Fahrzeugschlüssel"
-            price={45}
+            price="ab 45,00 €"
             description="Ersatzschlüssel für Autos und Motorräder."
             features={["Moderne Transponder","Auch mit Wegfahrsperre","Schneller als Autohaus",
             ]}

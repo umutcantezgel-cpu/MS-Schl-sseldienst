@@ -23,7 +23,7 @@ export default function LocationContact({ city }: { city: LocationData }) {
                         {pickVariant(["Rufen Sie jetzt an!", "Direkt Helfer rufen!", "Sofort anrufen!"], city.slug, 9)}
                     </h2>
                     
-                    <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance max-w-prose mx-auto mb-12 break-words hyphens-auto">
+                    <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance max-w-prose mx-auto mb-12 break-words hyphens-none">
                         {desc}
                     </p>
 
