@@ -98,11 +98,6 @@ function generateReviewSchema() {
   },
   "review": reviews.map(r => ({
    "@type": "Review",
-   "itemReviewed": {
-    "@type": "Locksmith",
-    "name": "Schlüssel Schmiede Wetzlar",
-    "url": "https://www.wetzlar-schlüsseldienst.de/"
-   },
    "author": {
     "@type": "Person",
     "name": r.name 

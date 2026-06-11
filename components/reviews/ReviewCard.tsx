@@ -27,9 +27,6 @@ export default function ReviewCard({ review }: { review: Review }) {
 
   return (
     <article
-      itemProp="review"
-      itemScope
-      itemType="https://schema.org/Review"
       className="group flex flex-col bg-surface-elevated p-8 rounded-[var(--radius-16)] shadow-[var(--elevation-1)] border border-[var(--color-charcoal-100)] hover:border-[var(--value-primary)]/40 hover:shadow-[0_20px_60px_-15px_rgba(185,28,28,0.15)] hover:-translate-y-1.5 hover:scale-[1.01] transition-all duration-[var(--duration-300)] ease-out shrink-0 min-w-[85vw] sm:min-w-[380px] max-w-[420px] snap-center h-full relative overflow-hidden"
     >
       {/* Primary Accent Line Top */}
@@ -37,12 +34,6 @@ export default function ReviewCard({ review }: { review: Review }) {
 
       {/* Subtle hover glow */}
       <div className="absolute -top-20 -right-20 w-40 h-40 bg-[var(--color-red-500)]/0 group-hover:bg-[var(--color-red-500)]/5 rounded-full blur-[40px] transition-all duration-500 pointer-events-none" />
-
-      {/* Required by Google Structured Data */}
-      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Locksmith" className="hidden">
-        <meta itemProp="name" content="Schlüssel Schmiede Wetzlar" />
-        <meta itemProp="url" content="https://www.wetzlar-schlüsseldienst.de/" />
-      </div>
 
       {/* Header: Avatar + Name + Stars */}
       <div className="flex justify-between items-start mb-6 relative z-10">
@@ -61,8 +52,8 @@ export default function ReviewCard({ review }: { review: Review }) {
             )}
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-lg text-[color:var(--text-primary)] flex items-center gap-1.5" itemProp="author" itemScope itemType="https://schema.org/Person">
-              <span itemProp="name">{review.authorName}</span>
+            <span className="font-bold text-lg text-[color:var(--text-primary)] flex items-center gap-1.5">
+              <span>{review.authorName}</span>
               <CheckCircle2 className="w-4 h-4 text-status-success shrink-0" aria-label="Verifizierter Kunde" />
             </span>
             <div className="flex items-center gap-1.5 text-sm text-[color:var(--text-tertiary)] mt-0.5">
@@ -76,9 +67,7 @@ export default function ReviewCard({ review }: { review: Review }) {
 
       <div className="relative flex-1 flex flex-col mt-2">
         {/* Star Rating Above Quote */}
-        <div className="flex gap-1 mb-4 text-[var(--color-google-gold)]" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-          <meta itemProp="ratingValue" content={review.rating.toString()} />
-          <meta itemProp="bestRating" content="5" />
+        <div className="flex gap-1 mb-4 text-[var(--color-google-gold)]">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className={`h-4 w-4 ${i < review.rating ? "fill-current" : "fill-transparent text-[var(--border-subtle)]"}`} aria-hidden="true" />
           ))}
@@ -89,7 +78,6 @@ export default function ReviewCard({ review }: { review: Review }) {
 
         <p
           className="relative z-10 text-base text-[color:var(--text-secondary)] font-medium leading-relaxed italic line-clamp-4"
-          itemProp="reviewBody"
         >
           &quot;{review.text}&quot;
         </p>
