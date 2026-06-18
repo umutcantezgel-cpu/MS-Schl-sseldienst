@@ -495,7 +495,7 @@ export const auszeichnungImages: ImageAsset[] = [
 /** Hero-Bilder (Startseite Desktop & Mobile) */
 export const generatedHeroImages: ImageAsset[] = [
   {
-    src: "/images/lockpicking-tueroeffnung-schluesseldienst-wetzlar.webp",
+    src: "/images/generated/schluesseldienst-wetzlar-notdienst-werkzeug-haustuer-nacht.webp",
     alt: "Notöffnung bei Nacht im Regen und Schlüsseldienst Wetzlar Profi-Werkzeug",
     title: "Schlüssel Schmiede Wetzlar und Notöffnung bei Nacht im Regen",
     width: 1024,
@@ -515,7 +515,7 @@ export const generatedHeroImages: ImageAsset[] = [
 /** Dienstleistungs-Bilder (je Service-Seite) */
 export const generatedServiceImages: ImageAsset[] = [
   {
-    src: "/images/tueroeffnung-prozess-zerstoerungsfrei-wetzlar.jpeg",
+    src: "/images/lockpicking-tueroeffnung-schluesseldienst-wetzlar.webp",
     alt: "Spezialwerkzeug für zerstörungsfreie Türöffnung Schlüsseldienst Wetzlar",
     title: "Zerstörungsfreie Türöffnung und Spezialwerkzeug",
     width: 1024,
