@@ -1,8 +1,8 @@
 import { siteUrl } from "./schema";
 import { companyInfo } from "@/lib/data/company";
 
-export function generateServiceSchema({ title, description, url, price }: { title: string, description: string, url: string, price: number }) {
-    return {
+export function generateServiceSchema({ title, description, url, price }: { title: string, description: string, url: string, price?: number }) {
+    const baseSchema: any = {
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": title,
@@ -21,8 +21,11 @@ export function generateServiceSchema({ title, description, url, price }: { titl
                 "longitude": companyInfo.geo.longitude
             },
             "geoRadius": "50000"
-        },
-        "hasOfferCatalog": {
+        }
+    };
+
+    if (price !== undefined) {
+        baseSchema["hasOfferCatalog"] = {
             "@type": "OfferCatalog",
             "name": title,
             "itemListElement": [
@@ -39,6 +42,8 @@ export function generateServiceSchema({ title, description, url, price }: { titl
                     }
                 }
             ]
-        }
+        };
     }
+
+    return baseSchema;
 }

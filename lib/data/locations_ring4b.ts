@@ -9,7 +9,7 @@ export const ring4bLocations: LocationData[] = [
         plz: "35708",
         coordinates: { latitude: 50.7410, longitude: 8.2050 },
         logistics: { drivingTimeMinutes: "30", distanceFromHQ: 28 },
-        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 119, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
+        pricing: { basePrice: companyInfo.financial.startingPriceValue, basePriceNight: 149, basePriceWeekend: 179, travelCost: 20, travelCostText: "+ 20€ Anfahrt" },
         seo: { metaTitle: "Schlüsseldienst Haiger 24/7 Notdienst", metaDescription: "Schlüsseldienst Haiger: Türöffnung ab 99€ in Sechshelden, Allendorf & Langenaubach. In ca. 30 Min. vor Ort. 06441-8056279" },
         
         // === 10X ERWEITERUNG ===
@@ -152,7 +152,7 @@ export const ring4bLocations: LocationData[] = [
         localTestimonials: [
             {
                 name: "Karola M.",
-                quote: "Nach der Arbeit in Beilstein festgestellt: Schlüssel drinnen, Tür zu. Der Monteur war zügig da, extrem freundlich und hat die teure Haustür in Sekunden spurlos geöffnet. Die fixen 119 Euro Gesamtpreis waren jeden Cent wert.",
+                quote: "Nach der Arbeit in Beilstein festgestellt: Schlüssel drinnen, Tür zu. Der Monteur war zügig da, extrem freundlich und hat die teure Haustür in Sekunden spurlos geöffnet. Die fixen 149 Euro Gesamtpreis waren jeden Cent wert.",
                 rating: 5
             },
             {
@@ -254,7 +254,7 @@ export const ring4bLocations: LocationData[] = [
             },
             {
                 name: "Annette S.",
-                quote: "Gestern am späten Abend in Gusternhain den Schlüssel drinnen gelassen. Es war bitterkalt, aber der Monteur kümmerte sich herzlich, öffnete die dicke Tür in Sekunden und erklärte jeden Posten der 119 Euro Rechnung.",
+                quote: "Gestern am späten Abend in Gusternhain den Schlüssel drinnen gelassen. Es war bitterkalt, aber der Monteur kümmerte sich herzlich, öffnete die dicke Tür in Sekunden und erklärte jeden Posten der 149 Euro Rechnung.",
                 rating: 5
             },
             {

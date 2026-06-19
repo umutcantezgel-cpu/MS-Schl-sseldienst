@@ -33,14 +33,14 @@ export const services: Service[] = [
     id: createId("srv-02"),
     slug: createSlug("autooeffnung"),
     title: "Autoöffnung & KFZ-Öffnung",
-    shortDescription: "Fahrzeug verschlossen? Wir öffnen alle Marken beschädigungsfrei und garantieerhaltend ab 99 Euro.",
+    shortDescription: "Fahrzeug verschlossen? Wir öffnen alle Marken beschädigungsfrei und garantieerhaltend ab 149 Euro.",
     fullDescription: "Ein Moment der Unachtsamkeit und der Schlüssel liegt im verriegelten Auto. Verzweifeln Sie nicht und riskieren Sie keine zerstörerischen Selbstversuche. Unsere spezialisierten KFZ-Monteure nutzen sanfte Lockpicking-Techniken und zertifizierte Air-Wedges. Damit öffnen wir Autotüren aller Marken und von alten Liebhaberfahrzeugen bis zu hochmodernen Limousinen mit Keyless-Go und absolut kratzfrei und schonend für Ihre Fahrzeuggarantie.",
     icon: "Car",
     features: ["In der Regel ohne Lack- oder Blechschäden", "Für alle Automarken und Fabrikate", "Keine teure Neucodierung im Autohaus nötig", "Direkt vor Ort Service in wenigen Minuten"],
     benefits: ["Stressfreie Rückkehr an Ihr Lenkrad", "Weitaus günstiger als das Einschlagen der Scheibe", "Keine Wartezeiten auf langsame Abschleppdienste"],
     order: 2,
     metadata: {
-      title: "Autoöffnung Wetzlar | KFZ beschädigungsfrei öffnen ab 99€",
+      title: "Autoöffnung Wetzlar | KFZ beschädigungsfrei öffnen ab 149€",
       description: "Autoöffnung im Lahn-Dill-Kreis ohne Lackschäden. Wir knacken Fahrzeuge aller Marken sicher, professionell und ohne Garantieverlust."
     }
   },

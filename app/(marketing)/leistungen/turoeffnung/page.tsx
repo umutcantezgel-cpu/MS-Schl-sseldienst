@@ -56,7 +56,7 @@ export default function TuroeffnungPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getFAQSchema([
-      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." },
+      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 129 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." },
       { question:"Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?", answer:"Schlüssel Schmiede Wetzlar ist in 15–30 Minuten bei Ihnen und 24/7, auch nachts, an Wochenenden und Feiertagen." },
       { question:"Wird die Tür bei der Öffnung beschädigt?", answer:"In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." },
      ])),
@@ -286,7 +286,7 @@ export default function TuroeffnungPage() {
       </StaggerItem>
      <StaggerItem animation={entryAnimations.slideUpFade}>
       <div className="space-y-4">
-        <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 80 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." />
+        <FAQAccordion question="Was kostet eine Türöffnung in Wetzlar?" answer="Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 129 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." />
         <FAQAccordion question="Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?" answer="Wir sind in der Regel in 15–30 Minuten bei Ihnen vor Ort in Wetzlar und Umgebung." />
         <FAQAccordion question="Wird die Tür bei der Öffnung beschädigt?" answer="In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." />
       </div>

@@ -38,8 +38,7 @@ export default function TresoroeffnungPage() {
      __html: JSON.stringify(generateServiceSchema({
       title: "Tresoröffnung & Safe-Öffnung",
       description: "Diskrete Tresor- und Safe-Öffnung vom Wetzlarer Fachbetrieb.",
-      url: "/leistungen/tresoroeffnung",
-      price: 150
+      url: "/leistungen/tresoroeffnung"
      }))
     }}
    />

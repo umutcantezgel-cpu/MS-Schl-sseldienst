@@ -26,7 +26,7 @@ import { getFAQSchema } from "@/lib/schema";
 
 const mainServicesSchema = [
  generateServiceSchema({ title:"Türöffnung", description:"Zerstörungsfreie Türöffnung ab 99€", url:"/leistungen/turoeffnung", price: 99 }),
- generateServiceSchema({ title:"Autoöffnung", description:"Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 80 })
+ generateServiceSchema({ title:"Autoöffnung", description:"Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 149 })
 ];
 
 export const metadata = generateSharedMetadata({

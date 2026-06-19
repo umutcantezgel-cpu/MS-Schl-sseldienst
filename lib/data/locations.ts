@@ -103,7 +103,7 @@ export const locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten in der Wetzlarer Kernstadt",
@@ -212,7 +212,7 @@ export const locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Wetzlarer Kernstadt/Bezirk)",
@@ -281,7 +281,7 @@ export const locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
@@ -336,7 +336,7 @@ export const locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
@@ -387,7 +387,7 @@ export const locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
@@ -438,7 +438,7 @@ export const locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",

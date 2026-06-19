@@ -15,7 +15,7 @@ export const ring3LocationsA: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 15,
             travelCostText: "+ 15€ Anfahrt",
@@ -127,7 +127,7 @@ export const ring3LocationsA: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 15,
             travelCostText: "+ 15€ Anfahrt",
@@ -236,7 +236,7 @@ export const ring3LocationsA: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 15,
             travelCostText: "+ 15€ Anfahrt",
@@ -348,7 +348,7 @@ export const ring3LocationsA: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 15,
             travelCostText: "+ 15€ Anfahrt",

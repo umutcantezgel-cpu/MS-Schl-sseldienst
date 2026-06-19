@@ -15,7 +15,7 @@ export const ring2Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 10,
             travelCostText: "+ 10€ Anfahrt",
@@ -124,7 +124,7 @@ export const ring2Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 10,
             travelCostText: "+ 10€ Anfahrt",
@@ -236,7 +236,7 @@ export const ring2Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 10,
             travelCostText: "+ 10€ Anfahrt",
@@ -331,7 +331,7 @@ export const ring2Locations: LocationData[] = [
             },
             {
                 question: "Gibt es einen Aufpreis für Einsätze nachts oder am Wochenende in Lahnau?",
-                answer: "Ja, nachts und am Wochenende gelten angepasste Tarife (Nacht ab 119€, Wochenende ab 179€), die wir Ihnen selbstverständlich vorab am Telefon transparent mitteilen."
+                answer: "Ja, nachts und am Wochenende gelten angepasste Tarife (Nacht ab 149€, Wochenende ab 179€), die wir Ihnen selbstverständlich vorab am Telefon transparent mitteilen."
             }
         ],
         neighbors: ["schluesseldienst-wetzlar-dutenhofen", "schluesseldienst-giessen", "schluesseldienst-huettenberg"]
@@ -348,7 +348,7 @@ export const ring2Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 15,
             travelCostText: "+ 15€ Anfahrt",
@@ -460,7 +460,7 @@ export const ring2Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 15,
             travelCostText: "+ 15€ Anfahrt",

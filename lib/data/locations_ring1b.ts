@@ -15,7 +15,7 @@ export const ring1bLocations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
@@ -66,7 +66,7 @@ export const ring1bLocations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",
@@ -121,7 +121,7 @@ export const ring1bLocations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 0,
             travelCostText: "Keine Anfahrtskosten (Stadtteil Wetzlar)",

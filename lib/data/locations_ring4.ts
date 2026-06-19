@@ -15,7 +15,7 @@ export const ring4Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 20,
             travelCostText: "+ 20€ Anfahrt",
@@ -107,7 +107,7 @@ export const ring4Locations: LocationData[] = [
             },
             {
                 question: "Bleibt es immer strikt beim 99 Euro Festpreis in Herborn?",
-                answer: "Handelt es sich um eine ungeklinkt zugefallene Haustür an ganz alltäglichen Werktagen untertags, kostet Sie das reine Aufmachen pauschal 99 Euro. Die Fahrtkosten von ca. 20 Euro über die A45 werden getrennt berechnet. Am Wochenende (und nachts) bestehen tarifliche Nacht-Zuschläge (ab 119€/149€/179€)."
+                answer: "Handelt es sich um eine ungeklinkt zugefallene Haustür an ganz alltäglichen Werktagen untertags, kostet Sie das reine Aufmachen pauschal 99 Euro. Die Fahrtkosten von ca. 20 Euro über die A45 werden getrennt berechnet. Am Wochenende (und nachts) bestehen tarifliche Nacht-Zuschläge (ab 149€/149€/179€)."
             }
         ],
         neighbors: ["schluesseldienst-dillenburg", "schluesseldienst-sinn", "schluesseldienst-mittenaar"]
@@ -124,7 +124,7 @@ export const ring4Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 20,
             travelCostText: "+ 20€ Anfahrt",
@@ -233,7 +233,7 @@ export const ring4Locations: LocationData[] = [
         },
         pricing: {
             basePrice: companyInfo.financial.startingPriceValue,
-            basePriceNight: 119,
+            basePriceNight: 149,
             basePriceWeekend: 179,
             travelCost: 20,
             travelCostText: "+ 20€ Anfahrt",
