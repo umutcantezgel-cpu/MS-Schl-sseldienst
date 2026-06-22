@@ -17,7 +17,7 @@ import { generateServiceSchema } from "@/lib/serviceSchema";
 import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
-import { generatedMacroImages } from "@/lib/data/imageAssets";
+import { generatedMacroImages, getImageByFilename } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Autoschlüssel Wetzlar | Schlüsseldienst",
@@ -29,6 +29,10 @@ export const metadata = generateSharedMetadata({
 export default function AutoschluesselPage() {
   const serviceTestimonials = getTestimonialsByService("autoschluessel");
   const testimonialsToDisplay = serviceTestimonials.length >= 3 ? serviceTestimonials : getAllTestimonials();
+
+  const img1 = getImageByFilename("autoschluessel-reparatur-wetzlar.jpeg");
+  const img2 = getImageByFilename("autoschluessel-programmierung-wetzlar.jpeg");
+  const img3 = getImageByFilename("autoschluessel-gehaeuse-wechsel-wetzlar.jpeg");
 
  const breadcrumbs = [
   { name: "Leistungen", href: "/leistungen" },
@@ -124,6 +128,26 @@ export default function AutoschluesselPage() {
        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">
         Sie müssen nicht zwingend teures Geld im Autohaus lassen. Mit unserer Ausrüstung können wir Fehler auslesen, Chips programmieren und defekte Gehäuse wechseln. Kommen Sie mit Fahrzeug und allen restlichen Schlüsseln zu unserem Shop!
        </p>
+      </StaggerItem>
+
+      <StaggerItem animation={entryAnimations.slideUpFade}>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+          {img1 && (
+            <div className="rounded-[var(--radius-24)] overflow-hidden shadow-[var(--elevation-2)] border border-[var(--border-subtle)] aspect-[4/3] relative group">
+              <SeoContentImage image={img1} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          )}
+          {img2 && (
+            <div className="rounded-[var(--radius-24)] overflow-hidden shadow-[var(--elevation-2)] border border-[var(--border-subtle)] aspect-[4/3] relative group">
+              <SeoContentImage image={img2} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          )}
+          {img3 && (
+            <div className="rounded-[var(--radius-24)] overflow-hidden shadow-[var(--elevation-2)] border border-[var(--border-subtle)] aspect-[4/3] relative group">
+              <SeoContentImage image={img3} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            </div>
+          )}
+        </div>
       </StaggerItem>
 
       <StaggerItem animation={entryAnimations.slideUpFade}>

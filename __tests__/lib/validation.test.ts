@@ -69,7 +69,7 @@ describe("validation.ts", () => {
     describe("validatePhone", () => {
         it("succeeds on empty string (optional)", () => {
             expect(validatePhone("").valid).toBe(true);
-            // @ts-ignore
+            
             expect(validatePhone(null).valid).toBe(true);
         });
 

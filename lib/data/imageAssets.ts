@@ -401,6 +401,30 @@ export const schluesselImages: ImageAsset[] = [
     height: 600,
     category: "schluessel",
   },
+  {
+    src: "/images/leistungen/autoschluessel/autoschluessel-reparatur-wetzlar.jpeg",
+    alt: "Autoschlüssel Reparatur und Gehäusetausch beim Schlüsseldienst Wetzlar",
+    title: "Autoschlüssel Reparatur Wetzlar",
+    width: 1200,
+    height: 900,
+    category: "schluessel",
+  },
+  {
+    src: "/images/leistungen/autoschluessel/autoschluessel-programmierung-wetzlar.jpeg",
+    alt: "KFZ-Schlüssel Programmierung und Wegfahrsperre anlernen Wetzlar",
+    title: "KFZ-Schlüssel Programmierung Wetzlar",
+    width: 1200,
+    height: 900,
+    category: "schluessel",
+  },
+  {
+    src: "/images/leistungen/autoschluessel/autoschluessel-gehaeuse-wechsel-wetzlar.jpeg",
+    alt: "Neues Autoschlüssel Gehäuse und Fräsen in der Werkstatt Wetzlar",
+    title: "Autoschlüssel Gehäuse Wechsel Wetzlar",
+    width: 1200,
+    height: 900,
+    category: "schluessel",
+  },
 ];
 
 // ═══════════════════════════════════════════════════════════

@@ -2,7 +2,7 @@
 
 > **Production Domain:** [www.wetzlar-schlüsseldienst.de](https://www.wetzlar-schlüsseldienst.de)  
 > **Punycode:** `www.xn--wetzlar-schlsseldienst-3lc.de`  
-> **Stack:** Next.js 15 · React 19 · TypeScript · Tailwind CSS · Framer Motion
+> **Stack:** Next.js 15 · React 19 · TypeScript · Tailwind CSS v4 · Framer Motion
 
 ---
 
@@ -21,6 +21,23 @@ npm run build
 # Produktions-Build lokal testen
 npm start
 ```
+
+---
+
+## ⚙️ Environment Variables
+
+Für den lokalen Start und Deployments müssen Umgebungsvariablen konfiguriert werden. Nutze die vorbereitete `.env.example` Datei als Vorlage:
+
+```bash
+cp .env.example .env.local
+```
+
+### Wichtige Variablen:
+- `NEXT_PUBLIC_FORMSPREE_ID`: Deine Formspree ID für das Kontaktformular.
+- `FORMSPREE_EMERGENCY_ENDPOINT`: Deine Formspree URL für den Notdienst.
+- `NEXT_PUBLIC_CALENDLY_URL`: Dein Calendly Event-Link.
+- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`: API Key für das interaktive Einsatzgebiet.
+- `NEXT_PUBLIC_SITE_URL`: Kanonische URL der Seite (z.B. `http://localhost:3000`).
 
 ---
 
@@ -80,7 +97,7 @@ npm start
 
 | Metrik | Wert |
 |---|---|
-| Statische Seiten | 194 SSG Pages |
+| Statische Seiten | 233 SSG Pages |
 | TypeScript Errors | 0 |
 | ESLint Errors | 0 |
 | Build Exit Code | 0 |

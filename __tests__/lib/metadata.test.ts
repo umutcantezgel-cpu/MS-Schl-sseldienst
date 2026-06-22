@@ -50,7 +50,7 @@ describe("metadata.ts", () => {
             expect(meta.robots?.index).toBe(false);
             expect(meta.robots?.follow).toBe(false);
             // Even Google bot should be restricted
-            // @ts-ignore - The structure is known but generic TS types might not map perfectly in standard Next types
+            // The structure is known but generic TS types might not map perfectly in standard Next types
             expect(meta.robots?.googleBot?.index).toBe(false);
         });
     });
