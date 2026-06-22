@@ -62,7 +62,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
-          NEXT_PUBLIC_BASE_URL: ${{ vars.NEXT_PUBLIC_BASE_URL || 'https://schluesseldienst-wetzlar-24.de' }}
+          NEXT_PUBLIC_BASE_URL: ${{ vars.NEXT_PUBLIC_BASE_URL || 'https://www.xn--wetzlar-schlsseldienst-3lc.de' }}
           NEXT_PUBLIC_APP_VERSION: ${{ github.sha }}
 
   # ─── Job 3: Smoke Tests (optional, post-deploy) ───
@@ -81,4 +81,4 @@ jobs:
       - name: Run smoke tests
         run: node scripts/smoke-test.mjs
         env:
-          BASE_URL: ${{ vars.NEXT_PUBLIC_BASE_URL || 'https://schluesseldienst-wetzlar-24.de' }}
+          BASE_URL: ${{ vars.NEXT_PUBLIC_BASE_URL || 'https://www.xn--wetzlar-schlsseldienst-3lc.de' }}
