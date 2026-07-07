@@ -14,9 +14,9 @@ import PriceCard from"@/components/pricing/PriceCard";
 import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { generateHowToSchema } from"@/lib/schema";
+import { getProcessSchema } from"@/lib/schema";
 import { getFAQSchema } from "@/lib/schema";
-import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getServiceSchema } from"@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { tueroeffnungImages, schlossImages, generatedServiceImages, generatedHeroImages } from "@/lib/data/imageAssets";
@@ -37,7 +37,7 @@ export default function TuroeffnungPage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateServiceSchema({
+     __html: JSON.stringify(getServiceSchema({
       title:"Türöffnung",
       description:"Zerstörungsfreie Türöffnung ab 99€",
       url:"/leistungen/turoeffnung",
@@ -48,8 +48,7 @@ export default function TuroeffnungPage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateHowToSchema("Türöffnung in Wetzlar und So funktioniert der Ablauf","Schlüssel Schmiede Wetzlar öffnet zugefallene und abgesperrte Türen in Wetzlar und Umgebung zum Festpreis und zerstörungsfrei in 99% der Fälle, innerhalb von 15–30 Minuten."
-     )),
+     __html: JSON.stringify(getProcessSchema()),
     }}
    />
    <script

@@ -14,7 +14,7 @@ import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { getFAQSchema } from "@/lib/schema";
-import { generateServiceSchema } from "@/lib/serviceSchema";
+import { getServiceSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedLocalImages } from "@/lib/data/imageAssets";
@@ -35,7 +35,7 @@ export default function NotdienstPage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateServiceSchema({
+     __html: JSON.stringify(getServiceSchema({
       title: "24/7 Schlüsselnotdienst",
       description: "Bereitschaftsdienst für Türöffnungen und Autoöffnungen in Wetzlar rund um die Uhr, 365 Tage im Jahr.",
       url: "/leistungen/notdienst",

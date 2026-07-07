@@ -31,13 +31,13 @@ export const companyInfo: CompanyInfo = {
     emergency: "24 Stunden am Tag, 7 Tage die Woche, 365 Tage im Jahr"
   },
   financial: {
-    startingPrice: "99 €",
-    startingPriceValue: 99,
+    startingPrice: "129 €",
+    startingPriceValue: 129,
     travelCostWetzlar: "0 Euro",
     travelCostWetzlarValue: 0,
     acceptedPayments: ["Barzahlung", "EC-Karte", "Kreditkarte", "Überweisung"],
     pricingTexts: {
-      headline: "Türöffnung tagsüber ab 99 € (Endpreis)",
+      headline: "Türöffnung tagsüber ab 129 € (Endpreis)",
       baseNote: "Basispreis für eine zugefallene, nicht verschlossene Standardtür an Werktagen (Mo–Fr, 06:00–19:59 Uhr). Zzgl. Anfahrt außerhalb der Wetzlarer Kernstadt.",
       consistencyNote: "In den weitaus meisten Fällen bleibt es bei diesem Preis.",
       transparencyNote: "Mehraufwand? Wird vor Ort abgesprochen, nie ohne Ihr OK.",

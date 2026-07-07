@@ -14,7 +14,7 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import Link from"next/link";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getServiceSchema } from"@/lib/schema";
 import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
@@ -41,7 +41,7 @@ export default function SchliessanlagenPage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateServiceSchema({
+     __html: JSON.stringify(getServiceSchema({
       title:"Schließanlagen",
       description:"Mechanische und elektronische Schließanlagen für Wetzlar.",
       url:"/leistungen/schliessanlagen",

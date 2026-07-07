@@ -2,7 +2,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 import { getBlogPostBySlug, getAllBlogPosts } from "@/lib/data/mdx";
 import { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
-import { createArticleSchema } from "@/lib/seo/jsonld";
+import { getArticleSchema } from "@/lib/schema";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import Image from "next/image";
@@ -81,7 +81,7 @@ export default async function BlogDetailPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={createArticleSchema({
+      <JsonLd data={getArticleSchema({
         headline: post.metadata.title,
         description: post.metadata.excerpt || "",
         image: post.metadata.image ? `${siteUrl}${post.metadata.image}` : undefined,

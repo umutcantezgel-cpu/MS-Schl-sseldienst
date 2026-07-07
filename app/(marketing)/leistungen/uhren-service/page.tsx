@@ -13,7 +13,7 @@ import PriceCard from "@/components/pricing/PriceCard";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
-import { generateServiceSchema } from "@/lib/serviceSchema";
+import { getServiceSchema } from "@/lib/schema";
 import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 
@@ -38,7 +38,7 @@ export default function UhrenServicePage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateServiceSchema({
+     __html: JSON.stringify(getServiceSchema({
       title: "Uhren Service & Batteriewechsel",
       description: "Batteriewechsel und Armbandwechsel für Armbanduhren in Wetzlar.",
       url: "/leistungen/uhren-service",

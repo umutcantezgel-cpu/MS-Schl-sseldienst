@@ -21,17 +21,17 @@ import Breadcrumbs from"@/components/Breadcrumbs";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { teamImages } from "@/lib/data/imageAssets";
-import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getServiceSchema } from"@/lib/schema";
 import { getFAQSchema } from "@/lib/schema";
 
 const mainServicesSchema = [
- generateServiceSchema({ title:"Türöffnung", description:"Zerstörungsfreie Türöffnung ab 99€", url:"/leistungen/turoeffnung", price: 99 }),
- generateServiceSchema({ title:"Autoöffnung", description:"Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 149 })
+ getServiceSchema({ title:"Türöffnung", description:"Zerstörungsfreie Türöffnung ab 129€", url:"/leistungen/turoeffnung", price: 129 }),
+ getServiceSchema({ title:"Autoöffnung", description:"Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 149 })
 ];
 
 export const metadata = generateSharedMetadata({
  title: "Preise & Kosten | Schlüssel Schmiede Wetzlar",
- description: "Türöffnung ab 99€! ✔️ Verbindliche Preisnennung vor Anfahrt ✔️ Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
+ description: "Türöffnung ab 129€! ✔️ Verbindliche Preisnennung vor Anfahrt ✔️ Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
  path: "/preise",
 });
 

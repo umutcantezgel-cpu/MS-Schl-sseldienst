@@ -1,277 +1,274 @@
-import { CONTENT_GRAPH } from "./contentGraph";
-import { PRICING } from "@/components/pricing/pricing.constants";
-import { allLocations } from "@/lib/data/allLocations";
 import { companyInfo } from "@/lib/data/company";
+import { allLocations } from "@/lib/data/allLocations";
 
-// ── [SEO: Canonical Domain und Single Source of Truth] ───────────────────────
-// Human-readable: https://www.wetzlar-schlüsseldienst.de
-// Machine/Punycode: https://www.xn--wetzlar-schlsseldienst-3lc.de
-// metadataBase in layout.tsx and all Schema.org URLs derive from this value.
-// [SEO: IDN Punycode applied und verified via Python encodings.idna]
-// [GUARD: www-Enforcement] If env var is set without www, auto-prepend it.
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--wetzlar-schlsseldienst-3lc.de";
 export const siteUrl = rawSiteUrl.includes("://www.") ? rawSiteUrl : rawSiteUrl.replace("://", "://www.");
 
-export function generateLocalBusinessSchema() {
-    // Build areaServed from all location entries
+const companyName = companyInfo.localStore.name;
+const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || companyInfo.email;
+const telephone = companyInfo.phone.link;
+
+// SINGLE SOURCE OF TRUTH für Preise
+export const BASE_PRICES = {
+    door: 129,
+    car: 149,
+    safe: "auf Anfrage",
+    travel_wetzlar: 0
+};
+
+export function getOrganizationSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: companyName,
+        url: siteUrl,
+        logo: `${siteUrl}/images/logo-neu.svg`,
+        founder: {
+            "@type": "Person",
+            name: "Mina Saad"
+        },
+        contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "Customer Support",
+            email: contactEmail,
+            telephone: telephone,
+            availableLanguage: ["de", "en", "tr"]
+        },
+        sameAs: [
+            companyInfo.socialMedia.facebook,
+            companyInfo.socialMedia.instagram || "",
+            companyInfo.socialMedia.linkedin || "",
+            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
+        ].filter(Boolean)
+    };
+}
+
+export function getLocalBusinessSchema() {
     const cityPlaces = allLocations.map(loc => ({
         "@type": "City" as const,
         "name": loc.name
     }));
-    // Ensure Wetzlar itself is included
     if (!cityPlaces.some(c => c.name === "Wetzlar")) {
         cityPlaces.unshift({ "@type": "City" as const, "name": "Wetzlar" });
     }
 
     return {
         "@context": "https://schema.org",
-        // [SEO: Locksmith Entity Schema for Google Knowledge Graph]
-        // Dual @type ensures Google recognizes this as BOTH a LocalBusiness AND a Locksmith entity.
         "@type": ["LocalBusiness", "Locksmith", "Store", "EmergencyService"],
-        "name": companyInfo.localStore.name,
-        "description": `Die Schlüssel Schmiede Wetzlar fungiert als fachmännischer Ansprechpartner für modernste Sicherheitstechnik und Not-Sperrdienste an der Adresse ${companyInfo.localStore.street}, ${companyInfo.localStore.city}. Als Premium-Handwerksbetrieb fokussieren wir uns auf maximal materialschonende Öffnungen zum strikten Grundfestpreis.`,
-        "image": `${siteUrl}/hero-bg.jpg`,
-        "logo": {
-            "@type": "ImageObject",
-            "url": `${siteUrl}/images/logo-neu.svg`,
-            "width": 1200,
-            "height": 630
-        },
-        // [SEO: IDN Punycode applied und @id uses machine-readable canonical]
         "@id": `${siteUrl}/#localbusiness`,
-        "url": siteUrl,
-        "telephone": companyInfo.phone.link,
-        "email": companyInfo.email,
-        "address": {
+        name: companyName,
+        description: `${companyName} — IHK-geprüfter 24h Schlüsselnotdienst. Festpreis ab ${BASE_PRICES.door}€. Keine Anfahrtskosten in der Wetzlarer Kernstadt. Kein Callcenter.`,
+        url: siteUrl,
+        telephone: telephone,
+        email: contactEmail,
+        image: `${siteUrl}/hero-bg.jpg`,
+        logo: {
+            "@type": "ImageObject",
+            url: `${siteUrl}/images/logo-neu.svg`,
+            width: 1200,
+            height: 630
+        },
+        address: {
             "@type": "PostalAddress",
-            "streetAddress": companyInfo.localStore.street,
-            "addressLocality": companyInfo.localStore.city,
-            "addressRegion": companyInfo.localStore.state,
-            "postalCode": companyInfo.localStore.postalCode,
-            "addressCountry": "DE"
+            streetAddress: companyInfo.localStore.street,
+            addressLocality: companyInfo.localStore.city,
+            addressRegion: companyInfo.localStore.state,
+            postalCode: companyInfo.localStore.postalCode,
+            addressCountry: "DE"
         },
-        "geo": {
+        geo: {
             "@type": "GeoCoordinates",
-            "latitude": companyInfo.geo.latitude,
-            "longitude": companyInfo.geo.longitude
+            latitude: companyInfo.geo.latitude,
+            longitude: companyInfo.geo.longitude
         },
-        "areaServed": [
+        areaServed: [
             {
                 "@type": "GeoCircle",
-                "geoMidpoint": {
+                geoMidpoint: {
                     "@type": "GeoCoordinates",
-                    "latitude": companyInfo.geo.latitude,
-                    "longitude": companyInfo.geo.longitude
+                    latitude: companyInfo.geo.latitude,
+                    longitude: companyInfo.geo.longitude
                 },
-                "geoRadius": "50000"
+                geoRadius: "50000"
             },
             ...cityPlaces
         ],
-        "openingHoursSpecification": [
+        openingHoursSpecification: [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
-                ],
-                "opens": "06:00",
-                "closes": "19:59",
-                "description": "Ladenöffnungszeiten der Schlüssel Schmiede"
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "06:00",
+                closes: "19:59",
+                description: "Ladenöffnungszeiten"
             },
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday", "Tuesday", "Wednesday", "Thursday",
-                    "Friday", "Saturday", "Sunday", "PublicHolidays"
-                ],
-                "opens": "00:00",
-                "closes": "23:59",
-                "description": "24/7 Notdienst"
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "PublicHolidays"],
+                opens: "00:00",
+                closes: "23:59",
+                description: "24/7 Notdienst"
             }
         ],
-        "priceRange": companyInfo.financial.startingPrice,
-        "paymentAccepted": companyInfo.financial.acceptedPayments,
-        "currenciesAccepted": "EUR",
-        "slogan": companyInfo.localStore.tagline,
-        "foundingDate": companyInfo.foundedYear.toString(),
-        "knowsLanguage": ["de", "en", "tr"],
-        "sameAs": [
-            companyInfo.socialMedia.facebook,
-            companyInfo.socialMedia.instagram || "",
-            companyInfo.socialMedia.linkedin || "",
-            "https://www.google.com/search?q=Schl%C3%BCssel+Schmiede+Wetzlar"
-        ].filter(Boolean),
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Schlüssel Schmiede Leistungen",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Türöffnung (zugefallene Tür)",
-                        "description": "Professionelle Öffnung einer zugefallenen Tür — zerstörungsfrei in nahezu allen Fällen.",
-                        "serviceType": "Türöffnung"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": PRICING.doorFallen.day,
-                        "priceCurrency": "EUR",
-                        "unitText": "Festpreis tagsüber"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Türöffnung (abgesperrt)",
-                        "description": "Öffnung einer abgesperrten Tür mit Zylindertausch wenn nötig.",
-                        "serviceType": "Schlossaustausch"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": PRICING.doorLocked.day,
-                        "priceCurrency": "EUR",
-                        "unitText": "Festpreis tagsüber"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Autoöffnung",
-                        "description": "Professionelle Fahrzeugöffnung ohne Beschädigung aller Marken.",
-                        "serviceType": "Autoöffnung"
-                    },
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "price": PRICING.carOpening.day,
-                        "priceCurrency": "EUR",
-                        "unitText": "Festpreis tagsüber"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Schließanlagen",
-                        "description": "Beratung, Planung und Einbau von Schließanlagen für Wohn- und Gewerbeimmobilien.",
-                        "serviceType": "Schließanlagen"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Sicherheitstechnik",
-                        "description": "Einbruchschutzberatung, Zusatzschlösser, Panzerriegel und elektronische Schließsysteme.",
-                        "serviceType": "Sicherheitstechnik"
-                    }
-                }
-            ]
-        },
-        "aggregateRating": {
+        priceRange: `ab ${BASE_PRICES.door}€`,
+        paymentAccepted: companyInfo.financial.acceptedPayments,
+        currenciesAccepted: "EUR",
+        aggregateRating: {
             "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "58",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "additionalType": "https://schema.org/EmergencyService",
-        "availableChannel": {
-            "@type": "ServiceChannel",
-            "serviceType": "24/7 Emergency Telephone Hotline",
-            "servicePhone": {
-                "@type": "ContactPoint",
-                "telephone": companyInfo.phone.link,
-                "contactType": "emergency",
-                "areaServed": "DE-HE",
-                "availableLanguage": ["de", "en", "tr"]
-            }
-        },
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": ["h1", ".hero-intro", ".pricing-headline", "[data-ai-answer]"]
-        },
-        "knowsAbout": [
-            "Schlüssel nachmachen",
-            "Schließanlagen",
-            "Sicherheitstechnik",
-            "Einbruchschutz",
-            "Türöffnung",
-            "Schlossaustausch",
-            "Autoöffnung",
-            "Notdienst",
-            "Gravuren",
-            "Schlüsseldienst Wetzlar",
-            "24h Notdienst Gießen",
-            "Türöffnung Marburg",
-            "Schlüsseldienst Lahn-Dill-Kreis",
-            "Schlüsseldienst ohne Abzocke",
-            "Seriöser Schlüsseldienst Mittelhessen"
-        ]
-    };
-}
-
-export function generateWebSiteSchema() {
-    return {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": companyInfo.localStore.name,
-        "url": siteUrl,
-        "description": `Die Schlüssel Schmiede Wetzlar: Ihr kompetenter Fachbetrieb für spezialisierte Sicherheitslösungen und zerstörungsfreie Türöffnungen im Großraum Wetzlar.`,
-        "inLanguage": "de-DE",
-        "publisher": {
-            "@type": ["LocalBusiness", "Store"],
-            "@id": `${siteUrl}/#localbusiness`
-        },
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": `${siteUrl}/faq?q={search_term_string}`
-            },
-            "query-input": "required name=search_term_string"
+            ratingValue: "5.0",
+            reviewCount: "58",
+            bestRating: "5",
+            worstRating: "1"
         }
     };
 }
 
-export function generateHowToSchema(title: string, description: string) {
+export function getServiceSchema({ title, description, url, price }: { title: string; description: string; url: string; price?: number }) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: title,
+        description: description,
+        provider: {
+            "@type": "LocalBusiness",
+            name: companyName,
+            image: `${siteUrl}/images/logo.png`,
+            telephone: companyInfo.phone.main
+        },
+        areaServed: {
+            "@type": "City",
+            name: "Wetzlar"
+        },
+        url: `${siteUrl}${url}`,
+        ...(price && {
+            offers: {
+                "@type": "Offer",
+                price: price,
+                priceCurrency: "EUR"
+            }
+        })
+    };
+}
+
+export function getPricingSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: "Schlüsseldienst Leistungen & Festpreise",
+        description: "Transparente Festpreise für Türöffnungen und Sicherheitstechnik in Wetzlar und Umgebung.",
+        brand: {
+            "@type": "Brand",
+            name: companyName
+        },
+        offers: {
+            "@type": "AggregateOffer",
+            lowPrice: BASE_PRICES.door,
+            priceCurrency: "EUR",
+            offerCount: 2,
+            offers: [
+                {
+                    "@type": "Offer",
+                    name: "Türöffnung (tagsüber)",
+                    price: BASE_PRICES.door,
+                    priceCurrency: "EUR",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: "Türöffnung"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    name: "Autoöffnung",
+                    price: BASE_PRICES.car,
+                    priceCurrency: "EUR",
+                    itemOffered: {
+                        "@type": "Service",
+                        name: "Autoöffnung"
+                    }
+                }
+            ]
+        }
+    };
+}
+
+export function getPortfolioSchema(projects: { name: string; description: string; image?: string; url?: string }[]) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Referenzen & Portfolio",
+        description: "Erfolgreiche Projekte und Referenzen der Schlüssel Schmiede Wetzlar.",
+        hasPart: projects.map(proj => ({
+            "@type": "CreativeWork",
+            name: proj.name,
+            description: proj.description,
+            image: proj.image,
+            url: proj.url
+        }))
+    };
+}
+
+export function getProcessSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": title,
-        "description": description,
-        "totalTime": "PT30M",
-        "step": [
+        name: "Ablauf beim Schlüsselnotdienst",
+        description: "So funktioniert unser 24h Notdienst: Schnell, transparent und unkompliziert.",
+        totalTime: "PT30M",
+        step: [
             {
                 "@type": "HowToStep",
-                "position": 1,
-                "name": "Anruf",
-                "text": "Rufen Sie die Schlüssel Schmiede Wetzlar an unter 06441-8056279. Der Preis wird Ihnen direkt am Telefon mitgeteilt."
+                position: 1,
+                name: "Anruf",
+                text: "Sie rufen uns an und schildern kurz das Problem. Wir nennen Ihnen sofort den verbindlichen Festpreis."
             },
             {
                 "@type": "HowToStep",
-                "position": 2,
-                "name": "Anfahrt in 15–30 Minuten",
-                "text": "Unser lokaler Techniker macht sich sofort auf den Weg und ist in 15–30 Minuten bei Ihnen vor Ort."
+                position: 2,
+                name: "Anfahrt",
+                text: "Unser Techniker macht sich direkt auf den Weg und ist meist in 15-30 Minuten bei Ihnen."
             },
             {
                 "@type": "HowToStep",
-                "position": 3,
-                "name": "Professionelle Türöffnung",
-                "text": "Mit Spezialwerkzeug wird Ihre Tür zerstörungsfrei geöffnet — in nahezu allen Fällen ohne jede Beschädigung."
+                position: 3,
+                name: "Zerstörungsfreie Öffnung",
+                text: "Wir öffnen Ihre Tür mit Spezialwerkzeug in 99% der Fälle völlig ohne Beschädigung."
             },
             {
                 "@type": "HowToStep",
-                "position": 4,
-                "name": "Festpreis-Abrechnung",
-                "text": "Sie zahlen nur den vorab vereinbarten Festpreis. Keine versteckten Kosten, keine Überraschungen."
+                position: 4,
+                name: "Bezahlung",
+                text: "Sie bezahlen bequem vor Ort per EC-Karte, Kreditkarte, PayPal oder bar – exakt den vereinbarten Preis."
             }
         ]
     };
 }
 
-export const getFAQSchema = (faqs: { question: string; answer: string }[]) => {
+export function getArticleSchema(post: { headline: string; description: string; datePublished: string; dateModified?: string; url: string; author?: string; image?: string }) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: post.headline,
+        description: post.description,
+        image: post.image ? [post.image] : [`${siteUrl}/images/og-image.jpg`],
+        datePublished: post.datePublished,
+        dateModified: post.dateModified || post.datePublished,
+        url: post.url,
+        author: {
+            "@type": "Person",
+            name: post.author || "Mina Saad",
+            url: `${siteUrl}/ueber-uns`
+        },
+        publisher: {
+            "@type": "Organization",
+            name: companyName,
+            logo: {
+                "@type": "ImageObject",
+                url: `${siteUrl}/images/logo-neu.svg`
+            }
+        }
+    };
+}
+
+export function getFAQSchema(faqs: { question: string; answer: string }[]) {
     return {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -284,31 +281,17 @@ export const getFAQSchema = (faqs: { question: string; answer: string }[]) => {
             }
         }))
     };
-};
+}
 
-export function generateProductSchema() {
+export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
     return {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Schlüsseldienst Leistung & Sicherheitstechnik",
-        "description": "24h Schlüsselnotdienst Wetzlar, zerstörungsfreie Türöffnungen und professionelle Sicherheitstechnik zum Festpreis.",
-        "image": `${siteUrl}/hero-bg.jpg`,
-        "brand": {
-            "@type": "Brand",
-            "name": companyInfo.localStore.name
-        },
-        "offers": {
-            "@type": "AggregateOffer",
-            "lowPrice": companyInfo.financial.startingPriceValue,
-            "priceCurrency": "EUR",
-            "offerCount": "1"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "58",
-            "bestRating": "5",
-            "worstRating": "1"
-        }
+        "@type": "BreadcrumbList",
+        itemListElement: items.map((item, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: item.name,
+            item: item.url
+        }))
     };
 }

@@ -13,9 +13,9 @@ import PriceCard from"@/components/pricing/PriceCard";
 import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { generateHowToSchema } from"@/lib/schema";
+import { getProcessSchema } from"@/lib/schema";
 import { getFAQSchema } from "@/lib/schema";
-import { generateServiceSchema } from"@/lib/serviceSchema";
+import { getServiceSchema } from"@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
@@ -41,7 +41,7 @@ export default function AutooeffnungPage() {
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
-     __html: JSON.stringify(generateServiceSchema({
+     __html: JSON.stringify(getServiceSchema({
       title:"Autoöffnung",
       description:"Professionelle Fahrzeugöffnung ohne Beschädigung aller Marken.",
       url:"/leistungen/autooeffnung",

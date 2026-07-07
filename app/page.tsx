@@ -8,7 +8,7 @@ import nextDynamic from "next/dynamic";
 
 
 import JsonLd from "@/components/seo/JsonLd";
-import { createOrganizationSchema, createLocalBusinessSchema, createWebsiteSchema } from "@/lib/seo/jsonld";
+import { getOrganizationSchema } from "@/lib/schema";
 import { getAllTestimonials } from "@/lib/data/testimonials";
 import AIAnswerBox from "@/components/seo/AIAnswerBox";
 
@@ -41,9 +41,8 @@ export default function HomePage() {
   
   return (
     <>
-      <JsonLd data={createOrganizationSchema()} />
-      <JsonLd data={createLocalBusinessSchema()} />
-      <JsonLd data={createWebsiteSchema()} />
+      <JsonLd data={getOrganizationSchema()} />
+
       <AIAnswerBox />
       
       {/* Hero Section */}

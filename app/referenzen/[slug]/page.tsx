@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 import JsonLd from '@/components/seo/JsonLd';
-import { createArticleSchema } from '@/lib/seo/jsonld';
+import { getArticleSchema } from '@/lib/schema';
 
 export default async function CaseStudyPage({ params, searchParams }: Props) {
   const awaitedParams = await params;
@@ -49,7 +49,7 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
 
   return (
     <>
-      <JsonLd data={createArticleSchema({
+      <JsonLd data={getArticleSchema({
         headline: study.title,
         description: study.challenge || study.title,
         datePublished: new Date().toISOString(),
