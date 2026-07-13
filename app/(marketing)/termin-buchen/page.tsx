@@ -9,7 +9,7 @@ import CalendlyConsentGate from "@/components/booking/CalendlyConsentGate";
 
 export const metadata = generateSharedMetadata({
   title: "Schlüsseldienst Wetzlar | Termin buchen",
-  description: "Buchen Sie hier direkt online einen Termin für Beratungen, Sicherheits-Checks, oder Schließanlagen-Planungen.",
+  description: "Buchen Sie hier direkt online einen Termin für Beratungen, Sicherheitschecks, oder Schließanlagenplanungen.",
   path: "/termin-buchen",
 });
 

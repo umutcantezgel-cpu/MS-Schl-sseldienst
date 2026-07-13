@@ -46,12 +46,12 @@ export const ring2Locations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Hausverwaltung & Gewerbe",
-                description: "Ausgesperrt im Bürokomplex oder defekte Schließanlage im Einzelhandel? Wir ersetzen blockierte Profilzylinder und BKS-Systeme noch am selben Tag."
+                description: "Ausgesperrt im Bürokomplex oder defekte Schließanlage im Einzelhandel? Wir ersetzen blockierte Profilzylinder und BKS Systeme noch am selben Tag."
             },
             {
                 icon: "briefcase",
                 title: "Freizeit & Thermalbad (Laguna)",
-                description: "Nach dem Familienausflug in der Laguna stehen Sie vor dem verschlossenen Auto oder Wohnmobil? Unsere Techniker garantieren auch hier absolut kratzfreie KFZ-Öffnungen."
+                description: "Nach dem Familienausflug in der Laguna stehen Sie vor dem verschlossenen Auto oder Wohnmobil? Unsere Techniker garantieren auch hier absolut kratzfreie KFZ Öffnungen."
             }
         ],
 
@@ -271,8 +271,8 @@ export const ring2Locations: LocationData[] = [
             },
             {
                 icon: "briefcase",
-                title: "Pendler-Notfall zwischen Wetzlar & Gießen",
-                description: "Als Pendler morgens in Hektik die Tür zugezogen? Wir sind in 5-10 Minuten da und lösen das Problem, bevor Sie den nächsten Bus oder Zug verpassen."
+                title: "Pendlernotfall zwischen Wetzlar & Gießen",
+                description: "Als Pendler morgens in Hektik die Tür zugezogen? Wir sind in 5 bis 10 Minuten da und lösen das Problem, bevor Sie den nächsten Bus oder Zug verpassen."
             }
         ],
 
@@ -496,7 +496,7 @@ export const ring2Locations: LocationData[] = [
             {
                 icon: "briefcase",
                 title: "Wintersport am Schlossberg",
-                description: "Nach einem Tag am Ski- und Rodellift am Schlossberg festgestellt, dass der Hausschlüssel fehlt? Unser Notdienst ist auch bei Schnee und Eis schnell zur Stelle."
+                description: "Nach einem Tag am Ski und Rodellift am Schlossberg festgestellt, dass der Hausschlüssel fehlt? Unser Notdienst ist auch bei Schnee und Eis schnell zur Stelle."
             }
         ],
 

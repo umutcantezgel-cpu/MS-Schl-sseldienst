@@ -29,9 +29,9 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Fellingshausen (Biebertal). Waldrand-Schnellservice aus Wetzlar.",
         fareInfo: "Die Anfahrtsstrecke rund um den Dünsberg begleichen Sie mit einer transparenten 15-Euro-Fahrpauschale und gänzlich ohne böse Überraschungen.",
         scenarios: [
-            { icon: "home", title: "Joggen am Dünsberg", description: "Nach dem Waldlauf in Fellingshausen merken Sie: Haustür ist zugefallen, Schlüssel drinnen. Keine Panik, unsere Lockpicking-Profis öffnen spurlos in Sekunden." },
+            { icon: "home", title: "Joggen am Dünsberg", description: "Nach dem Waldlauf in Fellingshausen merken Sie: Haustür ist zugefallen, Schlüssel drinnen. Keine Panik, unsere Lockpickingprofis öffnen spurlos in Sekunden." },
             { icon: "shield-alert", title: "Blockierter Werkzeugschuppen", description: "Veraltete Vorhängeschlösser an Gartenschuppen vereisen oder rosten gerne. Wir schneiden sie ab oder öffnen sie präzise, um Ihre Gartengeräte zugänglich zu machen." },
-            { icon: "briefcase", title: "Defekte Profilzylinder", description: "Biebertaler Hanglage und Witterung belasten das Material. Klemmen Schlösser, fräsen wir millimetergenau den alten Zylinder heraus und setzen ABUS-Neuware ein." }
+            { icon: "briefcase", title: "Defekte Profilzylinder", description: "Biebertaler Hanglage und Witterung belasten das Material. Klemmen Schlösser, fräsen wir millimetergenau den alten Zylinder heraus und setzen ABUSneuware ein." }
         ],
         aboutText: `
 <p>Dort, wo der Dünsberg majestätisch über die Region wacht, liegt <strong>Fellingshausen</strong> als ruhiger Ortsteil der Gemeinde Biebertal. Naturnahes Wohnen und familiäre Nachbarschaften prägen das Bild. Wer nach einem ausgiebigen Waldspaziergang jedoch vor einer unerbittlich verschlossenen Haustür steht, weil der Schlüsselbund im Flur liegt, braucht einen Handwerker, der das Idyll nicht mit Wucherpreisen zerstört. Als echter Experte aus der Region Wetzlar ist der <strong>Schlüsseldienst Fellingshausen</strong> an Ihrer Seite.</p>
@@ -79,8 +79,8 @@ export const ring3fLocations: LocationData[] = [
         fareInfo: "Den Weg in das tiefere Biebertal berechnen wir zu einem klaren Fixpreis von exakt 15 Euro KFZ-Pauschale.",
         scenarios: [
             { icon: "home", title: "Zugezogene Fachwerktür", description: "In den alten Hofreiten reicht ein Windstoß. Zugefallene Eingänge knacken unsere lokalen Wetzlarer Schlosser mit elastischen Gleitkarten in Minuten." },
-            { icon: "shield-alert", title: "Kalter Außen-Zylinder", description: "Harte Winter in Frankenbach lassen alte Zylinder oxidieren. Eine blockierte Tür ist für unsere Spezialbohrmaschinen nur eine kurze Station." },
-            { icon: "briefcase", title: "Nebengebäude verriegelt", description: "Scheune oder Garage hakt? Bei Klemm-Defekten reinigen wir zunächst, bevor wir Ihnen direkt vor Ort einen ABUS Ersatz anbieten." }
+            { icon: "shield-alert", title: "Kalter Außenzylinder", description: "Harte Winter in Frankenbach lassen alte Zylinder oxidieren. Eine blockierte Tür ist für unsere Spezialbohrmaschinen nur eine kurze Station." },
+            { icon: "briefcase", title: "Nebengebäude verriegelt", description: "Scheune oder Garage hakt? Bei Klemmdefekten reinigen wir zunächst, bevor wir Ihnen direkt vor Ort einen ABUS Ersatz anbieten." }
         ],
         aboutText: `
 <p>Eingebettet in die mittelhessischen Hangwälder der Gemeinde Biebertal findet sich das beschaulich-ruhige <strong>Frankenbach</strong>. Ländliche Idylle und traditionelles Wohnen in alten Höfen und Eigenheimen garantieren hier eine tiefe Lebensqualität. Steckt der Wohnungsschlüssel jedoch am Samstagabend ausgerechnet von innen und die Haustür ist eiskalt zugefallen, wird diese Ruhe jäh gestört. Glücklicherweise fungiert der <strong>Schlüsseldienst Frankenbach</strong> als flinker Nachbarschafts-Helfer aus dem Wetzlarer Verbund.</p>
@@ -127,9 +127,9 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Königsberg am Rand von Biebertal. Beruhigende Sicherheit.",
         fareInfo: "Trotz der Hanglage und Anfahrt in den Höhenort berechnen wir für Königsberg ausschließlich entspannte 15 Euro Wegpauschale.",
         scenarios: [
-            { icon: "home", title: "Zugezogene Panoramaj-Haus Tür", description: "Nach dem Gang zum Briefkasten am Hangfeld rastet die Tür laut ein. Unser Picksystem löst das Problem in Biebertal spurlos in Sekunden." },
-            { icon: "shield-alert", title: "Alter Zylinderblock dreht leer", description: "Härtefälle wie durchdrehende Kastenschlösser in älteren Häusern bohren unsere Fachkräfte auf und montieren sofort DIN-Ersatzware." },
-            { icon: "briefcase", title: "Schwergängige Balkon-Schlösser", description: "Zylinder, die am Höhenwind extremer Witterung ausgesetzt sind, wechseln wir sofort gegen hochwertige ABUS Komponenten." }
+            { icon: "home", title: "Zugezogene Panoramajhaus Tür", description: "Nach dem Gang zum Briefkasten am Hangfeld rastet die Tür laut ein. Unser Picksystem löst das Problem in Biebertal spurlos in Sekunden." },
+            { icon: "shield-alert", title: "Alter Zylinderblock dreht leer", description: "Härtefälle wie durchdrehende Kastenschlösser in älteren Häusern bohren unsere Fachkräfte auf und montieren sofort DINersatzware." },
+            { icon: "briefcase", title: "Schwergängige Balkonschlösser", description: "Zylinder, die am Höhenwind extremer Witterung ausgesetzt sind, wechseln wir sofort gegen hochwertige ABUS Komponenten." }
         ],
         aboutText: `
 <p>Hoch oben über der Gemeinde Biebertal, idyllisch umgeben von ausgedehnten Waldgebieten und historischen Ruinen-Spots, liegt <strong>Königsberg</strong>. Aus dem beschaulichen Wohnort am Hang eröffnet sich ein toller Mittelhessen-Blick. Ungemütlich wird diese Höhenlage aber sofort, wenn im winterlichen Schneetreiben oder einer kräftigen Herbstböe die eigene Haustür hinter einem zufällt. Steckt der Schlüssel von innen, hilft kein Zittern, sondern nur der Griff zum Handy. Der regional verankerte <strong>Schlüsseldienst Königsberg</strong> steuert Ihren Berg zügig aus dem Wetzlarer Talkessel an.</p>
@@ -225,9 +225,9 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Rodheim-Bieber. Ihr Notdienst für das Herz von Biebertal.",
         fareInfo: "Die Anreise nach Rodheim-Bieber decken wir mit einem schmalen und verbraucherfreundlichen Zuschlag von nur 15 Euro ab.",
         scenarios: [
-            { icon: "home", title: "Zugezogene Wohnungstür", description: "Im Treppenhaus die Tür ins Schloss gefallen? Wir öffnen Mehrfamilienhaus-Türen in Biebertal-Rodheim täglich spurlos in Sekunden." },
+            { icon: "home", title: "Zugezogene Wohnungstür", description: "Im Treppenhaus die Tür ins Schloss gefallen? Wir öffnen Mehrfamilienhaustüren in Biebertalrodheim täglich spurlos in Sekunden." },
             { icon: "shield-alert", title: "Defekte Praxistür", description: "Schlösser an stark frequentierten Praxen oder Gewerbeflächen verschleißen schnell. Wir ersetzen BKS Zylinder im Handumdrehen direkt vor Ort." },
-            { icon: "briefcase", title: "Briefkasten-Schloss blockiert", description: "Rostende Minizylinder an Briefkastenanlagen fräsen unsere Techniker vorsichtig auf und setzen für wenige Euro passgenauen Ersatz ein." }
+            { icon: "briefcase", title: "Briefkastenschloss blockiert", description: "Rostende Minizylinder an Briefkastenanlagen fräsen unsere Techniker vorsichtig auf und setzen für wenige Euro passgenauen Ersatz ein." }
         ],
         aboutText: `
 <p>Das Herzstück und Verwaltungszentrum der Gemeinde Biebertal bildet zweifelsohne <strong>Rodheim-Bieber</strong>. Mit regem Gewerbe, Supermärkten, Ärzten und großen Mehrfamilienhäusern pulsiert hier das Leben. Ein verlorener Büroschlüssel oder ein im Treppenhaus vergessener Wohnungsschlüssel führt in diesem regen Umfeld schnell zu nervenaufreibenden Situationen. Bevor Hektik ausbricht, greift unser aus dem nahen Wetzlar operierender <strong>Schlüsseldienst Rodheim-Bieber</strong> sicher und professionell ein.</p>
@@ -326,7 +326,7 @@ export const ring3fLocations: LocationData[] = [
         fareInfo: "Die Strecke in das naturreiche Ahrdt honorieren wir mit einem fairen Festaufschlag für unseren Service-Pkw von gerade einmal 15 Euro.",
         scenarios: [
             { icon: "home", title: "Tür fällt durch Durchzug zu", description: "Im ländlichen Ahrdt weht ein frischer Wind. Schlägt die Haustür unbeabsichtigt zu, zieht unser Spezialist sie binnen weniger Handgriffe wieder auf." },
-            { icon: "shield-alert", title: "Briefkasten-Schlüssel weg", description: "Das kleine Briefkasten-Riegelchen hakt oder der Schlüssel ist verloren? Bevor Sie den Kasten aufbiegen, tauschen wir den kleinen Zylinder günstig aus." },
+            { icon: "shield-alert", title: "Briefkastenschlüssel weg", description: "Das kleine Briefkastenriegelchen hakt oder der Schlüssel ist verloren? Bevor Sie den Kasten aufbiegen, tauschen wir den kleinen Zylinder günstig aus." },
             { icon: "briefcase", title: "Verwettertes Garagenschloss", description: "Abseitsstehende Garagen erleiden im Hohenahrer Winter oft Korrosion am Schloss. Wir öffnen die Garage schonend und tauschen den Halbzylinder neu aus." }
         ],
         aboutText: `
@@ -374,9 +374,9 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Erda (Hohenahr). Transparenz direkt vor Ort.",
         fareInfo: "Die Strecke hinauf nach Erda verknüpfen wir mit dem vollkommen durchsichtigen Transportkosten-Anteil von glatt 15 Euro.",
         scenarios: [
-            { icon: "home", title: "Aussperrung in Siedlung", description: "Sie verlassen Ihr Eigenheim in Erda nur auf Socken und die Tür schnappt ins Schloss? Sanfte Kunststoff-Gleitkarten öffnen die Tür spurenfrei in Sekunden." },
-            { icon: "shield-alert", title: "Verklemmte Rathaus-Nebentüren", description: "Veraltete Riegel an Verwaltungstrakten oder Gewerbe-Einheiten reparieren unsere Techniker kompetent, notfalls via Zylinder-Auffräsung." },
-            { icon: "briefcase", title: "Mehrfachverriegelung defekt", description: "Wenn das Sicherheitsschloss im Wohngebiet blockiert: Wir kennen die komplexe ABUS, BKS und Kessel-Mechanik im Effeff." }
+            { icon: "home", title: "Aussperrung in Siedlung", description: "Sie verlassen Ihr Eigenheim in Erda nur auf Socken und die Tür schnappt ins Schloss? Sanfte Kunststoffgleitkarten öffnen die Tür spurenfrei in Sekunden." },
+            { icon: "shield-alert", title: "Verklemmte Rathausnebentüren", description: "Veraltete Riegel an Verwaltungstrakten oder Gewerbeeinheiten reparieren unsere Techniker kompetent, notfalls via Zylinderauffräsung." },
+            { icon: "briefcase", title: "Mehrfachverriegelung defekt", description: "Wenn das Sicherheitsschloss im Wohngebiet blockiert: Wir kennen die komplexe ABUS, BKS und Kesselmechanik im Effeff." }
         ],
         aboutText: `
 <p>Als pulsierender Hauptort und Sitz der Gemeindeverwaltung von Hohenahr verschmilzt <strong>Erda</strong> ländliche Gelassenheit mit wichtiger lokaler Gewerbe- und Einzelhandelsstruktur. Doch auch in diesem belebten Mix schlägt der Teufel oft im Detail zu: Ein verlorener Schlüsselbund beim Einkaufen oder eine vor der Nase zuschlagende Haustür lassen den Tag panisch entgleisen. Gut, dass das bestens vernetzte Team vom Wetzlarer <strong>Schlüsseldienst Erda</strong> für jede Schließanlagen-Anomalie direkt ansprechbar ist.</p>
@@ -423,9 +423,9 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Großaltenstädten. Türöffnungen ohne ländliche Extra-Kosten.",
         fareInfo: "Die Anreise auf die Hohenahrer Höhen nach Großaltenstädten deckeln wir auf einen bescheidenen KFZ-Obolus von 15 Euro.",
         scenarios: [
-            { icon: "home", title: "Defektes Haustürschloss", description: "In den alten Fachwerkhäusern klemmen oft jahrzehntealte Anlagen. Wir warten oder tauschen alte Zylinder günstig gegen sichere DIN-Neuware aus." },
-            { icon: "shield-alert", title: "Scheunentor verriegelt", description: "Rostige Hangschlösser an alten Hof- und Scheunentoren trennen unsere Wetzlarer Schlosser mit Akku-Werkzeug zügig und günstig auf." },
-            { icon: "briefcase", title: "Schlüssel bei Gartenarbeit weg", description: "Gartenarbeit rund ums Haus, Tür weht zu? Kein Problem, mit einer sanften Kunststoff-Türkarte hebeln wir klassische Türen schonend wieder auf." }
+            { icon: "home", title: "Defektes Haustürschloss", description: "In den alten Fachwerkhäusern klemmen oft jahrzehntealte Anlagen. Wir warten oder tauschen alte Zylinder günstig gegen sichere DINneuware aus." },
+            { icon: "shield-alert", title: "Scheunentor verriegelt", description: "Rostige Hangschlösser an alten Hof und Scheunentoren trennen unsere Wetzlarer Schlosser mit Akkuwerkzeug zügig und günstig auf." },
+            { icon: "briefcase", title: "Schlüssel bei Gartenarbeit weg", description: "Gartenarbeit rund ums Haus, Tür weht zu? Kein Problem, mit einer sanften Kunststofftürkarte hebeln wir klassische Türen schonend wieder auf." }
         ],
         aboutText: `
 <p>Umhüllt vom Lahn-Dill-Bergland bietet <strong>Großaltenstädten</strong> als Teil von Hohenahr urigen Dorfcharakter, ländliche Gemeinschaft und eine traumhafte Naturkulisse. Fachwerk und alte Höfe zeugen von großer landwirtschaftlicher Tradition. Eine durch Zugluft zugefallene, schwere Eichentür oder ein abgerissener Schlüssel an den alten Schlössern raubt Betroffenen oft den Nerv und besonders wenn eisiger Wind über die Höhen pfeift. Ein Anruf in Wetzlar genügt und der <strong>Schlüsseldienst Großaltenstädten</strong> ist in kürzester Zeit mit warmem Licht und ruhiger Hand zur Stelle.</p>
@@ -473,8 +473,8 @@ export const ring3fLocations: LocationData[] = [
         fareInfo: "Die Auffahrt nach Hohensolms stellen wir lediglich mit unserer statischen 15-Euro-Kfz-Reisepauschale in Rechnung.",
         scenarios: [
             { icon: "home", title: "Zugefallene Eichentür", description: "Im Wind auf dem Berg weht die schöne historische Haustür zu. Wir agieren absolut holzschonend: Mit professionellem Sperrzeug ziehen wir die Falle auf." },
-            { icon: "shield-alert", title: "Verwitterter Burg-Zylinder", description: "Schlösser an exponierter Höhenlage vereisen und korrodieren im Winter drastisch. Defekte Anlagen tauschen wir umgehend gegen neue BKS Zylinder." },
-            { icon: "briefcase", title: "Gefahr im Treppenhaus", description: "Kind in der Wohnung, Herd an, Tür zu? Wir nutzen Sondersignale, fahren im Not-Tempo auf den Berg und sind in weit unter 20 Min in Hohensolms." }
+            { icon: "shield-alert", title: "Verwitterter Burgzylinder", description: "Schlösser an exponierter Höhenlage vereisen und korrodieren im Winter drastisch. Defekte Anlagen tauschen wir umgehend gegen neue BKS Zylinder." },
+            { icon: "briefcase", title: "Gefahr im Treppenhaus", description: "Kind in der Wohnung, Herd an, Tür zu? Wir nutzen Sondersignale, fahren im Nottempo auf den Berg und sind in weit unter 20 Min in Hohensolms." }
         ],
         aboutText: `
 <p>Majestätisch thront <strong>Hohensolms</strong> als höchstgelegener und historisch markantester Ortsteil der Gemeinde Hohenahr. Umgeben von der weithin sichtbaren Burg Hohensolms pflegt dieser Ort eine tiefe Traditionsverbundenheit. Weht jedoch der raue Herbstwind kräftig über die Bergrücken und drückt das eigene Haustürblatt ins Schloss, offenbart die Idylle ihre Kehrseite. Ein abgebrochener Schlüssel bei Minusgraden erfordert keine Verzweiflung, sondern das rasche Einschreiten vom ortsnahen Wetzlarer <strong>Schlüsseldienst Hohensolms</strong>.</p>
@@ -521,7 +521,7 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Mudersbach. Verlässliche Hilfe mitten im Dorf.",
         fareInfo: "Den Weg von Wetzlar in das naturverbundene Mudersbach kompensieren wir mit fairen und glatten 15 Euro KFZ-Pauschale.",
         scenarios: [
-            { icon: "home", title: "Haustür nach Waldspaziergang zu", description: "Sie kommen vom Hundespaziergang am Wald, merken der Schlüssel fehlt und die Tür ist verriegelt? Unser Pick-Arsenal knipst die Falle ohne Zerstörung auf." },
+            { icon: "home", title: "Haustür nach Waldspaziergang zu", description: "Sie kommen vom Hundespaziergang am Wald, merken der Schlüssel fehlt und die Tür ist verriegelt? Unser Pick Arsenal knipst die Falle ohne Zerstörung auf." },
             { icon: "shield-alert", title: "Kalte Nebengebäude klemmen", description: "Feuchtigkeit aus dem nahen Forst lässt Beschläge an Garagen blockieren. Wir öffnen die Garage schonend und wechseln auf wetterdichte Markenware." },
             { icon: "briefcase", title: "Verklemmte Schiebetüren", description: "Frost in Mudersbach macht Holzhaustüren stur. Sollte der Schlüssel in der Mechanik abbrechen, extrahieren wir ihn sanft mit filigranen Ausziehaken." }
         ],
@@ -572,8 +572,8 @@ export const ring3fLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Stockhausen (Leun). Blitzhilfe direkt an der Lahn.",
         fareInfo: "Die schnelle Anfahrt über die B49 berechnen wir vollkommen pauschal und fair mit genau 15 Euro KFZ-Anteilen.",
         scenarios: [
-            { icon: "home", title: "Lahntal-Aussperrungen", description: "Sie kommen von einer Lahn-Radtour zurück und der Wohnungsschlüssel in der Packtasche fehlt? Zugezogene Türen poppen wir in Sekunden ohne Bohrspäne auf." },
-            { icon: "shield-alert", title: "Klemmschloss im Einfamilienhaus", description: "Defekte Profilzylinder fräsen unsere Wetzlarer Techniker auch sonntags professionell aus dem Rahmenblatt und montieren hochsicheren BKS-Ersatz in Minuten." },
+            { icon: "home", title: "Lahntalaussperrungen", description: "Sie kommen von einer Lahnradtour zurück und der Wohnungsschlüssel in der Packtasche fehlt? Zugezogene Türen poppen wir in Sekunden ohne Bohrspäne auf." },
+            { icon: "shield-alert", title: "Klemmschloss im Einfamilienhaus", description: "Defekte Profilzylinder fräsen unsere Wetzlarer Techniker auch sonntags professionell aus dem Rahmenblatt und montieren hochsicheren BKS Ersatz in Minuten." },
             { icon: "briefcase", title: "Verlorener Balkonschlüssel", description: "Den Schlüssel zum Terrasseneingang verloren? Wir rücken an, entsperren den alten Schließkasten und rüsten ein moderne Sicherheitsschloss nach." }
         ],
         aboutText: `

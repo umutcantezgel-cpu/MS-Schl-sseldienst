@@ -3,7 +3,7 @@ import { getAllLocationSlugs, getLocationBySlug } from "@/lib/data/allLocations"
 import { siteUrl } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { aggregateRating } from "@/components/reviews/reviews.data";
-import { getFAQSchema } from "@/lib/schema";
+import { getFAQSchema, getServiceSchema } from "@/lib/schema";
 import Script from "next/script";
 
 // Modulare High-Performance Local-Components (12-Sektionen 10x Expansion)
@@ -123,7 +123,14 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
       <Script
         id={`schema-city-${city.slug}`}
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([
+          localBusinessSchema,
+          getServiceSchema({
+            title: `Schlüsseldienst ${city.name}`,
+            description: `Zerstörungsfreie Türöffnung in ${city.name} ab 99€.`,
+            url: `/${city.slug}`
+          })
+        ]) }}
       />
       {city.faqs && city.faqs.length > 0 && (
         <Script

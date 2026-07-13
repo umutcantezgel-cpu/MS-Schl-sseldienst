@@ -20,7 +20,7 @@ import { werkstattImages, maschinenImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Schlüssel Schmiede | Schlüsseldienst Wetzlar",
- description: "Langgasse 70 in Wetzlar: ✔️ KFZ-Schlüssel Codierung ✔️ Ersatzschlüssel sofort ✔️ Gravuren & Batterieservice. Kommen Sie ohne Termin vorbei!",
+ description: "Langgasse 70 in Wetzlar: | KFZ Schlüssel Codierung | Ersatzschlüssel sofort | Gravuren & Batterieservice. Kommen Sie ohne Termin vorbei!",
  path: "/schluessel-schmiede",
  exactTitle: true,
 });
@@ -31,7 +31,7 @@ function getLocalBusinessSchema() {
   "@type": "Store",
   "@id": `${siteUrl}/schluessel-schmiede#store`,
   name: "Schlüssel Schmiede Wetzlar",
-  description: "Stationäres Ladengeschäft des Schlüssel Schmiede Wetzlar. Schlüsselanfertigung, KFZ-Schlüssel, Gravuren und persönliche Beratung.",
+  description: "Stationäres Ladengeschäft des Schlüssel Schmiede Wetzlar. Schlüsselanfertigung, KFZ Schlüssel, Gravuren und persönliche Beratung.",
   url: `${siteUrl}/schluessel-schmiede`,
   telephone: "+4964418056279",
   address: {
@@ -80,12 +80,12 @@ function getLocalBusinessSchema() {
 }
 
 const storeServices = [
- { icon: Key, title:"Schlüsselkopie", desc:"Standard-, Sicherheits- und Spezialschlüssel - präzise gefräst, sofort zum Mitnehmen.", accent:"bg-blue-500/10 text-blue-600" },
- { icon: Car, title:"KFZ-Schlüssel", desc:"Duplikation, Anfertigung und elektronische Codierung für alle gängigen Fahrzeugtypen.", accent:"bg-red-500/10 text-red-600" },
- { icon: Wrench, title:"Schlösser & Zylinder", desc:"Austausch, Reparatur und Beratung zu Schließzylindern und Kastenschlössern.", accent:"bg-amber-500/10 text-amber-600" },
- { icon: Award, title:"Gravuren", desc:"Klingelschilder, Pokale, Medaillen und Namensschilder - sauber und präzise.", accent:"bg-violet-500/10 text-violet-600" },
+ { icon: Key, title: "Schlüsselkopie", desc:"Standard-, Sicherheits- und Spezialschlüssel - präzise gefräst, sofort zum Mitnehmen.", accent:"bg-blue-500/10 text-blue-600" },
+ { icon: Car, title: "KFZ Schlüssel", desc:"Duplikation, Anfertigung und elektronische Codierung für alle gängigen Fahrzeugtypen.", accent:"bg-red-500/10 text-red-600" },
+ { icon: Wrench, title: "Schlösser & Zylinder", desc:"Austausch, Reparatur und Beratung zu Schließzylindern und Kastenschlössern.", accent:"bg-amber-500/10 text-amber-600" },
+ { icon: Award, title: "Gravuren", desc:"Klingelschilder, Pokale, Medaillen und Namensschilder - sauber und präzise.", accent:"bg-violet-500/10 text-violet-600" },
 
- { icon: Battery, title:"Batteriewechsel", desc:"Schneller Batterieservice für Uhren, Autoschlüssel und kleine Geräte.", accent:"bg-cyan-500/10 text-cyan-600" },
+ { icon: Battery, title: "Batteriewechsel", desc:"Schneller Batterieservice für Uhren, Autoschlüssel und kleine Geräte.", accent:"bg-cyan-500/10 text-cyan-600" },
 ];
 
 const faqItems = [
@@ -330,7 +330,7 @@ export default function SchluesselSchmiedePage() {
        <div className="text-center mb-16">
         <Badge variant="outline" className="mb-4 text-[var(--color-red-600)] bg-[var(--color-red-50)] border-[var(--color-red-100)]">Präzisionswerkstatt</Badge>
         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-         High-Tech KFZ-Schlüssel <br className="hidden md:block"/>Codierung & Frästechnik
+         Hightech KFZ Schlüssel <br className="hidden md:block"/>Codierung & Frästechnik
         </h2>
        </div>
       </StaggerItem>
@@ -416,7 +416,7 @@ export default function SchluesselSchmiedePage() {
       <StaggerItem animation={entryAnimations.slideUpFade} className="text-center mb-16">
         <Badge variant="outline" className="mb-4 text-violet-600 bg-violet-50 border-violet-100">Handwerkskunst im Detail</Badge>
         <h2 className="text-[32px] md:text-4xl font-extrabold tracking-tight text-balance text-[color:var(--text-primary)] leading-[1.1]">
-         Präzisions-Gravuren
+         Präzisionsgravuren
         </h2>
       </StaggerItem>
       <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -432,7 +432,7 @@ export default function SchluesselSchmiedePage() {
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/20 text-white backdrop-blur-sm">
                 <Award className="h-6 w-6" />
               </div>
-              <h3 className="text-[24px] font-extrabold text-white">Präzisions-Gravuren</h3>
+              <h3 className="text-[24px] font-extrabold text-white">Präzisionsgravuren</h3>
             </div>
             <p className="text-base text-violet-100 leading-relaxed mb-8 max-w-sm">
               Materialschonende Gravurarbeiten direkt im Laden. Für Vereine, Unternehmen oder private Erinnerungsstücke.

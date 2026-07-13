@@ -5,7 +5,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
-  title: "Barrierefreiheit unserer Schlüsseldienst-Website",
+  title: "Barrierefreiheit unserer Schlüsseldienstwebsite",
   description: "Informationen zur Barrierefreiheit des Schlüssel Schmiede Wetzlar. Wir setzen uns für eine uneingeschränkte Nutzung unserer Website ein.",
   path: "/barrierefreiheit",
 });
@@ -100,7 +100,7 @@ export default function BarrierefreiheitPage() {
               </ul>
 
               <h3 className="mt-6 text-xl font-bold text-[color:var(--text-primary)]">
-                Tastatur-Bedienbarkeit
+                Tastaturbedienbarkeit
               </h3>
               <ul className="mt-3 space-y-2 text-[color:var(--text-secondary)]">
                 <li>Alle Funktionen sind vollständig per Tastatur bedienbar</li>
@@ -111,7 +111,7 @@ export default function BarrierefreiheitPage() {
               </ul>
 
               <h3 className="mt-6 text-xl font-bold text-[color:var(--text-primary)]">
-                Screenreader-Kompatibilität
+                Screenreaderkompatibilität
               </h3>
               <ul className="mt-3 space-y-2 text-[color:var(--text-secondary)]">
                 <li>Semantisches HTML mit korrekter Landmark-Struktur</li>

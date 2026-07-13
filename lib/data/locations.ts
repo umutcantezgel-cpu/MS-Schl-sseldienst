@@ -129,7 +129,7 @@ export const locations: LocationData[] = [
             {
                 icon: "home",
                 title: "Zugefallene Haustür im Altbau",
-                description: "Ob in der verwinkelten Lahnstraße oder am Domplatz: Bei schweren Holztüren wenden wir ausschließlich modernste, materialschonende Lockpicking-Methoden an."
+                description: "Ob in der verwinkelten Lahnstraße oder am Domplatz: Bei schweren Holztüren wenden wir ausschließlich modernste, materialschonende Lockpickingmethoden an."
             },
             {
                 icon: "shield-alert",
@@ -139,7 +139,7 @@ export const locations: LocationData[] = [
             {
                 icon: "briefcase",
                 title: "Gewerbliche Schließanlagen",
-                description: "Betrieben und Büros rund um das Buderus-Areal helfen wir sofort bei defekten Zugangssystemen oder verlorenen General-Schlüsseln."
+                description: "Betrieben und Büros rund um das Buderusareal helfen wir sofort bei defekten Zugangssystemen oder verlorenen Generalschlüsseln."
             }
         ],
 

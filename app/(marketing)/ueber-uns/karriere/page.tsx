@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
   title: "Karriere & Jobs als Servicemonteur in Wetzlar",
-  description: "Wir suchen Servicemonteure (m/w/d) in Wetzlar! ✔️ Gutes Gehalt ✔️ Firmenwagen ✔️ Notdienst-Zuschläge. Jetzt lokal bewerben.",
+  description: "Wir suchen Servicemonteure (m/w/d) in Wetzlar! | Gutes Gehalt | Firmenwagen | Notdienstzuschläge. Jetzt lokal bewerben.",
   path: "/ueber-uns/karriere",
 });
 

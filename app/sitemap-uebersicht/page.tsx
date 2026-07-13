@@ -9,7 +9,7 @@ import { generateSharedMetadata } from '@/lib/metadata';
 
 export const metadata = generateSharedMetadata({
   title: 'Sitemap | Alle Seiten im Überblick',
-  description: 'Unsere vollständige HTML Sitemap. Finden Sie schnell alle Unterseiten, Leistungsbereiche und Einsatzgebiete im Lahn-Dill-Kreis.',
+  description: 'Unsere vollständige HTML Sitemap. Finden Sie schnell alle Unterseiten, Leistungsbereiche und Einsatzgebiete im Lahndillkreis.',
   path: '/sitemap-uebersicht',
 });
 
@@ -34,7 +34,7 @@ export default function SitemapPage() {
           <Breadcrumbs items={[{ name: 'Inhaltsübersicht', href: '/sitemap-uebersicht' }]} />
           
           <div className="mt-8 mb-12">
-            <h1 className="typo-h1 mb-4 text-[color:var(--text-primary)]">Vollständige Sitemap aller <span className="text-[var(--color-red-500)]">Schlüsseldienst-Seiten</span></h1>
+            <h1 className="typo-h1 mb-4 text-[color:var(--text-primary)]">Vollständige Sitemap aller <span className="text-[var(--color-red-500)]">Schlüsseldienstseiten</span></h1>
             <p className="typo-lead">Hier finden Sie eine Übersicht aller Unterseiten, Themen und Einsatzgebiete unseres Schlüsseldienstes.</p>
           </div>
 

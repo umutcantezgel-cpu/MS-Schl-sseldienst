@@ -31,7 +31,7 @@ export const ring3eLocations: LocationData[] = [
         scenarios: [
             { icon: "home", title: "Holztür zugezogen", description: "Historische und ältere Holztüren im ländlichen Daubhausen ziehen wir mittels Lockpicking sanft in Sekunden auf." },
             { icon: "shield-alert", title: "Nebeneingang defekt", description: "Rostende Schlösser oder abgebrochene Bartschlüssel am Scheunentor entfernen wir schonend und passgenau." },
-            { icon: "briefcase", title: "Modernes Smart-Home", description: "Auch bei versagenden, elektronischen Schließzylindern in Neubauten greifen unsere Spezialisten auf Notstrom oder Bypass-Aufsperrung zurück." }
+            { icon: "briefcase", title: "Modernes Smarthome", description: "Auch bei versagenden, elektronischen Schließzylindern in Neubauten greifen unsere Spezialisten auf Notstrom oder Bypassaufsperrung zurück." }
         ],
         aboutText: `
 <p><strong>Daubhausen</strong> glänzt als charmanter kleiner Ortsteil der Gemeinde Ehringshausen im Lahn-Dill-Kreis nicht nur durch naturnahe Stille, sondern auch durch seine spannende Historie als frühere Hugenottensiedlung. Alte Bausubstanzen und tiefe Verankerungen in der regionalen Geschichte prägen hier das ruhige Leben. Eine zugezogene oder blockierte Haustür zerreißt diesen Frieden schnell und nicht aber, wenn der <strong>Schlüsseldienst Daubhausen</strong> von Wetzlar aus professionell anrückt.</p>
@@ -128,8 +128,8 @@ export const ring3eLocations: LocationData[] = [
         fareInfo: "Da Greifenthal im tiefen Landbereich liegt, rechnen wir eine offene und ehrliche 15-Euro-Schutzgebühr für den Transportweg ab und keine Mondpreise.",
         scenarios: [
             { icon: "home", title: "Windzug an der Haustür", description: "Im ländlichen Greifenthal bläst es kräftig, und die Tür schlägt zu? Zugefallene Schlösser tricksen wir in Sekunden reibungslos aus." },
-            { icon: "shield-alert", title: "Verwittertes Garagentor", description: "Über Jahre ungenutzte Geräteschuppen oder Hof-Tore zerschneiden wir notgedrungen oder öffnen sie mit feiner Pick-Ausrüstung." },
-            { icon: "briefcase", title: "Abgerissener Zylinderstift", description: "Schlüssel abgebrochen und Rest steckt drin? Extrahierung der Bruchstücke per Pincette klappt oftmals ohne Neuteil-Kauf in Greifenthal." }
+            { icon: "shield-alert", title: "Verwittertes Garagentor", description: "Über Jahre ungenutzte Geräteschuppen oder Hoftore zerschneiden wir notgedrungen oder öffnen sie mit feiner Pickausrüstung." },
+            { icon: "briefcase", title: "Abgerissener Zylinderstift", description: "Schlüssel abgebrochen und Rest steckt drin? Extrahierung der Bruchstücke per Pincette klappt oftmals ohne Neuteilkauf in Greifenthal." }
         ],
         aboutText: `
 <p>Beschaulich versteckt sich <strong>Greifenthal</strong> und einer der allerkleinsten Ortsteile der Großgemeinde Ehringshausen und in den dichten Wäldern und Hügelketten des hessischen Lahn-Dill-Berglands. Hier im Weiler ticken die Uhren scheinbar langsamer, und Solidarität wird großgeschrieben. Klemmt das Haupttor am heimischen Hof oder die Haustür ist einfach verriegelt hinter einem ins Schloss gefallen, kann das mitten in der Natur existentiell stören. Der <strong>Schlüsseldienst Greifenthal</strong> navigiert als waschechter Regional-Handwerker absolut stilsicher auch in diese kleinste Ecke.</p>
@@ -178,8 +178,8 @@ export const ring3eLocations: LocationData[] = [
         heroVariant: "Aufsperrdienst für Hochelheim (Hüttenberg). Schnellste Wetzlar-Anbindung.",
         fareInfo: "Die extrem kurze Anfahrtsdistanz sorgt bei Hochelheim für eine lachhafte Fahrtkosten-Berechnung von flachen 15 Euro und fair und absolut nachvollziehbar.",
         scenarios: [
-            { icon: "home", title: "Mehrfamilienhaus Tür blockiert", description: "Sie kommen nach Hause ins Treppenhaus, aber die Wohnungstür verweigert die Öffnung? Durch spezielles Lockpicking-Handwerk entriegeln wir spurlos." },
-            { icon: "shield-alert", title: "Gewerbliche Schließung", description: "Bürotür im Hochelheimer Ortskern lässt sich nicht mehr verschließen? Austausch defekter BKS-Mechaniken in Minutenschnelle." },
+            { icon: "home", title: "Mehrfamilienhaus Tür blockiert", description: "Sie kommen nach Hause ins Treppenhaus, aber die Wohnungstür verweigert die Öffnung? Durch spezielles Lockpickinghandwerk entriegeln wir spurlos." },
+            { icon: "shield-alert", title: "Gewerbliche Schließung", description: "Bürotür im Hochelheimer Ortskern lässt sich nicht mehr verschließen? Austausch defekter BKSmechaniken in Minutenschnelle." },
             { icon: "briefcase", title: "Historisches Schloss klemmt", description: "Einige alte Wohngebäude verfügen über Kastenschlösser, die Fingerspitzengefühl erfordern. Unser Wetzlarer Betrieb verfügt über das nötige Repertoire." }
         ],
         aboutText: `
@@ -227,9 +227,9 @@ export const ring3eLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Hörnsheim (Hüttenberg). Seriöser Nachbarschafts-Service.",
         fareInfo: "Die Strecke von Wetzlar nach Hörnsheim versehen wir mit einer absolut ehrlichen Fahrtkostenpauschale von schlanken 15 Euro und keine unvorhersehbaren Zusatzkilometer.",
         scenarios: [
-            { icon: "home", title: "Kind im Haus versehentlich Tür zugezogen", description: "Ein furchteinflößender Moment für Eltern? Keine Panik. Über beschädigungsfreie Klinken-Picks sind wir sekundenschnell wieder in Ihrem Zuhause." },
+            { icon: "home", title: "Kind im Haus versehentlich Tür zugezogen", description: "Ein furchteinflößender Moment für Eltern? Keine Panik. Über beschädigungsfreie Klinkenpicks sind wir sekundenschnell wieder in Ihrem Zuhause." },
             { icon: "shield-alert", title: "Hakt der Kellereingang?", description: "Zylinder an untergeordneten Nebeneingängen korrodieren schneller. Wir brechen alte Zylinder zügig um und installieren Neuware." },
-            { icon: "briefcase", title: "Mehrfachverriegelung defekt", description: "Hochwertige Riegel-Systeme in Neubausiedlungen in Hörnsheim blockieren? Millimetergenaue Fräsen von uns beseitigen das mechanische Problem." }
+            { icon: "briefcase", title: "Mehrfachverriegelung defekt", description: "Hochwertige Riegelsysteme in Neubausiedlungen in Hörnsheim blockieren? Millimetergenaue Fräsen von uns beseitigen das mechanische Problem." }
         ],
         aboutText: `
 <p>Zusammen mit Hochelheim bildet <strong>Hörnsheim</strong> das unzertrennliche Herz der Großgemeinde Hüttenberg. Etagenwohnungen, familiäre Reihenhäuser und modernisierte Hofreiten durchziehen den ruhigen, bodenständigen Ortsteil unterhalb der Wetzlarer Ausläufer. Was tun, wenn in dieser Gelassenheit am Sonntagmorgen die Haustür unbeabsichtigt zuschnappt und der Schlüssel gut sichtbar auf der Küchenablage liegt? Der rettende, aus der Region Wetzlar anrückende <strong>Schlüsseldienst Hörnsheim</strong> ist die schnelle Antwort auf sämtliche Schlosspanik.</p>
@@ -277,7 +277,7 @@ export const ring3eLocations: LocationData[] = [
         fareInfo: "Die Anreise nach Reiskirchen verbuchen wir mit dem extrem günstigen Dorftarif von 15 Euro und eine transparente Summe ohne Kleingedrucktes.",
         scenarios: [
             { icon: "home", title: "Zugefallene Haustür", description: "Sie stehen vor der eigenen Hauswand in Reiskirchen und der Schlüssel ist drin? Ein kurzer Ruck mit der Fallengleitkarte reicht uns oft." },
-            { icon: "shield-alert", title: "Sicherheits-Check an Höfen", description: "Veraltete Scheunenschlösser können Einbrecher anziehen. Wir rüsten sensible Querriegel an ländlichen Bauten massiv auf." },
+            { icon: "shield-alert", title: "Sicherheitscheck an Höfen", description: "Veraltete Scheunenschlösser können Einbrecher anziehen. Wir rüsten sensible Querriegel an ländlichen Bauten massiv auf." },
             { icon: "briefcase", title: "Balkontür eingeklemmt", description: "Der Wind drückt die Terrassentür ins Schloss? Solange noch ein Spalt bleibt, öffnen unsere Experten per Spezialwerkzeug schadenfrei." }
         ],
         aboutText: `

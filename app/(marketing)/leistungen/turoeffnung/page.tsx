@@ -23,7 +23,7 @@ import { tueroeffnungImages, schlossImages, generatedServiceImages, generatedHer
 
 export const metadata = generateSharedMetadata({
   title: "Türöffnung Wetzlar | Schlüsseldienst",
-  description: "Zugefallen oder abgeschlossen? ✔️ Zerstörungsfreie Türöffnung zu 99% ✔️ Zertifizierter Fachbetrieb in Wetzlar. In ca. 20-30 Min. vor Ort. 📞 06441-8056279",
+  description: "Zugefallen oder abgeschlossen? | Zerstörungsfreie Türöffnung zu 99% | Zertifizierter Fachbetrieb in Wetzlar. In ca. 20 30 Min. vor Ort. 06441 8056279",
   path: "/leistungen/turoeffnung",
   exactTitle: true,
 });
@@ -38,8 +38,8 @@ export default function TuroeffnungPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
-      title:"Türöffnung",
-      description:"Zerstörungsfreie Türöffnung ab 99€",
+      title: "Türöffnung",
+      description: "Zerstörungsfreie Türöffnung ab 99€",
       url:"/leistungen/turoeffnung",
       price: 99
      }))

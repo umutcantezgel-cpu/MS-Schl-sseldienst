@@ -11,7 +11,7 @@ import { sicherheitImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
   title: "Einbruchrisiko Rechner Wetzlar | Kostenloser Test",
-  description: "Wie sicher ist Ihr Zuhause? ✔️ Kostenloser Einbruchrisiko-Check für Wetzlar ✔️ Individuelle Auswertung in 60 Sekunden. Jetzt online berechnen!",
+  description: "Wie sicher ist Ihr Zuhause? | Kostenloser Einbruchrisikocheck für Wetzlar | Individuelle Auswertung in 60 Sekunden. Jetzt online berechnen!",
   path: "/ratgeber/einbruchrisiko",
   exactTitle: true,
 });

@@ -6,8 +6,8 @@ import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Widerrufsbelehrung für Schlüsseldienst-Aufträge",
-    description: "Widerrufsbelehrung des Schlüssel Schmiede Wetzlar. ✔️ Informationen zum Widerrufsrecht ✔️ Muster-Widerrufsformular.",
+    title: "Widerrufsbelehrung für Schlüsseldienstaufträge",
+    description: "Widerrufsbelehrung des Schlüssel Schmiede Wetzlar. | Informationen zum Widerrufsrecht | Musterwiderrufsformular.",
     path: "/widerruf",
   })
 
@@ -17,7 +17,7 @@ const TOC_ITEMS = [
     { id: "3-ausuebung", title: "3. Ausübung des Widerrufs" },
     { id: "4-folgen", title: "4. Folgen des Widerrufs" },
     { id: "5-ausnahmen", title: "5. Ausnahmen vom Widerrufsrecht" },
-    { id: "6-muster-formular", title: "6. Muster-Widerrufsformular" },
+    { id: "6-muster-formular", title: "6. Musterwiderrufsformular" },
     { id: "7-kontakt", title: "7. Kontakt" },
 ]
 
@@ -84,7 +84,7 @@ export default function WiderrufPage() {
                 <p>Das Widerrufsrecht besteht <strong>nicht</strong> bei folgenden Verträgen:</p>
 
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
-                    <h3 className="text-base font-bold text-red-900 mt-0 mb-3">Ausnahme bei Notdienst-Einsätzen</h3>
+                    <h3 className="text-base font-bold text-red-900 mt-0 mb-3">Ausnahme bei Notdiensteinsätzen</h3>
                     <p className="text-red-800">Gemäß <strong>§ 356 Abs. 4 Satz 1 BGB i.V.m. § 312g Abs. 2 Nr. 11 BGB</strong> erlischt das Widerrufsrecht bei einem Vertrag zur Erbringung von Dienstleistungen, wenn der Unternehmer die Dienstleistung <strong>vollständig erbracht hat</strong> und mit der Ausführung der Dienstleistung erst begonnen hat, nachdem der Verbraucher dazu seine ausdrückliche Zustimmung gegeben und gleichzeitig seine Kenntnis davon bestätigt hat, dass er sein Widerrufsrecht bei vollständiger Vertragserfüllung durch den Unternehmer verliert.</p>
                 </div>
 
@@ -99,7 +99,7 @@ export default function WiderrufPage() {
             </LegalSection>
 
             <LegalSection id="6-muster-formular">
-                <h2 className="mt-0">6. Muster-Widerrufsformular</h2>
+                <h2 className="mt-0">6. Musterwiderrufsformular</h2>
                 <p className="text-sm text-gray-500 mb-4">(Gemäß Anlage 2 zu Artikel 246a § 1 Absatz 2 Satz 1 Nummer 1 und § 2 Absatz 2 Nummer 2 EGBGB)</p>
 
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 my-4 space-y-4">

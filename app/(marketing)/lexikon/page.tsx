@@ -7,8 +7,8 @@ import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 
 export const metadata = generateSharedMetadata({
-  title: "Sicherheits-Lexikon | Fachbegriffe einfach erklärt",
-  description: "Vom Panzerriegel bis zum Zylinder: Das Wetzlarer Lexikon für Schließtechnik & Schlüsseldienste. ✔️ Verständliche Erklärungen ✔️ Expertentipps.",
+  title: "Sicherheitslexikon | Fachbegriffe einfach erklärt",
+  description: "Vom Panzerriegel bis zum Zylinder: Das Wetzlarer Lexikon für Schließtechnik & Schlüsseldienste. | Verständliche Erklärungen | Expertentipps.",
   path: "/lexikon",
   exactTitle: true,
 });
@@ -34,7 +34,7 @@ export default function LexikonIndexPage() {
               </StaggerItem>
               <StaggerItem animation={entryAnimations.slideUpFade}>
                 <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                  Schließtechnik-Lexikon
+                  Schließtechniklexikon
                 </h1>
               </StaggerItem>
               <StaggerItem animation={entryAnimations.slideUpFade}>

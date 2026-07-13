@@ -1,7 +1,7 @@
 import RiskCalculator from "@/components/growth/RiskCalculator";
 
 export const metadata = {
-  title: "Einbruchrisiko-Analyse Widget",
+  title: "Einbruchrisikoanalyse Widget",
   description: "Widget zur Berechnung des Einbruchrisikos",
   robots: { index: false, follow: true } // Widget pages should not be indexed themselves, but links should be followed
 };

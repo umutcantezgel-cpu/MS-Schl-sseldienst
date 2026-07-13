@@ -8,7 +8,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Datenschutzerklärung nach DSGVO",
-    description: "Datenschutzerklärung des Schlüssel Schmiede Wetzlar. ✔️ DSGVO-konform ✔️ Transparenz über Datenverarbeitung und Cookies.",
+    description: "Datenschutzerklärung des Schlüssel Schmiede Wetzlar. | DSGVO konform | Transparenz über Datenverarbeitung und Cookies.",
     path: "/datenschutz",
   })
 
@@ -19,7 +19,7 @@ const TOC_ITEMS = [
     { id: "4-cookies", title: "4. Cookies und Tracking" },
     { id: "5-betroffenenrechte", title: "5. Betroffenenrechte" },
     { id: "6-drittlaender", title: "6. Drittlandtransfer" },
-    { id: "7-verschluesselung", title: "7. SSL/TLS-Verschlüsselung" },
+    { id: "7-verschluesselung", title: "7. SSL/TLSverschlüsselung" },
     { id: "8-hosting", title: "8. Hosting" },
     { id: "9-aktualitaet", title: "9. Aktualität" },
     { id: "10-kontakt", title: "10. Kontakt" },
@@ -103,7 +103,7 @@ export default function DatenschutzPage() {
             </LegalSection>
 
             <LegalSection id="4-cookies">
-                <h2 className="mt-0">4. Cookies und Tracking-Technologien</h2>
+                <h2 className="mt-0">4. Cookies und Trackingtechnologien</h2>
                 <p>Unsere Website nutzt Cookies, um Kernfunktionen zu navigieren und bereitzustellen. Technisch notwendige Cookies bedürfen keiner aktiven Einwilligung. Marketing- und Analyse-Cookies fragen wir beim Betreten der Seite gezielt ab (&quot;Consent-Banner&quot;).</p>
                 <p>Sie können Ihre Cookie-Präferenzen jederzeit widerrufen, indem Sie die Browserdaten löschen oder den Tracking-Link im System-Footer nutzen.</p>
                 
@@ -142,19 +142,19 @@ export default function DatenschutzPage() {
             </LegalSection>
 
             <LegalSection id="6b-whatsapp">
-                <h2 className="mt-0">6a. WhatsApp-Kontakt</h2>
+                <h2 className="mt-0">6a. WhatsAppkontakt</h2>
                 <p>Auf unserer Website befindet sich ein Link zur Kontaktaufnahme über den Messenger-Dienst WhatsApp (Meta Platforms Ireland Ltd.). Der Link nutzt das offene <code>wa.me</code>-Protokoll und leitet Sie bei Klick direkt in die WhatsApp-Anwendung auf Ihrem Endgerät weiter.</p>
                 <p><strong>Technische Funktionsweise:</strong> Es handelt sich um einen reinen Hyperlink. Es werden <strong>keine Cookies gesetzt</strong>, keine Tracking-Skripte geladen und <strong>keine Daten an Meta/WhatsApp übertragen</strong>, solange Sie den Link nicht aktiv anklicken. Erst durch Ihren bewussten Klick öffnet sich die WhatsApp-App, wobei die weitere Kommunikation den <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">Datenschutzbestimmungen von WhatsApp (Meta)</a> unterliegt.</p>
                 <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktives Anklicken).</p>
             </LegalSection>
 
             <LegalSection id="7-verschluesselung">
-                <h2 className="mt-0">7. SSL/TLS-Verschlüsselung</h2>
+                <h2 className="mt-0">7. SSL/TLSverschlüsselung</h2>
                 <p>Ihre Kommunikation mit dieser Website ist durch moderne Zertifikate (SSL/TLS) stark verschlüsselt. Dies erkennen Sie am Schloss-Symbol in der Suchmaske Ihres Browsers. Dritte können abgesendete Daten (z.B. im Kontaktformular) nicht abgreifen.</p>
             </LegalSection>
 
             <LegalSection id="8-hosting">
-                <h2 className="mt-0">8. Web-Hosting & Server</h2>
+                <h2 className="mt-0">8. Webhosting & Server</h2>
                 <p>Wir hosten unsere Seiten auf modernster Cloud-Infrastruktur bei Vercel Inc. Bei der rein informatorischen Nutzung der Webseite übermittelt Ihr Browser automatisch Zugriffsdaten an Vercel-Server. Diese Logfiles sind aus IT-Sicherheitsgründen notwendig (Art. 6 Abs. 1 lit. f DSGVO) und werden streng vertraulich behandelt.</p>
             </LegalSection>
 

@@ -40,18 +40,18 @@ export const ring3LocationsA: LocationData[] = [
         scenarios: [
             {
                 icon: "home",
-                title: "Studenten-WG: Tür zu, Schlüssel drin",
-                description: "Zwischen Vorlesung und Mensa die Tür zugezogen? Das klassische WG-Drama. Wir öffnen Studenten schnell, günstig und ohne Beschädigung und damit die Kaution sicher bleibt."
+                title: "StudentenwG: Tür zu, Schlüssel drin",
+                description: "Zwischen Vorlesung und Mensa die Tür zugezogen? Das klassische WGdrama. Wir öffnen Studenten schnell, günstig und ohne Beschädigung und damit die Kaution sicher bleibt."
             },
             {
                 icon: "shield-alert",
-                title: "Altbau-Tür im Selzerweg-Viertel",
-                description: "Die schwere Altbau-Tür Ihrer Gießener Gründerzeitwohnung hat sich verklemmt? Unsere Spezialisten kennen historische Schlösser und Beschläge und arbeiten behutsam und spurlos."
+                title: "Altbautür im Selzerwegviertel",
+                description: "Die schwere Altbautür Ihrer Gießener Gründerzeitwohnung hat sich verklemmt? Unsere Spezialisten kennen historische Schlösser und Beschläge und arbeiten behutsam und spurlos."
             },
             {
                 icon: "briefcase",
                 title: "Kneipentour & Nachteinsatz",
-                description: "Nach einer langen Nacht in der Gießener Kneipenszene den Schlüssel verloren? Unser 24/7-Notdienst ist auch um 4 Uhr morgens schnell und diskret zur Stelle."
+                description: "Nach einer langen Nacht in der Gießener Kneipenszene den Schlüssel verloren? Unser 24/7 Notdienst ist auch um 4 Uhr morgens schnell und diskret zur Stelle."
             }
         ],
 
@@ -158,12 +158,12 @@ export const ring3LocationsA: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Zylinderbruch im Kurgebiet",
-                description: "Sollte der Schlüssel in der Klinken-Not in den Neu- und Reha-Bauten abbrechen, extrahieren wir die Fragmente oder fräsen millimetergenau."
+                description: "Sollte der Schlüssel in der Klinkennot in den Neu und Rehabauten abbrechen, extrahieren wir die Fragmente oder fräsen millimetergenau."
             },
             {
                 icon: "briefcase",
                 title: "Gastronomie & Hotels in Braunfels",
-                description: "Ausgesperrt im Hotel am Herrengarten? Wir reparieren defekte Schließanlagen und Gastronomie-Türen diskret im laufenden Betrieb."
+                description: "Ausgesperrt im Hotel am Herrengarten? Wir reparieren defekte Schließanlagen und Gastronomietüren diskret im laufenden Betrieb."
             }
         ],
 
@@ -261,8 +261,8 @@ export const ring3LocationsA: LocationData[] = [
         scenarios: [
             {
                 icon: "home",
-                title: "Morgens ausgesperrt und Pendler-Stress",
-                description: "Im Pendler-Hotspot Ehringshausen passiert es besonders häufig: Hektischer Aufbruch, Tür fällt zu, Schlüssel liegt drinnen. Wir sind in 10-15 Minuten da und öffnen Ihre Tür zerstörungsfrei, bevor Sie den nächsten Zug verpassen."
+                title: "Morgens ausgesperrt und Pendlerstress",
+                description: "Im Pendlerhotspot Ehringshausen passiert es besonders häufig: Hektischer Aufbruch, Tür fällt zu, Schlüssel liegt drinnen. Wir sind in 10 15 Minuten da und öffnen Ihre Tür zerstörungsfrei, bevor Sie den nächsten Zug verpassen."
             },
             {
                 icon: "shield-alert",

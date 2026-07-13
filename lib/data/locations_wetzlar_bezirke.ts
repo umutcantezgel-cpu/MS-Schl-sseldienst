@@ -39,11 +39,11 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Zugefallene Tür im alten Ortskern",
-                description: "Die schweren Holztüren der historischen Fachwerkhäuser im Nauborner Zentrum erfordern besonders schonende Öffnungstechniken. Mit feinfühligen Lockpicking-Methoden öffnen wir ohne den kleinsten Kratzer."
+                description: "Die schweren Holztüren der historischen Fachwerkhäuser im Nauborner Zentrum erfordern besonders schonende Öffnungstechniken. Mit feinfühligen Lockpickingmethoden öffnen wir ohne den kleinsten Kratzer."
             },
             {
                 icon: "building",
-                title: "Neubau-Sicherheitstür klemmt",
+                title: "Neubausicherheitstür klemmt",
                 description: "In den modernen Wohngebieten Nauborns sind hochwertige Mehrfachverriegelungen Standard. Unsere Techniker kennen die Mechanik dieser Systeme und entriegeln sie professionell."
             },
             {
@@ -148,7 +148,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Gewerbe & Lebensmittelhandel",
-                description: "Schlüssel zum Lager abgebrochen oder Rolltor am Einkaufszentrum blockiert? Wir extrahieren Fragmente und setzen BKS-Sicherheitszylinder sofort ein."
+                description: "Schlüssel zum Lager abgebrochen oder Rolltor am Einkaufszentrum blockiert? Wir extrahieren Fragmente und setzen BKSsicherheitszylinder sofort ein."
             },
             {
                 icon: "briefcase",
@@ -227,16 +227,16 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Historische Fachwerktür zugefallen",
-                description: "Spaziergang auf dem Domplatz und der Wind drückt die schwere Eichentür am Brodschirm zu? Wir öffnen sensible Altbau-Portale mit weichen Fallengleitern und garantiert kratzfrei."
+                description: "Spaziergang auf dem Domplatz und der Wind drückt die schwere Eichentür am Brodschirm zu? Wir öffnen sensible Altbauportale mit weichen Fallengleitern und garantiert kratzfrei."
             },
             {
                 icon: "shield-alert",
-                title: "Kastenschloss-Defekt in der Altstadt",
+                title: "Kastenschlossdefekt in der Altstadt",
                 description: "Alte Kastenschlösser können unvorhergesehen mechanisch versagen. Wir reparieren solche Raritäten, statt alles sofort durch neumodische Standardlösungen zu ersetzen."
             },
             {
                 icon: "briefcase",
-                title: "Tourismus & Gastronomie-Objekte",
+                title: "Tourismus & Gastronomieobjekte",
                 description: "Verschlossene Hintertür beim Restaurant am Fischmarkt oder am Kornmarkt? Pünktlich zur Öffnung sind wir da und bewahren gastronomische Betriebe vor Einnahmeverlusten."
             }
         ],
@@ -316,7 +316,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Wohnungstür zugezogen nahe Rathaus",
-                description: "Nur kurz Post geholt an der Ernst-Leitz-Straße? Wir bedienen die Profilzylinder sanft mit Gleitwerkzeugen und die Tür schwingt unbeschadet auf."
+                description: "Nur kurz Post geholt an der Ernstleitzstraße? Wir bedienen die Profilzylinder sanft mit Gleitwerkzeugen und die Tür schwingt unbeschadet auf."
             },
             {
                 icon: "briefcase",
@@ -394,18 +394,18 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         scenarios: [
             {
                 icon: "home",
-                title: "Wohnungsnot in Alt-Büblingshausen",
-                description: "Vom Wochenendeinkauf beladen und der Wind klackt das Reihenhaus-Portal zu? Durch minimal-invasive Technik überlistet der Schlosser die unverschlossene Falle."
+                title: "Wohnungsnot in Altbüblingshausen",
+                description: "Vom Wochenendeinkauf beladen und der Wind klackt das Reihenhausportal zu? Durch minimalinvasive Technik überlistet der Schlosser die unverschlossene Falle."
             },
             {
                 icon: "shield-alert",
                 title: "Gewerbepark Spilburg",
-                description: "Ein Hightech-Sicherheitszylinder im Agenturbüro am Leitz-Park dreht durch? Wir bohren, falls nötig, mit Spezialfräsen aus dem Hochsicherheitssegment und rüsten neu aus."
+                description: "Ein Hightechsicherheitszylinder im Agenturbüro am Leitzpark dreht durch? Wir bohren, falls nötig, mit Spezialfräsen aus dem Hochsicherheitssegment und rüsten neu aus."
             },
             {
                 icon: "briefcase",
-                title: "Appartements & Leitz-Park-Besucher",
-                description: "Hotelgäste oder Appartementbewohner haben die Keycard oder den Schlüssel drinnen gelassen. Unser Notdienst rückt ultra-leise und unauffällig an, um Störungen abzuwehren."
+                title: "Appartements & Leitzparkbesucher",
+                description: "Hotelgäste oder Appartementbewohner haben die Keycard oder den Schlüssel drinnen gelassen. Unser Notdienst rückt ultraleise und unauffällig an, um Störungen abzuwehren."
             }
         ],
 
@@ -575,8 +575,8 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Wetzlar-Silhöfer Aue / Westend. Soforthilfe zum Festpreis.",
         fareInfo: "Die Silhöfer Aue fällt als 35576er-Bezirk komplett unter unsere 0-Euro-Anfahrtskosten-Kulanz.",
         scenarios: [
-            { icon: "home", title: "Wohnungstür Lahn-Appartement", description: "Zugezogene Tür der neuen Premium-Wohnung? Wir garantieren schonende Spion- oder Fallengleit-Öffnung." },
-            { icon: "shield-alert", title: "Sportvereine & Gewerbe", description: "Zugang zum Bootsclub oder Restaurant verschlossen? Unauffällige und schnelle Profilzylinder-Öffnung rund um die Uhr." },
+            { icon: "home", title: "Wohnungstür Lahnappartement", description: "Zugezogene Tür der neuen Premiumwohnung? Wir garantieren schonende Spionöffnung oder Fallengleitöffnung." },
+            { icon: "shield-alert", title: "Sportvereine & Gewerbe", description: "Zugang zum Bootsclub oder Restaurant verschlossen? Unauffällige und schnelle Profilzylinderöffnung rund um die Uhr." },
             { icon: "briefcase", title: "Reparatur nach Defekt", description: "Bunte Mechanik streikt im Westend: Kostengünstiger Ausbau und Neuinstallation der Schließtechnik am selben Tag." }
         ],
         aboutText: `
@@ -626,7 +626,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         fareInfo: "Auch das Wetzlarer Dillfeld ist ein Null-Euro-Anfahrtskosten Bezirk.",
         scenarios: [
             { icon: "home", title: "Rolltor oder Schranke blockiert", description: "Logistik steht still, weil die Schließanlage im Dillfeld defekt ist? Wir öffnen Schranken und Tore zeitnah." },
-            { icon: "shield-alert", title: "Bürotür im Gewerbepark zu", description: "Draußen Pause gemacht, Büro zu? Minimalinvasive Draht-Öffnung ohne den Büroalltag zu bremsen." },
+            { icon: "shield-alert", title: "Bürotür im Gewerbepark zu", description: "Draußen Pause gemacht, Büro zu? Minimalinvasive Drahtöffnung ohne den Büroalltag zu bremsen." },
             { icon: "briefcase", title: "Wohnungstüren im Randgebiet", description: "Zugefallene private Wohnungstür? Gewohnt seriöse, schnelle Hilfe für private Anwohner im Industriegebiet." }
         ],
         aboutText: `

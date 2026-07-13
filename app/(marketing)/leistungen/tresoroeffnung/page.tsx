@@ -21,7 +21,7 @@ import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAs
 
 export const metadata = generateSharedMetadata({
  title: "Tresoröffnung Wetzlar | Schlüsseldienst",
- description: "Tresor aufbekommen? ✔️ Diskrete Safe-Öffnung ✔️ Mechanisch & Elektronisch. Höchste Vertraulichkeit durch Experten. 📞 06441-8056279",
+ description: "Tresor aufbekommen? | Diskrete Safeöffnung | Mechanisch & Elektronisch. Höchste Vertraulichkeit durch Experten. 06441 8056279",
  path: "/leistungen/tresoroeffnung",
  exactTitle: true,
 });
@@ -36,8 +36,8 @@ export default function TresoroeffnungPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
-      title: "Tresoröffnung & Safe-Öffnung",
-      description: "Diskrete Tresor- und Safe-Öffnung vom Wetzlarer Fachbetrieb.",
+      title: "Tresoröffnung & Safeöffnung",
+      description: "Diskrete Tresor und Safeöffnung vom Wetzlarer Fachbetrieb.",
       url: "/leistungen/tresoroeffnung"
      }))
     }}
@@ -212,7 +212,7 @@ export default function TresoroeffnungPage() {
            <span className="h-px w-8 bg-amber-500"></span>
          </div>
          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] text-center leading-[1.1]">
-           Häufige Fragen zur <span className="text-[color:var(--text-primary)]">Safe-Öffnung</span>
+           Häufige Fragen zur <span className="text-[color:var(--text-primary)]">Safeöffnung</span>
          </h2>
        </div>
      </StaggerItem>

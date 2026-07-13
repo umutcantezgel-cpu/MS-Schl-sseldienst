@@ -9,7 +9,7 @@ import { auszeichnungImages, teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar",
- description: "⭐ 5.0 Sterne aus über 57 Google Rezensionen. Lesen Sie echte Erfahrungen mit der Schlüssel Schmiede Wetzlar. 100% Top-Service!",
+ description: "5.0 Sterne aus über 57 Google Rezensionen. Lesen Sie echte Erfahrungen mit der Schlüssel Schmiede Wetzlar. 100% Topservice!",
  path: "/bewertungen",
  exactTitle: true,
 });

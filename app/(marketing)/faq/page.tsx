@@ -12,7 +12,7 @@ import FAQFilterSection from"@/components/ui/FAQFilterSection";
 
 export const metadata = generateSharedMetadata({
  title: "Häufige Fragen (FAQ) | Schlüssel Schmiede Wetzlar",
- description: "Fragen zur Türöffnung? ✔️ Wie lange dauert es? ✔️ Was kostet es? ✔️ Wird die Tür beschädigt? Alle wichtigen Infos für Wetzlar hier im FAQ lesen.",
+ description: "Fragen zur Türöffnung? | Wie lange dauert es? | Was kostet es? | Wird die Tür beschädigt? Alle wichtigen Infos für Wetzlar hier im FAQ lesen.",
  path: "/faq",
  exactTitle: true,
 });

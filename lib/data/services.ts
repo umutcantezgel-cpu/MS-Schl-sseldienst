@@ -12,7 +12,7 @@ export const services: Service[] = [
     benefits: ["Keine unnötigen Zusatzkosten für neue Schlösser", "Erspart den Ärger über überhöhte Rechnungen", "Sofortige Hilfe im Notfall durch lokale Präsenz"],
     process: [
       { title: "Transparente Preisnennung", description: "Sie schildern Ihr Problem am Telefon, wir nennen Ihnen sofort den exakten, unumstößlichen Festpreis." },
-      { title: "Blitzschnelle Anfahrt", description: "Ein Wetzlarer Monteur macht sich unverzüglich auf den Weg (15-30 Min Anfahrtszeit)." },
+      { title: "Blitzschnelle Anfahrt", description: "Ein Wetzlarer Monteur macht sich unverzüglich auf den Weg (15 bis 30 Min Anfahrtszeit)." },
       { title: "Professionelle Öffnung", description: "Zerstörungsfreie Öffnung vor Ihren Augen. Ein Legitimationsnachweis (Ausweis) ist aus Sicherheitsgründen erforderlich." }
     ],
     pricing: {
@@ -32,7 +32,7 @@ export const services: Service[] = [
   {
     id: createId("srv-02"),
     slug: createSlug("autooeffnung"),
-    title: "Autoöffnung & KFZ-Öffnung",
+    title: "Autoöffnung & KFZ Öffnung",
     shortDescription: "Fahrzeug verschlossen? Wir öffnen alle Marken beschädigungsfrei und garantieerhaltend ab 149 Euro.",
     fullDescription: "Ein Moment der Unachtsamkeit und der Schlüssel liegt im verriegelten Auto. Verzweifeln Sie nicht und riskieren Sie keine zerstörerischen Selbstversuche. Unsere spezialisierten KFZ-Monteure nutzen sanfte Lockpicking-Techniken und zertifizierte Air-Wedges. Damit öffnen wir Autotüren aller Marken und von alten Liebhaberfahrzeugen bis zu hochmodernen Limousinen mit Keyless-Go und absolut kratzfrei und schonend für Ihre Fahrzeuggarantie.",
     icon: "Car",
@@ -41,7 +41,7 @@ export const services: Service[] = [
     order: 2,
     metadata: {
       title: "Autoöffnung Wetzlar | KFZ beschädigungsfrei öffnen ab 149€",
-      description: "Autoöffnung im Lahn-Dill-Kreis ohne Lackschäden. Wir knacken Fahrzeuge aller Marken sicher, professionell und ohne Garantieverlust."
+      description: "Autoöffnung im Lahndillkreis ohne Lackschäden. Wir knacken Fahrzeuge aller Marken sicher, professionell und ohne Garantieverlust."
     }
   },
   {
@@ -90,7 +90,7 @@ export const services: Service[] = [
   {
     id: createId("srv-07"),
     slug: createSlug("tresoroeffnung"),
-    title: "Tresor- & Safe-Öffnung",
+    title: "Tresor & Safeöffnung",
     shortDescription: "Diskrete und fachmännische Notöffnung von Safes, Geldkassetten und alten Schränken.",
     fullDescription: "Schlüssel zum Familientresor verloren oder den Zahlencode der Elektronik vergessen? Als vertrauenswürdiger Fachbetrieb analysieren unsere Techniker die komplexe Konstruktion Ihres Tresors. Wir wenden mikrochirurgische Aufbohrtechniken oder hochspezialisierte Manipulationstools an, um Ihre sensiblen Wertsachen absolut intakt und unbeschädigt zu bergen. Bei uns gilt strenge Verschwiegenheitspflicht.",
     icon: "Safe",

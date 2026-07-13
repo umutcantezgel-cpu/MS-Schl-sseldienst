@@ -22,7 +22,7 @@ import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAs
 
 export const metadata = generateSharedMetadata({
  title: "Sicherheitstechnik Wetzlar | Schlüsseldienst",
- description: "Einbruchschutz für Wetzlar: ✔️ Panzerriegel ✔️ Stangenschlösser ✔️ Elektronik. Kostenlose & unverbindliche Sicherheitsberatung anfordern!",
+ description: "Einbruchschutz für Wetzlar: | Panzerriegel | Stangenschlösser | Elektronik. Kostenlose & unverbindliche Sicherheitsberatung anfordern!",
  path: "/leistungen/sicherheitstechnik",
  exactTitle: true,
 });
@@ -42,8 +42,8 @@ export default function SicherheitstechnikPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
-      title:"Sicherheitstechnik",
-      description:"Einbruchschutzberatung, Zusatzschlösser und Sicherheitstechnik.",
+      title: "Sicherheitstechnik",
+      description: "Einbruchschutzberatung, Zusatzschlösser und Sicherheitstechnik.",
       url:"/leistungen/sicherheitstechnik",
       price: 199
      }))
@@ -174,7 +174,7 @@ export default function SicherheitstechnikPage() {
           <ShieldCheck className="h-10 w-10" strokeWidth={1.5} />
          </div>
          <div>
-          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-[var(--color-red-500)] transition-colors">Fenster- & Türsicherung</h3>
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-[var(--color-red-500)] transition-colors">Fenster  & Türsicherung</h3>
           <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Mechanischer Zusatzschutz zur effektiven Erschwerung von Aufbruchversuchen.
           </p>

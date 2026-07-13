@@ -21,7 +21,7 @@ import { generatedServiceImages, generatedLocalImages } from "@/lib/data/imageAs
 
 export const metadata = generateSharedMetadata({
   title: "Schlüsselnotdienst Wetzlar | 24/7 Notfallhilfe",
-  description: "Ausgesperrt? ✔️ Wir sind Ihr lokaler 24/7 Notdienst für Wetzlar. ✔️ In 20-30 Minuten vor Ort. Auch am Wochenende & nachts faire Preise! 📞 06441-8056279",
+  description: "Ausgesperrt? | Wir sind Ihr lokaler 24/7 Notdienst für Wetzlar. | In 20 30 Minuten vor Ort. Auch am Wochenende & nachts faire Preise! 06441 8056279",
   path: "/leistungen/notdienst",
   exactTitle: true,
 });

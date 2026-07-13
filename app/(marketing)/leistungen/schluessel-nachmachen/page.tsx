@@ -21,7 +21,7 @@ import { generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Schlüssel nachmachen | Schlüsseldienst Wetzlar",
- description: "Ersatzschlüssel gebraucht? ✔️ Haustür, Briefkasten & Auto ✔️ Sofort zum Mitnehmen aus Wetzlar. Ohne Wartezeit! Jetzt vorbeikommen.",
+ description: "Ersatzschlüssel gebraucht? | Haustür, Briefkasten & Auto | Sofort zum Mitnehmen aus Wetzlar. Ohne Wartezeit! Jetzt vorbeikommen.",
  path: "/leistungen/schluessel-nachmachen",
  exactTitle: true,
 });
@@ -41,8 +41,8 @@ export default function SchluesselNachmachenPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
-      title:"Schlüssel nachmachen",
-      description:"Ersatzschlüssel aller Art direkt vor Ort anfertigen lassen.",
+      title: "Schlüssel nachmachen",
+      description: "Ersatzschlüssel aller Art direkt vor Ort anfertigen lassen.",
       url:"/leistungen/schluessel-nachmachen",
       price: 9.90
      }))

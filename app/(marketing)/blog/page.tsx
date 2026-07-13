@@ -9,7 +9,7 @@ import { getAllBlogPosts } from "@/lib/data/mdx";
 
 export const metadata = generateSharedMetadata({
   title: "Sicherheitstechnik Blog",
-  description: "Aktuelle Ratgeber & Tipps zu: ✔️ Einbruchschutz ✔️ Smart Locks ✔️ Sicherheitstechnik. Geballtes Fachwissen vom regionalen Experten aus Wetzlar.",
+  description: "Aktuelle Ratgeber & Tipps zu: | Einbruchschutz | Smart Locks | Sicherheitstechnik. Geballtes Fachwissen vom regionalen Experten aus Wetzlar.",
   path: "/blog",
 });
 
@@ -75,7 +75,7 @@ export default function BlogPage() {
             <StaggerReveal animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
               <StaggerItem animation={entryAnimations.slideUpFade}>
                 <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                  Sicherheits-Ratgeber und Schlüsseldienst-Blog
+                  Sicherheitsratgeber und Schlüsseldienstblog
                 </h1>
               </StaggerItem>
               <StaggerItem animation={entryAnimations.slideUpFade}>

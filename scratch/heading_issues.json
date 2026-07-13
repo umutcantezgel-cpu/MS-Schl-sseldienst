@@ -1,0 +1,190 @@
+[
+  {
+    "file": "app/(legal)/agb/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/(legal)/barrierefreiheit/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Tastatur-Bedienbarkeit\""
+  },
+  {
+    "file": "app/(legal)/barrierefreiheit/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Screenreader-Kompatibilität\""
+  },
+  {
+    "file": "app/(legal)/cookie-richtlinie/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/(legal)/cookie-richtlinie/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"3. Cookie-Kategorien im Detail\""
+  },
+  {
+    "file": "app/(legal)/cookie-richtlinie/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"3.2 Analyse-Cookies (optional)\""
+  },
+  {
+    "file": "app/(legal)/cookie-richtlinie/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"3.3 Marketing-Cookies (optional)\""
+  },
+  {
+    "file": "app/(legal)/cookie-richtlinie/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"4. Ihre Cookie-Einstellungen verwalten\""
+  },
+  {
+    "file": "app/(legal)/cookie-richtlinie/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"7. Änderungen dieser Cookie-Richtlinie\""
+  },
+  {
+    "file": "app/(legal)/datenschutz/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/(legal)/datenschutz/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"4. Cookies und Tracking-Technologien\""
+  },
+  {
+    "file": "app/(legal)/datenschutz/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"6a. WhatsApp-Kontakt\""
+  },
+  {
+    "file": "app/(legal)/datenschutz/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"7. SSL/TLS-Verschlüsselung\""
+  },
+  {
+    "file": "app/(legal)/datenschutz/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"8. Web-Hosting & Server\""
+  },
+  {
+    "file": "app/(legal)/impressum/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/(legal)/impressum/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"5. Berufs- & Aufsichtsangaben\""
+  },
+  {
+    "file": "app/(legal)/impressum/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"7. EU-Streitschlichtung & Verbraucherstreitbeilegung\""
+  },
+  {
+    "file": "app/(legal)/widerruf/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/(legal)/widerruf/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Ausnahme bei Notdienst-Einsätzen\""
+  },
+  {
+    "file": "app/(legal)/widerruf/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"6. Muster-Widerrufsformular\""
+  },
+  {
+    "file": "app/(marketing)/[stadtgebiet]/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/(marketing)/anfrage/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Sofort-Angebot per Telefon\""
+  },
+  {
+    "file": "app/(marketing)/blog/[slug]/page.tsx",
+    "issue": "Multiple H1s found (2)"
+  },
+  {
+    "file": "app/(marketing)/blog/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Sicherheits-Ratgeber und Schlüsseldienst-Blog\""
+  },
+  {
+    "file": "app/(marketing)/kontakt/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"E-Mail\""
+  },
+  {
+    "file": "app/(marketing)/leistungen/autoschluessel/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Unser Autoschlüssel-Service\""
+  },
+  {
+    "file": "app/(marketing)/leistungen/einbruchschutz/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Notfall: Sofort-Reparatur\""
+  },
+  {
+    "file": "app/(marketing)/leistungen/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Wir öffnen jede Tür - Schnell, sicher & zum Festpreis.\""
+  },
+  {
+    "file": "app/(marketing)/leistungen/sicherheitstechnik/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Fenster- & Türsicherung\""
+  },
+  {
+    "file": "app/(marketing)/leistungen/tresoroeffnung/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Häufige Fragen zur Safe-Öffnung\""
+  },
+  {
+    "file": "app/(marketing)/leistungen/uhren-service/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Uhren-Service{\" \"}\n              Schnell & Einfach.\""
+  },
+  {
+    "file": "app/(marketing)/lexikon/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Schließtechnik-Lexikon\""
+  },
+  {
+    "file": "app/(marketing)/preise/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Schnell-Schätzung\""
+  },
+  {
+    "file": "app/(marketing)/preview-images/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"🖼️ Bild-SEO Preview und Alle {allImages.length} Bilder\""
+  },
+  {
+    "file": "app/(marketing)/preview-images/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"📊 Zusammenfassung\""
+  },
+  {
+    "file": "app/(marketing)/ratgeber/[slug]/page.tsx",
+    "issue": "Multiple H1s found (2)"
+  },
+  {
+    "file": "app/(marketing)/schluessel-schmiede/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"High-Tech KFZ-Schlüssel Codierung & Frästechnik\""
+  },
+  {
+    "file": "app/(marketing)/schluessel-schmiede/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Präzisions-Gravuren\""
+  },
+  {
+    "file": "app/(marketing)/schluessel-schmiede/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Präzisions-Gravuren\""
+  },
+  {
+    "file": "app/(marketing)/servicegebiet/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Schlüsseldienst Einsatzgebiete im Lahn-Dill-Kreis\""
+  },
+  {
+    "file": "app/(marketing)/servicegebiet/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Kalkulierbare Ankunft: 15-30 Minuten\""
+  },
+  {
+    "file": "app/(marketing)/ueber-uns/team/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Unser lokales Einsatz-Team\""
+  },
+  {
+    "file": "app/(marketing)/ueber-uns/team/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Unsere Schlüsseldienst-Experten im Überblick\""
+  },
+  {
+    "file": "app/embed/einbruchrisiko/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/page.tsx",
+    "issue": "No H1 found"
+  },
+  {
+    "file": "app/preview/page.tsx",
+    "issue": "Multiple H1s found (2)"
+  },
+  {
+    "file": "app/sitemap-uebersicht/page.tsx",
+    "issue": "Heading has hyphen or emoji: \"Vollständige Sitemap aller Schlüsseldienst-Seiten\""
+  }
+]

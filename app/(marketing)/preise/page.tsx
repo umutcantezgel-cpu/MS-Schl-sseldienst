@@ -25,13 +25,13 @@ import { getServiceSchema } from"@/lib/schema";
 import { getFAQSchema } from "@/lib/schema";
 
 const mainServicesSchema = [
- getServiceSchema({ title:"Türöffnung", description:"Zerstörungsfreie Türöffnung ab 129€", url:"/leistungen/turoeffnung", price: 129 }),
- getServiceSchema({ title:"Autoöffnung", description:"Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 149 })
+ getServiceSchema({ title: "Türöffnung", description: "Zerstörungsfreie Türöffnung ab 129€", url:"/leistungen/turoeffnung", price: 129 }),
+ getServiceSchema({ title: "Autoöffnung", description: "Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 149 })
 ];
 
 export const metadata = generateSharedMetadata({
  title: "Preise & Kosten | Schlüssel Schmiede Wetzlar",
- description: "Türöffnung ab 129€! ✔️ Verbindliche Preisnennung vor Anfahrt ✔️ Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
+ description: "Türöffnung ab 129€! | Verbindliche Preisnennung vor Anfahrt | Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
  path: "/preise",
 });
 
@@ -156,7 +156,7 @@ export default function PreisePage() {
    {/* Phase 18 und Quick Price Estimator */}
    <section className="px-[var(--section-px)] py-[var(--section-py)] bg-[var(--surface-secondary)]">
     <div className="mx-auto max-w-2xl">
-     <h2 className="typo-h2 text-[color:var(--text-primary)] text-center mb-2">Schnell-Schätzung</h2>
+     <h2 className="typo-h2 text-[color:var(--text-primary)] text-center mb-2">Schnellschätzung</h2>
      <p className="text-center text-[color:var(--text-secondary)] mb-8">In 2 Klicks zur unverbindlichen Preiseinschätzung.</p>
      <PriceEstimator />
     </div>

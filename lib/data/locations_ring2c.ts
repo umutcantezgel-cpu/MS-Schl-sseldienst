@@ -31,7 +31,7 @@ export const ring2cLocations: LocationData[] = [
         scenarios: [
             { icon: "home", title: "Zugefallene Haustür im Dorf", description: "Nur kurz mit den Nachbarn geredet und die Tür fällt zu? Wir öffnen alte und neue Türen in Bermoll materialschonend." },
             { icon: "shield-alert", title: "Holztor / Hofreite klemmt", description: "Rostige und in die Jahre gekommene Schlösser an Scheunen oder Höfen ersetzen wir professionell." },
-            { icon: "briefcase", title: "Zylindertausch auf dem Land", description: "Schlüssel verloren auf einem Spaziergang? Ihr neues BKS-Sicherheitsschloss ist binnen Minuten montiert." }
+            { icon: "briefcase", title: "Zylindertausch auf dem Land", description: "Schlüssel verloren auf einem Spaziergang? Ihr neues BKSsicherheitsschloss ist binnen Minuten montiert." }
         ],
         aboutText: `
 <p><strong>Bermoll</strong> ist der idyllischste und mit rund 230 Einwohnern kleinste Stadtteil von Aßlar. Die dörfliche Ruhe, eingebettet in die Hügellandschaft westlich von Wetzlar, und die malerische Höhenlage machen Bermoll zu einem echten Rückzugsort. Sollten Sie sich bei einem Spaziergang rund um den Naturpark oder direkt in den dörflichen Gassen aus Ihrem Haus ausgesperrt haben, eilt der <strong>Schlüsseldienst Bermoll</strong> zügig zur Hilfe.</p>
@@ -131,9 +131,9 @@ export const ring2cLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst für Oberbiel. Rasante Wetzlar-Anbindung, glasklare Preise.",
         fareInfo: "Die Anfahrt nach Oberbiel ist mit schlanken 15 Euro Weg-Pauschale transparent und fair eingepreist.",
         scenarios: [
-            { icon: "home", title: "Zugezogene Einfamilienhaus-Tür", description: "Kurz zur Post oder zu den Nachbarn gegangen? Zugefallene Türen meistern wir in Oberbiel schadenfrei in unter einer Minute." },
+            { icon: "home", title: "Zugezogene Einfamilienhaustür", description: "Kurz zur Post oder zu den Nachbarn gegangen? Zugefallene Türen meistern wir in Oberbiel schadenfrei in unter einer Minute." },
             { icon: "shield-alert", title: "Schlüssel steckt beim Abschließen", description: "Verriegelung hakt und bricht ab? Wir durchbohren Notzylinder professionell und säubern das Schloss." },
-            { icon: "briefcase", title: "Mehrfamilien-Eingang zu", description: "In den Wohngebieten in Oberbiel öffnen wir auch Sicherheitstüren der Gebäudekomplexe zügig." }
+            { icon: "briefcase", title: "Mehrfamilieneingang zu", description: "In den Wohngebieten in Oberbiel öffnen wir auch Sicherheitstüren der Gebäudekomplexe zügig." }
         ],
         aboutText: `
 <p><strong>Oberbiel</strong>, verortet an einer wunderschönen Anhöhe direkt oberhalb der Lahn, versinnbildlicht für seine 2.500 Einwohner eine friedfertige Symbiose aus Natur-Nähe und schnellem Anschluss an den urbanen Kern. Fällt bei einem der Spaziergänge an der Lahn die Tür im heimischen Wohngebiet ins Schloss, ist der <strong>Schlüsseldienst Oberbiel</strong> der rettende und absolut ortskundige Partner.</p>
@@ -180,7 +180,7 @@ export const ring2cLocations: LocationData[] = [
         heroVariant: "Ausgesperrt im schönen Oberndorf? Echte regionale Handwerksausführung.",
         fareInfo: "Die ländliche Tour nach Oberndorf versehen wir mit einer geringfügigen Aufwandspauschale von exakt 15 Euro. Ehrlich und stabil.",
         scenarios: [
-            { icon: "home", title: "Haustür im Neubaugebiet", description: "Vom Wochenendeinkauf nach Hause und der Nachwuchs verlegt den Schlüssel? Lockpicking-Aufsperrung der Haustür in Sekunden." },
+            { icon: "home", title: "Haustür im Neubaugebiet", description: "Vom Wochenendeinkauf nach Hause und der Nachwuchs verlegt den Schlüssel? Lockpickingaufsperrung der Haustür in Sekunden." },
             { icon: "shield-alert", title: "Verklemmtes Hoftor", description: "Bauernhäuser und Höfe in Oberndorf besitzen teils antiquierte Schließzylinder, die wir sanieren und wieder gangbar machen." },
             { icon: "briefcase", title: "Wintergarten Terrassentür", description: "Türgriff der Veranda abgebrochen? Mit speziellen Fallengleitern umgehen wir die Blockade sanft von außen." }
         ],
@@ -231,9 +231,9 @@ export const ring2cLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Atzbach in Lahnau. Rasant zur Stelle über die B49.",
         fareInfo: "Lahnau grenzt unmittelbar an. Für Atzbach fordern wir nur knappe 15 Euro Bereitstellungspauschale für den PKW.",
         scenarios: [
-            { icon: "home", title: "Pendlerwohnung zu", description: "Nach der Arbeit im RMV-Zug am Bahnhof angekommen und bemerkt, dass der Türschlüssel fehlt? Schnelle Lockpicking-Hilfe garantiert." },
+            { icon: "home", title: "Pendlerwohnung zu", description: "Nach der Arbeit im RMVzug am Bahnhof angekommen und bemerkt, dass der Türschlüssel fehlt? Schnelle Lockpickinghilfe garantiert." },
             { icon: "shield-alert", title: "Garagentor in Neubau hakt", description: "Verdrehte Mechanik am Kipptor? Wir fräsen die defekten Aufnahmezylinder plan und setzen wetterfeste Neuteile ein." },
-            { icon: "briefcase", title: "Haustür-Umrüstung", description: "Einbruchsprävention in Atzbach gefragt? Kompletter Neueinbau inklusive ABUS-Sicherheitsverriegelungen direkt bei Erstbesuch." }
+            { icon: "briefcase", title: "Haustürumrüstung", description: "Einbruchsprävention in Atzbach gefragt? Kompletter Neueinbau inklusive ABUSsicherheitsverriegelungen direkt bei Erstbesuch." }
         ],
         aboutText: `
 <p>Direkt am Lahnufer an der verkehrsstarken Achse zwischen den großen Zentren Gießen und Wetzlar platziert, ist <strong>Atzbach</strong> das Tor der Gemeinde Lahnau. Mit über 3.000 Einwohnern und starker Pendler-Infrastruktur herrscht hier täglich reges Kommen und Gehen. Vergessene oder verklemmte Türschlüssel sind in diesem ständigen Fluss keine Seltenheit. Wenn die Haustür blockiert, agiert der <strong>Schlüsseldienst Atzbach</strong> dank der optimalen Anbindung blitzschnell und routiniert am Einsatzort.</p>
@@ -281,9 +281,9 @@ export const ring2cLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Dorlar in Lahnau. Ihr Nachbar aus Wetzlar hilft sofort.",
         fareInfo: "Lahnau zählt zu unserem Wetzlarer Spezialeinsatzgebiet. Die Fahrtkosten nach Dorlar deckeln wir transparent auf milde 15 Euro.",
         scenarios: [
-            { icon: "home", title: "Neubau Haustür klemmt", description: "Hochwertige, schwere Mehrfachverriegelungen im Dorlarer Neubau bedienen unsere Spezialisten gewaltfrei mit Profi-Aufsperrtechnik." },
+            { icon: "home", title: "Neubau Haustür klemmt", description: "Hochwertige, schwere Mehrfachverriegelungen im Dorlarer Neubau bedienen unsere Spezialisten gewaltfrei mit Profiaufsperrtechnik." },
             { icon: "shield-alert", title: "Garagentorantrieb hakt", description: "Integrierte Seitentüren von Garagen öffnen wir nach Schlüsselverlust schnell und bauen gleichschließende Zylinder ein." },
-            { icon: "briefcase", title: "Smart-Home Türschloss", description: "Mechatronik versagt in Lahnau? Wir wissen mit modernen Smart-Locks an Haustüren professionell umzugehen." }
+            { icon: "briefcase", title: "Smarthome Türschloss", description: "Mechatronik versagt in Lahnau? Wir wissen mit modernen Smartlocks an Haustüren professionell umzugehen." }
         ],
         aboutText: `
 <p><strong>Dorlar</strong> verschmilzt als lebhafter Teil von Lahnau den idyllischen ländlichen Charme mit hervorragenden infrastrukturellen Angeboten. Besonders die expansiven und gepflegten Wohnbaugebiete locken junge Familien ins Ruhige zwischen Wetzlar und Gießen. Doch gerade Alltagsroutinen wie der schnelle Weg zur Kita oder das Einkaufen lassen schnell den Haustürschlüssel in Vergessenheit geraten. Der <strong>Schlüsseldienst Dorlar</strong> bildet dann aus dem nahegelegenen Wetzlar die perfekte Rettungskette.</p>
@@ -330,9 +330,9 @@ export const ring2cLocations: LocationData[] = [
         heroVariant: "Schlüsseldienst Waldgirmes (Lahnau). Historischer Ort, moderne Öffnungstechnik.",
         fareInfo: "Die Strecke nach Waldgirmes wird mit einer absolut überschaubaren Nahbereichs-Pauschale von 15 Euro abgerechnet.",
         scenarios: [
-            { icon: "home", title: "Keller- oder Kellertürschloss", description: "Verrostete Hangschlösser oder klemmende Kellertüren in älteren Siedlungsgebäuden tauschen wir unbürokratisch aus." },
-            { icon: "shield-alert", title: "Schlüssel abgebrochen", description: "In der Eile den Haus- oder Briefkastenschlüssel abgedreht? Wir extrahieren die Reste fachmännisch zur Zylinder-Rettung." },
-            { icon: "briefcase", title: "Schließanlagen Planung", description: "Sie wünschen sich mehr Sicherheitstransparenz in Waldgirmes? Wir verbauen gleichschließende Abus-Systeme bei Ihnen Zuhause." }
+            { icon: "home", title: "Keller oder Kellertürschloss", description: "Verrostete Hangschlösser oder klemmende Kellertüren in älteren Siedlungsgebäuden tauschen wir unbürokratisch aus." },
+            { icon: "shield-alert", title: "Schlüssel abgebrochen", description: "In der Eile den Haus oder Briefkastenschlüssel abgedreht? Wir extrahieren die Reste fachmännisch zur Zylinderrettung." },
+            { icon: "briefcase", title: "Schließanlagen Planung", description: "Sie wünschen sich mehr Sicherheitstransparenz in Waldgirmes? Wir verbauen gleichschließende Abussysteme bei Ihnen Zuhause." }
         ],
         aboutText: `
 <p><strong>Waldgirmes</strong> ist der größte und wohl historisch faszinierendste Ortsteil von Lahnau. Schließlich prägt das überregional hochbedeutende <strong>Römische Forum Waldgirmes</strong>, mit den Resten der ältesten römischen Stadtgründung rechts des Rheins, die Identität des Ortes. Wer hier vor einer blockierten Haustür in einer der modernen Siedlungen order dem alten Ortskern steht, bedarf eines regional greifbaren Partners mit Handwerks-Ehre. Der <strong>Schlüsseldienst Waldgirmes</strong> befreit Sie verlässlich aus jeder Zwangslage.</p>

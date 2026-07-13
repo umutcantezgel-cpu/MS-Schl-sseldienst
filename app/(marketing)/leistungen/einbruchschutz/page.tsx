@@ -21,7 +21,7 @@ import { generatedServiceImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
  title: "Einbruchschutz Wetzlar | Schlüsseldienst",
- description: "Kostenlose Risiko-Analyse in Wetzlar! ✔️ Tür- und Fensterabsicherung ✔️ VdS-geprüfte Technik ✔️ Soforthilfe nach Einbruch. Rufen Sie uns an!",
+ description: "Kostenlose Risikoanalyse in Wetzlar! | Tür und Fensterabsicherung | VdS geprüfte Technik | Soforthilfe nach Einbruch. Rufen Sie uns an!",
  path: "/leistungen/einbruchschutz",
  exactTitle: true,
 });
@@ -129,7 +129,7 @@ export default function EinbruchschutzPage() {
          </div>
          <div>
           <h3 className="text-2xl md:text-3xl font-black tracking-tight text-[color:var(--text-primary)] mb-4 group-hover:text-[var(--color-red-500)] transition-colors">
-           Notfall: Sofort-Reparatur
+           Notfall: Sofortreparatur
           </h3>
           <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed m-0 font-medium">
            Aufgebrochene Türen sichern wir provisorisch oder reparieren sie sofort permanent, tauschen Zylinder aus und stellen den Schutz Ihres Eigentums schnellstmöglich wieder her.

@@ -14,7 +14,7 @@ import {
 } from "@/lib/data/imageAssets";
 
 export const metadata = {
-  title: "Bild-Preview und SEO Audit",
+  title: "Bildpreview und SEO Audit",
   robots: { index: false, follow: false },
 };
 
@@ -45,7 +45,7 @@ export default function PreviewImagesPage() {
     <div className="min-h-screen bg-gray-950 text-white py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 tracking-tight">
-          🖼️ Bild-SEO Preview und Alle {allImages.length} Bilder
+          | BildsEO Preview und Alle {allImages.length} Bilder
         </h1>
         <p className="text-gray-400 text-lg mb-12">
           Visuelle Kontrolle aller optimierten Bilder mit SEO-Metadaten. <code className="text-xs bg-gray-800 px-2 py-1 rounded">noindex</code> und nicht für Suchmaschinen sichtbar.
@@ -107,7 +107,7 @@ export default function PreviewImagesPage() {
 
         {/* Summary */}
         <div className="mt-20 p-8 rounded-2xl bg-gray-900 border border-gray-800">
-          <h2 className="text-xl font-bold mb-4">📊 Zusammenfassung</h2>
+          <h2 className="text-xl font-bold mb-4"> Zusammenfassung</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
               <p className="text-3xl font-black text-emerald-400">{allImages.length}</p>

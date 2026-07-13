@@ -28,7 +28,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Zugezogene Tür im Fachwerkhaus",
-                description: "Verzogene Holztüren rund um den Paradeplatz? Mit lackschonenden Türfallen-Gleitern öffnen wir historische Eingänge in Haiger nahezu immer komplett spurfrei."
+                description: "Verzogene Holztüren rund um den Paradeplatz? Mit lackschonenden Türfallengleitern öffnen wir historische Eingänge in Haiger nahezu immer komplett spurfrei."
             },
             {
                 icon: "shield-alert",
@@ -38,7 +38,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "key",
                 title: "Autotür am Bahnhof Haiger",
-                description: "Schlüssel steckt noch im Zündschloss auf dem Pendlerparkplatz? Unsere Techniker beweisen auch bei der schonenden KFZ-Öffnung in Haiger absolute Spitzenklasse."
+                description: "Schlüssel steckt noch im Zündschloss auf dem Pendlerparkplatz? Unsere Techniker beweisen auch bei der schonenden KFZöffnung in Haiger absolute Spitzenklasse."
             }
         ],
 
@@ -124,11 +124,11 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Schlüsselverlust an der Ulmbachtalsperre",
-                description: "Ein Spaziergang an der Ulmbachtalsperre oder auf dem Ulmtal-Rundwanderweg und der Schlüssel fehlt? Wir fräsen bei Komplettverlust minimalinvasiv auf und setzen sofort einen sicheren Neuzylinder ein."
+                description: "Ein Spaziergang an der Ulmbachtalsperre oder auf dem Ulmtalrundwanderweg und der Schlüssel fehlt? Wir fräsen bei Komplettverlust minimalinvasiv auf und setzen sofort einen sicheren Neuzylinder ein."
             },
             {
                 icon: "briefcase",
-                title: "Fachwerk-Idylle: Antikes Schloss streikt",
+                title: "Fachwerkidylle: Antikes Schloss streikt",
                 description: "In den kleinen, alten Ortsteilen wie Nenderoth oder Rodenroth klemmen mitunter uralte Schlösser in alten Holztüren. Wir gehen extrem behutsam vor, um die historische Substanz zu bewahren."
             }
         ],
@@ -224,12 +224,12 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Schlüsselverlust beim Herbstlabyrinth",
-                description: "Den Autoschlüssel beim Besuch der Schauhöhle oder auf dem Flugplatz Breitscheid verlegt? Wir entsperren alle gängigen KFZ-Modelle kratzerfrei."
+                description: "Den Autoschlüssel beim Besuch der Schauhöhle oder auf dem Flugplatz Breitscheid verlegt? Wir entsperren alle gängigen KFZmodelle kratzerfrei."
             },
             {
                 icon: "briefcase",
                 title: "Notfall im Töpferdorf Erdbach",
-                description: "Die Tür zur heimischen Werkstatt oder zum Eigenheim in Erdbach hat sich verkeilt? Wir sind 365 Tage im Jahr mit Profi-Equipment für Sie erreichbar."
+                description: "Die Tür zur heimischen Werkstatt oder zum Eigenheim in Erdbach hat sich verkeilt? Wir sind 365 Tage im Jahr mit Profiequipment für Sie erreichbar."
             }
         ],
 
@@ -321,7 +321,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Notfall am National Auto Museum",
-                description: "Autoschlüssel verloren nach einem Besuch in der Loh Collection? Wir öffnen alle gängigen KFZ-Modelle kratzerfrei, damit Sie zügig nach Hause kommen."
+                description: "Autoschlüssel verloren nach einem Besuch in der Loh Collection? Wir öffnen alle gängigen KFZ Modelle kratzerfrei, damit Sie zügig nach Hause kommen."
             },
             {
                 icon: "briefcase",
@@ -417,7 +417,7 @@ export const ring4bLocations: LocationData[] = [
             },
             {
                 icon: "shield-alert",
-                title: "Auto-Schlüssel beim Skifahren weg",
+                title: "Autoschlüssel beim Skifahren weg",
                 description: "Wintersport am Höllberg oder Segeln an der Krombachtalsperre fordern ihren Tribut. Liegt der Schlüssel im verschlossenen Wagen, entsperren wir den PKW kratzerfrei."
             },
             {
@@ -512,11 +512,11 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Defektes Schloss in Eibelshausen",
-                description: "Der Zylinderblockadier-Schock in Eschenburgs Verwaltungssitz Eibelshausen? Wir bohren gezielt die Stifte an, ziehen das Schloss defektfrei und bauen top Sicherheitstechnik ein."
+                description: "Der Zylinderblockadierschock in Eschenburgs Verwaltungssitz Eibelshausen? Wir bohren gezielt die Stifte an, ziehen das Schloss defektfrei und bauen top Sicherheitstechnik ein."
             },
             {
                 icon: "briefcase",
-                title: "PKW-Notöffnung an der Dietzhölze",
+                title: "PKW Notöffnung an der Dietzhölze",
                 description: "Vom Wanderweg beim Eschenburgturm zurück an den PKW und der Autoschlüssel fehlt? Wir entsperren alle Marken schonend direkt am Waldrand oder im Ort."
             }
         ],
@@ -711,7 +711,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "briefcase",
                 title: "Schlossdefekt in Wallenfels",
-                description: "Frost im Winter hat den Zylinder im historischen Wallenfels unbrauchbar gemacht? Wir rüsten zügig auf ein gefrier-resistentes, hochsicheres Schloss um."
+                description: "Frost im Winter hat den Zylinder im historischen Wallenfels unbrauchbar gemacht? Wir rüsten zügig auf ein gefrierresistentes, hochsicheres Schloss um."
             }
         ],
 
@@ -802,7 +802,7 @@ export const ring4bLocations: LocationData[] = [
             },
             {
                 icon: "shield-alert",
-                title: "KFZ-Not am Möttauer Weiher",
+                title: "KFZ Not am Möttauer Weiher",
                 description: "Bei einem sonnigen Fahrradausflug über den Weiltalweg den Autoschlüssel verloren? Wir kommen zum Weiher oder Rastplatz und öffnen Ihr Fahrzeug schadensfrei."
             },
             {
@@ -905,7 +905,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "briefcase",
                 title: "Schloss defekt & rostig",
-                description: "Ein altes Gartentor oder die Kellertür lässt sich nicht mehr drehen? Wir bohren defekte Alt-Zylinder in Seelbach schonend aus und ersetzen sie sofort."
+                description: "Ein altes Gartentor oder die Kellertür lässt sich nicht mehr drehen? Wir bohren defekte Altzylinder in Seelbach schonend aus und ersetzen sie sofort."
             }
         ],
 
@@ -992,17 +992,17 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Windstoß am Wäldchen",
-                description: "Beide Ortsteile liegen exponierter. Wenn der Wind die Haustür zuschlägt, öffnen wir schonend mit feinem Premium-Werkzeug und null Schäden."
+                description: "Beide Ortsteile liegen exponierter. Wenn der Wind die Haustür zuschlägt, öffnen wir schonend mit feinem Premiumwerkzeug und null Schäden."
             },
             {
                 icon: "shield-alert",
-                title: "KFZ-Schlüssel beim Gassigehen weg",
+                title: "KFZ Schlüssel beim Gassigehen weg",
                 description: "Schönbach und Hörbach sind Wanderparadiese. Verlieren Sie am Feldrand den Autoschlüssel, entsperren wir alle gängigen Wagenmarken vollkommen zerstörungsfrei."
             },
             {
                 icon: "briefcase",
                 title: "Schlosswechsel im alten Hof",
-                description: "Holz verzieht sich, alte Mechanik bricht. Wir entfernen defekte, verrostete Zylinder in landwirtschaftlichen Altbauten und installieren modernste DIN-genormte Sicherheitstechnik."
+                description: "Holz verzieht sich, alte Mechanik bricht. Wir entfernen defekte, verrostete Zylinder in landwirtschaftlichen Altbauten und installieren modernste DIN genormte Sicherheitstechnik."
             }
         ],
 
@@ -1089,7 +1089,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "home",
                 title: "Ein Windzug in Merkenbach",
-                description: "Sie bringen den Müll an die Straße und die Tür knallt zu? Wir sind im Handumdrehen in Merkenbach und öffnen Standard- und Panzertüren absolut kratzerfrei."
+                description: "Sie bringen den Müll an die Straße und die Tür knallt zu? Wir sind im Handumdrehen in Merkenbach und öffnen Standardtüren und Panzertüren absolut kratzerfrei."
             },
             {
                 icon: "shield-alert",
@@ -1191,7 +1191,7 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "shield-alert",
                 title: "Wagenschlüssel am Vogelpark",
-                description: "Tagestrip im Vogelpark Uckersdorf und der Autoschlüssel fehlt? Wir eilen nach Uckersdorf und öffnen alle modernen PKW-Typen völlig ohne Kratzer."
+                description: "Tagestrip im Vogelpark Uckersdorf und der Autoschlüssel fehlt? Wir eilen nach Uckersdorf und öffnen alle modernen PKW Typen völlig ohne Kratzer."
             },
             {
                 icon: "briefcase",
@@ -1288,12 +1288,12 @@ export const ring4bLocations: LocationData[] = [
             {
                 icon: "key",
                 title: "Schlüssel im Einfamilienhaus abgebrochen",
-                description: "Verschleiß nagt an jedem Schloss. Bricht der Schlüssel in der Haustür ab, extrahieren unsere Spezialisten in Dillheim ihn oder tauschen den alten Zylinder gegen ein Premium-Modell."
+                description: "Verschleiß nagt an jedem Schloss. Bricht der Schlüssel in der Haustür ab, extrahieren unsere Spezialisten in Dillheim ihn oder tauschen den alten Zylinder gegen ein Premiummodell."
             },
             {
                 icon: "shield-alert",
                 title: "Autoschlüssel im Kofferraum",
-                description: "Nach einem Spaziergang am Dillheim-Ufer den Wagenschlüssel im Kofferraum versehentlich eingeschlossen? Wir öffnen alle gängigen KFZ-Marken ohne jegliche Kratzer im Lack."
+                description: "Nach einem Spaziergang am Dillheim Ufer den Wagenschlüssel im Kofferraum versehentlich eingeschlossen? Wir öffnen alle gängigen KFZ Marken ohne jegliche Kratzer im Lack."
             }
         ],
 

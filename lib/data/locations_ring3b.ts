@@ -41,12 +41,12 @@ export const ring3LocationsB: LocationData[] = [
             {
                 icon: "home",
                 title: "Zugefallene Tür im Eigenheim",
-                description: "In Rodheim-Bieber oder Fellingshausen die Tür zugezogen? Das passiert im Biebertaler Alltag regelmäßig. Wir öffnen spurlos, schnell und zum garantierten Festpreis."
+                description: "In Rodheimbieber oder Fellingshausen die Tür zugezogen? Das passiert im Biebertaler Alltag regelmäßig. Wir öffnen spurlos, schnell und zum garantierten Festpreis."
             },
             {
                 icon: "shield-alert",
                 title: "Schlüssel verloren auf dem Dünsberg",
-                description: "Nach einer Wanderung auf dem Kelten- und Römerpfad oder am Celtic-Art-Weg den Schlüssel verloren? Wir öffnen Ihre Tür und sichern sie umgehend mit einem neuen Sicherheitszylinder."
+                description: "Nach einer Wanderung auf dem Kelten und Römerpfad oder am Celticartweg den Schlüssel verloren? Wir öffnen Ihre Tür und sichern sie umgehend mit einem neuen Sicherheitszylinder."
             },
             {
                 icon: "briefcase",
@@ -267,7 +267,7 @@ export const ring3LocationsB: LocationData[] = [
         scenarios: [
             {
                 icon: "home",
-                title: "Eigenheim-Tür zugefallen",
+                title: "Eigenheimtür zugefallen",
                 description: "Die hochwertige Sicherheitstür Ihres Waldsolmser Eigenheims hat sich hinter Ihnen geschlossen? Wir öffnen sie spurlos und ohne Schäden an Rahmen, Lackierung oder Zylinder."
             },
             {
@@ -376,18 +376,18 @@ export const ring3LocationsB: LocationData[] = [
         scenarios: [
             {
                 icon: "home",
-                title: "Fachwerk-Altstadt: Antikes Schloss klemmt",
+                title: "Fachwerkaltstadt: Antikes Schloss klemmt",
                 description: "Ihr historisches Kastenschloss in einem Butzbacher Fachwerkhaus will nicht mehr? Unsere Spezialisten kennen diese jahrhundertealten Mechanismen und arbeiten behutsam, ohne die denkmalgeschützte Substanz zu berühren."
             },
             {
                 icon: "shield-alert",
                 title: "Neubaugebiet: Sicherheitstür zugefallen",
-                description: "Die moderne Mehrfachverriegelung Ihrer Haustür in Ostheim oder Pohl-Göns hat sich verriegelt? Wir öffnen Hightech-Schlösser genauso souverän wie historische Mechaniken."
+                description: "Die moderne Mehrfachverriegelung Ihrer Haustür in Ostheim oder Pohlgöns hat sich verriegelt? Wir öffnen Hightechschlösser genauso souverän wie historische Mechaniken."
             },
             {
                 icon: "briefcase",
                 title: "14 Ortsteile: Kein Weg zu weit",
-                description: "Ob Nieder-Weisel, Hoch-Weisel, Kirch-Göns oder Maibach und egal in welchem der 14 Butzbacher Ortsteile Sie ausgesperrt sind, wir kommen schnell, fair und zuverlässig."
+                description: "Ob Niederweisel, Hochweisel, Kirchgöns oder Maibach und egal in welchem der 14 Butzbacher Ortsteile Sie ausgesperrt sind, wir kommen schnell, fair und zuverlässig."
             }
         ],
 

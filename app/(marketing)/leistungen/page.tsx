@@ -7,7 +7,7 @@ import RelatedPosts from "@/components/blog/RelatedPosts";
 
 export const metadata = generateSharedMetadata({
   title: "Alle Leistungen | Schlüsseldienst Wetzlar",
-  description: "Alle Services im Überblick: ✔️ Türöffnung ab 99€ ✔️ Tresoröffnung ✔️ Einbruchschutz. Zertifiziert, schnell & lokal in Wetzlar verankert. Jetzt anrufen!",
+  description: "Alle Services im Überblick: | Türöffnung ab 99€ | Tresoröffnung | Einbruchschutz. Zertifiziert, schnell & lokal in Wetzlar verankert. Jetzt anrufen!",
   path: "/leistungen",
 });
 
@@ -113,7 +113,7 @@ export default function LeistungenPage() {
           </div>
 
           <h2 className="relative z-10 text-3xl md:text-5xl font-black text-white mb-6 tracking-tight max-w-2xl">
-            Wir öffnen jede Tür - Schnell, sicher & zum Festpreis.
+            Wir öffnen jede Tür   Schnell, sicher & zum Festpreis.
           </h2>
 
           <p className="relative z-10 text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">

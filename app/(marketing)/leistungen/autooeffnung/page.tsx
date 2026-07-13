@@ -22,7 +22,7 @@ import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAs
 
 export const metadata = generateSharedMetadata({
  title: "Autoöffnung Wetzlar | Schlüsseldienst",
- description: "Schlüssel im Auto eingesperrt? ✔️ Autoöffnung für alle Marken. ✔️ Garantiert kratzerfrei und ohne Lackschäden. Schnell vor Ort in Wetzlar! 📞 06441-8056279",
+ description: "Schlüssel im Auto eingesperrt? | Autoöffnung für alle Marken. | Garantiert kratzerfrei und ohne Lackschäden. Schnell vor Ort in Wetzlar! 06441 8056279",
  path: "/leistungen/autooeffnung",
  exactTitle: true,
 });
@@ -42,8 +42,8 @@ export default function AutooeffnungPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
-      title:"Autoöffnung",
-      description:"Professionelle Fahrzeugöffnung ohne Beschädigung aller Marken.",
+      title: "Autoöffnung",
+      description: "Professionelle Fahrzeugöffnung ohne Beschädigung aller Marken.",
       url:"/leistungen/autooeffnung",
       price: 149
      }))

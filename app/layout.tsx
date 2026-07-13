@@ -51,7 +51,7 @@ export const metadata: Metadata = {
    default: "Schlüssel Schmiede Wetzlar | 24 H Notdienst",   // ≤50 chars, ≤580px
    template: "%s",
  },
- // ⚠️  NO description here und set only on individual pages to avoid Seobility #2 (duplicate).
+ // ⚠|  NO description here und set only on individual pages to avoid Seobility #2 (duplicate).
  metadataBase: new URL(siteUrl),
  alternates: {
    languages: {
@@ -118,7 +118,7 @@ export default function RootLayout({
      {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
      <link rel="preconnect" href="https://maps.googleapis.com" />
      <link rel="dns-prefetch" href="https://maps.googleapis.com" />
-     {/* ⚠️ Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
+     {/* ⚠| Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
           die Metadata.icons API verzögert ausliefern. */}
      <link rel="icon" href="/favicon.ico" sizes="48x48" />
      <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />

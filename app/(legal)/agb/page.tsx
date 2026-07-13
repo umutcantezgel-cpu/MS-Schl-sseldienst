@@ -9,7 +9,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
     title: "Allgemeine Geschäftsbedingungen (AGB)",
-    description: "AGB des Schlüssel Schmiede Wetzlar. ✔️ Transparente Bedingungen für Türöffnungen ✔️ Klare Regeln für Festpreise und Stornos.",
+    description: "AGB des Schlüssel Schmiede Wetzlar. | Transparente Bedingungen für Türöffnungen | Klare Regeln für Festpreise und Stornos.",
     path: "/agb",
   })
 

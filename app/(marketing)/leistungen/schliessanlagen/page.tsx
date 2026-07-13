@@ -22,7 +22,7 @@ import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAs
 
 export const metadata = generateSharedMetadata({
  title: "Schließanlagen Wetzlar | Schlüsseldienst",
- description: "Kostenlose Objektbegehung! ✔️ Elektronische & Mechanische Anlagen ✔️ Nur 1 Schlüssel für alle Leitungen. Planung & Montage in Wetzlar.",
+ description: "Kostenlose Objektbegehung! | Elektronische & Mechanische Anlagen | Nur 1 Schlüssel für alle Leitungen. Planung & Montage in Wetzlar.",
  path: "/leistungen/schliessanlagen",
  exactTitle: true,
 });
@@ -42,8 +42,8 @@ export default function SchliessanlagenPage() {
     type="application/ld+json"
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
-      title:"Schließanlagen",
-      description:"Mechanische und elektronische Schließanlagen für Wetzlar.",
+      title: "Schließanlagen",
+      description: "Mechanische und elektronische Schließanlagen für Wetzlar.",
       url:"/leistungen/schliessanlagen",
       price: 150
      }))

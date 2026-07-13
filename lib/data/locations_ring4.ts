@@ -41,7 +41,7 @@ export const ring4Locations: LocationData[] = [
             {
                 icon: "home",
                 title: "Zugefallene Altbautür",
-                description: "Besonders bei schweren Eichen- oder historischen Kassettentüren in der Fußgängerzone ist absolute Vorsicht geboten. Wir öffnen nahezu immer beschädigungsfrei mit Spezialschiebern."
+                description: "Besonders bei schweren Eichentüren oder historischen Kassettentüren in der Fußgängerzone ist absolute Vorsicht geboten. Wir öffnen nahezu immer beschädigungsfrei mit Spezialschiebern."
             },
             {
                 icon: "key",
@@ -51,7 +51,7 @@ export const ring4Locations: LocationData[] = [
             {
                 icon: "car",
                 title: "Autoöffnung am Wochenende",
-                description: "Den Schlüssel nach dem Einkauf im Hinckel-Areal im Kofferraum vergessen? Wir öffnen alle gängigen Fahrzeugmarken kratzerfrei und direkt vor Ort."
+                description: "Den Schlüssel nach dem Einkauf im Hinckel Areal im Kofferraum vergessen? Wir öffnen alle gängigen Fahrzeugmarken kratzerfrei und direkt vor Ort."
             }
         ],
 
@@ -155,12 +155,12 @@ export const ring4Locations: LocationData[] = [
             {
                 icon: "shield-check",
                 title: "Einbruchschutz für Gewerbe",
-                description: "Für Industrie & Gewerbe im Dillenburger Gewerbegebiet bieten wir Sofort-Schlosswechsel nach Einbrüchen oder Mitarbeiter-Schlüsselverlusten an."
+                description: "Für Industrie & Gewerbe im Dillenburger Gewerbegebiet bieten wir Sofort Schlosswechsel nach Einbrüchen oder Mitarbeiter Schlüsselverlusten an."
             },
             {
                 icon: "car",
                 title: "Fahrzeug in Dillenburg öffnen",
-                description: "Ausgesperrt auf dem Pendlerparkplatz an der B277? Wir entsperren alle gängigen KFZ-Marken schnell, routiniert und absolut kratzerfrei."
+                description: "Ausgesperrt auf dem Pendlerparkplatz an der B277? Wir entsperren alle gängigen KFZ Marken schnell, routiniert und absolut kratzerfrei."
             }
         ],
 
@@ -259,12 +259,12 @@ export const ring4Locations: LocationData[] = [
             {
                 icon: "key",
                 title: "Schlüssel abgebrochen im Altbau",
-                description: "Zylinderblockade am historischen Gebäude? Mit hochfeinen Extraktor-Nadeln holen wir das abgerochene Stück schonend aus dem Schloss."
+                description: "Zylinderblockade am historischen Gebäude? Mit hochfeinen Extraktornadeln holen wir das abgebrochene Stück schonend aus dem Schloss."
             },
             {
                 icon: "shield-alert",
-                title: "Notfall nach Lahn-Tour",
-                description: "Schlüssel bei der Kanufahrt auf der Lahn ins Wasser gefallen? Wir öffnen Ihre Weilburger Immobilie 24/7 über unsere Sofort-Hotline."
+                title: "Notfall nach Lahntour",
+                description: "Schlüssel bei der Kanufahrt auf der Lahn ins Wasser gefallen? Wir öffnen Ihre Weilburger Immobilie 24/7 über unsere Soforthotline."
             },
             {
                 icon: "briefcase",

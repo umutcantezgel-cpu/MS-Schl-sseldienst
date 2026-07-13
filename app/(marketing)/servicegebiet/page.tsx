@@ -15,7 +15,7 @@ import { Badge } from"@/components/ui/badge";
 
 export const metadata = generateSharedMetadata({
  title: "Einsatzgebiete | Schlüsseldienst Wetzlar",
- description: "Wir sind hier: ✔️ Aßlar ✔️ Solms ✔️ Hüttenberg ✔️ Lahnau & 70+ Orte. Lokaler Schlüsseldienst aus Wetzlar. Schnelle Hilfe in 15-30 Min!",
+ description: "Wir sind hier: | Aßlar | Solms | Hüttenberg | Lahnau & 70+ Orte. Lokaler Schlüsseldienst aus Wetzlar. Schnelle Hilfe in 15 bis 30 Min!",
  path: "/servicegebiet",
  exactTitle: true,
 });
@@ -77,7 +77,7 @@ export default function ServicegebietPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tighter text-[color:var(--text-primary)] leading-[1.05] text-balance mb-[var(--space-6)]">
-            Schlüsseldienst <span className="text-[color:var(--value-primary)]">Einsatzgebiete</span> im Lahn-Dill-Kreis
+            Schlüsseldienst <span className="text-[color:var(--value-primary)]">Einsatzgebiete</span> im Lahndillkreis
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
@@ -157,7 +157,7 @@ export default function ServicegebietPage() {
           </div>
           <div>
           <h3 className="text-[24px] font-bold text-[color:var(--text-primary)] mb-4">
-            Kalkulierbare Ankunft: 15-30 Minuten
+            Kalkulierbare Ankunft: 15 bis 30 Minuten
           </h3>
           <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-6">
             In Notsituationen zählt jede Minute. Dank unserer strategischen Positionierung in Wetzlar sind wir in der Lage, jeden Punkt in unserem Kern-Einsatzgebiet innerhalb von <strong className="text-[color:var(--value-primary)] font-bold">15 bis 30 Minuten</strong> zu erreichen.

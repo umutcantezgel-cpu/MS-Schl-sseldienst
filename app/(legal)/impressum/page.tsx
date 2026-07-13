@@ -8,7 +8,7 @@ import { MapConsentGate } from "@/components/legal/MapConsentGate"
 
 export const metadata = generateSharedMetadata({
     title: "Impressum & Anbieterkennzeichnung",
-    description: "Impressum und rechtliche Angaben des Schlüssel Schmiede Wetzlar. ✔️ Kontaktdaten ✔️ Anbieterkennzeichnung gemäß DDG.",
+    description: "Impressum und rechtliche Angaben des Schlüssel Schmiede Wetzlar. | Kontaktdaten | Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
   })
 
@@ -17,9 +17,9 @@ const TOC_ITEMS = [
     { id: "2-kontakt", title: "2. Direkter Kontakt" },
     { id: "3-standort", title: "3. Hauptsitz & Standort" },
     { id: "4-steuern", title: "4. Steuerliche Angaben" },
-    { id: "5-berufsangaben", title: "5. Berufs- & Aufsichtsangaben" },
+    { id: "5-berufsangaben", title: "5. Berufs & Aufsichtsangaben" },
     { id: "6-redaktionell", title: "6. Redaktionell Verantwortlicher" },
-    { id: "7-streitschlichtung", title: "7. EU-Streitschlichtung" },
+    { id: "7-streitschlichtung", title: "7. EUstreitschlichtung" },
     { id: "8-haftung", title: "8. Haftungsausschluss" },
 ]
 
@@ -89,7 +89,7 @@ export default function ImpressumPage() {
             </LegalSection>
 
             <LegalSection id="5-berufsangaben">
-                <h2 className="mt-0">5. Berufs- & Aufsichtsangaben</h2>
+                <h2 className="mt-0">5. Berufs  & Aufsichtsangaben</h2>
                 <p>Angaben zur beruflichen Tätigkeit gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
                 <ul>
                     <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
@@ -110,7 +110,7 @@ export default function ImpressumPage() {
             </LegalSection>
 
             <LegalSection id="7-streitschlichtung">
-                <h2 className="mt-0">7. EU-Streitschlichtung & Verbraucherstreitbeilegung</h2>
+                <h2 className="mt-0">7. EUstreitschlichtung & Verbraucherstreitbeilegung</h2>
                 <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link erreichen:</p>
                 <p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr</a></p>
                 <p>Unsere E-Mail-Adresse lautet: <code>schluesselschmiede@gmail.com</code></p>

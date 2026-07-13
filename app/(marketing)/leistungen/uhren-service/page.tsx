@@ -19,7 +19,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
  title: "Uhren Service Wetzlar | Schlüsseldienst",
- description: "Professioneller Uhren-Service in Wetzlar: Schneller Batteriewechsel, Kürzen und Austausch von Uhrenarmbändern. Sofort-Service ohne Termin.",
+ description: "Professioneller Uhrenservice in Wetzlar: Schneller Batteriewechsel, Kürzen und Austausch von Uhrenarmbändern. Sofortservice ohne Termin.",
  path: "/leistungen/uhren-service",
  exactTitle: true,
 });
@@ -86,7 +86,7 @@ export default function UhrenServicePage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
-              Uhren-Service{" "}
+              Uhrenservice{" "}
               <span className="text-stone-600">Schnell & Einfach.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">

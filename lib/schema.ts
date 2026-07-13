@@ -145,7 +145,14 @@ export function getServiceSchema({ title, description, url, price }: { title: st
                 price: price,
                 priceCurrency: "EUR"
             }
-        })
+        }),
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            reviewCount: "58",
+            bestRating: "5",
+            worstRating: "1"
+        }
     };
 }
 
@@ -186,6 +193,13 @@ export function getPricingSchema() {
                     }
                 }
             ]
+        },
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            reviewCount: "58",
+            bestRating: "5",
+            worstRating: "1"
         }
     };
 }

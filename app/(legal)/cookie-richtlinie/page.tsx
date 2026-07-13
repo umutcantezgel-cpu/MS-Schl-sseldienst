@@ -7,15 +7,15 @@ import { COOKIE_INVENTORY, CONSENT_CATEGORY_INFO, type ConsentCategory } from "@
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Cookie-Richtlinie & Datenschutz-Einstellungen",
-    description: "Cookie-Richtlinie des Schlüssel Schmiede Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
+    title: "Cookie Richtlinie & Datenschutzeinstellungen",
+    description: "Cookie Richtlinie des Schlüssel Schmiede Wetzlar. Erfahren Sie, welche Cookies wir verwenden und wie Sie diese verwalten können.",
     path: "/cookie-richtlinie",
   })
 
 const TOC_ITEMS = [
     { id: "1-was-sind-cookies", title: "1. Was sind Cookies?" },
     { id: "2-welche-cookies", title: "2. Welche Cookies wir verwenden" },
-    { id: "3-cookie-kategorien", title: "3. Cookie-Kategorien" },
+    { id: "3-cookie-kategorien", title: "3. Cookiekategorien" },
     { id: "4-einstellungen", title: "4. Ihre Einstellungen" },
     { id: "5-cookies-loeschen", title: "5. Cookies löschen" },
     { id: "6-rechtsgrundlage", title: "6. Rechtsgrundlage" },
@@ -101,7 +101,7 @@ export default function CookieRichtliniePage() {
             </LegalSection>
 
             <LegalSection id="3-cookie-kategorien">
-                <h2 className="mt-0">3. Cookie-Kategorien im Detail</h2>
+                <h2 className="mt-0">3. Cookiekategorien im Detail</h2>
 
                 <h3 className="mt-6 text-lg font-bold text-gray-900">3.1 Technisch notwendige Cookies (Essentiell)</h3>
                 <p>Diese Cookies sind <strong>zwingend erforderlich</strong>, damit die Website grundlegende Funktionen bereitstellen kann. Sie können nicht deaktiviert werden, da die Website ohne sie nicht korrekt funktioniert.</p>
@@ -112,7 +112,7 @@ export default function CookieRichtliniePage() {
                     ))}
                 </ul>
 
-                <h3 className="mt-8 text-lg font-bold text-gray-900">3.2 Analyse-Cookies (optional)</h3>
+                <h3 className="mt-8 text-lg font-bold text-gray-900">3.2 Analysecookies (optional)</h3>
                 <p>Wir haben die technische Infrastruktur für Analyse-Cookies (Google Analytics 4) vorbereitet und das Consent-System unterstützt die Kategorie. <strong>Derzeit setzen wir jedoch keine Analyse-Cookies aktiv ein.</strong> Sollten wir GA4 zukünftig aktivieren, werden die Cookies erst nach Ihrer ausdrücklichen Einwilligung gesetzt.</p>
                 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) i.V.m. § 25 Abs. 1 TTDSG.</p>
                 <ul className="mt-2 space-y-1.5 text-gray-600">
@@ -121,7 +121,7 @@ export default function CookieRichtliniePage() {
                     ))}
                 </ul>
 
-                <h3 className="mt-8 text-lg font-bold text-gray-900">3.3 Marketing-Cookies (optional)</h3>
+                <h3 className="mt-8 text-lg font-bold text-gray-900">3.3 Marketingcookies (optional)</h3>
                 <p>Marketing-Cookies ermöglichen die Einbindung externer Dienste und personalisierter Inhalte. <strong>Wir setzen derzeit keine aktiven Marketing-Cookies.</strong> Die Kategorie existiert für den Fall, dass zukünftig Dienste wie Terminbuchungs-Widgets eingebunden werden.</p>
                 {marketingCookies.length > 0 ? (
                     <ul className="mt-2 space-y-1.5 text-gray-600">
@@ -135,7 +135,7 @@ export default function CookieRichtliniePage() {
             </LegalSection>
 
             <LegalSection id="4-einstellungen">
-                <h2 className="mt-0">4. Ihre Cookie-Einstellungen verwalten</h2>
+                <h2 className="mt-0">4. Ihre Cookieeinstellungen verwalten</h2>
                 <p>Sie haben jederzeit die volle Kontrolle über nicht-essentielle Cookies:</p>
 
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 my-6">
@@ -189,7 +189,7 @@ export default function CookieRichtliniePage() {
             </LegalSection>
 
             <LegalSection id="7-aenderungen">
-                <h2 className="mt-0">7. Änderungen dieser Cookie-Richtlinie</h2>
+                <h2 className="mt-0">7. Änderungen dieser Cookie Richtlinie</h2>
                 <p>Wir behalten uns vor, diese Cookie-Richtlinie bei Änderungen an den verwendeten Cookies oder der Rechtsgrundlage zu aktualisieren. Sollten wir neue Cookie-Kategorien einführen oder bestehende wesentlich ändern, wird automatisch ein <strong>erneuter Einwilligungsprozess</strong> (Re-Consent) ausgelöst.</p>
                 <p>Die aktuelle Version unserer Cookie-Konfiguration ist: <code className="text-xs bg-gray-100 px-1.5 py-0.5 rounded font-mono">1.0.0</code>. Bei einer Versionserhöhung wird der Cookie-Banner automatisch erneut angezeigt.</p>
             </LegalSection>

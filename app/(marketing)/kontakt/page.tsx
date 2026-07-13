@@ -11,7 +11,7 @@ import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
 
 export const metadata = generateSharedMetadata({
  title: "Kontakt und Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
- description: "Ausgesperrt? 📞 Rufen Sie uns jetzt an: 06441-8056279. ✔️ 24/7 erreichbar ✔️ In 30 Min in ganz Wetzlar vor Ort. Wir helfen sofort!",
+ description: "Ausgesperrt? Rufen Sie uns jetzt an: 06441 8056279. | 24/7 erreichbar | In 30 Min in ganz Wetzlar vor Ort. Wir helfen sofort!",
  path: "/kontakt",
 });
 
@@ -113,7 +113,7 @@ export default function KontaktPage() {
            <Mail className="h-5 w-5" aria-hidden="true" />
           </div>
           <div>
-           <h3 className="text-sm font-bold text-[color:var(--text-primary)]">E-Mail</h3>
+           <h3 className="text-sm font-bold text-[color:var(--text-primary)]">Email</h3>
            <a href="mailto:schluesselschmiede@gmail.com" className="text-sm text-[color:var(--text-secondary)] hover:text-[var(--color-red-500)] hover:underline transition-colors">
             schluesselschmiede@gmail.com
            </a>

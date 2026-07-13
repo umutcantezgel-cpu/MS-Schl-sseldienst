@@ -98,7 +98,7 @@ ${anchor}
 
 ---
 
-## ⚠️ CONSUMER PROTECTION ALERT — NEGATIVE CONSTRAINTS
+## ⚠| CONSUMER PROTECTION ALERT — NEGATIVE CONSTRAINTS
 
 ### WARNUNG: Callcenter-Schlüsseldienste in dieser Region
 Die **Verbraucherzentrale Hessen** und das **Polizeipräsidium Mittelhessen** warnen ausdrücklich vor:

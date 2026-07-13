@@ -4,7 +4,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: createId("case-01"),
     slug: createSlug("schliessanlage-industriehalle-wetzlar"),
-    title: "Planung und Aufbau einer Industrie-GHS-Anlage",
+    title: "Planung und Aufbau einer IndustriegHSanlage",
     client: "Metallbau Mittelhessen GmbH",
     industry: "Industrie / Metallbau",
     challenge: "Der Kunde (Produktionshalle mit 40 Mitarbeitern) benötigte eine strikte hierarchische Trennung der Zutritte: Gießer sollen nur in die Produktion, Verwaltung nur in Büros, aber Notfall-Sanitäter in alle Bereiche mit einem einzigen Generalschlüssel.",
@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: createId("case-02"),
     slug: createSlug("einbruchsicherung-apotheke-giessen"),
-    title: "Einbruchschutz-Sanierung nach Blitz-Einbruch",
+    title: "Einbruchschutzsanierung nach Blitzeinbruch",
     client: "Altstadt Apotheke",
     industry: "Einzelhandel / Pharmazie",
     challenge: "Nach einem Einbruch durch Aufhebeln der Hintertür musste die gesamte Filiale hochsicherungsfähig gemacht werden. Hohe Auflagen der Versicherungen erforderten zertifizierte Riegel.",
@@ -74,7 +74,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: createId("case-05"),
     slug: createSlug("smart-home-integration-villa"),
-    title: "Smart-Lock Modernisierung Einfamilienhaus",
+    title: "Smartlock Modernisierung Einfamilienhaus",
     client: "Familie Hoffmann",
     industry: "Wohnen / Smart Home",
     challenge: "Der Besitzer einer Neubau-Villa bei Braunfels wünschte komplett schlüsselfreien Zutritt via 5G und Apple HomeKit, wobei Gärtner zeitgesteuerte Transponder erhalten sollten.",

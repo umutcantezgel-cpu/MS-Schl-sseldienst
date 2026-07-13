@@ -7,7 +7,7 @@ import { teamImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
   title: "Unsere Geschichte als Schlüsseldienst in Wetzlar",
-  description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom Schlüssel Schmiede in Wetzlar. ✔️ Über 15 Jahre Erfahrung.",
+  description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom Schlüssel Schmiede in Wetzlar. | Über 15 Jahre Erfahrung.",
   path: "/ueber-uns/geschichte",
 });
 
@@ -30,7 +30,7 @@ export default function GeschichtePage() {
     },
     {
       year: "Erweiterung",
-      title: "24/7-Notdienst",
+      title: "24/7 Notdienst",
       text: "Erweiterung zum Rund-um-die-Uhr-Notdienst. Egal ob nachts, am Wochenende oder an Feiertagen und wir sind immer erreichbar.",
     },
     {

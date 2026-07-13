@@ -21,7 +21,7 @@ import { generatedMacroImages, getImageByFilename } from "@/lib/data/imageAssets
 
 export const metadata = generateSharedMetadata({
  title: "Autoschlüssel Wetzlar | Schlüsseldienst",
- description: "KfZ-Schlüssel kaputt oder verloren? Wir reparieren und programmieren Gehäuse und Elektronik von Autoschlüsseln in Wetzlar. ✔️ Schnell & Günstig",
+ description: "KfZschlüssel kaputt oder verloren? Wir reparieren und programmieren Gehäuse und Elektronik von Autoschlüsseln in Wetzlar. | Schnell & Günstig",
  path: "/leistungen/autoschluessel",
  exactTitle: true,
 });
@@ -46,7 +46,7 @@ export default function AutoschluesselPage() {
     dangerouslySetInnerHTML={{
      __html: JSON.stringify(getServiceSchema({
       title: "Autoschlüssel Programmierung & Reparatur",
-      description: "Reparatur, Gehäusetausch und Neuprogrammierung von KFZ-Schlüsseln in Wetzlar.",
+      description: "Reparatur, Gehäusetausch und Neuprogrammierung von KFZ Schlüsseln in Wetzlar.",
       url: "/leistungen/autoschluessel",
       price: 45
      }))
@@ -122,7 +122,7 @@ export default function AutoschluesselPage() {
          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-red-500)]">Dienstleistung</span>
        </div>
        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-balance text-[color:var(--text-primary)] leading-[1.1] mb-6">
-        Unser <span className="text-[var(--color-red-500)]">Autoschlüssel-Service</span>
+        Unser <span className="text-[var(--color-red-500)]">Autoschlüsselservice</span>
        </h2>
       <StaggerItem animation={entryAnimations.slideUpFade}>
        <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-12">

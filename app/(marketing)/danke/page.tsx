@@ -6,8 +6,7 @@ import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
   title: "Vielen Dank",
-  description:
-    "Vielen Dank für Ihre Nachricht an Schlüssel Schmiede Wetzlar. Wir melden uns schnellstmöglich.",
+  description: "Vielen Dank für Ihre Nachricht an Schlüssel Schmiede Wetzlar. Wir melden uns schnellstmöglich.",
   path: "/danke",
   noindex: true,
 });
