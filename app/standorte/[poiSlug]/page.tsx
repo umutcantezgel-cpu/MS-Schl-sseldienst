@@ -345,14 +345,54 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
             sind Sie bei der Schlüssel Schmiede genau richtig. Ein kurzer Moment der Unachtsamkeit reicht, und die Tür 
             fällt ins Schloss. In dieser Situation benötigen Sie einen verlässlichen <strong>24h Notdienst</strong>, 
             der schnell vor Ort ist. Unsere Techniker sind bestens geschult und garantieren eine schonende <strong>Türöffnung</strong> 
-            zum fest vereinbarten <strong>Festpreis</strong>.
+            zum fest vereinbarten <strong>Festpreis</strong>. Als ansässiges Unternehmen legen wir höchsten Wert auf eine ehrliche 
+            und kundenorientierte Arbeitsweise, damit Sie keine bösen Überraschungen bei der Abrechnung erleben.
           </p>
           <p className="mb-4 text-gray-700">
             Als lokaler Fachbetrieb sind wir nicht nur am Tag, sondern auch als <strong>24/7 Notdienst</strong> in der Nacht, 
-            an Wochenenden und Feiertagen für Sie da. Egal, ob Sie Ihren <strong>Schlüssel</strong> verloren haben, 
-            der Zylinder klemmt oder eine Beratung zum Einbruchschutz wünschen – unser <strong>Schlüsseldienst {poi.name}</strong> 
+            an Wochenenden und an Feiertagen für Sie da. Egal, ob Sie Ihren <strong>Schlüssel</strong> verloren haben, 
+            der Zylinder klemmt, der Schlüssel im Schloss abgebrochen ist oder eine umfassende Beratung zum Einbruchschutz wünschen – unser <strong>Schlüsseldienst {poi.name}</strong> 
             bietet maßgeschneiderte Lösungen. Dank unserer transparenten <strong>Festpreis</strong>-Garantie wissen Sie 
-            stets im Vorfeld, welche Kosten für die <strong>Türöffnung</strong> anfallen.
+            stets im Vorfeld, welche Kosten für die <strong>Türöffnung</strong> oder den Zylindertausch anfallen.
+          </p>
+          
+          <h3 className="text-lg font-bold mb-3 mt-6">Wie läuft die Türöffnung am {poi.name} ab?</h3>
+          <p className="mb-4 text-gray-700">
+            Unser Ablauf ist denkbar einfach und auf maximale Transparenz sowie Schnelligkeit ausgelegt. 
+            Sobald Sie uns kontaktieren, fragen wir kurz den genauen Sachverhalt ab – ist die Tür nur zugefallen, 
+            ist sie abgeschlossen oder steckt von innen ein Schlüssel? Anhand Ihrer Schilderung nennen wir Ihnen 
+            sofort den verbindlichen Festpreis für den Einsatz im Bereich <strong>{poi.name}</strong>. Anschließend macht 
+            sich einer unserer ausgebildeten Monteure umgehend auf den Weg zu Ihnen. In den meisten Fällen 
+            erreichen wir Sie in nur wenigen Minuten. Vor Ort bestätigen wir nochmals den Preis und beginnen 
+            mit unserer Arbeit. Durch den Einsatz modernster Spezialwerkzeuge öffnen wir zugefallene Türen in 
+            über 95% der Fälle völlig beschädigungsfrei. Sie sparen sich somit die teuren Kosten für einen neuen 
+            Zylinder und einen Ersatzschlüssel.
+          </p>
+
+          <h3 className="text-lg font-bold mb-3 mt-6">Umfassende Sicherheitstechnik und Einbruchschutz</h3>
+          <p className="mb-4 text-gray-700">
+            Neben klassischen Notöffnungen haben wir uns intensiv auf die Bereiche Einbruchschutz und 
+            Sicherheitstechnik rund um <strong>{poi.name}</strong> spezialisiert. Die Zahl der Wohnungseinbrüche verdeutlicht, 
+            wie wichtig ein fundiertes Sicherheitskonzept ist. Wir bieten Ihnen kostenlose Sicherheits-Checks 
+            direkt vor Ort an. Unsere Experten analysieren potenzielle Schwachstellen an Ihren Türen, 
+            Fenstern und Kellerschächten. Oft reichen schon kleine Nachrüstungen wie ein Panzerriegel, 
+            Pilzkopfverriegelungen oder Sicherheitsbeschläge, um Einbrechern das Leben schwer zu machen 
+            und den Einbruchsversuch im Keim zu ersticken. Investieren Sie in die Sicherheit Ihres Zuhauses, 
+            bevor es zu spät ist. Wir arbeiten dabei ausschließlich mit hochwertigen Produkten namhafter 
+            Hersteller, um Ihnen den bestmöglichen Schutz zu garantieren.
+          </p>
+
+          <h3 className="text-lg font-bold mb-3 mt-6">Unser Versprechen: Professionalität, Transparenz und lokale Verbundenheit</h3>
+          <p className="mb-4 text-gray-700">
+            Die Branche der Schlüsseldienste hat leider oft mit einem negativen Ruf zu kämpfen. Wir, 
+            die Schlüssel Schmiede Wetzlar, distanzieren uns ausdrücklich von solchen Praktiken. 
+            Für uns steht die Zufriedenheit unserer Kunden im Mittelpunkt. Deshalb bieten wir Ihnen 
+            eine 100%ige Festpreisgarantie ohne versteckte Kosten. Sie zahlen nur das, was wir im 
+            Vorfeld mit Ihnen vereinbart haben. Zudem akzeptieren wir neben Bargeld selbstverständlich 
+            auch EC-Karten und Apple Pay direkt beim Monteur am Einsatzort. So bleiben Sie stets 
+            flexibel. Vertrauen Sie auf unseren Service, wenn Sie im Umkreis von <strong>{poi.name}</strong> 
+            ein Problem mit Ihrem Schloss oder Ihrem Schlüssel haben. Wir lassen Sie nicht vor 
+            verschlossener Tür stehen – kompetent, zügig und fair. Rufen Sie uns im Notfall jederzeit an!
           </p>
         </div>
       </section>
