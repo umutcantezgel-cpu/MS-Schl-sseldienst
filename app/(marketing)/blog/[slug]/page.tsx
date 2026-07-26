@@ -63,8 +63,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (title.length < 45) {
     title = `${title} | Schlüssel Schmiede Wetzlar`;
   }
-  if (title.length > 65) {
-    title = title.slice(0, 62) + "...";
+  if (title.length > 55) {
+    title = title.slice(0, 55) + "...";
   }
 
   let description = post.metadata.excerpt || "";

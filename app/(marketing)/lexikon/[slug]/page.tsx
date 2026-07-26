@@ -16,11 +16,11 @@ function getLexikonTitle(entry: { title: string }) {
   if (title.length < 45) {
     title = `${entry.title} einfach erklärt | Sicherheitslexikon Wetzlar`;
   }
-  if (title.length > 65) {
-    title = `${entry.title} | Lexikon Schlüssel Schmiede`;
+  if (title.length > 55) {
+    title = `${entry.title} | Lexikon`;
   }
-  if (title.length > 65) {
-    title = title.slice(0, 62) + "...";
+  if (title.length > 55) {
+    title = title.slice(0, 52) + "...";
   }
   return title;
 }

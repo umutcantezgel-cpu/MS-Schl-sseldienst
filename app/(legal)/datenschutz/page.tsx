@@ -7,9 +7,10 @@ import { COOKIE_INVENTORY, DATA_PROCESSING_INVENTORY } from "@/lib/cookie-invent
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Datenschutzerklärung nach DSGVO | Schlüssel Schmiede Wetzlar",
+    title: "Datenschutzerklärung nach DSGVO",
     description: "Datenschutzerklärung der Schlüssel Schmiede Wetzlar. | DSGVO-konform | Vollständige Transparenz über Datenverarbeitung & Cookies.",
     path: "/datenschutz",
+    exactTitle: true,
   })
 
 const TOC_ITEMS = [

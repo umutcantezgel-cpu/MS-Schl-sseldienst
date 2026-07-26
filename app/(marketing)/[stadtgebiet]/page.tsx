@@ -23,18 +23,21 @@ import SeoContentBlock from "@/components/seo/SeoContentBlock";
 
 function getStadtgebietTitle(cityName: string) {
   let title = `Schlüsseldienst ${cityName} | 24h Notdienst | Schlüssel Schmiede`;
-  if (title.length > 65) {
+  if (title.length > 55) {
     title = `Schlüsseldienst ${cityName} | 24h Notdienst`;
   }
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${cityName} | Schlüssel Schmiede`;
+  if (title.length > 55) {
+    title = `Schlüsseldienst ${cityName} | Notdienst`;
+  }
+  if (title.length > 55) {
+    title = `Schlüsseldienst ${cityName}`;
   }
   if (title.length < 45) {
     title = `Schlüsseldienst ${cityName} | 24h Notdienst & schnelle Notfallhilfe`;
   }
-  // Hard limit fix for Seobility (if still > 65 or < 45)
-  if (title.length > 65) title = title.substring(0, 65).trim();
-  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
+  // Hard limit fix for Seobility
+  if (title.length > 60) title = title.substring(0, 60).trim();
+  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 60).trim();
   return title;
 }
 
