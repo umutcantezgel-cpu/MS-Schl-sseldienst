@@ -88,8 +88,8 @@ export default function UhrenServicePage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
-              Uhrenservice{" "}
-              <span className="text-stone-600">Schnell & Einfach.</span>
+              Uhren-Service{" "}
+              <span className="text-[var(--color-red-500)]">Wetzlar.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Ihre Uhr steht still oder das Armband ist kaputt? Wir wechseln Batterien und tauschen oder kürzen Gliederarmbänder für gängige Uhrenmarken.

@@ -19,7 +19,6 @@ import LocationReviews from "@/components/locations/LocationReviews";
 import NeighborGrid from "@/components/locations/NeighborGrid";
 import LocationContact from "@/components/locations/LocationContact";
 import LocationFinalCTA from "@/components/locations/LocationFinalCTA";
-import SpunSeoText from "@/components/seo/SpunSeoText";
 
 function getStadtgebietTitle(cityName: string) {
   let title = `Schlüsseldienst ${cityName} | 24h Notdienst | Schlüssel Schmiede`;
@@ -214,9 +213,6 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
       
       {/* Sektion 12 (Final CTA) */}
       <LocationFinalCTA city={city} />
-      
-      {/* Sektion 13 (SEO Content Block für Seobility) */}
-      <SpunSeoText seed={city.slug} cityOrArea={city.name} />
     </div>
   );
 }

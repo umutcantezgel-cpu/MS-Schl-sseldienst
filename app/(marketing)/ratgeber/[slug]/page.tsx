@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return generateSharedMetadata({
-      title: "Sicherheitsratgeber nicht gefunden | Schlüsseldienst Wetzlar",
+      title: "Ratgeber nicht gefunden | Schlüsseldienst Wetzlar",
       description: "Der gesuchte Sicherheitsratgeber konnte leider nicht gefunden werden. Hier finden Sie alle nützlichen Ratgeber rund um Schloss & Schlüssel.",
       path: `/ratgeber/${awaitedParams.slug}`,
       noindex: true,

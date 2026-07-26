@@ -84,8 +84,8 @@ export default function NotdienstPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-white leading-[1.15] mb-4 sm:mb-6">
-              Rund um die Uhr{" "}
-              <span className="text-[var(--color-red-500)]">für Sie da.</span>
+              Schlüsselnotdienst{" "}
+              <span className="text-[var(--color-red-500)]">Wetzlar.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "none" }} lang="de">
               Ein Notfall kennt keine Feierabendzeiten. Aus diesem Grund ist unser Notdienst-Telefon 365 Tage im Jahr, 24 Stunden am Tag für die Region Wetzlar besetzt.

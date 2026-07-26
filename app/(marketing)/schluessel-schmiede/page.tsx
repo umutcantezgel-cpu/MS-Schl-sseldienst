@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MapPin, Clock, Phone, Mail, ShieldCheck, Key, Store, Award, CheckCircle2, Navigation } from "lucide-react";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { werkstattImages } from "@/lib/data/imageAssets";
+import SpunSeoText from "@/components/seo/SpunSeoText";
 
 export const metadata = generateSharedMetadata({
   title: "Schlüssel Schmiede Wetzlar | Filiale & Fachgeschäft",
@@ -113,7 +114,7 @@ export default function SchlüsselSchmiedePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Schlüssel nachmachen im Sofortdienst</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Zweitschlüssel für Haustüren, Zimmertüren, Vorhangschlösser und Briefkästen werden in wenigen Minuten in unserer Werkstatt präzise kopiert.
+                  Zweitschlüssel für Haustüren, Zimmertüren, Vorhangschlösser und Briefkästen werden in wenigen Minuten in unserer Werkstatt präzise kopiert. Dank moderner CNC-Fräsen fertigen wir Ersatzschlüssel mit höchster Passgenauigkeit an, die sofort einsatzbereit sind.
                 </p>
               </div>
 
@@ -124,7 +125,7 @@ export default function SchlüsselSchmiedePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Zylinder- & Schlossverkauf</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Kaufen Sie hochwertige Profilzylinder von ABUS, BKS oder CES mit Not- und Gefahrenfunktion inklusive fachlicher Beratung vor Ort.
+                  Kaufen Sie hochwertige Profilzylinder von ABUS, BKS oder CES mit Not- und Gefahrenfunktion inklusive fachlicher Beratung vor Ort. Wir erklären Ihnen die Unterschiede zwischen verschiedenen Sicherheitsstufen und finden das perfekte Schloss für Ihr Zuhause.
                 </p>
               </div>
 
@@ -135,7 +136,29 @@ export default function SchlüsselSchmiedePage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Uhren- & Batteriewechsel</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Fachgerechter Batteriewechsel für Armbanduhren, Autoschlüssel-Fernbedienungen und Garagentoröffner zum günstigen Festpreis.
+                  Fachgerechter Batteriewechsel für Armbanduhren, Autoschlüssel-Fernbedienungen und Garagentoröffner zum günstigen Festpreis. Wir führen alle gängigen Knopfzellen und Batterietypen für elektronische Kleingeräte auf Lager.
+                </p>
+              </div>
+              
+              {/* Service 4 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <ShieldCheck className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Sicherheitsberatung</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Kostenlose Erstberatung in unserer Filiale zum Thema Einbruchschutz. Wir zeigen Ihnen mechanische und elektronische Sicherungssysteme, Panzerriegel und smarte Alarmanlagen direkt an unseren Ausstellungsstücken in der Langgasse 70.
+                </p>
+              </div>
+              
+              {/* Service 5 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Key className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Schließanlagen-Planung</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Für Mehrfamilienhäuser und Gewerbebetriebe planen wir komplexe Schließanlagen. Wir erstellen Schließpläne, konfigurieren die Zylinderlängen und übernehmen auf Wunsch auch die Montage und langfristige Wartung der Anlage.
                 </p>
               </div>
 
@@ -173,6 +196,8 @@ export default function SchlüsselSchmiedePage() {
 
         </div>
       </section>
+      
+      <SpunSeoText seed="schluessel-schmiede" cityOrArea="Wetzlar" />
     </div>
   );
 }

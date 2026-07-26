@@ -49,7 +49,7 @@ export function BlogCard({ post, className = "" }: BlogCardProps) {
             className="text-blue-600 font-medium hover:text-blue-800 transition-colors text-sm flex items-center"
             uniqueContext={post.title}
           >
-            Ratgeber-Artikel zu „{post.title}“ lesen
+            Artikel lesen
             <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

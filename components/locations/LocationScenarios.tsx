@@ -29,29 +29,96 @@ function getDefaultScenarios(city: LocationData) {
     const isDense = city.demographicsFocus === "urban" || city.demographicsFocus === "business";
     const isRural = city.demographicsFocus === "rural" || (!city.demographicsFocus && (city.logistics.distanceFromHQ > 10));
     
+    const hash = city.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    
+    // Dynamic text for scenario 1
+    const s1_1 = [
+        "In den Mehrfamilienhäusern von",
+        "Bei den Wohnanlagen in",
+        "Rund um",
+        "Besonders in",
+        "Im gesamten Gebiet von"
+    ][hash % 5] || "";
+    const s1_2 = [
+        "fallen Wohnungstüren häufig ins Schloss.",
+        "kommen zugefallene Türen oft vor.",
+        "passiert es schnell, dass die Tür zufällt.",
+        "werden wir oft für Türöffnungen gerufen.",
+        "ist der Schlüssel schnell mal vergessen."
+    ][(hash >> 1) % 5] || "";
+    const s1_3 = [
+        "Wir öffnen sie absolut zerstörungsfrei.",
+        "Mit unserem Spezialwerkzeug bleibt alles intakt.",
+        "Unsere Experten arbeiten zu 100% ohne Schäden.",
+        "Dank moderner Technik öffnen wir schonend.",
+        "Ihre Kaution und das Schloss bleiben sicher."
+    ][(hash >> 2) % 5] || "";
+
+    // Dynamic text for scenario 2
+    const s2_1 = [
+        "Schlüssel verloren oder im Büro vergessen?",
+        "Sie finden Ihren Haus- oder Wohnungsschlüssel nicht mehr?",
+        "Ist der Schlüssel unauffindbar oder abgebrochen?",
+        "Haben Sie Ihren Schlüssel auf dem Weg verloren?",
+        "Schlüssel verlegt und stehen vor verschlossener Tür?"
+    ][hash % 5] || "";
+    const s2_2 = [
+        `In ${city.name} sind wir in ca. ${city.logistics.drivingTimeMinutes} Minuten bei Ihnen.`,
+        `Unser Notdienst erreicht ${city.name} in nur ${city.logistics.drivingTimeMinutes} Minuten.`,
+        `Wir machen uns sofort auf den Weg nach ${city.name} (Anfahrt ca. ${city.logistics.drivingTimeMinutes} Min).`,
+        `Ein Anruf genügt, und in ${city.logistics.drivingTimeMinutes} Minuten ist Hilfe in ${city.name}.`,
+        `Wir sind lokal verankert und in ${city.logistics.drivingTimeMinutes} Minuten in ${city.name} vor Ort.`
+    ][(hash >> 1) % 5] || "";
+    const s2_3 = [
+        "Wir öffnen ohne Beschädigung und tauschen auf Wunsch den Zylinder.",
+        "Dabei bleibt das Türschloss intakt. Bei Bedarf bauen wir ein neues ein.",
+        "Die Öffnung erfolgt schonend. Neue Schlüssel gibt es auf Wunsch sofort.",
+        "Unsere Monteure helfen schnell und bieten bei Verlust einen Schlosswechsel an.",
+        "Ihre Tür wird sicher geöffnet, ohne den Rahmen zu zerkratzen."
+    ][(hash >> 2) % 5] || "";
+
+    // Dynamic text for scenario 3
+    const s3_1 = [
+        "Ausgesperrt am Wochenende oder mitten in der Nacht in",
+        "Ein Notfall zu ungewöhnlicher Stunde in",
+        "Sie benötigen Hilfe an einem Feiertag in",
+        "Mitten in der Nacht vor verschlossener Tür in",
+        "Am Wochenende den Schlüssel drinnen gelassen in"
+    ][hash % 5] || "";
+    const s3_2 = [
+        "Unser 24/7-Notdienst ist jederzeit erreichbar.",
+        "Wir stehen Ihnen rund um die Uhr zur Verfügung.",
+        "Auf unseren Schlüsselnotdienst ist immer Verlass.",
+        "Unsere Leitungen sind 24 Stunden am Tag besetzt.",
+        "Wir helfen Ihnen an 365 Tagen im Jahr."
+    ][(hash >> 1) % 5] || "";
+    const s3_3 = [
+        "Den Nacht- oder Wochenendzuschlag nennen wir vorab am Telefon.",
+        "Alle Preise und Zuschläge werden transparent vor Anfahrt mitgeteilt.",
+        "Wir informieren Sie über die Gesamtkosten direkt am Telefon.",
+        "Keine versteckten Gebühren – klare Preise beim ersten Anruf.",
+        "Faire Festpreise inklusive Zuschlag erfahren Sie sofort am Telefon."
+    ][(hash >> 2) % 5] || "";
+
     return [
         {
             icon: "home",
             title: isDense 
                 ? `Zugefallene Wohnungstür in ${city.name}` 
                 : `Haustür zugefallen in ${city.name}`,
-            description: isDense
-                ? `In den Mehrfamilienhäusern von ${city.name} fallen Wohnungstüren besonders häufig ins Schloss. Wir öffnen sie zerstörungsfrei mit Spezialwerkzeug, ohne Ihren Vermieter oder Ihre Kaution zu gefährden.`
-                : `Die typischen Einfamilienhäuser in ${city.name} haben oft massive Haustüren mit Mehrfachverriegelung. Wir öffnen zugefallene Türen schonend und ohne Beschädigung an Schloss, Rahmen oder Türblatt.`
+            description: `${s1_1} ${city.name} ${s1_2} ${s1_3}`
         },
         {
             icon: "shield-alert",
             title: isRural
                 ? `Einbruchschaden in ${city.name}`
                 : `Schlüssel verloren in ${city.name}`,
-            description: isRural
-                ? `Einbruchschutz wird auch in ländlichen Gebieten wie ${city.name} immer wichtiger. Wir tauschen beschädigte Zylinder sofort aus und beraten Sie zu Nachrüstungen wie Sicherheitsbeschlägen und Panzerriegeln.`
-                : `Schlüssel verloren oder im Büro vergessen? In ${city.name} sind wir in ${city.logistics.drivingTimeMinutes} Minuten bei Ihnen und öffnen Ihre Tür, ohne das Schloss zu beschädigen. Auf Wunsch tauschen wir den Zylinder sofort aus.`
+            description: `${s2_1} ${s2_2} ${s2_3}`
         },
         {
             icon: "briefcase",
             title: `Nacht- & Wochenendeinsatz ${city.name}`,
-            description: `Ausgesperrt am Wochenende oder mitten in der Nacht in ${city.name}? Unser 24/7-Notdienst ist jederzeit erreichbar. Wir nennen Ihnen den transparenten Nacht- oder Wochenendzuschlag bereits am Telefon, bevor wir losfahren.`
+            description: `${s3_1} ${city.name}? ${s3_2} ${s3_3}`
         }
     ];
 }

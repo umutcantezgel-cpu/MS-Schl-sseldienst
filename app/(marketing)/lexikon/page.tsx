@@ -43,7 +43,7 @@ export default function LexikonPage() {
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-                Willkommen im Fach-Lexikon der Schlüssel Schmiede Wetzlar. Hier erklären unsere Sicherheitsexperten alle wichtigen Begriffe rund um Schlösser, Zylinder, Einbruchschutz und Türöffnungstechnik verständlich und übersichtlich.
+                Willkommen im großen Schlüsseldienst Lexikon der Schlüssel Schmiede Wetzlar. Hier werden alle wichtigen Fachbegriffe erklärt – rund um Schlösser, Zylinder, Einbruchschutz und Türöffnungstechnik.
               </p>
             </StaggerItem>
           </StaggerReveal>

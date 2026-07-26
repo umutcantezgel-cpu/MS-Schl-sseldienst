@@ -39,7 +39,7 @@ export default function LeistungenPage() {
             VdS-Anerkannte Experten
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-[color:var(--text-primary)] tracking-tight mb-6">
-            Unsere Leistungen im <span className="text-[var(--color-red-500)]">Überblick</span>
+            Alle Schlüsseldienst Leistungen <span className="text-[var(--color-red-500)]">Wetzlar</span>
           </h1>
           <p className="text-lg md:text-xl text-[color:var(--text-secondary)] mx-auto max-w-3xl leading-relaxed">
             Alle unsere Schlüsseldienst-Leistungen im Überblick: Egal ob Sie sich ausgesperrt haben, ein neues Schloss benötigen oder Ihr Haus absichern wollen - 

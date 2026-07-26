@@ -7,36 +7,78 @@ import { pickVariant } from "@/lib/textRotation";
 import { companyInfo } from "@/lib/data/company";
 
 export default function LocalPricing({ city }: { city: LocationData }) {
-    // Duplicate Content Prevention (Spinning)
-    const introText = pickVariant([
-        `Wir garantieren absolute Preistransparenz für unseren Einsatz in ${city.name}. Die Berechnung erfolgt immer nach Aufwand und Tageszeit, absolut ohne versteckte Gebühren.`,
-        `Bei uns in ${city.name} gibt es keine bösen Überraschungen. Wir kalkulieren fair, transparent und nennen Ihnen stets die echten Kosten.`,
-        `Damit Sie in ${city.name} genau wissen, was auf Sie zukommt: Unsere Preise richten sich transparent nach Aufwand und Uhrzeit, garantiert ohne Abzocke.`
-    ], city.slug, 0);
+    // Hash helper for more dynamic spinning
+    const hash = city.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    
+    // Dynamic intro text
+    const introPre = [
+        "Wir garantieren absolute Preistransparenz für unseren Einsatz in",
+        "Bei uns in",
+        "Damit Sie in",
+        "Die Schlüssel Schmiede bietet in",
+        "Für alle Türöffnungen in",
+        "Unser Schlüsseldienst verspricht für",
+        "Sicherheit und faire Kosten in"
+    ][hash % 7] || "";
+    
+    const introPost = [
+        "Die Berechnung erfolgt immer nach Aufwand und Tageszeit, absolut ohne versteckte Gebühren.",
+        "gibt es keine bösen Überraschungen. Wir kalkulieren fair, transparent und nennen Ihnen stets die echten Kosten.",
+        "genau wissen, was auf Sie zukommt: Unsere Preise richten sich transparent nach Aufwand und Uhrzeit, garantiert ohne Abzocke.",
+        "volle Kostensicherheit. Kein Vermittler, keine überzogenen Rechnungen vor Ort.",
+        "gelten nachvollziehbare Festpreise, die wir Ihnen offen kommunizieren.",
+        "ist uns Ehrlichkeit wichtig. Wir berechnen unsere Dienstleistung fair und verständlich.",
+        "garantieren wir Ihnen von Anfang an Klarheit über die zu erwartenden Kosten."
+    ][(hash >> 1) % 7] || "";
+    
+    const introText = `${introPre} ${city.name} ${introPost}`.replace(`in ${city.name} gibt es`, `in ${city.name} gibt es`).replace(`in ${city.name} genau wissen`, `in ${city.name} genau wissen`);
 
-    const warnText = pickVariant([
-        `Ein seriöser lokaler Schlüsseldienst nennt Ihnen IMMER den verbindlichen Festpreis am Telefon, BEVOR der Monteur zu Ihnen nach ${city.name} aufbricht. Wir garantieren absolute Transparenz ohne Callcenter-Fantasiepreise.`,
-        `Fallen Sie nicht auf Lockangebote herein! Wir geben Ihnen stets vorab am Telefon eine verlässliche Preisauskunft für unseren Einsatz in ${city.name}. Keine versteckten Kosten, direkt vor Ort.`,
-        `Vorsicht vor überregionalen Callcentern. Als verlässlicher Partner für ${city.name} nennen wir Ihnen einen verbindlichen Preis am Telefon, auf den Sie sich verlassen können.`
-    ], city.slug, 1);
+    // Dynamic warning text
+    const warnPre = [
+        "Ein seriöser lokaler Schlüsseldienst nennt Ihnen IMMER den verbindlichen Festpreis am Telefon, BEVOR der Monteur zu Ihnen nach",
+        "Fallen Sie nicht auf Lockangebote herein! Wir geben Ihnen stets vorab am Telefon eine verlässliche Preisauskunft für unseren Einsatz in",
+        "Vorsicht vor überregionalen Callcentern. Als verlässlicher Partner für",
+        "Vertrauen Sie nur auf Anbieter, die Ihnen die echten Kosten für",
+        "Schützen Sie sich vor Abzocke in",
+        "Wir warnen vor unrealistischen 10-Euro-Angeboten für",
+        "Ehrliche Handwerker für"
+    ][(hash >> 2) % 7] || "";
 
-    const descDay = pickVariant([
-        `In ${city.name}: Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen.`,
+    const warnPost = [
+        "aufbricht. Wir garantieren absolute Transparenz ohne Callcenter-Fantasiepreise.",
+        "Keine versteckten Kosten, direkt vor Ort.",
+        "nennen wir Ihnen einen verbindlichen Preis am Telefon, auf den Sie sich verlassen können.",
+        "am Telefon mitteilen. Bei uns gibt es keine Nachforderungen.",
+        "und fordern Sie IMMER einen Festpreis BEVOR der Auftrag startet.",
+        "Wir stehen für regionale Qualität und nachvollziehbare Rechnungen.",
+        "nennen Ihnen den finalen Preis, noch BEVOR sie in das Fahrzeug steigen."
+    ][(hash >> 3) % 7] || "";
+
+    const warnText = `${warnPre} ${city.name} ${warnPost}`;
+
+    const descDay = [
+        `Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen in ${city.name}.`,
         `Ihre Tür in ${city.name} ist zugefallen, aber nicht aktiv verriegelt, oder der Schlüssel steckt innen.`,
-        `Einfache Öffnung einer unverschlossenen Tür in ${city.name}, oft in Sekunden erledigt.`
-    ], city.slug, 2);
+        `Einfache Öffnung einer unverschlossenen Tür in ${city.name}, oft in Sekunden erledigt.`,
+        `Schnelle Hilfe in ${city.name} bei ins Schloss gefallenen Wohnungs- und Haustüren.`,
+        `Sie haben sich in ${city.name} ausgesperrt? Wir öffnen nicht abgeschlossene Türen zügig.`
+    ][hash % 5] || "";
 
-    const descNight = pickVariant([
+    const descNight = [
         `Einsätze in den späten Abend- oder tiefen Nachtstunden in ${city.name}.`,
         `Hilfe in ${city.name} außerhalb der regulären Geschäftszeiten, wenn es dunkel wird.`,
-        `Ihr Notdienst für ${city.name} in den Nachtstunden mit gewohnter Zuverlässigkeit.`
-    ], city.slug, 3);
+        `Ihr Notdienst für ${city.name} in den Nachtstunden mit gewohnter Zuverlässigkeit.`,
+        `Notöffnung in ${city.name} während der Nachtzeit zu fairen Zuschlägen.`,
+        `Auch mitten in der Nacht sind wir in ${city.name} rasch für Sie zur Stelle.`
+    ][(hash >> 1) % 5] || "";
 
-    const descWeekend = pickVariant([
+    const descWeekend = [
         `Notdienst in ${city.name} an allen Samstagen, Sonntagen und Feiertagen.`,
         `Pünktlicher Einsatz in ${city.name} an Sonn- und Feiertagen sowie am kompletten Wochenende.`,
-        `Auch an arbeitsfreien Tagen oder Feiertagen sind wir in ${city.name} für Sie da.`
-    ], city.slug, 4);
+        `Auch an arbeitsfreien Tagen oder Feiertagen sind wir in ${city.name} für Sie da.`,
+        `Bereitschaft in ${city.name} an gesetzlichen Feiertagen und Wochenenden.`,
+        `Unsere Wochenend-Tarife für zuverlässige Türöffnungen in ${city.name}.`
+    ][(hash >> 2) % 5] || "";
 
     // Rotate feature labels to prevent duplicate content across pages
     const featureDay1 = pickVariant([`Werktags ${companyInfo.openingHours.store}`, `Mo-Fr ${companyInfo.openingHours.store}`, "Werktags tagsüber"], city.slug, 10);

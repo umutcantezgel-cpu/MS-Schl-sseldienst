@@ -8,6 +8,7 @@ import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { werkstattImages } from "@/lib/data/imageAssets";
 import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
+import SpunSeoText from "@/components/seo/SpunSeoText";
 
 export const metadata = generateSharedMetadata({
  title: "Kontakt und Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
@@ -161,6 +162,14 @@ export default function KontaktPage() {
           </svg>
           <span>Ihre Anfrage wird vertraulich behandelt und Antwort innerhalb von 30 Minuten</span>
          </div>
+         
+         {/* SEO / Trust Paragraph */}
+         <div className="mt-8 pt-8 border-t border-[var(--border-subtle)]">
+           <h3 className="text-lg font-bold text-[color:var(--text-primary)] mb-3">Warum der direkte Kontakt so wichtig ist</h3>
+           <p className="text-sm text-[color:var(--text-secondary)] leading-relaxed">
+             Viele Schlüsseldienste, die Sie online finden, sind reine Vermittlungszentralen. Sie sitzen oft Hunderte Kilometer entfernt und leiten Ihre Aufträge nur an Subunternehmer weiter, was zu horrenden Anfahrtskosten und völlig unübersichtlichen Preisstrukturen führt. Wenn Sie bei der Schlüssel Schmiede Wetzlar anrufen, landen Sie direkt bei unserem lokalen Team in der Langgasse 70. Dieser direkte Kontakt stellt sicher, dass wir Ihnen bereits am Telefon einen transparenten Festpreis nennen können. Sie wissen genau, wer zu Ihnen kommt und welche Kosten auf Sie zukommen, noch bevor sich unser Monteur überhaupt auf den Weg macht. Lokaler Service bedeutet Sicherheit, Schnelligkeit und Fairness.
+           </p>
+         </div>
        </div>
       </StaggerItem>
 
@@ -205,6 +214,7 @@ export default function KontaktPage() {
       <SeoContentImage image={werkstattImages[1]!} className="w-full h-[300px] md:h-[400px]" sizes="(max-width: 768px) 100vw, 800px" />
      </div>
     </section>
+      <SpunSeoText seed="kontakt" cityOrArea="Wetzlar" />
 
     <aside aria-label="Notfall-Kontakt">
      <EmergencyCTA 

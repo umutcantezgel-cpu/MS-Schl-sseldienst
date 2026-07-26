@@ -8,10 +8,11 @@ import { RevisionTimeline } from "@/components/legal/RevisionTimeline"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Allgemeine Geschäftsbedingungen (AGB) | Schlüssel Schmiede",
-    description: "AGB der Schlüssel Schmiede Wetzlar. | Transparente Bedingungen für Türöffnungen | Klare Regeln für Festpreise und Stornos.",
-    path: "/agb",
-  })
+  title: "AGB | Schlüssel Schmiede Wetzlar",
+  description: "Allgemeine Geschäftsbedingungen (AGB) der Schlüssel Schmiede Wetzlar. Informationen zu Preisen, Anfahrtskosten, Vertragsschluss und Haftung.",
+  path: "/agb",
+  exactTitle: true,
+});
 
 export const dynamic = 'force-static';
 

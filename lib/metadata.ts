@@ -56,7 +56,7 @@ export const generateSharedMetadata = ({
         alternates: {
             canonical: url,
             languages: {
-                "de": url,
+                "de-DE": url,
                 "x-default": url,
             },
         },

@@ -94,8 +94,8 @@ export default function SicherheitstechnikPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
-              Ruhig schlafen,{" "}
-              <span className="text-[var(--color-red-500)]">sicher leben.</span>
+              Sicherheitstechnik{" "}
+              <span className="text-[var(--color-red-500)]">Wetzlar.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Schützen Sie, was Ihnen am wichtigsten ist. Wir analysieren Schwachstellen und sichern Ihr Zuhause mit modernster Technik für ein unerschütterliches Sicherheitsgefühl.
@@ -315,7 +315,7 @@ export default function SicherheitstechnikPage() {
          Informieren Sie sich bei offiziellen Stellen über staatliche Förderungen und polizeiliche Empfehlungen zum Einbruchschutz:
        </p>
        <div className="grid gap-4 sm:grid-cols-2">
-         <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
+         <a href="https://www.kfw.de/159" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
              <ShieldCheck className="h-5 w-5" />
            </div>
@@ -342,7 +342,7 @@ export default function SicherheitstechnikPage() {
              <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Zertifizierungs- und Prüfstelle für Sicherheitstechnik und Einbruchschutz.</p>
            </div>
          </a>
-         <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
+         <a href="https://polizei.hessen.de/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
              <Bell className="h-5 w-5" />
            </div>

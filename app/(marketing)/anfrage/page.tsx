@@ -6,9 +6,10 @@ import Link from "next/link";
 import { Phone, Mail, Clock, ShieldCheck, Check, FileText, HelpCircle, Building } from "lucide-react";
 
 export const metadata = generateSharedMetadata({
-  title: "Unverbindliches Angebot anfragen | Schlüsseldienst Wetzlar",
-  description: "Unverbindliche Anfrage stellen: Verbindliches Preisangebot in 30 Min. Transparent & lokal in Wetzlar. Keine versteckten Kosten. Jetzt anfragen!",
+  title: "Unverbindliche Anfrage | Schlüsseldienst Wetzlar",
+  description: "Fordern Sie jetzt ein kostenloses und unverbindliches Angebot für Schlüsseldienst-Leistungen, Sicherheitstechnik oder Einbruchschutz in Wetzlar an.",
   path: "/anfrage",
+  exactTitle: true,
 });
 
 export default function AnfragePage() {

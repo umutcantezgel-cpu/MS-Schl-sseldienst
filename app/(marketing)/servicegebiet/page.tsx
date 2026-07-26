@@ -29,7 +29,7 @@ export default function ServicegebietPage() {
  const regionalLocations = allLocations.slice(45);
 
  return (
-  <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+  <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans" lang="de">
     {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
     <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Unsere Einsatzgebiete | Schlüsseldienst Wetzlar. Schlüsseldienst Einsatzgebiete im Lahn-Dill-Kreis.</div>
    <script

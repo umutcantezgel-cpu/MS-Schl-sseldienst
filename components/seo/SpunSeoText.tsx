@@ -35,6 +35,16 @@ const PARAGRAPHS = {
     "Transparenz und Ehrlichkeit sind die Grundpfeiler unserer Philosophie. Wenn Sie unseren Schlüsseldienst in {city} rufen, nennen wir Ihnen bereits am Telefon einen verbindlichen Preis für Ihren Einsatz. Versteckte Kosten, überzogene Anfahrtspauschalen oder horrende Nachtzuschläge gibt es bei der Schlüssel Schmiede nicht. Sie können die Rechnung bequem in bar oder per Karte direkt beim Monteur begleichen.",
     "Leider gibt es in der Branche viele schwarze Schafe. Die Schlüssel Schmiede distanziert sich ausdrücklich von Abzock-Methoden. Bei jedem Auftrag in {city} erhalten Sie von uns eine klare Preisstruktur und eine absolute Festpreis-Garantie. Wir besprechen alle Kosten vor Beginn der Arbeit mit Ihnen. Neben der Barzahlung akzeptieren unsere Techniker selbstverständlich auch EC-Karten und moderne Zahlungsmittel wie Apple Pay.",
     "Wir setzen auf langfristiges Vertrauen unserer Kunden in {city}. Daher arbeiten wir ausschließlich mit transparenten Festpreisen, die wir Ihnen offen kommunizieren, noch bevor wir mit der Türöffnung beginnen. Keine versteckten Klauseln, keine bösen Überraschungen. Als seriöser Dienstleister ist es für uns selbstverständlich, dass Sie bei uns sicher, fair und flexibel bezahlen können – gerne auch bargeldlos mit EC-Karte."
+  ],
+  schliessanlagen: [
+    "Für gewerbliche Kunden, Hausverwaltungen und Privatpersonen planen und montieren wir in {city} professionelle Schließanlagen. Ob mechanische Gleichschließung oder eine komplexe elektronische Zutrittskontrolle – wir erarbeiten maßgeschneiderte Konzepte. Durch hochwertige Komponenten namhafter Hersteller gewährleisten wir langlebige Sicherheit und komfortable Bedienung. Lassen Sie sich von uns ein individuelles Schließplan-Management erstellen, das exakt auf Ihre Bedürfnisse und Gebäudeanforderungen abgestimmt ist.",
+    "Eine gut geplante Schließanlage ist das Herzstück der Gebäudesicherheit in {city}. Wir bieten Ihnen von der Beratung über die Montage bis zur regelmäßigen Wartung einen Komplettservice. Unsere Experten analysieren Ihre räumlichen Gegebenheiten und setzen auf mechanische oder mechatronische Systeme höchster Qualität. Profitieren Sie von unserer Erfahrung in der Realisierung von Schließsystemen für Mehrfamilienhäuser, Bürokomplexe und Industrieanlagen, bei denen Sicherheit und Flexibilität im Fokus stehen.",
+    "Vertrauen Sie bei Schließanlagen in {city} auf unser handwerkliches Know-how. Egal ob Sie ein kleines Büro oder eine weitläufige Gewerbeimmobilie absichern möchten – wir konzipieren das passende Schließsystem. Die Schlüssel Schmiede kombiniert bewährte mechanische Technik mit modernen elektronischen Zutrittskontrollen, um Ihnen ein Höchstmaß an Komfort und Sicherheit zu garantieren. Von der ersten Schwachstellenanalyse bis zur finalen Zylinder-Montage stehen wir Ihnen zuverlässig zur Seite."
+  ],
+  warumwir: [
+    "Warum sollten Sie sich für uns entscheiden? Die Schlüssel Schmiede steht in {city} für echte Handwerksqualität, regionale Verankerung und unbedingte Zuverlässigkeit. Wir arbeiten schnell, sauber und transparent. Unser Team bildet sich kontinuierlich weiter, um Ihnen stets die sichersten und modernsten Lösungen im Bereich Türöffnung und Einbruchschutz anbieten zu können. Ihre absolute Zufriedenheit und Sicherheit sind unser oberstes Gebot, an jedem Tag im Jahr.",
+    "Unsere Kunden in {city} schätzen besonders unsere faire und offene Kommunikation sowie die hohe handwerkliche Präzision. Wir sind kein anonymes Callcenter, sondern Ihr Nachbar und Sicherheitsexperte vor Ort. Wenn es auf jede Minute ankommt, sind wir dank unserer optimalen lokalen Vernetzung schnellstens bei Ihnen. Verlassen Sie sich auf einen zertifizierten Schlüsseldienst, der mit Leidenschaft, Spezialwerkzeug und höchstem Engagement an die Arbeit geht.",
+    "Die Entscheidung für den richtigen Schlüsseldienst ist Vertrauenssache. In {city} haben wir uns durch jahrelange, seriöse Arbeit einen hervorragenden Ruf erarbeitet. Wir garantieren Ihnen nicht nur eine zügige und schonende Türöffnung, sondern auch eine ehrliche und unabhängige Sicherheitsberatung. Wir verkaufen Ihnen nichts, was Sie nicht wirklich brauchen, sondern bieten zielgerichtete Lösungen, die perfekt zu Ihrem Budget und Ihrem Sicherheitsbedürfnis passen."
   ]
 };
 
@@ -45,6 +55,8 @@ export default function SpunSeoText({ seed, cityOrArea }: SpunSeoTextProps) {
   const notdienstIdx = (hash >> 1) % 3;
   const einbruchIdx = (hash >> 2) % 3;
   const transparenzIdx = (hash >> 3) % 3;
+  const schliessanlagenIdx = (hash >> 4) % 3;
+  const warumwirIdx = (hash >> 5) % 3;
 
   const replaceCity = (text: string) => text.replace(/{city}/g, cityOrArea);
 
@@ -63,9 +75,17 @@ export default function SpunSeoText({ seed, cityOrArea }: SpunSeoTextProps) {
         <p className="mb-4 text-gray-700">
           {replaceCity(PARAGRAPHS.einbruchschutz[einbruchIdx] || "")}
         </p>
+        <h3 className="text-xl font-bold mb-3 mt-6">Schließanlagen und moderne Zutrittskontrolle</h3>
+        <p className="mb-4 text-gray-700">
+          {replaceCity(PARAGRAPHS.schliessanlagen[schliessanlagenIdx] || "")}
+        </p>
         <h3 className="text-xl font-bold mb-3 mt-6">Unser Versprechen: Professionalität und Transparenz</h3>
         <p className="mb-4 text-gray-700">
           {replaceCity(PARAGRAPHS.transparenz[transparenzIdx] || "")}
+        </p>
+        <h3 className="text-xl font-bold mb-3 mt-6">Warum die Schlüssel Schmiede?</h3>
+        <p className="mb-4 text-gray-700">
+          {replaceCity(PARAGRAPHS.warumwir[warumwirIdx] || "")}
         </p>
       </div>
     </section>

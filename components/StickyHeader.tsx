@@ -412,6 +412,7 @@ export default function StickyHeader() {
             {/* Drawer Header */}
             <div className="flex justify-between items-center px-4 sm:px-5 h-[64px] sm:h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="sr-only">Startseite</span>
                 <Image
                   src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar Logo"

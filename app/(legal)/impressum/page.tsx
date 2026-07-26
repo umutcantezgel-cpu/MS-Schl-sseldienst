@@ -114,7 +114,7 @@ export default function ImpressumPage() {
             <LegalSection id="7-streitschlichtung">
                 <h2 className="mt-0">7. Verbraucherstreitbeilegung & Schlichtungsstelle</h2>
                 <p>Die europäische Online-Streitbeilegungsplattform (OS) steht Verbrauchern zur Beilegung von Streitigkeiten zur Verfügung. Weiterführende Informationen zur Schlichtung erhalten Sie unter:</p>
-                <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr/</a></p>
+                <p><a href="https://consumer-redress.ec.europa.eu/site-relocation_en?prefLang=de" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://consumer-redress.ec.europa.eu/site-relocation_en?prefLang=de</a></p>
                 <p>Unsere E-Mail-Adresse lautet: <code>schluesselschmiede@gmail.com</code></p>
                 <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, streben jedoch stets einvernehmliche Lösungen im direkten Kundenkontakt an.</p>
             </LegalSection>

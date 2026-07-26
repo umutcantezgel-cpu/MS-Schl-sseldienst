@@ -96,10 +96,9 @@ export default function TuroeffnungPage() {
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="backdrop-blur-xl bg-white/70 border border-white/40 rounded-3xl shadow-2xl px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <h1 className="text-[clamp(28px,7vw,36px)] sm:text-4xl lg:text-6xl font-black tracking-tighter text-[color:var(--text-primary)] leading-[1.15] mb-4 sm:mb-6">
-              Schnell wieder{" "}
-              <span className="text-[var(--color-red-500)]">im Warmen.</span>
+              <span className="text-[color:var(--text-secondary)]">Türöffnung Wetzlar:</span>
               <br />
-              <span className="text-[color:var(--text-secondary)]">Türöffnung in Wetzlar.</span>
+              <span className="text-[var(--color-red-500)]">Zerstörungsfrei ab 99€.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto" style={{ hyphens: "none" }} lang="de">
               Wir bringen Sie sicher und beschädigungsfrei in unter 25 Minuten zurück in Ihre Wohnung. Ehrliche Festpreise ab 99€ und garantiert ohne versteckte Kosten.

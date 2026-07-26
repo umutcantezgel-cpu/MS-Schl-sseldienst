@@ -68,7 +68,7 @@ export default function Footer() {
      {/* Brand Column */}
       <div className="col-span-2 mb-8 lg:mb-0 relative">
        <Link href="/" title="Zurück zur Startseite und Schlüssel Schmiede Wetzlar" className="flex items-center justify-center relative z-10 group w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] transition-all duration-700 hover:scale-110">
-        <span className="sr-only">Zurück zur Startseite und Schlüssel Schmiede Wetzlar</span>
+        <span className="sr-only">Startseite Schlüssel Schmiede Wetzlar</span>
         
         {/* Subtle Logo Glow - centered behind logo */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
@@ -197,13 +197,13 @@ export default function Footer() {
          Vertrauenswürdige Partner & Institutionen
        </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
-         <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Kriminalprävention</a>
-         <a href="https://www.bsi.bund.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">BSI Sicherheit</a>
-         <a href="https://www.hwk-wiesbaden.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</a>
-         <a href="https://www.wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Stadtverwaltung Wetzlar</a>
+         <a href="https://www.k-einbruch.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Kriminalprävention</a>
+         <a href="https://www.bsi.bund.de/DE/Home/home_node.html" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">BSI Sicherheit</a>
+         <a href="https://www.hwk-wiesbaden.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</a>
+         <a href="https://www.wetzlar.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Stadtverwaltung Wetzlar</a>
          <a href="https://www.polizei.hessen.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Polizei Hessen</a>
-         <a href="https://www.verbraucherzentrale-hessen.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</a>
-         <a href="https://www.kfw.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">KfW Förderung</a>
+         <a href="https://www.verbraucherzentrale-hessen.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</a>
+         <a href="https://www.kfw.de/kfw.de.html" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">KfW Förderung</a>
        </div>
      </div>
 

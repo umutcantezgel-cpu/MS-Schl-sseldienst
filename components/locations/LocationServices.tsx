@@ -31,11 +31,29 @@ export default function LocationServices({ city }: LocationServicesProps) {
         ? `Wir beraten Sie direkt an Ihrem Haus in ${city.name} zum optimalen Einbruchschutz für abgelegene Gebäude.`
         : `Wir optimieren den Einbruchschutz Ihrer Wohnung oder Ihres Gewerbes in ${city.name} auf den neuesten Stand der Technik.`;
 
-    const introText = pickVariant([
-        `Wir sind Ihr direkter Ansprechpartner vor Ort in ${city.name}. Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.`,
-        `Setzen Sie auf lokales Handwerk direkt aus ${city.name}. Wir verzichten auf Vermittlungszentralen und helfen sofort mit Expertise.`,
-        `Lokaler Service für ${city.name} bedeutet für uns: Kurze Wege, ehrliche Beratung und professionelle Hilfe, die direkt bei Ihnen in der Nachbarschaft sitzt.`
-    ], city.slug, 5);
+    const hash = city.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    
+    const introPre = [
+        "Wir sind Ihr direkter Ansprechpartner vor Ort in",
+        "Setzen Sie auf lokales Handwerk direkt aus",
+        "Lokaler Service für",
+        "Die Schlüssel Schmiede hilft Ihnen in",
+        "Unsere erfahrenen Monteure sind in",
+        "Als Fachbetrieb betreuen wir Kunden in",
+        "Wir bieten verlässlichen Service für"
+    ][hash % 7] || "";
+
+    const introPost = [
+        "Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.",
+        "Wir verzichten auf Vermittlungszentralen und helfen sofort mit Expertise.",
+        "bedeutet für uns: Kurze Wege, ehrliche Beratung und professionelle Hilfe, die direkt bei Ihnen in der Nachbarschaft sitzt.",
+        "jederzeit kompetent. Keine langen Wartezeiten, faire Festpreise und echte Handwerksqualität.",
+        "schnell zur Stelle. Vertrauen Sie auf einen echten Handwerksbetrieb aus der Region.",
+        "mit einem umfassenden Angebot an Sicherheits- und Schloss-Dienstleistungen.",
+        "und lösen jedes Schlüsselproblem rasch und zuverlässig."
+    ][(hash >> 1) % 7] || "";
+    
+    const introText = `${introPre} ${city.name}. ${introPost}`.replace('. bedeutet', ' bedeutet');
 
     const services = [
         {

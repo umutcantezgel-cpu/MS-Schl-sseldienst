@@ -4,6 +4,7 @@ import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { Users, ShieldCheck, MapPin, Award, CheckCircle2, Phone, Star, Wrench, Heart } from "lucide-react";
+import SpunSeoText from "@/components/seo/SpunSeoText";
 
 export const metadata = generateSharedMetadata({
   title: "Unser Team Wetzlar | Festangestellte Monteure",
@@ -131,6 +132,17 @@ export default function TeamPage() {
                 </div>
               </div>
             </div>
+            
+            {/* Additional Text about Qualifications */}
+            <div className="bg-white border border-[var(--border-subtle)] rounded-2xl p-8 space-y-4 shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                <Wrench className="w-5 h-5 text-[var(--color-red-500)]" />
+                Spezialisten für zerstörungsfreie Öffnungstechnik
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Unsere Techniker sind keine angelernten Hilfskräfte, sondern erfahrene Profis, die regelmäßig in den neuesten Methoden der zerstörungsfreien Öffnungstechnik (Lockpicking, Schlagschlüssel-Technik, elektromechanisches Picken) geschult werden. Wir investieren kontinuierlich in teure Spezialwerkzeuge, wie sie sonst nur bei polizeilichen Sondereinheiten zum Einsatz kommen. Diese Expertise garantiert, dass wir in 99% der Fälle zugefallene Türen öffnen können, ohne den Schließzylinder oder den Türbeschlag zu beschädigen. Dies spart unseren Kunden bares Geld und reduziert den Stress in Notsituationen erheblich.
+              </p>
+            </div>
 
           </div>
 
@@ -169,6 +181,8 @@ export default function TeamPage() {
 
         </div>
       </section>
+      
+      <SpunSeoText seed="team" cityOrArea="Wetzlar" />
     </div>
   );
 }
