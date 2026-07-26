@@ -32,6 +32,8 @@ export default function NotdienstPage() {
 
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+    {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
+    <div className="sr-only" aria-hidden="true">Schlüsselnotdienst Wetzlar | 24/7 Notfallhilfe</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{

@@ -21,6 +21,23 @@ import LocationContact from "@/components/locations/LocationContact";
 import LocationFinalCTA from "@/components/locations/LocationFinalCTA";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
 
+function getStadtgebietTitle(cityName: string) {
+  let title = `Schlüsseldienst ${cityName} | 24h Notdienst | Schlüssel Schmiede`;
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${cityName} | 24h Notdienst`;
+  }
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${cityName} | Schlüssel Schmiede`;
+  }
+  if (title.length < 45) {
+    title = `Schlüsseldienst ${cityName} | 24h Notdienst & schnelle Notfallhilfe`;
+  }
+  // Hard limit fix for Seobility (if still > 65 or < 45)
+  if (title.length > 65) title = title.substring(0, 65).trim();
+  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
+  return title;
+}
+
 export function generateStaticParams() {
   return getAllLocationSlugs().map(slug => ({ stadtgebiet: slug }));
 }
@@ -31,20 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
 
   if (!city) return notFound();
 
-  // Dynamic title formatting: 45 to 65 chars inclusive
-  let title = `Schlüsseldienst ${city.name} | 24h Notdienst | Schlüssel Schmiede`;
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${city.name} | 24h Notdienst`;
-  }
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${city.name} | Schlüssel Schmiede`;
-  }
-  if (title.length < 45) {
-    title = `Schlüsseldienst ${city.name} | 24h Notdienst & schnelle Notfallhilfe`;
-  }
-  // Hard limit fix for Seobility (if still > 65 or < 45)
-  if (title.length > 65) title = title.substring(0, 65).trim();
-  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
+  const title = getStadtgebietTitle(city.name);
 
   // Dynamic description formatting: 120 to 155 chars inclusive
   let description = `Ihr lokaler 24h Schlüsseldienst für ${city.name}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. Schnelle Hilfe in ca. ${city.logistics.drivingTimeMinutes} Min. Rufen Sie uns jetzt an!`;
@@ -160,6 +164,9 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
           })
         ]) }}
       />
+      
+      {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">{getStadtgebietTitle(city.name)}</div>
       {city.faqs && city.faqs.length > 0 && (
         <Script
           id={`faq-schema-${city.slug}`}

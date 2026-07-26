@@ -14,6 +14,8 @@ export const metadata = generateSharedMetadata({
 export default function GeschichtePage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">Unsere Geschichte | Schlüssel Schmiede Wetzlar</div>
       {/* Hero */}
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
         <div

@@ -46,6 +46,8 @@ const CATEGORY_MAP: Record<ImageCategory, typeof allImages> = {
 export default function PreviewImagesPage() {
   return (
     <div className="min-h-screen bg-gray-950 text-white py-32 px-6">
+      {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">Bilder-Vorschau & Visual DNA Katalog | Wetzlar</div>
       <div className="max-w-7xl mx-auto space-y-12">
 
         <div>

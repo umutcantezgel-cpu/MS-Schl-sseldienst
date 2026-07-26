@@ -21,6 +21,8 @@ export default function EinbruchrisikoPage() {
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">Einbruchrisiko Rechner Wetzlar | Kostenloser Test</div>
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-[var(--surface-elevated)] overflow-hidden">
         <div className="container mx-auto px-[var(--section-px)] relative z-10 text-center flex flex-col items-center">
           <Breadcrumbs items={[

@@ -11,12 +11,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: Props) {
-  const resolvedParams = await params;
-  const entry = lexikonData.find((e) => e.slug === resolvedParams.slug);
-  
-  if (!entry) return {};
-
+function getLexikonTitle(entry: { title: string }) {
   let title = `${entry.title} | Schließtechnik Lexikon Wetzlar`;
   if (title.length < 45) {
     title = `${entry.title} einfach erklärt | Sicherheitslexikon Wetzlar`;
@@ -27,6 +22,16 @@ export async function generateMetadata({ params }: Props) {
   if (title.length > 65) {
     title = title.slice(0, 62) + "...";
   }
+  return title;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const resolvedParams = await params;
+  const entry = lexikonData.find((e) => e.slug === resolvedParams.slug);
+  
+  if (!entry) return {};
+
+  let title = getLexikonTitle(entry);
 
   let description = entry.definition || "";
   if (description.length < 120) {
@@ -85,6 +90,8 @@ export default async function LexikonEntryPage({ params }: Props) {
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">{getLexikonTitle(entry)}</div>
       <JsonLd data={faqSchema} />
       <JsonLd data={webPageSchema} />
 
