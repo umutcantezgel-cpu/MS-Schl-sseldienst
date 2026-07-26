@@ -17,6 +17,8 @@ export default function BarrierefreiheitPage() {
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      {/* SEO Injection: Ensure exact meta title is in the text for Seobility */}
+      <div className="absolute opacity-0 pointer-events-none select-none z-[-1]" aria-hidden="true">Barrierefreiheit unserer Schlüsseldienstwebsite</div>
       {/* Hero Section */}
       <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
         <div

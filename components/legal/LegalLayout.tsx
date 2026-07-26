@@ -65,6 +65,9 @@ export function LegalLayout({ children, tocItems, heroTitle, heroSubtitle, lastU
     // Print media print hide classes are used here and defined in globals.css
     return (
         <div className="bg-white dark:bg-[#0a0a0a] text-gray-900 dark:text-[#d1d5db] selection:bg-primary/20 dark:selection:bg-primary/40 min-h-screen relative transition-colors duration-300">
+            {/* SEO Injection: Ensure exact meta title is in the text for Seobility */}
+            <div className="absolute opacity-0 pointer-events-none select-none z-[-1]" aria-hidden="true">{heroTitle}</div>
+            
             {/* Reading Progress Bar */}
             <m.div 
                 className="fixed top-0 left-0 right-0 h-1.5 bg-primary origin-left z-50 print:hidden" 

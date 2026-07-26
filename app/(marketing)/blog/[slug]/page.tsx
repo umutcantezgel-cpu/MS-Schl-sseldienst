@@ -21,7 +21,7 @@ import StepByStep from "@/components/mdx/StepByStep";
 import RiskCalculator from "@/components/growth/RiskCalculator";
 import ImageZoom from "@/components/mdx/ImageZoom";
 import RegionalLink from "@/components/mdx/RegionalLink";
-import SeoContentSection from "@/components/sections/home/SeoContentSection";
+import SpunSeoText from "@/components/seo/SpunSeoText";
 
 const mdxComponents = {
   ProTip,
@@ -198,7 +198,7 @@ export default async function BlogDetailPage({ params }: Props) {
       <StickyCTA />
       
       {/* SEO Content Block zur Vermeidung von Thin Content */}
-      <SeoContentSection />
+      <SpunSeoText seed={post.slug} cityOrArea="Wetzlar" />
     </>
   );
 }
