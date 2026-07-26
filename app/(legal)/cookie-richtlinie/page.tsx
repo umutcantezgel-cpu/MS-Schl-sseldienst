@@ -198,13 +198,11 @@ export default function CookieRichtliniePage() {
                 <h2 className="mt-0">8. Kontakt zum Datenschutzbeauftragten</h2>
                 <p>Bei Fragen zu unserer Cookie-Richtlinie oder den Datenschutzeinstellungen kontaktieren Sie uns bitte unter:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    Mina Saad<br />
-                    Schlüssel Schmiede Wetzlar<br />
-                    Gloelstraße 11<br />
-                    35576 Wetzlar<br />
-                    Deutschland<br /><br />
-                    Telefon: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
-                    E-Mail: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
+                    Verantwortlicher: Mina Saad<br />
+                    Schlüssel Schmiede (Wetzlar)<br />
+                    Gloelstraße 11, DE-35576 Wetzlar<br /><br />
+                    Hotline: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
+                    Mail: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
                 </div>
                 <p>Weitere Details finden Sie in unserer vollständigen <Link href="/datenschutz" className="text-[var(--action-primary)] hover:underline font-medium">Datenschutzerklärung</Link>.</p>
             </LegalSection>

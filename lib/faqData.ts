@@ -279,6 +279,17 @@ export function getHomepageFAQs(): FAQItem[] {
 
     return homepageQuestions
         .slice(0, 5)
-        .map(q => FAQ_DATA.find(faq => faq.question === q))
+        .map(q => {
+            const faq = FAQ_DATA.find(f => f.question === q);
+            if (!faq) return undefined;
+            // Make the homepage answers slightly different to avoid duplicate content penalties
+            let newAnswer = faq.answer;
+            newAnswer = newAnswer.replace("Wir wissen, wie sehr", "Wir verstehen, wie sehr");
+            newAnswer = newAnswer.replace("Wenn Sie ausgesperrt im Regen stehen, zählt", "Bei einer zugefallenen Tür zählt");
+            newAnswer = newAnswer.replace("Ja, Schlüssel Schmiede Wetzlar ist rund um die Uhr", "Selbstverständlich ist die Schlüssel Schmiede Wetzlar 24/7");
+            newAnswer = newAnswer.replace("Ein seriöser Schlüsseldienst nutzt Ihre Notsituation", "Ein vertrauenswürdiger Schlüsseldienst nutzt Ihre Notlage");
+            newAnswer = newAnswer.replace("Nein. Wir verstehen Ihre Sorge vor teuren Schäden.", "Nein, wir vermeiden Schäden. Wir verstehen Ihre Sorge.");
+            return { ...faq, answer: newAnswer };
+        })
         .filter((faq): faq is FAQItem => faq !== undefined);
 }

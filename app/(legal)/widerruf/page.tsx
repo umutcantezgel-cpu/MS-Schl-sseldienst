@@ -59,13 +59,12 @@ export default function WiderrufPage() {
                 <h2 className="mt-0">3. Ausübung des Widerrufs</h2>
                 <p>Ihre Widerrufserklärung richten Sie bitte an folgende Anschrift:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    Mina Saad<br />
-                    Schlüssel Schmiede Wetzlar<br />
+                    Schlüssel Schmiede (Widerrufs-Abteilung)<br />
+                    z.Hd. Mina Saad<br />
                     Gloelstraße 11<br />
-                    35576 Wetzlar<br />
-                    Deutschland<br /><br />
-                    Telefon: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
-                    E-Mail: <Link href="mailto:schluesselschmiede@gmail.com?subject=Widerruf" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
+                    35576 Wetzlar, DE<br /><br />
+                    Kundenservice: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
+                    E-Mail-Kontakt: <Link href="mailto:schluesselschmiede@gmail.com?subject=Widerruf" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
                 </div>
                 <p>Sie können dafür das unten beigefügte <Link href="#6-muster-formular" className="text-[var(--action-primary)] hover:underline font-medium">Muster-Widerrufsformular</Link> verwenden.</p>
                 <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
@@ -139,13 +138,12 @@ export default function WiderrufPage() {
                 <h2 className="mt-0">7. Kontaktfragen zum Widerrufsrecht</h2>
                 <p>Bei allen Fragen zur Ausübung Ihres Widerrufsrechts wenden Sie sich bitte direkt an den Kundenservice der Schlüssel Schmiede Wetzlar:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    Mina Saad<br />
-                    Schlüssel Schmiede Wetzlar<br />
+                    Schlüssel Schmiede (Widerrufs-Abteilung)<br />
+                    z.Hd. Mina Saad<br />
                     Gloelstraße 11<br />
-                    35576 Wetzlar<br />
-                    Deutschland<br /><br />
-                    Telefon: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
-                    E-Mail: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
+                    35576 Wetzlar, DE<br /><br />
+                    Kundenservice: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
+                    E-Mail-Kontakt: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
                 </div>
                 <p>Weiterführende Hinweise finden Sie in unseren <Link href="/agb#6-widerrufsrecht" className="text-[var(--action-primary)] hover:underline font-medium">Allgemeinen Geschäftsbedingungen</Link> sowie in unserer <Link href="/datenschutz" className="text-[var(--action-primary)] hover:underline font-medium">Datenschutzerklärung</Link>.</p>
             </LegalSection>

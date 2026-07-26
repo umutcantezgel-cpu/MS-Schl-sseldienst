@@ -52,11 +52,9 @@ export default function AGBPage() {
                 <p>1.1. Diese Allgemeinen Geschäftsbedingungen (im Folgenden &quot;AGB&quot;) gelten für alle gegenwärtigen und zukünftigen Rechtsgeschäfte, Dienstleistungen, Werkleistungen und Lieferungen zwischen:</p>
                 <div className="bg-gray-50 p-4 rounded-lg my-4 text-sm border border-gray-200">
                     <strong>Vertragspartner:</strong><br />
-                    Schlüssel Schmiede<br />
-                    Mina Saad<br />
-                    Gloelstraße 11<br />
-                    35576 Wetzlar<br />
-                    E-Mail: schluesselschmiede@gmail.com<br />
+                    Schlüssel Schmiede (Inh. Mina Saad)<br />
+                    Gloelstr. 11, 35576 Wetzlar<br />
+                    Kontakt: schluesselschmiede@gmail.com<br />
                     (im Folgenden &quot;Auftragnehmer&quot; oder &quot;Schlüssel Schmiede&quot; genannt)
                 </div>
                 <p>und dem Auftraggeber (im Folgenden &quot;Kunde&quot; genannt).</p>

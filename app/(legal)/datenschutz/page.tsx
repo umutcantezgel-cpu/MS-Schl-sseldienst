@@ -51,13 +51,12 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">1. Verantwortlicher</h2>
                 <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <strong>Mina Saad</strong><br />
+                    <strong>Inhaber: Mina Saad</strong><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
-                    35576 Wetzlar<br />
-                    Deutschland<br /><br />
-                    Telefon: 06441 8056279<br />
-                    E-Mail: <a href="mailto:schluesselschmiede@gmail.com">schluesselschmiede@gmail.com</a>
+                    D-35576 Wetzlar<br /><br />
+                    Telefonisch erreichbar: 06441 8056279<br />
+                    Mail: <a href="mailto:schluesselschmiede@gmail.com">schluesselschmiede@gmail.com</a>
                 </div>
             </LegalSection>
 

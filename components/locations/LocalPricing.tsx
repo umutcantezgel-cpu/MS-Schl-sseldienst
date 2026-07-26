@@ -9,9 +9,9 @@ import { companyInfo } from "@/lib/data/company";
 export default function LocalPricing({ city }: { city: LocationData }) {
     // Duplicate Content Prevention (Spinning)
     const introText = pickVariant([
-        "Wir garantieren absolute Preistransparenz. Die Berechnung erfolgt immer nach Aufwand und Tageszeit, absolut ohne versteckte Gebühren.",
-        "Bei uns gibt es keine bösen Überraschungen. Wir kalkulieren fair, transparent und nennen Ihnen stets die echten Kosten.",
-        "Damit Sie genau wissen, was auf Sie zukommt: Unsere Preise richten sich transparent nach Aufwand und Uhrzeit, garantiert ohne Abzocke."
+        `Wir garantieren absolute Preistransparenz für unseren Einsatz in ${city.name}. Die Berechnung erfolgt immer nach Aufwand und Tageszeit, absolut ohne versteckte Gebühren.`,
+        `Bei uns in ${city.name} gibt es keine bösen Überraschungen. Wir kalkulieren fair, transparent und nennen Ihnen stets die echten Kosten.`,
+        `Damit Sie in ${city.name} genau wissen, was auf Sie zukommt: Unsere Preise richten sich transparent nach Aufwand und Uhrzeit, garantiert ohne Abzocke.`
     ], city.slug, 0);
 
     const warnText = pickVariant([

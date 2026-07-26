@@ -32,9 +32,9 @@ export default function LocationServices({ city }: LocationServicesProps) {
         : `Wir optimieren den Einbruchschutz Ihrer Wohnung oder Ihres Gewerbes in ${city.name} auf den neuesten Stand der Technik.`;
 
     const introText = pickVariant([
-        "Wir sind Ihr direkter Ansprechpartner vor Ort. Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.",
-        "Setzen Sie auf lokales Handwerk direkt aus der Nähe. Wir verzichten auf Vermittlungszentralen und helfen sofort mit Expertise.",
-        "Lokaler Service bedeutet für uns: Kurze Wege, ehrliche Beratung und professionelle Hilfe, die direkt bei Ihnen in der Nachbarschaft sitzt."
+        `Wir sind Ihr direkter Ansprechpartner vor Ort in ${city.name}. Ohne Vermittler, mit voller lokaler Kompetenz und dem richtigen Werkzeug im Wagen.`,
+        `Setzen Sie auf lokales Handwerk direkt aus ${city.name}. Wir verzichten auf Vermittlungszentralen und helfen sofort mit Expertise.`,
+        `Lokaler Service für ${city.name} bedeutet für uns: Kurze Wege, ehrliche Beratung und professionelle Hilfe, die direkt bei Ihnen in der Nachbarschaft sitzt.`
     ], city.slug, 5);
 
     const services = [
