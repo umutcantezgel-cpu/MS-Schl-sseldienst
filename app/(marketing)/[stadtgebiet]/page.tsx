@@ -166,7 +166,7 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
       />
       
       {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">{getStadtgebietTitle(city.name)}</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">{getStadtgebietTitle(city.name)}</div>
       {city.faqs && city.faqs.length > 0 && (
         <Script
           id={`faq-schema-${city.slug}`}

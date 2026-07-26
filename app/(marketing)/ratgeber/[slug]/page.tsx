@@ -101,7 +101,7 @@ export default async function RatgeberDetailPage({ params }: Props) {
 
   return (
     <>
-      <div className="sr-only" aria-hidden="true">{post.metadata.title} | Schlüsseldienst Wetzlar. {post.metadata.title}.</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">{post.metadata.title} | Schlüsseldienst Wetzlar. {post.metadata.title}.</div>
       <JsonLd data={getArticleSchema({
         headline: post.metadata.title,
         description: post.metadata.excerpt || "",

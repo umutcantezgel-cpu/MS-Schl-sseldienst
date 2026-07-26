@@ -15,7 +15,7 @@ export default function PhilosophiePage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">Unsere Philosophie & Werte | Schlüssel Schmiede. Unsere Philosophie & Werte | Schlüsseldienst Wetzlar.</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Unsere Philosophie & Werte | Schlüssel Schmiede. Unsere Philosophie & Werte | Schlüsseldienst Wetzlar.</div>
       {/* Hero */}
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
         <div

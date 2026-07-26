@@ -29,7 +29,7 @@ export default function LeistungenPage() {
   return (
     <main className="bg-white pb-32 pt-32 lg:pt-40">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">Alle Schlüsseldienst Leistungen | Wetzlar Notdienst. Unsere Leistungen im Überblick.</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Alle Schlüsseldienst Leistungen | Wetzlar Notdienst. Unsere Leistungen im Überblick.</div>
       
       {/* HERO SECTION */}
       <section className="px-[var(--section-px)] mb-20 lg:mb-32">

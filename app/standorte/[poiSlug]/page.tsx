@@ -402,7 +402,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
   return (
     <div className="bg-transparent text-[color:var(--text-primary)] font-sans min-h-screen">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">{title}. Schlüsseldienst {poi.name}.</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">{title}. Schlüsseldienst {poi.name}.</div>
       <Script
         id={`schema-poi-${poi.slug}`}
         type="application/ld+json"

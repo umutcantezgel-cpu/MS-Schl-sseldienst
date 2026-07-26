@@ -42,7 +42,7 @@ export default function DatenschutzPage() {
 
             <LegalSection>
                 <TLDRBox title="Datenschutz auf einen Blick" icon="info">
-                    <p>Wenn Sie unsere Website besuchen, werden bestimmte Daten (wie Ihre IP-Adresse) erfasst, um den technischen Betrieb sicherzustellen (Server-Logfiles). Im Kontaktformular angegebene Daten dienen rein der Auftragsabwicklung und Beantwortung.</p>
+                    <p>Diese <strong>Datenschutzerklärung nach DSGVO</strong> klärt Sie über die Art, den Umfang und den Zweck der Verarbeitung von personenbezogenen Daten auf. Wenn Sie unsere Website besuchen, werden bestimmte Daten (wie Ihre IP-Adresse) erfasst, um den technischen Betrieb sicherzustellen (Server-Logfiles). Im Kontaktformular angegebene Daten dienen rein der Auftragsabwicklung und Beantwortung.</p>
                     <p><strong>Wir verkaufen Ihre Daten nicht.</strong> Sie haben jederzeit das Recht auf Löschung, Berichtigung und kostenlose Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten.</p>
                 </TLDRBox>
             </LegalSection>

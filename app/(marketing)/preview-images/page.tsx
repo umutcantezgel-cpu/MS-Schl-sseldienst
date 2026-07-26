@@ -47,7 +47,7 @@ export default function PreviewImagesPage() {
   return (
     <div className="min-h-screen bg-gray-950 text-white py-32 px-6">
       {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">Bilder-Vorschau & Visual DNA Katalog | Wetzlar</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Bilder-Vorschau & Visual DNA Katalog | Wetzlar</div>
       <div className="max-w-7xl mx-auto space-y-12">
 
         <div>

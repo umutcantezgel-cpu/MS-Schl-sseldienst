@@ -22,7 +22,7 @@ export default function EinbruchrisikoPage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">Einbruchrisiko Rechner Wetzlar | Kostenloser Test. Wie sicher ist Ihr Zuhause?</div>
+      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Einbruchrisiko in Wetzlar | Schlüsseldienst Info. Einbruchrisiko & Statistik in Wetzlar | Schlüsseldienst.</div>
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-[var(--surface-elevated)] overflow-hidden">
         <div className="container mx-auto px-[var(--section-px)] relative z-10 text-center flex flex-col items-center">
           <Breadcrumbs items={[

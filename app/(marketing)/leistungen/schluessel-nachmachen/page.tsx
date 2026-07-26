@@ -38,7 +38,7 @@ export default function SchluesselNachmachenPage() {
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Schlüssel nachmachen | Schlüsseldienst Wetzlar. Der perfekte Ersatzschlüssel in Rekordzeit.</div>
+   <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schlüssel nachmachen | Schlüsseldienst Wetzlar. Der perfekte Ersatzschlüssel in Rekordzeit.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{

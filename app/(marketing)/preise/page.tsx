@@ -42,8 +42,7 @@ export default function PreisePage() {
 
  return (
   <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans">
-   {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Faire Preise & Kosten | Schlüssel Schmiede Wetzlar. Ehrliche Festpreise für Ihren Schlüsseldienst.</div>
+   <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Faire Preise & Kosten | Schlüssel Schmiede Wetzlar. Ehrliche Festpreise für Ihren Schlüsseldienst.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: JSON.stringify(mainServicesSchema) }}
@@ -88,7 +87,7 @@ export default function PreisePage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-            Wir hassen versteckte Gebühren. Berechnen Sie Ihren <strong>verbindlichen Endpreis für Wetzlar</strong> in unter 3 Sekunden.
+            Wir hassen versteckte Gebühren und bieten <strong>ehrliche Festpreise für Ihren Schlüsseldienst</strong>. Berechnen Sie Ihren <strong>verbindlichen Endpreis für Wetzlar</strong> in unter 3 Sekunden.
           </p>
         </StaggerItem>
       </StaggerReveal>

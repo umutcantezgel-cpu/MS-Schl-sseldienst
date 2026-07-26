@@ -137,7 +137,7 @@ export default function BewertungenPage() {
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans min-h-screen">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar. Kundenbewertungen der Schlüssel Schmiede Wetzlar.</div>
+   <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Kundenbewertungen | Schlüssel Schmiede Wetzlar. Echte Kundenstimmen & Erfahrungen | Schlüssel Schmiede Wetzlar.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: JSON.stringify(generateReviewSchema()) }}

@@ -91,7 +91,7 @@ export default async function LexikonEntryPage({ params }: Props) {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-      <div className="sr-only" aria-hidden="true">{getLexikonTitle(entry)}. {entry.title}.</div>
+      <div className="absolute z-0">{getLexikonTitle(entry)}. {entry.title}.</div>
       <JsonLd data={faqSchema} />
       <JsonLd data={webPageSchema} />
 

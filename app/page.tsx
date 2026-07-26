@@ -61,7 +61,7 @@ export default function HomePage() {
           <TrustStrip />
         </div>
         <aside aria-labelledby="google-reviews-heading" className="pointer-events-auto">
-          <h2 id="google-reviews-heading" className="sr-only">Kundenbewertungen auf Google</h2>
+          <h2 id="google-reviews-heading" className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Kundenbewertungen auf Google</h2>
           <GoogleReviewsBadge rating={aggregateRating.ratingValue} count={aggregateRating.reviewCount} />
         </aside>
       </div>
