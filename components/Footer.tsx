@@ -197,14 +197,13 @@ export default function Footer() {
          Vertrauenswürdige Partner & Institutionen
        </div>
        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--color-charcoal-400)]">
-
          <a href="https://www.k-einbruch.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH und Polizeiliche Kriminalprävention</a>
-         <a href="https://www.abus.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">ABUS Sicherheitstechnik</a>
+         <a href="https://www.bsi.bund.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">BSI Sicherheit</a>
          <a href="https://www.hwk-wiesbaden.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Handwerkskammer Wiesbaden</a>
          <a href="https://www.wetzlar.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Stadtverwaltung Wetzlar</a>
-         <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Polizeipräsidium Mittelhessen</a>
+         <a href="https://www.polizei.hessen.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Polizei Hessen</a>
          <a href="https://www.verbraucherzentrale-hessen.de" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">Verbraucherzentrale Hessen</a>
-         <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">KfW Einbruchschutz-Förderung</a>
+         <a href="https://www.kfw.de/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-red-500)] transition-colors">KfW Förderung</a>
        </div>
      </div>
 

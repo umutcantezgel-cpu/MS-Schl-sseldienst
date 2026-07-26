@@ -46,7 +46,7 @@ export default function BarrierefreiheitPage() {
           >
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-6)]">
-                Erklärung zur Barrierefreiheit unserer Website
+                Barrierefreiheit unserer Schlüsseldienstwebsite
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>

@@ -24,7 +24,7 @@ const TOC_ITEMS = [
 export default function WiderrufPage() {
     return (
         <LegalLayout
-            heroTitle="Widerrufsbelehrung für Schlüsseldienst-Aufträge"
+            heroTitle="Widerrufsbelehrung für Schlüsseldienstaufträge"
             heroSubtitle="Ihre Rechte als Verbraucher gemäß dem Bürgerlichen Gesetzbuch. Transparent, verständlich und ohne Kleingedrucktes."
             lastUpdated="27. März 2026"
             tocItems={TOC_ITEMS}

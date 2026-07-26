@@ -38,7 +38,7 @@ export default function LexikonPage() {
           >
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Schlüsseldienst Lexikon | Fachbegriffe & Sicherheitstechnik
+                Schlüsseldienst Lexikon | Fachbegriffe erklärt
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
