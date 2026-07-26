@@ -67,7 +67,7 @@ export default function Footer() {
      <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
      {/* Brand Column */}
       <div className="col-span-2 mb-8 lg:mb-0 relative">
-       <Link href="/" className="flex items-center justify-center relative z-10 group w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] transition-all duration-700 hover:scale-110">
+       <Link href="/" title="Zurück zur Startseite und Schlüssel Schmiede Wetzlar" className="flex items-center justify-center relative z-10 group w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] transition-all duration-700 hover:scale-110">
         <span className="sr-only">Zurück zur Startseite und Schlüssel Schmiede Wetzlar</span>
         
         {/* Subtle Logo Glow - centered behind logo */}

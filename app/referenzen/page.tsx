@@ -62,18 +62,19 @@ export default function ReferenzenPage() {
               Ausgewähltes Hauptprojekt
             </h2>
             
-            <Link 
-              href={`/referenzen/${featuredStudy.slug}`}
-              className="group flex flex-col md:flex-row bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+            <div 
+              className="relative group flex flex-col md:flex-row bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
             >
-              <div className="md:w-2/5 bg-[#0A1A2F] relative p-10 flex flex-col justify-center">
+              <div className="md:w-2/5 bg-[#0A1A2F] relative p-10 flex flex-col justify-center pointer-events-none">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                 <div className="relative z-10">
                   <span className="inline-block bg-[var(--color-red-500)] text-white px-3 py-1 rounded-full text-sm font-bold tracking-wide mb-6">
                     {featuredStudy.industry}
                   </span>
-                  <h3 className="text-3xl font-bold text-white leading-tight mb-4 group-hover:text-blue-200 transition-colors">
-                    {featuredStudy.title}
+                  <h3 className="text-3xl font-bold text-white leading-tight mb-4 group-hover:text-blue-200 transition-colors pointer-events-auto">
+                    <Link href={`/referenzen/${featuredStudy.slug}`} className="after:absolute after:inset-0" title={featuredStudy.title}>
+                      {featuredStudy.title}
+                    </Link>
                   </h3>
                   <p className="text-blue-100/80 font-medium">
                     {featuredStudy.client}
@@ -81,7 +82,7 @@ export default function ReferenzenPage() {
                 </div>
               </div>
               
-              <div className="md:w-3/5 p-10 flex flex-col justify-between">
+              <div className="md:w-3/5 p-10 flex flex-col justify-between pointer-events-none">
                 <div>
                   <h4 className="text-sm font-bold uppercase text-slate-400 tracking-wider mb-3">Die Herausforderung</h4>
                   <p className="text-slate-700 text-lg leading-relaxed mb-8">
@@ -107,7 +108,7 @@ export default function ReferenzenPage() {
                   </svg>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </section>
       )}

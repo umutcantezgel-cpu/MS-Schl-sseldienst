@@ -121,8 +121,8 @@ export default function BlogPage() {
             <div className="space-y-10">
               {featuredPosts.map((post, i) => (
                 <StaggerItem key={i} animation={entryAnimations.slideUpFade}>
-                  <Link href={`/blog/${post.slug}`} className="block group border-b border-[var(--border-subtle)] last:border-0 pb-10 last:pb-0 hover:bg-[var(--color-off-white)]/50 p-4 -mx-4 rounded-[var(--radius-lg)] transition-all duration-300">
-                    <article className="flex flex-col md:flex-row gap-6 md:gap-10">
+                  <div className="relative block group border-b border-[var(--border-subtle)] last:border-0 pb-10 last:pb-0 hover:bg-[var(--color-off-white)]/50 p-4 -mx-4 rounded-[var(--radius-lg)] transition-all duration-300">
+                    <article className="flex flex-col md:flex-row gap-6 md:gap-10 pointer-events-none">
                       <div className="flex-1 flex flex-col items-start">
                         <div className="flex items-center gap-3 mb-3">
                           <span className="text-xs font-bold px-3 py-1.5 rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[color:var(--text-secondary)]">
@@ -133,8 +133,10 @@ export default function BlogPage() {
                              {post.metadata.readingTime} Min.
                           </span>
                         </div>
-                        <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-[var(--color-red-500)] transition-colors text-balance">
-                          {post.metadata.title}
+                        <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-[var(--color-red-500)] transition-colors text-balance pointer-events-auto">
+                          <Link href={`/blog/${post.slug}`} className="after:absolute after:inset-0" title={post.metadata.title}>
+                            {post.metadata.title}
+                          </Link>
                         </h3>
                         <p className="text-base text-[color:var(--text-secondary)] mb-6 line-clamp-3 leading-relaxed">
                           {post.metadata.excerpt.split('. ')[0]}.
@@ -144,7 +146,7 @@ export default function BlogPage() {
                         </span>
                       </div>
                     </article>
-                  </Link>
+                  </div>
                 </StaggerItem>
               ))}
             </div>

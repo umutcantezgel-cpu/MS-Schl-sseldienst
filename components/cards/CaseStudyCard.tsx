@@ -11,12 +11,10 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
   const displayHighlights = caseStudy.results?.slice(0, 2) || [];
 
   return (
-    <SeoLink 
-      href={`/referenzen/${caseStudy.slug}`}
-      className="group block h-full bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-      uniqueContext={caseStudy.title}
+    <div 
+      className="relative group block h-full bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
     >
-      <div className="bg-gradient-to-br from-[#0A1A2F] to-[#122A4E] text-white p-6 relative overflow-hidden">
+      <div className="bg-gradient-to-br from-[#0A1A2F] to-[#122A4E] text-white p-6 relative overflow-hidden pointer-events-none">
         {/* Abstract background shape */}
         <div className="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors" />
         
@@ -31,12 +29,16 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
               </span>
             )}
           </div>
-          <h3 className="text-xl font-bold leading-tight mb-2 group-hover:text-blue-100 transition-colors">{caseStudy.title}</h3>
+          <h3 className="text-xl font-bold leading-tight mb-2 group-hover:text-blue-100 transition-colors pointer-events-auto">
+            <SeoLink href={`/referenzen/${caseStudy.slug}`} className="after:absolute after:inset-0" uniqueContext={caseStudy.title}>
+              {caseStudy.title}
+            </SeoLink>
+          </h3>
           <p className="text-blue-200 text-sm font-medium">{caseStudy.client}</p>
         </div>
       </div>
       
-      <div className="p-6">
+      <div className="p-6 pointer-events-none">
         <p className="text-slate-600 text-sm mb-6 line-clamp-3">
           {((caseStudy.challenge || caseStudy.solution) || '').length > 80 ? ((caseStudy.challenge || caseStudy.solution) || '').substring(0, 80) + '...' : (caseStudy.challenge || caseStudy.solution)}
         </p>
@@ -57,6 +59,6 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>
-    </SeoLink>
+    </div>
   );
 }

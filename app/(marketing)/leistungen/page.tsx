@@ -59,22 +59,23 @@ export default function LeistungenPage() {
               const isHeroCard = idx === 0 || idx === 1; 
 
               return (
-                <Link
+                <div
                   key={service.slug}
-                  href={`/leistungen/${service.slug}`}
                   className={`group relative flex flex-col p-8 rounded-[var(--radius-xl)] bg-white border border-[var(--border-subtle)] shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 overflow-hidden ${isHeroCard ? 'lg:col-span-2' : ''}`}
                 >
-                  <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                  <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none">
                     <Icon className="w-48 h-48 -mr-12 -mt-12 text-[var(--color-red-500)] transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                   </div>
 
-                  <div className="relative z-10 w-14 h-14 rounded-2xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-colors duration-300">
+                  <div className="relative z-10 w-14 h-14 rounded-2xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center mb-6 group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-colors duration-300 pointer-events-none">
                     <Icon className="w-7 h-7" />
                   </div>
                   
-                  <div className="relative z-10 flex-1">
-                    <h2 className="text-2xl font-black text-[color:var(--text-primary)] mb-3 group-hover:text-[var(--color-red-500)] transition-colors">
-                      {service.title}
+                  <div className="relative z-10 flex-1 pointer-events-none">
+                    <h2 className="text-2xl font-black text-[color:var(--text-primary)] mb-3 group-hover:text-[var(--color-red-500)] transition-colors pointer-events-auto">
+                      <Link href={`/leistungen/${service.slug}`} className="after:absolute after:inset-0" title={`Mehr zu ${service.title}`}>
+                        {service.title}
+                      </Link>
                     </h2>
                     <p className="text-[color:var(--text-secondary)] leading-relaxed mb-6 font-medium">
                       {service.shortDescription}
@@ -91,10 +92,10 @@ export default function LeistungenPage() {
                     </ul>
                   </div>
 
-                  <div className="relative z-10 font-bold text-[color:var(--text-primary)] flex items-center gap-2 mt-auto pt-4 border-t border-[var(--border-subtle)] group-hover:text-[var(--color-red-500)] transition-colors">
+                  <div className="relative z-10 font-bold text-[color:var(--text-primary)] flex items-center gap-2 mt-auto pt-4 border-t border-[var(--border-subtle)] group-hover:text-[var(--color-red-500)] transition-colors pointer-events-none">
                     Fachinformationen und Festpreise für {service.title} ansehen <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                   </div>
-                </Link>
+                </div>
               );
             })}
           </div>

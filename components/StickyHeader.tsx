@@ -108,13 +108,14 @@ export default function StickyHeader() {
         <div className="mx-auto flex h-full w-full max-w-[1400px] items-center justify-between px-4 lg:px-8">
           
           {/* 1. LOGO */}
-          {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
+          {/* [SEO: Resolved "No Text" via title attribute since Seobility ignores sr-only] */}
           <Link
             href="/"
             className="flex-shrink-0 relative flex items-center cursor-pointer transition-transform duration-300 hover:scale-[1.02] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] rounded-xl -ml-2 lg:-ml-4"
             aria-label="Startseite und Schlüssel Schmiede Wetzlar"
+            title="Schlüssel Schmiede Wetzlar Startseite"
           >
-            {/* [SEO: Resolved "No Text" via sr-only und crawler needs DOM text, not just aria-label] */}
+            {/* [SEO: Resolved "No Text" via title attribute since Seobility ignores sr-only] */}
             <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
               src="/images/logo-header.svg"
