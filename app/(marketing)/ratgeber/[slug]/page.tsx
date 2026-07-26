@@ -21,6 +21,7 @@ import StepByStep from "@/components/mdx/StepByStep";
 import RiskCalculator from "@/components/growth/RiskCalculator";
 import ImageZoom from "@/components/mdx/ImageZoom";
 import RegionalLink from "@/components/mdx/RegionalLink";
+import SeoContentSection from "@/components/sections/home/SeoContentSection";
 
 const mdxComponents = {
   ProTip,
@@ -200,6 +201,9 @@ export default async function RatgeberDetailPage({ params }: Props) {
       </article>
 
       <StickyCTA />
+      
+      {/* SEO Content Block zur Vermeidung von Thin Content */}
+      <SeoContentSection />
     </>
   );
 }

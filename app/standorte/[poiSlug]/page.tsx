@@ -137,7 +137,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
             Schlüsseldienst <span className="text-[var(--color-red-400)]">{poi.name}</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-6">
-            In <strong>{eta.etaMinutes} Minuten</strong> bei Ihnen. Festpreis ab <strong>{price}€</strong>. {companyInfo.localStore.name}.
+            In <span className="font-semibold text-[color:var(--text-primary)]">{eta.etaMinutes} Minuten</span> bei Ihnen. Festpreis ab <span className="font-semibold text-[color:var(--text-primary)]">{price}€</span>. {companyInfo.localStore.name}.
           </p>
           <a
             href={`tel:${phoneLink}`}
@@ -341,19 +341,19 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
         <div className="max-w-3xl mx-auto">
           <h2 className="text-xl font-bold mb-4">Schlüsseldienst {poi.name} – Ihr zuverlässiger 24h Notdienst</h2>
           <p className="mb-4 text-gray-700">
-            Wenn Sie nahe <strong>{poi.name}</strong> einen professionellen <strong>Schlüsseldienst</strong> suchen, 
+            Wenn Sie nahe <span className="font-semibold text-gray-900">{poi.name}</span> einen professionellen <span className="font-semibold text-gray-900">Schlüsseldienst</span> suchen, 
             sind Sie bei der Schlüssel Schmiede genau richtig. Ein kurzer Moment der Unachtsamkeit reicht, und die Tür 
-            fällt ins Schloss. In dieser Situation benötigen Sie einen verlässlichen <strong>24h Notdienst</strong>, 
-            der schnell vor Ort ist. Unsere Techniker sind bestens geschult und garantieren eine schonende <strong>Türöffnung</strong> 
-            zum fest vereinbarten <strong>Festpreis</strong>. Als ansässiges Unternehmen legen wir höchsten Wert auf eine ehrliche 
+            fällt ins Schloss. In dieser Situation benötigen Sie einen verlässlichen <span className="font-semibold text-gray-900">24h Notdienst</span>, 
+            der schnell vor Ort ist. Unsere Techniker sind bestens geschult und garantieren eine schonende <span className="font-semibold text-gray-900">Türöffnung</span> 
+            zum fest vereinbarten <span className="font-semibold text-gray-900">Festpreis</span>. Als ansässiges Unternehmen legen wir höchsten Wert auf eine ehrliche 
             und kundenorientierte Arbeitsweise, damit Sie keine bösen Überraschungen bei der Abrechnung erleben.
           </p>
           <p className="mb-4 text-gray-700">
-            Als lokaler Fachbetrieb sind wir nicht nur am Tag, sondern auch als <strong>24/7 Notdienst</strong> in der Nacht, 
-            an Wochenenden und an Feiertagen für Sie da. Egal, ob Sie Ihren <strong>Schlüssel</strong> verloren haben, 
-            der Zylinder klemmt, der Schlüssel im Schloss abgebrochen ist oder eine umfassende Beratung zum Einbruchschutz wünschen – unser <strong>Schlüsseldienst {poi.name}</strong> 
-            bietet maßgeschneiderte Lösungen. Dank unserer transparenten <strong>Festpreis</strong>-Garantie wissen Sie 
-            stets im Vorfeld, welche Kosten für die <strong>Türöffnung</strong> oder den Zylindertausch anfallen.
+            Als lokaler Fachbetrieb sind wir nicht nur am Tag, sondern auch als <span className="font-semibold text-gray-900">24/7 Notdienst</span> in der Nacht, 
+            an Wochenenden und an Feiertagen für Sie da. Egal, ob Sie Ihren <span className="font-semibold text-gray-900">Schlüssel</span> verloren haben, 
+            der Zylinder klemmt, der Schlüssel im Schloss abgebrochen ist oder eine umfassende Beratung zum Einbruchschutz wünschen – unser <span className="font-semibold text-gray-900">Schlüsseldienst {poi.name}</span> 
+            bietet maßgeschneiderte Lösungen. Dank unserer transparenten <span className="font-semibold text-gray-900">Festpreis</span>-Garantie wissen Sie 
+            stets im Vorfeld, welche Kosten für die <span className="font-semibold text-gray-900">Türöffnung</span> oder den Zylindertausch anfallen.
           </p>
           
           <h3 className="text-lg font-bold mb-3 mt-6">Wie läuft die Türöffnung am {poi.name} ab?</h3>
@@ -361,7 +361,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
             Unser Ablauf ist denkbar einfach und auf maximale Transparenz sowie Schnelligkeit ausgelegt. 
             Sobald Sie uns kontaktieren, fragen wir kurz den genauen Sachverhalt ab – ist die Tür nur zugefallen, 
             ist sie abgeschlossen oder steckt von innen ein Schlüssel? Anhand Ihrer Schilderung nennen wir Ihnen 
-            sofort den verbindlichen Festpreis für den Einsatz im Bereich <strong>{poi.name}</strong>. Anschließend macht 
+            sofort den verbindlichen Festpreis für den Einsatz im Bereich <span className="font-semibold text-gray-900">{poi.name}</span>. Anschließend macht 
             sich einer unserer ausgebildeten Monteure umgehend auf den Weg zu Ihnen. In den meisten Fällen 
             erreichen wir Sie in nur wenigen Minuten. Vor Ort bestätigen wir nochmals den Preis und beginnen 
             mit unserer Arbeit. Durch den Einsatz modernster Spezialwerkzeuge öffnen wir zugefallene Türen in 
@@ -372,7 +372,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
           <h3 className="text-lg font-bold mb-3 mt-6">Umfassende Sicherheitstechnik und Einbruchschutz</h3>
           <p className="mb-4 text-gray-700">
             Neben klassischen Notöffnungen haben wir uns intensiv auf die Bereiche Einbruchschutz und 
-            Sicherheitstechnik rund um <strong>{poi.name}</strong> spezialisiert. Die Zahl der Wohnungseinbrüche verdeutlicht, 
+            Sicherheitstechnik rund um <span className="font-semibold text-gray-900">{poi.name}</span> spezialisiert. Die Zahl der Wohnungseinbrüche verdeutlicht, 
             wie wichtig ein fundiertes Sicherheitskonzept ist. Wir bieten Ihnen kostenlose Sicherheits-Checks 
             direkt vor Ort an. Unsere Experten analysieren potenzielle Schwachstellen an Ihren Türen, 
             Fenstern und Kellerschächten. Oft reichen schon kleine Nachrüstungen wie ein Panzerriegel, 
@@ -390,7 +390,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
             eine 100%ige Festpreisgarantie ohne versteckte Kosten. Sie zahlen nur das, was wir im 
             Vorfeld mit Ihnen vereinbart haben. Zudem akzeptieren wir neben Bargeld selbstverständlich 
             auch EC-Karten und Apple Pay direkt beim Monteur am Einsatzort. So bleiben Sie stets 
-            flexibel. Vertrauen Sie auf unseren Service, wenn Sie im Umkreis von <strong>{poi.name}</strong> 
+            flexibel. Vertrauen Sie auf unseren Service, wenn Sie im Umkreis von <span className="font-semibold text-gray-900">{poi.name}</span> 
             ein Problem mit Ihrem Schloss oder Ihrem Schlüssel haben. Wir lassen Sie nicht vor 
             verschlossener Tür stehen – kompetent, zügig und fair. Rufen Sie uns im Notfall jederzeit an!
           </p>

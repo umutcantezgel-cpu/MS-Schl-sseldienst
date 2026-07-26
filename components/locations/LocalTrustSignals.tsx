@@ -7,14 +7,14 @@ interface LocalTrustSignalsProps {
 }
 
 export default function LocalTrustSignals({ city }: LocalTrustSignalsProps) {
-    if (!city.mainRoad && city.distanceKm === 0 && (!city.localTestimonials || city.localTestimonials.length === 0)) {
+    if (!city.mainRoad && (city.distanceKm ?? 0) === 0 && (!city.localTestimonials || city.localTestimonials.length === 0)) {
         return null;
     }
 
     return (
         <section className="relative z-20 w-full px-4 sm:px-[var(--space-4)] flex flex-col items-center gap-[var(--space-6)] mb-12 sm:mb-24 mt-0 sm:-mt-8">
             {/* Hyper-Lokale Trust-Signale */}
-            {(city.mainRoad || city.distanceKm > 0) && (
+            {(city.mainRoad || (city.distanceKm ?? 0) > 0) && (
                 <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm md:text-base font-medium text-[color:var(--color-charcoal-600)] bg-white/80 backdrop-blur-md px-4 sm:px-8 py-3 sm:py-4 rounded-2xl sm:rounded-full border border-[var(--border-subtle)] shadow-sm max-w-[95vw]">
                     <span className="flex items-center gap-3">
                         <span className="w-2.5 h-2.5 rounded-full bg-[var(--value-primary)]"></span>
