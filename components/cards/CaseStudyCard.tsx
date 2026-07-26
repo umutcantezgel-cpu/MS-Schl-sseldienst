@@ -38,7 +38,7 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
       
       <div className="p-6">
         <p className="text-slate-600 text-sm mb-6 line-clamp-3">
-          {caseStudy.challenge || caseStudy.solution}
+          {(caseStudy.challenge || caseStudy.solution || '').length > 80 ? (caseStudy.challenge || caseStudy.solution).substring(0, 80) + '...' : (caseStudy.challenge || caseStudy.solution)}
         </p>
         
         {displayHighlights.length > 0 && (

@@ -137,7 +137,7 @@ export default function BlogPage() {
                           {post.metadata.title}
                         </h3>
                         <p className="text-base text-[color:var(--text-secondary)] mb-6 line-clamp-3 leading-relaxed">
-                          {post.metadata.excerpt}
+                          {post.metadata.excerpt.split('. ')[0]}.
                         </p>
                         <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[var(--color-red-500)]/5 text-sm font-bold text-[color:var(--text-primary)] group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-all duration-300 mt-auto">
                           Blog-Beitrag zu „{post.metadata.title}“ lesen <ArrowRight className="w-4 h-4" />

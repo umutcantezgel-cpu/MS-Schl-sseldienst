@@ -95,7 +95,7 @@ export default function LexikonPage() {
                       {term.title}
                     </h3>
                     <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">
-                      {term.definition}
+                      {term.definition.length > 80 ? term.definition.substring(0, 80) + '...' : term.definition}
                     </p>
                   </div>
 

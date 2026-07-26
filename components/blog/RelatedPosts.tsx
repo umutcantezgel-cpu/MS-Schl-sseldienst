@@ -53,7 +53,7 @@ export default function RelatedPosts({ title = "Könnte Sie auch interessieren",
                  {post.metadata.title}
                </h3>
                <p className="text-[color:var(--text-secondary)] mb-6 flex-1 line-clamp-3">
-                 {post.metadata.excerpt}
+                 {post.metadata.excerpt.length > 80 ? post.metadata.excerpt.substring(0, 80) + '...' : post.metadata.excerpt}
                </p>
                <div className="flex items-center gap-2 text-sm font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] mt-auto transition-colors">
                 Ratgeber-Artikel zu „{post.metadata?.title}“ lesen <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />

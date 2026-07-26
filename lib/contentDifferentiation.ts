@@ -68,8 +68,8 @@ export function generateUniqueAboutText(city: LocationData): string {
                 : `Die genauen Anfahrtskosten für ${city.name} stimmen wir vorab am Telefon mit Ihnen ab.`);
     
     parts.push(`<h3>Transparente Festpreise für ${city.name}</h3>`);
-    parts.push(`<p>Türöffnungen für zugefallene Standardtüren führen wir werktags ab ${city.pricing.basePrice} Euro durch. ` +
-        `${fareDesc} Den verbindlichen Endpreis nennen wir Ihnen bereits vor der Anfahrt am Telefon, damit Sie volle Kostensicherheit haben.</p>`);
+    parts.push(`<p>Türöffnungen für zugefallene Standardtüren führen wir in ${city.name} werktags ab ${city.pricing.basePrice} Euro durch. ` +
+        `${fareDesc} Den verbindlichen Endpreis nennen wir Ihnen für Ihren Einsatz in ${city.name} bereits vor der Anfahrt am Telefon, damit Sie volle Kostensicherheit haben.</p>`);
 
     // ── Paragraph 5: 24/7 Availability ──
     const parkDesc = city.parkingInfo ? ` ${city.parkingInfo}` : "";
@@ -88,15 +88,15 @@ export function generateUniqueAboutText(city: LocationData): string {
     // ── Paragraph 6: Anti-Scam / Trust ──
     if (variantIdx === 0) {
         parts.push(`<h3>Seriöser Schlüsseldienst für ${city.name}</h3>`);
-        parts.push(`<p>Als eingetragener Handwerksbetrieb aus Wetzlar (Langgasse 70) distanzieren wir uns von überteuerten ` +
-            `Callcenter-Vermittlungen. Bei der Schlüssel Schmiede Wetzlar erhalten Sie ehrliches Handwerk und persönliche Ansprechpartner.</p>`);
+        parts.push(`<p>Als eingetragener Handwerksbetrieb aus Wetzlar (Langgasse 70) distanzieren wir uns auch bei Einsätzen in ${city.name} von überteuerten ` +
+            `Callcenter-Vermittlungen. Bei der Schlüssel Schmiede Wetzlar erhalten Sie für Ihre Türöffnung in ${city.name} ehrliches Handwerk und persönliche Ansprechpartner.</p>`);
     } else if (variantIdx === 1) {
-        parts.push(`<h3>Regionale Facharbeit statt Callcenter</h3>`);
-        parts.push(`<p>Verbraucherschutzstellen raten zu lokal ansässigen Dienstleistern. Die Schlüssel Schmiede Wetzlar ist Ihr ` +
-            `physischer Fachbetrieb in der Region – mit transparenten Festpreisen und geprüfter Kundenzufriedenheit.</p>`);
+        parts.push(`<h3>Regionale Facharbeit statt Callcenter in ${city.name}</h3>`);
+        parts.push(`<p>Verbraucherschutzstellen raten auch in Regionen wie ${city.name} zu lokal ansässigen Dienstleistern. Die Schlüssel Schmiede Wetzlar ist Ihr ` +
+            `physischer Fachbetrieb – mit transparenten Festpreisen und geprüfter Kundenzufriedenheit für alle unsere Kunden aus ${city.name}.</p>`);
     } else {
         parts.push(`<p>Vertrauen Sie in ${city.name} auf einen echten Betrieb vor Ort. Mit unserem Ladenlokal in Wetzlar stehen ` +
-            `wir für verlässlichen Service, schnelle Hilfe und kundenfreundliche Festpreise.</p>`);
+            `wir auch in ${city.name} für verlässlichen Service, schnelle Hilfe und kundenfreundliche Festpreise.</p>`);
     }
 
     return parts.join("\n\n");

@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import { Phone, Euro, DoorOpen, CreditCard } from "lucide-react";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
@@ -23,43 +25,55 @@ interface ProcessStepsProps {
   steps?: StepItem[];
 }
 
-const defaultSteps: StepItem[] = [
-  {
-    id: 1,
-    num: "01",
-    title: "Anrufen & Situation schildern",
-    description: "Kontaktieren Sie uns 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).",
-    icon: Phone,
-  },
-  {
-    id: 2,
-    num: "02",
-    title: "Festpreis & Dauer erfahren",
-    description: "Wir nennen Ihnen noch am Telefon einen verbindlichen Festpreis und die exakte Anfahrtszeit (meist unter 25 Minuten).",
-    icon: Euro,
-  },
-  {
-    id: 3,
-    num: "03",
-    title: "Zerstörungsfreie Öffnung",
-    description: "Unser Monteur ist pünktlich vor Ort und öffnet Ihre Tür dank Spezialwerkzeug in nahezu allen Fällen völlig beschädigungsfrei.",
-    icon: DoorOpen,
-  },
-  {
-    id: 4,
-    num: "04",
-    title: "Transparente Bezahlung",
-    description: "Kein Risiko: Sie zahlen erst, wenn die Tür offen ist. Bar, per EC- oder Kreditkarte. Keine versteckten Zusatzkosten.",
-    icon: CreditCard,
-  },
-];
-
 export default function ProcessSteps({
   headline = "So einfach funktioniert unser Service",
   subtitle = "Keine Überraschungen, keine endlosen Wartezeiten. Ein transparenter 4-Schritte-Ablauf für Ihre maximale Sicherheit.",
   badgeText = "SO EINFACH GEHT'S",
-  steps = defaultSteps,
+  steps,
 }: ProcessStepsProps) {
+  const pathname = usePathname();
+  const isLeistungen = pathname?.includes("/leistungen");
+
+  const defaultSteps: StepItem[] = [
+    {
+      id: 1,
+      num: "01",
+      title: "Anrufen & Situation schildern",
+      description: isLeistungen 
+        ? "Kontaktieren Sie uns 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen (z.B. Schlüssel steckt von innen)."
+        : "Kontaktieren Sie uns 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).",
+      icon: Phone,
+    },
+    {
+      id: 2,
+      num: "02",
+      title: "Festpreis & Dauer erfahren",
+      description: isLeistungen
+        ? "Sie erhalten bereits beim Anruf einen verbindlichen Preis und die voraussichtliche Ankunftszeit (in der Regel ca. 20-30 Minuten)."
+        : "Wir nennen Ihnen noch am Telefon einen verbindlichen Festpreis und die exakte Anfahrtszeit (meist unter 25 Minuten).",
+      icon: Euro,
+    },
+    {
+      id: 3,
+      num: "03",
+      title: "Zerstörungsfreie Öffnung",
+      description: isLeistungen
+        ? "Unsere Techniker treffen pünktlich bei Ihnen ein und öffnen die Tür in den allermeisten Fällen absolut ohne Sachschäden."
+        : "Unser Monteur ist pünktlich vor Ort und öffnet Ihre Tür dank Spezialwerkzeug in nahezu allen Fällen völlig beschädigungsfrei.",
+      icon: DoorOpen,
+    },
+    {
+      id: 4,
+      num: "04",
+      title: "Transparente Bezahlung",
+      description: isLeistungen
+        ? "Sie bezahlen bequem erst nach erfolgreicher Öffnung. Akzeptiert werden Barzahlung, EC- oder Kreditkarten. Garantiert ohne versteckte Posten."
+        : "Kein Risiko: Sie zahlen erst, wenn die Tür offen ist. Bar, per EC- oder Kreditkarte. Keine versteckten Zusatzkosten.",
+      icon: CreditCard,
+    },
+  ];
+
+  const displaySteps = steps || defaultSteps;
   return (
     <section aria-labelledby="process-heading" className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] py-[var(--section-py)] overflow-hidden relative">
       <div className="mx-auto max-w-7xl relative z-10">
@@ -89,7 +103,7 @@ export default function ProcessSteps({
           </div>
 
           <StaggerReveal className="relative z-10 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4" animation={entryAnimations.slideUpFade}>
-            {steps.map((step) => (
+            {displaySteps.map((step) => (
               <StaggerItem key={step.id} animation={entryAnimations.slideUpFade} className="relative group">
                 <div className="flex flex-col items-center text-center">
                   {/* Step Number und now shows as a small numbered badge on the icon */}
