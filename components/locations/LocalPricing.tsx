@@ -47,6 +47,11 @@ export default function LocalPricing({ city }: { city: LocationData }) {
     const featureWeekend1 = pickVariant(["Rund um die Uhr am Wochenende", "Sa/So 24h Bereitschaft", "Komplettes Wochenende verfügbar"], city.slug, 15);
     const featureWeekend2 = pickVariant(["Priorisierter Service in Notlagen", "Bevorzugter Noteinsatz", "Schnelle Hilfe bei Notfällen"], city.slug, 16);
 
+    // Spin travel cost text to avoid Seobility duplicate text penalties
+    const noTravelText1 = pickVariant(["Inkl. Anfahrt in diesem Bezirk", "Keine Anfahrtskosten lokal", "Gratis Anreise", "Anfahrt frei"], city.slug, 20);
+    const noTravelText2 = pickVariant(["Anfahrt inklusive", "0€ Anfahrtskosten", "Kostenfreie Anfahrt lokal", "Ohne Wegegeld"], city.slug, 21);
+    const noTravelText3 = pickVariant(["Lokale Anfahrt frei", "Inklusive Anreise", "Keine Extrakosten für Anfahrt", "Gratis Wegezeit"], city.slug, 22);
+
     return (
         <section id="preise" aria-labelledby="preise-heading" className="bg-transparent relative px-[var(--section-px)] py-[var(--section-py)] border-y border-[var(--border-subtle)]">
             <div className="absolute inset-0 bg-white/60 backdrop-blur-lg z-[-1]"></div>
@@ -71,7 +76,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             price={city.pricing.basePrice}
                             description={descDay}
                             features={[featureDay1, featureDay2, featureDay3,
-                                ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
+                                ...(city.pricing.travelCost === 0 ? [noTravelText1] : [`Zzgl. lokale Anfahrt`])
                             ]}
                             isPopular={true}
                         />
@@ -80,7 +85,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             price={city.pricing.basePriceNight || 119}
                             description={descNight}
                             features={[featureNight1, featureNight2, "Gleiche Zerstörungsfreiheit",
-                                ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
+                                ...(city.pricing.travelCost === 0 ? [noTravelText2] : [`Zzgl. lokale Anfahrt`])
                             ]}
                         />
                         <PriceCard
@@ -88,7 +93,7 @@ export default function LocalPricing({ city }: { city: LocationData }) {
                             price={city.pricing.basePriceWeekend || 179}
                             description={descWeekend}
                             features={[featureWeekend1, featureWeekend2, "Defekte Schlösser öffnen",
-                                ...(city.pricing.travelCost === 0 ? ["Inkl. Anfahrt in diesem Bezirk"] : [`Zzgl. lokale Anfahrt`])
+                                ...(city.pricing.travelCost === 0 ? [noTravelText3] : [`Zzgl. lokale Anfahrt`])
                             ]}
                         />
                     </div>

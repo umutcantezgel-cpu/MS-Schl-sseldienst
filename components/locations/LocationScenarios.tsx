@@ -62,7 +62,6 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
         : getDefaultScenarios(city);
 
     const subtitle = pickVariant(subtitleVariants, city.slug)(city.name);
-    const ctaLabel = pickVariant(ctaLabelVariants, city.slug, 2)(city.name);
 
     return (
         <RevealSection className="py-12 sm:py-24 md:py-32 bg-[var(--background-secondary)] border-b border-[var(--border-subtle)]">
@@ -79,6 +78,13 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
                 <StaggerReveal className="grid md:grid-cols-3 gap-6 sm:gap-12 lg:gap-16 max-w-7xl mx-auto" animation={entryAnimations.slideUpFade}>
                     {scenarios.map((scenario, idx) => {
                         const IconComponent = (Icons as unknown as Record<string, LucideIcon>)[scenario.icon] || Icons.Key;
+                        const ctaLabel = pickVariant(ctaLabelVariants, city.slug, idx + 2)(city.name);
+                        const driveTimeText = pickVariant([
+                            `In ca. ${city.logistics.drivingTimeMinutes} Min. in ${city.name}`,
+                            `Schnell vor Ort in ${city.logistics.drivingTimeMinutes} Min.`,
+                            `Anfahrt in ${city.logistics.drivingTimeMinutes} Minuten`,
+                            `Innerhalb ${city.logistics.drivingTimeMinutes} Min. da`
+                        ], city.slug, idx + 10);
 
                         return (
                             <StaggerItem key={idx} animation={entryAnimations.slideUpFade} className="flex flex-col">
@@ -97,7 +103,7 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
                                     <p className="font-medium text-[color:var(--text-primary)] mb-3 tracking-wide text-sm uppercase">{ctaLabel}</p>
                                     <a href="tel:+4964418056279" className="inline-flex items-center gap-2 text-[color:var(--color-red-600)] font-bold hover:underline group text-lg">
                                         <Icons.Phone className="w-5 h-5 transition-transform group-hover:rotate-12" />
-                                        In ca. {city.logistics.drivingTimeMinutes} Min. in {city.name}
+                                        {driveTimeText}
                                     </a>
                                 </div>
                             </StaggerItem>

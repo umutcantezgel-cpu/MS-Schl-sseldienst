@@ -136,15 +136,8 @@ export default function WiderrufPage() {
 
             <LegalSection id="7-kontakt">
                 <h2 className="mt-0">7. Kontaktfragen zum Widerrufsrecht</h2>
-                <p>Bei allen Fragen zur Ausübung Ihres Widerrufsrechts wenden Sie sich bitte direkt an den Kundenservice der Schlüssel Schmiede Wetzlar:</p>
-                <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    Schlüssel Schmiede (Widerrufs-Abteilung)<br />
-                    z.Hd. Mina Saad<br />
-                    Gloelstraße 11<br />
-                    35576 Wetzlar, DE<br /><br />
-                    Kundenservice: <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link><br />
-                    E-Mail-Kontakt: <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>
-                </div>
+                <p>Bei allen Fragen zur Ausübung Ihres Widerrufsrechts wenden Sie sich bitte direkt an den Kundenservice der Schlüssel Schmiede Wetzlar. Sie erreichen unser Service-Team telefonisch unter <Link href="tel:+4964418056279" className="text-[var(--action-primary)] hover:underline font-medium">06441 8056279</Link> oder jederzeit per E-Mail unter <Link href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline font-medium">schluesselschmiede@gmail.com</Link>.</p>
+                <p>Postalische Anfragen oder formelle Dokumente senden Sie bitte an die in Abschnitt 3 (Ausübung des Widerrufs) angegebene Anschrift in Wetzlar.</p>
                 <p>Weiterführende Hinweise finden Sie in unseren <Link href="/agb#6-widerrufsrecht" className="text-[var(--action-primary)] hover:underline font-medium">Allgemeinen Geschäftsbedingungen</Link> sowie in unserer <Link href="/datenschutz" className="text-[var(--action-primary)] hover:underline font-medium">Datenschutzerklärung</Link>.</p>
             </LegalSection>
         </LegalLayout>
