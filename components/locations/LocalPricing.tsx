@@ -21,21 +21,21 @@ export default function LocalPricing({ city }: { city: LocationData }) {
     ], city.slug, 1);
 
     const descDay = pickVariant([
-        "Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen.",
-        "Die Tür ist zugefallen, aber nicht aktiv verriegelt, oder der Schlüssel steckt innen.",
-        "Einfache Öffnung einer unverschlossenen Tür, oft in Sekunden erledigt."
+        `In ${city.name}: Schlüssel steckt von innen oder Tür ist nur ins Schloss gefallen.`,
+        `Ihre Tür in ${city.name} ist zugefallen, aber nicht aktiv verriegelt, oder der Schlüssel steckt innen.`,
+        `Einfache Öffnung einer unverschlossenen Tür in ${city.name}, oft in Sekunden erledigt.`
     ], city.slug, 2);
 
     const descNight = pickVariant([
-        "Einsätze in den späten Abend- oder tiefen Nachtstunden.",
-        "Hilfe außerhalb der regulären Geschäftszeiten, wenn es dunkel wird.",
-        "Ihr Notdienst für die Nachtstunden mit gewohnter Zuverlässigkeit."
+        `Einsätze in den späten Abend- oder tiefen Nachtstunden in ${city.name}.`,
+        `Hilfe in ${city.name} außerhalb der regulären Geschäftszeiten, wenn es dunkel wird.`,
+        `Ihr Notdienst für ${city.name} in den Nachtstunden mit gewohnter Zuverlässigkeit.`
     ], city.slug, 3);
 
     const descWeekend = pickVariant([
-        "Notdienst an allen Samstagen, Sonntagen und Feiertagen.",
-        "Pünktlicher Einsatz an Sonn- und Feiertagen sowie am kompletten Wochenende.",
-        "Auch an arbeitsfreien Tagen oder Feiertagen sind wir für Sie da."
+        `Notdienst in ${city.name} an allen Samstagen, Sonntagen und Feiertagen.`,
+        `Pünktlicher Einsatz in ${city.name} an Sonn- und Feiertagen sowie am kompletten Wochenende.`,
+        `Auch an arbeitsfreien Tagen oder Feiertagen sind wir in ${city.name} für Sie da.`
     ], city.slug, 4);
 
     // Rotate feature labels to prevent duplicate content across pages

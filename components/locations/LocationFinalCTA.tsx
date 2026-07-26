@@ -10,15 +10,15 @@ export default function LocationFinalCTA({ city }: { city: LocationData }) {
     ], city.slug, 6);
 
     const trustLine2 = pickVariant([
-        "Festpreis vor Anfahrt",
-        "Verbindlicher Preis am Telefon",
-        "Garantierter Festpreis vorab"
+        `Festpreis vor Anfahrt nach ${city.name}`,
+        `Verbindlicher Preis für ${city.name} am Telefon`,
+        `Garantierter Festpreis für ${city.name}`
     ], city.slug, 7);
 
     const trustLine3 = pickVariant([
-        "Keine versteckten Kosten",
-        "Null versteckte Gebühren",
-        "Transparent ohne Nachberechnung"
+        `Keine versteckten Kosten in ${city.name}`,
+        `Null versteckte Gebühren in ${city.name}`,
+        `Transparent ohne Nachberechnung für ${city.name}`
     ], city.slug, 8);
 
     return (

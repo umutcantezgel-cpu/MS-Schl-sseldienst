@@ -88,7 +88,7 @@ export default function PreisePage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-            Wir hassen versteckte Gebühren. Berechnen Sie Ihren verbindlichen Endpreis für Wetzlar in unter 3 Sekunden.
+            Wir hassen versteckte Gebühren. Berechnen Sie Ihren <strong>verbindlichen Endpreis für Wetzlar</strong> in unter 3 Sekunden.
           </p>
         </StaggerItem>
       </StaggerReveal>

@@ -24,15 +24,15 @@ export function generateUniqueAboutText(city: LocationData): string {
     
     if (variantIdx === 0) {
         parts.push(`<p>${city.name}${plzDesc} ist ${charDesc}${popDesc} im Lahn-Dill-Kreis. ` +
-            `Als geprüfter Schlüsseldienst ${city.name} stehen wir Ihnen für professionelle Türöffnungen, ` +
+            `Als geprüfter <strong>Schlüsseldienst ${city.name}</strong> stehen wir Ihnen für professionelle Türöffnungen, ` +
             `Zylinderwechsel und moderne Sicherheitstechnik zur Seite. Unser lokaler Fachbetrieb bringt schnelle ` +
             `Hilfe bei Schlüsselnotfällen direkt zu Ihnen vor Ort.</p>`);
     } else if (variantIdx === 1) {
-        parts.push(`<p>In ${city.name}${plzDesc}, ${charDesc}${popDesc}, versorgen wir als mobiler Schlüsseldienst ${city.name} ` +
+        parts.push(`<p>In ${city.name}${plzDesc}, ${charDesc}${popDesc}, versorgen wir als mobiler <strong>Schlüsseldienst ${city.name}</strong> ` +
             `Anwohner und Gewerbetreibende mit schnellen Türöffnungen sowie umfassendem Schloss-Service. ` +
             `Dabei setzen wir auf transparente Konditionen und kurze Anfahrtszeiten vom Handwerksbetrieb aus Wetzlar.</p>`);
     } else {
-        parts.push(`<p>Für Bewohner in ${city.name}${plzDesc} (${charDesc}${popDesc}) bieten wir als Schlüsseldienst ${city.name} ` +
+        parts.push(`<p>Für Bewohner in ${city.name}${plzDesc} (${charDesc}${popDesc}) bieten wir als <strong>Schlüsseldienst ${city.name}</strong> ` +
             `zuverlässige Hilfe bei zugefallenen oder verschlossenen Türen. Wir garantieren Facharbeit ohne Umwege, ` +
             `ausgeführt von erfahrenen Technikern aus der Region.</p>`);
     }

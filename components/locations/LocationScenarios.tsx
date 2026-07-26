@@ -15,10 +15,10 @@ const subtitleVariants = [
 ];
 
 const ctaLabelVariants = [
-    "Lösung: Rufen Sie uns an",
-    "Ihre Soforthilfe per Anruf",
-    "Schnelle Hilfe per Telefon",
-    "Direkt zum Techniker",
+    (name: string) => `Lösung für ${name}: Rufen Sie uns an`,
+    (name: string) => `Ihre Soforthilfe in ${name} per Anruf`,
+    (name: string) => `Schnelle Hilfe in ${name} per Telefon`,
+    (name: string) => `Direkt zum Techniker für ${name}`,
 ];
 
 interface LocationScenariosProps {
@@ -62,7 +62,7 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
         : getDefaultScenarios(city);
 
     const subtitle = pickVariant(subtitleVariants, city.slug)(city.name);
-    const ctaLabel = pickVariant(ctaLabelVariants, city.slug, 2);
+    const ctaLabel = pickVariant(ctaLabelVariants, city.slug, 2)(city.name);
 
     return (
         <RevealSection className="py-12 sm:py-24 md:py-32 bg-[var(--background-secondary)] border-b border-[var(--border-subtle)]">

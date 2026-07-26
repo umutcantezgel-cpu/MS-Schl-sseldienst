@@ -33,6 +33,8 @@ export default function ProcessSteps({
 }: ProcessStepsProps) {
   const pathname = usePathname();
   const isLeistungen = pathname?.includes("/leistungen");
+  const slug = pathname?.split("/").pop() || "Notfall";
+  const formattedSlug = slug.charAt(0).toUpperCase() + slug.slice(1).replace("-", " ");
 
   const defaultSteps: StepItem[] = [
     {
@@ -40,8 +42,8 @@ export default function ProcessSteps({
       num: "01",
       title: "Anrufen & Situation schildern",
       description: isLeistungen 
-        ? "Kontaktieren Sie uns 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen (z.B. Schlüssel steckt von innen)."
-        : "Kontaktieren Sie uns 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).",
+        ? `Kontaktieren Sie unseren <strong>Schlüsseldienst Notdienst</strong> 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen im Bereich ${formattedSlug} (z.B. Schlüssel steckt von innen).`
+        : "Kontaktieren Sie unseren <strong>Schlüsseldienst Notdienst</strong> 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).",
       icon: Phone,
     },
     {
