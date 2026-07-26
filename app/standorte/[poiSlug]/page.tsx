@@ -82,6 +82,19 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
   const phone = companyInfo.phone.formatted;
   const phoneLink = companyInfo.phone.link;
 
+  let title = `Schlüsseldienst ${poi.name} | 24h Notdienst | Schlüssel Schmiede`;
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${poi.name} | In ${eta.etaMinutes} Min vor Ort`;
+  }
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${poi.name} | 24h Notdienst`;
+  }
+  if (title.length < 45) {
+    title = `Schlüsseldienst ${poi.name} | 24h Notdienst & Schlüsselnotdienst`;
+  }
+  if (title.length > 65) title = title.substring(0, 65).trim();
+  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
+
   // POI-specific FAQs
   const poiFaqs = [
     {
@@ -348,6 +361,8 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
 
   return (
     <div className="bg-transparent text-[color:var(--text-primary)] font-sans min-h-screen">
+      {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">{title}. Schlüsseldienst {poi.name}.</div>
       <Script
         id={`schema-poi-${poi.slug}`}
         type="application/ld+json"
