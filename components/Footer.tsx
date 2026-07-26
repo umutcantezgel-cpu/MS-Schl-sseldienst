@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { companyInfo } from "@/lib/data/company";
@@ -246,7 +248,7 @@ export default function Footer() {
         <li><Link href="/cookie-richtlinie" className="hover:text-[var(--color-red-500)] transition-colors underline">Cookie-Richtlinie</Link></li>
         <li><Link href="/barrierefreiheit" className="hover:text-[var(--color-red-500)] transition-colors underline">Barrierefreiheit</Link></li>
         <li><Link href="/sitemap-uebersicht" className="hover:text-[var(--color-red-500)] transition-colors underline">Sitemap</Link></li>
-        <li><a href="#cookie-settings" className="hover:text-[var(--color-red-500)] transition-colors underline cursor-pointer inline-flex items-center gap-1">⚙️ Cookie-Einstellungen</a></li>
+        <li><a id="cookie-settings" href="#cookie-settings" onClick={(e) => { e.preventDefault(); if (typeof window !== "undefined") window.dispatchEvent(new Event("openCookieSettings")); }} className="hover:text-[var(--color-red-500)] transition-colors underline cursor-pointer inline-flex items-center gap-1">⚙️ Cookie-Einstellungen</a></li>
        </ul>
       </nav>
     </div>

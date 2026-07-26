@@ -4,15 +4,27 @@ import { Phone } from "lucide-react";
 import HeartbeatCTA from "@/components/animations/HeartbeatCTA";
 import { triggerHaptic } from "@/lib/haptics";
 
-export default function EmergencyCTA() {
+interface EmergencyCTAProps {
+  title?: string;
+  description?: string;
+  subtext?: string;
+  buttonText?: string;
+}
+
+export default function EmergencyCTA({
+  title = "Ausgesperrt? Wir sind sofort für Sie da!",
+  description = "Rund um die Uhr erreichbar, 365 Tage im Jahr in Wetzlar & Umgebung.",
+  subtext = "Festpreis vor Anfahrt und Kostenlos & unverbindlich",
+  buttonText = "06441 8056279",
+}: EmergencyCTAProps) {
  return (
   <section className="bg-[var(--color-cta-bg)] px-[var(--section-px)] py-[var(--section-py)]">
    <div className="mx-auto max-w-4xl text-center">
     <h2 className="typo-h2 text-white drop-shadow-sm">
-     Ausgesperrt? Wir sind sofort für Sie da!
+     {title}
     </h2>
     <p className="typo-lead text-white/90 mx-auto mb-[var(--space-7)] mt-[var(--space-2)]">
-     Rund um die Uhr erreichbar, 365 Tage im Jahr.
+     {description}
     </p>
     <div className="mt-[var(--space-8)] flex flex-col items-center gap-[var(--space-4)]">
      <HeartbeatCTA>
@@ -22,11 +34,11 @@ export default function EmergencyCTA() {
        className="inline-flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap rounded-2xl font-extrabold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 transition-all duration-150 ease-out bg-white hover:bg-gray-50 hover:scale-[1.02] active:scale-100 h-14 sm:h-16 px-6 sm:px-8 shadow-xl text-[var(--color-red-600)] w-full sm:w-auto max-w-[90vw]"
       >
        <Phone className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" aria-hidden="true" />
-       <span className="tabular-nums tracking-tight text-lg sm:text-xl whitespace-nowrap">06441 8056279</span>
+       <span className="tabular-nums tracking-tight text-lg sm:text-xl whitespace-nowrap">{buttonText}</span>
       </a>
      </HeartbeatCTA>
      <p className="text-white/80 text-sm font-medium mt-3">
-      Festpreis vor Anfahrt und Kostenlos &amp; unverbindlich
+      {subtext}
      </p>
     </div>
    </div>

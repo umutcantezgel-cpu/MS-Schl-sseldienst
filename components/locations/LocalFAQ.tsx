@@ -23,7 +23,7 @@ export default function LocalFAQ({ city }: { city: LocationData }) {
                 <StaggerItem animation={entryAnimations.slideUpFade}>
                     <div className="space-y-6">
                         {city.faqs.map((faq, i) => (
-                            <FAQAccordion key={i} question={faq.question} answer={`${faq.answer} Falls Sie weitere Detailfragen haben, rufen Sie uns unverbindlich an: 06441-8056279.`} />
+                            <FAQAccordion key={i} question={faq.question} answer={faq.answer} />
                         ))}
                     </div>
                 </StaggerItem>

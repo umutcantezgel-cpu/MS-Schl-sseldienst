@@ -21,7 +21,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Autoöffnung Wetzlar | Schlüsseldienst",
+ title: "Schnelle Autoöffnung Wetzlar | KFZ Notdienst ab 149€",
  description: "Schlüssel im Auto eingesperrt? | Autoöffnung für alle Marken. | Garantiert kratzerfrei und ohne Lackschäden. Schnell vor Ort in Wetzlar! 06441 8056279",
  path: "/leistungen/autooeffnung",
  exactTitle: true,
@@ -242,7 +242,7 @@ export default function AutooeffnungPage() {
    </section>
 
    {/* Ablauf & Trust (Process) */}
-   <ProcessSteps />
+   <ProcessSteps headline="Ablauf der schadensfreien Autoöffnung" subtitle="Von Ihrem Anruf bis zum geöffneten Fahrzeug – schadensfreie Fahrzeugöffnung ohne Lackschäden." badgeText="ABLAUF AUTOÖFFNUNG" />
 
    {/* 5. Proof (Bewertungen) */}
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Autoöffnung" subtitle="Darum vertrauen uns unsere Kunden" />

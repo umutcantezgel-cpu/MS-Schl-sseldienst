@@ -1,10 +1,11 @@
 import Link from"next/link";
-import { headers } from"next/headers";
 import { ArrowRight, Key, Phone } from"lucide-react";
 import { buttonVariants } from"@/components/ui/button";
 import { cn } from"@/lib/utils";
 import { generateSharedMetadata } from"@/lib/metadata";
 import PathDisplay from"@/components/debug/PathDisplay";
+
+export const dynamic = "force-static";
 
 export const metadata = generateSharedMetadata({
  title: "Seite nicht gefunden",
@@ -13,15 +14,7 @@ export const metadata = generateSharedMetadata({
  noindex: true,
 });
 
-export default async function NotFound() {
- // ─── 404 Logging ───
- // console.warn statt console.error → kein roter Fehler im Dev-Overlay,
- const headersList = await headers();
- const referer = headersList.get("referer") || "direct";
- const url = headersList.get("x-url") || headersList.get("x-invoke-path") || "unknown";
- console.warn(
-  `[404-FORENSIK] Seite: ${url} | Referer: ${referer}`
- );
+export default function NotFound() {
  return (
   <div className="flex min-h-[70vh] flex-col items-center justify-center bg-[var(--surface-primary)] px-4 text-center text-[color:var(--text-primary)]">
    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--border-subtle)] text-[color:var(--text-tertiary)]" aria-hidden="true">

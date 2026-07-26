@@ -30,7 +30,7 @@ const mainServicesSchema = [
 ];
 
 export const metadata = generateSharedMetadata({
- title: "Preise & Kosten | Schlüssel Schmiede Wetzlar",
+ title: "Faire Preise & Kosten | Schlüssel Schmiede Wetzlar",
  description: "Türöffnung ab 129€! | Verbindliche Preisnennung vor Anfahrt | Keine versteckten Gebühren. Jetzt transparenten Preis im Rechner prüfen.",
  path: "/preise",
 });
@@ -157,7 +157,7 @@ export default function PreisePage() {
    <section className="px-[var(--section-px)] py-[var(--section-py)] bg-[var(--surface-secondary)]">
     <div className="mx-auto max-w-2xl">
      <h2 className="typo-h2 text-[color:var(--text-primary)] text-center mb-2">Schnellschätzung</h2>
-     <p className="text-center text-[color:var(--text-secondary)] mb-8">In 2 Klicks zur unverbindlichen Preiseinschätzung.</p>
+      <p className="text-center text-[color:var(--text-secondary)] mb-8">Wählen Sie Ihre Situation zur unverbindlichen Festpreis-Einschätzung.</p>
      <PriceEstimator />
     </div>
    </section>
@@ -174,7 +174,13 @@ export default function PreisePage() {
     </div>
    </section>
 
-   <EmergencyCTA />
+   <aside aria-label="Notfall-Kontakt">
+    <EmergencyCTA 
+      title="Festpreis vor Anfahrt bestätigen lassen!" 
+      description="Keine versteckten Nebenkosten. Wir nennen Ihnen den verbindlichen Endpreis direkt am Telefon." 
+      subtext="Transparente Preisgarantie · 100% verlässlich" 
+    />
+   </aside>
   </div>
  );
 }

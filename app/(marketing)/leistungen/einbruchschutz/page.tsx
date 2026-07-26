@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Einbruchschutz Wetzlar | Schlüsseldienst",
+ title: "Einbruchschutz & Sicherheitsberatung Wetzlar | Profi",
  description: "Kostenlose Risikoanalyse in Wetzlar! | Tür und Fensterabsicherung | VdS geprüfte Technik | Soforthilfe nach Einbruch. Rufen Sie uns an!",
  path: "/leistungen/einbruchschutz",
  exactTitle: true,
@@ -86,7 +86,7 @@ export default function EinbruchschutzPage() {
               <span className="text-[var(--color-red-500)]">Einbruchschäden.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[color:var(--text-secondary)] leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "none" }} lang="de">
-              Nach einem Einbruch stellen wir sofort die mechanische Sicherheit Ihrer Türen wieder her. Wir reparieren Beschläge, tauschen Schließzylinder aus und beraten Sie präventiv.
+              Unsere Soforthilfe bei Einbruchschäden in Wetzlar stellt sofort die mechanische Sicherheit Ihrer Türen wieder her. Wir reparieren Beschläge, tauschen Schließzylinder aus und beraten Sie präventiv.
             </p>
           </div>
         </StaggerItem>
@@ -203,7 +203,7 @@ export default function EinbruchschutzPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="In 4 Schritten zu Ihrem sicheren Zuhause" subtitle="Von der ersten Sicherheitsanalyse vor Ort bis zur fachgerechten Montage zertifizierter Einbruchschutz-Systeme." badgeText="ABLAUF EINBRUCHSCHUTZ" />
 
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen Einbruchschutz" subtitle="Erfahrungen unserer Kunden" />
 
@@ -254,7 +254,7 @@ export default function EinbruchschutzPage() {
             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Die offizielle Kampagne der Polizei mit Tipps und Empfehlungen zum Einbruchschutz.</p>
           </div>
         </a>
-        <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
+        <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
             <ShieldCheck className="h-5 w-5" />
           </div>
@@ -263,7 +263,7 @@ export default function EinbruchschutzPage() {
             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Staatliche Zuschüsse bis zu 1.600€ für Einbruchschutz-Maßnahmen an Ihrer Immobilie.</p>
           </div>
         </a>
-        <a href="https://www.polizei.hessen.de/praesidium-mittelhessen/" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
+        <a href="https://praevention.polizei.hessen.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
             <ShieldAlert className="h-5 w-5" />
           </div>

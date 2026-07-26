@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <circle cx="150" cy="150" r="150" fill="#1E293B"/>
+  <circle cx="150" cy="110" r="50" fill="#38BDF8"/>
+  <path d="M60 250 C60 190 100 170 150 170 C200 170 240 190 240 250 Z" fill="#38BDF8"/>
+  <text x="150" y="280" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#F8FAFC" text-anchor="middle">Mustafa S.</text>
+</svg>

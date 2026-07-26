@@ -3,10 +3,11 @@ import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
+import { Phone, Mail, Clock, ShieldCheck, Check, FileText, HelpCircle, Building } from "lucide-react";
 
 export const metadata = generateSharedMetadata({
-  title: "Angebot anfragen | Schlüsseldienst Wetzlar",
-  description: "Unverbindliche Anfrage stellen: | Verbindliches Preisangebot in 30 Min. | Transparent & lokal in Wetzlar. Keine versteckten Kosten. Jetzt anfragen!",
+  title: "Unverbindliches Angebot anfragen | Schlüsseldienst Wetzlar",
+  description: "Unverbindliche Anfrage stellen: Verbindliches Preisangebot in 30 Min. Transparent & lokal in Wetzlar. Keine versteckten Kosten. Jetzt anfragen!",
   path: "/anfrage",
 });
 
@@ -28,19 +29,18 @@ export default function AnfragePage() {
           <Breadcrumbs items={[{ name: "Anfrage", href: "/anfrage" }]} light={false} />
 
           <StaggerReveal
-            className="mt-8 flex flex-col items-center"
+            className="mt-8 flex flex-col items-center max-w-3xl"
             animation={entryAnimations.slideUpFade}
             staggerDelay={0.1}
           >
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Unverbindliche Anfrage
+                Unverbindliche Angebot-Anfrage | Schlüsseldienst Wetzlar
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <p className="text-lg text-[color:var(--text-secondary)] max-w-xl">
-                Beschreiben Sie Ihr Anliegen und wir melden uns mit einem transparenten
-                Festpreis-Angebot und kostenlos und unverbindlich.
+              <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed">
+                Sie möchten ein individuelles Angebot anfragen bei der Schlüssel Schmiede Wetzlar? Beschreiben Sie Ihr Anliegen für Türöffnungen, Schließanlagen, Zylinderwechsel oder Einbruchschutz. Sie erhalten innerhalb von 30 Minuten eine kostenlose, transparente Aufstellung mit Festpreisgarantie.
               </p>
             </StaggerItem>
           </StaggerReveal>
@@ -52,66 +52,130 @@ export default function AnfragePage() {
         />
       </section>
 
-      {/* Redirect to Contact */}
-      <section className="px-[var(--section-px)] py-20 md:py-28">
-        <div className="mx-auto max-w-2xl text-center">
-          <StaggerReveal animation={entryAnimations.slideUpFade}>
-            <StaggerItem animation={entryAnimations.slideUpFade}>
-              <div className="p-8 rounded-[var(--radius-xl)] bg-[var(--surface-elevated)] border border-[var(--border-subtle)]">
-                <h2 className="typo-h3 text-[color:var(--text-primary)] mb-4">
-                  Zwei Wege zu Ihrem Angebot
-                </h2>
+      {/* Main Options & Detailed Content */}
+      <section className="px-[var(--section-px)] py-16 md:py-24">
+        <div className="mx-auto max-w-4xl space-y-16">
 
-                <div className="grid sm:grid-cols-2 gap-6 mt-8">
-                  {/* Option 1: Call */}
-                  <div className="p-6 rounded-[var(--radius-lg)] bg-[var(--surface-primary)] border border-[var(--border-subtle)] text-center">
-                    <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-[var(--color-red-500)]/10 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-[var(--color-red-500)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <h3 className="font-semibold text-[color:var(--text-primary)] mb-2">
-                      Sofortangebot per Telefon
-                    </h3>
-                    <p className="text-sm text-[color:var(--text-secondary)] mb-4">
-                      Für dringende Anliegen und direkter Kontakt mit Festpreis-Auskunft.
-                    </p>
-                    <Link
-                      href="tel:+4964418056279"
-                      className="inline-flex items-center justify-center w-full px-5 py-3 rounded-[var(--radius-md)] bg-[var(--color-red-500)] text-white font-semibold hover:bg-[var(--color-red-600)] transition-colors"
-                    >
-                      06441 8056279
-                    </Link>
-                  </div>
-
-                  {/* Option 2: Form */}
-                  <div className="p-6 rounded-[var(--radius-lg)] bg-[var(--surface-primary)] border border-[var(--border-subtle)] text-center">
-                    <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-[var(--color-red-500)]/10 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-[var(--color-red-500)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <h3 className="font-semibold text-[color:var(--text-primary)] mb-2">
-                      Schriftliche Anfrage
-                    </h3>
-                    <p className="text-sm text-[color:var(--text-secondary)] mb-4">
-                      Nutzen Sie unser Kontaktformular für Ihre detaillierte Anfrage.
-                    </p>
-                    <Link
-                      href="/kontakt"
-                      className="inline-flex items-center justify-center w-full px-5 py-3 rounded-[var(--radius-md)] border-2 border-[var(--color-red-500)] text-[var(--color-red-500)] font-semibold hover:bg-[var(--color-red-500)] hover:text-white transition-colors"
-                    >
-                      Zum Kontaktformular
-                    </Link>
-                  </div>
+          {/* Quick Choice Grid */}
+          <div className="grid sm:grid-cols-2 gap-8">
+            {/* Option 1: Direct Call */}
+            <div className="p-8 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 mb-6 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Phone className="w-6 h-6" />
                 </div>
-
-                <p className="mt-6 text-sm text-[color:var(--text-tertiary)]">
-                  Kostenlos &amp; unverbindlich · Antwort in 30 Min · DSGVO-konform
+                <h2 className="text-xl font-bold text-gray-900 mb-3">
+                  Schnellstes Sofortangebot per Telefon
+                </h2>
+                <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                  Wenn Sie ein sofortiges Angebot anfragen möchten für akute Schlüsselnotfälle, Türöffnungen oder Zylinderwechsel in Wetzlar und Umgebung, ist der telefonische Kontakt der beste Weg. Unsere Disponenten berechnen Ihren verbindlichen Festpreis in 2 Minuten am Telefon.
                 </p>
               </div>
-            </StaggerItem>
-          </StaggerReveal>
+              <a
+                href="tel:+4964418056279"
+                className="inline-flex items-center justify-center w-full px-6 py-4 rounded-xl bg-[var(--color-red-500)] text-white font-bold hover:bg-[var(--color-red-600)] transition-colors shadow-md gap-2"
+              >
+                <Phone className="w-5 h-5" /> 06441 8056279 anrufen
+              </a>
+            </div>
+
+            {/* Option 2: Written Contact Form */}
+            <div className="p-8 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 mb-6 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">
+                  Schriftliches Festpreis-Angebot anfragen
+                </h2>
+                <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                  Für geplante Maßnahmen wie Schließanlagen, Sicherheitstechnik, Fenstersicherungen oder Tresorberatungen nutzen Sie unser digitales Kontaktformular. Wir erstellen Ihnen ein detailliertes, schriftliches Angebot für Ihr Objekt in Wetzlar.
+                </p>
+              </div>
+              <Link
+                href="/kontakt"
+                className="inline-flex items-center justify-center w-full px-6 py-4 rounded-xl border-2 border-[var(--color-red-500)] text-[var(--color-red-500)] font-bold hover:bg-[var(--color-red-500)] hover:text-white transition-colors"
+              >
+                Zum Kontaktformular
+              </Link>
+            </div>
+          </div>
+
+          {/* Guide: Required Information for an Accurate Quote */}
+          <div className="bg-white border border-[var(--border-subtle)] rounded-2xl p-8 space-y-6">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+              <FileText className="w-6 h-6 text-[var(--color-red-500)]" />
+              Welche Angaben benötigen wir für Ihr Angebot?
+            </h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Wenn Sie bei der Schlüssel Schmiede Wetzlar ein Angebot anfragen, helfen uns präzise Angaben dabei, die Kosten noch exakter und transparenter für Sie zu kalkulieren. Ihr Schlüsseldienst Wetzlar achtet auf eine faire Preisgestaltung ohne unvorhergesehene Zuschläge.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-6 pt-4 border-t border-gray-100">
+              <div className="space-y-3">
+                <h3 className="font-bold text-gray-900 flex items-center gap-2">
+                  <Check className="w-5 h-5 text-emerald-600 shrink-0" /> Tür- & Schlosstyp
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Handelt es sich um eine Standard-Wohnungstür, eine Haustür mit Mehrfachverriegelung, eine Sicherheitstür oder eine Fahrzeugtür? Ist die Tür lediglich ins Schloss gefallen oder abgeschlossen?
+                </p>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-bold text-gray-900 flex items-center gap-2">
+                  <Check className="w-5 h-5 text-emerald-600 shrink-0" /> Einsatzort & PLZ
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Nennen Sie uns den genauen Ortsteil in Wetzlar (z.B. Dalheim, Nauborn, Hermanstein) oder die Gemeinde im Lahn-Dill-Kreis (z.B. Aßlar, Solms, Hüttenberg), um die Anfahrt exakt einzuberechnen.
+                </p>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-bold text-gray-900 flex items-center gap-2">
+                  <Check className="w-5 h-5 text-emerald-600 shrink-0" /> Dringlichkeit & Wunschtermin
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Handelt es sich um einen sofortigen 24/7 Notfalleinsatz oder möchten Sie einen Beratungstermin für Schlossaustausch oder Einbruchschutz in den kommenden Tagen buchen?
+                </p>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-bold text-gray-900 flex items-center gap-2">
+                  <Check className="w-5 h-5 text-emerald-600 shrink-0" /> Fotos per WhatsApp / E-Mail
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Gerne können Sie uns auch Fotos der Tür, des Zylinders oder des Beschlags per E-Mail oder Messenger zusenden. So erkennen unsere Handwerker sofort alle technischen Besonderheiten.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Commercial & Property Management Inquiries */}
+          <div className="bg-[var(--surface-secondary)] border border-[var(--border-subtle)] rounded-2xl p-8 space-y-4">
+            <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+              <Building className="w-5 h-5 text-[var(--color-red-500)]" /> Angebote für Firmenkunden & Hausverwaltungen
+            </h2>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Für Gewerbebetriebe, Hausverwaltungen, Immobilienmakler und öffentliche Einrichtungen in Wetzlar und im Lahn-Dill-Kreis bieten wir spezialisierte Rahmenkonditionen. Ob mechatronische Schließanlagen, Generalschlüssel-Systeme oder regelmäßige Wartungsverträge – stellen Sie Ihre Firmenanfrage direkt an Geschäftsleitung Mina Saad.
+            </p>
+            <ul className="grid sm:grid-cols-2 gap-2 text-xs font-semibold text-gray-800 pt-2">
+              <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-emerald-600" /> Kauf auf Rechnung für Stammkunden</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-emerald-600" /> Ausgewiesene MwSt. auf allen Rechnungen</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-emerald-600" /> Erfahrene Sicherheitsexperten vor Ort</li>
+              <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-emerald-600" /> Schnelle Terminvereinbarung & Montage</li>
+            </ul>
+          </div>
+
+          {/* Guarantee and Trust */}
+          <div className="text-center space-y-4 pt-4">
+            <h3 className="text-lg font-bold text-gray-900">
+              Garantierter Datenschutz & Transparenz
+            </h3>
+            <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Ihre Daten werden vertraulich behandelt und ausschließlich zur Angebotserstellung gemäß DSGVO verarbeitet. Wenn Sie ein Angebot anfragen, gehen Sie keinerlei Kaufverpflichtung ein. Der Schlüsseldienst Wetzlar steht für Ehrlichkeit, Transparenz und echtes Handwerk.
+            </p>
+          </div>
+
         </div>
       </section>
     </div>

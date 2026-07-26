@@ -6,7 +6,7 @@ import { Phone, CheckCircle2, ShieldCheck, DoorOpen, Car, KeyRound, Copy, Siren,
 import RelatedPosts from "@/components/blog/RelatedPosts";
 
 export const metadata = generateSharedMetadata({
-  title: "Alle Leistungen | Schlüsseldienst Wetzlar",
+  title: "Alle Schlüsseldienst Leistungen | Wetzlar Notdienst",
   description: "Alle Services im Überblick: | Türöffnung ab 99€ | Tresoröffnung | Einbruchschutz. Zertifiziert, schnell & lokal in Wetzlar verankert. Jetzt anrufen!",
   path: "/leistungen",
 });
@@ -40,7 +40,7 @@ export default function LeistungenPage() {
             Unsere Leistungen im <span className="text-[var(--color-red-500)]">Überblick</span>
           </h1>
           <p className="text-lg md:text-xl text-[color:var(--text-secondary)] mx-auto max-w-3xl leading-relaxed">
-            Egal ob Sie sich ausgesperrt haben, ein neues Schloss benötigen oder Ihr Haus absichern wollen - 
+            Alle unsere Schlüsseldienst-Leistungen im Überblick: Egal ob Sie sich ausgesperrt haben, ein neues Schloss benötigen oder Ihr Haus absichern wollen - 
             wir sind 24/7 für Sie da. Mit Festpreis-Garantie und ehrlicher Arbeitsausführung.
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function LeistungenPage() {
                   </div>
 
                   <div className="relative z-10 font-bold text-[color:var(--text-primary)] flex items-center gap-2 mt-auto pt-4 border-t border-[var(--border-subtle)] group-hover:text-[var(--color-red-500)] transition-colors">
-                    Details zu {service.title} <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    Fachinformationen und Festpreise für {service.title} ansehen <span className="transform group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </Link>
               );

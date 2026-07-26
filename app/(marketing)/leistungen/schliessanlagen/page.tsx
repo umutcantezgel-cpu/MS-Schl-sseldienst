@@ -21,7 +21,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Schließanlagen Wetzlar | Schlüsseldienst",
+ title: "Schließanlagen Planung & Einbau Wetzlar | Profi",
  description: "Kostenlose Objektbegehung! | Elektronische & Mechanische Anlagen | Nur 1 Schlüssel für alle Leitungen. Planung & Montage in Wetzlar.",
  path: "/leistungen/schliessanlagen",
  exactTitle: true,
@@ -238,7 +238,7 @@ export default function SchliessanlagenPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Projektablauf für Ihre Schließanlage" subtitle="Von der fachmännischen Schließplan-Erstellung über die Fertigung bis zur präzisen Montage der Zylinder." badgeText="SCHLIESSANLAGEN ABLAUF" />
 
    {/* 5. Proof (Bewertungen) */}
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zu Schließanlagen" subtitle="Das sagen unsere Kunden vor Ort" />

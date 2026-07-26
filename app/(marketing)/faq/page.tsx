@@ -67,7 +67,7 @@ export default function FAQPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-            Die Schlüssel Schmiede Wetzlar beantwortet die wichtigsten Fragen rund um Kosten, Anfahrt, Leistungen und Notdienst , transparent und ehrlich.
+            Die Schlüssel Schmiede Wetzlar beantwortet die wichtigsten Fragen rund um Kosten, Anfahrt, Leistungen und Notdienst, transparent und ehrlich.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -100,9 +100,14 @@ export default function FAQPage() {
     <div className="mx-auto max-w-4xl rounded-[var(--radius-24)] overflow-hidden border border-[var(--border-subtle)] shadow-[var(--elevation-1)]">
      <SeoContentImage image={teamImages[0]!} className="w-full h-[300px] md:h-[400px]" sizes="(max-width: 768px) 100vw, 800px" />
     </div>
+    <aside aria-label="Notfall-Kontakt" className="mt-12">
+      <EmergencyCTA 
+        title="Noch Fragen unbeantwortet? Rufen Sie uns direkt an!" 
+        description="Unsere Schlossexperten beantworten Ihre Fragen am Telefon und nennen Ihnen sofort den Festpreis." 
+        subtext="Kompetente Auskunft am Telefon · Keine versteckten Kosten" 
+      />
+    </aside>
    </section>
-
-   <EmergencyCTA />
   </div>
  );
 }

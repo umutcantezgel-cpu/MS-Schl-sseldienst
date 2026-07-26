@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0F172A"/>
+  <rect x="20" y="20" width="760" height="410" rx="12" fill="#1E293B" stroke="#2563EB" stroke-width="4"/>
+  <path d="M400 110 L480 150 V240 C480 300 400 340 400 340 C400 340 320 300 320 240 V150 Z" fill="#2563EB" opacity="0.8"/>
+  <path d="M380 220 L395 235 L430 190" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="400" y="370" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#F8FAFC" text-anchor="middle">Einbruchschutz 2026</text>
+  <text x="400" y="400" font-family="system-ui, sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">Der ultimative Guide zur Haussicherheit</text>
+</svg>

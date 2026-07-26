@@ -2,53 +2,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
-import { SeoContentImage } from "@/components/seo/SeoImage";
-import { auszeichnungImages } from "@/lib/data/imageAssets";
+import Link from "next/link";
+import { ShieldCheck, Heart, Scale, Lock, Eye, Award, ArrowRight } from "lucide-react";
 
 export const metadata = generateSharedMetadata({
-  title: "Unsere Philosophie Transparenz, Fairness & Qualität",
-  description: "Transparenz, Fairness und Handwerksqualität und die drei Säulen unserer Philosophie als Schlüsseldienst in Wetzlar.",
+  title: "Unsere Philosophie & Werte | Schlüssel Schmiede",
+  description: "Erfahren Sie mehr über die Philosophie, Werte und den Kodex der Schlüssel Schmiede Wetzlar – Handwerksehre, Preistransparenz und Kundennähe.",
   path: "/ueber-uns/philosophie",
 });
 
 export default function PhilosophiePage() {
-  const breadcrumbs = [
-    { name: "Über uns", href: "/ueber-uns" },
-    { name: "Philosophie", href: "/ueber-uns/philosophie" },
-  ];
-
-  const principles = [
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-      title: "Transparenz",
-      text: "Festpreise, die wir Ihnen am Telefon nennen, gelten. Keine versteckten Kosten, keine Überraschungen, keine Aufschläge. Sie wissen immer vorher, was es kostet.",
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-        </svg>
-      ),
-      title: "Fairness",
-      text: "Wir empfehlen nur, was wirklich nötig ist. Keine unnötigen Schlossauswechslungen, kein Upselling. Ehrliche Beratung steht an erster Stelle.",
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-        </svg>
-      ),
-      title: "Handwerksqualität",
-      text: "Jede Türöffnung, jeder Schlüssel, jede Schließanlage wird mit handwerklicher Präzision ausgeführt. Qualität, die sich über Jahre bewährt.",
-    },
-  ];
-
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      {/* Hero */}
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
         <div
           className="absolute inset-0 z-0 opacity-[0.035] pointer-events-none"
@@ -58,39 +24,153 @@ export default function PhilosophiePage() {
             backgroundSize: "200px 200px",
           }}
         />
+
         <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
-          <Breadcrumbs items={breadcrumbs} light={false} />
-          <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+          <Breadcrumbs
+            items={[
+              { name: "Über uns", href: "/ueber-uns" },
+              { name: "Philosophie", href: "/ueber-uns/philosophie" },
+            ]}
+            light={false}
+          />
+
+          <StaggerReveal
+            className="mt-8 flex flex-col items-center max-w-3xl"
+            animation={entryAnimations.slideUpFade}
+            staggerDelay={0.1}
+          >
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Unsere Philosophie als Handwerksbetrieb
+                Unsere Philosophie & Werte | Schlüsseldienst Wetzlar
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <p className="text-lg text-[color:var(--text-secondary)] max-w-xl">
-                Drei Werte, die jeden unserer Einsätze leiten.
+              <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed">
+                Die Philosophie der Schlüssel Schmiede Wetzlar ruht auf vier unverrückbaren Säulen: Absolute Transparenz, echte Handwerksehre, regionale Verantwortung und der konsequente Schutz unserer Kunden vor unseriösen Notdienst-Praktiken im Lahn-Dill-Kreis.
               </p>
             </StaggerItem>
           </StaggerReveal>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-primary)] pointer-events-none z-[1]" aria-hidden="true" />
+
+        <div
+          className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-primary)] pointer-events-none z-[1]"
+          aria-hidden="true"
+        />
       </section>
 
-      <section className="px-[var(--section-px)] py-20 md:py-28">
-        <div className="mx-auto max-w-4xl">
-          <StaggerReveal className="grid md:grid-cols-3 gap-8" animation={entryAnimations.slideUpFade} staggerDelay={0.12}>
-            {principles.map((p, i) => (
-              <StaggerItem key={i} animation={entryAnimations.slideUpFade}>
-                <div className="p-8 rounded-[var(--radius-xl)] bg-[var(--surface-elevated)] border border-[var(--border-subtle)] text-center h-full">
-                  <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
-                    {p.icon}
-                  </div>
-                  <h2 className="typo-h3 text-[color:var(--text-primary)] mb-3">{p.title}</h2>
-                  <p className="text-[color:var(--text-secondary)] text-sm leading-relaxed">{p.text}</p>
+      {/* Main Philosophy Sections */}
+      <section className="px-[var(--section-px)] py-16 md:py-24">
+        <div className="mx-auto max-w-4xl space-y-16">
+
+          {/* Core Mission Statement */}
+          <div className="bg-white border border-[var(--border-subtle)] rounded-2xl p-8 space-y-6 shadow-sm">
+            <div className="flex items-center gap-3 border-b border-gray-100 pb-4">
+              <Heart className="w-7 h-7 text-[var(--color-red-500)]" />
+              <h2 className="text-2xl font-bold text-gray-900">
+                Unsere Haltung als Schlüsseldienst Wetzlar
+              </h2>
+            </div>
+
+            <p className="text-base text-gray-700 leading-relaxed">
+              Wer vor verschlossener Tür steht oder nachts nach Hause zurückkehrt und feststellt, dass der Schlüssel fehlt, befindet sich in einer Ausnahmesituation. In diesen Momenten sind Vertrauen, Schnelligkeit und Fairness unverzichtbar. Als etablierter Schlüsseldienst Wetzlar nutzen wir Notsituationen niemals aus.
+            </p>
+
+            <p className="text-base text-gray-700 leading-relaxed">
+              Unsere Unternehmensphilosophie richtet sich strikt an den Grundsätzen des ehrlichen deutschen Handwerks aus. Wir begegnen jedem Kunden auf Augenhöhe, erklären vor Beginn der Arbeit jeden Handgriff und nennen vor Abfahrt einen verbindlichen Festpreis.
+            </p>
+          </div>
+
+          {/* 4 Pillars Grid */}
+          <div>
+            <h2 className="typo-h2 text-center text-[color:var(--text-primary)] mb-10">
+              Die 4 Säulen unserer Philosophie
+            </h2>
+
+            <div className="grid gap-6 sm:grid-cols-2">
+
+              {/* Pillar 1 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Scale className="w-6 h-6" />
                 </div>
-              </StaggerItem>
-            ))}
-          </StaggerReveal>
+                <h3 className="text-xl font-bold text-gray-900">1. Absolute Preistransparenz</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Keine versteckten Materialzuschläge, keine unklaren Pauschalen. Wir nennen Ihnen den vollen Endpreis inkl. MwSt. am Telefon, bevor sich unser Techniker auf den Weg macht. Sie bezahlen erst nach erfolgreicher Arbeit.
+                </p>
+              </div>
+
+              {/* Pillar 2 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Lock className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">2. Zerstörungsfreie Öffnungstechnik</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Über 99% aller zugefallenen Türen öffnen wir völlig beschädigungsfrei ohne Einsatz von Bohrer oder Fräse. Das schont Ihre Tür, den Rahmen und verhindert unnötige Folgekosten für Schlossersatz.
+                </p>
+              </div>
+
+              {/* Pillar 3 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Eye className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">3. Regionale Präsenz & Verantwortung</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Wir sind kein anonymes Callcenter, sondern ein eingetragener Fachbetrieb mit Ladenlokal in der Langgasse 70 in Wetzlar. Wir sind Nachbarn, die ihren Kunden aus dem Lahn-Dill-Kreis dauerhaft verlässlich beistehen.
+                </p>
+              </div>
+
+              {/* Pillar 4 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)] flex items-center justify-center">
+                  <Award className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">4. Qualitäts- & Datenschutzversprechen</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Wir verbauen ausschließlich zertifizierte Markenprodukte geprüfter deutscher Hersteller. Kundendaten verarbeiten wir streng nach DSGVO und verifizieren stets die Zugangsberechtigung vor Türöffnungen.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Anti-Abzocke Codex */}
+          <div className="bg-[var(--surface-secondary)] border border-[var(--border-subtle)] rounded-2xl p-8 space-y-4">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+              <ShieldCheck className="w-6 h-6 text-[var(--color-red-500)]" />
+              Unser Ehrenkodex gegen Notdienst-Abzocke
+            </h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Verbraucherzentralen und die Kriminalpolizei warnen seit Jahren vor unseriösen Vermittlungsplattformen im Internet. Die Schlüssel Schmiede Wetzlar hat sich verpflichtet, aktiv gegen diese Praktiken einzustehen. Bei uns gibt es keine überhöhten Kilometerpauschalen, keine gefälschten Vor-Ort-Adressen und keine überteuerten Notzylinder.
+            </p>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Unsere 5-Sterne-Bewertungen bei Google und das Vertrauen von hunderten Kunden aus Wetzlar, Gießen, Aßlar und Solms bestätigen uns täglich darin, diesen Weg konsequent weiterzugehen.
+            </p>
+          </div>
+
+          {/* Sub-Pages Navigation */}
+          <div className="grid sm:grid-cols-3 gap-4 text-center">
+            <Link
+              href="/ueber-uns/geschichte"
+              className="p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-red-500)] transition-colors font-bold text-sm text-gray-800 flex items-center justify-center gap-2"
+            >
+              Unsere Geschichte lesen <ArrowRight className="w-4 h-4 text-[var(--color-red-500)]" />
+            </Link>
+            <Link
+              href="/ueber-uns/team"
+              className="p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-red-500)] transition-colors font-bold text-sm text-gray-800 flex items-center justify-center gap-2"
+            >
+              Unser Team kennenlernen <ArrowRight className="w-4 h-4 text-[var(--color-red-500)]" />
+            </Link>
+            <Link
+              href="/bewertungen"
+              className="p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-red-500)] transition-colors font-bold text-sm text-gray-800 flex items-center justify-center gap-2"
+            >
+              Kundenbewertungen lesen <ArrowRight className="w-4 h-4 text-[var(--color-red-500)]" />
+            </Link>
+          </div>
+
         </div>
       </section>
     </div>

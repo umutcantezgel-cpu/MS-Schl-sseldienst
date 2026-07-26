@@ -19,17 +19,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!study) {
     return generateSharedMetadata({
-      title: 'Projekt nicht gefunden',
-      description: 'Das gesuchte Projekt konnte nicht gefunden werden.',
+      title: 'Referenz-Projekt nicht gefunden | Schlüsseldienst',
+      description: 'Das gesuchte Referenz-Projekt konnte nicht gefunden werden. Werfen Sie einen Blick auf unsere weiteren Kundenservice-Referenzen in Wetzlar.',
       path: `/referenzen/${awaitedParams.slug}`,
       noindex: true,
     });
   }
 
+  let title = study.title;
+  if (title.length < 45) {
+    title = `${title} | Referenzen Wetzlar`;
+  }
+  if (title.length < 45) {
+    title = `${title} | Schlüssel Schmiede Wetzlar`;
+  }
+  if (title.length > 65) {
+    title = title.slice(0, 62) + "...";
+  }
+
+  let description = study.challenge || study.solution || "";
+  if (description.length < 120) {
+    description = `${description} Fallstudie & Referenzbericht der Schlüssel Schmiede Wetzlar. Erfahren Sie Details zu unseren Einsätzen.`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151) + "...";
+  }
+
   return generateSharedMetadata({
-    title: `${study.title} | Referenzen`,
-    description: (study.challenge || "").substring(0, 160) + '...',
+    title,
+    description,
     path: `/referenzen/${study.slug}`,
+    exactTitle: true,
   });
 }
 
@@ -189,7 +209,7 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
               href="/anfrage"
               className="px-10 py-4 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold rounded-xl text-lg transition-transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(239,68,68,0.4)]"
             >
-              Kostenlose Beratung
+              Kostenlose Sicherheitsberatung für Ihr Objekt anfragen
             </Link>
           </div>
         </div>

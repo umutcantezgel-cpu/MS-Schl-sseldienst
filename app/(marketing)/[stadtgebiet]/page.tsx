@@ -30,9 +30,30 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
 
   if (!city) return notFound();
 
+  // Dynamic title formatting: 45 to 65 chars inclusive
+  let title = `Schlüsseldienst ${city.name} | 24h Notdienst | Schlüssel Schmiede`;
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${city.name} | 24h Notdienst`;
+  }
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${city.name} | Schlüssel Schmiede`;
+  }
+  if (title.length < 45) {
+    title = `Schlüsseldienst ${city.name} | 24h Notdienst & Notfallhilfe`;
+  }
+
+  // Dynamic description formatting: 120 to 155 chars inclusive
+  let description = `Ihr lokaler 24h Schlüsseldienst für ${city.name}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. Schnelle Hilfe in ca. ${city.logistics.drivingTimeMinutes} Min. Rufen Sie uns jetzt an!`;
+  if (description.length < 120) {
+    description = `Ihr lokaler 24h Schlüsseldienst für ${city.name}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. Schnelle Hilfe vor Ort in ca. ${city.logistics.drivingTimeMinutes} Minuten. Schlüssel Schmiede Wetzlar hilft sofort!`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151) + "...";
+  }
+
   const baseMeta = generateSharedMetadata({
-    title: `Schlüsseldienst ${city.name} | 24h Notdienst ab 99€ | Schlüssel Schmiede`,
-    description: city.seo.metaDescription,
+    title,
+    description,
     path: `/${city.slug}`,
     exactTitle: true,
   });

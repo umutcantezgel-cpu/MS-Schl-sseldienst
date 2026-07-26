@@ -17,10 +17,30 @@ export async function generateMetadata({ params }: Props) {
   
   if (!entry) return {};
 
+  let title = `${entry.title} | Schließtechnik Lexikon Wetzlar`;
+  if (title.length < 45) {
+    title = `${entry.title} einfach erklärt | Sicherheitslexikon Wetzlar`;
+  }
+  if (title.length > 65) {
+    title = `${entry.title} | Lexikon Schlüssel Schmiede`;
+  }
+  if (title.length > 65) {
+    title = title.slice(0, 62) + "...";
+  }
+
+  let description = entry.definition || "";
+  if (description.length < 120) {
+    description = `${description} Verständliche Erklärungen im Sicherheitslexikon der Schlüssel Schmiede Wetzlar.`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151) + "...";
+  }
+
   return generateSharedMetadata({
-    title: `${entry.title} | Schließtechnik Lexikon Wetzlar`,
-    description: entry.definition,
-    path: `/lexikon/${entry.slug}`
+    title,
+    description,
+    path: `/lexikon/${entry.slug}`,
+    exactTitle: true,
   });
 }
 

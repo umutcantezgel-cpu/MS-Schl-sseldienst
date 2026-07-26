@@ -221,7 +221,7 @@ export default function PriceEstimator() {
                 className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white font-bold rounded-xl transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                Jetzt anrufen , 06441 8056279
+                Jetzt anrufen, 06441 8056279
               </a>
 
               <button

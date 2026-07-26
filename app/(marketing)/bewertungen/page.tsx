@@ -170,8 +170,13 @@ export default function BewertungenPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] font-extrabold tracking-tight text-[color:var(--text-primary)] leading-[1.1]">
-            Das sagen unsere <span className="text-[var(--color-red-500)]">Kunden</span>
+            Kundenbewertungen & <span className="text-[var(--color-red-500)]">Erfahrungen</span>
           </h1>
+        </StaggerItem>
+        <StaggerItem animation={entryAnimations.slideUpFade}>
+          <p className="mt-4 text-lg text-[color:var(--text-secondary)] max-w-xl mx-auto">
+            Echte Kundenbewertungen und Erfahrungen mit unserem Notdienst & Schlüsseldienst in Wetzlar.
+          </p>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <div className="mt-8 flex flex-col items-center justify-center gap-3">
@@ -243,7 +248,11 @@ export default function BewertungenPage() {
    </section>
 
    <aside aria-label="Notfall-Kontakt">
-    <EmergencyCTA />
+    <EmergencyCTA 
+      title="Überzeugt von unseren echten Kundenbewertungen?" 
+      description="Wir helfen auch Ihnen in Wetzlar & Umgebung schnell und zum garantierten Festpreis." 
+      subtext="5.0 Sterne bei Google · 24/7 erreichbar" 
+    />
    </aside>
   </div>
  );

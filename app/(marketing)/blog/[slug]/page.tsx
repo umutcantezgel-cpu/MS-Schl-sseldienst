@@ -49,18 +49,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return generateSharedMetadata({
-      title: "Beitrag nicht gefunden",
-      description: "Der gesuchte Beitrag konnte nicht gefunden werden.",
+      title: "Blogbeitrag nicht gefunden | Schlüssel Schmiede Wetzlar",
+      description: "Der gesuchte Ratgeber-Beitrag konnte leider nicht gefunden werden. Entdecken Sie unsere aktuellen Artikel rund um Sicherheitstechnik in Wetzlar.",
       path: `/blog/${awaitedParams.slug}`,
       noindex: true,
     });
   }
 
+  let title = post.metadata.title;
+  if (title.length < 45) {
+    title = `${title} | Schlüsseldienst Wetzlar`;
+  }
+  if (title.length < 45) {
+    title = `${title} | Schlüssel Schmiede Wetzlar`;
+  }
+  if (title.length > 65) {
+    title = title.slice(0, 62) + "...";
+  }
+
+  let description = post.metadata.excerpt || "";
+  if (description.length < 120) {
+    description = `${description} Ratgeber vom Fachbetrieb Schlüssel Schmiede Wetzlar. Erfahren Sie wertvolle Tipps für Ihre Sicherheit.`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151) + "...";
+  }
+
   return generateSharedMetadata({
-    title: `${post.metadata.title} | Blog`,
-    description: post.metadata.excerpt || "",
+    title,
+    description,
     path: `/blog/${post.slug}`,
-    });
+    exactTitle: true,
+  });
 }
 
 export default async function BlogDetailPage({ params }: Props) {
@@ -71,7 +91,7 @@ export default async function BlogDetailPage({ params }: Props) {
     return (
       <main className="container mx-auto px-4 py-32 text-center h-[60vh] flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold mb-4">Beitrag nicht gefunden</h1>
-        <Link href="/blog" className="text-[var(--color-red-500)] underline">Zurück zur Übersicht</Link>
+        <Link href="/blog" className="text-[var(--color-red-500)] underline">Zurück zur Ratgeber- & Blog-Übersicht</Link>
       </main>
     );
   }

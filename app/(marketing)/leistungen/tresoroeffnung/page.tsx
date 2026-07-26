@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Tresoröffnung Wetzlar | Schlüsseldienst",
+ title: "Tresoröffnung Wetzlar | Diskrete Safe-Öffnung vom Profi",
  description: "Tresor aufbekommen? | Diskrete Safeöffnung | Mechanisch & Elektronisch. Höchste Vertraulichkeit durch Experten. 06441 8056279",
  path: "/leistungen/tresoroeffnung",
  exactTitle: true,
@@ -84,7 +84,7 @@ export default function TresoroeffnungPage() {
               <span className="text-amber-400">Tresoröffnung.</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto font-medium" style={{ hyphens: "none" }} lang="de">
-              Schlüssel verloren oder Zahlencode vergessen? Wir analysieren die Konstruktion Ihres Tresors und wenden schonende Methoden an, um Ihre Wertsachen sicher und vertraulich freizugeben.
+              Ihre professionelle & diskrete Tresoröffnung in Wetzlar. Schlüssel verloren oder Zahlencode vergessen? Wir analysieren die Konstruktion Ihres Tresors und wenden schonende Methoden an, um Ihre Wertsachen sicher freizugeben.
             </p>
           </div>
         </StaggerItem>
@@ -198,7 +198,7 @@ export default function TresoroeffnungPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Ablauf einer diskreten Tresoröffnung" subtitle="Anfrage, Nachweis der Berechtigung, zerstörungsarme Präzisionsöffnung und anschließende Instandsetzung." badgeText="TRESORÖFFNUNG ABLAUF" />
 
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen Tresoröffnung" subtitle="Darum vertrauen uns unsere Kunden" />
 

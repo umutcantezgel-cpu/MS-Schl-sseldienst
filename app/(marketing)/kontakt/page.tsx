@@ -53,12 +53,12 @@ export default function KontaktPage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-6)]">
-            Wir sind <span className="text-[var(--color-red-500)]">für Sie da.</span>
+            Kontakt zum <span className="text-[var(--color-red-500)]">Schlüsseldienst Wetzlar</span>
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-            Rufen Sie uns im Notfall direkt an oder schreiben Sie uns eine Nachricht für allgemeine Anfragen und Termine.
+            Kontaktieren Sie unseren Schlüsseldienst in Wetzlar. Rufen Sie uns im Notfall direkt an oder schreiben Sie uns eine Nachricht für allgemeine Anfragen und Termine.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -205,7 +205,11 @@ export default function KontaktPage() {
     </section>
 
     <aside aria-label="Notfall-Kontakt">
-     <EmergencyCTA />
+     <EmergencyCTA 
+       title="Direkter Draht zum Schlüsseldienst Wetzlar" 
+       description="Rufen Sie uns jetzt an für schnelle Hilfe in Notfällen oder vereinbaren Sie eine Beratung." 
+       subtext="Standort Langgasse 70, Wetzlar · 24/7 Notdienst" 
+     />
     </aside>
    </div>
  );

@@ -210,7 +210,7 @@ export default function DevDashboardPage() {
                   ))}
                 </div>
 
-                <h3 className="text-sm font-semibold text-zinc-400 mt-6 mb-2">Dependencies</h3>
+                <h2 className="text-sm font-semibold text-zinc-400 mt-6 mb-2">Dependencies</h2>
                 <div className="space-y-2">
                   {health.dependencies.map((dep) => (
                     <div
@@ -234,7 +234,7 @@ export default function DevDashboardPage() {
             {/* System Info Tab */}
             {tab === "info" && (
               <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6">
-                <h3 className="text-sm font-semibold text-zinc-400 mb-4 uppercase tracking-wider">System Info</h3>
+                <h2 className="text-sm font-semibold text-zinc-400 mb-4 uppercase tracking-wider">System Info</h2>
                 <dl className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   {[
                     ["Environment", health?.environment || "unknown"],

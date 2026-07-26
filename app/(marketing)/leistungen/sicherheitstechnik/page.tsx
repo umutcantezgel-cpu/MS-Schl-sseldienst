@@ -21,7 +21,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Sicherheitstechnik Wetzlar | Schlüsseldienst",
+ title: "Moderne Sicherheitstechnik Wetzlar | Schlüsseldienst",
  description: "Einbruchschutz für Wetzlar: | Panzerriegel | Stangenschlösser | Elektronik. Kostenlose & unverbindliche Sicherheitsberatung anfordern!",
  path: "/leistungen/sicherheitstechnik",
  exactTitle: true,
@@ -269,7 +269,7 @@ export default function SicherheitstechnikPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Ablauf unserer Sicherheitsberatung & Installation" subtitle="Analyse der Schwachstellen, individuelles Angebot, termingerechte Montage und umfassende Einweisung." badgeText="SICHERHEITSTECHNIK ABLAUF" />
 
    {/* 5. Proof (Bewertungen) */}
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zur Sicherheitstechnik" subtitle="Was Kunden über uns sagen" />
@@ -327,7 +327,7 @@ export default function SicherheitstechnikPage() {
              <Lock className="h-5 w-5" />
            </div>
            <div>
-             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH , Polizeiliche Prävention</span>
+             <span className="text-base font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] transition-colors">K-EINBRUCH – Polizeiliche Prävention</span>
              <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Offizielle Empfehlungen der Polizei zum Schutz Ihres Zuhauses.</p>
            </div>
          </a>

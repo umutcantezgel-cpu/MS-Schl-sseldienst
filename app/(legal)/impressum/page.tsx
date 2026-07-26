@@ -7,8 +7,8 @@ import { generateSharedMetadata } from "@/lib/metadata"
 import { MapConsentGate } from "@/components/legal/MapConsentGate"
 
 export const metadata = generateSharedMetadata({
-    title: "Impressum & Anbieterkennzeichnung",
-    description: "Impressum und rechtliche Angaben des Schlüssel Schmiede Wetzlar. | Kontaktdaten | Anbieterkennzeichnung gemäß DDG.",
+    title: "Impressum & Anbieterkennzeichnung | Schlüssel Schmiede Wetzlar",
+    description: "Impressum und rechtliche Angaben der Schlüssel Schmiede Wetzlar. Kontaktdaten, Verantwortliche und Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
   })
 
@@ -19,58 +19,59 @@ const TOC_ITEMS = [
     { id: "4-steuern", title: "4. Steuerliche Angaben" },
     { id: "5-berufsangaben", title: "5. Berufs & Aufsichtsangaben" },
     { id: "6-redaktionell", title: "6. Redaktionell Verantwortlicher" },
-    { id: "7-streitschlichtung", title: "7. EUstreitschlichtung" },
-    { id: "8-haftung", title: "8. Haftungsausschluss" },
+    { id: "7-streitschlichtung", title: "7. Verbraucherstreitbeilegung" },
+    { id: "8-haftung", title: "8. Haftungsausschluss & Urheberrecht" },
 ]
 
 export default function ImpressumPage() {
     return (
         <LegalLayout
             heroTitle="Impressum der Schlüssel Schmiede Wetzlar"
-            heroSubtitle="Transparenz schafft Vertrauen. Wer wir sind und wie Sie uns erreichen."
+            heroSubtitle="Transparenz schafft Vertrauen. Wer wir sind, wie Sie uns erreichen und rechtliche Betreiberkennzeichnung."
             lastUpdated="12. April 2026"
             tocItems={TOC_ITEMS}
         >
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
-                <p className="text-sm text-gray-500 font-medium">Betreiberkennzeichnung</p>
+                <p className="text-sm text-gray-500 font-medium">Betreiberkennzeichnung nach § 5 DDG</p>
                 <PrintButton />
             </div>
 
             <LegalSection>
                 <TLDRBox title="Verantwortlichkeit (TL;DR)" icon="info">
-                    <p>Diese Webseite wird betreut von <strong>Mina Saad</strong> (Schlüsseldienst Wetzlar). Unser Hauptfokus ist die regionale, faire Absicherung und Türöffnung im gesamten Lahn-Dill-Kreis. Für direkte Anfragen wählen Sie einfach unsere Notrufnummer.</p>
+                    <p>Die Seite <strong>Impressum & Anbieterkennzeichnung | Schlüssel Schmiede Wetzlar</strong> dokumentiert den ordnungsgemäßen Betrieb der Schlüssel Schmiede Wetzlar durch Inhaber Mina Saad. Unser Fachbetrieb bietet 24/7 Notöffnungen und Sicherheitstechnik im gesamten Lahn-Dill-Kreis. Bei Fragen erreichen Sie unseren Kundenservice direkt per Telefon.</p>
                 </TLDRBox>
             </LegalSection>
 
             <LegalSection id="1-angaben">
-                <h2 className="mt-0">1. Angaben gemäß § 5 DDG</h2>
-                <p className="text-sm text-gray-500 mb-4">(Digitale-Dienste-Gesetz, ehemals § 5 TMG)</p>
+                <h2 className="mt-0">1. Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h2>
+                <p>Verantwortlicher Dienstanbieter für das Webangebot Impressum der Schlüssel Schmiede Wetzlar ist:</p>
                 <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-6 rounded-xl my-4 text-base border border-gray-200 dark:border-[#27272a]">
-                    <strong>Schlüsseldienst Wetzlar</strong><br />
-                    Inhaberin: Mina Saad<br />
+                    Schlüsseldienst Wetzlar – Schlüssel Schmiede<br />
+                    Inhaber: Mina Saad<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar<br />
                     Deutschland
                 </div>
                 <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-4 rounded-xl my-4 text-sm border border-gray-200 dark:border-[#27272a]">
-                    <strong>Ladengeschäft (Filiale):</strong><br />
+                    Ladengeschäft & Filiale:<br />
                     Langgasse 70<br />
                     35576 Wetzlar
                 </div>
             </LegalSection>
 
             <LegalSection id="2-kontakt">
-                <h2 className="mt-0">2. Direkter Kontakt</h2>
-                <p>Wir legen Wert auf Erreichbarkeit. Im Notfall oder bei allgemeinen Anfragen nutzen Sie am besten die folgenden Kontaktwege:</p>
-                <ul>
-                    <li><strong>Telefon (24/7):</strong> <a href="tel:+4964418056279" className="font-semibold">06441 8056279</a></li>
-                    <li><strong>E-Mail:</strong> <a href="mailto:schluesselschmiede@gmail.com">schluesselschmiede@gmail.com</a></li>
+                <h2 className="mt-0">2. Direkter Kontakt & Erreichbarkeit</h2>
+                <p>Als lokaler Schlüsseldienst Wetzlar legen wir größten Wert auf unmittelbare Erreichbarkeit im Schlüsselnotfall oder bei Terminfragen:</p>
+                <ul className="mt-2 space-y-2">
+                  <li><strong>Telefon (24/7 Notdienst):</strong> <a href="tel:+4964418056279" className="font-semibold text-[var(--action-primary)] hover:underline">06441 8056279</a></li>
+                  <li><strong>E-Mail:</strong> <a href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline">schluesselschmiede@gmail.com</a></li>
+                  <li><strong>WhatsApp-Kontakt:</strong> +49 176 16310315</li>
                 </ul>
             </LegalSection>
 
             <LegalSection id="3-standort">
-                <h2 className="mt-0">3. Hauptsitz & Standort</h2>
-                <p>Unser technischer und administrativer Hauptsitz befindet sich zentral in Wetzlar.</p>
+                <h2 className="mt-0">3. Hauptsitz & Standortkarte</h2>
+                <p>Unser administrativer Hauptsitz befindet sich in der Gloelstraße 11, während Sie unser Kunden-Ladenlokal in der Langgasse 70 in Wetzlar finden.</p>
                 <div className="w-full h-[300px] bg-gray-100 rounded-xl overflow-hidden shadow-inner my-6 print:hidden">
                     <MapConsentGate
                         src="https://maps.google.com/maps?q=Gloelstra%C3%9Fe+11,+35576+Wetzlar&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -81,49 +82,52 @@ export default function ImpressumPage() {
 
             <LegalSection id="4-steuern">
                 <h2 className="mt-0">4. Steuerliche Angaben</h2>
-                <p>Die steuerliche Identifikation ist für die korrekte Rechnungsstellung und gewerbliche Transparenz notwendig.</p>
-                <ul>
+                <p>Angaben zur ordnungsgemäßen steuerlichen Registrierung des Handwerksbetriebs:</p>
+                <ul className="mt-2 space-y-2">
                     <li><strong>Umsatzsteuer-Identifikationsnummer (gemäß § 27a UStG):</strong> DE 282140471</li>
                     <li><strong>Steuernummer:</strong> 03986300160</li>
                 </ul>
             </LegalSection>
 
             <LegalSection id="5-berufsangaben">
-                <h2 className="mt-0">5. Berufs  & Aufsichtsangaben</h2>
-                <p>Angaben zur beruflichen Tätigkeit gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
-                <ul>
-                    <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst / Sicherheitstechnik</li>
-                    <li><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35576 Wetzlar</li>
-                    <li><strong>Handwerksrechtliche Zuordnung:</strong> Der Schlüsseldienst wird als eingetragenes Gewerbe betrieben. Die Zuordnung zur Handwerksrolle richtet sich nach dem konkreten Leistungsumfang gemäß Handwerksordnung (HwO). Für Rückfragen zur handwerksrechtlichen Einordnung kontaktieren Sie uns bitte direkt oder wenden Sie sich an die zuständige Handwerkskammer.</li>
-                    <li><strong>Geltende berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
+                <h2 className="mt-0">5. Berufs- & Aufsichtsangaben</h2>
+                <p>Angaben zur beruflichen Zuordnung gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
+                <ul className="mt-2 space-y-2 text-gray-700">
+                    <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst & Sicherheitstechnik</li>
+                    <li><strong>Zuständige Kammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35576 Wetzlar</li>
+                    <li><strong>Handwerksrechtliche Einordnung:</strong> Der Schlüsseldienst wird als eingetragener Fachbetrieb geführt. Die Zuordnung zur Handwerksrolle richtet sich nach der Handwerksordnung (HwO).</li>
+                    <li><strong>Berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), abrufbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
                 </ul>
             </LegalSection>
 
             <LegalSection id="6-redaktionell">
                 <h2 className="mt-0">6. Redaktionell Verantwortlicher</h2>
-                <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
+                <p>Verantwortlich für die redaktionellen Inhalte dieser Webseite gemäß § 18 Abs. 2 MStV (Medienstaatsvertrag):</p>
                 <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-6 rounded-xl my-4 text-base border border-gray-200 dark:border-[#27272a]">
-                    <strong>Mina Saad</strong><br />
+                    Mina Saad<br />
                     Gloelstraße 11<br />
                     35576 Wetzlar
                 </div>
             </LegalSection>
 
             <LegalSection id="7-streitschlichtung">
-                <h2 className="mt-0">7. EUstreitschlichtung & Verbraucherstreitbeilegung</h2>
-                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link erreichen:</p>
-                <p><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://ec.europa.eu/consumers/odr</a></p>
+                <h2 className="mt-0">7. Verbraucherstreitbeilegung & Schlichtungsstelle</h2>
+                <p>Die europäische Online-Streitbeilegungsplattform (OS) steht Verbrauchern zur Beilegung von Streitigkeiten zur Verfügung. Weiterführende Informationen zur Schlichtung erhalten Sie unter:</p>
+                <p><a href="https://www.verbraucher-schlichter.de" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://www.verbraucher-schlichter.de</a></p>
                 <p>Unsere E-Mail-Adresse lautet: <code>schluesselschmiede@gmail.com</code></p>
-                <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, streben jedoch stets einvernehmliche Lösungen im direkten Kundenkontakt an.</p>
             </LegalSection>
 
             <LegalSection id="8-haftung">
-                <h2 className="mt-0">8. Haftungsausschluss</h2>
-                <h3>Inhalte</h3>
-                <p>Für die Inhalte unserer Webseite sind wir als Betreiber verantwortlich. Wir bemühen uns, die auf unserer Seite bereitgestellten Informationen stets korrekt und tagesaktuell zu halten. Dennoch können wir keine Gewähr für die absolute Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen übernehmen.</p>
+                <h2 className="mt-0">8. Haftungsausschluss & Urheberrecht</h2>
+                <h3 className="mt-4">Haftung für Inhalte</h3>
+                <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir bemühen uns, die bereitgestellten Informationen stets korrekt und tagesaktuell zu halten, übernehmen jedoch keine Gewähr für die absolute Vollständigkeit oder Aktualität.</p>
 
-                <h3>Verlinkungen</h3>
-                <p>Unsere Webseite kann Hyperlinks zu fremden Webseiten von Drittanbietern enthalten, auf deren Inhalte wir keinerlei Einfluss haben. Deshalb distanzieren wir uns ausdrücklich von allen Inhalten der verlinkten Seiten und machen uns diese nicht zu eigen. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße auf den fremden Plattformen erkennbar. Eine fortwährende Kontrolle externer Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung für uns nicht zumutbar.</p>
+                <h3 className="mt-4">Haftung für externe Links</h3>
+                <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.</p>
+
+                <h3 className="mt-4">Urheberrecht</h3>
+                <p>Die durch die Seitenbetreiber erstellten Inhalte, Texte und Fotografien auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
             </LegalSection>
         </LegalLayout>
     )

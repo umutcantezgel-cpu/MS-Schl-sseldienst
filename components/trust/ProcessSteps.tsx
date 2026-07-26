@@ -8,13 +8,22 @@ import { entryAnimations } from "@/lib/animations";
  * [SEO-FIX: Seobility Duplicate Text Blocks]
  * headline/subtitle props allow each page to differentiate this section.
  */
+export interface StepItem {
+  id: number;
+  num: string;
+  title: string;
+  description: string;
+  icon: any;
+}
+
 interface ProcessStepsProps {
   headline?: string;
   subtitle?: string;
   badgeText?: string;
+  steps?: StepItem[];
 }
 
-const steps = [
+const defaultSteps: StepItem[] = [
   {
     id: 1,
     num: "01",
@@ -48,7 +57,8 @@ const steps = [
 export default function ProcessSteps({
   headline = "So einfach funktioniert unser Service",
   subtitle = "Keine Überraschungen, keine endlosen Wartezeiten. Ein transparenter 4-Schritte-Ablauf für Ihre maximale Sicherheit.",
-  badgeText = "SO EINFACH GEHT\u0027S",
+  badgeText = "SO EINFACH GEHT'S",
+  steps = defaultSteps,
 }: ProcessStepsProps) {
   return (
     <section aria-labelledby="process-heading" className="bg-[var(--color-charcoal-50)]/40 px-[var(--section-px)] py-[var(--section-py)] overflow-hidden relative">

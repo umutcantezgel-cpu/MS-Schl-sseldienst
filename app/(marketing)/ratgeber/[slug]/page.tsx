@@ -49,18 +49,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return generateSharedMetadata({
-      title: "Ratgeber nicht gefunden",
-      description: "Der gesuchte Ratgeber konnte nicht gefunden werden.",
+      title: "Sicherheitsratgeber nicht gefunden | Schlüsseldienst Wetzlar",
+      description: "Der gesuchte Sicherheitsratgeber konnte leider nicht gefunden werden. Hier finden Sie alle nützlichen Ratgeber rund um Schloss & Schlüssel.",
       path: `/ratgeber/${awaitedParams.slug}`,
       noindex: true,
     });
   }
 
+  let title = post.metadata.title;
+  if (title.length < 45) {
+    title = `${title} | Schlüsseldienst Wetzlar`;
+  }
+  if (title.length < 45) {
+    title = `${title} | Schlüssel Schmiede Wetzlar`;
+  }
+  if (title.length > 65) {
+    title = title.slice(0, 62) + "...";
+  }
+
+  let description = post.metadata.excerpt || "";
+  if (description.length < 120) {
+    description = `${description} Ratgeber vom Fachbetrieb Schlüssel Schmiede Wetzlar. Erfahren Sie wertvolle Tipps für Ihre Sicherheit.`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151) + "...";
+  }
+
   return generateSharedMetadata({
-    title: `${post.metadata.title} | Ratgeber`,
-    description: post.metadata.excerpt || "",
+    title,
+    description,
     path: `/ratgeber/${post.slug}`,
-    });
+    exactTitle: true,
+  });
 }
 
 export default async function RatgeberDetailPage({ params }: Props) {
@@ -71,7 +91,7 @@ export default async function RatgeberDetailPage({ params }: Props) {
     return (
       <main className="container mx-auto px-4 py-32 text-center h-[60vh] flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold mb-4">Ratgeber nicht gefunden</h1>
-        <Link href="/ratgeber" className="text-[var(--color-red-500)] underline">Zurück zur Übersicht</Link>
+        <Link href="/ratgeber" className="text-[var(--color-red-500)] underline">Zurück zur Ratgeber-Übersicht</Link>
       </main>
     );
   }

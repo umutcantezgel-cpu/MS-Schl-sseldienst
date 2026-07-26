@@ -12,7 +12,7 @@ import { teamImages, werkstattImages, auszeichnungImages } from "@/lib/data/imag
 
 export const metadata = generateSharedMetadata({
  title: "Über uns Lokaler Schlüsseldienst seit 15+ Jahren",
- description: "Ihr lokaler Partner aus Wetzlar! | Über 15 Jahre Erfahrung | Keine Callcenter | Lokale Monteure. Lernen Sie uns kennen.",
+ description: "Ihr lokaler Partner aus Wetzlar! | Über 15 Jahre Erfahrung | Keine Callcenter | Lokale Monteure. Lernen Sie uns jetzt kennen.",
  path: "/ueber-uns",
 });
 
@@ -241,18 +241,24 @@ export default function UeberUnsPage() {
     </StaggerReveal>
    </section>
 
-   <EmergencyCTA />
+   <aside aria-label="Notfall-Kontakt">
+    <EmergencyCTA 
+      title="Lernen Sie unser Handwerker-Team persönlich kennen" 
+      description="Rufen Sie uns an oder besuchen Sie uns im Ladenlokal in der Langgasse 70, 35576 Wetzlar." 
+      subtext="Echtes Handwerk seit 2025 · 5.0 Google Sterne" 
+    />
+   </aside>
 
     {/* Sub-Pages Navigation */}
     <section className="px-[var(--section-px)] py-16 md:py-20 bg-[var(--surface-secondary)]">
       <div className="mx-auto max-w-4xl">
-        <h2 className="typo-h3 text-[color:var(--text-primary)] text-center mb-10">Mehr über uns erfahren</h2>
+        <h2 className="typo-h3 text-[color:var(--text-primary)] text-center mb-10">Vertiefende Informationen über die Schlüssel Schmiede Wetzlar</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { name: "Unsere Geschichte", href: "/ueber-uns/geschichte", desc: "15+ Jahre Handwerkstradition" },
-            { name: "Unser Team", href: "/ueber-uns/team", desc: "Die Gesichter hinter dem Service" },
-            { name: "Philosophie", href: "/ueber-uns/philosophie", desc: "Werte, die uns antreiben" },
-            { name: "Karriere", href: "/ueber-uns/karriere", desc: "Werden Sie Teil des Teams" },
+            { name: "Unsere Geschichte", href: "/ueber-uns/geschichte", desc: "Über 15 Jahre Handwerkstradition in Wetzlar" },
+            { name: "Unser Team", href: "/ueber-uns/team", desc: "Die Sicherheitsexperten hinter unserem Notdienst" },
+            { name: "Unsere Philosophie", href: "/ueber-uns/philosophie", desc: "Werte, Ehrenkodex und faire Festpreise" },
+            { name: "Karriere & Jobs", href: "/ueber-uns/karriere", desc: "Stellenangebote im Handwerk & Notdienst" },
           ].map((page) => (
             <Link
               key={page.href}

@@ -216,7 +216,7 @@ export default function SchluesselNachmachenPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Schlüssel nachmachen – schnell & unkompliziert" subtitle="Bringen Sie Ihren Schlüssel in unsere Filiale oder bestellen Sie Ersatzschlüssel bequem mit Sicherheitskarte." badgeText="SCHLÜSSEL SERVICE" />
 
    {/* 5. Proof (Bewertungen) */}
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen zum Schlüsseldienst" subtitle="Echte Kundenstimmen" />

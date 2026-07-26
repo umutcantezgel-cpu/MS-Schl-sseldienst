@@ -72,7 +72,7 @@ export default function HomePage() {
       <WhyUsSection />
       <TrustMetricsSection />
       <InteractiveMapSection />
-      <ProcessSteps />
+      <ProcessSteps headline="So einfach funktioniert unser Schlüsseldienst-Service" subtitle="Der transparente 4-Schritte-Ablauf der Schlüssel Schmiede Wetzlar: Schnell, sicher und ohne versteckte Kosten." badgeText="4 SCHRITTE ZUR FREIEN TÜR" />
       
       {/* Testimonials */}
       <TestimonialCarousel testimonials={testimonials} title="Das sagen unsere Kunden" subtitle="Geprüfte Bewertungen aus der Region" />

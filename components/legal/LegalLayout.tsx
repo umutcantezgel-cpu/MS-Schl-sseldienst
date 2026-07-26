@@ -100,7 +100,7 @@ export function LegalLayout({ children, tocItems, heroTitle, heroSubtitle, lastU
                 <aside className="w-full lg:w-72 flex-shrink-0 lg:sticky lg:top-32 h-fit print:hidden">
                     {/* Navigation between legal pages */}
                     <div className="mb-10">
-                        <h4 className="text-xs font-bold text-gray-400 dark:text-[#71717a] uppercase tracking-wider mb-4">Rechtliches</h4>
+                        <h2 className="text-xs font-bold text-gray-400 dark:text-[#71717a] uppercase tracking-wider mb-4">Rechtliches</h2>
                         <nav className="flex flex-col gap-1">
                             {LEGAL_PAGES.map((page) => {
                                 const isActive = pathname === page.href
@@ -121,7 +121,7 @@ export function LegalLayout({ children, tocItems, heroTitle, heroSubtitle, lastU
                     {/* Table of Contents */}
                     {tocItems.length > 0 && (
                         <div>
-                            <h4 className="text-xs font-bold text-gray-400 dark:text-[#71717a] uppercase tracking-wider mb-4">Inhaltsverzeichnis</h4>
+                            <h2 className="text-xs font-bold text-gray-400 dark:text-[#71717a] uppercase tracking-wider mb-4">Inhaltsverzeichnis</h2>
                             <nav className="flex flex-col border-l-2 border-gray-100 dark:border-[#27272a]">
                                 {tocItems.map((item) => {
                                     const isActive = activeId === item.id

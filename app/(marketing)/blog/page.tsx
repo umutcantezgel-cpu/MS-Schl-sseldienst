@@ -8,7 +8,7 @@ import { ArrowRight, Lock, Key, Shield, AlertTriangle, Clock } from "lucide-reac
 import { getAllBlogPosts } from "@/lib/data/mdx";
 
 export const metadata = generateSharedMetadata({
-  title: "Sicherheitstechnik Blog",
+  title: "Sicherheitsratgeber & Blog | Schlüssel Schmiede Wetzlar",
   description: "Aktuelle Ratgeber & Tipps zu: | Einbruchschutz | Smart Locks | Sicherheitstechnik. Geballtes Fachwissen vom regionalen Experten aus Wetzlar.",
   path: "/blog",
 });
@@ -80,7 +80,7 @@ export default function BlogPage() {
               </StaggerItem>
               <StaggerItem animation={entryAnimations.slideUpFade}>
                 <p className="text-xl text-[color:var(--text-secondary)]">
-                  Praktische Tipps, Expertenwissen und Updates rund um das Thema Gebäudesicherheit und moderner Einbruchschutz.
+                  Praktische Tipps, Expertenwissen und Updates in unserem Sicherheitsratgeber und Schlüsseldienstblog rund um Gebäudesicherheit.
                 </p>
               </StaggerItem>
             </StaggerReveal>
@@ -138,7 +138,7 @@ export default function BlogPage() {
                           {post.metadata.excerpt}
                         </p>
                         <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[var(--color-red-500)]/5 text-sm font-bold text-[color:var(--text-primary)] group-hover:bg-[var(--color-red-500)] group-hover:text-white transition-all duration-300 mt-auto">
-                          Artikel lesen <ArrowRight className="w-4 h-4" />
+                          Blog-Beitrag zu „{post.metadata.title}“ lesen <ArrowRight className="w-4 h-4" />
                         </span>
                       </div>
                     </article>

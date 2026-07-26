@@ -38,9 +38,28 @@ export async function generateMetadata({ params }: { params: Promise<{ poiSlug: 
 
   const eta = calculateETA(poi.lat, poi.lng);
 
+  let title = `Schlüsseldienst ${poi.name} | 24h Notdienst | Schlüssel Schmiede`;
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${poi.name} | In ${eta.etaMinutes} Min vor Ort`;
+  }
+  if (title.length > 65) {
+    title = `Schlüsseldienst ${poi.name} | 24h Notdienst`;
+  }
+  if (title.length < 45) {
+    title = `Schlüsseldienst ${poi.name} | 24h Notdienst & Schlüsselnotdienst`;
+  }
+
+  let description = `Ihr lokaler 24h Schlüsseldienst nahe ${poi.name} in ${poi.city}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. In ca. ${eta.etaMinutes} Min vor Ort. Jetzt anrufen!`;
+  if (description.length < 120) {
+    description = `Ihr lokaler 24h Schlüsseldienst nahe ${poi.name} in ${poi.city}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. In ca. ${eta.etaMinutes} Minuten vor Ort. Schlüssel Schmiede hilft sofort!`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151) + "...";
+  }
+
   return generateSharedMetadata({
-    title: `Schlüsseldienst ${poi.name} | In ${eta.etaMinutes} Min vor Ort | ${companyInfo.localStore.name}`,
-    description: `24h Schlüsseldienst nahe ${poi.name}, ${poi.city}. ${eta.formatted} Anfahrt von ${companyInfo.localStore.street}. Festpreis ab ${companyInfo.financial.startingPriceValue}€. Tel: ${companyInfo.phone.formatted}.`,
+    title,
+    description,
     path: `/standorte/${poi.slug}`,
     exactTitle: true,
   });

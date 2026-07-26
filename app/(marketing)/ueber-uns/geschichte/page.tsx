@@ -2,46 +2,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
-import { SeoContentImage } from "@/components/seo/SeoImage";
-import { teamImages } from "@/lib/data/imageAssets";
+import Link from "next/link";
+import { History, ShieldCheck, MapPin, Award, CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata = generateSharedMetadata({
-  title: "Unsere Geschichte als Schlüsseldienst in Wetzlar",
-  description: "Vom lokalen Handwerksbetrieb zum 24/7 Notdienst. Lesen Sie die Erfolgsgeschichte vom Schlüssel Schmiede in Wetzlar. | Über 15 Jahre Erfahrung.",
+  title: "Unsere Geschichte | Schlüssel Schmiede Wetzlar",
+  description: "Geschichte und Gründung der Schlüssel Schmiede Wetzlar – vom Handwerksbetrieb zur führenden Sicherheitsadresse im Lahn-Dill-Kreis.",
   path: "/ueber-uns/geschichte",
 });
 
 export default function GeschichtePage() {
-  const breadcrumbs = [
-    { name: "Über uns", href: "/ueber-uns" },
-    { name: "Geschichte", href: "/ueber-uns/geschichte" },
-  ];
-
-  const timeline = [
-    {
-      year: "Gründung",
-      title: "Der Anfang",
-      text: "Schlüssel Schmiede Wetzlar wurde als lokaler Handwerksbetrieb gegründet und mit dem klaren Ziel, faire und transparente Schlüsseldienstleistungen in der Region Wetzlar anzubieten.",
-    },
-    {
-      year: "Aufbau",
-      title: "Wachstum durch Vertrauen",
-      text: "Durch konsequent faire Festpreise und schnelle Einsatzzeiten wuchs das Vertrauen der Wetzlarer Bürger. Mundpropaganda wurde zum stärksten Wachstumsmotor.",
-    },
-    {
-      year: "Erweiterung",
-      title: "24/7 Notdienst",
-      text: "Erweiterung zum Rund-um-die-Uhr-Notdienst. Egal ob nachts, am Wochenende oder an Feiertagen und wir sind immer erreichbar.",
-    },
-    {
-      year: "Heute",
-      title: "Ihr Partner in der Region",
-      text: "Heute betreuen wir Privat- und Gewerbekunden in Wetzlar und allen umliegenden Stadtgebieten. Unser Versprechen bleibt dasselbe: Festpreise, Transparenz, Handwerksqualität.",
-    },
-  ];
-
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      {/* Hero */}
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
         <div
           className="absolute inset-0 z-0 opacity-[0.035] pointer-events-none"
@@ -53,45 +26,159 @@ export default function GeschichtePage() {
         />
 
         <div className="container mx-auto px-[var(--section-px)] relative z-10 flex flex-col items-center text-center">
-          <Breadcrumbs items={breadcrumbs} light={false} />
-          <StaggerReveal className="mt-8 flex flex-col items-center" animation={entryAnimations.slideUpFade} staggerDelay={0.1}>
+          <Breadcrumbs
+            items={[
+              { name: "Über uns", href: "/ueber-uns" },
+              { name: "Geschichte", href: "/ueber-uns/geschichte" },
+            ]}
+            light={false}
+          />
+
+          <StaggerReveal
+            className="mt-8 flex flex-col items-center max-w-3xl"
+            animation={entryAnimations.slideUpFade}
+            staggerDelay={0.1}
+          >
             <StaggerItem animation={entryAnimations.slideUpFade}>
               <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-                Unsere Geschichte als Schlüsseldienst in Wetzlar
+                Geschichte & Entstehung der Schlüssel Schmiede Wetzlar
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <p className="text-lg text-[color:var(--text-secondary)] max-w-xl">
-                Vom Handwerksbetrieb zum vertrauenswürdigsten Schlüsseldienst in Wetzlar.
+              <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed">
+                Die Geschichte der Schlüssel Schmiede Wetzlar basiert auf echter Handwerkstradition, kompromissloser Preistransparenz und regionaler Verbundenheit mit der Domstadt Wetzlar und dem gesamten Lahn-Dill-Kreis. Erfahren Sie, wie wir uns zum verlässlichen Schlüsseldienst Wetzlar entwickelt haben.
               </p>
             </StaggerItem>
           </StaggerReveal>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-primary)] pointer-events-none z-[1]" aria-hidden="true" />
+
+        <div
+          className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[var(--surface-primary)] pointer-events-none z-[1]"
+          aria-hidden="true"
+        />
       </section>
 
-      <section className="px-[var(--section-px)] py-20 md:py-28">
-        <div className="mx-auto max-w-3xl">
-          <StaggerReveal animation={entryAnimations.slideUpFade} staggerDelay={0.12}>
-            {timeline.map((item, i) => (
-              <StaggerItem key={i} animation={entryAnimations.slideUpFade}>
-                <div className="flex gap-6 mb-10 last:mb-0">
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-[var(--color-red-500)] text-white font-bold flex items-center justify-center text-xs flex-shrink-0">
-                      {item.year}
-                    </div>
-                    {i < timeline.length - 1 && (
-                      <div className="w-px flex-1 bg-[var(--border-subtle)] mt-3" aria-hidden="true" />
-                    )}
-                  </div>
-                  <div className="pt-2">
-                    <h2 className="typo-h3 text-[color:var(--text-primary)] mb-2">{item.title}</h2>
-                    <p className="text-[color:var(--text-secondary)]">{item.text}</p>
-                  </div>
+      {/* Narrative & Timeline Sections */}
+      <section className="px-[var(--section-px)] py-16 md:py-24">
+        <div className="mx-auto max-w-4xl space-y-16">
+
+          {/* Founding Narrative */}
+          <div className="bg-white border border-[var(--border-subtle)] rounded-2xl p-8 space-y-6 shadow-sm">
+            <div className="flex items-center gap-3 border-b border-gray-100 pb-4">
+              <History className="w-7 h-7 text-[var(--color-red-500)]" />
+              <h2 className="text-2xl font-bold text-gray-900">
+                Unsere Wurzeln: Gegen die Welle unseriöser Schlüsseldienste
+              </h2>
+            </div>
+
+            <p className="text-base text-gray-700 leading-relaxed">
+              Die Unternehmensgeschichte begann mit einer klaren Beobachtung im Lahn-Dill-Kreis: Die Branche der Schlüsselnotdienste war jahrelang durch unseriöse Callcenter-Vermittlungen in Verruf geraten. Kunden aus Wetzlar, Gießen, Aßlar und Umgebung berichteten immer wieder von utopischen Rechnungsbeträgen, zerstörten Schlössern und ungeschulten Notdienst-Vermittlern.
+            </p>
+
+            <p className="text-base text-gray-700 leading-relaxed">
+              Aus diesem Grund gründete Inhaber Mina Saad im Jahr 2025 die <strong>Schlüssel Schmiede Wetzlar</strong>. Das Ziel war von Beginn an eindeutig: Ein ehrlicher, regional verwurzelter Schlüsseldienst Wetzlar mit festem Ladenlokal, transparenten Festpreisen vor Anfahrt und 100% beschädigungsfreien Türöffnungen für zugefallene Türen.
+            </p>
+          </div>
+
+          {/* Milestone Timeline */}
+          <div>
+            <h2 className="typo-h2 text-center text-[color:var(--text-primary)] mb-10">
+              Meilensteine unserer Unternehmensgeschichte
+            </h2>
+
+            <div className="space-y-6">
+
+              {/* Milestone 1 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm flex flex-col md:flex-row gap-6 items-start">
+                <div className="w-16 h-16 rounded-2xl bg-[var(--color-red-500)] text-white font-black text-xl flex items-center justify-center shrink-0">
+                  2025
                 </div>
-              </StaggerItem>
-            ))}
-          </StaggerReveal>
+                <div className="space-y-2 flex-1">
+                  <h3 className="text-xl font-bold text-gray-900">Gründung & Eröffnung des Ladenlokals in der Langgasse 70</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Eröffnung unserer physischen Filiale in der historischen Wetzlarer Altstadt (Langgasse 70, 35576 Wetzlar). Anschaffung modernster elektronischer Schlüsselfräsen und Spezialwerkzeuge für beschädigungsfreie Türöffnungen.
+                  </p>
+                </div>
+              </div>
+
+              {/* Milestone 2 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm flex flex-col md:flex-row gap-6 items-start">
+                <div className="w-16 h-16 rounded-2xl bg-gray-900 text-white font-black text-xl flex items-center justify-center shrink-0">
+                  2025
+                </div>
+                <div className="space-y-2 flex-1">
+                  <h3 className="text-xl font-bold text-gray-900">Einführung der transparenten Festpreis-Garantie</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Verbindliche Einführung des Festpreissystems: Kunden erfahren noch am Telefon exakt den Preis vor Beginn der Arbeiten. Keine versteckten Fahrtkosten oder unangekündigten Nachtzuschläge.
+                  </p>
+                </div>
+              </div>
+
+              {/* Milestone 3 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm flex flex-col md:flex-row gap-6 items-start">
+                <div className="w-16 h-16 rounded-2xl bg-[var(--color-red-500)] text-white font-black text-xl flex items-center justify-center shrink-0">
+                  2026
+                </div>
+                <div className="space-y-2 flex-1">
+                  <h3 className="text-xl font-bold text-gray-900">Erweiterung der Einsatzgebiete auf über 70 Orte</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Ausbau der mobilen Notdienstflotte im gesamten Lahn-Dill-Kreis und Kreis Gießen. Garantierte Anfahrtszeiten von 15 bis 30 Minuten für Solms, Aßlar, Hüttenberg, Braunfels, Herborn und Gießen.
+                  </p>
+                </div>
+              </div>
+
+              {/* Milestone 4 */}
+              <div className="p-6 rounded-2xl bg-white border border-[var(--border-subtle)] shadow-sm flex flex-col md:flex-row gap-6 items-start">
+                <div className="w-16 h-16 rounded-2xl bg-emerald-600 text-white font-black text-xl flex items-center justify-center shrink-0">
+                  Heute
+                </div>
+                <div className="space-y-2 flex-1">
+                  <h3 className="text-xl font-bold text-gray-900">Auszeichnung mit 5.0 Google Sternen</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Über 57 verifizierte 5-Sterne-Bewertungen bei Google zeugen von der Zufriedenheit unserer Kunden. Die Schlüssel Schmiede gilt als bevorzugter Partner für Privathaushalte, Gewerbebetriebe und Behörden.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Philosophy & Craftsmanship */}
+          <div className="bg-[var(--surface-secondary)] border border-[var(--border-subtle)] rounded-2xl p-8 space-y-4">
+            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+              <Award className="w-6 h-6 text-[var(--color-red-500)]" />
+              Echtes Handwerk & Zukunftssicherheit
+            </h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Im Laufe unserer Geschichte hat sich auch die Schloss- und Sicherheitstechnik stark weiterentwickelt. Während früher einfache Profilzylinder den Standard bildeten, installieren wir heute elektronische Schließsysteme, mechatronische Zylinder, Smartphone-Steuerungen und Panzerriegel. Unsere Techniker nehmen regelmäßig an Schulungen führender deutscher Sicherheitshersteller teil.
+            </p>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Trotz moderner Technologien bleibt unsere Unternehmensphilosophie unverändert: Die persönliche Zufriedenheit unserer Kunden aus Wetzlar steht an erster Stelle. Wir danken allen Kunden, die uns auf diesem Weg begleiten.
+            </p>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="grid sm:grid-cols-3 gap-4 text-center">
+            <Link
+              href="/ueber-uns/team"
+              className="p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-red-500)] transition-colors font-bold text-sm text-gray-800 flex items-center justify-center gap-2"
+            >
+              Unser Team kennenlernen <ArrowRight className="w-4 h-4 text-[var(--color-red-500)]" />
+            </Link>
+            <Link
+              href="/ueber-uns/philosophie"
+              className="p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-red-500)] transition-colors font-bold text-sm text-gray-800 flex items-center justify-center gap-2"
+            >
+              Unsere Philosophie lesen <ArrowRight className="w-4 h-4 text-[var(--color-red-500)]" />
+            </Link>
+            <Link
+              href="/schluessel-schmiede"
+              className="p-4 rounded-xl bg-white border border-gray-200 hover:border-[var(--color-red-500)] transition-colors font-bold text-sm text-gray-800 flex items-center justify-center gap-2"
+            >
+              Das Ladenlokal ansehen <ArrowRight className="w-4 h-4 text-[var(--color-red-500)]" />
+            </Link>
+          </div>
+
         </div>
       </section>
     </div>

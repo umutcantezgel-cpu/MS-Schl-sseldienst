@@ -13,79 +13,91 @@ import { LocationData } from "@/lib/data/locations";
 export function generateUniqueAboutText(city: LocationData): string {
     const parts: string[] = [];
 
-    // ── Paragraph 1: Geographic Introduction (always unique via name, PLZ, character, population) ──
+    // Simple deterministic variation selector based on slug length / char codes
+    const hash = city.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const variantIdx = hash % 3;
+
+    // ── Paragraph 1: Geographic Introduction ──
     const charDesc = city.character || "ein ruhiger Wohnort";
-    const popDesc = city.populationApprox ? ` mit ${city.populationApprox} Einwohnern` : "";
+    const popDesc = city.populationApprox ? ` mit rund ${city.populationApprox} Einwohnern` : "";
     const plzDesc = city.plz ? ` (PLZ ${city.plz})` : "";
     
-    parts.push(`<p><strong>${city.name}</strong>${plzDesc} ist ${charDesc}${popDesc} im Lahn-Dill-Kreis. ` +
-        `Als Ihr <strong>Schlüsseldienst ${city.name}</strong> sind wir Ihr regionaler Partner für Türöffnungen, ` +
-        `Schlossaustausch und Sicherheitstechnik. Unser Fachbetrieb bietet schnelle Hilfe bei Schlüsselnotfällen ` +
-        `aller Art, ohne Callcenter-Umwege und direkt vom Handwerker vor Ort.</p>`);
+    if (variantIdx === 0) {
+        parts.push(`<p>${city.name}${plzDesc} ist ${charDesc}${popDesc} im Lahn-Dill-Kreis. ` +
+            `Als geprüfter Schlüsseldienst ${city.name} stehen wir Ihnen für professionelle Türöffnungen, ` +
+            `Zylinderwechsel und moderne Sicherheitstechnik zur Seite. Unser lokaler Fachbetrieb bringt schnelle ` +
+            `Hilfe bei Schlüsselnotfällen direkt zu Ihnen vor Ort.</p>`);
+    } else if (variantIdx === 1) {
+        parts.push(`<p>In ${city.name}${plzDesc}, ${charDesc}${popDesc}, versorgen wir als mobiler Schlüsseldienst ${city.name} ` +
+            `Anwohner und Gewerbetreibende mit schnellen Türöffnungen sowie umfassendem Schloss-Service. ` +
+            `Dabei setzen wir auf transparente Konditionen und kurze Anfahrtszeiten vom Handwerksbetrieb aus Wetzlar.</p>`);
+    } else {
+        parts.push(`<p>Für Bewohner in ${city.name}${plzDesc} (${charDesc}${popDesc}) bieten wir als Schlüsseldienst ${city.name} ` +
+            `zuverlässige Hilfe bei zugefallenen oder verschlossenen Türen. Wir garantieren Facharbeit ohne Umwege, ` +
+            `ausgeführt von erfahrenen Technikern aus der Region.</p>`);
+    }
 
-    // ── Paragraph 2: Route & Speed (unique via routeDescription, mainRoad, drivingTime, distance) ──
+    // ── Paragraph 2: Route & Speed ──
     const routeDesc = city.routeDescription || 
-        `Über die gut ausgebauten Verbindungsstraßen erreichen unsere Monteure ${city.name} zuverlässig in ${city.logistics.drivingTimeMinutes} Minuten.`;
-    const roadInfo = city.mainRoad ? ` Die Hauptroute führt über die <strong>${city.mainRoad}</strong>.` : "";
-    const distInfo = city.distanceKm ? ` Die Entfernung von unserem Hauptsitz in Wetzlar beträgt rund ${city.distanceKm} Kilometer.` : "";
+        `Über die direkten Verbindungsstraßen erreichen unsere Monteure ${city.name} in etwa ${city.logistics.drivingTimeMinutes} Minuten.`;
+    const roadInfo = city.mainRoad ? ` Die Anfahrt erfolgt meist über die ${city.mainRoad}.` : "";
+    const distInfo = city.distanceKm ? ` Die Entfernung zu unserem Standort in Wetzlar beträgt ca. ${city.distanceKm} km.` : "";
     
     parts.push(`<h3>In ${city.logistics.drivingTimeMinutes} Minuten bei Ihnen in ${city.name}</h3>`);
-    parts.push(`<p>${routeDesc}${roadInfo}${distInfo} Sie legen auf, und unser Servicefahrzeug ist bereits auf dem Weg zu Ihnen.</p>`);
+    parts.push(`<p>${routeDesc}${roadInfo}${distInfo} Nach Ihrer Auftragserteilung macht sich unser Einsatzfahrzeug umgehend auf den Weg zu Ihnen.</p>`);
 
-    // ── Paragraph 3: Building Types & Expertise (unique via buildingTypes, landmark) ──
+    // ── Paragraph 3: Building Types & Expertise ──
     if (city.buildingTypes || city.landmark) {
-        const buildDesc = city.buildingTypes || "eine Mischung aus Einfamilienhäusern, Mehrfamilienhäusern und älteren Wohngebäuden";
+        const buildDesc = city.buildingTypes || "eine vielseitige Bebauung aus Wohn- und Geschäftsgebäuden";
         const landmarkDesc = city.landmark 
-            ? ` ${city.name} ist unter anderem bekannt für ${city.landmark}.` 
+            ? ` Bekannt in der Ortschaft ist unter anderem ${city.landmark}.` 
             : "";
         
         parts.push(`<h3>Bausubstanz und Schlosstypen in ${city.name}</h3>`);
-        parts.push(`<p>Die Bebauung in ${city.name} umfasst ${buildDesc}.${landmarkDesc} ` +
-            `Unsere Techniker sind auf die gesamte Bandbreite an Schließsystemen vorbereitet: ` +
-            `Von klassischen Profilzylindern in älteren Wohnhäusern über moderne Mehrfachverriegelungen ` +
-            `in Neubauten bis hin zu historischen Kastenschlössern in denkmalgeschützten Gebäuden. ` +
-            `Für jede Türsituation haben wir das passende Spezialwerkzeug im Einsatzfahrzeug.</p>`);
+        parts.push(`<p>Die Gebäudestruktur in ${city.name} zeichnet sich aus durch ${buildDesc}.${landmarkDesc} ` +
+            `Unsere Monteure verfügen über Spezialwerkzeuge für sämtliche Schließsysteme – von gängigen Profilzylindern ` +
+            `in Wohnhäusern bis hin zu Mehrfachverriegelungen und Schutzbeschlägen.</p>`);
     }
 
-    // ── Paragraph 4: Pricing Transparency (unique via pricing data, fareInfo) ──
+    // ── Paragraph 4: Pricing Transparency ──
     const fareDesc = city.fareInfo || 
         (city.pricing.travelCost === 0 
-            ? `${city.name} gehört zu unserem Kerngebiet, daher fallen keinerlei Anfahrtskosten an.` 
+            ? `${city.name} liegt im Kerngebiet, sodass keine zusätzlichen Anfahrtskosten berechnet werden.` 
             : city.pricing.travelCost !== null 
                 ? `Die Anfahrt nach ${city.name} beträgt faire ${city.pricing.travelCost} Euro.`
-                : `Die Anfahrtskosten nach ${city.name} werden Ihnen transparent vor der Anfahrt am Telefon mitgeteilt.`);
+                : `Die genauen Anfahrtskosten für ${city.name} stimmen wir vorab am Telefon mit Ihnen ab.`);
     
     parts.push(`<h3>Transparente Festpreise für ${city.name}</h3>`);
-    parts.push(`<p>Eine einfache zugefallene Tür öffnen wir werktags tagsüber zum Festpreis ab <strong>${city.pricing.basePrice} Euro</strong>. ` +
-        `${fareDesc} Den Gesamtpreis erfahren Sie am Telefon, bevor sich unser Monteur auf den Weg macht. ` +
-        `Keine versteckten Zuschläge, keine Fantasie-Materialkosten, keine Überraschungen auf der Rechnung. ` +
-        `Wir sind das Gegenteil der dubiosen Callcenter-Schlüsseldienste, vor denen die Verbraucherzentrale Hessen zu Recht warnt.</p>`);
+    parts.push(`<p>Türöffnungen für zugefallene Standardtüren führen wir werktags ab ${city.pricing.basePrice} Euro durch. ` +
+        `${fareDesc} Den verbindlichen Endpreis nennen wir Ihnen bereits vor der Anfahrt am Telefon, damit Sie volle Kostensicherheit haben.</p>`);
 
-    // ── Paragraph 5: 24/7 Availability (unique via parking info, demographic focus) ──
+    // ── Paragraph 5: 24/7 Availability ──
     const parkDesc = city.parkingInfo ? ` ${city.parkingInfo}` : "";
     const demoFocus = city.demographicsFocus === "urban" 
-        ? "urbanen Umfeld" 
+        ? "städtischen Umfeld" 
         : city.demographicsFocus === "suburban" 
-            ? "suburbanen Wohngebiet"
+            ? "Wohngebiet"
             : city.demographicsFocus === "business"
-                ? "geschäftlichen Umfeld"
-                : "ländlichen Raum";
+                ? "Gewerbegebiet"
+                : "ländlichen Bereich";
     
     parts.push(`<h3>24/7 Notdienst für ${city.name} an 365 Tagen</h3>`);
-    parts.push(`<p>Gerade im ${demoFocus} passieren Aussperrungen häufig zur ungünstigsten Zeit: ` +
-        `Spätabends nach der Arbeit, am Wochenende beim Einkaufen oder morgens in der Hektik vor dem Pendeln. ` +
-        `Unser <strong>Schlüsselnotdienst ${city.name}</strong> ist deshalb rund um die Uhr einsatzbereit, ` +
-        `auch nachts um 2 Uhr, an Sonn- und Feiertagen, bei Gewitter und Schneefall.${parkDesc} ` +
-        `Wir lassen Sie in ${city.name} nicht im Stich.</p>`);
+    parts.push(`<p>Ob spät abends oder am Wochenende: Im ${demoFocus} von ${city.name} ist unser Schlüsselnotdienst rund um die Uhr ` +
+        `einsatzbereit. Wir helfen Ihnen auch an Sonn- und Feiertagen zügig und fachgerecht aus der Klemme.${parkDesc}</p>`);
 
-    // ── Paragraph 6: Anti-Scam / Trust (always unique via city name) ──
-    parts.push(`<h3>Seriöser Schlüsseldienst statt Callcenter-Abzocke</h3>`);
-    parts.push(`<p>Die Polizei Mittelhessen und die Verbraucherzentrale Hessen warnen regelmäßig vor unseriösen ` +
-        `Schlüsseldienst-Vermittlungen, die auch in ${city.name} aktiv sind. ` +
-        `Diese Callcenter schicken ungelernte Kräfte, die mit Gewalt arbeiten und Fantasie-Rechnungen stellen. ` +
-        `<strong>Schlüssel Schmiede Wetzlar</strong> ist das Gegenteil: Ein regionaler Fachbetrieb mit physischem ` +
-        `Ladengeschäft in der Langgasse 70, 35576 Wetzlar. 5.0 Google-Sterne bei über 57 verifizierten Bewertungen ` +
-        `sprechen für sich. Vertrauen Sie auf echtes Handwerk aus der Region.</p>`);
+    // ── Paragraph 6: Anti-Scam / Trust ──
+    if (variantIdx === 0) {
+        parts.push(`<h3>Seriöser Schlüsseldienst für ${city.name}</h3>`);
+        parts.push(`<p>Als eingetragener Handwerksbetrieb aus Wetzlar (Langgasse 70) distanzieren wir uns von überteuerten ` +
+            `Callcenter-Vermittlungen. Bei der Schlüssel Schmiede Wetzlar erhalten Sie ehrliches Handwerk und persönliche Ansprechpartner.</p>`);
+    } else if (variantIdx === 1) {
+        parts.push(`<h3>Regionale Facharbeit statt Callcenter</h3>`);
+        parts.push(`<p>Verbraucherschutzstellen raten zu lokal ansässigen Dienstleistern. Die Schlüssel Schmiede Wetzlar ist Ihr ` +
+            `physischer Fachbetrieb in der Region – mit transparenten Festpreisen und geprüfter Kundenzufriedenheit.</p>`);
+    } else {
+        parts.push(`<p>Vertrauen Sie in ${city.name} auf einen echten Betrieb vor Ort. Mit unserem Ladenlokal in Wetzlar stehen ` +
+            `wir für verlässlichen Service, schnelle Hilfe und kundenfreundliche Festpreise.</p>`);
+    }
 
     return parts.join("\n\n");
 }

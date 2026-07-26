@@ -22,8 +22,8 @@ import type { Metadata } from "next";
  */
 
 export const metadata: Metadata = {
-  title: `Notdienst JETZT | ${companyInfo.localStore.name}`,
-  description: `24h Schlüsselnotdienst ${companyInfo.localStore.city}. Jetzt anrufen: ${companyInfo.phone.formatted}. In 15-30 Min vor Ort. Festpreis.`,
+  title: `24h Notdienst JETZT | ${companyInfo.localStore.name}`,
+  description: `24h Schlüsselnotdienst ${companyInfo.localStore.city}. Soforthilfe Tag und Nacht! Jetzt anrufen: ${companyInfo.phone.formatted}. In 15-30 Minuten vor Ort. Transparenter Festpreis.`,
   robots: { index: false, follow: false },
 };
 

@@ -20,7 +20,7 @@ import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedMacroImages, getImageByFilename } from "@/lib/data/imageAssets";
 
 export const metadata = generateSharedMetadata({
- title: "Autoschlüssel Wetzlar | Schlüsseldienst",
+ title: "Autoschlüssel nachmachen Wetzlar | Ersatzschlüssel",
  description: "KfZschlüssel kaputt oder verloren? Wir reparieren und programmieren Gehäuse und Elektronik von Autoschlüsseln in Wetzlar. | Schnell & Günstig",
  path: "/leistungen/autoschluessel",
  exactTitle: true,
@@ -214,7 +214,7 @@ export default function AutoschluesselPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Ablauf der Autoschlüssel-Nachfertigung" subtitle="Präzises Fräsen und Codieren Ihres Ersatz- oder Zweitschlüssels direkt vor Ort oder im Laden." badgeText="AUTOSCHLÜSSEL SERVICE" />
 
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Unsere Google Reviews" subtitle="Das sagen unsere Kunden" />
 

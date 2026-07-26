@@ -8,8 +8,8 @@ import { RevisionTimeline } from "@/components/legal/RevisionTimeline"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Allgemeine Geschäftsbedingungen (AGB)",
-    description: "AGB des Schlüssel Schmiede Wetzlar. | Transparente Bedingungen für Türöffnungen | Klare Regeln für Festpreise und Stornos.",
+    title: "Allgemeine Geschäftsbedingungen (AGB) | Schlüssel Schmiede",
+    description: "AGB der Schlüssel Schmiede Wetzlar. | Transparente Bedingungen für Türöffnungen | Klare Regeln für Festpreise und Stornos.",
     path: "/agb",
   })
 
@@ -117,7 +117,7 @@ export default function AGBPage() {
             <LegalSection id="7-haftung">
                 <h2 className="mt-0">7. Haftung & Gewährleistung</h2>
                 <p>7.1. Schlüssel Schmiede haftet nach den gesetzlichen Bestimmungen, sofern der Kunde Schadensersatzansprüche geltend macht, die auf Vorsatz oder grober Fahrlässigkeit, einschließlich von Vorsatz oder grober Fahrlässigkeit der Vertreter oder <HoverGlossary explanation="Personen oder Hilfskräfte (z.B. fest angestellte Subunternehmer oder Monteure), die wir zur Ausführung des Auftrags einsetzen.">Erfüllungsgehilfen</HoverGlossary>, beruhen.</p>
-                <p>7.2. Bei einfachen und standardisierten Türöffnungen (nicht-verriegelte Türen) zielt Schlüssel Schmiede auf 100% beschädigungsfreie Verfahren ab. Besteht bereits ein mechanical Defekt an Tür oder Schloss, oder handelt es sich um eine festverriegelte Tür mit extrem hoher Sicherheitsklasse, kann eine Beschädigung des Zylinders/Schutzbeschlags zur vollendeten Öffnung bauartbedingt notwendig sein. Dies wird dem Kunden zwingend <strong>vor Ausführung</strong> auf Risikoabsprache mitgeteilt.</p>
+                <p>7.2. Bei einfachen und standardisierten Türöffnungen (nicht-verriegelte Türen) zielt Schlüssel Schmiede auf 100% beschädigungsfreie Verfahren ab. Besteht bereits ein mechanischer Defekt an Tür oder Schloss, oder handelt es sich um eine festverriegelte Tür mit extrem hoher Sicherheitsklasse, kann eine Beschädigung des Zylinders/Schutzbeschlags zur vollendeten Öffnung bauartbedingt notwendig sein. Dies wird dem Kunden zwingend vor Ausführung auf Risikoabsprache mitgeteilt.</p>
                 <p>7.3. Für Folgeschäden durch zwingend notwendiges Auffräsen oder Aufbohren von Verriegelungen an verschlossen übergebenen Türen, deren Öffnung anders physikalisch nicht durchführbar ist, wird keine Haftung übernommen, sofern der Kunde dem Eingriff zuvor zugestimmt hat.</p>
                 <p>7.4. Es gilt das gesetzliche Mängelhaftungsrecht für installierte Produkte (z.B. Einbau-Schließzylinder).</p>
             </LegalSection>

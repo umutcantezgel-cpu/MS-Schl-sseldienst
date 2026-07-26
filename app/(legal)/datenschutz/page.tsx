@@ -7,8 +7,8 @@ import { COOKIE_INVENTORY, DATA_PROCESSING_INVENTORY } from "@/lib/cookie-invent
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-    title: "Datenschutzerklärung nach DSGVO",
-    description: "Datenschutzerklärung des Schlüssel Schmiede Wetzlar. | DSGVO konform | Transparenz über Datenverarbeitung und Cookies.",
+    title: "Datenschutzerklärung nach DSGVO | Schlüssel Schmiede Wetzlar",
+    description: "Datenschutzerklärung der Schlüssel Schmiede Wetzlar. | DSGVO-konform | Vollständige Transparenz über Datenverarbeitung & Cookies.",
     path: "/datenschutz",
   })
 
@@ -142,10 +142,10 @@ export default function DatenschutzPage() {
             </LegalSection>
 
             <LegalSection id="6b-whatsapp">
-                <h2 className="mt-0">6a. WhatsAppkontakt</h2>
-                <p>Auf unserer Website befindet sich ein Link zur Kontaktaufnahme über den Messenger-Dienst WhatsApp (Meta Platforms Ireland Ltd.). Der Link nutzt das offene <code>wa.me</code>-Protokoll und leitet Sie bei Klick direkt in die WhatsApp-Anwendung auf Ihrem Endgerät weiter.</p>
-                <p><strong>Technische Funktionsweise:</strong> Es handelt sich um einen reinen Hyperlink. Es werden <strong>keine Cookies gesetzt</strong>, keine Tracking-Skripte geladen und <strong>keine Daten an Meta/WhatsApp übertragen</strong>, solange Sie den Link nicht aktiv anklicken. Erst durch Ihren bewussten Klick öffnet sich die WhatsApp-App, wobei die weitere Kommunikation den <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">Datenschutzbestimmungen von WhatsApp (Meta)</a> unterliegt.</p>
-                <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktives Anklicken).</p>
+                <h2 className="mt-0">6a. WhatsApp-Kontakt</h2>
+                <p>Auf unserer Website befindet sich ein Link zur Kontaktaufnahme über den Messenger-Dienst WhatsApp (Meta Platforms Ireland Ltd.). Der Link nutzt das offene <code>wa.me</code>-Protokoll und stellt bei Auswahl die Verbindung zur WhatsApp-Anwendung her.</p>
+                <p><strong>Technische Funktionsweise:</strong> Es handelt sich um eine direkte Verlinkung. Es werden keine Cookies gesetzt, keine Tracking-Skripte geladen und keine Daten an Meta/WhatsApp übertragen, solange Sie die Verlinkung nicht aktiv anwählen. Erst durch Ihre Anwahl öffnet sich die WhatsApp-App, wobei die weitere Kommunikation den <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">Datenschutzbestimmungen von WhatsApp (Meta)</a> unterliegt.</p>
+                <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Anwahl des Links).</p>
             </LegalSection>
 
             <LegalSection id="7-verschluesselung">

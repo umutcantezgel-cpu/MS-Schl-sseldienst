@@ -18,7 +18,7 @@ import { getFAQSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
- title: "Uhren Service Wetzlar | Schlüsseldienst",
+ title: "Uhren-Service & Batteriewechsel Wetzlar | Filiale",
  description: "Professioneller Uhrenservice in Wetzlar: Schneller Batteriewechsel, Kürzen und Austausch von Uhrenarmbändern. Sofortservice ohne Termin.",
  path: "/leistungen/uhren-service",
  exactTitle: true,
@@ -143,7 +143,7 @@ export default function UhrenServicePage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Ablauf unseres Uhren- & Batteriewechsel-Services" subtitle="Abgabe in der Filiale, Prüfung, fachgerechter Batteriewechsel & Armbandanpassung zum Mitnehmen." badgeText="UHREN SERVICE ABLAUF" />
 
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen" subtitle="Was Kunden über unseren Service sagen" />
 

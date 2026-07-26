@@ -203,7 +203,7 @@ export default function NotdienstPage() {
     </div>
    </section>
 
-   <ProcessSteps />
+   <ProcessSteps headline="Schnelle 24/7 Notdienst-Abwicklung" subtitle="Sofortige Bereitschaft Tag und Nacht: Anruf, Festpreiszusage am Telefon und schnelle Anfahrt in unter 25 Minuten." badgeText="24/7 NOTDIENST ABLAUF" />
 
    <TestimonialCarousel testimonials={testimonialsToDisplay} title="Erfahrungen Nachtdienst" subtitle="Wir lassen niemanden in der Kälte stehen" />
 
