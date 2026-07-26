@@ -19,6 +19,7 @@ import LocationReviews from "@/components/locations/LocationReviews";
 import NeighborGrid from "@/components/locations/NeighborGrid";
 import LocationContact from "@/components/locations/LocationContact";
 import LocationFinalCTA from "@/components/locations/LocationFinalCTA";
+import SeoContentBlock from "@/components/seo/SeoContentBlock";
 
 export function generateStaticParams() {
   return getAllLocationSlugs().map(slug => ({ stadtgebiet: slug }));
@@ -39,8 +40,11 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
     title = `Schlüsseldienst ${city.name} | Schlüssel Schmiede`;
   }
   if (title.length < 45) {
-    title = `Schlüsseldienst ${city.name} | 24h Notdienst & Notfallhilfe`;
+    title = `Schlüsseldienst ${city.name} | 24h Notdienst & schnelle Notfallhilfe`;
   }
+  // Hard limit fix for Seobility (if still > 65 or < 45)
+  if (title.length > 65) title = title.substring(0, 65).trim();
+  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
 
   // Dynamic description formatting: 120 to 155 chars inclusive
   let description = `Ihr lokaler 24h Schlüsseldienst für ${city.name}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. Schnelle Hilfe in ca. ${city.logistics.drivingTimeMinutes} Min. Rufen Sie uns jetzt an!`;
@@ -49,6 +53,9 @@ export async function generateMetadata({ params }: { params: Promise<{ stadtgebi
   }
   if (description.length > 155) {
     description = description.slice(0, 151) + "...";
+  }
+  if (description.length < 120) {
+      description = (description + " Wir garantieren Ihnen absolute Transparenz und professionelle Arbeit bei jeder Türöffnung in Ihrer Region.").substring(0, 155).trim();
   }
 
   const baseMeta = generateSharedMetadata({
@@ -197,6 +204,9 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
       
       {/* Sektion 12 (Final CTA) */}
       <LocationFinalCTA city={city} />
+      
+      {/* Sektion 13 (SEO Content Block für Seobility) */}
+      <SeoContentBlock city={city} />
     </div>
   );
 }

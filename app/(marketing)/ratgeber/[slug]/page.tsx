@@ -91,7 +91,7 @@ export default async function RatgeberDetailPage({ params }: Props) {
     return (
       <main className="container mx-auto px-4 py-32 text-center h-[60vh] flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold mb-4">Ratgeber nicht gefunden</h1>
-        <Link href="/ratgeber" className="text-[var(--color-red-500)] underline">Zurück zur Ratgeber-Übersicht</Link>
+        <Link href="/ratgeber" className="text-[var(--color-red-500)] underline">Alle Ratgeber-Artikel rund um Sicherheit und Schlüsseldienst ansehen</Link>
       </main>
     );
   }

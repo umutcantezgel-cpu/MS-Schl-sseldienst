@@ -48,6 +48,8 @@ export async function generateMetadata({ params }: { params: Promise<{ poiSlug: 
   if (title.length < 45) {
     title = `Schlüsseldienst ${poi.name} | 24h Notdienst & Schlüsselnotdienst`;
   }
+  if (title.length > 65) title = title.substring(0, 65).trim();
+  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
 
   let description = `Ihr lokaler 24h Schlüsseldienst nahe ${poi.name} in ${poi.city}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. In ca. ${eta.etaMinutes} Min vor Ort. Jetzt anrufen!`;
   if (description.length < 120) {
@@ -55,6 +57,9 @@ export async function generateMetadata({ params }: { params: Promise<{ poiSlug: 
   }
   if (description.length > 155) {
     description = description.slice(0, 151) + "...";
+  }
+  if (description.length < 120) {
+      description = (description + " Wir garantieren Ihnen absolute Transparenz und professionelle Arbeit bei jeder Türöffnung in Ihrer Region.").substring(0, 155).trim();
   }
 
   return generateSharedMetadata({
@@ -318,6 +323,27 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
         </div>
       </section>
     ),
+    seotext: (
+      <section key="seotext" className="py-16 px-6 bg-white border-t border-gray-100 prose max-w-none">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-xl font-bold mb-4">Schlüsseldienst {poi.name} – Ihr zuverlässiger 24h Notdienst</h2>
+          <p className="mb-4 text-gray-700">
+            Wenn Sie nahe <strong>{poi.name}</strong> einen professionellen <strong>Schlüsseldienst</strong> suchen, 
+            sind Sie bei der Schlüssel Schmiede genau richtig. Ein kurzer Moment der Unachtsamkeit reicht, und die Tür 
+            fällt ins Schloss. In dieser Situation benötigen Sie einen verlässlichen <strong>24h Notdienst</strong>, 
+            der schnell vor Ort ist. Unsere Techniker sind bestens geschult und garantieren eine schonende <strong>Türöffnung</strong> 
+            zum fest vereinbarten <strong>Festpreis</strong>.
+          </p>
+          <p className="mb-4 text-gray-700">
+            Als lokaler Fachbetrieb sind wir nicht nur am Tag, sondern auch als <strong>24/7 Notdienst</strong> in der Nacht, 
+            an Wochenenden und Feiertagen für Sie da. Egal, ob Sie Ihren <strong>Schlüssel</strong> verloren haben, 
+            der Zylinder klemmt oder eine Beratung zum Einbruchschutz wünschen – unser <strong>Schlüsseldienst {poi.name}</strong> 
+            bietet maßgeschneiderte Lösungen. Dank unserer transparenten <strong>Festpreis</strong>-Garantie wissen Sie 
+            stets im Vorfeld, welche Kosten für die <strong>Türöffnung</strong> anfallen.
+          </p>
+        </div>
+      </section>
+    ),
   };
 
   return (
@@ -335,6 +361,9 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
 
       {/* Render sections in crypto-deterministic order */}
       {sectionOrder.map((id) => sections[id])}
+      
+      {/* Append SEO Text always at the bottom of sections */}
+      {sections["seotext"]}
 
       {/* Breadcrumb back to homepage */}
       <div className="py-4 px-6 text-xs text-gray-400 max-w-3xl mx-auto">

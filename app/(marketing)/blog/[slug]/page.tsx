@@ -91,7 +91,7 @@ export default async function BlogDetailPage({ params }: Props) {
     return (
       <main className="container mx-auto px-4 py-32 text-center h-[60vh] flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold mb-4">Beitrag nicht gefunden</h1>
-        <Link href="/blog" className="text-[var(--color-red-500)] underline">Zurück zur Ratgeber- & Blog-Übersicht</Link>
+        <Link href="/blog" className="text-[var(--color-red-500)] underline">Alle Artikel und Ratgeber für Sicherheitstechnik ansehen</Link>
       </main>
     );
   }
