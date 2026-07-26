@@ -32,8 +32,8 @@ export default function EinbruchschutzPage() {
 
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
-   {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Einbruchschutz & Sicherheitsberatung Wetzlar | Profi</div>
+   {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+   <div className="sr-only" aria-hidden="true">Einbruchschutz & Sicherheitsberatung Wetzlar | Profi. Soforthilfe bei Einbruchschäden.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{

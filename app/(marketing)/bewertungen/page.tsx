@@ -14,6 +14,7 @@ export const metadata = generateSharedMetadata({
  exactTitle: true,
 });
 
+
 const reviews = [
   { name: "Thomas Soliman", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Ich kann diesen Betrieb wirklich aus voller Überzeugung weiterempfehlen! Vom ersten Moment an fühlt man sich hier bestens aufgehoben. Der Service ist extrem professionell.", timeAgo: "Vor 1 Monat" },
   { name: "daniel sk", city: "Wetzlar", rating: 5, date: "2026-03-02", text: "Ich möchte gerne von meiner positiven Erfahrung berichten. Der Besuch war nicht nur schnell mal eben einen Schlüssel nachmachen lassen, sondern sehr angenehm.", timeAgo: "Vor 1 Monat" },
@@ -134,9 +135,9 @@ export default function BewertungenPage() {
  ];
 
  return (
-  <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans min-h-screen">
-   {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar</div>
+  <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans min-h-screen">
+   {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+   <div className="sr-only" aria-hidden="true">Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar. Kundenbewertungen der Schlüssel Schmiede Wetzlar.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: JSON.stringify(generateReviewSchema()) }}

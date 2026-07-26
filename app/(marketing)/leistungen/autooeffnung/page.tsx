@@ -38,8 +38,8 @@ export default function AutooeffnungPage() {
 
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
-   {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Schnelle Autoöffnung Wetzlar | KFZ Notdienst ab 149€</div>
+   {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+   <div className="sr-only" aria-hidden="true">Schnelle Autoöffnung Wetzlar | KFZ Notdienst ab 149€. Sofort wieder mobil. Zerstörungsfreie Autoöffnung.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{

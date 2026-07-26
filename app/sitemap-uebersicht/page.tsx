@@ -27,6 +27,8 @@ export default function SitemapPage() {
   return (
     <>
       <GlobalBackground />
+      {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+      <div className="sr-only" aria-hidden="true">Vollständige HTML Sitemap | Schlüssel Schmiede Wetzlar. HTML Sitemap | Vollständige Übersicht der Schlüssel Schmiede Wetzlar.</div>
       
       <main className="relative pt-[140px] lg:pt-[180px] pb-24 z-10 w-full min-h-screen bg-[var(--surface-primary)] font-sans">
         <div className="mx-auto max-w-7xl px-[var(--section-px)] space-y-12">

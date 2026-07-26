@@ -30,8 +30,8 @@ export default function ServicegebietPage() {
 
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
-    {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-    <div className="sr-only" aria-hidden="true">Unsere Einsatzgebiete | Schlüsseldienst Wetzlar</div>
+    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+    <div className="sr-only" aria-hidden="true">Unsere Einsatzgebiete | Schlüsseldienst Wetzlar. Schlüsseldienst Einsatzgebiete im Lahn-Dill-Kreis.</div>
    <script
      type="application/ld+json"
      dangerouslySetInnerHTML={{

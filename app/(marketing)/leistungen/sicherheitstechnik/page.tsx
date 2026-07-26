@@ -38,8 +38,8 @@ export default function SicherheitstechnikPage() {
 
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
-   {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
-   <div className="sr-only" aria-hidden="true">Moderne Sicherheitstechnik Wetzlar | Schlüsseldienst</div>
+   {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
+   <div className="sr-only" aria-hidden="true">Moderne Sicherheitstechnik Wetzlar | Schlüsseldienst. Ruhig schlafen, sicher leben.</div>
    <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{

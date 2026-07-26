@@ -101,6 +101,7 @@ export default async function BlogDetailPage({ params }: Props) {
 
   return (
     <>
+      <div className="sr-only" aria-hidden="true">{post.metadata.title} | Schlüsseldienst Wetzlar. {post.metadata.title}.</div>
       <JsonLd data={getArticleSchema({
         headline: post.metadata.title,
         description: post.metadata.excerpt || "",
