@@ -8,27 +8,21 @@ interface LocationReviewsProps {
 }
 
 export default function LocationReviews({ city }: LocationReviewsProps) {
-    // 1. Prio: Echte, im Datensatz hinterlegte Hyper-Lokale Bewertungen
-    let reviewsToDisplay: Review[] = [];
+    // [SEO Fix]: "Derselbe Text mehrmals auf einer Seite" (6 Fehler pro Seite)
+    // Die hyper-lokalen Testimonials (city.localTestimonials) werden bereits ganz oben in "LocalTrustSignals" gerendert.
+    // Wenn wir sie hier unten nochmal rendern, zählt Seobility 3 Quotes + 3 Namen = 6 Textdopplungen.
+    // Lösung: Hier rendern wir IMMER allgemeine Bewertungen aus dem globalen Datensatz und rotieren
+    // sie anhand des city.slugs, was zusätzlich Duplicate Content über verschiedene Seiten hinweg reduziert.
 
-    if (city.localTestimonials && city.localTestimonials.length > 0) {
-        reviewsToDisplay = city.localTestimonials.map((t, index) => ({
-            id: `local-${city.id}-${index}`,
-            authorName: t.name,
-            rating: t.rating,
-            text: t.quote,
-            date: "Vor Kurzem", // Oder ein Datum, wenn verfügbar
-            location: city.name,
-            source: "Google", 
-        }));
-    } else {
-        // 2. Prio: Fallback auf allgemeine Top-Bewertungen, aber mit lokalem Kontext
-        // (Wir nehmen einfach die besten 3 und labeln sie "Einsatz in der Region")
-        reviewsToDisplay = reviewsData.slice(0, 3).map(r => ({
-            ...r,
-            location: `Einsatz in der Region ${city.name}`
-        }));
-    }
+    const hash = city.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    // Wenn reviewsData weniger als 3 Einträge hat, fallback. (In der Regel gibt es mehr).
+    const maxIndex = Math.max(0, reviewsData.length - 3);
+    const startIndex = hash % (maxIndex + 1);
+
+    const reviewsToDisplay: Review[] = reviewsData.slice(startIndex, startIndex + 3).map(r => ({
+        ...r,
+        location: `Einsatz in der Region ${city.name}`
+    }));
 
     if (reviewsToDisplay.length === 0) return null;
 
