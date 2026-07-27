@@ -68,11 +68,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   let description = post.metadata.excerpt || "";
-  if (description.length < 120) {
-    description = `${description} Ratgeber vom Fachbetrieb Schlüssel Schmiede Wetzlar. Erfahren Sie wertvolle Tipps für Ihre Sicherheit.`;
+  if (description.length < 100) {
+    description = `${description} Ratgeber von Schlüssel Schmiede Wetzlar.`;
   }
-  if (description.length > 140) {
-    description = description.slice(0, 137) + "...";
+  if (description.length > 130) {
+    description = description.slice(0, 127) + "...";
   }
 
   return generateSharedMetadata({

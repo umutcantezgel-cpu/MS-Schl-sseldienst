@@ -74,7 +74,7 @@ export default function TeamPage() {
             </div>
 
             <p className="text-base text-gray-700 leading-relaxed">
-              Hinter dem Namen <strong>Schlüssel Schmiede Wetzlar</strong> steht ein hochspezialisiertes Team aus regionalen Experten. Wir glauben daran, dass gute Handwerksleistung persönliche Verantwortung erfordert. Wenn Sie uns unter 06441 8056279 anrufen oder unser Fachgeschäft in der Langgasse 70 besuchen, sprechen Sie direkt mit den Fachkräften, die auch die Arbeiten vor Ort ausführen.
+              Hinter dem Namen <span className="font-semibold text-[color:var(--text-primary)]">Schlüssel Schmiede Wetzlar</span> steht ein hochspezialisiertes Team aus regionalen Experten. Wir glauben daran, dass gute Handwerksleistung persönliche Verantwortung erfordert. Wenn Sie uns unter 06441 8056279 anrufen oder unser Fachgeschäft in der Langgasse 70 besuchen, sprechen Sie direkt mit den Fachkräften, die auch die Arbeiten vor Ort ausführen.
             </p>
 
             <p className="text-base text-gray-700 leading-relaxed">

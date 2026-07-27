@@ -43,8 +43,8 @@ export default function DatenschutzPage() {
 
             <LegalSection>
                 <TLDRBox title="Datenschutz auf einen Blick" icon="info">
-                    <p>Diese <strong>Datenschutzerklärung nach DSGVO</strong> klärt Sie über die Art, den Umfang und den Zweck der Verarbeitung von personenbezogenen Daten auf. Wenn Sie unsere Website besuchen, werden bestimmte Daten (wie Ihre IP-Adresse) erfasst, um den technischen Betrieb sicherzustellen (Server-Logfiles). Im Kontaktformular angegebene Daten dienen rein der Auftragsabwicklung und Beantwortung.</p>
-                    <p><strong>Wir verkaufen Ihre Daten nicht.</strong> Sie haben jederzeit das Recht auf Löschung, Berichtigung und kostenlose Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten.</p>
+                    <p>Diese Datenschutzerklärung nach DSGVO klärt Sie über die Art, den Umfang und den Zweck der Verarbeitung von personenbezogenen Daten auf. Wenn Sie unsere Website besuchen, werden bestimmte Daten (wie Ihre IP-Adresse) erfasst, um den technischen Betrieb sicherzustellen (Server-Logfiles). Im Kontaktformular angegebene Daten dienen rein der Auftragsabwicklung und Beantwortung.</p>
+                    <p>Wir verkaufen Ihre Daten nicht. Sie haben jederzeit das Recht auf Löschung, Berichtigung und kostenlose Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -52,7 +52,7 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">1. Verantwortlicher</h2>
                 <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:</p>
                 <div className="bg-gray-50 p-6 rounded-xl my-4 text-base border border-gray-200">
-                    <strong>Inhaber: Mina Saad</strong><br />
+                    <span className="font-semibold text-[color:var(--text-primary)]">Inhaber: Mina Saad</span><br />
                     Schlüssel Schmiede Wetzlar<br />
                     Gloelstraße 11<br />
                     D-35576 Wetzlar<br /><br />
@@ -121,9 +121,9 @@ export default function DatenschutzPage() {
                     <li><span className="font-semibold">Art. 20 DSGVO:</span> Datenübertragbarkeit an andere Anbieter.</li>
                     <li><span className="font-semibold">Art. 21 DSGVO:</span> Widerspruchsrecht gegen die Verarbeitung.</li>
                 </ul>
-                <p>Zudem steht Ihnen ein <strong>Beschwerderecht (Art. 77 DSGVO)</strong> bei der zuständigen Aufsichtsbehörde zu:</p>
+                <p>Zudem steht Ihnen ein <span className="font-semibold text-[color:var(--text-primary)]">Beschwerderecht (Art. 77 DSGVO)</span> bei der zuständigen Aufsichtsbehörde zu:</p>
                 <div className="bg-gray-50 p-4 rounded-xl my-3 text-sm border border-gray-200">
-                    <strong>Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI)</strong><br />
+                    <span className="font-semibold text-[color:var(--text-primary)]">Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI)</span><br />
                     Gustav-Stresemann-Ring 1<br />
                     65189 Wiesbaden<br />
                     Telefon: 0611 1408-0<br />
@@ -135,16 +135,16 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">6. Datenübermittlung in Drittländer</h2>
                 <p>Einige unserer Dienstleister sitzen in den USA. Die Übermittlung ist je nach Anbieter sichergestellt durch das EU-US Data Privacy Framework (DPF) und/oder Standardvertragsklauseln (SCCs) gem. Art. 46 Abs. 2 lit. c DSGVO:</p>
                 <ul>
-                    <li><strong>Vercel Inc.</strong> (Hosting): DPF-zertifiziert.</li>
-                    <li><strong>Google LLC</strong> (Maps, Reviews): DPF-zertifiziert.</li>
-                    <li><strong>Formspree Inc.</strong> (Kontaktformular): Auftragsverarbeitung gem. Art. 28 DSGVO auf Basis eines abgeschlossenen Auftragsverarbeitungsvertrags (AVV). Datenübertragung auf Grundlage von Standardvertragsklauseln.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Vercel Inc.</span> (Hosting): DPF-zertifiziert.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Google LLC</span> (Maps, Reviews): DPF-zertifiziert.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Formspree Inc.</span> (Kontaktformular): Auftragsverarbeitung gem. Art. 28 DSGVO auf Basis eines abgeschlossenen Auftragsverarbeitungsvertrags (AVV). Datenübertragung auf Grundlage von Standardvertragsklauseln.</li>
                 </ul>
             </LegalSection>
 
             <LegalSection id="6b-whatsapp">
                 <h2 className="mt-0">6a. WhatsApp-Kontakt</h2>
                 <p>Auf unserer Website befindet sich ein Link zur Kontaktaufnahme über den Messenger-Dienst WhatsApp (Meta Platforms Ireland Ltd.). Der Link nutzt das offene <code>wa.me</code>-Protokoll und stellt bei Auswahl die Verbindung zur WhatsApp-Anwendung her.</p>
-                <p><strong>Technische Funktionsweise:</strong> Es handelt sich um eine direkte Verlinkung. Es werden keine Cookies gesetzt, keine Tracking-Skripte geladen und keine Daten an Meta/WhatsApp übertragen, solange Sie die Verlinkung nicht aktiv anwählen. Erst durch Ihre Anwahl öffnet sich die WhatsApp-App, wobei die weitere Kommunikation den <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">Datenschutzbestimmungen von WhatsApp (Meta)</a> unterliegt.</p>
+                <p><span className="font-semibold text-[color:var(--text-primary)]">Technische Funktionsweise:</span> Es handelt sich um eine direkte Verlinkung. Es werden keine Cookies gesetzt, keine Tracking-Skripte geladen und keine Daten an Meta/WhatsApp übertragen, solange Sie die Verlinkung nicht aktiv anwählen. Erst durch Ihre Anwahl öffnet sich die WhatsApp-App, wobei die weitere Kommunikation den <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer" className="text-[var(--action-primary)] hover:underline">Datenschutzbestimmungen von WhatsApp (Meta)</a> unterliegt.</p>
                 <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Anwahl des Links).</p>
             </LegalSection>
 

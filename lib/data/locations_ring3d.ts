@@ -13,7 +13,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Brandoberndorf 24/7 Notdienst", metaDescription: "Schlüsseldienst Brandoberndorf bei Waldsolms. 16 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Brandoberndorf? Unser Schlüsseldienst ist in ca. 16 Minuten bei Ihnen und zum transparenten Festpreis.",
-            mainText: `<p>Brandoberndorf ist der größte Ortsteil der Gemeinde Waldsolms und liegt südlich von Wetzlar an der Grenze zum Hochtaunuskreis. Der Ort verfügt über eine eigene Bahnstation an der Taunusbahn und bietet eine attraktive Wohnlage mit guter Infrastruktur. Als <strong>Schlüsseldienst Brandoberndorf</strong> sind wir Ihr zuverlässiger Partner bei Schlüsselnotfällen.</p>
+            mainText: `<p>Brandoberndorf ist der größte Ortsteil der Gemeinde Waldsolms und liegt südlich von Wetzlar an der Grenze zum Hochtaunuskreis. Der Ort verfügt über eine eigene Bahnstation an der Taunusbahn und bietet eine attraktive Wohnlage mit guter Infrastruktur. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Brandoberndorf</span> sind wir Ihr zuverlässiger Partner bei Schlüsselnotfällen.</p>
 <p>Die Mischung aus Altbauten im Ortskern und neueren Wohngebieten in Brandoberndorf bringt verschiedene Schließsysteme mit sich. Unsere Monteure sind auf die gesamte Bandbreite vorbereitet und öffnen zugefallene Türen in nahezu allen Fällen zerstörungsfrei.</p>
 <p>Die Anfahrt dauert rund 16 Minuten. Unser Festpreis ab 99 Euro wird Ihnen vor der Anfahrt transparent mitgeteilt.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Brandoberndorf öffnen wir schonend und professionell und ohne Schäden am Schloss.",
@@ -38,7 +38,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Griedelbach Notdienst 24/7", metaDescription: "Schlüsseldienst Griedelbach bei Waldsolms. In 17 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Griedelbach? In ca. 17 Minuten ist unser Monteur da und professionell und zum garantierten Festpreis.",
-            mainText: `<p>Griedelbach ist ein kleiner Ortsteil der Gemeinde Waldsolms, südlich von Wetzlar im Lahn-Dill-Kreis gelegen. Der dörfliche Charakter und die Nähe zur Natur machen Griedelbach zu einem ruhigen Wohnort. Als <strong>Schlüsseldienst Griedelbach</strong> stehen wir Ihnen auch in den kleineren Ortsteilen zuverlässig zur Seite.</p>
+            mainText: `<p>Griedelbach ist ein kleiner Ortsteil der Gemeinde Waldsolms, südlich von Wetzlar im Lahn-Dill-Kreis gelegen. Der dörfliche Charakter und die Nähe zur Natur machen Griedelbach zu einem ruhigen Wohnort. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Griedelbach</span> stehen wir Ihnen auch in den kleineren Ortsteilen zuverlässig zur Seite.</p>
 <p>Unsere erfahrenen Techniker öffnen zugefallene Türen in Griedelbach routiniert und zerstörungsfrei. Die typischen Schließsysteme der ländlichen Bausubstanz sind uns bestens vertraut.</p>
 <p>Anfahrtszeit: ca. 17 Minuten. Festpreis ab 99 Euro und transparent und verbindlich.</p>`,
             serviceZerstörungsfrei: "Schonende Türöffnung in Griedelbach: Wir öffnen Ihre Tür ohne Beschädigungen am Schloss oder Rahmen.",
@@ -63,7 +63,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Hasselborn Türöffnung ab 99€", metaDescription: "Schlüsseldienst Hasselborn bei Waldsolms. 18 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Hasselborn? Wir kommen in ca. 18 Minuten und mit professionellem Werkzeug und zum Festpreis.",
-            mainText: `<p>Hasselborn liegt im südlichen Teil der Gemeinde Waldsolms und zeichnet sich durch seine idyllische Lage und den ländlichen Charakter aus. Als <strong>Schlüsseldienst Hasselborn</strong> bringen wir unsere Expertise auch in die ruhigeren Ecken des Lahn-Dill-Kreises.</p>
+            mainText: `<p>Hasselborn liegt im südlichen Teil der Gemeinde Waldsolms und zeichnet sich durch seine idyllische Lage und den ländlichen Charakter aus. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Hasselborn</span> bringen wir unsere Expertise auch in die ruhigeren Ecken des Lahn-Dill-Kreises.</p>
 <p>Zugefallene Türen öffnen wir in Hasselborn zerstörungsfrei. Bei Schlüsselverlust tauschen wir den Zylinder direkt vor Ort aus.</p>
 <p>Anfahrtszeit: ca. 18 Minuten. Festpreis ab 99 Euro und klar und transparent.</p>`,
             serviceZerstörungsfrei: "In Hasselborn öffnen wir Ihre zugefallene Tür spurenlos und ohne Bohren oder Fräsen.",
@@ -88,7 +88,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Kröffelbach Notdienst 24/7", metaDescription: "Schlüsseldienst Kröffelbach bei Waldsolms. 17 Min. Anfahrt. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kröffelbach? In ca. 17 Minuten ist unser Monteur bei Ihnen und zum festen Preis ab 99€.",
-            mainText: `<p>Kröffelbach ist ein ruhiger Ortsteil der Gemeinde Waldsolms im südlichen Lahn-Dill-Kreis. Die ländliche Umgebung und die Nähe zum Taunus-Vorland machen den Ort zu einem beschaulichen Wohnstandort. Als <strong>Schlüsseldienst Kröffelbach</strong> sorgen wir dafür, dass Tür-Notfälle auch hier schnell und professionell gelöst werden.</p>
+            mainText: `<p>Kröffelbach ist ein ruhiger Ortsteil der Gemeinde Waldsolms im südlichen Lahn-Dill-Kreis. Die ländliche Umgebung und die Nähe zum Taunus-Vorland machen den Ort zu einem beschaulichen Wohnstandort. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Kröffelbach</span> sorgen wir dafür, dass Tür-Notfälle auch hier schnell und professionell gelöst werden.</p>
 <p>Unsere Monteure öffnen zugefallene Türen in Kröffelbach routiniert und zerstörungsfrei. Die gängigen Schließsysteme der Region sind uns vertraut.</p>
 <p>Anfahrtszeit: ca. 17 Minuten. Festpreis ab 99 Euro und verlässlich und transparent.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Kröffelbach öffnen wir schonend und ohne den Zylinder auszutauschen zu müssen.",
@@ -113,7 +113,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Weiperfelden 24/7 Türöffnung", metaDescription: "Schlüsseldienst Weiperfelden bei Waldsolms. In 18 Min. da. Ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Weiperfelden? Wir kommen in ca. 18 Minuten und professionell und zum garantierten Festpreis.",
-            mainText: `<p>Weiperfelden gehört zur Gemeinde Waldsolms und liegt im südlichen Lahn-Dill-Kreis, umgeben von Wald und Wiesen. Der kleine Ortsteil bietet ländliche Ruhe und eine überschaubare Nachbarschaft. Als <strong>Schlüsseldienst Weiperfelden</strong> bringen wir professionelle Hilfe auch in die entlegeneren Ecken unseres Einsatzgebiets.</p>
+            mainText: `<p>Weiperfelden gehört zur Gemeinde Waldsolms und liegt im südlichen Lahn-Dill-Kreis, umgeben von Wald und Wiesen. Der kleine Ortsteil bietet ländliche Ruhe und eine überschaubare Nachbarschaft. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Weiperfelden</span> bringen wir professionelle Hilfe auch in die entlegeneren Ecken unseres Einsatzgebiets.</p>
 <p>Zugefallene Türen in Weiperfelden öffnen wir mit bewährten Handwerkstechniken und zerstörungsfrei und professionell.</p>
 <p>Anfahrtszeit: ca. 18 Minuten. Festpreis ab 99 Euro und Ihr verbindlicher Kostenrahmen.</p>`,
             serviceZerstörungsfrei: "In Weiperfelden öffnen wir Ihre Tür schonend und ohne Spuren und Ihr Schloss bleibt intakt.",
@@ -138,7 +138,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Kraftsolms 24/7 Notdienst", metaDescription: "Schlüsseldienst Kraftsolms bei Waldsolms. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kraftsolms? Unser Monteur ist in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
-            mainText: `<p>Kraftsolms gehört zur Gemeinde Waldsolms und liegt im südlichen Lahn-Dill-Kreis. Als namensgebender Ortsteil der Gemeinde bietet Kraftsolms eine gute Mischung aus ländlicher Ruhe und verkehrstechnischer Anbindung. Als <strong>Schlüsseldienst Kraftsolms</strong> sind wir Ihr verlässlicher Helfer bei jedem Schlüsselnotfall.</p>
+            mainText: `<p>Kraftsolms gehört zur Gemeinde Waldsolms und liegt im südlichen Lahn-Dill-Kreis. Als namensgebender Ortsteil der Gemeinde bietet Kraftsolms eine gute Mischung aus ländlicher Ruhe und verkehrstechnischer Anbindung. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Kraftsolms</span> sind wir Ihr verlässlicher Helfer bei jedem Schlüsselnotfall.</p>
 <p>Die in Kraftsolms üblichen Schließsysteme sind unseren Monteure bestens bekannt. Zugefallene Türen öffnen wir zerstörungsfrei und bei Schlüsselverlust tauschen wir den Zylinder direkt vor Ort aus.</p>
 <p>Anfahrtszeit: ca. 15 Minuten. Festpreis ab 99 Euro und verbindlich und transparent.</p>`,
             serviceZerstörungsfrei: "Zerstörungsfreie Öffnung in Kraftsolms: Ihre Tür wird geöffnet, ohne dass Nacharbeiten nötig sind.",
@@ -163,7 +163,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Bischoffen Notdienst 24/7", metaDescription: "Ihr Schlüsseldienst für Bischoffen im Lahn-Dill-Kreis. 18 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bischoffen? Unser Schlüsseldienst ist in ca. 18 Minuten bei Ihnen und zum transparenten Festpreis.",
-            mainText: `<p>Die Gemeinde Bischoffen liegt nördlich von Wetzlar im Lahn-Dill-Kreis, eingebettet in die waldreiche Mittelgebirgslandschaft. Mit ihren mehreren Ortsteilen bietet Bischoffen ländliches Wohnen mit guter Anbindung an die Kreisstadt. Als <strong>Schlüsseldienst Bischoffen</strong> sind wir Ihr regionaler Partner für schnelle Türöffnungen in der gesamten Gemeinde.</p>
+            mainText: `<p>Die Gemeinde Bischoffen liegt nördlich von Wetzlar im Lahn-Dill-Kreis, eingebettet in die waldreiche Mittelgebirgslandschaft. Mit ihren mehreren Ortsteilen bietet Bischoffen ländliches Wohnen mit guter Anbindung an die Kreisstadt. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Bischoffen</span> sind wir Ihr regionaler Partner für schnelle Türöffnungen in der gesamten Gemeinde.</p>
 <p>Die typische Bausubstanz in Bischoffen umfasst Einfamilienhäuser, renovierte Fachwerkhäuser und vereinzelt Mehrfamilienhäuser. Unsere Monteure kennen die gängigen Schließsysteme der Region und öffnen zugefallene Türen routiniert und zerstörungsfrei.</p>
 <p>Über die Landesstraßen durch das Aartal erreichen wir Bischoffen in ca. 18 Minuten. Unser Festpreis ab 99 Euro bietet Ihnen finanzielle Sicherheit.</p>`,
             serviceZerstörungsfrei: "In Bischoffen öffnen wir zugefallene Türen schonend und ohne Kratzer, ohne Bohren, ohne Folgekosten.",
@@ -188,7 +188,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Wettenberg 24/7 24/7 Notdienst", metaDescription: "Schlüsseldienst Wettenberg bei Gießen. In 15 Min. da. Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür in Wettenberg? Unser Schlüsseldienst ist in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
-            mainText: `<p>Wettenberg liegt nördlich von Gießen an der Grenze zum Lahn-Dill-Kreis und ist mit seinen drei Ortsteilen Krofdorf-Gleiberg, Launsbach und Wißmar ein beliebter Wohnstandort. Die hervorragende Verkehrsanbindung und die Nähe zur Universitätsstadt machen Wettenberg besonders attraktiv. Als <strong>Schlüsseldienst Wettenberg</strong> bieten wir schnelle und professionelle Hilfe bei Türnotfällen in der gesamten Gemeinde.</p>
+            mainText: `<p>Wettenberg liegt nördlich von Gießen an der Grenze zum Lahn-Dill-Kreis und ist mit seinen drei Ortsteilen Krofdorf-Gleiberg, Launsbach und Wißmar ein beliebter Wohnstandort. Die hervorragende Verkehrsanbindung und die Nähe zur Universitätsstadt machen Wettenberg besonders attraktiv. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wettenberg</span> bieten wir schnelle und professionelle Hilfe bei Türnotfällen in der gesamten Gemeinde.</p>
 <p>Die Vielfalt der Wettenberger Bausubstanz und von historischen Fachwerkhäusern in Krofdorf-Gleiberg bis zu modernen Siedlungen und erfordert vielseitige Öffnungstechnik. Unsere Monteure sind auf alle Schließsysteme vorbereitet und arbeiten grundsätzlich zerstörungsfrei.</p>
 <p>Anfahrtszeit: ca. 15 Minuten. Festpreis ab 99 Euro und transparent und verbindlich.</p>`,
             serviceZerstörungsfrei: "In Wettenberg öffnen wir zugefallene Türen mit professionellen Picking-Tools und schnell, leise und ohne Schäden.",
@@ -213,7 +213,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Linden 24/7 Notdienst", metaDescription: "Schlüsseldienst Linden bei Gießen. 18 Min. Anfahrt, ab 99€ Festpreis. Jetzt Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Linden? Unser Schlüsseldienst erreicht Sie in ca. 18 Minuten und mit verbindlicher Preisauskunft vorab und professionellem Service.",
-            mainText: `<p>Die Stadt Linden liegt südöstlich von Gießen und grenzt an den Lahn-Dill-Kreis. Mit ihren drei Stadtteilen Großen-Linden, Leihgestern und Oberkleen ist Linden ein attraktiver Wohnstandort in der Region Mittelhessen. Als <strong>Schlüsseldienst Linden</strong> sind wir Ihr regionaler Ansprechpartner für Türöffnungen aller Art.</p>
+            mainText: `<p>Die Stadt Linden liegt südöstlich von Gießen und grenzt an den Lahn-Dill-Kreis. Mit ihren drei Stadtteilen Großen-Linden, Leihgestern und Oberkleen ist Linden ein attraktiver Wohnstandort in der Region Mittelhessen. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Linden</span> sind wir Ihr regionaler Ansprechpartner für Türöffnungen aller Art.</p>
 <p>Die Bausubstanz in Linden reicht von historischen Ortskernen über gewachsene Wohngebiete bis zu modernen Neubausiedlungen. Unsere Monteure meistern jedes Schließsystem und öffnen zugefallene Türen zerstörungsfrei.</p>
 <p>Anfahrtszeit: ca. 18 Minuten. Festpreis ab 99 Euro und Ihr verlässlicher Kostenrahmen.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Linden öffnen wir routiniert und schonend und ohne Schäden am Schloss.",
@@ -238,7 +238,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Krofdorf-Gleiberg Festpreis ab 99€", metaDescription: "Schlüsseldienst Krofdorf-Gleiberg. In 14 Min. vor Ort. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür in Krofdorf-Gleiberg? Unser Monteur ist in ca. 14 Minuten da und zum transparenten Festpreis.",
-            mainText: `<p>Krofdorf-Gleiberg ist ein Ortsteil der Gemeinde Wettenberg und überragt mit der imposanten Burg Gleiberg die Landschaft. Der Ort verbindet historischen Charme mit modernem Wohnen und ist über die Landesstraßen gut an Gießen und Wetzlar angebunden. Als <strong>Schlüsseldienst Krofdorf-Gleiberg</strong> sind wir Ihr Partner für schnelle Türöffnungen am Fuß der historischen Burg.</p>
+            mainText: `<p>Krofdorf-Gleiberg ist ein Ortsteil der Gemeinde Wettenberg und überragt mit der imposanten Burg Gleiberg die Landschaft. Der Ort verbindet historischen Charme mit modernem Wohnen und ist über die Landesstraßen gut an Gießen und Wetzlar angebunden. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Krofdorf-Gleiberg</span> sind wir Ihr Partner für schnelle Türöffnungen am Fuß der historischen Burg.</p>
 <p>Die Mischung aus alten Fachwerkhäusern und modernen Wohngebieten erfordert vielseitige Öffnungstechnik. Unsere Monteure öffnen zugefallene Türen zerstörungsfrei und professionell.</p>
 <p>Anfahrtszeit: ca. 14 Minuten. Festpreis ab 99 Euro und transparent und verbindlich.</p>`,
             serviceZerstörungsfrei: "Schonende Türöffnung in Krofdorf-Gleiberg: Historische und moderne Türen öffnen wir gleichermaßen spurenlos.",
@@ -263,7 +263,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Launsbach 24/7 Notdienst", metaDescription: "Schlüsseldienst Launsbach bei Wettenberg. 15 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Launsbach? Wir kommen in ca. 15 Minuten und professionell und zum Festpreis.",
-            mainText: `<p>Launsbach ist ein Ortsteil der Gemeinde Wettenberg, gelegen zwischen Gießen und Wetzlar. Der Ort bietet ruhiges Wohnen mit guter Infrastruktur. Als <strong>Schlüsseldienst Launsbach</strong> sind wir Ihr lokaler Ansprechpartner bei Türnotfällen.</p>
+            mainText: `<p>Launsbach ist ein Ortsteil der Gemeinde Wettenberg, gelegen zwischen Gießen und Wetzlar. Der Ort bietet ruhiges Wohnen mit guter Infrastruktur. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Launsbach</span> sind wir Ihr lokaler Ansprechpartner bei Türnotfällen.</p>
 <p>Unsere Monteure öffnen die in Launsbach typischen Schließsysteme routiniert und zerstörungsfrei.</p>
 <p>Anfahrtszeit: ca. 15 Minuten. Festpreis ab 99 Euro.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Launsbach öffnen wir schonend und professionell und ohne Schäden am Schloss.",
@@ -288,7 +288,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Leihgestern Festpreis ab 99€", metaDescription: "Schlüsseldienst Leihgestern bei Linden. 16 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Leihgestern? In ca. 16 Minuten ist unser Monteur da und professionell und zum Festpreis.",
-            mainText: `<p>Leihgestern ist ein Stadtteil von Linden, südöstlich von Gießen gelegen. Der Ort bietet eine gute Mischung aus Wohn- und Geschäftsgebieten. Als <strong>Schlüsseldienst Leihgestern</strong> sorgen wir dafür, dass Schlüsselnotfälle schnell und professionell gelöst werden.</p>
+            mainText: `<p>Leihgestern ist ein Stadtteil von Linden, südöstlich von Gießen gelegen. Der Ort bietet eine gute Mischung aus Wohn- und Geschäftsgebieten. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Leihgestern</span> sorgen wir dafür, dass Schlüsselnotfälle schnell und professionell gelöst werden.</p>
 <p>Unsere Techniker öffnen zugefallene Türen in Leihgestern routiniert und ohne Beschädigungen.</p>
 <p>Anfahrtszeit: ca. 16 Minuten. Festpreis ab 99 Euro und transparent und verlässlich.</p>`,
             serviceZerstörungsfrei: "Schonende Türöffnung in Leihgestern: Wir entriegeln Ihre Tür ohne Spuren am Schloss.",
@@ -313,7 +313,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Sinn 24/7 Türöffnung", metaDescription: "Schlüsseldienst Sinn im Lahn-Dill-Kreis. In 22 Min. da. Festpreis ab 99€. Jetzt anrufen: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Sinn? Unser Schlüsseldienst erreicht Sie in ca. 22 Minuten und zum transparenten Festpreis.",
-            mainText: `<p>Die Gemeinde Sinn liegt im nördlichen Lahn-Dill-Kreis an der Dill und ist über die B277 gut an das regionale Straßennetz angebunden. Mit einer lebendigen Gemeindestruktur und mehreren Ortsteilen bietet Sinn attraktives Wohnen im Dilltal. Als <strong>Schlüsseldienst Sinn</strong> sind wir Ihr zuverlässiger Partner bei Schlüsselnotfällen in der gesamten Gemeinde.</p>
+            mainText: `<p>Die Gemeinde Sinn liegt im nördlichen Lahn-Dill-Kreis an der Dill und ist über die B277 gut an das regionale Straßennetz angebunden. Mit einer lebendigen Gemeindestruktur und mehreren Ortsteilen bietet Sinn attraktives Wohnen im Dilltal. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Sinn</span> sind wir Ihr zuverlässiger Partner bei Schlüsselnotfällen in der gesamten Gemeinde.</p>
 <p>Die typische Bebauung in Sinn umfasst Einfamilienhäuser, Reihenhäuser und einige Mehrfamilienhäuser. Unsere erfahrenen Monteure sind mit den gängigen Schließsystemen der Region bestens vertraut und öffnen zugefallene Türen in nahezu allen Fällen zerstörungsfrei.</p>
 <p>Über die B277 erreichen wir Sinn in ca. 22 Minuten. Unser Festpreis ab 99 Euro gibt Ihnen finanzielle Planungssicherheit und mögliche Anfahrtskosten werden Ihnen vorab am Telefon transparent mitgeteilt.</p>`,
             serviceZerstörungsfrei: "In Sinn öffnen wir zugefallene Türen mit professionellen Picking-Techniken und schnell, sauber und beschädigungsfrei.",
@@ -338,7 +338,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Amdorf 24/7 Notdienst", metaDescription: "Schlüsseldienst Amdorf bei Sinn. 23 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Amdorf? Wir kommen in ca. 23 Minuten und professionell und zum Festpreis.",
-            mainText: `<p>Amdorf ist ein kleiner Ortsteil der Gemeinde Sinn im nördlichen Dilltal. Der ruhige Ort bietet ländliches Wohnen mit kurzen Wegen in die umliegenden Zentren. Als <strong>Schlüsseldienst Amdorf</strong> stehen wir Ihnen auch in den kleineren Ortsteilen des Lahn-Dill-Kreises professionell zur Seite.</p>
+            mainText: `<p>Amdorf ist ein kleiner Ortsteil der Gemeinde Sinn im nördlichen Dilltal. Der ruhige Ort bietet ländliches Wohnen mit kurzen Wegen in die umliegenden Zentren. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Amdorf</span> stehen wir Ihnen auch in den kleineren Ortsteilen des Lahn-Dill-Kreises professionell zur Seite.</p>
 <p>Zugefallene Türen öffnen wir in Amdorf routiniert und zerstörungsfrei. Bei Schlüsselverlust tauschen wir den Zylinder direkt vor Ort aus.</p>
 <p>Anfahrtszeit: ca. 23 Minuten. Festpreis ab 99 Euro und verbindlich und transparent.</p>`,
             serviceZerstörungsfrei: "In Amdorf öffnen wir Ihre zugefallene Tür schonend und ohne den Zylinder beschädigen zu müssen.",
@@ -363,7 +363,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Bissenberg 24/7", metaDescription: "Schlüsseldienst Bissenberg bei Greifenstein. 20 Min. Anfahrt, Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bissenberg? In ca. 20 Minuten ist unser Monteur bei Ihnen und zum fairen Festpreis.",
-            mainText: `<p>Bissenberg gehört zur Gemeinde Greifenstein im westlichen Lahn-Dill-Kreis. Die ländliche Lage auf den Höhen des Westerwaldes bietet Ruhe und Natur pur. Als <strong>Schlüsseldienst Bissenberg</strong> bringen wir professionelle Hilfe auch in diese Region.</p>
+            mainText: `<p>Bissenberg gehört zur Gemeinde Greifenstein im westlichen Lahn-Dill-Kreis. Die ländliche Lage auf den Höhen des Westerwaldes bietet Ruhe und Natur pur. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Bissenberg</span> bringen wir professionelle Hilfe auch in diese Region.</p>
 <p>Unsere Techniker öffnen zugefallene Türen in Bissenberg zerstörungsfrei und professionell.</p>
 <p>Anfahrtszeit: ca. 20 Minuten. Festpreis ab 99 Euro.</p>`,
             serviceZerstörungsfrei: "Schonende Türöffnung in Bissenberg: Ihr Schloss bleibt beim Öffnen vollständig intakt.",
@@ -388,7 +388,7 @@ export const ring3dLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Breitenbach 24/7 Notdienst", metaDescription: "Schlüsseldienst Breitenbach bei Greifenstein. 22 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Breitenbach? In ca. 22 Minuten ist unser Monteur da und professionell und zum Festpreis.",
-            mainText: `<p>Breitenbach ist ein Ortsteil der Gemeinde Greifenstein im westlichen Lahn-Dill-Kreis. Die ruhige Lage inmitten der mittelhessischen Landschaft macht den Ort zum idealen Rückzugsort. Als <strong>Schlüsseldienst Breitenbach</strong> stehen wir Ihnen auch hier schnell zur Seite.</p>
+            mainText: `<p>Breitenbach ist ein Ortsteil der Gemeinde Greifenstein im westlichen Lahn-Dill-Kreis. Die ruhige Lage inmitten der mittelhessischen Landschaft macht den Ort zum idealen Rückzugsort. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Breitenbach</span> stehen wir Ihnen auch hier schnell zur Seite.</p>
 <p>Zugefallene Türen öffnen wir zerstörungsfrei. Bei Schlüsselverlust haben wir Ersatzzylinder direkt im Einsatzfahrzeug.</p>
 <p>Anfahrtszeit: ca. 22 Minuten. Festpreis ab 99 Euro.</p>`,
             serviceZerstörungsfrei: "In Breitenbach öffnen wir Ihre Tür ohne Beschädigungen und schonend und zuverlässig.",

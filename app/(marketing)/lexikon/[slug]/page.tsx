@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props) {
   if (description.length < 120) {
     description = `${description} Verständliche Erklärungen im Sicherheitslexikon der Schlüssel Schmiede Wetzlar.`;
   }
-  if (description.length > 155) {
-    description = description.slice(0, 151) + "...";
+  if (description.length > 130) {
+    description = description.slice(0, 127) + "...";
   }
 
   return generateSharedMetadata({

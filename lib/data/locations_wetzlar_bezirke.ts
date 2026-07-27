@@ -54,7 +54,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Der Stadtteil <strong>Nauborn</strong> liegt südwestlich der Wetzlarer Innenstadt, eingebettet in das malerische <strong>Wetzbachtal</strong>, das historisch auch als „Siebenmühlental" bekannt ist und benannt nach den sieben Mühlen, die einst das Tal prägten. Von den ursprünglichen Mühlenbetrieben existieren noch zwei im Ort. Mit rund 4.000 Einwohnern ist Nauborn nach Niedergirmes der zweitgrößte Stadtteil Wetzlars und verbindet ländliche Idylle mit urbaner Anbindung.</p>
+<p>Der Stadtteil <span class="font-bold text-[color:var(--text-primary)]">Nauborn</span> liegt südwestlich der Wetzlarer Innenstadt, eingebettet in das malerische <span class="font-bold text-[color:var(--text-primary)]">Wetzbachtal</span>, das historisch auch als „Siebenmühlental" bekannt ist und benannt nach den sieben Mühlen, die einst das Tal prägten. Von den ursprünglichen Mühlenbetrieben existieren noch zwei im Ort. Mit rund 4.000 Einwohnern ist Nauborn nach Niedergirmes der zweitgrößte Stadtteil Wetzlars und verbindet ländliche Idylle mit urbaner Anbindung.</p>
 
 <h3>Vom Bergarbeiterdorf zum modernen Wohnort</h3>
 <p>Ende des 19. Jahrhunderts war Nauborn ein typisches mittelhessisches Bergarbeiterdorf, geprägt durch Kleinlandwirtschaft und die bedeutenden Eisenerzbergwerke Uranus, Juno und Amanda in der Region. Heute hat sich Nauborn zu einem attraktiven Wohnstandort mit hoher Lebensqualität entwickelt. Die Infrastruktur umfasst Geschäfte, Ärzte, Apotheken und Banken und alles im Ort verfügbar, ohne in die Kernstadt fahren zu müssen.</p>
@@ -158,13 +158,13 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der historischen Altstadt und beherbergt rund 3.250 Einwohner. Das Quartier zeichnet sich durch einen hohen Grünanteil und parkähnliche Strukturen aus und eine Folge der Bergbauvergangenheit, da die komplexen Bodenverhältnisse dichte Bebauung oft verhinderten. Archäologische Funde aus der Zeit der Linearbandkeramik belegen, dass Menschen hier schon vor 7.500 Jahren siedelten. Heute ist Dalheim ein lebendiger Wohnbezirk. Wenn hier der Schlüssel klemmt, ist unser <strong>Schlüsseldienst Wetzlar-Dalheim</strong> in Minutenschnelle zur Stelle.</p>
+<p>Der Stadtbezirk <span class="font-bold text-[color:var(--text-primary)]">Dalheim</span> liegt westlich der historischen Altstadt und beherbergt rund 3.250 Einwohner. Das Quartier zeichnet sich durch einen hohen Grünanteil und parkähnliche Strukturen aus und eine Folge der Bergbauvergangenheit, da die komplexen Bodenverhältnisse dichte Bebauung oft verhinderten. Archäologische Funde aus der Zeit der Linearbandkeramik belegen, dass Menschen hier schon vor 7.500 Jahren siedelten. Heute ist Dalheim ein lebendiger Wohnbezirk. Wenn hier der Schlüssel klemmt, ist unser <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Dalheim</span> in Minutenschnelle zur Stelle.</p>
 
 <h3>3 bis 5 Minuten: Direkte Nachbarschaft</h3>
-<p>Durch die unmittelbare Nähe von gerade einmal rund 2 Kilometern zum Stadtzentrum und die hervorragende Anbindung über die B49-Abfahrt Wetzlar-Dalheim erreichen unsere Einsatzfahrzeuge jede Straße in diesem Bezirk in <strong>3 bis 5 Minuten</strong>. Ob im älteren Teil an der Berliner Straße oder in den neueren Wohnkomplexen und wir garantieren Ihnen absolute Bestzeiten.</p>
+<p>Durch die unmittelbare Nähe von gerade einmal rund 2 Kilometern zum Stadtzentrum und die hervorragende Anbindung über die B49-Abfahrt Wetzlar-Dalheim erreichen unsere Einsatzfahrzeuge jede Straße in diesem Bezirk in <span class="font-bold text-[color:var(--text-primary)]">3 bis 5 Minuten</span>. Ob im älteren Teil an der Berliner Straße oder in den neueren Wohnkomplexen und wir garantieren Ihnen absolute Bestzeiten.</p>
 
 <h3>Null-Euro-Anfahrt in der Kernstadt</h3>
-<p>Als offizieller Stadtbezirk von Wetzlar (PLZ 35576) fällt Dalheim vollständig in unsere kostenfreie Anfahrtszone. Für die reine Öffnung einer zugefallenen Tür berechnen wir werktags tagsüber einen transparenten <strong>Festpreis von 99 Euro</strong>. Keine Kilometerpauschale, keine Rüstzeit, keine versteckten Gebühren.</p>
+<p>Als offizieller Stadtbezirk von Wetzlar (PLZ 35576) fällt Dalheim vollständig in unsere kostenfreie Anfahrtszone. Für die reine Öffnung einer zugefallenen Tür berechnen wir werktags tagsüber einen transparenten <span class="font-bold text-[color:var(--text-primary)]">Festpreis von 99 Euro</span>. Keine Kilometerpauschale, keine Rüstzeit, keine versteckten Gebühren.</p>
 
 <h3>Handwerkliche Präzision im Dalheimer Wohngebiet</h3>
 <p>Die Architektur in Dalheim ist vielfältig: Von robusten Siedlungshäusern aus der Nachkriegszeit über große Mehrfamilienhaushalte bis hin zu energetisch modernisierten Neubauten. Unsere Monteure sind auf jedes Schloss-Szenario vorbereitet. Mit speziellen Fräsen für verklemmte Riegel und modernsten Elektropicks für simple Fallenöffnungen gewährleisten wir eine spürbar nahezu alle liegende Zerstörungsfreiheits-Quote bei zugefallenen Haus- und Wohnungstüren in Dalheim.</p>`,
@@ -189,7 +189,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Dringend Hilfe in Wetzlar-Dalheim gesucht? Wir sind Ihr lokaler Schlüsseldienst aus direkter Nachbarschaft. Festpreis von 99€, absolut keine Anfahrtskosten, 24/7 erreichbar.",
-            mainText: `<p>Der Stadtbezirk <strong>Dalheim</strong> liegt westlich der Kernstadt Wetzlar. Als lokaler Schlüsseldienst sind wir in Dalheim extrem schnell vor Ort. Ob am Dalheimer Kopf oder in der Berliner Straße und Sie zahlen <strong>keine Anfahrtskosten</strong> und profitieren von transparenten Festpreisen.</p><p>Unsere Monteure öffnen täglich zugefallene Türen am Dalheimer Kopf und in den umliegenden Wohngebieten in nahezu allen Fällen materialschonend.</p>`,
+            mainText: `<p>Der Stadtbezirk <span class="font-bold text-[color:var(--text-primary)]">Dalheim</span> liegt westlich der Kernstadt Wetzlar. Als lokaler Schlüsseldienst sind wir in Dalheim extrem schnell vor Ort. Ob am Dalheimer Kopf oder in der Berliner Straße und Sie zahlen <span class="font-bold text-[color:var(--text-primary)]">keine Anfahrtskosten</span> und profitieren von transparenten Festpreisen.</p><p>Unsere Monteure öffnen täglich zugefallene Türen am Dalheimer Kopf und in den umliegenden Wohngebieten in nahezu allen Fällen materialschonend.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Dalheim öffnen wir zugefallene Haustüren in Wohnquartieren mit maximaler Materialschonung ohne Schäden.",
             serviceBohren: "Sollte ein Schlossdefekt vorliegen, bohren wir mit Präzisionsgeräten und setzen sofort ein neues Marken-Zylinderschloss ein.",
             service247: "Egal ob Sonntagnacht oder Feiertag: Unser Notdienst ist für Wetzlar-Dalheim rund um die Uhr auf Abruf bereit."
@@ -242,16 +242,16 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Die <strong>Wetzlarer Altstadt</strong> ist das unumstrittene historische und touristische Zentrum der Stadt. Anerkannt als Gesamtanlage und Kulturdenkmal, beheimatet dieses Areal Schätze wie den weltberühmten, architektonisch einzigartigen Wetzlarer Dom, historische Plätze wie den Eisenmarkt und Fischmarkt sowie das Lottehaus, das Literaturgeschichte schrieb. Inmitten geschlossener, pittoresker Fachwerkensembles wie dem Brodschirm und wo das älteste Fachwerkhaus der Stadt (erbaut 1356) steht und leben rund 2.500 Menschen in denkmalgeschützter Substanz. Fällt an solch wertvollen und oft sensiblen Gebäuden die Tür ins Schloss, ist der <strong>Schlüsseldienst Wetzlar-Altstadt</strong> mit besonderem Fingerspitzengefühl gefragt.</p>
+<p>Die <span class="font-bold text-[color:var(--text-primary)]">Wetzlarer Altstadt</span> ist das unumstrittene historische und touristische Zentrum der Stadt. Anerkannt als Gesamtanlage und Kulturdenkmal, beheimatet dieses Areal Schätze wie den weltberühmten, architektonisch einzigartigen Wetzlarer Dom, historische Plätze wie den Eisenmarkt und Fischmarkt sowie das Lottehaus, das Literaturgeschichte schrieb. Inmitten geschlossener, pittoresker Fachwerkensembles wie dem Brodschirm und wo das älteste Fachwerkhaus der Stadt (erbaut 1356) steht und leben rund 2.500 Menschen in denkmalgeschützter Substanz. Fällt an solch wertvollen und oft sensiblen Gebäuden die Tür ins Schloss, ist der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Altstadt</span> mit besonderem Fingerspitzengefühl gefragt.</p>
 
 <h3>Blitzschnell durch die Gassen</h3>
-<p>Die enge, mittelalterliche Straßenführung, oft steil ansteigend, fordert Logistik. Durch unsere absolute Standortnähe und spezielle Zufahrtsgenehmigungen für die Fußgängerzonen am Kornmarkt oder am Schillerplatz reduzieren wir die Wartezeit der Altstadtbewohner auf ein absolutes Minimum. Erfahrungsgemäß stehen wir in den verwinkelten Altstadtbereichen oft bereits in <strong>3 bis 5 Minuten</strong> mit unserem Werkzeug direkt an Ihrem Türportal.</p>
+<p>Die enge, mittelalterliche Straßenführung, oft steil ansteigend, fordert Logistik. Durch unsere absolute Standortnähe und spezielle Zufahrtsgenehmigungen für die Fußgängerzonen am Kornmarkt oder am Schillerplatz reduzieren wir die Wartezeit der Altstadtbewohner auf ein absolutes Minimum. Erfahrungsgemäß stehen wir in den verwinkelten Altstadtbereichen oft bereits in <span class="font-bold text-[color:var(--text-primary)]">3 bis 5 Minuten</span> mit unserem Werkzeug direkt an Ihrem Türportal.</p>
 
 <h3>Fachexpertise für Denkmal und Fachwerk</h3>
 <p>Ein modernes Kunststoff-Portal erfordert andere Öffnungstechniken als eine 300 Jahre alte, mehrfach handgeschnitzte Eichenholztür am Buttermarkt. Wer hier unsachgemäß bohrt oder hebelt, riskiert an unwiederbringlicher Bausubstanz tausende Euro Schaden. Unsere Techniker sind auf denkmalgeschützte Türen trainiert. nahezu alle zugefallenen Altstadttüren öffnen unsere Handwerker dank minimalinvasiver Haken, spezieller Slider und professioneller Pick-Geräte vollkommen materialschonend.</p>
 
 <h3>Null-Euro-Anfahrt im Wetzlarer Zentrum</h3>
-<p>Wie für alle Gemarkungen des Kernbereichs kassieren wir auch im exklusiven Altstadtring <strong>keinerlei Fahrt- oder Rüstkosten</strong>. Die reine Arbeitsleistung zur Öffnung beginnt werktags bei 99 Euro Festpreis. Ehrlicher, regionaler und handwerklich perfekter Service direkt im Herzen der Goethestadt.</p>`,
+<p>Wie für alle Gemarkungen des Kernbereichs kassieren wir auch im exklusiven Altstadtring <span class="font-bold text-[color:var(--text-primary)]">keinerlei Fahrt- oder Rüstkosten</span>. Die reine Arbeitsleistung zur Öffnung beginnt werktags bei 99 Euro Festpreis. Ehrlicher, regionaler und handwerklich perfekter Service direkt im Herzen der Goethestadt.</p>`,
 
         localTestimonials: [
             {
@@ -273,7 +273,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Behutsame Notöffnung am Wetzlarer Dom oder am Fischmarkt gewünscht? Spezialisten für Fachwerk- und Denkmalschutztüren direkt in der Nachbarschaft helfen und für 99€, ohne Anfahrtskosten.",
-            mainText: `<p>Die Wetzlarer Altstadt ist das kulturelle und historische Herz der Stadt. Wer sich hier am Domplatz, Schillerplatz oder Kornmarkt aussperrt, braucht Handwerker, die mit <strong>denkmalgeschützter Architektur</strong> umgehen können.</p><p>Unser Schlüsseldienst befreit Sie in den verwinkelten Altstadtgassen oft in Rekordzeit von 3 bis 5 Minuten. Dabei arbeiten wir mit speziellem Werkzeug an historischen Türen, um keinerlei Schäden zu hinterlassen.</p>`,
+            mainText: `<p>Die Wetzlarer Altstadt ist das kulturelle und historische Herz der Stadt. Wer sich hier am Domplatz, Schillerplatz oder Kornmarkt aussperrt, braucht Handwerker, die mit <span class="font-bold text-[color:var(--text-primary)]">denkmalgeschützter Architektur</span> umgehen können.</p><p>Unser Schlüsseldienst befreit Sie in den verwinkelten Altstadtgassen oft in Rekordzeit von 3 bis 5 Minuten. Dabei arbeiten wir mit speziellem Werkzeug an historischen Türen, um keinerlei Schäden zu hinterlassen.</p>`,
             serviceZerstörungsfrei: "Zugefallene antike Wohnungstüren in der Altstadt öffnen wir mit speziell angepassten, materialschonenden Gleitern.",
             serviceBohren: "Müssen Schließzylinder ausgetauscht werden, tun wir das absolut vorsichtig, damit Beschläge historischer Türen unversehrt bleiben.",
             service247: "Wir kennen uns in der Wetzlarer Altstadt bestens aus und sind rund um die Uhr, 365 Tage im Jahr für Sie erreichbar."
@@ -326,10 +326,10 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Die Wetzlarer <strong>Neustadt</strong> spannt sich unmittelbar nordöstlich der historischen Fachwerk-Altstadt auf. Architektonisch stark durch repräsentative Villen und breitere Alleen der Gründerzeit geprägt, beherbergt der Bezirk heute nicht nur exklusive städtische Wohnquartiere, sondern auch einen Großteil des administrativen Lebens (Polizei, Arbeitsamt, Neue Rathaus Wetzlar). Wenn hier inmitten des pulsierenden Innenstadtalltags ein Türschloss bockt oder sich das Büro der Behördenmitarbeiterin nicht aufsperren lässt, eilt der <strong>Schlüsseldienst Wetzlar-Neustadt</strong> sofort herbei.</p>
+<p>Die Wetzlarer <span class="font-bold text-[color:var(--text-primary)]">Neustadt</span> spannt sich unmittelbar nordöstlich der historischen Fachwerk-Altstadt auf. Architektonisch stark durch repräsentative Villen und breitere Alleen der Gründerzeit geprägt, beherbergt der Bezirk heute nicht nur exklusive städtische Wohnquartiere, sondern auch einen Großteil des administrativen Lebens (Polizei, Arbeitsamt, Neue Rathaus Wetzlar). Wenn hier inmitten des pulsierenden Innenstadtalltags ein Türschloss bockt oder sich das Büro der Behördenmitarbeiterin nicht aufsperren lässt, eilt der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Neustadt</span> sofort herbei.</p>
 
 <h3>Minutenschnelle Präsenz am Rathaus</h3>
-<p>Ob Sie im Schatten des neuen Rathauses (Ernst-Leitz-Straße) oder an der geschäftigen Gloelstraße nächtigen: Unser Zentrallager liegt fast auf Steinwurfdistanz. Lange Dispotouren? Fehlanzeige. Wir rücken innerhalb der Neustadt in einem verlässlichen <strong>3- bis 5-Minuten-Zeitfenster</strong> an und erlösen Sie rasch aus Ihrer Warteposition.</p>
+<p>Ob Sie im Schatten des neuen Rathauses (Ernst-Leitz-Straße) oder an der geschäftigen Gloelstraße nächtigen: Unser Zentrallager liegt fast auf Steinwurfdistanz. Lange Dispotouren? Fehlanzeige. Wir rücken innerhalb der Neustadt in einem verlässlichen <span class="font-bold text-[color:var(--text-primary)]">3- bis 5-Minuten-Zeitfenster</span> an und erlösen Sie rasch aus Ihrer Warteposition.</p>
 
 <h3>Professionelles Vorgehen bei Altbau-Giganten</h3>
 <p>Die opulenten Gründerzeitgebäude in der Neustadt sind im Laufe der Jahre stark energetisch und sicherheitsrelevant saniert worden. Schwere Holztüren, massive Mehrfachverriegelungen sowie Kernziehschutzbeschläge sind hier an der Tagesordnung. Unser Monteur-Pool führt Hightech-Öffnungsgeräte im Gepäck, die genau auf solche gehobenen Altbau- und Kanzleisicherungen abgestimmt sind. nahezu alle zugefallenen Türen weichen hierbei vollends ohne Aufbohren des Schlosses.</p>
@@ -357,7 +357,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Panik in der Wetzlarer Neustadt? Ein Anruf genügt. In 3 bis 5 Minuten öffnet unser Expernteam Wohnungen und Büros von der Gloelstraße bis zum Rathaus. Ohne Fahrkosten, ab 99€.",
-            mainText: `<p>Die Wetzlarer Neustadt ist geprägt durch herrschaftliche Gründerzeitbauten, moderne Büros und das städtische Behördenviertel. Falls Sie hier rund um Rathaus oder Gloelstraße vor verschlossener Tür stehen, handeln wir sofort.</p><p>Unsere Monteure öffnen schwere Altbautüren ebenso souverän wie verklemmte Sicherheitsschlösser von Geschäftsräumen und zum Festpreis und <strong>ohne Anfahrtsgebühren</strong>.</p>`,
+            mainText: `<p>Die Wetzlarer Neustadt ist geprägt durch herrschaftliche Gründerzeitbauten, moderne Büros und das städtische Behördenviertel. Falls Sie hier rund um Rathaus oder Gloelstraße vor verschlossener Tür stehen, handeln wir sofort.</p><p>Unsere Monteure öffnen schwere Altbautüren ebenso souverän wie verklemmte Sicherheitsschlösser von Geschäftsräumen und zum Festpreis und <span class="font-bold text-[color:var(--text-primary)]">ohne Anfahrtsgebühren</span>.</p>`,
             serviceZerstörungsfrei: "In Wetzlar-Neustadt öffnen wir zugefallene Sicherheitstüren und Kamerasystemtüren schonend und restlos ohne Defekte.",
             serviceBohren: "Verriegelte Türen von Geschäftsräumen öffnen unsere Profis im Notfall durch minimalinvasives Fräsen des Zylinders.",
             service247: "Egal ob Arbeits- oder Wochenende: Für die Wetzlarer Neustadt bieten wir unsere garantierte 24/7-Schlüsselbereitschaft an."
@@ -410,10 +410,10 @@ export const wetzlarBezirkeLocations: LocationData[] = [
         ],
 
         aboutText: `
-<p>Im Süden der Kernstadt breitet sich der facettenreiche Bezirk <strong>Büblingshausen</strong> aus. Mit etwa 3.000 Einwohnern präsentiert sich hier ein doppelgesichtiges Quartier: Einerseits gewachsene, beinahe kleinstädtisch-beruhigte Quartiere mit Reihen- und Einfamilienhäusern ("Alt-Büblingshausen"), andererseits das pulsierende Konversionsgelände der ehemaligen <strong>Spilburg-Kaserne</strong>. Dort residiert heute der weltweit respektierte "Leitz-Park" der Leica Camera AG, gesäumt von innovativen Startups, modernsten Appartements und Behördenzentren. Wenn im Schatten dieses High-Tech-Campus oder in der beschaulichen Einfamilienhaussiedlung ein Türnotfall pulsiert, rückt der <strong>Schlüsseldienst Wetzlar-Büblingshausen</strong> extrem rasant an.</p>
+<p>Im Süden der Kernstadt breitet sich der facettenreiche Bezirk <span class="font-bold text-[color:var(--text-primary)]">Büblingshausen</span> aus. Mit etwa 3.000 Einwohnern präsentiert sich hier ein doppelgesichtiges Quartier: Einerseits gewachsene, beinahe kleinstädtisch-beruhigte Quartiere mit Reihen- und Einfamilienhäusern ("Alt-Büblingshausen"), andererseits das pulsierende Konversionsgelände der ehemaligen <span class="font-bold text-[color:var(--text-primary)]">Spilburg-Kaserne</span>. Dort residiert heute der weltweit respektierte "Leitz-Park" der Leica Camera AG, gesäumt von innovativen Startups, modernsten Appartements und Behördenzentren. Wenn im Schatten dieses High-Tech-Campus oder in der beschaulichen Einfamilienhaussiedlung ein Türnotfall pulsiert, rückt der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Büblingshausen</span> extrem rasant an.</p>
 
 <h3>Fliegender Wechsel über die B49</h3>
-<p>Dank flüssiger Zuwegung über den Frankfurter Straßen Ring erreichen wir Büblingshausen nahezu lückenlos kreuzungsfrei. Eine Dispo-Ansage bedeutet meist: In <strong>3 bis 5 Minuten</strong> schnallt der Service-Mann den Werkzeugkoffer ab und checkt direkt live am Einsatzort (z.B. Blücherstraße oder Am Leitz-Park) Ihr Problem.</p>
+<p>Dank flüssiger Zuwegung über den Frankfurter Straßen Ring erreichen wir Büblingshausen nahezu lückenlos kreuzungsfrei. Eine Dispo-Ansage bedeutet meist: In <span class="font-bold text-[color:var(--text-primary)]">3 bis 5 Minuten</span> schnallt der Service-Mann den Werkzeugkoffer ab und checkt direkt live am Einsatzort (z.B. Blücherstraße oder Am Leitz-Park) Ihr Problem.</p>
 
 <h3>Von Omas Kellerschloss bis zur Firmen-Sicherheitsanlage</h3>
 <p>Büblingshausens Varianz zwingt zu universellem Wissen. Während in Alt-Büblingshausen mitunter simple, verzogene Holztürrahmen vorherrschen, die man mit dem geschickten Einzug eines Türspions umgehen kann, verlangen die massiv gedämmten 3-fach-Verriegelungen der Bürogebäude im Spilburg-Areal höchste Ingenieurskunst in Form modernster Hochleistungs-Spiralfräsen, falls ein Zylinder restlos blockiert. Bei Zugefallenen Türen gilt wie eh und je unsere nahezu durchgängige Zerstörungsfreiheit.</p>
@@ -441,7 +441,7 @@ export const wetzlarBezirkeLocations: LocationData[] = [
 
         content: {
             heroIntro: "Dringende Schlüsselnothilfe in Büblingshausen & Spilburg gesucht? Blitzschnell, zerstörungsfrei und ohne Anfahrtskosten aus der Wetzlarer Kernstadt.",
-            mainText: `<p>Büblingshausen verbindet idyllisches Wohngefühl mit dem modernen Gewerbepark Spilburg am Leitz-Park. Wir sind Ihr kompetenter Profi für den Süden Wetzlars. Durch kurze Anfahrtswege berechnen wir im gesamten Gebiet <strong>keinerlei Fahrtkosten</strong>.</p><p>Unsere Monteure beherrschen vom alten Kellerschloss im Einfamilienhaus bis zur hochsicheren Schließanlage von Agenturen im Spilburg-Areal alle Türprobleme sicher aus dem Effeff.</p>`,
+            mainText: `<p>Büblingshausen verbindet idyllisches Wohngefühl mit dem modernen Gewerbepark Spilburg am Leitz-Park. Wir sind Ihr kompetenter Profi für den Süden Wetzlars. Durch kurze Anfahrtswege berechnen wir im gesamten Gebiet <span class="font-bold text-[color:var(--text-primary)]">keinerlei Fahrtkosten</span>.</p><p>Unsere Monteure beherrschen vom alten Kellerschloss im Einfamilienhaus bis zur hochsicheren Schließanlage von Agenturen im Spilburg-Areal alle Türprobleme sicher aus dem Effeff.</p>`,
             serviceZerstörungsfrei: "Türöffnungen im beschaulichen Alt-Büblingshausen realisieren wir sanft und lautlos.",
             serviceBohren: "Hochkomplexe Schließanlagen in der Spilburg werden bei Sperrungen fachmännisch durchleuchtet und bei Bedarf rasch gewechselt.",
             service247: "Für Büblingshausen und das Spilburg-Areal sichern wir 24 Stunden reibungslosen Not-Bereitschaftsdienst zu."
@@ -480,20 +480,20 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { icon: "briefcase", title: "Zylindertausch sofort", description: "Nach Einzug in den Altbau am Sturzkopf tauschen wir alte Zylinder direkt gegen moderne ABUS Sicherheitszylinder aus." }
         ],
         aboutText: `
-<p>Der <strong>Sturzkopf</strong> ist einer der ruhigsten Wohnbezirke der Wetzlarer Kernstadt. Entstanden nach dem Zweiten Weltkrieg, bietet dieses Wohngebiet an der Hangkante vielen Familien ein idyllisches Zuhause. Wer sich hier in den beschaulichen Straßen aussperrt, erreicht mit dem <strong>Schlüsseldienst Wetzlar-Sturzkopf</strong> sofort einen kompetenten Ansprechpartner aus der direkten Umgebung.</p>
+<p>Der <span class="font-bold text-[color:var(--text-primary)]">Sturzkopf</span> ist einer der ruhigsten Wohnbezirke der Wetzlarer Kernstadt. Entstanden nach dem Zweiten Weltkrieg, bietet dieses Wohngebiet an der Hangkante vielen Familien ein idyllisches Zuhause. Wer sich hier in den beschaulichen Straßen aussperrt, erreicht mit dem <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Sturzkopf</span> sofort einen kompetenten Ansprechpartner aus der direkten Umgebung.</p>
 
 <h3>Flotte Anfahrt über die Bergstraße</h3>
-<p>Sobald Sie unseren Notruf wählen, machen sich unsere Servicewagen von der Zentrale auf den Weg. Über die Bergstraße stehen wir oft schon nach <strong>3 bis 5 Minuten</strong> vor Ihrer Haustür am Sturzkopf. Kein langes Warten draußen in der Kälte.</p>
+<p>Sobald Sie unseren Notruf wählen, machen sich unsere Servicewagen von der Zentrale auf den Weg. Über die Bergstraße stehen wir oft schon nach <span class="font-bold text-[color:var(--text-primary)]">3 bis 5 Minuten</span> vor Ihrer Haustür am Sturzkopf. Kein langes Warten draußen in der Kälte.</p>
 
 <h3>Kostenfreie Anfahrt</h3>
-<p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <strong>0 Euro Anfahrtskosten</strong>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 99 Euro und transparent, fair und ehrlich kommuniziert.</p>`,
+<p>Die klare Regel für den Sturzkopf als Kernstadt-Gemarkung: <span class="font-bold text-[color:var(--text-primary)]">0 Euro Anfahrtskosten</span>. Für eine Standardöffnung einer unverschlossenen Tür zahlen Sie an Werktagen verlässlich ab 99 Euro und transparent, fair und ehrlich kommuniziert.</p>`,
         localTestimonials: [
             { name: "Michael H.", quote: "Hatte mich an der Waldstraße ausgesperrt. Der Monteur war in rekordverdächtigen 4 Minuten da. Toller, seriöser Schlüsseldienst ohne versteckte Kosten.", rating: 5 },
             { name: "Birgit S.", quote: "Das Türschloss an unserem älteren Haus funktionierte nicht mehr richtig. Innerhalb kurzer Zeit wurde alles professionell und freundlich gewechselt.", rating: 5 }
         ],
         content: {
             heroIntro: "Tür zugefallen am Sturzkopf? Unser Monteur ist in 3 bis 5 Minuten bei Ihnen und zum fairen Festpreis und Anfahrtskosten-frei.",
-            mainText: `<p>Wir sind Ihr schneller und ehrlicher Notdienst für den <strong>Sturzkopf</strong>. Dank unserer tiefen Verwurzelung in Wetzlar garantieren wir eine extrem schnelle Reaktionszeit direkt zu Ihnen an den Südhang.</p>`,
+            mainText: `<p>Wir sind Ihr schneller und ehrlicher Notdienst für den <span class="font-bold text-[color:var(--text-primary)]">Sturzkopf</span>. Dank unserer tiefen Verwurzelung in Wetzlar garantieren wir eine extrem schnelle Reaktionszeit direkt zu Ihnen an den Südhang.</p>`,
             serviceZerstörungsfrei: "Am Sturzkopf öffnen wir Ihre zugefallene Tür routiniert mit Spezialgleitern und ohne Beschädigungen.",
             serviceBohren: "Bei defekten Schlössern am Sturzkopf arbeiten wir mit Präzisionsbohrern und ersetzen den Zylinder sofort durch Markenware.",
             service247: "Schlüsselnotdienst am Sturzkopf: Wir sind 24 Stunden erreichbar, 365 Tage im Jahr."
@@ -530,20 +530,20 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { icon: "briefcase", title: "Kellerschloss hakt", description: "Verrostetes Kellerschloss? Wir ersetzen einfache Bartschlösser kostengünstig und schnell." }
         ],
         aboutText: `
-<p>Die <strong>Stoppelberger Hohl</strong> bildet eine markante Wohnachse im südwestlichen Teil der Wetzlarer Kernstadt. Ob traditionelle Einfamilienhäuser oder belebte Mehrparteien-Komplexe und als direkter Nachbar helfen wir mit dem <strong>Schlüsseldienst Stoppelberger Hohl</strong> bei jedem Schloss-Notfall kompetent weiter.</p>
+<p>Die <span class="font-bold text-[color:var(--text-primary)]">Stoppelberger Hohl</span> bildet eine markante Wohnachse im südwestlichen Teil der Wetzlarer Kernstadt. Ob traditionelle Einfamilienhäuser oder belebte Mehrparteien-Komplexe und als direkter Nachbar helfen wir mit dem <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Stoppelberger Hohl</span> bei jedem Schloss-Notfall kompetent weiter.</p>
 
 <h3>Flotte Ankunftszeit garantiert</h3>
-<p>Dank kurzer Dispatch-Zeiten und freier Strecke erreichen wir das Quartier an der Stoppelberger Hohl im Durchschnitt nach nur <strong>4 bis 5 Minuten</strong>. Sie stehen also niemals lange fluchend im Treppenhaus.</p>
+<p>Dank kurzer Dispatch-Zeiten und freier Strecke erreichen wir das Quartier an der Stoppelberger Hohl im Durchschnitt nach nur <span class="font-bold text-[color:var(--text-primary)]">4 bis 5 Minuten</span>. Sie stehen also niemals lange fluchend im Treppenhaus.</p>
 
 <h3>Null-Euro-Anfahrt für die Kernstadt</h3>
-<p>Auch die Wetzlarer Gemarkung um die Stoppelberger Hohl genießt den VIP-Status unserer Kernstadt: Wir stornieren vollumfänglich jegliche Anfahrtskosten. Wir berechnen für Standard-Türöffnungen an Wochentagen tagsüber einen fixen <strong>Ab-Preis von 99 Euro</strong>.</p>`,
+<p>Auch die Wetzlarer Gemarkung um die Stoppelberger Hohl genießt den VIP-Status unserer Kernstadt: Wir stornieren vollumfänglich jegliche Anfahrtskosten. Wir berechnen für Standard-Türöffnungen an Wochentagen tagsüber einen fixen <span class="font-bold text-[color:var(--text-primary)]">Ab-Preis von 99 Euro</span>.</p>`,
         localTestimonials: [
             { name: "Thomas L.", quote: "Super freundlich am Telefon und der Schlosser war nach Anruf in knapp 5 Minuten am Friedhof an der Hohl. Sehr gute Arbeit.", rating: 5 },
             { name: "Eva K.", quote: "Der Techniker hat mir an einem Sonntag kurzfristig geholfen, Tür war zugefallen. Es gab vorher klare Preisansagen, die auch genau so in der Rechnung gestanden haben.", rating: 5 }
         ],
         content: {
             heroIntro: "Ausgesperrt an der Stoppelberger Hohl? Wir sind in etwa 5 Minuten da und mit verbindlicher Preisauskunft vorab und ohne Anfahrtskosten.",
-            mainText: `<p>Die <strong>Stoppelberger Hohl</strong> ist ein etablierter Wohnbezirk in der Wetzlarer Kernstadt. Als erfahrener lokaler Schlüsseldienst garantieren wir schnelle, seriöse und preistransparente Hilfe bei allen Türöffnungen.</p>`,
+            mainText: `<p>Die <span class="font-bold text-[color:var(--text-primary)]">Stoppelberger Hohl</span> ist ein etablierter Wohnbezirk in der Wetzlarer Kernstadt. Als erfahrener lokaler Schlüsseldienst garantieren wir schnelle, seriöse und preistransparente Hilfe bei allen Türöffnungen.</p>`,
             serviceZerstörungsfrei: "An der Stoppelberger Hohl öffnen wir zugefallene Türen aller Art schonend und mit Profiwerkzeug.",
             serviceBohren: "Defekte Zylinder tauschen wir an der Stoppelberger Hohl sofort vor Ort durch langlebige BKS-Qualität aus.",
             service247: "Unser 24/7-Notdienst für die Stoppelberger Hohl ist jeden Tag rund um die Uhr erreichbar."
@@ -580,20 +580,20 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { icon: "briefcase", title: "Reparatur nach Defekt", description: "Bunte Mechanik streikt im Westend: Kostengünstiger Ausbau und Neuinstallation der Schließtechnik am selben Tag." }
         ],
         aboutText: `
-<p>Die <strong>Silhöfer Aue</strong> und das angrenzende Westend verzaubern durch ihre fulminante Lage direkt an der Lahn. Wo Wasser, Freizeitaktivitäten und modernes Innenstadt-Wohnen zusammentreffen, herrscht viel Bewegung. Wer hier nach dem Spaziergang an der Lahn seinen Wohnungsschlüssel verlegt hat, ist beim <strong>Schlüsseldienst Wetzlar-Silhöfer Aue</strong> exakt an der richtigen Adresse.</p>
+<p>Die <span class="font-bold text-[color:var(--text-primary)]">Silhöfer Aue</span> und das angrenzende Westend verzaubern durch ihre fulminante Lage direkt an der Lahn. Wo Wasser, Freizeitaktivitäten und modernes Innenstadt-Wohnen zusammentreffen, herrscht viel Bewegung. Wer hier nach dem Spaziergang an der Lahn seinen Wohnungsschlüssel verlegt hat, ist beim <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Silhöfer Aue</span> exakt an der richtigen Adresse.</p>
 
 <h3>Blitzhilfe am Fluss</h3>
-<p>Da das Gebiet direkt an den engsten Kern der Innenstadt andockt, vergehen von Ihrem Anruf bis zum Klingeln unseres Monteurs meist lediglich <strong>3 bis 4 Minuten</strong>. Absolute Rekordzeiten bei absoluter Zuverlässigkeit.</p>
+<p>Da das Gebiet direkt an den engsten Kern der Innenstadt andockt, vergehen von Ihrem Anruf bis zum Klingeln unseres Monteurs meist lediglich <span class="font-bold text-[color:var(--text-primary)]">3 bis 4 Minuten</span>. Absolute Rekordzeiten bei absoluter Zuverlässigkeit.</p>
 
 <h3>Ohne versteckte Fahrtkosten</h3>
-<p>Egal ob direkt am Colo-Park, auf der Lahninsel oder am Rande des Westends: Für die Silhöfer Aue fordern wir kategorisch <strong>keine Anfahrtskosten</strong> ein. Unverschlossene Standardtüren öffnen wir montags bis freitags (tagsüber) zu extrem reellen 99 Euro Festpreis.</p>`,
+<p>Egal ob direkt am Colo-Park, auf der Lahninsel oder am Rande des Westends: Für die Silhöfer Aue fordern wir kategorisch <span class="font-bold text-[color:var(--text-primary)]">keine Anfahrtskosten</span> ein. Unverschlossene Standardtüren öffnen wir montags bis freitags (tagsüber) zu extrem reellen 99 Euro Festpreis.</p>`,
         localTestimonials: [
             { name: "Katharina W.", quote: "Beim Joggen an der Lahn habe ich den Schlüssel verloren. Super schnelle Hilfe an der Silhöfer Aue durch den unglaublich zugewandten Schlosser.", rating: 5 },
             { name: "Philipp D.", quote: "Wohne am Colo Park, Tür war zugefallen. Es hat keine drei Minuten gedauert, bis der Pkw vor der Tür stand. Fairer Festpreis, exzellente Kommunikation.", rating: 5 }
         ],
         content: {
             heroIntro: "Schlüsselnotfall in der Silhöfer Aue oder im Westend? Wir sind in nur 3 Minuten bei Ihnen und zum transparenten Festpreis.",
-            mainText: `<p>Die <strong>Silhöfer Aue</strong> verbindet modernes Wohnen mit erholsamer Flussnähe. Wenn Sie hier den Schlüsseldienst benötigen, punkten wir durch unsere absolute Standortnähe und eine völlig <strong>kostenfreie Anfahrt</strong>.</p>`,
+            mainText: `<p>Die <span class="font-bold text-[color:var(--text-primary)]">Silhöfer Aue</span> verbindet modernes Wohnen mit erholsamer Flussnähe. Wenn Sie hier den Schlüsseldienst benötigen, punkten wir durch unsere absolute Standortnähe und eine völlig <span class="font-bold text-[color:var(--text-primary)]">kostenfreie Anfahrt</span>.</p>`,
             serviceZerstörungsfrei: "In der Silhöfer Aue rutschen wir mit Spezialwerkzeug über die Falle und öffnen Ihre Tür spurenlos.",
             serviceBohren: "Bei massiven Schlossausfällen im Westend bohren wir den Zylinderkern und fixieren sofort einen BKS Marken-Ersatz.",
             service247: "Notdienst Silhöfer Aue/Westend: Wir stehen an 365 Tagen zu jeder Tages- und Nachtzeit für Sie bereit."
@@ -630,20 +630,20 @@ export const wetzlarBezirkeLocations: LocationData[] = [
             { icon: "briefcase", title: "Wohnungstüren im Randgebiet", description: "Zugefallene private Wohnungstür? Gewohnt seriöse, schnelle Hilfe für private Anwohner im Industriegebiet." }
         ],
         aboutText: `
-<p>Das nördlich angrenzende <strong>Dillfeld</strong> dominiert Wetzlar als bedeutender Gewerbe- und Industriepark in direkter Achse zur B49. Zwischen Autohäusern, Fachmärkten, Logistikzentren und der Lahn gedeiht jedoch auch lokales Arbeiten und punktuelles Wohnen. Klemmt das Schloss zum Logistik-Rolltor oder streikt die Sicherheitstür zum Bürogebäude, rückt der <strong>Schlüsseldienst Wetzlar-Dillfeld</strong> rasch und mit robuster Expertise an.</p>
+<p>Das nördlich angrenzende <span class="font-bold text-[color:var(--text-primary)]">Dillfeld</span> dominiert Wetzlar als bedeutender Gewerbe- und Industriepark in direkter Achse zur B49. Zwischen Autohäusern, Fachmärkten, Logistikzentren und der Lahn gedeiht jedoch auch lokales Arbeiten und punktuelles Wohnen. Klemmt das Schloss zum Logistik-Rolltor oder streikt die Sicherheitstür zum Bürogebäude, rückt der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wetzlar-Dillfeld</span> rasch und mit robuster Expertise an.</p>
 
 <h3>Hohe Maschinenverfügbarkeit</h3>
-<p>Für unsere Monteure ist das Dillfeld logistisch ein Traum. Meist erreichen wir das Gebiet ohne nennenswerten Stop&Go-Innerortsverkehr über die umarmenden Hauptverkehrsadern in oft unter <strong>5 Minuten</strong>. Gerade im B2B-Umfeld zählt jede Minute Betriebszeit.</p>
+<p>Für unsere Monteure ist das Dillfeld logistisch ein Traum. Meist erreichen wir das Gebiet ohne nennenswerten Stop&Go-Innerortsverkehr über die umarmenden Hauptverkehrsadern in oft unter <span class="font-bold text-[color:var(--text-primary)]">5 Minuten</span>. Gerade im B2B-Umfeld zählt jede Minute Betriebszeit.</p>
 
 <h3>Anfahrtskosten-Kulanz</h3>
-<p>Trotz der klaren gewerblichen Prägung gelten im Dillfeld unsere ehrlichen Konditionen der Wetzlarer Kernstadt: Sie entrichten <strong>keinerlei Wege- oder Anfahrtskostenpauschalen</strong>. Eine ungeplante Türöffnung schlägt werktags konstant mit marktgerechten 99 Euro zu Buche.</p>`,
+<p>Trotz der klaren gewerblichen Prägung gelten im Dillfeld unsere ehrlichen Konditionen der Wetzlarer Kernstadt: Sie entrichten <span class="font-bold text-[color:var(--text-primary)]">keinerlei Wege- oder Anfahrtskostenpauschalen</span>. Eine ungeplante Türöffnung schlägt werktags konstant mit marktgerechten 99 Euro zu Buche.</p>`,
         localTestimonials: [
             { name: "Sven P. (Firmeninhaber)", quote: "Unsere Lagerhalle im Dillfeld ließ sich morgens nicht aufschließen. Der Monteur war zügig da, reparierte den massiven Profilzylinder und wir konnten die Arbeit aufnehmen. Sehr zufrieden.", rating: 5 },
             { name: "Anja K.", quote: "Hatte mich im Randbezirk am Dillfeld im Mehrfamilienhaus ausgeschlossen. Der Schlüsseldienst war kompetent, ruhig und hat die Tür mit einem Gleiter einfach weggeschoben. 99 Euro, super gemacht.", rating: 5 }
         ],
         content: {
             heroIntro: "Tür zu im Dillfeld? Unser Schlüsseldienst ist in 3 bis 5 Minuten vor Ort und zum transparenten Festpreis.",
-            mainText: `<p>Das Gewerbegebiet und Wohnareal <strong>Dillfeld</strong> versorgen wir extrem zügig mit Notöffnungen aller Art. Profitieren Sie von lokaler Expertise und <strong>komplett wegfallenden Anfahrtskosten</strong>.</p>`,
+            mainText: `<p>Das Gewerbegebiet und Wohnareal <span class="font-bold text-[color:var(--text-primary)]">Dillfeld</span> versorgen wir extrem zügig mit Notöffnungen aller Art. Profitieren Sie von lokaler Expertise und <span class="font-bold text-[color:var(--text-primary)]">komplett wegfallenden Anfahrtskosten</span>.</p>`,
             serviceZerstörungsfrei: "Im Dillfeld öffnen wir private und gewerbliche nicht-verriegelte Türen nahezu immer materialschonend.",
             serviceBohren: "Sicherheitsschlösser an Industrieanlagen oder Shops im Dillfeld tauschen wir nach exakter Fräsung direkt vor Ort.",
             service247: "24/7-Notdienst im Dillfeld: Ob Spätschicht oder Werkstag, unser Notruf ist für Sie immer da."

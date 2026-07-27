@@ -168,19 +168,19 @@ export default function AutooeffnungPage() {
           <ul className="space-y-6 text-lg text-[color:var(--text-secondary)] m-0 font-medium">
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>1. Anruf:</strong> Schildern Sie uns Ihr Problem sowie Marke und Modell.</span>
+              <span><span className="font-semibold text-[color:var(--text-primary)]">1. Anruf:</span> Schildern Sie uns Ihr Problem sowie Marke und Modell.</span>
             </li>
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>2. Festpreis:</strong> Wir nennen Ihnen am Telefon einen garantierten Festpreis.</span>
+              <span><span className="font-semibold text-[color:var(--text-primary)]">2. Festpreis:</span> Wir nennen Ihnen am Telefon einen garantierten Festpreis.</span>
             </li>
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Clock className="h-4 w-4" /></div>
-              <span><strong>3. Anfahrt:</strong> Wir sind in der Regel innerhalb von 20-30 Minuten bei Ihnen vor Ort in Wetzlar.</span>
+              <span><span className="font-semibold text-[color:var(--text-primary)]">3. Anfahrt:</span> Wir sind in der Regel innerhalb von 20-30 Minuten bei Ihnen vor Ort in Wetzlar.</span>
             </li>
             <li className="flex items-start gap-4">
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white shadow-sm border border-[var(--border-subtle)] text-[var(--color-red-500)] mt-0.5"><Check className="h-4 w-4" /></div>
-              <span><strong>4. Öffnung:</strong> Wir öffnen Ihr Auto professionell, zügig und ohne Beschädigung.</span>
+              <span><span className="font-semibold text-[color:var(--text-primary)]">4. Öffnung:</span> Wir öffnen Ihr Auto professionell, zügig und ohne Beschädigung.</span>
             </li>
           </ul>
         </div>

@@ -24,15 +24,15 @@ export function generateUniqueAboutText(city: LocationData): string {
     
     if (variantIdx === 0) {
         parts.push(`<p>${city.name}${plzDesc} ist ${charDesc}${popDesc} im Lahn-Dill-Kreis. ` +
-            `Als geprüfter <strong>Schlüsseldienst ${city.name}</strong> stehen wir Ihnen für professionelle Türöffnungen, ` +
+            `Als geprüfter <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst ${city.name}</span> stehen wir Ihnen für professionelle Türöffnungen, ` +
             `Zylinderwechsel und moderne Sicherheitstechnik zur Seite. Unser lokaler Fachbetrieb bringt schnelle ` +
             `Hilfe bei Schlüsselnotfällen direkt zu Ihnen vor Ort.</p>`);
     } else if (variantIdx === 1) {
-        parts.push(`<p>In ${city.name}${plzDesc}, ${charDesc}${popDesc}, versorgen wir als mobiler <strong>Schlüsseldienst ${city.name}</strong> ` +
+        parts.push(`<p>In ${city.name}${plzDesc}, ${charDesc}${popDesc}, versorgen wir als mobiler <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst ${city.name}</span> ` +
             `Anwohner und Gewerbetreibende mit schnellen Türöffnungen sowie umfassendem Schloss-Service. ` +
             `Dabei setzen wir auf transparente Konditionen und kurze Anfahrtszeiten vom Handwerksbetrieb aus Wetzlar.</p>`);
     } else {
-        parts.push(`<p>Für Bewohner in ${city.name}${plzDesc} (${charDesc}${popDesc}) bieten wir als <strong>Schlüsseldienst ${city.name}</strong> ` +
+        parts.push(`<p>Für Bewohner in ${city.name}${plzDesc} (${charDesc}${popDesc}) bieten wir als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst ${city.name}</span> ` +
             `zuverlässige Hilfe bei zugefallenen oder verschlossenen Türen. Wir garantieren Facharbeit ohne Umwege, ` +
             `ausgeführt von erfahrenen Technikern aus der Region.</p>`);
     }

@@ -23,7 +23,7 @@ export default function EmbedEinbruchrisiko() {
 
         <div className="text-sm text-gray-700 leading-relaxed bg-white/90 p-5 rounded-2xl border border-gray-200 shadow-sm space-y-3">
           <p>
-            Willkommen beim interaktiven <strong>Einbruchrisiko Rechner</strong> der Schlüssel Schmiede Wetzlar. Mit diesem Werkzeug können Hausbesitzer, Mieter und Gewerbetreibende in Wetzlar und im Lahn-Dill-Kreis das individuelle Sicherheitsniveau ihrer Immobilie ermitteln.
+            Willkommen beim interaktiven <span className="font-semibold text-[color:var(--text-primary)]">Einbruchrisiko Rechner</span> der Schlüssel Schmiede Wetzlar. Mit diesem Werkzeug können Hausbesitzer, Mieter und Gewerbetreibende in Wetzlar und im Lahn-Dill-Kreis das individuelle Sicherheitsniveau ihrer Immobilie ermitteln.
           </p>
           <p>
             Einbrüche geschehen meist in wenigen Minuten über unzureichend gesicherte Türen, veraltete Schließzylinder oder leicht erreichbare Fenster im Erdgeschoss. Unser Rechner bewertet Ihr Objekt anhand von fünf zentralen Faktoren der Kriminalprävention.
@@ -41,19 +41,19 @@ export default function EmbedEinbruchrisiko() {
           </p>
           <ul className="list-disc pl-5 space-y-2 text-xs text-gray-700">
             <li>
-              <strong>Wohngebäudekategorie:</strong> Einfamilienhäuser und Erdgeschosswohnungen weisen statistisch das höchste Einbruchrisiko auf, da häufig mehrere Zugangswege (Terrassentür, Kellerfenster) vorhanden sind.
+              <span className="font-semibold text-[color:var(--text-primary)]">Wohngebäudekategorie:</span> Einfamilienhäuser und Erdgeschosswohnungen weisen statistisch das höchste Einbruchrisiko auf, da häufig mehrere Zugangswege (Terrassentür, Kellerfenster) vorhanden sind.
             </li>
             <li>
-              <strong>Zustand der Schließzylinder:</strong> Veraltete Profilzylinder ohne Bohrschutz oder Ziehschutz lassen sich von Tätern in unter 30 Sekunden überwinden.
+              <span className="font-semibold text-[color:var(--text-primary)]">Zustand der Schließzylinder:</span> Veraltete Profilzylinder ohne Bohrschutz oder Ziehschutz lassen sich von Tätern in unter 30 Sekunden überwinden.
             </li>
             <li>
-              <strong>Zusatzsicherungen:</strong> Das Fehlen von Panzerriegeln, Fenster-Sicherheitsbeschlägen (Pilzkopfverriegelung) oder Schutzbeschlägen erhöht das Risiko drastisch.
+              <span className="font-semibold text-[color:var(--text-primary)]">Zusatzsicherungen:</span> Das Fehlen von Panzerriegeln, Fenster-Sicherheitsbeschlägen (Pilzkopfverriegelung) oder Schutzbeschlägen erhöht das Risiko drastisch.
             </li>
             <li>
-              <strong>Beleuchtung & Einsehbarkeit:</strong> Dunkle, schlecht einsehbare Eingänge oder dichter Bepflanzungsschutz bieten Einbrechern ungestörte Arbeitsbedingungen.
+              <span className="font-semibold text-[color:var(--text-primary)]">Beleuchtung & Einsehbarkeit:</span> Dunkle, schlecht einsehbare Eingänge oder dichter Bepflanzungsschutz bieten Einbrechern ungestörte Arbeitsbedingungen.
             </li>
             <li>
-              <strong>Nachbarschaft & Belebung:</strong> Dichte Wohngebiete mit bekannter Nachbarschaftshilfe senken das Risiko nachweislich.
+              <span className="font-semibold text-[color:var(--text-primary)]">Nachbarschaft & Belebung:</span> Dichte Wohngebiete mit bekannter Nachbarschaftshilfe senken das Risiko nachweislich.
             </li>
           </ul>
 

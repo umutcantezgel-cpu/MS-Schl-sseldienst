@@ -45,11 +45,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   let description = study.challenge || study.solution || "";
-  if (description.length < 120) {
-    description = `${description} Fallstudie & Referenzbericht der Schlüssel Schmiede Wetzlar. Erfahren Sie Details zu unseren Einsätzen.`;
+  if (description.length < 100) {
+    description = `${description} Fallstudie der Schlüssel Schmiede Wetzlar.`;
   }
-  if (description.length > 140) {
-    description = description.slice(0, 137) + "...";
+  if (description.length > 130) {
+    description = description.slice(0, 127) + "...";
   }
 
   return generateSharedMetadata({

@@ -21,7 +21,7 @@ export default function GlobalError({
             </div>
             <h1 style={{ fontSize: "1.875rem", fontWeight: 800, margin: "0 0 1rem 0" }}>Wartungsarbeiten</h1>
             <p style={{ fontSize: "1.125rem", color: "#52525B", marginBottom: "2rem", lineHeight: 1.5 }}>
-              Ein temporärer technischer Fehler ist aufgetreten. Unser Notdienst ist aber <strong>uneingeschränkt für Sie erreichbar!</strong>
+              Ein temporärer technischer Fehler ist aufgetreten. Unser Notdienst ist aber <span className="font-semibold text-[color:var(--text-primary)]">uneingeschränkt für Sie erreichbar!</span>
             </p>
 
             <a

@@ -87,7 +87,7 @@ export default function PreisePage() {
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
           <p className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-            Wir hassen versteckte Gebühren und bieten <strong>ehrliche Festpreise für Ihren Schlüsseldienst</strong>. Berechnen Sie Ihren <strong>verbindlichen Endpreis für Wetzlar</strong> in unter 3 Sekunden.
+            Wir hassen versteckte Gebühren und bieten <span className="font-semibold text-[color:var(--text-primary)]">ehrliche Festpreise für Ihren Schlüsseldienst</span>. Berechnen Sie Ihren <span className="font-semibold text-[color:var(--text-primary)]">verbindlichen Endpreis für Wetzlar</span> in unter 3 Sekunden.
           </p>
         </StaggerItem>
       </StaggerReveal>

@@ -54,14 +54,14 @@ export default function CookieRichtliniePage() {
 
             <LegalSection>
                 <TLDRBox title="Cookies auf einen Blick" icon="info">
-                    <p>Die <strong>Cookie Richtlinie & Datenschutzeinstellungen</strong> der Schlüssel Schmiede Wetzlar garantiert volle Transparenz gemäß DSGVO und TTDSG. Wir verwenden nur 3 technisch notwendige Cookies auf dieser Website. Analyse- und Marketing-Cookies setzen wir derzeit nicht aktiv ein.</p>
+                    <p>Die <span className="font-semibold text-[color:var(--text-primary)]">Cookie Richtlinie & Datenschutzeinstellungen</span> der Schlüssel Schmiede Wetzlar garantiert volle Transparenz gemäß DSGVO und TTDSG. Wir verwenden nur 3 technisch notwendige Cookies auf dieser Website. Analyse- und Marketing-Cookies setzen wir derzeit nicht aktiv ein.</p>
                     <p>Sie können nicht-essentielle Cookies jederzeit anpassen. Öffnen Sie dazu den Link &quot;Cookie-Einstellungen&quot; im Footer unserer Website oder nutzen Sie unser <Link href="/datenschutz#4-cookies" className="underline hover:text-gray-900 font-medium">Privacy Center in der Datenschutzerklärung</Link>.</p>
                 </TLDRBox>
             </LegalSection>
 
             <LegalSection id="1-was-sind-cookies">
                 <h2 className="mt-0">1. Was sind Cookies?</h2>
-                <p>Unsere <strong>Cookie-Richtlinie und Datenschutz-Einstellungen</strong> beschreibt transparent die Funktionsweise digitaler Speichertechnologien. Cookies sind kleine Textdateien, die beim Besuch unserer Webseite auf Ihrem Endgerät (Computer, Tablet, Smartphone) abgelegt werden. Sie ermöglichen es der Website, bestimmte Einstellungen über Ihr Nutzungsverhalten zu speichern und beim nächsten Besuch wiederzuerkennen.</p>
+                <p>Unsere <span className="font-semibold text-[color:var(--text-primary)]">Cookie-Richtlinie und Datenschutz-Einstellungen</span> beschreibt transparent die Funktionsweise digitaler Speichertechnologien. Cookies sind kleine Textdateien, die beim Besuch unserer Webseite auf Ihrem Endgerät (Computer, Tablet, Smartphone) abgelegt werden. Sie ermöglichen es der Website, bestimmte Einstellungen über Ihr Nutzungsverhalten zu speichern und beim nächsten Besuch wiederzuerkennen.</p>
                 <p>Cookies können direkt von unserer eigenen Domain gesetzt werden (First-Party-Cookies) oder von eingebundenen Drittanbieter-Diensten (Third-Party-Cookies).</p>
                 <p>Standardmäßige Cookies können Sie als Person nicht direkt identifizieren und enthalten keine sensiblen Kontaktdaten wie Name, Telefonnummer oder Wohnadresse. Sie dienen der Speicherung anonymer oder pseudonymer Systemkennungen.</p>
             </LegalSection>
@@ -181,10 +181,10 @@ export default function CookieRichtliniePage() {
                 <h2 className="mt-0">6. Rechtsgrundlagen</h2>
                 <p>Die Verarbeitung basiert auf folgenden Rechtsvorschriften:</p>
                 <ul className="mt-3 space-y-2 text-gray-600">
-                    <li><strong>§ 25 Abs. 2 Nr. 2 TTDSG:</strong> Technisch notwendige Speicherfunktionen erfordern keine vorherige Zustimmung.</li>
-                    <li><strong>§ 25 Abs. 1 TTDSG:</strong> Für optionale Technologien wird eine ausdrückliche Einwilligung eingeholt.</li>
-                    <li><strong>Art. 6 Abs. 1 lit. a DSGVO:</strong> Verarbeitung personenbezogener Daten bei erteilter Einwilligung.</li>
-                    <li><strong>Art. 6 Abs. 1 lit. f DSGVO:</strong> Berechtigtes Interesse am sicheren Betrieb unseres Webangebots.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">§ 25 Abs. 2 Nr. 2 TTDSG:</span> Technisch notwendige Speicherfunktionen erfordern keine vorherige Zustimmung.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">§ 25 Abs. 1 TTDSG:</span> Für optionale Technologien wird eine ausdrückliche Einwilligung eingeholt.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Art. 6 Abs. 1 lit. a DSGVO:</span> Verarbeitung personenbezogener Daten bei erteilter Einwilligung.</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Art. 6 Abs. 1 lit. f DSGVO:</span> Berechtigtes Interesse am sicheren Betrieb unseres Webangebots.</li>
                 </ul>
             </LegalSection>
 

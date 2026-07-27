@@ -65,7 +65,7 @@ export default function LocalHero({ city }: LocalHeroProps) {
                     
                     <StaggerItem animation={entryAnimations.slideUpFade}>
                         <h1 className="typo-hero-display text-[color:var(--text-primary)] mb-2 sm:mb-4 text-balance max-w-5xl tracking-tighter font-extrabold leading-[1.1] sm:leading-[1.05] text-[clamp(32px,8vw,72px)] break-words hyphens-none w-full px-2 sm:px-0">
-                            Schlüsseldienst <span className="text-[color:var(--value-primary)]">{city.name}</span>
+                            Schlüsseldienst <strong className="text-[color:var(--value-primary)] font-extrabold">{city.name}</strong>
                         </h1>
                         <div className="text-[clamp(20px,4vw,32px)] font-bold text-[color:var(--text-primary)]/90 tracking-tight leading-[1.2] text-balance max-w-4xl px-2 sm:px-0 mx-auto mb-4 sm:mb-[var(--space-6)]">
                             {city.heroVariant ? (

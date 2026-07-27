@@ -2,24 +2,19 @@ import { LocationData } from "@/lib/data/locations";
 import ReviewCard from "@/components/reviews/ReviewCard";
 import { Review, reviewsData } from "@/components/reviews/reviews.data";
 import RevealSection from "@/components/motion/RevealSection";
+import { shuffleArray } from "@/lib/textRotation";
 
 interface LocationReviewsProps {
     city: LocationData;
 }
 
 export default function LocationReviews({ city }: LocationReviewsProps) {
-    // [SEO Fix]: "Derselbe Text mehrmals auf einer Seite" (6 Fehler pro Seite)
-    // Die hyper-lokalen Testimonials (city.localTestimonials) werden bereits ganz oben in "LocalTrustSignals" gerendert.
-    // Wenn wir sie hier unten nochmal rendern, zählt Seobility 3 Quotes + 3 Namen = 6 Textdopplungen.
-    // Lösung: Hier rendern wir IMMER allgemeine Bewertungen aus dem globalen Datensatz und rotieren
-    // sie anhand des city.slugs, was zusätzlich Duplicate Content über verschiedene Seiten hinweg reduziert.
-
-    const hash = city.slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    // Wenn reviewsData weniger als 3 Einträge hat, fallback. (In der Regel gibt es mehr).
-    const maxIndex = Math.max(0, reviewsData.length - 3);
-    const startIndex = hash % (maxIndex + 1);
-
-    const reviewsToDisplay: Review[] = reviewsData.slice(startIndex, startIndex + 3).map(r => ({
+    // [SEO Fix]: Seobility flags "Duplicate Content" because the same 3 reviews are rendered 
+    // on multiple city pages. Using a seeded shuffle ensures every page gets a virtually unique 
+    // combination of reviews from the pool of 58.
+    const shuffled = shuffleArray(reviewsData, city.slug);
+    
+    const reviewsToDisplay: Review[] = shuffled.slice(0, 3).map(r => ({
         ...r,
         location: `Einsatz in der Region ${city.name}`
     }));

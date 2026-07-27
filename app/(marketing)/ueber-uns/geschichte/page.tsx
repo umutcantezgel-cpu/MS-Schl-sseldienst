@@ -78,7 +78,7 @@ export default function GeschichtePage() {
             </p>
 
             <p className="text-base text-gray-700 leading-relaxed">
-              Aus diesem Grund gründete Inhaber Mina Saad im Jahr 2025 die <strong>Schlüssel Schmiede Wetzlar</strong>. Das Ziel war von Beginn an eindeutig: Ein ehrlicher, regional verwurzelter Schlüsseldienst Wetzlar mit festem Ladenlokal, transparenten Festpreisen vor Anfahrt und 100% beschädigungsfreien Türöffnungen für zugefallene Türen.
+              Aus diesem Grund gründete Inhaber Mina Saad im Jahr 2025 die <span className="font-semibold text-[color:var(--text-primary)]">Schlüssel Schmiede Wetzlar</span>. Das Ziel war von Beginn an eindeutig: Ein ehrlicher, regional verwurzelter Schlüsseldienst Wetzlar mit festem Ladenlokal, transparenten Festpreisen vor Anfahrt und 100% beschädigungsfreien Türöffnungen für zugefallene Türen.
             </p>
           </div>
 

@@ -39,7 +39,7 @@ export default function ImpressumPage() {
 
             <LegalSection>
                 <TLDRBox title="Verantwortlichkeit (TL;DR)" icon="info">
-                    <p>Die Seite <strong>Impressum & Anbieterkennzeichnung | Schlüssel Schmiede Wetzlar</strong> dokumentiert den ordnungsgemäßen Betrieb der Schlüssel Schmiede Wetzlar durch Inhaber Mina Saad. Unser Fachbetrieb bietet 24/7 Notöffnungen und Sicherheitstechnik im gesamten Lahn-Dill-Kreis. Bei Fragen erreichen Sie unseren Kundenservice direkt per Telefon.</p>
+                    <p>Die Seite <span className="font-semibold text-[color:var(--text-primary)]">Impressum & Anbieterkennzeichnung | Schlüssel Schmiede Wetzlar</span> dokumentiert den ordnungsgemäßen Betrieb der Schlüssel Schmiede Wetzlar durch Inhaber Mina Saad. Unser Fachbetrieb bietet 24/7 Notöffnungen und Sicherheitstechnik im gesamten Lahn-Dill-Kreis. Bei Fragen erreichen Sie unseren Kundenservice direkt per Telefon.</p>
                 </TLDRBox>
             </LegalSection>
 
@@ -64,9 +64,9 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">2. Direkter Kontakt & Erreichbarkeit</h2>
                 <p>Als lokaler Schlüsseldienst Wetzlar legen wir größten Wert auf unmittelbare Erreichbarkeit im Schlüsselnotfall oder bei Terminfragen:</p>
                 <ul className="mt-2 space-y-2">
-                  <li><strong>Telefon (24/7 Notdienst):</strong> <a href="tel:+4964418056279" className="font-semibold text-[var(--action-primary)] hover:underline">06441 8056279</a></li>
-                  <li><strong>E-Mail:</strong> <a href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline">schluesselschmiede@gmail.com</a></li>
-                  <li><strong>WhatsApp-Kontakt:</strong> +49 176 16310315</li>
+                  <li><span className="font-semibold text-[color:var(--text-primary)]">Telefon (24/7 Notdienst):</span> <a href="tel:+4964418056279" className="font-semibold text-[var(--action-primary)] hover:underline">06441 8056279</a></li>
+                  <li><span className="font-semibold text-[color:var(--text-primary)]">E-Mail:</span> <a href="mailto:schluesselschmiede@gmail.com" className="text-[var(--action-primary)] hover:underline">schluesselschmiede@gmail.com</a></li>
+                  <li><span className="font-semibold text-[color:var(--text-primary)]">WhatsApp-Kontakt:</span> +49 176 16310315</li>
                 </ul>
             </LegalSection>
 
@@ -85,8 +85,8 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">4. Steuerliche Angaben</h2>
                 <p>Angaben zur ordnungsgemäßen steuerlichen Registrierung des Handwerksbetriebs:</p>
                 <ul className="mt-2 space-y-2">
-                    <li><strong>Umsatzsteuer-Identifikationsnummer (gemäß § 27a UStG):</strong> DE 282140471</li>
-                    <li><strong>Steuernummer:</strong> 03986300160</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Umsatzsteuer-Identifikationsnummer (gemäß § 27a UStG):</span> DE 282140471</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Steuernummer:</span> 03986300160</li>
                 </ul>
             </LegalSection>
 
@@ -94,10 +94,10 @@ export default function ImpressumPage() {
                 <h2 className="mt-0">5. Berufs- & Aufsichtsangaben</h2>
                 <p>Angaben zur beruflichen Zuordnung gemäß § 5 Abs. 1 Nr. 5 DDG:</p>
                 <ul className="mt-2 space-y-2 text-gray-700">
-                    <li><strong>Berufsbezeichnung:</strong> Schlüsseldienst & Sicherheitstechnik</li>
-                    <li><strong>Zuständige Kammer:</strong> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35576 Wetzlar</li>
-                    <li><strong>Handwerksrechtliche Einordnung:</strong> Der Schlüsseldienst wird als eingetragener Fachbetrieb geführt. Die Zuordnung zur Handwerksrolle richtet sich nach der Handwerksordnung (HwO).</li>
-                    <li><strong>Berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO), abrufbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Berufsbezeichnung:</span> Schlüsseldienst & Sicherheitstechnik</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Zuständige Kammer:</span> Handwerkskammer Wiesbaden, Zweigstelle Wetzlar, Ederstraße 2, 35576 Wetzlar</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Handwerksrechtliche Einordnung:</span> Der Schlüsseldienst wird als eingetragener Fachbetrieb geführt. Die Zuordnung zur Handwerksrolle richtet sich nach der Handwerksordnung (HwO).</li>
+                    <li><span className="font-semibold text-[color:var(--text-primary)]">Berufsrechtliche Regelungen:</span> Handwerksordnung (HwO), abrufbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">www.gesetze-im-internet.de/hwo</a></li>
                 </ul>
             </LegalSection>
 
@@ -116,7 +116,7 @@ export default function ImpressumPage() {
                 <p>Die europäische Online-Streitbeilegungsplattform (OS) steht Verbrauchern zur Beilegung von Streitigkeiten zur Verfügung. Weiterführende Informationen zur Schlichtung erhalten Sie unter:</p>
                 <p><a href="https://consumer-redress.ec.europa.eu/site-relocation_en?prefLang=de" target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-primary/50 underline-offset-4">https://consumer-redress.ec.europa.eu/site-relocation_en?prefLang=de</a></p>
                 <p>Unsere E-Mail-Adresse lautet: <code>schluesselschmiede@gmail.com</code></p>
-                <p><strong>Hinweis gemäß § 36 VSBG:</strong> Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, streben jedoch stets einvernehmliche Lösungen im direkten Kundenkontakt an.</p>
+                <p><span className="font-semibold text-[color:var(--text-primary)]">Hinweis gemäß § 36 VSBG:</span> Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen, streben jedoch stets einvernehmliche Lösungen im direkten Kundenkontakt an.</p>
             </LegalSection>
 
             <LegalSection id="8-haftung">

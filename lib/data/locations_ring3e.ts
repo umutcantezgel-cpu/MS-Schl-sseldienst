@@ -34,10 +34,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Modernes Smarthome", description: "Auch bei versagenden, elektronischen Schließzylindern in Neubauten greifen unsere Spezialisten auf Notstrom oder Bypassaufsperrung zurück." }
         ],
         aboutText: `
-<p><strong>Daubhausen</strong> glänzt als charmanter kleiner Ortsteil der Gemeinde Ehringshausen im Lahn-Dill-Kreis nicht nur durch naturnahe Stille, sondern auch durch seine spannende Historie als frühere Hugenottensiedlung. Alte Bausubstanzen und tiefe Verankerungen in der regionalen Geschichte prägen hier das ruhige Leben. Eine zugezogene oder blockierte Haustür zerreißt diesen Frieden schnell und nicht aber, wenn der <strong>Schlüsseldienst Daubhausen</strong> von Wetzlar aus professionell anrückt.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Daubhausen</span> glänzt als charmanter kleiner Ortsteil der Gemeinde Ehringshausen im Lahn-Dill-Kreis nicht nur durch naturnahe Stille, sondern auch durch seine spannende Historie als frühere Hugenottensiedlung. Alte Bausubstanzen und tiefe Verankerungen in der regionalen Geschichte prägen hier das ruhige Leben. Eine zugezogene oder blockierte Haustür zerreißt diesen Frieden schnell und nicht aber, wenn der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Daubhausen</span> von Wetzlar aus professionell anrückt.</p>
 
 <h3>Flinker Einsatzwagen via Ehringshausen</h3>
-<p>Unsere Leitstelle liegt so zentral, dass wir die Anfahrt über die A45 oder die ländlichen Nebenwege effizient planen können. Meist sind unsere Monteure in <strong>rund 13 Minuten</strong> am Bestimmungsort in Daubhausen. An eiskalten Wintertagen oder bei Regenwetter macht diese Schnelligkeit den entscheidenden Unterschied.</p>
+<p>Unsere Leitstelle liegt so zentral, dass wir die Anfahrt über die A45 oder die ländlichen Nebenwege effizient planen können. Meist sind unsere Monteure in <span class="font-bold text-[color:var(--text-primary)]">rund 13 Minuten</span> am Bestimmungsort in Daubhausen. An eiskalten Wintertagen oder bei Regenwetter macht diese Schnelligkeit den entscheidenden Unterschied.</p>
 
 <h3>Preissicherheit bis an den Waldrand</h3>
 <p>Wir differenzieren nicht nach "Stadt" und "Land". In Daubhausen öffnen wir unverriegelte, zugeknallte Eingangs- oder Hoftüren zum Standardwerkpreis ab 99 Euro. Auf die etwas entlegenere Anfahrt entfallen transparente 15 Euro Zufuhrpauschale. Unsere Mitarbeiter fräsen erst dann an sensiblen Schließzylindern, wenn definitiv jede Lockpicking-Chance erschöpft ist.</p>`,
@@ -47,7 +47,7 @@ export const ring3eLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Ausgesperrt in Daubhausen? Wir sind in ca. 13 Minuten bei Ihnen und professionell und zum Festpreis.",
-            mainText: `<p>Die Ortschaft <strong>Daubhausen</strong> wird lückenlos vom Aufsperrdienst Wetzlar versorgt. Unsere mobilen Einsatzleiter bedienen Ihre historischen Türen und modernen Verriegelungen zuverlässig.</p>`,
+            mainText: `<p>Die Ortschaft <span class="font-bold text-[color:var(--text-primary)]">Daubhausen</span> wird lückenlos vom Aufsperrdienst Wetzlar versorgt. Unsere mobilen Einsatzleiter bedienen Ihre historischen Türen und modernen Verriegelungen zuverlässig.</p>`,
             serviceZerstörungsfrei: "Alte Schlösser oder moderne Türfalze in Daubhausen entriegeln wir in nahezu allen Fällen der Routine-Aufträge gewaltfrei.",
             serviceBohren: "Müssen in Daubhausen Zylinder gebohrt werden, hinterlassen wir niemals Schäden am restlichen Türblatt.",
             service247: "Für Daubhausen (und Greifenthal) erstreckt sich unser Bereitschaftsradars lückenlos auf 24 Stunden, jede Woche."
@@ -83,10 +83,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Veralteter Zylinder am Hof", description: "Bauerhoftüren mit verschlissenen Schlüsseln werten wir durch den Einbau robuster ABUS Markenzylinder nachhaltig sicher auf." }
         ],
         aboutText: `
-<p>Inmitten weitläufiger Wiesen und Wälder liegt das kleine, naturnahe <strong>Dreisbach</strong> im nördlichen Teil der Gemeinde Ehringshausen. Ländliche Ruhe und Gemeinschaft bestimmen hier noch den Tagesrhythmus. Geht in dieser Gelassenheit einmal der einzige Haustürschlüssel verloren oder bricht bei Frost das betagte Hoftür-Schloss durch, bedarf es regionaler Hilfe, die nicht stundenlang aus Frankfurt anreisen muss. Der <strong>Schlüsseldienst Dreisbach</strong> ist verlässlich an Ihrer Seite.</p>
+<p>Inmitten weitläufiger Wiesen und Wälder liegt das kleine, naturnahe <span class="font-bold text-[color:var(--text-primary)]">Dreisbach</span> im nördlichen Teil der Gemeinde Ehringshausen. Ländliche Ruhe und Gemeinschaft bestimmen hier noch den Tagesrhythmus. Geht in dieser Gelassenheit einmal der einzige Haustürschlüssel verloren oder bricht bei Frost das betagte Hoftür-Schloss durch, bedarf es regionaler Hilfe, die nicht stundenlang aus Frankfurt anreisen muss. Der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Dreisbach</span> ist verlässlich an Ihrer Seite.</p>
 
 <h3>Flotte Anfahrt trotz Dörflichkeit</h3>
-<p>Auch wenn Dreisbach tiefer im Lahn-Dill-Kreis liegt, bedeutet dies keine zermürbende Warterei. Unsere professionell geschulten Mechaniker durchmessen die Straßen via Kölschhausen oder der A45-Abfahrt meist in hervorragenden <strong>14 Minuten</strong> Einsatzzeit. Wir pflegen lokale Expertise statt Callcenter-Desorientierung.</p>
+<p>Auch wenn Dreisbach tiefer im Lahn-Dill-Kreis liegt, bedeutet dies keine zermürbende Warterei. Unsere professionell geschulten Mechaniker durchmessen die Straßen via Kölschhausen oder der A45-Abfahrt meist in hervorragenden <span class="font-bold text-[color:var(--text-primary)]">14 Minuten</span> Einsatzzeit. Wir pflegen lokale Expertise statt Callcenter-Desorientierung.</p>
 
 <h3>Klare Landestelle für Preis-Dumping-Konkurrenten</h3>
 <p>Uns ist wichtig: Kleinstdörfer werden von uns nicht stiefmütterlich oder gar durch erhöhte Tarife abgestraft. Unser Festpreis ab 99 Euro bei zugefallenen Bauelementen ist heilig und egal ob Stadtzentrum Wetzlar oder die Dreisbacher Ortseinfahrt. Lediglich 15 Euro für den Fuhrpark kommen hinzu. Für dieses Komplettpaket agieren wir zu nahezu hundert Prozent zerstörungsfrei und extrem sicherungserfahren.</p>`,
@@ -96,7 +96,7 @@ export const ring3eLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Tür zu in Dreisbach? Unser Monteur ist in ca. 14 Minuten da und zuverlässig und zum Festpreis.",
-            mainText: `<p>Mitten im naturnahen <strong>Dreisbach</strong> verzichtet unser Einsatz-Desk auf horrende Überland-Tarife. Ehrliche 15 Euro Einsatzfahrt, echtes Handwerk aus der Nachbarstadt.</p>`,
+            mainText: `<p>Mitten im naturnahen <span class="font-bold text-[color:var(--text-primary)]">Dreisbach</span> verzichtet unser Einsatz-Desk auf horrende Überland-Tarife. Ehrliche 15 Euro Einsatzfahrt, echtes Handwerk aus der Nachbarstadt.</p>`,
             serviceZerstörungsfrei: "Unsere Expertise bewahrt in Dreisbach in fast allen Fällen dörfliche und historische Türen vor dem Aufbohren.",
             serviceBohren: "Verweigerte Schlösser in Dreisbach knacken wir souverän auf den Millimeter genau, ohne Türbeschläge abzusprengen.",
             service247: "Dieser 24-Stunden-Sicherheitsdienst steht Dreisbach das ganze Jahr hindurch zur vollsten Verfügung."
@@ -132,10 +132,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Abgerissener Zylinderstift", description: "Schlüssel abgebrochen und Rest steckt drin? Extrahierung der Bruchstücke per Pincette klappt oftmals ohne Neuteilkauf in Greifenthal." }
         ],
         aboutText: `
-<p>Beschaulich versteckt sich <strong>Greifenthal</strong> und einer der allerkleinsten Ortsteile der Großgemeinde Ehringshausen und in den dichten Wäldern und Hügelketten des hessischen Lahn-Dill-Berglands. Hier im Weiler ticken die Uhren scheinbar langsamer, und Solidarität wird großgeschrieben. Klemmt das Haupttor am heimischen Hof oder die Haustür ist einfach verriegelt hinter einem ins Schloss gefallen, kann das mitten in der Natur existentiell stören. Der <strong>Schlüsseldienst Greifenthal</strong> navigiert als waschechter Regional-Handwerker absolut stilsicher auch in diese kleinste Ecke.</p>
+<p>Beschaulich versteckt sich <span class="font-bold text-[color:var(--text-primary)]">Greifenthal</span> und einer der allerkleinsten Ortsteile der Großgemeinde Ehringshausen und in den dichten Wäldern und Hügelketten des hessischen Lahn-Dill-Berglands. Hier im Weiler ticken die Uhren scheinbar langsamer, und Solidarität wird großgeschrieben. Klemmt das Haupttor am heimischen Hof oder die Haustür ist einfach verriegelt hinter einem ins Schloss gefallen, kann das mitten in der Natur existentiell stören. Der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Greifenthal</span> navigiert als waschechter Regional-Handwerker absolut stilsicher auch in diese kleinste Ecke.</p>
 
 <h3>Flotte Hilfe in der Natur</h3>
-<p>Trotz der übersichtlichen Größe und Randlage von Greifenthal ignorieren wir solche Notrufe selbstverständlich nicht. Über Daubhausen oder die Hauptpisten der Ehringshausener Gemeinde treffen unsere versierten Retter im Normalfall nach nur <strong>14 Minuten</strong> Anreise ein. Das spart Nerven und reduziert die Wartezeit auf ein unschlagbares Minimum.</p>
+<p>Trotz der übersichtlichen Größe und Randlage von Greifenthal ignorieren wir solche Notrufe selbstverständlich nicht. Über Daubhausen oder die Hauptpisten der Ehringshausener Gemeinde treffen unsere versierten Retter im Normalfall nach nur <span class="font-bold text-[color:var(--text-primary)]">14 Minuten</span> Anreise ein. Das spart Nerven und reduziert die Wartezeit auf ein unschlagbares Minimum.</p>
 
 <h3>Der transparente Weiler-Tarif</h3>
 <p>In winzigen Landecken treiben unseriöse Betrüger oft ihr Unwesen, indem sie gigantische Abfahrtskosten simulieren. Für uns nicht akzeptabel: Wir verankern auf unserer Abrechnung einen Festbetrag mit Start bei 99 Euro. Darauf kommen simple 15 Euro KFZ-Pauschale. Zerstörungsfreie Tor- und Türöffnungen und wie von Zauberhand erledigt und immer fair im Ort.</p>`,
@@ -145,7 +145,7 @@ export const ring3eLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Schlüsselnotfall in Greifenthal? In ca. 14 Minuten sind wir bei Ihnen und zum transparenten Festpreis.",
-            mainText: `<p>Ob in der quirligen Kernstadt Wetzlar oder dem verschlafenen <strong>Greifenthal</strong>: Unser Ehrgeiz und unsere günstigen Festpreise machen auch an abgelegenen Straßen keine Pause.</p>`,
+            mainText: `<p>Ob in der quirligen Kernstadt Wetzlar oder dem verschlafenen <span class="font-bold text-[color:var(--text-primary)]">Greifenthal</span>: Unser Ehrgeiz und unsere günstigen Festpreise machen auch an abgelegenen Straßen keine Pause.</p>`,
             serviceZerstörungsfrei: "Alle gängigen und antiquierten Türen zwingen wir in Greifenthal materialfreundlich ohne Gewalt auf.",
             serviceBohren: "Sich widersetzende und rostige Defekt-Zylinder fräsen wir effizient auf, bevor Schäden am Beschlag auftreten.",
             service247: "Als Regionalexperte bedienen wir Greifenthal durch unseren 24-Stunden-Service und 365 Tage im Jahr."
@@ -183,10 +183,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Historisches Schloss klemmt", description: "Einige alte Wohngebäude verfügen über Kastenschlösser, die Fingerspitzengefühl erfordern. Unser Wetzlarer Betrieb verfügt über das nötige Repertoire." }
         ],
         aboutText: `
-<p>Dicht an Hörnsheim geschmiegt bildet <strong>Hochelheim</strong> das pochende Verwaltungsherz der Gemeinde Hüttenberg und inklusive Rathaus und einer der Hauptverkehrsadern zwischen den Regionen Wetzlar und Gießen. Wer hier zu Hause ist, genießt städtische Vorzüge in einem behutsam gewachsenen, dörflichen Ambiente. Ärgerlich wird es erst dann, wenn plötzlich der Zugang zu den eigenen vier Wänden durch einen verlorenen Schlüssel oder ein klemmendes Türschloss verwehrt wird. An diesem Punkt schaltet sich der verlässliche <strong>Schlüsseldienst Hochelheim</strong> ein.</p>
+<p>Dicht an Hörnsheim geschmiegt bildet <span class="font-bold text-[color:var(--text-primary)]">Hochelheim</span> das pochende Verwaltungsherz der Gemeinde Hüttenberg und inklusive Rathaus und einer der Hauptverkehrsadern zwischen den Regionen Wetzlar und Gießen. Wer hier zu Hause ist, genießt städtische Vorzüge in einem behutsam gewachsenen, dörflichen Ambiente. Ärgerlich wird es erst dann, wenn plötzlich der Zugang zu den eigenen vier Wänden durch einen verlorenen Schlüssel oder ein klemmendes Türschloss verwehrt wird. An diesem Punkt schaltet sich der verlässliche <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Hochelheim</span> ein.</p>
 
 <h3>Flotte L3020 Routenführung</h3>
-<p>Hochelheim gehört dank der direkten Lage an der L3020 zu unseren logistischen "Heimspielen". Im besten Fall benötigen unsere erfahrenen Monteure ab Alarmierung <strong>rund 10 Minuten</strong>, um vor Ort präsent zu sein. Dieses unfassbare Tempo garantieren wir aus Wetzlar, da keine fremden Callcenter als Zwischenstation eingeschaltet sind.</p>
+<p>Hochelheim gehört dank der direkten Lage an der L3020 zu unseren logistischen "Heimspielen". Im besten Fall benötigen unsere erfahrenen Monteure ab Alarmierung <span class="font-bold text-[color:var(--text-primary)]">rund 10 Minuten</span>, um vor Ort präsent zu sein. Dieses unfassbare Tempo garantieren wir aus Wetzlar, da keine fremden Callcenter als Zwischenstation eingeschaltet sind.</p>
 
 <h3>Preise ohne Überraschungseffekt</h3>
 <p>Im Bereich der Handwerkertarife herrschen oft unkalkulierbare Ängste. In Hochelheim verscheuchen wir diese Sorgen mit transparenten, unwiderruflichen Festkosten: Fällt In der Mittagszeit am Werktag die Tür unbeabsichtigt zu, belasten wir Sie exakt mit 99 Euro. Der Fuhrpark schlägt mit bescheidenen 15 Euro zu Buche. Verdeckte Posten existieren nicht, Barzahlungspflicht ebensowenig.</p>`,
@@ -232,10 +232,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Mehrfachverriegelung defekt", description: "Hochwertige Riegelsysteme in Neubausiedlungen in Hörnsheim blockieren? Millimetergenaue Fräsen von uns beseitigen das mechanische Problem." }
         ],
         aboutText: `
-<p>Zusammen mit Hochelheim bildet <strong>Hörnsheim</strong> das unzertrennliche Herz der Großgemeinde Hüttenberg. Etagenwohnungen, familiäre Reihenhäuser und modernisierte Hofreiten durchziehen den ruhigen, bodenständigen Ortsteil unterhalb der Wetzlarer Ausläufer. Was tun, wenn in dieser Gelassenheit am Sonntagmorgen die Haustür unbeabsichtigt zuschnappt und der Schlüssel gut sichtbar auf der Küchenablage liegt? Der rettende, aus der Region Wetzlar anrückende <strong>Schlüsseldienst Hörnsheim</strong> ist die schnelle Antwort auf sämtliche Schlosspanik.</p>
+<p>Zusammen mit Hochelheim bildet <span class="font-bold text-[color:var(--text-primary)]">Hörnsheim</span> das unzertrennliche Herz der Großgemeinde Hüttenberg. Etagenwohnungen, familiäre Reihenhäuser und modernisierte Hofreiten durchziehen den ruhigen, bodenständigen Ortsteil unterhalb der Wetzlarer Ausläufer. Was tun, wenn in dieser Gelassenheit am Sonntagmorgen die Haustür unbeabsichtigt zuschnappt und der Schlüssel gut sichtbar auf der Küchenablage liegt? Der rettende, aus der Region Wetzlar anrückende <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Hörnsheim</span> ist die schnelle Antwort auf sämtliche Schlosspanik.</p>
 
 <h3>Kurze Einsatzdistanzen sind entscheidend</h3>
-<p>Viele auswärtige Notdienste kalkulieren bundesweit Einsätze durch und treiben Fahrkosten in astronomische Höhen. Wir sind echter Lokalpatriot: Die Strecke via L3020 bewältigen unsere Routiniers im Durchschnitt in handfesten <strong>11 Minuten</strong>. Auch am eiskalten Winterabend verharren unsere Kunden in Hörnsheim somit nur minimal in der Kälte.</p>
+<p>Viele auswärtige Notdienste kalkulieren bundesweit Einsätze durch und treiben Fahrkosten in astronomische Höhen. Wir sind echter Lokalpatriot: Die Strecke via L3020 bewältigen unsere Routiniers im Durchschnitt in handfesten <span class="font-bold text-[color:var(--text-primary)]">11 Minuten</span>. Auch am eiskalten Winterabend verharren unsere Kunden in Hörnsheim somit nur minimal in der Kälte.</p>
 
 <h3>Preise zum Durchatmen</h3>
 <p>Bei Ankunft beurteilen wir den Schließstand der Tür: Handelt es sich "nur" um ein Zufallen aus Unachtsamkeit, verbürgen wir uns für saubere, materialerhaltende Öffnungen zum Tages-Werktags-Preis von fairen 99 Euro. Auf Hörnsheim entfällt eine schmale 15-Euro Fuhrparkgebühr. Eine defekte oder hochsicher verriegelte Einheit erfordert Fräsen? Selbst dann beraten wir Sie im Vorfeld absolut verbindlich und verbauen langlebige BKS und ABUS Marken als Ersatz.</p>`,
@@ -245,7 +245,7 @@ export const ring3eLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Tür zu in Hörnsheim? Wir kommen in ca. 11 Minuten und schnell, professionell und zum Festpreis.",
-            mainText: `<p>In den familienfreundlichen Siedlungen von <strong>Hörnsheim</strong> greifen wir blitzartig in Notsituationen ein, ohne Ihre Sicherheitssysteme durch unsachgemäße Zerstörung wertlos zu machen.</p>`,
+            mainText: `<p>In den familienfreundlichen Siedlungen von <span class="font-bold text-[color:var(--text-primary)]">Hörnsheim</span> greifen wir blitzartig in Notsituationen ein, ohne Ihre Sicherheitssysteme durch unsachgemäße Zerstörung wertlos zu machen.</p>`,
             serviceZerstörungsfrei: "Bei Standard-Aussperrungen in Hörnsheim agierten unsere Profis ohne jede Bohrmaschine komplett sanft.",
             serviceBohren: "Totalausfälle an Zylindern zementieren wir heraus und montieren sofort neue DIN-geprüfte Schließsysteme nach Vorgabe.",
             service247: "Unsere telefonische Leitstelle verknüpft Einsätze nach Hörnsheim nahtlos rund um die Uhr und auch nachts."
@@ -281,10 +281,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Balkontür eingeklemmt", description: "Der Wind drückt die Terrassentür ins Schloss? Solange noch ein Spalt bleibt, öffnen unsere Experten per Spezialwerkzeug schadenfrei." }
         ],
         aboutText: `
-<p>Umgeben von hügeliger Natur und doch unmittelbar vernetzt mit Gießen und Wetzlar, liegt <strong>Reiskirchen</strong> (Hüttenberg). Hier vereint sich Land-Idylle mit schnellen Autobahnanbindungen. Schlägt jedoch ein heftiger Windstoß die massive Eiche-Tür zu und der Schlüssel liegt noch sichtbar im Flur, braucht es rasante Hilfe. Vertrauen Sie auf keinen anonymen Callcenter-Ruf, sondern auf den lokal operierenden <strong>Schlüsseldienst Reiskirchen</strong>.</p>
+<p>Umgeben von hügeliger Natur und doch unmittelbar vernetzt mit Gießen und Wetzlar, liegt <span class="font-bold text-[color:var(--text-primary)]">Reiskirchen</span> (Hüttenberg). Hier vereint sich Land-Idylle mit schnellen Autobahnanbindungen. Schlägt jedoch ein heftiger Windstoß die massive Eiche-Tür zu und der Schlüssel liegt noch sichtbar im Flur, braucht es rasante Hilfe. Vertrauen Sie auf keinen anonymen Callcenter-Ruf, sondern auf den lokal operierenden <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Reiskirchen</span>.</p>
 
 <h3>Flotte Reaktion dank B49</h3>
-<p>Unsere Einsatzfahrzeuge sind strategisch so koordiniert, dass die Bundesstraße 49 und die L3285 eine schnelle Überbrückung zu Reiskirchen ermöglichen. Innerhalb von nur <strong>12 Minuten</strong> parkt im Durchschnitt unser Techniker bei Ihnen vor der Tür. In einer prekären Situation am kalten Abend ist das ein existentieller Vorteil.</p>
+<p>Unsere Einsatzfahrzeuge sind strategisch so koordiniert, dass die Bundesstraße 49 und die L3285 eine schnelle Überbrückung zu Reiskirchen ermöglichen. Innerhalb von nur <span class="font-bold text-[color:var(--text-primary)]">12 Minuten</span> parkt im Durchschnitt unser Techniker bei Ihnen vor der Tür. In einer prekären Situation am kalten Abend ist das ein existentieller Vorteil.</p>
 
 <h3>Das Reiskirchen Festpreis-Modell</h3>
 <p>Wir stehen für klares, unumstößliches Kalkulieren. Für unkomplizierte, zugefallene Türen beginnen unsere Werktags-Sätze bei sauberen 99 Euro. Hinzu kommt eine bescheidene Fahrtkostenpauschale von nur 15 Euro. Müssen wir wider Erwarten zu Zylinderfräsen greifen und was selten passiert, da wir Experten im Lockpicking sind und erteilen wir im Voraus eine präzise Preisinformation. Fairness steht an erster Stelle.</p>`,
@@ -294,7 +294,7 @@ export const ring3eLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Ausgesperrt in Reiskirchen? Wir sind in ca. 12 Minuten bei Ihnen und zuverlässig und zum Festpreis.",
-            mainText: `<p>In der agrarisch und familiär geprägten Struktur von <strong>Reiskirchen</strong> glänzt unser Aufsperrdienst durch echte Handschlagqualität und regionale Präsenz.</p>`,
+            mainText: `<p>In der agrarisch und familiär geprägten Struktur von <span class="font-bold text-[color:var(--text-primary)]">Reiskirchen</span> glänzt unser Aufsperrdienst durch echte Handschlagqualität und regionale Präsenz.</p>`,
             serviceZerstörungsfrei: "Unser Wetzlarer Einsatzleiter entsperrt die typischen Ländlichen Ein- und Mehrfamilienhaustüren routiniert.",
             serviceBohren: "Weigert sich ein altes Schloss extrem, entfernen wir den Kernbolzen chirurgisch, ohne die Holztür aufzuweichen.",
             service247: "Der Bereitschafts-Hub ist für Reiskirchen ganzjährig ununterbrochen aktiviert, an jedem Wochenenden."
@@ -330,10 +330,10 @@ export const ring3eLocations: LocationData[] = [
             { icon: "briefcase", title: "Verschlossene Autotore", description: "Garagen in den Hofreiten, bei denen der Schlüssel abbricht? Wir nutzen Spezialhaken, um sensible Garagentore kratzerfrei zu öffnen." }
         ],
         aboutText: `
-<p>Das idyllische <strong>Vollnkirchen</strong> schmiegt sich an die B49-Anbindung zwischen Wetzlar und Gießen als ruhiges, aber exzellent vernetztes Kleinod der Gemeinde Hüttenberg an. Die Wohnqualität profitiert massiv von dieser Lage. Wenn sich beim Verlassen des Hauses aber der Schlüsselbund noch drinnen befindet und die Hauswand stoisch abriegelt, ist schnelle Hilfe von außen unerlässlich. Als Wetzlarer Betrieb übernimmt der <strong>Schlüsseldienst Vollnkirchen</strong> diesen Part zuverlässig.</p>
+<p>Das idyllische <span class="font-bold text-[color:var(--text-primary)]">Vollnkirchen</span> schmiegt sich an die B49-Anbindung zwischen Wetzlar und Gießen als ruhiges, aber exzellent vernetztes Kleinod der Gemeinde Hüttenberg an. Die Wohnqualität profitiert massiv von dieser Lage. Wenn sich beim Verlassen des Hauses aber der Schlüsselbund noch drinnen befindet und die Hauswand stoisch abriegelt, ist schnelle Hilfe von außen unerlässlich. Als Wetzlarer Betrieb übernimmt der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Vollnkirchen</span> diesen Part zuverlässig.</p>
 
 <h3>Fliegender Wechsel dank B49</h3>
-<p>Wer auf Vollnkirchen zufährt, nutzt als lokaler Kenner die beste Infrastruktur. Durch unsere Abkürzungen und die direkte B49-Erreichbarkeit garantieren wir oftmals ein Eintreffen innerhalb von knappen <strong>13 Minuten</strong>. Langes und kaltes Frieren in der Zufahrt ist also nicht unser Standard.</p>
+<p>Wer auf Vollnkirchen zufährt, nutzt als lokaler Kenner die beste Infrastruktur. Durch unsere Abkürzungen und die direkte B49-Erreichbarkeit garantieren wir oftmals ein Eintreffen innerhalb von knappen <span class="font-bold text-[color:var(--text-primary)]">13 Minuten</span>. Langes und kaltes Frieren in der Zufahrt ist also nicht unser Standard.</p>
 
 <h3>Faire Preise statt Dorf-Umlagen</h3>
 <p>Kleine Ortsteile leiden bei Notdiensten oft unter Horrorpreisen wegen angeblicher "Fahrtwegzuschläge". Das unterbinden wir resolut: Das bloße Entriegeln zugefallener Frontaltüren beziffern wir an normalen Werktagen tagsüber auf strikte 99 Euro. Auf die Strecke nach Vollnkirchen addieren sich schlichtweg 15 Euro KFZ-Kosten. Versteckte Posten dulden wir ebensowenig, wie rücksichtsloses Fräsen an Türen, die sich auch schonend überwinden ließen.</p>`,
@@ -343,7 +343,7 @@ export const ring3eLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Schlüssel vergessen in Vollnkirchen? Wir sind in ca. 13 Minuten da und professionell und zum Festpreis.",
-            mainText: `<p>In den beschaulichen Winkeln von <strong>Vollnkirchen</strong> liefert unser Notdienst-Netzwerk saubere Entriegelungsarbeit ohne lange staugeplagte Verbindungen.</p>`,
+            mainText: `<p>In den beschaulichen Winkeln von <span class="font-bold text-[color:var(--text-primary)]">Vollnkirchen</span> liefert unser Notdienst-Netzwerk saubere Entriegelungsarbeit ohne lange staugeplagte Verbindungen.</p>`,
             serviceZerstörungsfrei: "Unsere primäre Option ist die beschädigungsfreie Klinken-Manipulation, die in Vollnkirchen fast jedes Mal triumphiert.",
             serviceBohren: "Ist ein harter Notfall-Zylindertausch in Vollnkirchen unvermeidbar, setzen wir DIN EN zertifizierte ABUS Zylinder ein.",
             service247: "Für Vollnkirchen greift unser Rund-um-die-Uhr-Netz."

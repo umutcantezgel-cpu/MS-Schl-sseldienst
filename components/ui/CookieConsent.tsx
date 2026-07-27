@@ -200,28 +200,34 @@ export default function CookieConsent() {
                 )}
 
                 {/* Action Buttons DSGVO: "Ablehnen" muss gleichwertig zu "Akzeptieren" sein */}
-                <div className="flex flex-col sm:flex-row gap-2.5">
+                <div className="flex flex-col sm:flex-row gap-3 mt-4">
                   <button
                     type="button"
                     onClick={handleAcceptAll}
-                    className="px-5 py-2.5 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px] flex-1"
+                    className="group relative flex-[1.2] items-center justify-center rounded-xl bg-gradient-to-br from-[var(--color-red-500)] to-[var(--color-red-600)] px-6 py-3.5 text-base font-bold text-white shadow-md transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[var(--color-red-500)]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-red-500)] focus-visible:ring-offset-2 overflow-hidden"
                   >
-                    Alle akzeptieren
+                    <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                      Alle akzeptieren
+                      <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                    </span>
                   </button>
-                  <button
-                    type="button"
-                    onClick={handleDeclineAll}
-                    className="px-5 py-2.5 bg-[var(--color-charcoal-800)] hover:bg-[var(--color-charcoal-700)] text-white text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] shadow-sm min-h-[44px] flex-1"
-                  >
-                    Alle ablehnen
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleOpenSettings}
-                    className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] min-h-[44px] flex-1"
-                  >
-                    Einstellungen
-                  </button>
+                  <div className="flex flex-1 gap-2 sm:gap-3">
+                    <button
+                      type="button"
+                      onClick={handleDeclineAll}
+                      className="flex-1 rounded-xl bg-[var(--color-charcoal-800)] hover:bg-[var(--color-charcoal-900)] px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-charcoal-500)] focus-visible:ring-offset-1"
+                    >
+                      Ablehnen
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleOpenSettings}
+                      className="flex-1 rounded-xl bg-white border-2 border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 px-4 py-3 text-sm font-semibold text-[color:var(--text-primary)] transition-all duration-200 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--border-subtle)] focus-visible:ring-offset-1"
+                    >
+                      Anpassen
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

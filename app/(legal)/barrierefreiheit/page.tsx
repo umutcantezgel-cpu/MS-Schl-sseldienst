@@ -79,9 +79,9 @@ export default function BarrierefreiheitPage() {
               </h2>
               <p className="mt-4 text-[color:var(--text-secondary)]">
                 Wir sind bestrebt, unsere Website gemäß den{" "}
-                <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>{" "}
-                auf <strong>Level AA</strong> barrierefrei zu gestalten. In vielen Bereichen
-                erfüllen wir bereits den strengeren <strong>Level AAA</strong> Standard.
+                <span className="font-semibold text-[color:var(--text-primary)]">Web Content Accessibility Guidelines (WCAG) 2.1</span>{" "}
+                auf <span className="font-semibold text-[color:var(--text-primary)]">Level AA</span> barrierefrei zu gestalten. In vielen Bereichen
+                erfüllen wir bereits den strengeren <span className="font-semibold text-[color:var(--text-primary)]">Level AAA</span> Standard.
               </p>
 
               <h2 className="mt-12 typo-h2 text-[color:var(--text-primary)] text-balance">
@@ -211,7 +211,7 @@ export default function BarrierefreiheitPage() {
               </p>
 
               <p className="mt-12 text-[color:var(--text-tertiary)] text-sm border-t border-[var(--border-subtle)] pt-6">
-                <strong>Stand dieser Erklärung:</strong> März 2026
+                <span className="font-semibold text-[color:var(--text-primary)]">Stand dieser Erklärung:</span> März 2026
                 <br />
                 Diese Erklärung wurde zuletzt am 22. März 2026 aktualisiert.
               </p>

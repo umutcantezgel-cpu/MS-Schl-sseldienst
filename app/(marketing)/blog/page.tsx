@@ -82,7 +82,7 @@ export default function BlogPage() {
               </StaggerItem>
               <StaggerItem animation={entryAnimations.slideUpFade}>
                 <p className="text-xl text-[color:var(--text-secondary)]">
-                  Praktische Tipps, Expertenwissen und Updates in unserem <strong>Sicherheitsratgeber</strong> und <strong>Schlüsseldienstblog</strong> rund um Gebäudesicherheit.
+                  Praktische Tipps, Expertenwissen und Updates in unserem <span className="font-semibold text-[color:var(--text-primary)]">Sicherheitsratgeber</span> und <span className="font-semibold text-[color:var(--text-primary)]">Schlüsseldienstblog</span> rund um Gebäudesicherheit.
                 </p>
               </StaggerItem>
             </StaggerReveal>

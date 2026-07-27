@@ -36,7 +36,7 @@ export default function WiderrufPage() {
 
             <LegalSection>
                 <TLDRBox title="Widerruf und das Wichtigste auf einen Blick" icon="info">
-                    <p>Die <strong>Widerrufsbelehrung für Schlüsseldienst-Aufträge</strong> regelt Ihre Rechte bei der Beauftragung der Schlüssel Schmiede Wetzlar. Als Verbraucher steht Ihnen grundsätzlich ein 14-tägiges Widerrufsrecht bei Fernabsatzverträgen zu.</p>
+                    <p>Die <span className="font-semibold text-[color:var(--text-primary)]">Widerrufsbelehrung für Schlüsseldienst-Aufträge</span> regelt Ihre Rechte bei der Beauftragung der Schlüssel Schmiede Wetzlar. Als Verbraucher steht Ihnen grundsätzlich ein 14-tägiges Widerrufsrecht bei Fernabsatzverträgen zu.</p>
                     <p>Bei sofort auszuführenden Schlüsselnotdiensten vor Ort erlischt das Widerrufsrecht nach vollständiger Leistungserbringung gemäß § 356 Abs. 4 Satz 1 BGB i.V.m. § 312g Abs. 2 Nr. 11 BGB, sofern Sie der sofortigen Ausführung zugestimmt haben.</p>
                 </TLDRBox>
             </LegalSection>

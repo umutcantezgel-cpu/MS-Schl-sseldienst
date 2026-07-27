@@ -27,7 +27,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt in Albshausen? Unser Schlüsseldienst ist in ca. 10 Minuten bei Ihnen. Festpreis ab 99€ und ohne versteckte Anfahrtskosten.",
             mainText: `
-<p>Albshausen ist ein idyllischer Ortsteil von Solms im Lahn-Dill-Kreis, gelegen am westlichen Rand des Solmser Gemeindegebiets. Mit seinen ruhigen Wohnstraßen und dem dörflichen Charakter bietet Albshausen eine hohe Wohnqualität. Doch auch in dieser beschaulichen Umgebung kann ein zugefallenes Schloss schnell zur Stresssituation werden. Als Ihr <strong>Schlüsseldienst Albshausen</strong> sind wir in solchen Momenten Ihr verlässlicher Partner.</p>
+<p>Albshausen ist ein idyllischer Ortsteil von Solms im Lahn-Dill-Kreis, gelegen am westlichen Rand des Solmser Gemeindegebiets. Mit seinen ruhigen Wohnstraßen und dem dörflichen Charakter bietet Albshausen eine hohe Wohnqualität. Doch auch in dieser beschaulichen Umgebung kann ein zugefallenes Schloss schnell zur Stresssituation werden. Als Ihr <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Albshausen</span> sind wir in solchen Momenten Ihr verlässlicher Partner.</p>
 
 <p>Die Bebauung in Albshausen besteht größtenteils aus Einfamilienhäusern und landwirtschaftlich genutzten Gebäuden. Unsere Techniker kennen die typischen Schließsysteme der Region und arbeiten stets mit dem Ziel, Ihre Tür zerstörungsfrei zu öffnen. Bei nur zugefallenen Türen gelingt uns das in nahezu allen aller Fälle.</p>
 
@@ -69,7 +69,7 @@ export const ring2bLocations: LocationData[] = [
             mainText: `
 <p>Niederbiel, ein gemütlicher Ortsteil der Gemeinde Solms, liegt nordwestlich von Wetzlar direkt an der Lahn. Der Ort verbindet die Vorzüge ländlichen Wohnens mit der Nähe zur Kreisstadt und ist über die B49 schnell erreichbar. In den ruhigen Seitenstraßen und entlang der Lahnufer finden sich vorwiegend Einfamilienhäuser und ältere Gebäudebestände und typisch für die Region und uns bestens vertraut.</p>
 
-<p>Als <strong>Schlüsseldienst Niederbiel</strong> wissen wir genau, welche Schließsysteme in den Häusern der Umgebung verbaut sind. Von klassischen Profilzylindern bis zu modernen Mehrfachverriegelungen und wir bringen das passende Werkzeug mit und öffnen Ihre Tür in den allermeisten Fällen vollständig zerstörungsfrei.</p>
+<p>Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Niederbiel</span> wissen wir genau, welche Schließsysteme in den Häusern der Umgebung verbaut sind. Von klassischen Profilzylindern bis zu modernen Mehrfachverriegelungen und wir bringen das passende Werkzeug mit und öffnen Ihre Tür in den allermeisten Fällen vollständig zerstörungsfrei.</p>
 
 <p>Die Anfahrt von unserer Wetzlarer Basis dauert über die B49 nur rund 9 Minuten. Anfahrtskosten fallen für Niederbiel nicht an. Sie zahlen unseren transparenten Festpreis ab 99 Euro und wissen vorher genau, was auf der Rechnung steht.</p>`,
             serviceZerstörungsfrei: "In Niederbiel öffnen wir ins Schloss gefallene Türen mit bewährten Handwerkstechniken und Ihr Schloss bleibt dabei vollständig intakt.",
@@ -107,7 +107,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Vor verschlossener Tür in Bechlingen? Wir helfen sofort! In ca. 9 Minuten sind unsere Monteure bei Ihnen und zum festen Preis ab 99€.",
             mainText: `
-<p>Bechlingen ist ein kleiner, ruhiger Ortsteil der Stadt Aßlar im Lahn-Dill-Kreis. Die dörfliche Struktur mit überwiegend freistehenden Einfamilienhäusern prägt das Ortsbild. Über die Landesstraße ist Bechlingen gut an Aßlar und damit an das Wetzlarer Stadtgebiet angebunden. Als <strong>Schlüsseldienst Bechlingen</strong> bieten wir Ihnen schnelle, professionelle Hilfe direkt vor Ihrer Haustür.</p>
+<p>Bechlingen ist ein kleiner, ruhiger Ortsteil der Stadt Aßlar im Lahn-Dill-Kreis. Die dörfliche Struktur mit überwiegend freistehenden Einfamilienhäusern prägt das Ortsbild. Über die Landesstraße ist Bechlingen gut an Aßlar und damit an das Wetzlarer Stadtgebiet angebunden. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Bechlingen</span> bieten wir Ihnen schnelle, professionelle Hilfe direkt vor Ihrer Haustür.</p>
 
 <p>Die in Bechlingen üblichen Schließsysteme und von bewährten Profilzylindern bis zu modernen Sicherheitsschlössern und sind unserem Team aus der täglichen Arbeit bestens bekannt. Bei zugefallenen Türen setzen wir auf zerstörungsfreie Öffnungstechnik, die Ihren Türrahmen und Zylinder schont. Bei Schlüsselverlust oder abgebrochenen Schlüsseln haben wir Ersatzzylinder verschiedener Qualitätsstufen direkt im Fahrzeug.</p>
 
@@ -147,7 +147,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Schlüssel vergessen in Berghausen? Unser Schlüsseldienst erreicht Sie in ca. 10 Minuten. Festpreis ab 99€, keine Anfahrtskosten.",
             mainText: `
-<p>Berghausen, ein Ortsteil der Stadt Aßlar, liegt nördlich im Lahn-Dill-Kreis und ist von weitläufigen Feldern und Waldgebieten umgeben. Die ruhige Ortslage und die Nähe zur Natur machen Berghausen zu einem attraktiven Wohnort. Gleichzeitig ist der Ort über das Straßennetz in Richtung Aßlar und Wetzlar gut erreichbar und ein Vorteil, den wir als <strong>Schlüsseldienst Berghausen</strong> für Sie nutzen.</p>
+<p>Berghausen, ein Ortsteil der Stadt Aßlar, liegt nördlich im Lahn-Dill-Kreis und ist von weitläufigen Feldern und Waldgebieten umgeben. Die ruhige Ortslage und die Nähe zur Natur machen Berghausen zu einem attraktiven Wohnort. Gleichzeitig ist der Ort über das Straßennetz in Richtung Aßlar und Wetzlar gut erreichbar und ein Vorteil, den wir als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Berghausen</span> für Sie nutzen.</p>
 
 <p>In Berghausen dominieren freistehende Wohnhäuser mit einer Mischung aus klassischen und modernen Schlössern. Ob die alte Haustür am Dorfplatz oder die Sicherheitstür einer Neubau-Doppelhaushälfte und unser erfahrenes Team öffnet behutsam und zerstörungsfrei, wann immer das möglich ist.</p>
 
@@ -187,7 +187,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Tür zu in Werdorf? Wir kommen blitzschnell! In ca. 8 Minuten ist unser Monteur bei Ihnen und ohne Anfahrtskosten, mit verbindlicher Preisauskunft vorab.",
             mainText: `
-<p>Werdorf ist der größte Stadtteil von Aßlar und liegt zentral im Lahntal, direkt an der B49. Diese strategische Lage macht Werdorf für uns als <strong>Schlüsseldienst Werdorf</strong> besonders gut erreichbar und in nur rund 8 Minuten sind wir bei Ihnen. Der Ortsteil bietet eine lebendige Mischung aus Wohn- und Gewerbegebieten, altem Ortskern und neueren Siedlungen.</p>
+<p>Werdorf ist der größte Stadtteil von Aßlar und liegt zentral im Lahntal, direkt an der B49. Diese strategische Lage macht Werdorf für uns als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Werdorf</span> besonders gut erreichbar und in nur rund 8 Minuten sind wir bei Ihnen. Der Ortsteil bietet eine lebendige Mischung aus Wohn- und Gewerbegebieten, altem Ortskern und neueren Siedlungen.</p>
 
 <p>Die Vielfalt der Gebäude in Werdorf und von den Fachwerkhäusern im historischen Zentrum über moderne Reihenhäuser bis hin zu Gewerbeimmobilien und stellt unterschiedliche Anforderungen an unsere Öffnungstechnik. Genau dafür sind unsere Monteure ausgebildet. Wir arbeiten mit spezialisierten Picking-Tools und Öffnungsnadeln, die selbst komplexe Schließzylinder schonend entriegeln, ohne den Mechanismus zu beschädigen.</p>
 
@@ -229,7 +229,7 @@ export const ring2bLocations: LocationData[] = [
             mainText: `
 <p>Rechtenbach ist ein beschaulicher Ortsteil der Gemeinde Hüttenberg im südlichen Lahn-Dill-Kreis. Der Ort liegt in einem grünen Tal und bietet seinen Bewohnern eine ruhige, naturnahe Wohnlage. Über die Landesstraßen ist Rechtenbach gut an Hüttenberg und die Wetzlarer Südroute angebunden und eine Strecke, die unsere Monteure bestens kennen.</p>
 
-<p>Als <strong>Schlüsseldienst Rechtenbach</strong> haben wir umfassende Erfahrung mit den typischen Schließsystemen der Gegend. Die vorwiegend ländliche Bebauung mit Einfamilienhäusern und älteren Gebäuden erfordert oft Fingerspitzengefühl beim Öffnen und und genau das bringen unsere Techniker mit. Zugefallene Türen entriegeln wir schonend und spurenlos.</p>
+<p>Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Rechtenbach</span> haben wir umfassende Erfahrung mit den typischen Schließsystemen der Gegend. Die vorwiegend ländliche Bebauung mit Einfamilienhäusern und älteren Gebäuden erfordert oft Fingerspitzengefühl beim Öffnen und und genau das bringen unsere Techniker mit. Zugefallene Türen entriegeln wir schonend und spurenlos.</p>
 
 <p>Die Anfahrt nach Rechtenbach dauert ca. 11 Minuten. Im gesamten Hüttenberger Gemeindegebiet erheben wir keine Anfahrtskosten. Unser Festpreis ab 99 Euro ist Ihr finanzieller Rahmen und ohne böse Überraschungen.</p>`,
             serviceZerstörungsfrei: "In Rechtenbach öffnen wir zugefallene Türen mit feinfühligen Picking-Methoden und ohne auch nur einen Kratzer zu hinterlassen.",
@@ -267,7 +267,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Schlüsselnotfall in Volpertshausen? Wir sind in ca. 12 Minuten bei Ihnen und mit verbindlicher Preisauskunft vorab und ohne Anfahrtskosten.",
             mainText: `
-<p>Volpertshausen gehört zur Gemeinde Hüttenberg und liegt eingebettet in die hügelige Landschaft südlich von Wetzlar. Der Ortsteil ist geprägt durch eine lockere Wohnbebauung mit viel Grün und ländlichem Flair. Als <strong>Schlüsseldienst Volpertshausen</strong> sind wir Ihr regionaler Ansprechpartner für schnelle und professionelle Türöffnungen.</p>
+<p>Volpertshausen gehört zur Gemeinde Hüttenberg und liegt eingebettet in die hügelige Landschaft südlich von Wetzlar. Der Ortsteil ist geprägt durch eine lockere Wohnbebauung mit viel Grün und ländlichem Flair. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Volpertshausen</span> sind wir Ihr regionaler Ansprechpartner für schnelle und professionelle Türöffnungen.</p>
 
 <p>Die Häuser in Volpertshausen sind überwiegend Einfamilienhäuser mit unterschiedlichen Schließsystemen. Ob ein simpler Profilzylinder oder eine aufwändigere Mehrfachverriegelung und unsere geschulten Techniker meistern jede Herausforderung. Bei zugefallenen Türen arbeiten wir grundsätzlich zerstörungsfrei und schonend.</p>
 
@@ -307,7 +307,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt in Weidenhausen? Kein Problem. Unser Schlüsseldienst ist in rund 13 Minuten bei Ihnen und zum transparenten Festpreis.",
             mainText: `
-<p>Weidenhausen ist ein ruhiger Ortsteil der Gemeinde Hüttenberg, gelegen am südlichen Rand des Lahn-Dill-Kreises. Die dörfliche Atmosphäre und die Nähe zur Natur machen Weidenhausen zu einem beliebten Wohnort für Menschen, die Ruhe schätzen. Doch wenn die Haustür plötzlich ins Schloss fällt, wird aus der Idylle schnell eine Stresssituation. Als <strong>Schlüsseldienst Weidenhausen</strong> beenden wir diesen Stress in kürzester Zeit.</p>
+<p>Weidenhausen ist ein ruhiger Ortsteil der Gemeinde Hüttenberg, gelegen am südlichen Rand des Lahn-Dill-Kreises. Die dörfliche Atmosphäre und die Nähe zur Natur machen Weidenhausen zu einem beliebten Wohnort für Menschen, die Ruhe schätzen. Doch wenn die Haustür plötzlich ins Schloss fällt, wird aus der Idylle schnell eine Stresssituation. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Weidenhausen</span> beenden wir diesen Stress in kürzester Zeit.</p>
 
 <p>Unsere Monteure kennen die ländliche Bebauung Weidenhausens mit ihren robusten Haustüren und älteren Schließsystemen genau. Mit bewährtem Spezialwerkzeug öffnen wir Ihre zugefallene Tür sachkundig und ohne Beschädigungen. Sollte doch ein neuer Zylinder nötig sein, haben wir diesen direkt im Einsatzfahrzeug parat.</p>
 
@@ -347,7 +347,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Zugefallene Tür in Altenkirchen? Unser regionaler Schlüsseldienst kommt in rund 12 Minuten und mit garantiertem Festpreis und ohne Anfahrtskosten.",
             mainText: `
-<p>Altenkirchen ist ein gemütlicher Ortsteil der Gemeinde Hohenahr, nördlich von Wetzlar im Lahn-Dill-Kreis gelegen. Der Ort besticht durch seine ländliche Ruhe, die Nähe zum Aartal und die überschaubare Dorfgröße. Doch auch im beschaulichsten Dorf kann sich der Schlüsselnotfall ereignen. Als <strong>Schlüsseldienst Altenkirchen</strong> stehen wir Ihnen genau dann professionell zur Seite.</p>
+<p>Altenkirchen ist ein gemütlicher Ortsteil der Gemeinde Hohenahr, nördlich von Wetzlar im Lahn-Dill-Kreis gelegen. Der Ort besticht durch seine ländliche Ruhe, die Nähe zum Aartal und die überschaubare Dorfgröße. Doch auch im beschaulichsten Dorf kann sich der Schlüsselnotfall ereignen. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Altenkirchen</span> stehen wir Ihnen genau dann professionell zur Seite.</p>
 
 <p>Die typische Bebauung in Altenkirchen umfasst Einfamilienhäuser, ältere Bauernhäuser und gelegentlich kleinere Mehrfamilienhäuser. Unsere Techniker sind mit den hier verbreiteten Schließmechanismen vertraut und öffnen zugefallene Türen in nahezu allen Fällen zerstörungsfrei. Bei Schlüsselverlust oder abgebrochenen Schlüsseln tauschen wir den Zylinder direkt vor Ort aus.</p>
 
@@ -387,7 +387,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt in Klein-Altenstädten? Unsere Monteure sind in ca. 13 Minuten vor Ort und Festpreis ab 99€, keine Anfahrtskosten.",
             mainText: `
-<p>Klein-Altenstädten ist ein kleiner Ortsteil der Gemeinde Hohenahr, eingebettet in die sanfte Hügellandschaft des Lahn-Dill-Kreises. Mit seiner ruhigen, dörflichen Struktur und den wenigen Dutzend Wohnhäusern ist der Ort ein Beispiel für ländliches Wohnen mit kurzen Wegen in die größeren Zentren. Als <strong>Schlüsseldienst Klein-Altenstädten</strong> sorgen wir dafür, dass Sie auch hier nie lange vor verschlossener Tür stehen.</p>
+<p>Klein-Altenstädten ist ein kleiner Ortsteil der Gemeinde Hohenahr, eingebettet in die sanfte Hügellandschaft des Lahn-Dill-Kreises. Mit seiner ruhigen, dörflichen Struktur und den wenigen Dutzend Wohnhäusern ist der Ort ein Beispiel für ländliches Wohnen mit kurzen Wegen in die größeren Zentren. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Klein-Altenstädten</span> sorgen wir dafür, dass Sie auch hier nie lange vor verschlossener Tür stehen.</p>
 
 <p>In Klein-Altenstädten überwiegen einfache, solide Wohnhäuser mit klassischen Schließsystemen. Unsere erfahrenen Techniker kennen diese Systeme und öffnen zugefallene Türen routiniert und beschädigungsfrei. Selbst bei kniffligeren Schlössern behalten wir die Ruhe und finden die richtige Lösung.</p>
 
@@ -427,7 +427,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Ausgesperrt in Wißmar? Unser Schlüsseldienst erreicht Sie in rund 12 Minuten und mit garantiertem Festpreis und ohne versteckte Anfahrtskosten.",
             mainText: `
-<p>Wißmar liegt östlich von Wetzlar an der Grenze zum Landkreis Gießen. Der Ort gehört zur Gemeinde Wettenberg und ist über die Landesstraßen bestens an das Straßennetz angebunden. Mit seinen gepflegten Wohngebieten und der Nähe zu Gießen ist Wißmar ein lebendiger Wohnort. Als <strong>Schlüsseldienst Wißmar</strong> sind wir Ihr lokaler Ansprechpartner für Schlüsselnotfälle aller Art.</p>
+<p>Wißmar liegt östlich von Wetzlar an der Grenze zum Landkreis Gießen. Der Ort gehört zur Gemeinde Wettenberg und ist über die Landesstraßen bestens an das Straßennetz angebunden. Mit seinen gepflegten Wohngebieten und der Nähe zu Gießen ist Wißmar ein lebendiger Wohnort. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Wißmar</span> sind wir Ihr lokaler Ansprechpartner für Schlüsselnotfälle aller Art.</p>
 
 <p>Die Mischung aus Einfamilienhäusern, Doppelhaushälften und kleinen Mehrfamilienhäusern in Wißmar bringt unterschiedliche Schließsysteme mit sich. Unsere Techniker sind auf die gesamte Bandbreite vorbereitet und von einfachen Profilzylindern bis zu modernen Sicherheitsschlössern. Zugefallene Türen öffnen wir in den allermeisten Fällen vollständig zerstörungsfrei.</p>
 
@@ -467,7 +467,7 @@ export const ring2bLocations: LocationData[] = [
         content: {
             heroIntro: "Tür zu in Niederlemp oder Oberlemp? Wir sind in ca. 12 Minuten da und mit verbindlicher Preisauskunft vorab und ohne Anfahrtskosten.",
             mainText: `
-<p>Niederlemp und Oberlemp sind zwei eng verbundene Ortsteile der Gemeinde Hohenahr, gelegen im nördlichen Lahn-Dill-Kreis. Zusammen bilden sie eine kleine, überschaubare Siedlung inmitten der mittelhessischen Hügellandschaft. Die ruhige Wohnlage und die Verbindung ins Aartal machen die beiden Ortsteile zu beliebten Wohnorten. Als <strong>Schlüsseldienst Niederlemp und Oberlemp</strong> sind wir Ihr direkter Ansprechpartner bei Schlüsselnotfällen.</p>
+<p>Niederlemp und Oberlemp sind zwei eng verbundene Ortsteile der Gemeinde Hohenahr, gelegen im nördlichen Lahn-Dill-Kreis. Zusammen bilden sie eine kleine, überschaubare Siedlung inmitten der mittelhessischen Hügellandschaft. Die ruhige Wohnlage und die Verbindung ins Aartal machen die beiden Ortsteile zu beliebten Wohnorten. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Niederlemp und Oberlemp</span> sind wir Ihr direkter Ansprechpartner bei Schlüsselnotfällen.</p>
 
 <p>Die Häuser in Niederlemp und Oberlemp sind überwiegend Einfamilienhäuser und ältere, gewachsene Ortskerngebäude. Unsere erfahrenen Monteure sind mit diesen Gebäudetypen und ihren Schließmechanismen bestens vertraut. Zugefallene Türen öffnen wir schonend und zerstörungsfrei und Ihr Zylinder bleibt intakt, Ihr Rahmen unbeschädigt.</p>
 

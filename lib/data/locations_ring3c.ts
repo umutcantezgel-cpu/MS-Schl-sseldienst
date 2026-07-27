@@ -13,7 +13,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Bonbaden 24/7 Türöffnung", metaDescription: "Schlüsseldienst Bonbaden bei Braunfels. In 14 Min. vor Ort, ab 99€ Festpreis. Jetzt Notdienst rufen: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Bonbaden? Unser Schlüsseldienst ist in ca. 14 Minuten bei Ihnen und zum transparenten Festpreis.",
-            mainText: `<p>Bonbaden ist ein beschaulicher Ortsteil der Stadt Braunfels, gelegen in der sanften Hügellandschaft westlich von Wetzlar. Der Ort vereint ländliches Wohnen mit der Nähe zum historischen Braunfels und seinem bekannten Schloss. Als <strong>Schlüsseldienst Bonbaden</strong> bieten wir schnelle, professionelle Hilfe bei Schlüsselnotfällen aller Art.</p>
+            mainText: `<p>Bonbaden ist ein beschaulicher Ortsteil der Stadt Braunfels, gelegen in der sanften Hügellandschaft westlich von Wetzlar. Der Ort vereint ländliches Wohnen mit der Nähe zum historischen Braunfels und seinem bekannten Schloss. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Bonbaden</span> bieten wir schnelle, professionelle Hilfe bei Schlüsselnotfällen aller Art.</p>
 <p>Die Bebauung in Bonbaden besteht vorwiegend aus Einfamilienhäusern und älteren Wohngebäuden mit verschiedensten Schließsystemen. Unsere erfahrenen Techniker öffnen zugefallene Türen routiniert und zerstörungsfrei und mit bewährten Handwerkstechniken, die Rahmen und Zylinder unversehrt lassen.</p>
 <p>Über die Verbindungsstraße nach Braunfels und weiter Richtung Wetzlar erreichen wir Bonbaden in rund 14 Minuten. Unser Festpreis ab 99 Euro gibt Ihnen Sicherheit und keine bösen Überraschungen auf der Rechnung.</p>`,
             serviceZerstörungsfrei: "In Bonbaden öffnen wir zugefallene Türen schonend und präzise und Ihr Schloss bleibt vollständig intakt.",
@@ -38,7 +38,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Philippstein Notdienst 24/7", metaDescription: "Schlüsseldienst Philippstein bei Braunfels. In 15 Min. da, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Tür zugefallen in Philippstein? Unser Monteur ist in ca. 15 Minuten bei Ihnen und Festpreis ab 99€.",
-            mainText: `<p>Philippstein gehört zur Stadt Braunfels und liegt südwestlich im Solms-Braunfelser Raum. Der Ortsteil mit seinem historischen Ortskern bietet eine Mischung aus renovierten Altbauten und neueren Wohnhäusern. Als <strong>Schlüsseldienst Philippstein</strong> kennen wir die typischen Schließsysteme der Region und sind schnell zur Stelle.</p>
+            mainText: `<p>Philippstein gehört zur Stadt Braunfels und liegt südwestlich im Solms-Braunfelser Raum. Der Ortsteil mit seinem historischen Ortskern bietet eine Mischung aus renovierten Altbauten und neueren Wohnhäusern. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Philippstein</span> kennen wir die typischen Schließsysteme der Region und sind schnell zur Stelle.</p>
 <p>Unsere Techniker arbeiten bei zugefallenen Türen grundsätzlich zerstörungsfrei. Die in Philippstein üblichen Profilzylinder und Mehrfachverriegelungen entriegeln wir mit professionellen Picking-Tools, ohne den Mechanismus zu beschädigen.</p>
 <p>Die Anfahrt dauert rund 15 Minuten. Unser Festpreis ab 99 Euro wird Ihnen vor der Anfahrt am Telefon mitgeteilt und transparent und verbindlich.</p>`,
             serviceZerstörungsfrei: "Zerstörungsfreie Öffnung in Philippstein: Wir entriegeln Ihre Tür schonend und hinterlassen keine Spuren.",
@@ -63,7 +63,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Katzenfurt Schnelle Hilfe", metaDescription: "Schlüsseldienst Katzenfurt bei Ehringshausen. In 13 Min. vor Ort. Ab 99€ Festpreis. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Schlüssel vergessen in Katzenfurt? Wir sind in ca. 13 Minuten bei Ihnen und professionell und zum Festpreis.",
-            mainText: `<p>Katzenfurt, ein lebhafter Ortsteil der Gemeinde Ehringshausen, liegt an der Dill und ist über die B277 hervorragend an das Straßennetz angebunden. Der Ort bietet eine Mischung aus älteren Wohnhäusern entlang der Dorfstraße und neueren Siedlungen am Ortsrand. Als <strong>Schlüsseldienst Katzenfurt</strong> sind wir Ihr regionaler Partner für schnelle Türöffnungen.</p>
+            mainText: `<p>Katzenfurt, ein lebhafter Ortsteil der Gemeinde Ehringshausen, liegt an der Dill und ist über die B277 hervorragend an das Straßennetz angebunden. Der Ort bietet eine Mischung aus älteren Wohnhäusern entlang der Dorfstraße und neueren Siedlungen am Ortsrand. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Katzenfurt</span> sind wir Ihr regionaler Partner für schnelle Türöffnungen.</p>
 <p>Die Katzenfurter Häuser weisen typische mittelhessische Bausubstanz auf und von massiven Holztüren im Altbestand bis zu modernen Sicherheitstüren. Unsere Monteure sind auf die gesamte Bandbreite vorbereitet und öffnen zugefallene Türen in nahezu allen Fällen zerstörungsfrei.</p>
 <p>Mit 13 Minuten Anfahrtszeit sind wir schnell in Katzenfurt. Unser Festpreis ab 99 Euro gibt Ihnen finanzielle Sicherheit.</p>`,
             serviceZerstörungsfrei: "Schonende Türöffnung in Katzenfurt: Wir entriegeln Ihre zugefallene Tür ohne Schäden an Schloss oder Rahmen.",
@@ -88,7 +88,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Kölschhausen Notdienst 24/7", metaDescription: "Schlüsseldienst Kölschhausen bei Ehringshausen. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Kölschhausen? Unser Monteur ist in ca. 15 Minuten bei Ihnen und transparent und zum Festpreis.",
-            mainText: `<p>Kölschhausen ist ein ruhiger Ortsteil der Gemeinde Ehringshausen im nördlichen Lahn-Dill-Kreis. Der Ort liegt oberhalb des Dilltals und bietet eine herrliche Aussicht über die mittelhessische Landschaft. Die überschaubare Größe und die dörfliche Gemeinschaft schaffen eine besondere Wohnqualität. Als <strong>Schlüsseldienst Kölschhausen</strong> stehen wir Ihnen bei Schlüsselnotfällen professionell zur Seite.</p>
+            mainText: `<p>Kölschhausen ist ein ruhiger Ortsteil der Gemeinde Ehringshausen im nördlichen Lahn-Dill-Kreis. Der Ort liegt oberhalb des Dilltals und bietet eine herrliche Aussicht über die mittelhessische Landschaft. Die überschaubare Größe und die dörfliche Gemeinschaft schaffen eine besondere Wohnqualität. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Kölschhausen</span> stehen wir Ihnen bei Schlüsselnotfällen professionell zur Seite.</p>
 <p>Unsere Techniker kennen die ländliche Bausubstanz von Kölschhausen und arbeiten bei zugefallenen Türen grundsätzlich zerstörungsfrei. Selbst bei älteren Schlössern finden wir schonende Lösungen.</p>
 <p>Die Anfahrt dauert ca. 15 Minuten. Unser Festpreis ab 99 Euro ist Ihre finanzielle Planungssicherheit.</p>`,
             serviceZerstörungsfrei: "In Kölschhausen öffnen wir zugefallene Türen mit feinfühligen Techniken und ohne Kratzer, ohne Bohren.",
@@ -113,7 +113,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Laufdorf 24/7 Notdienst", metaDescription: "Schlüsseldienst Laufdorf bei Schöffengrund. In 14 Min. vor Ort. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zu in Laufdorf? Wir kommen in ca. 14 Minuten und professionell, schnell und zum transparenten Festpreis.",
-            mainText: `<p>Laufdorf ist ein Ortsteil der Gemeinde Schöffengrund und liegt im südwestlichen Bereich des Lahn-Dill-Kreises. Die ruhige Wohnlage auf einer Anhöhe und die Nähe zur Natur machen Laufdorf zu einem beliebten Wohnort. Als <strong>Schlüsseldienst Laufdorf</strong> bieten wir schnelle Hilfe, wenn Sie sich versehentlich ausgesperrt haben.</p>
+            mainText: `<p>Laufdorf ist ein Ortsteil der Gemeinde Schöffengrund und liegt im südwestlichen Bereich des Lahn-Dill-Kreises. Die ruhige Wohnlage auf einer Anhöhe und die Nähe zur Natur machen Laufdorf zu einem beliebten Wohnort. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Laufdorf</span> bieten wir schnelle Hilfe, wenn Sie sich versehentlich ausgesperrt haben.</p>
 <p>In Laufdorf finden sich überwiegend Einfamilienhäuser mit unterschiedlichen Schließsystemen. Unsere Monteure öffnen zugefallene Türen routiniert und zerstörungsfrei. Bei Schlüsselverlust tauschen wir den Zylinder direkt vor Ort aus.</p>
 <p>Die Anfahrt nach Laufdorf dauert rund 14 Minuten. Unser Festpreis ab 99 Euro ist transparent und verbindlich.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Laufdorf öffnen wir schonend und ohne Beschädigungen und zuverlässig und professionell.",
@@ -138,7 +138,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Schwalbach Festpreis ab 99€", metaDescription: "Schlüsseldienst Schwalbach bei Schöffengrund. In 13 Min. da. Ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Schlüsselnotfall in Schwalbach? In ca. 13 Minuten sind wir bei Ihnen und mit verbindlicher Preisauskunft vorab und professionellem Service.",
-            mainText: `<p>Schwalbach gehört zur Gemeinde Schöffengrund und liegt im ländlichen Süden des Lahn-Dill-Kreises. Der Ortsteil ist durch seine ruhige Lage und die Nähe zu den Waldgebieten des Taunus-Vorlandes geprägt. Als <strong>Schlüsseldienst Schwalbach</strong> sind wir Ihr regionaler Ansprechpartner, wenn die Haustür plötzlich ins Schloss fällt.</p>
+            mainText: `<p>Schwalbach gehört zur Gemeinde Schöffengrund und liegt im ländlichen Süden des Lahn-Dill-Kreises. Der Ortsteil ist durch seine ruhige Lage und die Nähe zu den Waldgebieten des Taunus-Vorlandes geprägt. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Schwalbach</span> sind wir Ihr regionaler Ansprechpartner, wenn die Haustür plötzlich ins Schloss fällt.</p>
 <p>Die typischen Einfamilienhäuser in Schwalbach haben verschiedenste Schließsysteme. Unsere geschulten Techniker öffnen zugefallene Türen in nahezu allen Fällen ohne jede Beschädigung und präzise und professionell.</p>
 <p>Die Anfahrt nach Schwalbach dauert ca. 13 Minuten. Unser Festpreis ab 99 Euro ist Ihr verbindlicher Kostenrahmen.</p>`,
             serviceZerstörungsfrei: "Schonende Öffnungstechnik in Schwalbach: Ihre Tür wird geöffnet, ohne dem Schloss zu schaden.",
@@ -163,7 +163,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Niederquembach & Oberquembach", metaDescription: "Schlüsseldienst Nieder- & Oberquembach. 15 Min. Anfahrt, Festpreis ab 99€. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Niederquembach oder Oberquembach? Wir sind in ca. 15 Minuten bei Ihnen und zum fairen Festpreis.",
-            mainText: `<p>Niederquembach und Oberquembach sind zwei eng verbundene Ortsteile der Gemeinde Schöffengrund im Lahn-Dill-Kreis. Die beiden Dörfer liegen auf einer Anhöhe südlich von Wetzlar und bieten ländliche Idylle mit Blick über das Quembachtal. Als <strong>Schlüsseldienst Niederquembach und Oberquembach</strong> garantieren wir Ihnen schnelle Hilfe, auch in den kleinsten Ortsteilen unserer Region.</p>
+            mainText: `<p>Niederquembach und Oberquembach sind zwei eng verbundene Ortsteile der Gemeinde Schöffengrund im Lahn-Dill-Kreis. Die beiden Dörfer liegen auf einer Anhöhe südlich von Wetzlar und bieten ländliche Idylle mit Blick über das Quembachtal. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Niederquembach und Oberquembach</span> garantieren wir Ihnen schnelle Hilfe, auch in den kleinsten Ortsteilen unserer Region.</p>
 <p>Die Häuser hier sind überwiegend Ein- und Zweifamilienhäuser mit klassischen Schließsystemen. Unsere Monteure öffnen Ihre zugefallene Tür zerstörungsfrei und professionell.</p>
 <p>Über die Schöffengrunder Verbindungsstraßen sind wir in rund 15 Minuten bei Ihnen. Unser Festpreis ab 99 Euro gibt Ihnen Kostensicherheit.</p>`,
             serviceZerstörungsfrei: "Zugefallene Türen in Niederquembach und Oberquembach öffnen wir spurlos und ohne Bohren, ohne Fräsen.",
@@ -188,7 +188,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Niederwetz & Oberwetz 24/7", metaDescription: "Schlüsseldienst Nieder- & Oberwetz bei Schöffengrund. In 16 Min. da. Festpreis ab 99€. Jetzt: 06441-8056279" },
         content: {
             heroIntro: "Tür zugefallen in Niederwetz oder Oberwetz? In ca. 16 Minuten ist unser Monteur bei Ihnen und zum Festpreis.",
-            mainText: `<p>Niederwetz und Oberwetz sind idyllische Ortsteile der Gemeinde Schöffengrund, gelegen am südlichen Rand des Lahn-Dill-Kreises. Die ruhige, naturnahe Lage inmitten grüner Hügel macht die beiden Orte zu beliebten Wohnstandorten. Als <strong>Schlüsseldienst Niederwetz und Oberwetz</strong> stehen wir Ihnen bei Schlüsselnotfällen verlässlich zur Seite.</p>
+            mainText: `<p>Niederwetz und Oberwetz sind idyllische Ortsteile der Gemeinde Schöffengrund, gelegen am südlichen Rand des Lahn-Dill-Kreises. Die ruhige, naturnahe Lage inmitten grüner Hügel macht die beiden Orte zu beliebten Wohnstandorten. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Niederwetz und Oberwetz</span> stehen wir Ihnen bei Schlüsselnotfällen verlässlich zur Seite.</p>
 <p>Unsere Techniker kennen die lokalen Gegebenheiten und die typischen Schließsysteme der ländlichen Bausubstanz. Zugefallene Türen öffnen wir zerstörungsfrei und professionell.</p>
 <p>Die Anfahrt dauert rund 16 Minuten. Unser Festpreis ab 99 Euro wird Ihnen am Telefon genannt, bevor wir losfahren.</p>`,
             serviceZerstörungsfrei: "In Niederwetz und Oberwetz öffnen wir Ihre zugefallene Tür schonend und ohne Spuren am Schloss.",
@@ -213,7 +213,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Biskirchen Notdienst 24/7", metaDescription: "Schlüsseldienst Biskirchen bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Ausgesperrt in Biskirchen? Wir kommen in ca. 13 Minuten und zum fairen Festpreis und mit professionellem Werkzeug.",
-            mainText: `<p>Biskirchen ist ein Ortsteil der Stadt Leun und liegt malerisch an der Lahn westlich von Wetzlar. Der Ort ist bekannt für seine Mineralquellen und seine ruhige Wohnlage. Die B49 in der Nähe sorgt für eine gute Verkehrsanbindung. Als <strong>Schlüsseldienst Biskirchen</strong> stehen wir Ihnen bei Schlüsselnotfällen jeden Tag zur Verfügung.</p>
+            mainText: `<p>Biskirchen ist ein Ortsteil der Stadt Leun und liegt malerisch an der Lahn westlich von Wetzlar. Der Ort ist bekannt für seine Mineralquellen und seine ruhige Wohnlage. Die B49 in der Nähe sorgt für eine gute Verkehrsanbindung. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Biskirchen</span> stehen wir Ihnen bei Schlüsselnotfällen jeden Tag zur Verfügung.</p>
 <p>Die Bebauung in Biskirchen umfasst ältere Wohnhäuser entlang der Lahnstraße und neuere Siedlungen am Ortsrand. Unsere Techniker öffnen alle gängigen Schließsysteme zerstörungsfrei und professionell.</p>
 <p>Die Anfahrt nach Biskirchen dauert rund 13 Minuten. Unser Festpreis ab 99 Euro gibt Ihnen Planungssicherheit.</p>`,
             serviceZerstörungsfrei: "In Biskirchen öffnen wir zugefallene Türen mit professionellen Picking-Techniken und schnell und ohne Schäden.",
@@ -238,7 +238,7 @@ export const ring3cLocations: LocationData[] = [
         seo: { metaTitle: "Schlüsseldienst Lahnbahnhof 24/7 Türöffnung", metaDescription: "Schlüsseldienst für Lahnbahnhof bei Leun. 13 Min. Anfahrt, ab 99€ Festpreis. Notdienst: 06441-8056279" },
         content: {
             heroIntro: "Vor verschlossener Tür am Lahnbahnhof? Unser Monteur ist in ca. 13 Minuten da und zum transparenten Festpreis.",
-            mainText: `<p>Der Ortsteil Lahnbahnhof gehört zur Stadt Leun und liegt direkt an der Lahnstrecke westlich von Wetzlar. Die verkehrsgünstige Lage mit Bahnanschluss und Nähe zur B49 macht den kleinen Ortsteil attraktiv. Als <strong>Schlüsseldienst Lahnbahnhof</strong> sind wir Ihr Ansprechpartner für Türöffnungen aller Art.</p>
+            mainText: `<p>Der Ortsteil Lahnbahnhof gehört zur Stadt Leun und liegt direkt an der Lahnstrecke westlich von Wetzlar. Die verkehrsgünstige Lage mit Bahnanschluss und Nähe zur B49 macht den kleinen Ortsteil attraktiv. Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Lahnbahnhof</span> sind wir Ihr Ansprechpartner für Türöffnungen aller Art.</p>
 <p>Unsere erfahrenen Techniker öffnen zugefallene Türen routiniert und zerstörungsfrei. Die gängigen Schließsysteme im Lahnbahnhof-Gebiet sind uns bestens vertraut.</p>
 <p>Die Anfahrt dauert rund 13 Minuten. Unser Festpreis ab 99 Euro wird Ihnen am Telefon genannt.</p>`,
             serviceZerstörungsfrei: "Am Lahnbahnhof öffnen wir Ihre zugefallene Tür spurenlos und professionell und ohne Gewalt.",

@@ -34,10 +34,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Zylindertausch auf dem Land", description: "Schlüssel verloren auf einem Spaziergang? Ihr neues BKSsicherheitsschloss ist binnen Minuten montiert." }
         ],
         aboutText: `
-<p><strong>Bermoll</strong> ist der idyllischste und mit rund 230 Einwohnern kleinste Stadtteil von Aßlar. Die dörfliche Ruhe, eingebettet in die Hügellandschaft westlich von Wetzlar, und die malerische Höhenlage machen Bermoll zu einem echten Rückzugsort. Sollten Sie sich bei einem Spaziergang rund um den Naturpark oder direkt in den dörflichen Gassen aus Ihrem Haus ausgesperrt haben, eilt der <strong>Schlüsseldienst Bermoll</strong> zügig zur Hilfe.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Bermoll</span> ist der idyllischste und mit rund 230 Einwohnern kleinste Stadtteil von Aßlar. Die dörfliche Ruhe, eingebettet in die Hügellandschaft westlich von Wetzlar, und die malerische Höhenlage machen Bermoll zu einem echten Rückzugsort. Sollten Sie sich bei einem Spaziergang rund um den Naturpark oder direkt in den dörflichen Gassen aus Ihrem Haus ausgesperrt haben, eilt der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Bermoll</span> zügig zur Hilfe.</p>
 
 <h3>Regionale Erreichbarkeit</h3>
-<p>Dass Bermoll ruhig gelegen ist, bedeutet für uns keinen Zeitverlust. Unsere Einsatzfahrzeuge bewältigen die Route aus dem Wetzlarer Zentrallager über Aßlar oftmals in sehr souveränen <strong>10 Minuten</strong>. Das Warten im Regen oder Schnee hält sich bei uns in absoluten Grenzen.</p>
+<p>Dass Bermoll ruhig gelegen ist, bedeutet für uns keinen Zeitverlust. Unsere Einsatzfahrzeuge bewältigen die Route aus dem Wetzlarer Zentrallager über Aßlar oftmals in sehr souveränen <span class="font-bold text-[color:var(--text-primary)]">10 Minuten</span>. Das Warten im Regen oder Schnee hält sich bei uns in absoluten Grenzen.</p>
 
 <h3>Preise fair und klar</h3>
 <p>Die überwiegend ländliche Bausubstanz mit Einfamilienhäusern und älteren Hofreiten stellt für unsere Spezialisten keine Hürde dar. Bei Routineöffnungen von unverschlossenen Türen verlangen wir ab 99 Euro Festpreis zuzüglich einer transparenten und marginalen Anfahrtspauschale, die bereits am Telefon punktgenau geklärt wird.</p>`,
@@ -47,7 +47,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Ausgesperrt in Bermoll? Unser Schlüsseldienst ist in ca. 10 Minuten bei Ihnen und zum transparenten Festpreis.",
-            mainText: `<p>Wir sind Ihr ehrlicher und greifbarer Notdienst für kleinste Stadtteile. In <strong>Bermoll</strong> öffnen wir zugefallene Gebäude und defekte Schlösser schnell, regional und sicher.</p>`,
+            mainText: `<p>Wir sind Ihr ehrlicher und greifbarer Notdienst für kleinste Stadtteile. In <span class="font-bold text-[color:var(--text-primary)]">Bermoll</span> öffnen wir zugefallene Gebäude und defekte Schlösser schnell, regional und sicher.</p>`,
             serviceZerstörungsfrei: "In Bermoll rutschen wir mit flexiblen Fallengleitern bei zugezogenen Türen materialschonend bis an den Riegel.",
             serviceBohren: "Verriegelte Schlösser fräsen wir nachvollziehbar und passgenau auf, ohne Kratzer am Rahmen zu hinterlassen.",
             service247: "Unser Bereitschaftsdienst gilt für Bermoll uneingeschränkt an 365 Tagen im Jahr."
@@ -86,10 +86,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Historisches Fachwerk", description: "Defekte Beschläge an teuren Altbautüren retten wir vor der Zerstörung und tauschen Mechaniken nachhaltig aus." }
         ],
         aboutText: `
-<p><strong>Burgsolms</strong> stellt mit knapp 5.000 Einwohnern den pulsierenden Hauptort der Stadt Solms dar und beherbergt die zentrale Verwaltungseinheit rund um das historische Rathaus. Der klangvolle Name, der auf die erhabene Herrschaft der Grafen von Solms zurückgeht, spiegelt sich in liebevoll restaurierten Altbau-Zeilen wider, die heute nahtlos an florierende Neubaugebiete anknüpfen. Tritt an diesen vielfältigen Haustüren ein Schlüsselproblem auf, ist der <strong>Schlüsseldienst Burgsolms</strong> rasch gefragt.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Burgsolms</span> stellt mit knapp 5.000 Einwohnern den pulsierenden Hauptort der Stadt Solms dar und beherbergt die zentrale Verwaltungseinheit rund um das historische Rathaus. Der klangvolle Name, der auf die erhabene Herrschaft der Grafen von Solms zurückgeht, spiegelt sich in liebevoll restaurierten Altbau-Zeilen wider, die heute nahtlos an florierende Neubaugebiete anknüpfen. Tritt an diesen vielfältigen Haustüren ein Schlüsselproblem auf, ist der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Burgsolms</span> rasch gefragt.</p>
 
 <h3>Flotte Anbindung über Wetzlar</h3>
-<p>Die ausgebaute und meist frei fließende B49 macht es unserer Flotte leicht: In nur etwa <strong>9 Minuten</strong> cruisen wir von der Kernstadt Wetzlars bis nach Burgsolms. Unsere Techniker sparen am Gas nicht, solange es die Sicherheitstechnik erfordert.</p>
+<p>Die ausgebaute und meist frei fließende B49 macht es unserer Flotte leicht: In nur etwa <span class="font-bold text-[color:var(--text-primary)]">9 Minuten</span> cruisen wir von der Kernstadt Wetzlars bis nach Burgsolms. Unsere Techniker sparen am Gas nicht, solange es die Sicherheitstechnik erfordert.</p>
 
 <h3>Transparente Solmser Preise</h3>
 <p>Sie befürchten astronomische Fahrtkosten? Nicht mit uns. Für Burgsolms deckeln wir die Einsatz-Zufuhr bei moderaten 15 Euro Aufschlag. Der Basis-Festpreis der handwerklichen Öffnung unverschlossener Fallen bei Tag beläuft sich nachvollziehbar auf 99 Euro. Alle Komponenten der modernen Schließtechnik in Burgsolms und von einfachen Profilzylindern bis zu verknüpften Systemen und bedienen wir souverän und nahezu immer materialschonend.</p>`,
@@ -99,7 +99,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Schlüssel vergessen in Burgsolms? Unser Monteur ist in ca. 9 Minuten da und professionell und zum Festpreis.",
-            mainText: `<p>Der <strong>Schlüsseldienst Burgsolms</strong> hilft Ihnen aus der direkten Nachbarschaft in Wetzlar. Durch kurze Reaktionswege und verbindlichen Preiszusagen lösen wir Notfälle im Solmser Hauptort besonders kundenorientiert.</p>`,
+            mainText: `<p>Der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Burgsolms</span> hilft Ihnen aus der direkten Nachbarschaft in Wetzlar. Durch kurze Reaktionswege und verbindlichen Preiszusagen lösen wir Notfälle im Solmser Hauptort besonders kundenorientiert.</p>`,
             serviceZerstörungsfrei: "In Burgsolms entsperren wir nur zugefallene Türen über Fallengleiter nahezu immer einwandfrei ohne Neuschluss-Notwendigkeit.",
             serviceBohren: "Sollte ein Schlossdefekt in Burgsolms final vorliegen, arbeiten wir effizient mit Spiralfräsen zum marktgerechten Zylindertausch.",
             service247: "Für ganz Burgsolms gilt unser verlässlicher Wetzlarer 24/7 Not-Bereitschaftsdienst ohne Ausfallzeiten."
@@ -136,10 +136,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Mehrfamilieneingang zu", description: "In den Wohngebieten in Oberbiel öffnen wir auch Sicherheitstüren der Gebäudekomplexe zügig." }
         ],
         aboutText: `
-<p><strong>Oberbiel</strong>, verortet an einer wunderschönen Anhöhe direkt oberhalb der Lahn, versinnbildlicht für seine 2.500 Einwohner eine friedfertige Symbiose aus Natur-Nähe und schnellem Anschluss an den urbanen Kern. Fällt bei einem der Spaziergänge an der Lahn die Tür im heimischen Wohngebiet ins Schloss, ist der <strong>Schlüsseldienst Oberbiel</strong> der rettende und absolut ortskundige Partner.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Oberbiel</span>, verortet an einer wunderschönen Anhöhe direkt oberhalb der Lahn, versinnbildlicht für seine 2.500 Einwohner eine friedfertige Symbiose aus Natur-Nähe und schnellem Anschluss an den urbanen Kern. Fällt bei einem der Spaziergänge an der Lahn die Tür im heimischen Wohngebiet ins Schloss, ist der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Oberbiel</span> der rettende und absolut ortskundige Partner.</p>
 
 <h3>Flotte Distanz über Wetzlar</h3>
-<p>Dank der hervorragenden B49-Andockung rücken wir ohne den oft zermürbenden Stadtverkehr unmittelbar zu Ihnen auf. In den allermeisten Szenarien bestätigen wir eine reine Fahrzeit von <strong>rund 10 Minuten</strong> bis zum Eingang auf dem Solmser Gebiet in Oberbiel.</p>
+<p>Dank der hervorragenden B49-Andockung rücken wir ohne den oft zermürbenden Stadtverkehr unmittelbar zu Ihnen auf. In den allermeisten Szenarien bestätigen wir eine reine Fahrzeit von <span class="font-bold text-[color:var(--text-primary)]">rund 10 Minuten</span> bis zum Eingang auf dem Solmser Gebiet in Oberbiel.</p>
 
 <h3>Eigene Tarife, verlässliche Kosten</h3>
 <p>Die klassische Einfamilienhaus-Architektur verbirgt häufig in die Jahre gekommene Zylinder oder klassische Standard-Schließsysteme. Ungeachtet des Alters öffnen wir routiniert zum Werktags-Festpreis ab 99 Euro zuzüglich moderaten 15 Euro für den schnellen Einsatzwagen. Absolute Seriosität ohne Ausreden in Oberbiel.</p>`,
@@ -149,7 +149,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Tür zugefallen in Oberbiel? Wir kommen in ca. 10 Minuten und zum garantierten Festpreis.",
-            mainText: `<p>Als <strong>Schlüsseldienst Oberbiel</strong> verbürgen wir uns für zügige Einsatzfahrten und materialschonende Türöffnungen in allen Solmser Ortsteilen. Wir behandeln Schlösser an der Lahn als wären es unsere eigenen.</p>`,
+            mainText: `<p>Als <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Oberbiel</span> verbürgen wir uns für zügige Einsatzfahrten und materialschonende Türöffnungen in allen Solmser Ortsteilen. Wir behandeln Schlösser an der Lahn als wären es unsere eigenen.</p>`,
             serviceZerstörungsfrei: "Zugezogene Haus- und Wohnungstüren in Oberbiel entsperren wir per Spezialhaken oft absolut spurenlos.",
             serviceBohren: "Verweigerte Schlösser in Oberbiel fräsen wir auf Millimeter genau und verbauen direkt belastbare BKS / ABUS Lösungen.",
             service247: "Oberbiels Anwohner profitieren an 365 Tagen und Feiertage inklusive und von unserer Wetzlarer Notfall-Dispatch-Zentrale."
@@ -185,10 +185,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Wintergarten Terrassentür", description: "Türgriff der Veranda abgebrochen? Mit speziellen Fallengleitern umgehen wir die Blockade sanft von außen." }
         ],
         aboutText: `
-<p><strong>Oberndorf</strong> bietet eine tiefe Verwurzelung in die oberhessischen Naturlandschaften. Als eher landwirtschaftlich orientierter und idyllischer Ortsteil im Süden von Burgsolms zieht es vor allem Familien und Ruhesuchende in die alten Dorfkerne und moderneren Randgebiete. Wer am späten Abend die Hoftür nicht mehr ins Schloss bekommt oder sonntags seinen Haustürschlüssel vergeblich sucht, ist froh, wenn der <strong>Schlüsseldienst Oberndorf</strong> kompetent und zügig zur Hilfe anrückt.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Oberndorf</span> bietet eine tiefe Verwurzelung in die oberhessischen Naturlandschaften. Als eher landwirtschaftlich orientierter und idyllischer Ortsteil im Süden von Burgsolms zieht es vor allem Familien und Ruhesuchende in die alten Dorfkerne und moderneren Randgebiete. Wer am späten Abend die Hoftür nicht mehr ins Schloss bekommt oder sonntags seinen Haustürschlüssel vergeblich sucht, ist froh, wenn der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Oberndorf</span> kompetent und zügig zur Hilfe anrückt.</p>
 
 <h3>Staufreie Anfahrt zu jeder Tageszeit</h3>
-<p>Die geografische Lage abseits der staugeplagten B49 bietet uns oft klare Wegeverhältnisse. Unsere Servicefahrzeuge manövrieren zielsicher durch das Solmser Lahngebiet und parken im Normalfall in <strong>etwa 11 Minuten</strong> nach Ihrem rettenden Anruf vor Ihrer Haustür in Oberndorf.</p>
+<p>Die geografische Lage abseits der staugeplagten B49 bietet uns oft klare Wegeverhältnisse. Unsere Servicefahrzeuge manövrieren zielsicher durch das Solmser Lahngebiet und parken im Normalfall in <span class="font-bold text-[color:var(--text-primary)]">etwa 11 Minuten</span> nach Ihrem rettenden Anruf vor Ihrer Haustür in Oberndorf.</p>
 
 <h3>Wir schonen alte Türen und Ihren Geldbeutel</h3>
 <p>Egal ob massives Holzportal der Dorfschmiede oder standardisierte Kunststoff-Haustür im Neubau: Die Einsatzteams verfahren hochprofessionell und zu 99 Prozent gewaltfrei bei Routineöffnungen. Für 99 Euro Festpreis tagsüber plus transparent geregelten 15 Euro für den Fuhrpark lösen wir jedes Schlossproblem im ländlichen Oberndorf absolut verlässlich.</p>`,
@@ -198,7 +198,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Ausgesperrt in Oberndorf? Unser Schlüsseldienst ist in ca. 11 Minuten bei Ihnen und zuverlässig und zum Festpreis.",
-            mainText: `<p>In der besinnlichen Atmosphäre von <strong>Oberndorf</strong> stören unkalkulierbare Wartezeiten massiv. Wir garantieren aus Wetzlar heraus eine unheimlich schnelle Erreichbarkeit und astreine Festpreise, damit Sie rasch wieder zu Hause am Ofen sitzen.</p>`,
+            mainText: `<p>In der besinnlichen Atmosphäre von <span class="font-bold text-[color:var(--text-primary)]">Oberndorf</span> stören unkalkulierbare Wartezeiten massiv. Wir garantieren aus Wetzlar heraus eine unheimlich schnelle Erreichbarkeit und astreine Festpreise, damit Sie rasch wieder zu Hause am Ofen sitzen.</p>`,
             serviceZerstörungsfrei: "In Oberndorf entsperren wir zugeknallte, nicht-gedrehte Wohnungstüren mit absoluter Materialrücksichtnahme schadenfrei.",
             serviceBohren: "Ruinierte Zylinder oder abgebrochene Bartschlüssel fräsen wir filigran auf und werten die Tür durch ein neues Schloss aus dem BKS Sortiment auf.",
             service247: "Oberndorf profitiert uneingeschränkt von unserer verlässlichen 24/7 Nachtbereitschaft."
@@ -236,10 +236,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Haustürumrüstung", description: "Einbruchsprävention in Atzbach gefragt? Kompletter Neueinbau inklusive ABUSsicherheitsverriegelungen direkt bei Erstbesuch." }
         ],
         aboutText: `
-<p>Direkt am Lahnufer an der verkehrsstarken Achse zwischen den großen Zentren Gießen und Wetzlar platziert, ist <strong>Atzbach</strong> das Tor der Gemeinde Lahnau. Mit über 3.000 Einwohnern und starker Pendler-Infrastruktur herrscht hier täglich reges Kommen und Gehen. Vergessene oder verklemmte Türschlüssel sind in diesem ständigen Fluss keine Seltenheit. Wenn die Haustür blockiert, agiert der <strong>Schlüsseldienst Atzbach</strong> dank der optimalen Anbindung blitzschnell und routiniert am Einsatzort.</p>
+<p>Direkt am Lahnufer an der verkehrsstarken Achse zwischen den großen Zentren Gießen und Wetzlar platziert, ist <span class="font-bold text-[color:var(--text-primary)]">Atzbach</span> das Tor der Gemeinde Lahnau. Mit über 3.000 Einwohnern und starker Pendler-Infrastruktur herrscht hier täglich reges Kommen und Gehen. Vergessene oder verklemmte Türschlüssel sind in diesem ständigen Fluss keine Seltenheit. Wenn die Haustür blockiert, agiert der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Atzbach</span> dank der optimalen Anbindung blitzschnell und routiniert am Einsatzort.</p>
 
 <h3>Minimale Wartezeiten per Schnellstraße</h3>
-<p>Die B49 gleicht von unserem Knotenpunkt aus einer Zielgeraden: Nahezu ampelfrei steuern unsere Handwerker direkt den Abzweig Atzbach an. Eine Durchschnitts-Route benötigt erfahrungsgemäß <strong>nur 8 bis 10 Minuten</strong>. Das spart Nerven, gerade am späten Feierabend oder bei frostigen Außentemperaturen.</p>
+<p>Die B49 gleicht von unserem Knotenpunkt aus einer Zielgeraden: Nahezu ampelfrei steuern unsere Handwerker direkt den Abzweig Atzbach an. Eine Durchschnitts-Route benötigt erfahrungsgemäß <span class="font-bold text-[color:var(--text-primary)]">nur 8 bis 10 Minuten</span>. Das spart Nerven, gerade am späten Feierabend oder bei frostigen Außentemperaturen.</p>
 
 <h3>Preisgarantie statt Horrorrechnung</h3>
 <p>In Atzbach erheben wir bei simplen zugefallenen Türen am Werktag faire 99 Euro Festpreis. Zur Abdeckung von Sprit und Fahrzeugflotte fließt eine bescheidene 15-Euro-Pauschale ein. Verdeckte Posten oder unseriöse Barzahlungs-Mafien? Nicht bei uns. EC-Zahlung und lupenreine Festpreisangebote sind in unserem Betrieb eine absolute Selbstverständlichkeit.</p>`,
@@ -249,7 +249,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Ausgesperrt in Atzbach? Wir sind in nur 8 Minuten bei Ihnen und professionell, schnell und zum Festpreis.",
-            mainText: `<p>In <strong>Atzbach</strong> greifen wir für Sie im Handumdrehen zum Werkzeug. Pendler, ansässige Gewerbe und Familien vertrauen auf unser Wetzlarer Einsatzteam, weil wir rasant und zu echten Festpreisen liefern.</p>`,
+            mainText: `<p>In <span class="font-bold text-[color:var(--text-primary)]">Atzbach</span> greifen wir für Sie im Handumdrehen zum Werkzeug. Pendler, ansässige Gewerbe und Familien vertrauen auf unser Wetzlarer Einsatzteam, weil wir rasant und zu echten Festpreisen liefern.</p>`,
             serviceZerstörungsfrei: "Wohnungstüren in Atzbach öffnen unsere Profis durch sanftes Streifen des Sperrriegels komplett ohne materielle Beschädigung.",
             serviceBohren: "Verriegelte oder defekte Alt-Schlösser an Hof- und Garagentoren bohren wir millimeterexzakt zum Austausch auf.",
             service247: "In Lahnau (Atzbach) garantieren wir einen echten, Wetzlarer 365-Tage-Notdienst rund um die Uhr."
@@ -286,10 +286,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Smarthome Türschloss", description: "Mechatronik versagt in Lahnau? Wir wissen mit modernen Smartlocks an Haustüren professionell umzugehen." }
         ],
         aboutText: `
-<p><strong>Dorlar</strong> verschmilzt als lebhafter Teil von Lahnau den idyllischen ländlichen Charme mit hervorragenden infrastrukturellen Angeboten. Besonders die expansiven und gepflegten Wohnbaugebiete locken junge Familien ins Ruhige zwischen Wetzlar und Gießen. Doch gerade Alltagsroutinen wie der schnelle Weg zur Kita oder das Einkaufen lassen schnell den Haustürschlüssel in Vergessenheit geraten. Der <strong>Schlüsseldienst Dorlar</strong> bildet dann aus dem nahegelegenen Wetzlar die perfekte Rettungskette.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Dorlar</span> verschmilzt als lebhafter Teil von Lahnau den idyllischen ländlichen Charme mit hervorragenden infrastrukturellen Angeboten. Besonders die expansiven und gepflegten Wohnbaugebiete locken junge Familien ins Ruhige zwischen Wetzlar und Gießen. Doch gerade Alltagsroutinen wie der schnelle Weg zur Kita oder das Einkaufen lassen schnell den Haustürschlüssel in Vergessenheit geraten. Der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Dorlar</span> bildet dann aus dem nahegelegenen Wetzlar die perfekte Rettungskette.</p>
 
 <h3>Wirklich schnelle Lahnau-Pauschalen</h3>
-<p>Langes Frieren in der Kälte ist Geschichte: Über die Wetzlarer Zufahrtswege sind unsere Techniker nach der Alarmierung in oft unter <strong>9 Minuten</strong> einsatzbereit in Dorlar. Diese Schnelligkeit erkaufen Sie sich bei uns nicht mit Horrorsummen: Mit knappen 15 Euro Fahrpauschale federn wir sämtliche Anfahrtskosten ehrlich ab.</p>
+<p>Langes Frieren in der Kälte ist Geschichte: Über die Wetzlarer Zufahrtswege sind unsere Techniker nach der Alarmierung in oft unter <span class="font-bold text-[color:var(--text-primary)]">9 Minuten</span> einsatzbereit in Dorlar. Diese Schnelligkeit erkaufen Sie sich bei uns nicht mit Horrorsummen: Mit knappen 15 Euro Fahrpauschale federn wir sämtliche Anfahrtskosten ehrlich ab.</p>
 
 <h3>Moderne Technik erfordert moderne Öffner</h3>
 <p>Gerade in Dorlars neueren Baugebieten dominieren hochsichere Mehrfachverriegelungen und enge Türfalze. Mit klassischen "Scheckkarten-Tricks" richtet man hier nur teuren Schaden an. Wir bedienen uns feinster Türfallengleiter, um Ihre neue Haustür nahezu immer spurlos zu öffnen. Der garantierte Festpreis von 99 Euro für Standardöffnungen bleibt das verlässliche Maß aller Dinge.</p>`,
@@ -299,7 +299,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Tür zu in Dorlar? Unser Schlüsseldienst ist in ca. 9 Minuten bei Ihnen und kompetent und zum Festpreis.",
-            mainText: `<p>Für <strong>Dorlar</strong> (Lahnau) stellt unsere Wetzlarer Einsatzcrew den idealen, lokalen Ansprechpartner dar, wenn Tür oder Tor den Zugang verweigern.</p>`,
+            mainText: `<p>Für <span class="font-bold text-[color:var(--text-primary)]">Dorlar</span> (Lahnau) stellt unsere Wetzlarer Einsatzcrew den idealen, lokalen Ansprechpartner dar, wenn Tür oder Tor den Zugang verweigern.</p>`,
             serviceZerstörungsfrei: "In Dorlars modernen Wohngebieten arbeiten wir bei zugezogenen Fronttüren mit absoluter Sorgfalt und spurenfrei.",
             serviceBohren: "Klemmen Mehrfachverriegelungen unwiderruflich, garantieren wir einen akkuraten Zylinderaustausch vor Ort.",
             service247: "Unser Bereitschaftsdienst gilt in ganz Dorlar und Lahnau rund um die Uhr und 365 Tage."
@@ -335,10 +335,10 @@ export const ring2cLocations: LocationData[] = [
             { icon: "briefcase", title: "Schließanlagen Planung", description: "Sie wünschen sich mehr Sicherheitstransparenz in Waldgirmes? Wir verbauen gleichschließende Abussysteme bei Ihnen Zuhause." }
         ],
         aboutText: `
-<p><strong>Waldgirmes</strong> ist der größte und wohl historisch faszinierendste Ortsteil von Lahnau. Schließlich prägt das überregional hochbedeutende <strong>Römische Forum Waldgirmes</strong>, mit den Resten der ältesten römischen Stadtgründung rechts des Rheins, die Identität des Ortes. Wer hier vor einer blockierten Haustür in einer der modernen Siedlungen order dem alten Ortskern steht, bedarf eines regional greifbaren Partners mit Handwerks-Ehre. Der <strong>Schlüsseldienst Waldgirmes</strong> befreit Sie verlässlich aus jeder Zwangslage.</p>
+<p><span class="font-bold text-[color:var(--text-primary)]">Waldgirmes</span> ist der größte und wohl historisch faszinierendste Ortsteil von Lahnau. Schließlich prägt das überregional hochbedeutende <span class="font-bold text-[color:var(--text-primary)]">Römische Forum Waldgirmes</span>, mit den Resten der ältesten römischen Stadtgründung rechts des Rheins, die Identität des Ortes. Wer hier vor einer blockierten Haustür in einer der modernen Siedlungen order dem alten Ortskern steht, bedarf eines regional greifbaren Partners mit Handwerks-Ehre. Der <span class="font-bold text-[color:var(--text-primary)]">Schlüsseldienst Waldgirmes</span> befreit Sie verlässlich aus jeder Zwangslage.</p>
 
 <h3>Minimale Wartezeiten per Schnellstraße</h3>
-<p>Angetrieben durch exzellente Anbindungen an die B49 und L3451, verliert unser Team bei einer eiligen Anfahrt keine wertvollen Minuten. Durchschnittlich treffen wir nach lediglich <strong>9 Minuten</strong> Fahrtzeit in Waldgirmes bei Ihnen am Einsatzort ein und langes Frieren Adé!</p>
+<p>Angetrieben durch exzellente Anbindungen an die B49 und L3451, verliert unser Team bei einer eiligen Anfahrt keine wertvollen Minuten. Durchschnittlich treffen wir nach lediglich <span class="font-bold text-[color:var(--text-primary)]">9 Minuten</span> Fahrtzeit in Waldgirmes bei Ihnen am Einsatzort ein und langes Frieren Adé!</p>
 
 <h3>Preisgarantie statt Horrorrechnung</h3>
 <p>In Waldgirmes agieren wir absolut transparent: Eine lediglich zugezogene, nicht aber doppelt verschlossene Tür öffnen wir mittels flexibler Haken zu werktäglichen 99 Euro Festpreis. Dazu addieren sich flache 15 Euro für unseren schnellen Fuhrpark. Jegliche Eventualitäten und Nachtzuschläge erklären wir Ihnen unverzüglich am Ersttelefonat. Keine Tricks, kein Bohren um jeden Preis.</p>`,
@@ -348,7 +348,7 @@ export const ring2cLocations: LocationData[] = [
         ],
         content: {
             heroIntro: "Ausgesperrt in Waldgirmes? Unser Notdienst ist in ca. 9 Minuten bei Ihnen und zum fairen Festpreis.",
-            mainText: `<p>In ganz <strong>Waldgirmes</strong> bieten wir professionelle, zerstörungsarme Türöffnungen zu fairen Festpreisen. Wir sichern Wohn- und Gewerbeobjekte in Lahnau rasch und kompetent ab.</p>`,
+            mainText: `<p>In ganz <span class="font-bold text-[color:var(--text-primary)]">Waldgirmes</span> bieten wir professionelle, zerstörungsarme Türöffnungen zu fairen Festpreisen. Wir sichern Wohn- und Gewerbeobjekte in Lahnau rasch und kompetent ab.</p>`,
             serviceZerstörungsfrei: "Bei einfachen Aussperrungen in Waldgirmes garantieren wir in 9 von 10 Fällen eine komplett schadenfreie Fallengleiter-Öffnung.",
             serviceBohren: "Müssen in Waldgirmes Schlösser zerstört werden, greifen wir stets auf Qualitätszylinder der Norm DIN EN 1303 zur direkten Wiederherstellung der Sicherheit zurück.",
             service247: "Unsere Bereitschaftszentrale sichert für Waldgirmes einen dauerhaften Nacht- und Feiertags-Notdienst ab."
