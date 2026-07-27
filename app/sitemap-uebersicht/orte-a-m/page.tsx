@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { generateSharedMetadata } from '@/lib/metadata';
 
 export const metadata = generateSharedMetadata({
-  title: 'Einsatzgebiete A-M | HTML Sitemap | Schlüssel Schmiede Wetzlar',
+  title: 'Einsatzgebiete A-M | Sitemap | Schlüssel Schmiede',
   description: 'Übersicht unserer Einsatzgebiete im Lahn-Dill-Kreis (A bis M). Wir sind Ihr lokaler Schlüsseldienst mit kurzen Anfahrtszeiten.',
   path: '/sitemap-uebersicht/orte-a-m',
 });
@@ -30,7 +30,7 @@ export default function SitemapOrteAM() {
           
           <div>
             <h1 className="typo-h1 mb-4 text-[color:var(--text-primary)]">
-              Regionale Einsatzorte (A - M) | Schlüsseldienst Lahn-Dill-Kreis
+              Regionale Einsatzorte (A - M)
             </h1>
             <p className="typo-lead text-gray-700 max-w-4xl leading-relaxed">
               Auf dieser Seite finden Sie alle unsere betreuten Städte, Gemeinden und Ortsteile im Lahn-Dill-Kreis, die mit den Buchstaben A bis M beginnen. Wir sind Ihr seriöser und kompetenter Ansprechpartner für alle Fragen rund um Sicherheitstechnik, Türöffnungen und Notdienste in der gesamten Region. Um Ihnen maximale Transparenz und Verlässlichkeit zu garantieren, haben wir unsere Einsatzgebiete detailliert aufgeschlüsselt. So können Sie sich jederzeit vergewissern, dass Ihr Wohn- oder Geschäftsort zu unserem regulären Einzugsgebiet gehört und Sie von unseren schnellen Anfahrtszeiten profitieren.

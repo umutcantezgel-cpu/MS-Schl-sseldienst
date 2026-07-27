@@ -205,7 +205,7 @@ export const MICRO_POIS: MicroPOI[] = [
   // ── Weitere Städte ──
   {
     slug: "solms-burgsolms",
-    name: "Burgsolms",
+    name: "Burgsolms (Solms)",
     category: "wohngebiet",
     lat: 50.5410, lng: 8.4130,
     city: "Solms", plz: "35606",
@@ -268,7 +268,7 @@ export const MICRO_POIS: MicroPOI[] = [
   },
   {
     slug: "ehringshausen-zentrum",
-    name: "Ehringshausen",
+    name: "Ehringshausen (Zentrum)",
     category: "wohngebiet",
     lat: 50.6080, lng: 8.3800,
     city: "Ehringshausen", plz: "35630",

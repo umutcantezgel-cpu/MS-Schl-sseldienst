@@ -277,7 +277,7 @@ export default function FloatingWhatsAppWidget() {
 
   const cleanNumber = whatsappNumber.replace(/[^0-9]/g, "");
   const contextMessage = getContextualMessage(pathname);
-  const whatsappUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(contextMessage)}`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanNumber}&text=${encodeURIComponent(contextMessage)}`;
 
   const isIdle = !isDragging.current && vel.current.x === 0 && vel.current.y === 0 && !isSnapping.current;
 

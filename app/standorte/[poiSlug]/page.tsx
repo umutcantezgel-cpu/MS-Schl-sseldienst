@@ -38,18 +38,15 @@ export async function generateMetadata({ params }: { params: Promise<{ poiSlug: 
 
   const eta = calculateETA(poi.lat, poi.lng);
 
-  let title = `Schlüsseldienst ${poi.name} | 24h Notdienst | Schlüssel Schmiede`;
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${poi.name} | In ${eta.etaMinutes} Min vor Ort`;
-  }
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${poi.name} | 24h Notdienst`;
+  let title = `Schlüsseldienst ${poi.name} | 24h Notdienst`;
+  if (title.length > 55) {
+    title = `Schlüsseldienst ${poi.name}`;
   }
   if (title.length < 45) {
-    title = `Schlüsseldienst ${poi.name} | 24h Notdienst & Schlüsselnotdienst`;
+    title = `Schlüsseldienst ${poi.name} | Schlüsselnotdienst`;
   }
-  if (title.length > 65) title = title.substring(0, 65).trim();
-  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
+  if (title.length > 60) title = title.substring(0, 60).trim();
+  if (title.length < 45) title = (title + " - Top Service").substring(0, 60).trim();
 
   let description = `Ihr lokaler 24h Schlüsseldienst nahe ${poi.name} in ${poi.city}. Zerstörungsfreie Türöffnung ab 99€ Festpreis. In ca. ${eta.etaMinutes} Min vor Ort. Jetzt anrufen!`;
   if (description.length < 120) {
@@ -82,18 +79,15 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
   const phone = companyInfo.phone.formatted;
   const phoneLink = companyInfo.phone.link;
 
-  let title = `Schlüsseldienst ${poi.name} | 24h Notdienst | Schlüssel Schmiede`;
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${poi.name} | In ${eta.etaMinutes} Min vor Ort`;
-  }
-  if (title.length > 65) {
-    title = `Schlüsseldienst ${poi.name} | 24h Notdienst`;
+  let title = `Schlüsseldienst ${poi.name} | 24h Notdienst`;
+  if (title.length > 55) {
+    title = `Schlüsseldienst ${poi.name}`;
   }
   if (title.length < 45) {
-    title = `Schlüsseldienst ${poi.name} | 24h Notdienst & Schlüsselnotdienst`;
+    title = `Schlüsseldienst ${poi.name} | Schlüsselnotdienst`;
   }
-  if (title.length > 65) title = title.substring(0, 65).trim();
-  if (title.length < 45) title = (title + " - Top Service vor Ort").substring(0, 65).trim();
+  if (title.length > 60) title = title.substring(0, 60).trim();
+  if (title.length < 45) title = (title + " - Top Service").substring(0, 60).trim();
 
   // POI-specific FAQs
   const poiFaqs = [

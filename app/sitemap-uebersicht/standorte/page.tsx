@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { generateSharedMetadata } from '@/lib/metadata';
 
 export const metadata = generateSharedMetadata({
-  title: 'Bekannte Standorte & POIs | HTML Sitemap | Schlüssel Schmiede Wetzlar',
+  title: 'Standorte & POIs | Sitemap | Schlüssel Schmiede',
   description: 'Übersicht unserer Schlüsseldienst-Einsatzgebiete rund um bekannte Standorte, Sehenswürdigkeiten und POIs im Lahn-Dill-Kreis.',
   path: '/sitemap-uebersicht/standorte',
 });

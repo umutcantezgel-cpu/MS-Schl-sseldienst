@@ -46,7 +46,7 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
     remotePatterns: [],
-    qualities: [25, 50, 75, 100],
+    unoptimized: true,
   },
 
   // ─── SEO: Trailing slash behavior ───

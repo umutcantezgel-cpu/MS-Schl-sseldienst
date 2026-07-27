@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { generateSharedMetadata } from '@/lib/metadata';
 
 export const metadata = generateSharedMetadata({
-  title: 'Einsatzgebiete N-Z | HTML Sitemap | Schlüssel Schmiede Wetzlar',
+  title: 'Einsatzgebiete N-Z | Sitemap | Schlüssel Schmiede',
   description: 'Übersicht unserer Einsatzgebiete im Lahn-Dill-Kreis (N bis Z). Wir sind Ihr lokaler Schlüsseldienst mit kurzen Anfahrtszeiten.',
   path: '/sitemap-uebersicht/orte-n-z',
 });
@@ -30,7 +30,7 @@ export default function SitemapOrteNZ() {
           
           <div>
             <h1 className="typo-h1 mb-4 text-[color:var(--text-primary)]">
-              Regionale Einsatzorte (N - Z) | Schlüsseldienst Lahn-Dill-Kreis
+              Regionale Einsatzorte (N - Z)
             </h1>
             <p className="typo-lead text-gray-700 max-w-4xl leading-relaxed">
               Auf dieser Seite präsentieren wir Ihnen alle weiteren von uns betreuten Städte, Gemeinden und Stadtteile im Lahn-Dill-Kreis, deren Namen mit den Buchstaben N bis Z beginnen. Als kompetenter Fachbetrieb für Sicherheitstechnik und Notöffnungen sind wir stolz darauf, ein so weitreichendes Gebiet verlässlich abdecken zu können. Ob Sie sich aus Ihrem Haus ausgesperrt haben, ein defektes Schloss austauschen lassen möchten oder eine ausführliche Beratung zum Thema Einbruchschutz wünschen – wir sind für Sie da. Unsere transparente Preispolitik sowie die Verpflichtung zu qualitativ hochwertiger Handwerksarbeit stehen dabei jederzeit im Mittelpunkt unserer Tätigkeit.
