@@ -50,7 +50,10 @@ const nextConfig: NextConfig = {
   },
 
   // ─── SEO: Trailing slash behavior ───
-  trailingSlash: false,
+  // IMPORTANT: Set to true because Vercel serves the root URL with trailing slash.
+  // With false, Seobility detects a 301 redirect from https://domain.de → https://domain.de/
+  // which counts as an internal redirect error. Setting true makes trailing slash the canonical form.
+  trailingSlash: true,
 
   // ═══════════════════════════════════════════════════════════════════════════
   // [SEO: Resolved "WWW/non-WWW duplicate content" via 301 Punycode Redirect]

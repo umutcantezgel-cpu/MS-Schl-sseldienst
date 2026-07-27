@@ -28,9 +28,9 @@ export const generateSharedMetadata = ({
     noindex = false,
     exactTitle = false,
 }: GenerateMetadataProps): Metadata => {
-    // Canonical URLs WITHOUT trailing slash und matches Vercel production behavior
+    // Canonical URLs WITH trailing slash to match Next.js trailingSlash: true config.
     // siteUrl from schema.ts already includes "www." prefix via Punycode.
-    const urlPath = path === '/' ? '/' : (path.endsWith('/') ? path.slice(0, -1) : path);
+    const urlPath = path === '/' ? '/' : (path.endsWith('/') ? path : `${path}/`);
     const url = `${siteUrl}${urlPath}`;
 
     return {
@@ -48,7 +48,7 @@ export const generateSharedMetadata = ({
         // ── [FIX: Seobility #3 und Canonical Mismatch] ──────────────────────
         // Forces all generated URLs to use the production domain,
         // regardless of which host serves the page (Netlify preview, localhost, etc.)
-        metadataBase: new URL(siteUrl),
+        metadataBase: new URL(`${siteUrl}/`),
 
         // ── [FIX: Seobility #4 & Pure Entity Separation] ───────────
         // We ensure strict entity separation. The new domain relies purely on its own ranking power

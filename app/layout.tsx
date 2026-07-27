@@ -52,11 +52,11 @@ export const metadata: Metadata = {
    template: "%s",
  },
  // ⚠|  NO description here und set only on individual pages to avoid Seobility #2 (duplicate).
- metadataBase: new URL(siteUrl),
+ metadataBase: new URL(`${siteUrl}/`),
  alternates: {
    languages: {
-     "de-DE": siteUrl,
-     "x-default": siteUrl,
+     "de-DE": `${siteUrl}/`,
+     "x-default": `${siteUrl}/`,
    },
  },
  robots: {
