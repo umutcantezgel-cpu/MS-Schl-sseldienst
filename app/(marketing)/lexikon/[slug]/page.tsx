@@ -6,7 +6,6 @@ import { BookOpen, Shield, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 import { siteUrl } from "@/lib/schema";
-import SpunSeoText from "@/components/seo/SpunSeoText";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -168,8 +167,6 @@ export default async function LexikonEntryPage({ params }: Props) {
         </Link>
       </section>
 
-      {/* SEO Content Block zur Vermeidung von Thin Content */}
-      <SpunSeoText seed={entry.slug} cityOrArea="Wetzlar" />
     </div>
   );
 }

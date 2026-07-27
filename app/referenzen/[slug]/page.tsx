@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation';
 import { TestimonialCard } from '@/components/cards/TestimonialCard';
 import Link from 'next/link';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
-import SpunSeoText from '@/components/seo/SpunSeoText';
 
 import { generateSharedMetadata } from '@/lib/metadata';
 
@@ -204,9 +203,7 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
         )}
       </div>
 
-      <div className="container mx-auto px-4 max-w-4xl pb-16">
-        <SpunSeoText seed={study.slug} cityOrArea="Wetzlar" />
-      </div>
+
 
       {/* 7. CTA SEKTION */}
       <section className="bg-[#0A1A2F] py-24 relative overflow-hidden">

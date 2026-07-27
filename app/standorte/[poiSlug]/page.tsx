@@ -11,7 +11,6 @@ import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Clock, Shield, MapPin, Star, CheckCircle, ArrowRight } from "lucide-react";
-import SpunSeoText from "@/components/seo/SpunSeoText";
 
 /**
  * ══════════════════════════════════════════════════════════════════
@@ -337,9 +336,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
         </div>
       </section>
     ),
-    seotext: (
-      <SpunSeoText key="seotext" seed={poi.slug} cityOrArea={poi.name} />
-    ),
+
   };
 
   return (
@@ -360,8 +357,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
       {/* Render sections in crypto-deterministic order */}
       {sectionOrder.map((id) => sections[id])}
       
-      {/* Append SEO Text always at the bottom of sections */}
-      {sections["seotext"]}
+
 
       {/* Breadcrumb back to homepage */}
       <div className="py-4 px-6 text-xs text-gray-400 max-w-3xl mx-auto">

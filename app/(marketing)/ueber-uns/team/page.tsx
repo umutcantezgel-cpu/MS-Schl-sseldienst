@@ -4,7 +4,6 @@ import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { Users, ShieldCheck, MapPin, Award, CheckCircle2, Phone, Star, Wrench, Heart } from "lucide-react";
-import SpunSeoText from "@/components/seo/SpunSeoText";
 
 export const metadata = generateSharedMetadata({
   title: "Unser Team Wetzlar | Festangestellte Monteure",
@@ -181,8 +180,6 @@ export default function TeamPage() {
 
         </div>
       </section>
-      
-      <SpunSeoText seed="team" cityOrArea="Wetzlar" />
     </div>
   );
 }

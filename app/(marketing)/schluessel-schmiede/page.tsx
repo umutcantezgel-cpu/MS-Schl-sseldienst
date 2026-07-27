@@ -6,7 +6,6 @@ import Link from "next/link";
 import { MapPin, Clock, Phone, Mail, ShieldCheck, Key, Store, Award, CheckCircle2, Navigation } from "lucide-react";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { werkstattImages } from "@/lib/data/imageAssets";
-import SpunSeoText from "@/components/seo/SpunSeoText";
 
 export const metadata = generateSharedMetadata({
   title: "Schlüssel Schmiede Wetzlar | Filiale & Fachgeschäft",
@@ -196,8 +195,6 @@ export default function SchlüsselSchmiedePage() {
 
         </div>
       </section>
-      
-      <SpunSeoText seed="schluessel-schmiede" cityOrArea="Wetzlar" />
     </div>
   );
 }

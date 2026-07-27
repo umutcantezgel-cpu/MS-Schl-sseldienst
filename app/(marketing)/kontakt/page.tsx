@@ -8,7 +8,6 @@ import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { werkstattImages } from "@/lib/data/imageAssets";
 import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
-import SpunSeoText from "@/components/seo/SpunSeoText";
 
 export const metadata = generateSharedMetadata({
  title: "Kontakt und Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
@@ -214,7 +213,6 @@ export default function KontaktPage() {
       <SeoContentImage image={werkstattImages[1]!} className="w-full h-[300px] md:h-[400px]" sizes="(max-width: 768px) 100vw, 800px" />
      </div>
     </section>
-      <SpunSeoText seed="kontakt" cityOrArea="Wetzlar" />
 
     <aside aria-label="Notfall-Kontakt">
      <EmergencyCTA 
