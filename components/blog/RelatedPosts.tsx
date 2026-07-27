@@ -38,11 +38,9 @@ export default function RelatedPosts({ title = "Könnte Sie auch interessieren",
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {displayPosts.map((post) => (
-            <SeoLink 
+            <div 
               key={post.slug} 
-              href={`${basePath}/${post.slug}`} 
-              className="flex flex-col bg-white border border-[var(--border-subtle)] rounded-[var(--radius-xl)] p-6 md:p-8 hover:shadow-xl hover:border-[var(--color-red-500)] hover:-translate-y-1 transition-all duration-300 group"
-              uniqueContext={post.metadata.title}
+              className="relative flex flex-col bg-white border border-[var(--border-subtle)] rounded-[var(--radius-xl)] p-6 md:p-8 hover:shadow-xl hover:border-[var(--color-red-500)] hover:-translate-y-1 transition-all duration-300 group"
             >
                <div className="mb-4">
                  <span className="text-xs font-bold px-3 py-1 bg-[var(--color-red-50)] text-[var(--color-red-600)] rounded-full uppercase tracking-wider">
@@ -50,15 +48,17 @@ export default function RelatedPosts({ title = "Könnte Sie auch interessieren",
                  </span>
                </div>
                <h3 className="text-xl font-bold text-[color:var(--text-primary)] mb-3 group-hover:text-[var(--color-red-500)] transition-colors line-clamp-2">
-                 {post.metadata.title}
+                 <SeoLink href={`${basePath}/${post.slug}`} className="after:absolute after:inset-0" uniqueContext={post.metadata.title}>
+                   {post.metadata.title}
+                 </SeoLink>
                </h3>
                <p className="text-[color:var(--text-secondary)] mb-6 flex-1 line-clamp-3">
                  {post.metadata.excerpt.length > 80 ? post.metadata.excerpt.substring(0, 80) + '...' : post.metadata.excerpt}
                </p>
-               <div className="flex items-center gap-2 text-sm font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] mt-auto transition-colors">
-                Ratgeber-Artikel zu „{post.metadata?.title}“ lesen <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+               <div className="flex items-center gap-2 text-sm font-bold text-[color:var(--text-primary)] group-hover:text-[var(--color-red-500)] mt-auto transition-colors pointer-events-none">
+                Ratgeber-Artikel lesen <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                </div>
-            </SeoLink>
+            </div>
           ))}
         </div>
       </div>

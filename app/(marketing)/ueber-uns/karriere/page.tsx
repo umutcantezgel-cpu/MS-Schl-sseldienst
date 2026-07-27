@@ -135,7 +135,7 @@ export default function KarrierePage() {
                 </p>
 
                 <div className="space-y-2">
-                  <strong className="text-xs font-bold text-gray-900 uppercase tracking-wider block">Das bringst du mit:</strong>
+                  <span className="text-xs font-bold text-gray-900 uppercase tracking-wider block">Das bringst du mit:</span>
                   <ul className="text-xs text-gray-700 space-y-1">
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-600" /> Handwerkliches Geschick oder Ausbildung (Schlosser, Tischler, Mechatroniker o.ä.)</li>
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-600" /> Führerschein Klasse B zwingend erforderlich</li>
@@ -159,7 +159,7 @@ export default function KarrierePage() {
                 </p>
 
                 <div className="space-y-2">
-                  <strong className="text-xs font-bold text-gray-900 uppercase tracking-wider block">Das bringst du mit:</strong>
+                  <span className="text-xs font-bold text-gray-900 uppercase tracking-wider block">Das bringst du mit:</span>
                   <ul className="text-xs text-gray-700 space-y-1">
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-600" /> Erfahrung in der Sicherheitstechnik oder Metallverarbeitung</li>
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-emerald-600" /> Sorgfältige und präzise Arbeitsweise</li>
