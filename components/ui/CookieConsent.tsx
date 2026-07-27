@@ -218,7 +218,7 @@ export default function CookieConsent() {
                   <button
                     type="button"
                     onClick={handleOpenSettings}
-                    className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-sm font-medium transition-colors underline-offset-2 hover:underline min-h-[44px]"
+                    className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] min-h-[44px] flex-1"
                   >
                     Einstellungen
                   </button>
@@ -384,7 +384,7 @@ export default function CookieConsent() {
               <button
                 type="button"
                 onClick={() => setShowSettings(false)}
-                className="px-5 py-2.5 text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] text-sm font-medium transition-colors min-h-[44px]"
+                className="px-5 py-2.5 bg-white border border-[var(--border-subtle)] hover:border-[var(--text-tertiary)] hover:bg-gray-50 text-[color:var(--text-primary)] text-sm font-semibold rounded-xl transition-all duration-200 hover:-translate-y-[1px] min-h-[44px] flex-1"
               >
                 Zurück
               </button>
