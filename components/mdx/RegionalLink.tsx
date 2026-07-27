@@ -25,7 +25,7 @@ function normalizeRegionSlug(name: string): string {
 }
 
 export default function RegionalLink({ region, children, icon = true }: Props) {
-  const url = `/einsatzgebiete/${normalizeRegionSlug(region)}`;
+  const url = `/schluesseldienst-${normalizeRegionSlug(region)}`;
   
   return (
     <SeoLink 

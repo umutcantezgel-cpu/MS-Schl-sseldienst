@@ -128,6 +128,24 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
           </div>
         </div>
 
+        {/* 1.5 PROJEKTÜBERSICHT & KEYWORD INJECTION */}
+        <section className="mb-16 bg-white p-10 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#0A1A2F] mb-6 flex items-center gap-3">
+            <span className="w-6 h-6 rounded bg-slate-200 text-slate-700 flex items-center justify-center text-sm font-black">i</span>
+            Projektübersicht: {study.title}
+          </h2>
+          <div className="prose prose-lg text-slate-700 max-w-none leading-relaxed">
+            <p>
+              In diesem Projektbericht dokumentieren wir den vollständigen Ablauf rund um das Thema <strong>{study.title}</strong>. 
+              Als erfahrener Fachbetrieb und Schlüsseldienst in Wetzlar und im Lahn-Dill-Kreis werden wir regelmäßig von Gewerbe- und Privatkunden 
+              mit hochkomplexen Aufgaben aus der Kategorie {study.industry} betraut. Das hier beschriebene Szenario steht exemplarisch für 
+              unsere präzise und kundenorientierte Arbeitsweise, bei der wir stets großen Wert auf langlebige Sicherheit, Kostentransparenz und 
+              zerstörungsfreie Handwerksarbeit legen. Wenn Sie ähnliche Anforderungen im Bereich {study.industry} haben oder explizit nach 
+              einer Lösung für {study.title} in der Region suchen, liefert Ihnen diese Referenz einen praxisnahen Einblick in unsere Methoden.
+            </p>
+          </div>
+        </section>
+
         {/* 2. CHALLENGE */}
         <section className="mb-16 bg-white p-10 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
           <h2 className="text-2xl font-bold text-[#0A1A2F] mb-6 flex items-center gap-3">

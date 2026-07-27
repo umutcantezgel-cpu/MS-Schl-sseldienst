@@ -96,9 +96,6 @@ export default function RatgeberPage() {
                     <h3 className="text-xl font-bold text-gray-900 leading-tight">
                       {post.metadata.title}
                     </h3>
-                    <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">
-                      {post.metadata.excerpt}
-                    </p>
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-gray-100">

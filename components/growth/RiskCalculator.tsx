@@ -268,7 +268,7 @@ export default function RiskCalculator({ embedded = false }: RiskCalculatorProps
       <div className="bg-[var(--color-gray-900)] p-4 text-center border-t border-[var(--color-gray-800)]">
         <p className="text-xs font-semibold text-gray-400">
           Datenbereitstellung & Analyse durch<br/>
-          <a href="https://xn--wetzlar-schlsseldienst-3lc.de" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--color-red-500)] transition-colors mt-1 inline-block text-sm font-bold">
+          <a href="https://www.xn--wetzlar-schlsseldienst-3lc.de" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--color-red-500)] transition-colors mt-1 inline-block text-sm font-bold">
             Schlüssel Schmiede Wetzlar
           </a>
         </p>

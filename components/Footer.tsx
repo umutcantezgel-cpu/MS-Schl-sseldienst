@@ -243,6 +243,7 @@ export default function Footer() {
           </Link>
          </li>
         ))}
+        <li><Link href="/" className="hover:text-[var(--color-red-500)] transition-colors underline">Startseite</Link></li>
         <li><Link href="/cookie-richtlinie" className="hover:text-[var(--color-red-500)] transition-colors underline">Cookie-Richtlinie</Link></li>
         <li><Link href="/barrierefreiheit" className="hover:text-[var(--color-red-500)] transition-colors underline">Barrierefreiheit</Link></li>
         <li><Link href="/sitemap-uebersicht" className="hover:text-[var(--color-red-500)] transition-colors underline">Sitemap</Link></li>

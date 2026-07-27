@@ -170,7 +170,6 @@ export default function SitemapPage() {
 
           </div>
 
-          {/* Link to Servicegebiet to balance visible link density (< 100 links per page) */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-[var(--border-subtle)] space-y-6">
             <div className="flex items-center gap-3 border-b border-gray-100 pb-4">
               <div className="p-2 bg-[var(--color-red-500)]/10 text-[var(--color-red-600)] rounded-lg">
@@ -183,12 +182,19 @@ export default function SitemapPage() {
             </div>
             
             <div className="space-y-4">
-              <p className="text-sm text-gray-700 leading-relaxed max-w-3xl">
-                Aufgrund der Vielzahl unserer Einsatzorte haben wir diese für Sie auf einer separaten Übersichtsseite zusammengefasst. Dort finden Sie alle Informationen zu Anfahrtszeiten und detaillierten Gebieten.
+              <p className="text-sm text-gray-700 leading-relaxed max-w-3xl mb-6">
+                Wir sind als regionaler, familiengeführter Meisterbetrieb im gesamten Lahn-Dill-Kreis und Umgebung für Sie im Einsatz. Unser Anspruch ist es, in Notfällen schnellstmöglich bei Ihnen vor Ort zu sein. Daher haben wir unsere Einsatzgebiete strategisch so gewählt, dass wir unseren Kunden eine verlässliche Anfahrtszeit garantieren können. Zu unseren Kerngebieten zählen neben Wetzlar (mit allen Stadtteilen wie Niedergirmes, Dutenhofen, Garbenheim, Naunheim etc.) auch die umliegenden Städte und Gemeinden wie Gießen, Aßlar, Solms, Hüttenberg, Braunfels, Leun, Ehringshausen, Herborn und Dillenburg. Sollten Sie sich außerhalb dieses Radius befinden, können wir Ihnen nach telefonischer Rücksprache gerne Auskunft über eine mögliche Anfahrt geben. Untenstehend finden Sie die alphabetische Liste unserer primären Einsatzorte, für die wir einen 24-Stunden-Bereitschaftsdienst sowie transparente, faire Festpreise ohne versteckte Kosten anbieten. Als Schlüsseldienst aus der Region distanzieren wir uns entschieden von unseriösen Vermittlungszentralen und garantieren Ihnen echte regionale Verfügbarkeit, fachmännische Handwerksarbeit und absolute Preistransparenz direkt am Telefon. Egal ob Türöffnung, Tresoröffnung, der Einbau moderner Sicherheitstechnik oder die schnelle Hilfe nach einem Einbruch – auf die Schlüssel Schmiede ist Verlass. Rufen Sie uns im Notfall direkt an.
               </p>
-              <Link href="/servicegebiet" className="inline-flex items-center gap-2 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white px-6 py-3 rounded-full font-bold transition-all shadow-md hover:-translate-y-0.5">
-                Alle {allLocations.length} Einsatzgebiete anzeigen
-              </Link>
+              
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-3 gap-x-6">
+                {allLocations.map((loc) => (
+                  <li key={loc.id}>
+                    <Link href={`/${loc.slug}`} className="text-sm text-[var(--color-red-600)] hover:text-[var(--color-red-700)] hover:underline font-semibold block truncate" title={`Schlüsseldienst in ${loc.name}`}>
+                      {loc.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 

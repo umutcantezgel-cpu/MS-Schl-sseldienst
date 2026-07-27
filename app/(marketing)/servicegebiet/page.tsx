@@ -83,8 +83,8 @@ export default function ServicegebietPage() {
           </h1>
         </StaggerItem>
         <StaggerItem animation={entryAnimations.slideUpFade}>
-          <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
-            Die Schlüssel Schmiede Wetzlar ist Ihr lokaler Fachbetrieb für Wetzlar, Gießen und den gesamten Lahn-Dill-Kreis. Wir sind dezentral aufgestellt und erreichen Sie im Notfall in 15 bis 30 Minuten vor Ort.
+          <p className="mx-auto max-w-3xl text-lg sm:text-xl text-[color:var(--text-secondary)] leading-relaxed text-balance">
+            Die Schlüssel Schmiede Wetzlar ist Ihr lokaler Fachbetrieb für Wetzlar, Gießen und den gesamten Lahn-Dill-Kreis. Wir sind dezentral aufgestellt und erreichen Sie im Notfall in 15 bis 30 Minuten vor Ort. Unsere erfahrenen Monteure sind Tag und Nacht für Sie im Einsatz, um verschlossene Türen zerstörungsfrei zu öffnen, defekte Schlösser auszutauschen oder präventiven Einbruchschutz zu installieren. Durch unsere tiefe Verwurzelung in der Region garantieren wir Ihnen nicht nur kurze Anfahrtswege, sondern auch absolute Preistransparenz. Bei uns gibt es keine versteckten Kosten oder bösen Überraschungen – alle Preise werden Ihnen bereits am Telefon klar kommuniziert. Vertrauen Sie auf echte Handwerksqualität aus Ihrer direkten Nachbarschaft. Egal ob Sie in der Wetzlarer Kernstadt, in Niedergirmes, Dutenhofen oder in einer der umliegenden Gemeinden wie Aßlar, Braunfels oder Solms wohnen: Ein Anruf genügt, und wir machen uns umgehend auf den Weg zu Ihnen. Ihre Sicherheit und Zufriedenheit stehen für uns an oberster Stelle.
           </p>
         </StaggerItem>
       </StaggerReveal>
@@ -125,7 +125,7 @@ export default function ServicegebietPage() {
           Schlüsselnotdienst in Ihrer Nähe: Alle Orte & Stadtteile
         </h2>
         <p className="text-lg text-[color:var(--text-secondary)] leading-relaxed mb-8">
-          Wir bedienen alle Kernstädte und Ortsteile im Lahn-Dill-Kreis sowie angrenzende Gemeinden. Wählen Sie Ihre Stadt für direkte Kontaktdaten, Anfahrtszeiten und Festpreise vor Ort.
+          Wir bedienen alle Kernstädte und Ortsteile im Lahn-Dill-Kreis sowie angrenzende Gemeinden. Wählen Sie Ihre Stadt für direkte Kontaktdaten, Anfahrtszeiten und Festpreise vor Ort. Unser Service-Netzwerk ist so aufgebaut, dass wir nahezu jeden Winkel der Region effizient abdecken. Dadurch vermeiden wir lange Fahrtzeiten und können Ihnen den Service zu Konditionen anbieten, die für Sie fair und nachvollziehbar sind. Auf dieser Seite finden Sie eine Übersicht unserer wichtigsten Einsatzgebiete. Sollte Ihr Ortsteil nicht explizit aufgeführt sein, zögern Sie nicht, uns dennoch zu kontaktieren – in den allermeisten Fällen gehört er dennoch zu unserem regulären Einzugsgebiet.
         </p>
       </StaggerItem>
 
