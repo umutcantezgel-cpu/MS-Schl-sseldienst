@@ -170,36 +170,25 @@ export default function SitemapPage() {
 
           </div>
 
-          {/* Collapsible Location Accordions to balance visible link density (< 100 links visible initially) */}
+          {/* Link to Servicegebiet to balance visible link density (< 100 links per page) */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-[var(--border-subtle)] space-y-6">
             <div className="flex items-center gap-3 border-b border-gray-100 pb-4">
               <div className="p-2 bg-[var(--color-red-500)]/10 text-[var(--color-red-600)] rounded-lg">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">Einsatzgebiete nach Anfangsbuchstaben ({allLocations.length} Orte)</h2>
-                <p className="text-xs text-gray-500">Klicken Sie auf eine Buchstabengruppe, um alle zugehörigen Städte und Ortsteile auszuklappen.</p>
+                <h2 className="text-2xl font-bold text-gray-900">Einsatzgebiete im Lahn-Dill-Kreis</h2>
+                <p className="text-xs text-gray-500">Übersicht aller betreuten Städte und Gemeinden.</p>
               </div>
             </div>
             
             <div className="space-y-4">
-              {Object.entries(groupedLocations).map(([letter, locations]) => (
-                <details key={letter} className="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
-                  <summary className="p-4 cursor-pointer font-bold text-base text-gray-900 flex items-center justify-between hover:bg-gray-100 transition-colors">
-                    <span>Buchstabe {letter} ({locations.length} Einsatzorte)</span>
-                    <ChevronDown className="w-4 h-4 text-gray-500 group-open:rotate-180 transition-transform" />
-                  </summary>
-                  <div className="p-4 pt-2 bg-white border-t border-gray-200">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-xs">
-                      {locations.map((loc) => (
-                        <Link key={loc.slug} href={`/${loc.slug}`} className="p-2 rounded bg-gray-50 hover:bg-red-50 hover:text-[var(--color-red-600)] transition-colors border border-gray-100 font-medium">
-                          {loc.name} ({loc.plz})
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </details>
-              ))}
+              <p className="text-sm text-gray-700 leading-relaxed max-w-3xl">
+                Aufgrund der Vielzahl unserer Einsatzorte haben wir diese für Sie auf einer separaten Übersichtsseite zusammengefasst. Dort finden Sie alle Informationen zu Anfahrtszeiten und detaillierten Gebieten.
+              </p>
+              <Link href="/servicegebiet" className="inline-flex items-center gap-2 bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white px-6 py-3 rounded-full font-bold transition-all shadow-md hover:-translate-y-0.5">
+                Alle {allLocations.length} Einsatzgebiete anzeigen
+              </Link>
             </div>
           </div>
 

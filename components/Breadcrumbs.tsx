@@ -48,7 +48,7 @@ export default function Breadcrumbs({ items, light = false }: { items: Breadcrum
                   : "hover:text-[color:var(--text-secondary)] active:bg-black/5"
               }`}
             >
-              <span className="sr-only">Startseite</span>
+              <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Startseite</span>
               <Home className="h-3.5 w-3.5" aria-hidden="true" />
             </Link>
           </li>

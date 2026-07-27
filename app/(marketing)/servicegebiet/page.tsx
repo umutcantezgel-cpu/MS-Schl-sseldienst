@@ -2,6 +2,7 @@ import { MapPin, Check, Clock, ChevronDown } from "lucide-react";
 import EmergencyCTA from "@/components/EmergencyCTA";
 import Link from "next/link";
 import { allLocations } from "@/lib/data/allLocations";
+import LocationListClient from "@/components/locations/LocationListClient";
 import { Card } from "@/components/ui/card";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { siteUrl } from "@/lib/schema";
@@ -25,11 +26,9 @@ export default function ServicegebietPage() {
 
  // Categorize locations to balance link density (< 100 visible links on load)
  const primaryLocations = allLocations.slice(0, 12);
- const lahnDillLocations = allLocations.slice(12, 45);
- const regionalLocations = allLocations.slice(45);
 
  return (
-  <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans" lang="de">
+  <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
     {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
     <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Unsere Einsatzgebiete | Schlüsseldienst Wetzlar. Schlüsseldienst Einsatzgebiete im Lahn-Dill-Kreis.</div>
    <script
@@ -130,80 +129,9 @@ export default function ServicegebietPage() {
         </p>
       </StaggerItem>
 
-      {/* 1. Primary Locations (Visible by default) */}
+      {/* 1. Primary Locations & Load More (Client Component) */}
       <StaggerItem animation={entryAnimations.slideUpFade}>
-        <div className="bg-white p-6 rounded-2xl border border-[var(--border-subtle)] shadow-sm space-y-4">
-          <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-            <MapPin className="w-5 h-5 text-[var(--color-red-500)]" />
-            Haupt-Einsatzgebiete & Kernstädte
-          </h3>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {primaryLocations.map((gebiet) => (
-              <Link key={gebiet.slug} href={`/${gebiet.slug}`} className="group flex items-center justify-between p-3 bg-gray-50 hover:bg-red-50 hover:border-[var(--value-primary)] transition-all border border-gray-200 rounded-xl">
-                <span className="font-bold text-sm text-gray-900 group-hover:text-[var(--value-primary)]">
-                  {gebiet.name} ({gebiet.plz})
-                </span>
-                <span className="text-xs font-semibold text-gray-600">
-                  {gebiet.logistics.drivingTimeMinutes} Min.
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </StaggerItem>
-
-      {/* 2. Lahn-Dill-Kreis Gemeinden (Collapsible Accordion) */}
-      <StaggerItem animation={entryAnimations.slideUpFade}>
-        <details className="group bg-white rounded-2xl border border-[var(--border-subtle)] shadow-sm overflow-hidden">
-          <summary className="p-6 cursor-pointer font-bold text-xl text-gray-900 flex items-center justify-between hover:bg-gray-50 transition-colors">
-            <span className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[var(--color-red-500)]" />
-              Weitere Gemeinden im Lahn-Dill-Kreis ({lahnDillLocations.length} Orte)
-            </span>
-            <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" />
-          </summary>
-          <div className="p-6 pt-2 border-t border-gray-100">
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {lahnDillLocations.map((gebiet) => (
-                <Link key={gebiet.slug} href={`/${gebiet.slug}`} className="group flex items-center justify-between p-3 bg-gray-50 hover:bg-red-50 hover:border-[var(--value-primary)] transition-all border border-gray-200 rounded-xl">
-                  <span className="font-semibold text-sm text-gray-900 group-hover:text-[var(--value-primary)]">
-                    {gebiet.name} ({gebiet.plz})
-                  </span>
-                  <span className="text-xs font-medium text-gray-500">
-                    {gebiet.logistics.drivingTimeMinutes} Min.
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </details>
-      </StaggerItem>
-
-      {/* 3. Regional / Extended Locations (Collapsible Accordion) */}
-      <StaggerItem animation={entryAnimations.slideUpFade}>
-        <details className="group bg-white rounded-2xl border border-[var(--border-subtle)] shadow-sm overflow-hidden">
-          <summary className="p-6 cursor-pointer font-bold text-xl text-gray-900 flex items-center justify-between hover:bg-gray-50 transition-colors">
-            <span className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[var(--color-red-500)]" />
-              Regionale Ortsteile & Nachbarregionen ({regionalLocations.length} Ortsteile)
-            </span>
-            <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" />
-          </summary>
-          <div className="p-6 pt-2 border-t border-gray-100">
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {regionalLocations.map((gebiet) => (
-                <Link key={gebiet.slug} href={`/${gebiet.slug}`} className="group flex items-center justify-between p-3 bg-gray-50 hover:bg-red-50 hover:border-[var(--value-primary)] transition-all border border-gray-200 rounded-xl">
-                  <span className="font-semibold text-sm text-gray-900 group-hover:text-[var(--value-primary)]">
-                    {gebiet.name} ({gebiet.plz})
-                  </span>
-                  <span className="text-xs font-medium text-gray-500">
-                    {gebiet.logistics.drivingTimeMinutes} Min.
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </details>
+        <LocationListClient />
       </StaggerItem>
 
       <StaggerItem animation={entryAnimations.slideUpFade}>

@@ -68,7 +68,7 @@ export default function Footer() {
      {/* Brand Column */}
       <div className="col-span-2 mb-8 lg:mb-0 relative">
        <Link href="/" title="Zurück zur Startseite und Schlüssel Schmiede Wetzlar" className="flex items-center justify-center relative z-10 group w-[300px] h-auto transition-all duration-700 hover:scale-105">
-        <span className="sr-only">Startseite Schlüssel Schmiede Wetzlar</span>
+        <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Startseite Schlüssel Schmiede Wetzlar</span>
         
         {/* Subtle Logo Glow - centered behind logo */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">

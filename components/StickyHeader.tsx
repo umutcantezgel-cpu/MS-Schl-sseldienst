@@ -116,7 +116,7 @@ export default function StickyHeader() {
             title="Schlüssel Schmiede Wetzlar Startseite"
           >
             {/* [SEO: Resolved "No Text" via title attribute since Seobility ignores sr-only] */}
-            <span className="sr-only">Schlüssel Schmiede Wetzlar Startseite</span>
+            <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
               src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
@@ -135,7 +135,7 @@ export default function StickyHeader() {
           {/* [SEO ULTRATHINK]: SEO Crawler Fallback Navigation (Zero-JS)
               Da das Megamenü an JS & FramerMotion gekoppelt ist, injecten wir hier
               den vollen internen Link-Stammbaum für Googlebot. Dies garantiert 100% Indexierung. */}
-          <nav className="sr-only" aria-label="SEO Crawler Navigation" aria-hidden="true">
+          <nav className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none" aria-label="SEO Crawler Navigation">
             <Link href="/" tabIndex={-1}>Startseite</Link>
             <Link href="/schluessel-schmiede" tabIndex={-1}>Schlüssel Schmiede</Link>
             <Link href="/servicegebiet" tabIndex={-1}>Einsatzgebiete im Überblick</Link>
@@ -411,8 +411,8 @@ export default function StickyHeader() {
           >
             {/* Drawer Header */}
             <div className="flex justify-between items-center px-4 sm:px-5 h-[64px] sm:h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
-              <Link href="/" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="sr-only">Startseite</span>
+              <Link href="/" aria-label="Zur Startseite" title="Schlüssel Schmiede Wetzlar Startseite" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Startseite</span>
                 <Image
                   src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar Logo"

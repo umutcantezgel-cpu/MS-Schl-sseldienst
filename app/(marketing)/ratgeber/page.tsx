@@ -4,7 +4,7 @@ import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import { ShieldCheck, BookOpen, ArrowRight, Lightbulb, CheckCircle2, Lock, AlertTriangle } from "lucide-react";
-import { getAllBlogPosts } from "@/lib/data/mdx";
+import { getAllRatgeberPosts } from "@/lib/data/mdx";
 
 export const metadata = generateSharedMetadata({
   title: "Ratgeber Einbruchschutz & Sicherheit | Wetzlar",
@@ -13,7 +13,7 @@ export const metadata = generateSharedMetadata({
 });
 
 export default function RatgeberPage() {
-  const ratgeberPosts = getAllBlogPosts();
+  const ratgeberPosts = getAllRatgeberPosts();
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
@@ -103,7 +103,7 @@ export default function RatgeberPage() {
 
                   <div className="pt-4 mt-4 border-t border-gray-100">
                     <Link
-                      href={`/blog/${post.slug}`}
+                      href={`/ratgeber/${post.slug}`}
                       className="inline-flex items-center text-sm font-bold text-[var(--color-red-500)] hover:text-[var(--color-red-600)] hover:underline gap-1.5"
                     >
                       Ratgeber-Artikel zu „{post.metadata.title}“ lesen

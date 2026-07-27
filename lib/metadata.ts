@@ -30,7 +30,7 @@ export const generateSharedMetadata = ({
 }: GenerateMetadataProps): Metadata => {
     // Canonical URLs WITHOUT trailing slash und matches Vercel production behavior
     // siteUrl from schema.ts already includes "www." prefix via Punycode.
-    const urlPath = path === '/' ? '' : (path.endsWith('/') ? path.slice(0, -1) : path);
+    const urlPath = path === '/' ? '/' : (path.endsWith('/') ? path.slice(0, -1) : path);
     const url = `${siteUrl}${urlPath}`;
 
     return {

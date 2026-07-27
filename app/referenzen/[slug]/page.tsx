@@ -182,24 +182,7 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
           </section>
         )}
 
-        {/* SEO Expander Text */}
-        <section className="mb-16 bg-white p-10 md:p-12 rounded-3xl border border-slate-100 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#0A1A2F] mb-6 flex items-center gap-3 relative z-10">
-            <span className="w-6 h-6 rounded bg-[var(--color-red-500)] text-white flex items-center justify-center text-sm font-black">i</span>
-            Zusammenfassung: Referenzen Wetzlar
-          </h2>
-          <div className="prose prose-lg text-slate-700 max-w-none leading-relaxed">
-            <p>
-              Dieses Projekt zum Thema <strong>{study.title}</strong> ist ein hervorragendes Beispiel für unsere tägliche Arbeit als zertifizierter Fachbetrieb. In unseren <em>Referenzen Wetzlar</em> dokumentieren wir ausgewählte Einsätze, um Ihnen einen transparenten und authentischen Einblick in die Leistungsfähigkeit der Schlüssel Schmiede Wetzlar zu geben. Wir sind stolz darauf, dass wir unseren Kunden im gesamten Lahn-Dill-Kreis bei komplexen Sicherheitsproblemen, Notöffnungen und der Planung von Schließanlagen stets schnell, professionell und zuverlässig zur Seite stehen können.
-            </p>
-            <p className="mt-4">
-              Jeder Einsatzort, ob Privathaushalt, Ladengeschäft oder Industriehalle, bringt spezifische Herausforderungen mit sich. Wie bei dem Projekt <strong>{study.title}</strong> deutlich wird, erfordert die moderne Schließ- und Sicherheitstechnik nicht nur das richtige Werkzeug, sondern auch fundiertes Fachwissen, um mechanische oder elektronische Barrieren effizient und vor allem material- und ressourcenschonend zu überwinden oder aufzubauen. Durch regelmäßige Fortbildungen stellen unsere Monteure sicher, dass sie für jede Situation, egal ob zugefallene Tür, verlorener Autoschlüssel oder defektes Tresorschloss, stets die optimale und kostengünstigste Lösung finden.
-            </p>
-            <p className="mt-4">
-              Wenn Sie sich für weitere detaillierte Fallstudien interessieren, laden wir Sie herzlich ein, durch unsere weiteren <em>Referenzen Wetzlar</em> zu stöbern. Dort finden Sie zahlreiche Best-Practice-Beispiele, von der schnellen Notöffnung an der Autobahnraststätte bis hin zur vollumfänglichen Konzeption und Installation digitaler Schließsysteme in großen Firmengebäuden. Bei Fragen zu diesem spezifischen Projekt oder wenn Sie eine ähnliche Anforderung haben, kontaktieren Sie uns gerne jederzeit für ein unverbindliches Erstgespräch.
-            </p>
-          </div>
-        </section>
+
 
         {/* 6. CLIENT TESTIMONIAL */}
         {testimonial && (

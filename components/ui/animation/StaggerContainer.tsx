@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { motion, useInView } from 'framer-motion';
+import { m, useInView } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 interface StaggerContainerProps {
@@ -44,7 +44,7 @@ export function StaggerContainer({
   };
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       variants={containerVariants}
       initial="hidden"
@@ -52,9 +52,9 @@ export function StaggerContainer({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
 // Helper block for Stagger child elements
-export const StaggerItem = motion.div;
+export const StaggerItem = m.div;

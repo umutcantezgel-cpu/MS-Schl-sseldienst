@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { motion, useInView, Variants } from 'framer-motion';
+import { m, useInView, Variants } from 'framer-motion';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 type Direction = 'up' | 'down' | 'left' | 'right' | 'none';
@@ -58,7 +58,7 @@ export function AnimateIn({
   const variants = getVariants(direction, distance);
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       variants={variants}
       initial="hidden"
@@ -71,6 +71,6 @@ export function AnimateIn({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

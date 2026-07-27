@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ZoomIn, X } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 
 interface Props {
   src: string;
@@ -39,7 +39,7 @@ export default function ImageZoom({ src, alt, caption }: Props) {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <m.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -49,7 +49,7 @@ export default function ImageZoom({ src, alt, caption }: Props) {
             <button className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
               <X className="w-8 h-8" />
             </button>
-            <motion.div 
+            <m.div 
               initial={{ scale: 0.95, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
@@ -63,8 +63,8 @@ export default function ImageZoom({ src, alt, caption }: Props) {
                 sizes="100vw"
                 priority
               />
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>
