@@ -42,7 +42,7 @@ export default function ProcessSteps({
       num: "01",
       title: "Anrufen & Situation schildern",
       description: isLeistungen 
-        ? `Kontaktieren Sie unseren <strong>Schlüsseldienst Notdienst</strong> 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen im Bereich ${formattedSlug} (z.B. Schlüssel steckt von innen).`
+        ? `Kontaktieren Sie unseren <strong>Notdienst für ${formattedSlug}</strong> 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen zum Thema ${formattedSlug}, damit wir passendes Werkzeug einplanen können.`
         : "Kontaktieren Sie unseren <strong>Schlüsseldienst Notdienst</strong> 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).",
       icon: Phone,
     },
@@ -51,16 +51,16 @@ export default function ProcessSteps({
       num: "02",
       title: "Festpreis & Dauer erfahren",
       description: isLeistungen
-        ? "Sie erhalten bereits beim Anruf einen verbindlichen Preis und die voraussichtliche Ankunftszeit (in der Regel ca. 20-30 Minuten)."
+        ? `Speziell für Ihren Auftrag im Bereich ${formattedSlug} erhalten Sie direkt am Telefon einen absolut verbindlichen Festpreis sowie die exakte Ankunftszeit unseres Monteurs (meist 20-30 Min).`
         : "Wir nennen Ihnen noch am Telefon einen verbindlichen Festpreis und die exakte Anfahrtszeit (meist unter 25 Minuten).",
       icon: Euro,
     },
     {
       id: 3,
       num: "03",
-      title: "Zerstörungsfreie Öffnung",
+      title: "Fachgerechte Ausführung",
       description: isLeistungen
-        ? "Unsere Techniker treffen pünktlich bei Ihnen ein und öffnen die Tür in den allermeisten Fällen absolut ohne Sachschäden."
+        ? `Unser spezialisierter Techniker trifft pünktlich ein und führt die ${formattedSlug} mit höchster Präzision und in den allermeisten Fällen absolut ohne Sachschäden durch.`
         : "Unser Monteur ist pünktlich vor Ort und öffnet Ihre Tür dank Spezialwerkzeug in nahezu allen Fällen völlig beschädigungsfrei.",
       icon: DoorOpen,
     },
@@ -69,7 +69,7 @@ export default function ProcessSteps({
       num: "04",
       title: "Transparente Bezahlung",
       description: isLeistungen
-        ? "Sie bezahlen bequem erst nach erfolgreicher Öffnung. Akzeptiert werden Barzahlung, EC- oder Kreditkarten. Garantiert ohne versteckte Posten."
+        ? `Ihre Rechnung für die erfolgreiche ${formattedSlug} begleichen Sie bequem vor Ort. Wir akzeptieren Barzahlung, EC- oder Kreditkarten – garantiert ohne versteckte Posten.`
         : "Kein Risiko: Sie zahlen erst, wenn die Tür offen ist. Bar, per EC- oder Kreditkarte. Keine versteckten Zusatzkosten.",
       icon: CreditCard,
     },

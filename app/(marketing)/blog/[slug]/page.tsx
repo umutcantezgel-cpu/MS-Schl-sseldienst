@@ -151,10 +151,6 @@ export default async function BlogDetailPage({ params }: Props) {
           <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-6 lg:leading-tight">
             {post.metadata.title}
           </h1>
-          
-          <p className="typo-lead text-[color:var(--text-secondary)] max-w-[65ch]">
-            {post.metadata.excerpt}
-          </p>
         </header>
 
         {post.metadata.image && (

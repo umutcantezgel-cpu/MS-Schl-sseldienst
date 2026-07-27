@@ -86,7 +86,7 @@ export default function ReferenzenPage() {
                 <div>
                   <h4 className="text-sm font-bold uppercase text-slate-400 tracking-wider mb-3">Die Herausforderung</h4>
                   <p className="text-slate-700 text-lg leading-relaxed mb-8">
-                    {featuredStudy.challenge}
+                    {(featuredStudy.challenge || "").substring(0, 120)}...
                   </p>
                   
                   {featuredStudy.results && (
