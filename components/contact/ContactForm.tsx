@@ -242,7 +242,7 @@ export default function ContactForm({ className, prefilledService, formContext =
         Nachricht senden
       </div>
       <p className="mt-2 text-[color:var(--text-secondary)]">
-        Für allgemeine Anfragen (z.B. Sicherheitstechnik, Schließanlagen) nutzen Sie gerne unser Kontaktformular. Wir melden uns schnellstmöglich bei Ihnen.
+        Für allgemeine Anfragen (z.B. Sicherheitstechnik, Schließanlagen) {formContext ? `aus ${formContext}` : "in Wetzlar und Umgebung"} nutzen Sie gerne unser Kontaktformular. Wir melden uns schnellstmöglich bei Ihnen.
       </p>
 
       {/* Server Error Banner */}

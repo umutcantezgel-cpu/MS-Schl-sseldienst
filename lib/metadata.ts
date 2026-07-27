@@ -94,7 +94,7 @@ export const generateSharedMetadata = ({
             type: "website",
             images: [
                 {
-                    url: `${siteUrl}/og-image.png`,
+                    url: `${siteUrl}/og-image.jpg`,
                     width: 1200,
                     height: 630,
                     alt: "Schlüssel Schmiede Wetzlar und 24 Stunden Notdienst & Schlüsseldienst mit Festpreisen",
@@ -105,7 +105,7 @@ export const generateSharedMetadata = ({
             card: "summary_large_image",
             title,
             description,
-            images: [`${siteUrl}/og-image.png`],
+            images: [`${siteUrl}/og-image.jpg`],
         },
         other: {
             "geo.region": "DE-HE",

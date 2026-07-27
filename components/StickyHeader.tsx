@@ -115,7 +115,9 @@ export default function StickyHeader() {
             aria-label="Startseite und Schlüssel Schmiede Wetzlar"
             title="Schlüssel Schmiede Wetzlar Startseite"
           >
+            <span className="sr-only">Startseite</span>
             {/* [SEO: Resolved "No Text" via title attribute since Seobility ignores sr-only] */}
+            <span className="sr-only">Startseite</span>
             <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Schlüssel Schmiede Wetzlar Startseite</span>
             <Image
               src="/images/logo-header.svg"

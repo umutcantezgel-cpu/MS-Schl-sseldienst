@@ -68,7 +68,7 @@ export default function DatenschutzPage() {
                 <div className="space-y-6">
                   {DATA_PROCESSING_INVENTORY.map((entry, i) => (
                     <div key={i} className="p-6 rounded-xl border border-gray-200 bg-white shadow-sm">
-                      <h3 className="text-lg font-bold text-gray-900 mt-0 mb-4">{entry.name}</h3>
+                      <div className="text-lg font-bold text-gray-900 mt-0 mb-4">{entry.name}</div>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-6 text-sm">
                         <div className="md:col-span-3">
                           <span className="text-gray-900 block font-semibold mb-1">Erhobene Daten:</span>
