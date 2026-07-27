@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getCaseStudyBySlug } from '@/lib/data/case-studies';
+import { getCaseStudyBySlug, getAllCaseStudies } from '@/lib/data/case-studies';
 import { getTestimonialById } from '@/lib/data/testimonials';
 import { notFound } from 'next/navigation';
 import { TestimonialCard } from '@/components/cards/TestimonialCard';
@@ -12,6 +12,13 @@ import { generateSharedMetadata } from '@/lib/metadata';
 interface Props {
   params: Promise<{ slug: string }>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export async function generateStaticParams() {
+  const studies = getAllCaseStudies();
+  return studies.map((study) => ({
+    slug: study.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
