@@ -44,8 +44,17 @@ export default function RatgeberPage() {
               </h1>
             </StaggerItem>
             <StaggerItem animation={entryAnimations.slideUpFade}>
-              <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed">
-                In unserem Ratgeber teilen die Experten der Schlüssel Schmiede Wetzlar wertvolles Praxiswissen rund um Einbruchschutz, modernes Schlossmanagement, das richtige Verhalten bei Schlüsselverlust sowie Pflegeanleitungen für Ihre Zylinder.
+              <p className="text-lg md:text-xl text-[color:var(--text-secondary)] leading-relaxed mb-4">
+                In unserem umfassenden Ratgeber teilen die Experten der Schlüssel Schmiede Wetzlar ihr weitreichendes Praxiswissen rund um die Themen Einbruchschutz, modernes Schlossmanagement, das richtige Verhalten bei einem Schlüsselverlust sowie detaillierte Pflegeanleitungen für Ihre Schließzylinder. Wir möchten Ihnen nicht nur im akuten Notfall zur Seite stehen, sondern Sie auch präventiv aufklären und bestmöglich schützen.
+              </p>
+              <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-4">
+                Sicherheit beginnt bereits vor der Haustür. Leider machen sich viele Menschen erst dann Gedanken über den Einbruchschutz, wenn es bereits zu spät ist oder wenn in der direkten Nachbarschaft eingebrochen wurde. Dabei genügen oft schon einfache, aber effektive mechanische Sicherungen, um Einbrechern das Leben schwer zu machen und sie von ihrem Vorhaben abzubringen. Ein robuster Profilzylinder mit Kernziehschutz, ein massiver Schutzbeschlag sowie ein solides Schließblech bilden die Basis für eine sichere Tür. In unseren Ratgeber-Artikeln erklären wir Ihnen verständlich, worauf es bei der Auswahl der richtigen Komponenten ankommt und wie Sie Schwachstellen an Fenstern, Terrassentüren und Nebeneingängen identifizieren und beheben können.
+              </p>
+              <p className="text-base text-[color:var(--text-secondary)] leading-relaxed mb-4">
+                Darüber hinaus widmen wir uns ausführlich dem Thema Schlüsselverlust und den damit verbundenen Konsequenzen. Wenn Sie Ihren Schlüssel verloren haben oder er Ihnen gestohlen wurde, ist schnelles Handeln gefragt. Wir erklären Ihnen Schritt für Schritt, wer in einem solchen Fall haftet, wann die Schließanlage zwingend ausgetauscht werden muss und wie Sie sich gegenüber Ihrer Versicherung verhalten sollten. Auch die richtige Wartung Ihrer Schließzylinder ist ein wichtiges Thema, um deren Langlebigkeit zu gewährleisten und unangenehmen Überraschungen – wie einem im Schloss abgebrochenen Schlüssel – vorzubeugen. Mit einfachen Tipps zur Pflege, etwa der Verwendung von speziellem Zylinderspray (und niemals Öl oder Graphit!), können Sie die Lebensdauer Ihrer Schlösser signifikant verlängern.
+              </p>
+              <p className="text-base text-[color:var(--text-secondary)] leading-relaxed">
+                Egal ob mechanische Nachrüstung, die Installation elektronischer Smart-Home-Schlösser oder die Planung komplexer Schließanlagen für Gewerbeimmobilien – als professioneller Schlüsseldienst aus Wetzlar stehen wir Ihnen mit Rat und Tat zur Verfügung. Stöbern Sie durch unsere Artikel und informieren Sie sich umfassend. Sollten Sie konkrete Fragen haben oder eine Sicherheitsberatung vor Ort in Ihrem Zuhause im Lahn-Dill-Kreis wünschen, können Sie uns jederzeit kontaktieren. Ihre Sicherheit ist unser Auftrag!
               </p>
             </StaggerItem>
           </StaggerReveal>

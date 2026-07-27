@@ -39,10 +39,16 @@ export default function SitemapPage() {
               HTML Sitemap | Vollständige Übersicht der Schlüssel Schmiede Wetzlar
             </h1>
             <p className="typo-lead text-gray-700 max-w-4xl leading-relaxed">
-              Willkommen auf der zentralen HTML Sitemap der Schlüssel Schmiede Wetzlar. Auf dieser Seite bieten wir Besuchern und Suchmaschinen eine struktuierte Inhaltsübersicht aller verfügbaren Unterseiten, Fachleistungen, Ratgeber-Beiträge und Einsatzgebiete im Lahn-Dill-Kreis.
+              Willkommen auf der zentralen HTML Sitemap der Schlüssel Schmiede Wetzlar. Auf dieser Seite bieten wir Besuchern und Suchmaschinen eine struktuierte Inhaltsübersicht aller verfügbaren Unterseiten, Fachleistungen, Ratgeber-Beiträge und Einsatzgebiete im Lahn-Dill-Kreis. Diese Übersicht dient als Inhaltsverzeichnis für unsere gesamte Webpräsenz und ermöglicht es Ihnen, mit nur wenigen Klicks genau die Informationen zu finden, die Sie für Ihre Sicherheit und im Notfall benötigen.
             </p>
             <p className="text-sm text-gray-600 max-w-4xl mt-3 leading-relaxed">
-              Als qualifizierter Schlüsseldienst Wetzlar ist es unser Anliegen, Ihnen den schnellsten Weg zu den gewünschten Informationen zu bieten. Ob Sie Hilfe bei einer Notöffnung benötigen, sich über Einbruchschutz informieren oder nach einem bestimmten Ortsteil in Wetzlar, Gießen, Aßlar oder Solms suchen – nutzen Sie die folgenden Kategorien zur Navigation.
+              Als qualifizierter Schlüsseldienst Wetzlar ist es unser oberstes Anliegen, Ihnen den schnellsten Weg zu den gewünschten Informationen zu bieten. Ob Sie dringende Hilfe bei einer Notöffnung benötigen, sich ausführlich über modernen Einbruchschutz informieren möchten oder gezielt nach einem bestimmten Ortsteil in Wetzlar, Gießen, Aßlar, Herborn oder Solms suchen – nutzen Sie die folgenden Kategorien zur einfachen und schnellen Navigation. Unser 24-Stunden-Schlüsselnotdienst steht Ihnen nicht nur in der Kernstadt Wetzlar zur Verfügung, sondern deckt ein weitreichendes Einzugsgebiet im gesamten Lahn-Dill-Kreis ab.
+            </p>
+            <p className="text-sm text-gray-600 max-w-4xl mt-3 leading-relaxed">
+              In der Kategorie <strong>Fachleistungen & Notdienste</strong> finden Sie unsere Kernkompetenzen detailliert aufgeschlüsselt. Dazu zählen zerstörungsfreie Türöffnungen (auch bei abgeschlossenen Türen oder abgebrochenen Schlüsseln), schonende Autoöffnungen, diskrete Tresoröffnungen sowie der professionelle Einbau von Schließanlagen und Sicherheitstechnik. Wir legen großen Wert auf transparente Kommunikation und garantieren Ihnen stets feste Preise ohne versteckte Kosten.
+            </p>
+            <p className="text-sm text-gray-600 max-w-4xl mt-3 leading-relaxed">
+              Darüber hinaus bietet unsere Sektion <strong>Wissen & Rechtliches</strong> wertvolle Fachartikel in unserem Sicherheits-Blog, fundierte Schritt-für-Schritt-Anleitungen in unserem Einbruchschutz-Ratgeber sowie Erklärungen zu Fachbegriffen im Schlüsseldienst-Lexikon. In unseren Referenzen dokumentieren wir erfolgreich umgesetzte Projekte, von der schnellen Soforthilfe nach einem Einbruch bis hin zur Planung und Installation hochkomplexer elektronischer Schließsysteme für Gewerbeobjekte. Die Schlüssel Schmiede Wetzlar ist Ihr seriöser, regionaler Partner für alle Belange rund um Schlüssel, Schloss und Sicherheitstechnik.
             </p>
           </div>
 
@@ -187,13 +193,21 @@ export default function SitemapPage() {
               </p>
               
               <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-3 gap-x-6">
-                {allLocations.map((loc) => (
-                  <li key={loc.id}>
-                    <Link href={`/${loc.slug}`} className="text-sm text-[var(--color-red-600)] hover:text-[var(--color-red-700)] hover:underline font-semibold block truncate" title={`Schlüsseldienst in ${loc.name}`}>
-                      {loc.name}
-                    </Link>
-                  </li>
-                ))}
+                <li>
+                  <Link href="/sitemap-uebersicht/orte-a-m" className="text-[15px] text-[var(--color-red-600)] hover:text-[var(--color-red-700)] hover:underline font-bold block truncate">
+                    Einsatzgebiete (A - M)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sitemap-uebersicht/orte-n-z" className="text-[15px] text-[var(--color-red-600)] hover:text-[var(--color-red-700)] hover:underline font-bold block truncate">
+                    Einsatzgebiete (N - Z)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/sitemap-uebersicht/standorte" className="text-[15px] text-[var(--color-red-600)] hover:text-[var(--color-red-700)] hover:underline font-bold block truncate">
+                    Bekannte Standorte & POIs
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
