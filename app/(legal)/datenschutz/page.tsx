@@ -71,19 +71,19 @@ export default function DatenschutzPage() {
                       <h3 className="text-lg font-bold text-gray-900 mt-0 mb-4">{entry.name}</h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-6 text-sm">
                         <div className="md:col-span-3">
-                          <strong className="text-gray-900 block mb-1">Erhobene Daten:</strong>
+                          <span className="text-gray-900 block font-semibold mb-1">Erhobene Daten:</span>
                           <span className="text-gray-600">{entry.dataCollected.join(", ")}</span>
                         </div>
                         <div>
-                          <strong className="text-gray-900 block mb-1">Rechtsgrundlage:</strong>
+                          <span className="text-gray-900 block font-semibold mb-1">Rechtsgrundlage:</span>
                           <span className="text-gray-600">{entry.legalBasis}</span>
                         </div>
                         <div>
-                          <strong className="text-gray-900 block mb-1">Empfänger:</strong>
+                          <span className="text-gray-900 block font-semibold mb-1">Empfänger:</span>
                           <span className="text-gray-600">{entry.recipient}</span>
                         </div>
                         <div>
-                          <strong className="text-gray-900 block mb-1">Speicherdauer:</strong>
+                          <span className="text-gray-900 block font-semibold mb-1">Speicherdauer:</span>
                           <span className="text-gray-600">{entry.retentionPeriod}</span>
                         </div>
                       </div>
@@ -96,9 +96,9 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">3. Rechtsgrundlagen der Verarbeitung</h2>
                 <p>Nachfolgend informieren wir Sie über die in der DSGVO festgeschriebenen Rechtsgrundlagen unserer Datenverarbeitungen:</p>
                 <ul>
-                    <li><strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</strong> - Sie haben explizit eingewilligt (z.B. im Cookie-Consent Code).</li>
-                    <li><strong>Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</strong> - Anbahnung und Durchführung des Schlüsseldienst-Auftrags.</li>
-                    <li><strong>Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</strong> - Gewährleistung der IT-Sicherheit und des reibungslosen Betriebs (Vercel Logfiles).</li>
+                    <li><span className="font-semibold">Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</span> - Sie haben explizit eingewilligt (z.B. im Cookie-Consent Code).</li>
+                    <li><span className="font-semibold">Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</span> - Anbahnung und Durchführung des Schlüsseldienst-Auftrags.</li>
+                    <li><span className="font-semibold">Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)</span> - Gewährleistung der IT-Sicherheit und des reibungslosen Betriebs (Vercel Logfiles).</li>
                 </ul>
             </LegalSection>
 
@@ -114,12 +114,12 @@ export default function DatenschutzPage() {
                 <h2 className="mt-0">5. Rechte der betroffenen Personen</h2>
                 <p>Die DSGVO stattet Verbraucher mit weitreichenden Rechten aus. Kontaktieren Sie uns jederzeit kostenfrei, um Folgendes auszuüben:</p>
                 <ul>
-                    <li><strong>Art. 15 DSGVO:</strong> Auskunftsrecht über gespeicherte Daten.</li>
-                    <li><strong>Art. 16 DSGVO:</strong> Recht auf Berichtigung unvollständiger Daten.</li>
-                    <li><strong>Art. 17 DSGVO:</strong> Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;).</li>
-                    <li><strong>Art. 18 DSGVO:</strong> Recht auf Einschränkung der Datenverarbeitung.</li>
-                    <li><strong>Art. 20 DSGVO:</strong> Datenübertragbarkeit an andere Anbieter.</li>
-                    <li><strong>Art. 21 DSGVO:</strong> Widerspruchsrecht gegen die Verarbeitung.</li>
+                    <li><span className="font-semibold">Art. 15 DSGVO:</span> Auskunftsrecht über gespeicherte Daten.</li>
+                    <li><span className="font-semibold">Art. 16 DSGVO:</span> Recht auf Berichtigung unvollständiger Daten.</li>
+                    <li><span className="font-semibold">Art. 17 DSGVO:</span> Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;).</li>
+                    <li><span className="font-semibold">Art. 18 DSGVO:</span> Recht auf Einschränkung der Datenverarbeitung.</li>
+                    <li><span className="font-semibold">Art. 20 DSGVO:</span> Datenübertragbarkeit an andere Anbieter.</li>
+                    <li><span className="font-semibold">Art. 21 DSGVO:</span> Widerspruchsrecht gegen die Verarbeitung.</li>
                 </ul>
                 <p>Zudem steht Ihnen ein <strong>Beschwerderecht (Art. 77 DSGVO)</strong> bei der zuständigen Aufsichtsbehörde zu:</p>
                 <div className="bg-gray-50 p-4 rounded-xl my-3 text-sm border border-gray-200">

@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (description.length < 120) {
     description = `${description} Fallstudie & Referenzbericht der Schlüssel Schmiede Wetzlar. Erfahren Sie Details zu unseren Einsätzen.`;
   }
-  if (description.length > 155) {
-    description = description.slice(0, 151) + "...";
+  if (description.length > 140) {
+    description = description.slice(0, 137) + "...";
   }
 
   return generateSharedMetadata({

@@ -71,8 +71,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (description.length < 120) {
     description = `${description} Ratgeber vom Fachbetrieb Schlüssel Schmiede Wetzlar. Erfahren Sie wertvolle Tipps für Ihre Sicherheit.`;
   }
-  if (description.length > 155) {
-    description = description.slice(0, 151) + "...";
+  if (description.length > 140) {
+    description = description.slice(0, 137) + "...";
   }
 
   return generateSharedMetadata({

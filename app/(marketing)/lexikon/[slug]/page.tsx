@@ -107,7 +107,7 @@ export default async function LexikonEntryPage({ params }: Props) {
               <BookOpen className="w-8 h-8" />
             </div>
             <h1 className="typo-hero-display text-[color:var(--text-primary)] text-balance mb-[var(--space-4)]">
-              {entry.title}
+              {entry.title} – Erklärung & Definition
             </h1>
             <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--surface-secondary)] border border-[var(--border-subtle)] text-sm font-bold text-[color:var(--text-secondary)] uppercase tracking-wider mb-6">
               FAQ & {entry.category}
