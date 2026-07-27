@@ -21,7 +21,7 @@ export function getOrganizationSchema() {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: companyName,
-        url: siteUrl,
+        url: `${siteUrl}/`,
         logo: `${siteUrl}/images/logo-neu.svg`,
         founder: {
             "@type": "Person",
@@ -58,7 +58,7 @@ export function getLocalBusinessSchema() {
         "@id": `${siteUrl}/#localbusiness`,
         name: companyName,
         description: `${companyName} — IHK-geprüfter 24h Schlüsselnotdienst. Festpreis ab ${BASE_PRICES.door}€. Keine Anfahrtskosten in der Wetzlarer Kernstadt. Kein Callcenter.`,
-        url: siteUrl,
+        url: `${siteUrl}/`,
         telephone: telephone,
         email: contactEmail,
         image: `${siteUrl}/hero-bg.jpg`,

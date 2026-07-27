@@ -42,13 +42,15 @@ export default function Breadcrumbs({ items, light = false }: { items: Breadcrum
           <li className="flex items-center snap-start">
             <Link
               href="/"
+              title="Zur Startseite"
+              aria-label="Zur Startseite"
               className={`transition-colors flex items-center gap-1 py-1 px-1.5 rounded-md min-h-[32px] min-w-[32px] justify-center ${
                 light
                   ? "hover:text-white/80 active:bg-white/10"
                   : "hover:text-[color:var(--text-secondary)] active:bg-black/5"
               }`}
             >
-              <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Startseite</span>
+              <span className="sr-only">Startseite</span>
               <Home className="h-3.5 w-3.5" aria-hidden="true" />
             </Link>
           </li>

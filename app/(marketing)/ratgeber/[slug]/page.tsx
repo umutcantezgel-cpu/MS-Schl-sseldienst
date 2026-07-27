@@ -116,8 +116,9 @@ export default async function RatgeberDetailPage({ params }: Props) {
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-sm text-[color:var(--text-secondary)] flex-wrap">
               <li>
-                <Link href="/" className="hover:text-[var(--color-red-500)] transition-colors flex items-center gap-1">
-                  <Home className="w-4 h-4" />
+                <Link href="/" title="Zur Startseite" aria-label="Zur Startseite" className="hover:text-[var(--color-red-500)] transition-colors flex items-center gap-1">
+                  <span className="sr-only">Startseite</span>
+                  <Home className="w-4 h-4" aria-hidden="true" />
                 </Link>
               </li>
               <li><ChevronRight className="w-4 h-4 opacity-50" /></li>
