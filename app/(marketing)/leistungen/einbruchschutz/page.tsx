@@ -256,7 +256,7 @@ export default function EinbruchschutzPage() {
             <p className="text-sm text-[color:var(--text-secondary)] mt-1 m-0">Die offizielle Kampagne der Polizei mit Tipps und Empfehlungen zum Einbruchschutz.</p>
           </div>
         </a>
-        <a href="https://www.kfw.de" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
+        <a href="https://www.kfw.de/159" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-5 bg-white rounded-[var(--radius-16)] border border-[var(--border-subtle)] hover:border-[var(--color-red-500)] hover:shadow-[var(--elevation-2)] transition-all group">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--color-red-500)]/10 text-[var(--color-red-500)]">
             <ShieldCheck className="h-5 w-5" />
           </div>

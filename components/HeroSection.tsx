@@ -187,7 +187,7 @@ export default function HeroSection() {
               className="text-sm sm:text-base md:text-lead font-normal text-pretty text-[color:var(--text-secondary)] max-w-[520px] leading-snug sm:leading-relaxed -mt-1 sm:mt-0"
             >
               Persönliche Beratung, handwerkliche Präzision und Zeit für jeden Kunden.
-              Schlüssel nachmachen, Schließanlagen planen, Sicherheitstechnik einbauen und natürlich auch Schlüsseldienst.
+              Schlüssel nachmachen, Schließanlagen planen, Sicherheitstechnik einbauen und natürlich als Schlüsseldienst Wetzlar jederzeit für Sie da.
             </p>
 
             {/* 4. Phone Number Block + CTA Buttons */}

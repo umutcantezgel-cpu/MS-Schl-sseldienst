@@ -8,7 +8,11 @@ import { Typography } from "@/components/ui/typography/Typography";
 import { TrustBadgeRow } from "@/components/ui/TrustBadgeRow";
 import { companyInfo } from "@/lib/data/company";
 
-export function PricingSection() {
+export interface PricingSectionProps {
+  cityContext?: string;
+}
+
+export function PricingSection({ cityContext }: PricingSectionProps = {}) {
   return (
    <section
     id="preise"
@@ -221,7 +225,7 @@ export function PricingSection() {
 
       {/* Unified Footnote */}
       <Typography variant="small" color="tertiary" align="center" className="mt-8 italic max-w-3xl mx-auto block">
-       *Basispreis für zugefallene, nicht verschlossene Standardtüren. Zzgl. Anfahrt außerhalb der Wetzlarer Kernstadt. {companyInfo.financial.pricingTexts?.legalNote || "Alle berechneten Preise verstehen sich inkl. 19% MwSt."}
+       *Basispreis für zugefallene, nicht verschlossene Standardtüren. Zzgl. Anfahrt außerhalb der Kernstadt{cityContext ? ` für Einsätze in ${cityContext}` : ''}. {companyInfo.financial.pricingTexts?.legalNote || "Alle berechneten Preise verstehen sich inkl. 19% MwSt."} {cityContext ? `Gültig für ${cityContext}.` : ''}
       </Typography>
 
       <div className="mt-10 text-center">

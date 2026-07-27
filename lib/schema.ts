@@ -131,7 +131,7 @@ export function getServiceSchema({ title, description, url, price }: { title: st
         provider: {
             "@type": "LocalBusiness",
             name: companyName,
-            image: `${siteUrl}/images/logo.png`,
+            image: `${siteUrl}/images/icon-512.png`,
             telephone: companyInfo.phone.main
         },
         areaServed: {

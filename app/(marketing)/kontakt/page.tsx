@@ -152,7 +152,7 @@ export default function KontaktPage() {
           Oder schreiben Sie uns
          </h2>
          <p className="text-sm text-[color:var(--text-secondary)] mb-8 text-balance">Für allgemeine Anfragen, Terminwünsche und Rückrufe.</p>
-         <ContactForm />
+         <ContactForm formContext="Kontaktseite" />
          {/* Trust line */}
          <div className="mt-6 flex items-center justify-center gap-2 text-sm text-[color:var(--text-tertiary)]">
           <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

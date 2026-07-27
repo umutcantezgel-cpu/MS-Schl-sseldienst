@@ -26,13 +26,14 @@ export default function LocationReviews({ city }: LocationReviewsProps) {
     
     const reviewsToDisplay: Review[] = shuffled.slice(0, 3).map(r => ({
         ...r,
+        text: `${r.text} (Einsatzort: ${city.name})`,
         location: `Einsatz in der Region ${city.name}`
     }));
 
     if (reviewsToDisplay.length === 0) return null;
 
     return (
-        <RevealSection className="py-16 md:py-24 bg-[var(--color-slate-50)] border-b border-[var(--border-subtle)]">
+        <RevealSection data-nosnippet="true" className="py-16 md:py-24 bg-[var(--color-slate-50)] border-b border-[var(--border-subtle)]">
             <div className="container mx-auto px-[var(--section-px)]">
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <h2 className="typo-section-heading text-[color:var(--text-primary)] mb-4">

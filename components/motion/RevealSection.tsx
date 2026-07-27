@@ -17,39 +17,36 @@ import { ReactNode, createElement } from"react";
 export default function RevealSection({
   children,
   className = "",
-  delay = 0
+  delay = 0,
+  "data-nosnippet": dataNosnippet
 }: {
-  children: ReactNode,
-  className?: string,
-  delay?: number
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+  "data-nosnippet"?: string | boolean;
 }) {
   const prefersReducedMotion = useReducedMotion();
 
   if (prefersReducedMotion) {
-    return createElement("div", { className }, children);
+    return (
+      <div className={className} data-nosnippet={dataNosnippet}>
+        {children}
+      </div>
+    );
   }
 
   return (
     <m.div
-      variants={{
-        hidden: { opacity: 1, y: 24 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 0.4,
-            type: "spring",
-            stiffness: 170,
-            damping: 22,
-            mass: 1.0,
-            delay
-          }
-        }
+      initial={{ opacity: 1, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-10%" }}
+      transition={{ 
+        duration: 0.6, 
+        delay,
+        ease: [0.22, 1, 0.36, 1]
       }}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-15%" }}
       className={className}
+      data-nosnippet={dataNosnippet}
     >
       {children}
     </m.div>

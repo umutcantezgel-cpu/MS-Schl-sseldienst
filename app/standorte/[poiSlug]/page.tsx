@@ -131,7 +131,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
             Schlüsseldienst <span className="text-[var(--color-red-400)]">{poi.name}</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-6">
-            In <span className="font-semibold text-[color:var(--text-primary)]">{eta.etaMinutes} Minuten</span> bei Ihnen. Festpreis ab <span className="font-semibold text-[color:var(--text-primary)]">{price}€</span>. {companyInfo.localStore.name}.
+            Ihr lokaler <strong className="text-white">Schlüsseldienst {poi.name}</strong> – in <span className="font-semibold text-white">{eta.etaMinutes} Minuten</span> bei Ihnen. Festpreis ab <span className="font-semibold text-white">{price}€</span>. {companyInfo.localStore.name}.
           </p>
           <a
             href={`tel:${phoneLink}`}
@@ -211,7 +211,7 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
             </table>
           </div>
           <p className="text-xs text-gray-400 mt-4 text-center">
-            {companyInfo.financial.pricingTexts?.legalNote ?? "Alle Preise sind Endpreise."} {companyInfo.localStore.name}, Tel: {phone}.
+            Alle Preise für den Einsatz in {poi.name} verstehen sich als Endpreise inklusive 19% der gesetzlichen Mehrwertsteuer. {companyInfo.localStore.name}, Tel: {phone}.
           </p>
         </div>
       </section>

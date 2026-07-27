@@ -331,7 +331,7 @@ export default function FloatingWhatsAppWidget() {
         ref={btnRef}
         href={whatsappUrl}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer nofollow"
         aria-label="Nachricht per WhatsApp senden"
         id="whatsapp-floating-btn"
         onClick={onClick}

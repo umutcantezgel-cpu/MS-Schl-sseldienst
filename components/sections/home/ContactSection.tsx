@@ -78,7 +78,7 @@ export default function ContactSection() {
 
           {/* Rechter Pfad: Modernes Formular */}
           <div className="h-full">
-            <ContactForm />
+            <ContactForm formContext="Startseite" />
           </div>
         </div>
       </RevealSection>

@@ -12,6 +12,12 @@ import { trackFormFunnel } from "@/lib/analytics";
 import TrustSignals from "@/components/trust/TrustSignals";
 import { CTA_COPY } from "@/lib/cta-copy";
 
+export interface ContactFormProps {
+  className?: string;
+  prefilledService?: string;
+  formContext?: string;
+}
+
 interface FieldState {
   touched: boolean;
   valid: boolean;
@@ -47,7 +53,7 @@ const initialState: ContactFormState = {
   message: "",
 };
 
-export default function ContactForm() {
+export default function ContactForm({ className, prefilledService, formContext = "Kontaktformular" }: ContactFormProps = {}) {
   const [state, formAction, isPending] = useActionState(submitContactForm, initialState);
   const [formData, setFormData] = useState({
     name: "",
@@ -485,7 +491,7 @@ export default function ContactForm() {
             className="mt-0.5 shrink-0 w-4 h-4 rounded border-gray-300 text-[var(--color-red-500)] focus:ring-[var(--color-red-500)] focus:ring-2 outline-none"
           />
           <label htmlFor="privacy" className="text-xs text-[color:var(--text-secondary)] leading-tight">
-            Ich stimme zu, dass meine Angaben aus dem Formular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Weitere Details entnehmen Sie der <Link href="/datenschutz" className="text-[var(--color-red-500)] underline hover:text-[var(--color-red-600)]">Datenschutzerklärung</Link>.
+            Ich stimme zu, dass meine Angaben (via {formContext}) aus dem Formular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Weitere Details entnehmen Sie der <Link href="/datenschutz" className="text-[var(--color-red-500)] underline hover:text-[var(--color-red-600)]">Datenschutzerklärung</Link>.
           </label>
         </div>
 

@@ -33,8 +33,8 @@ export function BlogCard({ post, className = "" }: BlogCardProps) {
           )}
         </div>
 
-        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight line-clamp-2">
-          <SeoLink href={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors" uniqueContext={post.title}>
+        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight line-clamp-2 group">
+          <SeoLink href={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors after:absolute after:inset-0" uniqueContext={post.title}>
             {post.title}
           </SeoLink>
         </h3>
@@ -44,16 +44,14 @@ export function BlogCard({ post, className = "" }: BlogCardProps) {
         </p>
 
         <div className="mt-auto border-t border-gray-100 pt-4 flex items-center justify-between">
-          <SeoLink 
-            href={`/blog/${post.slug}`} 
-            className="text-blue-600 font-medium hover:text-blue-800 transition-colors text-sm flex items-center"
-            uniqueContext={post.title}
+          <div 
+            className="text-blue-600 font-medium hover:text-blue-800 transition-colors text-sm flex items-center pointer-events-none"
           >
             Artikel lesen
             <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </SeoLink>
+          </div>
         </div>
       </div>
     </article>

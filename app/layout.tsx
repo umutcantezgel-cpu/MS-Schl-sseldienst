@@ -76,7 +76,7 @@ export const metadata: Metadata = {
    type: "website",
    images: [
      {
-       url: `${siteUrl}/og-image.png`,
+       url: `${siteUrl}/images/og-image.jpg`,
        width: 1200,
        height: 630,
        alt: "Schlüssel Schmiede Wetzlar und 24 Stunden Notdienst für Schlüssel & Sicherheitstechnik",
