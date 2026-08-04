@@ -22,6 +22,7 @@ const TOC_ITEMS = [
     { id: "6-redaktionell", title: "6. Redaktionell Verantwortlicher" },
     { id: "7-streitschlichtung", title: "7. Verbraucherstreitbeilegung" },
     { id: "8-haftung", title: "8. Haftungsausschluss & Urheberrecht" },
+    { id: "9-konzeption", title: "9. Technische Konzeption & Webdesign" },
 ]
 
 export default function ImpressumPage() {
@@ -129,6 +130,16 @@ export default function ImpressumPage() {
 
                 <h3 className="mt-4">Urheberrecht</h3>
                 <p>Die durch die Seitenbetreiber erstellten Inhalte, Texte und Fotografien auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+            </LegalSection>
+
+            <LegalSection id="9-konzeption">
+                <h2 className="mt-0">9. Technische Konzeption & Webdesign</h2>
+                <p>Die technische Konzeption, Gestaltung und Umsetzung dieser Website erfolgte durch:</p>
+                <div className="bg-gray-50 dark:bg-[#18181b] text-gray-900 dark:text-[#e5e7eb] p-6 rounded-xl my-4 text-base border border-gray-200 dark:border-[#27272a]">
+                    <a href="https://codayweb.de" className="font-semibold text-[color:var(--action-primary)] hover:underline">
+                        Coday Webdesign Wetzlar
+                    </a>
+                </div>
             </LegalSection>
         </LegalLayout>
     )
