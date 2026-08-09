@@ -158,9 +158,9 @@ export default function LocationScenarios({ city }: LocationScenariosProps) {
                                         <IconComponent className="w-8 h-8 text-[var(--value-icon-color)] stroke-[1.5]" />
                                     </div>
                                 </div>
-                                <h4 className="text-2xl font-bold text-[color:var(--text-primary)] mb-4 tracking-tight leading-snug">
+                                <h3 className="text-2xl font-bold text-[color:var(--text-primary)] mb-4 tracking-tight leading-snug">
                                     {scenario.title}
-                                </h4>
+                                </h3>
                                 <p className="text-[color:var(--text-secondary)] text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 flex-grow">
                                     {scenario.description}
                                 </p>
