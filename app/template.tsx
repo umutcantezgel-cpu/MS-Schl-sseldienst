@@ -1,24 +1,28 @@
 "use client";
 
-import { m, useReducedMotion } from"framer-motion";
-import { entryAnimations } from"@/lib/animations";
+import { useEffect, useRef } from "react";
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  const prefersReducedMotion = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
 
-  if (prefersReducedMotion) {
-    return <>{children}</>;
-  }
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    // Check prefers-reduced-motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Apply entry animation via CSS class
+    el.classList.add('page-enter');
+    // Use requestAnimationFrame to ensure the class is applied before removing
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        el.classList.add('page-enter-active');
+      });
+    });
+  }, []);
 
   return (
-    <m.div
-      initial={{ opacity: 0.95, y: -8 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0.95, y: -8 }}
-      transition={{ duration: 0.25, ease: [0.0, 0.0, 0.2, 1] }} // Phase 5 tokens: --duration-normal, --ease-out
-      suppressHydrationWarning
-    >
+    <div ref={ref} className="page-transition">
       {children}
-    </m.div>
+    </div>
   );
 }

@@ -87,7 +87,6 @@ export default function Footer() {
           className="relative z-10 w-full h-full max-w-[220px] max-h-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:drop-shadow-[0_0_25px_rgba(239,68,68,0.5)] transition-all duration-700 p-2"
           priority={false}
           sizes="(max-width: 768px) 180px, 220px"
-          unoptimized
         />
        </SeoLink>
        <p className="mt-8 text-[var(--color-charcoal-400)] text-sm leading-relaxed max-w-xs relative z-10">

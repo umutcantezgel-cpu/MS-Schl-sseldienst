@@ -364,16 +364,16 @@ export default function FloatingWhatsAppWidget() {
           left: 0,
           top: 0,
           cursor: isDragging.current ? "grabbing" : "grab",
-          boxShadow: isDragging.current
-            ? "0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25)"
-            : "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)",
+          filter: isDragging.current
+            ? "drop-shadow(0 8px 40px rgba(37,211,102,0.7))"
+            : "drop-shadow(0 6px 28px rgba(37,211,102,0.55))",
           transform: `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)${isDragging.current ? ' scale(1.15)' : ' scale(1)'}`,
           transition: isDragging.current
             ? "none"
             : isSnapping.current
               ? "none"
               : "transform 0.2s",
-          willChange: "transform",
+          willChange: "transform, filter",
           animation: isIdle ? "wa-pulse 2s ease-in-out infinite" : "none",
         }}
       >
