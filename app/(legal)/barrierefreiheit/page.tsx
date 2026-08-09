@@ -171,6 +171,18 @@ export default function BarrierefreiheitPage() {
               </ul>
 
               <h2 className="mt-12 typo-h2 text-[color:var(--text-primary)] text-balance">
+                Konformitätserklärung und Testverfahren
+              </h2>
+              <p className="mt-4 text-[color:var(--text-secondary)]">
+                Diese Website orientiert sich an den Web Content Accessibility Guidelines (WCAG) 2.1 auf Konformitätsstufe AA.
+                Wir überprüfen die Barrierefreiheit regelmäßig durch manuelle Tests mit Screenreadern wie NVDA und VoiceOver
+                sowie durch automatisierte Prüfwerkzeuge wie Lighthouse und axe. Darüber hinaus testen wir die Tastaturnavigation
+                aller interaktiven Elemente, um sicherzustellen, dass sämtliche Funktionen ohne Maus bedienbar sind.
+                Unser Entwicklungsteam berücksichtigt die Richtlinien für barrierefreie Webinhalte bereits während der
+                Konzeptionsphase jeder neuen Komponente.
+              </p>
+
+              <h2 className="mt-12 typo-h2 text-[color:var(--text-primary)] text-balance">
                 Feedback & Kontakt
               </h2>
               <p className="mt-4 text-[color:var(--text-secondary)]">

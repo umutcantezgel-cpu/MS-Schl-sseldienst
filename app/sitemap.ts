@@ -69,9 +69,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const missingStaticPages: MetadataRoute.Sitemap = [
         // Service-Subpages die nicht im Content Graph sind
         { url: `${siteUrl}/leistungen`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-        { url: `${siteUrl}/leistungen/notdienst`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-        { url: `${siteUrl}/leistungen/einbruchschutz`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-        { url: `${siteUrl}/leistungen/tresoroeffnung`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
         // Über-uns Subpages
         { url: `${siteUrl}/ueber-uns/team`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
         { url: `${siteUrl}/ueber-uns/geschichte`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
@@ -88,6 +85,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${siteUrl}/referenzen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
         // HTML-Sitemap
         { url: `${siteUrl}/sitemap-uebersicht`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
+        { url: `${siteUrl}/sitemap-uebersicht/orte-a-m`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
+        { url: `${siteUrl}/sitemap-uebersicht/orte-n-z`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
+        { url: `${siteUrl}/sitemap-uebersicht/standorte`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
         // Legal pages missing from Content Graph
         { url: `${siteUrl}/barrierefreiheit`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
         { url: `${siteUrl}/cookie-richtlinie`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
