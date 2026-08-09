@@ -20,7 +20,6 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 const StickyCtaBar = nextDynamic(() => import("@/components/trust/StickyCtaBar"));
 const Footer = nextDynamic(() => import("@/components/Footer"));
 const MobileBottomBar = nextDynamic(() => import("@/components/MobileBottomBar"));
-const BackToTop = nextDynamic(() => import("@/components/ui/BackToTop"));
 const FloatingWhatsAppWidget = nextDynamic(() => import("@/components/FloatingWhatsAppWidget"));
 const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVitalsReporter").then(mod => mod.WebVitalsReporter));
 
@@ -145,7 +144,6 @@ export default function RootLayout({
             <Footer />
             <MobileBottomBar />
             <StickyCtaBar />
-            <BackToTop />
             <FloatingWhatsAppWidget />
             <WebVitalsReporter />
             <ToastContainer />

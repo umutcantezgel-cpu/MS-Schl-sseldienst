@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TrustStrip from "@/components/trust/TrustStrip";
 import GoogleReviewsBadge from "@/components/reviews/GoogleReviewsBadge";
 import { aggregateRating } from "@/components/reviews/reviews.data";
-import FinalCTA from "@/components/ui/FinalCTA";
+const FinalCTA = nextDynamic(() => import('@/components/ui/FinalCTA'));
 import nextDynamic from "next/dynamic";
 
 
@@ -22,10 +22,10 @@ import SeoContentSection from "@/components/sections/home/SeoContentSection";
 
 import InteractiveMapSection from "@/components/sections/home/InteractiveMapSection";
 import ContactSection from "@/components/sections/home/ContactSection";
-import PersonalizedHero from "@/components/growth/PersonalizedHero";
-import PersonalizedCTA from "@/components/growth/PersonalizedCTA";
-import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
-import ProcessSteps from "@/components/trust/ProcessSteps";
+const PersonalizedHero = nextDynamic(() => import('@/components/growth/PersonalizedHero'));
+const PersonalizedCTA = nextDynamic(() => import('@/components/growth/PersonalizedCTA'));
+const TestimonialCarousel = nextDynamic(() => import('@/components/sections/TestimonialCarousel').then(mod => mod.TestimonialCarousel));
+const ProcessSteps = nextDynamic(() => import('@/components/trust/ProcessSteps'));
 
 export const metadata = generateSharedMetadata({
   title: "Schlüsseldienst Wetzlar | 24h Notdienst ab 99€",

@@ -232,8 +232,8 @@ export default function Footer() {
 
     {/* Bottom Bar und Semantic Address Region */}
     <div className="mt-8 flex flex-col justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[var(--color-charcoal-500)] lg:flex-row lg:items-center">
-     <p className="leading-relaxed" suppressHydrationWarning>
-       © {new Date().getFullYear()} Schlüssel Schmiede Wetzlar · Alle Rechte vorbehalten. | Festpreis-Garantie Wetzlarer Kernstadt | Webdesign by <a href="https://codayweb.de" className="hover:text-[var(--color-red-500)] transition-colors underline">Coday</a>
+     <p className="leading-relaxed">
+       © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Schlüssel Schmiede Wetzlar · Alle Rechte vorbehalten. | Festpreis-Garantie Wetzlarer Kernstadt | Webdesign by <a href="https://codayweb.de" className="hover:text-[var(--color-red-500)] transition-colors underline">Coday</a>
      </p>
       <nav aria-label="Rechtliche Informationen">
        <ul className="flex flex-wrap gap-4">

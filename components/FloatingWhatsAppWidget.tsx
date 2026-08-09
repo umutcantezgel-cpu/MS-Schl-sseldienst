@@ -122,7 +122,9 @@ export default function FloatingWhatsAppWidget() {
 
       pos.current.x = startX + (target.x - startX) * eased;
       pos.current.y = startY + (target.y - startY) * eased;
-      forceRender((n) => n + 1);
+      if (btnRef.current) {
+        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${isDragging.current ? 1.15 : 1})`;
+      }
 
       if (progress < 1) {
         snapFrame.current = requestAnimationFrame(step);
@@ -163,7 +165,9 @@ export default function FloatingWhatsAppWidget() {
     if (p.y <= 0) { p.y = 0; v.y = Math.abs(v.y) * BOUNCE; }
     else if (p.y >= maxY) { p.y = maxY; v.y = -Math.abs(v.y) * BOUNCE; }
 
-    forceRender((n) => n + 1);
+    if (btnRef.current) {
+      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${isDragging.current ? 1.15 : 1})`;
+    }
     // eslint-disable-next-line
     animFrame.current = requestAnimationFrame(() => animate());
   }, [snapToEdge]);
@@ -217,6 +221,9 @@ export default function FloatingWhatsAppWidget() {
       prevPointer.current = { ...lastPointer.current };
       lastPointer.current = { x: e.clientX, y: e.clientY, t: Date.now() };
 
+      if (btnRef.current) {
+        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${isDragging.current ? 1.15 : 1})`;
+      }
       forceRender((n) => n + 1);
     },
     []
@@ -354,19 +361,19 @@ export default function FloatingWhatsAppWidget() {
           textDecoration: "none",
           userSelect: "none",
           touchAction: "none",
-          left: pos.current.x,
-          top: pos.current.y,
+          left: 0,
+          top: 0,
           cursor: isDragging.current ? "grabbing" : "grab",
           boxShadow: isDragging.current
             ? "0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25)"
             : "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)",
-          transform: isDragging.current ? "scale(1.15)" : "scale(1)",
+          transform: `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)${isDragging.current ? ' scale(1.15)' : ' scale(1)'}`,
           transition: isDragging.current
             ? "none"
             : isSnapping.current
               ? "none"
-              : "box-shadow 0.3s, transform 0.2s",
-          willChange: "left, top, transform",
+              : "transform 0.2s",
+          willChange: "transform",
           animation: isIdle ? "wa-pulse 2s ease-in-out infinite" : "none",
         }}
       >

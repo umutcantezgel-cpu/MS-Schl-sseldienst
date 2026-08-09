@@ -263,7 +263,7 @@ export default function HeroSection() {
                   alt="Das Ladengeschäft der Schlüssel Schmiede Wetzlar in der Langgasse 70"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 768px) 70vw, 340px"
+                  sizes="(max-width: 768px) 50vw, 260px"
                   priority
                 />
                 {/* Gradient overlay for bottom text */}
@@ -294,7 +294,7 @@ export default function HeroSection() {
                   alt="Einsatzfahrzeug des Schlüsselnotdienstes Wetzlar"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 768px) 75vw, 360px"
+                  sizes="(max-width: 768px) 50vw, 260px"
                   priority
                 />
                 

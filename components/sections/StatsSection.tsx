@@ -7,7 +7,7 @@ interface StatsSectionProps {
 }
 
 export function StatsSection({ className }: StatsSectionProps) {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2026; // Hardcoded to avoid hydration mismatch
   const yearsExperience = currentYear - (companyInfo.foundedYear || 2012);
   
   const stats = [

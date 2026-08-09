@@ -12,9 +12,9 @@ const PUNYCODE_WWW  = `www.${PUNYCODE_HOST}`;
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // experimental: {
-  //   optimizeCss: true,
-  // },
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'framer-motion', 'date-fns'],
+  },
 
   // [SEO: Removed X-Powered-By Header und Seobility Server Configuration Fix]
   // Prevents Next.js from sending "X-Powered-By: Next.js" in response headers.
@@ -43,7 +43,7 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 960, 1280, 1920, 2560],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    imageSizes: [16, 32, 48, 64, 96, 128, 200, 256, 384],
     minimumCacheTTL: 31536000,
     remotePatterns: [],
     unoptimized: false, // [PERF] Enabled: Vercel Image Optimization → serves AVIF/WebP at correct sizes
