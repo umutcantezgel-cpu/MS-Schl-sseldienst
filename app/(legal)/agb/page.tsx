@@ -8,7 +8,7 @@ import { RevisionTimeline } from "@/components/legal/RevisionTimeline"
 import { generateSharedMetadata } from "@/lib/metadata"
 
 export const metadata = generateSharedMetadata({
-  title: "AGB | Schlüssel Schmiede Wetzlar",
+  title: "AGB & Vertragsbedingungen | Schlüssel Schmiede Wetzlar",
   description: "Allgemeine Geschäftsbedingungen (AGB) der Schlüssel Schmiede Wetzlar. Informationen zu Preisen, Anfahrtskosten, Vertragsschluss und Haftung.",
   path: "/agb",
   exactTitle: true,

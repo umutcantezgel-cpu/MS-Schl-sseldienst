@@ -21,7 +21,7 @@ import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAs
 
 export const metadata = generateSharedMetadata({
   title: "Tresoröffnung Wetzlar | Diskrete Safe-Öffnung",
-  description: "Diskrete & professionelle Tresoröffnung in Wetzlar. Zertifizierte Monteure öffnen mechanische & elektronische Safes bei Schlüsselverlust oder Code-Vergessen.",
+  description: "Diskrete & professionelle Tresoröffnung in Wetzlar. Zertifizierte Monteure öffnen mechanische & elektronische Safes bei Schlüsselverlust oder Codefehler.",
   path: "/leistungen/tresoroeffnung",
   exactTitle: true,
 });

@@ -7,7 +7,7 @@ import { generateSharedMetadata } from "@/lib/metadata"
 import { MapConsentGate } from "@/components/legal/MapConsentGate"
 
 export const metadata = generateSharedMetadata({
-    title: "Impressum & Anbieterkennzeichnung",
+    title: "Impressum & Anbieterkennzeichnung | Schlüsseldienst Wetzlar",
     description: "Impressum und rechtliche Angaben der Schlüssel Schmiede Wetzlar. Kontaktdaten, Verantwortliche und Anbieterkennzeichnung gemäß DDG.",
     path: "/impressum",
     exactTitle: true,

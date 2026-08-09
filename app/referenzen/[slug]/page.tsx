@@ -51,6 +51,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (description.length > 130) {
     description = description.slice(0, 127) + "...";
   }
+  if (description.length < 120) {
+    description = (description + " | Fallstudie der Schlüssel Schmiede Wetzlar.").substring(0, 155).trim();
+  }
 
   return generateSharedMetadata({
     title,
