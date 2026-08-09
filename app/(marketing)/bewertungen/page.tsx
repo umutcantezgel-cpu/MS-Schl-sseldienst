@@ -6,6 +6,7 @@ import { entryAnimations } from"@/lib/animations";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { auszeichnungImages, teamImages } from "@/lib/data/imageAssets";
+import { siteUrl } from "@/lib/schema";
 
 export const metadata = generateSharedMetadata({
  title: "Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar",
@@ -79,6 +80,7 @@ function generateReviewSchema() {
  return {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": `${siteUrl}/#localbusiness`,
   "name": "Schlüssel Schmiede Wetzlar",
   "image": "https://www.wetzlar-schlüsseldienst.de/images/og-image.jpg",
   "telephone": "+4964418056279",
@@ -89,13 +91,6 @@ function generateReviewSchema() {
     "addressLocality": "Wetzlar",
     "postalCode": "35576",
     "addressCountry": "DE"
-  },
-  "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "5.0",
-   "reviewCount": "58",
-   "bestRating": "5",
-   "worstRating": "1"
   },
   "review": reviews.map(r => ({
    "@type": "Review",

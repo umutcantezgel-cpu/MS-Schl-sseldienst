@@ -79,7 +79,7 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
       <JsonLd data={getArticleSchema({
         headline: study.title,
         description: study.challenge || study.title,
-        datePublished: new Date().toISOString(),
+        datePublished: "2025-01-01T00:00:00.000Z",
         url: `${siteUrl}/referenzen/${study.slug}`,
         author: "Schlüssel Schmiede Wetzlar"
       })} />

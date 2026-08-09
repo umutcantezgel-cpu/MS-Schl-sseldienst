@@ -46,7 +46,7 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
     remotePatterns: [],
-    unoptimized: true,
+    unoptimized: false, // [PERF] Enabled: Vercel Image Optimization → serves AVIF/WebP at correct sizes
   },
 
   // ─── SEO: Trailing slash behavior ───
@@ -197,6 +197,27 @@ const nextConfig: NextConfig = {
         destination: "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/",
         permanent: false,
       },
+      // ── Legacy City URLs from GSC (404 Fixes) ──
+      { source: "/huttenberg", destination: "/schluesseldienst-huettenberg", permanent: true },
+      { source: "/buseck", destination: "/schluesseldienst-buseck", permanent: true },
+      { source: "/haiger", destination: "/schluesseldienst-haiger", permanent: true },
+      { source: "/dillenburg", destination: "/schluesseldienst-dillenburg", permanent: true },
+      { source: "/wettenberg", destination: "/schluesseldienst-wettenberg", permanent: true },
+      { source: "/linden", destination: "/schluesseldienst-linden", permanent: true },
+      { source: "/lahnau", destination: "/schluesseldienst-lahnau", permanent: true },
+      { source: "/wetzlar", destination: "/schluesseldienst-wetzlar", permanent: true },
+      { source: "/giessen", destination: "/schluesseldienst-giessen", permanent: true },
+      { source: "/herborn", destination: "/schluesseldienst-herborn", permanent: true },
+      { source: "/solms", destination: "/schluesseldienst-solms", permanent: true },
+      { source: "/asslar", destination: "/schluesseldienst-asslar", permanent: true },
+      { source: "/braunfels", destination: "/schluesseldienst-braunfels", permanent: true },
+      { source: "/ehringshausen", destination: "/schluesseldienst-ehringshausen", permanent: true },
+      { source: "/heuchelheim", destination: "/schluesseldienst-heuchelheim", permanent: true },
+      { source: "/leun", destination: "/schluesseldienst-leun", permanent: true },
+      { source: "/lich", destination: "/schluesseldienst-lich", permanent: true },
+      { source: "/lollar", destination: "/schluesseldienst-lollar", permanent: true },
+      { source: "/marburg", destination: "/schluesseldienst-marburg", permanent: true },
+      { source: "/pohlheim", destination: "/schluesseldienst-pohlheim", permanent: true },
     ];
   },
 

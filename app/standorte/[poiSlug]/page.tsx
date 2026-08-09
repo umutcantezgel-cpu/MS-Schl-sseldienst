@@ -114,7 +114,6 @@ export default async function PoiPage({ params }: { params: Promise<{ poiSlug: s
     telephone: phoneLink,
     areaServed: { "@type": "Place", name: poi.name, address: { "@type": "PostalAddress", addressLocality: poi.city, postalCode: poi.plz, addressCountry: "DE" } },
     parentOrganization: { "@type": "Locksmith", "@id": `${siteUrl}/#localbusiness`, name: companyInfo.localStore.name },
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "46", bestRating: "5", worstRating: "1" },
   };
 
   // ── Section Renderers (keyed by SectionId) ──

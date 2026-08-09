@@ -115,9 +115,6 @@ export default function RootLayout({
           This ensures the SVG is requested at high priority instantly. */}
      <link rel="preload" as="image" href="/images/logo-header.svg" type="image/svg+xml" fetchPriority="high" />
           
-     {/* [PERF] Removed: preconnect to google-analytics.com (no GA script loaded → wasted TLS handshake) */}
-     <link rel="preconnect" href="https://maps.googleapis.com" />
-     <link rel="dns-prefetch" href="https://maps.googleapis.com" />
      {/* ⚠| Fallback Favicon-Link. Dient als Backup, falls Cache-Nodes
           die Metadata.icons API verzögert ausliefern. */}
      <link rel="icon" href="/favicon.ico" sizes="48x48" />

@@ -283,12 +283,12 @@ export default function FloatingWhatsAppWidget() {
 
   return (
     <>
-      {/* CSS Keyframes for pulse animation */}
+      {/* CSS Keyframes for pulse animation — compositable (transform+opacity only) */}
       <style jsx global>{`
         @keyframes wa-pulse {
-          0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
-          70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
-          100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+          0% { transform: scale(1); }
+          50% { transform: scale(1.08); }
+          100% { transform: scale(1); }
         }
         @media (prefers-reduced-motion: reduce) {
           .wa-pulse-ring { animation: none !important; }

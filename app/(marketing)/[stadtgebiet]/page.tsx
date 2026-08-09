@@ -129,13 +129,6 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
       "@type": "City",
       "name": city.name
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": aggregateRating.ratingValue.toString(),
-      "reviewCount": aggregateRating.reviewCount.toString(),
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",

@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { ReactNode } from "react";
 
 import { Phone, Euro, DoorOpen, CreditCard } from "lucide-react";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
@@ -14,7 +15,7 @@ export interface StepItem {
   id: number;
   num: string;
   title: string;
-  description: string;
+  description: ReactNode;
   icon: any;
 }
 
@@ -42,8 +43,8 @@ export default function ProcessSteps({
       num: "01",
       title: "Anrufen & Situation schildern",
       description: isLeistungen 
-        ? `Kontaktieren Sie unseren <strong>Notdienst für ${formattedSlug}</strong> 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen zum Thema ${formattedSlug}, damit wir passendes Werkzeug einplanen können.`
-        : "Kontaktieren Sie unseren <strong>Schlüsseldienst Notdienst</strong> 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).",
+        ? <>Kontaktieren Sie unseren <strong>Notdienst für {formattedSlug}</strong> 24/7 über unsere Hotline 06441 8056279. Erklären Sie uns kurz Ihr Anliegen zum Thema {formattedSlug}, damit wir passendes Werkzeug einplanen können.</>
+        : <>Kontaktieren Sie unseren <strong>Schlüsseldienst Notdienst</strong> 24/7 unter 06441 8056279. Schildern Sie uns kurz Ihr Anliegen (z.B. Tür zugefallen oder abgeschlossen).</>,
       icon: Phone,
     },
     {
