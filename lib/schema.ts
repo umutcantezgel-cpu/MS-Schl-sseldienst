@@ -162,6 +162,7 @@ export function getPricingSchema() {
         offers: {
             "@type": "AggregateOffer",
             lowPrice: BASE_PRICES.door,
+            highPrice: BASE_PRICES.car,
             priceCurrency: "EUR",
             offerCount: 2,
             offers: [
