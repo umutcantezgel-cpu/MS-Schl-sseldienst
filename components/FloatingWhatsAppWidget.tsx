@@ -58,36 +58,10 @@ export default function FloatingWhatsAppWidget() {
   const [mounted, setMounted] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
   const [showBadge, setShowBadge] = useState(true);
-  const btnRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
-
-  // Position state
-  const pos = useRef({ x: 0, y: 0 });
-  const vel = useRef({ x: 0, y: 0 });
-  const isDragging = useRef(false);
-  const wasDragged = useRef(false);
-  const isSnapping = useRef(false);
-  const dragStart = useRef({ x: 0, y: 0 });
-  const lastPointer = useRef({ x: 0, y: 0, t: 0 });
-  const prevPointer = useRef({ x: 0, y: 0, t: 0 });
-  const animFrame = useRef<number>(0);
-  const snapFrame = useRef<number>(0);
-  const [, forceRender] = useState(0);
-
-  const SIZE = 64;
-  const FRICTION = 0.92;
-  const BOUNCE = 0.6;
-  const MIN_VEL = 0.3;
-  const DRAG_THRESHOLD = 5;
 
   useEffect(() => {
     setMounted(true);
-    const isMobile = window.innerWidth < 768;
-    pos.current = {
-      x: window.innerWidth - SIZE - (isMobile ? 16 : 24),
-      y: window.innerHeight - SIZE - (isMobile ? 140 : 96),
-    };
-    forceRender((n) => n + 1);
 
     // Show tooltip after 5s of inactivity
     const tooltipTimer = setTimeout(() => setShowTooltip(true), 5000);
@@ -100,166 +74,8 @@ export default function FloatingWhatsAppWidget() {
     };
   }, []);
 
-  /* ── Edge-snap animation (spring-like easing) ── */
-  const snapToEdge = useCallback(() => {
-    const target = getSnapTarget(
-      pos.current.x, pos.current.y,
-      window.innerWidth, window.innerHeight, SIZE
-    );
-    isSnapping.current = true;
-
-    const startX = pos.current.x;
-    const startY = pos.current.y;
-    const startTime = performance.now();
-    const duration = 400; // ms
-
-    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
-
-    const step = (now: number) => {
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = easeOutCubic(progress);
-
-      pos.current.x = startX + (target.x - startX) * eased;
-      pos.current.y = startY + (target.y - startY) * eased;
-      if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${isDragging.current ? 1.15 : 1})`;
-      }
-
-      if (progress < 1) {
-        snapFrame.current = requestAnimationFrame(step);
-      } else {
-        isSnapping.current = false;
-      }
-    };
-
-    snapFrame.current = requestAnimationFrame(step);
-  }, []);
-
-  /* ── Physics animation loop ── */
-  const animate = useCallback(() => {
-    if (isDragging.current) return;
-
-    const p = pos.current;
-    const v = vel.current;
-    const maxX = window.innerWidth - SIZE;
-    const maxY = window.innerHeight - SIZE;
-
-    v.x *= FRICTION;
-    v.y *= FRICTION;
-
-    if (Math.abs(v.x) < MIN_VEL && Math.abs(v.y) < MIN_VEL) {
-      v.x = 0;
-      v.y = 0;
-      // After momentum settles, snap to nearest edge
-      snapToEdge();
-      return;
-    }
-
-    p.x += v.x;
-    p.y += v.y;
-
-    // Bounce off edges
-    if (p.x <= 0) { p.x = 0; v.x = Math.abs(v.x) * BOUNCE; }
-    else if (p.x >= maxX) { p.x = maxX; v.x = -Math.abs(v.x) * BOUNCE; }
-    if (p.y <= 0) { p.y = 0; v.y = Math.abs(v.y) * BOUNCE; }
-    else if (p.y >= maxY) { p.y = maxY; v.y = -Math.abs(v.y) * BOUNCE; }
-
-    if (btnRef.current) {
-      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${isDragging.current ? 1.15 : 1})`;
-    }
-    // eslint-disable-next-line
-    animFrame.current = requestAnimationFrame(() => animate());
-  }, [snapToEdge]);
-
-  const onPointerDown = useCallback(
-    (e: React.PointerEvent) => {
-      e.preventDefault();
-      isDragging.current = true;
-      wasDragged.current = false;
-      isSnapping.current = false;
-      cancelAnimationFrame(animFrame.current);
-      cancelAnimationFrame(snapFrame.current);
-      vel.current = { x: 0, y: 0 };
-
-      // Hide tooltip on interaction
-      setShowTooltip(false);
-      setShowBadge(false);
-
-      const now = Date.now();
-      dragStart.current = { x: e.clientX, y: e.clientY };
-      lastPointer.current = { x: e.clientX, y: e.clientY, t: now };
-      prevPointer.current = { x: e.clientX, y: e.clientY, t: now };
-
-      (e.target as HTMLElement).setPointerCapture(e.pointerId);
-
-      // Haptic feedback on mobile
-      if (navigator.vibrate) navigator.vibrate(30);
-    },
-    []
-  );
-
-  const onPointerMove = useCallback(
-    (e: React.PointerEvent) => {
-      if (!isDragging.current) return;
-
-      const dx = e.clientX - lastPointer.current.x;
-      const dy = e.clientY - lastPointer.current.y;
-
-      const totalDx = e.clientX - dragStart.current.x;
-      const totalDy = e.clientY - dragStart.current.y;
-      if (Math.abs(totalDx) > DRAG_THRESHOLD || Math.abs(totalDy) > DRAG_THRESHOLD) {
-        wasDragged.current = true;
-      }
-
-      const maxX = window.innerWidth - SIZE;
-      const maxY = window.innerHeight - SIZE;
-
-      pos.current.x = Math.max(0, Math.min(maxX, pos.current.x + dx));
-      pos.current.y = Math.max(0, Math.min(maxY, pos.current.y + dy));
-
-      prevPointer.current = { ...lastPointer.current };
-      lastPointer.current = { x: e.clientX, y: e.clientY, t: Date.now() };
-
-      if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${isDragging.current ? 1.15 : 1})`;
-      }
-      forceRender((n) => n + 1);
-    },
-    []
-  );
-
-  const onPointerUp = useCallback(
-    (e: React.PointerEvent) => {
-      if (!isDragging.current) return;
-      isDragging.current = false;
-
-      const dt = Math.max(1, lastPointer.current.t - prevPointer.current.t);
-      const vx = ((lastPointer.current.x - prevPointer.current.x) / dt) * 16;
-      const vy = ((lastPointer.current.y - prevPointer.current.y) / dt) * 16;
-
-      const maxV = 40;
-      vel.current = {
-        x: Math.max(-maxV, Math.min(maxV, vx)),
-        y: Math.max(-maxV, Math.min(maxV, vy)),
-      };
-
-      if (Math.abs(vel.current.x) > MIN_VEL || Math.abs(vel.current.y) > MIN_VEL) {
-        animFrame.current = requestAnimationFrame(animate);
-      } else {
-        // No throw velocity snap immediately
-        snapToEdge();
-      }
-    },
-    [animate, snapToEdge]
-  );
-
   const onClick = useCallback(
     (e: React.MouseEvent) => {
-      if (wasDragged.current) {
-        e.preventDefault();
-        return;
-      }
       // Analytics event
       if (typeof window !== "undefined" && (window as any).gtag) {
         (window as any).gtag("event", "whatsapp_click", {
@@ -271,14 +87,6 @@ export default function FloatingWhatsAppWidget() {
     [pathname]
   );
 
-  // Cleanup
-  useEffect(() => {
-    return () => {
-      cancelAnimationFrame(animFrame.current);
-      cancelAnimationFrame(snapFrame.current);
-    };
-  }, []);
-
   const whatsappNumber = companyInfo.socialMedia.whatsapp;
   if (!whatsappNumber || !mounted) return null;
 
@@ -286,16 +94,17 @@ export default function FloatingWhatsAppWidget() {
   const contextMessage = getContextualMessage(pathname);
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanNumber}&text=${encodeURIComponent(contextMessage)}`;
 
-  const isIdle = !isDragging.current && vel.current.x === 0 && vel.current.y === 0 && !isSnapping.current;
-
   return (
     <>
-      {/* CSS Keyframes for pulse animation — compositable (transform+opacity only) */}
       <style jsx global>{`
         @keyframes wa-pulse {
           0% { transform: scale(1); }
           50% { transform: scale(1.08); }
           100% { transform: scale(1); }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
         @media (prefers-reduced-motion: reduce) {
           .wa-pulse-ring { animation: none !important; }
@@ -303,17 +112,17 @@ export default function FloatingWhatsAppWidget() {
       `}</style>
 
       {/* Tooltip */}
-      {showTooltip && isIdle && (
+      {showTooltip && (
         <div
           style={{
             position: "fixed",
             zIndex: 9996,
-            left: pos.current.x - 110,
-            top: pos.current.y + 8,
+            right: "90px",
+            bottom: "34px",
             pointerEvents: "none",
-            opacity: 1,
-            animation: "fadeIn 0.3s ease-out",
+            animation: "fadeIn 0.3s ease-out forwards",
           }}
+          className="hidden md:block" // Hide tooltip on mobile to avoid overlap
         >
           <div
             style={{
@@ -335,46 +144,32 @@ export default function FloatingWhatsAppWidget() {
 
       {/* Main Button */}
       <a
-        ref={btnRef}
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer nofollow"
         aria-label="Nachricht per WhatsApp senden"
         id="whatsapp-floating-btn"
         onClick={onClick}
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
+        className="wa-pulse-ring"
         style={{
           position: "fixed",
           zIndex: 9997,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          width: SIZE,
-          height: SIZE,
+          width: 64,
+          height: 64,
           borderRadius: "50%",
           backgroundColor: "#25D366",
           color: "#ffffff",
           textDecoration: "none",
-          userSelect: "none",
-          touchAction: "none",
-          left: 0,
-          top: 0,
-          cursor: isDragging.current ? "grabbing" : "grab",
-          filter: isDragging.current
-            ? "drop-shadow(0 8px 40px rgba(37,211,102,0.7))"
-            : "drop-shadow(0 6px 28px rgba(37,211,102,0.55))",
-          transform: `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)${isDragging.current ? ' scale(1.15)' : ' scale(1)'}`,
-          transition: isDragging.current
-            ? "none"
-            : isSnapping.current
-              ? "none"
-              : "transform 0.2s",
+          right: "24px",
+          bottom: "24px",
+          filter: "drop-shadow(0 6px 28px rgba(37,211,102,0.55))",
           willChange: "transform, filter",
-          animation: isIdle ? "wa-pulse 2s ease-in-out infinite" : "none",
+          animation: "wa-pulse 2s ease-in-out infinite",
         }}
       >
         {/* Notification Badge */}
