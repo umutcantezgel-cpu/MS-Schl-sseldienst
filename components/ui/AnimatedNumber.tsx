@@ -1,7 +1,7 @@
 "use client";
 
 import { m, useSpring, useTransform } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface AnimatedNumberProps {
   value: number;
@@ -9,22 +9,29 @@ interface AnimatedNumberProps {
 }
 
 export default function AnimatedNumber({ value, className = "" }: AnimatedNumberProps) {
-  // We use a spring for a highly premium, smooth counting effect
+  const [mounted, setMounted] = useState(false);
   const springValue = useSpring(value, {
     mass: 0.8,
     stiffness: 75,
     damping: 15,
   });
 
-  // Whenever the value prop changes, we animate the spring to the new target
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     springValue.set(value);
   }, [value, springValue]);
 
-  // Transform the floating point spring value into a formatted string (no decimals for full euros)
   const displayValue = useTransform(springValue, (current) =>
     Math.round(current).toString()
   );
 
-  return <m.span className={className}>{displayValue}</m.span>;
+  return (
+    <m.span className={className} suppressHydrationWarning>
+      {mounted ? displayValue : value}
+    </m.span>
+  );
 }

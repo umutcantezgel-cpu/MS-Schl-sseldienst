@@ -195,7 +195,7 @@ export default function CookieConsent() {
                           ? "Marketing erlaubt, Analyse abgelehnt"
                           : "Nur essentielle Cookies"
                     }
-                    {" "}(seit {new Date(consent.timestamp).toLocaleString("de-DE")})
+                    {" "}<span suppressHydrationWarning>(seit {new Date(consent.timestamp).toLocaleString("de-DE")})</span>
                   </div>
                 )}
 
@@ -245,7 +245,7 @@ export default function CookieConsent() {
               Hier können Sie Ihre Einwilligung für einzelne Cookie-Kategorien erteilen oder widerrufen.
               Technisch notwendige Cookies sind immer aktiv und können nicht deaktiviert werden (§25 Abs. 2 TTDSG).
               {consent?.timestamp && (
-                <span className="block mt-1 font-medium">
+                <span className="block mt-1 font-medium" suppressHydrationWarning>
                   Letzte Einwilligung: {new Date(consent.timestamp).toLocaleString("de-DE")}
                 </span>
               )}

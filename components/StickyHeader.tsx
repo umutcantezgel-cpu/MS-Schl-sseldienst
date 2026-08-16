@@ -122,14 +122,15 @@ export default function StickyHeader() {
             aria-label="Startseite und Schlüssel Schmiede Wetzlar"
             title="Schlüssel Schmiede Wetzlar Startseite"
           >
-            <span className="sr-only">Startseite</span>
-            <Image
+            {/* Native <img> for instant LCP rendering without Next.js async decoding or hydration delay */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/logo-header.svg"
               alt="Schlüssel Schmiede Wetzlar Logo"
               width={356}
               height={81}
-              priority={true}
-              unoptimized
+              fetchPriority="high"
+              decoding="sync"
               className={`object-contain transition-all duration-500 ease-out ${
                 isScrolled
                   ? "h-[32px] w-[140px] sm:h-[38px] sm:w-[167px] lg:h-[44px] lg:w-[193px] xl:h-[48px] xl:w-[210px]"
@@ -419,13 +420,14 @@ export default function StickyHeader() {
             <div className="flex justify-between items-center px-4 sm:px-5 h-[64px] sm:h-[80px] shrink-0 border-b border-gray-100/80 bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.03)] pt-[env(safe-area-inset-top)] z-10 relative">
               <Link href="/" aria-label="Zur Startseite" title="Schlüssel Schmiede Wetzlar Startseite" className="flex items-center bg-white rounded-xl overflow-hidden" style={{ isolation: 'isolate' }} onClick={() => setIsMobileMenuOpen(false)}>
                 <span className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none">Startseite</span>
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src="/images/logo-header.svg"
                   alt="Schlüssel Schmiede Wetzlar Logo"
                   width={356}
                   height={81}
                   className="h-[38px] w-[167px] object-contain"
-                  unoptimized
+                  loading="lazy"
                 />
               </Link>
               <button

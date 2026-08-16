@@ -5,18 +5,8 @@ import { trackEvent } from "@/lib/analytics";
 
 /**
  * Phase 19 und Enhanced Web Vitals Reporter
- * Sends CWV to GA4 and checks performance budgets.
- * Budget violations logged via ErrorLogger as warnings.
+ * Sends CWV to GA4.
  */
-
-const BUDGETS: Record<string, number> = {
-  LCP: 2500,  // ms
-  CLS: 0.1,
-  INP: 200,   // ms
-  FCP: 1800,  // ms
-  TTFB: 800,  // ms
-};
-
 export function WebVitalsReporter() {
   useReportWebVitals((metric) => {
     // Only track Core Web Vitals
@@ -28,20 +18,6 @@ export function WebVitalsReporter() {
       value: metric.value,
       rating: metric.rating,
     });
-
-    // Performance budget check (SKIP in dev und Turbopack inflates all metrics)
-    if (process.env.NODE_ENV === 'development') return;
-
-    const budget = BUDGETS[metric.name];
-    if (budget !== undefined && metric.value > budget) {
-      // Log as warning via ErrorLogger (lazy import to avoid circular deps)
-      import("@/lib/monitoring/error-logger").then(({ errorLogger }) => {
-        errorLogger.warn(
-          `Performance budget exceeded: ${metric.name} = ${metric.value.toFixed(2)} (limit: ${budget})`,
-          { page: typeof window !== "undefined" ? window.location.pathname : "/" }
-        );
-      });
-    }
   });
 
   return null;

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
 const GlobalBackground = dynamic(() => import("@/components/GlobalBackground"), { ssr: false });
@@ -19,8 +20,26 @@ const SpeculativePrefetch = dynamic(() => import("@/components/performance/Specu
  * analytics trackers, etc.) in a single "use client" boundary so the root layout
  * stays a pure Server Component and SSR metadata (meta description, title, OG tags)
  * is always rendered in the initial HTML response.
+ *
+ * [PERF] Defer mounting to idle time so the initial hydration and LCP paint execute with 0 main-thread blocking.
  */
 export default function ClientShell() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    const trigger = () => setMounted(true);
+
+    if (typeof window !== "undefined" && "requestIdleCallback" in window) {
+      const id = (window as unknown as { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number }).requestIdleCallback(trigger, { timeout: 2500 });
+      return () => (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(id);
+    } else {
+      const timer = setTimeout(trigger, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <>
       <RouteAnnouncer />
