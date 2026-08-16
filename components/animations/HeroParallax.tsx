@@ -8,6 +8,7 @@ function FloatingPaths({ position }: { position: number }) {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
     if (window.innerWidth < 768) {
       setIsDesktop(false);
@@ -75,6 +76,7 @@ export function HeroParallax() {
   const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
     if (window.innerWidth < 768) {
       setIsDesktop(false);
