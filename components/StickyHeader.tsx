@@ -67,7 +67,14 @@ export default function StickyHeader() {
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          setScrollPosition(window.scrollY);
+          setScrollPosition((prev) => {
+             const current = window.scrollY;
+             // Only update if it crosses the threshold 20 to avoid excessive re-renders
+             if ((prev <= 20 && current > 20) || (prev > 20 && current <= 20)) {
+               return current;
+             }
+             return prev;
+          });
           ticking = false;
         });
         ticking = true;

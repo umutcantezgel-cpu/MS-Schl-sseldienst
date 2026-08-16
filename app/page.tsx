@@ -3,25 +3,25 @@ import HeroSection from "@/components/HeroSection";
 import TrustStrip from "@/components/trust/TrustStrip";
 import GoogleReviewsBadge from "@/components/reviews/GoogleReviewsBadge";
 import { aggregateRating } from "@/components/reviews/reviews.data";
-const FinalCTA = nextDynamic(() => import('@/components/ui/FinalCTA'));
 import nextDynamic from "next/dynamic";
 
+const FinalCTA = nextDynamic(() => import('@/components/ui/FinalCTA'));
 
 import JsonLd from "@/components/seo/JsonLd";
 import { getPricingSchema, getServiceSchema } from "@/lib/schema";
 import { getAllTestimonials } from "@/lib/data/testimonials";
 import AIAnswerBox from "@/components/seo/AIAnswerBox";
 
-import { PricingSection } from "@/components/sections/home/PricingSection";
-import ServicesSection from "@/components/sections/home/ServicesSection";
-import WhyUsSection from "@/components/sections/home/WhyUsSection";
-import TrustMetricsSection from "@/components/sections/home/TrustMetricsSection";
+// Dynamically imported below-the-fold sections
+const PricingSection = nextDynamic(() => import("@/components/sections/home/PricingSection").then(mod => mod.PricingSection));
+const ServicesSection = nextDynamic(() => import("@/components/sections/home/ServicesSection"));
+const WhyUsSection = nextDynamic(() => import("@/components/sections/home/WhyUsSection"));
+const TrustMetricsSection = nextDynamic(() => import("@/components/sections/home/TrustMetricsSection"));
+const InteractiveMapSection = nextDynamic(() => import("@/components/sections/home/InteractiveMapSection"));
+const FAQSection = nextDynamic(() => import("@/components/sections/home/FAQSection"));
+const SeoContentSection = nextDynamic(() => import("@/components/sections/home/SeoContentSection"));
+const ContactSection = nextDynamic(() => import("@/components/sections/home/ContactSection"));
 
-import FAQSection from "@/components/sections/home/FAQSection";
-import SeoContentSection from "@/components/sections/home/SeoContentSection";
-
-import InteractiveMapSection from "@/components/sections/home/InteractiveMapSection";
-import ContactSection from "@/components/sections/home/ContactSection";
 const PersonalizedHero = nextDynamic(() => import('@/components/growth/PersonalizedHero'));
 const PersonalizedCTA = nextDynamic(() => import('@/components/growth/PersonalizedCTA'));
 const TestimonialCarousel = nextDynamic(() => import('@/components/sections/TestimonialCarousel').then(mod => mod.TestimonialCarousel));

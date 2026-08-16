@@ -1,132 +1,14 @@
-"use client";
-
-import { Phone, ShieldCheck, Clock, Key, ArrowRight } from "lucide-react";
+import { Phone, ShieldCheck, Clock, Key, ArrowRight, Hammer, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
-import { useEffect, useState, useMemo } from "react";
-
-import { m, useScroll, useTransform } from "framer-motion";
 import HeartbeatCTA from "@/components/animations/HeartbeatCTA";
-import { Typography } from "@/components/ui/typography/Typography";
+import { HeroParallax } from "@/components/animations/HeroParallax";
 
 /* ============================================================
-  HERO SECTION und Award-Level Design
-  
-  6-Schicht-Hintergrund:
-   1. Charcoal-900 Base
-   2. Noise-Textur (CSS-only, kein Asset)
-   3. Warm Center-Glow (Red Radial)
-   3.5 Animated Flowing Paths (SVG, subtle)
-   4. Dot-Grid (subtil, 3% Opacity)
-   5. Bottom-Gradient (nahtloser Übergang)
-  
-  Staggered Entrance-Animation per CSS-only (kein framer-motion).
-  Reduced-motion respektiert.
+  HERO SECTION
   ============================================================ */
 
-/* --- Animated Flowing Background Paths --- */
-function FloatingPaths({ position }: { position: number }) {
-  const [isMounted, setIsMounted] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(true);
-
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsMounted(true);
-    if (window.innerWidth < 768) {
-      setIsDesktop(false);
-    }
-  }, []);
-
-  const paths = useMemo(
-    () =>
-      Array.from({ length: 36 }, (_, i) => ({
-        id: i,
-        d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
-          380 - i * 5 * position
-        } -${189 + i * 6} -${312 - i * 5 * position} ${216 - i * 6} ${
-          152 - i * 5 * position
-        } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
-          684 - i * 5 * position
-        } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
-        width: 0.5 + i * 0.03,
-        /* Deterministic duration per path index und no Math.random() */
-        duration: 20 + ((i * 7 + 3) % 10),
-      })),
-    [position]
-  );
-
-  // Performance-Fix: Unmount the entire SVG on mobile AND on the server.
-  // Returning null before isMounted guarantees 0 bytes of SVG are sent to the client initially,
-  // completely bypassing hydration costs. It will fade in gently on Desktop after hydration.
-  if (!isMounted || !isDesktop) return null;
-
-  return (
-    <div className="absolute inset-0 pointer-events-none hidden md:block">
-      <svg
-        className="w-full h-full"
-        viewBox="0 0 696 316"
-        fill="none"
-        aria-hidden="true"
-      >
-        {paths.map((path) => (
-          <m.path
-            key={path.id}
-            d={path.d}
-            style={{ stroke: "var(--color-blush-600)" }}
-            strokeWidth={path.width * 1.5}
-            strokeOpacity={0.05 + path.id * 0.015}
-            initial={{ pathLength: 0.3, opacity: 0.4 }}
-            animate={
-              isMounted
-                ? {
-                   pathLength: 1,
-                   opacity: [0.2, 0.6, 0.2],
-                   pathOffset: [0, 1, 0],
-                 }
-                : undefined
-            }
-            transition={{
-              duration: path.duration,
-              repeat: Number.POSITIVE_INFINITY,
-              ease:"linear",
-            }}
-          />
-        ))}
-      </svg>
-    </div>
-  );
-}
-
-function DesktopParallax() {
-  const { scrollY } = useScroll();
-  const backgroundY = useTransform(scrollY, [0, 800], ["0%","25%"]);
-  const opacityFade = useTransform(scrollY, [0, 600], [1, 0]);
-
-  return (
-    <m.div 
-      className="absolute inset-0 z-0 pointer-events-none hidden md:block"
-      style={{ y: backgroundY, opacity: opacityFade }}
-    >
-      <div className="absolute inset-0" />
-      <FloatingPaths position={1} />
-    </m.div>
-  );
-}
-
-// Remove static featureCards array as we are building a bespoke Bento Grid
 export default function HeroSection() {
-  const [isMounted, setIsMounted] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(true);
-
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsMounted(true);
-    if (window.innerWidth < 768) {
-      setIsDesktop(false);
-    }
-  }, []);
-
   return (
     <section
       id="hero-section"
@@ -134,12 +16,10 @@ export default function HeroSection() {
       className="relative w-full flex items-center overflow-hidden pt-[90px] sm:pt-[100px] lg:pt-[90px] xl:pt-[100px] pb-16 sm:pb-14 lg:pb-[24px] bg-gradient-to-b from-[var(--color-off-white)] to-white"
     >
       {/* ── Static Background Layer (Mobile Performance) ── */}
-      <div className="absolute inset-0 z-0 pointer-events-none md:hidden block">
-         <div className="absolute inset-0" />
-      </div>
+      <div className="absolute inset-0 z-0 pointer-events-none md:hidden block" />
 
       {/* ── Parallax Background Layer (Desktop only) ── */}
-      {isMounted && isDesktop && <DesktopParallax />}
+      <HeroParallax />
 
       {/* Content wird über dem global fixierten Hintergrund gerendert */}
       <div className="container relative z-[10] mx-auto px-5 sm:px-8 lg:px-10 h-full flex flex-col justify-center">
@@ -149,22 +29,17 @@ export default function HeroSection() {
           <div className="lg:col-span-7 flex flex-col justify-center gap-3 sm:gap-4 lg:gap-5">
 
             {/* 1. Verfügbarkeits-Badge */}
-            <div
-              className="flex"
-            >
-              <div className="flex items-center gap-2 sm:gap-2.5 bg-[var(--value-primary)]/10 border border-[var(--value-primary)]/20 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full backdrop-blur-sm w-fit">
-                <span className="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5 shrink-0">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
-                </span>
-                <span className="text-[color:var(--value-primary)] text-xs sm:text-sm md:text-sm font-semibold tracking-wide">
-                  Fachgeschäft & 24h Schlüsselnotdienst
-                </span>
-              </div>
+            <div className="flex items-center gap-2 sm:gap-2.5 bg-[var(--value-primary)]/10 border border-[var(--value-primary)]/20 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full backdrop-blur-sm w-fit">
+              <span className="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-status-success" />
+              </span>
+              <span className="text-[color:var(--value-primary)] text-xs sm:text-sm md:text-sm font-semibold tracking-wide">
+                Fachgeschäft & 24h Schlüsselnotdienst
+              </span>
             </div>
 
-            {/* 2. Headline und Visual heading (H2 since server-rendered H1 exists in page.tsx) */}
-            <div>
+            {/* 2. Headline und Visual heading */}
             <h1
               id="hero-heading"
               itemProp="headline"
@@ -180,7 +55,6 @@ export default function HeroSection() {
                 Schlüssel Schmiede: Ladenlokal & Mobiler Notdienst
               </span>
             </h1>
-            </div>
 
             {/* 3. Subheadline */}
             <p
@@ -222,28 +96,26 @@ export default function HeroSection() {
               </a>
 
               {/* CTA Button Row */}
-              <div className="flex flex-col gap-1.5 w-full">
-                <div className="flex flex-col sm:flex-row gap-3 w-full">
-                  <HeartbeatCTA className="flex-1 min-w-0 sm:min-w-[200px]">
-                    <a
-                      href="tel:+4964418056279"
-                      className="group relative bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white flex items-center justify-center typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[2px] transition-all duration-300 w-full overflow-hidden text-sm sm:text-base"
-                    >
-                      {/* Shimmer effect */}
-                      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                      <Phone className="h-3.5 w-3.5 sm:h-5 sm:w-5 mr-1.5 sm:mr-3 relative z-10 shrink-0" />
-                      <span className="relative z-10 font-bold whitespace-nowrap">Jetzt Anrufen</span>
-                      <ArrowRight className="h-3.5 w-3.5 sm:h-5 sm:w-5 ml-1.5 sm:ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
-                    </a>
-                  </HeartbeatCTA>
-                  <Link
-                    href="/termin-buchen"
-                    className="ghost-button-fill bg-white/60 border border-[var(--border-subtle)] hover:bg-white/90 text-[color:var(--text-primary)] shadow-sm flex items-center justify-center gap-2 typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl backdrop-blur-md transition-all duration-300 flex-1 hover:-translate-y-[1px] text-sm sm:text-base whitespace-nowrap"
+              <div className="flex flex-col sm:flex-row gap-3 w-full">
+                <HeartbeatCTA className="flex-1 min-w-0 sm:min-w-[200px]">
+                  <a
+                    href="tel:+4964418056279"
+                    className="group relative bg-[var(--color-red-500)] hover:bg-[var(--color-red-600)] text-white flex items-center justify-center typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl shadow-[var(--shadow-cta)] hover:shadow-[var(--shadow-cta-hover)] hover:-translate-y-[2px] transition-all duration-300 w-full overflow-hidden text-sm sm:text-base"
                   >
-                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-blue-600)]" />
-                    Beratung buchen
-                  </Link>
-                </div>
+                    {/* Shimmer effect */}
+                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                    <Phone className="h-3.5 w-3.5 sm:h-5 sm:w-5 mr-1.5 sm:mr-3 relative z-10 shrink-0" />
+                    <span className="relative z-10 font-bold whitespace-nowrap">Jetzt Anrufen</span>
+                    <ArrowRight className="h-3.5 w-3.5 sm:h-5 sm:w-5 ml-1.5 sm:ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
+                  </a>
+                </HeartbeatCTA>
+                <Link
+                  href="/termin-buchen"
+                  className="ghost-button-fill bg-white/60 border border-[var(--border-subtle)] hover:bg-white/90 text-[color:var(--text-primary)] shadow-sm flex items-center justify-center gap-2 typo-cta-button min-h-[44px] sm:min-h-[52px] px-3 sm:px-6 rounded-lg sm:rounded-xl backdrop-blur-md transition-all duration-300 flex-1 hover:-translate-y-[1px] text-sm sm:text-base whitespace-nowrap"
+                >
+                  <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[var(--color-blue-600)]" />
+                  Beratung buchen
+                </Link>
               </div>
             </div>
 
@@ -256,76 +128,72 @@ export default function HeroSection() {
             <div className="absolute inset-x-0 bottom-12 h-px bg-gradient-to-r from-transparent via-[var(--color-red-500)]/20 to-transparent w-full z-0 pointer-events-none" />
             
             {/* --- Image 1: Ladenlokal (Shop Exterior/Interior) --- */}
-            <div className="absolute top-[5%] md:top-0 right-[15%] lg:right-[5%] w-[70%] max-w-[340px] rounded-[1.5rem] overflow-hidden ring-[6px] ring-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] z-10 transform-gpu rotate-2 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
-              <div className="relative aspect-[4/3] w-full bg-[var(--color-charcoal-100)]">
-                <Image
-                  src="/images/schluessel-schmiede-wetzlar-aussenansicht-ladengeschaeft.webp"
-                  alt="Das Ladengeschäft der Schlüssel Schmiede Wetzlar in der Langgasse 70"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 768px) 50vw, 260px"
-                  priority
-                />
-                {/* Gradient overlay for bottom text */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
-                
-                {/* Status Badge */}
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 border border-white/50 shadow-sm">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-status-success" />
-                  </span>
-                  <span className="text-[var(--text-primary)] text-[10px] sm:text-xs font-bold uppercase tracking-wider">Ladenlokal</span>
-                </div>
+            <div className="absolute top-[5%] md:top-0 right-[15%] lg:right-[5%] w-[70%] max-w-[340px] aspect-[4/3] bg-[var(--color-charcoal-100)] rounded-[1.5rem] overflow-hidden ring-[6px] ring-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] z-10 transform-gpu rotate-2 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
+              <Image
+                src="/images/schluessel-schmiede-wetzlar-aussenansicht-ladengeschaeft.webp"
+                alt="Das Ladengeschäft der Schlüssel Schmiede Wetzlar in der Langgasse 70"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, 260px"
+                priority
+                fetchPriority="high"
+              />
+              {/* Gradient overlay for bottom text */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
+              
+              {/* Status Badge */}
+              <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 border border-white/50 shadow-sm">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-success opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-status-success" />
+                </span>
+                <span className="text-[var(--text-primary)] text-[10px] sm:text-xs font-bold uppercase tracking-wider">Ladenlokal</span>
+              </div>
 
-                {/* Bottom Text */}
-                <div className="absolute bottom-4 left-4 right-4 flex flex-col">
-                  <span className="text-white font-bold text-[clamp(14px,3vw,18px)] drop-shadow-md leading-tight">Fachgeschäft Wetzlar</span>
-                  <span className="text-white/90 text-[10px] sm:text-xs font-medium">Langgasse 70 · Persönliche Beratung</span>
-                </div>
+              {/* Bottom Text */}
+              <div className="absolute bottom-4 left-4 right-4 flex flex-col">
+                <span className="text-white font-bold text-[clamp(14px,3vw,18px)] drop-shadow-md leading-tight">Fachgeschäft Wetzlar</span>
+                <span className="text-white/90 text-[10px] sm:text-xs font-medium">Langgasse 70 · Persönliche Beratung</span>
               </div>
             </div>
 
             {/* --- Image 2: Notdienst (Einsatzfahrzeug) --- */}
-            <div className="absolute bottom-[5%] md:bottom-2 left-[5%] lg:left-0 w-[75%] max-w-[360px] rounded-[1.5rem] overflow-hidden ring-[6px] ring-[var(--color-off-white)] shadow-[0_30px_60px_-15px_rgba(185,28,28,0.25)] z-20 transform-gpu -rotate-3 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
-              <div className="relative aspect-[4/3] w-full bg-[var(--color-charcoal-900)]">
-                <Image
-                  src="/images/mina-saad-schluesseldienst-wetzlar-einsatzfahrzeug.webp"
-                  alt="Einsatzfahrzeug des Schlüsselnotdienstes Wetzlar"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 768px) 50vw, 260px"
-                  priority
-                />
-                
-                {/* Gradient overlay for modern look */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-red-600)]/90 via-black/30 to-transparent" />
-                
-                {/* 24h Badge */}
-                <div className="absolute top-4 right-4">
-                  <div className="bg-[var(--color-red-500)] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-lg shadow-[0_4px_12px_rgba(185,28,28,0.5)] flex items-center gap-1.5 border border-white/20">
-                    <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                    24/7 Bereit
-                  </div>
+            <div className="absolute bottom-[5%] md:bottom-2 left-[5%] lg:left-0 w-[75%] max-w-[360px] aspect-[4/3] bg-[var(--color-charcoal-900)] rounded-[1.5rem] overflow-hidden ring-[6px] ring-[var(--color-off-white)] shadow-[0_30px_60px_-15px_rgba(185,28,28,0.25)] z-20 transform-gpu -rotate-3 hover:rotate-0 hover:z-30 hover:scale-105 transition-all duration-500 ease-out group">
+              <Image
+                src="/images/mina-saad-schluesseldienst-wetzlar-einsatzfahrzeug.webp"
+                alt="Einsatzfahrzeug des Schlüsselnotdienstes Wetzlar"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, 260px"
+                priority
+                fetchPriority="high"
+              />
+              
+              {/* Gradient overlay for modern look */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-red-600)]/90 via-black/30 to-transparent" />
+              
+              {/* 24h Badge */}
+              <div className="absolute top-4 right-4">
+                <div className="bg-[var(--color-red-500)] text-white text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded-lg shadow-[0_4px_12px_rgba(185,28,28,0.5)] flex items-center gap-1.5 border border-white/20">
+                  <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  24/7 Bereit
                 </div>
+              </div>
 
-                {/* Bottom Text */}
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="text-white font-bold text-[clamp(15px,3.5vw,20px)] drop-shadow-md flex items-center gap-2 mb-1">
-                    <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-white" /> Mobiler Notdienst
-                  </span>
-                  <span className="text-white/90 text-[11px] sm:text-xs font-medium flex items-center gap-1.5">
-                    <ArrowRight className="w-3 h-3" /> In ~20 Min. vor Ort
-                  </span>
-                </div>
+              {/* Bottom Text */}
+              <div className="absolute bottom-4 left-4 right-4">
+                <span className="text-white font-bold text-[clamp(15px,3.5vw,20px)] drop-shadow-md flex items-center gap-2 mb-1">
+                  <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-white" /> Mobiler Notdienst
+                </span>
+                <span className="text-white/90 text-[11px] sm:text-xs font-medium flex items-center gap-1.5">
+                  <ArrowRight className="w-3 h-3" /> In ~20 Min. vor Ort
+                </span>
               </div>
             </div>
 
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }

@@ -124,8 +124,8 @@ export default function RootLayout({
        dangerouslySetInnerHTML={{ __html: JSON.stringify([getOrganizationSchema(), getLocalBusinessSchema()]) }}
      />
    </head>
-   <body
-      className={`${plusJakarta.variable} ${dmSans.variable} font-sans text-[color:var(--text-primary)] min-h-[100dvh] flex flex-col antialiased bg-gray-50`}
+    <body
+      className={`${plusJakarta.variable} ${dmSans.variable} font-sans text-[color:var(--text-primary)] min-h-[100dvh] flex flex-col antialiased bg-gray-50 relative dark-focus`}
       itemScope 
       itemType="https://schema.org/WebPage"
       suppressHydrationWarning
@@ -136,18 +136,18 @@ export default function RootLayout({
         <AnnouncerProvider>
          <MotionProvider>
           <ErrorBoundary>
-           <div className="flex flex-col min-h-screen relative dark-focus">
-            <SkipNav />
-            <ClientShell />
-            <StickyHeader />
-            <main id="main-content" className="flex-grow" aria-label="Hauptinhalt">{children}</main>
-            <Footer />
-            <MobileBottomBar />
-            <StickyCtaBar />
-            <FloatingWhatsAppWidget />
-            <WebVitalsReporter />
-            <ToastContainer />
-           </div>
+            <>
+             <SkipNav />
+             <ClientShell />
+             <StickyHeader />
+             <main id="main-content" className="flex-grow" aria-label="Hauptinhalt">{children}</main>
+             <Footer />
+             <MobileBottomBar />
+             <StickyCtaBar />
+             <FloatingWhatsAppWidget />
+             <WebVitalsReporter />
+             <ToastContainer />
+            </>
           </ErrorBoundary>
          </MotionProvider>
         </AnnouncerProvider>
