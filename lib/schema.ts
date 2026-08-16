@@ -130,6 +130,7 @@ export function getServiceSchema({ title, description, url, price }: { title: st
         description: description,
         provider: {
             "@type": "LocalBusiness",
+            "@id": `${siteUrl}/#localbusiness`,
             name: companyName,
             image: `${siteUrl}/images/icon-512.png`,
             telephone: companyInfo.phone.main
@@ -153,6 +154,7 @@ export function getPricingSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "Product",
+        "@id": `${siteUrl}/#product-pricing`,
         name: "Schlüsseldienst Leistungen & Festpreise",
         description: "Transparente Festpreise für Türöffnungen und Sicherheitstechnik in Wetzlar und Umgebung.",
         brand: {
