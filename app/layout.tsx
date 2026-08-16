@@ -20,13 +20,13 @@ const FloatingWhatsAppWidget = nextDynamic(() => import("@/components/FloatingWh
 const WebVitalsReporter = nextDynamic(() => import("@/components/analytics/WebVitalsReporter").then(mod => mod.WebVitalsReporter));
 
 const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   display: "swap",
   variable: "--font-display",
 });
 
 const dmSans = DM_Sans({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   display: "swap",
   variable: "--font-body",
 });
