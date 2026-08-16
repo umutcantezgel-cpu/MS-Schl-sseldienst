@@ -1,29 +1,33 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import { companyInfo } from "@/lib/data/company";
 
 /* ═══════════════════════════════════════════════════════════════════════════
- * Floating WhatsApp CTA ULTRATHINK Phase 2 Expansion
- *
- * Features:
- *  1. Physics-based drag & throw (momentum, bounce, friction)
- *  2. Edge-snapping after release (docks to nearest screen edge)
- *  3. Pulse animation when idle
- *  4. Tooltip ("Chat starten 💬") on hover & after 5s idle
- *  5. Notification badge ("1") for first 30 seconds
- *  6. Contextual WhatsApp messages per page
- *  7. Haptic feedback on mobile drag
- *  8. Analytics event on click
+ * Floating WhatsApp CTA
+ * 
+ * Clean, reliable, high-performance floating action button:
+ *  - 100% touch & click reliability on mobile and desktop
+ *  - Route-contextual prefilled WhatsApp messages
+ *  - Subtle pulse & hover states
+ *  - Fully accessible with tooltip on desktop
  * ═══════════════════════════════════════════════════════════════════════════ */
 
-/* ── Contextual messages per route ── */
+const emptySubscribe = () => () => {};
+function useIsMounted() {
+  return useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
+}
+
 function getContextualMessage(pathname: string): string {
   if (pathname.includes("/leistungen/notdienst") || pathname.includes("/leistungen/turoeffnung"))
-    return "Hallo, ich habe einen Notfall und brauche dringend Hilfe bei einer Türöffnung.";
+    return "Hallo, ich habe einen Notfall und brauche dringend Hilfe bei einer Türöffnung in Wetzlar.";
   if (pathname.includes("/preise"))
-    return "Hallo, ich hätte eine Frage zu Ihren Preisen und Festpreisgarantie.";
+    return "Hallo, ich hätte eine Frage zu Ihren Preisen und der Festpreisgarantie.";
   if (pathname.includes("/kontakt"))
     return "Hallo, ich möchte einen Termin vereinbaren.";
   if (pathname.includes("/leistungen/schliessanlagen"))
@@ -35,309 +39,14 @@ function getContextualMessage(pathname: string): string {
   if (pathname.includes("/leistungen/schluessel-nachmachen"))
     return "Hallo, ich möchte einen Schlüssel nachmachen lassen.";
   if (pathname.includes("/servicegebiet") || pathname.includes("schluesseldienst-wetzlar"))
-    return "Hallo, ich komme aus der Region und brauche Hilfe.";
-  return "Hallo, ich hätte eine Frage zu Ihren Leistungen.";
+    return "Hallo, ich komme aus der Region Wetzlar und brauche Unterstützung.";
+  return "Hallo Schlüssel Schmiede, ich hätte eine Frage zu Ihren Leistungen.";
 }
 
 export default function FloatingWhatsAppWidget() {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useIsMounted();
   const [showTooltip, setShowTooltip] = useState(false);
-  const [isLeftSide, setIsLeftSide] = useState(false);
-  const btnRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
-
-  // Position state - now tracks OFFSET from native CSS position
-  const pos = useRef({ x: 0, y: 0 });
-  const vel = useRef({ x: 0, y: 0 });
-  const isDragging = useRef(false);
-  const wasDragged = useRef(false);
-  const isSnapping = useRef(false);
-  const dragStart = useRef({ x: 0, y: 0 });
-  const lastPointer = useRef({ x: 0, y: 0, t: 0 });
-  const prevPointer = useRef({ x: 0, y: 0, t: 0 });
-  const animFrame = useRef<number>(0);
-  const snapFrame = useRef<number>(0);
-  const [, forceRender] = useState(0);
-
-  const SIZE = 60;
-  const FRICTION = 0.92;
-  const BOUNCE = 0.6;
-  const MIN_VEL = 0.3;
-  const DRAG_THRESHOLD = 5;
-
-  useEffect(() => {
-    // Mount on first user interaction or long idle so it never interferes with LCP
-    const handleInteraction = () => {
-      setMounted(true);
-    };
-
-    window.addEventListener("scroll", handleInteraction, { once: true, passive: true });
-    window.addEventListener("touchstart", handleInteraction, { once: true, passive: true });
-    window.addEventListener("pointerdown", handleInteraction, { once: true, passive: true });
-    window.addEventListener("keydown", handleInteraction, { once: true, passive: true });
-
-    let idleId: any;
-    if (typeof window !== "undefined" && "requestIdleCallback" in window) {
-      idleId = (window as any).requestIdleCallback(handleInteraction, { timeout: 8000 });
-    } else {
-      idleId = setTimeout(handleInteraction, 8000);
-    }
-
-    return () => {
-      window.removeEventListener("scroll", handleInteraction);
-      window.removeEventListener("touchstart", handleInteraction);
-      window.removeEventListener("pointerdown", handleInteraction);
-      window.removeEventListener("keydown", handleInteraction);
-      if (typeof window !== "undefined" && "cancelIdleCallback" in window && typeof idleId === "number") {
-        (window as any).cancelIdleCallback(idleId);
-      } else {
-        clearTimeout(idleId);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-
-    const handleResize = () => {
-      pos.current = { x: 0, y: 0 };
-      setIsLeftSide(false);
-      if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(0px, 0px, 0)`;
-      }
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [mounted]);
-
-  /* ── Edge-snap animation (spring-like easing) ── */
-  const snapToEdge = useCallback(() => {
-    if (!btnRef.current) return;
-    const rect = btnRef.current.getBoundingClientRect();
-    isSnapping.current = true;
-
-    const midX = rect.left + rect.width / 2;
-    const distLeft = midX;
-    const distRight = window.innerWidth - midX;
-    
-    const margin = 16;
-    
-    // Calculate target offset dx based on current bounding rect
-    let targetDx = 0;
-    if (distLeft < distRight) {
-      targetDx = margin - rect.left;
-      setIsLeftSide(true);
-    } else {
-      targetDx = (window.innerWidth - margin - rect.width) - rect.left;
-      setIsLeftSide(false);
-    }
-
-    // Keep Y clamped within screen
-    let targetDy = 0;
-    if (rect.top < margin) {
-      targetDy = margin - rect.top;
-    } else if (rect.bottom > window.innerHeight - margin) {
-      targetDy = (window.innerHeight - margin) - rect.bottom;
-    }
-
-    const startX = pos.current.x;
-    const startY = pos.current.y;
-    const endX = startX + targetDx;
-    const endY = startY + targetDy;
-    
-    const startTime = performance.now();
-    const duration = 400; // ms
-
-    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
-
-    const step = (now: number) => {
-      const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = easeOutCubic(progress);
-
-      pos.current.x = startX + (endX - startX) * eased;
-      pos.current.y = startY + (endY - startY) * eased;
-      
-      if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
-      }
-
-      if (progress < 1) {
-        snapFrame.current = requestAnimationFrame(step);
-      } else {
-        isSnapping.current = false;
-        forceRender(n => n + 1); // update isIdle for tooltip
-      }
-    };
-
-    snapFrame.current = requestAnimationFrame(step);
-  }, []);
-
-  /* ── Physics animation loop ── */
-  const animate = useCallback(() => {
-    if (isDragging.current || !btnRef.current) return;
-
-    const p = pos.current;
-    const v = vel.current;
-
-    v.x *= FRICTION;
-    v.y *= FRICTION;
-
-    if (Math.abs(v.x) < MIN_VEL && Math.abs(v.y) < MIN_VEL) {
-      v.x = 0;
-      v.y = 0;
-      snapToEdge();
-      return;
-    }
-
-    p.x += v.x;
-    p.y += v.y;
-
-    // Apply temporary transform to get bounding box for collision detection
-    btnRef.current.style.transform = `translate3d(${p.x}px, ${p.y}px, 0)`;
-    const rect = btnRef.current.getBoundingClientRect();
-
-    let bounced = false;
-    if (rect.left < 0) {
-      p.x += (0 - rect.left);
-      v.x = Math.abs(v.x) * BOUNCE;
-      bounced = true;
-    } else if (rect.right > window.innerWidth) {
-      p.x += (window.innerWidth - rect.right);
-      v.x = -Math.abs(v.x) * BOUNCE;
-      bounced = true;
-    }
-
-    if (rect.top < 0) {
-      p.y += (0 - rect.top);
-      v.y = Math.abs(v.y) * BOUNCE;
-      bounced = true;
-    } else if (rect.bottom > window.innerHeight) {
-      p.y += (window.innerHeight - rect.bottom);
-      v.y = -Math.abs(v.y) * BOUNCE;
-      bounced = true;
-    }
-
-    if (bounced) {
-       btnRef.current.style.transform = `translate3d(${p.x}px, ${p.y}px, 0)`;
-    }
-
-    // eslint-disable-next-line
-    animFrame.current = requestAnimationFrame(() => animate());
-  }, [snapToEdge]);
-
-  const onPointerDown = useCallback(
-    (e: React.PointerEvent) => {
-      if (!btnRef.current) return;
-      e.preventDefault(); // Prevent default touch actions like scrolling while dragging
-      
-      isDragging.current = true;
-      wasDragged.current = false;
-      isSnapping.current = false;
-      cancelAnimationFrame(animFrame.current);
-      cancelAnimationFrame(snapFrame.current);
-      vel.current = { x: 0, y: 0 };
-
-      // Hide tooltip on interaction
-      setShowTooltip(false);
-
-      const now = Date.now();
-      dragStart.current = { x: e.clientX, y: e.clientY };
-      lastPointer.current = { x: e.clientX, y: e.clientY, t: now };
-      prevPointer.current = { x: e.clientX, y: e.clientY, t: now };
-
-      (e.target as HTMLElement).setPointerCapture(e.pointerId);
-
-      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(1.15)`;
-      
-      // Haptic feedback on mobile
-      if (navigator.vibrate) navigator.vibrate(30);
-    },
-    []
-  );
-
-  const onPointerMove = useCallback(
-    (e: React.PointerEvent) => {
-      if (!isDragging.current) return;
-
-      const dx = e.clientX - lastPointer.current.x;
-      const dy = e.clientY - lastPointer.current.y;
-
-      const totalDx = e.clientX - dragStart.current.x;
-      const totalDy = e.clientY - dragStart.current.y;
-      if (Math.abs(totalDx) > DRAG_THRESHOLD || Math.abs(totalDy) > DRAG_THRESHOLD) {
-        wasDragged.current = true;
-      }
-
-      pos.current.x += dx;
-      pos.current.y += dy;
-
-      prevPointer.current = { ...lastPointer.current };
-      lastPointer.current = { x: e.clientX, y: e.clientY, t: Date.now() };
-
-      if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(1.15)`;
-      }
-    },
-    []
-  );
-
-  const onPointerUp = useCallback(
-    (e: React.PointerEvent) => {
-      if (!isDragging.current) return;
-      isDragging.current = false;
-
-      const dt = Math.max(1, lastPointer.current.t - prevPointer.current.t);
-      const vx = ((lastPointer.current.x - prevPointer.current.x) / dt) * 16;
-      const vy = ((lastPointer.current.y - prevPointer.current.y) / dt) * 16;
-
-      const maxV = 40;
-      vel.current = {
-        x: Math.max(-maxV, Math.min(maxV, vx)),
-        y: Math.max(-maxV, Math.min(maxV, vy)),
-      };
-
-      if (btnRef.current) {
-         // Reset scale to 1 on release
-         btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
-      }
-
-      if (Math.abs(vel.current.x) > MIN_VEL || Math.abs(vel.current.y) > MIN_VEL) {
-        animFrame.current = requestAnimationFrame(animate);
-      } else {
-        snapToEdge();
-      }
-    },
-    [animate, snapToEdge]
-  );
-
-  const onClick = useCallback(
-    (e: React.MouseEvent) => {
-      if (wasDragged.current) {
-        e.preventDefault();
-        return;
-      }
-      // Analytics event
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("event", "whatsapp_click", {
-          event_category: "engagement",
-          event_label: pathname,
-        });
-      }
-    },
-    [pathname]
-  );
-
-  // Cleanup
-  useEffect(() => {
-    return () => {
-      cancelAnimationFrame(animFrame.current);
-      cancelAnimationFrame(snapFrame.current);
-    };
-  }, []);
 
   const whatsappNumber = companyInfo.socialMedia.whatsapp;
   if (!whatsappNumber || !mounted) return null;
@@ -346,58 +55,63 @@ export default function FloatingWhatsAppWidget() {
   const contextMessage = getContextualMessage(pathname);
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanNumber}&text=${encodeURIComponent(contextMessage)}`;
 
-  const isIdle = !isDragging.current && vel.current.x === 0 && vel.current.y === 0 && !isSnapping.current;
+  const handleClick = () => {
+    if (typeof window !== "undefined" && (window as unknown as { gtag?: (type: string, name: string, params: Record<string, unknown>) => void }).gtag) {
+      (window as unknown as { gtag: (type: string, name: string, params: Record<string, unknown>) => void }).gtag("event", "whatsapp_click", {
+        event_category: "engagement",
+        event_label: pathname,
+      });
+    }
+  };
 
   return (
-    <a
-      ref={btnRef}
-      href={whatsappUrl}
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      aria-label="Nachricht per WhatsApp senden"
-      id="whatsapp-floating-btn"
-      onClick={onClick}
-      onPointerDown={onPointerDown}
-      onPointerMove={onPointerMove}
-      onPointerUp={onPointerUp}
-      onMouseEnter={() => setShowTooltip(true)}
-      onMouseLeave={() => setShowTooltip(false)}
-      className="fixed right-4 bottom-[140px] md:right-6 md:bottom-24 z-[9997] flex items-center justify-center rounded-full bg-[#25D366] text-white no-underline select-none touch-none shadow-[0_6px_28px_rgba(37,211,102,0.5)] transition-transform duration-200 hover:scale-105"
-      style={{
-        width: SIZE,
-        height: SIZE,
-        cursor: isDragging.current ? "grabbing" : "grab",
-        willChange: "transform",
-      }}
+    <aside
+      aria-label="WhatsApp Kontakt"
+      className="fixed right-4 bottom-[90px] sm:bottom-[100px] md:right-6 md:bottom-24 z-[9997] flex items-center"
     >
-      {/* Tooltip on desktop hover */}
-      {showTooltip && (
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            transform: "translateY(-50%)",
-            ...(isLeftSide ? { left: "100%", marginLeft: "14px" } : { right: "100%", marginRight: "14px" }),
-            pointerEvents: "none",
-          }}
-          className="hidden md:block" 
-        >
-          <div className="bg-[#1a1a1a] text-white text-xs font-semibold px-3.5 py-2 rounded-xl whitespace-nowrap shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
-            Chat starten 💬
-          </div>
-        </div>
-      )}
-
-      {/* WhatsApp SVG Icon */}
-      <svg
-        width="30"
-        height="30"
-        viewBox="0 0 24 24"
-        style={{ fill: "#ffffff", pointerEvents: "none" }}
-        aria-hidden="true"
+      {/* Desktop Tooltip */}
+      <div
+        className={`hidden md:block absolute right-full mr-3.5 top-1/2 -translate-y-1/2 pointer-events-none transition-all duration-300 ${
+          showTooltip ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"
+        }`}
       >
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-      </svg>
-    </a>
+        <div className="bg-[#1a1a1a] text-white text-xs font-semibold px-3.5 py-2 rounded-xl whitespace-nowrap shadow-[0_4px_20px_rgba(0,0,0,0.25)] flex items-center gap-1.5 border border-white/10">
+          <span>WhatsApp Chat</span>
+          <span className="text-emerald-400">●</span>
+        </div>
+      </div>
+
+      {/* WhatsApp Action Button */}
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        aria-label="WhatsApp Chat mit Schlüssel Schmiede starten"
+        id="whatsapp-floating-btn"
+        onClick={handleClick}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+        onFocus={() => setShowTooltip(true)}
+        onBlur={() => setShowTooltip(false)}
+        className="group relative flex items-center justify-center w-[54px] h-[54px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#25D366] text-white shadow-[0_6px_28px_rgba(37,211,102,0.45)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.6)] hover:scale-105 active:scale-95 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/40"
+      >
+        {/* Subtle breathing glow */}
+        <span
+          className="absolute inset-0 rounded-full bg-[#25D366] opacity-30 animate-ping pointer-events-none group-hover:hidden"
+          style={{ animationDuration: "3s" }}
+        />
+
+        {/* WhatsApp Icon */}
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          className="w-7 h-7 sm:w-8 sm:h-8 fill-white relative z-10 drop-shadow-sm transition-transform duration-300 group-hover:scale-110"
+          aria-hidden="true"
+        >
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </a>
+    </aside>
   );
 }
