@@ -42,8 +42,8 @@ const nextConfig: NextConfig = {
 
   images: {
     formats: ["image/avif", "image/webp"],
-    deviceSizes: [640, 960, 1280, 1920, 2560],
-    imageSizes: [16, 32, 48, 64, 96, 128, 200, 256, 384],
+    deviceSizes: [480, 640, 750, 828, 960, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 200, 240, 256, 320, 384],
     minimumCacheTTL: 31536000,
     remotePatterns: [],
     unoptimized: false, // [PERF] Enabled: Vercel Image Optimization → serves AVIF/WebP at correct sizes

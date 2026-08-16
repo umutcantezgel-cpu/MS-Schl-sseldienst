@@ -64,8 +64,8 @@ export default function ServicesSection() {
               <SeoContentImage
                 image={teamImages[1]!}
                 className="w-full h-full object-cover object-[50%_15%] md:object-[50%_20%]"
-                sizes="(max-width: 768px) 90vw, (max-width: 1024px) 208px, 240px"
-                quality={80}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 208px, 240px"
+                quality={75}
               />
             </div>
             <div className="flex flex-col flex-1 text-center md:text-left">
