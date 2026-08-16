@@ -143,12 +143,12 @@ export default function StickyHeader() {
               Da das Megamenü an JS & FramerMotion gekoppelt ist, injecten wir hier
               den vollen internen Link-Stammbaum für Googlebot. Dies garantiert 100% Indexierung. */}
           <nav className="absolute w-1 h-1 overflow-hidden opacity-0 pointer-events-none" aria-label="SEO Crawler Navigation">
-            <Link href="/" tabIndex={-1}>Startseite</Link>
-            <Link href="/schluessel-schmiede" tabIndex={-1}>Schlüssel Schmiede</Link>
-            <Link href="/servicegebiet" tabIndex={-1}>Einsatzgebiete im Überblick</Link>
-            {mainLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1}>{l.label}</Link>)}
-            {leistungenLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1}>{l.label}</Link>)}
-            {locationsLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1}>{l.label}</Link>)}
+            <Link href="/" tabIndex={-1} prefetch={false}>Startseite</Link>
+            <Link href="/schluessel-schmiede" tabIndex={-1} prefetch={false}>Schlüssel Schmiede</Link>
+            <Link href="/servicegebiet" tabIndex={-1} prefetch={false}>Einsatzgebiete im Überblick</Link>
+            {mainLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1} prefetch={false}>{l.label}</Link>)}
+            {leistungenLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1} prefetch={false}>{l.label}</Link>)}
+            {locationsLinks.map((l) => <Link key={l.href} href={l.href} tabIndex={-1} prefetch={false}>{l.label}</Link>)}
           </nav>
 
           {/* 2. DESKTOP NAVIGATION (Unified) */}
@@ -167,6 +167,7 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/leistungen"
+                prefetch={false}
                 className={`relative z-10 flex items-center gap-1 px-2.5 py-2 font-bold text-[13px] xl:text-sm rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "leistungen" || pathname.startsWith("/leistungen")
                     ? "text-[var(--color-red-500)]"
@@ -198,6 +199,7 @@ export default function StickyHeader() {
                             <Link
                               key={link.href}
                               href={link.href}
+                              prefetch={false}
                               className="group flex gap-5 p-4 rounded-2xl bg-transparent hover:bg-slate-50 border border-transparent hover:border-slate-100 transition-all duration-300"
                               onClick={() => setActiveMenu(null)}
                             >
@@ -217,6 +219,7 @@ export default function StickyHeader() {
                       <div className="mt-6 pt-5 border-t border-gray-100 flex items-center justify-between px-4 bg-slate-50 rounded-2xl py-4">
                          <Link
                            href="/schluessel-schmiede"
+                           prefetch={false}
                            onClick={() => setActiveMenu(null)}
                            className="group flex items-center gap-4 hover:opacity-90 transition-opacity"
                          >
@@ -247,6 +250,7 @@ export default function StickyHeader() {
             >
               <Link 
                 href="/servicegebiet"
+                prefetch={false}
                 className={`relative z-10 flex items-center gap-1 px-2.5 py-2 font-semibold text-[13px] xl:text-sm tracking-tight rounded-full transition-all duration-300 whitespace-nowrap ${
                   activeMenu === "servicegebiet" || pathname === "/servicegebiet"
                     ? "text-[var(--color-red-600)]"
@@ -276,6 +280,7 @@ export default function StickyHeader() {
                           <Link
                             key={link.href}
                             href={link.href}
+                            prefetch={false}
                             className="group flex gap-5 p-4 rounded-2xl bg-transparent hover:bg-slate-50 border border-transparent hover:border-slate-100 transition-all duration-300"
                             onClick={() => setActiveMenu(null)}
                           >
@@ -301,7 +306,7 @@ export default function StickyHeader() {
                              <span className="text-gray-500 text-[13.5px]">Kein Problem. Wir fahren im Umkreis von +50km</span>
                            </div>
                          </div>
-                         <Link href="/servicegebiet" onClick={() => setActiveMenu(null)} className="flex items-center gap-2.5 px-6 py-3 bg-[var(--color-blue-600)] hover:bg-[var(--color-blue-700)] text-white font-bold rounded-xl shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)] transition-all text-sm group hover:-translate-y-0.5">
+                         <Link href="/servicegebiet" prefetch={false} onClick={() => setActiveMenu(null)} className="flex items-center gap-2.5 px-6 py-3 bg-[var(--color-blue-600)] hover:bg-[var(--color-blue-700)] text-white font-bold rounded-xl shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)] transition-all text-sm group hover:-translate-y-0.5">
                            Übersicht aller Einsatzgebiete
                            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                          </Link>
@@ -317,6 +322,7 @@ export default function StickyHeader() {
             {/* Schlüssel Schmiede und Priority Link */}
             <Link
               href="/schluessel-schmiede"
+              prefetch={false}
               onMouseEnter={() => { setActiveMenu(null); setHoveredLink("schmiede"); }}
               className={`relative px-2.5 py-2 font-bold text-[13px] xl:text-sm rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1 ${
                 pathname === "/schluessel-schmiede" ? "text-amber-600" : "text-gray-800 hover:text-gray-950"
@@ -346,6 +352,7 @@ export default function StickyHeader() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  prefetch={false}
                   onMouseEnter={() => { setActiveMenu(null); setHoveredLink(link.href); }}
                   className={`relative px-2.5 py-2 font-semibold text-[13px] xl:text-sm tracking-tight rounded-full transition-all duration-300 whitespace-nowrap flex items-center gap-1 ${
                     isActive ? "text-[var(--color-red-600)]" : "text-gray-700 hover:text-gray-950"

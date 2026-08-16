@@ -13,16 +13,6 @@ const ScrollToTop = dynamic(() => import("@/components/ui/ScrollToTop"), { ssr: 
 const OfflineBanner = dynamic(() => import("@/components/ui/OfflineBanner"), { ssr: false });
 const RouteAnnouncer = dynamic(() => import("@/components/ui/RouteAnnouncer").then(m => ({ default: m.RouteAnnouncer })), { ssr: false });
 const ErrorHandlers = dynamic(() => import("@/components/monitoring/ErrorHandlers"), { ssr: false });
-const SpeculativePrefetch = dynamic(() => import("@/components/performance/SpeculativePrefetch"), { ssr: false });
-
-/**
- * ClientShell: Wraps all client-only UI utilities (scroll indicators, cookie consent,
- * analytics trackers, etc.) in a single "use client" boundary so the root layout
- * stays a pure Server Component and SSR metadata (meta description, title, OG tags)
- * is always rendered in the initial HTML response.
- *
- * [PERF] Defer mounting to idle time so the initial hydration and LCP paint execute with 0 main-thread blocking.
- */
 export default function ClientShell() {
   const [mounted, setMounted] = useState(false);
 
@@ -52,7 +42,6 @@ export default function ClientShell() {
       <ScrollDepthTracker />
       <CookieConsent />
       <ErrorHandlers />
-      <SpeculativePrefetch />
     </>
   );
 }
