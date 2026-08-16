@@ -68,7 +68,27 @@ export default function FloatingWhatsAppWidget() {
   const DRAG_THRESHOLD = 5;
 
   useEffect(() => {
-    setMounted(true);
+    // Delay mounting to avoid blocking LCP and ensure styles are ready
+    const mountTimer = setTimeout(() => {
+      setMounted(true);
+    }, 2500);
+
+    // Or mount immediately on user interaction
+    const handleInteraction = () => setMounted(true);
+    window.addEventListener("scroll", handleInteraction, { once: true, passive: true });
+    window.addEventListener("mousemove", handleInteraction, { once: true, passive: true });
+    window.addEventListener("touchstart", handleInteraction, { once: true, passive: true });
+
+    return () => {
+      clearTimeout(mountTimer);
+      window.removeEventListener("scroll", handleInteraction);
+      window.removeEventListener("mousemove", handleInteraction);
+      window.removeEventListener("touchstart", handleInteraction);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
 
     const tooltipTimer = setTimeout(() => {
       setShowTooltip(true);
@@ -94,7 +114,7 @@ export default function FloatingWhatsAppWidget() {
       clearTimeout(badgeTimer);
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [mounted]);
 
   /* ── Edge-snap animation (spring-like easing) ── */
   const snapToEdge = useCallback(() => {
@@ -335,23 +355,13 @@ export default function FloatingWhatsAppWidget() {
   return (
     <>
       {/* CSS Keyframes for pulse animation */}
-      <style jsx global>{`
-        .wa-floating-btn {
-          right: 24px;
-          bottom: 96px;
-        }
-        @media (max-width: 767px) {
-          .wa-floating-btn {
-            right: 16px;
-            bottom: 140px;
-          }
-        }
+      <style suppressHydrationWarning>{`
         @keyframes wa-pulse {
           0% { transform: scale(1); }
           50% { transform: scale(1.08); }
           100% { transform: scale(1); }
         }
-        @keyframes fadeIn {
+        @keyframes wa-fadeIn {
           from { opacity: 0; transform: translateY(5px); }
           to { opacity: 1; transform: translateY(0); }
         }
@@ -377,23 +387,11 @@ export default function FloatingWhatsAppWidget() {
         onPointerUp={onPointerUp}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
-        className={`wa-floating-btn ${isIdle ? 'wa-idle-pulse' : ''}`}
+        className={`fixed right-4 bottom-[140px] md:right-6 md:bottom-24 z-[9997] flex items-center justify-center rounded-full bg-[#25D366] text-white no-underline select-none touch-none drop-shadow-[0_6px_28px_rgba(37,211,102,0.55)] ${isIdle ? 'wa-idle-pulse' : ''}`}
         style={{
-          position: "fixed",
-          zIndex: 9997,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
           width: SIZE,
           height: SIZE,
-          borderRadius: "50%",
-          backgroundColor: "#25D366",
-          color: "#ffffff",
-          textDecoration: "none",
-          userSelect: "none",
-          touchAction: "none",
           cursor: isDragging.current ? "grabbing" : "grab",
-          filter: "drop-shadow(0 6px 28px rgba(37,211,102,0.55))",
           willChange: "transform, filter",
         }}
       >
@@ -406,7 +404,7 @@ export default function FloatingWhatsAppWidget() {
               transform: "translateY(-50%)",
               ...(isLeftSide ? { left: "100%", marginLeft: "14px" } : { right: "100%", marginRight: "14px" }),
               pointerEvents: "none",
-              animation: "fadeIn 0.3s ease-out forwards",
+              animation: "wa-fadeIn 0.3s ease-out forwards",
             }}
             className="hidden md:block" 
           >
@@ -449,7 +447,7 @@ export default function FloatingWhatsAppWidget() {
               boxShadow: "0 2px 8px rgba(239,68,68,0.5)",
               fontFamily: "system-ui, sans-serif",
               pointerEvents: "none",
-              animation: "fadeIn 0.3s ease-out",
+              animation: "wa-fadeIn 0.3s ease-out",
             }}
           >
             1
