@@ -65,14 +65,14 @@ const nextConfig: NextConfig = {
     return [
       // ═════════════════════════════════════════════════════════════════════
       // [SEO: WWW Enforcer und non-www to www canonical redirect]
-      // Catch both Punycode AND raw UTF-8 host headers (for old crawlers)
+      // STRICT ANCHORED REGEX: Only matches exact apex domain, NEVER www.
       // ═════════════════════════════════════════════════════════════════════
       {
         source: "/:path*",
         has: [
           {
             type: "host",
-            value: PUNYCODE_HOST,
+            value: `^${PUNYCODE_HOST}$`,
           },
         ],
         destination: `https://${PUNYCODE_WWW}/:path*`,
@@ -83,7 +83,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: "host",
-            value: "wetzlar-schlüsseldienst.de",
+            value: "^wetzlar-schlüsseldienst\\.de$",
           },
         ],
         destination: `https://${PUNYCODE_WWW}/:path*`,
@@ -197,8 +197,9 @@ const nextConfig: NextConfig = {
         destination: "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilien/Einbruchschutz/",
         permanent: false,
       },
-      // ── Legacy City URLs from GSC (404 Fixes) ──
+      // ── Legacy City URLs from GSC (404 Fixes & Umlaut variants) ──
       { source: "/huttenberg", destination: "/schluesseldienst-huettenberg", permanent: true },
+      { source: "/huettenberg", destination: "/schluesseldienst-huettenberg", permanent: true },
       { source: "/buseck", destination: "/schluesseldienst-buseck", permanent: true },
       { source: "/haiger", destination: "/schluesseldienst-haiger", permanent: true },
       { source: "/dillenburg", destination: "/schluesseldienst-dillenburg", permanent: true },
@@ -218,6 +219,15 @@ const nextConfig: NextConfig = {
       { source: "/lollar", destination: "/schluesseldienst-lollar", permanent: true },
       { source: "/marburg", destination: "/schluesseldienst-marburg", permanent: true },
       { source: "/pohlheim", destination: "/schluesseldienst-pohlheim", permanent: true },
+      { source: "/butzbach", destination: "/schluesseldienst-butzbach", permanent: true },
+      { source: "/biebertal", destination: "/schluesseldienst-biebertal", permanent: true },
+      { source: "/waldsolms", destination: "/schluesseldienst-waldsolms", permanent: true },
+      { source: "/hohenahr", destination: "/schluesseldienst-hohenahr", permanent: true },
+      { source: "/weilburg", destination: "/schluesseldienst-weilburg", permanent: true },
+      { source: "/greifenstein", destination: "/schluesseldienst-greifenstein", permanent: true },
+      { source: "/driedorf", destination: "/schluesseldienst-driedorf", permanent: true },
+      { source: "/schoeffengrund", destination: "/schluesseldienst-schoeffengrund", permanent: true },
+      { source: "/dietzhoelztal", destination: "/schluesseldienst-dietzhoelztal", permanent: true },
     ];
   },
 
