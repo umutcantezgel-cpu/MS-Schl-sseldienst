@@ -12,6 +12,7 @@ import { ring3eLocations } from "./locations_ring3e";
 import { ring3fLocations } from "./locations_ring3f";
 import { ring4Locations } from "./locations_ring4";
 import { ring4bLocations } from "./locations_ring4b";
+import { ring4cLocations } from "./locations_ring4c";
 
 export const allLocations: LocationData[] = [
     ...ring1,
@@ -27,7 +28,8 @@ export const allLocations: LocationData[] = [
     ...ring3eLocations,
     ...ring3fLocations,
     ...ring4Locations,
-    ...ring4bLocations
+    ...ring4bLocations,
+    ...ring4cLocations
 ];
 
 export function getLocationBySlug(slug: string): LocationData | undefined {
