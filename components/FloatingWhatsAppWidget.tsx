@@ -4,20 +4,6 @@ import { useState, useEffect, useRef, useCallback, useSyncExternalStore } from "
 import { usePathname } from "next/navigation";
 import { companyInfo } from "@/lib/data/company";
 
-/* ═══════════════════════════════════════════════════════════════════════════
- * Floating WhatsApp CTA – Gamified Physics Engine (Official Brand Edition)
- *
- * Exact Visual Design & Interaction Architecture (c7cb741 & 5d32ffd):
- *  1. 64px Vibrant Brand Green (#25D366) with luminous glow & wa-pulse ring
- *  2. Red notification badge ("1") with white border
- *  3. Desktop Tooltip ("Chat starten 💬") on hover & after 5s idle
- *  4. Physics-based throw, momentum & wall boundary bounce (BOUNCE=0.6, FRICTION=0.92)
- *  5. Elastic edge-snapping to screen edges upon settling
- *  6. 100% Touch & Click Reliability (quick taps open WhatsApp seamlessly)
- *  7. Route-contextual WhatsApp prefilled messages
- *  8. Direct-DOM 60/120fps GPU acceleration with 0ms TBT (zero React state churn during motion)
- * ═══════════════════════════════════════════════════════════════════════════ */
-
 const emptySubscribe = () => () => {};
 function useIsMounted() {
   return useSyncExternalStore(
@@ -26,6 +12,21 @@ function useIsMounted() {
     () => false
   );
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * Floating WhatsApp CTA – Gamified Physics Engine (Ultra-Interactive Edition)
+ *
+ * Features:
+ *  1. Physics-based Drag & Throw (momentum, wall bouncing, friction)
+ *  2. Elastic Edge-Snapping upon settling
+ *  3. Pulse glow animation when idle
+ *  4. Desktop Tooltip ("Chat starten 💬") on hover & after 5s idle
+ *  5. Notification badge ("1") for first 30 seconds
+ *  6. Contextual WhatsApp messages per page
+ *  7. Haptic feedback on mobile drag & boundary collisions
+ *  8. 100% Reliable tap handling on mobile & desktop
+ *  9. Direct-DOM 60/120 FPS hardware acceleration (0ms TBT)
+ * ═══════════════════════════════════════════════════════════════════════════ */
 
 function getContextualMessage(pathname: string): string {
   if (pathname.includes("/leistungen/notdienst") || pathname.includes("/leistungen/turoeffnung"))
@@ -55,7 +56,7 @@ export default function FloatingWhatsAppWidget() {
   const btnRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
 
-  // Physics & Interaction State in refs for 0 React re-renders during motion
+  // Position and Physics Refs (direct DOM mutation for 60/120fps with 0ms TBT)
   const pos = useRef({ x: 0, y: 0 });
   const vel = useRef({ x: 0, y: 0 });
   const isDragging = useRef(false);
@@ -75,40 +76,37 @@ export default function FloatingWhatsAppWidget() {
   const BOUNCE = 0.62;
   const MIN_VEL = 0.35;
   const MAX_VEL = 42;
-  const DRAG_DISTANCE_THRESHOLD = 9; // pixels
-  const DRAG_TIME_THRESHOLD = 260; // ms
+  const DRAG_THRESHOLD = 6;
 
-  /* ── Edge Snapping Animation ── */
+  const updateDOMTransform = useCallback((scale = 1) => {
+    if (!btnRef.current) return;
+    btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(${scale})`;
+  }, []);
+
+  /* ── Edge Snapping Animation (Spring Easing) ── */
   const snapToEdge = useCallback(() => {
-    if (!btnRef.current || typeof window === "undefined") return;
+    if (typeof window === "undefined") return;
     cancelAnimationFrame(snapFrame.current);
     isSnapping.current = true;
 
-    const rect = btnRef.current.getBoundingClientRect();
-    const midX = rect.left + rect.width / 2;
+    const midX = pos.current.x + SIZE / 2;
     const distLeft = midX;
     const distRight = window.innerWidth - midX;
 
-    let targetDx = 0;
+    let targetX = 0;
     if (distLeft < distRight) {
-      targetDx = MARGIN - rect.left;
+      targetX = MARGIN;
       setIsLeftSide(true);
     } else {
-      targetDx = window.innerWidth - MARGIN - rect.width - rect.left;
+      targetX = window.innerWidth - SIZE - MARGIN;
       setIsLeftSide(false);
     }
 
-    let targetDy = 0;
-    if (rect.top < TOP_MARGIN) {
-      targetDy = TOP_MARGIN - rect.top;
-    } else if (rect.bottom > window.innerHeight - BOTTOM_MARGIN) {
-      targetDy = window.innerHeight - BOTTOM_MARGIN - rect.bottom;
-    }
+    const maxY = window.innerHeight - SIZE - BOTTOM_MARGIN;
+    const targetY = Math.max(TOP_MARGIN, Math.min(maxY, pos.current.y));
 
     const startX = pos.current.x;
     const startY = pos.current.y;
-    const endX = startX + targetDx;
-    const endY = startY + targetDy;
     const startTime = performance.now();
     const duration = 380; // ms
 
@@ -116,95 +114,95 @@ export default function FloatingWhatsAppWidget() {
 
     const step = (now: number) => {
       const elapsed = now - startTime;
-      const progress = Math.min(1, elapsed / duration);
-      const ease = easeOutCubic(progress);
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = easeOutCubic(progress);
 
-      pos.current.x = startX + (endX - startX) * ease;
-      pos.current.y = startY + (endY - startY) * ease;
-
-      if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
-      }
+      pos.current.x = startX + (targetX - startX) * eased;
+      pos.current.y = startY + (targetY - startY) * eased;
+      updateDOMTransform(1);
 
       if (progress < 1) {
         snapFrame.current = requestAnimationFrame(step);
       } else {
         isSnapping.current = false;
         vel.current = { x: 0, y: 0 };
+        if (btnRef.current) {
+          btnRef.current.classList.add("wa-pulse-glow");
+        }
       }
     };
 
     snapFrame.current = requestAnimationFrame(step);
-  }, []);
+  }, [updateDOMTransform]);
 
-  /* ── Physics Momentum & Bounce Loop ── */
+  /* ── Physics Momentum & Bounce Animation Loop ── */
   const animateRef = useRef<() => void>(() => {});
 
   useEffect(() => {
     animateRef.current = () => {
-      if (!btnRef.current || typeof window === "undefined") return;
+      if (isDragging.current || typeof window === "undefined") return;
 
       vel.current.x *= FRICTION;
       vel.current.y *= FRICTION;
 
+      const currentSpeed = Math.hypot(vel.current.x, vel.current.y);
+      if (currentSpeed < MIN_VEL) {
+        vel.current = { x: 0, y: 0 };
+        snapToEdge();
+        return;
+      }
+
       pos.current.x += vel.current.x;
       pos.current.y += vel.current.y;
 
-      const rect = btnRef.current.getBoundingClientRect();
-      let hitBoundary = false;
+      const maxX = window.innerWidth - SIZE;
+      const maxY = window.innerHeight - SIZE;
+      const topLimit = TOP_MARGIN;
+      const bottomLimit = maxY - 20;
 
-      // Left Boundary
-      if (rect.left < MARGIN) {
-        pos.current.x += MARGIN - rect.left;
-        vel.current.x = -vel.current.x * BOUNCE;
-        hitBoundary = true;
-      }
-      // Right Boundary
-      else if (rect.right > window.innerWidth - MARGIN) {
-        pos.current.x -= rect.right - (window.innerWidth - MARGIN);
-        vel.current.x = -vel.current.x * BOUNCE;
-        hitBoundary = true;
-      }
-
-      // Top Boundary
-      if (rect.top < TOP_MARGIN) {
-        pos.current.y += TOP_MARGIN - rect.top;
-        vel.current.y = -vel.current.y * BOUNCE;
-        hitBoundary = true;
-      }
-      // Bottom Boundary
-      else if (rect.bottom > window.innerHeight - BOTTOM_MARGIN) {
-        pos.current.y -= rect.bottom - (window.innerHeight - BOTTOM_MARGIN);
-        vel.current.y = -vel.current.y * BOUNCE;
-        hitBoundary = true;
+      let hit = false;
+      // Bounce off Left / Right walls
+      if (pos.current.x <= 0) {
+        pos.current.x = 0;
+        vel.current.x = Math.abs(vel.current.x) * BOUNCE;
+        hit = true;
+      } else if (pos.current.x >= maxX) {
+        pos.current.x = maxX;
+        vel.current.x = -Math.abs(vel.current.x) * BOUNCE;
+        hit = true;
       }
 
-      if (hitBoundary && typeof navigator !== "undefined" && navigator.vibrate) {
+      // Bounce off Top / Bottom walls
+      if (pos.current.y <= topLimit) {
+        pos.current.y = topLimit;
+        vel.current.y = Math.abs(vel.current.y) * BOUNCE;
+        hit = true;
+      } else if (pos.current.y >= bottomLimit) {
+        pos.current.y = bottomLimit;
+        vel.current.y = -Math.abs(vel.current.y) * BOUNCE;
+        hit = true;
+      }
+
+      if (hit && typeof navigator !== "undefined" && navigator.vibrate) {
         try {
           navigator.vibrate(10);
         } catch {
-          // ignore vibrate permissions
+          // ignore
         }
       }
 
-      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
-
-      const currentSpeed = Math.hypot(vel.current.x, vel.current.y);
-      if (currentSpeed > MIN_VEL) {
-        animFrame.current = requestAnimationFrame(animateRef.current);
-      } else {
-        vel.current = { x: 0, y: 0 };
-        snapToEdge();
-      }
+      updateDOMTransform(1);
+      animFrame.current = requestAnimationFrame(animateRef.current);
     };
-  }, [snapToEdge]);
+  }, [snapToEdge, updateDOMTransform]);
 
-  /* ── Pointer Interactions (Touch + Mouse Unified) ── */
+  /* ── Pointer Interactions (Touch & Mouse Unified) ── */
   const onPointerDown = useCallback((e: React.PointerEvent<HTMLAnchorElement>) => {
     if (e.button !== 0) return;
 
     cancelAnimationFrame(animFrame.current);
     cancelAnimationFrame(snapFrame.current);
+    vel.current = { x: 0, y: 0 };
 
     isDragging.current = true;
     wasDragged.current = false;
@@ -222,22 +220,24 @@ export default function FloatingWhatsAppWidget() {
     }
 
     if (btnRef.current) {
-      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(1.12)`;
+      btnRef.current.classList.remove("wa-pulse-glow");
       btnRef.current.style.cursor = "grabbing";
       btnRef.current.style.boxShadow = "0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25)";
     }
 
+    updateDOMTransform(1.14);
+
     if (typeof navigator !== "undefined" && navigator.vibrate) {
       try {
-        navigator.vibrate(15);
+        navigator.vibrate(20);
       } catch {
         // ignore
       }
     }
-  }, []);
+  }, [updateDOMTransform]);
 
   const onPointerMove = useCallback((e: React.PointerEvent<HTMLAnchorElement>) => {
-    if (!isDragging.current) return;
+    if (!isDragging.current || typeof window === "undefined") return;
 
     const dx = e.clientX - lastPointer.current.x;
     const dy = e.clientY - lastPointer.current.y;
@@ -247,20 +247,21 @@ export default function FloatingWhatsAppWidget() {
       e.clientY - dragStart.current.y
     );
 
-    if (totalDist > DRAG_DISTANCE_THRESHOLD) {
+    if (totalDist > DRAG_THRESHOLD) {
       wasDragged.current = true;
     }
 
-    pos.current.x += dx;
-    pos.current.y += dy;
+    const maxX = window.innerWidth - SIZE;
+    const maxY = window.innerHeight - SIZE;
+
+    pos.current.x = Math.max(0, Math.min(maxX, pos.current.x + dx));
+    pos.current.y = Math.max(0, Math.min(maxY, pos.current.y + dy));
 
     prevPointer.current = { ...lastPointer.current };
     lastPointer.current = { x: e.clientX, y: e.clientY, t: Date.now() };
 
-    if (btnRef.current) {
-      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(1.12)`;
-    }
-  }, []);
+    updateDOMTransform(1.14);
+  }, [updateDOMTransform]);
 
   const onPointerUp = useCallback((e: React.PointerEvent<HTMLAnchorElement>) => {
     if (!isDragging.current) return;
@@ -283,16 +284,17 @@ export default function FloatingWhatsAppWidget() {
       e.clientY - dragStart.current.y
     );
 
-    // Differentiate quick tap from intentional drag/fling
-    if (!wasDragged.current || (totalDist < DRAG_DISTANCE_THRESHOLD && elapsed < DRAG_TIME_THRESHOLD)) {
+    // Quick tap differentiation
+    if (!wasDragged.current || (totalDist < DRAG_THRESHOLD && elapsed < 260)) {
       wasDragged.current = false;
+      updateDOMTransform(1);
       if (btnRef.current) {
-        btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
+        btnRef.current.classList.add("wa-pulse-glow");
       }
       return;
     }
 
-    // Calculate throw velocity based on recent pointer delta
+    // Momentum throw calculation
     const dt = Math.max(1, lastPointer.current.t - prevPointer.current.t);
     const vx = ((lastPointer.current.x - prevPointer.current.x) / dt) * 16;
     const vy = ((lastPointer.current.y - prevPointer.current.y) / dt) * 16;
@@ -302,9 +304,7 @@ export default function FloatingWhatsAppWidget() {
       y: Math.max(-MAX_VEL, Math.min(MAX_VEL, vy)),
     };
 
-    if (btnRef.current) {
-      btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0)`;
-    }
+    updateDOMTransform(1);
 
     const initialSpeed = Math.hypot(vel.current.x, vel.current.y);
     if (initialSpeed > MIN_VEL) {
@@ -312,10 +312,10 @@ export default function FloatingWhatsAppWidget() {
     } else {
       snapToEdge();
     }
-  }, [snapToEdge]);
+  }, [snapToEdge, updateDOMTransform]);
 
   /* ── Click / Navigation Handler ── */
-  const handleClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+  const onClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     if (wasDragged.current) {
       e.preventDefault();
       wasDragged.current = false;
@@ -330,22 +330,24 @@ export default function FloatingWhatsAppWidget() {
     }
   }, [pathname]);
 
-  /* ── Lifecycle & Timer setup ── */
+  /* ── Initialization on Mount ── */
   useEffect(() => {
-    const tooltipTimer = setTimeout(() => {
-      setShowTooltip(true);
-    }, 4500);
+    const isMobile = window.innerWidth < 768;
+    const initialX = window.innerWidth - SIZE - (isMobile ? 16 : 24);
+    const initialY = window.innerHeight - SIZE - (isMobile ? 120 : 96);
+    pos.current = { x: initialX, y: initialY };
+    updateDOMTransform(1);
 
-    const badgeTimer = setTimeout(() => {
-      setShowBadge(false);
-    }, 30000);
+    const tooltipTimer = setTimeout(() => setShowTooltip(true), 5000);
+    const badgeTimer = setTimeout(() => setShowBadge(false), 30000);
 
     const handleResize = () => {
-      pos.current = { x: 0, y: 0 };
-      setIsLeftSide(false);
-      if (btnRef.current) {
-        btnRef.current.style.transform = "translate3d(0px, 0px, 0px)";
-      }
+      const isMob = window.innerWidth < 768;
+      pos.current = {
+        x: Math.max(MARGIN, Math.min(window.innerWidth - SIZE - MARGIN, pos.current.x)),
+        y: Math.max(TOP_MARGIN, Math.min(window.innerHeight - SIZE - (isMob ? 110 : 90), pos.current.y)),
+      };
+      updateDOMTransform(1);
     };
 
     window.addEventListener("resize", handleResize, { passive: true });
@@ -357,7 +359,7 @@ export default function FloatingWhatsAppWidget() {
       cancelAnimationFrame(snapFrame.current);
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [updateDOMTransform]);
 
   const whatsappNumber = companyInfo.socialMedia.whatsapp;
   if (!whatsappNumber || !mounted) return null;
@@ -367,36 +369,27 @@ export default function FloatingWhatsAppWidget() {
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanNumber}&text=${encodeURIComponent(contextMessage)}`;
 
   return (
-    <aside aria-label="WhatsApp Kontakt" className="fixed z-[9997]">
+    <>
+      {/* CSS Keyframes for pulse animation */}
       <style jsx global>{`
-        .wa-floating-btn {
-          position: fixed;
-          right: 20px;
-          bottom: 96px;
-          touch-action: none;
-          user-select: none;
-          will-change: transform;
-        }
-        @media (max-width: 767px) {
-          .wa-floating-btn {
-            right: 16px;
-            bottom: 110px;
-          }
-        }
         @keyframes wa-pulse {
           0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.55), 0 6px 28px rgba(37,211,102,0.55); }
           70% { box-shadow: 0 0 0 18px rgba(37,211,102,0), 0 6px 28px rgba(37,211,102,0.55); }
           100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 6px 28px rgba(37,211,102,0.55); }
         }
-        .wa-pulse-active {
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(4px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .wa-pulse-glow {
           animation: wa-pulse 2.2s ease-in-out infinite;
         }
         @media (prefers-reduced-motion: reduce) {
-          .wa-pulse-active { animation: none !important; }
+          .wa-pulse-glow { animation: none !important; }
         }
       `}</style>
 
-      {/* Main Draggable & Throwable WhatsApp Button */}
+      {/* Main Draggable WhatsApp Button */}
       <a
         ref={btnRef}
         href={whatsappUrl}
@@ -404,22 +397,27 @@ export default function FloatingWhatsAppWidget() {
         rel="noopener noreferrer nofollow"
         aria-label="Nachricht per WhatsApp senden"
         id="whatsapp-floating-btn"
-        onClick={handleClick}
+        draggable={false}
+        onDragStart={(e) => e.preventDefault()}
+        onClick={onClick}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
-        onFocus={() => setShowTooltip(true)}
-        onBlur={() => setShowTooltip(false)}
-        className="wa-floating-btn wa-pulse-active flex items-center justify-center rounded-full text-white cursor-grab transition-transform duration-200"
+        className="fixed top-0 left-0 z-[9997] wa-pulse-glow flex items-center justify-center rounded-full text-white"
         style={{
           width: SIZE,
           height: SIZE,
           backgroundColor: "#25D366",
-          boxShadow: "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)",
+          color: "#ffffff",
           textDecoration: "none",
+          userSelect: "none",
+          touchAction: "none",
+          cursor: "grab",
+          boxShadow: "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)",
+          willChange: "transform",
         }}
       >
         {/* Desktop Tooltip */}
@@ -440,7 +438,7 @@ export default function FloatingWhatsAppWidget() {
                 whiteSpace: "nowrap",
                 boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
                 fontFamily: "system-ui, -apple-system, sans-serif",
-                border: "1px solid rgba(255,255,255,0.1)",
+                border: "1px solid rgba(255,255,255,0.12)",
               }}
             >
               Chat starten 💬
@@ -470,13 +468,14 @@ export default function FloatingWhatsAppWidget() {
               boxShadow: "0 2px 8px rgba(239,68,68,0.5)",
               fontFamily: "system-ui, sans-serif",
               pointerEvents: "none",
+              animation: "fadeIn 0.3s ease-out",
             }}
           >
             1
           </span>
         )}
 
-        {/* WhatsApp Official SVG Icon */}
+        {/* WhatsApp SVG Icon */}
         <svg
           width="32"
           height="32"
@@ -487,6 +486,6 @@ export default function FloatingWhatsAppWidget() {
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
       </a>
-    </aside>
+    </>
   );
 }
