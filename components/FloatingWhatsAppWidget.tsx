@@ -5,17 +5,17 @@ import { usePathname } from "next/navigation";
 import { companyInfo } from "@/lib/data/company";
 
 /* ═══════════════════════════════════════════════════════════════════════════
- * Floating WhatsApp CTA – Gamified Physics Engine (Ultra-Performance)
+ * Floating WhatsApp CTA – Gamified Physics Engine (Official Brand Edition)
  *
- * Features:
- *  1. Physics-based throw, momentum & wall boundary bounce
- *  2. Elastic edge-snapping to nearest viewport boundary on rest
- *  3. 100% Touch & Click Reliability (zero false-drag clicks on mobile)
- *  4. Zero React re-renders during motion (pure direct-DOM transform)
- *  5. GPU hardware accelerated (translate3d, will-change: transform)
- *  6. Idle breathing pulse & desktop tooltip ("Chat starten 💬")
+ * Exact Visual Design & Interaction Architecture (c7cb741 & 5d32ffd):
+ *  1. 64px Vibrant Brand Green (#25D366) with luminous glow & wa-pulse ring
+ *  2. Red notification badge ("1") with white border
+ *  3. Desktop Tooltip ("Chat starten 💬") on hover & after 5s idle
+ *  4. Physics-based throw, momentum & wall boundary bounce (BOUNCE=0.6, FRICTION=0.92)
+ *  5. Elastic edge-snapping to screen edges upon settling
+ *  6. 100% Touch & Click Reliability (quick taps open WhatsApp seamlessly)
  *  7. Route-contextual WhatsApp prefilled messages
- *  8. 30s notification badge & Google Analytics click tracking
+ *  8. Direct-DOM 60/120fps GPU acceleration with 0ms TBT (zero React state churn during motion)
  * ═══════════════════════════════════════════════════════════════════════════ */
 
 const emptySubscribe = () => () => {};
@@ -52,11 +52,10 @@ export default function FloatingWhatsAppWidget() {
   const [showTooltip, setShowTooltip] = useState(false);
   const [showBadge, setShowBadge] = useState(true);
   const [isLeftSide, setIsLeftSide] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const btnRef = useRef<HTMLAnchorElement>(null);
   const pathname = usePathname();
 
-  // Physics & Interaction State (all in refs to avoid React re-renders during motion)
+  // Physics & Interaction State in refs for 0 React re-renders during motion
   const pos = useRef({ x: 0, y: 0 });
   const vel = useRef({ x: 0, y: 0 });
   const isDragging = useRef(false);
@@ -68,12 +67,12 @@ export default function FloatingWhatsAppWidget() {
   const animFrame = useRef<number>(0);
   const snapFrame = useRef<number>(0);
 
-  const SIZE = 60;
+  const SIZE = 64;
   const MARGIN = 16;
-  const TOP_MARGIN = 80;
-  const BOTTOM_MARGIN = 100;
+  const TOP_MARGIN = 75;
+  const BOTTOM_MARGIN = 95;
   const FRICTION = 0.92;
-  const BOUNCE = 0.65;
+  const BOUNCE = 0.62;
   const MIN_VEL = 0.35;
   const MAX_VEL = 42;
   const DRAG_DISTANCE_THRESHOLD = 9; // pixels
@@ -202,7 +201,6 @@ export default function FloatingWhatsAppWidget() {
 
   /* ── Pointer Interactions (Touch + Mouse Unified) ── */
   const onPointerDown = useCallback((e: React.PointerEvent<HTMLAnchorElement>) => {
-    // Only primary button
     if (e.button !== 0) return;
 
     cancelAnimationFrame(animFrame.current);
@@ -220,12 +218,13 @@ export default function FloatingWhatsAppWidget() {
     try {
       e.currentTarget.setPointerCapture(e.pointerId);
     } catch {
-      // safe fallback if capture fails
+      // safe fallback
     }
 
     if (btnRef.current) {
       btnRef.current.style.transform = `translate3d(${pos.current.x}px, ${pos.current.y}px, 0) scale(1.12)`;
       btnRef.current.style.cursor = "grabbing";
+      btnRef.current.style.boxShadow = "0 8px 40px rgba(37,211,102,0.7), 0 0 0 6px rgba(37,211,102,0.25)";
     }
 
     if (typeof navigator !== "undefined" && navigator.vibrate) {
@@ -275,6 +274,7 @@ export default function FloatingWhatsAppWidget() {
 
     if (btnRef.current) {
       btnRef.current.style.cursor = "grab";
+      btnRef.current.style.boxShadow = "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)";
     }
 
     const elapsed = Date.now() - dragStart.current.t;
@@ -369,73 +369,81 @@ export default function FloatingWhatsAppWidget() {
   return (
     <aside aria-label="WhatsApp Kontakt" className="fixed z-[9997]">
       <style jsx global>{`
-        .wa-floating-anchor {
+        .wa-floating-btn {
           position: fixed;
-          right: 18px;
+          right: 20px;
           bottom: 96px;
           touch-action: none;
           user-select: none;
           will-change: transform;
         }
         @media (max-width: 767px) {
-          .wa-floating-anchor {
-            right: 14px;
+          .wa-floating-btn {
+            right: 16px;
             bottom: 110px;
           }
         }
-        @keyframes wa-idle-pulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.07); }
+        @keyframes wa-pulse {
+          0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.55), 0 6px 28px rgba(37,211,102,0.55); }
+          70% { box-shadow: 0 0 0 18px rgba(37,211,102,0), 0 6px 28px rgba(37,211,102,0.55); }
+          100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 6px 28px rgba(37,211,102,0.55); }
         }
-        .wa-pulse-animation {
-          animation: wa-idle-pulse 2.6s ease-in-out infinite;
+        .wa-pulse-active {
+          animation: wa-pulse 2.2s ease-in-out infinite;
         }
         @media (prefers-reduced-motion: reduce) {
-          .wa-pulse-animation { animation: none !important; }
+          .wa-pulse-active { animation: none !important; }
         }
       `}</style>
 
-      {/* Main Draggable WhatsApp Button */}
+      {/* Main Draggable & Throwable WhatsApp Button */}
       <a
         ref={btnRef}
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        aria-label="WhatsApp Chat mit Schlüssel Schmiede starten"
+        aria-label="Nachricht per WhatsApp senden"
         id="whatsapp-floating-btn"
         onClick={handleClick}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
-        onMouseEnter={() => {
-          setIsHovered(true);
-          setShowTooltip(true);
-        }}
-        onMouseLeave={() => {
-          setIsHovered(false);
-          setShowTooltip(false);
-        }}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
         onFocus={() => setShowTooltip(true)}
         onBlur={() => setShowTooltip(false)}
-        className={`wa-floating-anchor flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_8px_30px_rgba(37,211,102,0.48)] hover:shadow-[0_12px_36px_rgba(37,211,102,0.65)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/40 cursor-grab ${
-          !isHovered ? "wa-pulse-animation" : ""
-        }`}
+        className="wa-floating-btn wa-pulse-active flex items-center justify-center rounded-full text-white cursor-grab transition-transform duration-200"
         style={{
           width: SIZE,
           height: SIZE,
+          backgroundColor: "#25D366",
+          boxShadow: "0 6px 28px rgba(37,211,102,0.55), 0 0 0 4px rgba(37,211,102,0.3)",
+          textDecoration: "none",
         }}
       >
         {/* Desktop Tooltip */}
         {showTooltip && (
           <div
-            className={`hidden md:flex absolute top-1/2 -translate-y-1/2 pointer-events-none items-center transition-opacity duration-200 ${
+            className={`hidden md:flex absolute top-1/2 -translate-y-1/2 pointer-events-none items-center transition-all duration-200 ${
               isLeftSide ? "left-full ml-3.5" : "right-full mr-3.5"
             }`}
           >
-            <div className="bg-[#18181b] text-white text-xs font-semibold px-3.5 py-2 rounded-xl whitespace-nowrap shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center gap-1.5 border border-white/10">
-              <span>Chat starten 💬</span>
-              <span className="text-emerald-400 font-bold">●</span>
+            <div
+              style={{
+                background: "#1a1a1a",
+                color: "#ffffff",
+                fontSize: 13,
+                fontWeight: 600,
+                padding: "8px 14px",
+                borderRadius: 12,
+                whiteSpace: "nowrap",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
+                fontFamily: "system-ui, -apple-system, sans-serif",
+                border: "1px solid rgba(255,255,255,0.1)",
+              }}
+            >
+              Chat starten 💬
             </div>
           </div>
         )}
@@ -444,18 +452,36 @@ export default function FloatingWhatsAppWidget() {
         {showBadge && (
           <span
             aria-hidden="true"
-            className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 text-white text-[11px] font-black flex items-center justify-center border-2 border-white shadow-md pointer-events-none animate-bounce"
+            style={{
+              position: "absolute",
+              top: -2,
+              right: -2,
+              width: 22,
+              height: 22,
+              borderRadius: "50%",
+              backgroundColor: "#ef4444",
+              color: "#ffffff",
+              fontSize: 12,
+              fontWeight: 800,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              border: "2.5px solid #ffffff",
+              boxShadow: "0 2px 8px rgba(239,68,68,0.5)",
+              fontFamily: "system-ui, sans-serif",
+              pointerEvents: "none",
+            }}
           >
             1
           </span>
         )}
 
-        {/* WhatsApp Icon */}
+        {/* WhatsApp Official SVG Icon */}
         <svg
           width="32"
           height="32"
           viewBox="0 0 24 24"
-          className="w-7 h-7 sm:w-8 sm:h-8 fill-white drop-shadow-sm pointer-events-none"
+          style={{ fill: "#ffffff", pointerEvents: "none" }}
           aria-hidden="true"
         >
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />

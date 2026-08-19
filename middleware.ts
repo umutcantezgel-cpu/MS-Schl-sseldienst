@@ -204,6 +204,7 @@ export function middleware(request: NextRequest) {
 
     response.headers.set('Content-Security-Policy', cspDirectives);
     response.headers.set('x-nonce', nonce);
+    response.headers.set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
     // AI Crawler-specific headers — Entity Assertion
     if (isAICrawler(userAgent)) {

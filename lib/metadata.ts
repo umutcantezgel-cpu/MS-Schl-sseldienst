@@ -8,14 +8,33 @@ interface GenerateMetadataProps {
     path: string;
     noindex?: boolean;
     exactTitle?: boolean;
+    keywords?: string[] | string;
 }
+
+const DEFAULT_KEYWORDS = [
+    "Schlüsseldienst Wetzlar",
+    "Schlüsselnotdienst Wetzlar",
+    "Türöffnung Wetzlar",
+    "Schlüsseldienst 24h Wetzlar",
+    "Notdienst Wetzlar ab 99€",
+    "Schlosswechsel Wetzlar",
+    "Autoöffnung Wetzlar",
+    "Autoschlüssel nachmachen Wetzlar",
+    "Tresoröffnung Wetzlar",
+    "Schließanlagen Wetzlar",
+    "Sicherheitstechnik Wetzlar",
+    "Einbruchschutz Wetzlar",
+    "Schlüssel nachmachen Wetzlar",
+    "Mina Saad",
+    "Schlüssel Schmiede Wetzlar"
+];
 
 /**
  * Shared metadata generator for all pages.
  * 
  * CRITICAL: This function is called by BOTH layout.tsx and page.tsx.
  * - layout.tsx uses it for global defaults (title.template, metadataBase)
- * - page.tsx uses it for page-specific overrides (title, description)
+ * - page.tsx uses it for page-specific overrides (title, description, keywords)
  * 
  * Next.js MERGES layout + page metadata. To avoid duplicate <meta name="description">
  * tags (Seobility #2), the layout.tsx must NOT set its own `description` und  
@@ -27,11 +46,17 @@ export const generateSharedMetadata = ({
     path,
     noindex = false,
     exactTitle = false,
+    keywords,
 }: GenerateMetadataProps): Metadata => {
     // Canonical URLs WITHOUT trailing slash – matches Next.js trailingSlash: false config.
     // siteUrl from schema.ts already includes "www." prefix via Punycode.
     const urlPath = path === '/' ? '/' : (path.endsWith('/') ? path.slice(0, -1) : path);
     const url = `${siteUrl}${urlPath}`;
+
+    const resolvedKeywords = keywords
+        ? (Array.isArray(keywords) ? keywords : [keywords])
+        : DEFAULT_KEYWORDS;
+    const keywordsString = resolvedKeywords.join(", ");
 
     return {
         // ── [FIX: Seobility #1 und Title too long] ──────────────────────────
@@ -44,6 +69,18 @@ export const generateSharedMetadata = ({
         // ── [FIX: Seobility #2 und Duplicate Description] ───────────────────
         // Single description output. Layout must NOT also set description.
         description,
+
+        // ── [FIX: Missing Keywords & Publisher] ─────────────────────────────
+        keywords: resolvedKeywords,
+        authors: [{ name: "Mina Saad", url: siteUrl }],
+        creator: "Mina Saad",
+        publisher: "Schlüssel Schmiede Wetzlar - Mina Saad",
+        category: "Schlüsseldienst & Sicherheitstechnik",
+        formatDetection: {
+            email: false,
+            address: true,
+            telephone: true,
+        },
 
         // ── [FIX: Seobility #3 und Canonical Mismatch] ──────────────────────
         // Forces all generated URLs to use the production domain,
@@ -112,6 +149,11 @@ export const generateSharedMetadata = ({
             "geo.placename": "Wetzlar",
             "geo.position": `${companyInfo.geo.latitude};${companyInfo.geo.longitude}`,
             "ICBM": `${companyInfo.geo.latitude}, ${companyInfo.geo.longitude}`,
+            "publisher": "Schlüssel Schmiede Wetzlar - Mina Saad",
+            "author": "Mina Saad",
+            "copyright": "Schlüssel Schmiede Wetzlar",
+            "keywords": keywordsString,
+            "robots": noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
         },
     };
 };

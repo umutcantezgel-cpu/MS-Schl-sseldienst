@@ -37,6 +37,27 @@ export const metadata: Metadata = {
     default: "Schlüssel Schmiede Wetzlar | 24 H Notdienst",
     template: "%s",
   },
+  keywords: [
+    "Schlüsseldienst Wetzlar",
+    "Schlüsselnotdienst Wetzlar",
+    "Türöffnung Wetzlar",
+    "Schlüsseldienst 24h Wetzlar",
+    "Notdienst Wetzlar ab 99€",
+    "Schlosswechsel Wetzlar",
+    "Autoöffnung Wetzlar",
+    "Autoschlüssel nachmachen Wetzlar",
+    "Tresoröffnung Wetzlar",
+    "Schließanlagen Wetzlar",
+    "Sicherheitstechnik Wetzlar",
+    "Einbruchschutz Wetzlar",
+    "Schlüssel nachmachen Wetzlar",
+    "Mina Saad",
+    "Schlüssel Schmiede Wetzlar"
+  ],
+  authors: [{ name: "Mina Saad", url: siteUrl }],
+  creator: "Mina Saad",
+  publisher: "Schlüssel Schmiede Wetzlar - Mina Saad",
+  category: "Schlüsseldienst & Sicherheitstechnik",
   metadataBase: new URL(siteUrl),
   alternates: {
     languages: {
@@ -76,6 +97,11 @@ export const metadata: Metadata = {
     "geo.placename": "Wetzlar",
     "geo.position": `${companyInfo.geo.latitude};${companyInfo.geo.longitude}`,
     "ICBM": `${companyInfo.geo.latitude}, ${companyInfo.geo.longitude}`,
+    "publisher": "Schlüssel Schmiede Wetzlar - Mina Saad",
+    "author": "Mina Saad",
+    "copyright": "Schlüssel Schmiede Wetzlar",
+    "keywords": "Schlüsseldienst Wetzlar, Schlüsselnotdienst Wetzlar, Türöffnung Wetzlar, Schlüsseldienst 24h Wetzlar, Notdienst Wetzlar ab 99€, Schlosswechsel Wetzlar, Autoöffnung Wetzlar, Autoschlüssel nachmachen Wetzlar, Schließanlagen Wetzlar, Einbruchschutz Wetzlar, Schlüssel nachmachen Wetzlar, Mina Saad, Schlüssel Schmiede Wetzlar",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   },
 };
 
