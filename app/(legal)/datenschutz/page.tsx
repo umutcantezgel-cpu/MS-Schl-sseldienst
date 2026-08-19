@@ -27,6 +27,8 @@ const TOC_ITEMS = [
 ]
 
 import { PrivacyPreferenceCenter } from "@/components/legal/PrivacyPreferenceCenter"
+import JsonLd from "@/components/seo/JsonLd"
+import { getGenericPageGraphSchema } from "@/lib/schema"
 
 export default function DatenschutzPage() {
     return (
@@ -36,6 +38,16 @@ export default function DatenschutzPage() {
             lastUpdated="14. April 2026"
             tocItems={TOC_ITEMS}
         >
+            <JsonLd data={getGenericPageGraphSchema({
+                title: "Datenschutzerklärung nach DSGVO | Schlüsseldienst Wetzlar",
+                description: "Datenschutzerklärung der Schlüssel Schmiede Wetzlar. DSGVO-konforme Informationen zur Verarbeitung personenbezogener Daten.",
+                url: "/datenschutz",
+                pageType: "WebPage",
+                breadcrumbs: [
+                    { name: "Startseite", url: "/" },
+                    { name: "Datenschutz", url: "/datenschutz" }
+                ]
+            })} />
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
                 <p className="text-sm text-gray-500 font-medium">Lesezeit: ca. 8 Minuten</p>
                 <PrintButton />

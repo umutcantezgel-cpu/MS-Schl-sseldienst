@@ -9,6 +9,8 @@ import Breadcrumbs from"@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
 import FAQFilterSection from"@/components/ui/FAQFilterSection";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 
 export const metadata = generateSharedMetadata({
  title: "Häufige Fragen (FAQ) | Schlüssel Schmiede Wetzlar",
@@ -25,14 +27,18 @@ export default function FAQPage() {
  return (
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
-      <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Häufige Fragen (FAQ) | Schlüsseldienst Wetzlar. Häufig gestellte Fragen (FAQ) | Schlüsseldienst Wetzlar.</div>
-   {/* Schema.org FAQPage */}
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getFAQSchema(FAQ_DATA)),
-    }}
-   />
+   <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Häufige Fragen (FAQ) | Schlüsseldienst Wetzlar. Häufig gestellte Fragen (FAQ) | Schlüsseldienst Wetzlar.</div>
+   <JsonLd data={getGenericPageGraphSchema({
+    title: "Häufige Fragen (FAQ) | Schlüssel Schmiede Wetzlar",
+    description: "Antworten auf häufig gestellte Fragen zu unseren Schlüsseldienst-Preisen, Anfahrtszeiten und zerstörungsfreien Türöffnungen in Wetzlar.",
+    url: "/faq",
+    pageType: "FAQPage",
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "FAQ", url: "/faq" }
+    ],
+    faqs: FAQ_DATA
+   })} />
 
    {/* Hero Section , Premium Dark */}
    <section className="relative pt-[180px] pb-[var(--space-64)] lg:pt-[220px] lg:pb-[var(--space-96)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 import EmergencyCTA from "@/components/EmergencyCTA";
 import { Calendar, Clock, ShieldCheck, Phone, Check, AlertTriangle, Wrench, FileText } from "lucide-react";
@@ -15,6 +17,16 @@ export const metadata = generateSharedMetadata({
 export default function TerminBuchenPage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Termin online buchen | Schlüsseldienst Wetzlar",
+        description: "Termin online buchen für Sicherheitsberatung, Schließanlagen und Zylindertausch in Wetzlar.",
+        url: "/termin-buchen",
+        pageType: "ContactPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Termin buchen", url: "/termin-buchen" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Termin online buchen | Schlüsseldienst Wetzlar. Online Termin buchen | Schlüsseldienst Wetzlar.</div>
       {/* Hero */}

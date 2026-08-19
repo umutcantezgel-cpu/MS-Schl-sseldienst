@@ -4,10 +4,11 @@ import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
 import RiskCalculator from "@/components/growth/RiskCalculator";
-import { siteUrl } from "@/lib/schema";
+import { siteUrl, getGenericPageGraphSchema } from "@/lib/schema";
 import { Badge } from "@/components/ui/badge";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { sicherheitImages } from "@/lib/data/imageAssets";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata = generateSharedMetadata({
   title: "Einbruchrisiko Rechner Wetzlar | Kostenloser Test",
@@ -21,6 +22,17 @@ export default function EinbruchrisikoPage() {
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Einbruchrisiko Rechner Wetzlar | Kostenloser Test",
+        description: "Interaktiver Einbruchrisiko-Rechner zur schnellen Analyse der Schwachstellen Ihres Wohnobjekts im Lahn-Dill-Kreis.",
+        url: "/ratgeber/einbruchrisiko",
+        pageType: "ItemPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Ratgeber", url: "/ratgeber" },
+          { name: "Einbruchrisiko-Rechner", url: "/ratgeber/einbruchrisiko" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Einbruchrisiko in Wetzlar | Schlüsseldienst Info. Einbruchrisiko & Statistik in Wetzlar | Schlüsseldienst.</div>
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-[var(--surface-elevated)] overflow-hidden">

@@ -13,10 +13,9 @@ import PriceCard from"@/components/pricing/PriceCard";
 import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { getProcessSchema } from"@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
-import { getServiceSchema } from"@/lib/schema";
-import { generateSharedMetadata } from"@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
+import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
 
@@ -40,17 +39,23 @@ export default function AutooeffnungPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schnelle Autoöffnung Wetzlar | KFZ Notdienst ab 149€. Sofort wieder mobil. Zerstörungsfreie Autoöffnung.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Autoöffnung",
-      description: "Professionelle Fahrzeugöffnung ohne Beschädigung aller Marken.",
-      url:"/leistungen/autooeffnung",
-      price: 149
-     }))
-    }}
-   />
+   <JsonLd data={getServiceGraphSchema({
+    title: "Schnelle Autoöffnung Wetzlar | KFZ Notdienst ab 149€",
+    description: "Professionelle, schadensfreie Fahrzeugöffnung ohne Lackschäden für alle Marken und Modelle in Wetzlar und Umgebung.",
+    url: "/leistungen/autooeffnung",
+    serviceType: "KFZ-Notöffnung & Autoaufsperrdienst",
+    price: 149,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Autoöffnung", url: "/leistungen/autooeffnung" }
+    ],
+    faqs: [
+      { question: "Können Sie jede Automarke öffnen?", answer: "Ja, wir haben Spezialwerkzeuge und das Know-how für nahezu alle gängigen Marken, einschließlich moderner Fahrzeuge mit Deadlock-Systemen." },
+      { question: "Entstehen bei der Öffnung Kratzer am Auto?", answer: "Nein, wir garantieren eine hundertprozentig zerstörungsfreie Öffnung ohne Schäden an Lack, Dichtungen oder Elektronik." },
+      { question: "Was kostet die Autoöffnung?", answer: "Eine einfache Autoöffnung bieten wir ab 149 Euro an. Bei modernen Fahrzeugen mit spezieller Diebstahlsicherung (Safe-Sicherung) starten die Preise ab 180 Euro." }
+    ]
+   })} />
 
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

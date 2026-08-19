@@ -5,6 +5,8 @@ import { getAllTestimonials } from '@/lib/data/testimonials';
 import Link from 'next/link';
 import { generateSharedMetadata } from '@/lib/metadata';
 import { ShieldCheck, Award, Building, Home, CheckCircle2 } from 'lucide-react';
+import JsonLd from '@/components/seo/JsonLd';
+import { getGenericPageGraphSchema } from '@/lib/schema';
 
 export const metadata = generateSharedMetadata({
   title: 'Referenzen & Erfolgsgeschichten | Schlüssel Schmiede Wetzlar',
@@ -23,6 +25,16 @@ export default function ReferenzenPage() {
 
   return (
     <main className="min-h-screen bg-white font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: 'Referenzen & Erfolgsgeschichten | Schlüssel Schmiede Wetzlar',
+        description: 'Dokumentierte Fallstudien und erfolgreiche Kundenprojekte für Türöffnungen und Sicherheitstechnik in Wetzlar.',
+        url: '/referenzen',
+        pageType: 'CollectionPage',
+        breadcrumbs: [
+          { name: 'Startseite', url: '/' },
+          { name: 'Referenzen', url: '/referenzen' }
+        ]
+      })} />
       {/* Hero Section */}
       <section className="bg-slate-50 pt-32 pb-20 border-b border-slate-200">
         <div className="container mx-auto px-4 max-w-6xl text-center">

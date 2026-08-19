@@ -4,6 +4,8 @@ import { TLDRBox } from "@/components/legal/TLDRBox"
 import { PrintButton } from "@/components/legal/PrintButton"
 import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
+import JsonLd from "@/components/seo/JsonLd"
+import { getGenericPageGraphSchema } from "@/lib/schema"
 
 export const metadata = generateSharedMetadata({
     title: "Widerrufsbelehrung für Schlüsseldienstaufträge",
@@ -29,6 +31,16 @@ export default function WiderrufPage() {
             lastUpdated="27. März 2026"
             tocItems={TOC_ITEMS}
         >
+            <JsonLd data={getGenericPageGraphSchema({
+                title: "Widerrufsbelehrung für Schlüsseldienstaufträge",
+                description: "Widerrufsbelehrung der Schlüssel Schmiede Wetzlar. Transparente Informationen zum Widerrufsrecht und Muster-Widerrufsformular.",
+                url: "/widerruf",
+                pageType: "WebPage",
+                breadcrumbs: [
+                    { name: "Startseite", url: "/" },
+                    { name: "Widerrufsbelehrung", url: "/widerruf" }
+                ]
+            })} />
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
                 <p className="text-sm text-gray-500 font-medium">Lesezeit: ca. 6 Minuten</p>
                 <PrintButton />

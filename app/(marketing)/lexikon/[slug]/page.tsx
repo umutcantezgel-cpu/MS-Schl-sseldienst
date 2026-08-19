@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BookOpen, Shield, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
-import { siteUrl } from "@/lib/schema";
+import { siteUrl, getDefinedTermGraphSchema } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -67,33 +67,17 @@ export default async function LexikonEntryPage({ params }: Props) {
     ? lexikonData.filter(e => entry.relatedSlugs!.includes(e.slug))
     : [];
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: entry.faqs.map(faq => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
-    }))
-  };
-
-  const webPageSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: entry.title,
-    description: entry.definition,
-    url: `${siteUrl}/lexikon/${entry.slug}`
-  };
-
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute z-0">{getLexikonTitle(entry)}. {entry.title}.</div>
-      <JsonLd data={faqSchema} />
-      <JsonLd data={webPageSchema} />
+      <JsonLd data={getDefinedTermGraphSchema({
+        slug: entry.slug,
+        title: entry.title,
+        definition: entry.definition,
+        category: entry.category,
+        faqs: entry.faqs
+      })} />
 
       <section className="relative pt-[180px] pb-[60px] lg:pt-[220px] lg:pb-[100px] bg-[var(--surface-elevated)] overflow-hidden">
         <div className="container mx-auto px-[var(--section-px)] relative z-10 text-center flex flex-col items-center">

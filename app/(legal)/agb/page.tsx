@@ -6,6 +6,8 @@ import { LegalSection } from "@/components/legal/LegalSection"
 import { HoverGlossary } from "@/components/legal/HoverGlossary"
 import { RevisionTimeline } from "@/components/legal/RevisionTimeline"
 import { generateSharedMetadata } from "@/lib/metadata"
+import JsonLd from "@/components/seo/JsonLd"
+import { getGenericPageGraphSchema } from "@/lib/schema"
 
 export const metadata = generateSharedMetadata({
   title: "AGB & Vertragsbedingungen | Schlüssel Schmiede Wetzlar",
@@ -36,6 +38,16 @@ export default function AGBPage() {
             lastUpdated="12. April 2026"
             tocItems={TOC_ITEMS}
         >
+            <JsonLd data={getGenericPageGraphSchema({
+                title: "AGB & Vertragsbedingungen | Schlüssel Schmiede Wetzlar",
+                description: "Allgemeine Geschäftsbedingungen (AGB) der Schlüssel Schmiede Wetzlar. Transparente Regelungen für Dienstleistungen und Notöffnungen.",
+                url: "/agb",
+                pageType: "WebPage",
+                breadcrumbs: [
+                    { name: "Startseite", url: "/" },
+                    { name: "AGB", url: "/agb" }
+                ]
+            })} />
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
                 <p className="text-sm text-gray-500 font-medium">Lesezeit: ca. 6 Minuten</p>
                 <PrintButton />

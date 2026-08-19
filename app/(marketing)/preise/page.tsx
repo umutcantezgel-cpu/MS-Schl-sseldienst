@@ -21,13 +21,8 @@ import Breadcrumbs from"@/components/Breadcrumbs";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { teamImages } from "@/lib/data/imageAssets";
-import { getServiceSchema } from"@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
-
-const mainServicesSchema = [
- getServiceSchema({ title: "Türöffnung", description: "Zerstörungsfreie Türöffnung ab 129€", url:"/leistungen/turoeffnung", price: 129 }),
- getServiceSchema({ title: "Autoöffnung", description: "Schonende Autoöffnung", url:"/leistungen/autooeffnung", price: 149 })
-];
+import JsonLd from "@/components/seo/JsonLd";
+import { getPricingSchema } from "@/lib/schema";
 
 export const metadata = generateSharedMetadata({
  title: "Faire Preise & Kosten | Schlüssel Schmiede Wetzlar",
@@ -43,14 +38,7 @@ export default function PreisePage() {
  return (
   <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans">
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Faire Preise & Kosten | Schlüssel Schmiede Wetzlar. Ehrliche Festpreise für Ihren Schlüsseldienst.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(mainServicesSchema) }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(getFAQSchema(faqs)) }}
-   />
+   <JsonLd data={getPricingSchema()} />
 
    {/* Hero Section und Premium Dark */}
    <section className="relative min-h-[100svh] min-h-[100dvh] lg:min-h-[60vh] flex items-center pt-[100px] pb-8 sm:pt-[140px] sm:pb-[var(--space-24)] lg:pt-[200px] lg:pb-[var(--space-32)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

@@ -13,11 +13,11 @@ import { getTestimonialsByService, getAllTestimonials } from "@/lib/data/testimo
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
-import { getFAQSchema } from "@/lib/schema";
-import { getServiceSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
-import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedLocalImages } from "@/lib/data/imageAssets";
+import { SeoContentImage } from "@/components/seo/SeoImage";
 
 export const metadata = generateSharedMetadata({
   title: "Schlüsselnotdienst Wetzlar | 24/7 Notfallhilfe",
@@ -34,27 +34,23 @@ export default function NotdienstPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
     {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
     <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schlüsselnotdienst Wetzlar | 24/7 Notfallhilfe. Rund um die Uhr für Sie da.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "24/7 Schlüsselnotdienst",
-      description: "Bereitschaftsdienst für Türöffnungen und Autoöffnungen in Wetzlar rund um die Uhr, 365 Tage im Jahr.",
-      url: "/leistungen/notdienst",
-      price: 99
-     }))
-    }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getFAQSchema([
+   <JsonLd data={getServiceGraphSchema({
+    title: "Schlüsselnotdienst Wetzlar | 24/7 Notfallhilfe",
+    description: "Bereitschaftsdienst für Türöffnungen und Autoöffnungen in Wetzlar rund um die Uhr, 365 Tage im Jahr.",
+    url: "/leistungen/notdienst",
+    serviceType: "24/7 Schlüsselnotdienst & Soforthilfe",
+    price: 99,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Notdienst", url: "/leistungen/notdienst" }
+    ],
+    faqs: [
       { question: "Ist der Notdienst an Feiertagen im Einsatz?", answer: "Ja, unser Service ist 365 Tage im Jahr besetzt, einschließlich aller gesetzlichen Feiertage, Weihnachten und Silvester." },
       { question: "Gibt es hohe Nachtzuschläge?", answer: "Wir kommunizieren unsere Preise (inklusive eventueller Wochenend- und Nachtzuschläge) immer transparent im Voraus am Telefon." },
-      { question: "Lande ich nachts bei einem Call-Center?", answer: "Nein, Sie sprechen direkt mit einem zuständigen Monteur aus Wetzlar, der sofort aufbricht, um Ihnen zu helfen." },
-     ])),
-    }}
-   />
+      { question: "Lande ich nachts bei einem Call-Center?", answer: "Nein, Sie sprechen direkt mit einem zuständigen Monteur aus Wetzlar, der sofort aufbricht, um Ihnen zu helfen." }
+    ]
+   })} />
 
    {/* Hero Section Ultrathink V2 Dark Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-gray-900 to-[#121212] overflow-hidden text-white">

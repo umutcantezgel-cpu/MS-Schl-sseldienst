@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getAboutPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 import { Users, ShieldCheck, MapPin, Award, CheckCircle2, Phone, Star, Wrench, Heart } from "lucide-react";
 
@@ -14,6 +16,7 @@ export const metadata = generateSharedMetadata({
 export default function TeamPage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getAboutPageGraphSchema({ name: "Team", url: "/ueber-uns/team" })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Unser Team Wetzlar | Festangestellte Monteure. Das Team der Schlüssel Schmiede Wetzlar.</div>
       {/* Hero */}

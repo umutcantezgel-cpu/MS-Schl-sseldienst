@@ -13,8 +13,8 @@ import PriceCard from "@/components/pricing/PriceCard";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
-import { getServiceSchema } from "@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedMacroImages, getImageByFilename } from "@/lib/data/imageAssets";
@@ -43,17 +43,23 @@ export default function AutoschluesselPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Autoschlüssel nachmachen Wetzlar | Ersatzschlüssel. Autoschlüssel reparieren & codieren.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Autoschlüssel Programmierung & Reparatur",
-      description: "Reparatur, Gehäusetausch und Neuprogrammierung von KFZ Schlüsseln in Wetzlar.",
-      url: "/leistungen/autoschluessel",
-      price: 45
-     }))
-    }}
-   />
+   <JsonLd data={getServiceGraphSchema({
+    title: "Autoschlüssel nachmachen Wetzlar | Ersatzschlüssel",
+    description: "Professionelle KFZ-Schlüssel Programmierung, Gehäusetausch und Transponder-Codierung für alle Automarken in Wetzlar.",
+    url: "/leistungen/autoschluessel",
+    serviceType: "Autoschlüssel-Service & Programmierung",
+    price: 45,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Autoschlüssel", url: "/leistungen/autoschluessel" }
+    ],
+    faqs: [
+      { question: "Reparieren Sie alle Autoschlüssel?", answer: "Wir können für die meisten gängigen Marken neue Transponder programmieren und Gehäuse austauschen." },
+      { question: "Muss das Auto vor Ort sein?", answer: "Für die Neuprogrammierung des Transponders bzw. der Wegfahrsperre muss das Fahrzeug zwingend bei uns vor Ort sein." },
+      { question: "Was kostet ein neuer Autoschlüssel?", answer: "Abhängig vom Fahrzeugmodell starten einfache Autoschlüssel bei uns ab ca. 45€." }
+    ]
+   })} />
    
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
@@ -63,16 +69,6 @@ export default function AutoschluesselPage() {
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
         backgroundSize:"200px 200px",
       }}
-    />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(getFAQSchema([
-       { question: "Reparieren Sie alle Autoschlüssel?", answer: "Wir können für die meisten gängigen Marken neue Transponder programmieren und Gehäuse austauschen." },
-       { question: "Muss das Auto vor Ort sein?", answer: "Für die Neuprogrammierung des Transponders bzw. der Wegfahrsperre muss das Fahrzeug zwingend bei uns vor Ort sein." },
-       { question: "Was kostet ein neuer Autoschlüssel?", answer: "Abhängig vom Fahrzeugmodell starten einfache Autoschlüssel bei uns ab ca. 45€." },
-      ]))
-     }}
     />
     {/* Background Atmosphere increased visibility */}
     <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/bg-autoschluessel.png)] bg-cover bg-center"></div>

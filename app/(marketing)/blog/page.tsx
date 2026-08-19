@@ -7,6 +7,9 @@ import Link from "next/link";
 import { ArrowRight, Lock, Key, Shield, AlertTriangle, Clock } from "lucide-react";
 import { getAllBlogPosts } from "@/lib/data/mdx";
 
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
+
 export const metadata = generateSharedMetadata({
   title: "Sicherheitsratgeber & Blog | Schlüssel Schmiede Wetzlar",
   description: "Aktuelle Ratgeber & Tipps zu: | Einbruchschutz | Smart Locks | Sicherheitstechnik. Geballtes Fachwissen vom regionalen Experten aus Wetzlar.",
@@ -26,15 +29,15 @@ export default function BlogPage() {
       count: 12
     },
     {
-      name: "Smarte Schließanlagen",
-      icon: <Key className="w-6 h-6 text-[var(--color-red-500)]" />,
-      description: "Alles über moderne und elektronische Schließsysteme.",
+      name: "Sicherheitstechnik",
+      icon: <Lock className="w-6 h-6 text-[var(--color-red-500)]" />,
+      description: "Alles über moderne Schlösser & Schließzylinder.",
       count: 8
     },
     {
-      name: "Sicherheitstechnik",
-      icon: <Lock className="w-6 h-6 text-[var(--color-red-500)]" />,
-      description: "Kameras, Alarmanlagen und mechanischer Schutz.",
+      name: "Schlüssel & Schlösser",
+      icon: <Key className="w-6 h-6 text-[var(--color-red-500)]" />,
+      description: "Wissenswertes rund um Schlüsselarten & Pflege.",
       count: 15
     },
     {
@@ -51,24 +54,16 @@ export default function BlogPage() {
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Sicherheitsratgeber & Blog | Schlüssel Schmiede Wetzlar. Sicherheitsratgeber und Schlüsseldienstblog.</div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Blog",
-            "name": "Sicherheitstechnik Blog und Schlüssel Schmiede Wetzlar",
-            "description": "Ratgeber, Tipps und aktuelles Wissen rund Einbruchschutz, smarte Türschlösser und Sicherheitstechnik in Wetzlar.",
-            "url": `${siteUrl}/blog`,
-            "blogPost": featuredPosts.map(post => ({
-              "@type": "BlogPosting",
-              "headline": post.metadata.title,
-              "url": `${siteUrl}/blog/${post.slug}`,
-              "datePublished": post.metadata.publishedAt
-            }))
-          })
-        }}
-      />
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Sicherheitsratgeber & Blog | Schlüssel Schmiede Wetzlar",
+        description: "Ratgeber, Tipps und Fachwissen rund um Einbruchschutz, smarte Türschlösser und Sicherheitstechnik in Wetzlar.",
+        url: "/blog",
+        pageType: "CollectionPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Blog", url: "/blog" }
+        ]
+      })} />
       <section className="relative pt-[180px] pb-[100px] lg:pt-[220px] lg:pb-[140px] bg-[var(--surface-elevated)] overflow-hidden">
         <div className="container mx-auto px-[var(--section-px)] relative z-10">
           <Breadcrumbs items={breadcrumbs} light={false} />

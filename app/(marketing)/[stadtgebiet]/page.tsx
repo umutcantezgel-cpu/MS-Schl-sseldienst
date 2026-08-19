@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import { getAllLocationSlugs, getLocationBySlug } from "@/lib/data/allLocations";
-import { siteUrl } from "@/lib/schema";
+import { siteUrl, getLocalLocationGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { aggregateRating } from "@/components/reviews/reviews.data";
-import { getFAQSchema, getServiceSchema } from "@/lib/schema";
-import Script from "next/script";
+import JsonLd from "@/components/seo/JsonLd";
 
 // Modulare High-Performance Local-Components (12-Sektionen 10x Expansion)
 import LocalHero from "@/components/locations/LocalHero";
@@ -101,76 +100,22 @@ export default async function StadtgebietPage({ params }: { params: Promise<{ st
     notFound();
   }
 
-  // Dynamische Bild-URL für OG und Schema
-  const ogUrl = `${siteUrl}/api/og?title=${encodeURIComponent(`Schlüssel Schmiede ${city.name}`)}&time=${city.logistics.drivingTimeMinutes}`;
-
-  // Schema.org und Stadtspezifisches LocalBusiness (vollständig, Rich-Results-ready)
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "Locksmith",
-    "name": `Schlüssel Schmiede ${city.name}`,
-    "url": `${siteUrl}/${city.slug}`,
-    "telephone": "+4964418056279",
-    "email": "schluesselschmiede@gmail.com",
-    "priceRange": "ab 99€",
-    "image": ogUrl,
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": city.name,
-      "addressRegion": "Hessen",
-      "addressCountry": "DE"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": city.coordinates.latitude,
-      "longitude": city.coordinates.longitude
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": city.name
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
-    "parentOrganization": {
-      "@type": "Locksmith",
-      "@id": `${siteUrl}/#localbusiness`,
-      "name": "Schlüssel Schmiede Wetzlar",
-      "url": siteUrl
-    }
-  };
-
   return (
     <div className="bg-transparent text-[color:var(--text-primary)] font-sans min-h-screen">
-      <Script
-        id={`schema-city-${city.slug}`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([
-          localBusinessSchema,
-          getServiceSchema({
-            title: `Schlüsseldienst ${city.name}`,
-            description: `Zerstörungsfreie Türöffnung in ${city.name} ab 99€.`,
-            url: `/${city.slug}`
-          })
-        ]) }}
-      />
+      <JsonLd data={getLocalLocationGraphSchema({
+        slug: city.slug,
+        cityName: city.name,
+        postalCode: city.plz || "35576",
+        lat: city.coordinates.latitude,
+        lng: city.coordinates.longitude,
+        drivingTimeMinutes: city.logistics.drivingTimeMinutes,
+        basePrice: city.pricing.basePrice,
+        travelCostText: city.pricing.travelCostText,
+        faqs: city.faqs
+      })} />
       
       {/* SEO Injection: Ensure exact meta title keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">{getStadtgebietTitle(city.name)}</div>
-      {city.faqs && city.faqs.length > 0 && (
-        <Script
-          id={`faq-schema-${city.slug}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getFAQSchema(city.faqs)),
-          }}
-        />
-      )}
 
       {/* Die 10x Expanded 12-Sektionen Architektur */}
       {/* Sektion 1 & 2 */}

@@ -14,12 +14,11 @@ import PriceCard from"@/components/pricing/PriceCard";
 import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { getProcessSchema } from"@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
-import { getServiceSchema } from"@/lib/schema";
-import { generateSharedMetadata } from"@/lib/metadata";
-import { SeoContentImage } from "@/components/seo/SeoImage";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
+import { generateSharedMetadata } from "@/lib/metadata";
 import { tueroeffnungImages, schlossImages, generatedServiceImages, generatedHeroImages } from "@/lib/data/imageAssets";
+import { SeoContentImage } from "@/components/seo/SeoImage";
 
 export const metadata = generateSharedMetadata({
   title: "Türöffnung Wetzlar | Zerstörungsfrei ab 99€ Festpreis",
@@ -36,33 +35,23 @@ export default function TuroeffnungPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Türöffnung Wetzlar | Zerstörungsfrei ab 99€ Festpreis. Schnell wieder im Warmen. Türöffnung in Wetzlar.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Türöffnung",
-      description: "Zerstörungsfreie Türöffnung ab 99€",
-      url:"/leistungen/turoeffnung",
-      price: 99
-     }))
-    }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getProcessSchema()),
-    }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getFAQSchema([
-      { question:"Was kostet eine Türöffnung in Wetzlar?", answer:"Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 129 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." },
-      { question:"Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?", answer:"Schlüssel Schmiede Wetzlar ist in 15–30 Minuten bei Ihnen und 24/7, auch nachts, an Wochenenden und Feiertagen." },
-      { question:"Wird die Tür bei der Öffnung beschädigt?", answer:"In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." },
-     ])),
-    }}
-   />
+   <JsonLd data={getServiceGraphSchema({
+    title: "Türöffnung Wetzlar | Zerstörungsfrei ab 99€ Festpreis",
+    description: "Zerstörungsfreie Türöffnung zu 99% durch den zertifizierten Fachbetrieb in Wetzlar. In ca. 15-30 Min. vor Ort zum transparenten Festpreis.",
+    url: "/leistungen/turoeffnung",
+    serviceType: "Türnotöffnung & Schlossnotdienst",
+    price: 99,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Türöffnung", url: "/leistungen/turoeffnung" }
+    ],
+    faqs: [
+      { question: "Was kostet eine Türöffnung in Wetzlar?", answer: "Schlüssel Schmiede Wetzlar öffnet zugefallene Türen ab 99 Euro und abgesperrte Türen ab 129 Euro zum Festpreis und ohne versteckte Kosten und ohne Anfahrtsgebühren." },
+      { question: "Wie schnell ist der Schlüsseldienst bei einer Türöffnung vor Ort?", answer: "Schlüssel Schmiede Wetzlar ist in 15–30 Minuten bei Ihnen und 24/7, auch nachts, an Wochenenden und Feiertagen." },
+      { question: "Wird die Tür bei der Öffnung beschädigt?", answer: "In 99% der Fälle öffnet die Schlüssel Schmiede Wetzlar Ihre Tür zerstörungsfrei mit Spezialwerkzeug." }
+    ]
+   })} />
 
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

@@ -8,6 +8,8 @@ import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { werkstattImages } from "@/lib/data/imageAssets";
 import ContactMapWrapper from"@/components/maps/ContactMapWrapper";
+import JsonLd from "@/components/seo/JsonLd";
+import { getContactPageGraphSchema } from "@/lib/schema";
 
 export const metadata = generateSharedMetadata({
  title: "Kontakt und Schlüssel Schmiede Wetzlar | 24/7 Notdienst",
@@ -22,6 +24,7 @@ export default function KontaktPage() {
 
  return (
   <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans min-h-screen">
+   <JsonLd data={getContactPageGraphSchema()} />
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Kontakt und Schlüssel Schmiede Wetzlar | 24/7 Notdienst. Kontakt zum Schlüsseldienst Wetzlar.</div>
    

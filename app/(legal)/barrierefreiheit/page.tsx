@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 
 export const metadata = generateSharedMetadata({
@@ -17,6 +19,16 @@ export default function BarrierefreiheitPage() {
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Barrierefreiheit unserer Schlüsseldienstwebsite",
+        description: "Erklärung zur Barrierefreiheit der Website der Schlüssel Schmiede Wetzlar gemäß BITV 2.0 und WCAG 2.1.",
+        url: "/barrierefreiheit",
+        pageType: "WebPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Barrierefreiheit", url: "/barrierefreiheit" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title is in the text for Seobility */}
       <div className="absolute opacity-0 pointer-events-none select-none z-[-1]" aria-hidden="true">Barrierefreiheit unserer Schlüsseldienstwebsite</div>
       {/* Hero Section */}

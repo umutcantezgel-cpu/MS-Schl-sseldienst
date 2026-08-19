@@ -7,6 +7,7 @@ import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { auszeichnungImages, teamImages } from "@/lib/data/imageAssets";
 import { siteUrl } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata = generateSharedMetadata({
  title: "Erfahrungen & Bewertungen | Schlüssel Schmiede Wetzlar",
@@ -133,10 +134,7 @@ export default function BewertungenPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans min-h-screen">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Kundenbewertungen | Schlüssel Schmiede Wetzlar. Echte Kundenstimmen & Erfahrungen | Schlüssel Schmiede Wetzlar.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateReviewSchema()) }}
-   />
+   <JsonLd data={generateReviewSchema()} />
 
    {/* Hero Section und Premium Dark */}
    <section className="relative pt-[180px] pb-[var(--space-64)] lg:pt-[220px] lg:pb-[var(--space-96)] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

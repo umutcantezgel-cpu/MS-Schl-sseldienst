@@ -5,6 +5,8 @@ import { PrintButton } from "@/components/legal/PrintButton"
 import { LegalSection } from "@/components/legal/LegalSection"
 import { generateSharedMetadata } from "@/lib/metadata"
 import { MapConsentGate } from "@/components/legal/MapConsentGate"
+import JsonLd from "@/components/seo/JsonLd"
+import { getGenericPageGraphSchema } from "@/lib/schema"
 
 export const metadata = generateSharedMetadata({
     title: "Impressum & Anbieterkennzeichnung | Schlüsseldienst Wetzlar",
@@ -33,6 +35,16 @@ export default function ImpressumPage() {
             lastUpdated="12. April 2026"
             tocItems={TOC_ITEMS}
         >
+            <JsonLd data={getGenericPageGraphSchema({
+                title: "Impressum & Anbieterkennzeichnung | Schlüsseldienst Wetzlar",
+                description: "Impressum und rechtliche Angaben der Schlüssel Schmiede Wetzlar. Kontaktdaten, Verantwortliche und Anbieterkennzeichnung gemäß DDG.",
+                url: "/impressum",
+                pageType: "WebPage",
+                breadcrumbs: [
+                    { name: "Startseite", url: "/" },
+                    { name: "Impressum", url: "/impressum" }
+                ]
+            })} />
             <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-4 print:hidden">
                 <p className="text-sm text-gray-500 font-medium">Betreiberkennzeichnung nach § 5 DDG</p>
                 <PrintButton />

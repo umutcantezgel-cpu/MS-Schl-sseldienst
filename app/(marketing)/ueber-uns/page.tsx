@@ -9,6 +9,8 @@ import { entryAnimations } from"@/lib/animations";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { teamImages, werkstattImages, auszeichnungImages } from "@/lib/data/imageAssets";
+import JsonLd from "@/components/seo/JsonLd";
+import { getAboutPageGraphSchema } from "@/lib/schema";
 
 export const metadata = generateSharedMetadata({
  title: "Über uns Lokaler Schlüsseldienst seit 15+ Jahren",
@@ -23,6 +25,7 @@ export default function UeberUnsPage() {
 
  return (
   <div className="bg-[var(--surface-secondary)] text-[color:var(--text-primary)] font-sans min-h-screen">
+   <JsonLd data={getAboutPageGraphSchema()} />
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Über uns Lokaler Schlüsseldienst seit 15+ Jahren. Nicht einfach ein Schlüsseldienst. Ihre Rettung in der Not.</div>
    

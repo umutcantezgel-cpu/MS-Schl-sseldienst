@@ -5,6 +5,8 @@ import { getNavigationConfig } from '@/lib/data/navigation';
 import GlobalBackground from '@/components/GlobalBackground';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { generateSharedMetadata } from '@/lib/metadata';
+import JsonLd from '@/components/seo/JsonLd';
+import { getGenericPageGraphSchema } from '@/lib/schema';
 
 export const metadata = generateSharedMetadata({
   title: 'Vollständige HTML Sitemap | Schlüssel Schmiede Wetzlar',
@@ -27,6 +29,16 @@ export default function SitemapPage() {
   return (
     <>
       <GlobalBackground />
+      <JsonLd data={getGenericPageGraphSchema({
+        title: 'Vollständige HTML Sitemap | Schlüssel Schmiede Wetzlar',
+        description: 'Vollständige Inhaltsübersicht aller Leistungen, Ratgeber und Einsatzgebiete im Lahn-Dill-Kreis.',
+        url: '/sitemap-uebersicht',
+        pageType: 'CollectionPage',
+        breadcrumbs: [
+          { name: 'Startseite', url: '/' },
+          { name: 'Sitemap', url: '/sitemap-uebersicht' }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Vollständige HTML Sitemap | Schlüssel Schmiede Wetzlar. HTML Sitemap | Vollständige Übersicht der Schlüssel Schmiede Wetzlar.</div>
       

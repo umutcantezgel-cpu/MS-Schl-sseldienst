@@ -3,7 +3,7 @@ import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 import "./globals.css";
 import nextDynamic from "next/dynamic";
 import StickyHeader from "@/components/StickyHeader";
-import { getOrganizationSchema, getLocalBusinessSchema, siteUrl } from "@/lib/schema";
+import { getRootGraphSchema, siteUrl } from "@/lib/schema";
 import { companyInfo } from "@/lib/data/company";
 import { SkipNav } from "@/components/ui/SkipNav";
 import MotionProvider from "@/components/providers/MotionProvider";
@@ -103,7 +103,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify([getOrganizationSchema(), getLocalBusinessSchema()]) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getRootGraphSchema()) }}
         />
       </head>
       <body

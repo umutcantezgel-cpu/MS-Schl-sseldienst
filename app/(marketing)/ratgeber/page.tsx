@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 import { ShieldCheck, BookOpen, ArrowRight, Lightbulb, CheckCircle2, Lock, AlertTriangle } from "lucide-react";
 import { getAllRatgeberPosts } from "@/lib/data/mdx";
@@ -17,6 +19,16 @@ export default function RatgeberPage() {
 
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Ratgeber Einbruchschutz & Sicherheit | Wetzlar",
+        description: "Detaillierte Schritt für Schritt Anleitungen und Fachwissen zu mechanischer & elektronischer Sicherheitstechnik für Ihr Zuhause.",
+        url: "/ratgeber",
+        pageType: "CollectionPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Ratgeber", url: "/ratgeber" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Ratgeber Einbruchschutz & Sicherheit | Wetzlar. Sicherheits-Ratgeber & Tipps | Schlüsseldienst Wetzlar.</div>
       {/* Hero */}

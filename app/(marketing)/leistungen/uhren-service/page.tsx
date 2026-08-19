@@ -13,8 +13,8 @@ import PriceCard from "@/components/pricing/PriceCard";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
-import { getServiceSchema } from "@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 
 export const metadata = generateSharedMetadata({
@@ -25,7 +25,7 @@ export const metadata = generateSharedMetadata({
 });
 
 export default function UhrenServicePage() {
-  const serviceTestimonials = getTestimonialsByService("uhren");
+  const serviceTestimonials = getTestimonialsByService("uhren-service");
   const testimonialsToDisplay = serviceTestimonials.length >= 3 ? serviceTestimonials : getAllTestimonials();
 
  const breadcrumbs = [
@@ -37,17 +37,23 @@ export default function UhrenServicePage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Uhren-Service & Batteriewechsel Wetzlar | Filiale. Uhrenservice Schnell & Einfach.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Uhren Service & Batteriewechsel",
-      description: "Batteriewechsel und Armbandwechsel für Armbanduhren in Wetzlar.",
-      url: "/leistungen/uhren-service",
-      price: 10
-     }))
-    }}
-   />
+   <JsonLd data={getServiceGraphSchema({
+    title: "Uhren-Service & Batteriewechsel Wetzlar | Filiale",
+    description: "Professioneller Batteriewechsel und Armbandtausch für Armbanduhren direkt vor Ort in unserer Wetzlarer Filiale.",
+    url: "/leistungen/uhren-service",
+    serviceType: "Uhrenservice & Batteriewechsel",
+    price: 10,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Uhren-Service", url: "/leistungen/uhren-service" }
+    ],
+    faqs: [
+      { question: "Wie lange dauert der Batteriewechsel?", answer: "Der reine Batteriewechsel dauert oft nur 5 bis 10 Minuten, Sie können in der Regel darauf warten." },
+      { question: "Wechseln Sie auch Batterien von Premium-Marken?", answer: "Da dies auf das genaue Gehäuse ankommt und unter Umständen die Wasserdichtigkeit danach neu geprüft werden muss, begutachten wir Premium-Uhren (z.B. Rolex, Breitling) gerne vorab. Teilweise verweisen wir hierfür direkt auf den Hersteller." },
+      { question: "Ist meine Uhr nach dem Batteriewechsel wasserdicht?", answer: "Wir verschließen die Uhr ordnungsgemäß, führen jedoch vor Ort keine zertifizierte Druckprüfung durch. Wer mit seiner Uhr tief taucht, sollte sie in ein spezielles Labor geben." }
+    ]
+   })} />
    
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
@@ -57,16 +63,6 @@ export default function UhrenServicePage() {
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
         backgroundSize:"200px 200px",
       }}
-    />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(getFAQSchema([
-       { question: "Wie lange dauert der Batteriewechsel?", answer: "Der reine Batteriewechsel dauert oft nur 5 bis 10 Minuten, Sie können in der Regel darauf warten." },
-       { question: "Wechseln Sie auch Batterien von Premium-Marken?", answer: "Da dies auf das genaue Gehäuse ankommt und unter Umständen die Wasserdichtigkeit danach neu geprüft werden muss, begutachten wir Premium-Uhren (z.B. Rolex, Breitling) gerne vorab. Teilweise verweisen wir hierfür direkt auf den Hersteller." },
-       { question: "Ist meine Uhr nach dem Batteriewechsel wasserdicht?", answer: "Wir verschließen die Uhr ordnungsgemäß, führen jedoch vor Ort keine zertifizierte Druckprüfung durch. Wer mit seiner Uhr tief taucht, sollte sie in ein spezielles Labor geben." },
-      ]))
-     }}
     />
     <div className="absolute inset-0 bg-gradient-to-b from-stone-50/50 to-transparent z-[1]" />
     

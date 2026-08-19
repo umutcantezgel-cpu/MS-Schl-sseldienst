@@ -13,11 +13,11 @@ import { getTestimonialsByService, getAllTestimonials } from "@/lib/data/testimo
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
-import { getFAQSchema } from "@/lib/schema";
-import { getServiceSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
-import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
+import { SeoContentImage } from "@/components/seo/SeoImage";
 
 export const metadata = generateSharedMetadata({
   title: "Tresoröffnung Wetzlar | Diskrete Safe-Öffnung",
@@ -34,26 +34,23 @@ export default function TresoroeffnungPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Tresoröffnung Wetzlar | Diskrete Safe-Öffnung vom Profi. Diskrete Tresoröffnung.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Tresoröffnung & Safeöffnung",
-      description: "Diskrete Tresor und Safeöffnung vom Wetzlarer Fachbetrieb.",
-      url: "/leistungen/tresoroeffnung"
-     }))
-    }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getFAQSchema([
+   <JsonLd data={getServiceGraphSchema({
+    title: "Tresoröffnung Wetzlar | Diskrete Safe-Öffnung",
+    description: "Diskrete & professionelle Tresor- und Safeöffnung für mechanische und elektronische Tresore in Wetzlar und Mittelhessen.",
+    url: "/leistungen/tresoroeffnung",
+    serviceType: "Tresoröffnung & Safe-Notdienst",
+    price: 199,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Tresoröffnung", url: "/leistungen/tresoroeffnung" }
+    ],
+    faqs: [
       { question: "Wird mein Tresor bei der Öffnung beschädigt?", answer: "Wir setzen auf minimalinvasive Methoden. Selbst wenn wir bohren müssen, geschieht dies mikrochirurgisch, sodass der Zylinder oft problemlos getauscht werden kann." },
       { question: "Ist Diskretion zugesichert?", answer: "Selbstverständlich. Unsere Techniker sind fachlich und moralisch verpflichtet, höchste Vertraulichkeit bei Tresor- und Safe-Öffnungen zu wahren." },
-      { question: "Öffnen Sie auch elektronische Safes?", answer: "Ja, wir öffnen mechanische Tresore (mit Doppelbartschlüssel) als auch elektronische Zahlenschloss-Safes aller gängigen Sicherheitsklassen." },
-     ])),
-    }}
-   />
+      { question: "Öffnen Sie auch elektronische Safes?", answer: "Ja, wir öffnen mechanische Tresore (mit Doppelbartschlüssel) als auch elektronische Zahlenschloss-Safes aller gängigen Sicherheitsklassen." }
+    ]
+   })} />
 
    {/* Hero Section Ultrathink V2 Dark Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-charcoal-900)] to-[#0A0A0A] overflow-hidden text-white">

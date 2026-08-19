@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 import { MapPin, Clock, Phone, Mail, ShieldCheck, Key, Store, Award, CheckCircle2, Navigation } from "lucide-react";
 import { SeoContentImage } from "@/components/seo/SeoImage";
@@ -16,6 +18,16 @@ export const metadata = generateSharedMetadata({
 export default function SchlüsselSchmiedePage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Schlüssel Schmiede Wetzlar | Filiale & Fachgeschäft",
+        description: "Besuchen Sie unser Ladenlokal in der Langgasse 70, 35576 Wetzlar. Schlüssel nachmachen, Schließzylinder kaufen & Vor-Ort-Sicherheitsberatung.",
+        url: "/schluessel-schmiede",
+        pageType: "AboutPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Filiale", url: "/schluessel-schmiede" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schlüssel Schmiede Wetzlar | Filiale & Fachgeschäft. Schlüssel Schmiede Wetzlar | Ihr Ladenlokal in der Langgasse 70.</div>
       {/* Hero */}

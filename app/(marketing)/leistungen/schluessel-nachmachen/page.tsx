@@ -13,8 +13,8 @@ import PriceCard from"@/components/pricing/PriceCard";
 import FAQAccordion from"@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { getServiceSchema } from"@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedMacroImages } from "@/lib/data/imageAssets";
@@ -39,17 +39,23 @@ export default function SchluesselNachmachenPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schlüssel nachmachen | Schlüsseldienst Wetzlar. Der perfekte Ersatzschlüssel in Rekordzeit.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Schlüssel nachmachen",
-      description: "Ersatzschlüssel aller Art direkt vor Ort anfertigen lassen.",
-      url:"/leistungen/schluessel-nachmachen",
-      price: 9.90
-     }))
-    }}
-   />
+   <JsonLd data={getServiceGraphSchema({
+    title: "Schlüssel nachmachen | Schlüsseldienst Wetzlar",
+    description: "Ersatzschlüssel und Schlüsselkopien aller Art in Minuten vor Ort anfertigen lassen im Ladengeschäft Langgasse 70 in Wetzlar.",
+    url: "/leistungen/schluessel-nachmachen",
+    serviceType: "Schlüsselkopie & Schlüsseldienst",
+    price: 9.90,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Schlüssel nachmachen", url: "/leistungen/schluessel-nachmachen" }
+    ],
+    faqs: [
+      { question: "Wie lange dauert das Nachmachen eines Schlüssels?", answer: "Die meisten Standard-Schlüssel werden direkt vor Ort in wenigen Minuten gefräst. Sie können darauf warten und sie sofort mitnehmen." },
+      { question: "Was benötige ich für Sicherheitsschlüssel?", answer: "Für Schlüssel, die zu einer geschützten Schließanlage gehören, benötigen wir zwingend die entsprechende Sicherungskarte im Original. Ohne diese dürfen wir das Duplikat gesetzlich nicht anfertigen." },
+      { question: "Können Sie abgebrochene Schlüssel nachmachen?", answer: "Oft ja, wenn beide Teile vorhanden sind. Wir können ein Profil auslesen und oft erfolgreich eine Kopie erstellen, auch wenn der Originalschlüssel in zwei Teilen ist." }
+    ]
+   })} />
    
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
@@ -60,16 +66,6 @@ export default function SchluesselNachmachenPage() {
         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")`,
         backgroundSize:"200px 200px",
       }}
-    />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(getFAQSchema([
-       { question: "Wie lange dauert das Nachmachen eines Schlüssels?", answer: "Die meisten Standard-Schlüssel werden direkt vor Ort in wenigen Minuten gefräst. Sie können darauf warten und sie sofort mitnehmen." },
-       { question: "Was benötige ich für Sicherheitsschlüssel?", answer: "Für Schlüssel, die zu einer geschützten Schließanlage gehören, benötigen wir zwingend die entsprechende Sicherungskarte im Original. Ohne diese dürfen wir das Duplikat gesetzlich nicht anfertigen." },
-       { question: "Können Sie abgebrochene Schlüssel nachmachen?", answer: "Oft ja, wenn beide Teile vorhanden sind. Wir können ein Profil auslesen und oft erfolgreich eine Kopie erstellen, auch wenn der Originalschlüssel in zwei Teilen ist." },
-      ]))
-     }}
     />
     {/* Background Atmosphere increased visibility */}
     <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/bg-schluessel-nachmachen.png)] bg-cover bg-center"></div>

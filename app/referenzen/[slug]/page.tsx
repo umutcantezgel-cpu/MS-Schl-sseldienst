@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 import JsonLd from '@/components/seo/JsonLd';
-import { getArticleSchema } from '@/lib/schema';
+import { getArticleGraphSchema } from '@/lib/schema';
 
 export default async function CaseStudyPage({ params, searchParams }: Props) {
   const awaitedParams = await params;
@@ -75,16 +75,21 @@ export default async function CaseStudyPage({ params, searchParams }: Props) {
   }
 
   const testimonial = study.testimonialId ? getTestimonialById(study.testimonialId) : null;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wetzlar-schlüsseldienst.de";
 
   return (
     <>
-      <JsonLd data={getArticleSchema({
+      <JsonLd data={getArticleGraphSchema({
         headline: study.title,
         description: study.challenge || study.title,
         datePublished: "2025-01-01T00:00:00.000Z",
-        url: `${siteUrl}/referenzen/${study.slug}`,
-        author: "Schlüssel Schmiede Wetzlar"
+        url: `/referenzen/${study.slug}`,
+        authorName: "Mina Saad",
+        category: "Referenzen & Fallstudien",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Referenzen", url: "/referenzen" },
+          { name: study.title, url: `/referenzen/${study.slug}` }
+        ]
       })} />
       <main className="min-h-screen bg-slate-50">
         {/* 1. HERO */}

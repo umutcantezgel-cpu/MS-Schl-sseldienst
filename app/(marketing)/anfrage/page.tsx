@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 import { Phone, Mail, Clock, ShieldCheck, Check, FileText, HelpCircle, Building } from "lucide-react";
 
@@ -15,6 +17,16 @@ export const metadata = generateSharedMetadata({
 export default function AnfragePage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Unverbindliche Anfrage | Schlüsseldienst Wetzlar",
+        description: "Kostenloses und unverbindliches Angebot für Schlüsseldienst und Sicherheitstechnik in Wetzlar anfordern.",
+        url: "/anfrage",
+        pageType: "ContactPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Anfrage", url: "/anfrage" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Unverbindliches Angebot anfragen | Schlüsseldienst Wetzlar. Unverbindliche Angebot-Anfrage | Schlüsseldienst Wetzlar.</div>
       {/* Hero */}

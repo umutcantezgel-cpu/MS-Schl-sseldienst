@@ -12,6 +12,9 @@ import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { Badge } from "@/components/ui/badge";
 
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
+
 export const metadata = generateSharedMetadata({
  title: "Unsere Einsatzgebiete | Schlüsseldienst Wetzlar",
  description: "Wir sind hier: | Aßlar | Solms | Hüttenberg | Lahnau & 70+ Orte. Lokaler Schlüsseldienst aus Wetzlar. Schnelle Hilfe in 15 bis 30 Min!",
@@ -31,23 +34,16 @@ export default function ServicegebietPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
     {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
     <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Unsere Einsatzgebiete | Schlüsseldienst Wetzlar. Schlüsseldienst Einsatzgebiete im Lahn-Dill-Kreis.</div>
-   <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{
-       __html: JSON.stringify({
-         "@context": "https://schema.org",
-         "@type": "CollectionPage",
-         "name": "Einsatzgebiete Schlüsseldienst Wetzlar",
-         "description": "Übersicht aller Städte und Gemeinden im 50km Umkreis von Wetzlar, in denen unser Schlüsseldienst tätig ist.",
-         "hasPart": allLocations.slice(0, 20).map((loc, idx) => ({
-            "@type": "WebPage",
-            "position": idx + 1,
-            "url": `${siteUrl}/${loc.slug}`,
-            "name": loc.name
-         }))
-       })
-     }}
-   />
+   <JsonLd data={getGenericPageGraphSchema({
+     title: "Unsere Einsatzgebiete | Schlüsseldienst Wetzlar",
+     description: "Übersicht aller Städte und Gemeinden im 50km Umkreis von Wetzlar, in denen unser Schlüsseldienst tätig ist.",
+     url: "/servicegebiet",
+     pageType: "CollectionPage",
+     breadcrumbs: [
+       { name: "Startseite", url: "/" },
+       { name: "Servicegebiet", url: "/servicegebiet" }
+     ]
+   })} />
    {/* Hero Section */}
    <section className="relative pt-[180px] pb-[120px] lg:pt-[220px] lg:pb-[160px] bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
     <div

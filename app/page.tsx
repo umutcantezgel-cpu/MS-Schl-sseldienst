@@ -8,7 +8,7 @@ import nextDynamic from "next/dynamic";
 const FinalCTA = nextDynamic(() => import('@/components/ui/FinalCTA'));
 
 import JsonLd from "@/components/seo/JsonLd";
-import { getPricingSchema, getServiceSchema } from "@/lib/schema";
+import { getHomeGraphSchema } from "@/lib/schema";
 import { getAllTestimonials } from "@/lib/data/testimonials";
 import AIAnswerBox from "@/components/seo/AIAnswerBox";
 
@@ -41,14 +41,7 @@ export default function HomePage() {
   
   return (
     <>
-      <JsonLd data={[
-        getPricingSchema(),
-        getServiceSchema({
-          title: "Schlüsseldienst Wetzlar",
-          description: "Zerstörungsfreie Türöffnungen vom Fachbetrieb in Wetzlar. Erleben Sie unseren 24h Notdienst mit transparenter, verbindlicher Preisauskunft vorab.",
-          url: "/"
-        })
-      ]} />
+      <JsonLd data={getHomeGraphSchema()} />
 
       <AIAnswerBox />
       

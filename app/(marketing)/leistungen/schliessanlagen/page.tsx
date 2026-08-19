@@ -14,8 +14,8 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import Link from"next/link";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { getServiceSchema } from"@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedMacroImages } from "@/lib/data/imageAssets";
@@ -40,17 +40,23 @@ export default function SchliessanlagenPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schließanlagen Planung & Einbau Wetzlar | Profi. Volle Kontrolle, minimaler Aufwand.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Schließanlagen",
-      description: "Mechanische und elektronische Schließanlagen für Wetzlar.",
-      url:"/leistungen/schliessanlagen",
-      price: 150
-     }))
-    }}
-   />
+   <JsonLd data={getServiceGraphSchema({
+    title: "Schließanlagen Planung & Einbau Wetzlar | Profi",
+    description: "Planung, Montage und Wartung moderner mechanischer und elektronischer Schließanlagen für Gewerbe und Privathäuser in Wetzlar.",
+    url: "/leistungen/schliessanlagen",
+    serviceType: "Schließanlagen-Planung & Montage",
+    price: 150,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Schließanlagen", url: "/leistungen/schliessanlagen" }
+    ],
+    faqs: [
+      { question: "Ist eine Anlage auch für Einfamilienhäuser sinnvoll?", answer: "Ja, wir bieten Gleichschließungen an. Das bedeutet: Mit nur einem Schlüssel können Sie Haustür, Garage, Kellertür und Briefkasten öffnen." },
+      { question: "Was passiert bei einem Schlüsselverlust?", answer: "Bei elektronischen Anlagen wird der betreffende Transponder einfach im System gesperrt. Eine mechanische Anlage erfordert unter Umständen den Austausch des Zylinders, wobei wir durch Sicherungskarten vor unbefugten Kopien schützen." },
+      { question: "Können bestehende Anlagen erweitert werden?", answer: "Oftmals ja. Wir prüfen Ihre bestehende Anlage mit Sicherungskarte und bestellen bei Bedarf passende Erweiterungszylinder direkt vom Hersteller nach." }
+    ]
+   })} />
    
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">
@@ -62,16 +68,7 @@ export default function SchliessanlagenPage() {
         backgroundSize:"200px 200px",
       }}
     />
-    <script
-     type="application/ld+json"
-     dangerouslySetInnerHTML={{
-      __html: JSON.stringify(getFAQSchema([
-       { question: "Ist eine Anlage auch für Einfamilienhäuser sinnvoll?", answer: "Ja, wir bieten Gleichschließungen an. Das bedeutet: Mit nur einem Schlüssel können Sie Haustür, Garage, Kellertür und Briefkasten öffnen." },
-       { question: "Was passiert bei einem Schlüsselverlust?", answer: "Bei elektronischen Anlagen wird der betreffende Transponder einfach im System gesperrt. Eine mechanische Anlage erfordert unter Umständen den Austausch des Zylinders, wobei wir durch Sicherungskarten vor unbefugten Kopien schützen." },
-       { question: "Können bestehende Anlagen erweitert werden?", answer: "Oftmals ja. Wir prüfen Ihre bestehende Anlage mit Sicherungskarte und bestellen bei Bedarf passende Erweiterungszylinder direkt vom Hersteller nach." },
-      ]))
-     }}
-    />
+    
     {/* Background Atmosphere increased visibility */}
     <div className="absolute inset-0 opacity-[0.18] sm:opacity-[0.22] bg-[url(/images/bg-schliessanlagen.png)] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent z-0"></div>

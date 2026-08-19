@@ -14,8 +14,8 @@ import FAQAccordion from"@/components/ui/FAQAccordion";
 import Link from"next/link";
 import StaggerReveal, { StaggerItem } from"@/components/motion/StaggerReveal";
 import { entryAnimations } from"@/lib/animations";
-import { getServiceSchema } from"@/lib/schema";
-import { getFAQSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from"@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages, generatedTrustImages } from "@/lib/data/imageAssets";
@@ -40,27 +40,23 @@ export default function SicherheitstechnikPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Moderne Sicherheitstechnik Wetzlar | Schlüsseldienst. Ruhig schlafen, sicher leben.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Sicherheitstechnik",
-      description: "Einbruchschutzberatung, Zusatzschlösser und Sicherheitstechnik.",
-      url:"/leistungen/sicherheitstechnik",
-      price: 199
-     }))
-    }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getFAQSchema([
+   <JsonLd data={getServiceGraphSchema({
+    title: "Moderne Sicherheitstechnik Wetzlar | Schlüsseldienst",
+    description: "Zertifizierte Sicherheitstechnik, Einbruchschutzberatung, Zusatzschlösser, Panzerriegel und Videoüberwachung in Wetzlar.",
+    url: "/leistungen/sicherheitstechnik",
+    serviceType: "Sicherheitstechnik & Einbruchschutz",
+    price: 199,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Sicherheitstechnik", url: "/leistungen/sicherheitstechnik" }
+    ],
+    faqs: [
       { question: "Ist eine Beratung bei mir zu Hause wirklich kostenlos?", answer: "Ja, im Großraum Wetzlar bieten wir eine völlig kostenfreie und unverbindliche Sicherheitsanalyse bei Ihnen vor Ort an." },
       { question: "Kann Sicherheitstechnik auch in Mietwohnungen installiert werden?", answer: "Definitiv! Wir bieten spezielle Klebe- oder Klemm-Lösungen sowie Funk-Alarmanlagen an, die sich später beim Auszug spurlos entfernen und mitnehmen lassen." },
-      { question: "Wie lange dauert der Einbau einer Alarmanlage?", answer: "Dank moderner Funktechnologie lassen sich die meisten Alarmsysteme für kleinere bis mittlere Objekte innerhalb eines Tages komplett kabellos und ohne Schmutz installieren." },
-     ]))
-    }}
-   />
+      { question: "Wie lange dauert der Einbau einer Alarmanlage?", answer: "Dank moderner Funktechnologie lassen sich die meisten Alarmsysteme für kleinere bis mittlere Objekte innerhalb eines Tages komplett kabellos und ohne Schmutz installieren." }
+    ]
+   })} />
 
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

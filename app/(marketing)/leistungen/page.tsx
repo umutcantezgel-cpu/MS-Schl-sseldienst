@@ -11,6 +11,9 @@ export const metadata = generateSharedMetadata({
   path: "/leistungen",
 });
 
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
+
 const iconMap: Record<string, any> = {
   "DoorOpen": DoorOpen,
   "Car": Car,
@@ -28,6 +31,16 @@ export default function LeistungenPage() {
 
   return (
     <main className="bg-white pb-32 pt-32 lg:pt-40">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Alle Schlüsseldienst Leistungen | Wetzlar Notdienst",
+        description: "Alle Services im Überblick: Türöffnung ab 99€, Tresoröffnung, Autoöffnung, Schließanlagen und Einbruchschutz in Wetzlar und Umgebung.",
+        url: "/leistungen",
+        pageType: "CollectionPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Leistungen", url: "/leistungen" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Alle Schlüsseldienst Leistungen | Wetzlar Notdienst. Unsere Leistungen im Überblick.</div>
       

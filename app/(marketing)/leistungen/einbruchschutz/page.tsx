@@ -13,8 +13,8 @@ import { getTestimonialsByService, getAllTestimonials } from "@/lib/data/testimo
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
-import { getFAQSchema } from "@/lib/schema";
-import { getServiceSchema } from "@/lib/schema";
+import JsonLd from "@/components/seo/JsonLd";
+import { getServiceGraphSchema } from "@/lib/schema";
 import { generateSharedMetadata } from "@/lib/metadata";
 import { SeoContentImage } from "@/components/seo/SeoImage";
 import { generatedServiceImages } from "@/lib/data/imageAssets";
@@ -34,27 +34,23 @@ export default function EinbruchschutzPage() {
   <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
    {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
    <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Einbruchschutz & Sicherheitsberatung Wetzlar | Profi. Soforthilfe bei Einbruchschäden.</div>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getServiceSchema({
-      title: "Einbruchschutz & Soforthilfe",
-      description: "Sofortige Absicherung und Reparatur nach Einbrüchen. Umfangreiche Beratung zu mechanischer Sicherheitstechnik.",
-      url: "/leistungen/einbruchschutz",
-      price: 0
-     }))
-    }}
-   />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-     __html: JSON.stringify(getFAQSchema([
+   <JsonLd data={getServiceGraphSchema({
+    title: "Einbruchschutz & Sicherheitsberatung Wetzlar | Profi",
+    description: "Sofortige Absicherung und Reparatur nach Einbrüchen. Umfangreiche Beratung zu mechanischer Sicherheitstechnik in Wetzlar.",
+    url: "/leistungen/einbruchschutz",
+    serviceType: "Einbruchschutz & Sicherheitsberatung",
+    price: 0,
+    breadcrumbs: [
+      { name: "Startseite", url: "/" },
+      { name: "Leistungen", url: "/leistungen" },
+      { name: "Einbruchschutz", url: "/leistungen/einbruchschutz" }
+    ],
+    faqs: [
       { question: "Was tun nach einem Einbruch?", answer: "Verlassen Sie das Haus, rufen Sie sofort die Polizei (110) und fassen Sie nichts an. Erst nach Freigabe durch die Polizei können wir die Türnotabsicherung durchführen." },
       { question: "Wie schnell können Sie die Tür nach einem Einbruch wieder sichern?", answer: "Wir sind 24/7 über unseren Notdienst erreichbar und innerhalb von 15-30 Minuten vor Ort in Wetzlar, um Einbruchschäden provisorisch abzusichern oder neue Zylinder einzubauen." },
-      { question: "Beraten Sie auch zum Thema Einbruchschutz?", answer: "Ja, wir bieten eine direkte Schwachstellenanalyse am Objekt an und installieren VdS-geprüfte Sicherheitstechnik wie Panzerriegel oder Fensterzusatzschlösser." },
-     ])),
-    }}
-   />
+      { question: "Beraten Sie auch zum Thema Einbruchschutz?", answer: "Ja, wir bieten eine direkte Schwachstellenanalyse am Objekt an und installieren VdS-geprüfte Sicherheitstechnik wie Panzerriegel oder Fensterzusatzschlösser." }
+    ]
+   })} />
 
    {/* Hero Section Ultrathink V2 Glassmorphism */}
    <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 lg:pt-52 lg:pb-32 bg-gradient-to-b from-[var(--color-off-white)] to-white overflow-hidden">

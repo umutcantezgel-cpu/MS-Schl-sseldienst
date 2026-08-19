@@ -2,7 +2,7 @@ import { generateSharedMetadata } from "@/lib/metadata";
 import { getRatgeberPostBySlug, getAllRatgeberPosts } from "@/lib/data/mdx";
 import { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
-import { getArticleSchema } from "@/lib/schema";
+import { getArticleGraphSchema } from "@/lib/schema";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import Image from "next/image";
@@ -96,19 +96,25 @@ export default async function RatgeberDetailPage({ params }: Props) {
     );
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wetzlar-schlüsseldienst.de";
   const formattedDate = format(new Date(post.metadata.publishedAt), "dd. MMMM yyyy", { locale: de });
 
   return (
     <>
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">{post.metadata.title} | Schlüsseldienst Wetzlar. {post.metadata.title}.</div>
-      <JsonLd data={getArticleSchema({
+      <JsonLd data={getArticleGraphSchema({
         headline: post.metadata.title,
         description: post.metadata.excerpt || "",
+        image: post.metadata.image,
         datePublished: post.metadata.publishedAt,
         dateModified: post.metadata.publishedAt,
-        url: `${siteUrl}/ratgeber/${post.slug}`,
-        author: post.metadata.author || "Redaktion Schlüssel Schmiede",
+        url: `/ratgeber/${post.slug}`,
+        authorName: post.metadata.author || "Mina Saad",
+        category: post.metadata.category || "Ratgeber & Sicherheit",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Ratgeber", url: "/ratgeber" },
+          { name: post.metadata.title, url: `/ratgeber/${post.slug}` }
+        ]
       })} />
       
       <article className="bg-[var(--surface-primary)] pt-[140px] lg:pt-[180px] pb-24 min-h-screen">

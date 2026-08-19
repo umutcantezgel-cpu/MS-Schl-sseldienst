@@ -4,6 +4,8 @@ import { allLocations } from '@/lib/data/allLocations';
 import GlobalBackground from '@/components/GlobalBackground';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { generateSharedMetadata } from '@/lib/metadata';
+import JsonLd from '@/components/seo/JsonLd';
+import { getGenericPageGraphSchema } from '@/lib/schema';
 
 export const metadata = generateSharedMetadata({
   title: 'Einsatzgebiete N-Z | Sitemap | Schlüssel Schmiede',
@@ -19,6 +21,17 @@ export default function SitemapOrteNZ() {
   return (
     <>
       <GlobalBackground />
+      <JsonLd data={getGenericPageGraphSchema({
+        title: 'Einsatzgebiete N-Z | Sitemap | Schlüssel Schmiede',
+        description: 'Übersicht unserer Einsatzgebiete im Lahn-Dill-Kreis (N bis Z).',
+        url: '/sitemap-uebersicht/orte-n-z',
+        pageType: 'CollectionPage',
+        breadcrumbs: [
+          { name: 'Startseite', url: '/' },
+          { name: 'Sitemap', url: '/sitemap-uebersicht' },
+          { name: 'Einsatzgebiete N-Z', url: '/sitemap-uebersicht/orte-n-z' }
+        ]
+      })} />
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Einsatzgebiete N-Z | HTML Sitemap | Schlüssel Schmiede Wetzlar. Regionale Einsatzgebiete N bis Z.</div>
       
       <main className="relative pt-[140px] lg:pt-[180px] pb-24 z-10 w-full min-h-screen bg-[var(--surface-primary)] font-sans">

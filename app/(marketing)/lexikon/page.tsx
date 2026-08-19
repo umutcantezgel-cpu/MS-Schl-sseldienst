@@ -2,6 +2,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import StaggerReveal, { StaggerItem } from "@/components/motion/StaggerReveal";
 import { entryAnimations } from "@/lib/animations";
 import { generateSharedMetadata } from "@/lib/metadata";
+import JsonLd from "@/components/seo/JsonLd";
+import { getGenericPageGraphSchema } from "@/lib/schema";
 import Link from "next/link";
 import { BookOpen, Search, ArrowRight, ShieldCheck, HelpCircle } from "lucide-react";
 import { lexikonData } from "@/lib/data/lexikon";
@@ -15,6 +17,16 @@ export const metadata = generateSharedMetadata({
 export default function LexikonPage() {
   return (
     <div className="bg-[var(--surface-primary)] text-[color:var(--text-primary)] font-sans">
+      <JsonLd data={getGenericPageGraphSchema({
+        title: "Schlüsseldienst Lexikon | Fachbegriffe erklärt",
+        description: "Das große Schlüssel- & Sicherheits-Lexikon der Schlüssel Schmiede Wetzlar. Fachbegriffe rund um Schlösser, Zylinder und Einbruchschutz verständlich erklärt.",
+        url: "/lexikon",
+        pageType: "CollectionPage",
+        breadcrumbs: [
+          { name: "Startseite", url: "/" },
+          { name: "Lexikon", url: "/lexikon" }
+        ]
+      })} />
       {/* SEO Injection: Ensure exact meta title and H1 keywords are in the text for Seobility */}
       <div className="absolute top-0 left-0 w-full px-4 pt-4 text-[10px] text-[color:var(--text-tertiary)]/40 pointer-events-none z-0">Schlüsseldienst Lexikon | Fachbegriffe Wetzlar. Schlüsseldienst Lexikon & Fachbegriffe | Wetzlar.</div>
       {/* Hero */}
