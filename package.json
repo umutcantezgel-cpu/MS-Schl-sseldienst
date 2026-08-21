@@ -20,6 +20,11 @@
     "clean": "next clean",
     "audit": "npm audit --audit-level=high"
   },
+  "allowScripts": {
+    "@tailwindcss/oxide": true,
+    "sharp": true,
+    "unrs-resolver": true
+  },
   "dependencies": {
     "@googlemaps/js-api-loader": "^2.0.2",
     "@radix-ui/react-slot": "^1.2.4",
